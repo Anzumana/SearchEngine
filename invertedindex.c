@@ -198,18 +198,20 @@ void printInvertedIndexGVSimple(struct InvertedIndex *idx)
 
 
 
-int mainA2(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	struct PageList *pl;
-	pl = createPageList();
-	setBasePath(".../searchengineproject/minicorpus/"); // Need to be changed
+	pl =createPageList();
+	//struct PageList *pl = createPageList();
+	int a = 5;
+	//setBasePath(".../searchengineproject/minicorpus/"); // Need to be changed
 
-	loadPages(pl, "a.txt");
+	//loadPages(pl, "a.txt");
 
-	struct InvertedIndex *idx = createInvertedIndex();
-	setPageList(idx, pl);
+	//struct InvertedIndex *idx = createInvertedIndex();
+	//setPageList(idx, pl);
 
-	printInvertedIndexGV(idx);
+	//printInvertedIndexGV(idx);
 //	printInvertedIndexGVSimple(idx);
 
 	return 0;

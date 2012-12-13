@@ -81,11 +81,11 @@ static int strStartsWith(const char *s, const char *prefix)
 	}
 	// To Do Aufgabe 1 f);
 	int length = strlen(prefix);
-	printf("The string to check is %d long\n", length);
+	//printf("The string to check is %d long\n", length);
 	char c[length+1];
 	strncpy (c,s,length);
 	c[length] ='\0';
-	printf("%s and %s\n",prefix,c);
+	//printf("%s and %s\n",prefix,c);
 	if(!strcmp(c,prefix)){
 //		printf("yes this works");
 		return 0;
@@ -102,14 +102,33 @@ void loadPages(struct PageList *pl, const char* url)
 	struct Page *page = calloc(1, sizeof(struct Page));
 	page =loadPage(url);
 	putPage(pl,page);
-idea is that we can check at this point how many pages are in our list and that amount  
-	struct Link *link = calloc(1,sizeof(struct Link));
-	link = pl->nodes->page->links->next;
-	loadPages(pl,link->url);
+	//printLinksOfPage(page);
+	struct Link *f ;
+	for(f = pl->nodes->page->links; f != NULL;f = f->next) {
+		int a = strStartsWith(f->url,"https");
+		int b =	strStartsWith(f->url,"ftp:");
+		int c = strStartsWith(f->url,"..");
+		int d =	strStartsWith(f->url,"http");
+		int e =	strStartsWith(f->url,"Special:");
+		int g =	strStartsWith(f->url,"W._W._Norton_&amp;_Company");
+		int h = strStartsWith(f->url,"AT&amp;T_Bell_Labs");
+		// habe Special: hinzugenommen da dieses bei der url erstellung nicht gefilter wird
+		if((a&&b&&c&&d&&e&&g&&h)){
+			printf("The linklist url is: %s\n",f->url);
+			//printf("%d,%d,%d,%d\n",a,b,c,d);
+			//page = loadPage(f->url);
+			//putPage(pl,page);
+		}
+		
+	   }
+//idea is that we can check at this point how many pages are in our list and that amount  
+//	struct Link *link = calloc(1,sizeof(struct Link));
+//	link = pl->nodes->page->links->next;
+//	loadPages(pl,link->url);
 	
+}
 	
 
-}
 
 
 void printPagesContainingTerm(struct PageList *pl, char *term)
@@ -132,20 +151,20 @@ void printPagesContainingTerm(struct PageList *pl, char *term)
 	return;
 }
 
-int main(void)
+int mainA1(void)
 {
 
 //    setBasePath("/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/en.m.wikipedia.org/wiki/");
 
-	struct PageList *pl = createPageList();
-	struct Page *page = calloc(1, sizeof(struct Page));
-	page = loadPage("C_(programming_language)");
-	int a = putPage(pl,page);
-	printf("%d\n\n\n",a);
-	printf("%s",page->url);
+	//struct PageList *pl = createPageList();
+	//struct Page *page = calloc(1, sizeof(struct Page));
+	//loadPages(pl,"C_(programming_language)");
+	//loadPages(pl,"a.txt");
+	//int a;
+	//printf("%d\n\n\n",a);
+	//printf("%s",page->url);
+/*
 	page = loadPage("C_data_types");
-	a = putPage(pl,page);
-	a = putPage(pl,page);
 	a = putPage(pl,page);
 	printf("%d\n\n\n",a);
 	printf("%s\n",page->url);
@@ -165,7 +184,6 @@ int main(void)
 	printf("THe number of pages is %d\n",numberOfPages(pl));
 
 	
-/*
 	loadPages(pl, "C_(programming_language)");
 
 	int i = numberOfPages(pl);

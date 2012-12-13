@@ -17,8 +17,8 @@ um dies zu vermeiden sollte man immer versuchen die einzelnen funktionen unseres
 char buffer[BUFFER_SIZE+1];
 char path[PATH_SIZE+1];
 
-//const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/minicorpus/";
-const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/en.m.wikipedia.org/wiki/";
+const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/minicorpus/";
+//const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/en.m.wikipedia.org/wiki/";
 
 
 #define TYPE_TERM 1
@@ -46,7 +46,7 @@ if(page == NULL|term== NULL){
 	struct Term *e = calloc(1,sizeof(struct Term));
 	e->term = tmp;
 	e->frequency = 1;
-	printf("A new Term struct with value:%12s created.\n",e->term);
+//	printf("A new Term struct with value:%12s created.\n",e->term);
 	e->next = page->terms;
 	page->terms = e;
 		//printf("%s\n",(page->terms)->term);
@@ -83,7 +83,7 @@ static void insertLinkInPage(struct Page *page, const char *url)
 // this only gets executed if the term is not already in our page so we add a new item to the terms list
 	struct Link *e = calloc(1,sizeof(struct Term));
 	e->url = tmp;
-	printf("A new Link struct with value:%12s created.\n",e->url);
+//	printf("A new Link struct with value:%12s created.\n",e->url);
 	e->next = page->links;
 	page->links= e;
 		//printf("%s\n",(page->terms)->term);
@@ -210,11 +210,11 @@ struct Page *loadPage(const char* fileName)
 	if(fileName == NULL){
 		return NULL ;
 	}
-	printf("yes this function gets calles\n");
+	//printf("yes this function gets calles\n");
 	struct Page *page = calloc(1, sizeof(struct Page));
 	char *tmp = strdup(fileName);
 	page->url = tmp;
-	printf("%s is url given to function\n",page->url);
+	//printf("%s is url given to function\n",page->url);
 	strcpy(path,BASE_PATH);
 	strcat(path,tmp);
 	printf("%s is our path\n",path);
