@@ -1,0 +1,2 @@
+int faculty(int a);
+
