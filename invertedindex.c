@@ -18,8 +18,12 @@ struct InvertedIndexHead *addInvertedIndexHead(
 	struct InvertedIndex *idx,
 	const char *term)
 {
-	// To Do Aufgabe 2 d)
-	return NULL;
+	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead));
+	char *tmp = strdup(term);
+	h->term =  tmp;
+	h->next = idx->head;
+	idx->head = h;
+	return h;
 }
 
 // Add new entry (struct InvertedIndexEntry) in the list of this index head. Return the new entry.
@@ -31,8 +35,26 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 	struct Term *term
 )
 {
-	// To Do Aufgabe 2 c)
-	return NULL;
+	if(idx==NULL||head==NULL||page==NULL||term==NULL){
+		return NULL;
+	}
+//	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead ));
+//	struct Page *p=  calloc(1,sizeof(struct Page));
+//	struct Term *t = calloc(1,sizeof(struct Term));
+	struct InvertedIndexEntry *e = calloc(1,sizeof(struct InvertedIndexEntry));
+	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead));
+	//char meinarray[strlen(term->term)+1];
+	char *tmp = strdup(page->url);
+//	printf("%s\n",tmp);
+	e->url = tmp;
+	e->frequency = term->frequency;
+	//neues a.txt mit zahl erzeugt
+	h->entries = head->entries;
+	head->entries = e;	
+	e->next = h->entries;
+//	printf("For page:%s,the Term:%s is %d times there\n",page->url,e->url,e->frequency);
+
+	return e;
 }
 
 
@@ -42,26 +64,18 @@ struct InvertedIndexHead *findTermInIndex( const struct InvertedIndex *idx, cons
 	if(idx ==NULL || term == NULL){
 		return;
 	}
-	return idx->head;
+	
 	//printf("|||||%s\n",idx->head->term);
 //	printf("function working on gets called\n");	
 
-/*
 	struct InvertedIndexHead *h;
-	struct InvertedIndexEntry *e;
-	h = idx->head;	
-	if(h==NULL){
-		printf("as i thought");
-	}
-	for (; h != NULL; h = h->next) {
-		printf("term = %s\n", h->term);
-		for (e = h->entries; e != NULL; e = e->next) {
-			printf("\t\tpage = %s\n", e->url);
+	for (h= idx->head; h != NULL; h = h->next) {
+//		printf("term = %s\n", h->term);
+		if(!strcmp(h->term ,term)){
+			return h;
 		}
 	}
 // if term is in our list
-*/
-
 	return NULL;
 // if term doesn't exist in our list
 }
@@ -234,14 +248,17 @@ int main(int argc, char *argv[])
 
 	struct InvertedIndex *idx = createInvertedIndex();
 	setPageList(idx, pl);
-//	printInvertedIndex(idx);
+	printInvertedIndex(idx);
 	printf("%s\n\n",idx->pageList->nodes->page->url);
+	//if(idx->head->entries->url == NULL){
+	//	printf("its nulss");
+	//}
 	//printf("%s\n\n",idx->head->entries->url);
 //	struct InvertedIndexHead *idxh;
 //	idxh = findTermInIndex( idx, "tmp char array to test");
 
-//	printInvertedIndexGV(idx);
-	//printInvertedIndexGVSimple(idx);
+	//printInvertedIndexGV(idx);
+	printInvertedIndexGVSimple(idx);
 
 
 	return 0;
