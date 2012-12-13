@@ -33,11 +33,13 @@ struct InvertedIndexEntry;
 
 struct Term {
 	char *term;
+	double tfidf;
 	int frequency; // the number of times the term appears in the document
 	struct Term *next; // next term of page
 };
 
 struct Page {
+	double score;
 	char *url;
 	struct Term *terms;
 	struct Link *links;

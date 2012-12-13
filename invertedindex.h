@@ -8,11 +8,14 @@
 struct InvertedIndexEntry {
 	char *url; // document URL
 	int frequency; // number of times the term appears in document
+	//struct Page *p;
+	//struct Term *t;
 	struct InvertedIndexEntry *next;
 };
 
 struct InvertedIndexHead {
 	char *term;
+	int documentFrequency;
 	struct InvertedIndexEntry *entries;
 	struct InvertedIndexHead *next;
 };

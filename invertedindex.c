@@ -41,6 +41,8 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 //	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead ));
 //	struct Page *p=  calloc(1,sizeof(struct Page));
 //	struct Term *t = calloc(1,sizeof(struct Term));
+	head->documentFrequency++ ;
+	printf("current documentFrequency:%d\n",head->documentFrequency);
 	struct InvertedIndexEntry *e = calloc(1,sizeof(struct InvertedIndexEntry));
 	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead));
 	//char meinarray[strlen(term->term)+1];
@@ -48,6 +50,7 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 //	printf("%s\n",tmp);
 	e->url = tmp;
 	e->frequency = term->frequency;
+	
 	//neues a.txt mit zahl erzeugt
 	h->entries = head->entries;
 	head->entries = e;	
@@ -145,6 +148,7 @@ void printInvertedIndex(struct InvertedIndex *idx)
 
 	for (h = idx->head; h != NULL; h = h->next) {
 		printf("term = %s\n", h->term);
+		printf("documentFrequency = %d\n",h->documentFrequency);
 		for (e = h->entries; e != NULL; e = e->next) {
 			printf("\t\tpage = %s\n", e->url);
 		}
