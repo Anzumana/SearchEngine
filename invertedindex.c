@@ -48,8 +48,8 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 	//char meinarray[strlen(term->term)+1];
 	char *tmp = strdup(page->url);
 //	printf("%s\n",tmp);
-	e->url = tmp;
-	e->frequency = term->frequency;
+	e->p->url= tmp;
+	e->t->frequency = term->frequency;
 	
 	//neues a.txt mit zahl erzeugt
 	h->entries = head->entries;
@@ -150,7 +150,7 @@ void printInvertedIndex(struct InvertedIndex *idx)
 		printf("term = %s\n", h->term);
 		printf("documentFrequency = %d\n",h->documentFrequency);
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("\t\tpage = %s\n", e->url);
+			printf("\t\tpage = %s\n", e->p->url);
 		}
 	}
 
@@ -190,10 +190,10 @@ void printInvertedIndexGV(struct InvertedIndex *idx)
 
 		for (e = h->entries; e != NULL; e = e->next) {
 			printf("	entry%p [label=\"<url> url | <frequency> frequency = %d | <next> next %s\"];\n",
-					e, e->frequency, e->next ? "" : "= NULL");
-			if (e->url) {
-				printf("	string%p [label = \"%s\"];\n", e->url, e->url);
-				printf("	entry%p:url:e -> string%p:w;\n", e, e->url);
+					e, e->t->frequency, e->next ? "" : "= NULL");
+			if (e->p->url) {
+				printf("	string%p [label = \"%s\"];\n", e->p->url, e->p->url);
+				printf("	entry%p:url:e -> string%p:w;\n", e, e->p->url);
 			}
 			if (e->next) {
 				printf("	entry%p:next:e -> entry%p:w;\n", e, e->next);
@@ -230,7 +230,7 @@ void printInvertedIndexGVSimple(struct InvertedIndex *idx)
 		}
 
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("	entry%p [label=\"%s\"];\n", e, e->url);
+			printf("	entry%p [label=\"%s\"];\n", e, e->p->url);
 			if (e->next) {
 				printf("	entry%p -> entry%p;\n", e, e->next);
 			}
