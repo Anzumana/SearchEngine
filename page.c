@@ -34,6 +34,7 @@ if(page == NULL|term== NULL){
 }
 	char *tmp = strdup(term);
 	struct Term *f ;
+	
 // this for loops makes sure that if we have the term already in our page the term frequency gets increased by 1 and terminated the function
 	for(f = page->terms; f != NULL;f = f->next) {
 	   if(!strcmp(f->term,tmp)){
@@ -67,11 +68,19 @@ void printTermsOfPage(struct Page *page)
 
 static void insertLinkInPage(struct Page *page, const char *url)
 {
-	if(page == NULL | url == NULL){
+	int a = strlen(url);
+	if(a==0){
+		return;
+	}
+	//printf("%u\n",(unsigned)strlen(url));
+	
+	if(page == NULL || url == NULL){
+		printf("never the case");
 		return;
 	}
 	// To Do Aufgabe 1 f)
 	char *tmp = strdup(url);
+	//printf("LINK STRUCT WITH value:%16s created.\n",tmp);
 	struct Link *f ;
 // this for loops makes sure that if we have the term already in our page the term frequency gets increased by 1 and terminated the function
 	for(f = page->links; f != NULL;f = f->next) {
@@ -83,7 +92,7 @@ static void insertLinkInPage(struct Page *page, const char *url)
 // this only gets executed if the term is not already in our page so we add a new item to the terms list
 	struct Link *e = calloc(1,sizeof(struct Term));
 	e->url = tmp;
-//	printf("A new Link struct with value:%12s created.\n",e->url);
+	printf("A new Link struct with value:%16s created.\n",e->url);
 	e->next = page->links;
 	page->links= e;
 		//printf("%s\n",(page->terms)->term);

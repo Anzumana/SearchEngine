@@ -37,12 +37,33 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 
 
 // Return index head for the term if in index, return NULL otherwise.
-struct InvertedIndexHead *findTermInIndex(
-	const struct InvertedIndex *idx,
-	const char *term)
+struct InvertedIndexHead *findTermInIndex( const struct InvertedIndex *idx, const char *term)
 {
-	// To Do Aufgabe 2 b)
+	if(idx ==NULL || term == NULL){
+		return;
+	}
+	return idx->head;
+	//printf("|||||%s\n",idx->head->term);
+//	printf("function working on gets called\n");	
+
+/*
+	struct InvertedIndexHead *h;
+	struct InvertedIndexEntry *e;
+	h = idx->head;	
+	if(h==NULL){
+		printf("as i thought");
+	}
+	for (; h != NULL; h = h->next) {
+		printf("term = %s\n", h->term);
+		for (e = h->entries; e != NULL; e = e->next) {
+			printf("\t\tpage = %s\n", e->url);
+		}
+	}
+// if term is in our list
+*/
+
 	return NULL;
+// if term doesn't exist in our list
 }
 
 
@@ -56,6 +77,8 @@ void insertTermsOfPageInIndex(struct InvertedIndex *idx, struct Page *page)
 
 	// go through terms of page
 	for (t = page->terms; t != NULL; t = t->next) {
+		//printf("Code 111\n");
+		//printf("%s\n",t->term);
 		// check if term is already in the index
 		if ((h = findTermInIndex(idx, t->term)) != NULL) {
 			// term already in index, add page
@@ -64,6 +87,7 @@ void insertTermsOfPageInIndex(struct InvertedIndex *idx, struct Page *page)
 
 		} else { // term not yet in index
 			// add new term to index
+//			printf("here we go");
 			h = addInvertedIndexHead(idx, t->term);
 			// add entry for the new term
 			addInvertedIndexEntry(idx, h, page, t);
@@ -77,7 +101,10 @@ void insertTermsOfPageInIndex(struct InvertedIndex *idx, struct Page *page)
 // precondition: idx is empty, idx != NULL, pl != NULL
 void setPageList(struct InvertedIndex *idx, struct PageList *pl)
 {
-	if (idx == NULL || pl == NULL) return;
+	if (idx == NULL || pl == NULL){
+		printf("Error Code:123");
+		return;
+	}
 
 	idx->pageList = pl;
 
@@ -86,7 +113,7 @@ void setPageList(struct InvertedIndex *idx, struct PageList *pl)
 	// go through list of pages
 	for (p = pl->nodes; p != NULL; p = p->next) {
 		if (p->page != NULL) {
-///			printf("inverted index set page: %s\n", p->page->url);
+//			printf("inverted index set page: %s\n", p->page->url);
 			insertTermsOfPageInIndex(idx, p->page);
 		}
 	}
@@ -202,17 +229,20 @@ int main(int argc, char *argv[])
 {
 	struct PageList *pl;
 	pl =createPageList();
-	//struct PageList *pl = createPageList();
-	int a = 5;
-	//setBasePath(".../searchengineproject/minicorpus/"); // Need to be changed
 
-	//loadPages(pl, "a.txt");
+	loadPages(pl, "a.txt");
 
-	//struct InvertedIndex *idx = createInvertedIndex();
-	//setPageList(idx, pl);
+	struct InvertedIndex *idx = createInvertedIndex();
+	setPageList(idx, pl);
+//	printInvertedIndex(idx);
+	printf("%s\n\n",idx->pageList->nodes->page->url);
+	//printf("%s\n\n",idx->head->entries->url);
+//	struct InvertedIndexHead *idxh;
+//	idxh = findTermInIndex( idx, "tmp char array to test");
 
-	//printInvertedIndexGV(idx);
-//	printInvertedIndexGVSimple(idx);
+//	printInvertedIndexGV(idx);
+	//printInvertedIndexGVSimple(idx);
+
 
 	return 0;
 }

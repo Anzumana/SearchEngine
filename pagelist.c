@@ -100,7 +100,7 @@ void loadPages(struct PageList *pl, const char* url)
 		return;
 	}
 	struct Page *page = calloc(1, sizeof(struct Page));
-	page =loadPage(url);
+	page = loadPage(url);
 	putPage(pl,page);
 	//printLinksOfPage(page);
 	struct Link *f ;
@@ -114,13 +114,12 @@ void loadPages(struct PageList *pl, const char* url)
 		int h = strStartsWith(f->url,"AT&amp;T_Bell_Labs");
 		// habe Special: hinzugenommen da dieses bei der url erstellung nicht gefilter wird
 		if((a&&b&&c&&d&&e&&g&&h)){
-			printf("The linklist url is: %s\n",f->url);
+	//		printf("The linklist url is: %s\n",f->url);
 			//printf("%d,%d,%d,%d\n",a,b,c,d);
-			//page = loadPage(f->url);
-			//putPage(pl,page);
+			page = loadPage(f->url);
+			putPage(pl,page);
 		}
-		
-	   }
+	}
 //idea is that we can check at this point how many pages are in our list and that amount  
 //	struct Link *link = calloc(1,sizeof(struct Link));
 //	link = pl->nodes->page->links->next;
