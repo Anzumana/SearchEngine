@@ -49,4 +49,9 @@ void setPageList(struct InvertedIndex *idx, struct PageList *pl);
 
 void printInvertedIndex(struct InvertedIndex *idx);
 
+// Aufgabe 1d
+int saveInvertedIndex(const struct InvertedIndex *idx, const char* fileName);
+struct InvertedIndex *loadInvertedIndex(const char* fileName);
+static char *fgetl(char *s, int count, FILE *file);
+
 #endif
