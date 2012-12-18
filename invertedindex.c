@@ -42,20 +42,27 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 //	struct Page *p=  calloc(1,sizeof(struct Page));
 //	struct Term *t = calloc(1,sizeof(struct Term));
 	head->documentFrequency++ ;
-	printf("current documentFrequency:%d\n",head->documentFrequency);
+//	printf("current documentFrequency:%d\n",head->documentFrequency);
 	struct InvertedIndexEntry *e = calloc(1,sizeof(struct InvertedIndexEntry));
 	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead));
+	//printf("code 333");
+	e->p = page;
+	e->t = term;
 	//char meinarray[strlen(term->term)+1];
 	char *tmp = strdup(page->url);
-//	printf("%s\n",tmp);
-	e->url = tmp;
-	e->frequency = term->frequency;
+	//printf("code 33433");
+	//printf("%s\n",tmp);
+	e->t->frequency = term->frequency;
+	//printf("code 555");
+	e->p->url = tmp;
+	//printf("code 444");
 	
 	//neues a.txt mit zahl erzeugt
 	h->entries = head->entries;
 	head->entries = e;	
 	e->next = h->entries;
 //	printf("For page:%s,the Term:%s is %d times there\n",page->url,e->url,e->frequency);
+//	printf("code 222");
 
 	return e;
 }
@@ -87,27 +94,35 @@ struct InvertedIndexHead *findTermInIndex( const struct InvertedIndex *idx, cons
 // Inserts a single page into the index.
 void insertTermsOfPageInIndex(struct InvertedIndex *idx, struct Page *page)
 {
+//	printf("test 1.1.1");
 	if (idx == NULL || page == NULL) return;
 
 	struct InvertedIndexHead *h;
+//	printf("test 1.1.2");
 	struct Term *t;
+//	printf("test 1.1.3");
 
 	// go through terms of page
 	for (t = page->terms; t != NULL; t = t->next) {
+		//printf("test 1.1.1.1");
 		//printf("Code 111\n");
-		//printf("%s\n",t->term);
+//		printf("%s\n",t->term);
 		// check if term is already in the index
 		if ((h = findTermInIndex(idx, t->term)) != NULL) {
+			//printf("test 1.1.1.1");
 			// term already in index, add page
 
 				addInvertedIndexEntry(idx, h, page, t);
 
 		} else { // term not yet in index
+			//printf("test 2.1.1.1");
 			// add new term to index
 //			printf("here we go");
 			h = addInvertedIndexHead(idx, t->term);
+			//printf("test 2.2.1.1");
 			// add entry for the new term
 			addInvertedIndexEntry(idx, h, page, t);
+//			printf("test 2.3.1.1");
 		}
 	}
 }
@@ -118,14 +133,17 @@ void insertTermsOfPageInIndex(struct InvertedIndex *idx, struct Page *page)
 // precondition: idx is empty, idx != NULL, pl != NULL
 void setPageList(struct InvertedIndex *idx, struct PageList *pl)
 {
+//	printf("test 1.1");
 	if (idx == NULL || pl == NULL){
 		printf("Error Code:123");
 		return;
 	}
 
 	idx->pageList = pl;
+//	printf("test 1.2");
 
 	struct PageListNode *p = NULL;
+//	printf("test 1.3");
 
 	// go through list of pages
 	for (p = pl->nodes; p != NULL; p = p->next) {
@@ -134,6 +152,7 @@ void setPageList(struct InvertedIndex *idx, struct PageList *pl)
 			insertTermsOfPageInIndex(idx, p->page);
 		}
 	}
+//	printf("test 1.4");
 
 }
 
@@ -150,7 +169,7 @@ void printInvertedIndex(struct InvertedIndex *idx)
 		printf("term = %s\n", h->term);
 		printf("documentFrequency = %d\n",h->documentFrequency);
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("\t\tpage = %s\n", e->url);
+			printf("\t\tpage = %s\n", e->p->url);
 		}
 	}
 
@@ -190,10 +209,10 @@ void printInvertedIndexGV(struct InvertedIndex *idx)
 
 		for (e = h->entries; e != NULL; e = e->next) {
 			printf("	entry%p [label=\"<url> url | <frequency> frequency = %d | <next> next %s\"];\n",
-					e, e->frequency, e->next ? "" : "= NULL");
-			if (e->url) {
-				printf("	string%p [label = \"%s\"];\n", e->url, e->url);
-				printf("	entry%p:url:e -> string%p:w;\n", e, e->url);
+					e, e->t->frequency, e->next ? "" : "= NULL");
+			if (e->p->url) {
+				printf("	string%p [label = \"%s\"];\n", e->p->url, e->p->url);
+				printf("	entry%p:url:e -> string%p:w;\n", e, e->p->url);
 			}
 			if (e->next) {
 				printf("	entry%p:next:e -> entry%p:w;\n", e, e->next);
@@ -230,7 +249,7 @@ void printInvertedIndexGVSimple(struct InvertedIndex *idx)
 		}
 
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("	entry%p [label=\"%s\"];\n", e, e->url);
+			printf("	entry%p [label=\"%s\"];\n", e, e->p->url);
 			if (e->next) {
 				printf("	entry%p -> entry%p;\n", e, e->next);
 			}
@@ -249,11 +268,16 @@ int main(int argc, char *argv[])
 	pl =createPageList();
 
 	loadPages(pl, "a.txt");
+	//printf("test 1");
 
 	struct InvertedIndex *idx = createInvertedIndex();
+	//printf("test 2");
 	setPageList(idx, pl);
+	//printf("test 3");
 	printInvertedIndex(idx);
+	//printf("test 4");
 	printf("%s\n\n",idx->pageList->nodes->page->url);
+	//printf("test 5");
 	//if(idx->head->entries->url == NULL){
 	//	printf("its nulss");
 	//}
