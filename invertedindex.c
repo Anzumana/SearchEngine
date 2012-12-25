@@ -47,15 +47,15 @@ struct InvertedIndexEntry *addInvertedIndexEntry(		// <-- IMPL
 	struct InvertedIndexHead *h = calloc(1,sizeof(struct InvertedIndexHead));
 	//printf("code 333");
 // ganz wichtig da wir sonst nicht auf frequency und terms zugreifen koennen . Das hier ist die zuweisung fuer unser Entry auf welcher page und terms wir arbeiten in diesem 
-	e->p = page;
-	e->t = term;
+	e->page = page;
+	e->term = term;
 	//char meinarray[strlen(term->term)+1];
 	char *tmp = strdup(page->url);
 	//printf("code 33433");
 	//printf("%s\n",tmp);
-	e->t->frequency = term->frequency;
+	e->term->frequency = term->frequency;
 	//printf("code 555");
-	e->p->url = tmp;
+	e->page->url = tmp;
 	//printf("code 444");
 	
 	//neues a.txt mit zahl erzeugt
@@ -170,7 +170,7 @@ void printInvertedIndex(struct InvertedIndex *idx)
 		printf("term = %s\n", h->term);
 		printf("documentFrequency = %d\n",h->documentFrequency);
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("\t\tpage = %s\n", e->p->url);
+			printf("\t\tpage = %s\n", e->page->url);
 		}
 	}
 
@@ -210,10 +210,10 @@ void printInvertedIndexGV(struct InvertedIndex *idx)
 
 		for (e = h->entries; e != NULL; e = e->next) {
 			printf("	entry%p [label=\"<url> url | <frequency> frequency = %d | <next> next %s\"];\n",
-					e, e->t->frequency, e->next ? "" : "= NULL");
-			if (e->p->url) {
-				printf("	string%p [label = \"%s\"];\n", e->p->url, e->p->url);
-				printf("	entry%p:url:e -> string%p:w;\n", e, e->p->url);
+					e, e->term->frequency, e->next ? "" : "= NULL");
+			if (e->page->url) {
+				printf("	string%p [label = \"%s\"];\n", e->page->url, e->page->url);
+				printf("	entry%p:url:e -> string%p:w;\n", e, e->page->url);
 			}
 			if (e->next) {
 				printf("	entry%p:next:e -> entry%p:w;\n", e, e->next);
@@ -250,7 +250,7 @@ void printInvertedIndexGVSimple(struct InvertedIndex *idx)
 		}
 
 		for (e = h->entries; e != NULL; e = e->next) {
-			printf("	entry%p [label=\"%s\"];\n", e, e->p->url);
+			printf("	entry%p [label=\"%s\"];\n", e, e->page->url);
 			if (e->next) {
 				printf("	entry%p -> entry%p;\n", e, e->next);
 			}
@@ -308,7 +308,7 @@ int saveInvertedIndex(const struct InvertedIndex *idx, const char* fileName)
 	for (h = idx->head; h != NULL; h = h->next) {
 		fprintf(file, "\n%s\n", h->term);
 		for (e = h->entries; e != NULL; e = e->next) {
-			fprintf(file, "%s\n%d\n", e->p->url, e->t->frequency);
+			fprintf(file, "%s\n%d\n", e->page->url, e->term->frequency);
 		}
 	}
 
@@ -442,7 +442,7 @@ int numberOfTermsOccurencesInIndex(const struct InvertedIndex *idx){
 	for(h = idx->head;h!=NULL;h = h->next){
 		for(e= h->entries;e!=NULL; e = e->next){
 	//			printf("%d\n",e->t->frequency);
-				i = i + e->t->frequency;
+				i = i + e->term->frequency;
 		}
 	//	printf("%s\n",h->term);
 	}
