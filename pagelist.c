@@ -96,13 +96,18 @@ static int strStartsWith(const char *s, const char *prefix)
 
 void loadPages(struct PageList *pl, const char* url)
 {
+	#if Debug
+	printf("Statement\n");
+	#endif
 	if(pl==NULL||url==NULL){
 		return;
 	}
 	struct Page *page = calloc(1, sizeof(struct Page));
 	page = loadPage(url);
 	putPage(pl,page);
+	#if Debug
 	//printLinksOfPage(page);
+	#endif
 	struct Link *f ;
 	for(f = pl->nodes->page->links; f != NULL;f = f->next) {
 		int a = strStartsWith(f->url,"https");
@@ -114,8 +119,10 @@ void loadPages(struct PageList *pl, const char* url)
 		int h = strStartsWith(f->url,"AT&amp;T_Bell_Labs");
 		// habe Special: hinzugenommen da dieses bei der url erstellung nicht gefilter wird
 		if((a&&b&&c&&d&&e&&g&&h)){
-	//		printf("The linklist url is: %s\n",f->url);
-			//printf("%d,%d,%d,%d\n",a,b,c,d);
+		#if Debug
+			printf("The linklist url is: %s\n",f->url);
+			printf("%d,%d,%d,%d\n",a,b,c,d);
+		#endif
 			page = loadPage(f->url);
 			putPage(pl,page);
 		}

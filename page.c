@@ -223,7 +223,7 @@ struct Page *loadPage(const char* fileName)
 	struct Page *page = calloc(1, sizeof(struct Page));
 	char *tmp = strdup(fileName);
 	page->url = tmp;
-	//printf("%s is url given to function\n",page->url);
+	printf("%s is url given to function\n",page->url);
 	strcpy(path,BASE_PATH);
 	strcat(path,tmp);
 	printf("%s is our path\n",path);

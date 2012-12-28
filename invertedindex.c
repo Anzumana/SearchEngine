@@ -6,6 +6,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include "invertedindex.h"
+#define Debug 1
 
 struct InvertedIndex *createInvertedIndex(void)
 {
@@ -453,20 +454,34 @@ int numberOfTermsOccurencesInIndex(const struct InvertedIndex *idx){
 
 int main(int argc, char *argv[])
 {
+	#if Debug
+		printf("Debug statement in main\n");
+	#endif
 	struct PageList *pl;
 	pl =createPageList();
 
+	//loadPages(pl,"C_(programming_language)");
 	loadPages(pl, "a.txt");
-	//printf("test 1");
+	#if Debug
+		printf("test 1\n");
+	#endif
 
 	struct InvertedIndex *idx = createInvertedIndex();
-	//printf("test 2");
+	#if Debug
+		printf("test 2\n");
+	#endif
 	setPageList(idx, pl);
-	//printf("test 3");
+	#if Debug
+		printf("test 3\n");
+	#endif
 	printInvertedIndex(idx);
-	//printf("test 4");
-	printf("%s\n\n",idx->pageList->nodes->page->url);
-	//printf("test 5");
+	#if Debug
+		printf("test 4\n");
+	#endif
+	//printf("%s\n\n",idx->pageList->nodes->page->url);
+	#if Debug
+	printf("test 5");
+	#endif
 	//if(idx->head->entries->url == NULL){
 	//	printf("its nulss");
 	//}
