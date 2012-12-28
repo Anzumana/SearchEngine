@@ -17,8 +17,8 @@ um dies zu vermeiden sollte man immer versuchen die einzelnen funktionen unseres
 char buffer[BUFFER_SIZE+1];
 char path[PATH_SIZE+1];
 
-const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/minicorpus/";
-//const char BASE_PATH[] = "/Users/Anzumana/Dropbox/uni/Programmieren_I/blaetter/blatt6/searchengineproject/en.m.wikipedia.org/wiki/";
+const char BASE_PATH[] = "/Users/Anzumana/Dropbox/Hacking/C/SearchEngine/searchengineproject/minicorpus/";
+//const char BASE_PATH[] = "/Users/Anzumana/Dropbox/Hacking/C/SearchEngine/searchengineproject/en.m.wikipedia.org/wiki/";
 
 
 #define TYPE_TERM 1
