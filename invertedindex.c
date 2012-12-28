@@ -6,7 +6,6 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include "invertedindex.h"
-#define Debug 1
 
 struct InvertedIndex *createInvertedIndex(void)
 {
@@ -452,7 +451,7 @@ int numberOfTermsOccurencesInIndex(const struct InvertedIndex *idx){
 
 }
 
-int main(int argc, char *argv[])
+int mainX(int argc, char *argv[])
 {
 	#if Debug
 		printf("Debug statement in main\n");
