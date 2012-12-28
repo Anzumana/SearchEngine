@@ -1,5 +1,9 @@
 Project:
 We want to create a search engine that is based in c and that can process web pages (html files) store them.
 
+If u want to change the Path to make this project work on ur system u have to change 2 files
+1.page.c The external Base Path Variable to your own system
+2.the .c file with the main function in it. and in there the loadPages function from a.txt ( this is for the test corpus ) to the wiki 
+
 Wichtig zu beachten das ich bei den Strings einmal nicht wirklich den speicher loesche sodnern nur /0 setze daher funktioniert der vergleich mit null nicht da nicht null
 in dem fall lieber mit strlen()==0 return ...
