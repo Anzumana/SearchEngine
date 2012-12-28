@@ -1,0 +1,450 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Array data type - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Array data type","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Array_data_type" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Array+data+type"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Array data type</h1>			
+<div class="dablink">Not to be confused with <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">Array data structure</a>.</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, an <b>array type</b> is a <a href="Data_type" title="Data type">data type</a> that is meant to describe a collection of <i>elements</i> (<a href="http://en.m.wikipedia.org/wiki/Value_(computer_science)" title="Value (computer science)">values</a> or <a href="http://en.m.wikipedia.org/wiki/Variable_(computer_science)" title="Variable (computer science)">variables</a>), each selected by one or more indices (identifying keys) that can be computed at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a> by the program. Such a collection is usually called an <b>array variable</b>, <b>array value</b>, or simply <b>array</b>.<sup id="cite_ref-sebesta_1-0" class="reference"><a href="Array_data_type#cite_note-sebesta-1"><span>[</span>1<span>]</span></a></sup> By analogy with the mathematical concepts of <a href="http://en.m.wikipedia.org/wiki/Vector_(mathematics)" title="Vector (mathematics)" class="mw-redirect">vector</a> and <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a>, array types with one and two indices are often called <b>vector type</b> and <b>matrix type</b>, respectively.</p>
+<p>Language support for array types may include certain <a href="http://en.m.wikipedia.org/wiki/Built-in_type" title="Built-in type" class="mw-redirect">built-in</a> array data types, some syntactic constructions (<i>array type constructors</i>) that the <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">programmer</a> may use to define such types and declare array variables, and special notation for indexing array elements.<sup id="cite_ref-sebesta_1-1" class="reference"><a href="Array_data_type#cite_note-sebesta-1"><span>[</span>1<span>]</span></a></sup> For example, in the <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal programming language</a>, the declaration <code>type MyTable = array [1..4,1..2] of integer</code>, defines a new array data type called <code>MyTable</code>. The declaration <code>var A: MyTable</code> then defines a variable <code>A</code> of that type, which is an aggregate of eight elements, each being an integer variable identified by two indices. In the Pascal program, those elements are denoted <code>A[1,1]</code>, <code>A[1,2]</code>, <code>A[2,1]</code>,… <code>A[4,2]</code>.<sup id="cite_ref-pascal_2-0" class="reference"><a href="Array_data_type#cite_note-pascal-2"><span>[</span>2<span>]</span></a></sup> Special array types are often defined by the language's standard <a href="Library_(computer_science)" title="Library (computer science)" class="mw-redirect">libraries</a>.</p>
+<p>Array types are distinguished from <a href="Record_(computer_science)" title="Record (computer science)">record</a> types mainly because they allow the element indices to be computed at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a>, as in the Pascal <a href="http://en.m.wikipedia.org/wiki/Assignment_statement" title="Assignment statement" class="mw-redirect">assignment</a> <code>A[I,J] := A[N-I,2*J]</code>. Among other things, this feature allows a single iterative <a href="http://en.m.wikipedia.org/wiki/Statement_(computer_science)" title="Statement (computer science)">statement</a> to process arbitrarily many elements of an array variable.</p>
+<p>In more theoretical contexts, especially in <a href="http://en.m.wikipedia.org/wiki/Type_theory" title="Type theory">type theory</a> and in the description of abstract <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a>, the terms "array" and "array type" sometimes refer to an <a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">abstract data type</a> (ADT) also called <i>abstract array</i> or may refer to an <i><a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">associative array</a></i>, a <a href="http://en.m.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematical</a> model with the basic operations and behavior of a typical array type in most languages — basically, a collection of elements that are selected by indices computed at run-time.</p>
+<p>Depending on the language, array types may overlap (or be identified with) other data types that describe aggregates of values, such as <a href="http://en.m.wikipedia.org/wiki/List_(computing)" title="List (computing)" class="mw-redirect">lists</a> and <a href="String_(computer_science)" title="String (computer science)">strings</a>. Array types are often implemented by <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array data structures</a>, but sometimes by other means, such as <a href="http://en.m.wikipedia.org/wiki/Hash_table" title="Hash table">hash tables</a>, <a href="Linked_list" title="Linked list">linked lists</a>, or <a href="http://en.m.wikipedia.org/wiki/Search_tree" title="Search tree">search trees</a>.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Assembly languages and low-level languages like BCPL<sup id="cite_ref-3" class="reference"><a href="Array_data_type#cite_note-3"><span>[</span>3<span>]</span></a></sup> generally have no syntactic support for arrays.</p>
+<p>Because of the importance of array structures for efficient computation, the earliest high-level programming languages, including <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a> (1957), <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> (1960), and <a href="http://en.m.wikipedia.org/wiki/Algol_60" title="Algol 60" class="mw-redirect">Algol 60</a> (1960), provided support for multi-dimensional arrays.</p>
+<h2> <span class="mw-headline" id="Abstract_arrays">Abstract arrays</span>
+</h2>
+<p>An array data structure can be mathematically modeled as an <a href="http://en.m.wikipedia.org/wiki/Abstract_data_structure" title="Abstract data structure" class="mw-redirect">abstract data structure</a> (an <i>abstract array</i>) with two operations</p>
+<dl>
+<dd>
+<i>get</i>(<i>A</i>, <i>I</i>): the data stored in the element of the array <i>A</i> whose indices are the integer <a href="http://en.m.wikipedia.org/wiki/Tuple" title="Tuple">tuple</a> <i>I</i>.</dd>
+<dd>
+<i>set</i>(<i>A</i>,<i>I</i>,<i>V</i>): the array that results by setting the value of that element to <i>V</i>.</dd>
+</dl>
+<p>These operations are required to satisfy the <a href="http://en.m.wikipedia.org/wiki/Axiom" title="Axiom">axioms</a><sup id="cite_ref-4" class="reference"><a href="Array_data_type#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<dl>
+<dd>
+<i>get</i>(<i>set</i>(<i>A</i>,<i>I</i>, <i>V</i>), <i>I</i>) = <i>V</i>
+</dd>
+<dd>
+<i>get</i>(<i>set</i>(<i>A</i>,<i>I</i>, <i>V</i>), <i>J</i>) = <i>get</i>(<i>A</i>, <i>J</i>) if <i>I</i> ≠ <i>J</i>
+</dd>
+</dl>
+<p>for any array state <i>A</i>, any value <i>V</i>, and any tuples <i>I</i>, <i>J</i> for which the operations are defined.</p>
+<p>The first axiom means that each element behaves like a variable. The second axiom means that elements with distinct indices behave as <a href="http://en.m.wikipedia.org/wiki/Aliasing_(computing)" title="Aliasing (computing)">disjoint</a> variables, so that storing a value in one element does not affect the value of any other element.</p>
+<p>These axioms do not place any constraints on the set of valid index tuples <i>I</i>, therefore this abstract model can be used for <a href="http://en.m.wikipedia.org/wiki/Triangular_array" title="Triangular array">triangular matrices</a> and other oddly-shaped arrays.</p>
+<h2> <span class="mw-headline" id="Implementations">Implementations</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <small><i>(May 2009)</i></small></span></td>
+</tr></table>
+<p>In order to effectively implement variables of such types as <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array structures</a> (with indexing done by <a href="Pointer_arithmetic" title="Pointer arithmetic" class="mw-redirect">pointer arithmetic</a>), many languages restrict the indices to <a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a> data types (or other types that can be interpreted as integers, such as <a href="Byte" title="Byte">bytes</a> and <a href="Enumerated_type" title="Enumerated type">enumerated types</a>), and require that all elements have the same data type and storage size. Most of those languages also restrict each index to a finite <a href="http://en.m.wikipedia.org/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> of integers, that remains fixed throughout the lifetime of the array variable. In some <a href="Compiler" title="Compiler">compiled</a> languages, in fact, the index ranges may have to be known at <a href="http://en.m.wikipedia.org/wiki/Compile_time" title="Compile time">compile time</a>.</p>
+<p>On the other hand, some programming languages provide more liberal array types, that allow indexing by arbitrary values, such as <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating-point numbers</a>, <a href="String_(computer_science)" title="String (computer science)">strings</a>, <a href="Object-oriented_programming" title="Object-oriented programming">objects</a>, <a href="Reference_(computer_science)" title="Reference (computer science)">references</a>, etc.. Such index values cannot be restricted to an interval, much less a fixed interval. So, these languages usually allow arbitrary new elements to be created at any time. This choice precludes the implementation of array types as array data structures. That is, those languages use array-like syntax to implement a more general <a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">associative array</a> semantics, and must therefore be implemented by a <a href="http://en.m.wikipedia.org/wiki/Hash_table" title="Hash table">hash table</a> or some other <a href="http://en.m.wikipedia.org/wiki/Search_data_structure" title="Search data structure">search data structure</a>.</p>
+<h2> <span class="mw-headline" id="Language_support">Language support</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <small><i>(May 2009)</i></small></span></td>
+</tr></table>
+<h3> <span class="mw-headline" id="Multi-dimensional_arrays">Multi-dimensional arrays</span>
+</h3>
+<p>The number of indices needed to specify an element is called the <i>dimension</i>, <i>dimensionality</i>, or <a href="http://en.m.wikipedia.org/wiki/Rank_(computer_programming)" title="Rank (computer programming)">rank</a> of the array type. (This nomenclature conflicts with the concept of dimension in linear algebra,<sup id="cite_ref-5" class="reference"><a href="Array_data_type#cite_note-5"><span>[</span>5<span>]</span></a></sup> where it is the number of elements. Thus, an array of numbers with 5 rows and 4 columns, hence 20 elements, is said to have dimension 2 in computing contexts, but represents a matrix with dimension 4-by-5 or 20 in mathematics. Also, the computer science meaning of "rank" is similar to its <a href="http://en.m.wikipedia.org/wiki/Tensor_rank" title="Tensor rank" class="mw-redirect">meaning in tensor algebra</a> but not to the linear algebra concept of <a href="http://en.m.wikipedia.org/wiki/Matrix_rank" title="Matrix rank" class="mw-redirect">rank of a matrix</a>.)</p>
+<div class="floatright"><a href="http://en.m.wikipedia.org/wiki/File:Array_of_array_storage.svg" class="image" title="A two-dimensional array stored as a one-dimensional array of one-dimensional arrays (rows)."><img alt="A two-dimensional array stored as a one-dimensional array of one-dimensional arrays (rows)." src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Array_of_array_storage.svg/120px-Array_of_array_storage.svg.png" width="120" height="86" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/01/Array_of_array_storage.svg/180px-Array_of_array_storage.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/01/Array_of_array_storage.svg/240px-Array_of_array_storage.svg.png 2x"></a></div>
+<p>Many languages support only one-dimensional arrays. In those languages, a multi-dimensional array is typically represented by an <a href="http://en.m.wikipedia.org/wiki/Iliffe_vector" title="Iliffe vector">Iliffe vector</a>, a one-dimensional array of <a href="Reference_(computer_science)" title="Reference (computer science)">references</a> to arrays of one dimension less. A two-dimensional array, in particular, would be implemented as a vector of pointers to its rows. Thus an element in row <i>i</i> and column <i>j</i> of an array <i>A</i> would be accessed by double indexing (<i>A</i>[<i>i</i>][<i>j</i>] in typical notation). This way of emulating multi-dimensional arrays allows the creation of <i>ragged</i> or <i>jagged</i> arrays, where each row may have a different size — or, in general, where the valid range of each index depends on the values of all preceding indices.</p>
+<p>This representation for multi-dimensional arrays is quite prevalent in C and C++ software. However, C and C++ will use a linear indexing formula for multi-dimensional arrays that are declared as such, e.g. by <code>int A[10][20]</code> or <code>int A[m][n]</code>, instead of the traditional <code>int **A</code>.<sup id="cite_ref-6" class="reference"><a href="Array_data_type#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup class="reference" style="white-space:nowrap;">:p.81</sup></p>
+<h3> <span class="mw-headline" id="Indexing_notation">Indexing notation</span>
+</h3>
+<p>Most programming languages that support arrays support the <i>store</i> and <i>select</i> operations, and have special syntax for indexing. Early languages used parentheses, e.g. <code>A(i,j)</code>, as in FORTRAN; others choose square brackets, e.g. <code>A[i,j]</code> or <code>A[i][j]</code>, as in Algol 60 and Pascal.</p>
+<h3> <span class="mw-headline" id="Index_types">Index types</span>
+</h3>
+<p>Array data types are most often implemented as array structures: with the indices restricted to integer (or totally ordered) values, index ranges fixed at array creation time, and multilinear element addressing. This was the case in most <a href="http://en.m.wikipedia.org/wiki/Third-generation_programming_language" title="Third-generation programming language">"third generation"</a> languages, and is still the case of most <a href="http://en.m.wikipedia.org/wiki/Systems_programming_language" title="Systems programming language" class="mw-redirect">systems programming languages</a> such as <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/C_programming_language" title="C programming language" class="mw-redirect">C</a>, and <a href="C++" title="C++">C++</a>. In some languages, however, array data types have the semantics of associative arrays, with indices of arbitrary type and dynamic element creation. This is the case in some <a href="http://en.m.wikipedia.org/wiki/Scripting_languages" title="Scripting languages" class="mw-redirect">scripting languages</a> such as <a href="http://en.m.wikipedia.org/wiki/Awk_programming_language" title="Awk programming language" class="mw-redirect">Awk</a> and <a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a>, and of some array types provided by standard <a href="C++" title="C++">C++</a> libraries.</p>
+<h3> <span class="mw-headline" id="Bounds_checking">Bounds checking</span>
+</h3>
+<p>Some languages (like Pascal and Modula) perform <a href="Bounds_checking" title="Bounds checking">bounds checking</a> on every access, raising an <a href="http://en.m.wikipedia.org/wiki/Exception_(computer_science)" title="Exception (computer science)" class="mw-redirect">exception</a> or aborting the program when any index is out of its valid range. Compilers may allow these checks to be turned off to trade safety for speed. Other languages (like FORTRAN and C) trust the programmer and perform no checks. Good compilers may also analyze the program to determine the range of possible values that the index may have, and this analysis may lead to <a href="http://en.m.wikipedia.org/wiki/Bounds-checking_elimination" title="Bounds-checking elimination">bounds-checking elimination</a>.</p>
+<h3> <span class="mw-headline" id="Index_origin">Index origin</span>
+</h3>
+<p>Some languages, such as C, provide only <a href="http://en.m.wikipedia.org/wiki/Zero-based_numbering" title="Zero-based numbering">zero-based</a> array types, for which the minimum valid value for any index is 0. This choice is convenient for array implementation and address computations. With a language such as C, a pointer to the interior of any array can be defined that will symbolically act as a pseudo-array that accommodates negative indices. This works only because C does not check an index against bounds when used.</p>
+<p>Other languages provide only <i>one-based</i> array types, where each index starts at 1; this is the traditional convention in mathematics for matrices and mathematical <a href="http://en.m.wikipedia.org/wiki/Sequence" title="Sequence">sequences</a>. A few languages, such as Pascal, support <i>n-based</i> array types, whose minimum legal indices are chosen by the programmer. The relative merits of each choice have been the subject of heated debate. Neither zero-based nor one-based indexing has any natural advantage in avoiding <a href="http://en.m.wikipedia.org/wiki/Off-by-one_error" title="Off-by-one error">off-by-one</a> or <a href="http://en.m.wikipedia.org/wiki/Fencepost_error" title="Fencepost error" class="mw-redirect">fencepost errors</a>.</p>
+<p>See <a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(array)" title="Comparison of programming languages (array)">comparison of programming languages (array)</a> for the base indices used by various languages.</p>
+<p>The 0-based/1-based debate is not limited to just programming languages. For example, the elevator button for the ground-floor of a building is labeled "0" in <a href="http://en.m.wikipedia.org/wiki/France" title="France">France</a> and many other countries, but "1" in the USA.</p>
+<h3> <span class="mw-headline" id="Highest_index">Highest index</span>
+</h3>
+<p>The relation between numbers appearing in an array declaration and the index of that array's last element also varies by language. In many languages (such as C), one should specify the number of elements contained in the array; whereas in others (such as Pascal and <a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a>) one should specify the numeric value of the index of the last element. Needless to say, this distinction is immaterial in languages where the indices start at 1.</p>
+<h3> <span class="mw-headline" id="Array_algebra">Array algebra</span>
+</h3>
+<p>Some programming languages (including <a href="http://en.m.wikipedia.org/wiki/APL_programming_language" title="APL programming language" class="mw-redirect">APL</a>, <a href="http://en.m.wikipedia.org/wiki/Matlab" title="Matlab" class="mw-redirect">Matlab</a>, and newer versions of <a href="Fortran" title="Fortran">Fortran</a>) directly support <a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">array programming</a>, where operations and functions defined for certain data types are implicitly extended to arrays of elements of those types. Thus one can write <i>A</i>+<i>B</i> to add corresponding elements of two arrays <i>A</i> and <i>B</i>. The multiplication operation may be merely distributed over corresponding elements of the operands (APL) or may be interpreted as the <a href="http://en.m.wikipedia.org/wiki/Matrix_product" title="Matrix product" class="mw-redirect">matrix product</a> of <a href="Linear_algebra" title="Linear algebra">linear algebra</a> (Matlab).</p>
+<h3> <span class="mw-headline" id="String_types_and_arrays">String types and arrays</span>
+</h3>
+<p>Many languages provide a built-in <a href="String_(computer_science)" title="String (computer science)">string</a> data type, with specialized notation ("string literals") to build values of that type. In some languages (such as C), a string is just an array of characters, or is handled in much the same way. Other languages, like <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a>, may provide vastly different operations for strings and arrays.</p>
+<h3> <span class="mw-headline" id="Array_index_range_queries">Array index range queries</span>
+</h3>
+<p>Some programming languages provide operations that return the size (number of elements) of a vector, or, more generally, range of each index of an array. In <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a> arrays do not support the <i>size</i> function, so programmers often have to declare separate variable to hold the size, and pass it to procedures as a separate parameter.</p>
+<p>Elements of a newly created array may have undefined values (as in C), or may be defined to have a specific "default" value such as 0 or a null pointer (as in Java).</p>
+<p>In <a href="C++" title="C++">C++</a> a std::vector object supports the <i>store</i>, <i>select</i>, and <i>append</i> operations with the performance characteristics discussed above. Vectors can be queried for their size and can be resized. Slower operations like inserting an element in the middle are also supported.</p>
+<h3> <span class="mw-headline" id="Slicing">Slicing</span>
+</h3>
+<p>An <a href="http://en.m.wikipedia.org/wiki/Array_slicing" title="Array slicing">array slicing</a> operation takes a subset of the elements of an array-typed entity (value or variable) and then assembles them as another array-typed entity, possibly with other indices. If array types are implemented as array structures, many useful slicing operations (such as selecting a sub-array, swapping indices, or reversing the direction of the indices) can be performed very efficiently by manipulating the <a href="http://en.m.wikipedia.org/wiki/Dope_vector" title="Dope vector">dope vector</a> of the structure. The possible slicings depend on the implementation details: for example, FORTRAN allows slicing off one column of a matrix variable, but not a row, and treat it as a vector; whereas C allow slicing off a row from a matrix, but not a column.</p>
+<p>On the other hand, other slicing operations are possible when array types are implemented in other ways.</p>
+<h3> <span class="mw-headline" id="Resizing">Resizing</span>
+</h3>
+<p>Some languages allow <i><a href="http://en.m.wikipedia.org/wiki/Dynamic_array" title="Dynamic array">dynamic arrays</a></i> (also called <i>resizable</i>, <i>growable</i>, or <i>extensible</i>): array variables whose index ranges may be expanded at any time after creation, without changing the values of its current elements.</p>
+<p>For one-dimensional arrays, this facility may be provided as an operation "<code>append</code>(<i>A</i>,<i>x</i>)" that increases the size of the array <i>A</i> by one and then sets the value of the last element to <i>x</i>. Other array types (such as Pascal strings) provide a concatenation operator, which can be used together with slicing to achieve that effect and more. In some languages, assigning a value to an element of an array automatically extends the array, if necessary, to include that element. In other array types, a slice can be replaced by an array of different size" with subsequent elements being renumbered accordingly — as in Python's list assignment "<i>A</i>[5:5] = [10,20,30]", that inserts three new elements (10,20, and 30) before element "<i>A</i>[5]". Resizable arrays are conceptually similar to <a href="http://en.m.wikipedia.org/wiki/List_(computer_science)" title="List (computer science)" class="mw-redirect">lists</a>, and the two concepts are synonymous in some languages.</p>
+<p>An extensible array can be implemented as a fixed-size array, with a counter that records how many elements are actually in use. The <code>append</code> operation merely increments the counter; until the whole array is used, when the <code>append</code> operation may be defined to fail. This is an implementation of a <a href="http://en.m.wikipedia.org/wiki/Dynamic_array" title="Dynamic array">dynamic array</a> with a fixed capacity, as in the <tt>string</tt> type of Pascal. Alternatively, the <code>append</code> operation may re-allocate the underlying array with a larger size, and copy the old elements to the new area.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/37px-Wiktionary-logo-en.svg.png" width="37" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Look up <i><b><a href="http://en.wiktionary.org/wiki/array" class="extiw" title="wiktionary:array">array</a></b></i> in Wiktionary, the free dictionary.</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Data_Structures/Arrays" class="extiw" title="wikibooks:Data Structures/Arrays">Data Structures/Arrays</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_access_analysis" title="Array access analysis">Array access analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_slicing" title="Array slicing">Array slicing</a></li>
+<li>
+<a href="Bounds_checking" title="Bounds checking">Bounds checking</a> and <a href="http://en.m.wikipedia.org/wiki/Index_checking" title="Index checking" class="mw-redirect">index checking</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bounds_checking_elimination" title="Bounds checking elimination" class="mw-redirect">Bounds checking elimination</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Delimiter-separated_values" title="Delimiter-separated values">Delimiter-separated values</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(array)" title="Comparison of programming languages (array)">Comparison of programming languages (array)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parallel_array" title="Parallel array">Parallel array</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Related_types">Related types</span>
+</h3>
+<ul>
+<li><a href="Variable-length_array" title="Variable-length array">Variable-length array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_array" title="Dynamic array">Dynamic array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sparse_array" title="Sparse array">Sparse array</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-sebesta-1">
+<span class="mw-cite-backlink">^ <a href="Array_data_type#cite_ref-sebesta_1-0"><sup><i><b>a</b></i></sup></a> <a href="Array_data_type#cite_ref-sebesta_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Robert W. Sebesta (2001) Concepts of Programming Languages. Addison-Wesley. 4th edition (1998), 5th edition (2001), <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0201385961" class="internal mw-magiclink-isbn">ISBN 0-201-38596-1</a> ISBN13: 9780201385960</span>
+</li>
+<li id="cite_note-pascal-2">
+<span class="mw-cite-backlink"><b><a href="Array_data_type#cite_ref-pascal_2-0">^</a></b></span> <span class="reference-text">K. Jensen and Niklaus Wirth, PASCAL User Manual and Report. Springer. Paperback edition (2007) 184 pages, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/354006950X" class="internal mw-magiclink-isbn">ISBN 3-540-06950-X</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9783540069508" class="internal mw-magiclink-isbn">ISBN 978-3540069508</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Array_data_type#cite_ref-3">^</a></b></span> <span class="reference-text">John Mitchell, Concepts of Programming Languages. Cambridge University Press.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Array_data_type#cite_ref-4">^</a></b></span> <span class="reference-text">Lukham, Suzuki (1979), "Verification of array, record, and pointer operations in Pascal". <i>ACM Transactions on Programming Languages and Systems</i> <b>1(2)</b>, 226–244.</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Array_data_type#cite_ref-5">^</a></b></span> <span class="reference-text">see the <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)#Definition" title="Matrix (mathematics)">definition of a matrix</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Array_data_type#cite_ref-6">^</a></b></span> <span class="reference-text">Brian W. Kernighan and Dennis M. Ritchie (1988), <i>The C programming Language</i>. Prentice-Hall, 205 pages.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Array_data_structure" class="extiw" title="commons:Category:Array data structure">Array data structure</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.nist.gov/dads/HTML/array.html">NIST's Dictionary of Algorithms and Data Structures: Array</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Data_types" title="Template:Data types"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Data_types" title="Template talk:Data types"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Data_types&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Data_type" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Uninterpreted</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Bit" title="Bit">Bit</a></li>
+<li><a href="Byte" title="Byte">Byte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Numeric</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Signedness" title="Signedness">signedness</a></li>
+</ul>
+</li>
+<li><a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">Floating-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rational_data_type" title="Rational data type">Rational</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Bignum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interval_arithmetic" title="Interval arithmetic">Interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">Text</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li>
+<a href="String_(computer_science)" title="String (computer science)">String</a>
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">null-terminated</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">Address</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li>
+</ul>
+</li>
+<li><a href="Reference_(computer_science)" title="Reference (computer science)">Reference</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Composite_data_type" title="Composite data type">Composite</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li>
+</ul>
+</li>
+<li><strong class="selflink">Array</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">Associative array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_(computing)" title="List (computing)" class="mw-redirect">List</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaobject" title="Metaobject">Metaobject</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="Record_(computer_science)" title="Record (computer science)">Record</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Set_(computer_science)" title="Set (computer science)" class="mw-redirect">Set</a></li>
+<li>
+<a href="Union_(computer_science)" title="Union (computer science)">Union</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">Collection</a></li>
+<li><a href="Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphore</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_type" title="Top type">Top type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><a href="Void_type" title="Void type">Void</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">Protocol</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Interface_(computing)#Software_interfaces_in_object-oriented_languages" title="Interface (computing)">Interface</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaclass" title="Metaclass">Metaclass</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 31 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2" lang="bg" hreflang="bg">български</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Vector_(programaci%C3%B3)" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Pole_(datov%C3%A1_struktura)" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Feld_(Datentyp)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Vector_(inform%C3%A1tica)" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Aro_(komputiko)" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A2%D8%B1%D8%A7%DB%8C%D9%87_(%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D9%87)" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B0%B0%EC%97%B4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Larik" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://is.m.wikipedia.org/wiki/Fylki_(t%C3%B6lvunarfr%C3%A6%C3%B0i)" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Array" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%A2%D7%A8%D7%9A_(%D7%9E%D7%91%D7%A0%D7%94_%D7%A0%D7%AA%D7%95%D7%A0%D7%99%D7%9D)" lang="he" hreflang="he">עברית</a></li><li><a href="http://hu.m.wikipedia.org/wiki/T%C3%B6mb" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Array" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E9%85%8D%E5%88%97" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Tabell_(datastruktur)" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Tablica" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Array" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Array" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Pole_(%C3%BAdajov%C3%A1_%C5%A1trukt%C3%BAra)" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Tabela_(ra%C4%8Dunalni%C5%A1tvo)" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9D%D0%B8%D0%B7_(%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BF%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D0%BA%D0%B0)" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Taulukko_(tietorakenne)" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Array" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%85%E0%AE%A3%E0%AE%BF_(%E0%AE%95%E0%AE%A3%E0%AE%BF%E0%AE%A9%E0%AE%BF%E0%AE%AF%E0%AE%BF%E0%AE%AF%E0%AE%B2%E0%AF%8D)" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Dizi_(bilgisayar_bilimleri)" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_(%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%B4%D0%B0%D0%BD%D0%B8%D1%85)" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/M%E1%BA%A3ng_(tin_h%E1%BB%8Dc)" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%95%B0%E7%BB%84" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Array_data_type&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Array_data_type&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Array+data+type&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

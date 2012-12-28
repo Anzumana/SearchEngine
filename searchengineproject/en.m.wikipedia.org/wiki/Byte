@@ -1,0 +1,660 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Byte - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Byte","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Byte" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Byte"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Byte</h1>			
+<div class="dablink">Not to be confused with <a href="http://en.m.wikipedia.org/wiki/Bite" title="Bite">Bite</a> or <a href="http://en.m.wikipedia.org/wiki/Bight_(disambiguation)" title="Bight (disambiguation)" class="mw-redirect">Bight (disambiguation)</a>.</div>
+<div class="dablink">This article is about the information storage unit.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/Byte_(disambiguation)" title="Byte (disambiguation)">Byte (disambiguation)</a>.</div>
+<p>The <b>byte</b> (<span class="nowrap"><span title="pronunciation:"><img alt="play" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'b' in 'buy'" style="border-bottom:1px dotted">b</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/aɪ/ long 'i' in 'bide'" style="border-bottom:1px dotted">aɪ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'t' in 'tie'" style="border-bottom:1px dotted">t</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span></span>) is a <a href="http://en.m.wikipedia.org/wiki/Units_of_information" title="Units of information">unit of digital information</a> in <a href="Computing" title="Computing">computing</a> and <a href="http://en.m.wikipedia.org/wiki/Telecommunications" title="Telecommunications" class="mw-redirect">telecommunications</a> that most commonly consists of eight <a href="Bit" title="Bit">bits</a>. Historically, a byte was the number of bits used to encode a single <a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">character</a> of text in a computer<sup id="cite_ref-Bemer1962_1-0" class="reference"><a href="Byte#cite_note-Bemer1962-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="Byte#cite_note-2"><span>[</span>2<span>]</span></a></sup> and for this reason it is the basic <a href="http://en.m.wikipedia.org/wiki/Address_space" title="Address space">addressable</a> element in many <a href="Computer_architecture" title="Computer architecture">computer architectures</a>. The size of the byte has historically been hardware dependent and no definitive standards existed that mandated the size. The <a href="http://en.m.wikipedia.org/wiki/De_facto_standard" title="De facto standard"><i>de facto</i> standard</a> of eight bits is a convenient <a href="http://en.m.wikipedia.org/wiki/Power_of_two" title="Power of two">power of two</a> permitting the values 0 through 255 for one byte. With ISO/IEC 80000-13, this common meaning was codified in a formal standard. Many types of applications use variables representable in eight or fewer bits, and processor designers optimize for this common usage. The popularity of major commercial computing architectures have aided in the ubiquitous acceptance of the 8-bit size.<sup id="cite_ref-3" class="reference"><a href="Byte#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The term <a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octet</a> was defined to explicitly denote a sequence of 8 bits because of the ambiguity associated at the time with the term byte.<sup id="cite_ref-4" class="reference"><a href="Byte#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The term <i>byte</i> was coined by <a href="http://en.m.wikipedia.org/wiki/Werner_Buchholz" title="Werner Buchholz">Werner Buchholz</a> in July 1956, during the early design phase for the <a href="http://en.m.wikipedia.org/wiki/IBM_7030" title="IBM 7030" class="mw-redirect">IBM Stretch</a> computer.<sup id="cite_ref-5" class="reference"><a href="Byte#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="Byte#cite_note-6"><span>[</span>6<span>]</span></a></sup> It is a deliberate respelling of <i>bite</i> to avoid accidental mutation to <i>bit</i>.<sup id="cite_ref-Bemer1962_1-1" class="reference"><a href="Byte#cite_note-Bemer1962-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Early computers used a variety of 4-bit <a href="http://en.m.wikipedia.org/wiki/Binary_coded_decimal" title="Binary coded decimal" class="mw-redirect">binary coded decimal</a> (BCD) representations and the <a href="http://en.m.wikipedia.org/wiki/Sixbit" title="Sixbit" class="mw-redirect">6-bit</a> codes for printable graphic patterns common in the <a href="http://en.m.wikipedia.org/wiki/U.S._Army" title="U.S. Army" class="mw-redirect">U.S. Army</a> (<a href="http://en.m.wikipedia.org/wiki/Fieldata" title="Fieldata">Fieldata</a>) and Navy. These representations included alphanumeric characters and special graphical symbols. These sets were expanded in 1963 to 7 bits of coding, called the <a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">American Standard Code for Information Interchange</a> (ASCII) as the <a href="http://en.m.wikipedia.org/wiki/Federal_Information_Processing_Standard" title="Federal Information Processing Standard">Federal Information Processing Standard</a> which replaced the incompatible teleprinter codes in use by different branches of the U.S. government. ASCII included the distinction of upper and lower case alphabets and a set of <a href="http://en.m.wikipedia.org/wiki/Control_character" title="Control character">control characters</a> to facilitate the transmission of written language as well as printing device functions, such as page advance and line feed, and the physical or logical control of data flow over the transmission media. During the early 1960s, while also active in ASCII standardization, IBM simultaneously introduced in its product line of <a href="http://en.m.wikipedia.org/wiki/System/360" title="System/360" class="mw-redirect">System/360</a> the 8-bit <a href="http://en.m.wikipedia.org/wiki/Extended_Binary_Coded_Decimal_Interchange_Code" title="Extended Binary Coded Decimal Interchange Code" class="mw-redirect">Extended Binary Coded Decimal Interchange Code</a> (EBCDIC), an expansion of their <a href="http://en.m.wikipedia.org/wiki/BCD_(6-bit)" title="BCD (6-bit)">6-bit binary-coded decimal (BCDIC)</a> representation used in earlier card punches.<sup id="cite_ref-ibmebcdic_7-0" class="reference"><a href="Byte#cite_note-ibmebcdic-7"><span>[</span>7<span>]</span></a></sup> The prominence of the System/360 led to the ubiquitous adoption of the 8-bit storage size, while in detail the EBCDIC and ASCII encoding schemes are different.</p>
+<p>In the early 1960s, AT&amp;T introduced <a href="http://en.m.wikipedia.org/wiki/Digital_telephony" title="Digital telephony">digital telephony</a> first on long-distance <a href="http://en.m.wikipedia.org/wiki/Trunk_line" title="Trunk line" class="mw-redirect">trunk lines</a>. These used the 8-bit <a href="http://en.m.wikipedia.org/wiki/%CE%9C-law_algorithm" title="Μ-law algorithm">µ-law encoding</a>. This large investment promised to reduce transmission costs for 8-bit data. The use of 8-bit codes for digital telephony also caused 8-bit data octets to be adopted as the basic data unit of the early <a href="http://en.m.wikipedia.org/wiki/Internet" title="Internet">Internet</a>.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2011">citation needed</span></a></i>]</sup></p>
+<p>The development of <a href="http://en.m.wikipedia.org/wiki/8-bit" title="8-bit">8-bit</a> <a href="http://en.m.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessors</a> in the 1970s popularized this storage size. Microprocessors such as the <a href="http://en.m.wikipedia.org/wiki/Intel_8008" title="Intel 8008">Intel 8008</a>, the direct predecessor of the <a href="http://en.m.wikipedia.org/wiki/Intel_8080" title="Intel 8080">8080</a> and the <a href="http://en.m.wikipedia.org/wiki/Intel_8086" title="Intel 8086">8086</a>, used in early personal computers, could also perform a small number of operations on <a href="http://en.m.wikipedia.org/wiki/4bit" title="4bit" class="mw-redirect">four bits</a>, such as the DAA (Decimal Add Adjust) instruction, and the <a href="http://en.m.wikipedia.org/wiki/Auxiliary_flag" title="Auxiliary flag" class="mw-redirect">auxiliary carry</a> (AC/NA) flag, which were used to implement decimal arithmetic routines. These four-bit quantities are sometimes called <a href="http://en.m.wikipedia.org/wiki/Nibble" title="Nibble">nibbles</a>, and correspond to <a href="http://en.m.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> digits.</p>
+<p>The term <a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octet</a> is used to unambiguously specify a size of eight bits, and is used extensively in <a href="http://en.m.wikipedia.org/wiki/Protocol_(computing)" title="Protocol (computing)" class="mw-redirect">protocol</a> definitions, for example.</p>
+<h2> <span class="mw-headline" id="Unit_symbol">Unit symbol</span>
+</h2>
+<table class="infobox" style="padding: 0; text-align: center; width: 0">
+<tr>
+<th colspan="2" style="background:#ccf;">Prefixes for multiples of<br><a href="Bit" title="Bit">bits</a> (b) or <strong class="selflink">bytes</strong> (B)</th>
+</tr>
+<tr>
+<td>
+<table style="border: 1px #aaa solid">
+<tr>
+<th colspan="3" style="background:#edf; text-align: center">Decimal</th>
+</tr>
+<tr>
+<th style="background:#edf; text-align: center">Value</th>
+<th colspan="2" style="background:#edf; text-align: center"><a href="http://en.m.wikipedia.org/wiki/Metric_prefix" title="Metric prefix">Metric</a></th>
+</tr>
+<tr>
+<td>1000</td>
+<td>k</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Kilo-" title="Kilo-">kilo</a></td>
+</tr>
+<tr>
+<td>1000<sup>2</sup>
+</td>
+<td>M</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Mega-" title="Mega-">mega</a></td>
+</tr>
+<tr>
+<td>1000<sup>3</sup>
+</td>
+<td>G</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Giga-" title="Giga-">giga</a></td>
+</tr>
+<tr>
+<td>1000<sup>4</sup>
+</td>
+<td>T</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Tera-" title="Tera-">tera</a></td>
+</tr>
+<tr>
+<td>1000<sup>5</sup>
+</td>
+<td>P</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Peta-" title="Peta-">peta</a></td>
+</tr>
+<tr>
+<td>1000<sup>6</sup>
+</td>
+<td>E</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Exa-" title="Exa-">exa</a></td>
+</tr>
+<tr>
+<td>1000<sup>7</sup>
+</td>
+<td>Z</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Zetta-" title="Zetta-">zetta</a></td>
+</tr>
+<tr>
+<td>1000<sup>8</sup>
+</td>
+<td>Y</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Yotta-" title="Yotta-">yotta</a></td>
+</tr>
+</table>
+</td>
+<td>
+<table style="border: 1px #aaa solid">
+<tr>
+<th colspan="5" style="background:#edf; text-align: center"><a href="http://en.m.wikipedia.org/wiki/Binary_prefix" title="Binary prefix">Binary</a></th>
+</tr>
+<tr>
+<th style="background:#edf;">Value</th>
+<th colspan="2" style="background:#edf; text-align: center"><a href="http://en.m.wikipedia.org/wiki/JEDEC_memory_standards" title="JEDEC memory standards">JEDEC</a></th>
+<th colspan="2" style="background:#edf; text-align: center"><a href="http://en.m.wikipedia.org/wiki/IEC_60027" title="IEC 60027">IEC</a></th>
+</tr>
+<tr>
+<td>1024</td>
+<td>K</td>
+<td>kilo</td>
+<td>Ki</td>
+<td>kibi</td>
+</tr>
+<tr>
+<td>1024<sup>2</sup>
+</td>
+<td>M</td>
+<td>mega</td>
+<td>Mi</td>
+<td>mebi</td>
+</tr>
+<tr>
+<td>1024<sup>3</sup>
+</td>
+<td>G</td>
+<td>giga</td>
+<td>Gi</td>
+<td>gibi</td>
+</tr>
+<tr>
+<td>1024<sup>4</sup>
+</td>
+<td></td>
+<td></td>
+<td>Ti</td>
+<td>tebi</td>
+</tr>
+<tr>
+<td>1024<sup>5</sup>
+</td>
+<td></td>
+<td></td>
+<td>Pi</td>
+<td>pebi</td>
+</tr>
+<tr>
+<td>1024<sup>6</sup>
+</td>
+<td></td>
+<td></td>
+<td>Ei</td>
+<td>exbi</td>
+</tr>
+<tr>
+<td>1024<sup>7</sup>
+</td>
+<td></td>
+<td></td>
+<td>Zi</td>
+<td>zebi</td>
+</tr>
+<tr>
+<td>1024<sup>8</sup>
+</td>
+<td></td>
+<td></td>
+<td>Yi</td>
+<td>yobi</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<p>The unit symbol for the byte is specified in IEC80000-13, <a href="http://en.m.wikipedia.org/wiki/IEEE_1541" title="IEEE 1541" class="mw-redirect">IEEE 1541</a> and the Metric Interchange Format<sup id="cite_ref-8" class="reference"><a href="Byte#cite_note-8"><span>[</span>8<span>]</span></a></sup> as the upper-case character <i>B</i>.</p>
+<p>In the <a href="http://en.m.wikipedia.org/wiki/International_System_of_Units" title="International System of Units">International System of Units</a> (SI), B is the symbol of the <a href="http://en.m.wikipedia.org/wiki/Decibel" title="Decibel">bel</a>, a unit of logarithmic power ratios named after <a href="http://en.m.wikipedia.org/wiki/Alexander_Graham_Bell" title="Alexander Graham Bell">Alexander Graham Bell</a>. The usage of B for byte therefore conflicts with this definition. It is also not consistent with the SI convention that only units named after persons should be capitalized. However, there is little danger of confusion because the bel is a rarely used unit. It is used primarily in its decadic fraction, the <a href="http://en.m.wikipedia.org/wiki/Decibel" title="Decibel">decibel</a> (dB), for <a href="http://en.m.wikipedia.org/wiki/Signal_strength" title="Signal strength">signal strength</a> and <a href="http://en.m.wikipedia.org/wiki/Sound_pressure_level" title="Sound pressure level" class="mw-redirect">sound pressure level</a> measurements, while a unit for one tenth of a byte, i.e. the decibyte, is never used.</p>
+<p>The unit symbol kB is commonly used for <a href="http://en.m.wikipedia.org/wiki/Kilobyte" title="Kilobyte">kilobyte</a>, but may be confused with the common meaning of kb for <a href="http://en.m.wikipedia.org/wiki/Kilobit" title="Kilobit">kilobit</a>. IEEE 1541 specifies the lower case character b as the symbol for <a href="Bit" title="Bit">bit</a>; however, the IEC 60027 and Metric-Interchange-Format specify bit (e.g., Mbit for megabit) for the symbol, a sufficient disambiguation from byte.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2011">citation needed</span></a></i>]</sup></p>
+<p>The lowercase letter o for <a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octet</a> is defined as the symbol for octet in IEC 80000-13<sup id="cite_ref-9" class="reference"><a href="Byte#cite_note-9"><span>[</span>note 1<span>]</span></a></sup> and is commonly used in several non-English languages (e.g., <a href="http://en.m.wikipedia.org/wiki/French_language" title="French language">French</a><sup id="cite_ref-10" class="reference"><a href="Byte#cite_note-10"><span>[</span>9<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/Romanian_language" title="Romanian language">Romanian</a>), and is also used with metric prefixes (for example, <i>ko</i> and <i>Mo</i>)</p>
+<p>Today the harmonized <a href="http://en.m.wikipedia.org/wiki/ISO" title="ISO" class="mw-redirect">ISO</a>/IEC <a href="http://en.m.wikipedia.org/wiki/ISO/IEC_80000" title="ISO/IEC 80000">80000-13:2008 – Quantities and units — Part 13: Information science and technology</a> standard cancels and replaces subclauses 3.8 and 3.9 of IEC 60027-2:2005, namely those related to Information theory and Prefixes for binary multiples.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2011">citation needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="Unit_multiples">Unit multiples</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:177px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Binaryvdecimal.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Binaryvdecimal.svg/175px-Binaryvdecimal.svg.png" width="175" height="135" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Binaryvdecimal.svg/263px-Binaryvdecimal.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Binaryvdecimal.svg/350px-Binaryvdecimal.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Percentage difference between decimal and binary interpretations of the unit prefixes grows with increasing storage size.</div>
+</div>
+</div>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Binary_prefix" title="Binary prefix">Binary prefix</a>
+</div>
+<p>Considerable confusion exists about the meanings of the <a href="http://en.m.wikipedia.org/wiki/SI_prefix" title="SI prefix" class="mw-redirect">SI (or metric) prefixes</a> used with the unit byte, especially concerning prefixes such as kilo (k or K) and mega (M) as shown in the chart <i>Prefixes for bit and byte</i>. Computer memory is designed with binary logic, multiples are expressed in <a href="http://en.m.wikipedia.org/wiki/Power_of_two" title="Power of two">powers of 2</a>. The software and computer industries often use binary <a href="http://en.m.wikipedia.org/wiki/Approximation" title="Approximation">approximations</a> of the SI-prefixed quantities, while producers of computer storage devices prefer the SI values. This is the reason for specifying computer hard drive capacities of, say, 100 GB, when it contains 93 GiB of storage space.</p>
+<p>While the numerical difference between the decimal and binary interpretations is relatively small for the prefixes <a href="http://en.m.wikipedia.org/wiki/Kilo-" title="Kilo-">kilo</a> and <a href="http://en.m.wikipedia.org/wiki/Mega-" title="Mega-">mega</a>, it grows to over 20% for prefix <a href="http://en.m.wikipedia.org/wiki/Yotta" title="Yotta" class="mw-redirect">yotta</a>, illustrated in the linear-log graph (at right) of difference versus storage size.</p>
+<h2> <span class="mw-headline" id="Common_uses">Common uses</span>
+</h2>
+<p>The byte is also defined as a <a href="Data_type" title="Data type">data type</a> in certain <a href="Programming_language" title="Programming language">programming languages</a>. The <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a> programming languages, for example, define <i>byte</i> as an "<i>addressable unit of data storage large enough to hold any member of the basic character set of the execution environment</i>" (clause 3.6 of the C standard). The C standard requires that the <code>char</code> integral data type is capable of holding at least 256 different values, and is represented by at least 8 bits (clause 5.2.4.2.1). Various implementations of C and C++ reserve 8, 9, 16, 32, or 36 bits for the storage of a byte.<sup id="cite_ref-11" class="reference"><a href="Byte#cite_note-11"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="Byte#cite_note-12"><span>[</span>11<span>]</span></a></sup> The actual number of bits in a particular implementation is documented as <code>CHAR_BIT</code> as implemented in the <code><a href="http://en.m.wikipedia.org/wiki/Limits.h" title="Limits.h" class="mw-redirect">limits.h</a></code> file. <a href="Java_(programming_language)" title="Java (programming language)">Java's</a> primitive <code>byte</code> data type is always defined as consisting of 8 bits and being a signed data type, holding values from −128 to 127. The C# programming language, along with other .NET-languages, has both the unsigned byte (named <code>byte</code>) and the signed byte (named <code>sbyte</code>), holding values from 0 to 255 and -128 to 127, respectively.</p>
+<p>In data transmission systems a byte is defined as a contiguous sequence of binary bits in a serial data stream, such as in modem or satellite communications, which is the smallest meaningful unit of data. These bytes might include start bits, stop bits, or <a href="http://en.m.wikipedia.org/wiki/Parity_bit" title="Parity bit">parity bits</a>, and thus could vary from 7 to 12 bits to contain a single 7-bit ASCII code.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2011">citation needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<ol class="references">
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-9">^</a></b></span> <span class="reference-text"><i>"The symbol B for byte is not international and should not be confused with the symbol B for bel."</i></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_hierarchy" title="Data hierarchy">Data hierarchy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Byte&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(June 2011)</i></small> </span></td>
+</tr></table>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Bemer1962-1">
+<span class="mw-cite-backlink">^ <a href="Byte#cite_ref-Bemer1962_1-0"><sup><i><b>a</b></i></sup></a> <a href="Byte#cite_ref-Bemer1962_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation" id="CITEREFBemerBuchholz1962">Bemer, RW; Buchholz, Werner (1962), <a rel="nofollow" class="external text" href="http://archive.computerhistory.org/resources/text/IBM/Stretch/pdfs/Buchholz_102636426.pdf">"4, Natural Data Units"</a>, in Buchholz, Werner (PDF), <i>Planning a Computer System – Project Stretch</i>, pp. 39-40<span class="printonly">, <a rel="nofollow" class="external free" href="http://archive.computerhistory.org/resources/text/IBM/Stretch/pdfs/Buchholz_102636426.pdf">http://archive.computerhistory.org/resources/text/IBM/Stretch/pdfs/Buchholz_102636426.pdf</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=4%2C+Natural+Data+Units&amp;rft.atitle=Planning+a+Computer+System+%E2%80%93+Project+Stretch&amp;rft.aulast=Bemer&amp;rft.aufirst=RW&amp;rft.au=Bemer%2C%26%2332%3BRW&amp;rft.au=Buchholz%2C%26%2332%3BWerner&amp;rft.date=1962&amp;rft.pages=pp.%26nbsp%3B39-40&amp;rft_id=http%3A%2F%2Farchive.computerhistory.org%2Fresources%2Ftext%2FIBM%2FStretch%2Fpdfs%2FBuchholz_102636426.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFBemer1959">Bemer, RW (1959), "A proposal for a generalized card code of 256 characters", <i>Communications of the ACM</i> <b>2</b> (9): 19–23</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=A+proposal+for+a+generalized+card+code+of+256+characters&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=Bemer&amp;rft.aufirst=RW&amp;rft.au=Bemer%2C%26%2332%3BRW&amp;rft.date=1959&amp;rft.volume=2&amp;rft.issue=9&amp;rft.pages=19%E2%80%9323&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.computerhistory.org/internet_history/#1964">"Computer History Museum - Exhibits - Internet History - 1964"</a>. Computer History Museum<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.computerhistory.org/internet_history/#1964">http://www.computerhistory.org/internet_history/#1964</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Computer+History+Museum+-+Exhibits+-+Internet+History+-+1964&amp;rft.atitle=&amp;rft.pub=Computer+History+Museum&amp;rft_id=http%3A%2F%2Fwww.computerhistory.org%2Finternet_history%2F%231964&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.tcpipguide.com/free/t_BinaryInformationandRepresentationBitsBytesNibbles-3.htm">"The TCP/IP Guide - Binary Information and Representation"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.tcpipguide.com/free/t_BinaryInformationandRepresentationBitsBytesNibbles-3.htm">http://www.tcpipguide.com/free/t_BinaryInformationandRepresentationBitsBytesNibbles-3.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+TCP%2FIP+Guide+-+Binary+Information+and+Representation&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.tcpipguide.com%2Ffree%2Ft_BinaryInformationandRepresentationBitsBytesNibbles-3.htm&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web">Werner Buchholz (July 1956). <a rel="nofollow" class="external text" href="http://archive.computerhistory.org/resources/text/IBM/Stretch/102636400.txt">"Timeline of the IBM Stretch/Harvest era (1956–1961)"</a>. Computer History<span class="printonly">. <a rel="nofollow" class="external free" href="http://archive.computerhistory.org/resources/text/IBM/Stretch/102636400.txt">http://archive.computerhistory.org/resources/text/IBM/Stretch/102636400.txt</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Timeline+of+the+IBM+Stretch%2FHarvest+era+%281956%E2%80%931961%29&amp;rft.atitle=&amp;rft.aulast=Werner+Buchholz&amp;rft.au=Werner+Buchholz&amp;rft.date=July+1956&amp;rft.pub=Computer+History&amp;rft_id=http%3A%2F%2Farchive.computerhistory.org%2Fresources%2Ftext%2FIBM%2FStretch%2F102636400.txt&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://catb.org/~esr/jargon/html/B/byte.html">"byte definition"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://catb.org/~esr/jargon/html/B/byte.html">http://catb.org/~esr/jargon/html/B/byte.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=byte+definition&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fcatb.org%2F%7Eesr%2Fjargon%2Fhtml%2FB%2Fbyte.html&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-ibmebcdic-7">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-ibmebcdic_7-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/infocenter/zos/v1r9/index.jsp?topic=/com.ibm.zos.r9.adms700/adms7a05158.htm">"IBM confirms the use of EBCDIC in their mainframes as a default practice"</a>. IBM. 2008<span class="printonly">. <a rel="nofollow" class="external free" href="http://publib.boulder.ibm.com/infocenter/zos/v1r9/index.jsp?topic=/com.ibm.zos.r9.adms700/adms7a05158.htm">http://publib.boulder.ibm.com/infocenter/zos/v1r9/index.jsp?topic=/com.ibm.zos.r9.adms700/adms7a05158.htm</a></span><span class="reference-accessdate">. Retrieved 2008-06-16</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=IBM+confirms+the+use+of+EBCDIC+in+their+mainframes+as+a+default+practice&amp;rft.atitle=&amp;rft.date=2008&amp;rft.pub=IBM&amp;rft_id=http%3A%2F%2Fpublib.boulder.ibm.com%2Finfocenter%2Fzos%2Fv1r9%2Findex.jsp%3Ftopic%3D%2Fcom.ibm.zos.r9.adms700%2Fadms7a05158.htm&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://people.csail.mit.edu/jaffer/MIXF">Metric-Interchange-Format</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.iec.ch/zone/si/si_bytes.htm">"When is a kilobyte a kibibyte? And an MB an MiB?"</a>. <i>The International System of Units and the IEC</i>. <a href="http://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission">International Electrotechnical Commission</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.iec.ch/zone/si/si_bytes.htm">http://www.iec.ch/zone/si/si_bytes.htm</a></span><span class="reference-accessdate">. Retrieved August 30, 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=When+is+a+kilobyte+a+kibibyte%3F+And+an+MB+an+MiB%3F&amp;rft.atitle=The+International+System+of+Units+and+the+IEC&amp;rft.pub=%5B%5BInternational+Electrotechnical+Commission%5D%5D&amp;rft_id=http%3A%2F%2Fwww.iec.ch%2Fzone%2Fsi%2Fsi_bytes.htm&amp;rfr_id=info:sid/en.wikipedia.org:Byte"><span style="display: none;"> </span></span>)</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.parashift.com/c++-faq-lite/intrinsic-types.html#faq-26.4">[26] Built-in / intrinsic / primitive data types, C++ FAQ Lite</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Byte#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://home.att.net/~jackklein/c/inttypes.html#char">Integer Types In C and C++</a></span>
+</li>
+</ol>
+</div>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Information_units" title="Template:Information units"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Information_units" title="Template talk:Information units"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Information_units&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Units_of_information" title="Units of information">Units of information</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Base units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Bit" title="Bit">Bit</a></li>
+<li><strong class="selflink">Byte</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Nibble" title="Nibble">Nibble</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">Octet</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Traditional bit units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kilobit" title="Kilobit">Kilobit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Megabit" title="Megabit">Megabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gigabit" title="Gigabit">Gigabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Terabit" title="Terabit">Terabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Petabit" title="Petabit">Petabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exabit" title="Exabit">Exabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zettabit" title="Zettabit">Zettabit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yottabit" title="Yottabit">Yottabit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Traditional byte units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kilobyte" title="Kilobyte">Kilobyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Megabyte" title="Megabyte">Megabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gigabyte" title="Gigabyte">Gigabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Terabyte" title="Terabyte">Terabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Petabyte" title="Petabyte">Petabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exabyte" title="Exabyte">Exabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zettabyte" title="Zettabyte">Zettabyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yottabyte" title="Yottabyte">Yottabyte</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission">IEC</a> bit units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kibibit" title="Kibibit">Kibibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mebibit" title="Mebibit">Mebibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gibibit" title="Gibibit">Gibibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tebibit" title="Tebibit">Tebibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pebibit" title="Pebibit">Pebibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exbibit" title="Exbibit">Exbibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zebibit" title="Zebibit">Zebibit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yobibit" title="Yobibit">Yobibit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission">IEC</a> byte units</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kibibyte" title="Kibibyte">Kibibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mebibyte" title="Mebibyte">Mebibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gibibyte" title="Gibibyte">Gibibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tebibyte" title="Tebibyte">Tebibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pebibyte" title="Pebibyte">Pebibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exbibyte" title="Exbibyte">Exbibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zebibyte" title="Zebibyte">Zebibyte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yobibyte" title="Yobibyte">Yobibyte</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Data_types" title="Template:Data types"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Data_types" title="Template talk:Data types"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Data_types&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Data_type" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Uninterpreted</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Bit" title="Bit">Bit</a></li>
+<li><strong class="selflink">Byte</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Numeric</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Signedness" title="Signedness">signedness</a></li>
+</ul>
+</li>
+<li><a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">Floating-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rational_data_type" title="Rational data type">Rational</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Bignum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interval_arithmetic" title="Interval arithmetic">Interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">Text</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li>
+<a href="String_(computer_science)" title="String (computer science)">String</a>
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">null-terminated</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">Address</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li>
+</ul>
+</li>
+<li><a href="Reference_(computer_science)" title="Reference (computer science)">Reference</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Composite_data_type" title="Composite data type">Composite</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li>
+</ul>
+</li>
+<li><a href="Array_data_type" title="Array data type">Array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">Associative array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_(computing)" title="List (computing)" class="mw-redirect">List</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaobject" title="Metaobject">Metaobject</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="Record_(computer_science)" title="Record (computer science)">Record</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Set_(computer_science)" title="Set (computer science)" class="mw-redirect">Set</a></li>
+<li>
+<a href="Union_(computer_science)" title="Union (computer science)">Union</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">Collection</a></li>
+<li><a href="Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphore</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_type" title="Top type">Top type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><a href="Void_type" title="Void type">Void</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">Protocol</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Interface_(computing)#Software_interfaces_in_object-oriented_languages" title="Interface (computing)">Interface</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaclass" title="Metaclass">Metaclass</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 65 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Greep" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%A7%D9%8A%D8%AA" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ast.m.wikipedia.org/wiki/Byte" lang="ast" hreflang="ast">asturianu</a></li><li><a href="http://az.m.wikipedia.org/wiki/Bayt" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%AC%E0%A6%BE%E0%A6%87%E0%A6%9F" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://ba.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="ba" hreflang="ba">башҡортса</a></li><li><a href="http://be.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="be" hreflang="be">беларуская</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Bajt" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Byte" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Bajt" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Byte" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Byte" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Bait" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/Byte" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Byte" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Bitoko" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Byte" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A8%D8%A7%DB%8C%D8%AA" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Byte" lang="fr" hreflang="fr">français</a></li><li><a href="http://ga.m.wikipedia.org/wiki/Beart_(r%C3%ADomhaireacht)" lang="ga" hreflang="ga">Gaeilge</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Byte" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B0%94%EC%9D%B4%ED%8A%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%9F" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Bajt" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/Bita" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ia.m.wikipedia.org/wiki/Byte" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://is.m.wikipedia.org/wiki/B%C3%A6ti" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Byte" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%91%D7%99%D7%AA_(%D7%9E%D7%97%D7%A9%D7%91)" lang="he" hreflang="he">עברית</a></li><li><a href="http://ka.m.wikipedia.org/wiki/%E1%83%91%E1%83%90%E1%83%98%E1%83%A2%E1%83%98" lang="ka" hreflang="ka">ქართული</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://lo.m.wikipedia.org/wiki/%E0%BB%84%E0%BA%9A%E0%BA%95%E0%BB%8C" lang="lo" hreflang="lo">ລາວ</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Baits" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://lb.m.wikipedia.org/wiki/Byte" lang="lb" hreflang="lb">Lëtzebuergesch</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Baitas" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Byte" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%91%D0%B0%D1%98%D1%82" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AC%E0%B5%88%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B5%8D" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Bait" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Byte" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%90%E3%82%A4%E3%83%88_(%E6%83%85%E5%A0%B1)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Byte" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://mhr.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="mhr" hreflang="mhr">олык марий</a></li><li><a href="http://pnb.m.wikipedia.org/wiki/%D8%A8%D8%A7%D8%A6%D9%B9" lang="pnb" hreflang="pnb">پنجابی</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Bajt" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Byte" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="ru" hreflang="ru">русский</a></li><li><a href="http://scn.m.wikipedia.org/wiki/Byte" lang="scn" hreflang="scn">sicilianu</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Byte" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Bajt" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Bajt" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%91%D0%B0%D1%98%D1%82" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Tavu_(tietotekniikka)" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Byte_(enhet)" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%AA%E0%AF%88%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%84%E0%B8%9A%E0%B8%95%E0%B9%8C" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tg.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="tg" hreflang="tg">тоҷикӣ</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Bayt" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%91%D0%B0%D0%B9%D1%82" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D9%84%DA%A9%D9%85%DB%81" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Byte" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://war.m.wikipedia.org/wiki/Byte" lang="war" hreflang="war">Winaray</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%AD%97%E8%8A%82" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Byte&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Byte&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Byte&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

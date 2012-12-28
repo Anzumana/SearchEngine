@@ -1,0 +1,292 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>GNAT Programming Studio - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"GNAT Programming Studio","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/GNAT_Programming_Studio" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=GNAT+Programming+Studio"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">GNAT Programming Studio</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Notability" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Notability_(organizations_and_companies)#Products_and_services" title="Wikipedia:Notability (organizations and companies)">notability guidelines for products and services</a></b>. <span class="hide-when-compact">Please help to establish notability by adding <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable, secondary sources</a> about the topic. If notability cannot be established, the article is likely to be <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Merge" title="Wikipedia:Merge" class="mw-redirect">merged</a>, <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.</span> <small><i>(March 2010)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">GNAT Programming Studio</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Gps-screenshot.png" class="image"><img alt="Gps-screenshot.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gps-screenshot.png/300px-Gps-screenshot.png" width="300" height="228" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gps-screenshot.png/450px-Gps-screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Gps-screenshot.png/600px-Gps-screenshot.png 2x"></a><br><span style="">GPS with <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a> <a href="Source_code" title="Source code">source</a></span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/AdaCore" title="AdaCore">AdaCore</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">4.3.2 / 13.12.2010</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNAT_Modified_General_Public_License" title="GNAT Modified General Public License">GNAT Modified General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://libre.adacore.com/tools/gps/">http://libre.adacore.com/tools/gps/</a></td>
+</tr>
+</table>
+<p><b>GNAT Programming Studio</b> (<b>GPS</b>, formerly known as the <b>GNAT Programming System</b>) is a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free</a> multi-language <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) by <a href="http://en.m.wikipedia.org/wiki/AdaCore" title="AdaCore">AdaCore</a>. GPS uses <a href="Compiler" title="Compiler">compilers</a> from the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a>, taking its name from <a href="http://en.m.wikipedia.org/wiki/GNAT" title="GNAT">GNAT</a>, the GNU compiler for the <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada programming language</a>.</p>
+<p>GPS is <a href="Cross-platform" title="Cross-platform">cross-platform</a>, running on <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> and <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>. GPS uses <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a> as the <a href="http://en.m.wikipedia.org/wiki/Widget_toolkit" title="Widget toolkit">widget toolkit</a> for its <a href="Graphical_user_interface" title="Graphical user interface">graphical user interface</a>. Released under the <a href="http://en.m.wikipedia.org/wiki/GNAT_Modified_General_Public_License" title="GNAT Modified General Public License">GNAT Modified General Public License</a>, GPS is <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a>.</p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<p>GPS supports a variety of programming languages other than Ada, including <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a> and <a href="Python_(programming_language)" title="Python (programming language)">Python</a>. In addition, it supports a number of other file types for <a href="http://en.m.wikipedia.org/wiki/Build_system" title="Build system" class="mw-redirect">build systems</a> such as <a href="http://en.m.wikipedia.org/wiki/Autoconf" title="Autoconf">Autoconf</a> and <a href="http://en.m.wikipedia.org/wiki/Make_(software)" title="Make (software)">Make</a>, along with documentation formats like <a href="http://en.m.wikipedia.org/wiki/Changelog" title="Changelog">Changelog</a> and <a href="http://en.m.wikipedia.org/wiki/Texinfo" title="Texinfo">Texinfo</a>.</p>
+<p>The most interesting new development function of GPS from version 4.0 are remote edit, remote debug and <a href="http://en.m.wikipedia.org/wiki/Cross-compilation" title="Cross-compilation" class="mw-redirect">cross-compilation</a> capabilities for platforms for which GPS/GCC are not natively available.</p>
+<p>The new version also includes new edit functions, among which is an intelligent <a href="http://en.m.wikipedia.org/wiki/Autocomplete" title="Autocomplete">autocomplete</a> feature.</p>
+<p>GPS supports the following <a href="http://en.m.wikipedia.org/wiki/Revision_control" title="Revision control">Version control systems</a>: <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a>, <a href="http://en.m.wikipedia.org/wiki/Rational_ClearCase" title="Rational ClearCase" class="mw-redirect">Rational ClearCase</a>, <a href="http://en.m.wikipedia.org/wiki/Subversion_(software)" title="Subversion (software)" class="mw-redirect">Subversion</a>, <a href="http://en.m.wikipedia.org/wiki/Git_(software)" title="Git (software)">git</a>.<sup id="cite_ref-0" class="reference"><a href="GNAT_Programming_Studio#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>GPS can edit files encoded in all GNAT supported encoding schemas. In detail: <a href="http://en.m.wikipedia.org/wiki/ISO-8859-1" title="ISO-8859-1" class="mw-redirect">ISO-8859-1</a>, <a href="http://en.m.wikipedia.org/wiki/ISO-8859-2" title="ISO-8859-2" class="mw-redirect">ISO-8859-2</a>, <a href="http://en.m.wikipedia.org/wiki/ISO-8859-5" title="ISO-8859-5" class="mw-redirect">ISO-8859-5</a>, <a href="http://en.m.wikipedia.org/wiki/ISO-8859-6" title="ISO-8859-6" class="mw-redirect">ISO-8859-6</a>, <a href="http://en.m.wikipedia.org/wiki/ISO-8859-7" title="ISO-8859-7" class="mw-redirect">ISO-8859-7</a>, <a href="http://en.m.wikipedia.org/wiki/KOI8-R" title="KOI8-R">KOI8-R</a>, <a href="http://en.m.wikipedia.org/wiki/Shift_JIS" title="Shift JIS">Shift JIS</a>, <a href="http://en.m.wikipedia.org/wiki/GB2312" title="GB2312" class="mw-redirect">GB2312</a>, <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a>, <a href="http://en.m.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a> and <a href="http://en.m.wikipedia.org/wiki/UTF-32" title="UTF-32">UTF-32</a>.</p>
+<p>GPS uses <a href="Python_(programming_language)" title="Python (programming language)">Python</a> as a <a href="http://en.m.wikipedia.org/wiki/Scripting_language" title="Scripting language">scripting language</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=GNAT_Programming_Studio&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(October 2007)</i></small> </span></td>
+</tr></table>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="GNAT_Programming_Studio#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.adacore.com/wp-content/files/auto_update/gps-docs/Introduction.html">http://www.adacore.com/wp-content/files/auto_update/gps-docs/Introduction.html</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://libre.adacore.com/tools/gps/">Official GPS Homepage</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://gnuada.sourceforge.net">GNU Ada Project</a> on <a href="http://en.m.wikipedia.org/wiki/SourceForge.net" title="SourceForge.net" class="mw-redirect">SourceForge.net</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://gcc.gnu.org/onlinedocs/gnat_rm/">GNAT Reference Manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.thefreelibrary.com/AdaCore's+GNAT+Pro+Development+Environment+to+Support+Boeing's...-a0148612924">AdaCore's GNAT Pro Development Environment to Support Boeing's Real-time Simulation Systems</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.electronicstalk.com/news/adf/adf104.html">Environment accelerated Ada programming</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><strong class="selflink">GNAT Programming Studio</strong></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<p><br></p>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer.svg&amp;page=1" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Computer.svg/30px-Computer.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Computer.svg/45px-Computer.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Computer.svg/60px-Computer.svg.png 2x"></a></td>
+<td>
+<i>This computing article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=GNAT_Programming_Studio&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Compu-stub" title="Template:Compu-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Compu-stub" title="Template talk:Compu-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Compu-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/GNAT_Programming_Studio" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://ru.m.wikipedia.org/wiki/GNAT_Programming_Studio" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/GNAT_Programming_Studio" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=GNAT_Programming_Studio&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=GNAT_Programming_Studio&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=GNAT+Programming+Studio&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

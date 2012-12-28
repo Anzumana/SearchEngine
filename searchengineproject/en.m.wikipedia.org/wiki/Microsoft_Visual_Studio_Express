@@ -1,0 +1,766 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Microsoft Visual Studio Express - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Microsoft Visual Studio Express","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Microsoft+Visual+Studio+Express"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Microsoft Visual Studio Express</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Microsoft Visual Studio Express</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Logo_VSE2010.png" class="image"><img alt="Logo VSE2010.png" src="http://upload.wikimedia.org/wikipedia/en/7/74/Logo_VSE2010.png" width="273" height="60"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Visual_Basic_Express_screenshot.png" class="image"><img alt="Visual Basic Express screenshot.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/8/81/Visual_Basic_Express_screenshot.png/312px-Visual_Basic_Express_screenshot.png" width="312" height="240" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/81/Visual_Basic_Express_screenshot.png/468px-Visual_Basic_Express_screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/81/Visual_Basic_Express_screenshot.png/624px-Visual_Basic_Express_screenshot.png 2x"></a><br><span style="">Screenshot of the interface (Windows Forms) of the 2010 version of <i>Microsoft Visual Studio Express</i> by <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> running on <a href="http://en.m.wikipedia.org/wiki/Windows_Vista" title="Windows Vista">Windows Vista</a>.</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">
+<span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Microsoft_Visual_Studio_Express&amp;action=edit">2012</a></span>  <small>(September 12, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-12</span>)</span>)</small> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Microsoft_Visual_Studio_Express&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style=""><sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/Microsoft_Visual_Studio_Express&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Registerware" title="Registerware" class="mw-redirect">Registerware</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.microsoft.com/express/">www.microsoft.com/express/</a></span></td>
+</tr>
+</table>
+<p><b>Microsoft Visual Studio Express</b> is a set of <a href="Freeware" title="Freeware">freeware</a><sup id="cite_ref-registration_1-0" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-registration-1"><span>[</span>1<span>]</span></a></sup><a href="Integrated_development_environment" title="Integrated development environment">integrated development environments</a> (IDE) developed by <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> that are lightweight versions of the <a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Microsoft Visual Studio</a> product line. Express Editions were conceived beginning with Visual Studio 2005. The idea of Express editions is to provide streamlined, easy-to-use and easy-to-learn IDEs for users other than professional software developers, such as hobbyists and students.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The first versions of Visual Studio 2005 Express were released on October 2005 and the <a href="http://en.m.wikipedia.org/wiki/Service_Pack" title="Service Pack" class="mw-redirect">Service Pack</a> 1 versions were released on December 2006. Visual Studio 2005 Express Editions run on <a href="http://en.m.wikipedia.org/wiki/Windows_2000" title="Windows 2000">Windows 2000</a> SP4 and above Windows NT-based platforms. In response to popular demand since their original release,<sup id="cite_ref-ms-vse_2-0" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-ms-vse-2"><span>[</span>2<span>]</span></a></sup> Microsoft has stated that these editions will always remain free-of-charge. Visual Studio 2008 Express editions were released in November 2007 and their SP1 on August 11, 2008. Visual Studio 2008 and 2010 Express Editions require <a href="http://en.m.wikipedia.org/wiki/Windows_XP_SP3" title="Windows XP SP3" class="mw-redirect">Windows XP SP3</a> or a later Windows version; <a href="http://en.m.wikipedia.org/wiki/Windows_2000" title="Windows 2000">Windows 2000</a> is no longer supported for development but can be a target platform if using 2008 Express. Windows Phone support is only available on Windows 7 and Vista. Microsoft may make previous versions of Visual Studio Express unavailable. Visual Studio 2005 Express editions are not available for download from Microsoft's website.<sup id="cite_ref-3" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Visual Studio 2010 Express Editions were released in April 2010 alongside Visual Studio 2010. Free registration is mandatory in order to continue using Visual Studio 2010 Express Editions beyond 30 days.<sup id="cite_ref-4" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-4"><span>[</span>4<span>]</span></a></sup> Earlier with Visual Studio 2005 and 2008 Express Editions, registration was not required for the ISO version but was required for the web download version.</p>
+<h2> <span class="mw-headline" id="2005-2010_products">2005-2010 products</span>
+</h2>
+<p>The Visual Studio 2005, 2008, and 2010 Express IDE's were geared toward single project types. For example, where the full retail editions supported multiple project types within a solution, with the Express editions you might develop a web application in Visual Web Developer Express that consumed a class library developed and built separately in Visual C# Express.</p>
+<p>Visual Studio 2005, 2008, and 2010 Express consisted of the following separate products:</p>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> Express</b></li>
+<li><b><a href="Visual_C++" title="Visual C++">Visual C++</a> Express</b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Microsoft_Visual_C_Sharp" title="Microsoft Visual C Sharp">Visual C#</a> Express</b></li>
+<li>
+<b>Visual <a href="http://en.m.wikipedia.org/wiki/J_Sharp" title="J Sharp">J#</a> Express</b> (2005 only)</li>
+<li><b>Visual Web Developer Express</b></li>
+<li>
+<b>Visual Studio Express for <a href="http://en.m.wikipedia.org/wiki/Windows_Phone" title="Windows Phone">Windows Phone</a></b> (2010 only)</li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Express" title="SQL Server Express">SQL Server Express</a></b></li>
+</ul>
+<p>The version shipping with Visual Studio 2005 will be supported until 2015 as per the product life-cycle strategy.</p>
+<h3> <span class="mw-headline" id="Visual_Basic_Express">Visual Basic Express</span>
+</h3>
+<p>Visual Basic 2005/2008 (but not Visual Basic 2010) Express Edition contains the Visual Basic 6.0 converter that makes it possible to upgrade Visual Basic 6.0 projects to the Visual Basic.NET. The Express Editions (2005 and 2008) mostly have the same following limitations:<sup id="cite_ref-5" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-5"><span>[</span>5<span>]</span></a></sup> (Specific 2008 Express editions limitations here<sup id="cite_ref-6" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-6"><span>[</span>6<span>]</span></a></sup>)</p>
+<ul>
+<li>No IDE support for databases other than <a href="http://en.m.wikipedia.org/wiki/SQL_Server_Express" title="SQL Server Express">SQL Server Express</a> and <a href="http://en.m.wikipedia.org/wiki/Microsoft_Access" title="Microsoft Access">Microsoft Access</a>
+</li>
+<li>No support for Web Applications with <a href="http://en.m.wikipedia.org/wiki/ASP.NET" title="ASP.NET">ASP.NET</a> (this can instead be done with Visual Web Developer Express, though the non-Express version of Visual Studio allows both web and windows applications from the same IDE)</li>
+<li>No support for developing for mobile devices (no templates or emulator)</li>
+<li>No <a href="http://en.m.wikipedia.org/wiki/Crystal_Reports" title="Crystal Reports">Crystal Reports</a>
+</li>
+<li>Fewer project templates (for example, Windows services template and Excel Workbook template)</li>
+<li>Limited options for <a href="http://en.m.wikipedia.org/wiki/Debugging" title="Debugging">debugging</a> and <a href="http://en.m.wikipedia.org/wiki/Breakpoint" title="Breakpoint">breakpoints</a>
+</li>
+<li>No support for creating <a href="http://en.m.wikipedia.org/wiki/Windows_Service" title="Windows Service" class="mw-redirect">Windows Services</a> (can be gained through download of a project template).</li>
+<li>No support for <a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a>
+</li>
+<li>Limited deployment options for finished programs</li>
+<li>Visual Basic Express lacks some advanced features of the standard versions. For example, there is no <b>Outlining</b> feature <b>Hide selection</b> to collapse/expand selected text.</li>
+</ul>
+<p>Despite the fact that it is a stripped-down version of Visual Studio, some improvements were made upon Visual Basic 2008 from Visual Basic 2005. Visual Basic 2008 Express includes the following improvements over Visual Basic 2005 Express:</p>
+<ul>
+<li>Includes the visual <a href="http://en.m.wikipedia.org/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">Windows Presentation Foundation</a> designer codenamed "Cider"</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Debugging" title="Debugging">Debugs</a> at runtime</li>
+<li>Better <a href="http://en.m.wikipedia.org/wiki/IntelliSense" title="IntelliSense">IntelliSense</a> support
+<ul>
+<li>Fixes common spelling errors</li>
+<li>Corrects most forms of invalid <a href="http://en.m.wikipedia.org/wiki/Syntax" title="Syntax">syntax</a>
+</li>
+<li>Provides suggestions to <a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">class</a> names when specified classes are not found</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Visual_Web_Developer_Express">Visual Web Developer Express</span>
+</h3>
+<p>Visual Web Developer Express is a freeware <a href="http://en.m.wikipedia.org/wiki/Web_development" title="Web development">web development</a> tool, with the role of former <a href="http://en.m.wikipedia.org/wiki/ASP.NET_Web_Matrix" title="ASP.NET Web Matrix" class="mw-redirect">ASP.NET Web Matrix</a>,<sup id="cite_ref-vse_faq_7-0" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-vse_faq-7"><span>[</span>7<span>]</span></a></sup> that allows developers to evaluate the web development and editing capabilities of the other Visual Studio 2005/2008/2010 editions at no charge. Its main function is to create <a href="http://en.m.wikipedia.org/wiki/ASP.NET" title="ASP.NET">ASP.NET</a> websites. It has a <a href="http://en.m.wikipedia.org/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a> interface, drag-and-drop user interface designer, enhanced <a href="http://en.m.wikipedia.org/wiki/HTML" title="HTML">HTML</a> and code editors, a (limited) database explorer, support for other web technologies (e.g., <a href="http://en.m.wikipedia.org/wiki/Cascading_Style_Sheets" title="Cascading Style Sheets">CSS</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="http://en.m.wikipedia.org/wiki/XML" title="XML">XML</a>), and integrated, design-time validation for standards including <a href="http://en.m.wikipedia.org/wiki/XHTML" title="XHTML">XHTML</a> 1.0/1.1 and CSS 2.1.</p>
+<p>Visual Studio 2005 lacks certain features, such as the Accessibility Checker, the ability to create standalone Class Library Projects (which can be done by the other language-specific Express Editions), the extensibility support necessary to load third-party add-ins, macros and some other features.<sup id="cite_ref-8" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p>Visual Studio 2008 Express Web Developer SP1 supports both class library and Web Application projects, which were not supported in Visual Studio 2005 Express.<sup id="cite_ref-9" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-9"><span>[</span>9<span>]</span></a></sup> It also includes a new integrated HTML designer based on <a href="http://en.m.wikipedia.org/wiki/Microsoft_Expression_Web" title="Microsoft Expression Web">Microsoft Expression Web</a>. However, the functionality to publish self-developed websites is not present in this edition.</p>
+<h3> <span class="mw-headline" id="Visual_C.2B.2B_Express">Visual C++ Express</span>
+</h3>
+<p>The Visual C++ Express Edition can be used to compile <a href="http://en.m.wikipedia.org/wiki/Microsoft_.NET" title="Microsoft .NET" class="mw-redirect">.NET</a> as well as <a href="http://en.m.wikipedia.org/wiki/Win32" title="Win32" class="mw-redirect">Win32</a> applications. The Windows Platform SDK compilers and core files are included which can be used to build applications that use the Win32 API. To build applications using either <a href="http://en.m.wikipedia.org/wiki/Microsoft_Foundation_Class_Library" title="Microsoft Foundation Class Library">MFC</a> or <a href="http://en.m.wikipedia.org/wiki/Active_Template_Library" title="Active Template Library">ATL</a>, the libraries have to be obtained from alternative sources such as the free-to-download <a rel="nofollow" class="external text" href="http://www.microsoft.com/whdc/devtools/WDK/default.mspx">Windows Driver Kit</a>.</p>
+<p>However, natively compiling <a href="http://en.m.wikipedia.org/wiki/64-bit" title="64-bit" class="mw-redirect">64-bit</a> applications through the IDE is not supported without some involved configurations. If the freely available full version of the <a href="http://en.m.wikipedia.org/wiki/Windows_SDK" title="Windows SDK" class="mw-redirect">Windows SDK</a> is installed, 64-bit applications can be built on the command line using the x64 cross-compiler (Cl.exe) supplied with the SDK.<sup id="cite_ref-10" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-10"><span>[</span>10<span>]</span></a></sup> True integration of 64-bit compilers to the Visual C++ 2008 Express Edition is possible, but remains cumbersome.<sup id="cite_ref-11" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-11"><span>[</span>11<span>]</span></a></sup> In Visual C++ Express 2010 however, it is as simple as changing the Platform Toolset to the Windows SDK instead of the built-in v100.</p>
+<p>Visual C++ 2008 and 2010 Express does not include a <a href="http://en.m.wikipedia.org/wiki/Resource_(Windows)" title="Resource (Windows)">resource</a> editor. The higher-end commercial editions of Visual Studio, specifically the Professional and Team Suite editions, have these features.<sup id="cite_ref-12" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>Many open source projects have started providing project files created with Visual C++ Express; noteworthy examples include the <a href="http://en.m.wikipedia.org/wiki/OGRE_Engine" title="OGRE Engine" class="mw-redirect">Ogre</a> and <a href="http://en.m.wikipedia.org/wiki/Irrlicht_Engine" title="Irrlicht Engine">Irrlicht</a> engines. Modding kits for commercial engines, such as Valve's <a href="http://en.m.wikipedia.org/wiki/Source_engine" title="Source engine" class="mw-redirect">Source engine</a>, are also supporting this development system.<sup id="cite_ref-13" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>The limitations of Visual C++ Express are:</p>
+<ul>
+<li>No resource editor.</li>
+<li>No built-in MFC support.</li>
+<li>No built-in ATL support.</li>
+<li>No <a href="http://en.m.wikipedia.org/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">profiling</a> support.</li>
+<li>No built-in x64 compiler (you can download one from the windows SDK).</li>
+<li>No support for OpenMP.</li>
+<li>No support for add-ins or IDE macros.</li>
+<li>Ability to attach the debugger to an already-running process is possible by enabling Tools -&gt; Settings -&gt; Expert settings (starting with 2010).</li>
+<li>No option for crash dump generation (Debug-&gt;Save Dump As).</li>
+</ul>
+<p>While Microsoft lists memory windows as unavailable in Express editions of Visual Studio 2010,<sup id="cite_ref-14" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-14"><span>[</span>14<span>]</span></a></sup> third parties have reported that they are available when Expert Settings are enabled.<sup id="cite_ref-15" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-16" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-16"><span>[</span>16<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Visual_C.23_Express">Visual C# Express</span>
+</h3>
+<p>Visual C# Express is an easy-to-use, free, lightweight, integrated development environment (IDE) designed for beginning developers, students, and hobbyists interested in building console-based applications, class libraries, <a href="http://en.m.wikipedia.org/wiki/Windows_Forms" title="Windows Forms">Windows Forms</a> and <a href="http://en.m.wikipedia.org/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">Windows Presentation Foundation</a> applications. It can be used to create applications and games (when combined with the <a href="http://en.m.wikipedia.org/wiki/XNA_Game_Studio" title="XNA Game Studio" class="mw-redirect">XNA Game Studio</a>) for Windows, <a href="http://en.m.wikipedia.org/wiki/Xbox_360" title="Xbox 360">Xbox 360</a> and <a href="http://en.m.wikipedia.org/wiki/Zune" title="Zune">Zune</a>.</p>
+<p>There is a substantial community for C# Express due to the many game enthusiasts that are taking up programming.<sup id="cite_ref-17" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-17"><span>[</span>17<span>]</span></a></sup><sup id="cite_ref-18" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-18"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-19" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-19"><span>[</span>19<span>]</span></a></sup></p>
+<p><i>Limitations:</i> The list of breakpoints where the user could control the breakpoint features has been removed, so that now the user can only toggle breakpoints.</p>
+<p>The following <a href="http://en.m.wikipedia.org/wiki/Refactor" title="Refactor" class="mw-redirect">refactoring</a> modes were also removed:<sup id="cite_ref-20" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-20"><span>[</span>20<span>]</span></a></sup></p>
+<ul>
+<li>Encapsulate field</li>
+<li>Promote local to parameter</li>
+<li>Reorder parameters</li>
+<li>Remove parameters</li>
+<li>Extract interface</li>
+</ul>
+<p>This effectively reduces the refactoring capabilities of Visual C# Express to Renaming and Extracting Methods.</p>
+<p>Developers state the reason of this removal as "to simplify the C# Express user experience". However this created a controversy as some end users claim it is an important feature, and instead of simplifying it cripples the user experience.<sup id="cite_ref-21" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-21"><span>[</span>21<span>]</span></a></sup></p>
+<p>The ability to attach the debugger to an already-running process has also been removed, hindering scenarios such as writing Windows services and re-attaching a debugger under ASP.NET when errors under the original debugging session cause breakpoints to be ignored.</p>
+<p>Additionally it has been observed that the express version requires that the time between builds be greater than approximately 20 seconds. If a project is rapidly modified and rebuilt the target will not be updated even though the source has been modified and saved.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2010">citation needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="2012_products">2012 products</span>
+</h2>
+<p>Unlike previous Express editions, each of which was geared around a single project type, each of the 2012 Express editions is geared toward an overall solution type, and can contain more than one project type (for example, a web solution might consist of a web application project and a couple of C# class-library projects).</p>
+<p>Microsoft has released four Visual Studio Express 2012 products<sup id="cite_ref-VSE2012-gallery_22-0" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-VSE2012-gallery-22"><span>[</span>22<span>]</span></a></sup>:</p>
+<table class="wikitable">
+<tr>
+<th>Edition</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Visual Studio Express 2012 for Web</td>
+<td>Allows development of <a href="http://en.m.wikipedia.org/wiki/Web_applications" title="Web applications" class="mw-redirect">web applications</a>.<sup id="cite_ref-23" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-23"><span>[</span>23<span>]</span></a></sup> Includes integrated features for deploying to Microsoft's <a href="http://en.m.wikipedia.org/wiki/Windows_Azure" title="Windows Azure">Windows Azure</a> <a href="http://en.m.wikipedia.org/wiki/Cloud_computing" title="Cloud computing">cloud computing</a> platform.</td>
+</tr>
+<tr>
+<td>Visual Studio Express 2012 for Windows 8</td>
+<td>Allows development of <a href="http://en.m.wikipedia.org/wiki/Windows_Store" title="Windows Store">Windows Store</a> apps<sup id="cite_ref-24" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-24"><span>[</span>24<span>]</span></a></sup> (formerly known as Metro-style apps<sup id="cite_ref-25" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-25"><span>[</span>25<span>]</span></a></sup><sup id="cite_ref-26" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-26"><span>[</span>26<span>]</span></a></sup>). This edition runs only on <a href="http://en.m.wikipedia.org/wiki/Windows_8" title="Windows 8">Windows 8</a>.</td>
+</tr>
+<tr>
+<td>Visual Studio Express 2012 for Windows Desktop</td>
+<td>Allows development of conventional Windows desktop applications in C#, VB.NET and C++, targeting Windows client technologies such as <a href="http://en.m.wikipedia.org/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">Windows Presentation Foundation</a> (WPF), <a href="http://en.m.wikipedia.org/wiki/Windows_Forms" title="Windows Forms">Windows Forms</a>, and the <a href="http://en.m.wikipedia.org/wiki/Windows_API" title="Windows API">Win32</a> API. Unlike previous Express editions, it also has in-built support for compiling 64-bit binaries though the IDE.<sup id="cite_ref-27" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-27"><span>[</span>27<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>Visual Studio Team Foundation Server Express 2012</td>
+<td>Provides <a href="http://en.m.wikipedia.org/wiki/Revision_control" title="Revision control">source control</a>, work-item tracking, and build automation for teams of up to five developers.<sup id="cite_ref-28" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-28"><span>[</span>28<span>]</span></a></sup>
+</td>
+</tr>
+</table>
+<p>The Express editions of the IDE omit the following features included in the Professional editions:<sup id="cite_ref-29" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-29"><span>[</span>29<span>]</span></a></sup></p>
+<ul>
+<li>Multi-unit testing framework and refactoring support</li>
+<li>Static code analysis, profiling, and HLSL editing and debugging</li>
+<li>Third-party extensibility support (though the Extension Manager feature is still present)</li>
+</ul>
+<h2> <span class="mw-headline" id="SQL_Server_Express">SQL Server Express</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/SQL_Server_Express" title="SQL Server Express">SQL Server Express</a>
+</div>
+<p>SQL Server Express is a freeware, light-weight, and redistributable edition of <a href="http://en.m.wikipedia.org/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">Microsoft SQL Server</a>. It provides a no-cost database for developers writing basic Windows applications and web sites. SQL Server Express replaces <a href="http://en.m.wikipedia.org/wiki/MSDE" title="MSDE">MSDE</a> 2000 and significantly expands on its feature set.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Management_Studio" title="SQL Server Management Studio">SQL Server Management Studio</a> Express, which provides a graphical user interface for administering SQL Server Express, can also be downloaded.</p>
+<p>The SQL Server Express Edition has the following limitations:<sup id="cite_ref-30" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-30"><span>[</span>30<span>]</span></a></sup></p>
+<ul>
+<li>Limited to one physical <a href="http://en.m.wikipedia.org/wiki/CPU" title="CPU" class="mw-redirect">CPU</a> or four <a href="http://en.m.wikipedia.org/wiki/Multi-core_processor" title="Multi-core processor">CPU cores</a>
+</li>
+<li>Can use a maximum of 1 GB of <a href="http://en.m.wikipedia.org/wiki/Random-access_memory" title="Random-access memory">random-access memory</a>
+</li>
+<li>Databases have a 10 GB size limit</li>
+<li>Many features are unavailable, including but not limited to: Data mirroring, failover clustering, profiler, workload throttling and Server Agent, database compression and snapshot</li>
+</ul>
+<h2> <span class="mw-headline" id="Extensibility">Extensibility</span>
+</h2>
+<p>Visual Studio is extensible by nature, ultimately consisting of a core "shell" that implements all commands, windows, editors, project types, languages, and other features through dynamically loadable modules called "packages".<sup id="cite_ref-31" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-31"><span>[</span>31<span>]</span></a></sup><sup id="cite_ref-32" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-32"><span>[</span>32<span>]</span></a></sup> Microsoft encourages and fosters third-party partners to create modules for Visual Studio via the free <a href="http://en.m.wikipedia.org/wiki/VSIP" title="VSIP">VSIP</a> program. However, according to Dan Fernandez, Microsoft "made a business decision to not allow 3rd party extensibility in Express".<sup id="cite_ref-33" class="reference"><a href="Microsoft_Visual_Studio_Express#cite_note-33"><span>[</span>33<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Microsoft Visual Studio</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-registration-1">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-registration_1-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.microsoft.com/express/support/RegFAQ/">"Registration Issues"</a>. Microsoft<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.microsoft.com/express/support/RegFAQ/">http://www.microsoft.com/express/support/RegFAQ/</a></span><span class="reference-accessdate">. Retrieved 2009-09-02</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Registration+Issues&amp;rft.atitle=&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Fexpress%2Fsupport%2FRegFAQ%2F&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-ms-vse-2">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-ms-vse_2-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.microsoft.com/presspass/press/2006/apr06/04-19VSExpressFreePR.mspx">"Microsoft Brings Programming to the Masses With Visual Studio Express"</a>. Microsoft. April 19, 2006<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.microsoft.com/presspass/press/2006/apr06/04-19VSExpressFreePR.mspx">http://www.microsoft.com/presspass/press/2006/apr06/04-19VSExpressFreePR.mspx</a></span><span class="reference-accessdate">. Retrieved 2006-09-13</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Microsoft+Brings+Programming+to+the+Masses+With+Visual+Studio+Express&amp;rft.atitle=&amp;rft.date=April+19%2C+2006&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Fpresspass%2Fpress%2F2006%2Fapr06%2F04-19VSExpressFreePR.mspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.microsoft.com/express/Downloads/">"Free Developer Tools - Visual Studio 2010 Express | Microsoft Visual Studio"</a>. Microsoft.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.microsoft.com/express/Downloads/">http://www.microsoft.com/express/Downloads/</a></span><span class="reference-accessdate">. Retrieved 2011-09-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Free+Developer+Tools+-+Visual+Studio+2010+Express+%26%23124%3B+Microsoft+Visual+Studio&amp;rft.atitle=&amp;rft.pub=Microsoft.com&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Fexpress%2FDownloads%2F&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.microsoft.com/express/Support/">Visual Studio Express Support website</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/b4z62wxz(VS.80).aspx">"Visual Basic 2005 Editions"</a>. Microsoft Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/b4z62wxz(VS.80).aspx">http://msdn.microsoft.com/en-us/library/b4z62wxz(VS.80).aspx</a></span><span class="reference-accessdate">. Retrieved 2007-07-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+Basic+2005+Editions&amp;rft.atitle=&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fb4z62wxz%28VS.80%29.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/b4z62wxz.aspx">"Visual Basic 2008 Editions"</a>. Microsoft Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/b4z62wxz.aspx">http://msdn.microsoft.com/en-us/library/b4z62wxz.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-04-30</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+Basic+2008+Editions&amp;rft.atitle=&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fb4z62wxz.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-vse_faq-7">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-vse_faq_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://web.archive.org/20080406140317/http://msdn2.microsoft.com/en-us/express/aa718399.aspx#vwd">Visual Studio 2005 Express Developer Center - Frequently Asked Questions (FAQ) - questions 23 to 35, especially question 28</a> at the <a href="http://en.m.wikipedia.org/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a> (archived April 6, 2008)</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/mikhailarkhipov/archive/2006/06/26/647516.aspx">"Which features are missing from Visual Web Developer Express: Mikhail Arkhipov's blog"</a>. Blogs.msdn.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.msdn.com/mikhailarkhipov/archive/2006/06/26/647516.aspx">http://blogs.msdn.com/mikhailarkhipov/archive/2006/06/26/647516.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Which+features+are+missing+from+Visual+Web+Developer+Express%3A+Mikhail+Arkhipov%27s+blog&amp;rft.atitle=&amp;rft.pub=Blogs.msdn.com&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fmikhailarkhipov%2Farchive%2F2006%2F06%2F26%2F647516.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web">Scott Guthrie. <a rel="nofollow" class="external text" href="http://aspalliance.com/1664_Visual_Studio_2008_and_NET_Framework_35_Service_Pack_1_Beta_.3">"Scott Guthrie's post on VS2008/.NET Framework 3.5 SP1 Beta (bottom of page)"</a>. Aspalliance.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://aspalliance.com/1664_Visual_Studio_2008_and_NET_Framework_35_Service_Pack_1_Beta_.3">http://aspalliance.com/1664_Visual_Studio_2008_and_NET_Framework_35_Service_Pack_1_Beta_.3</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Scott+Guthrie%27s+post+on+VS2008%2F.NET+Framework+3.5+SP1+Beta+%28bottom+of+page%29&amp;rft.atitle=&amp;rft.aulast=Scott+Guthrie&amp;rft.au=Scott+Guthrie&amp;rft.pub=Aspalliance.com&amp;rft_id=http%3A%2F%2Faspalliance.com%2F1664_Visual_Studio_2008_and_NET_Framework_35_Service_Pack_1_Beta_.3&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/9yb4317s.aspx">"How to: Configure Visual C++ Projects to Target 64-Bit Platforms"</a>. Msdn.microsoft.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/9yb4317s.aspx">http://msdn.microsoft.com/en-us/library/9yb4317s.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=How+to%3A+Configure+Visual+C%2B%2B+Projects+to+Target+64-Bit+Platforms&amp;rft.atitle=&amp;rft.pub=Msdn.microsoft.com&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2F9yb4317s.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/">"Visual C++ 2008 Express Edition and 64-bit Targets"</a>. Jenshuebel.wordpress.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/">http://jenshuebel.wordpress.com/2009/02/12/visual-c-2008-express-edition-and-64-bit-targets/</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+C%2B%2B+2008+Express+Edition+and+64-bit+Targets&amp;rft.atitle=&amp;rft.pub=Jenshuebel.wordpress.com&amp;rft_id=http%3A%2F%2Fjenshuebel.wordpress.com%2F2009%2F02%2F12%2Fvisual-c-2008-express-edition-and-64-bit-targets%2F&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/hs24szh9(VS.90).aspx">"Visual C++ Editions"</a>. Microsoft Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/hs24szh9(VS.90).aspx">http://msdn.microsoft.com/en-us/library/hs24szh9(VS.90).aspx</a></span><span class="reference-accessdate">. Retrieved 2007-09-29</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+C%2B%2B+Editions&amp;rft.atitle=&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fhs24szh9%28VS.90%29.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://developer.valvesoftware.com/wiki/Compiler_Choices">"Source SDK wiki: Compiler Choices"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://developer.valvesoftware.com/wiki/Compiler_Choices">http://developer.valvesoftware.com/wiki/Compiler_Choices</a></span><span class="reference-accessdate">. Retrieved 2009-08-12</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Source+SDK+wiki%3A+Compiler+Choices&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fdeveloper.valvesoftware.com%2Fwiki%2FCompiler_Choices&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/s3aw423e.aspx">"Memory Windows"</a>. Microsoft Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/s3aw423e.aspx">http://msdn.microsoft.com/en-us/library/s3aw423e.aspx</a></span><span class="reference-accessdate">. Retrieved 2011-09-27</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Memory+Windows&amp;rft.atitle=&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fs3aw423e.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://kipirvine.com/asm/debug/vstudio2010/index.htm">"Microsoft Visual Studio 2010 Debugger"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://kipirvine.com/asm/debug/vstudio2010/index.htm">http://kipirvine.com/asm/debug/vstudio2010/index.htm</a></span><span class="reference-accessdate">. Retrieved 2011-09-27</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Microsoft+Visual+Studio+2010+Debugger&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fkipirvine.com%2Fasm%2Fdebug%2Fvstudio2010%2Findex.htm&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://williams.comp.ncat.edu/overflow/MSVShints.htm">"Visual Studio Hints"</a>. Williams, Kenneth A.<span class="printonly">. <a rel="nofollow" class="external free" href="http://williams.comp.ncat.edu/overflow/MSVShints.htm">http://williams.comp.ncat.edu/overflow/MSVShints.htm</a></span><span class="reference-accessdate">. Retrieved 2011-09-27</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+Studio+Hints&amp;rft.atitle=&amp;rft.pub=Williams%2C+Kenneth+A.&amp;rft_id=http%3A%2F%2Fwilliams.comp.ncat.edu%2Foverflow%2FMSVShints.htm&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://en.csharp-online.net/Visual_CSharp">"Visual C# at C# Online.NET (CSharp-Online.NET)"</a>. Csharp-online.net wiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://en.csharp-online.net/Visual_CSharp">http://en.csharp-online.net/Visual_CSharp</a></span><span class="reference-accessdate">. Retrieved 2010-02-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+C%23+at+C%23+Online.NET+%28CSharp-Online.NET%29&amp;rft.atitle=&amp;rft.pub=Csharp-online.net+wiki&amp;rft_id=http%3A%2F%2Fen.csharp-online.net%2FVisual_CSharp&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.csharpfriends.com/">"C# C Sharp and Tutorials on C# Friends.com"</a>. <a rel="nofollow" class="external free" href="http://www.csharpfriends.com/">http://www.csharpfriends.com/</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.csharpfriends.com/">http://www.csharpfriends.com/</a></span><span class="reference-accessdate">. Retrieved 2010-02-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C%23+C+Sharp+and+Tutorials+on+C%23+Friends.com&amp;rft.atitle=&amp;rft.pub=http%3A%2F%2Fwww.csharpfriends.com%2F&amp;rft_id=http%3A%2F%2Fwww.csharpfriends.com%2F&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/aa937791.aspx/">"XNA Developer Center"</a>. Microsoft<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/aa937791.aspx/">http://msdn.microsoft.com/en-us/aa937791.aspx/</a></span><span class="reference-accessdate">. Retrieved 2010-02-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=XNA+Developer+Center&amp;rft.atitle=&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Faa937791.aspx%2F&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.msdner.com/dev-archive/0/35-24-2723.shtm">"Technologies site about MSDN"</a>. MSDNER<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.msdner.com/dev-archive/0/35-24-2723.shtm">http://www.msdner.com/dev-archive/0/35-24-2723.shtm</a></span><span class="reference-accessdate">. Retrieved 2007-10-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Technologies+site+about+MSDN&amp;rft.atitle=&amp;rft.pub=MSDNER&amp;rft_id=http%3A%2F%2Fwww.msdner.com%2Fdev-archive%2F0%2F35-24-2723.shtm&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-21">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/astebner/archive/2004/10/20/245413.aspx">"Aaron Stebner's WebLog"</a>. Microsoft Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.msdn.com/astebner/archive/2004/10/20/245413.aspx">http://blogs.msdn.com/astebner/archive/2004/10/20/245413.aspx</a></span><span class="reference-accessdate">. Retrieved 2004-10-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Aaron+Stebner%27s+WebLog&amp;rft.atitle=&amp;rft.pub=Microsoft+Corporation&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fastebner%2Farchive%2F2004%2F10%2F20%2F245413.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-VSE2012-gallery-22">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-VSE2012-gallery_22-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.microsoft.com/visualstudio/11/en-us/products/express">[1]</a></span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://msdn.microsoft.com/en-us/library/dd537667.aspx">[2]</a></span>
+</li>
+<li id="cite_note-24">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.microsoft.com/visualstudio/11/en-us/downloads#express-win8">[3]</a></span>
+</li>
+<li id="cite_note-25">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://msdn.microsoft.com/library/windows/apps/br211384">[4]</a></span>
+</li>
+<li id="cite_note-26">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://blogs.msdn.com/b/jennifer/archive/2012/09/08/best-practices-for-migrating-windows-7-desktop-apps-to-windows-store-apps.aspx">[5]</a></span>
+</li>
+<li id="cite_note-27">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-27">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://blogs.msdn.com/b/visualstudio/archive/2012/09/12/visual-studio-express-2012-for-windows-desktop-is-here.aspx">[6]</a></span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-28">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.microsoft.com/visualstudio/11/en-us/downloads#tfs-express">Team Foundation Server Express 2012</a></span>
+</li>
+<li id="cite_note-29">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-29">^</a></b></span> <span class="reference-text">Microsoft marketing flyer (VS_2012_ExpressToPro FINAL.pdf), received in personal e-mail correspondence with Microsoft on September 17, 2012.</span>
+</li>
+<li id="cite_note-30">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-30">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/cc645993%28v=SQL.110%29.aspx">"Features Supported by the Editions of SQL Server 2012"</a>. <i><a href="http://en.m.wikipedia.org/wiki/MSDN" title="MSDN" class="mw-redirect">MSDN</a></i>. Microsoft. 2012<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/cc645993%28v=SQL.110%29.aspx">http://msdn.microsoft.com/en-us/library/cc645993%28v=SQL.110%29.aspx</a></span><span class="reference-accessdate">. Retrieved 30 August 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Features+Supported+by+the+Editions+of+SQL+Server+2012&amp;rft.atitle=%5B%5BMSDN%5D%5D&amp;rft.date=2012&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fcc645993%2528v%3DSQL.110%2529.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-31">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-31">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/bb286983.aspx">"Introducing the Visual Studio SDK"</a>. Msdn.microsoft.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/bb286983.aspx">http://msdn.microsoft.com/en-us/library/bb286983.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Introducing+the+Visual+Studio+SDK&amp;rft.atitle=&amp;rft.pub=Msdn.microsoft.com&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2Fbb286983.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-32">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-32">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/vstudio/bb856491.aspx">"Visual Studio 2008 Shell - Details"</a>. Msdn.microsoft.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/vstudio/bb856491.aspx">http://msdn.microsoft.com/en-us/vstudio/bb856491.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Visual+Studio+2008+Shell+-+Details&amp;rft.atitle=&amp;rft.pub=Msdn.microsoft.com&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Fvstudio%2Fbb856491.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-33">
+<span class="mw-cite-backlink"><b><a href="Microsoft_Visual_Studio_Express#cite_ref-33">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/danielfe/archive/2007/05/31/visual-studio-express-and-testdriven-net.aspx">"Dan Fernandez's Blog : Visual Studio Express and TestDriven.NET"</a>. Blogs.msdn.com. 2007-05-31<span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.msdn.com/danielfe/archive/2007/05/31/visual-studio-express-and-testdriven-net.aspx">http://blogs.msdn.com/danielfe/archive/2007/05/31/visual-studio-express-and-testdriven-net.aspx</a></span><span class="reference-accessdate">. Retrieved 2009-06-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Dan+Fernandez%27s+Blog+%3A+Visual+Studio+Express+and+TestDriven.NET&amp;rft.atitle=&amp;rft.date=2007-05-31&amp;rft.pub=Blogs.msdn.com&amp;rft_id=http%3A%2F%2Fblogs.msdn.com%2Fdanielfe%2Farchive%2F2007%2F05%2F31%2Fvisual-studio-express-and-testdriven-net.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Microsoft_Visual_Studio_Express"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://www.microsoft.com/express">Official website</a></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.microsoft.com/en-us/download/details.aspx?id=804">Microsoft® Visual Studio® 2005 Express Editions Service Pack 1</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.microsoft.com/en-us/download/details.aspx?id=7524">Visual Studio 2005 Service Pack 1 Update for Windows Vista</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Visual Studio Express</strong></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Microsoft_development_tools" title="Template:Microsoft development tools"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Microsoft_development_tools" title="Template talk:Microsoft development tools"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Microsoft_development_tools&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Category:Microsoft_development_tools" title="Category:Microsoft development tools">Microsoft development tools</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Development<br>
+environments</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Studio_Application_Lifecycle_Management" title="Visual Studio Application Lifecycle Management">Application Lifecycle Management</a></li>
+<li><strong class="selflink">Express</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Studio_Tools_for_Applications" title="Visual Studio Tools for Applications">Tools for Applications</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Studio_Tools_for_Office" title="Visual Studio Tools for Office">Tools for Office</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Others</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Expression_Blend" title="Microsoft Expression Blend">Expression Blend</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Expression_Web" title="Microsoft Expression Web">Expression Web</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Robotics_Developer_Studio" title="Microsoft Robotics Developer Studio">Robotics Developer Studio</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Microsoft_SharePoint_Designer" title="Microsoft SharePoint Designer">SharePoint Designer</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_FrontPage" title="Microsoft FrontPage">FrontPage</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Small_Basic" title="Microsoft Small Basic">Small Basic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_WebMatrix" title="Microsoft WebMatrix">WebMatrix</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Languages and<br>
+compilers</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></li>
+<li><a href="Visual_C++" title="Visual C++">Visual C++</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Visual_C_Sharp" title="Microsoft Visual C Sharp">Visual C#</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/J_Sharp" title="J Sharp">Visual J#</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_FoxPro" title="Visual FoxPro">Visual FoxPro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IronPython" title="IronPython">IronPython</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IronRuby" title="IronRuby">IronRuby</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">PowerShell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extensible_Application_Markup_Language" title="Extensible Application Markup Language">XAML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Major <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">APIs</a> and<br>
+frameworks</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_API" title="Windows API">Windows API</a> / <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows_SDK" title="Microsoft Windows SDK">SDK</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Managed_code" title="Managed code">Managed code frameworks</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">Presentation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Communication_Foundation" title="Windows Communication Foundation">Communication</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Workflow_Foundation" title="Windows Workflow Foundation">Workflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_CardSpace" title="Windows CardSpace">CardSpace</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Silverlight" title="Microsoft Silverlight">Silverlight</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_XNA" title="Microsoft XNA">XNA</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ASP.NET" title="ASP.NET">ASP.NET</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ASP.NET_AJAX" title="ASP.NET AJAX">ASP.NET AJAX</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_Integrated_Query" title="Language Integrated Query">LINQ</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ADO.NET" title="ADO.NET">ADO.NET</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/DirectX" title="DirectX">DirectX</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Managed_DirectX" title="Managed DirectX">Managed DirectX</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xbox_Development_Kit" title="Xbox Development Kit">Xbox Development Kit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Database tools<br>
+and languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;font-weight:normal;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Microsoft_SQL_Server" title="Microsoft SQL Server">SQL Server</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Express" title="SQL Server Express">Express</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Compact" title="SQL Server Compact">Compact</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Management_Studio" title="SQL Server Management Studio">Management Studio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Business_Intelligence_Development_Studio" title="Business Intelligence Development Studio">Business Intelligence Development Studio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MSDE" title="MSDE">MSDE</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;font-weight:normal;;">
+<div style="padding:0em 0.75em;">SQL services</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Analysis_Services" title="Microsoft Analysis Services">Analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Reporting_Services" title="SQL Server Reporting Services">Reporting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Integration_Services" title="SQL Server Integration Services">Integration</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL_Server_Notification_Services" title="SQL Server Notification Services">Notification</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;font-weight:normal;;">
+<div style="padding:0em 0.75em;">Other</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_FoxPro" title="Visual FoxPro">Visual FoxPro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Access" title="Microsoft Access">Microsoft Access</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extensible_Storage_Engine" title="Extensible Storage Engine">Extensible Storage Engine</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Source control</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Team_Foundation_Server" title="Team Foundation Server">Team Foundation Server</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Visual_SourceSafe" title="Microsoft Visual SourceSafe">Visual SourceSafe</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Deployment</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ClickOnce" title="ClickOnce">ClickOnce</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Installer" title="Windows Installer">Windows Installer</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/WiX" title="WiX">WiX</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Driver development</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Driver_Model" title="Windows Driver Model">Windows Driver Model</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_Driver_Foundation" title="Windows Driver Foundation">Windows Driver Foundation</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kernel-Mode_Driver_Framework" title="Kernel-Mode Driver Framework">KMDF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/User-Mode_Driver_Framework" title="User-Mode Driver Framework" class="mw-redirect">UMDF</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Driver_Kit" title="Windows Driver Kit">Windows Driver Kit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Logo_Kit" title="Windows Logo Kit" class="mw-redirect">Windows Logo Kit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/List_of_performance_analysis_tools#.NET" title="List of performance analysis tools">Performance Analysis</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CLR_Profiler" title="CLR Profiler">CLR Profiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 7 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%81%D9%8A%D8%AC%D9%88%D8%A7%D9%84_%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88_%D8%A7%D9%83%D8%B3%D8%A8%D8%B1%D9%8A%D8%B3" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://es.m.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%86%8C%ED%94%84%ED%8A%B8_%EB%B9%84%EC%A3%BC%EC%96%BC_%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4_%EC%9D%B5%EC%8A%A4%ED%94%84%EB%A0%88%EC%8A%A4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Microsoft_Visual_Studio_Express" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Microsoft_Visual_Studio_Express&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Microsoft_Visual_Studio_Express&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Microsoft+Visual+Studio+Express&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

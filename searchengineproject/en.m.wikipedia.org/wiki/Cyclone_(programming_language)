@@ -1,0 +1,480 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Cyclone (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Cyclone (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Cyclone_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Cyclone+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Cyclone (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Cyclone</caption>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">2006<span style="display:none"> (<span class="bday dtstart published updated">2006</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">AT&amp;T Labs</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">1.0 (May 8, 2006<span style="display:none"> (<span class="bday dtstart published updated">2006-05-08</span>)</span>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org">cyclone.thelanguage.org</a></span></td>
+</tr>
+</table>
+<p>The <b>Cyclone</b> <a href="Programming_language" title="Programming language">programming language</a> is intended to be a safe dialect of the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a>. Cyclone is designed to avoid <a href="Buffer_overflow" title="Buffer overflow">buffer overflows</a> and other vulnerabilities that are endemic in C programs, without losing the power and convenience of C as a tool for <a href="System_programming" title="System programming">system programming</a>.</p>
+<p>Cyclone development was started as a joint project of AT&amp;T Labs Research and <a href="http://en.m.wikipedia.org/wiki/Greg_Morrisett" title="Greg Morrisett">Greg Morrisett</a>'s group at Cornell in 2001. Version 1.0 was released on May 8, 2006.</p>
+<h2> <span class="mw-headline" id="Language_features">Language features</span>
+</h2>
+<p>Cyclone attempts to avoid some of the common pitfalls of <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, while still maintaining its look and performance. To this end, Cyclone places the following limits on programs:</p>
+<ul>
+<li>
+<code><a href="Null_pointer" title="Null pointer" class="mw-redirect">NULL</a></code> checks are inserted to prevent <a href="Segmentation_fault" title="Segmentation fault">segmentation faults</a>
+</li>
+<li>
+<a href="Pointer_arithmetic" title="Pointer arithmetic" class="mw-redirect">Pointer arithmetic</a> is limited</li>
+<li>Pointers must be initialized before use (this is enforced by <a href="http://en.m.wikipedia.org/wiki/Definite_assignment_analysis" title="Definite assignment analysis">definite assignment analysis</a>)</li>
+<li>
+<a href="Dangling_pointer" title="Dangling pointer">Dangling pointers</a> are prevented through region analysis and limits on <a href="Malloc" title="Malloc" class="mw-redirect"><code>free()</code></a>
+</li>
+<li>Only "safe" casts and unions are allowed</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow"><code>goto</code></a> into scopes is disallowed</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow"><code>switch</code></a> labels in different scopes are disallowed</li>
+<li>Pointer-returning functions must execute <code>return</code>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Setjmp/longjmp" title="Setjmp/longjmp" class="mw-redirect"><code>setjmp</code></a> and <a href="http://en.m.wikipedia.org/wiki/Setjmp/longjmp" title="Setjmp/longjmp" class="mw-redirect"><code>longjmp</code></a> are not supported</li>
+</ul>
+<p>To maintain the tool set that C programmers are used to, Cyclone provides the following extensions:</p>
+<ul>
+<li>
+<b>Never-<code>NULL</code> pointers</b> do not require <code>NULL</code> checks</li>
+<li>
+<b>"Fat" pointers</b> support pointer arithmetic with run-time <a href="Bounds_checking" title="Bounds checking">bounds checking</a>
+</li>
+<li>
+<b>Growable regions</b> support a form of safe manual memory management</li>
+<li>
+<b><a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">Garbage collection</a></b> for heap-allocated values</li>
+<li>
+<b><a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">Tagged unions</a></b> support type-varying arguments</li>
+<li>
+<b>Injections</b> help automate the use of tagged unions for programmers</li>
+<li>
+<b><a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">Polymorphism</a></b> replaces some uses of <a href="http://en.m.wikipedia.org/wiki/Void_pointer" title="Void pointer" class="mw-redirect"><code>void *</code></a>
+</li>
+<li>
+<b>varargs</b> are implemented as fat pointers</li>
+<li>
+<b><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exceptions</a></b> replace some uses of <code>setjmp</code> and <code>longjmp</code>
+</li>
+</ul>
+<p>For a better high-level introduction to Cyclone, the reasoning behind Cyclone and the source of these lists, see <a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/cyclone/papers/cyclone-safety.pdf">this paper</a>.</p>
+<p>Cyclone looks, in general, much like <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, but it should be viewed as a C-like language.</p>
+<h3> <span class="mw-headline" id="Pointer.2Freference_types">Pointer/reference types</span>
+</h3>
+<p>Cyclone implements three kinds of <a href="Reference_(computer_science)" title="Reference (computer science)">reference</a> (following C terminology these are called pointers):</p>
+<ul>
+<li>
+<code>*</code> (the normal type)</li>
+<li>
+<code>@</code> (the never-<code>NULL</code> pointer), and</li>
+<li>
+<code>?</code> (the only type with <a href="Pointer_arithmetic" title="Pointer arithmetic" class="mw-redirect">pointer arithmetic</a> allowed, "fat" pointers).</li>
+</ul>
+<p>The purpose of introducing these new pointer types is to avoid common problems when using pointers. Take for instance a function, called <code>foo</code> that takes a pointer to an int:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> foo<span class="br0">(</span><span class="kw4">int</span> <span class="sy0">*</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Although the person who wrote the function <code>foo</code> could have inserted <code>NULL</code> checks, let us assume that for performance reasons they did not. Calling <code>foo(NULL);</code> will result in <a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">undefined behavior</a> (typically, although not necessarily, a <b>SIGSEGV</b> being sent to the application). To avoid such problems, Cyclone introduces the <code>@</code> pointer type, which can never be <code>NULL</code>. Thus, the "safe" version of <code>foo</code> would be:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> foo<span class="br0">(</span><span class="kw4">int</span> @<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>This tells the Cyclone compiler that the argument to <code>foo</code> should never be <code>NULL</code>, avoiding the aforementioned undefined behavior. The simple change of <code>*</code> to <code>@</code> saves the programmer from having to write <code>NULL</code> checks and the operating system from having to trap <code>NULL</code> pointer dereferences. This extra limit, however, can be a rather large stumbling block for most C programmers, who are used to being able to manipulate their pointers directly with arithmetic. Although this is desirable, it can lead to <a href="Buffer_overflow" title="Buffer overflow">buffer overflows</a> and other "off-by-one"-style mistakes. To avoid this, the <code>?</code> pointer type is delimited by a known bound, the size of the array. Although this adds overhead due to the extra information stored about the pointer, it improves safety and security. Take for instance a simple (and naïve) <code>strlen</code> function, written in C:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> <span class="kw3">strlen</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>s<span class="br0">)</span>
+ <span class="br0">{</span>
+     <span class="kw4">int</span> iter <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+     <span class="kw1">if</span> <span class="br0">(</span>s <span class="sy0">==</span> NULL<span class="br0">)</span>
+        <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+     <span class="kw1">while</span> <span class="br0">(</span>s<span class="br0">[</span>iter<span class="br0">]</span> <span class="sy0">!=</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="br0">)</span> <span class="br0">{</span>
+        iter<span class="sy0">++;</span>
+     <span class="br0">}</span>
+     <span class="kw1">return</span> iter<span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This function assumes that the string being passed in is terminated by NUL (<code>'\0'</code>). However, what would happen if <code>char buf[] = {'h','e','l','l','o','!'};</code> were passed to this string? This is perfectly legal in C, yet would cause <code>strlen</code> to iterate through memory not necessarily associated with the string <code>s</code>. There are functions, such as <code>strnlen</code> which can be used to avoid such problems, but these functions are not standard with every implementation of <a href="ANSI_C" title="ANSI C">ANSI C</a>. The Cyclone version of <code>strlen</code> is not so different from the C version:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> <span class="kw3">strlen</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">?</span> s<span class="br0">)</span>
+ <span class="br0">{</span>
+    <span class="kw4">int</span> iter<span class="sy0">,</span> n <span class="sy0">=</span> s.<span class="me1">size</span><span class="sy0">;</span>
+    <span class="kw1">if</span> <span class="br0">(</span>s <span class="sy0">==</span> NULL<span class="br0">)</span>
+       <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+    <span class="kw1">for</span> <span class="br0">(</span>iter <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> iter <span class="sy0">&lt;</span> n<span class="sy0">;</span> iter<span class="sy0">++,</span> s<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+       <span class="kw1">if</span> <span class="br0">(</span><span class="sy0">*</span>s <span class="sy0">==</span> <span class="st0">'<span class="es5">\0</span>'</span><span class="br0">)</span>
+          <span class="kw1">return</span> iter<span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">return</span> n<span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Here, <code>strlen</code> bounds itself by the length of the array passed to it, thus not going over the actual length. Each of the kinds of pointer type can be safely cast to each of the others, and arrays and strings are automatically cast to <code>?</code> by the compiler. (Casting from <code>?</code> to <code>*</code> invokes a <a href="Bounds_checking" title="Bounds checking">bounds check</a>, and casting from <code>?</code> to <code>@</code> invokes both a <code>NULL</code> check and a bounds check. Casting from <code>*</code> or <code>?</code> results in no checks whatsoever; the resulting <code>?</code> pointer has a size of 1.)</p>
+<h3> <span class="mw-headline" id="Dangling_pointers_and_region_analysis">Dangling pointers and region analysis</span>
+</h3>
+<p>Consider the following code, in C:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">char</span> <span class="sy0">*</span><span class="kw3">itoa</span><span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
+ <span class="br0">{</span>
+    <span class="kw4">char</span> buf<span class="br0">[</span><span class="nu0">20</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw3">sprintf</span><span class="br0">(</span>buf<span class="sy0">,</span><span class="st0">"%d"</span><span class="sy0">,</span>i<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> buf<span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This returns an object that is allocated on the stack of the function <code>itoa</code>, which is not available after the function returns. While <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">gcc</a> and other compilers will warn about such code, the following will typically compile without warnings:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">char</span> <span class="sy0">*</span><span class="kw3">itoa</span><span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
+ <span class="br0">{</span>
+    <span class="kw4">char</span> buf<span class="br0">[</span><span class="nu0">20</span><span class="br0">]</span><span class="sy0">,</span> <span class="sy0">*</span>z<span class="sy0">;</span>
+    <span class="kw3">sprintf</span><span class="br0">(</span>buf<span class="sy0">,</span><span class="st0">"%d"</span><span class="sy0">,</span>i<span class="br0">)</span><span class="sy0">;</span>
+    z <span class="sy0">=</span> buf<span class="sy0">;</span>
+    <span class="kw1">return</span> z<span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Cyclone does regional analysis of each segment of code, preventing dangling pointers, such as the one returned from this version of <code>itoa</code>. All of the local variables in a given scope are considered to be part of the same region, separate from the heap or any other local region. Thus, when analyzing <code>itoa</code>, the compiler would see that <code>z</code> is a pointer into the local stack, and would report an error.</p>
+<h3> <span class="mw-headline" id="Manual_memory_management">Manual memory management</span>
+</h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content" style=""><tr>
+<td class="mbox-image"><img alt="Wiki letter w.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/23px-Wiki_letter_w.svg.png" width="23" height="23" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/35px-Wiki_letter_w.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/46px-Wiki_letter_w.svg.png 2x"></td>
+<td class="mbox-text" style=""><span class="mbox-text-span"><b>This section is empty.</b> <small>You can help by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Cyclone_(programming_language)&amp;action=edit&amp;section=">adding to it</a>.</small> <small><i>(January 2011)</i></small></span></td>
+</tr></table>
+<h2> <span class="mw-headline" id="Examples">Examples</span>
+</h2>
+<p>The best example to start with is the classic <a href="http://en.m.wikipedia.org/wiki/Hello_world" title="Hello world" class="mw-redirect">Hello world</a> program:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="co2">#include &lt;stdio.h&gt;</span>
+ <span class="co2">#include &lt;core.h&gt;</span>
+ using Core<span class="sy0">;</span>
+ <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> string_t <span class="sy0">?</span> args<span class="br0">)</span>
+ <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>argc <span class="sy0">&lt;=</span> <span class="nu0">1</span><span class="br0">)</span> <span class="br0">{</span>
+       <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Usage: hello-cyclone &lt;name&gt;<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+       <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Hello from Cyclone, %s<span class="es1">\n</span>"</span><span class="sy0">,</span> args<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a></li>
+<li><span class="new" title="Mythryl (page does not exist)">Mythryl</span></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org/wiki/User%20Manual">Cyclone User Manual</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.cs.umd.edu/~mwh/papers/cyclone-cuj.pdf">Cyclone: a Type-safe Dialect of C</a> by Dan Grossman, Michael Hicks, Trevor Jim, and Greg Morrisett - published January 2005</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org/">Cyclone Homepage</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.eecs.harvard.edu/~greg/cyclone/old_cyclone.html">Old web site</a> since official web site is not available.</li>
+<li><a rel="nofollow" class="external text" href="http://math.ifi.uzh.ch/fedora/5/i386/SRPMS.gemi/cyclone-1.0-1.src.rpm">Cyclone 1.0 source code RPM</a></li>
+<li><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org:8181/wiki/Download">Cyclone - Source code repositories</a></li>
+<li><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org:8181/wiki/Frequently%20Asked%20Questions">Cyclone - FAQ</a></li>
+<li><a rel="nofollow" class="external text" href="http://cyclone.thelanguage.org:8181/wiki/Cyclone%20for%20C%20Programmers">Cyclone for C programmers</a></li>
+</ul>
+<p>Presentations:</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.kent.ac.uk/people/staff/rej/morrisett-4.2.03.ppt">Cyclone: A Type-Safe Dialect of C</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.washington.edu/homes/djg/slides/grossman_cyclone_jpl_05.ppt">Cyclone: A Memory-Safe C-Level Programming Language</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 4 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Cyclone" lang="ca" hreflang="ca">català</a></li><li><a href="http://de.m.wikipedia.org/wiki/Cyclone_(Programmiersprache)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Cyclone" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Cyclone_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Cyclone_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Cyclone_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Cyclone+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

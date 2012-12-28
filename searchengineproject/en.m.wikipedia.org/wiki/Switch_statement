@@ -1,0 +1,860 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Switch statement - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Switch statement","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Switch_statement" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Switch+statement"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Switch statement</h1>			
+<div style="clear: right; margin-bottom: .5em; float: right; padding: .5em 0 .8em 1.4em; background: none; width: auto;">
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Programming" title="Programming" class="mw-redirect">programming</a>, a <b>switch</b>, <b>case</b>, <b>select</b> or <b>inspect</b> <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statement</a> is a type of selection control mechanism that exists in most <a href="Imperative_programming" title="Imperative programming">imperative programming</a> languages such as <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>/<a href="C++" title="C++">C++</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and so on. It is also included in several other types of languages. Its purpose is to allow the value of a <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable</a> or expression to control the flow of program execution via a <a href="http://en.m.wikipedia.org/wiki/Multiway_branch" title="Multiway branch">multiway branch</a> (or "<a href="Goto" title="Goto">goto</a>", one of several <a href="Label_(programming_language)" title="Label (programming language)" class="mw-redirect">labels</a>). The main reasons for using a switch include improving clarity, by reducing otherwise repetitive coding, and (if the <a href="http://en.m.wikipedia.org/wiki/Heuristic" title="Heuristic">heuristics</a> permit) also offering the potential for faster execution through easier <a href="http://en.m.wikipedia.org/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">compiler optimization</a> in many cases.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>In his 1952 text <i>Introduction to Metamathematics</i>, <a href="http://en.m.wikipedia.org/wiki/Stephen_Kleene" title="Stephen Kleene" class="mw-redirect">Stephen Kleene</a> formally proves that the CASE function (the IF-THEN-ELSE function being its simplest form) is a <a href="http://en.m.wikipedia.org/wiki/Primitive_recursive_function" title="Primitive recursive function">primitive recursive function</a>, where he defines the notion <b>definition by cases</b> in the following manner:</p>
+<dl>
+<dd>"#F. The function φ defined thus
+<dl>
+<dd>φ(x<sub>1</sub> , ... , x<sub>n</sub> ) =
+<dl>
+<dd>
+<ul>
+<li>φ<sub>1</sub>(x<sub>1</sub> , ... , x<sub>n</sub> ) if Q<sub>1</sub>(x<sub>1</sub> , ... , x<sub>n</sub> ),</li>
+<li>. . . . . . . . . . . .</li>
+<li>φ<sub>m</sub>(x<sub>1</sub> , ... , x<sub>n</sub> ) if Q<sub>m</sub>(x<sub>1</sub> , ... , x<sub>n</sub> ),</li>
+<li>φ<sub>m+1</sub>(x<sub>1</sub> , ... , x<sub>n</sub> ) otherwise,</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>where Q<sub>1</sub> , ... , Q<sub>m</sub> are mutually exclusive predicates (or φ(x<sub>1</sub> , ... , x<sub>n</sub>) shall have the value given by the first clause which applies) is primitive recursive in φ<sub>1</sub>, ..., φ<sub>m+1</sub>, Q<sub>1</sub>, ..., Q<sub>m+1</sub>. (<b>Definition by cases</b>)." (Kleene 1952:229)</dd>
+</dl>
+<p>Kleene provides a proof of this in terms of the Boolean-like recursive functions "sign-of" sg( ) and "not sign of" ~sg( ) (Kleene 1952:222-223); the first returns 1 if its input is positive and −1 if its input is negative.</p>
+<p>Boolos-Burgess-Jeffrey make the additional observation that "definition by cases" must be both mutually exclusive and collectively exhaustive. They too offer a proof of the primitive recursiveness of this function (Boolos-Burgess-Jeffrey 2002:74-75).</p>
+<p>The IF-THEN-ELSE is the basis of the <a href="http://en.m.wikipedia.org/wiki/McCarthy_formalism" title="McCarthy formalism" class="mw-redirect">McCarthy formalism</a> – its usage replaces both primitive recursion and the <a href="http://en.m.wikipedia.org/wiki/Mu-operator" title="Mu-operator" class="mw-redirect">mu-operator</a>.</p>
+<h2> <span class="mw-headline" id="Typical_syntax">Typical syntax</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <small><i>(October 2011)</i></small></span></td>
+</tr></table>
+<p>In most languages, a switch statement is defined across many individual lines using one or two keywords. A typical syntax is:</p>
+<ul>
+<li>The first line contains the basic keyword, usually <b>switch</b>, <b>case</b> or <b>select</b>, followed by an expression which is often referred to as the <i>control expression</i> or <i>control variable</i> of the switch statement.</li>
+<li>Subsequent lines define the actual cases (the values) with corresponding sequences of statements that should be executed when a match occurs.</li>
+</ul>
+<p>Each alternative begins with the particular value, or list of values (see below), that the control variable may match and which will cause the control to <a href="http://en.m.wikipedia.org/wiki/Go_to" title="Go to" class="mw-redirect">go to</a> the corresponding sequence of statements. The value (or list/range of values) is usually separated from the corresponding statement sequence by a colon or an implication arrow. In many languages, every case must also be preceded by a keyword such as <b>case</b> or <b>when</b>. An optional default case is typically also allowed, specified by a <b>default</b> or <b>else</b> keyword; this is executed when none of the other cases matches the control expression.</p>
+<p>In languages derived from C, a <b>break</b> keyword is used to go to the end of the switch, thus completing execution of the switch statement. In such languages, program execution "falls through" to the statements associated with the <i>next</i> case in the source text when no <b>break</b> is present, thereby behaving like a GOTO mechanism. Notable variations on this in the C-family include <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, in which all blocks must be terminated with a <b>break</b> unless the block is empty (i.e. fallthrough is used as a way to specify multiple values).</p>
+<p>The <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> family (Object Pascal, Modula, Oberon, Ada, etc.), as well as modern <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> dialects influenced by Pascal, do not allow fallthrough. The same goes for most functional languages and many others. Pascal-type languages instead permit any number of values per case, given as a comma-separated list, as a range, or as a combination. <a href="Perl" title="Perl">Perl</a> is a language where cases do not fall through by default, but may explicitly do so using a <b>continue</b> keyword.</p>
+<h2> <span class="mw-headline" id="Compilation">Compilation</span>
+</h2>
+<p>If the range of input values is identifiably 'small' and has only a few gaps, some compilers that incorporate an <a href="http://en.m.wikipedia.org/wiki/Optimization_(computer_science)" title="Optimization (computer science)" class="mw-redirect">optimizer</a> may actually implement the switch statement as a <a href="http://en.m.wikipedia.org/wiki/Branch_table" title="Branch table">branch table</a> or an array of indexed <a href="Function_pointer" title="Function pointer">function pointers</a> instead of a lengthy series of conditional instructions. This allows the switch statement to determine instantly what branch to execute without having to go through a list of comparisons.</p>
+<h3> <span class="mw-headline" id="Optimized_switch">Optimized switch</span>
+</h3>
+<p>To optimize a switch statement, the programmer must use a very compact range of possible values to test.<sup id="cite_ref-1" class="reference"><a href="Switch_statement#cite_note-1"><span>[</span>1<span>]</span></a></sup> Sometimes it is necessary to convert the switch to a more suitable range using an inexpensive transformation. See <a href="http://en.m.wikipedia.org/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">algorithmic efficiency</a> for an explanation of how the programmer can "assist" the compiler to make an efficient choice. See also the section 'Compiler generated branch tables' in <a href="http://en.m.wikipedia.org/wiki/Branch_table" title="Branch table">branch table</a> article for why optimization is not always performed as expected and how to solve this.</p>
+<h3> <span class="mw-headline" id="Checking_for_optimization">Checking for optimization</span>
+</h3>
+<p>Normally, the only method of finding out if this optimization has occurred is by actually looking at the resultant <a href="Assembly_language" title="Assembly language">assembly</a> or <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a> output that has been generated by the compiler (and is therefore seldom, if ever, done by <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">HLL</a> programmers). The first 'C' example below would be eligible for this kind of optimization if the compiler supported it (the range '0' through '9' with zero gaps without a defined case label).</p>
+<h2> <span class="mw-headline" id="Advantages">Advantages</span>
+</h2>
+<p>In some languages and programming environments, the use of a <b>case</b> or <b>switch</b> statement is considered superior to an equivalent series of <i>if-else</i> statements because it is:</p>
+<ul>
+<li>
+<b>easier to debug</b> (e.g. setting breakpoints on code vs. a call table, if the debugger has no conditional breakpoint capability)</li>
+<li>
+<b>easier to read</b> (subjective)</li>
+<li>
+<b>easier to understand</b> and therefore</li>
+<li><b>easier to maintain</b></li>
+<li><b>faster execution potential</b></li>
+</ul>
+<p>Additionally, as mentioned above, an <a href="http://en.m.wikipedia.org/wiki/Optimization_(computer_science)" title="Optimization (computer science)" class="mw-redirect">optimized</a> implementation may:</p>
+<ul>
+<li>
+<i>execute much faster'</i> than the alternative, because it is often implemented by using an indexed <a href="http://en.m.wikipedia.org/wiki/Branch_table" title="Branch table">branch table</a>
+</li>
+</ul>
+<dl>
+<dd>For example, deciding program flow based on a single character's value, if correctly implemented, is vastly more efficient than the alternative, reducing <a href="http://en.m.wikipedia.org/wiki/Instruction_path_length" title="Instruction path length">instruction path lengths</a> considerably.</dd>
+</dl>
+<p>When implemented as such, a switch statement essentially becomes a <a href="http://en.m.wikipedia.org/wiki/Perfect_hash" title="Perfect hash" class="mw-redirect">perfect hash</a></p>
+<h2> <span class="mw-headline" id="Disadvantages">Disadvantages</span>
+</h2>
+<p>When implemented with fall-through as the default path, switch/case statements are a frequent source of bugs among even experienced programmers, given that, in practice, the "break" is almost always the desired path, but not the default behavior of the switch/case construct (at least in C and Java).</p>
+<h2> <span class="mw-headline" id="Examples">Examples</span>
+</h2>
+<p>The following are simple examples, written in the various languages, that use switch (or switch-like) statements to print one of several possible lines, depending on the value of an integer entered by the user.</p>
+<h3> <span class="mw-headline" id="Ada">Ada</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> does not allow “fall through”; it uses <b>case</b>, <b>when</b> and <b>others</b>. Ada requires full coverage of all possible values for the type in the case statement. If a when others =&gt; case is not specified, then the code will not compile if either extra cases are specified, or missing. If at some point in the future, the definition of Digit is modified, the compiler will ensure that the programmer updates the case statement to reflect the changes to the type definition, which ensures that the program is kept up to date and helps to reduce maintenance costs. A list of values for a particular case can be combined using '|' as shown below, or a range of values may be specified using ".." to indicate the extents of the range. e.g., when 0 .. 4 =&gt; Put_Line ("Small Digits); In the example below, there is no need to check for values outside the range of 0 to 9 because the type is guaranteed to have a value within the range for the type.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+   <span class="kw3">type</span> Digit <span class="kw1">is</span> <span class="kw3">new</span> Integer <span class="kw3">range</span> <span class="nu0">0</span> .. <span class="nu0">9</span>;
+   n : Digit;
+   ...
+   <span class="kw1">case</span> n <span class="kw1">is</span>
+      <span class="kw3">when</span> <span class="nu0">0</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"You typed zero"</span><span class="br0">)</span>;
+      <span class="kw3">when</span> <span class="nu0">1</span> | <span class="nu0">9</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"n is a perfect square"</span><span class="br0">)</span>;
+      <span class="kw3">when</span> <span class="nu0">2</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"n is a prime number"</span><span class="br0">)</span>;
+         Put_Line <span class="br0">(</span><span class="st0">"n is an even number"</span><span class="br0">)</span>;
+      <span class="kw3">when</span> <span class="nu0">3</span> | <span class="nu0">5</span> | <span class="nu0">7</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"n is a prime number"</span><span class="br0">)</span>;
+      <span class="kw3">when</span> <span class="nu0">4</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"n is a perfect square"</span><span class="br0">)</span>;
+         Put_Line <span class="br0">(</span><span class="st0">"n is an even number"</span><span class="br0">)</span>;
+      <span class="kw3">when</span> <span class="kw3">others</span> =&gt;
+         Put_Line <span class="br0">(</span><span class="st0">"n is an even number"</span><span class="br0">)</span>;
+   <span class="kw1">end</span> <span class="kw1">case</span>;
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Algol_60">Algol 60</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Algol_60" title="Algol 60" class="mw-redirect">Algol 60</a> a switch is effectively an array of labels (<a href="http://en.m.wikipedia.org/wiki/Branch_table" title="Branch table">branch table</a>). A switch declaration defines its values (i.e., for each index value the name of a label occurring somewhere in the program). A goto statement can specify as destination, instead of a fixed label, an "array element" of this switch, i.e., the switch identifier with, in brackets, the index.</p>
+<h3> <span class="mw-headline" id="C.2C_C.2B.2B.2C_D.2C_Java.2C_PHP.2C_ActionScript.2C_JavaScript">C, C++, D, Java, PHP, ActionScript, JavaScript</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and similarly-constructed languages, the lack of <b>break</b> keywords to cause fall through of program execution from one block to the next is used extensively.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from January 2012">citation needed</span></a></i>]</sup> For example, if n==2, the fifth case statement will produce a match to the control variable. The next line outputs "n is an even number.". Execution then continues through the next 3 case statements and to the next line, which outputs "n is a prime number." this is a classic example of omitting the <b>break</b> line to allow for fall through. The <b>break</b> line after a case block causes the switch statement to conclude. If the user types in more than one digit, the <b>default</b> block is executed, producing an error message by executing the <b>default</b> code.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">switch</span> <span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="nu0">0</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"You typed zero."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">4</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"n is an even number."</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">1</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">9</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"n is a perfect square."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">break</span><span class="sy0">;</span>  
+  <span class="kw1">case</span> <span class="nu0">2</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"n is an even number."</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">3</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">5</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">7</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"n is a prime number."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">6</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">8</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"n is an even number."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">default</span><span class="sy0">:</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Only single-digit numbers are allowed."</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Clojure">Clojure</span>
+</h3>
+<p>Instead of a switch/case syntax, Clojure uses a cond macro.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="clojure source-clojure">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">cond</span> <span class="br0">(</span><span class="sy0">=</span> n <span class="nu0">5</span><span class="br0">)</span> <span class="nu0">5</span>
+      <span class="br0">(</span><span class="sy0">=</span> n <span class="nu0">3</span><span class="br0">)</span> <span class="nu0">3</span>
+       :<span class="me1">else</span> <span class="st0">"n is not equal to 5 or 3"</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Common_Lisp">Common Lisp</span>
+</h3>
+<p>Common Lisp has both cond, which is a generic conditional macro and case.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">cond</span> <span class="br0">(</span><span class="br0">(</span><span class="kw1">evenp</span> x<span class="br0">)</span> <span class="br0">(</span>/ x <span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span>
+      <span class="br0">(</span><span class="br0">(</span><span class="kw1">oddp</span> x<span class="br0">)</span> <span class="br0">(</span>+ <span class="br0">(</span>* x <span class="nu0">3</span><span class="br0">)</span> <span class="nu0">1</span><span class="br0">)</span><span class="br0">)</span>
+      <span class="br0">(</span>t <span class="st0">"X is not an integer"</span><span class="br0">)</span><span class="br0">)</span>
+<span class="br0">(</span><span class="kw1">case</span> x
+      <span class="br0">(</span><span class="nu0">1</span> <span class="nu0">2</span><span class="br0">)</span>
+      <span class="br0">(</span><span class="nu0">2</span> <span class="nu0">3</span><span class="br0">)</span>
+      <span class="br0">(</span><span class="nu0">3</span> <span class="nu0">4</span><span class="br0">)</span>
+      <span class="br0">(</span>otherwise <span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="C.23">C#</span>
+</h3>
+<p>In <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, every case block that contains any statements must have a reachable end point, or triggers a compilation error. Usually, this is a <b>break</b> statement, but any jump statement can be used – such as <b>return</b>, <b>goto</b> or <b>throw</b> – or the switch can simply end with an infinite loop.<sup id="cite_ref-2" class="reference"><a href="Switch_statement#cite_note-2"><span>[</span>2<span>]</span></a></sup> Case fall-through is only permitted when there are no statements between one <b>case</b> statement and the next. If fall-through is otherwise desired, it must be made explicit with the <b>goto case</b> construct. C# also allows the use of non-integer case values, such as Strings.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+<span class="kw1">switch</span> <span class="br0">(</span>n<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">case</span> <span class="nu0">0</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"You typed zero."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">1</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">4</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">9</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"n is a perfect square."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">2</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"n is an even number."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">goto</span> <span class="kw1">case</span> <span class="nu0">3</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">3</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">5</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">7</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"n is a prime number."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">6</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="nu0">8</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"n is an even number."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">default</span><span class="sy0">:</span>
+    Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"Only single-digit numbers are allowed."</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">break</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Eiffel">Eiffel</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>'s multi-branch instruction uses <b>inspect</b>, <b>when</b>, and <b>else</b>. It does not have the “fall through” behavior. Also, the <b>else</b> part is optional. However, an omitted <b>else</b> differs from an included, but empty <b>else</b>. If the <b>else</b> is empty and a case is processed that is not specified in one of the <b>when</b> parts, control passes through the <b>else</b>. But if the <b>else</b> is omitted, it is assumed that all cases should be identified in a <b>when</b> part. In this case an exception will occur as a result of processing a case not handled in a <b>when</b> part.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+<span class="kw2">inspect</span>
+        n
+<span class="kw2">when</span> <span class="nu0">0</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"You typed zero<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">when</span> <span class="nu0">1</span>, <span class="nu0">9</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"n is a perfect square<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">when</span> <span class="nu0">2</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"n is a prime number<span class="es0">%N</span>"</span><span class="br0">)</span>
+        print <span class="br0">(</span><span class="st0">"n is an even number<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">when</span> <span class="nu0">3</span>, <span class="nu0">5</span>, <span class="nu0">7</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"n is a prime number<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">when</span> <span class="nu0">4</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"n is a perfect square<span class="es0">%N</span>"</span><span class="br0">)</span>
+        print <span class="br0">(</span><span class="st0">"n is an even number<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">when</span> <span class="nu0">6</span>, <span class="nu0">8</span> <span class="kw2">then</span>
+        print <span class="br0">(</span><span class="st0">"n is an even number<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">else</span>
+        print <span class="br0">(</span><span class="st0">"Only single digit numbers are allowed<span class="es0">%N</span>"</span><span class="br0">)</span>
+<span class="kw2">end</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Go">Go</span>
+</h3>
+<p>Like Perl, the <a href="Go_(programming_language)" title="Go (programming language)">Go programming language</a> has an explicit <i>fallthrough</i> statement which can be used at the end of a case statement to indicate that control falls through next case clause in an expression "switch" statement.<sup id="cite_ref-3" class="reference"><a href="Switch_statement#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Haskell">Haskell</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Haskell_programming_language" title="Haskell programming language" class="mw-redirect">Haskell</a>'s <b>case</b> construct, unlike C-influenced languages, has no fall-through behaviour. It is an <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expression</a> which returns a value, and it can <a href="http://en.m.wikipedia.org/wiki/Deconstruct" title="Deconstruct" class="mw-redirect">deconstruct</a> values using <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+ <span class="kw1">case</span> list <span class="kw1">of</span>
+   <span class="br0">(</span>f:r<span class="br0">)</span> <span class="sy0">-&gt;</span> <span class="st0">"Not empty, first item is "</span> <span class="sy0">++</span> <span class="kw3">show</span> f
+   <span class="br0">[</span><span class="br0">]</span>    <span class="sy0">-&gt;</span> <span class="st0">"List is empty!"</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="OCaml.2C_F.23">OCaml, F#</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> and <a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>'s <b>match</b> construct is like Haskell's <tt>case</tt> above.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ocaml source-ocaml">
+<pre class="de1">
+<span class="co1">(* OCaml *)</span>
+ <span class="kw1">match</span> <span class="kw4">list</span> <span class="kw1">with</span>
+   f<span class="sy0">::</span>r <span class="sy0">-&gt;</span> <span class="st0">"Not empty, first item is "</span> <span class="sy0">^</span> <span class="kw3">string_of_int</span> f
+ <span class="sy0">|</span> <span class="br0">[</span><span class="br0">]</span>   <span class="sy0">-&gt;</span> <span class="st0">"List is empty!"</span>
+</pre>
+</div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ocaml source-ocaml">
+<pre class="de1">
+<span class="sy0">//</span> F<span class="sy0">#</span>
+ <span class="kw1">match</span> <span class="kw4">list</span> <span class="kw1">with</span>
+ <span class="sy0">|</span> f<span class="sy0">::</span>r <span class="sy0">-&gt;</span> <span class="st0">"Not empty, first item is "</span> <span class="sy0">+</span> <span class="kw4">string</span> f
+ <span class="sy0">|</span> <span class="br0">[</span><span class="br0">]</span>   <span class="sy0">-&gt;</span> <span class="st0">"List is empty!"</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Pascal">Pascal</span>
+</h3>
+<p><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> does not allow “fall through”, but has ranges and comma separated literal lists.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+ <span class="kw1">case</span> age <span class="kw1">of</span>
+   <span class="nu0">0</span><span class="sy1">,</span><span class="nu0">1</span><span class="sy1">:</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'baby'</span><span class="br0">)</span><span class="sy1">;</span>
+   <span class="nu0">2</span><span class="sy1">,</span><span class="nu0">3</span><span class="sy1">,</span><span class="nu0">4</span><span class="sy1">:</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'toddler'</span><span class="br0">)</span><span class="sy1">;</span>
+   <span class="nu0">5</span><span class="sy1">..</span><span class="nu0">12</span><span class="sy1">:</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'kid'</span><span class="br0">)</span><span class="sy1">;</span> 
+   <span class="nu0">13</span><span class="sy1">..</span><span class="nu0">19</span><span class="sy1">:</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'teenager'</span><span class="br0">)</span><span class="sy1">;</span> 
+   <span class="nu0">20</span><span class="sy1">..</span><span class="nu0">25</span><span class="sy1">:</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'young'</span><span class="br0">)</span><span class="sy1">;</span> 
+   <span class="kw1">else</span> <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'old'</span><span class="br0">)</span><span class="sy1">;</span> 
+ <span class="kw1">end</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Perl">Perl</span>
+</h3>
+<p><a href="Perl" title="Perl">Perl</a> 5.10 (backported from <a href="http://en.m.wikipedia.org/wiki/Perl_6" title="Perl 6">Perl 6</a>) has a powerful built in switch statement called <tt>given</tt>, where the cases are called <tt>when</tt>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="kw2">use</span> feature <span class="st_h">'switch'</span><span class="sy0">;</span>
+given <span class="br0">(</span><span class="re0">$foo</span><span class="br0">)</span> <span class="br0">{</span>
+    when <span class="br0">(</span><span class="kw3">undef</span><span class="br0">)</span> <span class="br0">{</span>
+        say <span class="st_h">'$foo is undefined'</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    when <span class="br0">(</span><span class="st0">"foo"</span><span class="br0">)</span> <span class="br0">{</span>
+        say <span class="st_h">'$foo is the string "foo"'</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    when <span class="br0">(</span><span class="br0">[</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">3</span><span class="sy0">,</span><span class="nu0">5</span><span class="sy0">,</span><span class="nu0">7</span><span class="sy0">,</span><span class="nu0">9</span><span class="br0">]</span><span class="br0">)</span> <span class="br0">{</span>
+        say <span class="st_h">'$foo is an odd digit'</span><span class="sy0">;</span>
+        <span class="kw1">continue</span><span class="sy0">;</span> <span class="co1"># Fall through</span>
+    <span class="br0">}</span>
+    when <span class="br0">(</span><span class="co5">$_</span> <span class="sy0">&lt;</span> <span class="nu0">100</span><span class="br0">)</span> <span class="br0">{</span>
+        say <span class="st_h">'$foo is numerically less than 100'</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    when <span class="br0">(</span><span class="re0">\&amp;complicated_check</span><span class="br0">)</span> <span class="br0">{</span>
+        say <span class="st_h">'a complicated check for $foo is true'</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+    default <span class="br0">{</span>
+        <span class="kw3">die</span> <span class="st0">"I don't know what to do with $foo"</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="PL.2FI">PL/I</span>
+</h3>
+<p><a href="PL/I" title="PL/I">PL/I</a> has two types of SELECT statement and does not allow "fall through." The default action is indicated by an OTHERWISE statement; if the OTHERWISE is omitted and one of the specified cases is not chosen, the ERROR condition is raised. The end of the SELECT statement is indicated by "END".</p>
+<p>In the first form the SELECT statement specifies an expression that is evaluated and compared to each of the expressions in each WHEN statement in turn. If a match is found the associated action is performed and the SELECT terminates. Exactly one of the alternatives or the OTHERWISE action is executed.</p>
+<p>The second form is similar to a multiple IF-statement. No expression is specified in the SELECT statement; the arbitrary expressions in each WHEN statement are evaluated in turn, the action specified for the first true condition encountered is performed, and the SELECT terminates.</p>
+<p>The following examples are equivalent except that the second omits the OTHERWISE.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pli source-pli">
+<pre class="de1">
+<span class="coMULTI">/* This is the first SELECT syntax */</span>
+<span class="kw1">select</span><span class="br0">(</span>a<span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">when</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span><span class="nu0">2</span><span class="br0">)</span> <span class="kw1">do</span><span class="sy0">;</span>
+    <span class="coMULTI">/* Compound statement */</span>
+    <span class="kw1">put</span><span class="br0">(</span> <span class="st0">'a is one or two'</span> <span class="br0">)</span><span class="sy0">;</span>
+    a <span class="sy0">=</span> <span class="nu0">99</span><span class="sy0">;</span>
+    <span class="kw1">end</span><span class="sy0">;</span>
+  <span class="kw1">when</span><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span>
+    <span class="coMULTI">/* Simple statement */</span>
+    <span class="kw1">put</span><span class="br0">(</span> <span class="st0">'a is three'</span> <span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">otherwise</span> <span class="kw1">put</span><span class="br0">(</span> <span class="st0">'a is not one, two, or three'</span> <span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">end</span><span class="sy0">;</span> <span class="coMULTI">/* Terminates the SELECT */</span>
+</pre>
+</div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pli source-pli">
+<pre class="de1">
+<span class="coMULTI">/* This is the second SELECT syntax */</span>
+<span class="kw1">select</span><span class="sy0">;</span>
+  <span class="kw1">when</span><span class="br0">(</span>a<span class="sy0">=</span><span class="nu0">1</span><span class="sy0">,</span> a<span class="sy0">=</span><span class="nu0">2</span><span class="br0">)</span> <span class="kw1">do</span><span class="sy0">;</span>
+    <span class="coMULTI">/* Compound statement */</span>
+    <span class="kw1">put</span><span class="br0">(</span> <span class="st0">'a is one or two'</span> <span class="br0">)</span><span class="sy0">;</span>
+    a <span class="sy0">=</span> <span class="nu0">99</span><span class="sy0">;</span>
+    <span class="kw1">end</span><span class="sy0">;</span>
+  <span class="kw1">when</span><span class="br0">(</span>a<span class="sy0">=</span><span class="nu0">3</span><span class="br0">)</span>
+    <span class="coMULTI">/* Simple statement */</span>
+    <span class="kw1">put</span><span class="br0">(</span> <span class="st0">'a is three'</span> <span class="br0">)</span><span class="sy0">;</span>
+  <span class="coMULTI">/* No OTHERWISE is specified in this example. */</span>
+  <span class="coMULTI">/* The ERROR condition raised if a is not */</span>
+  <span class="coMULTI">/* 1, 2, or 3 */</span>
+  <span class="kw1">end</span><span class="sy0">;</span> <span class="coMULTI">/* Terminates the SELECT */</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Python">Python</span>
+</h3>
+<p><a href="Python_(programming_language)" title="Python (programming language)">Python</a> does not have direct language support for the switch statement; 'if'/'elif' is often used for that. However, it is possible to emulate this behaviour, through a <a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">dictionary</a> of functions.</p>
+<p>Here is an example that does not use a “fall through” mechanism. The default case is mimicked by using dict.get()'s fallback parameter:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+switch <span class="sy0">=</span> <span class="br0">{</span>
+    <span class="st0">"a"</span>: DoChoiceA<span class="sy0">,</span>
+    <span class="st0">"b"</span>: DoChoiceB<span class="sy0">,</span>
+    <span class="st0">"c"</span>: DoChoiceC<span class="sy0">,</span>
+    <span class="br0">}</span>
+ 
+switch.<span class="me1">get</span><span class="br0">(</span>choice<span class="sy0">,</span> DoDefaultChoice<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="QBasic">QBasic</span>
+</h3>
+<p>In QBasic, the switch statement is called "Select Case", and fall-through to later blocks is not supported. The "Select Case" statement is more expressive because it allows conditionals within cases.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vb source-vb">
+<pre class="de1">
+<span class="kw3">SELECT</span> <span class="kw3">CASE</span> age
+        <span class="kw3">CASE</span> <span class="kw3">IS</span> &lt; 12:   <span class="kw4">PRINT</span> <span class="st0">"Have some juice!"</span>
+        <span class="kw3">CASE</span> 13 <span class="kw3">TO</span> 20:  <span class="kw4">PRINT</span> <span class="st0">"Have a soda!"</span>
+        <span class="kw3">CASE</span> <span class="kw3">IS</span> &gt;= 21:  <span class="kw4">PRINT</span> <span class="st0">"Have a beer!"</span>
+<span class="kw3">END</span> <span class="kw3">SELECT</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Ruby">Ruby</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> doesn’t allow “fall through”; it uses <b>case</b>, <b>when</b> and <b>else</b>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">case</span> n
+<span class="kw1">when</span> <span class="nu0">0</span> 
+  <span class="kw3">puts</span> <span class="st0">'You typed zero'</span>
+<span class="kw1">when</span> <span class="nu0">1</span>, <span class="nu0">9</span> 
+  <span class="kw3">puts</span> <span class="st0">'n is a perfect square'</span>
+<span class="kw1">when</span> <span class="nu0">2</span> 
+  <span class="kw3">puts</span> <span class="st0">'n is a prime number'</span>
+  <span class="kw3">puts</span> <span class="st0">'n is an even number'</span>
+<span class="kw1">when</span> <span class="nu0">3</span>, <span class="nu0">5</span>, <span class="nu0">7</span> 
+  <span class="kw3">puts</span> <span class="st0">'n is a prime number'</span>
+<span class="kw1">when</span> <span class="nu0">4</span>, <span class="nu0">6</span>, <span class="nu0">8</span> 
+  <span class="kw3">puts</span> <span class="st0">'n is an even number'</span>
+<span class="kw1">else</span>              
+  <span class="kw3">puts</span> <span class="st0">'Only single-digit numbers are allowed'</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>Also can be used to assign a value, in a more compact way:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+result = <span class="kw1">case</span> n
+  <span class="kw1">when</span> <span class="nu0">0</span> <span class="kw1">then</span> <span class="st0">'none'</span>
+  <span class="kw1">when</span> <span class="nu0">1</span>..<span class="nu0">9</span> <span class="kw1">then</span> <span class="st0">'valid'</span>
+  <span class="kw1">else</span> <span class="st0">'too much'</span>
+<span class="kw1">end</span>
+<span class="kw3">puts</span> <span class="st0">'n is '</span> <span class="sy0">+</span> result
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Shell_script">Shell script</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> and similar shell scripting languages offer a case construct using the OR operator, <code>|</code>, to separate the selections, and the <code>)</code> symbol to separate the list of selections from the action to be taken. Fall through is done using <code>;&amp;</code> (new since Bash 4) whereas <code>;;</code> acts as a case break.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw1">case</span> <span class="re1">$n</span> <span class="kw1">in</span>
+    <span class="nu0">0</span><span class="br0">)</span>      <span class="kw3">echo</span> <span class="st_h">'You typed 0.'</span><span class="sy0">;;</span>
+    <span class="nu0">1</span><span class="sy0">|</span><span class="nu0">9</span><span class="br0">)</span>    <span class="kw3">echo</span> <span class="st0">"<span class="es2">$n</span> is a perfect square."</span><span class="sy0">;;</span>
+    <span class="nu0">3</span><span class="sy0">|</span><span class="nu0">5</span><span class="sy0">|</span><span class="nu0">7</span><span class="br0">)</span>  <span class="kw3">echo</span> <span class="st0">"<span class="es2">$n</span> is a prime number."</span><span class="sy0">;;</span>
+    <span class="nu0">4</span><span class="br0">)</span>      <span class="kw3">echo</span> <span class="st0">"<span class="es2">$n</span> is a perfect square."</span>;<span class="sy0">&amp;</span>  <span class="co0"># fall through</span>
+    <span class="nu0">2</span><span class="sy0">|</span><span class="nu0">6</span><span class="sy0">|</span><span class="nu0">8</span><span class="br0">)</span>  <span class="kw3">echo</span> <span class="st0">"<span class="es2">$n</span> is an even number."</span><span class="sy0">;;</span>
+    <span class="sy0">*</span><span class="br0">)</span>      <span class="kw3">echo</span> <span class="st_h">'Only single-digit numbers are allowed.'</span><span class="sy0">;;</span>
+<span class="kw1">esac</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="SQL">SQL</span>
+</h3>
+<p>SQL has a <code>case/when/then/else/end</code> expression:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="sql source-sql">
+<pre class="de1">
+<span class="kw1">CASE</span> N <span class="kw1">WHEN</span> <span class="nu0">1</span> <span class="kw1">THEN</span> <span class="st0">"one"</span> <span class="kw1">WHEN</span> <span class="nu0">2</span> <span class="kw1">THEN</span> <span class="st0">"two"</span> <span class="kw1">ELSE</span> <span class="st0">"i can not count that high"</span> <span class="kw1">END</span>
+</pre>
+</div>
+</div>
+<p>For the Orcacle-SQL dialect, this can be shortened to an equivalent <code>decode</code> construct.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="sql source-sql">
+<pre class="de1">
+<span class="kw1">SELECT</span> decode<span class="br0">(</span>N<span class="sy0">,</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="st0">"one"</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="st0">"two"</span><span class="br0">)</span>;
+<span class="kw1">FROM</span> <span class="st0">"table_name"</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Visual_Basic_.NET">Visual Basic .NET</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a>, the switch statement is called "Select Case", and fall-through to later blocks is not supported. However, ranges and various constructs from If statements are both supported</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vb source-vb">
+<pre class="de1">
+<span class="kw3">Select</span> <span class="kw3">Case</span> n
+  <span class="kw3">Case</span> <span class="kw3">Is</span> &lt; -5
+    MsgBox(<span class="st0">"n is less than -5"</span>)
+  <span class="kw3">Case</span> -4 <span class="kw3">To</span> -1
+    MsgBox(<span class="st0">"n is between -4 and -1"</span>)
+  <span class="kw3">Case</span> 0
+    MsgBox(<span class="st0">"n is 0"</span>)
+  <span class="kw3">Case</span> 2, 4, 6, 8
+    MsgBox(<span class="st0">"n is even"</span>)
+  <span class="kw3">Case</span> 1, 3, 5, 7, 9
+    MsgBox(<span class="st0">"n is odd"</span>)
+  <span class="kw3">Case</span> <span class="kw3">Else</span>
+    MsgBox(<span class="st0">"only single-digit numbers are allowed."</span>, vbCritical)
+<span class="kw3">End</span> <span class="kw3">Select</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Visual_FoxPro">Visual FoxPro</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Visual_FoxPro" title="Visual FoxPro">Visual FoxPro</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="visualfoxpro source-visualfoxpro">
+<pre class="de1">
+<span class="kw1">Do</span> <span class="kw1">Case</span>
+<span class="kw1">Case</span> field_1 <span class="sy0">=</span> <span class="st0">"X"</span>
+   <span class="kw2">Replace</span> field_b <span class="kw1">With</span> <span class="nu0">1</span>
+<span class="kw1">Case</span> field_1 <span class="sy0">=</span> <span class="st0">"Y"</span>
+   <span class="kw2">Replace</span> field_b <span class="kw1">With</span> <span class="nu0">2</span>
+<span class="kw1">Case</span> field_1 <span class="sy0">=</span> <span class="st0">"Z"</span>
+   <span class="kw2">Replace</span> field_b <span class="kw1">With</span> <span class="nu0">3</span>
+<span class="kw1">Otherwise</span>
+   <span class="kw2">Replace</span> field_b <span class="kw1">with</span> <span class="nu0">0</span>
+<span class="kw1">Endcase</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Visual_Basic_.28classic.29.2C_VBA.2C_VB_Script">Visual Basic (classic), VBA, VB Script</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>, the switch statement is called "Select Case", and fall-through to later blocks is not supported. <a href="http://en.m.wikipedia.org/wiki/Short-circuit_evaluation" title="Short-circuit evaluation">Short-circuit evaluation</a> is used. But also, may doing exactly like C, using <a href="http://en.m.wikipedia.org/wiki/GOSUB" title="GOSUB">GOSUB</a> behind <i>Select Case</i>. the block <i>Select Case</i> then call to <i>GOSUB label</i>, where each BREAK in C it's a RETURN (to gosub).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vb source-vb">
+<pre class="de1">
+<span class="kw3">Select</span> <span class="kw3">Case</span> n
+  <span class="kw3">Case</span> <span class="st0">"s"</span>
+    MsgBox <span class="st0">"Case values of any type are supported"</span>
+  <span class="kw3">Case</span> <span class="st0">"s"</span>
+    MsgBox <span class="st0">"This block is not an error but will never be selected"</span>
+  <span class="kw3">Case</span> ArbitraryFunction()
+    MsgBox <span class="st0">"Any Expression which can be evaluated at runtime may be used as a case value or selector"</span>
+  <span class="kw3">Case</span> 2+3: MsgBox <span class="st0">"The colon is a general language feature, not a part of the switch statement"</span>
+            MsgBox <span class="st0">"Each block is terminated by the following Case or End statement"</span>
+  <span class="kw3">Case</span> <span class="kw3">Else</span>
+    MsgBox <span class="st0">"Case values which do not match the selector type will cause an exception"</span>, vbCritical
+<span class="kw3">End</span> <span class="kw3">Select</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="WebDNA">WebDNA</span>
+</h3>
+<p>The <a href="http://en.m.wikipedia.org/wiki/WebDNA" title="WebDNA">WebDNA</a> example is easy to understand:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cfm source-cfm">
+<pre class="de1">
+[text]x=5[/text]
+ 
+[switch value=[x]]
+  [case value=1]
+    The value of x was 1
+  [/case]
+  [case value=2]
+    The value of x was 2
+  [/case]
+  [default]
+    The value of x was neither 1 nor 2; it was [x]
+  [/default]
+[/switch]
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Windows_PowerShell">Windows PowerShell</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a> employs a construct whereby the action to be taken is enclosed in a scriptblock (i.e. curly braces), with the selector placed directly before it. The selector can consist of regular expressions if the "-<a href="http://en.m.wikipedia.org/wiki/Regex" title="Regex" class="mw-redirect">regex</a>" parameter is inserted after the "switch" command; similarly, wildcards are supported using the "-wildcard" parameter. In either case, the wildcard or regex must be enclosed in quote marks.<sup id="cite_ref-4" class="reference"><a href="Switch_statement#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Akin to C-based implementations, if a "break" statement is not included at the end of a scriptblock, the switch statement will continue to test each case and execute further scriptblocks.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="powershell source-powershell">
+<pre class="de1">
+<span class="kw3">switch</span> <span class="br0">(</span>n<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="nu0">0</span> <span class="br0">{</span> <span class="kw1">Write-Host</span> <span class="st0">'You typed 0'</span> <span class="br0">}</span>
+  <span class="br0">{</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">1</span><span class="br0">)</span> <span class="kw4">-or</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">4</span><span class="br0">)</span> <span class="kw4">-or</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">9</span><span class="br0">)</span> <span class="br0">}</span>
+    <span class="br0">{</span> <span class="kw1">Write-Host</span> <span class="st0">'n is a perfect square'</span> <span class="br0">}</span>
+  <span class="br0">{</span> <span class="br0">(</span><span class="br0">(</span><span class="kw6">$_</span> <span class="sy0">%</span> <span class="nu0">2</span><span class="br0">)</span> <span class="kw4">-eq</span> <span class="nu0">0</span><span class="br0">)</span> <span class="kw4">-and</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-ne</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">}</span>
+    <span class="br0">{</span> <span class="kw1">Write-Host</span> <span class="st0">'n is an even number'</span> <span class="br0">}</span>
+  <span class="br0">{</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">2</span><span class="br0">)</span> <span class="kw4">-or</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">3</span><span class="br0">)</span> <span class="kw4">-or</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">5</span><span class="br0">)</span> <span class="kw4">-or</span> <span class="br0">(</span><span class="kw6">$_</span> <span class="kw4">-eq</span> <span class="nu0">7</span><span class="br0">)</span> <span class="br0">}</span>
+    <span class="br0">{</span> <span class="kw1">Write-Host</span> <span class="st0">'n is an prime number'</span> <span class="br0">}</span>
+  default <span class="br0">{</span> <span class="kw1">Write-Host</span> <span class="st0">'Only single-digit numbers are allowed'</span> <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Symbolic_constants">Symbolic constants</span>
+</h2>
+<p>In many (but not all) circumstances, using symbolic names rather than explicit literal integers makes the source code easier to read and maintain. This is often achieved via <a href="http://en.m.wikipedia.org/wiki/Enumeration" title="Enumeration">enumerations</a> and has no influence on the performance or behavior of the program. This style of switch statement is commonly used for <a href="http://en.m.wikipedia.org/wiki/Finite_state_machine" title="Finite state machine" class="mw-redirect">finite state machine</a> implementation. Here are some examples, given in Pascal (one of the first languages implementing enumerations, along with <a href="http://en.m.wikipedia.org/wiki/Algol68" title="Algol68" class="mw-redirect">Algol68</a>) as well as in C (which has a tradition of constants in all capitals, although not enforced by the compiler.)</p>
+<h3> <span class="mw-headline" id="Pascal_.28using_an_enumeration.29">Pascal (using an enumeration)</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">var</span> state <span class="sy1">:</span> <span class="br0">(</span>StateReady<span class="sy1">,</span> StateSet<span class="sy1">,</span> StateGo<span class="sy1">,</span> StateFail<span class="br0">)</span><span class="sy1">;</span>
+ 
+<span class="kw1">case</span> state <span class="kw1">of</span>
+    StateReady<span class="sy1">:</span> <span class="kw1">begin</span>
+        state<span class="sy1">:</span><span class="sy3">=</span><span class="kw3">succ</span><span class="br0">(</span>state<span class="br0">)</span><span class="sy1">;</span>
+        <span class="kw1">if</span> x &lt; <span class="nu0">0</span> <span class="kw1">then</span> state<span class="sy1">:</span><span class="sy3">=</span>StateFail
+    <span class="kw1">end</span><span class="sy1">;</span>
+    StateSet<span class="sy1">:</span> <span class="kw1">begin</span>
+        state<span class="sy1">:</span><span class="sy3">=</span><span class="kw3">succ</span><span class="br0">(</span>state<span class="br0">)</span><span class="sy1">;</span>
+        <span class="kw1">if</span> y &gt; <span class="nu0">0</span> <span class="kw1">then</span> state<span class="sy1">:</span><span class="sy3">=</span>StateFail
+    <span class="kw1">end</span><span class="sy1">;</span>
+ 
+    StateGo<span class="sy1">:</span>   <span class="kw3">writeln</span><span class="br0">(</span>"go!"<span class="br0">)</span><span class="sy1">;</span>
+    StateFail<span class="sy1">:</span> exit<span class="br0">(</span> <span class="sy3">-</span><span class="nu0">1</span> <span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="C_.28using_the_enum_keyword.29">C (using the enum keyword)</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw2">enum</span> state
+<span class="br0">{</span>
+   STATE_READY <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">,</span>
+   STATE_SET <span class="sy0">=</span> <span class="nu0">2</span><span class="sy0">,</span>
+   STATE_GO <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">,</span>
+   STATE_FAIL <span class="sy0">=</span> <span class="nu0">4</span>
+<span class="br0">}</span><span class="sy0">;</span>
+ 
+<span class="kw1">switch</span><span class="br0">(</span> state <span class="br0">)</span>
+<span class="br0">{</span>
+   <span class="kw1">case</span> STATE_READY<span class="sy0">:</span>
+       state <span class="sy0">=</span> STATE_SET<span class="sy0">;</span>
+       <span class="kw1">if</span><span class="br0">(</span> x <span class="sy0">&lt;</span> <span class="nu0">0</span> <span class="br0">)</span> state <span class="sy0">=</span> STATE_FAIL<span class="sy0">;</span>
+       <span class="kw2">break</span><span class="sy0">;</span>
+ 
+   <span class="kw1">case</span> STATE_SET<span class="sy0">:</span>
+       state <span class="sy0">=</span> STATE_GO<span class="sy0">;</span>
+       <span class="kw1">if</span><span class="br0">(</span> y <span class="sy0">&gt;</span> <span class="nu0">0</span> <span class="br0">)</span> state <span class="sy0">=</span> STATE_FAIL<span class="sy0">;</span>
+       <span class="kw2">break</span><span class="sy0">;</span>
+ 
+   <span class="kw1">case</span> STATE_GO<span class="sy0">:</span>
+       <span class="kw3">printf</span><span class="br0">(</span> <span class="st0">"go!<span class="es1">\n</span>"</span> <span class="br0">)</span><span class="sy0">;</span>
+       <span class="kw2">break</span><span class="sy0">;</span>
+ 
+   <span class="kw1">case</span> STATE_FAIL<span class="sy0">:</span>
+       <span class="kw3">exit</span><span class="br0">(</span> <span class="sy0">-</span><span class="nu0">1</span> <span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Alternative_uses">Alternative uses</span>
+</h2>
+<p>Many languages evaluate expressions inside <code>switch</code> blocks at runtime, allowing a number of less obvious uses for the construction. This prohibits certain compiler optimizations, so is more common in dynamic and scripting languages where the enhanced flexibility is more important than the performance overhead.</p>
+<p>For example, in <a href="PHP" title="PHP">PHP</a>, a constant can be used as the "variable" to check against, and the first case statement which evaluates to that constant will be executed:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="kw1">switch</span><span class="br0">(</span><span class="kw4">true</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="br0">(</span><span class="re0">$x</span> <span class="sy0">==</span> <span class="st_h">'hello'</span><span class="br0">)</span><span class="sy0">:</span>
+    foo<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> 
+    <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="br0">(</span><span class="re0">$z</span> <span class="sy0">==</span> <span class="st_h">'howdy'</span><span class="br0">)</span><span class="sy0">:</span> <span class="kw1">break</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw1">switch</span><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="re0">$x</span><span class="sy0">:</span> <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="re0">$y</span><span class="sy0">:</span> <span class="kw1">break</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This feature is also useful for checking multiple variables against one value rather than one variable against many values. COBOL also supports this form (and others forms) in the EVALUATE statement.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, due to its handling of <code>===</code> equality, the statement can be used to test for variable’s class:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">case</span> input
+<span class="kw1">when</span> <span class="kw3">Array</span>: <span class="kw3">puts</span> <span class="st0">'input is an Array!'</span>
+<span class="kw1">when</span> <span class="kw4">Hash</span>:  <span class="kw3">puts</span> <span class="st0">'input is a Hash!'</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>Ruby also returns a value that can be assigned to a variable, and doesn’t actually require the <code>case</code> to have any parameters (acting a bit like an <code>else if</code> statement):</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+catfood = <span class="kw1">case</span>
+          <span class="kw1">when</span> cat.<span class="me1">age</span> <span class="sy0">&lt;</span>= <span class="nu0">1</span>: junior
+          <span class="kw1">when</span> cat.<span class="me1">age</span> <span class="sy0">&gt;</span> <span class="nu0">10</span>: senior
+          <span class="kw1">else</span>               normal
+          <span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Alternatives">Alternatives</span>
+</h2>
+<ul>
+<li>A series of nested <i>if-else</i> <a href="Conditional_(programming)" title="Conditional (programming)">conditionals</a> that examine the target one value at a time.</li>
+<li>A <a href="http://en.m.wikipedia.org/wiki/Lookup_table" title="Lookup table">lookup table</a>, which contains, as keys, the <b>case</b> values and, as values, the part under the <b>case</b> statement.</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd>(In some languages, only actual data types are allowed as values in the lookup table. In other languages, it is also possible to assign <a href="http://en.m.wikipedia.org/wiki/Function_(computer_science)" title="Function (computer science)" class="mw-redirect">functions</a> as lookup table values, gaining the same flexibility as a real <b>switch</b> statement. See <a href="http://en.m.wikipedia.org/wiki/Control_table" title="Control table">Control table</a> article for more detail on this).</dd>
+<dd>Lua does now support Case/Switch statements: <a rel="nofollow" class="external free" href="http://lua-users.org/wiki/SwitchStatement">http://lua-users.org/wiki/SwitchStatement</a> . This lookup technique is one way to implement <b>switch</b> statements in the <a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a> language - which has no built-in <b>switch</b>.<sup id="cite_ref-5" class="reference"><a href="Switch_statement#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+</dd>
+<dd>In some cases, lookup tables are more efficient than non-<a href="http://en.m.wikipedia.org/wiki/Program_optimization" title="Program optimization">optimized</a> <b>switch</b> statements since many languages can optimize table lookups - whereas switch statements are not optimized unless the range of values is small with few gaps. A non-<a href="http://en.m.wikipedia.org/wiki/Program_optimization" title="Program optimization">optimized</a>, non-<a href="http://en.m.wikipedia.org/wiki/Binary_search" title="Binary search" class="mw-redirect">binary search</a> lookup, however, will almost certainly be slower than either a non-optimized switch or the equivalent multiple <i>if-else</i> statements.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2011">citation needed</span></a></i>]</sup>
+</dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>A <a href="http://en.m.wikipedia.org/wiki/Control_table" title="Control table">control table</a> (that may be implented as a simple lookup table) can also be customized to accommodate multiple conditions on multiple inputs if required and usually exhibits greater 'visual compactness' than an equivalent switch (that can occupy many statements).</li>
+<li>For <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programs</a>, extensive use of <a href="Type_polymorphism" title="Type polymorphism" class="mw-redirect">polymorphism</a> can be used</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">Algorithmic efficiency</a> - general discussion on improving speed of <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Branch_table" title="Branch table">Branch table</a> - an extremely fast, optimized form of a switch statement used mostly in <a href="http://en.m.wikipedia.org/wiki/Assembler_language" title="Assembler language" class="mw-redirect">Assembler languages</a> and <a href="Compiler" title="Compiler">compilers</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_table" title="Control table">Control table</a> - a customizable switch-like <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array</a> <a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">data structure</a>, requiring an <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Duff%27s_device" title="Duff's device">Duff's device</a> - a <a href="http://en.m.wikipedia.org/wiki/Loop_unwinding" title="Loop unwinding">loop unwinding</a> technique that makes use of a switch statement.</li>
+<li>
+<a href="Conditional_(programming)" title="Conditional (programming)">Conditional statement</a> - A switch statement is a type of conditional statement</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/McCarthy_Formalism" title="McCarthy Formalism">McCarthy Formalism</a> - for history and historical references</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Multiway_branch" title="Multiway branch">Multiway branch</a> - a switch statement is a type of multiway branch</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Switch_statement#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.rmbconsulting.us/Publications/PointerToFunction.pdf">http://www.rmbconsulting.us/Publications/PointerToFunction.pdf</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Switch_statement#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/06tc147t.aspx">switch (C# Reference)</a> — <a href="http://en.m.wikipedia.org/wiki/MSDN_Library" title="MSDN Library">MSDN Library</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Switch_statement#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://golang.org/doc/go_spec.html#Fallthrough_statement">"The Go Programming Language Specification"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://golang.org/doc/go_spec.html#Fallthrough_statement">http://golang.org/doc/go_spec.html#Fallthrough_statement</a></span><span class="reference-accessdate">. Retrieved 2010-01-18</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Go+Programming+Language+Specification&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fgolang.org%2Fdoc%2Fgo_spec.html%23Fallthrough_statement&amp;rfr_id=info:sid/en.wikipedia.org:Switch_statement"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Switch_statement#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.microsoft.com/technet/scriptcenter/resources/pstips/jan08/pstip0111.mspx">"Windows PowerShell Tip of the Week"</a>. Microsoft. January 2008<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.microsoft.com/technet/scriptcenter/resources/pstips/jan08/pstip0111.mspx">http://www.microsoft.com/technet/scriptcenter/resources/pstips/jan08/pstip0111.mspx</a></span><span class="reference-accessdate">. Retrieved 2009-04-28</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Windows+PowerShell+Tip+of+the+Week&amp;rft.atitle=&amp;rft.date=January+2008&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Ftechnet%2Fscriptcenter%2Fresources%2Fpstips%2Fjan08%2Fpstip0111.mspx&amp;rfr_id=info:sid/en.wikipedia.org:Switch_statement"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Switch_statement#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://lua-users.org/wiki/SwitchStatement">Switch statement in Lua</a></span>
+</li>
+</ol>
+</div>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Stephen_Kleene" title="Stephen Kleene" class="mw-redirect">Stephen Kleene</a>, 1952 (10th reprint 1991), <i>Introduction to Metamathematics</i>, North-Holland Publishing Company, Amsterdam NY, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0720421039" class="internal mw-magiclink-isbn">ISBN 0-7204-2103-9</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/George_Boolos" title="George Boolos">George Boolos</a>, <a href="http://en.m.wikipedia.org/wiki/John_P._Burgess" title="John P. Burgess">John Burgess</a>, and <a href="http://en.m.wikipedia.org/wiki/Richard_Jeffrey" title="Richard Jeffrey">Richard Jeffrey</a>, 2002, <i>Computability and Logic: Fourth Edition</i>, Cambridge University Press, Cambridge UK, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0521007585" class="internal mw-magiclink-isbn">ISBN 0-521-00758-5</a> paperback. cf page 74-75.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://da.m.wikipedia.org/wiki/Switch-s%C3%A6tning" lang="da" hreflang="da">dansk</a></li><li><a href="http://es.m.wikipedia.org/wiki/Switch_case" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Switch_(instruction)" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Switch_%EB%AC%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Switch_naredba" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://is.m.wikipedia.org/wiki/Switch-setning" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Switch_(programmazione)" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Switch%E6%96%87" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Instrukcja_wyboru" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80_%D0%B2%D0%B5%D1%82%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F#.D0.9F.D0.B5.D1.80.D0.B5.D0.BA.D0.BB.D1.8E.D1.87.D0.B0.D1.82.D0.B5.D0.BB.D1.8C" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%86%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D1%96%D1%8F_%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0%D1%87" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Switch_statement&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Switch_statement&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Switch+statement&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

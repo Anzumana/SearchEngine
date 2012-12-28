@@ -1,0 +1,319 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Dangling pointer - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Dangling pointer","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Dangling_pointer" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Dangling+pointer"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Dangling pointer</h1>			<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Dangling_Pointer.pdf&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dangling_Pointer.pdf/page1-220px-Dangling_Pointer.pdf.jpg" width="220" height="311" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dangling_Pointer.pdf/page1-330px-Dangling_Pointer.pdf.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dangling_Pointer.pdf/page1-440px-Dangling_Pointer.pdf.jpg 2x"></a>
+<div class="thumbcaption">
+
+Dangling Pointer</div>
+</div>
+</div>
+<p><b>Dangling pointers</b> and <b>wild pointers</b> in <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a> are <a href="http://en.m.wikipedia.org/wiki/Data_pointer" title="Data pointer" class="mw-redirect">pointers</a> that do not point to a valid object of the appropriate type. These are special cases of <a href="http://en.m.wikipedia.org/wiki/Memory_safety" title="Memory safety">memory safety</a> violations.</p>
+<p>Dangling pointers arise when an object is deleted or deallocated, without modifying the value of the pointer, so that the pointer still points to the memory location of the deallocated memory. As the system may reallocate the previously freed memory to another process, if the original program then <a href="http://en.m.wikipedia.org/wiki/Dereference_operator" title="Dereference operator">dereferences</a> the (now) dangling pointer, <i><a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">unpredictable behavior</a> may result</i>, as the memory may now contain completely different data. This is especially the case if the program writes data to memory pointed by a dangling pointer, a silent corruption of unrelated data may result, leading to subtle <a href="http://en.m.wikipedia.org/wiki/Software_bug" title="Software bug">bugs</a> that can be extremely difficult to find, or cause <a href="Segmentation_fault" title="Segmentation fault">segmentation faults</a> (*NIX) or <a href="http://en.m.wikipedia.org/wiki/General_protection_fault" title="General protection fault">general protection faults</a> (Windows). If the overwritten data is bookkeeping data used by the system's memory allocator, the corruption can cause system instabilities.</p>
+<p>Wild pointers arise when a pointer is used prior to initialization to some known state, which is possible in some programming languages. They show the same erratic behaviour as dangling pointers, though they are less likely to stay undetected.</p>
+<h2> <span class="mw-headline" id="Cause_of_dangling_pointers">Cause of dangling pointers</span></h2>
+<p>In many languages (e.g., the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>) deleting an object from memory explicitly or by destroying the stack frame on return does not alter associated pointers. The pointer still points to the same location in memory even though the reference has since been deleted and may now be used for other purposes.</p>
+<p>A straightforward example is shown below:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="br0">{</span>
+   <span class="kw4">char</span> <span class="sy0">*</span>dp <span class="sy0">=</span> NULL<span class="sy0">;</span>
+   <span class="coMULTI">/* ... */</span>
+   <span class="br0">{</span>
+       <span class="kw4">char</span> c<span class="sy0">;</span>
+       dp <span class="sy0">=</span> <span class="sy0">&amp;</span>c<span class="sy0">;</span>
+   <span class="br0">}</span> <span class="coMULTI">/* c falls out of scope */</span>
+     <span class="coMULTI">/* dp is now a dangling pointer */</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>If the operating system is able to detect run-time references to <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointers</a>, a solution to the above is to assign 0 (null) to dp immediately before the inner block is exited. Another solution would be to somehow guarantee dp is not used again without further initialization.</p>
+<p>Another frequent source of dangling pointers is a jumbled combination of <tt>malloc()</tt> and <tt>free()</tt> library calls: a pointer becomes dangling when the block of memory it points to is freed. As with the previous example one way to avoid this is to make sure to reset the pointer to null after freeing its reference—as demonstrated below.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+ 
+<span class="kw4">void</span> func<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>dp <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span>A_CONST<span class="br0">)</span><span class="sy0">;</span>
+    <span class="coMULTI">/* ... */</span>
+    <span class="kw3">free</span><span class="br0">(</span>dp<span class="br0">)</span><span class="sy0">;</span>         <span class="coMULTI">/* dp now becomes a dangling pointer */</span>
+    dp <span class="sy0">=</span> NULL<span class="sy0">;</span>        <span class="coMULTI">/* dp is no longer dangling */</span>
+    <span class="coMULTI">/* ... */</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>An all too common misstep is returning addresses of a stack-allocated local variable: once a called function returns, the space for these variables gets deallocated and technically they have "garbage values".</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> <span class="sy0">*</span>func<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> num <span class="sy0">=</span> <span class="nu0">1234</span><span class="sy0">;</span>
+    <span class="coMULTI">/* ... */</span>
+    <span class="kw1">return</span> <span class="sy0">&amp;</span>num<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Attempts to read from the pointer may still return the correct value (1234) for a while after calling <tt>func</tt>, but any functions called thereafter will overwrite the stack storage allocated for <tt>num</tt> with other values and the pointer would no longer work correctly. If a pointer to <tt>num</tt> must be returned, <tt>num</tt> must have scope beyond the function—it might be declared as <tt><a href="http://en.m.wikipedia.org/wiki/Static_variable" title="Static variable">static</a></tt>.</p>
+<h2> <span class="mw-headline" id="Cause_of_wild_pointers">Cause of wild pointers</span></h2>
+<p>Wild pointers are created by omitting necessary initialization prior to first use. Thus, strictly speaking, every pointer in programming languages which do not enforce initialization begins as a wild pointer.</p>
+<p>This most often occurs due to jumping over the initialization, not by omitting it. Most compilers are able to warn about this.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>dp<span class="sy0">;</span>    <span class="coMULTI">/* dp is a wild pointer */</span>
+    <span class="kw4">static</span> <span class="kw4">char</span> <span class="sy0">*</span>scp<span class="sy0">;</span>  <span class="coMULTI">/* scp is not a wild pointer:
+                        * static variables are initialized to 0
+                        * at start and retain their values from
+                        * the last call afterwards.
+                        * Using this feature may be considered bad
+                        * style if not commented */</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<h2> <span class="mw-headline" id="Security_holes_involving_dangling_pointers">Security holes involving dangling pointers</span></h2>
+<p>Like <a href="Buffer_overflow" title="Buffer overflow">buffer-overflow</a> bugs, dangling/wild pointer bugs frequently become security holes. For example, if the pointer is used to make a <a href="http://en.m.wikipedia.org/wiki/Virtual_function" title="Virtual function">virtual function</a> call, a different address (possibly pointing at exploit code) may be called due to the <a href="http://en.m.wikipedia.org/wiki/Vtable" title="Vtable" class="mw-redirect">vtable</a> pointer being overwritten. Alternatively, if the pointer is used for writing to memory, some other data structure may be corrupted. Even if the memory is only read once the pointer becomes dangling, it can lead to information leaks (if interesting data is put in the next structure allocated there) or to <a href="http://en.m.wikipedia.org/wiki/Privilege_escalation" title="Privilege escalation">privilege escalation</a> (if the now-invalid memory is used in security checks).</p>
+<h2> <span class="mw-headline" id="Avoiding_dangling_pointer_errors">Avoiding dangling pointer errors</span></h2>
+<p>In C/C++, the simplest technique is to implement an alternative version of the <tt>free()</tt> (or alike) function or <tt>delete</tt> destructor which guarantees the reset of the pointer. However, this technique will not clear other pointer variables which may contain a copy of the pointer.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="coMULTI">/* Alternative version for 'free()' */</span>
+<span class="kw4">void</span> safefree<span class="br0">(</span><span class="kw4">void</span> <span class="sy0">**</span>pp<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>pp <span class="sy0">!=</span> NULL <span class="sy0">&amp;&amp;</span> <span class="sy0">*</span>pp <span class="sy0">!=</span> NULL<span class="br0">)</span> <span class="br0">{</span> <span class="coMULTI">/* safety check */</span>
+        <span class="kw3">free</span><span class="br0">(</span><span class="sy0">*</span>pp<span class="br0">)</span><span class="sy0">;</span>                  <span class="coMULTI">/* deallocate chunk */</span>
+        <span class="sy0">*</span>pp <span class="sy0">=</span> NULL<span class="sy0">;</span>                 <span class="coMULTI">/* reset original pointer */</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">int</span> f<span class="br0">(</span><span class="kw4">int</span> i<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>p <span class="sy0">=</span> NULL<span class="sy0">,</span> <span class="sy0">*</span>p2<span class="sy0">;</span>
+    p <span class="sy0">=</span> <span class="br0">(</span><span class="kw4">char</span> <span class="sy0">*</span><span class="br0">)</span><span class="kw3">malloc</span><span class="br0">(</span><span class="nu0">1000</span><span class="br0">)</span><span class="sy0">;</span>    <span class="coMULTI">/* get a chunk */</span>
+    p2 <span class="sy0">=</span> p<span class="sy0">;</span>              <span class="coMULTI">/* copy the pointer */</span>
+    <span class="coMULTI">/* use the chunk here */</span>
+    safefree<span class="br0">(</span><span class="sy0">&amp;</span>p<span class="br0">)</span><span class="sy0">;</span>       <span class="coMULTI">/* safety freeing; does not affect p2 variable */</span>
+    safefree<span class="br0">(</span><span class="sy0">&amp;</span>p<span class="br0">)</span><span class="sy0">;</span>       <span class="coMULTI">/* this second call won't fail */</span>
+    <span class="kw4">char</span> c <span class="sy0">=</span> <span class="sy0">*</span>p2<span class="sy0">;</span>       <span class="coMULTI">/* p2 is still a dangling pointer, so this is undefined behavior. */</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>The alternative version can be used even to guarantee the validity of an empty pointer before calling <tt>malloc()</tt>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+    safefree<span class="br0">(</span><span class="sy0">&amp;</span>p<span class="br0">)</span><span class="sy0">;</span>        <span class="coMULTI">/* i'm not sure if chunk has been released */</span>
+    p <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="nu0">1000</span><span class="br0">)</span><span class="sy0">;</span>    <span class="coMULTI">/* allocate now */</span>
+</pre></div>
+</div>
+<p>These uses can be masked through <tt>#define</tt> directives to construct useful macros, creating something like a metalanguage or can be embedded into a tool library apart. In every case, programmers using this technique should use the safe versions in every instance where <tt>free()</tt> would be used; failing in doing so leads again to the problem. Also, this solution is limited to the scope of a single program or project, and should be properly documented.</p>
+<p>Among more structured solutions, a popular technique to avoid dangling pointers is to use <a href="http://en.m.wikipedia.org/wiki/Smart_pointer" title="Smart pointer">smart pointers</a>. A smart pointer typically uses <a href="http://en.m.wikipedia.org/wiki/Reference_counting" title="Reference counting">reference counting</a> to reclaim objects. Some other techniques include the <a href="http://en.m.wikipedia.org/wiki/Tombstone_(programming)" title="Tombstone (programming)">tombstones</a> method and the <a href="http://en.m.wikipedia.org/wiki/Locks-and-keys" title="Locks-and-keys">locks-and-keys</a> method.</p>
+<p>Another approach is to use the <a href="http://en.m.wikipedia.org/wiki/Boehm_garbage_collector" title="Boehm garbage collector">Boehm garbage collector</a>, a conservative <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collector</a> that replaces standard memory allocation functions in C and <a href="C++" title="C++">C++</a> with a garbage collector. This approach completely eliminates dangling pointer errors by disabling frees, and reclaiming objects by garbage collection.</p>
+<p>In languages like Java, dangling pointers cannot occur because there is no mechanism to explicitly deallocate memory. Rather, the garbage collector may deallocate memory, but only when the object is no longer reachable from any references.</p>
+<h2> <span class="mw-headline" id="Dangling_pointer_detection">Dangling pointer detection</span></h2>
+<p>To expose dangling pointer errors, one common programming technique is to set pointers to the <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointer</a> or to an invalid address once the storage they point to has been released. When the null pointer is dereferenced (in most languages) the program will immediately terminate—there is no potential for data corruption or unpredictable behavior. This makes the underlying programming mistake easier to find and resolve. This technique does not help when there are multiple copies of the pointer.</p>
+<p>Some debuggers will automatically overwrite and destroy data that has been freed, usually with a specific pattern, such as <code><a href="http://en.m.wikipedia.org/wiki/0xDEADBEEF" title="0xDEADBEEF" class="mw-redirect">0xDEADBEEF</a></code> (Microsoft's Visual C/C++ debugger, for example, uses <code>0xCC</code>, <code>0xCD</code> or <code>0xDD</code> depending on what has been freed<sup id="cite_ref-0" class="reference"><a href="Dangling_pointer#cite_note-0"><span>[</span>1<span>]</span></a></sup>). This usually prevents the data from being reused by making it useless and also very prominent (the pattern serves to show the programmer that the memory has already been freed).</p>
+<p>Tools such as <a href="http://en.m.wikipedia.org/wiki/Polyspace" title="Polyspace">Polyspace</a>, <a href="http://en.m.wikipedia.org/wiki/TotalView" title="TotalView">TotalView</a>, <a href="Valgrind" title="Valgrind">Valgrind</a>, Mudflap,<sup id="cite_ref-1" class="reference"><a href="Dangling_pointer#cite_note-1"><span>[</span>2<span>]</span></a></sup> or <a href="http://en.m.wikipedia.org/wiki/Low_Level_Virtual_Machine" title="Low Level Virtual Machine" class="mw-redirect">LLVM</a><sup id="cite_ref-2" class="reference"><a href="Dangling_pointer#cite_note-2"><span>[</span>3<span>]</span></a></sup> can also be used to detect uses of dangling pointers.</p>
+<p>Other tools (<a rel="nofollow" class="external text" href="http://www.cis.upenn.edu/acg/softbound/">SoftBound</a> and <a rel="nofollow" class="external text" href="http://www.semanticdesigns.com/Products/MemorySafety">CheckPointer</a>) instrument the source code to collect and track legitimate values for pointers ("metadata") and check each pointer access against the metadata for validity.</p>
+<p>Another strategy, when suspecting a small set of classes, is to temporarily make all their member functions <b><a href="http://en.m.wikipedia.org/wiki/Virtual_method" title="Virtual method" class="mw-redirect">virtual</a></b>: after the class instance has been destructed/freed, its pointer to the <a href="http://en.m.wikipedia.org/wiki/Virtual_method_table" title="Virtual method table">Virtual Method Table</a> is set to <code>NULL</code>, and any call to a member function will crash the program and it will show the guilty code in the debugger.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr><td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Portal-puzzle.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png" width="32" height="28" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/48px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/64px-Portal-puzzle.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Software_Testing" title="Portal:Software Testing">Software Testing  portal</a></td>
+</tr></table></div>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Wild_branch" title="Wild branch">Wild branch</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="Dangling_pointer#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/aa270812(VS.60).aspx">Visual C++ 6.0 memory-fill patterns</a></span></li>
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Dangling_pointer#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/wiki/Mudflap_Pointer_Debugging">Mudflap Pointer Debugging</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Dangling_pointer#cite_ref-2">^</a></b></span> <span class="reference-text">Dhurjati, D. and Adve, V. <a rel="nofollow" class="external text" href="http://llvm.cs.uiuc.edu/~dhurjati/d-dsn06.pdf">Efficiently Detecting All Dangling Pointer Uses in Production Servers</a><sup class="noprint Inline-Template"><span title=" since October 2012" style="white-space: nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></span></li>
+</ol></div>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Memory_management_navbox" title="Template:Memory management navbox"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Memory_management_navbox" title="Template talk:Memory management navbox"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Memory_management_navbox&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a></div>
+</th>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Manual_memory_management" title="Manual memory management">Manual memory management</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Delete_(C%2B%2B)" title="Delete (C++)">delete (C++)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">C dynamic memory allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/New_(C%2B%2B)" title="New (C++)">new (C++)</a></li>
+<li><a href="Static_memory_allocation" title="Static memory allocation">Static memory allocation</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">Virtual memory</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Demand_paging" title="Demand paging">Demand paging</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Page_table" title="Page table">Page table</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paging" title="Paging">Paging</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Hardware</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Memory_management_unit" title="Memory management unit">Memory management unit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Translation_lookaside_buffer" title="Translation lookaside buffer">Translation lookaside buffer</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">Garbage collection</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Boehm_garbage_collector" title="Boehm garbage collector">Boehm garbage collector</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Finalizer" title="Finalizer">Finalizer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Garbage_(computer_science)" title="Garbage (computer science)">Garbage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mark-compact_algorithm" title="Mark-compact algorithm">Mark-compact algorithm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reference_counting" title="Reference counting">Reference counting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strong_reference" title="Strong reference">Strong reference</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Weak_reference" title="Weak reference">Weak reference</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Memory_segmentation" title="Memory segmentation">Memory segmentation</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Protected_mode" title="Protected mode">Protected mode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Real_mode" title="Real mode">Real mode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_8086_mode" title="Virtual 8086 mode">Virtual 8086 mode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X86_memory_segmentation" title="X86 memory segmentation">x86 memory segmentation</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Memory_safety" title="Memory safety">Memory safety</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="Buffer_overflow" title="Buffer overflow">Buffer overflow</a></li>
+<li><strong class="selflink">Dangling pointer</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stack_overflow" title="Stack overflow">Stack overflow</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Issues</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Fragmentation_(computer)" title="Fragmentation (computer)" class="mw-redirect">Fragmentation</a></li>
+<li><a href="Memory_leak" title="Memory leak">Memory leak</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unreachable_memory" title="Unreachable memory">Unreachable memory</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Automatic_variable" title="Automatic variable">Automatic variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Symposium_on_Memory_Management" title="International Symposium on Memory Management">International Symposium on Memory Management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Region-based_memory_management" title="Region-based memory management">Region-based memory management</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr></table>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/H%C3%A4ngender_Zeiger" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Referencia_Colgante" lang="es" hreflang="es">español</a></li><li><a href="http://it.m.wikipedia.org/wiki/Dangling_pointer" lang="it" hreflang="it">italiano</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Apontador_pendente" lang="pt" hreflang="pt">português</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E8%BF%B7%E9%80%94%E6%8C%87%E9%92%88" lang="zh" hreflang="zh">中文</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%92%D0%B8%D1%81%D1%8F%D1%87%D1%96_%D0%BF%D0%BE%D0%BA%D0%B0%D0%B6%D1%87%D0%B8%D0%BA%D0%B8" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Dangling_pointer&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Dangling_pointer&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Dangling+pointer&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

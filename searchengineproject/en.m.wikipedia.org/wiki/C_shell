@@ -1,0 +1,915 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C shell - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C shell","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C_shell" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C+shell"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C shell</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=C_shell&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(December 2010)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">C shell</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:TcshAndShScreenCapture.png" class="image"><img alt="TcshAndShScreenCapture.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/8/8c/TcshAndShScreenCapture.png/300px-TcshAndShScreenCapture.png" width="300" height="188" srcset="//upload.wikimedia.org/wikipedia/en/thumb/8/8c/TcshAndShScreenCapture.png/450px-TcshAndShScreenCapture.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/8/8c/TcshAndShScreenCapture.png/600px-TcshAndShScreenCapture.png 2x"></a><br><span style="">tcsh and sh side-by-side on a Mac OS X desktop.</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">1978<span style="display:none"> (<span class="bday dtstart published updated">1978</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">tcsh 6.18.00 / 14 January 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-01-14</span>)</span><sup id="cite_ref-0" class="reference"><a href="C_Shell#cite_note-0"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a>, <a href="http://en.m.wikipedia.org/wiki/UNIX" title="UNIX" class="mw-redirect">UNIX</a>, <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Unix_Shell" title="Unix Shell" class="mw-redirect">Unix Shell</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/BSD_license" title="BSD license" class="mw-redirect">BSD license</a></td>
+</tr>
+</table>
+<p>The <b>C shell</b> (<b>csh</b> or the improved version, <b><a href="http://en.m.wikipedia.org/wiki/Tcsh" title="Tcsh">tcsh</a></b>, on most machines) is a <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shell</a> that was created by <a href="http://en.m.wikipedia.org/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a> while a graduate student at <a href="http://en.m.wikipedia.org/wiki/University_of_California,_Berkeley" title="University of California, Berkeley">University of California, Berkeley</a> in the late 1970s. It has been distributed widely, beginning with the 2BSD release of the <a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> Unix system that Joy began distributing in 1978.<sup id="cite_ref-1" class="reference"><a href="C_Shell#cite_note-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="C_Shell#cite_note-2"><span>[</span>3<span>]</span></a></sup> Other early contributors to the ideas or the code were Michael Ubell, <a href="http://en.m.wikipedia.org/wiki/Eric_Allman" title="Eric Allman">Eric Allman</a>, Mike O'Brien and Jim Kulp.<sup id="cite_ref-3" class="reference"><a href="C_Shell#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>The C shell is a <a href="http://en.m.wikipedia.org/wiki/Command-line_interpreter" title="Command-line interpreter" class="mw-redirect">command processor</a> typically run in a text window, allowing the user to type commands. The C shell can also read commands from a file, called a <a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">script</a>. Like all Unix shells, it supports filename <a href="http://en.m.wikipedia.org/wiki/Wildcard_character" title="Wildcard character">wildcarding</a>, <a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">piping</a>, <a href="http://en.m.wikipedia.org/wiki/Here_document" title="Here document">here documents</a>, <a href="http://en.m.wikipedia.org/wiki/Command_substitution" title="Command substitution">command substitution</a>, <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variables</a> and <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control structures</a> for <a href="Conditional_(programming)" title="Conditional (programming)">condition-testing</a> and <a href="http://en.m.wikipedia.org/wiki/Iteration" title="Iteration">iteration</a>. What differentiated the C shell from others, especially in the 1980s, were its interactive features and overall style. Its new features made it easier and faster to use. The overall style of the language looked more like <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and was seen as more readable.</p>
+<p>On many systems, such as <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> and <a href="http://en.m.wikipedia.org/wiki/Red_Hat_Linux" title="Red Hat Linux">Red Hat Linux</a>, csh is actually <a href="http://en.m.wikipedia.org/wiki/Tcsh" title="Tcsh">tcsh</a>, an improved version of csh. One file containing the tcsh executable has <a href="http://en.m.wikipedia.org/wiki/Hard_link" title="Hard link">links</a> to it as both "csh" and "tcsh" so that either name refers to the same improved version of the C shell.</p>
+<p>On <a href="http://en.m.wikipedia.org/wiki/Debian" title="Debian">Debian</a>, <a href="http://en.m.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a>, and their derivatives, there are two different packages: csh and tcsh. The former is based on the original BSD version of csh<sup id="cite_ref-4" class="reference"><a href="C_Shell#cite_note-4"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="C_Shell#cite_note-5"><span>[</span>6<span>]</span></a></sup> and the latter is the improved tcsh.<sup id="cite_ref-6" class="reference"><a href="C_Shell#cite_note-6"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="C_Shell#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<p>tcsh added filename and command completion and command line editing concepts borrowed from the <a href="http://en.m.wikipedia.org/wiki/TOPS-20#TENEX" title="TOPS-20">Tenex</a> system, which is the source of the "t".<sup id="cite_ref-Greer_8-0" class="reference"><a href="C_Shell#cite_note-Greer-8"><span>[</span>9<span>]</span></a></sup> Because it only added functionality and did not change what was there, tcsh remained <a href="http://en.m.wikipedia.org/wiki/Backward_compatible" title="Backward compatible" class="mw-redirect">backward compatible</a><sup id="cite_ref-9" class="reference"><a href="C_Shell#cite_note-9"><span>[</span>10<span>]</span></a></sup> with the original C shell. Though it started as a side branch from the original source tree Joy had created, tcsh is now the main branch for ongoing development. tcsh is very stable but new releases continue to appear roughly once a year, consisting mostly of minor bug fixes.<sup id="cite_ref-10" class="reference"><a href="C_Shell#cite_note-10"><span>[</span>11<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Design_objectives_and_features">Design objectives and features</span>
+</h2>
+<p>The main design objectives for the C shell were that it should look more like the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> and that it should be better for interactive use.</p>
+<h3> <span class="mw-headline" id="More_like_C">More like C</span>
+</h3>
+<p>The Unix system had been written almost exclusively in C, so the C shell's first objective was a command language that was more stylistically consistent with the rest of the system. The keywords, the use of parentheses and the C shell's built-in expression grammar and support for arrays were all strongly influenced by C.</p>
+<p>By today's standards, csh may not seem particularly more C-like than many other popular scripting languages. But through the 80s and 90s, the difference was seen as striking, particularly when compared to <a href="http://en.m.wikipedia.org/wiki/Bourne_shell" title="Bourne shell">sh</a>, the then-dominant shell written by <a href="http://en.m.wikipedia.org/wiki/Stephen_Bourne" title="Stephen Bourne" class="mw-redirect">Stephen Bourne</a> at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a>. This example illustrates the C shell's more conventional <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">expression operators</a> and <a href="Syntax_(programming_languages)" title="Syntax (programming languages)">syntax</a>.</p>
+<table style="background:transparent;" cellspacing="0" cellpadding="0"><tr valign="top">
+<td style="width:10px;"></td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/sh</span>
+<span class="kw1">if</span> <span class="br0">[</span> <span class="re1">$days</span> <span class="re5">-gt</span> <span class="nu0">365</span> <span class="br0">]</span>
+<span class="kw1">then</span>
+   <span class="kw3">echo</span> This is over a year.
+<span class="kw1">fi</span>
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/csh</span>
+<span class="kw1">if</span> <span class="br0">(</span> <span class="re1">$days</span> <span class="sy0">&gt;</span> <span class="nu0">365</span> <span class="br0">)</span> <span class="kw1">then</span>
+   <span class="kw3">echo</span> This is over a year.
+endif
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</td>
+</tr></table>
+<p>sh lacked an <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expression grammar</a>. The square bracketed condition had to be evaluated by the slower means of running the external <a href="http://en.m.wikipedia.org/wiki/Test_(Unix)" title="Test (Unix)">test</a> program. sh's if command took its argument words as a new command to be run as a <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">child process</a>. If the child exited with a zero <a href="http://en.m.wikipedia.org/wiki/Return_code" title="Return code" class="mw-redirect">return code</a>, sh would look for a then clause (a separate statement, but often written joined on the same line with a semicolon) and run that nested block. Otherwise it would run the else. <a href="http://en.m.wikipedia.org/wiki/Hard_link" title="Hard link">Hard-linking</a> the test program as both "<code>test</code>" and "<code>[</code>" gave the notational advantage of the square brackets and the appearance that the functionality of test was part of the sh language. sh's use of a reversed keyword to mark the end of a control block was a style borrowed from <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>.<sup id="cite_ref-11" class="reference"><a href="C_Shell#cite_note-11"><span>[</span>12<span>]</span></a></sup></p>
+<p>By contrast, csh could evaluate the expression directly, which made it faster. It also claimed better readability: Its expressions used a <a href="Formal_grammar" title="Formal grammar">grammar</a> and a set of operators mostly copied from C, none of its keywords were reversed and the overall style was also more like C.</p>
+<p>Here is a second example, comparing scripts that calculate the first 10 powers of 2.</p>
+<table style="background:transparent;" cellspacing="0" cellpadding="0"><tr valign="top">
+<td style="width:10px;"></td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/sh</span>
+<span class="re2">i</span>=<span class="nu0">2</span>
+<span class="re2">j</span>=<span class="nu0">1</span>
+<span class="kw1">while</span> <span class="br0">[</span> <span class="re1">$j</span> <span class="re5">-le</span> <span class="nu0">10</span> <span class="br0">]</span>; <span class="kw1">do</span>
+   <span class="kw3">echo</span> <span class="st_h">'2 **'</span> <span class="re1">$j</span> = <span class="re1">$i</span>
+   <span class="re2">i</span>=<span class="sy0">`</span><span class="kw2">expr</span> <span class="re1">$i</span> <span class="st_h">'*'</span> <span class="nu0">2</span><span class="sy0">`</span>
+   <span class="re2">j</span>=<span class="sy0">`</span><span class="kw2">expr</span> <span class="re1">$j</span> + <span class="nu0">1</span><span class="sy0">`</span>
+<span class="kw1">done</span>
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/csh</span>
+<span class="kw1">set</span> i = <span class="nu0">2</span>
+<span class="kw1">set</span> j = <span class="nu0">1</span>
+<span class="kw1">while</span> <span class="br0">(</span> <span class="re1">$j</span> <span class="sy0">&lt;</span>= <span class="nu0">10</span> <span class="br0">)</span>
+   <span class="kw3">echo</span> <span class="st_h">'2 **'</span> <span class="re1">$j</span> = <span class="re1">$i</span>
+   <span class="sy0">@</span> i <span class="sy0">*</span>= <span class="nu0">2</span>
+   <span class="sy0">@</span> j++
+end
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</td>
+</tr></table>
+<p>Again because of the lack of an expression grammar, the sh script uses <a href="http://en.m.wikipedia.org/wiki/Command_substitution" title="Command substitution">command substitution</a> and the <a href="http://en.m.wikipedia.org/wiki/Expr" title="Expr">expr</a> command. The @ statement in C shell is a <a href="http://en.m.wikipedia.org/wiki/Pun" title="Pun">pun</a>: it's the "at-sign-ment" statement.</p>
+<p>Finally, here is a third example, showing the differing styles for a <a href="Switch_statement" title="Switch statement">switch statement</a>.</p>
+<table style="background:transparent;" cellspacing="0" cellpadding="0"><tr valign="top">
+<td style="width:10px;"></td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/sh</span>
+<span class="kw1">for</span> i <span class="kw1">in</span> d<span class="sy0">*</span>
+<span class="kw1">do</span>
+   <span class="kw1">case</span> <span class="re1">$i</span> <span class="kw1">in</span>
+      d?<span class="br0">)</span> <span class="kw3">echo</span> <span class="re1">$i</span> is short <span class="sy0">;;</span>
+      <span class="sy0">*</span><span class="br0">)</span> <span class="kw3">echo</span> <span class="re1">$i</span> is long <span class="sy0">;;</span>
+   <span class="kw1">esac</span>
+<span class="kw1">done</span>
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0">#!/bin/csh</span>
+foreach i <span class="br0">(</span> d<span class="sy0">*</span> <span class="br0">)</span>
+   switch <span class="br0">(</span> <span class="re1">$i</span> <span class="br0">)</span>
+      <span class="kw1">case</span> d?:
+         <span class="kw3">echo</span> <span class="re1">$i</span> is short
+         breaksw
+      default:
+         <span class="kw3">echo</span> <span class="re1">$i</span> is long
+   endsw
+end
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</td>
+</tr></table>
+<p>In the sh script, "<code>;;</code>" marks the end of each case because sh disallows null statements otherwise.</p>
+<h3> <span class="mw-headline" id="Improvements_for_interactive_use">Improvements for interactive use</span>
+</h3>
+<p>The second objective was that the C shell should be better for interactive use. It introduced numerous new features that made it easier, faster and more <a href="http://en.m.wikipedia.org/wiki/User-friendly" title="User-friendly" class="mw-redirect">friendly</a> to use by typing commands at a terminal. Users could get things done with a lot fewer keystrokes and it ran faster. The most significant of these new features were the history and editing mechanisms, aliases, directory stacks, tilde notation, cdpath, job control and path hashing. These new features proved very popular, and many of them have since been copied by other Unix shells.</p>
+<h4> <span class="mw-headline" id="History">History</span>
+</h4>
+<dl>
+<dd>History allows users to recall previous commands and rerun them by typing only a few quick keystrokes. For example, two exclamation marks, "<code>!!</code>", typed as a command and referred to as <i>"bang, bang,"</i> causes the immediately preceding command to run. Other short keystroke combinations, e.g., "<code>!$</code>" to mean just the last argument of the previous command, allow bits and pieces of previous commands to be pasted together and edited to form a new command.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Editing_operators">Editing operators</span>
+</h4>
+<dl>
+<dd>Editing can be done not only on the text of a previous command, but also on variable substitutions. Operators range from simple string search/replace to parsing a pathname to extract a specific segment.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Aliases">Aliases</span>
+</h4>
+<dl>
+<dd>Aliases allow the user to type the name of an alias and have the C shell expand it internally into whatever set of words the user has defined. For many simple situations, aliases run faster and are more convenient than scripts.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Directory_stack">Directory stack</span>
+</h4>
+<dl>
+<dd>The directory <a href="http://en.m.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">stack</a> allows the user to <a href="http://en.m.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">push or pop</a> the <a href="http://en.m.wikipedia.org/wiki/Current_working_directory" title="Current working directory" class="mw-redirect">current working directory</a>, making it easier to jump back and forth between different places in the filesystem.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Tilde_notation">Tilde notation</span>
+</h4>
+<dl>
+<dd>Tilde notation offers a shorthand way of specifying pathnames relative to the <a href="http://en.m.wikipedia.org/wiki/Home_directory" title="Home directory">home</a> directory using the "<code>~</code>" character.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Interactive_filename_completion">Interactive filename completion</span>
+</h4>
+<dl>
+<dd>The <a href="http://en.m.wikipedia.org/wiki/Esc_key" title="Esc key">escape key</a> can be used interactively to show possible completions of a filename at the end of the current command line.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Cdpath">Cdpath</span>
+</h4>
+<dl>
+<dd>Cdpath extends the notion of a <a href="http://en.m.wikipedia.org/wiki/PATH_(variable)" title="PATH (variable)">search path</a> to the <code>cd</code> (change directory) command: If the specified directory isn't in the <a href="http://en.m.wikipedia.org/wiki/Current_directory" title="Current directory" class="mw-redirect">current directory</a>, csh will try to find it in the cdpath directories.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Job_control">Job control</span>
+</h4>
+<dl>
+<dd>Well into the 1980s, most users only had simple character-mode terminals that precluded multiple windows, so they could only work on one task at a time. The C shell's job control allowed the user to suspend the current activity and create a new instance of the C shell, called a job, by typing <a href="http://en.m.wikipedia.org/wiki/Control-Z" title="Control-Z"><code>^Z</code></a>. The user could then switch back and forth between jobs using the <code>fg</code> command. The active job was said to be in the foreground. Other jobs were said to be either suspended (stopped) or running in the background.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Path_hashing">Path hashing</span>
+</h4>
+<dl>
+<dd>Path hashing speeds up the C shell's search for executable files. Rather than performing a filesystem call in each path directory, one at a time, until it either finds the file or runs out of possibilities, the C shell consults an internal <a href="http://en.m.wikipedia.org/wiki/Hash_table" title="Hash table">hash table</a> built by scanning the path directories. That table can usually tell the C shell where to find the file (if it exists) without having to search, and can be refreshed with the "rehash" command.</dd>
+</dl>
+<h2> <span class="mw-headline" id="Overview_of_the_language">Overview of the language</span>
+</h2>
+<p>The C shell operates one line at a time. Each line is <a href="http://en.m.wikipedia.org/wiki/Lexical_analysis" title="Lexical analysis">tokenized</a> into a set of words separated by spaces or other characters with special meaning, including parentheses, piping and input/output redirection operators, semicolons, and ampersands.</p>
+<h3> <span class="mw-headline" id="Basic_statements">Basic statements</span>
+</h3>
+<p>A basic statement is one that simply runs a command. The first word is taken as name of the command to be run and may be either an internal command, e.g., "<code>echo</code>," or an external command. The rest of the words are passed as arguments to the command.</p>
+<p>At the basic statement level, here are some of the features of the grammar:</p>
+<h4> <span class="mw-headline" id="Wildcarding">Wildcarding</span>
+</h4>
+<dl>
+<dd>The C shell, like all Unix shells, treats any command-line argument that contains wildcard characters as a pattern and replaces it with the list of all the filenames that match.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>*</code> matches any number of characters.</dd>
+<dd>
+<code>?</code> matches any single character.</dd>
+<dd>
+<code>[</code>...<code>]</code> matches any of the characters inside the square brackets. Ranges are allowed, using the hyphen.</dd>
+<dd>
+<code>[!</code>...<code>]</code> matches any character <i>not</i> in the set.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>The C shell also introduced several notational conveniences, since copied by other Unix shells.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<i>abc</i><code>{</code><i>def</i><code>,</code><i>ghi</i><code>}</code> is alternation and expands to <i>abcdef</i> and <i>abcghi</i>.</dd>
+<dd>
+<code>~</code> means the current user's home directory.</dd>
+<dd>
+<code>~</code><i>user</i> means <i>user'</i>s home directory.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>Multiple directory-level wildcards, e.g., "<code>*/*.c</code>", are supported.</dd>
+</dl>
+<dl>
+<dd>Giving the shell the responsibility for interpreting wildcards was an important decision on Unix. It meant that wildcards would work with every command, and always in the same way. However, the decision relied on Unix's ability to pass long argument lists efficiently through the <a href="http://en.m.wikipedia.org/wiki/Exec_(operating_system)" title="Exec (operating system)">exec</a> system call that csh uses to create <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">child processes</a>. By contrast, on <a href="http://en.m.wikipedia.org/wiki/Windows" title="Windows" class="mw-redirect">Windows</a>, wildcard interpretation is conventionally performed by each application. This is a legacy of MS-DOS, which only allowed a 128-byte command line to be passed to an application, making wildcarding by the DOS command prompt impractical. Although modern <a href="http://en.m.wikipedia.org/wiki/Windows" title="Windows" class="mw-redirect">Windows</a> can pass command lines of up to roughly 32K <a href="Unicode" title="Unicode">Unicode</a> characters, the burden for wildcard interpretation remains with the application.</dd>
+</dl>
+<h4> <span class="mw-headline" id="I.2FO_redirection">I/O redirection</span>
+</h4>
+<dl>
+<dd>By default, when csh runs a command, the command inherits the csh's stdio file handles for <a href="http://en.m.wikipedia.org/wiki/Stdin" title="Stdin" class="mw-redirect">stdin</a>, <a href="http://en.m.wikipedia.org/wiki/Stdout" title="Stdout" class="mw-redirect">stdout</a> and <a href="http://en.m.wikipedia.org/wiki/Stderr" title="Stderr" class="mw-redirect">stderr</a>, which normally all point to the <a href="http://en.m.wikipedia.org/wiki/Console_window" title="Console window" class="mw-redirect">console window</a> where the C shell is running. The i/o redirection operators allow the command to use a file instead for input or output.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>&gt;</code> <i>file</i> means stdout will be written to <i>file</i>, overwriting it if it exists, and creating it if it doesn't. Errors still come to the shell window.</dd>
+<dd>
+<code>&gt;&amp;</code> <i>file</i> means both stdout and stderr will be written to <i>file</i>, overwriting it if it exists, and creating it if it doesn't.</dd>
+<dd>
+<code>&gt;&gt;</code> <i>file</i> means stdout will be appended at the end of <i>file</i>.</dd>
+<dd>
+<code>&gt;&gt;&amp;</code> <i>file</i> means both stdout and stderr will be appended at the end of <i>file</i>.</dd>
+<dd>
+<code>&lt;</code> <i>file</i> means stdin will be read from <i>file</i>.</dd>
+<dd>
+<code>&lt;&lt;</code> <i>string</i> is a <a href="http://en.m.wikipedia.org/wiki/Here_document" title="Here document">here document</a>. Stdin will read the following lines up to the one that matches <i>string</i>.</dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="Joining">Joining</span>
+</h4>
+<dl>
+<dd>Commands can be joined on the same line.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>;</code> means run the first command and then the next.</dd>
+<dd>
+<code>&amp;&amp;</code> means run the first command and, if it succeeds with a 0 <a href="http://en.m.wikipedia.org/wiki/Return_code" title="Return code" class="mw-redirect">return code</a>, run the next.</dd>
+<dd>
+<code>||</code> means run the first command and, if it fails with a non-zero return code, run the next.</dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="Piping">Piping</span>
+</h4>
+<dl>
+<dd>Commands can be connected using a pipe, which causes the output of one command to be fed into the input of the next. Both commands run <a href="http://en.m.wikipedia.org/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">concurrently</a>.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>|</code> means connect stdout to stdin of the next command. Errors still come to the shell window.</dd>
+<dd>
+<code>|&amp;</code> means connect both stdout and stderr to stdin of the next command.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>Running concurrently means "in parallel". In a <a href="http://en.m.wikipedia.org/wiki/Multi-core_processor" title="Multi-core processor">multi-core</a> (multiple processor) system, the piped commands may literally be executing at the same time, otherwise the <a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">scheduler</a> in the operating system <a href="http://en.m.wikipedia.org/wiki/Time_slice" title="Time slice" class="mw-redirect">time-slices</a> between them.</dd>
+</dl>
+<dl>
+<dd>Given a command, e.g., "<code>a | b</code>", the shell creates a <a href="http://en.m.wikipedia.org/wiki/Pipeline_(computing)" title="Pipeline (computing)">pipe</a>, then starts both <code>a</code> and <code>b</code> with stdio for the two commands redirected so that <code>a</code> writes its stdout into the input of the pipe while <code>b</code> reads stdin from the output of the pipe. Pipes are implemented by the operating system with a certain amount of buffering so that <code>a</code> can write for a while before the pipe fills but once the pipe fills any new write will block inside the OS until <code>b</code> reads enough to unblock new writes. If <code>b</code> tries to read more data than is available, it will block until <code>a</code> has written more data or until the pipe closes, e.g., if <code>a</code> exits.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Variable_substitution">Variable substitution</span>
+</h4>
+<dl>
+<dd>If a word contains a dollar sign, "<code>$</code>", the following characters are taken as the name of a variable and the reference is replaced by the value of that variable. Various editing operators, typed as suffixes to the reference, allow pathname editing (e.g., "<code>:e</code>" to extract just the extension) and other operations.</dd>
+</dl>
+<h4> <span class="mw-headline" id="Quoting_and_escaping">Quoting and escaping</span>
+</h4>
+<dl>
+<dd>Quoting mechanisms allow otherwise special characters, such as whitespace, wildcards, parentheses, and dollar signs, to be taken as <a href="http://en.m.wikipedia.org/wiki/Literal_(computer_science)" title="Literal (computer science)" class="mw-redirect">literal</a> text.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>\</code> means take the next character as an ordinary literal character.</dd>
+<dd>
+<code>"</code><i>string</i><code>"</code> is a weak quote. Enclosed whitespace and wildcards are taken as literals, but variable and command substitutions are still performed.</dd>
+<dd>
+<code>'</code><i>string</i><code>'</code> is a strong quote. The entire enclosed string is taken as a literal.</dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="Command_substitution">Command substitution</span>
+</h4>
+<dl>
+<dd>Command substitution allows the output of one command to be used as arguments to another.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>`</code><i>command</i><code>`</code> means take the output of <i>command</i>, parse it into words and paste them back into the command line.</dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="Background_execution">Background execution</span>
+</h4>
+<dl>
+<dd>Normally, when the C shell starts a command, it waits for the command to finish before giving the user another prompt signaling that a new command can be typed.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<i>command</i> <code>&amp;</code> means start <i>command</i> in the background and prompt immediately for a new command.</dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="Subshells">Subshells</span>
+</h4>
+<dl>
+<dd>A subshell is a separate child copy of the shell that inherits the current state but can then make changes, e.g., to the current directory, without affecting the parent.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<code>(</code> <i>commands</i> <code>)</code> means run <i>commands</i> in a subshell.</dd>
+</dl>
+</dd>
+</dl>
+<h3> <span class="mw-headline" id="Control_structures">Control structures</span>
+</h3>
+<p>The C shell provides control structures for both <a href="Conditional_(programming)" title="Conditional (programming)">condition-testing</a> and <a href="http://en.m.wikipedia.org/wiki/Iteration" title="Iteration">iteration</a>. The condition-testing control structures are the if and switch statements. The iteration control structures are the while, foreach and repeat statements.</p>
+<h4> <span class="mw-headline" id="if_statement">if statement</span>
+</h4>
+<dl>
+<dd>There are two forms of the if statement. The short form is typed on a single line and but can specify only a single command if the expression is true.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>if (</b> <i>expression</i> <b>)</b> <i>command</i>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>The long form uses then, else and endif keywords to allow for blocks of commands to be nested inside the condition.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>if (</b> <i>expression1</i> <b>) then</b>
+<dl>
+<dd><i>commands</i></dd>
+</dl>
+</dd>
+<dd>
+<b>else if (</b> <i>expression2</i> <b>) then</b>
+<dl>
+<dd><i>commands</i></dd>
+</dl>
+</dd>
+<dd>...</dd>
+<dd>
+<b>else</b>
+<dl>
+<dd><i>commands</i></dd>
+</dl>
+</dd>
+<dd><b>endif</b></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>If the else and if keywords appear on the same line, csh chains, rather than nests them; the block is terminated with a single endif.</dd>
+</dl>
+<h4> <span class="mw-headline" id="switch_statement">switch statement</span>
+</h4>
+<dl>
+<dd>The switch statement compares a string against a list of patterns, which may contain wildcard characters. If nothing matches, the default action, if there is one, is taken.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>switch (</b> <i>string</i> <b>)</b>
+<dl>
+<dd>
+<b>case</b> <i>pattern1</i><b>:</b>
+<dl>
+<dd><i>commands</i></dd>
+<dd><b>breaksw</b></dd>
+</dl>
+</dd>
+<dd>
+<b>case</b> <i>pattern2</i><b>:</b>
+<dl>
+<dd><i>commands</i></dd>
+<dd><b>breaksw</b></dd>
+</dl>
+</dd>
+<dd>...</dd>
+<dd>
+<b>default:</b>
+<dl>
+<dd><i>commands</i></dd>
+<dd><b>breaksw</b></dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dd><b>endsw</b></dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="while_statement">while statement</span>
+</h4>
+<dl>
+<dd>The while statement evaluates an expression. If it is true, the shell runs the nested commands and then repeats for as long as the expression remains true.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>while (</b> <i>expression</i> <b>)</b>
+<dl>
+<dd><i>commands</i></dd>
+</dl>
+</dd>
+<dd><b>end</b></dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="foreach_statement">foreach statement</span>
+</h4>
+<dl>
+<dd>The foreach statement takes a list of values, usually a list of filenames produced by wildcarding, and then for each, sets the loop variable to that value and runs the nested commands.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>foreach</b> <i>loop-variable</i> <b>(</b> <i>list-of-values</i> <b>)</b>
+<dl>
+<dd><i>commands</i></dd>
+</dl>
+</dd>
+<dd><b>end</b></dd>
+</dl>
+</dd>
+</dl>
+<h4> <span class="mw-headline" id="repeat_statement">repeat statement</span>
+</h4>
+<dl>
+<dd>The repeat statement repeats a single command an integral number of times.</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<b>repeat</b> <i>integer</i> <i>command</i>
+</dd>
+</dl>
+</dd>
+</dl>
+<h3> <span class="mw-headline" id="Variables">Variables</span>
+</h3>
+<p>The C shell implements both shell and <a href="http://en.m.wikipedia.org/wiki/Environment_variable" title="Environment variable">environment variables</a>. Environment variables, created using the setenv statement, are always simple strings, passed to any <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">child processes</a>, which retrieve these variables via the <a href="http://en.m.wikipedia.org/wiki/Exec_(operating_system)#envp" title="Exec (operating system)"><code>envp[]</code></a> argument to <a href="Main_function_(programming)" title="Main function (programming)" class="mw-redirect"><code>main()</code></a>.</p>
+<p>Shell variables, created using the set or @ statements, are internal to C shell. They are not passed to child processes. Shell variables can be either simple strings or arrays of strings. Some of the shell variables are predefined and used to control various internal C shell options, e.g., what should happen if a wildcard fails to match anything.</p>
+<p>In current versions of csh, strings can be of arbitrary length, well into millions of characters.</p>
+<h3> <span class="mw-headline" id="Expressions">Expressions</span>
+</h3>
+<p>The C shell implements a 32-bit integer expression grammar with operators borrowed from C but with a few additional operators for string comparisons and filesystem tests, e.g., testing for the existence of a file. Operators must be separated by whitespace from their operands. Variables are referenced as <code>$</code><i>name</i>.</p>
+<p><a href="Operator_precedence#Programming_languages" title="Operator precedence" class="mw-redirect">Operator precedence</a> is also borrowed from C, but with different <a href="http://en.m.wikipedia.org/wiki/Operator_associativity" title="Operator associativity">operator associativity</a> rules to resolve the ambiguity of what comes first in a sequence of equal precedence operators. In C, the associativity is left-to-right for most operators; in C shell, it's right-to-left. For example,</p>
+<table style="background:transparent;" cellspacing="0" cellpadding="0"><tr valign="top">
+<td style="width:10px;"></td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">// C groups from the left</span>
+<span class="co1">// prints 4</span>
+<span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">10</span> <span class="sy0">/</span> <span class="nu0">5</span> <span class="sy0">*</span> <span class="nu0">2</span><span class="sy0">;</span>
+<span class="kw3">printf</span><span class="br0">(</span> <span class="st0">"%d<span class="es1">\n</span>"</span><span class="sy0">,</span> i <span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// prints 5</span>
+i <span class="sy0">=</span> <span class="nu0">7</span> <span class="sy0">-</span> <span class="nu0">4</span> <span class="sy0">+</span> <span class="nu0">2</span><span class="sy0">;</span>
+<span class="kw3">printf</span><span class="br0">(</span> <span class="st0">"%d<span class="es1">\n</span>"</span><span class="sy0">,</span> i <span class="br0">)</span><span class="sy0">;</span>
+<span class="co1">// prints 16</span>
+i <span class="sy0">=</span> <span class="nu0">2</span> <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">4</span><span class="sy0">;</span>
+<span class="kw3">printf</span><span class="br0">(</span> <span class="st0">"%d<span class="es1">\n</span>"</span><span class="sy0">,</span> i <span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0"># C shell groups from the right</span>
+<span class="co0"># prints 1</span>
+<span class="sy0">@</span> i = <span class="nu0">10</span> <span class="sy0">/</span> <span class="nu0">5</span> <span class="sy0">*</span> <span class="nu0">2</span>
+<span class="kw3">echo</span> <span class="re1">$i</span>
+<span class="co0"># prints 1</span>
+<span class="sy0">@</span> i = <span class="nu0">7</span> - <span class="nu0">4</span> + <span class="nu0">2</span>
+<span class="kw3">echo</span> <span class="re1">$i</span>
+<span class="co0"># prints 0</span>
+<span class="sy0">@</span> i = <span class="br0">(</span> <span class="nu0">2</span> <span class="sy0">&gt;&gt;</span> <span class="nu0">1</span> <span class="sy0">&lt;&lt;</span> <span class="nu0">4</span> <span class="br0">)</span>
+<span class="kw3">echo</span> <span class="re1">$i</span>
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</td>
+</tr></table>
+<p>The parentheses in the C shell example are to avoid having the bit-shifting operators confused as I/O redirection operators. In either language, parentheses can always be used to explicitly specify the desired order of evaluation, even if only for clarity.</p>
+<h2> <span class="mw-headline" id="Criticism">Criticism</span>
+</h2>
+<p>Though popular for interactive use because of its many innovative features, csh has never been as popular for scripting. Initially, and through the 1980s, csh could not be guaranteed to be present on all Unix systems, but sh could, which made it a better choice for any scripts that might have to run on other machines. By the mid-1990s, csh was widely available, but the use of csh for scripting faced new criticism by the <a href="POSIX" title="POSIX">POSIX</a> committee,<sup id="cite_ref-12" class="reference"><a href="C_Shell#cite_note-12"><span>[</span>13<span>]</span></a></sup> which specified that there should only be one preferred shell, the <a href="http://en.m.wikipedia.org/wiki/Korn_Shell" title="Korn Shell" class="mw-redirect">Korn Shell</a>, for both interactive and scripting purposes. The C shell also faced criticism from others<sup id="cite_ref-13" class="reference"><a href="C_Shell#cite_note-13"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="C_Shell#cite_note-14"><span>[</span>15<span>]</span></a></sup> over the C shell's alleged defects in syntax, missing features, and poor implementation.</p>
+<p><b>Syntax defects</b> were generally simple but unnecessary inconsistencies in the definition of the language. For example, the <code>set</code>, <code>setenv</code> and <code>alias</code> commands all did basically the same thing, namely, associate a name with a string or set of words. But all three had slight but unnecessary differences. An equal sign was required for a <code>set</code> but not for <code>setenv</code> or <code>alias</code>; parentheses were required around a word list for a <code>set</code> but not for <code>setenv</code> or <code>alias</code>, etc. Similarly, the <code>if</code>, <code>switch</code> and looping constructs use needlessly different keywords (<code>endif</code>, <code>endsw</code> and <code>end</code>) to terminate the nested blocks.</p>
+<p><b>Missing features</b> most commonly cited are the lack of ability to manipulate the <a href="http://en.m.wikipedia.org/wiki/Stdio" title="Stdio" class="mw-redirect">stdio</a> file handles independently and support for functions. Whereas Bourne shell functions lacked only local variables, Csh's aliases - the closest analogue in Csh to functions - were restricted to single lines of code, even though most flow control constructs required newlines to be recognized. As a result, Csh scripts could not be functionally broken down as C programs themselves could be, and larger projects tended to shift to either Bourne shell scripting or C code.</p>
+<p><b>The implementation,</b> which used an ad hoc <a href="http://en.m.wikipedia.org/wiki/Parsing" title="Parsing">parser</a>, has drawn the most serious criticism. By the early 1970s, <a href="Compiler" title="Compiler">compiler</a> technology was sufficiently mature<sup id="cite_ref-15" class="reference"><a href="C_Shell#cite_note-15"><span>[</span>16<span>]</span></a></sup> that most new language implementations used either a <a href="http://en.m.wikipedia.org/wiki/Top-down_parsing" title="Top-down parsing">top-down</a> or <a href="http://en.m.wikipedia.org/wiki/Bottom-up_parsing" title="Bottom-up parsing">bottom-up parser</a> capable of recognizing a fully recursive <a href="Formal_grammar" title="Formal grammar">grammar</a>. It is not known why an ad hoc design was chosen instead for the C shell. It may be simply that, as Joy put it in an interview in 2009, "When I started doing this stuff with Unix, I wasn't a very good programmer."<sup id="cite_ref-16" class="reference"><a href="C_Shell#cite_note-16"><span>[</span>17<span>]</span></a></sup> The ad hoc design meant that the C shell language was not fully recursive. There was a limit to how complex a command it could handle.</p>
+<p>It worked for most interactively typed commands, but for the more complex commands a user might write in a script, it could easily fail, producing only a cryptic error message or an unwelcome result. For example, the C shell could not support piping between control structures. Attempting to pipe the output of a <code>foreach</code> command into <code><a href="http://en.m.wikipedia.org/wiki/Grep" title="Grep">grep</a></code> simply didn't work. (The work-around, which works for many of the complaints related to the parser, is to break the code up into separate scripts. If the <code>foreach</code> is moved to a separate script, piping works because scripts are run by forking a new copy of csh that does inherit the correct stdio handles.)</p>
+<p>Another example is the unwelcome behavior in the following fragments. Both of these appear to mean, "If 'myfile' does not exist, create it by writing 'mytext' into it." But the version on the right always creates an empty file because the C shell's order of evaluation is to look for and evaluate I/O redirection operators on each command line as it reads it, before examining the rest of the line to see whether it contains a control structure.</p>
+<table style="background:transparent;" cellspacing="0" cellpadding="0"><tr valign="top">
+<td style="width:10px;"></td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0"># Works as expected</span>
+<span class="kw1">if</span> <span class="br0">(</span> <span class="sy0">!</span> <span class="re5">-e</span> myfile <span class="br0">)</span> <span class="kw1">then</span>
+   <span class="kw3">echo</span> mytext <span class="sy0">&gt;</span> myfile
+endif
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;"></td>
+<td style="width:27em;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0"># Always creates an empty file</span>
+<span class="kw1">if</span> <span class="br0">(</span> <span class="sy0">!</span> <span class="re5">-e</span> myfile <span class="br0">)</span> <span class="kw3">echo</span> mytext <span class="sy0">&gt;</span> myfile
+</pre>
+</div>
+</div>
+</td>
+<td style="width:1.25em;">
+<p><br></p>
+<p><br></p>
+<p><br></p>
+</td>
+</tr></table>
+<p>The implementation is also criticized for its notoriously poor error messages, e.g., "0 event not found", which yields no useful information about the problem.</p>
+<h2> <span class="mw-headline" id="Influence">Influence</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:HamiltonCshellx64onWindows7.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e3/HamiltonCshellx64onWindows7.png/300px-HamiltonCshellx64onWindows7.png" width="300" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e3/HamiltonCshellx64onWindows7.png/450px-HamiltonCshellx64onWindows7.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/e/e3/HamiltonCshellx64onWindows7.png/600px-HamiltonCshellx64onWindows7.png 2x"></a>
+<div class="thumbcaption">
+
+64-bit <a href="http://en.m.wikipedia.org/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton C shell</a> on a <a href="http://en.m.wikipedia.org/wiki/Windows_7" title="Windows 7">Windows 7</a> desktop.</div>
+</div>
+</div>
+<p>The C shell was extremely successful in introducing a large number of innovations including the <a href="C_shell#History" title="C shell">history</a> mechanism, <a href="C_shell#Aliases" title="C shell">aliases</a>, <a href="C_shell#Tilde_notation" title="C shell">tilde notation</a>, interactive filename completion, an expression grammar built into the shell, and more, that have since been copied by other Unix shells. But in contrast to <a href="http://en.m.wikipedia.org/wiki/Bourne_shell" title="Bourne shell">sh</a>, which has spawned a large number of independently-developed clones, including <a href="http://en.m.wikipedia.org/wiki/Korn_shell" title="Korn shell">ksh</a> and <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">bash</a>, only two csh <a href="http://en.m.wikipedia.org/wiki/Clone_(computing)" title="Clone (computing)">clones</a> are known. (Since tcsh was based on the csh code originally written by Bill Joy, it is not considered a clone.)</p>
+<p>In 1986, <a href="http://en.m.wikipedia.org/wiki/Allen_Holub" title="Allen Holub">Allen Holub</a> wrote <i>On Command: Writing a Unix-Like Shell for <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a></i>,<sup id="cite_ref-17" class="reference"><a href="C_Shell#cite_note-17"><span>[</span>18<span>]</span></a></sup> a book describing a program he had written called "SH" but which in fact copied the language design and features of csh, not sh. Companion diskettes containing full source for SH and for a basic set of Unix-like utilities (cat, cp, grep, etc.) were available for $25 and $30, respectively, from the publisher. The control structures, expression grammar, history mechanism and other features in Holub's SH were identical to those of the C shell.</p>
+<p>In 1988, Hamilton Laboratories began shipping <a href="http://en.m.wikipedia.org/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton C shell</a>, written by Nicole Hamilton, for <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a>.<sup id="cite_ref-18" class="reference"><a href="C_Shell#cite_note-18"><span>[</span>19<span>]</span></a></sup> It included both a csh clone and a set of Unix-like utilities. In 1992, Hamilton C shell was released for <a href="http://en.m.wikipedia.org/wiki/Windows_NT" title="Windows NT">Windows NT</a>.<sup id="cite_ref-19" class="reference"><a href="C_Shell#cite_note-19"><span>[</span>20<span>]</span></a></sup> The Windows version continues to be actively supported<sup id="cite_ref-20" class="reference"><a href="C_Shell#cite_note-20"><span>[</span>21<span>]</span></a></sup> but the OS/2 version was discontinued in 2003. An early quick reference<sup id="cite_ref-21" class="reference"><a href="C_Shell#cite_note-21"><span>[</span>22<span>]</span></a></sup> described the intent as "full compliance with the entire C shell language (except <a href="C_shell#Job_control" title="C shell">job control</a>)" but with improvements to the language design and adaptation to the differences between Unix and a PC. The most important improvement was a <a href="http://en.m.wikipedia.org/wiki/Top-down_parsing" title="Top-down parsing">top-down parser</a> that allowed <a href="http://en.m.wikipedia.org/wiki/Control_structure" title="Control structure" class="mw-redirect">control structures</a> to be nested or piped, something the original C shell could not support, given its ad hoc parser. Hamilton also added new language features including built-in and user-defined procedures, block-structured local variables and floating point arithmetic. Adaptation to a PC included support for the filename and other conventions on a PC and the use of <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">threads</a> instead of <a href="http://en.m.wikipedia.org/wiki/Fork_(operating_system)" title="Fork (operating system)">forks</a> (which were not available under either OS/2 or Windows) to achieve <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallelism</a>, e.g., in setting up a pipeline.</p>
+<p>C shell has been, and continues to be, the dominant scripting language in much of the <a href="http://en.m.wikipedia.org/wiki/Speech_recognition" title="Speech recognition">speech recognition</a> research community, and is closely associated with the <a href="http://en.m.wikipedia.org/wiki/HTK_(software)" title="HTK (software)">HTK</a> speech tools.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Command-line_interpreter" title="Command-line interpreter" class="mw-redirect">Command-line interpreter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_command_shells" title="Comparison of command shells">Comparison of command shells</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFZoulas2012">Zoulas, Christos (14 Jan 2012), <a rel="nofollow" class="external text" href="http://mx.gw.com/pipermail/tcsh/2012-January/004523.html"><i>tcsh-6.18 is now available</i></a><span class="printonly">, <a rel="nofollow" class="external free" href="http://mx.gw.com/pipermail/tcsh/2012-January/004523.html">http://mx.gw.com/pipermail/tcsh/2012-January/004523.html</a></span><span class="reference-accessdate">, retrieved 16 January 2012</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=tcsh-6.18+is+now+available&amp;rft.aulast=Zoulas&amp;rft.aufirst=Christos&amp;rft.au=Zoulas%2C%26%2332%3BChristos&amp;rft.date=14+Jan+2012&amp;rft_id=http%3A%2F%2Fmx.gw.com%2Fpipermail%2Ftcsh%2F2012-January%2F004523.html&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-1">^</a></b></span> <span class="reference-text">Harley Hahn, <a rel="nofollow" class="external text" href="http://unix.harley.com/instructors/timeline.html">Harley Hahn's Guide to Unix and Linux</a>.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://coe.berkeley.edu/labnotes/history_unix.html">Berkeley Engineering Lab Notes, Volume 1, Issue 2, October 2001</a>.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.kitebird.com/csh-tcsh-book/csh-intro.pdf"><i>An Introduction to the C shell</i></a> by <a href="http://en.m.wikipedia.org/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a>.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://packages.ubuntu.com/oneiric/shells/csh">Ubuntu - Details of package csh in oneiric</a>. Packages.ubuntu.com.</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://packages.debian.org/squeeze/csh">Debian - Details of package csh in squeeze</a>. Packages.debian.org.</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://packages.ubuntu.com/oneiric/shells/tcsh">Ubuntu - Details of package tcsh in oneiric</a>. Packages.ubuntu.com.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://packages.debian.org/squeeze/tcsh">Debian - Details of package tcsh in squeeze</a>. Packages.debian.org.</span>
+</li>
+<li id="cite_note-Greer-8">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-Greer_8-0">^</a></b></span> <span class="reference-text"><span class="citation newsgroup">Ken Greer (3 Oct 1983). "C shell with command and filename recognition/completion". <a rel="nofollow" class="external text" href="news:net.sources">net.sources</a>. <a rel="nofollow" class="external text" href="http://groups.google.com/group/net.sources/msg/7073bf41cc5da330?hl=en">Web link</a><span class="reference-accessdate">. Retrieved 29 December 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C+shell+with+command+and+filename+recognition%2Fcompletion&amp;rft.atitle=&amp;rft.aulast=Ken+Greer&amp;rft.au=Ken+Greer&amp;rft.date=3+Oct+1983&amp;rft.pub=%5Bnews%3Anet.sources+net.sources%5D&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.tcsh.org/tcsh.html/DESCRIPTION.html">tcsh(1) man page</a>. tcsh.</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-10">^</a></b></span> <span class="reference-text">Fixes file in tcsh-17 June 2000.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.lang.misc/msg/d58db4799c33e093?hl=en&amp;dmode=source"><i>Re: Late Bloomers Revisited</i></a> USENET post to comp.lang.misc by Piercarlo "Peter" Grandi, Dept of CS, UCW Aberystwyth, UK, 17 December 1989.</span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-12">^</a></b></span> <span class="reference-text"><i>IEEE Standard for Information Technology, Portable Operating System Interface (POSIX), Part 2: Shell and Utilities, Volume 2</i>. IEEE Std 1003.2-1992, pp. 766-767. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1559372559" class="internal mw-magiclink-isbn">ISBN 1-55937-255-9</a>.</span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.faqs.org/faqs/unix-faq/shell/csh-whynot/"><i>Csh Programming Considered Harmful</i></a> by Tom Christiansen</span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.grymoire.com/Unix/CshTop10.txt"><i>Top Ten Reasons not to use the C shell</i></a> by Bruce Barnett</span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-15">^</a></b></span> <span class="reference-text">David Gries (1971). <i>Compiler Construction for Digital Computers.</i> John Wiley &amp; Sons. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/047132776X" class="internal mw-magiclink-isbn">ISBN 0-471-32776-X</a>.</span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://fora.tv/2009/02/11/Bill_Joy_in_Conversation_with_Brent_Schlender">Bill Joy in Conversation with Brent Schlender, Churchill Club, Santa Clara, CA, Feb 11, 2009</a>.</span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="http://en.m.wikipedia.org/wiki/Allen_Holub" title="Allen Holub">Holub, Allen</a> (1986, 1987). <i>On Command: Writing a Unix-Like Shell for MS-DOS</i> (Second ed.). M&amp;T Books, Redwood City, CA. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-934375-29-1" title="Special:BookSources/0-934375-29-1">0-934375-29-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=On+Command%3A+Writing+a+Unix-Like+Shell+for+MS-DOS&amp;rft.aulast=Holub&amp;rft.aufirst=Allen&amp;rft.au=Holub%2C%26%2332%3BAllen&amp;rft.date=1986%2C+1987&amp;rft.edition=Second&amp;rft.pub=M%26T+Books%2C+Redwood+City%2C+CA&amp;rft.isbn=0-934375-29-1&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation Journal">Hamilton, Douglas. <a rel="nofollow" class="external text" href="http://hamiltonlabs.com/archives/Hamilton-C-Shell-Announcement-Douglas-A-Hamilton-IBM-Personal-Systems-Developer-Summer-1989.pdf">"Hamilton C shell Announcement"</a>. <i>IBM Personal Systems Developer</i> (Summer 1989): 119–121<span class="printonly">. <a rel="nofollow" class="external free" href="http://hamiltonlabs.com/archives/Hamilton-C-Shell-Announcement-Douglas-A-Hamilton-IBM-Personal-Systems-Developer-Summer-1989.pdf">http://hamiltonlabs.com/archives/Hamilton-C-Shell-Announcement-Douglas-A-Hamilton-IBM-Personal-Systems-Developer-Summer-1989.pdf</a></span><span class="reference-accessdate">. Retrieved 22 November 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Hamilton+C+shell+Announcement&amp;rft.jtitle=IBM+Personal+Systems+Developer&amp;rft.aulast=Hamilton&amp;rft.aufirst=Douglas&amp;rft.au=Hamilton%2C%26%2332%3BDouglas&amp;rft.issue=Summer+1989&amp;rft.pages=119%E2%80%93121&amp;rft_id=http%3A%2F%2Fhamiltonlabs.com%2Farchives%2FHamilton-C-Shell-Announcement-Douglas-A-Hamilton-IBM-Personal-Systems-Developer-Summer-1989.pdf&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hamiltonlabs.com/ReleaseNotes.htm">Hamilton C shell for Windows Release Notes 4.0</a>. Retrieved 19 June 2010.</span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation web">Oliver, Robert (19 September 2009). <a rel="nofollow" class="external text" href="http://www.4gigs.com/2009/09/19/hamilton-c-shell-2009-the-missing-shell-for-windows/">"Hamilton C Shell 2009 – The Missing Shell for Windows"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.4gigs.com/2009/09/19/hamilton-c-shell-2009-the-missing-shell-for-windows/">http://www.4gigs.com/2009/09/19/hamilton-c-shell-2009-the-missing-shell-for-windows/</a></span><span class="reference-accessdate">. Retrieved 24 June 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Hamilton+C+Shell+2009+%E2%80%93+The+Missing+Shell+for+Windows&amp;rft.atitle=&amp;rft.aulast=Oliver&amp;rft.aufirst=Robert&amp;rft.au=Oliver%2C%26%2332%3BRobert&amp;rft.date=19+September+2009&amp;rft_id=http%3A%2F%2Fwww.4gigs.com%2F2009%2F09%2F19%2Fhamilton-c-shell-2009-the-missing-shell-for-windows%2F&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="C_Shell#cite_ref-21">^</a></b></span> <span class="reference-text"><span class="citation book"><a rel="nofollow" class="external text" href="http://hamiltonlabs.com/archives/1990-07-10-Hamilton-C-shell-Quick-Reference.pdf"><i>Hamilton C shell Quick Reference</i></a>. Hamilton Laboratories, Wayland, MA. 1988 - 1990 (Revised 10 July 1990)<span class="printonly">. <a rel="nofollow" class="external free" href="http://hamiltonlabs.com/archives/1990-07-10-Hamilton-C-shell-Quick-Reference.pdf">http://hamiltonlabs.com/archives/1990-07-10-Hamilton-C-shell-Quick-Reference.pdf</a></span><span class="reference-accessdate">. Retrieved 22 November 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Hamilton+C+shell+Quick+Reference&amp;rft.date=1988+-+1990+%28Revised+10+July+1990%29&amp;rft.pub=Hamilton+Laboratories%2C+Wayland%2C+MA&amp;rft_id=http%3A%2F%2Fhamiltonlabs.com%2Farchives%2F1990-07-10-Hamilton-C-shell-Quick-Reference.pdf&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<span class="citation book">Anderson, Gail; Paul Anderson (1986). <i>The UNIX C Shell Field Guide</i>. Prentice-Hall. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-13-937468-X" title="Special:BookSources/0-13-937468-X">0-13-937468-X</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+UNIX+C+Shell+Field+Guide&amp;rft.aulast=Anderson&amp;rft.aufirst=Gail&amp;rft.au=Anderson%2C%26%2332%3BGail&amp;rft.date=1986&amp;rft.pub=Prentice-Hall&amp;rft.isbn=0-13-937468-X&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Wang, Paul (1988). <i>An Introduction to Berkeley UNIX</i>. Wadsworth Pub. Co.. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-534-08862-7" title="Special:BookSources/0-534-08862-7">0-534-08862-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Berkeley+UNIX&amp;rft.aulast=Wang&amp;rft.aufirst=Paul&amp;rft.au=Wang%2C%26%2332%3BPaul&amp;rft.date=1988&amp;rft.pub=Wadsworth+Pub.+Co.&amp;rft.isbn=0-534-08862-7&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">DuBois, Paul (1995). <i>Using csh &amp; tcsh</i>. O'Reilly &amp; Associates. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-56592-132-1" title="Special:BookSources/1-56592-132-1">1-56592-132-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Using+csh+%26+tcsh&amp;rft.aulast=DuBois&amp;rft.aufirst=Paul&amp;rft.au=DuBois%2C%26%2332%3BPaul&amp;rft.date=1995&amp;rft.pub=O%27Reilly+%26+Associates&amp;rft.isbn=1-56592-132-1&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Arick, Martin R. (1993). <i>UNIX C Shell Desk Reference</i>. John Wiley &amp; Sons. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-471-55680-7" title="Special:BookSources/0-471-55680-7">0-471-55680-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=UNIX+C+Shell+Desk+Reference&amp;rft.aulast=Arick&amp;rft.aufirst=Martin+R.&amp;rft.au=Arick%2C%26%2332%3BMartin+R.&amp;rft.date=1993&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.isbn=0-471-55680-7&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://klaatu.canisius.edu/ONLINESTUFF/UNIX/shellprogramming.html">"Introduction to C Shell Programming"</a>. Canisius College Computer Science Department<span class="printonly">. <a rel="nofollow" class="external free" href="http://klaatu.canisius.edu/ONLINESTUFF/UNIX/shellprogramming.html">http://klaatu.canisius.edu/ONLINESTUFF/UNIX/shellprogramming.html</a></span><span class="reference-accessdate">. Retrieved 23 June 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Introduction+to+C+Shell+Programming&amp;rft.atitle=&amp;rft.pub=Canisius+College+Computer+Science+Department&amp;rft_id=http%3A%2F%2Fklaatu.canisius.edu%2FONLINESTUFF%2FUNIX%2Fshellprogramming.html&amp;rfr_id=info:sid/en.wikipedia.org:C_shell"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/C_Shell_Scripting" class="extiw" title="wikibooks:C Shell Scripting">C Shell Scripting</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.kitebird.com/csh-tcsh-book/csh-intro.pdf"><i>An Introduction to the C shell</i></a> by <a href="http://en.m.wikipedia.org/wiki/William_Joy" title="William Joy" class="mw-redirect">William Joy</a>.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://docstore.mik.ua/orelly/linux/lnut/ch08_01.htm">Linux in a Nutshell: Chapter 8. csh and tcsh</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.tcsh.org/Home">tcsh home page.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.tcsh.org/tcsh.html/top.html">tcsh(1) man page.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.tcsh.org/MostRecentRelease">most recent tcsh source code.</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://minnie.tuhs.org/cgi-bin/utree.pl?file=2BSD/src/csh">historical 2BSD csh source code</a> dated 2 February 1980.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://minnie.tuhs.org/cgi-bin/utree.pl">The Unix Tree</a>, complete historical Unix distributions.</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Unix_shells" title="Template:Unix shells"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Unix shells (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Unix_shells&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shells</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bourne_shell" title="Bourne shell">Bourne</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Almquist_shell" title="Almquist shell">Almquist</a></li>
+<li><strong class="selflink">csh</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Debian_Almquist_shell" title="Debian Almquist shell">dash</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Es_(Unix_shell)" title="Es (Unix shell)">es</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Friendly_interactive_shell" title="Friendly interactive shell">fish</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Korn_shell" title="Korn shell">Korn</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PWB_shell" title="PWB shell">PWB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Perl_Shell" title="Perl Shell">psh</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rc" title="Rc">Rc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stand-alone_shell" title="Stand-alone shell">sash</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tcsh" title="Tcsh">tcsh</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Thompson_shell" title="Thompson shell">Thompson</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wish_(Unix_shell)" title="Wish (Unix shell)">Wish</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z_shell" title="Z shell">zsh</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 15 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/C_shell" lang="cs" hreflang="cs">česky</a></li><li><a href="http://es.m.wikipedia.org/wiki/C_Shell" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Csh" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/C_%EC%85%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/C_shell" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/C_Shell" lang="he" hreflang="he">עברית</a></li><li><a href="http://ja.m.wikipedia.org/wiki/C_Shell" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/C_shell" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Csh" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Csh" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Csh" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sq.m.wikipedia.org/wiki/C_shell" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://sv.m.wikipedia.org/wiki/C_shell" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Csh" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/C_Shell" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=C_Shell&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=C_Shell&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C+shell&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

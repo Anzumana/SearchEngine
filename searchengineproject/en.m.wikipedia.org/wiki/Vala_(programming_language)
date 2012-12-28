@@ -1,0 +1,593 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Vala (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Vala (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Vala_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Vala+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Vala (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Vala</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">Multi-paradigm</a>: <a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Structured_programming" title="Structured programming">structured</a>, <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">2006</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_developer" title="Software developer">Developer</a></th>
+<td class="" style="">Jürg Billeter, Raffaele Sandrini</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">0.18.0<sup id="cite_ref-vala-release_0-0" class="reference"><a href="Vala_(programming_language)#cite_note-vala-release-0"><span>[</span>1<span>]</span></a></sup> (24 September 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-24</span>)</span>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style="">
+<a href="Static_typing" title="Static typing" class="mw-redirect">static</a>, <a href="http://en.m.wikipedia.org/wiki/Strong_typing" title="Strong typing">strong</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="D_(programming_language)" title="D (programming language)">D</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style="">
+<a href="Cross-platform" title="Cross-platform">cross-platform</a> all supported by <a href="http://en.m.wikipedia.org/wiki/GLib" title="GLib">GLib</a>, but distributed as source code only.</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/LGPL" title="LGPL" class="mw-redirect">LGPL</a> 2.1+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Usual <a href="Filename_extension" title="Filename extension">filename extensions</a>
+</th>
+<td class="" style="">.vala, .vapi</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala">live.gnome.org/Vala</a></span></td>
+</tr>
+</table>
+<p><b>Vala</b> is an <a href="http://en.m.wikipedia.org/wiki/Object-oriented" title="Object-oriented" class="mw-redirect">object-oriented</a> <a href="Programming_language" title="Programming language">programming language</a> with a <a href="http://en.m.wikipedia.org/wiki/Self-hosting" title="Self-hosting">self-hosting</a> <a href="Compiler" title="Compiler">compiler</a> that generates <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> code and uses the <a href="http://en.m.wikipedia.org/wiki/GObject" title="GObject">GObject</a> system. Vala is <a href="Syntax_(programming_languages)" title="Syntax (programming languages)">syntactically</a> similar to <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and includes useful language features like <a href="http://en.m.wikipedia.org/wiki/Anonymous_functions" title="Anonymous functions" class="mw-redirect">anonymous functions</a>, <a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">signals</a>, properties, <a href="Generic_programming" title="Generic programming">generics</a>, <a href="http://en.m.wikipedia.org/wiki/Automatic_memory_management" title="Automatic memory management" class="mw-redirect">assisted memory management</a>, <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception handling</a>, <a href="http://en.m.wikipedia.org/wiki/Type_inference" title="Type inference">type inference</a>, and <a href="http://en.m.wikipedia.org/wiki/Foreach" title="Foreach" class="mw-redirect">foreach</a> statements.<sup id="cite_ref-1" class="reference"><a href="Vala_(programming_language)#cite_note-1"><span>[</span>2<span>]</span></a></sup> Its developers Jürg Billeter and Raffaele Sandrini aim to bring these features to the plain <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> <a href="http://en.m.wikipedia.org/wiki/Runtime" title="Runtime" class="mw-redirect">runtime</a> with little overhead and no special <a href="http://en.m.wikipedia.org/wiki/Runtime" title="Runtime" class="mw-redirect">runtime</a> support by targeting the <a href="http://en.m.wikipedia.org/wiki/GObject" title="GObject">GObject</a> <a href="Object-oriented_programming" title="Object-oriented programming">object</a> system. Rather than being compiled directly to assembly or to another <a href="Intermediate_language" title="Intermediate language">intermediate language</a>, Vala is <a href="Source-to-source_compiler" title="Source-to-source compiler">source-to-source compiled</a> to C which is then compiled with a platform's standard C compiler, such as <a href="http://en.m.wikipedia.org/wiki/GNU_C_Compiler" title="GNU C Compiler" class="mw-redirect">gcc</a>.<sup id="cite_ref-lwn_2-0" class="reference"><a href="Vala_(programming_language)#cite_note-lwn-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>For memory management, the GObject system provides <a href="http://en.m.wikipedia.org/wiki/Reference_counting" title="Reference counting">reference counting</a>. In C, a programmer must manually manage adding and removing references, but in Vala, managing such reference counts is automated if a programmer uses the language's built-in reference types rather than plain pointers.</p>
+<p>Using functionality from native code libraries requires writing vapi files, defining the library interfacing. Writing these interface definitions is well-documented for C libraries, especially when based on GObject. However, C++ libraries are currently<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items" title="Wikipedia:Manual of Style/Dates and numbers"><span title="The time period in the vicinity of this tag is ambiguous from May 2012">when?</span></a></i>]</sup> not supported. Vapi files are provided for a large portion of the <a href="http://en.m.wikipedia.org/wiki/GNOME" title="GNOME">GNOME</a> platform, including <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a>.</p>
+<p>Vala was conceived by Jürg Billeter and was implemented by him and Raffaele Sandrini, finishing a <a href="http://en.m.wikipedia.org/wiki/Self-hosting" title="Self-hosting">self-hosting</a> compiler in May 2006.<sup id="cite_ref-multi_3-0" class="reference"><a href="Vala_(programming_language)#cite_note-multi-3"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Code_example">Code example</span>
+</h2>
+<p>A simple "<a href="http://en.m.wikipedia.org/wiki/Hello_world_program" title="Hello world program">Hello, World!</a>" program:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vala source-vala">
+<pre class="de1">
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+    print<span class="br0">(</span><span class="st0">"Hello World<span class="es0">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>A more complex version, showing some of Vala's <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a> features:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vala source-vala">
+<pre class="de1">
+<span class="kw4">class</span> Sample <span class="sy0">:</span> Object <span class="br0">{</span>
+    <span class="kw1">void</span> greeting<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+        stdout.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"Hello World<span class="es0">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="kw1">static</span> <span class="kw1">void</span> main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw1">var</span> sample <span class="sy0">=</span> <span class="kw3">new</span> Sample<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+        sample.<span class="me1">greeting</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>An example using <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a> to create a <a href="Graphical_user_interface" title="Graphical user interface">GUI</a> "<a href="http://en.m.wikipedia.org/wiki/Hello_world_program" title="Hello world program">Hello, World!</a>" program:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vala source-vala">
+<pre class="de1">
+<span class="kw1">using</span> <span class="co3">Gtk</span><span class="sy0">;</span>
+ 
+<span class="kw4">int</span> main <span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span> <span class="br0">{</span>
+    Gtk.<span class="me1">init</span><span class="br0">(</span><span class="kw1">ref</span> args<span class="br0">)</span><span class="sy0">;</span>
+ 
+    <span class="kw1">var</span> window <span class="sy0">=</span> <span class="kw3">new</span> Window<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    window.<span class="me1">title</span> <span class="sy0">=</span> <span class="st0">"Hello, World!"</span><span class="sy0">;</span>
+    window.<span class="me1">border_width</span> <span class="sy0">=</span> <span class="nu0">10</span><span class="sy0">;</span>
+    window.<span class="me1">window_position</span> <span class="sy0">=</span> WindowPosition.<span class="me1">CENTER</span><span class="sy0">;</span>
+    window.<span class="me1">set_default_size</span><span class="br0">(</span><span class="nu0">350</span>, <span class="nu0">70</span><span class="br0">)</span><span class="sy0">;</span>
+    window.<span class="me1">destroy</span>.<span class="me1">connect</span><span class="br0">(</span>Gtk.<span class="me1">main_quit</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+    <span class="kw1">var</span> label <span class="sy0">=</span> <span class="kw3">new</span> Label<span class="br0">(</span><span class="st0">"Hello, World!"</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+    window.<span class="me1">add</span><span class="br0">(</span>label<span class="br0">)</span><span class="sy0">;</span>
+    window.<span class="me1">show_all</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+    Gtk.<span class="me1">main</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="IDE_support">IDE support</span>
+</h2>
+<p>There are various projects in various states of stability in order to provide IDE support for Vala:</p>
+<ul>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><span class="new" title="Valaide (page does not exist)">Valaide</span></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li>Vala Toys for gedit</li>
+<li>Valencia</li>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Netbeans" title="Netbeans" class="mw-redirect">Netbeans</a></li>
+<li>TextMate or RedCar</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Genie_(programming_language)" title="Genie (programming language)">Genie</a>, a programming language for the Vala compiler with a syntax closer to <a href="Python_(programming_language)" title="Python (programming language)">Python</a>
+</li>
+<li>
+<a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a>, a programming <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> that runs on Linux, Windows and Mac OS X<sup id="cite_ref-4" class="reference"><a href="Vala_(programming_language)#cite_note-4"><span>[</span>5<span>]</span></a></sup> with support for Vala</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Shotwell_(software)" title="Shotwell (software)">Shotwell</a>, an image organiser written in Vala</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Ease_(software)" title="Ease (software)">Ease</a>, a presentation program written in Vala</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-vala-release-0">
+<span class="mw-cite-backlink"><b><a href="Vala_(programming_language)#cite_ref-vala-release_0-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala/Release">"Vala Releases"</a>. 24 September 2012<span class="printonly">. <a rel="nofollow" class="external free" href="http://live.gnome.org/Vala/Release">http://live.gnome.org/Vala/Release</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Vala+Releases&amp;rft.atitle=&amp;rft.date=24+September+2012&amp;rft_id=http%3A%2F%2Flive.gnome.org%2FVala%2FRelease&amp;rfr_id=info:sid/en.wikipedia.org:Vala_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Vala_(programming_language)#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://arstechnica.com/open-source/news/2007/09/vala-high-level-programming-with-less-fat.ars">Vala: high-level programming with less fat - Ars Technica. Retrieved Dec13, 2011 1:40PM EST</a></span>
+</li>
+<li id="cite_note-lwn-2">
+<span class="mw-cite-backlink"><b><a href="Vala_(programming_language)#cite_ref-lwn_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://lwn.net/Articles/335966/">http://lwn.net/Articles/335966/</a></span>
+</li>
+<li id="cite_note-multi-3">
+<span class="mw-cite-backlink"><b><a href="Vala_(programming_language)#cite_ref-multi_3-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://gnomejournal.org/article/80/writing-multimedia-applications-with-vala">http://gnomejournal.org/article/80/writing-multimedia-applications-with-vala</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Vala_(programming_language)#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://monodevelop.com/">multiple OS support</a></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Vala_Programming" class="extiw" title="wikibooks:Vala Programming">Vala Programming</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<span class="official website"><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala">Official website</a></span> , on GNOME Live!</li>
+<li>
+<a rel="nofollow" class="external text" href="https://sourceforge.net/projects/valatowindows/">ValaToWindows</a>, Vala compiled binaries for Windows.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://live.gnome.org/Libgee">LibGee</a>, a collection library for vala.</li>
+<li><a rel="nofollow" class="external text" href="http://www.valaide.org/">Val(a)IDE, an IDE for Vala</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://redmine.yorba.org/projects/valencia/wiki">Valencia</a>, a Vala plugin for <a href="http://en.m.wikipedia.org/wiki/Gedit" title="Gedit">Gedit</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://code.google.com/p/vtg">Vala Toys for Gedit</a>, a plugin for Gedit that adds support of autocompletion and more, to program with Vala.</li>
+<li><a rel="nofollow" class="external text" href="http://valadoc.org">API Documentation</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://bazaar.launchpad.net/~sepehr.aryani/vala-totrials/ValaTutorials/files">Vala sample code for beginners</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala/Documentation#Projects_Developed_in_Vala">List of Vala programs</a></li>
+</ul>
+<dl>
+<dt>Comparison with other languages</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala/ValaForJavaProgrammers">Vala and Java</a></li>
+<li><a rel="nofollow" class="external text" href="http://live.gnome.org/Vala/ValaForCSharpProgrammers">Vala and C#</a></li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/vala-benchmarks/">Benchmark of Vala versus C# and C</a></li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/vala-benchmarks/wiki/BenchResults">More Vala benchmarks</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:GNOME" title="Template:GNOME"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:GNOME" title="Template talk:GNOME"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:GNOME&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/GNOME" title="GNOME">GNOME</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Community</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Foundation" title="GNOME Foundation">GNOME Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Users_And_Developers_European_Conference" title="GNOME Users And Developers European Conference">GUADEC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_GNOME_Project" title="The GNOME Project">The GNOME Project</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" style="width:0%;padding:0px 0px 0px 2px;" rowspan="11">
+<div><a href="http://en.m.wikipedia.org/w/index.php?title=File:Gnomelogo.svg&amp;page=1" class="image"><img alt="Gnomelogo.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/50px-Gnomelogo.svg.png" width="50" height="61" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/75px-Gnomelogo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/100px-Gnomelogo.svg.png 2x"></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">People</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Miguel_de_Icaza" title="Miguel de Icaza">Miguel de Icaza</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Federico_Mena" title="Federico Mena">Federico Mena</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Havoc_Pennington" title="Havoc Pennington">Havoc Pennington</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Components</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Shell" title="GNOME Shell">GNOME Shell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Panel" title="GNOME Panel">GNOME Panel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mutter_(window_manager)" title="Mutter (window manager)">Mutter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metacity" title="Metacity">Metacity</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Applications</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ekiga" title="Ekiga">Ekiga</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Empathy_(software)" title="Empathy (software)">Empathy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Evince" title="Evince">Evince</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Evolution_(software)" title="Evolution (software)">Evolution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eye_of_GNOME" title="Eye of GNOME">Eye of GNOME</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/File_Roller" title="File Roller">File Roller</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gedit" title="Gedit">gedit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Terminal" title="GNOME Terminal">GNOME Terminal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inkscape" title="Inkscape">Inkscape</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nautilus_(file_manager)" title="Nautilus (file manager)">Nautilus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rhythmbox" title="Rhythmbox">Rhythmbox</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sound_Juicer" title="Sound Juicer">Sound Juicer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tomboy_(software)" title="Tomboy (software)">Tomboy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Totem_(software)" title="Totem (software)">Totem</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Web_(web_browser)" title="Web (web browser)">Web</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Boxes_(software)" title="Boxes (software)">Boxes</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/List_of_GNOME_applications" title="List of GNOME applications">more...</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Technologies</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Accessibility_Toolkit" title="Accessibility Toolkit">ATK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bonobo_(component_model)" title="Bonobo (component model)">Bonobo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/D-Bus" title="D-Bus">D-Bus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GConf" title="GConf">GConf</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dconf" title="Dconf">Dconf</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Genie_(programming_language)" title="Genie (programming language)">Genie</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GLib" title="GLib">GLib</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Keyring" title="GNOME Keyring">Keyring</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GObject" title="GObject">GObject</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GStreamer" title="GStreamer">GStreamer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GVFS" title="GVFS">GVFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mono_(software)" title="Mono (software)">Mono</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pango" title="Pango">Pango</a></li>
+<li><strong class="selflink">Vala</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Controversy_over_GNOME_3" title="Controversy over GNOME 3">Controversy over GNOME 3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MATE_(desktop_environment)" title="MATE (desktop environment)">MATE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cinnamon_(user_interface)" title="Cinnamon (user interface)">Cinnamon</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><strong class="selflink">Vala</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 15 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Vala_(programovac%C3%AD_jazyk)" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Vala_(Programmiersprache)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Vala_(lenguaje_de_programaci%C3%B3n)" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%88%D8%A7%D9%84%D8%A7_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Vala_(langage_de_programmation)" lang="fr" hreflang="fr">français</a></li><li><a href="http://it.m.wikipedia.org/wiki/Vala_(linguaggio_di_programmazione)" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/Vala" lang="he" hreflang="he">עברית</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%B5%E0%B4%B2_(%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%99%E0%B5%8D_%E0%B4%AD%E0%B4%BE%E0%B4%B7)" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Vala" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Vala_(programmeertaal)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Vala" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Vala" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/Vala_(programski_jezik)" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Vala" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Vala" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Vala_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Vala_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Vala+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

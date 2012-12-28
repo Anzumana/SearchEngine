@@ -1,0 +1,266 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Tiny C Compiler - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Tiny C Compiler","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Tiny_C_Compiler" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Tiny+C+Compiler"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Tiny C Compiler</h1>			
+<table class="metadata plainlinks ambox ambox-style ambox-citation_style" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>has an unclear citation style</b>. <span class="hide-when-compact">The references used may be made clearer with a different or consistent style of <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citation</a>, <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Footnotes" title="Wikipedia:Footnotes" class="mw-redirect">footnoting</a>, or <a href="http://en.m.wikipedia.org/wiki/Wikipedia:External_links" title="Wikipedia:External links">external linking</a>. <em>"All external links in content moved to references, but most references should now be cleaned up with an automated program to be made perfect, please.".</em></span> <small><i>(July 2012)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Tiny C Compiler</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Fabrice_Bellard" title="Fabrice Bellard">Fabrice Bellard</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">0.9.25 / May 20, 2009<span style="display:none"> (<span class="bday dtstart published updated">2009-05-20</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="Assembly_language" title="Assembly language">Assembly</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="Unix" title="Unix">Unix</a>, <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> <a href="Compiler" title="Compiler">compiler</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://bellard.org/tcc/">bellard.org/tcc/</a></span></td>
+</tr>
+</table>
+<p>The <b>Tiny C Compiler</b> (aka TCC, tCc, or TinyCC) is an <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> and <a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a> <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> <a href="Compiler" title="Compiler">compiler</a> created by <a href="http://en.m.wikipedia.org/wiki/Fabrice_Bellard" title="Fabrice Bellard">Fabrice Bellard</a>. It is designed to work for slow computers with little disk space (e.g. on rescue disks). <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> operating system support was added in version 0.9.23 (17 Jun 2005). TCC is distributed under the <a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a> (LGPL).</p>
+<p>TCC claims to implement all of <a href="ANSI_C" title="ANSI C">ANSI C</a> (C89/C90),<sup id="cite_ref-1" class="reference"><a href="Tiny_C_Compiler#cite_note-1"><span>[</span>1<span>]</span></a></sup> much of the new ISO <a href="C99" title="C99">C99</a> standard, and many GNU C extensions including inline <a href="Assembly_language" title="Assembly language">assembly</a>.</p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<p>TCC has a number of features which differentiate it from other current C compilers:</p>
+<ul>
+<li>Its small file size (about 100 KB for the x86 TCC executable) and memory footprint allow it to be used directly from a single 1.44 M <a href="http://en.m.wikipedia.org/wiki/Floppy_disk" title="Floppy disk">floppy disk</a>, such as a rescue disk.</li>
+<li>TCC is intended to produce native x86 and x86-64 code very quickly; according to Bellard, it compiles, assembles and links about nine times faster than <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> does.<sup id="cite_ref-2" class="reference"><a href="Tiny_C_Compiler#cite_note-2"><span>[</span>2<span>]</span></a></sup>
+</li>
+<li>TCC has a number of compiler-specific language features intended to improve its practicality, such as an optional memory and bound checker, for improved code stability.</li>
+<li>TCC allows programs to be run automatically at compile time using a command-line switch. This allows programs to be run as a shell script under Unix-like systems which support the <a href="http://en.m.wikipedia.org/wiki/Shebang_(Unix)" title="Shebang (Unix)">shebang</a> <a href="http://en.m.wikipedia.org/wiki/Interpreter_directive" title="Interpreter directive">interpreter directive</a> syntax.</li>
+</ul>
+<h2> <span class="mw-headline" id="Compiled_program_performance">Compiled program performance</span>
+</h2>
+<p>Although the TCC compiler itself is exceptionally fast and produces very small executables, there is an inherent trade off between this size of the compiler and the performance of the code that TCC produces.</p>
+<p>TCC does perform a few <a href="http://en.m.wikipedia.org/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">optimizations</a>, such as <a href="http://en.m.wikipedia.org/wiki/Constant_folding" title="Constant folding">constant propagation</a> for all operations, multiplications and divisions are optimized to <a href="http://en.m.wikipedia.org/wiki/Arithmetic_shift" title="Arithmetic shift">shifts</a> when appropriate, and comparison operators are specially optimized (by maintaining a special cache for the processor flags). It also does some simple <a href="http://en.m.wikipedia.org/wiki/Register_allocation" title="Register allocation">register allocation</a>, which prevents many extraneous save/load pairs inside a <i>single</i> <a href="http://en.m.wikipedia.org/wiki/Statement_(computer_science)" title="Statement (computer science)">statement</a>.</p>
+<p>But in general, TCC's implementation emphasizes smallness instead of optimally-performing results. TCC generates code in a single pass, and does not perform most of the optimizations performed by other compilers such as <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a>. TCC compiles every statement on its own, and at the end of each statement register values are written back to the stack and must be re-read even if the next line uses the values in registers (creating extraneous save/load pairs <i>between</i> statements). TCC uses only some of the available registers (e.g., on x86 it never uses ebx, esi, or edi because they need to be preserved across function calls).<sup id="cite_ref-3" class="reference"><a href="Tiny_C_Compiler#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Here are two benchmark examples:</p>
+<ul>
+<li>Rough benchmarks of a recursive Fibonacci algorithm on a 1.8 GHz Intel Centrino laptop with 512 MB <a href="http://en.m.wikipedia.org/wiki/Random-access_memory" title="Random-access memory">RAM</a> yields a noticeable difference in results between Microsoft Visual C++ compiler 13.10.3052 and TCC. To calculate the 49th Fibonacci number, it took a TCC-compiled program approximately 110 seconds whereas the same program compiled by VC++ took approximately 93 seconds. Here, TCC takes 18% longer.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2008">citation needed</span></a></i>]</sup>
+</li>
+<li>With a tcc modified to compile GCC, running cc1 (the GCC C compiler) on itself required 518 seconds when compiled using GCC 3.4.2, 558 seconds using GCC 2.95.3, 545 using Microsoft C compiler, and 1145 seconds using tcc. The level of optimization in each compiler was -O1 or similar.<sup id="cite_ref-grischka_4-0" class="reference"><a href="Tiny_C_Compiler#cite_note-grischka-4"><span>[</span>4<span>]</span></a></sup>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Uses">Uses</span>
+</h2>
+<p>Well-known uses of tcc include:</p>
+<ul>
+<li>TCCBOOT,<sup id="cite_ref-5" class="reference"><a href="Tiny_C_Compiler#cite_note-5"><span>[</span>5<span>]</span></a></sup> a <a href="http://en.m.wikipedia.org/wiki/Hack_(technology_slang)" title="Hack (technology slang)" class="mw-redirect">hack</a> where TCC loads and boots a <a href="http://en.m.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a> from source in about 10 seconds. That is to say, it is a "boot loader" which reads Linux kernel source code from disk, writes executable instructions to memory, and begins running it. This did require changes to the Linux build process.</li>
+<li>TCC was used to demonstrate a defense against the <a href="http://en.m.wikipedia.org/wiki/Backdoor_(computing)#Reflections_on_Trusting_Trust" title="Backdoor (computing)">trust</a> attack.<sup id="cite_ref-6" class="reference"><a href="Tiny_C_Compiler#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</li>
+<li>TCC has been used to compile GCC, though various patches were required to make this work.<sup id="cite_ref-7" class="reference"><a href="Tiny_C_Compiler#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+</li>
+<li>Cinpy<sup id="cite_ref-8" class="reference"><a href="Tiny_C_Compiler#cite_note-8"><span>[</span>8<span>]</span></a></sup> is a Python library that allows you to implement functions with C in Python modules. The functions are compiled with TCC at runtime. The results are made callable in Python through the ctypes library.</li>
+<li>Comes installed on JavaScript Linux<sup id="cite_ref-9" class="reference"><a href="Tiny_C_Compiler#cite_note-9"><span>[</span>9<span>]</span></a></sup> (also by Bellard).</li>
+</ul>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>TCC has its origins in the Obfuscated Tiny C Compiler (OTCC), a program Bellard wrote to win the <a href="International_Obfuscated_C_Code_Contest" title="International Obfuscated C Code Contest">International Obfuscated C Code Contest</a> (IOCCC) in 2001. Since that time, Bellard expanded and un-obfuscated the program to produce tcc.<sup id="cite_ref-10" class="reference"><a href="Tiny_C_Compiler#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Current_status">Current status</span>
+</h2>
+<p>TCC has an active mailing list, and Fabrice Bellard's current version is available through <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a>. However, official tcc development slowed due to Bellard's work on other projects.</p>
+<p>Rob Landley created a fork of tcc<sup id="cite_ref-tccfork_11-0" class="reference"><a href="Tiny_C_Compiler#cite_note-tccfork-11"><span>[</span>11<span>]</span></a></sup> that incorporated various patches from others, using the Mercurial SCM; Landley's Mercurial branch<sup id="cite_ref-12" class="reference"><a href="Tiny_C_Compiler#cite_note-12"><span>[</span>12<span>]</span></a></sup> showed its current status while the project was active. The project was discontinued on October 4, 2007 and recontinued as a fork on October 27, 2007 <sup id="cite_ref-tccfork_11-1" class="reference"><a href="Tiny_C_Compiler#cite_note-tccfork-11"><span>[</span>11<span>]</span></a></sup> then discontinued until further notice <sup id="cite_ref-13" class="reference"><a href="Tiny_C_Compiler#cite_note-13"><span>[</span>13<span>]</span></a></sup> on September 5, 2008.</p>
+<p>Various others have distributed patches or download sites of various improved versions of tcc, such as Dave Dodge's collection of unofficial tcc patches,<sup id="cite_ref-14" class="reference"><a href="Tiny_C_Compiler#cite_note-14"><span>[</span>14<span>]</span></a></sup> Debian and kfreebsd downstream patches,<sup id="cite_ref-15" class="reference"><a href="Tiny_C_Compiler#cite_note-15"><span>[</span>15<span>]</span></a></sup> and grischka's gcc patches.<sup id="cite_ref-grischka_4-1" class="reference"><a href="Tiny_C_Compiler#cite_note-grischka-4"><span>[</span>4<span>]</span></a></sup> grischka's Public Git Hosting <sup id="cite_ref-16" class="reference"><a href="Tiny_C_Compiler#cite_note-16"><span>[</span>16<span>]</span></a></sup> contains a mob branch<sup id="cite_ref-17" class="reference"><a href="Tiny_C_Compiler#cite_note-17"><span>[</span>17<span>]</span></a></sup> with recent contributions, including a shared build, cross-compilers, and SELinux compatibility.</p>
+<p>November 1, 2010 - A recent mailing list suggestion to extend TCC to include a subset of C++ including the class, public/protected/private, inheritance, member functions and variables, along with virtual function support has been proposed. Discussion is ongoing about whether or not it will be included.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li>
+<a href="Portable_C_Compiler" title="Portable C Compiler">Portable C Compiler</a> (PCC)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Small-C" title="Small-C">Small-C</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://bellard.org/tcc/tcc-doc.html#SEC6">Tiny C Compiler Reference Documentation</a> accessed on 2008-08-07</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://bellard.org/tcc/">Tiny C Compiler homepage</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-3">^</a></b></span> <span class="reference-text">Glöckner, Daniel. <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/tinycc-devel/2006-09/msg00028.html">Re: Tinycc-devel (no subject)</a>, September 8, 2006.</span>
+</li>
+<li id="cite_note-grischka-4">
+<span class="mw-cite-backlink">^ <a href="Tiny_C_Compiler#cite_ref-grischka_4-0"><sup><i><b>a</b></i></sup></a> <a href="Tiny_C_Compiler#cite_ref-grischka_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">grischka, <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/tinycc-devel/2005-09/msg00054.html">GCC by TCC (some fixes)</a>, 29 Sep 2005</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://bellard.org/tcc/tccboot.html">TCCBOOT</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-6">^</a></b></span> <span class="reference-text">Wheeler, David A. <i><a rel="nofollow" class="external text" href="http://www.dwheeler.com/trusting-trust">Countering Trusting Trust through Diverse Double-Compiling</a></i>. ACSAC.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/tinycc-devel/2005-09/threads.html">tinycc-devel (thread)</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.tut.fi/~ask/cinpy/">Cinpy</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://bellard.org/jslinux/">JavaScript Linux</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-10">^</a></b></span> <span class="reference-text">Bellard, Fabrice. <a rel="nofollow" class="external text" href="http://bellard.org/otcc/">Obfuscated Tiny C Compiler</a></span>
+</li>
+<li id="cite_note-tccfork-11">
+<span class="mw-cite-backlink">^ <a href="Tiny_C_Compiler#cite_ref-tccfork_11-0"><sup><i><b>a</b></i></sup></a> <a href="Tiny_C_Compiler#cite_ref-tccfork_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://landley.net/code/tinycc/">Rob Landley's TCC fork that went inactive</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.landley.net/hg/tinycc">Landley's Mercurial branch</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/tinycc-devel/2008-09/msg00013.html">tinycc-devel (message)</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.dododge.net/tcc/patches.html">Dave Dodge's collection of unofficial tcc patches</a></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://packages.debian.org/unstable/devel/tcc">Debian and kfreebsd downstream patches</a></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-16">^</a></b></span> <span class="reference-text">grischka, <a rel="nofollow" class="external text" href="http://repo.or.cz/w/tinycc.git">Public Git Hosting for tcc</a></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Tiny_C_Compiler#cite_ref-17">^</a></b></span> <span class="reference-text">grischka, <a rel="nofollow" class="external text" href="http://repo.or.cz/w/tinycc.git/shortlog/refs/heads/mob">mob branch for tcc</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://bellard.org/tcc/">Official website</a></span></li>
+<li><a rel="nofollow" class="external text" href="http://lists.nongnu.org/mailman/listinfo/tinycc-devel">TCC's active mailing list</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="fr" hreflang="fr">français</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Tiny_C_Compiler" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Tiny_C_Compiler&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Tiny_C_Compiler&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Tiny+C+Compiler&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

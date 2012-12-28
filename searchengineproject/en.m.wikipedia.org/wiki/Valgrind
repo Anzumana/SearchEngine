@@ -1,0 +1,302 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Valgrind - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Valgrind","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Valgrind" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Valgrind"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Valgrind</h1>			
+<div class="dablink">For other uses, see <a href="http://en.m.wikipedia.org/wiki/Valgrind_(disambiguation)" title="Valgrind (disambiguation)">Valgrind (disambiguation)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Question_book-new.svg&amp;page=1" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(September 2011)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Valgrind</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Valgrind_logo.png" class="image"><img alt="Valgrind logo.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Valgrind_logo.png/300px-Valgrind_logo.png" width="300" height="197" srcset="//upload.wikimedia.org/wikipedia/en/f/f9/Valgrind_logo.png 1.5x, //upload.wikimedia.org/wikipedia/en/f/f9/Valgrind_logo.png 2x"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://valgrind.org/info/developers.html">The Valgrind Developers</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">3.8.1 / September 18, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-18</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux" class="mw-redirect">GNU/Linux</a>/<a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>/<a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a><sup id="cite_ref-0" class="reference"><a href="Valgrind#cite_note-0"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Profiler_(computer_science)" title="Profiler (computer science)" class="mw-redirect">Profiler</a>, <a href="http://en.m.wikipedia.org/wiki/Memory_debugger" title="Memory debugger">Memory debugger</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://valgrind.org/">http://valgrind.org/</a></td>
+</tr>
+</table>
+<p><b>Valgrind</b> (<span class="nowrap"><span title="pronunciation:"><img alt="play" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'v' in 'vie'" style="border-bottom:1px dotted">v</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/æ/ short 'a' in 'bad'" style="border-bottom:1px dotted">æ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'l' in 'lie'" style="border-bottom:1px dotted">l</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'g' in 'guy'" style="border-bottom:1px dotted">ɡ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'r' in 'rye'" style="border-bottom:1px dotted">r</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɪ/ short 'i' in 'bid'" style="border-bottom:1px dotted">ɪ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'n' in 'nigh'" style="border-bottom:1px dotted">n</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'d' in 'dye'" style="border-bottom:1px dotted">d</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span></span>) is a <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a> licensed <a href="http://en.m.wikipedia.org/wiki/Programming_tool" title="Programming tool">programming tool</a> for <a href="http://en.m.wikipedia.org/wiki/Memory_debugger" title="Memory debugger">memory debugging</a>, <a href="Memory_leak" title="Memory leak">memory leak</a> detection, and <a href="http://en.m.wikipedia.org/wiki/Performance_analysis" title="Performance analysis" class="mw-redirect">profiling</a>. It is named after the main entrance to <a href="http://en.m.wikipedia.org/wiki/Valhalla" title="Valhalla">Valhalla</a> in <a href="http://en.m.wikipedia.org/wiki/Norse_mythology" title="Norse mythology">Norse mythology</a>.<sup id="cite_ref-1" class="reference"><a href="Valgrind#cite_note-1"><span>[</span>2<span>]</span></a></sup></p>
+<p>Valgrind was originally designed to be a free memory <a href="http://en.m.wikipedia.org/wiki/Debugging" title="Debugging">debugging</a> tool for <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> on <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a>, but has since evolved to become a generic framework for creating dynamic analysis tools such as checkers and profilers. It is used by a number of Linux-based projects.<sup id="cite_ref-2" class="reference"><a href="Valgrind#cite_note-2"><span>[</span>3<span>]</span></a></sup> Since version 3.5, Valgrind also works on <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>.</p>
+<p>The original author of Valgrind is <a href="http://en.m.wikipedia.org/wiki/Julian_Seward" title="Julian Seward">Julian Seward</a>, who in 2006 won a <a href="http://en.m.wikipedia.org/wiki/Google-O%27Reilly_Open_Source_Award" title="Google-O'Reilly Open Source Award" class="mw-redirect">Google-O'Reilly Open Source Award</a> for his work on Valgrind.<sup id="cite_ref-3" class="reference"><a href="Valgrind#cite_note-3"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="Valgrind#cite_note-4"><span>[</span>5<span>]</span></a></sup> Several others have also made significant contributions, including Cerion Armour-Brown, Jeremy Fitzhardinge, Tom Hughes, Nicholas Nethercote, Paul Mackerras, Dirk Mueller, Bart Van Assche, Josef Weidendorfer and Robert Walsh.<sup id="cite_ref-5" class="reference"><a href="Valgrind#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>Valgrind is in essence a <a href="http://en.m.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> using <a href="http://en.m.wikipedia.org/wiki/Just-in-time_compilation" title="Just-in-time compilation">just-in-time</a> (JIT) compilation techniques, including <a href="http://en.m.wikipedia.org/wiki/Dynamic_recompilation" title="Dynamic recompilation">dynamic recompilation</a>. Nothing from the original program ever gets run directly on the host <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">processor</a>. Instead, Valgrind first translates the program into a temporary, simpler form called Intermediate Representation (IR), which is a processor-neutral, <a href="http://en.m.wikipedia.org/wiki/Static_single_assignment_form" title="Static single assignment form">SSA</a>-based form. After the conversion, a <i>tool</i> (see below) is free to do whatever transformations it would like on the IR, before Valgrind translates the IR back into machine code and lets the host processor run it. Even though it could use <a href="http://en.m.wikipedia.org/wiki/Dynamic_translation" title="Dynamic translation" class="mw-redirect">dynamic translation</a> (that is, the host and target processors are from different architectures), it doesn't. Valgrind recompiles <a href="http://en.m.wikipedia.org/wiki/Binary_code" title="Binary code">binary code</a> to run on host and target (or simulated) CPUs of the same architecture.</p>
+<p>A considerable amount of performance is lost in these transformations (and usually, the code the tool inserts); usually, code run with Valgrind and the "none" tool (which does nothing to the IR) runs at 1/4th to 1/5th of the speed of the normal program. However, the IR form is much more suitable for instrumentation than the original, which makes it easier to write tools, and for most projects, a slowdown of this order is not a big problem during debugging.</p>
+<h2> <span class="mw-headline" id="Tools">Tools</span>
+</h2>
+<p>There are multiple tools included with Valgrind (and several external ones). The default (and most used) tool is <i>Memcheck</i>. Memcheck inserts extra <a href="http://en.m.wikipedia.org/wiki/Instrumentation_(computer_programming)" title="Instrumentation (computer programming)">instrumentation</a> code around almost all instructions, which keeps track of the <i>validity</i> (all unallocated memory starts as invalid or "undefined", until it is initialized into a deterministic state, possibly from other memory) and <i>addressability</i> (whether the memory address in question points to an allocated, non-freed memory block), stored in the so-called <i>V bits</i> and <i>A bits</i>, respectively. As data is moved around or manipulated, the instrumentation code keeps track of the A and V bits so they are always correct on a single-bit level.</p>
+<p>In addition, <span class="new" title="Memcheck (page does not exist)">Memcheck</span> replaces the standard C <a href="Malloc" title="Malloc" class="mw-redirect">memory allocator</a> with its own implementation, which also includes <i>memory guards</i> around all allocated blocks (with the A bits set to "invalid"). This feature enables Memcheck to detect <a href="http://en.m.wikipedia.org/wiki/Off-by-one_error" title="Off-by-one error">off-by-one errors</a> where a program reads or writes outside an allocated block by a small amount. (Other approaches to this problem include implemented <a href="http://en.m.wikipedia.org/wiki/Bounded_pointer" title="Bounded pointer">bounded pointers</a> in the compiler that give lower chances of undetected errors, especially on memory that is allocated on the <a href="Call_stack" title="Call stack">stack</a> and not the <a href="http://en.m.wikipedia.org/wiki/Heap_(programming)" title="Heap (programming)" class="mw-redirect">heap</a>, but requires recompiling all instrumented binary code.) The problems Memcheck can detect and warn about include the following:</p>
+<ul>
+<li>Use of uninitialized memory</li>
+<li>Reading/writing memory after it has been <code><a href="http://en.m.wikipedia.org/wiki/Free_(programming)" title="Free (programming)" class="mw-redirect">free</a></code>'d</li>
+<li>Reading/writing off the end of <code><a href="Malloc" title="Malloc" class="mw-redirect">malloc</a></code>'d blocks</li>
+<li><a href="Memory_leak" title="Memory leak">Memory leaks</a></li>
+</ul>
+<p>The price of this is lost performance. Programs running under Memcheck usually run from five to twenty times slower than running outside Valgrind and use a lot more memory (there is a considerable memory penalty per-allocation). Thus, few developers run their code under Memcheck (or any other Valgrind tool) all the time. They most commonly use such tools either to trace down some specific bug, or to verify there are no latent bugs (of the kind Memcheck can detect) in the code.</p>
+<p>In addition to Memcheck, Valgrind has several other tools:<sup id="cite_ref-6" class="reference"><a href="Valgrind#cite_note-6"><span>[</span>7<span>]</span></a></sup></p>
+<ul>
+<li>
+<i>Addrcheck</i>, a lightweight cousin of Memcheck, running much faster and requiring less memory, but catching fewer types of bugs. This tool has been removed as of version 3.2.0.</li>
+<li>
+<i>Massif</i>, a <a href="Dynamic_memory_allocation" title="Dynamic memory allocation" class="mw-redirect">heap</a> <a href="http://en.m.wikipedia.org/wiki/Profiling_(computer_programming)" title="Profiling (computer programming)">profiler</a>.</li>
+<li>
+<i>Helgrind</i> and <i>DRD</i>, tools capable of detecting <a href="http://en.m.wikipedia.org/wiki/Race_condition" title="Race condition">race conditions</a> in <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">multithreaded code</a>.</li>
+<li>
+<i><span class="new" title="Cachegrind (page does not exist)">Cachegrind</span></i>, a <a href="http://en.m.wikipedia.org/wiki/CPU_cache" title="CPU cache">cache</a> profiler and its <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a> <a href="http://en.m.wikipedia.org/wiki/KCacheGrind" title="KCacheGrind" class="mw-redirect">KCacheGrind</a>.</li>
+<li>
+<i>Callgrind</i>, an extension to Cachegrind created by Josef Weidendorfer which produces more information about <a href="http://en.m.wikipedia.org/wiki/Callgraph" title="Callgraph" class="mw-redirect">callgraphs</a>. It was folded into the mainline version of Valgrind in version 3.2.0. KCacheGrind is capable of visualizing output from Callgrind as well as Cachegrind.</li>
+<li>
+<i>exp-sgcheck</i> (named <i>exp-ptrcheck</i> prior to version 3.7), an experimental tool to find stack and global array overrun errors which Memcheck cannot find.<sup id="cite_ref-7" class="reference"><a href="Valgrind#cite_note-7"><span>[</span>8<span>]</span></a></sup>
+</li>
+<li>
+<i>exp-dhat</i>, dynamic heap analysis tool which analyzes how much memory is allocated and for how long as well as patterns of memory usage.</li>
+<li>
+<i>exp-bbv</i>, a performance simulator that extrapolates performance from a small sample set.</li>
+</ul>
+<p>There are also several externally developed tools available. One of such tools is <span class="new" title="ThreadSanitizer (page does not exist)">ThreadSanitizer</span>, a detector of <a href="http://en.m.wikipedia.org/wiki/Race_condition" title="Race condition">race conditions</a>.<sup id="cite_ref-8" class="reference"><a href="Valgrind#cite_note-8"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="Valgrind#cite_note-9"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Platforms_supported">Platforms supported</span>
+</h2>
+<p>As of version 3.4.0, Valgrind supports <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> on <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a>, <a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a> and <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a>. Support for <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> was added in version 3.5.0.<sup id="cite_ref-10" class="reference"><a href="Valgrind#cite_note-10"><span>[</span>11<span>]</span></a></sup> Support for Linux on <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARMv7</a> (used for example in certain <a href="http://en.m.wikipedia.org/wiki/Smartphones" title="Smartphones" class="mw-redirect">smartphones</a>) was added in version 3.6.0.<sup id="cite_ref-11" class="reference"><a href="Valgrind#cite_note-11"><span>[</span>12<span>]</span></a></sup> There are unofficial ports to other UNIX-like platforms (like <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>,<sup id="cite_ref-12" class="reference"><a href="Valgrind#cite_note-12"><span>[</span>13<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a><sup id="cite_ref-13" class="reference"><a href="Valgrind#cite_note-13"><span>[</span>14<span>]</span></a></sup>). From version 3.7.0 the <a href="http://en.m.wikipedia.org/wiki/ARM" title="ARM" class="mw-redirect">ARM</a>/<a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> platform support was added.<sup id="cite_ref-14" class="reference"><a href="Valgrind#cite_note-14"><span>[</span>15<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Limitations_of_Memcheck">Limitations of Memcheck</span>
+</h2>
+<p>In addition to the performance penalty an important limitation of Memcheck is its inability to detect all cases of bounds errors in the use of static or stack allocated data.<sup id="cite_ref-15" class="reference"><a href="Valgrind#cite_note-15"><span>[</span>16<span>]</span></a></sup> The following code will pass the <i>Memcheck</i> tool in Valgrind without incident, despite containing the errors described in the comments:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+  <span class="kw4">int</span> Static<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy0">;</span>
+ 
+  <span class="kw4">int</span> func<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+  <span class="br0">{</span>
+    <span class="kw4">int</span> Stack<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy0">;</span>
+ 
+    Static<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>  <span class="coMULTI">/* Error - Static[0] to Static[4] exist, Static[5] is out of bounds */</span>
+    Stack <span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>  <span class="coMULTI">/* Error - Stack[0] to  Stack[4] exist,  Stack[5] is out of bounds */</span>
+ 
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The experimental valgrind tool exp-sgcheck has been written to address this limitation in Memcheck. It will detect array overrun errors provided the first access to an array is within the array bounds. exp-sgcheck will not detect the array overrun in the code above, since the first access to an array is out of bounds, but it will detect the array overrun error in the following code.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+  <span class="kw4">void</span> func<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+  <span class="br0">{</span>
+    <span class="kw4">int</span> i<span class="sy0">,</span> Stack<span class="br0">[</span><span class="nu0">5</span><span class="br0">]</span><span class="sy0">;</span>
+ 
+    <span class="kw1">for</span> <span class="br0">(</span>i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;=</span> <span class="nu0">5</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+        Stack <span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>        <span class="coMULTI">/* Within bounds for i=0..4, out of bounds error when i=5 */</span>
+  <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The inability to detect all errors in access of stack allocated data is especially noteworthy since <a href="Buffer_overflow" title="Buffer overflow">certain types of stack errors</a> make software <a href="http://en.m.wikipedia.org/wiki/Vulnerability_(computing)" title="Vulnerability (computing)">vulnerable</a> to the classic <a href="http://en.m.wikipedia.org/wiki/Stack_buffer_overflow" title="Stack buffer overflow">stack smashing exploit</a>.</p>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/docs/manual/dist.news.html">Valgrind release notes</a></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.valgrind.org/docs/manual/faq.html#faq.whence">Valgrind FAQ</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/gallery/users.html">valgrind.org's list of users</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/gallery/awards.html">valgrind.org's list of awards</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://code.google.com/events/osa-hall-of-fame.html">Google-O'Reilly Open Source Awards - Hall of Fame</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/info/developers.html">The Valgrind Developers</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/info/tools.html">Valgrind main tool list</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/docs/manual/sg-manual.html">section on exp-sgcheck in the Valgrind user manual</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://valgrind.org/downloads/variants.html">http://valgrind.org/downloads/variants.html</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-9">^</a></b></span> <span class="reference-text">K Serebryany, T Iskhodzhanov, <i><a rel="nofollow" class="external text" href="http://data-race-test.googlecode.com/files/ThreadSanitizer.pdf">ThreadSanitizer–data race detection in practice</a></i>, Proceedings of the Workshop on Binary Instrumentation and Applications WBIA'09</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.mozilla.com/nnethercote/2009/05/28/mac-os-x-now-supported-on-the-valgrind-trunk/">Mac OS X port</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://talk.maemo.org/showthread.php?t=65335">ARM/Linux port</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.freshports.org/devel/valgrind/">Valgrind FreeBSD port</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://vg4nbsd.berlios.de/">Valgrind NetBSD port</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://valgrind.org/docs/manual/dist.news.html">Valgrind release notes</a></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Valgrind#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.valgrind.org/docs/manual/faq.html#faq.overruns">Valgrind FAQ</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<span class="citation web">Nicholas Nethercote and Julian Seward. <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1250734.1250746&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503">"Valgrind: A Framework for Heavyweight Dynamic Binary Instrumentation"</a>. <i>Proceedings of ACM SIGPLAN 2007 Conference on Programming Language Design and Implementation (PLDI 2007)</i>. ACM<span class="printonly">. <a rel="nofollow" class="external free" href="http://portal.acm.org/citation.cfm?id=1250734.1250746&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503">http://portal.acm.org/citation.cfm?id=1250734.1250746&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Valgrind%3A+A+Framework+for+Heavyweight+Dynamic+Binary+Instrumentation&amp;rft.atitle=Proceedings+of+ACM+SIGPLAN+2007+Conference+on+Programming+Language+Design+and+Implementation+%28PLDI+2007%29&amp;rft.aulast=Nicholas+Nethercote+and+Julian+Seward&amp;rft.au=Nicholas+Nethercote+and+Julian+Seward&amp;rft.pub=ACM&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D1250734.1250746%26coll%3DGUIDE%26dl%3DGUIDE%26CFID%3D8869850%26CFTOKEN%3D10168503&amp;rfr_id=info:sid/en.wikipedia.org:Valgrind"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web">Julian Seward and Nicholas Nethercote. <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1247362&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503">"Using Valgrind to detect undefined value errors with bit-precision"</a>. <i>Proceedings of the USENIX Annual Technical Conference 2005</i>. USENIX Association<span class="printonly">. <a rel="nofollow" class="external free" href="http://portal.acm.org/citation.cfm?id=1247362&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503">http://portal.acm.org/citation.cfm?id=1247362&amp;dl=GUIDE&amp;coll=GUIDE&amp;CFID=8869850&amp;CFTOKEN=10168503</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Using+Valgrind+to+detect+undefined+value+errors+with+bit-precision&amp;rft.atitle=Proceedings+of+the+USENIX+Annual+Technical+Conference+2005&amp;rft.aulast=Julian+Seward+and+Nicholas+Nethercote&amp;rft.au=Julian+Seward+and+Nicholas+Nethercote&amp;rft.pub=USENIX+Association&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D1247362%26dl%3DGUIDE%26coll%3DGUIDE%26CFID%3D8869850%26CFTOKEN%3D10168503&amp;rfr_id=info:sid/en.wikipedia.org:Valgrind"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">J. Seward, N. Nethercote, J. Weidendorfer and the Valgrind Development Team (March 2008). <a rel="nofollow" class="external text" href="http://www.network-theory.co.uk/valgrind/manual/"><i>Valgrind 3.3 — Advanced Debugging and Profiling for GNU/Linux applications</i></a>. Network Theory Ltd. pp. 164 pages. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-9546120-5-1" title="Special:BookSources/0-9546120-5-1">0-9546120-5-1</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.network-theory.co.uk/valgrind/manual/">http://www.network-theory.co.uk/valgrind/manual/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Valgrind+3.3+%E2%80%94+Advanced+Debugging+and+Profiling+for+GNU%2FLinux+applications&amp;rft.aulast=J.+Seward%2C+N.+Nethercote%2C+J.+Weidendorfer+and+the+Valgrind+Development+Team&amp;rft.au=J.+Seward%2C+N.+Nethercote%2C+J.+Weidendorfer+and+the+Valgrind+Development+Team&amp;rft.date=March+2008&amp;rft.pages=pp.%26nbsp%3B164+pages&amp;rft.pub=Network+Theory+Ltd&amp;rft.isbn=0-9546120-5-1&amp;rft_id=http%3A%2F%2Fwww.network-theory.co.uk%2Fvalgrind%2Fmanual%2F&amp;rfr_id=info:sid/en.wikipedia.org:Valgrind"><span style="display: none;"> </span></span>
+</li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Valgrind" class="extiw" title="wikibooks:Valgrind">Valgrind</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://valgrind.org/">Valgrind home page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.valgrind.org/info/about.html">Overview of the Valgrind system</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.valgrind.org/docs">Complete manual of Valgrind</a></li>
+<li><a rel="nofollow" class="external text" href="http://valgrind.org/gallery/users.html">Projects using Valgrind</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 13 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Valgrind" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Valgrind" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Valgrind" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Valgrind" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Valgrind" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Valgrind" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Valgrind" lang="it" hreflang="it">italiano</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Valgrind" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Valgrind" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Valgrind" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Valgrind" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Valgrind" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Valgrind" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Valgrind&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Valgrind&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Valgrind&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

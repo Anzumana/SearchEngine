@@ -1,0 +1,436 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C11 (C standard revision) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C11 (C standard revision)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C11_(C_standard_revision)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C11+%28C+standard+revision%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C11 (C standard revision)</h1>			
+<p><b>C11</b> (formerly <b>C1X</b>) is an informal name for <i><b>ISO/IEC 9899:2011</b></i>,<sup id="cite_ref-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-0"><span>[</span>1<span>]</span></a></sup> the current <a href="http://en.m.wikipedia.org/wiki/Open_standard" title="Open standard">standard</a> for the <a href="http://en.m.wikipedia.org/wiki/C_programming_language" title="C programming language" class="mw-redirect">C programming language</a>. It replaces the previous C standard, informally known as <a href="C99" title="C99">C99</a>. This new version mainly standardizes features that have already been supported by common contemporary compilers, and includes a detailed memory model to better support multiple <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">threads</a> of execution. Due to delayed availability of conforming C99 implementations, C11 makes certain features optional, to make it easier to comply with the core language standard.<sup id="cite_ref-N1250_1-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1250-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="C11_(C_standard_revision)#cite_note-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>The final draft, N1570,<sup id="cite_ref-N1570_3-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1570-3"><span>[</span>4<span>]</span></a></sup> was published in April 2011. The new standard passed its final draft review on October 10, 2011 and was officially ratified by ISO and published as ISO/IEC 9899:2011 on December 8, 2011, with no comments requiring resolution from participating national bodies.</p>
+<p><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> starting with version 4.6,<sup id="cite_ref-4" class="reference"><a href="C11_(C_standard_revision)#cite_note-4"><span>[</span>5<span>]</span></a></sup><a href="Clang" title="Clang">Clang</a> starting with version 3.1,<sup id="cite_ref-5" class="reference"><a href="C11_(C_standard_revision)#cite_note-5"><span>[</span>6<span>]</span></a></sup> and IBM XL C starting with version 12.1<sup id="cite_ref-6" class="reference"><a href="C11_(C_standard_revision)#cite_note-6"><span>[</span>7<span>]</span></a></sup> support some features from C11.</p>
+<h2> <span class="mw-headline" id="Changes_from_C99">Changes from C99</span>
+</h2>
+<p>The standard includes several changes to the C99 language and library specifications, such as:<sup id="cite_ref-N1516_7-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1516-7"><span>[</span>8<span>]</span></a></sup></p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">Alignment</a> specification (<code>_Alignas</code> specifier, <code>alignof</code> operator, <code>aligned_alloc</code> function, <code>&lt;stdalign.h&gt;</code> header file)</li>
+<li>The <code>_Noreturn</code> function specifier</li>
+<li>Type-generic expressions using the <code>_Generic</code> keyword. For example, the following macro <code><a href="http://en.m.wikipedia.org/wiki/Cube_root" title="Cube root">cbrt(x)</a></code> translates to <code>cbrtl(x)</code>, <code>cbrt(x)</code> or <code>cbrtf(x)</code> depending on the type of <code>x</code>:</li>
+</ul>
+<div style="margin-left:3em">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#define cbrt(X) _Generic((X), long double: cbrtl, \
+                              default: cbrt, \
+                              float: cbrtf)(X)</span>
+</pre>
+</div>
+</div>
+</div>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">Multithreading</a> support (<code>_Thread_local</code> storage-class specifier, <code>&lt;threads.h&gt;</code> header including thread creation/management functions, <a href="http://en.m.wikipedia.org/wiki/Mutual_exclusion" title="Mutual exclusion">mutex</a>, <a href="http://en.m.wikipedia.org/wiki/Condition_variable" title="Condition variable" class="mw-redirect">condition variable</a> and <a href="http://en.m.wikipedia.org/wiki/Thread-local_storage" title="Thread-local storage">thread-specific storage</a> functionality, as well as the <code>_Atomic</code> type qualifier and <code>&lt;stdatomic.h&gt;</code> for <a href="http://en.m.wikipedia.org/wiki/Linearizability" title="Linearizability">uninterruptible object access</a>).</li>
+<li>Improved <a href="Unicode" title="Unicode">Unicode</a> support based on the C Unicode Technical Report ISO/IEC TR 19769:2004 (<code>char16_t</code> and <code>char32_t</code> types for storing <a href="http://en.m.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a>/<a href="http://en.m.wikipedia.org/wiki/UTF-32" title="UTF-32">UTF-32</a> encoded data, including conversion functions in <code>&lt;uchar.h&gt;</code> and the corresponding <code>u</code> and <code>U</code> string literal prefixes, as well as the <code>u8</code> prefix for <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a> encoded literals).<sup id="cite_ref-N1286_8-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1286-8"><span>[</span>9<span>]</span></a></sup>
+</li>
+<li>Removal of the <code><a href="http://en.m.wikipedia.org/wiki/Gets()" title="Gets()" class="mw-redirect">gets()</a></code> function, deprecated in the previous C language standard revision, ISO/IEC 9899:1999/Cor.3:2007(E), in favor of a new safe alternative, <code>gets_s</code>.</li>
+<li>
+<a href="Bounds_checking" title="Bounds checking">Bounds-checking</a> interfaces (Annex K).<sup id="cite_ref-9" class="reference"><a href="C11_(C_standard_revision)#cite_note-9"><span>[</span>10<span>]</span></a></sup>
+</li>
+<li>Analyzability features (Annex L).</li>
+<li>More macros for querying the characteristics of floating point types, concerning <a href="http://en.m.wikipedia.org/wiki/Denormal_number" title="Denormal number">subnormal floating point numbers</a> and the number of decimal digits the type is able to store.</li>
+<li>Anonymous <i>structures</i> and <i>unions</i>, useful when unions and structures are nested, e.g. in <code>struct T { int tag; union { float x; int n; }; };</code>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Assertion_(computing)#Static_assertions" title="Assertion (computing)">Static assertions</a>, which are evaluated during translation at a later phase than <code>#if</code> and <code>#error</code>, when types are understood by the translator.</li>
+<li>An exclusive create-and-open mode (<code>"…x"</code>) for <a href="http://en.m.wikipedia.org/wiki/C_file_input/output#Opening_a_file_using_fopen" title="C file input/output">fopen</a>. This behaves like <code>O_CREAT|O_EXCL</code> in <a href="http://en.m.wikipedia.org/wiki/Open_(system_call)" title="Open (system call)">POSIX</a>, which is commonly used for <a href="http://en.m.wikipedia.org/wiki/File_locking#Lock_files" title="File locking">lock files</a>.</li>
+<li>The <code><a href="http://en.m.wikipedia.org/wiki/C_process_control" title="C process control">quick_exit</a></code> function as a third way to terminate a program, intended to do at least minimal deinitialization if termination with <code><a href="http://en.m.wikipedia.org/wiki/Exit_(operating_system)" title="Exit (operating system)">exit</a></code> fails.<sup id="cite_ref-10" class="reference"><a href="C11_(C_standard_revision)#cite_note-10"><span>[</span>11<span>]</span></a></sup>
+</li>
+<li>Macros for the construction of <a href="Complex_number" title="Complex number">complex values</a> (partly because <code>real + imaginary*I</code> might not yield the expected value if <code>imaginary</code> is infinite or <a href="http://en.m.wikipedia.org/wiki/NaN" title="NaN">NaN</a>).<sup id="cite_ref-N1464_11-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1464-11"><span>[</span>12<span>]</span></a></sup>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Version_detection">Version detection</span>
+</h2>
+<p>A standard macro <code>__STDC_VERSION__</code> is defined with value <code>201112L</code> to indicate that C11 support is available.<sup id="cite_ref-12" class="reference"><a href="C11_(C_standard_revision)#cite_note-12"><span>[</span>13<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Optional_features">Optional features</span>
+</h2>
+<p>The new revision allows implementations to not support certain parts of the standard — including some that had been mandatory to support in the 1999 revision.<sup id="cite_ref-N1548-6-10-8-3_13-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1548-6-10-8-3-13"><span>[</span>14<span>]</span></a></sup> Programs can use predefined macros to determine whether an implementation supports a certain feature or not.</p>
+<table class="wikitable">
+<caption>Optional features in C11</caption>
+<tr>
+<th>Feature</th>
+<th>Feature test macro</th>
+<th>Availability in C99<sup id="cite_ref-ISO9899-1999-6-10-8_14-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-ISO9899-1999-6-10-8-14"><span>[</span>15<span>]</span></a></sup>
+</th>
+</tr>
+<tr>
+<td>Analyzability (Annex L)</td>
+<td><code>__STDC_ANALYZABLE__</code></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">Not available</td>
+</tr>
+<tr>
+<td>Bounds-checking interfaces (Annex K)</td>
+<td><code>__STDC_LIB_EXT1__</code></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">Not available</td>
+</tr>
+<tr>
+<td>Multithreading (<code>&lt;threads.h&gt;</code>)</td>
+<td><code>__STDC_NO_THREADS__</code></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">Not available</td>
+</tr>
+<tr>
+<td>Atomic primitives and types (<code>&lt;stdatomic.h&gt;</code> and the <code>_Atomic</code> type qualifier)<sup id="cite_ref-N1558_15-0" class="reference"><a href="C11_(C_standard_revision)#cite_note-N1558-15"><span>[</span>16<span>]</span></a></sup>
+</td>
+<td><code>__STDC_NO_ATOMICS__</code></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">Not available</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/IEEE_754-2008" title="IEEE 754-2008" class="mw-redirect">IEC 60559</a> floating-point arithmetic (Annex F)</td>
+<td><code>__STDC_IEC_559__</code></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Optional</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/IEEE_754-2008" title="IEEE 754-2008" class="mw-redirect">IEC 60559</a> compatible complex arithmetic (Annex G)</td>
+<td><code>__STDC_IEC_559_COMPLEX__</code></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Optional</td>
+</tr>
+<tr>
+<td>Complex types (<code>&lt;complex.h&gt;</code>)</td>
+<td><code>__STDC_NO_COMPLEX__</code></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Mandatory for hosted implementations</td>
+</tr>
+<tr>
+<td>Variable length arrays<sup id="cite_ref-16" class="reference"><a href="C11_(C_standard_revision)#cite_note-16"><span>[</span>17<span>]</span></a></sup>
+</td>
+<td><code>__STDC_NO_VLA__</code></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Mandatory</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=57853">http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=57853</a></span>
+</li>
+<li id="cite_note-N1250-1">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1250_1-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/wg14/www/docs/n1250.pdf">WG14 N1250 The C1X Charter</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1460.htm">WG14 N1460 Subsetting the C Standard</a></span>
+</li>
+<li id="cite_note-N1570-3">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1570_3-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">WG14 N1570 Committee Draft — April 12, 2011</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://gcc.gnu.org/gcc-4.6/changes.html#c">http://gcc.gnu.org/gcc-4.6/changes.html#c</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://llvm.org/releases/3.1/docs/ClangReleaseNotes.html#cchanges">http://llvm.org/releases/3.1/docs/ClangReleaseNotes.html#cchanges</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.ibm.com/developerworks/rational/library/support-iso-c11/index.html">http://www.ibm.com/developerworks/rational/library/support-iso-c11/index.html</a></span>
+</li>
+<li id="cite_note-N1516-7">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1516_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1516.pdf">WG14 N1516 Committee Draft — October 4, 2010</a></span>
+</li>
+<li id="cite_note-N1286-8">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1286_8-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1286.pdf">WG14 N1286 — "On Support for TR-19769 and New Character Types", Nick Stoughton, Larry Dwyer</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web">Berin Babcock-McConnell. <a rel="nofollow" class="external text" href="https://www.securecoding.cert.org/confluence/display/seccode/API02-C.+Functions+that+read+or+write+to+or+from+an+array+should+take+an+argument+to+specify+the+source+or+target+size">"API02-C. Functions that read or write to or from an array should take an argument to specify the source or target size"</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://www.securecoding.cert.org/confluence/display/seccode/API02-C.+Functions+that+read+or+write+to+or+from+an+array+should+take+an+argument+to+specify+the+source+or+target+size">https://www.securecoding.cert.org/confluence/display/seccode/API02-C.+Functions+that+read+or+write+to+or+from+an+array+should+take+an+argument+to+specify+the+source+or+target+size</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=API02-C.+Functions+that+read+or+write+to+or+from+an+array+should+take+an+argument+to+specify+the+source+or+target+size&amp;rft.atitle=&amp;rft.aulast=Berin+Babcock-McConnell&amp;rft.au=Berin+Babcock-McConnell&amp;rft_id=https%3A%2F%2Fwww.securecoding.cert.org%2Fconfluence%2Fdisplay%2Fseccode%2FAPI02-C.%2BFunctions%2Bthat%2Bread%2Bor%2Bwrite%2Bto%2Bor%2Bfrom%2Ban%2Barray%2Bshould%2Btake%2Ban%2Bargument%2Bto%2Bspecify%2Bthe%2Bsource%2Bor%2Btarget%2Bsize&amp;rfr_id=info:sid/en.wikipedia.org:C11_(C_standard_revision)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1327.htm">WG14 N1327 Abandoning a Process</a></span>
+</li>
+<li id="cite_note-N1464-11">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1464_11-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1464.htm">WG14 N1464 Creation of complex value</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/dr_411.htm">"Defect report #411"</a>. ISO/IEC JTC1/SC22/WG14 - C. February 2012<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/dr_411.htm">http://www.open-std.org/jtc1/sc22/wg14/www/docs/dr_411.htm</a></span><span class="reference-accessdate">. Retrieved 2012-05-04</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Defect+report+%23411&amp;rft.atitle=&amp;rft.date=February+2012&amp;rft.pub=ISO%2FIEC+JTC1%2FSC22%2FWG14+-+C&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2Fjtc1%2Fsc22%2Fwg14%2Fwww%2Fdocs%2Fdr_411.htm&amp;rfr_id=info:sid/en.wikipedia.org:C11_(C_standard_revision)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-N1548-6-10-8-3-13">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1548-6-10-8-3_13-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1548.pdf">WG14 N1548 Committee Draft — December 2, 2010</a> 6.10.8.3 <i>Conditional feature macros</i></span>
+</li>
+<li id="cite_note-ISO9899-1999-6-10-8-14">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-ISO9899-1999-6-10-8_14-0">^</a></b></span> <span class="reference-text">ISO 9899:1999 6.10.8 <i>Predefined macro names</i></span>
+</li>
+<li id="cite_note-N1558-15">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-N1558_15-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1558.pdf">WG14 N1558 Mar 14-18 meeting minutes (draft)</a></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="C11_(C_standard_revision)#cite_ref-16">^</a></b></span> <span class="reference-text">ISO 9899:2011 Programming Languages - C 6.7.6.2 4</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/wg14/www/docs/n1250.pdf">The C1X Charter</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1570.pdf">N1570</a>, the final draft of C1X, dated 12 April 2011</li>
+<li><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/">ISO C Working Group's official website</a></li>
+<li>
+<span class="citation Journal">Plum, Thomas (April 6, 2012). <a rel="nofollow" class="external text" href="http://drdobbs.com/cpp/232800444">"C Finally Gets A New Standard"</a>. <i><a href="http://en.m.wikipedia.org/wiki/Dr._Dobb%27s_Journal" title="Dr. Dobb's Journal">Dr. Dobb's Journal</a></i><span class="printonly">. <a rel="nofollow" class="external free" href="http://drdobbs.com/cpp/232800444">http://drdobbs.com/cpp/232800444</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=C+Finally+Gets+A+New+Standard&amp;rft.jtitle=%5B%5BDr.+Dobb%27s+Journal%5D%5D&amp;rft.aulast=Plum&amp;rft.aufirst=Thomas&amp;rft.au=Plum%2C%26%2332%3BThomas&amp;rft.date=April+6%2C+2012&amp;rft_id=http%3A%2F%2Fdrdobbs.com%2Fcpp%2F232800444&amp;rfr_id=info:sid/en.wikipedia.org:C11_(C_standard_revision)"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<table class="wikitable succession-box" style="margin:0.5em auto; font-size:95%;clear:both;"><tr style="text-align:center;">
+<td rowspan="1" style="text-align: center; width: 30%;">Preceded by<br><span style="font-weight: bold"><a href="C99" title="C99">C99</a></span>
+</td>
+<td style="width: 40%; text-align: center;" rowspan="1"><b><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> standards</b></td>
+<td rowspan="1" style="text-align: center; width: 30%;"><b>Most recent</b></td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><strong class="selflink">C11</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 2 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ru.m.wikipedia.org/wiki/C11" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/C11" lang="sv" hreflang="sv">svenska</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=C11_(C_standard_revision)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=C11_(C_standard_revision)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C11+%28C+standard+revision%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

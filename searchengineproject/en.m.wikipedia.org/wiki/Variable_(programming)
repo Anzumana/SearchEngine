@@ -1,0 +1,203 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Variable (computer science) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Variable (computer science)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Variable_(computer_science)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Variable+%28computer+science%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Variable (computer science)</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Variable_(computer_science)&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(November 2009)</i></small> </span></td>
+</tr></table>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, a <b>variable</b> is a <a href="http://en.m.wikipedia.org/wiki/Memory_location" title="Memory location" class="mw-redirect">storage location</a> and an associated <a href="http://en.m.wikipedia.org/wiki/Symbol" title="Symbol">symbolic name</a> (an <i><a href="http://en.m.wikipedia.org/wiki/Identifier#In_computer_languages" title="Identifier">identifier</a></i>) which contains some known or unknown quantity or information, a <a href="http://en.m.wikipedia.org/wiki/Value_(computer_science)" title="Value (computer science)">value</a>. The variable name is the usual way to <a href="Reference_(computer_science)" title="Reference (computer science)">reference</a> the stored value; this separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer <a href="Source_code" title="Source code">source code</a> can be <a href="http://en.m.wikipedia.org/wiki/Name_binding" title="Name binding">bound</a> to a <a href="http://en.m.wikipedia.org/wiki/Value_(computer_science)" title="Value (computer science)">value</a> during <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a>, and the value of the variable may thus change during the course of <a href="http://en.m.wikipedia.org/wiki/Execution_(computing)" title="Execution (computing)">program execution</a>. Variables in programming may not directly correspond to the concept of <a href="http://en.m.wikipedia.org/wiki/Variable_(mathematics)" title="Variable (mathematics)">variables in mathematics</a>. The value of a computing variable is not necessarily part of an <a href="http://en.m.wikipedia.org/wiki/Equation" title="Equation">equation</a> or <a href="http://en.m.wikipedia.org/wiki/Formula" title="Formula">formula</a> as in mathematics. In computing, a variable may be employed in a repetitive process: assigned a value in one place, then used elsewhere, then reassigned a new value and used again in the same way (see <a href="http://en.m.wikipedia.org/wiki/Iteration#Computing" title="Iteration">iteration</a>). Variables in computer programming are frequently given long names to make them relatively descriptive of their use, whereas variables in mathematics often have terse, one- or two-character names for brevity in transcription and manipulation.</p>
+<p>A variable storage location may be referred by several different identifiers, a situation known as <a href="http://en.m.wikipedia.org/wiki/Aliasing_(computing)" title="Aliasing (computing)">aliasing</a>. Assigning a value to the variable using one of the identifiers will change the value that can be accessed through the other identifiers.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Compiler_(computing)" title="Compiler (computing)" class="mw-redirect">Compilers</a> have to replace variables' symbolic names with the actual locations of the data. While a variable's name, type, and location often remain fixed, the data stored in the location may be changed during program execution.</p>
+<h2> <span class="mw-headline" id="Actions_on_a_variable">Actions on a variable</span>
+</h2>
+<p>In <a href="Imperative_programming" title="Imperative programming">imperative</a> <a href="Programming_language" title="Programming language">programming languages</a>, values can generally be <a href="http://en.m.wikipedia.org/wiki/Dereference" title="Dereference" class="mw-redirect">accessed</a> or <a href="Assignment_(computer_science)" title="Assignment (computer science)">changed</a> at any time. However, in <a href="http://en.m.wikipedia.org/wiki/Pure_function" title="Pure function">pure</a> <a href="Functional_programming" title="Functional programming">functional</a> and <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic languages</a>, variables are <a href="http://en.m.wikipedia.org/wiki/Free_variables_and_bound_variables" title="Free variables and bound variables">bound</a> to expressions and keep a single value during their entire <a href="Scope_(programming)" title="Scope (programming)" class="mw-redirect">lifetime</a> due to the requirements of <a href="http://en.m.wikipedia.org/wiki/Referential_transparency_(computer_science)" title="Referential transparency (computer science)">referential transparency</a>. In imperative languages, the same behavior is exhibited by <a href="http://en.m.wikipedia.org/wiki/Constant_(programming)" title="Constant (programming)">constants</a>, which are typically contrasted with normal variables.</p>
+<p>Depending on the <a href="Type_system" title="Type system">type system</a> of a programming language, variables may only be able to store a specified <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">datatype</a> (e.g. <a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a> or <a href="String_(computer_science)" title="String (computer science)">string</a>). Alternatively, a datatype may be associated only with the current value, allowing a single variable to store anything supported by the programming language.</p>
+<h2> <span class="mw-headline" id="Identifiers_referencing_a_variable">Identifiers referencing a variable</span>
+</h2>
+<p>An identifier referencing a variable can be used to access the variable in order to read out the value, or alter the value, or edit the <a href="http://en.m.wikipedia.org/wiki/Attribute_(computing)" title="Attribute (computing)">attributes</a> of the variable, such as access permission, <a href="http://en.m.wikipedia.org/wiki/Lock_(computer_science)" title="Lock (computer science)">locks</a>, <a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">semaphores</a>, etc.</p>
+<p>For instance, a variable might be referenced by the identifier "<code>total_count</code>" and the variable can contain the number 1956. If the same variable is referenced by the identifier "<code>x</code>" as well, and if using this identifier "<code>x</code>", the value of the variable is altered to 2009, then reading the value using the identifier "<code>total_count</code>" will yield a result of 2009 and not 1956.</p>
+<p>If a variable is only referenced by a single identifier, that can simply be called <i>the name of the variable</i>. Otherwise, we can speak of <i>one of the names of the variable</i>. For instance, in the previous example, the "<code>total_count</code>" is a name of the variable in question, and "<code>x</code>" is another name of the same variable.</p>
+<h2> <span class="mw-headline" id="Scope_and_extent">Scope and extent</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Free_variables_and_bound_variables" title="Free variables and bound variables">Free variables and bound variables</a>
+</div>
+<p>The <i><a href="Scope_(programming)" title="Scope (programming)" class="mw-redirect">scope</a></i> of a variable describes where in a program's text the variable may be used, while the <i>extent</i> (or <i>lifetime</i>) describes when in a program's execution a variable has a (meaningful) value. The scope of a variable is actually a property of the name of the variable, and the extent is a property of the variable itself.</p>
+<p>A variable name's <i>scope</i> affects its <i>extent</i>.</p>
+<p><i>Scope</i> is a <a href="http://en.m.wikipedia.org/wiki/Scope_(computer_science)#Lexical_scoping" title="Scope (computer science)">lexical</a> aspect of a variable. Most languages define a specific <i>scope</i> for each variable (as well as any other named entity), which may differ within a given program. The scope of a variable is the portion of the program code for which the variable's name has meaning and for which the variable is said to be "visible". Entrance into that scope typically begins a variable's lifetime and exit from that scope typically ends its lifetime. For instance, a variable with "lexical scope" is meaningful only within a certain block of statements or <a href="Subroutine" title="Subroutine">subroutine</a>. Variables only accessible within a certain functions are termed "<a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local variables</a>". A "<a href="http://en.m.wikipedia.org/wiki/Global_variable" title="Global variable">global variable</a>", or one with indefinite scope, may be referred to anywhere in the program.</p>
+<p><i>Extent</i>, on the other hand, is a runtime (<a href="http://en.m.wikipedia.org/wiki/Dynamic_variable_scoping#Dynamic_scoping" title="Dynamic variable scoping" class="mw-redirect">dynamic</a>) aspect of a variable. Each <a href="http://en.m.wikipedia.org/wiki/Name_binding" title="Name binding">binding</a> of a variable to a value can have its own <i>extent</i> at runtime. The extent of the binding is the portion of the program's execution time during which the variable continues to refer to the same value or memory location. A running program may enter and leave a given extent many times, as in the case of a <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closure</a>.</p>
+<p>Unless the programming language features <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>, a variable whose extent permanently outlasts its scope can result in a <a href="Memory_leak" title="Memory leak">memory leak</a>, whereby the memory allocated for the variable can never be freed since the variable which would be used to reference it for deallocation purposes is no longer accessible. However, it can be permissible for a variable binding to extend beyond its scope, as occurs in Lisp <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closures</a> and C <a href="http://en.m.wikipedia.org/wiki/Local_variable#Static_local_variables" title="Local variable">static local variables</a>; when execution passes back into the variable's scope, the variable may once again be used. A variable whose scope begins before its extent does is said to be <i><a href="http://en.m.wikipedia.org/wiki/Uninitialized_variable" title="Uninitialized variable">uninitialized</a></i> and often has an undefined, arbitrary value if accessed (see <a href="Wild_pointer" title="Wild pointer" class="mw-redirect">wild pointer</a>), since it has yet to be explicitly given a particular value. A variable whose extent ends before its scope does may become a <a href="Dangling_pointer" title="Dangling pointer">dangling pointer</a> and deemed uninitialized once more since its value has been destroyed. Variables described by the previous two cases may be said to be <i>out of extent</i> or <i>unbound</i>. In many languages, it is an error to try to use the value of a variable when it is out of extent. In other languages, doing so may yield <a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">unpredictable results</a>. Such a variable may, however, be assigned a new value, which gives it a new extent.</p>
+<p>For space efficiency, a memory space needed for a variable may be allocated only when the variable is first used and freed when it is no longer needed. A variable is only needed when it is in scope, but beginning each variable's lifetime when it enters scope may give space to unused variables. To avoid wasting such space, compilers often warn programmers if a variable is declared but not used.</p>
+<p>It is considered good programming practice to make the scope of variables as narrow as feasible so that different parts of a program do not accidentally interact with each other by modifying each other's variables. Doing so also prevents <a href="http://en.m.wikipedia.org/wiki/Action_at_distance_(computer_science)" title="Action at distance (computer science)" class="mw-redirect">action at a distance</a>. Common techniques for doing so are to have different sections of a program use different <a href="http://en.m.wikipedia.org/wiki/Namespace_(programming)" title="Namespace (programming)" class="mw-redirect">name spaces</a>, or to make individual variables "private" through either <a href="http://en.m.wikipedia.org/wiki/Dynamic_variable_scoping#Dynamic_scoping" title="Dynamic variable scoping" class="mw-redirect">dynamic variable scoping</a> or <a href="http://en.m.wikipedia.org/wiki/Lexical_variable_scoping#Static_scoping" title="Lexical variable scoping" class="mw-redirect">lexical variable scoping</a>.</p>
+<p>Many programming languages employ a reserved value (often named <i><a href="Null_pointer" title="Null pointer" class="mw-redirect">null</a></i> or <i>nil</i>) to indicate an invalid or uninitialized variable.</p>
+<h2> <span class="mw-headline" id="Typing">Typing</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="Type_system" title="Type system">Type system</a>
+</div>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">Datatype</a>
+</div>
+<p>In <a href="Static_typing" title="Static typing" class="mw-redirect">statically typed</a> languages such as <a href="Java_(programming_language)" title="Java (programming language)">Java</a> or <a href="http://en.m.wikipedia.org/wiki/ML_programming_language" title="ML programming language" class="mw-redirect">ML</a>, a variable also has a <i>type</i>, meaning that only certain kinds of values can be stored in it. For example, a variable of type "<a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a>" is prohibited from storing text values.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Dynamic_typing" title="Dynamic typing" class="mw-redirect">dynamically typed</a> languages such as <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, it is values, not variables, which carry type. In <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, both situations exist simultaneously: a variable is given a type (if undeclared, it is assumed to be <code>T</code>, the universal <a href="http://en.m.wikipedia.org/wiki/Subtype" title="Subtype" class="mw-redirect">supertype</a>) which exists at compile time. Values also have types, which can be checked and queried at runtime.</p>
+<p>Typing of variables also allows <a href="Type_polymorphism" title="Type polymorphism" class="mw-redirect">polymorphisms</a> to be resolved at compile time. However, this is different from the polymorphism used in object-oriented function calls (referred to as <i><a href="http://en.m.wikipedia.org/wiki/Virtual_functions" title="Virtual functions" class="mw-redirect">virtual functions</a></i> in <a href="C++" title="C++">C++</a>) which resolves the call based on the value type as opposed to the supertypes the variable is allowed to have.</p>
+<p>Variables often store simple data, like integers and literal strings, but some programming languages allow a variable to store values of other <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">datatypes</a> as well. Such languages may also enable functions to be <a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism#Parametric_polymorphism" title="Parametric polymorphism">parametric polymorphic</a>. These functions operate like variables to represent data of multiple types. For example, a function named <code>length</code> may determine the length of a list. Such a <code>length</code> function may be parametric polymorphic by including a type variable in its <a href="http://en.m.wikipedia.org/wiki/Type_signature" title="Type signature">type signature</a>, since the amount of elements in the list is independent of the elements' types.</p>
+<h2> <span class="mw-headline" id="Parameters">Parameters</span>
+</h2>
+<p>The <i>formal parameters</i> of functions are also referred to as variables. For instance, in this <a href="Python_(programming_language)" title="Python (programming language)">Python</a> code segment,</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+ <span class="kw1">def</span> addtwo<span class="br0">(</span>x<span class="br0">)</span>:
+    <span class="kw1">return</span> x + <span class="nu0">2</span>
+ 
+ addtwo<span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span>  <span class="co1"># yields 7</span>
+</pre>
+</div>
+</div>
+<p>The variable named <code>x</code> is a <i>parameter</i> because it is given a value when the function is called. The integer 5 is the <i>argument</i> which gives <code>x</code> its value. In most languages, function parameters have local scope. This specific variable named <code>x</code> can only be referred to within the <code>addtwo</code> function (though of course other functions can also have variables called <code>x</code>).</p>
+<h2> <span class="mw-headline" id="Memory_allocation">Memory allocation</span>
+</h2>
+<p>The specifics of variable allocation and the representation of their values vary widely, both among programming languages and among implementations of a given language. Many language implementations allocate space for <i><a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local variables</a></i>, whose extent lasts for a single function call on the <i><a href="Call_stack" title="Call stack">call stack</a></i>, and whose memory is automatically reclaimed when the function returns. More generally, in <i><a href="http://en.m.wikipedia.org/wiki/Name_binding" title="Name binding">name binding</a></i>, the name of a variable is bound to the address of some particular block (contiguous sequence) of bytes in memory, and operations on the variable manipulate that block. <a href="Reference_(computer_science)" title="Reference (computer science)">Referencing</a> is more common for variables whose values have large or unknown sizes when the code is compiled. Such variables reference the location of the value instead of storing the value itself, which is allocated from a pool of memory called the <i><a href="Dynamic_memory_allocation#Heap-based_memory_allocation" title="Dynamic memory allocation" class="mw-redirect">heap</a></i>.</p>
+<p>Bound variables have values. A value, however, is an abstraction, an idea; in implementation, a value is represented by some <i><a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">data object</a></i>, which is stored somewhere in computer memory. The program, or the runtime environment, must set aside memory for each data object and, since memory is finite, ensure that this memory is yielded for reuse when the object is no longer needed to represent some variable's value.</p>
+<p>Objects allocated from the heap must be reclaimed—especially when the objects are no longer needed. In a <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage-collected</a> language (such as <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>), the runtime environment automatically reclaims objects when extant variables can no longer refer to them. In non-garbage-collected languages, such as <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, the program (and the programmer) must explicitly <a href="Malloc" title="Malloc" class="mw-redirect">allocate</a> memory, and then later free it, to reclaim its memory. Failure to do so leads to <a href="Memory_leak" title="Memory leak">memory leaks</a>, in which the heap is depleted as the program runs, risking eventual failure from exhausting available memory.</p>
+<p>When a variable refers to a <a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">data structure</a> created dynamically, some of its components may be only indirectly accessed through the variable. In such circumstances, garbage collectors (or analogous program features in languages that lack garbage collectors) must deal with a case where only a portion of the memory reachable from the variable needs to be reclaimed.</p>
+<h2> <span class="mw-headline" id="Naming_conventions">Naming conventions</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Naming_conventions_(programming)" title="Naming conventions (programming)" class="mw-redirect">Naming conventions (programming)</a>
+</div>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Identifier" title="Identifier">Identifier</a> and <a href="http://en.m.wikipedia.org/wiki/Namespace_(computer_science)" title="Namespace (computer science)">Namespace (computer science)</a>
+</div>
+<p>Unlike their mathematical counterparts, programming variables and constants commonly take multiple-character names, e.g. <code>COST</code> or <code>total</code>. Single-character names are most commonly used only for auxiliary variables; for instance, <code>i</code>, <code>j</code>, <code>k</code> for <a href="http://en.m.wikipedia.org/wiki/Array_index" title="Array index" class="mw-redirect">array index</a> variables.</p>
+<p>Some naming conventions are enforced at the language level as part of the language syntax and involve the format of valid identifiers. In almost all languages, variable names cannot start with a digit (0-9) and cannot contain whitespace characters. Whether, which, and when punctuation marks are permitted in variable names varies from language to language; many languages only permit the <a href="http://en.m.wikipedia.org/wiki/Underscore" title="Underscore">underscore</a> ("_") in variable names and forbid all other punctuation. In some programming languages, specific (often punctuation) characters (known as <a href="Sigil_(computer_programming)" title="Sigil (computer programming)">sigils</a>) are prefixed or appended to variable identifiers to indicate the variable's type.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Case-sensitivity" title="Case-sensitivity" class="mw-redirect">Case-sensitivity</a> of variable names also varies between languages and some languages require the use of a certain case in naming certain entities;<sup id="cite_ref-0" class="reference"><a href="Variable_(programming)#cite_note-0"><span>[</span>note 1<span>]</span></a></sup> Most modern languages are case-sensitive; some older languages are not. Some languages reserve certain forms of variable names for their own internal use; in many languages, names beginning with 2 underscores ("__") often fall under this category.</p>
+<p>However, beyond the basic restrictions imposed by a language, the naming of variables is largely a matter of style. At the machine code level, variable names are not used, so the exact names chosen do not matter to the computer. Thus names of variables identify them, for the rest they are just a tool for programmers to make programs easier to write and understand. Using poorly chosen variable names can make code more difficult to review than non-descriptive names, so names which are clear are often encouraged.<sup id="cite_ref-Choosing_good_variable_names_1-0" class="reference"><a href="Variable_(programming)#cite_note-Choosing_good_variable_names-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Programmers often create and adhere to code style guidelines which offer guidance on naming variables or impose a precise naming scheme. Shorter names are faster to type but are less descriptive; longer names often make programs easier to read and the purpose of variables easier to understand. However, extreme verbosity in variable names can also lead to less comprehensible code.</p>
+<h2> <span class="mw-headline" id="In_spreadsheets">In spreadsheets</span>
+</h2>
+<p>In a <a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheet</a>, a cell may contain a <a href="http://en.m.wikipedia.org/wiki/Formula" title="Formula">formula</a> with <a href="http://en.m.wikipedia.org/wiki/Cell_reference" title="Cell reference" class="mw-redirect">references to other cells</a>. Such a cell reference is a kind of variable; its value is the value of the referenced cell (see also: <a href="Reference_(computer_science)" title="Reference (computer science)">reference (computer science)</a>).</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-local_variable" title="Non-local variable">Non-local variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Variable_interpolation" title="Variable interpolation">Variable interpolation</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Variable_(programming)#cite_ref-0">^</a></b></span> <span class="reference-text">For example, <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> requires that names of types start with a capital letter.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Choosing_good_variable_names-1">
+<span class="mw-cite-backlink"><b><a href="Variable_(programming)#cite_ref-Choosing_good_variable_names_1-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.dotcadot.ca/articles/how-not-pick-variables">How Not To Pick Variables</a>, Retrieved July 11, 2012.</span>
+</li>
+</ol>
+</div>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 19 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D8%AA%D8%BA%D9%8A%D8%B1_(%D8%B9%D9%84%D9%85_%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%BC%D0%B5%D0%BD%D0%BB%D0%B8%D0%B2%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Promjenljiva" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://de.m.wikipedia.org/wiki/Variable_(Programmierung)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Variable_(programaci%C3%B3n)" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Variable_(informatique)" lang="fr" hreflang="fr">français</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Promjenjiva" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://it.m.wikipedia.org/wiki/Variabile_(informatica)" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%A9%D7%AA%D7%A0%D7%94_(%D7%AA%D7%9B%D7%A0%D7%95%D7%AA)" lang="he" hreflang="he">עברית</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Variabele_(informatica)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%A4%89%E6%95%B0_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B3%80%EC%88%98_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Zmienna_(informatyka)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Vari%C3%A1vel_(programa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Premenn%C3%A1_(informatika)" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Muuttuja_(ohjelmointi)" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%97%D0%BC%D1%96%D0%BD%D0%BD%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%8F%98%E9%87%8F_(%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1)" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Variable_(programming)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Variable_(programming)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Variable+%28computer+science%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

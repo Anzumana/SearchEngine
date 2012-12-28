@@ -1,0 +1,292 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>goto - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Goto","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Goto" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Goto"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">goto</h1>			
+<div class="dablink">This article is about the programming statement.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/Goto_(disambiguation)" title="Goto (disambiguation)">Goto (disambiguation)</a>.</div>
+<p><b>goto</b> (<b>GOTO</b>, <b>GO TO</b> or other case combinations, depending on the programming language) is a <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statement</a> found in many computer <a href="Programming_language" title="Programming language">programming languages</a>. It performs a <b>one-way transfer</b> of control to another line of code; in contrast a <a href="Subroutine" title="Subroutine">function call</a> normally returns control. The jumped-to locations are usually identified using <a href="Label_(programming_language)" title="Label (programming language)" class="mw-redirect">labels</a>, though some languages use <a href="http://en.m.wikipedia.org/wiki/Line_number" title="Line number">line numbers</a>. At the <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a> level, a <tt>goto</tt> is a form of <a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">branch or jump statement</a>.</p>
+<p>Many languages support the <tt>goto</tt> statement, and many do not. In <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <tt>goto</tt> is a <a href="http://en.m.wikipedia.org/wiki/Reserved_word" title="Reserved word">reserved word</a>, but is unusable.<sup id="cite_ref-1" class="reference"><a href="Goto#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="Goto#cite_note-2"><span>[</span>2<span>]</span></a></sup> In <a href="PHP" title="PHP">PHP</a> there was no native support for <tt>goto</tt> until version 5.3 (libraries were available to emulate its functionality).<sup id="cite_ref-3" class="reference"><a href="Goto#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Structured_program_theorem" title="Structured program theorem">structured program theorem</a> proved that the <tt>goto</tt> statement is not necessary to write programs; some combination of the three programming constructs of sequence, selection/choice, and repetition/iteration are sufficient for any computation that can be performed by a <a href="http://en.m.wikipedia.org/wiki/Turing_machine" title="Turing machine">Turing machine</a>.</p>
+<p>In the past there was considerable debate in academia and industry on the merits of the use of <tt>goto</tt> statements.</p>
+<h2> <span class="mw-headline" id="Usage">Usage</span>
+</h2>
+<pre>
+   <b>goto</b> <i>label</i>
+</pre>
+<p>The <tt>goto</tt> statement is often combined with the <a href="Conditional_(programming)" title="Conditional (programming)">if statement</a> to cause a conditional transfer of control.</p>
+<pre>
+   <b>IF</b> <i>condition</i> <b>THEN</b> <b>goto</b> <i>label</i>
+</pre>
+<p>Programming languages impose different restrictions with respect to the destination of a <code>goto</code> statement. For example, the <a href="http://en.m.wikipedia.org/wiki/C_programming_language" title="C programming language" class="mw-redirect">C programming language</a> does not permit a jump to a label contained within another function, <sup id="cite_ref-4" class="reference"><a href="Goto#cite_note-4"><span>[</span>4<span>]</span></a></sup> , however jumps within a single call chain are possible using the <a href="http://en.m.wikipedia.org/wiki/Setjmp" title="Setjmp" class="mw-redirect">setjmp/longjmp</a> functions.</p>
+<h2> <span class="mw-headline" id="Criticism_and_decline">Criticism and decline</span>
+</h2>
+<p>The 1960s and 1970s saw computer scientists move away from GOTO statements in favor of the "<a href="Structured_programming" title="Structured programming">structured programming</a>" <a href="Programming_paradigm" title="Programming paradigm">paradigm</a>. Some <a href="http://en.m.wikipedia.org/wiki/Programming_style" title="Programming style">programming style</a> coding standards, for example MISRA C and the Gnu Pascal Coding Standards, prohibit use of GOTO statements, particularly in view of the aforementioned structured program theorem. The <a href="http://en.m.wikipedia.org/wiki/Structured_program_theorem" title="Structured program theorem">Böhm-Jacopini proof</a> did not settle the question of whether to adopt structured programming for software development, partly because the construction was more likely to obscure a program than to improve it. It has, however, sparked a prominent debate among computer scientists, educators, language designers and application programmers that saw a slow but steady shift away from the formerly ubiquitous use of the GOTO. Probably the most famous criticism of GOTO is a 1968 letter by <a href="http://en.m.wikipedia.org/wiki/Edsger_Dijkstra" title="Edsger Dijkstra" class="mw-redirect">Edsger Dijkstra</a> called <i><a href="http://en.m.wikipedia.org/wiki/Go_To_Statement_Considered_Harmful" title="Go To Statement Considered Harmful" class="mw-redirect">Go To Statement Considered Harmful</a></i>.<sup id="cite_ref-5" class="reference"><a href="Goto#cite_note-5"><span>[</span>5<span>]</span></a></sup> In that letter Dijkstra argued that unrestricted GOTO statements should be abolished from higher-level languages because they complicated the task of analyzing and verifying the correctness of programs (particularly those involving loops). An alternative viewpoint is presented in <a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a>'s <i>Structured Programming with go to Statements</i><sup id="cite_ref-6" class="reference"><a href="Goto#cite_note-6"><span>[</span>6<span>]</span></a></sup> which analyzes many common programming tasks and finds that in some of them GOTO is the optimal <a href="http://en.m.wikipedia.org/wiki/Language_construct" title="Language construct">language construct</a> to use. Some programmers, such as <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> Kernel designer and coder <a href="http://en.m.wikipedia.org/wiki/Linus_Torvalds" title="Linus Torvalds">Linus Torvalds</a> or software engineer and book author <a href="http://en.m.wikipedia.org/wiki/Steve_McConnell" title="Steve McConnell">Steve McConnell</a>, also object to Dijkstra's point of view, stating that GOTOs can be a useful language feature, improving program speed, size and code clearness, but only when used in a sensible way by a comparably sensible programmer.<sup id="cite_ref-7" class="reference"><a href="Goto#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="Goto#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p>The viewpoint that use of GOTO is sometimes undesirable is evident in the design of some programming languages, for instance <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a><sup id="cite_ref-ada_9-0" class="reference"><a href="Goto#cite_note-ada-9"><span>[</span>9<span>]</span></a></sup> visually emphasizes label definitions using <a href="http://en.m.wikipedia.org/wiki/Bracket#Angle_brackets_or_chevrons_.E2.9F.A8_.E2.9F.A9" title="Bracket">angle brackets</a>.</p>
+<p><a href="Fortran" title="Fortran">Fortran</a> introduced structured programming constructs in 1978 and in successive revisions the relatively loose semantic rules governing the allowable use of goto were tightened; the "extended range" in which a programmer could use a GOTO to enter and leave a still-executing DO loop was removed from the language in 1978,<sup id="cite_ref-f77_10-0" class="reference"><a href="Goto#cite_note-f77-10"><span>[</span>10<span>]</span></a></sup> and by 1995 several of forms of Fortran GOTO, including the Computed GOTO and the Assigned GOTO, had been deleted from the language.<sup id="cite_ref-f95_11-0" class="reference"><a href="Goto#cite_note-f95-11"><span>[</span>11<span>]</span></a></sup> Some widely used modern programming languages, such as <a href="Java_(programming_language)" title="Java (programming language)">Java</a> and <a href="Python_(programming_language)" title="Python (programming language)">Python</a> lack the GOTO statement, though most provide some means of breaking out of a selection, or either <a href="http://en.m.wikipedia.org/wiki/Break_statement" title="Break statement" class="mw-redirect">breaking</a> out of or <a href="http://en.m.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration" title="Control flow">moving</a> on to the next step of an iteration.</p>
+<p>An example of why GOTO can be dangerous.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from April 2012">citation needed</span></a></i>]</sup></p>
+<p>E.g.:<sup id="cite_ref-12" class="reference"><a href="Goto#cite_note-12"><span>[</span>nb 1<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co2">#include&lt;stdio.h&gt;</span>
+<span class="co2">#include&lt;conio.h&gt;</span>
+<span class="kw4">void</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    clrscr<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">if</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span>
+    <span class="br0">{</span>
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"HELLO"</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="kw1">goto</span> A<span class="sy4">;</span>
+    <span class="br0">}</span>
+    <span class="kw1">else</span>
+    <span class="br0">{</span>
+        A<span class="sy4">:</span>
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">" WIKIPEDIA"</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="br0">}</span>
+    getch<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The above program compiles fine and provides the output HELLO WIKIPEDIA. But, the concept of if-else (<code><a href="Conditional_(programming)" title="Conditional (programming)">Conditional (programming)</a></code>) is completely ignored here with the usage of GOTO.</p>
+<h2> <span class="mw-headline" id="Common_usage_patterns">Common usage patterns</span>
+</h2>
+<p>While overall usage of gotos has been declining, there are still situations in some languages where a goto provides the shortest and most straightforward way to express program's logic (while it's possible to express the same logic without gotos, the equivalent code will be longer and often more difficult to understand).</p>
+<p>These situations include: multi-level breaks, resource allocation/deallocation, error handling in C language, computed goto in Perl language. <sup id="cite_ref-13" class="reference"><a href="Goto#cite_note-13"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="Goto#cite_note-14"><span>[</span>13<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Alternatives">Alternatives</span>
+</h2>
+<h3> <span class="mw-headline" id="Structured_programming">Structured programming</span>
+</h3>
+<p>In classical <a href="Structured_programming" title="Structured programming">structured programming</a>, three basic structures are used: sequence, repetition, and selection. Sequence is the execution of one program unit following another; repetition is the repeated execution of the same program unit until a desired program state is reached; and selection is the executing of one and only one of a fixed set of possible alternative program units depending on the program state. Here typically the "program unit" is a compound statement constructed in turn using the three basic structures.</p>
+<p>Although these three control structures can all be hand-coded using <code>goto</code>s and <code>if</code>s, the desire for clarity and efficient optimization led to the introduction and refinement of supporting structures such as (in <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>) procedure and function blocks, <a href="While_loop" title="While loop"><code>while</code></a>, <a href="Do_while_loop" title="Do while loop"><code>repeat until</code></a>, and <a href="For_loop" title="For loop"><code>for</code></a> statements, and <a href="Switch_statement" title="Switch statement"><code>case</code></a> statements (a form of <a href="http://en.m.wikipedia.org/wiki/Multiway_branch" title="Multiway branch">multiway branching</a>).</p>
+<p>In practice the need arose to refine this basic three-structure template, because the attempt to eliminate exceptional changes of control altogether generated a need for quite complex program state data, and language design had to adapt in order to reduce the <a href="http://en.m.wikipedia.org/wiki/Combinatorial_explosion" title="Combinatorial explosion">combinatorial explosion</a>. Typically the language designers provided a way to exit a structured unit prematurely (in C, <code>break</code> and <code>continue</code>). For handling exceptional situations, specialized <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception handling</a> constructs were added, such as <code>try</code>/<code>catch</code>/<code>finally</code> in Java.</p>
+<h3> <span class="mw-headline" id="Tail_calls">Tail calls</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Tail_call" title="Tail call">Tail call</a>
+</div>
+<p>In a paper delivered to the ACM conference in Seattle in 1977, <a href="http://en.m.wikipedia.org/wiki/Guy_L._Steele" title="Guy L. Steele" class="mw-redirect">Guy L. Steele</a> summarized the debate over the GOTO and structured programming, and observed that procedure calls in the tail position of a procedure can be most optimally treated as a direct transfer of control to the called procedure, typically eliminating unnecessary stack manipulation operations.<sup id="cite_ref-aim-443_15-0" class="reference"><a href="Goto#cite_note-aim-443-15"><span>[</span>14<span>]</span></a></sup> Since such "tail calls" are very common in <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, a language where procedure calls are ubiquitous, this form of optimization considerably reduces the cost of a procedure call compared to the GOTO used in other languages. Steele argued that poorly implemented procedure calls had led to an artificial perception that the GOTO was cheap compared to the procedure call. Steele further argued that "in general procedure calls may be usefully thought of as GOTO statements which also pass parameters, and can be uniformly coded as [machine code] JUMP instructions", with the machine code stack manipulation instructions "considered an optimization (rather than vice versa!)".<sup id="cite_ref-aim-443_15-1" class="reference"><a href="Goto#cite_note-aim-443-15"><span>[</span>14<span>]</span></a></sup> Steele cited evidence that well optimized numerical algorithms in Lisp could execute faster than code produced by then-available commercial Fortran compilers because the cost of a procedure call in Lisp was much lower. In <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, a Lisp dialect developed by Steele with <a href="http://en.m.wikipedia.org/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a>, tail call optimization is mandatory.<sup id="cite_ref-r5rs_16-0" class="reference"><a href="Goto#cite_note-r5rs-16"><span>[</span>15<span>]</span></a></sup></p>
+<p>Although Steele's paper did not introduce much that was new to computer science, at least as it was practised at MIT, it brought to light the scope for procedure call optimization, which made the modularity-promoting qualities of procedures into a more credible alternative to the then-common coding habits of large monolithic procedures with complex internal control structures and extensive state data. In particular, the tail call optimizations discussed by Steele turned the procedure into a credible way of implementing iteration through <a href="http://en.m.wikipedia.org/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">tail recursion</a>.</p>
+<h3> <span class="mw-headline" id="Object_oriented_programming">Object oriented programming</span>
+</h3>
+<p>The influential languages <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> and <a href="Smalltalk" title="Smalltalk">Smalltalk</a> were among the first to introduce the concepts of messages and objects. By <a href="http://en.m.wikipedia.org/wiki/Encapsulation_(object-oriented_programming)" title="Encapsulation (object-oriented programming)">encapsulating</a> state data, <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> reduced software complexity to interactions (messages) between objects.</p>
+<h2> <span class="mw-headline" id="Variations">Variations</span>
+</h2>
+<p>There are a number of different language constructs under the class of <i>goto</i> statements.</p>
+<h3> <span class="mw-headline" id="Computed_GOTO">Computed GOTO</span>
+</h3>
+<p>A <b>computed <code>GOTO</code></b> (originally <a href="Fortran" title="Fortran">Fortran</a> terminology) jumps to one of several labels based on the value of an expression. The <code>ON ... GOTO</code> statement in <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> supports the computed GOTO and is useful for case-by-case branching, as in C's <a href="Switch_statement" title="Switch statement">switch statement</a>.<sup id="cite_ref-17" class="reference"><a href="Goto#cite_note-17"><span>[</span>16<span>]</span></a></sup> Some variants of BASIC support a computed GOTO that can be <i>any</i> line number, not just one from a list. For example, one could write <code>GOTO i*1000</code> to jump to the line numbered 1000 times the value of a variable <i>i</i> (which might represent a selected menu option, for example).</p>
+<h3> <span class="mw-headline" id="Assigned_GOTO">Assigned GOTO</span>
+</h3>
+<p>Originally found in Fortran, this variant transfers control to a statement label which is stored in (assigned to) a variable.</p>
+<p>Some C compilers (e.g., <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">gcc</a>) support <code>goto</code> with a label variable using the <b>label value operator</b>. The <i>label value operator</i> <code>&amp;&amp;</code> returns the address of its operand, which must be a label defined in the current function or a containing function. The value is a constant of type <code>void *</code> and should be used only in a computed goto statement. The feature is an extension to C and C++, implemented to facilitate porting programs developed with GNU C.<sup id="cite_ref-18" class="reference"><a href="Goto#cite_note-18"><span>[</span>17<span>]</span></a></sup> This C extension is sometimes referred to as a Computed goto, but it has the semantics of an assigned goto.</p>
+<h3> <span class="mw-headline" id="ALTER">ALTER</span>
+</h3>
+<p>The 1985 ANSI <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> standard had the ALTER verb which could be used to change the destination of an existing GO TO, which had to be in a paragraph by itself.<sup id="cite_ref-_19-0" class="reference"><a href="Goto#cite_note--19"><span>[</span>18<span>]</span></a></sup> The feature, which allowed <a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">polymorphism</a>, was frequently condemned and seldom used.<sup id="cite_ref-Van_Tassel_20-0" class="reference"><a href="Goto#cite_note-Van_Tassel-20"><span>[</span>19<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Continuations">Continuations</span>
+</h3>
+<p>A <a href="http://en.m.wikipedia.org/wiki/Continuation" title="Continuation">continuation</a> is similar to a GOTO in that it transfers control from an arbitrary point in the program to a previously marked point. A continuation is more flexible than GOTO in those languages that support it, because it can transfer control out of the current function, something that a GOTO cannot do in most structured programming languages. In those language implementations that maintain stack frames for storage of local variables and function arguments, executing a continuation involves adjusting the program's <a href="Call_stack" title="Call stack">call stack</a> in addition to a jump. The <a href="http://en.m.wikipedia.org/wiki/Setjmp/longjmp" title="Setjmp/longjmp" class="mw-redirect">longjmp</a> function of the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> is an example of an escape continuation that may be used to escape the current context to a surrounding one. The <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> GO operator also has this stack unwinding property, despite the construct being <a href="http://en.m.wikipedia.org/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">lexically scoped</a>, as the label to be jumped to can be referenced from a <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closure</a>.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, continuations can even move control from an outer context to an inner one if desired. This almost limitless control over what code is executed next makes complex control structures such as coroutines and cooperative multitasking relatively easy to write.<sup id="cite_ref-r5rs_6_4_21-0" class="reference"><a href="Goto#cite_note-r5rs_6_4-21"><span>[</span>20<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Perl_GOTO">Perl GOTO</span>
+</h3>
+<p>In <a href="Perl" title="Perl">Perl</a>, there is a variant of the <code>goto</code> statement that is not a traditional GOTO statement at all. It takes a function name and transfers control by effectively substituting one function call for another (a <a href="http://en.m.wikipedia.org/wiki/Tail_call" title="Tail call">tail call</a>): the new function will not return to the GOTO, but instead to the place from which the original function was called.<sup id="cite_ref-perl-goto_22-0" class="reference"><a href="Goto#cite_note-perl-goto-22"><span>[</span>21<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Emulated_GOTO">Emulated GOTO</span>
+</h3>
+<p>There are several programming languages that do not support GOTO by default. By using GOTO emulation, it is still possible to use GOTO in these programming languages, albeit with some restrictions. One can emulate GOTO in Java,<sup id="cite_ref-java-goto_23-0" class="reference"><a href="Goto#cite_note-java-goto-23"><span>[</span>22<span>]</span></a></sup> JavaScript,<sup id="cite_ref-javascript-goto_24-0" class="reference"><a href="Goto#cite_note-javascript-goto-24"><span>[</span>23<span>]</span></a></sup> and Python.<sup id="cite_ref-python-goto_25-0" class="reference"><a href="Goto#cite_note-python-goto-25"><span>[</span>24<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/COMEFROM" title="COMEFROM">COMEFROM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_flow#Goto" title="Control flow">Control flow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GOSUB" title="GOSUB">GOSUB</a></li>
+<li>
+<a href="Switch_statement" title="Switch statement">Switch statement</a> - a <a href="http://en.m.wikipedia.org/wiki/Multiway_branch" title="Multiway branch">multiway branch</a> (or conditional goto)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unstructured_programming" title="Unstructured programming" class="mw-redirect">Unstructured programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Considered_harmful" title="Considered harmful">Considered harmful</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-12">^</a></b></span> <span class="reference-text">The original example code will compile on most modern compilers that are not in strict standard compliance mode, but it does not fully conform to the requirements of either C89 or C99. In fact, C99 requires that a diagnostic message be produced.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/third_edition/html/lexical.html#3.9">"The Java Language Specification, Third Edition"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://java.sun.com/docs/books/jls/third_edition/html/lexical.html#3.9">http://java.sun.com/docs/books/jls/third_edition/html/lexical.html#3.9</a></span>. "The keywords const and goto are reserved, even though they are not currently used. This may allow a Java compiler to produce better error messages if these C++ keywords incorrectly appear in programs."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Java+Language+Specification%2C+Third+Edition&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fjava.sun.com%2Fdocs%2Fbooks%2Fjls%2Fthird_edition%2Fhtml%2Flexical.html%233.9&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/third_edition/html/statements.html#14.7">"The Java Language Specification, Third Edition"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://java.sun.com/docs/books/jls/third_edition/html/statements.html#14.7">http://java.sun.com/docs/books/jls/third_edition/html/statements.html#14.7</a></span>. "Unlike C and C++, the Java programming language has no goto statement; identifier statement labels are used with break (§14.15) or continue (§14.16) statements appearing anywhere within the labeled statement."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Java+Language+Specification%2C+Third+Edition&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fjava.sun.com%2Fdocs%2Fbooks%2Fjls%2Fthird_edition%2Fhtml%2Fstatements.html%2314.7&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://php.net/manual/en/control-structures.goto.php">http://php.net/manual/en/control-structures.goto.php</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://c0x.coding-guidelines.com/6.8.6.1.html">C Standard section 6.8.6.1 The goto statement</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation Journal"><a href="http://en.m.wikipedia.org/wiki/Edsger_Dijkstra" title="Edsger Dijkstra" class="mw-redirect">Edsger Dijkstra</a> (March 1968). <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1241518&amp;coll=ACM&amp;dl=ACM&amp;CFID=11218690&amp;CFTOKEN=24551268">"Go To Statement Considered Harmful"</a>. <i>Communications of the ACM</i> <b>11</b> (3): 147–148. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F362929.362947">10.1145/362929.362947</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://portal.acm.org/citation.cfm?id=1241518&amp;coll=ACM&amp;dl=ACM&amp;CFID=11218690&amp;CFTOKEN=24551268">http://portal.acm.org/citation.cfm?id=1241518&amp;coll=ACM&amp;dl=ACM&amp;CFID=11218690&amp;CFTOKEN=24551268</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Go+To+Statement+Considered+Harmful&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=%5B%5BEdsger+Dijkstra%5D%5D&amp;rft.au=%5B%5BEdsger+Dijkstra%5D%5D&amp;rft.date=March+1968&amp;rft.volume=11&amp;rft.issue=3&amp;rft.pages=147%26ndash%3B148&amp;rft_id=info:doi/10.1145%2F362929.362947&amp;rft_id=http%3A%2F%2Fportal.acm.org%2Fcitation.cfm%3Fid%3D1241518%26coll%3DACM%26dl%3DACM%26CFID%3D11218690%26CFTOKEN%3D24551268&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation Journal"><a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> (1974). <a rel="nofollow" class="external text" href="http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf">"Structured Programming with go to Statements"</a>. <i>Computing Surveys</i> <b>6</b> (4): 261–301. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F356635.356640">10.1145/356635.356640</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf">http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Structured+Programming+with+go+to+Statements&amp;rft.jtitle=Computing+Surveys&amp;rft.aulast=%5B%5BDonald+Knuth%5D%5D&amp;rft.au=%5B%5BDonald+Knuth%5D%5D&amp;rft.date=1974&amp;rft.volume=6&amp;rft.issue=4&amp;rft.pages=261%E2%80%93301&amp;rft_id=info:doi/10.1145%2F356635.356640&amp;rft_id=http%3A%2F%2Fpplab.snu.ac.kr%2Fcourses%2Fadv_pl05%2Fpapers%2Fp261-knuth.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://kerneltrap.org/node/553">http://kerneltrap.org/node/553</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.stevemcconnell.com/ccgoto.htm">http://www.stevemcconnell.com/ccgoto.htm</a></span>
+</li>
+<li id="cite_note-ada-9">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-ada_9-0">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="http://en.m.wikipedia.org/wiki/John_Barnes_(computer_scientist)" title="John Barnes (computer scientist)">John Barnes</a> (2006-06-30). <i>Programming in Ada 2005</i>. <a href="http://en.m.wikipedia.org/wiki/Addison_Wesley" title="Addison Wesley" class="mw-redirect">Addison Wesley</a>. p. 114–115. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-321-34078-7" title="Special:BookSources/0-321-34078-7">0-321-34078-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programming+in+Ada%26nbsp%3B2005&amp;rft.aulast=%5B%5BJohn+Barnes+%28computer+scientist%29%7CJohn+Barnes%5D%5D&amp;rft.au=%5B%5BJohn+Barnes+%28computer+scientist%29%7CJohn+Barnes%5D%5D&amp;rft.date=2006-06-30&amp;rft.pages=p.%26nbsp%3B114%26ndash%3B115&amp;rft.pub=%5B%5BAddison+Wesley%5D%5D&amp;rft.isbn=0-321-34078-7&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-f77-10">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-f77_10-0">^</a></b></span> <span class="reference-text">ANSI X3.9-1978. American National Standard – Programming Language FORTRAN. American National Standards Institute. Also known as ISO 1539-1980, informally known as FORTRAN 77</span>
+</li>
+<li id="cite_note-f95-11">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-f95_11-0">^</a></b></span> <span class="reference-text">ISO/IEC 1539-1:1997. Information technology – Programming languages – Fortran – Part 1: Base language. Informally known as Fortran 95. There are a further two parts to this standard. Part 1 has been formally adopted by ANSI.</span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.cprogramming.com/tutorial/goto.html">http://www.cprogramming.com/tutorial/goto.html</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.simon-cozens.org/content/good-uses-goto">http://www.simon-cozens.org/content/good-uses-goto</a></span>
+</li>
+<li id="cite_note-aim-443-15">
+<span class="mw-cite-backlink">^ <a href="Goto#cite_ref-aim-443_15-0"><sup><i><b>a</b></i></sup></a> <a href="Goto#cite_ref-aim-443_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Guy Lewis Steele, Jr.. "Debunking the 'Expensive Procedure Call' Myth, or, Procedure Call Implementations Considered Harmful, or, Lambda: The Ultimate GOTO". MIT AI Lab. AI Lab Memo AIM-443. October 1977.</span>
+</li>
+<li id="cite_note-r5rs-16">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-r5rs_16-0">^</a></b></span> <span class="reference-text">R5RS Sec. 3.5, <span class="citation Journal">Richard Kelsey, William Clinger, Jonathan Rees et al. (August 1998). <a rel="nofollow" class="external text" href="http://www.schemers.org/Documents/Standards/R5RS/">"Revised<sup>5</sup> Report on the Algorithmic Language Scheme"</a>. <i>Higher-Order and Symbolic Computation</i> <b>11</b> (1): 7–105. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1023%2FA%3A1010051815785">10.1023/A:1010051815785</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.schemers.org/Documents/Standards/R5RS/">http://www.schemers.org/Documents/Standards/R5RS/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Revised%3Csup%3E5%3C%2Fsup%3E+Report+on+the+Algorithmic+Language+Scheme&amp;rft.jtitle=Higher-Order+and+Symbolic+Computation&amp;rft.aulast=Richard+Kelsey%2C+William+Clinger%2C+Jonathan+Rees+et+al.&amp;rft.au=Richard+Kelsey%2C+William+Clinger%2C+Jonathan+Rees+et+al.&amp;rft.date=August+1998&amp;rft.volume=11&amp;rft.issue=1&amp;rft.pages=7%E2%80%93105&amp;rft_id=info:doi/10.1023%2FA%3A1010051815785&amp;rft_id=http%3A%2F%2Fwww.schemers.org%2FDocuments%2FStandards%2FR5RS%2F&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.qbasicnews.com/qboho/qckadvr@l804a.shtml">"Microsoft QuickBASIC: ON...GOSUB, ON...GOTO Statements QuickSCREEN."</a>. <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a>. 1988<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.qbasicnews.com/qboho/qckadvr@l804a.shtml">http://www.qbasicnews.com/qboho/qckadvr@l804a.shtml</a></span><span class="reference-accessdate">. Retrieved 2008-07-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Microsoft+QuickBASIC%3A+ON...GOSUB%2C+ON...GOTO+Statements+QuickSCREEN.&amp;rft.atitle=&amp;rft.date=1988&amp;rft.pub=%5B%5BMicrosoft%5D%5D&amp;rft_id=http%3A%2F%2Fwww.qbasicnews.com%2Fqboho%2Fqckadvr%40l804a.shtml&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://publib.boulder.ibm.com/infocenter/lnxpcomp/v7v91/index.jsp?topic=/com.ibm.vacpp7l.doc/language/ref/clrc08computed_goto.htm">Computed goto</a>, IBM XL C/C++ compiler</span>
+</li>
+<li id="cite_note--19">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-_19-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://docs.hp.com/cgi-bin/doc3k/B3150090013.11820/72">HP COBOL II/XL Reference Manual</a>, "The ALTER statement is an obsolete feature of the 1985 ANSI COBOL standard."</span>
+</li>
+<li id="cite_note-Van_Tassel-20">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-Van_Tassel_20-0">^</a></b></span> <span class="reference-text"><span class="citation web">Van Tassel, Dennie (July 8, 2004.). <a rel="nofollow" class="external text" href="http://www.gavilan.edu/csis/languages/labels.html#_Toc76036283">"History of Labels in Programming Languages"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.gavilan.edu/csis/languages/labels.html#_Toc76036283">http://www.gavilan.edu/csis/languages/labels.html#_Toc76036283</a></span><span class="reference-accessdate">. Retrieved 4 January 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=History+of+Labels+in+Programming+Languages&amp;rft.atitle=&amp;rft.aulast=Van+Tassel&amp;rft.aufirst=Dennie&amp;rft.au=Van+Tassel%2C%26%2332%3BDennie&amp;rft.date=July+8%2C+2004.&amp;rft_id=http%3A%2F%2Fwww.gavilan.edu%2Fcsis%2Flanguages%2Flabels.html%23_Toc76036283&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-r5rs_6_4-21">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-r5rs_6_4_21-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.4">Revised<sup>5</sup> Report on the Algorithmic Language Scheme (R5RS), section 6.4, standard procedures: call-with-current-continuation</a></span>
+</li>
+<li id="cite_note-perl-goto-22">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-perl-goto_22-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://perldoc.perl.org/perlsyn.html#Goto">Goto</a>, from the perl.syn (Perl syntax) manual</span>
+</li>
+<li id="cite_note-java-goto-23">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-java-goto_23-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.steike.com/code/useless/java-goto/">"GOTO for Java"</a>. <i><a rel="nofollow" class="external text" href="http://steike.com">steike</a></i>. Posted July 6, 2009<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.steike.com/code/useless/java-goto/">http://www.steike.com/code/useless/java-goto/</a></span><span class="reference-accessdate">. Retrieved April 28, 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=GOTO+for+Java&amp;rft.atitle=%5Bhttp%3A%2F%2Fsteike.com+steike%5D&amp;rft.date=Posted+July+6%2C+2009&amp;rft_id=http%3A%2F%2Fwww.steike.com%2Fcode%2Fuseless%2Fjava-goto%2F&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-javascript-goto-24">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-javascript-goto_24-0">^</a></b></span> <span class="reference-text"><span class="citation web">Sexton, Alex. <a rel="nofollow" class="external text" href="http://summerofgoto.com/">"The Summer of Goto | Official Home of Goto.js"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://summerofgoto.com/">http://summerofgoto.com/</a></span><span class="reference-accessdate">. Retrieved April 28, 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Summer+of+Goto+%26%23124%3B+Official+Home+of+Goto.js&amp;rft.atitle=&amp;rft.aulast=Sexton&amp;rft.aufirst=Alex&amp;rft.au=Sexton%2C%26%2332%3BAlex&amp;rft_id=http%3A%2F%2Fsummerofgoto.com%2F&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-python-goto-25">
+<span class="mw-cite-backlink"><b><a href="Goto#cite_ref-python-goto_25-0">^</a></b></span> <span class="reference-text"><span class="citation web">Hindle, Richie (April 1st, 2004). <a rel="nofollow" class="external text" href="http://entrian.com/goto/">"goto for Python"</a>. <i><a rel="nofollow" class="external text" href="http://entrian.com">Entrian Solutions</a></i>. Hertford, UK: Entrian Solutions Ltd<span class="printonly">. <a rel="nofollow" class="external free" href="http://entrian.com/goto/">http://entrian.com/goto/</a></span><span class="reference-accessdate">. Retrieved April 28, 2012</span>. "The 'goto' module was an April Fool's joke, published on 1st April 2004. Yes, it works, but it's a joke nevertheless. Please don't use it in real code!"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=goto+for+Python&amp;rft.atitle=%5Bhttp%3A%2F%2Fentrian.com+Entrian+Solutions%5D&amp;rft.aulast=Hindle&amp;rft.aufirst=Richie&amp;rft.au=Hindle%2C%26%2332%3BRichie&amp;rft.date=April+1st%2C+2004&amp;rft.place=Hertford%2C+UK&amp;rft.pub=Entrian+Solutions+Ltd&amp;rft_id=http%3A%2F%2Fentrian.com%2Fgoto%2F&amp;rfr_id=info:sid/en.wikipedia.org:Goto"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 20 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/GOTO" lang="ca" hreflang="ca">català</a></li><li><a href="http://de.m.wikipedia.org/wiki/Sprunganweisung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/GOTO" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Goto" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Goto_%EB%AC%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Goto" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://it.m.wikipedia.org/wiki/GOTO" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_goto" lang="he" hreflang="he">עברית</a></li><li><a href="http://hu.m.wikipedia.org/wiki/GOTO" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Goto" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Goto%E6%96%87" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Instrukcja_skoku" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Goto_(programa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Goto" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Goto" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sh.m.wikipedia.org/wiki/GoTo" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Goto" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/GOTO" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%91%D0%B5%D0%B7%D1%83%D0%BC%D0%BE%D0%B2%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D1%96%D0%B4" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Goto" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Goto&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Goto&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Goto&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

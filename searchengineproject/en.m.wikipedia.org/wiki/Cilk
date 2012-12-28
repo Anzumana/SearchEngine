@@ -1,0 +1,247 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Cilk - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Cilk","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Cilk" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Cilk"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Cilk</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Cilk</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<a href="Imperative_programming" title="Imperative programming">imperative</a> (<a href="Procedural_programming" title="Procedural programming">procedural</a>), <a href="Structured_programming" title="Structured programming">structured</a>, <a href="http://en.m.wikipedia.org/wiki/Parallel_programming" title="Parallel programming" class="mw-redirect">parallel</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1994</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">
+<a href="http://en.m.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">MIT</a> Laboratory for Computer Science</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_developer" title="Software developer">Developer</a></th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.cilk.com">Intel</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style="">
+<a href="Type_system" title="Type system">static</a>, <a href="Weak_typing" title="Weak typing">weak</a>, <a href="Manifest_typing" title="Manifest typing">manifest</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.cilk.com">Intel</a></td>
+</tr>
+</table>
+<p><b>Cilk</b> is a <a href="http://en.m.wikipedia.org/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose</a> <a href="Programming_language" title="Programming language">programming language</a> designed for <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">multithreaded</a> <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel computing</a>. The commercial incarnation is called <a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a>.</p>
+<h2> <span class="mw-headline" id="Design">Design</span>
+</h2>
+<p>The biggest principle behind the design of the Cilk language is that the programmer should be responsible for <i>exposing</i> the parallelism, identifying elements that can safely be executed in parallel; it should then be left to the run-time environment, particularly the <a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">scheduler</a>, to decide during execution how to actually divide the work between processors. It is because these responsibilities are separated that a Cilk program can run without rewriting on any number of processors, including one.</p>
+<p>The Cilk language has been developed since 1994 at the <a href="http://en.m.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">MIT</a> Laboratory for Computer Science. It is based on <a href="ANSI_C" title="ANSI C">ANSI C</a>, with the addition of just a handful of Cilk-specific keywords. When the Cilk keywords are removed from Cilk source code, the result is a valid <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> program, called the <b>serial elision</b> (or <i>C elision</i>) of the full Cilk program. Cilk is a faithful extension of C and the serial elision of any Cilk program is always a valid serial implementation in C of the semantics of the parallel Cilk program. Despite several similarities, Cilk is not directly related to AT&amp;T Bell Labs' <span class="new" title="Concurrent C (page does not exist)">Concurrent C</span>.</p>
+<p>A commercial version of Cilk, called Cilk++, that supports both C and <a href="C++" title="C++">C++</a> and is compatible with both <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> and <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> C++ compilers, was developed by <a rel="nofollow" class="external text" href="http://www.cilk.com">Cilk Arts, Inc.</a>. Academic and Open Source versions also exist, where the Open Source version is under an in-house license that falls somewhere between the updated BSD license and the LGPL. <a rel="nofollow" class="external text" href="http://supertech.csail.mit.edu/cilk/">The original Cilk code</a> is still available from MIT. In July 2009, <a href="http://en.m.wikipedia.org/wiki/Intel_Corporation" title="Intel Corporation" class="mw-redirect">Intel Corporation</a> acquired Cilk Arts, the Cilk++ technology and the Cilk trademark. In 2010, Intel released a commercial implementation in its compilers combined with some data parallel constructs with the name Intel Cilk Plus. Intel has also released a specification to enable other compatible implementations, and has said the trademark will be usable by compliant implementations.</p>
+<p>In the original MIT Cilk implementation, the first Cilk keyword is in fact <b>cilk</b>, which identifies a function which is written in Cilk. Since Cilk procedures can call C procedures directly, but C procedures cannot directly call or <a href="http://en.m.wikipedia.org/wiki/Spawn_(computing)" title="Spawn (computing)">spawn</a> Cilk procedures, this keyword is needed to distinguish Cilk code from C code.</p>
+<p>The remaining keywords are:</p>
+<ul>
+<li><b>spawn</b></li>
+<li><b>sync</b></li>
+<li><b>inlet</b></li>
+<li><b>abort</b></li>
+</ul>
+<p>They are described in further detail below.</p>
+<h2> <span class="mw-headline" id="Basic_parallelism_with_Cilk">Basic parallelism with Cilk</span>
+</h2>
+<p>Two keywords are all that are needed to start using the parallel features of Cilk:</p>
+<p><b>spawn</b> -- this keyword indicates that the procedure call it modifies can safely operate in parallel with other executing code. Note that the scheduler is not <i>obligated</i> to run this procedure in parallel; the keyword merely alerts the scheduler that it can do so.</p>
+<p><b>sync</b> -- this keyword indicates that execution of the current procedure cannot proceed until all previously spawned procedures have completed and returned their results to the parent frame. This is an example of a <a href="http://en.m.wikipedia.org/wiki/Barrier_(computer_science)" title="Barrier (computer science)">barrier</a> method.</p>
+<h3> <span class="mw-headline" id="Sample_code">Sample code</span>
+</h3>
+<p>Below is a <a href="Recursion" title="Recursion">recursive</a> implementation of the <a href="http://en.m.wikipedia.org/wiki/Fibonacci_number" title="Fibonacci number">Fibonacci</a> function in Cilk, with parallel recursive calls, which demonstrates the <b>cilk</b>, <b>spawn</b>, and <b>sync</b> keywords. (Cilk program code is not numbered; the numbers have been added only to make the discussion easier to follow.)</p>
+<pre>
+<code>01 <u>cilk</u> int fib (int n)
+02 {
+03     if (n &lt; 2) return n;
+04     else
+05     {
+06        int x, y;
+07  
+08        x = <u>spawn</u> fib (n-1);
+09        y = <u>spawn</u> fib (n-2);
+10  
+11        <u>sync</u>;
+12  
+13        return (x+y);
+14     }
+15 }
+</code>
+</pre>
+<p>If this code was executed by a <i>single</i> processor to determine the value of fib(2), that processor would create a <a href="http://en.m.wikipedia.org/wiki/Frame_(computer_science)" title="Frame (computer science)" class="mw-redirect">frame</a> for <i>fib(2)</i>, and execute lines 01 through 05. On line 06, it would create spaces in the frame to hold the values of <i>x</i> and <i>y</i>. On line 08, the processor would have to suspend the current frame, create a new frame to execute the procedure <i>fib(1)</i>, execute the code of that frame until reaching a return statement, and then resume the <i>fib(2)</i> frame with the value of fib(1) placed into <i>fib(2)</i>'s <i>x</i> variable. On the next line, it would need to suspend again to execute <i>fib(0)</i> and place the result in <i>fib(2)</i>'s <i>y</i> variable.</p>
+<p>When the code is executed on a <i>multiprocessor</i> machine, however, execution proceeds differently. One processor starts the execution of <i>fib(2)</i>; when it reaches line 08, however, the <b>spawn</b> keyword modifying the call to <i>fib(n-1)</i> tells the processor that it can safely give the job to a second processor: this second processor can create a frame for <i>fib(1)</i>, execute its code, and store its result in <i>fib(2)</i>'s frame when it finishes; the first processor continues executing the code of <i>fib(2)</i> at the same time. A processor is not obligated to assign a spawned procedure elsewhere; if the machine only has two processors and the second is still busy on <i>fib(1)</i> when the processor executing <i>fib(2)</i> gets to the procedure call, the first processor will suspend <i>fib(2)</i> and execute <i>fib(0)</i> itself, as it would if it were the only processor. Of course, if another processor <i>is</i> available, then it will be called into service, and all three processors would be executing separate frames simultaneously.</p>
+<p>(The preceding description is not entirely accurate. Even though the common terminology for discussing Cilk refers to processors making the decision to spawn off work to other processors, it is actually the scheduler which assigns procedures to processors for execution, using a policy called <i>work-stealing</i>, described later.)</p>
+<p>If the processor executing <i>fib(2)</i> were to execute line 13 before both of the other processors had completed their frames, it would generate an incorrect result or an error; <i>fib(2)</i> would be trying to add the values stored in <i>x</i> and <i>y</i>, but one or both of those values would be missing. This is the purpose of the <b>sync</b> keyword, which we see in line 11: it tells the processor executing a frame that it must suspend its own execution until all the procedure calls it has spawned off have returned. When <i>fib(2)</i> is allowed to proceed past the <b>sync</b> statement in line 11, it can only be because <i>fib(1)</i> and <i>fib(0)</i> have completed and placed their results in <i>x</i> and <i>y</i>, making it safe to perform calculations on those results.</p>
+<h2> <span class="mw-headline" id="Advanced_parallelism_with_Cilk:_Inlets">Advanced parallelism with Cilk: Inlets</span>
+</h2>
+<p>The two remaining Cilk keywords are slightly more advanced, and concern the use of <i>inlets</i>. Ordinarily, when a Cilk procedure is spawned, it can return its results to the parent procedure only by putting those results in a variable in the parent's frame, as we assigned the results of our spawned procedure calls in the example to <code>x</code> and <code>y</code>.</p>
+<p>The alternative is to use an inlet. An inlet is a function internal to a Cilk procedure which handles the results of a spawned procedure call as they return. One major reason to use inlets is that all the inlets of a procedure are guaranteed to operate <a href="http://en.m.wikipedia.org/wiki/Atomic_(computer_science)" title="Atomic (computer science)" class="mw-redirect">atomically</a> with regards to each other and to the parent procedure, thus avoiding the bugs that could occur if the multiple returning procedures tried to update the same variables in the parent frame at the same time.</p>
+<p><b>inlet</b> -- This keyword identifies a function defined within the procedure as an inlet.</p>
+<p><b>abort</b> -- This keyword can only be used inside an inlet; it tells the scheduler that any other procedures that have been spawned off by the parent procedure can safely be aborted.</p>
+<h2> <span class="mw-headline" id="Work-stealing">Work-stealing</span>
+</h2>
+<p>The Cilk scheduler uses a policy called "work-stealing" to divide procedure execution efficiently among multiple processors. Again, it is easiest to understand if we look first at how Cilk code is executed on a single-processor machine.</p>
+<p>The processor maintains a <a href="Call_stack" title="Call stack">stack</a> on which it places each frame that it has to suspend in order to handle a procedure call. If it is executing <i>fib(2)</i>, and encounters a recursive call to <i>fib(1)</i>, it will save <i>fib(2)</i>'s state, including its variables and where the code suspended execution, and put that state on the stack. It will not take a suspended state off the stack and resume execution until the procedure call that caused the suspension, and any procedures called in turn by that procedure, have all been fully executed.</p>
+<p>With multiple processors, things of course change. Each processor still has a stack for storing frames whose execution has been suspended; however, these stacks are more like <a href="http://en.m.wikipedia.org/wiki/Deque" title="Deque" class="mw-redirect">deques</a>, in that suspended states can be removed from either end. A processor can still only remove states from its <i>own</i> stack from the same end that it puts them on; however, any processor which is not currently working (having finished its own work, or not yet having been assigned any) will pick another processor at random, through the scheduler, and try to "steal" work from the opposite end of their stack—suspended states, which the stealing processor can then begin to execute. The states which get stolen are the states that the processor stolen from would get around to executing last.</p>
+<h2> <span class="mw-headline" id="Commercialization">Commercialization</span>
+</h2>
+<p>Prior to ~2006, the market for Cilk was restricted to high-performance computing. The emergence of multicore processors in mainstream computing means that hundreds of millions of new parallel computers are now being shipped every year. Cilk Arts was formed to capitalize on that opportunity: In 2006, <a href="http://en.m.wikipedia.org/wiki/Charles_Leiserson" title="Charles Leiserson" class="mw-redirect">Professor Leiserson</a> launched Cilk Arts to create and bring to market a modern version of Cilk that supports the commercial needs of an upcoming generation of programmers. The company closed a Series A venture financing round in October 2007, and Cilk++ 1.0 shipped in December, 2008. Cilk++ differs from Cilk in several ways: support for C++, operation with both Microsoft and GCC compilers, support for loops, and "Cilk hyperobjects" - a new construct designed to solve data race problems created by parallel accesses to global variables.</p>
+<p>On July 31, 2009, Cilk Arts announced on its web site that its products and engineering team were now part of <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> Corp. Intel and Cilk Arts integrated and advanced the technology further resulting in a September 2010 release of <a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a>.<sup id="cite_ref-0" class="reference"><a href="Cilk#cite_note-0"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-1" class="reference"><a href="Cilk#cite_note-1"><span>[</span>2<span>]</span></a></sup> Intel Cilk Plus adopts simplifications, proposed by Cilk Arts in Cilk++, to eliminate the need for several of the original Cilk keywords while adding the ability to spawn functions and to deal with variables involved in reduction operations. Intel Cilk Plus differs from Cilk and Cilk++ by adding array extensions, being incorporated in a commercial compiler (from Intel), and compatibility with existing debuggers.<sup id="cite_ref-2" class="reference"><a href="Cilk#cite_note-2"><span>[</span>3<span>]</span></a></sup> Intel has stated its desire to refine Cilk Plus and to enable it to be implemented by other compilers to gain industry wide adoption.<sup id="cite_ref-3" class="reference"><a href="Cilk#cite_note-3"><span>[</span>4<span>]</span></a></sup> Work has started on a GCC implementation based in part on Intel's run time code contributed to open source by Intel which includes code they acquired from Cilk Arts plus additions by Intel and former Cilk Arts employees.<sup id="cite_ref-4" class="reference"><a href="Cilk#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Re-licencing">Re-licencing</span>
+</h2>
+<p>Intel has announced <sup id="cite_ref-5" class="reference"><a href="Cilk#cite_note-5"><span>[</span>6<span>]</span></a></sup> that it is maintaining Cilk Plus as a branch of <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> 4.7. The runtime is available dual-licenced, including <a href="http://en.m.wikipedia.org/wiki/Bsd_licence#3-clause_license_.28.22New_BSD_License.22_or_.22Modified_BSD_License.22.29" title="Bsd licence" class="mw-redirect">BSD-3</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CilkChess" title="CilkChess">CilkChess</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.hpcwire.com/features/Intel-Flexes-Parallel-Programming-Muscles-102084438.html">"Intel Flexes Parallel Programming Muscles"</a>, HPCwire (2010-09-02). Retrieved on 2010-09-14.</span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.drdobbs.com/go-parallel/blog/archives/2010/09/parallel_studio_1.html">"Parallel Studio 2011: Now We Know What Happened to Ct, Cilk++, and RapidMind"</a>, Dr. Dobbs Journal (2010-09-02). Retrieved on 2010-09-14.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://software.intel.com/en-us/articles/intel-cilk-plus/">"Intel Cilk Plus: A quick, easy and reliable way to improve threaded performance"</a>, Intel. Retrieved on 2010-09-14.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://software.intel.com/en-us/blogs/2010/11/02/cilk-plus-specification-and-runtime-abi-freely-available-for-download/">"Cilk Plus specification and runtime ABI freely available for download"</a>, James Reinders. Retrieved on 2010-11-03.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/ml/gcc/2011-08/msg00279.html">Announcing the Port of Intel(r) Cilk(tm)Plus into GCC</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Cilk#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://software.intel.com/en-us/articles/intel-cilk-plus-open-source/">"Intel Cilk Plus Open Source"</a>, Intel. Retrieved on 2011-08-17.</span>
+</li>
+</ol>
+<p><a rel="nofollow" class="external text" href="http://supertech.csail.mit.edu/papers/PPoPP95.pdf">Cilk: An Efficient Multithreaded Runtime System</a> by Robert D. Blumofe, Christopher F. Joerg, Bradley C. Kuszmaul, Charles E. Leiserson, Keith H. Randall, and Yuli Zhou. Proceedings of the Fifth ACM SIGPLAN <a href="http://en.m.wikipedia.org/wiki/Symposium_on_Principles_and_Practice_of_Parallel_Programming" title="Symposium on Principles and Practice of Parallel Programming">Symposium on Principles and Practice of Parallel Programming</a> (PPoPP), pp. 207–216, 1995.</p>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://supertech.csail.mit.edu/cilk/">Cilk Project website at MIT</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cilk.com">Cilk Arts, Inc.</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cilk.com/multicore-products/cilk-solution-overview">Cilk++ Technology Overview</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cilk.com/multicore-products/cilk-product-demonstration">Cilk++ Product Demonstration</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cilk.com/multicore-blog/">Multicore Programming blog</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.cilk.com/multicore-e-book/">e-Book on Multicore Programming</a> e-Book outlining multicore programming challenges, and the leading programming approaches to deal with them.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.ateji.com/px/whitepapers/Ateji%20PX%20for%20Java%20v1.0.pdf">Whitepaper on Multicore Programming</a> in the Java Virtual Machine (<a href="http://en.m.wikipedia.org/wiki/JVM" title="JVM" class="mw-redirect">JVM</a>)</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 4 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://el.m.wikipedia.org/wiki/Cilk" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://no.m.wikipedia.org/wiki/Cilk" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Cilk" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Cilk" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Cilk&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Cilk&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Cilk&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

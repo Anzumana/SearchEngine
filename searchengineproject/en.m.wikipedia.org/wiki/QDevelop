@@ -1,0 +1,511 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>QDevelop - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"QDevelop","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/QDevelop" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=QDevelop"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">QDevelop</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">QDevelop</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style=""><span class="new" title="Jean-Luc Biord (page does not exist)">Jean-Luc Biord</span></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">2006</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">0.28 / March 20, 2010<span style="display:none"> (<span class="bday dtstart published updated">2010-03-20</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="C++" title="C++">C++</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">GNU/Linux</a> <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Text_editor" title="Text editor">Text editor</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://biord-software.org/qdevelop/">http://biord-software.org/qdevelop/</a></td>
+</tr>
+</table>
+<p><b>QDevelop</b> is a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a> <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> specialized on the <a href="http://en.m.wikipedia.org/wiki/Qt_(toolkit)" title="Qt (toolkit)" class="mw-redirect">Qt4</a> framework and <a href="C++" title="C++">C++</a>. It uses <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">gcc</a> for building and <a href="http://en.m.wikipedia.org/wiki/Gdb" title="Gdb" class="mw-redirect">gdb</a> for debugging.</p>
+<p>It supports <a href="http://en.m.wikipedia.org/wiki/Source_code_editor" title="Source code editor">Source code editor</a> with <a href="http://en.m.wikipedia.org/wiki/Syntax_highlighting" title="Syntax highlighting">syntax highlighting</a> with native support for Qt Keywords and integrates different Qt Tools such as Qt Designer and qmake. QDevelops Editor features <a href="http://en.m.wikipedia.org/wiki/Code_completion" title="Code completion" class="mw-redirect">code completion</a> and automatic <a href="http://en.m.wikipedia.org/wiki/Indentation" title="Indentation">indentation</a>. There's also a project management system and a class browser that enables the programmer to navigate through classes and data structures.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://biord-software.org/qdevelop">QDevelop Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/qdevelop">QDevelop Google Code project</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:FOSS" title="Template:FOSS"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:FOSS" title="Template talk:FOSS"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:FOSS&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Free_and_open-source_software" title="Free and open-source software">Free and open-source software</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Copyleft" title="Copyleft">Copyleft</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">Free software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_Free_Software_Definition" title="The Free Software Definition">Free Software Definition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gratis_versus_libre" title="Gratis versus libre">Gratis versus libre</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_free_and_open-source_software_packages" title="List of free and open-source software packages">List of free and open-source software packages</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_open_source_Android_applications" title="List of open source Android applications">List of open source Android applications</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_free_software_web_applications" title="List of free software web applications">List of free software web applications</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/List_of_free_software_project_directories" title="List of free software project directories">List of project directories</a>/<a href="http://en.m.wikipedia.org/wiki/Comparison_of_open_source_software_hosting_facilities" title="Comparison of open source software hosting facilities">Comparison of hosting facilities</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_formerly_proprietary_software" title="List of formerly proprietary software">List of formerly proprietary software</a></li>
+<li><a href="Open-source_software" title="Open-source software">Open-source software</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Comparison_of_open_source_operating_systems" title="Comparison of open source operating systems">Operating system families</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/AROS_Research_Operating_System" title="AROS Research Operating System">AROS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ECos" title="ECos">eCos</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeDOS" title="FreeDOS">FreeDOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Haiku_(operating_system)" title="Haiku (operating system)">Haiku</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mach_(kernel)" title="Mach (kernel)">Mach</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MINIX" title="MINIX">MINIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Open_source_software_development" title="Open source software development">Development</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeBASIC" title="FreeBASIC">FreeBASIC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gambas" title="Gambas">Gambas</a></li>
+<li><a href="Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Low_Level_Virtual_Machine" title="Low Level Virtual Machine" class="mw-redirect">LLVM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open64" title="Open64">Open64</a></li>
+<li><a href="Perl" title="Perl">Perl</a></li>
+<li><a href="PHP" title="PHP">PHP</a></li>
+<li><a href="Python_(programming_language)" title="Python (programming language)">Python</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ROSE_compiler_framework" title="ROSE compiler framework" class="mw-redirect">ROSE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tcl" title="Tcl">Tcl</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/History_of_free_and_open-source_software" title="History of free and open-source software">History</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU#History" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_Haiku_(operating_system)" title="History of Haiku (operating system)">Haiku</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_Linux" title="History of Linux">Linux</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mozilla" title="Mozilla">Mozilla</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_Mozilla_Application_Suite" title="History of Mozilla Application Suite">Application Suite</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_Firefox" title="History of Firefox">Firefox</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_Mozilla_Thunderbird" title="History of Mozilla Thunderbird">Thunderbird</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Organizations</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Apache_Software_Foundation" title="Apache Software Foundation">Apache Software Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_Open_Source_Project" title="Android Open Source Project" class="mw-redirect">Android Open Source Project</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Blender_Foundation" title="Blender Foundation">Blender Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eclipse_Foundation" title="Eclipse Foundation">Eclipse Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeBSD_Foundation" title="FreeBSD Foundation">FreeBSD Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Freedesktop.org" title="Freedesktop.org">freedesktop.org</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_Europe" title="Free Software Foundation Europe">Europe</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_of_India" title="Free Software Foundation of India">India</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_Latin_America" title="Free Software Foundation Latin America">Latin America</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Movement_of_India" title="Free Software Movement of India">FSMI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME_Foundation" title="GNOME Foundation">GNOME Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU Project</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Code" title="Google Code">Google Code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_e.V." title="KDE e.V.">KDE e.V.</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux_Foundation" title="Linux Foundation">Linux Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mozilla_Foundation" title="Mozilla Foundation">Mozilla Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Source_Geospatial_Foundation" title="Open Source Geospatial Foundation">Open Source Geospatial Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Source_Initiative" title="Open Source Initiative">Open Source Initiative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_Freedom_Conservancy" title="Software Freedom Conservancy">Software Freedom Conservancy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Symbian_Foundation" title="Symbian Foundation">Symbian Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_Document_Foundation" title="The Document Foundation">The Document Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xiph.Org_Foundation" title="Xiph.Org Foundation">Xiph.Org Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XMPP_Standards_Foundation" title="XMPP Standards Foundation">XMPP Standards Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X.Org_Foundation" title="X.Org Foundation">X.Org Foundation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Free_software_licence" title="Free software licence">Licences</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Apache_License" title="Apache License">Apache</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Artistic_License" title="Artistic License">Artistic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Beerware" title="Beerware">Beerware</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BSD_licenses" title="BSD licenses">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU GPL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISC_license" title="ISC license">ISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIT_License" title="MIT License">MIT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shared_source#Open_Source_licenses" title="Shared source">Ms-PL/RL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zlib_License" title="Zlib License">zlib</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Public_domain" title="Public domain">Public domain</a>/<a href="http://en.m.wikipedia.org/wiki/CC0#Public_domain_tools" title="CC0" class="mw-redirect">CC0</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/WTFPL" title="WTFPL">WTFPL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_FSF_approved_software_licenses" title="List of FSF approved software licenses" class="mw-redirect">FSF approved licenses</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Licence standards</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Source_Definition" title="Open Source Definition" class="mw-redirect">Open Source Definition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_Free_Software_Definition" title="The Free Software Definition">The Free Software Definition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Debian_Free_Software_Guidelines" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Definition_of_Free_Cultural_Works" title="Definition of Free Cultural Works">Definition of Free Cultural Works</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Challenges</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Binary_blob" title="Binary blob">Binary blob</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Contributor_License_Agreement" title="Contributor License Agreement">Contributor License Agreement</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Digital_rights_management" title="Digital rights management">Digital rights management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Graphics_hardware_and_FOSS" title="Graphics hardware and FOSS">Graphics hardware compatibility</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/License_proliferation" title="License proliferation">License proliferation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mozilla_Corporation_software_rebranded_by_the_Debian_project" title="Mozilla Corporation software rebranded by the Debian project">Mozilla software rebranding</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SCO-Linux_controversies" title="SCO-Linux controversies" class="mw-redirect">SCO-Linux controversies</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_source_software_security" title="Open source software security">Security</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_patents_and_free_software" title="Software patents and free software">Software patents</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware_restrictions" title="Hardware restrictions">Hardware restrictions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Trusted_Computing" title="Trusted Computing">Trusted Computing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_8#Secure_boot" title="Windows 8">Secure Boot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Viral_license" title="Viral license">Viral license</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Alternative_terms_for_free_software" title="Alternative terms for free software">Alternative terms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_software_community" title="Free software community">Community</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux_distribution" title="Linux distribution">Linux distribution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fork_(software_development)" title="Fork (software development)">Forking</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_software_movement" title="Free software movement">Movement</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Open_Specification_Promise" title="Microsoft Open Specification Promise">Microsoft Open Specification Promise</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar" title="The Cathedral and the Bazaar">The Cathedral and the Bazaar</a></i></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_open_source_and_closed_source" title="Comparison of open source and closed source">Comparison with closed source</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><img alt="Wikipedia book" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/24px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/32px-Symbol_book_class2.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Book:Free_and_Open_Source_Software" title="Book:Free and Open Source Software">Book:Free and Open Source Software</a></b></li>
+<li><b><img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Category:Free_software" title="Category:Free software">Category:Free software</a></b></li>
+<li><b><img alt="Portal" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Portal:Free software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><strong class="selflink">QDevelop</strong></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://fr.m.wikipedia.org/wiki/QDevelop" lang="fr" hreflang="fr">français</a></li><li><a href="http://ru.m.wikipedia.org/wiki/QDevelop" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/QDevelop" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=QDevelop&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=QDevelop&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=QDevelop&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

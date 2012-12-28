@@ -1,0 +1,241 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Source-to-source compiler - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Source-to-source compiler","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Source-to-source_compiler" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Source-to-source+compiler"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Source-to-source compiler</h1>			
+<p>A <b>source-to-source compiler</b>, <b>transcompiler</b>, or <b>transpiler</b> is a type of <a href="Compiler" title="Compiler">compiler</a> that takes the <a href="Source_code" title="Source code">source code</a> of a <a href="Programming_language" title="Programming language">programming language</a> as its input and outputs the source code into another programming language. A source-to-source compiler translates between programming languages that operate at approximately the same level of <a href="http://en.m.wikipedia.org/wiki/Abstraction_(computer_science)" title="Abstraction (computer science)">abstraction</a>, while a traditional <a href="Compiler" title="Compiler">compiler</a> translates from a <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">higher level programming language</a> to a <a href="http://en.m.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language">lower level programming language</a>. For example, a source-to-source compiler may perform a translation of a program from <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> to <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>. An automatic <a href="http://en.m.wikipedia.org/wiki/Parallel_compiler" title="Parallel compiler" class="mw-redirect">parallelizing compiler</a> will frequently take in a high level language program as an input and then transform the code and annotate it with parallel code annotations (e.g., <a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a>) or language constructs (e.g. <a href="Fortran" title="Fortran">Fortran</a>'s <code>forall</code> statements).<sup id="cite_ref-0" class="reference"><a href="Source-to-source_compiler#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>Another purpose of source-to-source-compiling is translating legacy code to use the next version of the underlying programming language or an API that breaks backward compatibility. It will perform automatic <a href="http://en.m.wikipedia.org/wiki/Code_refactoring" title="Code refactoring">code refactoring</a> which is useful when the programs to refactor are outside the control of the original implementer (for example, converting programs from Python 2 to Python 3, or converting programs from an old API to the new API) or when the size of the program makes it impractical or time consuming to refactor it by hand.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>One of the earliest programs of this kind was <a href="http://en.m.wikipedia.org/wiki/Digital_Research" title="Digital Research">Digital Research</a>'s XLT86 in 1981, a program written by <a href="http://en.m.wikipedia.org/wiki/Gary_Kildall" title="Gary Kildall">Gary Kildall</a>, which translated .ASM source code for the <a href="http://en.m.wikipedia.org/wiki/Intel_8080" title="Intel 8080">Intel 8080</a> processor into .A86 source code for the <a href="http://en.m.wikipedia.org/wiki/Intel_8086" title="Intel 8086">Intel 8086</a>. Using global data flow analysis on 8080 register usage, the translator would also optimize the output for code size and take care of calling conventions, so that <a href="http://en.m.wikipedia.org/wiki/CP/M-80" title="CP/M-80" class="mw-redirect">CP/M-80</a> and <a href="http://en.m.wikipedia.org/wiki/MP/M-80" title="MP/M-80" class="mw-redirect">MP/M-80</a> programs could be ported to the <a href="http://en.m.wikipedia.org/wiki/CP/M-86" title="CP/M-86">CP/M-86</a> and <a href="http://en.m.wikipedia.org/wiki/MP/M-86" title="MP/M-86" class="mw-redirect">MP/M-86</a> platforms automatically. XLAT86 itself was written in <a href="PL/I" title="PL/I">PL/I-80</a> and was available for CP/M-80 platforms as well as for <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a> <a href="http://en.m.wikipedia.org/wiki/OpenVMS" title="OpenVMS">VMS</a> (for VAX 11/750 or 11/780).<sup id="cite_ref-1" class="reference"><a href="Source-to-source_compiler#cite_note-1"><span>[</span>2<span>]</span></a></sup></p>
+<p>A similar, but much less sophisticated program was TRANS.COM, written by <a href="http://en.m.wikipedia.org/wiki/Tim_Paterson" title="Tim Paterson">Tim Paterson</a> in 1981 as part of <a href="http://en.m.wikipedia.org/wiki/86-DOS" title="86-DOS">86-DOS</a>. It could translate some <a href="http://en.m.wikipedia.org/wiki/Z80" title="Z80" class="mw-redirect">Z80</a> assembly source code into .ASM source code for the 8086, but supported only a subset of opcodes, registers and modes, often still requiring significant manual correction and rework afterwards. Also it did not carry out any register and jump optimizations.<sup id="cite_ref-2" class="reference"><a href="Source-to-source_compiler#cite_note-2"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Programming_language_implementation">Programming language implementation</span>
+</h2>
+<p>The first implementations of some programming languages started as transcompilers, and the default implementation for some of those languages are still transcompilers:</p>
+<ul>
+<li>
+<a href="C++" title="C++">C++</a> (known at the time as "C with classes") was transcompiling to <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> with the <a href="http://en.m.wikipedia.org/wiki/Cfront" title="Cfront">cfront</a> transcompiler</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>, transcompiling to C</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Lisaac" title="Lisaac">Lisaac</a>, transcompiling to C</li>
+<li>
+<a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a> transcompiling to C (with additional libraries such as <a href="http://en.m.wikipedia.org/wiki/GObject" title="GObject">GObject</a>).</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript">CoffeeScript</a> and <a href="http://en.m.wikipedia.org/wiki/TypeScript" title="TypeScript">TypeScript</a>, transcompiling to <a href="JavaScript" title="JavaScript">JavaScript</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/HaXe" title="HaXe" class="mw-redirect">haXe</a>, transcompiling to <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="PHP" title="PHP">PHP</a>, <a href="C++" title="C++">C++</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, and <a href="http://en.m.wikipedia.org/wiki/Java" title="Java">Java</a>. Also compiling to bytecode such as <a href="http://en.m.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a> bytecode.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dart_(programming_language)" title="Dart (programming language)">Dart</a>, transcompiling to <a href="JavaScript" title="JavaScript">JavaScript</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mirah_(programming_language)" title="Mirah (programming language)">Mirah</a>, transcompiling to <a href="Java_(programming_language)" title="Java (programming language)">Java</a>
+</li>
+<li>
+<span class="new" title="Efene (page does not exist)">Efene</span>, transcompiling to <a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>
+</li>
+<li>
+<span class="new" title="Xtend (page does not exist)">Xtend</span>, transcompiling to <a href="Java_(programming_language)" title="Java (programming language)">Java</a><sup id="cite_ref-xtend_3-0" class="reference"><a href="Source-to-source_compiler#cite_note-xtend-3"><span>[</span>4<span>]</span></a></sup>
+</li>
+<li>
+<a href="PHP" title="PHP">PHP</a>, transcompiling to <a href="C++" title="C++">C++</a> using <a href="http://en.m.wikipedia.org/wiki/HipHop_for_PHP" title="HipHop for PHP">HipHop</a> at <a href="http://en.m.wikipedia.org/wiki/Facebook" title="Facebook">Facebook</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Porting_a_codebase">Porting a codebase</span>
+</h2>
+<p>When developers want to switch to a different language while retaining most of an existing codebase, it might be better to use a transcompiler compared to rewriting the whole software by hand. In this case, the code often needs manual correction because the automated translation does not work in all cases.</p>
+<ul>
+<li>the <a href="http://en.m.wikipedia.org/wiki/History_of_Python#Timeline_and_compatibility" title="History of Python">2to3</a> script can turn <a href="Python_(programming_language)" title="Python (programming language)">Python</a> 2 programs into Python 3 programs. Even though 2to3 does its best at automating the translation process, further manual corrections are often needed.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Emscripten" title="Emscripten">Emscripten</a> compiles LLVM bytecode to <a href="http://en.m.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript</a>. This allows running C/C++ codebases in a browser for example.</li>
+<li>
+<span class="new" title="Naca (page does not exist)">Naca</span><sup id="cite_ref-4" class="reference"><a href="Source-to-source_compiler#cite_note-4"><span>[</span>5<span>]</span></a></sup> transcodes <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> code into Java code running on top of the NacaRT runtime library. It helped saving 3 millions of euros per year in a project aiming at replacing IBM mainframes with commodity hardware and software (<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> and <a href="http://en.m.wikipedia.org/wiki/Apache_Tomcat" title="Apache Tomcat">Apache Tomcat</a>).<sup id="cite_ref-5" class="reference"><a href="Source-to-source_compiler#cite_note-5"><span>[</span>6<span>]</span></a></sup> The technology and tools are being further developed by the company Eranea<sup id="cite_ref-6" class="reference"><a href="Source-to-source_compiler#cite_note-6"><span>[</span>7<span>]</span></a></sup>: further Cobol coverage, other legacy languages, additional transactional monitors, automated testing tools, continuous integration, etc. The system is based on 2 specific features: full automation and strict iso-functionality in order to achieve very progressive and riskless migrations.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a> transcodes a <a href="Java_(programming_language)" title="Java (programming language)">Java</a> program that uses a specific <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a> to <a href="JavaScript" title="JavaScript">JavaScript</a>. The Java code is a little bit contrained compared to normal Java code.</li>
+<li>Js_of_ocaml<sup id="cite_ref-7" class="reference"><a href="Source-to-source_compiler#cite_note-7"><span>[</span>8<span>]</span></a></sup> of <a href="http://en.m.wikipedia.org/wiki/Ocsigen" title="Ocsigen">Ocsigen</a> compiles an <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> program into <a href="JavaScript" title="JavaScript">JavaScript</a>.</li>
+<li>
+<span class="new" title="JSIL (page does not exist)">JSIL</span> compiles <a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">CLI</a> bytecode into human readable <a href="http://en.m.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="Examples">Examples</span>
+</h2>
+<h3> <span class="mw-headline" id="DMS_Software_Reengineering_Toolkit">DMS Software Reengineering Toolkit</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/DMS_Software_Reengineering_Toolkit" title="DMS Software Reengineering Toolkit">DMS Software Reengineering Toolkit</a> is a source-to-source program transformation tool, parameterized by explicit source and target (may be the same) computer language definitions. It can be used for translating from one computer language to another, for compiling domain-specific languages to a general purpose language, or for carrying out optimizations or massive modifications within a specific language. DMS has a library of language definitions for most widely used computer languages (including full <a href="C++" title="C++">C++</a>, and a means for defining other languages which it does not presently know).</p>
+<h3> <span class="mw-headline" id="LLVM">LLVM</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Low_Level_Virtual_Machine" title="Low Level Virtual Machine" class="mw-redirect">Low Level Virtual Machine</a> (LLVM) can translate from any language supported by gcc 4.2.1 (<a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Fortran" title="Fortran">Fortran</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="Objective-C" title="Objective-C">Objective-C</a>, or <a href="http://en.m.wikipedia.org/wiki/Objective-C%2B%2B" title="Objective-C++" class="mw-redirect">Objective-C++</a>) or by <a href="Clang" title="Clang">clang</a> to any of: C, C++, or <a href="http://en.m.wikipedia.org/wiki/Common_Intermediate_Language" title="Common Intermediate Language">MSIL</a> by way of the "arch" command in llvm-gcc.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="sy0">%</span> llvm-g++ <span class="re5">-emit-llvm</span> x.cpp <span class="re5">-o</span> program.bc <span class="re5">-c</span>
+<span class="sy0">%</span> llc <span class="re5">-march</span>=c program.bc <span class="re5">-o</span> x.c
+<span class="sy0">%</span> <span class="kw2">cc</span> x.c -lstdc++
+ 
+<span class="sy0">%</span> llvm-g++ x.cpp <span class="re5">-o</span> program.bc <span class="re5">-c</span>
+<span class="sy0">%</span> llc <span class="re5">-march</span>=msil program.bc <span class="re5">-o</span> program.msil
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Refactoring_tools">Refactoring tools</span>
+</h3>
+<p>The refactoring tools automate transforming source code into another:</p>
+<ul>
+<li>
+<a href="Python_(programming_language)" title="Python (programming language)">Python</a>'s 2to3 tool transforms non-<a href="http://en.m.wikipedia.org/wiki/Forward_compatibility" title="Forward compatibility">forward-compatible</a> Python 2 code into Python 3 code.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Qt_(framework)" title="Qt (framework)">Qt</a>'s <a rel="nofollow" class="external text" href="http://doc.trolltech.com/4.0/qt3to4.html#qt3to4">qt3to4</a> tool convert non forward-compatible usage of the Qt3 API into Qt4 API usage.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Coccinelle_(software)" title="Coccinelle (software)">Coccinelle</a> uses semantic <a href="http://en.m.wikipedia.org/wiki/Patch_(computing)" title="Patch (computing)">patches</a> to describe refactoring to apply to <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> code. It's been applied successfully to refactor the <a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">drivers</a> of the <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> <a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">kernel</a> due to kernel API changes.<sup id="cite_ref-8" class="reference"><a href="Source-to-source_compiler#cite_note-8"><span>[</span>9<span>]</span></a></sup>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://kenai.com/projects/refactoringng/">RefactoringNG</a> is a <a href="http://en.m.wikipedia.org/wiki/Netbeans" title="Netbeans" class="mw-redirect">Netbeans</a> module for <a href="http://en.m.wikipedia.org/wiki/Refactoring" title="Refactoring" class="mw-redirect">refactoring</a> <a href="Java_(programming_language)" title="Java (programming language)">Java</a> code where you can write transformations rules of a program's <a href="http://en.m.wikipedia.org/wiki/Abstract_syntax_tree" title="Abstract syntax tree">abstract syntax tree</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Binary_recompiler" title="Binary recompiler">Binary recompiler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Program_transformation" title="Program transformation">Program transformation</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ROSE_compiler_framework" title="ROSE compiler framework" class="mw-redirect">ROSE compiler framework</a> - a source-to-source compiler framework</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Compiler-compiler" title="Compiler-compiler">Compiler-compiler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Translation_(computing)" title="Translation (computing)" class="mw-redirect">Translation (computing)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_binding" title="Language binding">Language binding</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language-independent_specification" title="Language-independent specification">Language-independent specification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Monkey_(programming_language)" title="Monkey (programming language)">Monkey (programming language)</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.compilers.net/paedia/compiler/index.htm">"Types of compilers"</a>. compilers.net. 1997-2005<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.compilers.net/paedia/compiler/index.htm">http://www.compilers.net/paedia/compiler/index.htm</a></span><span class="reference-accessdate">. Retrieved 28 October 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Types+of+compilers&amp;rft.atitle=&amp;rft.date=1997-2005&amp;rft.pub=compilers.net&amp;rft_id=http%3A%2F%2Fwww.compilers.net%2Fpaedia%2Fcompiler%2Findex.htm&amp;rfr_id=info:sid/en.wikipedia.org:Source-to-source_compiler"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-1">^</a></b></span> <span class="reference-text">Digital Research (1981): <i>XLT86 - 8080 to 8086 Assembly Language Translator - User's Guide</i>. Digital Research Inc, Pacific Grove (<a rel="nofollow" class="external autonumber" href="http://www.s100computers.com/Software%20Folder/Assembler%20Collection/Digital%20Research%20XLT86%20Manual.pdf">[1]</a>).</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-2">^</a></b></span> <span class="reference-text">Seattle Computer Products (1981): <i>86-DOS - Disk Operating System for the 8086. User's manual, version 0.3</i>. Seattle Computer Products, Seattle (<a rel="nofollow" class="external autonumber" href="http://www.patersontech.com/dos/Docs/86_Dos_usr_03.pdf">[2]</a>).</span>
+</li>
+<li id="cite_note-xtend-3">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-xtend_3-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.eclipse.org/Xtext/xtend/">Eclipse Xtend</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://code.google.com/p/naca/">http://code.google.com/p/naca/</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://media-tech.blogspot.fr/2009/01/project-naca-migration-from-ibm.html">http://media-tech.blogspot.fr/2009/01/project-naca-migration-from-ibm.html</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.eranea.com">http://www.eranea.com</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ocsigen.org/js_of_ocaml/manual/overview">Js_of_ocaml Overview</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Source-to-source_compiler#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web">Valerie Henson (January 20, 2009). <a rel="nofollow" class="external text" href="http://lwn.net/Articles/315686/">"Semantic patching with Coccinelle"</a>. lwn.net<span class="printonly">. <a rel="nofollow" class="external free" href="http://lwn.net/Articles/315686/">http://lwn.net/Articles/315686/</a></span><span class="reference-accessdate">. Retrieved 28 October 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Semantic+patching+with+Coccinelle&amp;rft.atitle=&amp;rft.aulast=Valerie+Henson&amp;rft.au=Valerie+Henson&amp;rft.date=January+20%2C+2009&amp;rft.pub=lwn.net&amp;rft_id=http%3A%2F%2Flwn.net%2FArticles%2F315686%2F&amp;rfr_id=info:sid/en.wikipedia.org:Source-to-source_compiler"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<p><br></p>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:Software_spanner.png" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/40px-Software_spanner.png" width="40" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/60px-Software_spanner.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/80px-Software_spanner.png 2x"></a></td>
+<td>
+<i>This <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Source-to-source_compiler&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Compu-prog-stub" title="Template:Compu-prog-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Compu-prog-stub" title="Template talk:Compu-prog-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Compu-prog-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Source-to-source_compiler&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Source-to-source_compiler&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Source-to-source+compiler&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Automatic variable - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Automatic variable","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Automatic_variable" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Automatic+variable"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Automatic variable</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, an <b>automatic variable</b> is a <a href="Scope_(programming)" title="Scope (programming)" class="mw-redirect">lexically-scoped</a> <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable</a> which is allocated and deallocated automatically when program flow enters and leaves the variable's <a href="Scope_(programming)" title="Scope (programming)" class="mw-redirect">scope</a>. The term <i><a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local variable</a></i> is usually synonymous with automatic variable, since these are the same thing in many programming languages.</p>
+<p>Automatic variables may be <a href="http://en.m.wikipedia.org/wiki/Stack-based_memory_allocation" title="Stack-based memory allocation">allocated in the stack frame</a> of the procedure in which they are declared; this has the useful effect of allowing <a href="Recursion" title="Recursion">recursion</a> and <a href="http://en.m.wikipedia.org/wiki/Reentrant_(subroutine)" title="Reentrant (subroutine)" class="mw-redirect">re-entrancy</a>. (For efficiency, the <a href="http://en.m.wikipedia.org/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">optimizer</a> will try to allocate some of these variables in <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">processor registers</a>.)</p>
+<h2> <span class="mw-headline" id="In_specific_programming_languages">In specific programming languages</span>
+</h2>
+<h3> <span class="mw-headline" id="C.2C_C.2B.2B"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a></span>
+</h3>
+<p>(Called <i>automatic</i> variables.)</p>
+<p>All variables declared within a <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">block</a> of code are automatic by default, but this can be made explicit with the <code>auto</code> keyword.<sup id="cite_ref-0" class="reference"><a href="Automatic_memory_allocation#cite_note-0"><span>[</span>note 1<span>]</span></a></sup> An uninitialized automatic variable has an <a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">undefined</a> value until it is assigned a valid value of its type.<sup id="cite_ref-1" class="reference"><a href="Automatic_memory_allocation#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Using the storage class <code>register</code> instead of <code>auto</code> is a hint to the compiler to cache the variable in a processor register. Other than not allowing the referencing operator (<code>&amp;</code>) to be used on the variable or any of its subcomponents, the compiler is free to ignore the hint.</p>
+<p>In C++, the constructor of automatic variables is called when the execution reaches the place of declaration. The destructor is called when it reaches the end of the given program block (program blocks are surrounded by curly brackets). This feature is often used to manage resource allocation and deallocation, like opening and then automatically closing files or freeing up memory. See <a href="http://en.m.wikipedia.org/wiki/RAII" title="RAII" class="mw-redirect">RAII</a>.</p>
+<h3> <span class="mw-headline" id="Java"><a href="Java_(programming_language)" title="Java (programming language)">Java</a></span>
+</h3>
+<p>(Called <i>local variables</i>.)</p>
+<p>Similar to C and C++, but there is no <code>auto</code> or <code>register</code> keyword. However, the Java compiler will not allow the usage of a not-explicitly-initialized local variable and will give a compilation error (unlike C and C++ where the compiler will usually only give a warning). The Java standard demands that every local variable must be explicitly initialized before being used.<sup id="cite_ref-2" class="reference"><a href="Automatic_memory_allocation#cite_note-2"><span>[</span>2<span>]</span></a></sup> This differs from instance variables, which are implicitly initialized with default values (which are <tt>0</tt> for numbers and <tt>null</tt> for objects).</p>
+<h3> <span class="mw-headline" id="Perl"><a href="http://en.m.wikipedia.org/wiki/Perl_(programming_language)" title="Perl (programming language)" class="mw-redirect">Perl</a></span>
+</h3>
+<p>(Called <i>lexical</i>, <i>my</i> or <i>private</i> variables.)</p>
+<p>In Perl, local variables are declared using the <code>my</code> operator. Uninitialized scalars will have the value <code>undef</code>; uninitialized arrays or hashes will be <code>()</code>.<sup id="cite_ref-3" class="reference"><a href="Automatic_memory_allocation#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Perl also has a <code><a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local</a></code> operator that does not create automatic variables,<sup id="cite_ref-4" class="reference"><a href="Automatic_memory_allocation#cite_note-4"><span>[</span>4<span>]</span></a></sup> instead giving global (package) variables a temporary value, which is dynamically scoped to the enclosing block. When the scope of the variable is left, the old value is restored.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="C_syntax#Storage_duration_specifiers" title="C syntax">C syntax#Storage duration specifiers</a></li>
+<li>
+<a href="Variable-length_array" title="Variable-length array">Variable-length array</a> (<a href="C99" title="C99">C99</a> new feature)</li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Automatic_memory_allocation#cite_ref-0">^</a></b></span> <span class="reference-text">Note: the current C++ standard, <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a>, adds an additional meaning to the <code>auto</code> keyword, meaning a type that is <a href="http://en.m.wikipedia.org/wiki/Type_inference" title="Type inference">inferred</a>.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Automatic_memory_allocation#cite_ref-1">^</a></b></span> <span class="reference-text">Current<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Automatic_variable&amp;action=edit">[update]</a></sup><span class="PDFlink"><a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/WG14/www/docs/n1256.pdf">C standard</a></span><span style="font-size:smaller;"> PDF (3.61 <a href="http://en.m.wikipedia.org/wiki/Mebibyte" title="Mebibyte">MiB</a>)</span>: section 6.2.4, Storage durations of objects</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Automatic_memory_allocation#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/third_edition/html/typesValues.html#4.12.5">"4.12.5 Initial Values of Variables"</a>. Sun Microsystems<span class="printonly">. <a rel="nofollow" class="external free" href="http://java.sun.com/docs/books/jls/third_edition/html/typesValues.html#4.12.5">http://java.sun.com/docs/books/jls/third_edition/html/typesValues.html#4.12.5</a></span><span class="reference-accessdate">. Retrieved 2008-10-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=4.12.5+Initial+Values+of+Variables&amp;rft.atitle=&amp;rft.pub=Sun+Microsystems&amp;rft_id=http%3A%2F%2Fjava.sun.com%2Fdocs%2Fbooks%2Fjls%2Fthird_edition%2Fhtml%2FtypesValues.html%234.12.5&amp;rfr_id=info:sid/en.wikipedia.org:Automatic_variable"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Automatic_memory_allocation#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://perldoc.perl.org/perlsub.html#Private-Variables-via-my()">"Private variables via my() - perlsub - perldoc.perl.org"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://perldoc.perl.org/perlsub.html#Private-Variables-via-my()">http://perldoc.perl.org/perlsub.html#Private-Variables-via-my()</a></span><span class="reference-accessdate">. Retrieved 2008-10-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Private+variables+via+my%28%29+-+perlsub+-+perldoc.perl.org&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fperldoc.perl.org%2Fperlsub.html%23Private-Variables-via-my%28%29&amp;rfr_id=info:sid/en.wikipedia.org:Automatic_variable"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Automatic_memory_allocation#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://perldoc.perl.org/perlsub.html#Temporary-Values-via-local%28%29">"Temporary values via local() - perlsub - perldoc.perl.org"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://perldoc.perl.org/perlsub.html#Temporary-Values-via-local%28%29">http://perldoc.perl.org/perlsub.html#Temporary-Values-via-local%28%29</a></span><span class="reference-accessdate">. Retrieved 2011-02-25</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Temporary+values+via+local%28%29+-+perlsub+-+perldoc.perl.org&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fperldoc.perl.org%2Fperlsub.html%23Temporary-Values-via-local%2528%2529&amp;rfr_id=info:sid/en.wikipedia.org:Automatic_variable"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:Software_spanner.png" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/40px-Software_spanner.png" width="40" height="31"></a></td>
+<td>
+<i>This <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Automatic_variable&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Compu-prog-stub" title="Template:Compu-prog-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Compu-prog-stub" title="Template talk:Compu-prog-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Compu-prog-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 2 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://es.m.wikipedia.org/wiki/Asignaci%C3%B3n_autom%C3%A1tica_de_memoria" lang="es" hreflang="es">español</a></li><li><a href="http://it.m.wikipedia.org/wiki/Allocazione_automatica_della_memoria" lang="it" hreflang="it">italiano</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Automatic_memory_allocation&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Automatic_memory_allocation&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Automatic+variable&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

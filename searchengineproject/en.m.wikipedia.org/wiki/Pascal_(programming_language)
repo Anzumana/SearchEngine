@@ -1,0 +1,1225 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Pascal (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Pascal (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Pascal_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Pascal+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Pascal (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Pascal</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Structured_programming" title="Structured programming">structured</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1970</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style=""><a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style="">
+<a href="Static_typing" title="Static typing" class="mw-redirect">static</a>, <a href="Type_system#Strong_and_weak_typing" title="Type system">strong</a>, <a href="Type_system#Safely_and_unsafely_typed_systems" title="Type system">safe</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/CDC_6000" title="CDC 6000" class="mw-redirect">CDC 6000</a>, <a href="http://en.m.wikipedia.org/wiki/ICT_1900_series" title="ICT 1900 series">ICL 1900</a>, <a href="http://en.m.wikipedia.org/wiki/Pascal-P" title="Pascal-P" class="mw-redirect">Pascal-P</a>, <a href="PDP-11" title="PDP-11">PDP-11</a>, <a href="http://en.m.wikipedia.org/wiki/PDP-10" title="PDP-10">PDP-10</a>, <a href="http://en.m.wikipedia.org/wiki/IBM_System/370" title="IBM System/370">IBM System/370</a>, <a href="http://en.m.wikipedia.org/wiki/Hewlett-Packard" title="Hewlett-Packard">HP</a>, <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Dialect_(computing)" title="Dialect (computing)">Dialects</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Borland" title="Borland">Borland</a>, <a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/ALGOL_W" title="ALGOL W">ALGOL W</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/Component_Pascal" title="Component Pascal">Component Pascal</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>,<sup id="cite_ref-1" class="reference"><a href="Pascal_(programming_language)#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="Pascal_(programming_language)#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Pascal_(programming_language)#cite_note-3"><span>[</span>3<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Modula" title="Modula">Modula</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-3" title="Modula-3">Modula-3</a>, <a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a>, <a href="http://en.m.wikipedia.org/wiki/Oberon-2_(programming_language)" title="Oberon-2 (programming language)">Oberon-2</a>, <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a>, <a href="Seed7" title="Seed7">Seed7</a>
+</td>
+</tr>
+</table>
+<p><b>Pascal</b> is an influential <a href="Imperative_programming" title="Imperative programming">imperative</a> and <a href="Procedural_programming" title="Procedural programming">procedural</a> <a href="Programming_language" title="Programming language">programming language</a>, designed in 1968–1969 and published in 1970 by <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a> as a small and efficient language intended to encourage good programming practices using <a href="Structured_programming" title="Structured programming">structured programming</a> and <a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">data structuring</a>.</p>
+<p>A derivative known as <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> designed for <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> was developed in 1985.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Pascal, named in honor of the French mathematician and philosopher <a href="http://en.m.wikipedia.org/wiki/Blaise_Pascal" title="Blaise Pascal">Blaise Pascal</a>, was developed by <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a>.</p>
+<p>Before his work on Pascal, Wirth had developed <a href="http://en.m.wikipedia.org/wiki/Euler_(programming_language)" title="Euler (programming language)">Euler</a> and <a href="http://en.m.wikipedia.org/wiki/ALGOL_W" title="ALGOL W">ALGOL W</a> and later went on to develop the Pascal-like languages <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a> and <a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a>.</p>
+<p>Initially, Pascal was largely, but not exclusively, intended to teach students <a href="Structured_programming" title="Structured programming">structured programming</a>.<sup id="cite_ref-4" class="reference"><a href="Pascal_(programming_language)#cite_note-4"><span>[</span>4<span>]</span></a></sup> A generation of students used Pascal as an introductory language in undergraduate courses. Variants of Pascal have also frequently been used for everything from research projects to <a href="http://en.m.wikipedia.org/wiki/PC_game" title="PC game">PC games</a> and <a href="Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a>. Newer Pascal compilers exist which are widely used.<sup id="cite_ref-5" class="reference"><a href="Pascal_(programming_language)#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Pascal was the primary high-level language used for development in the <a href="http://en.m.wikipedia.org/wiki/Apple_Lisa" title="Apple Lisa">Apple Lisa</a>, and in the early years of the <a href="http://en.m.wikipedia.org/wiki/Apple_Macintosh" title="Apple Macintosh" class="mw-redirect">Macintosh</a>. Parts of the original <a href="http://en.m.wikipedia.org/wiki/History_of_Mac_OS" title="History of Mac OS">Macintosh operating system</a> were hand-translated into <a href="http://en.m.wikipedia.org/wiki/Motorola_68000" title="Motorola 68000">Motorola 68000</a> <a href="Assembly_language" title="Assembly language">assembly language</a> from the Pascal sources.<sup id="cite_ref-6" class="reference"><a href="Pascal_(programming_language)#cite_note-6"><span>[</span>6<span>]</span></a></sup> The popular <a href="http://en.m.wikipedia.org/wiki/Typesetting" title="Typesetting">typesetting</a> system <a href="http://en.m.wikipedia.org/wiki/TeX" title="TeX">TeX</a> by <a href="http://en.m.wikipedia.org/wiki/Donald_E._Knuth" title="Donald E. Knuth" class="mw-redirect">Donald E. Knuth</a> was written in <a href="http://en.m.wikipedia.org/wiki/WEB" title="WEB">WEB</a>, the original <a href="http://en.m.wikipedia.org/wiki/Literate_programming" title="Literate programming">literate programming</a> system, based on <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a> <a href="http://en.m.wikipedia.org/wiki/PDP-10" title="PDP-10">PDP-10</a> Pascal, while applications like <a href="http://en.m.wikipedia.org/wiki/Total_Commander" title="Total Commander">Total Commander</a>, <a href="http://en.m.wikipedia.org/wiki/Skype" title="Skype">Skype</a> and Macromedia Captivate were written in Delphi (<a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>).</p>
+<p>Object Pascal is still used for developing Windows applications. A cross-platform version called <a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a>, with the <a href="http://en.m.wikipedia.org/wiki/Lazarus_(IDE)" title="Lazarus (IDE)">Lazarus</a> IDE, is popular with Linux users since it promises <a href="http://en.m.wikipedia.org/wiki/Write_once,_compile_anywhere" title="Write once, compile anywhere">write once, compile anywhere</a>, development.</p>
+<h2> <span class="mw-headline" id="Brief_description">Brief description</span>
+</h2>
+<p>Wirth's intention was to create an efficient language (regarding both compilation speed and generated code) based on so-called <a href="Structured_programming" title="Structured programming">structured programming</a>, a concept which had recently become popular. Pascal has its roots in the <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> language, but also introduced concepts and mechanisms which (on top of ALGOL's scalars and arrays) enabled programmers to define their own complex (structured) datatypes, and also made it easier to build dynamic and recursive data structures such as <i>lists</i>, <i>trees</i> and <i>graphs</i>. Important features included for this were <i>records</i>, <i>enumerations</i>, <i>subranges</i>, <i>dynamically</i> allocated variables with associated <i>pointers</i>, and <i>sets</i>. To make this possible and meaningful, Pascal has a <a href="http://en.m.wikipedia.org/wiki/Strong_typing" title="Strong typing">strong typing</a> on all objects, which means that one type of data cannot be converted or interpreted as another without <i>explicit</i> conversions. Similar mechanisms are standard in many programming languages today. Other languages that influenced Pascal's development were <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> 67, and Wirth's own <a href="http://en.m.wikipedia.org/wiki/ALGOL_W" title="ALGOL W">ALGOL W</a>.</p>
+<p>Pascal, like many programming languages of today (but unlike most languages in the C family), allows <a href="http://en.m.wikipedia.org/wiki/Nested_procedure" title="Nested procedure" class="mw-redirect">nested procedure</a> definitions to any level of depth, and also allows most kinds of definitions and declarations inside procedures and functions. This enables a very simple and coherent syntax where a complete <b>program</b> is syntactically nearly identical to a single <b>procedure</b> or <b>function</b> (except for the keyword itself, of course.)</p>
+<h2> <span class="mw-headline" id="Implementations">Implementations</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-style ambox-Cleanup" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>may require <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup">cleanup</a> to meet Wikipedia's <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">quality standards</a></b>. <span class="hide-when-compact">No <a href="http://en.m.wikipedia.org/wiki/Template:Cleanup/doc" title="Template:Cleanup/doc">cleanup reason</a> has been specified. Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Pascal_(programming_language)&amp;action=edit">improve this section</a> if you can.</span> <small><i>(January 2012)</i></small> </span></td>
+</tr></table>
+<p>The first Pascal <a href="Compiler" title="Compiler">compiler</a> was designed in <a href="http://en.m.wikipedia.org/wiki/Z%C3%BCrich" title="Zürich" class="mw-redirect">Zürich</a> for the <a href="http://en.m.wikipedia.org/wiki/CDC_6000_series" title="CDC 6000 series">CDC 6000 series</a> <a href="Mainframe_computer" title="Mainframe computer">mainframe computer</a> family. <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a> reports that a first attempt to implement it in <a href="Fortran" title="Fortran">Fortran</a> in 1969 was unsuccessful due to Fortran's inadequacy to express complex data structures. The second attempt was formulated in the Pascal language itself and was operational by mid-1970. Many Pascal compilers since have been similarly <a href="http://en.m.wikipedia.org/wiki/Self-hosting" title="Self-hosting">self-hosting</a>, that is, the compiler is itself written in Pascal, and the compiler is usually capable of recompiling itself when new features are added to the language, or when the compiler is to be <a href="Porting" title="Porting">ported</a> to a new environment. The <a href="http://en.m.wikipedia.org/wiki/GNU_Pascal" title="GNU Pascal">GNU Pascal</a> compiler is one notable exception, being written in C.</p>
+<p>The first successful port of the CDC Pascal compiler to another mainframe was completed by Welsh and Quinn at the <a href="http://en.m.wikipedia.org/wiki/Queen%27s_University_of_Belfast" title="Queen's University of Belfast" class="mw-redirect">Queen's University of Belfast</a> (QUB) in 1972. The target was the <a href="http://en.m.wikipedia.org/wiki/International_Computers_Limited" title="International Computers Limited">International Computers Limited</a> <a href="http://en.m.wikipedia.org/wiki/ICT_1900_series" title="ICT 1900 series">1900 series</a>. This compiler in turn was the parent of the Pascal compiler for the <span class="new" title="Information Computer Systems (page does not exist)">ICS</span> <span class="new" title="Multum (computer) (page does not exist)">Multum</span> minicomputer. The Multum port was developed – with a view to using Pascal as a systems programming language – by Findlay, Cupples, Cavouras and Davis, working at the Department of Computing Science in <a href="http://en.m.wikipedia.org/wiki/Glasgow_University" title="Glasgow University" class="mw-redirect">Glasgow University</a>. It is thought that Multum Pascal, which was completed in the summer of 1973, may have been the first 16-bit implementation.</p>
+<p>A completely new compiler was completed by Welsh et al. at QUB in 1977. It offered a source-language diagnostic feature (incorporating profiling, tracing and type-aware formatted postmortem dumps) that was implemented by Findlay and Watt at Glasgow University. This implementation was ported in 1980 to the <a href="http://en.m.wikipedia.org/wiki/International_Computers_Limited" title="International Computers Limited">ICL</a> <a href="http://en.m.wikipedia.org/wiki/ICL_2900" title="ICL 2900" class="mw-redirect">2900</a> series by a team based at <a href="http://en.m.wikipedia.org/wiki/Southampton_University" title="Southampton University" class="mw-redirect">Southampton University</a> and Glasgow University. The <span class="new" title="Standard Pascal Model Implementation (page does not exist)">Standard Pascal Model Implementation</span> was also based on this compiler, having been adapted, by Welsh and Hay at <a href="http://en.m.wikipedia.org/wiki/Manchester_University" title="Manchester University" class="mw-redirect">Manchester University</a> in 1984, to check rigorously for conformity to the BSI 6192/ISO 7185 Standard and to generate code for a portable abstract machine.</p>
+<p>The first Pascal <a href="Compiler" title="Compiler">compiler</a> written in North America was constructed at the <a href="http://en.m.wikipedia.org/wiki/University_of_Illinois_at_Urbana-Champaign" title="University of Illinois at Urbana-Champaign" class="mw-redirect">University of Illinois</a> under <a href="http://en.m.wikipedia.org/wiki/Donald_B._Gillies#Later_career" title="Donald B. Gillies">Donald B. Gillies</a> for the <a href="PDP-11" title="PDP-11">PDP-11</a> and generated native machine code.</p>
+<p>To propagate the language rapidly, a compiler "porting kit" was created in Zurich that included a compiler that generated code for a "virtual" stack machine, <i>i.e.</i>, code that lends itself to reasonably efficient interpretation), along with an interpreter for that code – the <i>Pascal-P</i> system. The P-system compilers were termed Pascal-P1, Pascal-P2, Pascal-P3, and Pascal-P4. Pascal-P1 was the first version, and Pascal-P4 was the last to come from Zurich.</p>
+<p>The Pascal-P4 compiler/interpreter can still be run and compiled on systems compatible with original Pascal. However, it only accepts a subset of the Pascal language.</p>
+<p>Pascal-P5, created outside of the Zurich group, accepts the full Pascal language and includes ISO 7185 compatibility.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a> branched off Pascal-P2, where <a href="http://en.m.wikipedia.org/wiki/Kenneth_Bowles" title="Kenneth Bowles">Kenneth Bowles</a> utilized it to create the <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpretive</a> <a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD p-System</a>.</p>
+<p>A compiler based on the Pascal-P4 compiler, which created native binaries, was released for the <a href="http://en.m.wikipedia.org/wiki/IBM_System/370" title="IBM System/370">IBM System/370</a> <a href="Mainframe_computer" title="Mainframe computer">mainframe computer</a> by the <a href="http://en.m.wikipedia.org/wiki/Australian_Atomic_Energy_Commission" title="Australian Atomic Energy Commission">Australian Atomic Energy Commission</a>; it was called the "AAEC Pascal Compiler" after the abbreviation of the name of the Commission.</p>
+<p>In the early 1980s, <a href="http://en.m.wikipedia.org/wiki/Watcom" title="Watcom">Watcom</a> Pascal was developed, also for the IBM <a href="http://en.m.wikipedia.org/wiki/System_370" title="System 370" class="mw-redirect">System 370</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/IP_Pascal" title="IP Pascal">IP Pascal</a> was an implementation of the Pascal programming language using Micropolis DOS, but was moved rapidly to <a href="http://en.m.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a> running on the <a href="http://en.m.wikipedia.org/wiki/Zilog_Z80" title="Zilog Z80">Z80</a>. It was moved to the 80386 machine types in 1994, and exists today as Windows/XP and Linux implementations. In 2008, the system was brought up to a new level and the resulting language termed "Pascaline" (after <a href="http://en.m.wikipedia.org/wiki/Pascal%27s_calculator" title="Pascal's calculator">Pascal's calculator</a>). It includes objects, namespace controls, <a href="http://en.m.wikipedia.org/wiki/Dynamic_array" title="Dynamic array">dynamic arrays</a>, along with many other extensions, and generally features the same functionality and type protection as C#. It is the only such implementation that is also compatible with the original Pascal implementation, which is standardized as ISO 7185.</p>
+<p>In the early 1980s, UCSD Pascal was ported to the <a href="http://en.m.wikipedia.org/wiki/Apple_II" title="Apple II">Apple II</a> and <a href="http://en.m.wikipedia.org/wiki/Apple_III" title="Apple III">Apple III</a> computers to provide a structured alternative to the <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> interpreters that came with the machines.</p>
+<p>Apple Computer created its own Lisa Pascal for the Lisa Workshop in 1982 and ported this compiler to the Apple Macintosh and <a href="http://en.m.wikipedia.org/wiki/Macintosh_Programmer%27s_Workshop" title="Macintosh Programmer's Workshop">MPW</a> in 1985. In 1985 <a href="http://en.m.wikipedia.org/wiki/Larry_Tesler" title="Larry Tesler">Larry Tesler</a>, in consultation with Niklaus Wirth, defined Object Pascal and these extensions were incorporated in both the Lisa Pascal and Mac Pascal compilers.</p>
+<p>In the 1980s <a href="http://en.m.wikipedia.org/wiki/Anders_Hejlsberg" title="Anders Hejlsberg">Anders Hejlsberg</a> wrote the Blue Label Pascal compiler for the <a href="http://en.m.wikipedia.org/wiki/Nascom" title="Nascom">Nascom</a>-2. A reimplementation of this compiler for the <a href="IBM_PC" title="IBM PC" class="mw-redirect">IBM PC</a> was marketed under the names Compas Pascal and PolyPascal before it was acquired by <a href="http://en.m.wikipedia.org/wiki/Borland" title="Borland">Borland</a>. Renamed <i><a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a></i>, it became hugely popular, thanks in part to an aggressive pricing strategy and in part to having one of the first full-screen <a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a>, and fast turnaround-time (just seconds to compile, link, and run.) Additionally, it was written and highly optimized entirely in <a href="Assembly_language" title="Assembly language">assembly language</a>, making it <a href="http://en.m.wikipedia.org/wiki/Memory_footprint" title="Memory footprint">smaller</a> and faster than much of the competition. In 1986 Anders ported Turbo Pascal to the Macintosh and incorporated Apple's Object Pascal extensions into Turbo Pascal. These extensions were then added back into the PC version of Turbo Pascal for version 5.5. At the same time <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> also implemented the Object Pascal compiler.<sup id="cite_ref-7" class="reference"><a href="Pascal_(programming_language)#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="Pascal_(programming_language)#cite_note-8"><span>[</span>8<span>]</span></a></sup> Turbo Pascal 5.5 had a large influence on the Pascal community, which began concentrating mainly on the IBM PC in the late 1980s. Many PC hobbyists in search of a structured replacement for BASIC used this product. It also began to be adopted by professional developers. Around the same time a number of concepts were imported from <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> to let Pascal programmers use the C-based <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a> of <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> directly. These extensions included null-terminated <a href="String_(computer_science)" title="String (computer science)">strings</a>, <a href="Pointer_arithmetic" title="Pointer arithmetic" class="mw-redirect">pointer arithmetic</a>, <a href="Function_pointer" title="Function pointer">function pointers</a>, an address-of operator and unsafe <a href="Type_conversion" title="Type conversion">typecasts</a>.</p>
+<p>However, Borland later decided it wanted more elaborate object-oriented features, and started over in <a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Delphi</a> using the <i><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></i> draft standard proposed by <a href="http://en.m.wikipedia.org/wiki/Apple_Computer" title="Apple Computer" class="mw-redirect">Apple</a> as a basis. (This Apple draft is still not a formal standard.) The first versions of the Delphi language were accordingly named Object Pascal. The main additions compared to the older OOP extensions were a reference-based object model, virtual constructors and destructors, and properties. Several other compilers also implement this dialect.</p>
+<p>Turbo Pascal, and other derivatives with units or module concepts are <a href="http://en.m.wikipedia.org/wiki/Modularity_(programming)" title="Modularity (programming)" class="mw-redirect">modular languages</a>. However, it does not provide a nested module concept or qualified import and export of specific symbols.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Super_Pascal" title="Super Pascal" class="mw-redirect">Super Pascal</a> was a variant that added non-numeric labels, a return statement and expressions as names of types.</p>
+<p>The universities of <a href="http://en.m.wikipedia.org/wiki/Zurich" title="Zurich">Zurich</a>, <a href="http://en.m.wikipedia.org/wiki/Karlsruhe" title="Karlsruhe">Karlsruhe</a> and <a href="http://en.m.wikipedia.org/wiki/Wuppertal" title="Wuppertal">Wuppertal</a> have developed an <i>E<b>X</b>tension for <b>S</b>cientific <b>C</b>omputing</i> (<a href="http://en.m.wikipedia.org/wiki/Pascal-XSC" title="Pascal-XSC">Pascal-XSC</a>), which provides a free solution for programming numerical computations with controlled precision.</p>
+<h2> <span class="mw-headline" id="Language_constructs">Language constructs</span>
+</h2>
+<p>Pascal, in its original form, is a purely <a href="http://en.m.wikipedia.org/wiki/Procedural_language" title="Procedural language" class="mw-redirect">procedural language</a> and includes the traditional array of <a href="ALGOL" title="ALGOL">ALGOL</a>-like control structures with reserved words such as <b>if</b>, <b>then</b>, <b>else</b>, <b>while</b>, <b>for</b>, and so on. However, Pascal also has many data structuring facilities and other abstractions which were not included in the original <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a>, like <a href="Type_system" title="Type system">type definitions</a>, <a href="Record_(computer_science)" title="Record (computer science)">records</a>, <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>, <a href="Enumerated_type" title="Enumerated type">enumerations</a>, and <a href="http://en.m.wikipedia.org/wiki/Set_(computer_science)" title="Set (computer science)" class="mw-redirect">sets</a>. Such constructs were in part inherited or inspired from <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> 67, <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>, <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a>'s own <a href="http://en.m.wikipedia.org/wiki/ALGOL_W" title="ALGOL W">ALGOL W</a> and suggestions by <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a>.</p>
+<h3> <span class="mw-headline" id="Hello_world">Hello world</span>
+</h3>
+<p>Pascal programs start with the <b>program</b> <a href="http://en.m.wikipedia.org/wiki/Keyword_(computer_programming)" title="Keyword (computer programming)">keyword</a> with a list of external <a href="http://en.m.wikipedia.org/wiki/File_descriptor" title="File descriptor">file descriptors</a> as parameters<sup id="cite_ref-iso.2Fiec_7185:1990_6.10_9-0" class="reference"><a href="Pascal_(programming_language)#cite_note-iso.2Fiec_7185:1990_6.10-9"><span>[</span>9<span>]</span></a></sup> (not required in Turbo Pascal etc.); then follows the main <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">block</a> bracketed by the <b>begin</b> and <b>end</b> keywords. <a href="Semicolon" title="Semicolon">Semicolons</a> separate <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statements</a>, and the <a href="http://en.m.wikipedia.org/wiki/Full_stop" title="Full stop">full stop</a> (i.e., a period) ends the whole program (or <i>unit</i>). <a href="http://en.m.wikipedia.org/wiki/Letter_case" title="Letter case">Letter case</a> is ignored in Pascal source.</p>
+<p>Here is an example of the source code in use for a very simple <a href="http://en.m.wikipedia.org/wiki/%22Hello_world%22_program" title='"Hello world" program' class="mw-redirect">"Hello world" program</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">program</span> HelloWorld<span class="br0">(</span>output<span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span><span class="st0">'Hello world!'</span><span class="br0">)</span>
+  <span class="coMULTI">{no ";" is required after the last statement of a block - 
+   adding one adds a "null statement" to the program}</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Data_types">Data types</span>
+</h3>
+<p>A type in Pascal, and in several other popular programming languages, defines a variable in such a way that it defines a range of values which the variable is capable of storing, and it also defines a set of operations that are permissible to be performed on variables of that type. The predefined types are:</p>
+<table class="wikitable">
+<tr>
+<th>Data type</th>
+<th>Type of values which the variable is capable of storing</th>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a></td>
+<td>integer (whole) numbers</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">real</a></td>
+<td>floating-point numbers</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Boolean_type" title="Boolean type" class="mw-redirect">boolean</a></td>
+<td>the value True or False</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">char</a></td>
+<td>a single character from an ordered character set</td>
+</tr>
+<tr>
+<td><a href="String_(computer_science)" title="String (computer science)">string</a></td>
+<td>a group of characters</td>
+</tr>
+</table>
+<p>The range of values allowed for each (except boolean) is implementation defined. Functions are provided for some data conversions. For conversion of <code>real</code> to <code>integer</code>, the following functions are available: <code>round</code> (which rounds to integer using <a href="http://en.m.wikipedia.org/wiki/Banker%27s_rounding" title="Banker's rounding" class="mw-redirect">banker's rounding</a>) and <code>trunc</code> (rounds towards zero).</p>
+<p>The programmer has the freedom to define other commonly used data types (e.g. byte, string, etc.) in terms of the predefined types using Pascal's type declaration facility. e.g.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">type</span>
+  <span class="kw4">byte</span>        <span class="sy3">=</span> <span class="nu0">0</span><span class="sy1">..</span><span class="nu0">255</span><span class="sy1">;</span>
+  signed_byte <span class="sy3">=</span> <span class="sy3">-</span><span class="nu0">128</span><span class="sy1">..</span><span class="nu0">127</span><span class="sy1">;</span>
+  <span class="kw4">string</span>      <span class="sy3">=</span> <span class="kw4">packed</span> <span class="kw4">array</span><span class="br0">[</span><span class="nu0">1</span><span class="sy1">..</span><span class="nu0">255</span><span class="br0">]</span> <span class="kw1">of</span> <span class="kw4">char</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>(Often-used types like byte and string are already defined in Turbo Pascal etc.)</p>
+<h3> <span class="mw-headline" id="Subrange_types">Subrange types</span>
+</h3>
+<p>Subranges of any <a href="http://en.m.wikipedia.org/wiki/Ordinal_data_type" title="Ordinal data type">ordinal data type</a> (any simple type except real) can also be made:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">var</span>
+  x <span class="sy1">:</span> <span class="nu0">1</span><span class="sy1">..</span><span class="nu0">10</span><span class="sy1">;</span>
+  y <span class="sy1">:</span> <span class="st0">'a'</span><span class="sy1">..</span><span class="st0">'z'</span><span class="sy1">;</span>
+  z <span class="sy1">:</span> Pear<span class="sy1">..</span><span class="me1">Orange</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Set_types">Set types</span>
+</h3>
+<p>In contrast with other programming languages from its time, Pascal supports a set type:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">var</span>
+  Set1 <span class="sy1">:</span> <span class="kw4">set</span> <span class="kw1">of</span> <span class="nu0">1</span><span class="sy1">..</span><span class="nu0">10</span><span class="sy1">;</span>
+  Set2 <span class="sy1">:</span> <span class="kw4">set</span> <span class="kw1">of</span> <span class="st0">'a'</span><span class="sy1">..</span><span class="st0">'z'</span><span class="sy1">;</span>
+  Set3 <span class="sy1">:</span> <span class="kw4">set</span> <span class="kw1">of</span> Pear<span class="sy1">..</span><span class="me1">Orange</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>A set is a fundamental concept for modern mathematics, and they may be used in many algorithms. Such a feature is useful and may be faster than an equivalent construct in a language that does not support sets. For example, for many Pascal compilers:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">if</span> i <span class="kw1">in</span> <span class="br0">[</span><span class="nu0">5</span><span class="sy1">..</span><span class="nu0">10</span><span class="br0">]</span> <span class="kw1">then</span> <span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>executes faster<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from July 2012">citation needed</span></a></i>]</sup> than:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">(</span>i &gt; <span class="nu0">4</span><span class="br0">)</span> <span class="kw3">and</span> <span class="br0">(</span>i &lt; <span class="nu0">11</span><span class="br0">)</span> <span class="kw1">then</span> <span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>Sets of non-contiguous values can be particularly useful, in terms of both performance and readability:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">if</span> i <span class="kw1">in</span> <span class="br0">[</span><span class="nu0">0</span><span class="sy1">..</span><span class="nu0">3</span><span class="sy1">,</span> <span class="nu0">7</span><span class="sy1">,</span> <span class="nu0">9</span><span class="sy1">,</span> <span class="nu0">12</span><span class="sy1">..</span><span class="nu0">15</span><span class="br0">]</span> <span class="kw1">then</span> <span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>For these examples, which involve sets over small domains, the improved performance is usually achieved by the compiler representing set variables as bitmasks. The set <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operators</a> can then be implemented efficiently as bitwise machine code operations.</p>
+<h3> <span class="mw-headline" id="Type_declarations">Type declarations</span>
+</h3>
+<p>Types can be defined from other types using type declarations:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">type</span>
+  x <span class="sy3">=</span> <span class="kw4">integer</span><span class="sy1">;</span>
+  y <span class="sy3">=</span> x<span class="sy1">;</span>
+<span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>Further, complex types can be constructed from simple types:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">type</span>
+  a <span class="sy3">=</span> <span class="kw4">array</span><span class="br0">[</span><span class="nu0">1</span><span class="sy1">..</span><span class="nu0">10</span><span class="br0">]</span> <span class="kw1">of</span> <span class="kw4">integer</span><span class="sy1">;</span>
+  b <span class="sy3">=</span> <span class="kw4">record</span>
+        x <span class="sy1">:</span> <span class="kw4">integer</span><span class="sy1">;</span>
+        y <span class="sy1">:</span> <span class="kw4">char</span>
+      <span class="kw1">end</span><span class="sy1">;</span>
+  c <span class="sy3">=</span> <span class="kw4">file</span> <span class="kw1">of</span> a<span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="File_type">File type</span>
+</h3>
+<p>As shown in the example above, Pascal <a href="http://en.m.wikipedia.org/wiki/Computer_file" title="Computer file">files</a> are sequences of components. Every file has a buffer variable which is denoted by <i>f^</i>. The procedures <i>get</i> (for reading) and <i>put</i> (for writing) move the buffer variable to the next element. Read is introduced such that <i>read(f, x)</i> is the same as <i>x := f^; get(f);</i>. Write is introduced such that <i>write(f, x)</i> is the same as <i>f^ := x; put(f);</i> The type text is predefined as file of char. While the buffer variable could be used for inspecting the next character to be used (check for a digit before reading an integer), this leads to serious problems with interactive programs in early implementations, but was solved later with the "lazy I/O" concept.</p>
+<p>In Jensen &amp; Wirth Pascal, strings are represented as packed arrays of chars; they therefore have fixed length and are usually space-padded. Some dialects have a custom string type; e.g. Delphi 2 has a new string type whose length is stored in a 32-bit value instead of a single byte.</p>
+<h3> <span class="mw-headline" id="Pointer_types">Pointer types</span>
+</h3>
+<p>Pascal supports the use of <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">type</span>
+  pNode <span class="sy3">=</span> <span class="sy2">^</span>Node<span class="sy1">;</span>
+  Node  <span class="sy3">=</span> <span class="kw4">record</span>
+          a <span class="sy1">:</span> <span class="kw4">integer</span><span class="sy1">;</span>
+          b <span class="sy1">:</span> <span class="kw4">char</span><span class="sy1">;</span>
+          c <span class="sy1">:</span> pNode  <span class="coMULTI">{extra semicolon not strictly required}</span>
+          <span class="kw1">end</span><span class="sy1">;</span>
+<span class="kw1">var</span>
+  NodePtr <span class="sy1">:</span> pNode<span class="sy1">;</span>
+  IntPtr  <span class="sy1">:</span> <span class="sy2">^</span>integer<span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>Here the variable <i>NodePtr</i> is a pointer to the data type <i>Node</i>, a record. Pointers can be used before they are declared. This is a <a href="http://en.m.wikipedia.org/wiki/Forward_declaration" title="Forward declaration">forward declaration</a>, an exception to the rule that things must be declared before they are used.</p>
+<p>To create a new record and assign the value <i>10</i> and character <i>A</i> to the fields <i>a</i> and <i>b</i> in the record, and to initialise the pointer <i>c</i> to <a href="Null_pointer" title="Null pointer" class="mw-redirect">NIL</a>, the commands would be:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw3">New</span><span class="br0">(</span>NodePtr<span class="br0">)</span><span class="sy1">;</span>
+<span class="sy1">...</span>
+<span class="me1">NodePtr</span><span class="sy2">^</span><span class="sy1">.</span><span class="me1">a</span> <span class="sy1">:</span><span class="sy3">=</span> <span class="nu0">10</span><span class="sy1">;</span>
+NodePtr<span class="sy2">^</span><span class="sy1">.</span><span class="me1">b</span> <span class="sy1">:</span><span class="sy3">=</span> <span class="st0">'A'</span><span class="sy1">;</span>
+NodePtr<span class="sy2">^</span><span class="sy1">.</span><span class="me1">c</span> <span class="sy1">:</span><span class="sy3">=</span> <span class="kw2">NIL</span><span class="sy1">;</span>
+<span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>This could also be done using the <b>with</b> statement, as follows:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw3">New</span><span class="br0">(</span>NodePtr<span class="br0">)</span><span class="sy1">;</span>
+<span class="sy1">...</span>
+<span class="kw1">with</span> NodePtr<span class="sy2">^</span> <span class="kw1">do</span> <span class="kw1">begin</span>
+  a <span class="sy1">:</span><span class="sy3">=</span> <span class="nu0">10</span><span class="sy1">;</span>
+  b <span class="sy1">:</span><span class="sy3">=</span> <span class="st0">'A'</span><span class="sy1">;</span>
+  c <span class="sy1">:</span><span class="sy3">=</span> <span class="kw2">NIL</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+<span class="sy1">...</span>
+</pre>
+</div>
+</div>
+<p>Inside of the scope of the <b>with</b> statement, a and b refer to the subfields of the record pointer <b>NodePtr</b> and not to the record Node or the pointer type pNode.</p>
+<p><a href="Linked_list" title="Linked list">Linked lists</a>, <a href="http://en.m.wikipedia.org/wiki/Stack_(abstract_data_type)" title="Stack (abstract data type)">stacks</a> and <a href="http://en.m.wikipedia.org/wiki/Queue_(abstract_data_type)" title="Queue (abstract data type)">queues</a> can be created by including a pointer type field (c) in the record (see also <a href="Null_pointer" title="Null pointer" class="mw-redirect">NIL</a>).</p>
+<p>Unlike many languages that feature pointers, Pascal only allows pointers to reference dynamically created variables that are anonymous, and does not allow them to reference standard static or local variables. Pointers also must have an associated type, and a pointer to one type is not compatible with a pointer to another type (e.g. a pointer to a char is not compatible with a pointer to an integer). This helps eliminate the type security issues inherent with other pointer implementations, particularly those used for <a href="PL/I" title="PL/I">PL/I</a> or <a href="http://en.m.wikipedia.org/wiki/C_(Programming_Language)" title="C (Programming Language)" class="mw-redirect">C</a>. It also removes some risks caused by <a href="http://en.m.wikipedia.org/wiki/Dangling_pointers" title="Dangling pointers" class="mw-redirect">dangling pointers</a>, but the ability to dynamically let go of referenced space by using the <i>Dispose</i> function (which has the same effect as the <i>free</i> library function found in <a href="http://en.m.wikipedia.org/wiki/C_(Programming_Language)" title="C (Programming Language)" class="mw-redirect">C</a>) means that the risk of dangling pointers has not been entirely eliminated<sup id="cite_ref-10" class="reference"><a href="Pascal_(programming_language)#cite_note-10"><span>[</span>10<span>]</span></a></sup> as it has been in languages with automatic garbage collection such as Java and C#.</p>
+<p>Some of these restrictions can be lifted in newer dialects.</p>
+<h3> <span class="mw-headline" id="Control_structures">Control structures</span>
+</h3>
+<p>Pascal is a <a href="Structured_programming" title="Structured programming">structured programming</a> language, meaning that the flow of control is structured into standard <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statements</a>, ideally without '<a href="http://en.m.wikipedia.org/wiki/Goto_(command)" title="Goto (command)" class="mw-redirect">goto</a>' commands.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">while</span> <span class="br0">(</span>a &lt;&gt; b<span class="br0">)</span> <span class="kw1">do</span>  <span class="kw3">WriteLn</span><span class="br0">(</span><span class="st0">'Waiting'</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">if</span> <span class="br0">(</span>a &gt; b<span class="br0">)</span> <span class="kw1">then</span> <span class="kw3">WriteLn</span><span class="br0">(</span><span class="st0">'Condition met'</span><span class="br0">)</span>   <span class="coMULTI">{no semicolon allowed!}</span>
+           <span class="kw1">else</span> <span class="kw3">WriteLn</span><span class="br0">(</span><span class="st0">'Condition not met'</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">for</span> i <span class="sy1">:</span><span class="sy3">=</span> <span class="nu0">1</span> <span class="kw1">to</span> <span class="nu0">10</span> <span class="kw1">do</span>  <span class="coMULTI">{no semicolon for single statements allowed!}</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span><span class="st0">'Iteration: '</span><span class="sy1">,</span> i<span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">repeat</span>
+  a <span class="sy1">:</span><span class="sy3">=</span> a <span class="sy3">+</span> <span class="nu0">1</span>
+<span class="kw1">until</span> <span class="br0">(</span>a <span class="sy3">=</span> <span class="nu0">10</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">case</span> i <span class="kw1">of</span>
+  <span class="nu0">0</span> <span class="sy1">:</span> <span class="kw3">Write</span><span class="br0">(</span><span class="st0">'zero'</span><span class="br0">)</span><span class="sy1">;</span>
+  <span class="nu0">1</span> <span class="sy1">:</span> <span class="kw3">Write</span><span class="br0">(</span><span class="st0">'one'</span><span class="br0">)</span><span class="sy1">;</span>
+  <span class="nu0">2</span> <span class="sy1">:</span> <span class="kw3">Write</span><span class="br0">(</span><span class="st0">'two'</span><span class="br0">)</span><span class="sy1">;</span>
+  <span class="kw1">else</span> <span class="kw1">begin</span>  <span class="kw3">Write</span><span class="br0">(</span><span class="st0">'?'</span><span class="br0">)</span><span class="sy1">;</span>  exit<span class="sy1">;</span>  <span class="kw1">end</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Procedures_and_functions">Procedures and functions</span>
+</h3>
+<p>Pascal structures programs into procedures and functions.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">program</span> Mine<span class="br0">(</span>output<span class="br0">)</span><span class="sy1">;</span>
+ 
+<span class="kw1">var</span> i <span class="sy1">:</span> <span class="kw4">integer</span><span class="sy1">;</span>
+ 
+<span class="kw1">procedure</span> Print<span class="br0">(</span><span class="kw1">var</span> j <span class="sy1">:</span> <span class="kw4">integer</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+<span class="sy1">...</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">begin</span>
+<span class="sy1">...</span>
+<span class="me1">Print</span><span class="br0">(</span>i<span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<p>Procedures and functions can nest to any depth, and the 'program' construct is the logical outermost block.</p>
+<p>Each procedure or function can have its own declarations of goto labels, constants, types, variables, and other procedures and functions, which must all be in that order. This ordering requirement was originally intended to allow efficient single-pass compilation. However, in some dialects (such as <a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Embarcadero Delphi</a>) the strict ordering requirement of declaration sections has been relaxed.</p>
+<h3> <span class="mw-headline" id="Semicolons_as_statement_separators">Semicolons as statement separators</span>
+</h3>
+<p>Pascal adopted many language syntax features from the <a href="ALGOL" title="ALGOL">ALGOL</a> language, including the use of a semicolon as a statement separator. This is in contrast to other languages, such as <a href="PL/I" title="PL/I">PL/I</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> etc. which use the semicolon as a statement terminator. As illustrated in the above examples, no semicolon is needed before the <b><tt>end</tt></b> keyword of a record type declaration, a block, or a <i>case</i> statement; before the <b><tt>until</tt></b> keyword of a repeat statement; and before the <b><tt>else</tt></b> keyword of an <i>if</i> statement.</p>
+<p>The presence of an extra semicolon was not permitted in early versions of Pascal. However, the addition of <a href="ALGOL" title="ALGOL">ALGOL</a>-like empty statements in the 1973 <i>Revised Report</i> and later changes to the language in ISO 7185:1983 now allow for optional semicolons in most of these cases. A semicolon is still not permitted immediately before the <i><tt>else</tt></i> keyword in an <i>if</i> statement, because the <tt>else</tt> follows a single statement, not a statement sequence.</p>
+<p>Programmers usually include these extra semicolons out of habit, and to avoid changing the last line when new code is appended.</p>
+<h2> <span class="mw-headline" id="Resources">Resources</span>
+</h2>
+<h3> <span class="mw-headline" id="Compilers_and_interpreters">Compilers and interpreters</span>
+</h3>
+<p>Several Pascal compilers and interpreters are available for general use:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Delphi</a> is Embarcadero's (formerly Borland/CodeGear) flagship <a href="http://en.m.wikipedia.org/wiki/Rapid_application_development" title="Rapid application development">rapid application development</a> (RAD) product. It uses the Object Pascal language (termed 'Delphi' by Borland), descended from Pascal, to create applications for the windows platform. The .NET support that existed from D8 through D2005,D2006 and D2007 has been terminated, and replaced by a new language (Prism, which is rebranded Oxygene, see below) that is not fully backwards compatible. In recent years unicode and generics were added (D2009,D2010,Delphi XE), and the last release (XE2) made the already existing namespace enhancements mandatory. (which makes maintenance of code that has to work with other versions hard)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a> is a multi-platform compiler written in <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> (and is <a href="http://en.m.wikipedia.org/wiki/Self-hosting" title="Self-hosting">self-hosting</a>). It is aimed at providing a convenient and powerful compiler, both able to compile legacy applications and to be the means of developing new ones. It is distributed under the <a href="http://en.m.wikipedia.org/wiki/GNU_GPL" title="GNU GPL" class="mw-redirect">GNU GPL</a>, while packages and runtime library come under a modified <a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU LGPL</a>. Apart from compatibility modes for <a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a>, Delphi and Mac Pascal, it also has its own procedural and object-oriented syntax modes with support for extended features such as <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operator</a> overloading. It supports many platforms and operating systems.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Turbo51" title="Turbo51">Turbo51</a> is a free Pascal compiler for the <a href="http://en.m.wikipedia.org/wiki/Intel_8051" title="Intel 8051" class="mw-redirect">8051 family</a> of microcontrollers, with <a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a> 7 syntax.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a> (formerly known as <i>Chrome</i>) is an Object Pascal compiler for the <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET</a> and <a href="http://en.m.wikipedia.org/wiki/Mono_(software)" title="Mono (software)">Mono</a> platforms. It was created and is sold by <a rel="nofollow" class="external text" href="http://www.remobjects.com/">RemObjects Software</a>, and recently by Embarcadero as the backend compiler of <a href="http://en.m.wikipedia.org/wiki/Delphi_Prism" title="Delphi Prism" class="mw-redirect">Prism</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Kylix_(software)" title="Kylix (software)">Kylix</a> was a descendant of <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Delphi</a>, with support for the <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> operating system and an improved object library. It is no longer supported. Compiler and IDE are available now for non-commercial use.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GNU_Pascal" title="GNU Pascal">GNU Pascal</a> Compiler (GPC) is the Pascal compiler of the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC). The compiler itself is written in C, the runtime library mostly in Pascal. Distributed under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, it runs on many platforms and operating systems. It supports the ANSI/ISO standard languages and has partial Turbo Pascal dialect support. One of the more painful omissions is the absence of a 100% Turbo Pascal-compatible string type. Support for Borland Delphi and other language variations is quite limited, except maybe for Mac Pascal, the support for which is growing fast.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://code.google.com/p/dwscript/">DWScript</a> aka DelphiWebScript, is an interpreter created by Matthias Ackermann and Hannes Hernler in 2000. Current version runs a dialect of Object Pascal largely compatible with Delphi, but also supports language constructs elements introduced in Prism. DWScript code can be embedded into Delphi applications similar to PascalScript, compiled into standalone application using SimpleMobileStudio or compiled into JavaScript code and placed on a web page. <sup id="cite_ref-11" class="reference"><a href="Pascal_(programming_language)#cite_note-11"><span>[</span>11<span>]</span></a></sup>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.visible-software.com/prod-dp.html">Dr. Pascal</a> is an interpreter that runs Standard Pascal. Notable are the "visible execution" mode that shows a running program and its variables, and the extensive runtime error checking. Runs programs but does not emit a separate executable binary. Runs on DOS, Windows in DOS window, and old Macintosh.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.visible-software.com/prod-ep.html">Dr. Pascal's Extended Pascal Compiler</a> tested on DOS, Windows 3.1, 95, 98, NT.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Virtual_Pascal" title="Virtual Pascal">Virtual Pascal</a> was created by Vitaly Miryanov in 1995 as a native OS/2 compiler compatible with Borland Pascal syntax. Then, it had been commercially developed by fPrint, adding Win32 support, and in 2000 it became freeware. Today it can compile for Win32, OS/2 and Linux, and is mostly compatible with Borland Pascal and Delphi. Development was canceled on April 4, 2005.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://homepages.cwi.nl/~steven/pascal/">P4 compiler</a>, the basis for many subsequent Pascal-implemented-in-Pascal compilers, including the <a href="http://en.m.wikipedia.org/wiki/UCSD_p-System" title="UCSD p-System" class="mw-redirect">UCSD p-System</a>. It implements a subset of full Pascal.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.standardpascal.com/p5.html">P5 compiler</a>, is an ISO 7185 (full Pascal) adaption of P4.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a> was the dominant Pascal compiler for PCs during the 80s and early 90s, popular both because of its powerful extensions and extremely short compilation times. Turbo Pascal was compactly written and could compile, run, and debug all from memory without accessing disk. Slow floppy disk drives were common for programmers at the time, further magnifying Turbo Pascal's speed advantage. Currently, older versions of Turbo Pascal (up to 5.5) are available for free download from Borland's site.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.moorecad.com/ippas/">IP Pascal</a> Implements the language "Pascaline" (named after <a href="http://en.m.wikipedia.org/wiki/Pascal%27s_calculator" title="Pascal's calculator">Pascal's calculator</a>), which is a highly extended Pascal compatible with original Pascal according to ISO 7185. It features modules with namespace control, including parallel tasking modules with semaphores, objects, dynamic arrays of any dimensions that are allocated at runtime, overloads, overrides, and many other extensions. IP Pascal has a built-in portability library that is custom tailored to the Pascal language. For example, a standard text output application from 1970's original Pascal can be recompiled to work in a window and even have graphical constructs added.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://ts.fujitsu.com/products/bs2000/software/compiler/pascalxt.html">Pascal-XT</a> was created by <a href="http://en.m.wikipedia.org/wiki/Siemens" title="Siemens">Siemens</a> for their <a href="Mainframe_computer" title="Mainframe computer">mainframe</a> operating systems <a href="http://en.m.wikipedia.org/wiki/BS2000" title="BS2000">BS2000</a> and <a href="http://en.m.wikipedia.org/wiki/SINIX" title="SINIX">SINIX</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PocketStudio" title="PocketStudio">PocketStudio</a> is a Pascal subset compiler and RAD tool for <a href="http://en.m.wikipedia.org/wiki/Palm_OS" title="Palm OS">Palm OS</a> and MC68xxx processors with some own extensions to assist interfacing with the Palm OS API. It resembles Delphi and Lazarus with a visual form designer, an object inspector and a <a href="http://en.m.wikipedia.org/wiki/Source_code_editor" title="Source code editor">source code editor</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MIDletPascal" title="MIDletPascal">MIDletPascal</a> – A Pascal compiler and IDE that generates small and fast Java bytecode specifically designed to create software for mobiles</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.dcs.gla.ac.uk/~wpc/reports/compilers/compilerindex/Doc2.html">Vector Pascal</a> Vector Pascal is a language for <a href="http://en.m.wikipedia.org/wiki/SIMD" title="SIMD">SIMD</a> instruction sets such as the MMX and the AMD 3d Now, supporting all Intel and AMD processors, and Sony's PlayStation 2 Emotion Engine.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.morfik.com">Morfik Pascal</a> allows the development of Web applications entirely written in Object Pascal (both server and browser side).</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.wdsibyl.org">WDSibyl</a> – Visual Development Environment and Pascal compiler for Win32 and OS/2</li>
+<li><a rel="nofollow" class="external text" href="http://www.ppcompiler.org">PP Compiler, a compiler for Palm OS that runs directly on the handheld computer</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.standardpascal.org/CDC6000pascal.html">CDC 6000 Pascal compiler</a> The source code for the first (CDC 6000) Pascal compiler.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.websters-online-dictionary.org/Pa/Pascal-S.html">Pascal-S</a> – "Pascal-S: A Subset and Its Implementation", N. Wirth in Pascal – The Language and Its Implementation, by D.W. Barron, Wiley 1979.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://aminet.net/package/dev/lang/AmigaPascal">AmigaPascal</a> – AmigaPascal, a free Pascal-Compiler for Amiga-Computer.</li>
+</ul>
+<p>A very extensive list can be found on <a rel="nofollow" class="external text" href="http://pascaland.org">Pascaland</a>. The site is in French, but it is basically a list with URLs to compilers; there is little barrier for non-Francophones. The site, <a rel="nofollow" class="external text" href="http://pascal-central.com">Pascal Central</a>, a Mac centric Pascal info and advocacy site with a rich collection of article archives, plus links to many compilers and tutorials, may also be of interest.</p>
+<h3> <span class="mw-headline" id="IDEs">IDEs</span>
+</h3>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dev-Pascal" title="Dev-Pascal" class="mw-redirect">Dev-Pascal</a> is a Pascal <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> that was designed in Borland <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Delphi</a> and which supports Free Pascal and GNU Pascal as backends.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Lazarus_(software)" title="Lazarus (software)" class="mw-redirect">Lazarus</a> is a Delphi-like visual cross-platform IDE for <a href="http://en.m.wikipedia.org/wiki/Rapid_application_development" title="Rapid application development">rapid application development</a> (RAD). Based on <a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a>, Lazarus is available for numerous platforms including <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> and <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>.</li>
+</ul>
+<h3> <span class="mw-headline" id="Libraries">Libraries</span>
+</h3>
+<p><a rel="nofollow" class="external text" href="http://wol.sourceforge.net">WOL Library</a> for creating GUI applications with the Free Pascal Compiler.</p>
+<h2> <span class="mw-headline" id="Standards">Standards</span>
+</h2>
+<p>In 1983, the language was standardized, in the international standard IEC/ISO 7185, and several local country specific standards, including the American ANSI/IEEE770X3.97-1983, and ISO 7185:1983. These two standards differed only in that the ISO standard included a "level 1" extension for conformant arrays, where ANSI did not allow for this extension to the original (Wirth version) language. In 1989, ISO 7185 was revised (ISO 7185:1990) to correct various errors and ambiguities found in the original document.</p>
+<p>In 1990, an extended Pascal standard was created as ISO/IEC 10206. In 1993 the ANSI standard was replaced by the ANSI organization with a "pointer" to the ISO 7185:1990 standard, effectively ending its status as a different standard.</p>
+<p>The ISO 7185 was stated to be a clarification of Wirth's 1974 language as detailed by the User Manual and Report [Jensen and Wirth], but was also notable for adding "Conformant Array Parameters" as a level 1 to the standard, level 0 being Pascal without conformant arrays. This addition was made at the request of <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a>, and with the approval of Niklaus Wirth. The precipitating cause was that Hoare wanted to create a Pascal version of the <a href="http://en.m.wikipedia.org/wiki/NAG_Numerical_Libraries" title="NAG Numerical Libraries" class="mw-redirect">(NAG) Numerical Algorithms Library</a>, which had originally been written in FORTRAN, and found that it was not possible to do so without an extension that would allow array parameters of varying size. Similar considerations motivated the inclusion in ISO 7185 of the facility to specify the parameter types of procedural and functional parameters.</p>
+<p>Note that Niklaus Wirth himself referred to the 1974 language as "the Standard", for example, to differentiate it from the machine specific features of the <a href="http://en.m.wikipedia.org/wiki/CDC_6000" title="CDC 6000" class="mw-redirect">CDC 6000</a> compiler. This language was documented in <a rel="nofollow" class="external text" href="http://www.standardpascal.com/The_Programming_Language_Pascal_1973.pdf">"The Pascal Report"</a>, the second part of the "Pascal users manual and report".</p>
+<p>On the large machines (mainframes and minicomputers) Pascal originated on, the standards were generally followed. On the IBM-PC, they were not. On IBM-PCs, the Borland standards Turbo Pascal and Delphi have the greatest number of users. Thus, it is typically important to understand whether a particular implementation corresponds to the original Pascal language, or a Borland dialect of it.</p>
+<p>The IBM-PC versions of the language began to differ with the advent of UCSD Pascal, an interpreted implementation that featured several extensions to the language, along with several omissions and changes. Many UCSD language features survive today, including in Borland's dialect.</p>
+<h3> <span class="mw-headline" id="Divisions">Divisions</span>
+</h3>
+<p>Niklaus Wirth's Zurich version of Pascal was issued outside of <a href="http://en.m.wikipedia.org/wiki/ETH_Zurich" title="ETH Zurich">ETH</a> in two basic forms, the CDC 6000 compiler source, and a porting kit called Pascal-P system. The Pascal-P compiler left out several features of the full language. For example, procedures and functions used as parameters, undiscriminated variant records, packing, dispose, interprocedural gotos and other features of the full compiler were omitted.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a>, under Professor <a href="http://en.m.wikipedia.org/wiki/Kenneth_Bowles" title="Kenneth Bowles">Kenneth Bowles</a>, was based on the Pascal-P2 kit, and consequently shared several of the Pascal-P language restrictions. UCSD Pascal was later adopted as Apple Pascal, and continued through several versions there. Although UCSD Pascal actually expanded the subset Pascal in the Pascal-P kit by adding back standard Pascal constructs, it was still not a complete standard installation of Pascal.</p>
+<p>Borland's <a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a>, written by <a href="http://en.m.wikipedia.org/wiki/Anders_Hejlsberg" title="Anders Hejlsberg">Anders Hejlsberg</a>, was written in assembly language independent of UCSD or the Zurich compilers. However, it adopted much of the same subset and extensions as the UCSD compiler. This is probably because the UCSD system was the most common Pascal system suitable for developing applications on the resource-limited microprocessor systems available at that time.</p>
+<h3> <span class="mw-headline" id="List_of_related_standards">List of related standards</span>
+</h3>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO" title="ISO" class="mw-redirect">ISO</a> 8651-2:1988 <i>Information processing systems – Computer graphics – Graphical Kernel System (GKS) language bindings – Part 2: Pascal</i>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Reception">Reception</span>
+</h2>
+<p>Pascal generated a wide variety of responses in the computing community, both critical and complimentary.</p>
+<h3> <span class="mw-headline" id="Criticism">Criticism</span>
+</h3>
+<p>While very popular in the 1980s and early 1990s, implementations of Pascal which closely followed Wirth's initial definition of the language were widely criticized for being unsuitable for use outside of teaching. <a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>, who popularized the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a>, outlined his most notable criticisms of Pascal as early as 1981, in his paper <i>Why Pascal Is Not My Favorite Programming Language</i>.<sup id="cite_ref-12" class="reference"><a href="Pascal_(programming_language)#cite_note-12"><span>[</span>12<span>]</span></a></sup> The most serious problem, described in this article, seems that array sizes and string lengths were part of the type so it was not possible to write a function that would accept variable length arrays or even strings as parameters (like a sorting library, for instance). The author also criticized the unpredictable order of evaluation of boolean expressions, poor library support, lack of static variables and a number of smaller issues. Also, he stated that the language did not provide any simple constructs to "escape" (knowingly and forcibly ignore) restrictions and limitations where this is really necessary. (However, there is a feature of "record variants" that does allow such an "escape," though it is decidedly cumbersome.) More general complaints from other sources<sup id="cite_ref-13" class="reference"><a href="Pascal_(programming_language)#cite_note-13"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="Pascal_(programming_language)#cite_note-14"><span>[</span>14<span>]</span></a></sup> noted that the scope of declarations were not clearly defined in the original language definition, which sometimes had serious consequences when using <a href="http://en.m.wikipedia.org/wiki/Forward_declaration" title="Forward declaration">forward declarations</a> to define pointer types, or when record declarations lead to <a href="http://en.m.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">mutual recursion</a>, or when an identifier may or may not have been used in an enumeration list. Another difficulty was that, like <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a>, the language did not allow procedures or functions passed as parameters to pre-define what their parameters are supposed to be.</p>
+<p>On the other hand, many major development efforts in the 1980s, such as for the <a href="http://en.m.wikipedia.org/wiki/Apple_Lisa" title="Apple Lisa">Apple Lisa</a> and <a href="http://en.m.wikipedia.org/wiki/Apple_Macintosh" title="Apple Macintosh" class="mw-redirect">Macintosh</a>, heavily depended on Pascal (to the point where the C interface for the <a href="http://en.m.wikipedia.org/wiki/Macintosh_Toolbox" title="Macintosh Toolbox">Macintosh Toolbox</a> had to use Pascal data types).</p>
+<h4> <span class="mw-headline" id="Reactions">Reactions</span>
+</h4>
+<p>Pascal continued to evolve, and most of Kernighan's points do not apply to versions of the language which were enhanced to be suitable for commercial product development, such as Borland's <a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a>. Unfortunately, just as Kernighan predicted in his article, most of the extensions to fix these issues were incompatible from compiler to compiler. Since the early 1990s, however, the varieties seem to have condensed into two categories, ISO and Borland-like, a better eventual outcome than Kernighan foresaw.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research"><span title="The material in the vicinity of this tag may be based upon unreliable original research from March 2009">original research?</span></a></i>]</sup></p>
+<p>Although Kernighan decried Pascal's lack of type escapes ("there is no escape" from "Why Pascal is not my Favorite Programming language"), the uncontrolled use of <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> and type escapes have become highly criticized features in their own right, and the languages <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and others feature a sharp turn-around to the Pascal point of view. What these languages call "managed pointers" were in fact foreseen by Wirth with the creation of Pascal.</p>
+<p>Based on his experience with Pascal (and earlier with ALGOL) <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a> developed several more programming languages: <a href="http://en.m.wikipedia.org/wiki/Modula" title="Modula">Modula</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a>, <a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a> and <a href="http://en.m.wikipedia.org/wiki/Oberon-2_(programming_language)" title="Oberon-2 (programming language)">Oberon-2</a>. These languages address some criticisms of Pascal and are intended for different user populations. However none has matched the commercial success or widespread impact on computer science that Pascal had.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2012">citation needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Alphabetical_list_of_programming_languages" title="Alphabetical list of programming languages" class="mw-redirect">Alphabetical list of programming languages</a></li>
+<li><a href="ALGOL" title="ALGOL">ALGOL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada (programming language)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Pascal_and_Borland_Delphi" title="Comparison of Pascal and Borland Delphi" class="mw-redirect">Comparison of Pascal and Borland Delphi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Embarcadero Delphi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lazarus_(software)" title="Lazarus (software)" class="mw-redirect">Lazarus (software)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Modula" title="Modula">Modula</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon (programming language)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IP_Pascal" title="IP Pascal">IP Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene (programming language)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_Pascal" title="Concurrent Pascal">Concurrent Pascal</a></li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C (programming language)</a></li>
+<li><a href="Comparison_of_integrated_development_environments#Pascal.2C_Object_Pascal" title="Comparison of integrated development environments">Comparison of Pascal IDEs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Real_Programmers_Don%27t_Use_Pascal" title="Real Programmers Don't Use Pascal">Real Programmers Don't Use Pascal</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>Niklaus Wirth: <i>The Programming Language Pascal.</i> 35–63, Acta Informatica, Volume 1, 1971.</li>
+<li>C A R Hoare: <i>Notes on data structuring.</i> In O-J Dahl, E W Dijkstra and C A R Hoare, editors, Structured Programming, pages 83–174. Academic Press, 1972.</li>
+<li>C. A. R. Hoare, Niklaus Wirth: <i>An Axiomatic Definition of the Programming Language Pascal.</i> 335–355, Acta Informatica, Volume 2, 1973.</li>
+<li>
+<span class="new" title="Kathleen Jensen (page does not exist)">Kathleen Jensen</span> and Niklaus Wirth: <i>PASCAL – User Manual and Report.</i> Springer-Verlag, 1974, 1985, 1991, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0387976493" class="internal mw-magiclink-isbn">ISBN 0-387-97649-3</a> and <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/3540976493" class="internal mw-magiclink-isbn">ISBN 3-540-97649-3</a><sup id="cite_ref-15" class="reference"><a href="Pascal_(programming_language)#cite_note-15"><span>[</span>15<span>]</span></a></sup>
+</li>
+<li>Niklaus Wirth: <i><a href="http://en.m.wikipedia.org/wiki/Algorithms_%2B_Data_Structures_%3D_Programs" title="Algorithms + Data Structures = Programs">Algorithms + Data_Structures = Programs</a></i> Prentice-Hall, 1975, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0130224189" class="internal mw-magiclink-isbn">ISBN 0-13-022418-9</a><sup id="cite_ref-16" class="reference"><a href="Pascal_(programming_language)#cite_note-16"><span>[</span>16<span>]</span></a></sup>
+</li>
+<li>Niklaus Wirth: <i>An assessment of the programming language PASCAL</i> 23–30 ACM SIGPLAN Notices Volume 10, Issue 6, June 1975.</li>
+<li>N. Wirth, and A. I. Wasserman, ed: <i>Programming Language Design.</i> IEEE Computer Society Press, 1980</li>
+<li>D. W. Barron (Ed.): <i>Pascal – The Language and its Implementation.</i> John Wiley 1981, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0471278351" class="internal mw-magiclink-isbn">ISBN 0-471-27835-1</a>
+</li>
+<li>Peter Grogono: <i>Programming in Pascal</i>, Revised Edition, Addison-Wesley, 1980</li>
+<li>Richard S. Forsyth: <i>Pascal in Work and Play</i>, Chapman and Hall, 1982</li>
+<li>N. Wirth, M. Broy, ed, and E. Denert, ed: <a rel="nofollow" class="external text" href="http://www.swissdelphicenter.ch/en/niklauswirth.php"><i>Pascal and its Successors</i></a> in <i>Software Pioneers: Contributions to Software Engineering.</i> Springer-Verlag, 2002, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/3540430814" class="internal mw-magiclink-isbn">ISBN 3-540-43081-4</a>
+</li>
+<li>N. Wirth: <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=155378"><i>Recollections about the Development of Pascal.</i></a> ACM SIGPLAN Notices, Volume 28, No 3, March 1993.</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-1">^</a></b></span> <span class="reference-text">«We looked very carefully at Delphi <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> and built a working prototype of bound method references in order to understand their interaction with the Java programming language and its APIs.»<br>
+«Our conclusion was that bound method references are unnecessary and detrimental to the language. This decision was made in consultation with Borland International, who had previous experience with bound method references in Delphi <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>.» <a rel="nofollow" class="external text" href="http://java.sun.com/docs/white/delegates.html">White Paper.About Microsoft's "Delegates"</a>, java.sun.com</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">TechMetrix Research (1999). <a rel="nofollow" class="external text" href="http://www.fscript.org/prof/javapassport.pdf">"History of Java"</a>. <i>Java Application Servers Report</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.fscript.org/prof/javapassport.pdf">http://www.fscript.org/prof/javapassport.pdf</a></span>. "The project went ahead under the name "green" and the language was based on an old model of <a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a>, which makes it possible to generate interpretive code"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=History+of+Java&amp;rft.atitle=Java+Application+Servers+Report&amp;rft.aulast=TechMetrix+Research&amp;rft.au=TechMetrix+Research&amp;rft.date=1999&amp;rft_id=http%3A%2F%2Fwww.fscript.org%2Fprof%2Fjavapassport.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Pascal_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://queue.acm.org/detail.cfm?id=1017013">A Conversation with James Gosling</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.marcocantu.com/epascal/English/ch01hist.htm">Essential Pascal</a> by Marco Cantù</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.tiobe.com/index.php/content/paperinfo/tpci/">TIOBE Programming Community Index for January 2011</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-6">^</a></b></span> <span class="reference-text">Hertzfeld, Andy. "<a rel="nofollow" class="external text" href="http://www.folklore.org/StoryView.py?project=Macintosh&amp;story=Hungarian.txt&amp;topic=Software%20Design&amp;sortOrder=Sort%20by%20Date&amp;detail=medium">Hungarian</a>." Folklore.org: Macintosh Stories. Retrieved 2012-03-06.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-7">^</a></b></span> <span class="reference-text">Jon Udell, Crash of the Object-Oriented Pascals, BYTE, July, 1989.</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-8">^</a></b></span> <span class="reference-text">M.I.Trofimov, The End of Pascal?, BYTE, March, 1990, p.36.</span>
+</li>
+<li id="cite_note-iso.2Fiec_7185:1990_6.10-9">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-iso.2Fiec_7185:1990_6.10_9-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.moorecad.com/standardpascal/iso7185.pdf">Pascal ISO 7185:1990</a> 6.10</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-10">^</a></b></span> <span class="reference-text">J. Welsh, W. J. Sneeringer, and C. A. R. Hoare, "Ambiguities and Insecurities in Pascal", <i>Software Practice and Experience 7</i>, pp. 685–696 (1977)</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://code.google.com/p/dwscript/downloads/detail?name=Flock-JSCodeGenDemo.7z&amp;can=2&amp;q=">"Flock" DWScript / JavaScript CodeGen demo</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-12">^</a></b></span> <span class="reference-text">Brian W. Kernighan (1981). <a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/bwk-on-pascal.html">Why Pascal is Not My Favorite Programming Language</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-13">^</a></b></span> <span class="reference-text">O. Lecarme, P. Desjardins, "More Comments on the Programming Language Pascal," <i>Acta Informatica 4</i>, pp. 231–243 (1975)</span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-14">^</a></b></span> <span class="reference-text">J. Welsh, W. J. Sneeringer, C. A. R. Hoare, "Ambiguities and Insecurities in Pascal," <i>Software Practice and Experience 7</i>, pp. 685–696 (1977)</span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.cs.inf.ethz.ch/~wirth/books/Pascal/">http://www.cs.inf.ethz.ch/~wirth/books/Pascal/</a></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Pascal_(programming_language)#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.cs.inf.ethz.ch/~wirth/books/AlgorithmE0/">http://www.cs.inf.ethz.ch/~wirth/books/AlgorithmE0/</a></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Pascal_(programming_language)" class="extiw" title="commons:Category:Pascal (programming language)">Pascal (programming language)</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Pascal" class="extiw" title="wikibooks:Pascal">Pascal</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://pascal-central.com/ppl/index.html">The Pascal Programming Language</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.standardpascal.org">Standard Pascal</a> – Resources and history of original, standard Pascal</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Pascal_programming_language_family" title="Template:Pascal programming language family"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Pascal_programming_language_family" title="Template talk:Pascal programming language family"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Pascal_programming_language_family&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<strong class="selflink">Pascal programming language</strong> family</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Dialects</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Pascal</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Clascal" title="Clascal">Clascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_Pascal" title="Concurrent Pascal">Concurrent Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SuperPascal" title="SuperPascal">SuperPascal</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" style="width:0%;padding:0px 0px 0px 2px;" rowspan="3">
+<div><a href="http://en.m.wikipedia.org/wiki/File:Blaise_pascal.jpg" class="image"><img alt="Blaise pascal.jpg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/90px-Blaise_pascal.jpg" width="90" height="94" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/135px-Blaise_pascal.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/79/Blaise_pascal.jpg/180px-Blaise_pascal.jpg 2x"></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Compilers</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Current</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Delphi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PocketStudio" title="PocketStudio">PocketStudio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HP_Pascal" title="HP Pascal">HP Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IP_Pascal" title="IP Pascal">IP Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prospero_Pascal" title="Prospero Pascal">Prospero Pascal</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a> (<a href="http://en.m.wikipedia.org/wiki/Lazarus_(software)" title="Lazarus (software)" class="mw-redirect">Lazarus</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Pascal" title="GNU Pascal">GNU Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Turbo51" title="Turbo51">Turbo51</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_Pascal" title="Virtual Pascal">Virtual Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIDletPascal" title="MIDletPascal">MIDletPascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pic_Micro_Pascal" title="Pic Micro Pascal">Pic Micro Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Amsterdam_Compiler_Kit" title="Amsterdam Compiler Kit">ACK</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Historical</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Apple_Pascal" title="Apple Pascal">Apple Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Turbo_Pascal" title="Turbo Pascal">Turbo Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Pascal" title="Microsoft Pascal">Microsoft Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UCSD_Pascal" title="UCSD Pascal">UCSD Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JRT" title="JRT">JRT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pascal/MT%2B" title="Pascal/MT+">Pascal/MT+</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="3">
+<div>
+<ul>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Pascal_and_Delphi" title="Comparison of Pascal and Delphi">Comparison of Pascal and Delphi</a></li>
+</ul>
+<ul>
+<li>Related to: <a href="ALGOL" title="ALGOL">ALGOL</a> (1958)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a> (1977)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> (1983)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a> (1986)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Modula-3" title="Modula-3">Modula-3</a> (1988)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Oberon-2" title="Oberon-2" class="mw-redirect">Oberon-2</a> (1991)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component_Pascal" title="Component Pascal">Component Pascal</a> (1991)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:ISO_standards" title="Template:ISO standards"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:ISO_standards" title="Template talk:ISO standards"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:ISO_standards&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> standards</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<dl>
+<dt>Lists</dt>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_International_Organization_for_Standardization_standards" title="List of International Organization for Standardization standards">List of ISO standards</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_ISO_romanizations" title="List of ISO romanizations">List of ISO romanizations</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_IEC_standards" title="List of IEC standards">List of IEC standards</a></dd>
+<dt>Categories</dt>
+<dd><a href="http://en.m.wikipedia.org/wiki/Category:ISO_standards" title="Category:ISO standards">Category:ISO standards</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/Category:OSI_protocols" title="Category:OSI protocols">Category:OSI protocols</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">1–9999</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1" title="ISO 1">1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2" title="ISO 2">2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3" title="ISO 3" class="mw-redirect">3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4" title="ISO 4">4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5" title="ISO 5">5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6" title="ISO 6" class="mw-redirect">6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7" title="ISO 7" class="mw-redirect">7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9" title="ISO 9">9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_16" title="ISO 16" class="mw-redirect">16</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_31" title="ISO 31">31</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-0" title="ISO 31-0">-0</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-1" title="ISO 31-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-2" title="ISO 31-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-3" title="ISO 31-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-4" title="ISO 31-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-5" title="ISO 31-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-6" title="ISO 31-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-7" title="ISO 31-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-8" title="ISO 31-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-9" title="ISO 31-9">-9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-10" title="ISO 31-10">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-11" title="ISO 31-11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-12" title="ISO 31-12">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-13" title="ISO 31-13">-13</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_128" title="ISO 128">128</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_216" title="ISO 216">216</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_217" title="ISO 217">217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_226" title="ISO 226" class="mw-redirect">226</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/British_standard_pipe_thread" title="British standard pipe thread" class="mw-redirect">228</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_233" title="ISO 233">233</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_259" title="ISO 259">259</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Envelope" title="Envelope">269</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kappa_number" title="Kappa number">302</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vicat_softening_point" title="Vicat softening point">306</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_428" title="ISO 428">428</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_518" title="ISO 518" class="mw-redirect">518</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_519" title="ISO 519" class="mw-redirect">519</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_639" title="ISO 639">639</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-1" title="ISO 639-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-2" title="ISO 639-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-3" title="ISO 639-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-5" title="ISO 639-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-6" title="ISO 639-6">-6</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_646" title="ISO/IEC 646">646</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_690" title="ISO 690">690</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_732" title="ISO 732">732</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Antimagnetic_watch" title="Antimagnetic watch">764</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_843" title="ISO 843">843</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_898" title="ISO 898">898</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1000" title="ISO 1000">1000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Magnetic_ink_character_recognition" title="Magnetic ink character recognition">1004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/135_film" title="135 film">1007</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OCR-A_font" title="OCR-A font">1073-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1413" title="ISO 1413" class="mw-redirect">1413</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">1538</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1745" title="ISO 1745">1745</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2014" title="ISO 2014">2014</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2015" title="ISO 2015">2015</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">2022</a></li>
+<li><a href="International_Standard_Book_Number" title="International Standard Book Number">2108</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2145" title="ISO 2145">2145</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2146" title="ISO 2146">2146</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2240" title="ISO 2240" class="mw-redirect">2240</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Water_Resistant_mark" title="Water Resistant mark">2281</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2709" title="ISO 2709">2709</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2711" title="ISO 2711">2711</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2788" title="ISO 2788">2788</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2852" title="ISO 2852">2852</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/126_film" title="126 film">3029</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3103" title="ISO 3103">3103</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_3166" title="ISO 3166">3166</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-1" title="ISO 3166-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-2" title="ISO 3166-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-3" title="ISO 3166-3">-3</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">3297</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3307" title="ISO 3307">3307</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kunrei-shiki_romanization" title="Kunrei-shiki romanization">3602</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3864" title="ISO 3864">3864</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Recording_Code" title="International Standard Recording Code">3901</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3977" title="ISO 3977">3977</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4031" title="ISO 4031">4031</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4157" title="ISO 4157">4157</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4217" title="ISO 4217">4217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_5218" title="ISO/IEC 5218">5218</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5775" title="ISO 5775">5775</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5776" title="ISO 5776">5776</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5800" title="ISO 5800" class="mw-redirect">5800</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5964" title="ISO 5964">5964</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6166" title="ISO 6166">6166</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6344" title="ISO 6344">6344</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6346" title="ISO 6346">6346</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Water_Resistant_mark" title="Water Resistant mark">6425</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ANSI_escape_code" title="ANSI escape code">6429</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6438" title="ISO 6438">6438</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6523" title="ISO 6523" class="mw-redirect">6523</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6709" title="ISO 6709">6709</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7001" title="ISO 7001">7001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7002" title="ISO 7002">7002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pinyin" title="Pinyin">7098</a></li>
+<li><strong class="selflink">7185</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7200" title="ISO 7200">7200</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OSI_model" title="OSI model">7498</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7736" title="ISO 7736">7736</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7810" title="ISO/IEC 7810">7810</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7811" title="ISO/IEC 7811">7811</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7812" title="ISO/IEC 7812">7812</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7813" title="ISO/IEC 7813">7813</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7816" title="ISO/IEC 7816">7816</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8000" title="ISO 8000">8000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8178" title="ISO 8178">8178</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fuel_oil" title="Fuel oil">8217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FTAM" title="FTAM">8571</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8583" title="ISO 8583">8583</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8601" title="ISO 8601">8601</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_Graphics_Metafile" title="Computer Graphics Metafile">8632</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8652" title="ISO/IEC 8652">8652</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8691" title="ISO 8691">8691</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">8807</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8820-5" title="ISO/IEC 8820-5">8820-5</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859" title="ISO/IEC 8859">8859</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-2" title="ISO/IEC 8859-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-3" title="ISO/IEC 8859-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-4" title="ISO/IEC 8859-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-5" title="ISO/IEC 8859-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-6" title="ISO/IEC 8859-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-7" title="ISO/IEC 8859-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-8" title="ISO/IEC 8859-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-9" title="ISO/IEC 8859-9">-9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-10" title="ISO/IEC 8859-10">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-11" title="ISO/IEC 8859-11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-12" title="ISO/IEC 8859-12">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-13" title="ISO/IEC 8859-13">-13</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-14" title="ISO/IEC 8859-14">-14</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-15" title="ISO/IEC 8859-15">-15</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-16" title="ISO/IEC 8859-16">-16</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_Generalized_Markup_Language" title="Standard Generalized Markup Language">8879</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9000" title="ISO 9000">9000/9001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">9075</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_9126" title="ISO/IEC 9126">9126</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/File_Allocation_Table" title="File Allocation Table">9293</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9241" title="ISO 9241">9241</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9362" title="ISO 9362">9362</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shoe_size" title="Shoe size">9407</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Manufacturing_Message_Specification" title="Manufacturing Message Specification">9506</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9529" title="ISO 9529">9529</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9564" title="ISO 9564">9564</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X.500" title="X.500">9594</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9660" title="ISO 9660">9660</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9897" title="ISO 9897">9897</a></li>
+<li><a href="POSIX" title="POSIX">9945</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9984" title="ISO 9984">9984</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9985" title="ISO 9985" class="mw-redirect">9985</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_9995" title="ISO/IEC 9995">9995</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">10000–19999</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10006" title="ISO 10006">10006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whirlpool_(cryptography)" title="Whirlpool (cryptography)">10118-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10160" title="ISO 10160">10160</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10161" title="ISO 10161">10161</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Guidelines_for_the_Definition_of_Managed_Objects" title="Guidelines for the Definition of Managed Objects">10165</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Document_Style_Semantics_and_Specification_Language" title="Document Style Semantics and Specification Language">10179</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10206" title="ISO 10206" class="mw-redirect">10206</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10218" title="ISO 10218">10218</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_10303" title="ISO 10303">10303</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EXPRESS_(data_modeling_language)" title="EXPRESS (data modeling language)">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-21" title="ISO 10303-21">-21</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-22" title="ISO 10303-22">-22</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-28" title="ISO 10303-28">-28</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/STEP-NC" title="STEP-NC">-238</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10383" title="ISO 10383">10383</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10487" title="ISO 10487" class="mw-redirect">10487</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ArmSCII" title="ArmSCII">10585</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IS-IS" title="IS-IS">10589</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Universal_Character_Set" title="Universal Character Set">10646</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Torx" title="Torx">10664</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RM-ODP" title="RM-ODP">10746</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multibus" title="Multibus">10861</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Music_Number" title="International Standard Music Number">10957</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10962" title="ISO 10962">10962</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_10967" title="ISO/IEC 10967">10967</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEEE_11073" title="ISO/IEEE 11073">11073</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11170" title="ISO 11170">11170</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11179" title="ISO/IEC 11179">11179</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11404" title="ISO/IEC 11404">11404</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JBIG" title="JBIG">11544</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11783" title="ISO 11783">11783</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11784</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11785</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11801" title="ISO/IEC 11801">11801</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11898" title="ISO 11898">11898</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11940" title="ISO 11940">11940</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/TR_11941" title="ISO/TR 11941">11941</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/TR_11941" title="ISO/TR 11941">11941 (TR)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11992" title="ISO 11992">11992</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_12006" title="ISO 12006">12006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_TR_12182" title="ISO/IEC TR 12182">12182</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_12207" title="ISO/IEC 12207">12207</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tag_Image_File_Format_/_Electronic_Photography" title="Tag Image File Format / Electronic Photography" class="mw-redirect">12234-2</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">13211</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Isofix" title="Isofix">13216</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Topic_Maps" title="Topic Maps">13250</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13399" title="ISO 13399">13399</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13406-2" title="ISO 13406-2">13406-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13407" title="ISO 13407" class="mw-redirect">13407</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/110_film" title="110 film">13450</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13485" title="ISO 13485">13485</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13490" title="ISO 13490">13490</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13567" title="ISO 13567">13567</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z_notation" title="Z notation">13568</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13584" title="ISO 13584">13584</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Bank_Account_Number" title="International Bank Account Number">13616</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14000" title="ISO 14000">14000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14031" title="ISO 14031">14031</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Horsepower" title="Horsepower">14396</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_14443" title="ISO/IEC 14443">14443</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MPEG-4" title="MPEG-4">14496</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_2" title="MPEG-4 Part 2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_3" title="MPEG-4 Part 3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Delivery_Multimedia_Integration_Framework" title="Delivery Multimedia Integration Framework">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_11" title="MPEG-4 Part 11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_12" title="MPEG-4 Part 12" class="mw-redirect">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-14</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-17</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-20</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_14644" title="ISO 14644">14644</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-1" title="ISO 14644-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-2" title="ISO 14644-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-3" title="ISO 14644-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-4" title="ISO 14644-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-5" title="ISO 14644-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-6" title="ISO 14644-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-7" title="ISO 14644-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-8" title="ISO 14644-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-9" title="ISO 14644-9">-9</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/STEP-NC" title="STEP-NC">14649</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14651" title="ISO 14651">14651</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_14698" title="ISO 14698">14698</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14698-2" title="ISO 14698-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14750" title="ISO 14750">14750</a></li>
+<li><a href="C++" title="C++">14882</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14971" title="ISO 14971">14971</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15022" title="ISO 15022">15022</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15189" title="ISO 15189">15189</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15288" title="ISO/IEC 15288">15288</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ada_Semantic_Interface_Specification" title="Ada Semantic Interface Specification">15291</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15292" title="ISO 15292">15292</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Criteria" title="Common Criteria">15408</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JPEG_2000" title="JPEG 2000">15444</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HTML" title="HTML">15445</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PDF417" title="PDF417">15438</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15504" title="ISO/IEC 15504">15504</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations" title="International Standard Identifier for Libraries and Related Organizations">15511</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15686" title="ISO 15686">15686</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15693" title="ISO/IEC 15693">15693</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/International_Standard_Audiovisual_Number" title="International Standard Audiovisual Number">15706</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15706-2" title="ISO 15706-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Musical_Work_Code" title="International Standard Musical Work Code">15707</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15897" title="ISO 15897">15897</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15919" title="ISO 15919">15919</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15924" title="ISO 15924">15924</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15926" title="ISO 15926">15926</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15926_WIP" title="ISO 15926 WIP">15926 WIP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portable_Document_Format" title="Portable Document Format">15930</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MaxiCode" title="MaxiCode">16023</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ECMAScript" title="ECMAScript">16262</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_16750" title="ISO 16750">16750</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_17024" title="ISO/IEC 17024">17024</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_17025" title="ISO/IEC 17025">17025</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SDMX" title="SDMX">17369</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27002" title="ISO/IEC 27002">17799</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18000" title="ISO/IEC 18000">18000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18004" title="ISO/IEC 18004" class="mw-redirect">18004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18014" title="ISO/IEC 18014">18014</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_18245" title="ISO 18245">18245</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_Specification_Language" title="Process Specification Language">18629</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Photographic_Activity_Test" title="Photographic Activity Test">18916</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PDF/A" title="PDF/A">19005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19011" title="ISO 19011">19011</a></li>
+<li>19092
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19092-1" title="ISO 19092-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19092-2" title="ISO 19092-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19114" title="ISO 19114">19114</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19115" title="ISO 19115" class="mw-redirect">19115</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simple_feature_access" title="Simple feature access">19125</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19136" title="ISO 19136">19136</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19439" title="ISO 19439">19439</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unified_Modeling_Language" title="Unified Modeling Language">19501:2005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19752" title="ISO/IEC 19752">19752</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RELAX_NG" title="RELAX NG">19757</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19770" title="ISO/IEC 19770">19770</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X3D" title="X3D">19775-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19794-5" title="ISO/IEC 19794-5">19794-5</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">20000+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_20000" title="ISO/IEC 20000">20000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_20022" title="ISO 20022">20022</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-21" title="MPEG-21">21000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Text_Code" title="International Standard Text Code">21047</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_21827" title="ISO/IEC 21827">21827:2002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_22000" title="ISO 22000">22000</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">23270</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">23271</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux_Standard_Base" title="Linux Standard Base">23360</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lexical_Markup_Framework" title="Lexical Markup Framework">24613</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_logic" title="Common logic">24707</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_25178" title="ISO 25178">25178</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_26000" title="ISO 26000">26000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenDocument" title="OpenDocument">26300</a></li>
+<li><a href="Digital_object_identifier" title="Digital object identifier">26324</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27000-series" title="ISO/IEC 27000-series">27000 series</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27000" title="ISO/IEC 27000">27000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27001" title="ISO/IEC 27001">27001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27002" title="ISO/IEC 27002">27002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27003" title="ISO/IEC 27003">27003</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27004" title="ISO/IEC 27004">27004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27005" title="ISO/IEC 27005">27005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27006" title="ISO/IEC 27006">27006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27007" title="ISO/IEC 27007">27007</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Name_Identifier" title="International Standard Name Identifier">27729</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_27799" title="ISO 27799">27799</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/PAS_28000" title="ISO/PAS 28000">28000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_29110" title="ISO 29110">29110</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JPEG_XR" title="JPEG XR">29199-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Office_Open_XML" title="Office Open XML">29500</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31000" title="ISO 31000">31000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portable_Document_Format" title="Portable Document Format">32000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_38500" title="ISO/IEC 38500">38500</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_42010" title="ISO/IEC 42010">42010</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_80000" title="ISO/IEC 80000">80000</a> (<a href="http://en.m.wikipedia.org/wiki/ISO_80000-2" title="ISO 80000-2">-2</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<dl>
+<dt>See also</dt>
+<dd><span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Special:PrefixIndex&amp;prefix=ISO&amp;namespace=0">All articles with prefix "ISO"</a></span></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 61 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Pascal_(programmeertaal)" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%A7%D8%B3%D9%83%D8%A7%D9%84_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://an.m.wikipedia.org/wiki/Luengache_de_programaci%C3%B3n_Pascal" lang="an" hreflang="an">aragonés</a></li><li><a href="http://az.m.wikipedia.org/wiki/Pascal" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://be.m.wikipedia.org/wiki/Pascal" lang="be" hreflang="be">беларуская</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/Pascal" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB_(%D0%B5%D0%B7%D0%B8%D0%BA_%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)" lang="bg" hreflang="bg">български</a></li><li><a href="http://bar.m.wikipedia.org/wiki/Pascal_(Programmiersprach)" lang="bar" hreflang="bar">Boarisch</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Pascal_(programski_jezik)" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Pascal_(llenguatge_de_programaci%C3%B3)" lang="ca" hreflang="ca">català</a></li><li><a href="http://cv.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8C_(%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80_%D1%87%C4%95%D0%BB%D1%85%D0%B8)" lang="cv" hreflang="cv">Чӑвашла</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Pascal_(programovac%C3%AD_jazyk)" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Pascal_(programmeringssprog)" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Pascal_(Programmiersprache)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Pascal" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/Pascal_(%CE%B3%CE%BB%CF%8E%CF%83%CF%83%CE%B1_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CE%BF%CF%8D)" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Pascal_(lenguaje_de_programaci%C3%B3n)" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Paskalo_(programlingvo)" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Pascal_(programazio_lengoaia)" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B3%DA%A9%D8%A7%D9%84_(%D8%B2%D8%A8%D8%A7%D9%86_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C)" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Pascal_(langage)" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Linguaxe_Pascal" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%ED%8C%8C%EC%8A%A4%EC%B9%BC_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Pascal_(programski_jezik)" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/Pascal_(bahasa_pemrograman)" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://is.m.wikipedia.org/wiki/Pascal_(forritunarm%C3%A1l)" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Pascal_(linguaggio_di_programmazione)" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A4%D7%A1%D7%A7%D7%9C_(%D7%A9%D7%A4%D7%AA_%D7%AA%D7%9B%D7%A0%D7%95%D7%AA)" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8C_%D1%82%D1%96%D0%BB%D1%96" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://ky.m.wikipedia.org/wiki/Pascal" lang="ky" hreflang="ky">Кыргызча</a></li><li><a href="http://la.m.wikipedia.org/wiki/Pascal" lang="la" hreflang="la">Latina</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Pascal" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Pascal" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Pascal_(programoz%C3%A1si_nyelv)" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%81%D0%BA%D0%B8_%D1%98%D0%B0%D0%B7%D0%B8%D0%BA)" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Pascal_(bahasa_pengaturcaraan)" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Pascal_(programmeertaal)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Pascal" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Pascal_(programmeringsspr%C3%A5k)" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Programmeringsspr%C3%A5ket_Pascal" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Pascal_(j%C4%99zyk_programowania)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Pascal_(linguagem_de_programa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Pascal_(limbaj_de_programare)" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D1%8C_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Pascal" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Pascal_(programovac%C3%AD_jazyk)" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Paskal_(programski_jezik)" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%81%D0%BA%D0%B0%D0%BB_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%81%D0%BA%D0%B8_%D1%98%D0%B5%D0%B7%D0%B8%D0%BA)" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Pascal_(programski_jezik)" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Pascal_(ohjelmointikieli)" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Pascal_(programspr%C3%A5k)" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tl.m.wikipedia.org/wiki/Pascal_(programming_language)" lang="tl" hreflang="tl">Tagalog</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%AA%E0%AE%BE%E0%AE%9A%E0%AF%81%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AF%8D_%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95_%E0%AE%AE%E0%AF%8A%E0%AE%B4%E0%AE%BF" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://kab.m.wikipedia.org/wiki/Pascal" lang="kab" hreflang="kab">Taqbaylit</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%AA%E0%B8%81%E0%B8%B2%E0%B8%A5" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Pascal_(programlama_dili)" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Pascal" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Pascal_(ng%C3%B4n_ng%E1%BB%AF_l%E1%BA%ADp_tr%C3%ACnh)" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://yo.m.wikipedia.org/wiki/Pascal_(%C3%88d%C3%A8_%C3%8C%E1%B9%A3%C3%A8l%C3%A0n%C3%A0)" lang="yo" hreflang="yo">Yorùbá</a></li><li><a href="http://bat-smg.m.wikipedia.org/wiki/Pascal" lang="bat-smg" hreflang="bat-smg">žemaitėška</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Pascal_(%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Pascal_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Pascal_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Pascal+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

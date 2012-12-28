@@ -1,0 +1,60 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="overlay specialPage">
+	<head>
+		<title>Mobile site settings - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/w/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Special:MobileOptions","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Special:MobileOptions" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-overlay">
+			<h1 class="header">Mobile site settings</h1>				<a class="escapeOverlay" href="http://en.m.wikipedia.org/wiki/C_(programming_language)">close</a>
+				<div id="content_wrapper" class="content mw-mf-special">
+					<form class="mw-mf-settings" method="POST" action="http://en.m.wikipedia.org/wiki/Special:MobileOptions">	<p>
+		Customize your experience on your mobile device with these mobile specific site settings.
+	</p>
+	<ul>
+<li>
+			Images
+			<span class="mw-mf-checkbox-css3">
+				<input type="checkbox" name="enableImages" checked><span class="mw-mf-settings-on">ON</span><span class="mw-mf-settings-off">OFF</span>
+			</span>
+		</li>
+		<li>
+			Beta
+			<div class="mw-mf-checkbox-css3">
+				<input type="checkbox" name="enableBeta"><span class="mw-mf-settings-on">ON</span><span class="mw-mf-settings-off">OFF</span>
+			</div>
+		</li>
+		<li class="mw-mf-settings-description">
+				By joining the beta, you will get access to experimental features, at the risk of encountering bugs and issues.
+		</li>
+		<li>
+			<input type="submit" id="mw-mf-settings-save" value="Save settings">
+</li>
+	</ul>
+<input type="hidden" value="0f7fbbef829b55fea2a61c0eb914038a" name="token"><input type="hidden" value="C (programming language)" name="returnto">
+</form>				</div>
+			</div>
+		
+					</body>
+	</html>

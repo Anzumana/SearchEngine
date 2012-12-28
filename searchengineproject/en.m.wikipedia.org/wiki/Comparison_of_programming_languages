@@ -1,0 +1,1291 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Comparison of programming languages - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Comparison of programming languages","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Comparison_of_programming_languages" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Comparison+of+programming+languages"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Comparison of programming languages</h1>			<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0"><tr><th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><strong class="selflink">Programming language comparisons</strong></th>
+</tr><tr><td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul><li><strong class="selflink">General comparison</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)" title="Comparison of programming languages (syntax)">Basic syntax</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(basic_instructions)" title="Comparison of programming languages (basic instructions)">Basic instructions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(array)" title="Comparison of programming languages (array)">Arrays</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(mapping)" title="Comparison of programming languages (mapping)">Associative arrays</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(strings)" title="Comparison of programming languages (strings)">String operations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(string_functions)" title="Comparison of programming languages (string functions)">String functions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(list_comprehension)" title="Comparison of programming languages (list comprehension)">List comprehension</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(object-oriented_programming)" title="Comparison of programming languages (object-oriented programming)">Object-oriented programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constructor_(computer_science)" title="Constructor (computer science)" class="mw-redirect">Object-oriented constructors</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_database_access" title="Comparison of database access">Database access</a></li>
+</ul></td>
+</tr><tr><td class="" style="padding-bottom: 0.2em; text-align: left;">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">Evaluation strategy</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Computer_Programming/Hello_world" class="extiw" title="b:Computer Programming/Hello world">List of "Hello World" programs</a></li>
+</ul></td>
+</tr><tr><td class="" style="padding-bottom: 0.2em; text-align: left;">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/ALGOL_58#ALGOL_58.27s_influence_on_ALGOL_60" title="ALGOL 58">ALGOL 58's influence on ALGOL 60</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ALGOL_60#Comparisons_with_other_languages" title="ALGOL 60">ALGOL 60: Comparisons with other languages</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_ALGOL_68_and_C%2B%2B" title="Comparison of ALGOL 68 and C++">Comparison of ALGOL 68 and C++</a></li>
+<li><a href="ALGOL_68#Comparisons_with_other_languages" title="ALGOL 68">ALGOL 68: Comparisons with other languages</a></li>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility of C and C++</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Pascal_and_Borland_Delphi" title="Comparison of Pascal and Borland Delphi" class="mw-redirect">Comparison of Pascal and Borland Delphi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Object_Pascal_and_C" title="Comparison of Object Pascal and C">Comparison of Object Pascal and C</a></li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Java_and_C%2B%2B" title="Comparison of Java and C++">Comparison of Java and C++</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Java" title="Comparison of C Sharp and Java">Comparison of C# and Java</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_C_Sharp_and_Visual_Basic_.NET" title="Comparison of C Sharp and Visual Basic .NET">Comparison of C# and Visual Basic .NET</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Visual_Basic_and_Visual_Basic_.NET" title="Comparison of Visual Basic and Visual Basic .NET">Comparison of Visual Basic and Visual Basic .NET</a></li>
+</ul></td>
+</tr><tr><td class="" style="padding-bottom: 0.2em; text-align: left;">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_web_application_frameworks" title="Comparison of web application frameworks">Web application frameworks</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_the_Java_and_.NET_platforms" title="Comparison of the Java and .NET platforms">Comparison of the Java and .NET platforms</a></li>
+</ul></td>
+</tr><tr><td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_language_comparisons" title="Template:Programming language comparisons"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_language_comparisons" title="Template talk:Programming language comparisons"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_language_comparisons&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul></div>
+</td>
+</tr></table><p><a href="Programming_language" title="Programming language">Programming languages</a> are used for controlling the behavior of a machine (often a <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">computer</a>). Like <a href="http://en.m.wikipedia.org/wiki/Natural_language" title="Natural language">natural languages</a>, programming languages conform to rules for <a href="http://en.m.wikipedia.org/wiki/Syntax" title="Syntax">syntax</a> and <a href="http://en.m.wikipedia.org/wiki/Semantics" title="Semantics">semantics</a>.</p>
+<p>There are <a href="http://en.m.wikipedia.org/wiki/List_of_programming_languages" title="List of programming languages">thousands of programming languages</a><sup id="cite_ref-1" class="reference"><a href="Comparison_of_programming_languages#cite_note-1"><span>[</span>1<span>]</span></a></sup> and new ones are created every year. Few languages ever become sufficiently popular that they are used by more than a few people, but professional <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">programmers</a> may use dozens of languages in a career.</p>
+<p><br style="clear:both;"></p>
+<h2> <span class="mw-headline" id="General_comparison">General comparison</span></h2>
+<p>The following table compares general and technical information for a selection of commonly used <a href="Programming_language" title="Programming language">programming languages</a>. See the individual languages' articles for further information. Please note that the following table may be missing some information.</p>
+<table class="wikitable sortable"><tr><th>Language</th>
+<th>Intended use</th>
+<th><a href="Programming_paradigm" title="Programming paradigm">Paradigm</a>(s)</th>
+<th><a href="http://en.m.wikipedia.org/wiki/Standardization" title="Standardization">Standardized</a>?</th>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a> 3.0</th>
+<td>Application, client-side, Web</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">event-driven</a>, <a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1996, ECMA</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></th>
+<td>Application, embedded, realtime, system</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Concurrent_programming_language" title="Concurrent programming language" class="mw-redirect">concurrent</a>,<sup id="cite_ref-2" class="reference"><a href="Comparison_of_programming_languages#cite_note-2"><span>[</span>2<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Distributed_programming" title="Distributed programming" class="mw-redirect">distributed</a>,<sup id="cite_ref-3" class="reference"><a href="Comparison_of_programming_languages#cite_note-3"><span>[</span>3<span>]</span></a></sup><a href="Generic_programming" title="Generic programming">generic</a>,<sup id="cite_ref-4" class="reference"><a href="Comparison_of_programming_languages#cite_note-4"><span>[</span>4<span>]</span></a></sup> imperative object-oriented,<sup id="cite_ref-5" class="reference"><a href="Comparison_of_programming_languages#cite_note-5"><span>[</span>5<span>]</span></a></sup><a href="Procedural_programming" title="Procedural programming">procedural</a>,<sup id="cite_ref-6" class="reference"><a href="Comparison_of_programming_languages#cite_note-6"><span>[</span>6<span>]</span></a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1983, ANSI, ISO, <a href="http://en.m.wikipedia.org/wiki/GOST" title="GOST">GOST</a> 27831-88<sup id="cite_ref-7" class="reference"><a href="Comparison_of_programming_languages#cite_note-7"><span>[</span>7<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Aldor" title="Aldor">Aldor</a></th>
+<td>Highly domain-specific, symbolic computing</td>
+<td>imperative, <a href="Functional_programming" title="Functional programming">functional</a>, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a></th>
+<td>Application</td>
+<td>imperative</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a></th>
+<td>Application</td>
+<td>imperative</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1960, <a href="http://en.m.wikipedia.org/wiki/IFIP_WG_2.1" title="IFIP WG 2.1" class="mw-redirect">IFIP WG 2.1</a>, ISO<sup id="cite_ref-8" class="reference"><a href="Comparison_of_programming_languages#cite_note-8"><span>[</span>8<span>]</span></a></sup></td>
+</tr><tr><th><a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a></th>
+<td>Application</td>
+<td>concurrent, imperative</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1968, <a href="http://en.m.wikipedia.org/wiki/IFIP_WG_2.1" title="IFIP WG 2.1" class="mw-redirect">IFIP WG 2.1</a>, <a href="http://en.m.wikipedia.org/wiki/GOST_27974-88" title="GOST 27974-88" class="mw-redirect">GOST 27974-88</a>,<sup id="cite_ref-9" class="reference"><a href="Comparison_of_programming_languages#cite_note-9"><span>[</span>9<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ateji_PX" title="Ateji PX">Ateji PX</a></th>
+<td>Parallel application</td>
+<td>object-oriented, <a href="http://en.m.wikipedia.org/wiki/Pi_calculus" title="Pi calculus" class="mw-redirect">pi calculus</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/APL_(programming_language)" title="APL (programming language)">APL</a></th>
+<td>Application, data processing</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">array-oriented</a>, <a href="http://en.m.wikipedia.org/wiki/Tacit_programming" title="Tacit programming">tacit</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1989, ISO</td>
+</tr><tr><th><a href="Assembly_language" title="Assembly language">Assembly language</a></th>
+<td>General</td>
+<td>any, imperative, syntax is usually highly specific, related to the target processor</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/AutoHotkey" title="AutoHotkey">AutoHotkey</a></th>
+<td>GUI automation (macros), highly domain-specific</td>
+<td>imperative</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/AutoIt" title="AutoIt">AutoIt</a></th>
+<td>GUI automation (macros), highly domain-specific</td>
+<td>event-driven, imperative, <a href="Procedural_programming" title="Procedural programming">procedural</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a></th>
+<td>Application, education</td>
+<td>imperative, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1983, <a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=988221">ANSI</a>, ISO</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BBj" title="BBj">BBj</a></th>
+<td>Application, business, Web</td>
+<td>object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BeanShell" title="BeanShell">BeanShell</a></th>
+<td>Application, scripting</td>
+<td>functional, imperative, object-oriented, <a href="http://en.m.wikipedia.org/wiki/Reflective_programming" title="Reflective programming" class="mw-redirect">reflective</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">In progress, <a href="http://en.m.wikipedia.org/wiki/Java_Community_Process" title="Java Community Process">JCP</a><sup id="cite_ref-10" class="reference"><a href="Comparison_of_programming_languages#cite_note-10"><span>[</span>10<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BLISS" title="BLISS">BLISS</a></th>
+<td>System</td>
+<td>procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BlitzMax" title="BlitzMax" class="mw-redirect">BlitzMax</a></th>
+<td>Application, game</td>
+<td>imperative, object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Boo_(programming_language)" title="Boo (programming language)">Boo</a></th>
+<td>Application</td>
+<td></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></th>
+<td>System<sup id="cite_ref-11" class="reference"><a href="Comparison_of_programming_languages#cite_note-11"><span>[</span>11<span>]</span></a></sup></td>
+<td>imperative, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1989, <a href="ANSI_C" title="ANSI C">ANSI C89, ISO C90/C99, ISO C11</a></td>
+</tr><tr><th><a href="C++" title="C++">C++</a></th>
+<td>Application, system</td>
+<td><a href="Generic_programming" title="Generic programming">generic</a>, imperative, object-oriented, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2011, ISO</td>
+</tr><tr><th><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></th>
+<td>Application, business, client-side, general, server-side, Web</td>
+<td>functional,<sup id="cite_ref-12" class="reference"><a href="Comparison_of_programming_languages#cite_note-12"><span>[</span>12<span>]</span></a></sup> generic, imperative, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2000, ECMA, ISO<sup id="cite_ref-13" class="reference"><a href="Comparison_of_programming_languages#cite_note-13"><span>[</span>13<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Clarion_(programming_language)" title="Clarion (programming language)">Clarion</a></th>
+<td>General, business, Web</td>
+<td>functional,<sup id="cite_ref-14" class="reference"><a href="Comparison_of_programming_languages#cite_note-14"><span>[</span>14<span>]</span></a></sup> imperative, object-oriented</td>
+<td style="background: #E4E4E4; color: black; vertical-align: middle; text-align: center;" class="unknown table-unknown">Unknown</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Clean_(programming_language)" title="Clean (programming language)">Clean</a></th>
+<td>General</td>
+<td>functional, generic</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a></th>
+<td>General</td>
+<td>concurrent, functional</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/CLU_(programming_language)" title="CLU (programming language)">CLU</a></th>
+<td>General</td>
+<td>generic, imperative, object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a></th>
+<td>Application, business</td>
+<td>imperative, object-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2002 (ISO/IEC 1989)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Cobra_(programming_language)" title="Cobra (programming language)">Cobra</a></th>
+<td>Application, business, general, Web</td>
+<td>functional, generic, imperative, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language">ColdFusion</a> (CFML)</th>
+<td>Web</td>
+<td>object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></th>
+<td>General</td>
+<td>functional, generic, imperative, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1994, ANSI</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/COMAL" title="COMAL">COMAL</a> 80</th>
+<td>Education</td>
+<td>imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th>Crystal 1.0.0</th>
+<td>Education</td>
+<td>functional, imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Cython" title="Cython">Cython</a></th>
+<td>Application, general, numerical computing</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">aspect-oriented</a>, functional, imperative, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="D_(programming_language)" title="D (programming language)">D</a></th>
+<td>Application, system</td>
+<td>generic, generative, imperative, object-oriented, functional, concurrent</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a></th>
+<td>Application</td>
+<td>functional, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><span class="new" title="DYL-280 (page does not exist)">DYL-280</span></th>
+<td>Application, system</td>
+<td>imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></th>
+<td>Application</td>
+<td>generic, imperative, object-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2005, ECMA, ISO<sup id="cite_ref-15" class="reference"><a href="Comparison_of_programming_languages#cite_note-15"><span>[</span>15<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a></th>
+<td>Application, distributed, telecom</td>
+<td>concurrent, <a href="http://en.m.wikipedia.org/wiki/Distributed_programming" title="Distributed programming" class="mw-redirect">distributed</a>, functional</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Euphoria_(programming_language)" title="Euphoria (programming language)">Euphoria</a></th>
+<td>Application</td>
+<td>procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Factor_(programming_language)" title="Factor (programming language)">Factor</a></th>
+<td></td>
+<td><a href="http://en.m.wikipedia.org/wiki/Stack-oriented_programming_language" title="Stack-oriented programming language">stack-oriented</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Falcon_(programming_language)" title="Falcon (programming language)">Falcon</a></th>
+<td>General, Application</td>
+<td>procedural, functional, object oriented, prototype OOP, message oriented, tabular programming</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/FP_(programming_language)" title="FP (programming language)">FP</a></th>
+<td></td>
+<td>functional</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></th>
+<td>Application</td>
+<td>functional, generic, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a></th>
+<td>General</td>
+<td>imperative, stack-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1994, ANSI</td>
+</tr><tr><th><a href="Fortran" title="Fortran">Fortran</a></th>
+<td>Application, numerical computing</td>
+<td>generic, imperative, object-oriented, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1966, ANSI 66, ANSI 77, MIL-STD-1753, ISO 90, ISO 95, ISO 2003</td>
+</tr><tr><th>G2</th>
+<td>Application, inference, expert system</td>
+<td>common graphical development and runtime environment, event-driven, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Gambas" title="Gambas">Gambas</a></th>
+<td>Application</td>
+<td>event-driven, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Game_Maker_Language" title="Game Maker Language">Game Maker Language</a></th>
+<td>Application, games</td>
+<td>event-driven, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/GLBasic" title="GLBasic">GLBasic</a></th>
+<td>Application, games</td>
+<td>imperative, procedural, simple object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Go_(programming_language)" title="Go (programming language)">Go</a></th>
+<td>Application, system</td>
+<td>concurrent, imperative</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Gosu_(programming_language)" title="Gosu (programming language)">Gosu</a></th>
+<td>Application, general, scripting, Web</td>
+<td>generic, imperative, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/GraphTalk" title="GraphTalk" class="mw-redirect">GraphTalk</a></th>
+<td>Application</td>
+<td>logic, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Groovy_(programming_language)" title="Groovy (programming language)">Groovy</a></th>
+<td>Application, Web</td>
+<td>aspect-oriented, imperative, object-oriented, functional</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">In progress, <a href="http://en.m.wikipedia.org/wiki/Java_Community_Process" title="Java Community Process">JCP</a><sup id="cite_ref-16" class="reference"><a href="Comparison_of_programming_languages#cite_note-16"><span>[</span>16<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Harbour_(programming_language)" title="Harbour (programming language)" class="mw-redirect">Harbour</a></th>
+<td>Application, business, data processing, general, Web</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">declarative</a>, functional, generic, imperative, object-oriented, procedural, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></th>
+<td>Application</td>
+<td>functional, generic, <a href="http://en.m.wikipedia.org/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2010, Haskell 2010<sup id="cite_ref-17" class="reference"><a href="Comparison_of_programming_languages#cite_note-17"><span>[</span>17<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/HaXe" title="HaXe" class="mw-redirect">haXe</a></th>
+<td>Application, general, Web</td>
+<td>imperative, object-oriented, functional, generic, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/HyperNext" title="HyperNext">HyperNext</a></th>
+<td>Application, education</td>
+<td>event-driven, procedural, <a href="Weak_typing" title="Weak typing">weakly typed</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Io_(programming_language)" title="Io (programming language)">Io</a></th>
+<td>Application, host-driven scripting</td>
+<td>imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ISLISP" title="ISLISP">ISLISP</a></th>
+<td>General</td>
+<td>functional, generic, imperative, object-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1997, <a href="http://en.m.wikipedia.org/wiki/ISO" title="ISO" class="mw-redirect">ISO</a></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/J_(programming_language)" title="J (programming language)">J</a></th>
+<td>Data processing</td>
+<td>array-oriented, <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">function-level</a>, tacit</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/JADE_(programming_language)" title="JADE (programming language)">JADE</a></th>
+<td>Application, distributed</td>
+<td>imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Java_(programming_language)" title="Java (programming language)">Java</a></th>
+<td>Application, business, client-side, general, server-side, Web</td>
+<td>generic, imperative, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><i>De facto</i> standard via <a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/specs/jls/se7/html/index.html">Java Language Specification</a></td>
+</tr><tr><th><a href="JavaScript" title="JavaScript">JavaScript</a></th>
+<td>Client-side, Web</td>
+<td>functional, imperative, <a href="http://en.m.wikipedia.org/wiki/Prototype-based" title="Prototype-based" class="mw-redirect">prototype-based</a>, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1997, ECMA</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Joy_(programming_language)" title="Joy (programming language)">Joy</a></th>
+<td>Research</td>
+<td>functional, stack-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/LabVIEW" title="LabVIEW">LabVIEW</a> (G)</th>
+<td>Application, industrial instrumentation-automation</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">dataflow</a>, <a href="http://en.m.wikipedia.org/wiki/Visual_programming_language" title="Visual programming language">visual</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a></th>
+<td>General</td>
+<td>functional</td>
+<td style="background: #E4E4E4; color: black; vertical-align: middle; text-align: center;" class="unknown table-unknown">Unknown</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Logtalk" title="Logtalk">Logtalk</a></th>
+<td>Artificial intelligence, application</td>
+<td>event-driven, logic, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></th>
+<td>Application, embedded scripting</td>
+<td>aspect-oriented, functional, imperative, object-oriented, procedural, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No<sup id="cite_ref-18" class="reference"><a href="Comparison_of_programming_languages#cite_note-18"><span>[</span>18<span>]</span></a></sup></td>
+</tr><tr><th><a href="Mathematica" title="Mathematica">Mathematica</a></th>
+<td>Highly domain-specific, symbolic computing</td>
+<td>functional, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="MATLAB" title="MATLAB">MATLAB</a></th>
+<td>Highly domain-specific, numerical computing</td>
+<td>imperative, object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a></th>
+<td>Application, system</td>
+<td>generic, imperative</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1996, ISO<sup id="cite_ref-19" class="reference"><a href="Comparison_of_programming_languages#cite_note-19"><span>[</span>19<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Modula-3" title="Modula-3">Modula-3</a></th>
+<td>Application</td>
+<td>generic, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a></th>
+<td>Application, system</td>
+<td>imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Objective-C" title="Objective-C">Objective-C</a></th>
+<td>Application</td>
+<td>imperative, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No<sup id="cite_ref-20" class="reference"><a href="Comparison_of_programming_languages#cite_note-20"><span>[</span>20<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a></th>
+<td>Application</td>
+<td>functional, generic, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> (<a href="http://en.m.wikipedia.org/wiki/Borland_Delphi" title="Borland Delphi" class="mw-redirect">Delphi</a>)</th>
+<td>Application, business, client-side, general, server-side, Web</td>
+<td>aspect-oriented,<sup id="cite_ref-21" class="reference"><a href="Comparison_of_programming_languages#cite_note-21"><span>[</span>21<span>]</span></a></sup> event-driven, functional, generic, imperative, object-oriented, procedural, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Occam_(programming_language)" title="Occam (programming language)">Occam</a></th>
+<td>General</td>
+<td>concurrent, imperative, procedural, <a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">process-oriented</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a></th>
+<td>Web applications</td>
+<td>functional, generic, imperative, <a href="http://en.m.wikipedia.org/wiki/Distributed_programming" title="Distributed programming" class="mw-redirect">distributed</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></th>
+<td>Application</td>
+<td>generic, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oz_(programming_language)" title="Oz (programming language)">Oz</a></th>
+<td>Application, distribution, education</td>
+<td>concurrent, functional, imperative, logic, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></th>
+<td>Application, education</td>
+<td>imperative, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1983, ISO<sup id="cite_ref-22" class="reference"><a href="Comparison_of_programming_languages#cite_note-22"><span>[</span>22<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Pawn_(programming_language)" title="Pawn (programming language)" class="mw-redirect">Pawn</a></th>
+<td>Embedded, host-driven scripting</td>
+<td>imperative</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Perl" title="Perl">Perl</a></th>
+<td>Application, scripting, text processing, Web</td>
+<td>functional, generic, imperative, object-oriented, procedural, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="PHP" title="PHP">PHP</a></th>
+<td>Server-side, Web Application, Web</td>
+<td>imperative, object-oriented,<sup id="cite_ref-23" class="reference"><a href="Comparison_of_programming_languages#cite_note-23"><span>[</span>23<span>]</span></a></sup> procedural,<sup id="cite_ref-24" class="reference"><a href="Comparison_of_programming_languages#cite_note-24"><span>[</span>24<span>]</span></a></sup> reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="PL/I" title="PL/I">PL/I</a></th>
+<td>Application</td>
+<td>imperative, object-oriented, procedural</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1969</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Plus_(programming_language)" title="Plus (programming language)">Plus</a></th>
+<td>Application, system development</td>
+<td>imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">Prolog</a></th>
+<td>Application, artificial intelligence</td>
+<td>logic</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1995, ISO</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/PureBasic" title="PureBasic">PureBasic</a></th>
+<td>Application</td>
+<td>procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="Python_(programming_language)" title="Python (programming language)">Python</a></th>
+<td>Application, general, Web, scripting</td>
+<td>aspect-oriented, functional, imperative, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><i>De facto</i> standard via <a href="http://en.m.wikipedia.org/wiki/Python_Enhancement_Proposal#Development" title="Python Enhancement Proposal" class="mw-redirect">Python Enhancement Proposals</a> (PEP)s.</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a></th>
+<td>Education, general, scripting</td>
+<td>functional, procedural, modular, object-oriented, logic, reflective, meta</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/REALbasic" title="REALbasic" class="mw-redirect">REALbasic</a></th>
+<td>Application</td>
+<td>procedural</td>
+<td style="background: #E4E4E4; color: black; vertical-align: middle; text-align: center;" class="unknown table-unknown">Unknown</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/REBOL" title="REBOL">REBOL</a></th>
+<td>Distributed</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">dialected</a>, functional, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/IBM_RPG" title="IBM RPG">RPG (IBM)</a></th>
+<td>Application, system</td>
+<td>imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></th>
+<td>Application, scripting, Web</td>
+<td>aspect-oriented, functional, imperative, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">2011(JIS X 3017), 2012(ISO/IEC 30170)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></th>
+<td>Application, system</td>
+<td>concurrent, functional, generic, imperative, object-oriented, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/S_(programming_language)" title="S (programming language)">S</a></th>
+<td>Application, statistics</td>
+<td>functional, imperative, object-oriented, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/S-Lang_(programming_library)" title="S-Lang (programming library)">S-Lang</a></th>
+<td>Application, numerical, scripting</td>
+<td>imperative, procedural</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></th>
+<td>Application, distributed, Web</td>
+<td>functional, generic, imperative, object-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><i>De facto</i> standard via <a rel="nofollow" class="external text" href="http://www.scala-lang.org/sites/default/files/linuxsoft_archives/docu/files/ScalaReference.pdf">Scala Language Specification (SLS)</a></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a></th>
+<td>Education, general</td>
+<td>functional</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1998, R<sup>6</sup>RS</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a></th>
+<td>Education, general</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Discrete_event_simulation" title="Discrete event simulation">discrete event simulation</a>, event-driven, imperative, <a href="http://en.m.wikipedia.org/wiki/Multi-threaded" title="Multi-threaded" class="mw-redirect">multi-threaded</a> (quasi-parallel) program execution, object-oriented</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1968</td>
+</tr><tr><th><a href="Smalltalk" title="Smalltalk">Smalltalk</a></th>
+<td>Application, education</td>
+<td>concurrent, declarative, event-driven, object-oriented, reflective</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1998, <a rel="nofollow" class="external text" href="http://www.techstreet.com/cgi-bin/detail?product_id=56122">ANSI</a></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/SNOBOL" title="SNOBOL">SNOBOL</a></th>
+<td>Text processing</td>
+<td></td>
+<td style="background: #E4E4E4; color: black; vertical-align: middle; text-align: center;" class="unknown table-unknown">Unknown</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a></th>
+<td>Application</td>
+<td>functional, generic, imperative</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">1997, SML '97<sup id="cite_ref-25" class="reference"><a href="Comparison_of_programming_languages#cite_note-25"><span>[</span>25<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Tcl" title="Tcl">Tcl</a></th>
+<td>Application, scripting, Web</td>
+<td>event-driven, imperative, procedural, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></th>
+<td>Application, education</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Component-oriented_programming" title="Component-oriented programming" class="mw-redirect">component-oriented</a>, event-driven, imperative</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><span class="nowrap"><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></span></th>
+<td>Application, education, Web</td>
+<td>event-driven, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a></th>
+<td>Application</td>
+<td>declarative, event-driven, functional, imperative, logic, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a></th>
+<td>Administration</td>
+<td>functional, imperative, object-oriented, <a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">pipeline</a>, reflective</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/XL_(programming_language)" title="XL (programming language)">XL</a></th>
+<td></td>
+<td><a href="http://en.m.wikipedia.org/wiki/Concept_programming" title="Concept programming">concept programming</a>, imperative, object-oriented</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr class="sortbottom"><th>Language</th>
+<th>Intended use</th>
+<th><a href="Programming_paradigm" title="Programming paradigm">Paradigm</a>(s)</th>
+<th><a href="http://en.m.wikipedia.org/wiki/Standardization" title="Standardization">Standardized</a>?</th>
+</tr></table><h2> <span class="mw-headline" id="Type_systems">Type systems</span></h2>
+<p>Brief definitions</p>
+<ul><li><i>Compatibility among composite types</i> is how functions are applied to data typed similarly to its intended type. Name-based compatibility means that functions work only on data of its intended type and declared subtypes. Property-based compatibility means that functions work on any data that has the same properties as its intended type.</li>
+<li><i>Type checking</i> is how type errors are checked. Static checking occurs at compile-time. Dynamic checking occurs at run-time.</li>
+</ul><table class="wikitable sortable"><tr><th>Language</th>
+<th><a href="Type_system#Strong_and_weak_typing" title="Type system">Type strength</a></th>
+<th><a href="Type_system#Safely_and_unsafely_typed_systems" title="Type system">Type safety</a></th>
+<th><a href="Type_system#Explicit_or_implicit_declaration_and_inference" title="Type system">Type expression</a></th>
+<th><a href="Type_system#Compatibility:_equivalence_and_subtyping" title="Type system">Type compatibility among composites</a></th>
+<th><a href="Type_system#Type_checking" title="Type system">Type checking</a></th>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ActionScript" title="ActionScript">ActionScript</a> 3.0</th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe<sup id="cite_ref-26" class="reference"><a href="Comparison_of_programming_languages#cite_note-26"><span>[</span>TS 1<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>name-based</td>
+<td>partially dynamic<sup id="cite_ref-27" class="reference"><a href="Comparison_of_programming_languages#cite_note-27"><span>[</span>TS 2<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Aldor" title="Aldor">Aldor</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe</td>
+<td>implicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/APL_(programming_language)" title="APL (programming language)">APL</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/AutoHotkey" title="AutoHotkey">AutoHotkey</a></th>
+<td>none</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ateji_PX" title="Ateji PX">Ateji PX</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a></th>
+<td>varies by dialect</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BLISS" title="BLISS">BLISS</a></th>
+<td>none</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/BeanShell" title="BeanShell">BeanShell</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td>name-based</td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Boo_(programming_language)" title="Boo (programming language)">Boo</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>static with optional dynamic typing</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="C++" title="C++">C++</a> (<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_14882" title="ISO/IEC 14882" class="mw-redirect">ISO/IEC 14882</a>)</th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static<sup id="cite_ref-28" class="reference"><a href="Comparison_of_programming_languages#cite_note-28"><span>[</span>TS 3<span>]</span></a></sup></td>
+</tr><tr><th><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe<sup id="cite_ref-29" class="reference"><a href="Comparison_of_programming_languages#cite_note-29"><span>[</span>TS 4<span>]</span></a></sup></td>
+<td>implicit with optional explicit typing</td>
+<td>name-based</td>
+<td>static<sup id="cite_ref-30" class="reference"><a href="Comparison_of_programming_languages#cite_note-30"><span>[</span>TS 5<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Clean_(programming_language)" title="Clean (programming language)">Clean</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a></th>
+<td>strong</td>
+<td></td>
+<td></td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language">ColdFusion</a> (CFML)</th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Curl_(programming_language)" title="Curl (programming language)">Curl</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td>name-based</td>
+<td></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Cython" title="Cython">Cython</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>name-based (extension types) and property-based (Python)</td>
+<td>dynamic with optional static typing</td>
+</tr><tr><th><a href="D_(programming_language)" title="D (programming language)">D</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe<sup id="cite_ref-r2_31-0" class="reference"><a href="Comparison_of_programming_languages#cite_note-r2-31"><span>[</span>TS 6<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Dylan_(programming_language)" title="Dylan (programming language)">Dylan</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Falcon_(programming_language)" title="Falcon (programming language)">Falcon</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td>property-based</td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a></th>
+<td>none</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>n/a</td>
+</tr><tr><th><a href="Fortran" title="Fortran">Fortran</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit<sup id="cite_ref-32" class="reference"><a href="Comparison_of_programming_languages#cite_note-32"><span>[</span>TS 7<span>]</span></a></sup></td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Gambas" title="Gambas">Gambas</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/GLBasic" title="GLBasic">GLBasic</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit. Non-explicit declarations available through project options</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="Go_(programming_language)" title="Go (programming language)">Go</a><sup id="cite_ref-33" class="reference"><a href="Comparison_of_programming_languages#cite_note-33"><span>[</span>26<span>]</span></a></sup></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Gosu_(programming_language)" title="Gosu (programming language)">Gosu</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>partially implicit (local type inference)</td>
+<td>name-based (subclassing) and property-based (structural)</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/GraphTalk" title="GraphTalk" class="mw-redirect">GraphTalk</a></th>
+<td>weak</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Groovy_(programming_language)" title="Groovy (programming language)">Groovy</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>dynamic with optional static typing</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Harbour_(programming_language)" title="Harbour (programming language)" class="mw-redirect">Harbour</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/HaXe" title="HaXe" class="mw-redirect">haXe</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>name-based (subclassing) and property-based (structural)</td>
+<td>static with optional dynamic typing</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Io_(programming_language)" title="Io (programming language)">Io</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ISLISP" title="ISLISP">ISLISP</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/J_(programming_language)" title="J (programming language)">J</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="Java_(programming_language)" title="Java (programming language)">Java</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe<sup id="cite_ref-34" class="reference"><a href="Comparison_of_programming_languages#cite_note-34"><span>[</span>27<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="JavaScript" title="JavaScript">JavaScript</a></th>
+<td>weak</td>
+<td></td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Joy_(programming_language)" title="Joy (programming language)">Joy</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></th>
+<td>weak</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="Mathematica" title="Mathematica">Mathematica</a></th>
+<td>strong</td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="MATLAB" title="MATLAB">MATLAB</a> M-code</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe<sup id="cite_ref-r2_31-1" class="reference"><a href="Comparison_of_programming_languages#cite_note-r2-31"><span>[</span>TS 6<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Modula-3" title="Modula-3">Modula-3</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe<sup id="cite_ref-r2_31-2" class="reference"><a href="Comparison_of_programming_languages#cite_note-r2-31"><span>[</span>TS 6<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static and partially dynamic<sup id="cite_ref-35" class="reference"><a href="Comparison_of_programming_languages#cite_note-35"><span>[</span>TS 8<span>]</span></a></sup></td>
+</tr><tr><th><a href="Objective-C" title="Objective-C">Objective-C</a></th>
+<td>weak</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>name-based (subclassing) and property-based (protocols)</td>
+<td>dynamic with optional static typing<sup id="cite_ref-36" class="reference"><a href="Comparison_of_programming_languages#cite_note-36"><span>[</span>28<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> (<a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Delphi</a>)</th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Opa_(programming_language)" title="Opa (programming language)">Opa</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oxygene_(programming_language)" title="Oxygene (programming language)">Oxygene</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe</td>
+<td>implicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Oz_(programming_language)" title="Oz (programming language)">Oz</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td>property-based</td>
+<td>dynamic</td>
+</tr><tr><th><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe<sup id="cite_ref-r2_31-3" class="reference"><a href="Comparison_of_programming_languages#cite_note-r2-31"><span>[</span>TS 6<span>]</span></a></sup></td>
+<td>explicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="Perl" title="Perl">Perl</a> 5</th>
+<td>weak</td>
+<td></td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Perl_6" title="Perl 6">Perl 6</a></th>
+<td></td>
+<td></td>
+<td>partially implicit<sup id="cite_ref-37" class="reference"><a href="Comparison_of_programming_languages#cite_note-37"><span>[</span>TS 9<span>]</span></a></sup></td>
+<td></td>
+<td>dynamic with optional static typing</td>
+</tr><tr><th><a href="PHP" title="PHP">PHP</a></th>
+<td>weak</td>
+<td></td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Plus_(programming_language)" title="Plus (programming language)">Plus</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>explicit</td>
+<td>property-based</td>
+<td>static, dynamic (optional)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">Prolog</a></th>
+<td>strong</td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Pure_(programming_language)" title="Pure (programming language)">Pure</a></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="Python_(programming_language)" title="Python (programming language)">Python</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td>property-based</td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/REBOL" title="REBOL">REBOL</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><span class="new" title="RPG (IBM) (page does not exist)">RPG (IBM)</span></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe</td>
+<td></td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td>property-based</td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td></td>
+<td>static with optional dynamic typing</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/S_(programming_language)" title="S (programming language)">S</a></th>
+<td>strong</td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/S-Lang_(programming_library)" title="S-Lang (programming library)">S-Lang</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>partially implicit (local type inference)</td>
+<td>name-based (subclassing) and property-based (structural)</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a></th>
+<td>strong</td>
+<td></td>
+<td>implicit</td>
+<td></td>
+<td>dynamic (latent)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td></td>
+<td>static<sup id="cite_ref-38" class="reference"><a href="Comparison_of_programming_languages#cite_note-38"><span>[</span>TS 10<span>]</span></a></sup></td>
+</tr><tr><th><a href="Smalltalk" title="Smalltalk">Smalltalk</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>property-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Tcl" title="Tcl">Tcl</a></th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit with optional explicit typing</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><span class="nowrap"><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></span></th>
+<td>strong</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unsafe<sup id="cite_ref-r2_31-4" class="reference"><a href="Comparison_of_programming_languages#cite_note-r2-31"><span>[</span>TS 6<span>]</span></a></sup></td>
+<td>explicit</td>
+<td></td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>partially implicit</td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td>implicit</td>
+<td></td>
+<td>dynamic</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/XL_(programming_language)" title="XL (programming language)">XL</a></th>
+<td>strong</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">safe</td>
+<td></td>
+<td>name-based</td>
+<td>static</td>
+</tr><tr class="sortbottom"><th>Language</th>
+<th><a href="Type_system#Strong_and_weak_typing" title="Type system">Type strength</a></th>
+<th><a href="Type_system#Safely_and_unsafely_typed_systems" title="Type system">Type safety</a></th>
+<th><a href="Type_system#Explicit_or_implicit_declaration_and_inference" title="Type system">Type expression</a></th>
+<th><a href="Type_system#Compatibility:_equivalence_and_subtyping" title="Type system">Type compatibility among composites</a></th>
+<th><a href="Type_system#Type_checking" title="Type system">Type checking</a></th>
+</tr></table><div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-26">^</a></b></span> <span class="reference-text">Unsafe operations are well isolated by a "Unchecked_" prefix.</span></li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-27">^</a></b></span> <span class="reference-text">Dynamic type checking is used when type safety can not be determined staticly i.e. for tagged types (type extension / <a href="http://en.m.wikipedia.org/wiki/Inheritance_(computer_science)" title="Inheritance (computer science)" class="mw-redirect">inheritance</a>), numeric ranges and array bounds.</span></li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-28">^</a></b></span> <span class="reference-text">with optional dynamic type casting (see <a href="http://en.m.wikipedia.org/wiki/Dynamic_cast" title="Dynamic cast">dynamic cast</a>)</span></li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-29">^</a></b></span> <span class="reference-text">Safe, but supports unsafe code through an explicit declaration</span></li>
+<li id="cite_note-30"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-30">^</a></b></span> <span class="reference-text">with optional dynamic type (see <a href="http://en.m.wikipedia.org/wiki/C_Sharp_syntax#Dynamic" title="C Sharp syntax">dynamic member lookup</a>)</span></li>
+<li id="cite_note-r2-31"><span class="mw-cite-backlink">^ <a href="Comparison_of_programming_languages#cite_ref-r2_31-0"><sup><i><b>a</b></i></sup></a> <a href="Comparison_of_programming_languages#cite_ref-r2_31-1"><sup><i><b>b</b></i></sup></a> <a href="Comparison_of_programming_languages#cite_ref-r2_31-2"><sup><i><b>c</b></i></sup></a> <a href="Comparison_of_programming_languages#cite_ref-r2_31-3"><sup><i><b>d</b></i></sup></a> <a href="Comparison_of_programming_languages#cite_ref-r2_31-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text">It is almost safe, unsafe features are not commonly used.</span></li>
+<li id="cite_note-32"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-32">^</a></b></span> <span class="reference-text">Optionally, typing can be <i>explicitly implied</i> by the first letter of the identifier (known as implicit typing within the Fortran community).</span></li>
+<li id="cite_note-35"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-35">^</a></b></span> <span class="reference-text">dynamic checking of type extensions i.e. inherited types</span></li>
+<li id="cite_note-37"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-37">^</a></b></span> <span class="reference-text">explicit for static types</span></li>
+<li id="cite_note-38"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-38">^</a></b></span> <span class="reference-text">optional for formal and virtual procedures</span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="Failsafe_I.2FO_and_system_calls">Failsafe I/O and system calls</span></h2>
+<p>Most programming languages will print an <a href="http://en.m.wikipedia.org/wiki/Error_message" title="Error message">error message</a> and/or throw an <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a> if an <a href="Input/output" title="Input/output">input/output</a> operation or other <a href="http://en.m.wikipedia.org/wiki/System_call" title="System call">system call</a> (e.g., <a href="http://en.m.wikipedia.org/wiki/Chmod" title="Chmod">chmod</a>, <a href="http://en.m.wikipedia.org/wiki/Kill_(Unix)" title="Kill (Unix)" class="mw-redirect">kill</a>) fails, unless the programmer has explicitly arranged for different handling of these events. Thus, these languages <a href="http://en.m.wikipedia.org/wiki/Failsafe" title="Failsafe" class="mw-redirect">fail safely</a> in this regard.</p>
+<p>Some (mostly older) languages require that the programmer explicitly add checks for these kinds of errors. It is common for novice programmers to forget to add these checks, and even experts occasionally do so—these omissions can lead to <a href="http://en.m.wikipedia.org/wiki/Software_bug" title="Software bug">erroneous behavior</a>.</p>
+<table class="wikitable sortable"><tr><th>Language</th>
+<th>Failsafe I/O</th>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes (exceptions)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/AutoHotkey" title="AutoHotkey">AutoHotkey</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No (global ErrorLevel must be explicitly checked)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No<sup id="cite_ref-39" class="reference"><a href="Comparison_of_programming_languages#cite_note-39"><span>[</span>FSIO 1<span>]</span></a></sup></td>
+</tr><tr><th><a href="C++" title="C++">C++</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No<sup id="cite_ref-VS_40-0" class="reference"><a href="Comparison_of_programming_languages#cite_note-VS-40"><span>[</span>FSIO 2<span>]</span></a></sup></td>
+</tr><tr><th><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="D_(programming_language)" title="D (programming language)">D</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2011">citation needed</span></a></i>]</sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes - It actually depends on the library and it is not defined by the language</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Falcon_(programming_language)" title="Falcon (programming language)">Falcon</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="Fortran" title="Fortran">Fortran</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/GLBasic" title="GLBasic">GLBasic</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No - Will generally cause program to crash</td>
+</tr><tr><th><a href="Go_(programming_language)" title="Go (programming language)">Go</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Gosu_(programming_language)" title="Gosu (programming language)">Gosu</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Harbour_(programming_language)" title="Harbour (programming language)" class="mw-redirect">Harbour</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/ISLISP" title="ISLISP">ISLISP</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="Java_(programming_language)" title="Java (programming language)">Java</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Lua_(programming_language)" title="Lua (programming language)">Lua</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No (some functions do not warn or throw exceptions)</td>
+</tr><tr><th><a href="Mathematica" title="Mathematica">Mathematica</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> (<a href="http://en.m.wikipedia.org/wiki/Embarcadero_Delphi" title="Embarcadero Delphi">Delphi</a>)</th>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Some</td>
+</tr><tr><th><a href="Objective-C" title="Objective-C">Objective-C</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes (exceptions)</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes (exceptions)</td>
+</tr><tr><th><a href="Perl" title="Perl">Perl</a></th>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No<sup id="cite_ref-41" class="reference"><a href="Comparison_of_programming_languages#cite_note-41"><span>[</span>FSIO 3<span>]</span></a></sup></td>
+</tr><tr><th><a href="PHP" title="PHP">PHP</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="Python_(programming_language)" title="Python (programming language)">Python</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/REBOL" title="REBOL">REBOL</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/S_(programming_language)" title="S (programming language)">S</a></th>
+<td style="background: #E4E4E4; color: black; vertical-align: middle; text-align: center;" class="unknown table-unknown">Unknown</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<sup id="cite_ref-42" class="reference"><a href="Comparison_of_programming_languages#cite_note-42"><span>[</span>29<span>]</span></a></sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2011">citation needed</span></a></i>]</sup></td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Tcl" title="Tcl">Tcl</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><th><a href="http://en.m.wikipedia.org/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a></th>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr class="sortbottom"><th>Language</th>
+<th>Failsafe I/O</th>
+</tr></table><div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-39"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-39">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/GNU_compiler_collection" title="GNU compiler collection" class="mw-redirect">gcc</a> can warn on unchecked error status. Newer versions of <a href="http://en.m.wikipedia.org/wiki/Visual_Studio" title="Visual Studio" class="mw-redirect">Visual Studio</a> usually throw exceptions on failed I/O when using stdio.</span></li>
+<li id="cite_note-VS-40"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-VS_40-0">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/GNU_compiler_collection" title="GNU compiler collection" class="mw-redirect">g++</a> can warn on unchecked error status. Newer versions of <a href="http://en.m.wikipedia.org/wiki/Visual_Studio" title="Visual Studio" class="mw-redirect">Visual Studio</a> usually throw exceptions on failed I/O when using stdio.</span></li>
+<li id="cite_note-41"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-41">^</a></b></span> <span class="reference-text">Considerable error checking can be enabled optionally, but by default Perl is not failsafe.</span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="Expressiveness">Expressiveness</span></h2>
+<table id="Expressiveness" class="wikitable" style="float: right;"><tr><th>Language</th>
+<th>Statements ratio<sup id="cite_ref-43" class="reference"><a href="Comparison_of_programming_languages#cite_note-43"><span>[</span>30<span>]</span></a></sup><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability"><span title="The material in the vicinity of this tag failed verification of its source citation(s) from July 2012">not in citation given</span></a></i>]</sup></th>
+<th>Lines ratio<sup id="cite_ref-44" class="reference"><a href="Comparison_of_programming_languages#cite_note-44"><span>[</span>31<span>]</span></a></sup></th>
+</tr><tr><td>C</td>
+<td>1</td>
+<td>1</td>
+</tr><tr><td>C++</td>
+<td>2.5</td>
+<td>1</td>
+</tr><tr><td>Fortran</td>
+<td>2</td>
+<td>0.8</td>
+</tr><tr><td>Java</td>
+<td>2.5</td>
+<td>1.5</td>
+</tr><tr><td>Perl</td>
+<td>6</td>
+<td>6</td>
+</tr><tr><td>Smalltalk</td>
+<td>6</td>
+<td>6.25</td>
+</tr><tr><td>Python</td>
+<td></td>
+<td>6.5</td>
+</tr></table><p>The literature on programming languages contains an abundance of informal claims about their relative expressive power, but there is no framework for formalizing such statements nor for deriving interesting consequences.<sup id="cite_ref-45" class="reference"><a href="Comparison_of_programming_languages#cite_note-45"><span>[</span>32<span>]</span></a></sup> This table provides two measures of expressiveness from two different sources. An additional measure of expressiveness, in GZip bytes, can be found on the Computer Language Benchmarks Game.<sup id="cite_ref-46" class="reference"><a href="Comparison_of_programming_languages#cite_note-46"><span>[</span>33<span>]</span></a></sup></p>
+<p><br style="clear: both;"></p>
+<h2> <span class="mw-headline" id="Benchmarks">Benchmarks</span></h2>
+<p><a href="http://en.m.wikipedia.org/wiki/Benchmark_(computing)" title="Benchmark (computing)">Benchmarks</a> are designed to mimic a particular type of workload on a component or system. The computer programs used for compiling some of the benchmark data in this section may not have been fully optimized, and the relevance of the data is disputed. The most accurate benchmarks are those that are customized to your particular situation. Other people's benchmark data may have some value to others, but proper interpretation brings many <a href="http://en.m.wikipedia.org/wiki/Benchmark_(computing)#Challenges" title="Benchmark (computing)">challenges</a>. See <a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/flawed-benchmarks.php">this</a> page about flawed benchmarks and comparisons. <a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/">The Computer Language Benchmarks Game</a> site contains a large number of micro-benchmarks of reader-contributed code snippets, with an interface that generates various charts and tables comparing specific programming languages and types of tests.</p>
+<h2> <span class="mw-headline" id="Timeline_of_specific_language_comparisons">Timeline of specific language comparisons</span></h2>
+<ul><li>1973 - <a rel="nofollow" class="external text" href="http://comjnl.oxfordjournals.org/cgi/content/abstract/17/4/325">Comparative Notes on Algol 68 and PL/I</a> - S. H. Valentine - February 1973</li>
+<li>1976 - Evaluation of <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>, <a href="http://en.m.wikipedia.org/wiki/JOVIAL" title="JOVIAL">JOVIAL</a> J3B, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> 67, and <a href="http://en.m.wikipedia.org/wiki/TACPOL" title="TACPOL" class="mw-redirect">TACPOL</a> Versus TINMAN - Requirements for a Common High Order Programming Language.</li>
+<li>1977 - <a rel="nofollow" class="external text" href="http://comjnl.oxfordjournals.org/cgi/content/abstract/21/4/316">A comparison of PASCAL and ALGOL 68</a><a rel="nofollow" class="external autonumber" href="http://dare.ubvu.vu.nl/bitstream/1871/2609/1/11054.pdf">[1]</a> - <a href="http://en.m.wikipedia.org/wiki/Andrew_S._Tanenbaum" title="Andrew S. Tanenbaum">Andrew S. Tanenbaum</a> - June 1977.</li>
+<li>1993 - <a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/hopl.html">Five Little Languages and How They Grew</a> - <a href="http://en.m.wikipedia.org/wiki/BLISS" title="BLISS">BLISS</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>, <a href="BCPL" title="BCPL">BCPL</a> &amp; <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> - <a href="Dennis_M._Ritchie" title="Dennis M. Ritchie" class="mw-redirect">Dennis M. Ritchie</a> - April 1993.</li>
+<li>2009 - <a rel="nofollow" class="external text" href="http://www.cowlark.com/2009-11-15-go">On Go - oh, go on</a> - How well will Google's <a href="Go_(programming_language)" title="Go (programming language)">Go</a> stand up against Brand X programming language? - David Given - November 2009</li>
+</ul><h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Alphabetical_list_of_programming_languages" title="Alphabetical list of programming languages" class="mw-redirect">Alphabetical list of programming languages</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_basic_instructions_of_programming_languages" title="Comparison of basic instructions of programming languages" class="mw-redirect">Comparison of basic instructions of programming languages</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(string_functions)" title="Comparison of programming languages (string functions)">Comparison of programming languages (string functions)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(strings)" title="Comparison of programming languages (strings)">Comparison of programming languages (strings)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(syntax)" title="Comparison of programming languages (syntax)">Comparison of programming languages (syntax)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(array)" title="Comparison of programming languages (array)">Comparison of programming languages (array)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(object-oriented_programming)" title="Comparison of programming languages (object-oriented programming)">Comparison of programming languages (object-oriented programming)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(list_comprehension)" title="Comparison of programming languages (list comprehension)">Comparison of programming languages (list comprehension)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_languages_(mapping)" title="Comparison of programming languages (mapping)">Comparison of programming languages (mapping)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_paradigms" title="Comparison of programming paradigms">Comparison of programming paradigms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Educational_programming_language" title="Educational programming language" class="mw-redirect">Educational programming language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hello_world_program_examples" title="Hello world program examples" class="mw-redirect">Hello world program examples</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Measuring_programming_language_popularity" title="Measuring programming language popularity">Measuring programming language popularity</a></li>
+<li><a href="Programming_language" title="Programming language">Programming language</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references"><li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-1">^</a></b></span> <span class="reference-text">As of May 2006 Diarmuid Pigott's <a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/">Encyclopedia of Computer Languages</a> hosted at <a href="http://en.m.wikipedia.org/wiki/Murdoch_University" title="Murdoch University">Murdoch University</a>, <a href="http://en.m.wikipedia.org/wiki/Australia" title="Australia">Australia</a> lists 8512 computer languages.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-TTL.html">Ada Reference Manual, ISO/IEC 8652:2005(E) Ed. 3</a>, <a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-9.html">Section 9: Tasks and Synchronization</a></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-TTL.html">Ada Reference Manual, ISO/IEC 8652:2005(E) Ed. 3</a> <a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-E.html">Annex E: Distributed Systems</a></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-TTL.html">Ada Reference Manual, ISO/IEC 8652:2005(E) Ed. 3</a>, <a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-12.html">Section 12: Generic Units</a></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-TTL.html">Ada Reference Manual, ISO/IEC 8652:2005(E) Ed. 3</a>, <a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-3-9.html">3.9 Tagged Types and Type Extensions</a></span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-TTL.html">Ada Reference Manual, ISO/IEC 8652:2005(E) Ed. 3</a>, <a rel="nofollow" class="external text" href="http://www.adaic.org/standards/05rm/html/RM-6.html">Section 6: Subprograms</a></span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://vak.ru/lib/exe/fetch.php/book/gost/pdf/gost-27831-88.pdf">Vak.ru</a></span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/docs/oldwgs/wg6.html">ISO 1538:1984</a></span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://vak.ru/lib/exe/fetch.php/book/gost/pdf/gost-27974-88.pdf">Vak.ru</a></span></li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://jcp.org/en/jsr/detail?id=274">JSR 274</a></span></li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/chist.html">CM.bell-labs.com</a></span></li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.codeproject.com/KB/cs/intro_functional_csharp.aspx">Codeproject.com</a></span></li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-13">^</a></b></span> <span class="reference-text">ECMA-334; ISO/IEC 23270:2006</span></li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.softvelocity.com">Softvelocity.com</a></span></li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-15">^</a></b></span> <span class="reference-text">ECMA-367; ISO/IEC 25436:2006</span></li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://jcp.org/en/jsr/detail?id=241">JSR 241</a></span></li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web">[www.haskell.org/onlinereport/haskell2010/ "The Haskell 2010 Language Report"]<span class="printonly">. www.haskell.org/onlinereport/haskell2010/</span><span class="reference-accessdate">. Retrieved 2011-12-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Haskell+2010+Language+Report&amp;rft.atitle=&amp;rft_id=www.haskell.org%2Fonlinereport%2Fhaskell2010%2F&amp;rfr_id=info:sid/en.wikipedia.org:Comparison_of_programming_languages"><span style="display: none;"> </span></span> Most Haskell implementations extend the Haskell 2010 standard.</span></li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-18">^</a></b></span> <span class="reference-text">Version releases are accompanied with a definitive Lua Reference Manual showing full syntax and semantics; a reference implementation, and a test suite. These are used to generate other Lua <a href="http://en.m.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">VM</a> implementations and compilers such as <span class="new" title="Kahlua (software) (page does not exist)">Kahlua</span> and <span class="new" title="LLVM-Lua (page does not exist)">LLVM-Lua</span>.</span></li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-19">^</a></b></span> <span class="reference-text">ISO/IEC 10514-1:1996</span></li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/onlinedocs/gcc-4.1.2/gcc/Standards.html">GCC.GNU.org</a></span></li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://prismwiki.embarcadero.com/en/RemObjects_Cirrus">Cirrus: Aspect-oriented programming in Delphi Prism</a></span></li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-22">^</a></b></span> <span class="reference-text">ISO 7185</span></li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://php.net/manual/en/index.php">PHP Manual</a>, <a rel="nofollow" class="external text" href="http://php.net/manual/en/language.oop5.php">Chapter 19. Classes and Objects (PHP 5)</a>,</span></li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://php.net/manual/en/index.php">PHP Manual</a>, <a rel="nofollow" class="external text" href="http://php.net/manual/en/language.functions.php">Chapter 17. Functions</a></span></li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.smlnj.org/sml97.html">SMLNJ.org</a></span></li>
+<li id="cite_note-33"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://golang.org/doc/go_spec.html">The Go Programming Language Specification</a></span></li>
+<li id="cite_note-34"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-34">^</a></b></span> <span class="reference-text">Sheng Liang, Gilad Bracha. <a rel="nofollow" class="external text" href="http://doi.acm.org/10.1145/286942.286945">Dynamic class loading in the Java virtual machine</a>. Volume 33, Issue 10 of ACM SIGPLAN Notices, October 1998.</span></li>
+<li id="cite_note-36"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-36">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://developer.apple.com/documentation/Cocoa/Conceptual/ObjectiveC/Articles/ocStaticBehavior.html">Developer.apple.com</a></span></li>
+<li id="cite_note-42"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-42">^</a></b></span> <span class="reference-text">Scala runs on the Java Virtual Machine from which it inherits the runtime exception handling.</span></li>
+<li id="cite_note-43"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-43">^</a></b></span> <span class="reference-text">Data from <a href="http://en.m.wikipedia.org/wiki/Code_Complete" title="Code Complete">Code Complete</a>. The <i>Statements ratio</i> column "shows typical ratios of source statements in several high-level languages to the equivalent code in C. A higher ratio means that each line of code in the language listed accomplishes more than does each line of code in C.</span></li>
+<li id="cite_note-44"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-44">^</a></b></span> <span class="reference-text">The ratio of line count tests won by each language to the number won by C when using the <i>Compare to</i> feature at <a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/debian/c.php">Shootout.alioth.debian.org</a>. Last updated May, 2006. C gcc was used for C, C++ g++ was used for C++, FORTRAN G95 was used for FORTRAN, Java JDK Server was used for Java, and Smalltalk GST was used for Smalltalk.</span></li>
+<li id="cite_note-45"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-45">^</a></b></span> <span class="reference-text">From <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.51.4656">On the Expressive Power of Programming Languages</a>, Matthias Felleisen, ESOP '90 3rd European Symposium on Programming.</span></li>
+<li id="cite_note-46"><span class="mw-cite-backlink"><b><a href="Comparison_of_programming_languages#cite_ref-46">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/u32/which-language-is-best.php?xfullcpu=0&amp;xmem=0&amp;xloc=1&amp;binarytrees=1&amp;chameneosredux=1&amp;fannkuch=1&amp;fasta=1&amp;knucleotide=1&amp;mandelbrot=1&amp;meteor=1&amp;nbody=1&amp;pidigits=1&amp;regexdna=1&amp;revcomp=1&amp;spectralnorm=1&amp;threadring=1&amp;calc=calculate">Computer Language Benchmarks Game ranking</a></span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul><li><span class="citation book">Cezzar, Ruknet. <i>A Guide to Programming Languages: Overview and Comparison</i>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-89006-812-0" title="Special:BookSources/978-0-89006-812-0">978-0-89006-812-0</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Guide+to+Programming+Languages%3A+Overview+and+Comparison&amp;rft.aulast=Cezzar&amp;rft.aufirst=Ruknet&amp;rft.au=Cezzar%2C%26%2332%3BRuknet&amp;rft.isbn=978-0-89006-812-0&amp;rfr_id=info:sid/en.wikipedia.org:Comparison_of_programming_languages"><span style="display: none;"> </span></span></li>
+</ul><h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://99-bottles-of-beer.net/">99-bottles-of-beer.net</a> — one program in over a thousand variations and multiple languages.</li>
+<li><a rel="nofollow" class="external text" href="http://gmarceau.qc.ca/blog/2009/05/speed-size-and-dependability-of.html">The speed, size and dependability of programming languages</a> — charts and narrative based on The Computer Language Benchmarks Game data.</li>
+<li><a rel="nofollow" class="external text" href="http://shootout.alioth.debian.org/u32/shapes.php">Shapes: Source Code Size and Run Time</a> - charts based on current Benchmarks Game data.</li>
+<li><a rel="nofollow" class="external text" href="http://www.scriptol.com/programming/choose.php">Comparison of syntaxes</a> with sample codes.</li>
+<li><a rel="nofollow" class="external text" href="http://rigaux.org/language-study/syntax-across-languages.html">Syntax Across Languages</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.jvoegele.com/software/langcomp.html">Programming Language Comparison</a> — a comparison of nine programming languages and related information.</li>
+<li><a rel="nofollow" class="external text" href="http://merd.sourceforge.net/pixel/language-study/scripting-language/">Scriptometer scores</a> — multiple comparisons of 26 programming languages.</li>
+<li><span class="PDFlink"><a rel="nofollow" class="external text" href="http://faculty.ed.umuc.edu/~meinkej/inss690/carlson.pdf">Comparing Web Languages in Theory and Practice</a></span><span style="font-size:smaller;"> PDF</span> — research to fulfill Kristofer J. Carlson's master's degree requirements.</li>
+<li><a rel="nofollow" class="external text" href="http://pleac.sourceforge.net/">PLEAC</a> — Programming Language Examples Alike Cookbook.</li>
+<li><a rel="nofollow" class="external text" href="http://www.ohloh.net/languages">OHLOH Language Statistics</a> — gives an indication of the popularity of programming languages in open-source projects.</li>
+<li><a rel="nofollow" class="external text" href="http://hhh.gavilan.edu/dvantassel/history/history.html">History of Programming Language Statements</a> — history and comparison of programming languages.</li>
+</ul>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ko.m.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4%EC%9D%98_%EB%B9%84%EA%B5%90" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97_%E0%A4%AD%E0%A4%BE%E0%A4%B7%E0%A4%BE%E0%A4%93%E0%A4%82_%E0%A4%95%E0%A5%80_%E0%A4%A4%E0%A5%81%E0%A4%B2%E0%A4%A8%E0%A4%BE" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Perbandingan_bahasa-bahasa_pengaturcaraan" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%E3%81%AE%E6%AF%94%E8%BC%83" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Anexo:Compara%C3%A7%C3%A3o_entre_linguagens_de_programa%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Comparison_of_programming_languages&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Comparison_of_programming_languages&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Comparison+of+programming+languages&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

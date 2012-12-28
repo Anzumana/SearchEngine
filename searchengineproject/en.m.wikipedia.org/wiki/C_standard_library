@@ -1,0 +1,607 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C standard library - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C standard library","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C_standard_library" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C+standard+library"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C standard library</h1>			
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="http://en.m.wikipedia.org/wiki/C_Standard_Library" title="C Standard Library" class="mw-redirect">C Standard Library</a></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><a href="C_data_types" title="C data types">Data types</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_character_classification" title="C character classification">Character classification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">Strings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions" title="C mathematical functions">Mathematics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_file_input/output" title="C file input/output">File input/output</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_date_and_time_functions" title="C date and time functions">Date/time</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_localization_functions" title="C localization functions">Localization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">Memory allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_process_control" title="C process control">Process control</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_signal_handling" title="C signal handling">Signals</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_alternative_tokens" title="C alternative tokens">Alternative tokens</a></li>
+</ul>
+<dl>
+<dd>
+<b>Miscellaneous headers</b>:</dd>
+</dl>
+<ul>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Assert.h" title="Assert.h">assert.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Errno.h" title="Errno.h">errno.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Setjmp.h" title="Setjmp.h">setjmp.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Stdarg.h" title="Stdarg.h">stdarg.h</a>&gt;</code></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:C_Standard_Library" title="Template:C Standard Library"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:C_Standard_Library" title="Template talk:C Standard Library"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:C_Standard_Library&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>The <b>C Standard Library</b> is the <a href="http://en.m.wikipedia.org/wiki/Standard_library" title="Standard library">standard library</a> for the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, as specified in the <a href="ANSI_C" title="ANSI C">ANSI C</a> standard.<sup id="cite_ref-c99io_1-0" class="reference"><a href="C_standard_library#cite_note-c99io-1"><span>[</span>1<span>]</span></a></sup> It was developed at the same time as the <a href="http://en.m.wikipedia.org/wiki/C_POSIX_library" title="C POSIX library" class="mw-redirect">C POSIX library</a>, which is basically a superset of it<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from December 2011">citation needed</span></a></i>]</sup>. Since ANSI C was adopted by the <a href="International_Organization_for_Standardization" title="International Organization for Standardization">International Organization for Standardization</a>,<sup id="cite_ref-ISOAdoptedAnsiC_2-0" class="reference"><a href="C_standard_library#cite_note-ISOAdoptedAnsiC-2"><span>[</span>2<span>]</span></a></sup> the C standard library is also called the <b>ISO C library</b>.</p>
+<p>Informally, the terms <b>C standard library</b> or <b>C library</b> or <b>libc</b> are also used to designate a particular implementation on a given system. In the <a href="Unix" title="Unix">Unix</a> environment, such an implementation is usually shipped with the operating system and its presence is assumed by many applications. For instance, <a href="http://en.m.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux" class="mw-redirect">GNU/Linux</a> comes with the <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> implementation <a href="http://en.m.wikipedia.org/wiki/Glibc" title="Glibc" class="mw-redirect">glibc</a>.</p>
+<p>The C standard library provides macros, type definitions, and functions for tasks like <a href="http://en.m.wikipedia.org/wiki/Character_string_(computer_science)" title="Character string (computer science)" class="mw-redirect">string</a> handling, mathematical computations, input/output processing, memory allocation and several other <a href="Operating_system" title="Operating system">operating system</a> services.</p>
+<h2> <span class="mw-headline" id="Application_Programming_Interface">Application Programming Interface</span>
+</h2>
+<h3> <span class="mw-headline" id="Header_files"><span id="headers"></span> Header files</span>
+</h3>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">application programming interface</a> (API) of the C standard library is declared in a number of <a href="Header_file" title="Header file">header files</a>. Each header file contains one or more function declarations, data type definitions, and macros.</p>
+<p>After a long period of stability, three new header files (<code>iso646.h</code>, <code>wchar.h</code>, and <code>wctype.h</code>) were added with <i>Normative Addendum 1</i> (NA1), an addition to the C Standard ratified in 1995. Six more header files (<code>complex.h</code>, <code>fenv.h</code>, <code>inttypes.h</code>, <code>stdbool.h</code>, <code>stdint.h</code>, and <code>tgmath.h</code>) were added with <a href="C99" title="C99">C99</a>, a revision to the C Standard published in 1999, and five more files (<code>stdalign.h</code>, <code>stdatomic.h</code>, <code>stdnoreturn.h</code>, <code>threads.h</code>, and <code>uchar.h</code>) with <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a> in 2011. In total, there are now 29 header files:</p>
+<table class="wikitable sortable">
+<tr>
+<th>Name</th>
+<th>From</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><code><a href="http://en.m.wikipedia.org/wiki/Assert.h" title="Assert.h">&lt;assert.h&gt;</a></code></td>
+<td></td>
+<td>Contains the <a href="http://en.m.wikipedia.org/wiki/Assertion_(computing)" title="Assertion (computing)">assert</a> macro, used to assist with detecting logical errors and other types of bug in debugging versions of a program.</td>
+</tr>
+<tr>
+<td><code>&lt;complex.h&gt;</code></td>
+<td>C99</td>
+<td>A <a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions#complex.h" title="C mathematical functions">set of functions</a> for manipulating <a href="Complex_number" title="Complex number">complex numbers</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;ctype.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_character_classification" title="C character classification">set of functions</a> used to classify characters by their types or to convert between upper and lower case in a way that is independent of the used <a href="http://en.m.wikipedia.org/wiki/Character_set" title="Character set" class="mw-redirect">character set</a> (typically <a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> or one of its extensions, although implementations utilizing <a href="http://en.m.wikipedia.org/wiki/EBCDIC" title="EBCDIC">EBCDIC</a> are also known).</td>
+</tr>
+<tr>
+<td><code><a href="http://en.m.wikipedia.org/wiki/Errno.h" title="Errno.h">&lt;errno.h&gt;</a></code></td>
+<td></td>
+<td>For testing error codes reported by library functions.</td>
+</tr>
+<tr>
+<td><code>&lt;fenv.h&gt;</code></td>
+<td>C99</td>
+<td>Defines a <a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions#fenv.h" title="C mathematical functions">set of functions</a> for controlling <a href="http://en.m.wikipedia.org/wiki/Floating-point" title="Floating-point" class="mw-redirect">floating-point</a> environment.</td>
+</tr>
+<tr>
+<td><code>&lt;float.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="C_data_types#float.h" title="C data types">macro constants</a> specifying the implementation-specific properties of the <a href="http://en.m.wikipedia.org/wiki/Floating-point" title="Floating-point" class="mw-redirect">floating-point</a> library.</td>
+</tr>
+<tr>
+<td><code>&lt;inttypes.h&gt;</code></td>
+<td>C99</td>
+<td>Defines <a href="C_data_types#inttypes.h" title="C data types">exact width integer types</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;iso646.h&gt;</code></td>
+<td>NA1</td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_alternative_tokens" title="C alternative tokens">several macros</a> that implement alternative ways to express several standard tokens. For programming in <a href="http://en.m.wikipedia.org/wiki/ISO_646" title="ISO 646" class="mw-redirect">ISO 646</a> variant character sets.</td>
+</tr>
+<tr>
+<td><code>&lt;limits.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="C_data_types#limits.h" title="C data types">macro constants</a> specifying the implementation-specific properties of the integer types.</td>
+</tr>
+<tr>
+<td><code>&lt;locale.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_localization_functions" title="C localization functions">localization functions</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;math.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions" title="C mathematical functions">common mathematical functions</a>.</td>
+</tr>
+<tr>
+<td><code><a href="http://en.m.wikipedia.org/wiki/Setjmp.h" title="Setjmp.h">&lt;setjmp.h&gt;</a></code></td>
+<td></td>
+<td>Declares the macros <code>setjmp</code> and <code>longjmp</code>, which are used for non-local exits.</td>
+</tr>
+<tr>
+<td><code>&lt;signal.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_signal_handling" title="C signal handling">signal handling functions</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;stdalign.h&gt;</code></td>
+<td>C11</td>
+<td>For querying and specifying the <a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">alignment</a> of objects.</td>
+</tr>
+<tr>
+<td><code><a href="http://en.m.wikipedia.org/wiki/Stdarg.h" title="Stdarg.h">&lt;stdarg.h&gt;</a></code></td>
+<td></td>
+<td>For accessing a varying number of arguments passed to functions.</td>
+</tr>
+<tr>
+<td><code>&lt;stdatomic.h&gt;</code></td>
+<td>C11</td>
+<td>For <a href="http://en.m.wikipedia.org/wiki/Linearizability" title="Linearizability">atomic operations</a> on data shared between threads.</td>
+</tr>
+<tr>
+<td><code>&lt;stdbool.h&gt;</code></td>
+<td>C99</td>
+<td>Defines <a href="C_data_types#stdbool.h" title="C data types">a boolean data type</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;stddef.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="C_data_types#stddef.h" title="C data types">several useful types and macros</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;stdint.h&gt;</code></td>
+<td>C99</td>
+<td>Defines <a href="C_data_types#stdint.h" title="C data types">exact width integer types</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;stdio.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_file_input/output" title="C file input/output">core input and output functions</a>
+</td>
+</tr>
+<tr>
+<td><code>&lt;stdlib.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_string_handling#stdlib.h" title="C string handling">numeric conversion functions</a>, <a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions#stdlib.h" title="C mathematical functions">pseudo-random numbers generation functions</a>, <a href="http://en.m.wikipedia.org/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">memory allocation</a>, <a href="http://en.m.wikipedia.org/wiki/C_process_control" title="C process control">process control functions</a>
+</td>
+</tr>
+<tr>
+<td><code>&lt;stdnoreturn.h&gt;</code></td>
+<td>C11</td>
+<td>For specifying non-returning functions.</td>
+</tr>
+<tr>
+<td><code>&lt;string.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">string handling functions</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;tgmath.h&gt;</code></td>
+<td>C99</td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions#tgmath.h" title="C mathematical functions">type-generic mathematical functions</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;threads.h&gt;</code></td>
+<td>C11</td>
+<td>Defines functions for managing multiple <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">Threads</a> as well as <a href="http://en.m.wikipedia.org/wiki/Mutual_exclusion" title="Mutual exclusion">mutexes</a> and <a href="http://en.m.wikipedia.org/wiki/Monitor_(synchronization)" title="Monitor (synchronization)">condition variables</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;time.h&gt;</code></td>
+<td></td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_date_and_time_functions" title="C date and time functions">date and time handling functions</a>
+</td>
+</tr>
+<tr>
+<td><code>&lt;uchar.h&gt;</code></td>
+<td>C11</td>
+<td>Types and functions for manipulating <a href="Unicode" title="Unicode">Unicode</a> characters.</td>
+</tr>
+<tr>
+<td><code>&lt;wchar.h&gt;</code></td>
+<td>NA1</td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">wide string handling functions</a>.</td>
+</tr>
+<tr>
+<td><code>&lt;wctype.h&gt;</code></td>
+<td>NA1</td>
+<td>Defines <a href="http://en.m.wikipedia.org/wiki/C_character_classification" title="C character classification">set of functions</a> used to classify wide characters by their types or to convert between upper and lower case</td>
+</tr>
+</table>
+<p>Three of the header files (<code>complex.h</code>, <code>stdatomic.h</code>, <code>threads.h</code>) are conditional features that implementations need not support.</p>
+<p>The <a href="POSIX" title="POSIX">POSIX</a> standard added several nonstandard C headers for Unix-specific functionality. Many have found their way to other architectures. Examples include <code>unistd.h</code> and <code>signal.h</code>. A number of other groups are using other nonstandard headers - most flavors of Linux have <code>alloca.h</code> and HP OpenVMS has the <code>va_count()</code> function.</p>
+<h3> <span class="mw-headline" id="Documentation">Documentation</span>
+</h3>
+<p>On Unix-like systems, the authoritative documentation of the actually implemented API is provided in form of <a href="http://en.m.wikipedia.org/wiki/Man_page" title="Man page">man pages</a>. On most systems, man pages on standard library functions are in section 3; section 7 may contain some more generic pages on underlying concepts (e.g. <code>man 7 math_error</code> in <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>).</p>
+<h2> <span class="mw-headline" id="Implementations">Implementations</span>
+</h2>
+<p><a href="Unix-like" title="Unix-like">Unix-like</a> systems typically have a C library in <a href="http://en.m.wikipedia.org/wiki/Shared_library" title="Shared library" class="mw-redirect">shared library</a> form, but the header files (and compiler toolchain) may be absent from an installation so C development may not be possible. The C library is considered part of the operating system on Unix-like systems.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2010">citation needed</span></a></i>]</sup> The C functions, including the ISO C standard ones, are widely used by programs, and are regarded as if they were not only an implementation of something in the C language, but also de facto part of the operating system interface. Unix-like operating systems generally cannot function if the C library is erased.</p>
+<p>By contrast, on Microsoft Windows, the core system dynamic libraries (<a href="http://en.m.wikipedia.org/wiki/Dynamic-link_library" title="Dynamic-link library">DLLs</a>) do not provide an implementation of the C standard library; this is provided by each compiler individually. Compiled applications written in C are either statically linked with a C library, or linked to a dynamic version of the library that is shipped with these applications, rather than relied upon to be present on the targeted systems. Functions in a compiler's C library are not regarded as interfaces to Microsoft Windows.</p>
+<p>Many other implementations exist, provided with both various operating systems and C compilers.</p>
+<p>Although there exist too many implementations to list, some popular implementations follow:</p>
+<ul>
+<li>
+<span class="new" title="BSD libc (page does not exist)">BSD libc</span>, implementations distributed under <a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> operating systems.</li>
+<li>
+<a href="GNU_C_Library" title="GNU C Library">GNU C Library</a>, used in <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a>/<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> and <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a>/<a href="http://en.m.wikipedia.org/wiki/HURD" title="HURD" class="mw-redirect">HURD</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_library_files#Msvcrt.dll" title="Windows library files" class="mw-redirect">Microsoft C Run-time Library</a>, part of <a href="http://en.m.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B" title="Microsoft Visual C++" class="mw-redirect">Microsoft Visual C++</a>
+</li>
+<li>
+<a href="Dietlibc" title="Dietlibc">dietlibc</a>, an alternative small implementation of the C standard library (MMU-less)</li>
+<li>
+<a href="UClibc" title="UClibc">uClibc</a>, a C standard library for embedded <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> systems (MMU-less)</li>
+<li>
+<a href="Newlib" title="Newlib">Newlib</a>, a C standard library for embedded systems (MMU-less)<sup id="cite_ref-3" class="reference"><a href="C_standard_library#cite_note-3"><span>[</span>3<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Klibc" title="Klibc">klibc</a>, primarily for booting Linux systems.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/EGLIBC" title="EGLIBC" class="mw-redirect">EGLIBC</a>, variant of glibc for embedded systems.</li>
+<li>
+<span class="new" title="Musl (page does not exist)">musl</span>, another lightweight C standard library implementation for Linux systems<sup id="cite_ref-4" class="reference"><a href="C_standard_library#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Compiler_built-in_functions">Compiler built-in functions</span>
+</h3>
+<p>Some compilers (for example, <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a><sup id="cite_ref-5" class="reference"><a href="C_standard_library#cite_note-5"><span>[</span>5<span>]</span></a></sup>) provide built-in versions of many of the functions in the C standard library; that is, the implementations of the functions are written into the compiled <a href="http://en.m.wikipedia.org/wiki/Object_file" title="Object file">object file</a>, and the program calls the built-in versions instead of the functions in the C library <a href="http://en.m.wikipedia.org/wiki/Shared_object" title="Shared object" class="mw-redirect">shared object</a> file. This reduces function call overhead, especially if function calls are replaced with <a href="Inline_function" title="Inline function">inline</a> variants, and allows other forms of <a href="http://en.m.wikipedia.org/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">optimization</a> (as the compiler knows the <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control-flow</a> characteristics of the built-in variants), but may cause confusion when debugging (for example, the built-in versions cannot be replaced with <a href="http://en.m.wikipedia.org/wiki/Instrumentation_(computer_programming)" title="Instrumentation (computer programming)">instrumented</a> variants).</p>
+<p>However, the built-in functions must behave like ordinary functions in accordance with ISO C. The main implication is that the program must be able to create a pointer to these functions by taking their address, and invoke the function by means of that pointer. If two pointers to the same function are derived in two different translation unit in the program, these two pointers must compare equal; that is, the address comes by resolving the name of the function, which has external (program-wide) linkage.The built-in function must behave like ordinary functions</p>
+<h3> <span class="mw-headline" id="Linking.2C_libm">Linking, libm</span>
+</h3>
+<p>Under Linux, the mathematical functions (as declared in <code>math.h</code>) are bundled separately in the mathematical library <span class="new" title="Libm (page does not exist)">libm</span>. If any of them are used, the linker must be given the directive <code>-lm</code>.</p>
+<h3> <span class="mw-headline" id="Detection">Detection</span>
+</h3>
+<p>According to the C standard the macro <code>__STDC_HOSTED__</code> shall be defined to <b>1</b> if the implementation is hosted. A hosted implementation has all the headers specified by the C standard. An implementation can also be <i>freestanding</i> which means that these headers will not be present. If an implementation is <i>freestanding</i>, it shall define <code>__STDC_HOSTED__</code> to <b>0</b>.</p>
+<h2> <span class="mw-headline" id="Concepts.2C_problems.2C_workarounds">Concepts, problems, workarounds</span>
+</h2>
+<h3> <span class="mw-headline" id="Buffer_overflow_vulnerabilities">Buffer overflow vulnerabilities</span>
+</h3>
+<p>Some functions in the C standard library have been notorious for having <a href="Buffer_overflow" title="Buffer overflow">buffer overflow</a> vulnerabilities and generally encouraging buggy programming ever since their adoption.<sup id="cite_ref-6" class="reference"><a href="C_standard_library#cite_note-6"><span>[</span>6<span>]</span></a></sup> The most criticized items are:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">string-manipulation routines</a>, including strcpy() and strcat(), for lack of bounds checking and possible buffer overflows if the bounds aren't checked manually; there are now alternative routines, such as strncpy() and strncat()</li>
+<li>string routines in general, for <a href="http://en.m.wikipedia.org/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side-effects</a>, encouraging irresponsible buffer usage, not always guaranteeing valid <a href="Null-terminated_string" title="Null-terminated string">null-terminated</a> output, linear length calculation;<sup id="cite_ref-7" class="reference"><a href="C_standard_library#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+</li>
+<li>
+<a href="Printf" title="Printf" class="mw-redirect">printf</a>() family routines, for spoiling the <a href="Call_stack" title="Call stack">execution stack</a> when the format string doesn't match the arguments given. This fundamental flaw created an entire class of attacks: <a href="http://en.m.wikipedia.org/wiki/Format_string_attack" title="Format string attack" class="mw-redirect">format string attacks</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Gets()" title="Gets()" class="mw-redirect">gets</a>() and <a href="http://en.m.wikipedia.org/wiki/Scanf" title="Scanf" class="mw-redirect">scanf</a>() I/O routines, for lack of (either any or easy) input length checking</li>
+</ul>
+<p>Except the extreme case with <code>gets()</code>, all the security vulnerabilities can be avoided by introducing auxiliary code to perform memory management, bounds checking, input checking, etc. This is often done in form of wrappers that make standard library functions safer and easier to use. This dates back to as early as <i><a href="http://en.m.wikipedia.org/wiki/The_Practice_of_Programming" title="The Practice of Programming">The Practice of Programming</a></i> book by B. Kernighan and R. Pike where the authors commonly use wrappers that print error messages and quit the program if an error occurs.</p>
+<h3> <span class="mw-headline" id="Threading_problems.2C_vulnerability_to_race_conditions">Threading problems, vulnerability to race conditions</span>
+</h3>
+<p>The <span class="new" title="Mktemp (page does not exist)">mktemp</span>() and <a href="http://en.m.wikipedia.org/wiki/Strerror" title="Strerror" class="mw-redirect">strerror</a>() routines are criticized for being <a href="http://en.m.wikipedia.org/wiki/Thread_safety" title="Thread safety">thread unsafe</a> and otherwise vulnerable to <a href="http://en.m.wikipedia.org/wiki/Race_condition" title="Race condition">race conditions</a>.</p>
+<h3> <span class="mw-headline" id="Error_handling">Error handling</span>
+</h3>
+<p>The error handling of the functions in the C standard library is not consistent and sometimes confusing. This can be fairly well summarized by the Linux manual page <code>math_error</code> which says:</p>
+<blockquote>
+<p>The current (version 2.8) situation under glibc is messy. Most (but not all) functions raise exceptions on errors. Some also set errno. A few functions set errno, but don't raise an exception. A very few functions do neither.</p>
+</blockquote>
+<h2> <span class="mw-headline" id="Standardization">Standardization</span>
+</h2>
+<p>The original <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> provided no built-in functions such as I/O operations, unlike traditional languages such as <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> and <a href="Fortran" title="Fortran">Fortran</a>.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from November 2010">citation needed</span></a></i>]</sup> Over time, user communities of C shared ideas and implementations of what is now called C standard libraries. Many of these ideas were incorporated eventually into the definition of the standardized C language.</p>
+<p>Both <a href="Unix" title="Unix">Unix</a> and C were created at <a href="Bell_Labs" title="Bell Labs">AT&amp;T's Bell Laboratories</a> in the late 1960s and early 1970s. During the 1970s the C language became increasingly popular. Many universities and organizations began creating their own variants of the language for their own projects. By the beginning of the 1980s compatibility problems between the various C implementations became apparent. In 1983 the <a href="American_National_Standards_Institute" title="American National Standards Institute">American National Standards Institute</a> (ANSI) formed a committee to establish a standard specification of C known as "<a href="ANSI_C" title="ANSI C">ANSI C</a>". This work culminated in the creation of the so-called C89 standard in 1989. Part of the resulting standard was a set of <a href="http://en.m.wikipedia.org/wiki/Software_libraries" title="Software libraries" class="mw-redirect">software libraries</a> called the ANSI C standard library.</p>
+<h3> <span class="mw-headline" id="POSIX_standard_library">POSIX standard library</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/C_POSIX_library" title="C POSIX library" class="mw-redirect">C POSIX library</a>
+</div>
+<p><a href="POSIX" title="POSIX">POSIX</a> (and <a href="http://en.m.wikipedia.org/wiki/Single_Unix_Specification" title="Single Unix Specification" class="mw-redirect">SUS</a>) specifies a number of routines that should be available over and above those in the C standard library proper; these are often implemented alongside the C standard library functionality, with varying degrees of closeness. For example, <a href="http://en.m.wikipedia.org/wiki/Glibc" title="Glibc" class="mw-redirect">glibc</a> implements functions such as <a href="http://en.m.wikipedia.org/wiki/Fork_(operating_system)" title="Fork (operating system)">fork</a> within <code>libc.so</code>, but before <a href="http://en.m.wikipedia.org/wiki/NPTL" title="NPTL" class="mw-redirect">NPTL</a> was merged into glibc it constituted a separate library with its own linker flag argument. Often, this POSIX-specified functionality will be regarded as part of the library; the C library proper may be identified as the ANSI or <a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> C library.</p>
+<h3> <span class="mw-headline" id="Ongoing_work">Ongoing work</span>
+</h3>
+<p>The ISO C committee published Technical reports <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/WG14/www/docs/n1225.pdf">TR 24731-1</a> and is working on <a rel="nofollow" class="external text" href="http://www.open-std.org/JTC1/SC22/WG14/www/docs/n1337.pdf">TR 24731-2</a> to propose adoption of some functions with bounds checking and automatic buffer allocation, correspondingly. The former has met severe criticism with some praise,<sup id="cite_ref-8" class="reference"><a href="C_standard_library#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="C_standard_library#cite_note-9"><span>[</span>9<span>]</span></a></sup> the latter received mixed responses. Despite this, TR 24731-1 has been implemented into Microsoft's C standard library and its compiler issues warnings when using old 'insecure' functions.</p>
+<h2> <span class="mw-headline" id="The_C_standard_library_in_other_languages">The C standard library in other languages</span>
+</h2>
+<p>Some languages include the functionality of the standard C library in their own libraries. The library may be adapted to better suit the language's structure, but the operation semantics are kept similar. The <a href="C++" title="C++">C++</a> language, for example, includes the functionality of the C standard library in the <a href="http://en.m.wikipedia.org/wiki/Namespace_(programming)" title="Namespace (programming)" class="mw-redirect">namespace</a> <code>std</code> (e.g., <code>std::printf</code>, <code>std::atoi</code>, <code>std::feof</code>), in header files with similar names to the C ones (<code>cstdio</code>, <code>cmath</code>, <code>cstdlib</code>, etc.). Other languages that take similar approaches are <a href="D_(programming_language)" title="D (programming language)">D</a> and the main implementation of <a href="Python_(programming_language)" title="Python (programming language)">Python</a> known as <a href="CPython" title="CPython">CPython</a>. In the latter, for example, the built-in file objects are defined as "implemented using C's <code>stdio</code> package",<sup id="cite_ref-10" class="reference"><a href="C_standard_library#cite_note-10"><span>[</span>10<span>]</span></a></sup> so that the available operations (open, read, write, etc.) are expected to have the same behavior as the corresponding C functions.</p>
+<h2> <span class="mw-headline" id="Comparison_to_standard_libraries_of_other_languages">Comparison to standard libraries of other languages</span>
+</h2>
+<p>The C standard library is minuscule compared to the standard libraries of some other languages. The C library provides a basic set of mathematical functions, string manipulation, type conversions, and file and console-based I/O. It does not include a standard set of "<a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">container types</a>" like the <a href="C++" title="C++">C++</a> <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a>, let alone the complete <a href="Graphical_user_interface" title="Graphical user interface">graphical user interface</a> (GUI) toolkits, networking tools, and profusion of other functionality that <a href="http://en.m.wikipedia.org/wiki/Java_(software_platform)" title="Java (software platform)">Java</a> provides as standard. The main advantage of the small standard library is that providing a working ISO C environment is much easier than it is with other languages, and consequently porting C to a new platform is relatively easy.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C%2B%2B_standard_library" title="C++ standard library" class="mw-redirect">C++ standard library</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-c99io-1">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-c99io_1-0">^</a></b></span> <span class="reference-text"><a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a>/<a href="http://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission">IEC</a> (1999). <i><a href="C99" title="C99">ISO/IEC 9899:1999(E): Programming Languages - C</a> §7.19.1 para 1</i></span>
+</li>
+<li id="cite_note-ISOAdoptedAnsiC-2">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-ISOAdoptedAnsiC_2-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.keil.com/support/docs/1893.htm">"C Standards"</a>. Keil<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.keil.com/support/docs/1893.htm">http://www.keil.com/support/docs/1893.htm</a></span><span class="reference-accessdate">. Retrieved 24 November 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C+Standards&amp;rft.atitle=&amp;rft.pub=Keil&amp;rft_id=http%3A%2F%2Fwww.keil.com%2Fsupport%2Fdocs%2F1893.htm&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.cygwin.com/ml/newlib/2006/msg00224.html">"Re: Does Newlib support mmu-less CPUs?"</a>. Cygwin.com. 23 March 2006<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cygwin.com/ml/newlib/2006/msg00224.html">http://www.cygwin.com/ml/newlib/2006/msg00224.html</a></span><span class="reference-accessdate">. Retrieved 28 October 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Re%3A+Does+Newlib+support+mmu-less+CPUs%3F&amp;rft.atitle=&amp;rft.date=23+March+2006&amp;rft.pub=Cygwin.com&amp;rft_id=http%3A%2F%2Fwww.cygwin.com%2Fml%2Fnewlib%2F2006%2Fmsg00224.html&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.etalabs.net/musl/">"musl libc"</a>. Etalabs.net<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.etalabs.net/musl/">http://www.etalabs.net/musl/</a></span><span class="reference-accessdate">. Retrieved 28 October 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=musl+libc&amp;rft.atitle=&amp;rft.pub=Etalabs.net&amp;rft_id=http%3A%2F%2Fwww.etalabs.net%2Fmusl%2F&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/onlinedocs/gcc-4.1.1/gcc/Other-Builtins.html#Other-Builtins">Other built-in functions provided by GCC</a>, GCC Manual</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-6">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/Morris_worm" title="Morris worm">Morris worm</a> that takes advantage of the well-known vulnerability in <code>gets()</code> have been created as early as in 1988.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-7">^</a></b></span> <span class="reference-text">in C standard library, string length calculation and looking for a string's end have <a href="http://en.m.wikipedia.org/wiki/Linear_time" title="Linear time" class="mw-redirect">linear time complexities</a> and are inefficient when used on the same or related strings repeatedly</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/372980/do-you-use-the-tr-24731-safe-functions-in-your-c-code">Do you use the TR 24731 ‘safe’ functions in your C code?</a> - Stack overflow</span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1106.txt">"Austin Group Review of ISO/IEC WDTR 24731"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1106.txt">http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1106.txt</a></span><span class="reference-accessdate">. Retrieved 28 October 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Austin+Group+Review+of+ISO%2FIEC+WDTR+24731&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2Fjtc1%2Fsc22%2Fwg14%2Fwww%2Fdocs%2Fn1106.txt&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="C_standard_library#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://docs.python.org/library/stdtypes.html#bltin-file-objects">"The Python Standard Library: 6.9. File Objects"</a>. Docs.python.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.python.org/library/stdtypes.html#bltin-file-objects">http://docs.python.org/library/stdtypes.html#bltin-file-objects</a></span><span class="reference-accessdate">. Retrieved 28 October 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Python+Standard+Library%3A+6.9.+File+Objects&amp;rft.atitle=&amp;rft.pub=Docs.python.org&amp;rft_id=http%3A%2F%2Fdocs.python.org%2Flibrary%2Fstdtypes.html%23bltin-file-objects&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<span class="citation book">Plauger, P. J. (1992). <i>The Standard C library</i>. Englewood Cliffs, N.J: Prentice Hall. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-13-131509-9" title="Special:BookSources/0-13-131509-9">0-13-131509-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Standard+C+library&amp;rft.aulast=Plauger&amp;rft.aufirst=P.+J.&amp;rft.au=Plauger%2C%26%2332%3BP.+J.&amp;rft.date=1992&amp;rft.place=Englewood+Cliffs%2C+N.J&amp;rft.pub=Prentice+Hall&amp;rft.isbn=0-13-131509-9&amp;rfr_id=info:sid/en.wikipedia.org:C_standard_library"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.acm.uiuc.edu/webmonkeys/book/c_guide/index.html">The C Library Reference Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.schweikhardt.net/identifiers.html">Handy list of which headers are in which standard</a></li>
+<li>Microsoft <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/abx4dbyh.aspx">C Run-Time Libraries</a> on MSDN</li>
+<li>NetBSD <a rel="nofollow" class="external text" href="http://netbsd.gw.com/cgi-bin/man-cgi?intro+3+NetBSD-current">C libraries manual</a> and <a rel="nofollow" class="external text" href="http://cvsweb.netbsd.org/bsdweb.cgi/src/lib/libc/">full C library source</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://man.cat-v.org/unix-1st/3/">Manual pages for the original C standard libraries in Unix</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">C standard library</strong></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><strong class="selflink">Functions</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 20 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://be-x-old.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%B0%D1%8F_%D0%B1%D1%96%D0%B1%D0%BB%D1%96%D1%8F%D1%82%D1%8D%D0%BA%D0%B0_C" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://ca.m.wikipedia.org/wiki/C_standard_library" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Standardn%C3%AD_knihovna_jazyka_C" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Libc" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Standard_C_Library" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/C_standardteek" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/C_%CE%A0%CF%81%CF%8C%CF%84%CF%85%CF%80%CE%B7_%CE%B2%CE%B9%CE%B2%CE%BB%CE%B9%CE%BF%CE%B8%CE%AE%CE%BA%CE%B7" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Biblioteca_est%C3%A1ndar_de_C" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Biblioth%C3%A8que_standard_de_C" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/C_%ED%91%9C%EC%A4%80_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Libreria_standard_del_C" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Standaard_C-bibliotheek" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%A8%99%E6%BA%96C%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Standard_C-bibliotek" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Biblioteka_standardowa_j%C4%99zyka_C" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D0%B0%D1%8F_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0_%D0%A1%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://tr.m.wikipedia.org/wiki/C_standart_k%C3%BCt%C3%BCphanesi" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Th%C6%B0_vi%E1%BB%87n_chu%E1%BA%A9n_C" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/C%E6%A8%99%E6%BA%96%E5%87%BD%E5%BC%8F%E5%BA%AB" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=C_standard_library&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=C_standard_library&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C+standard+library&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

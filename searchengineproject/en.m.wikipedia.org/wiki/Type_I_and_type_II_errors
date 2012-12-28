@@ -1,0 +1,1205 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Type I and type II errors - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Type I and type II errors","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Type_I_and_type_II_errors" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Type+I+and+type+II+errors"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Type I and type II errors</h1>			
+<div class="dablink">This article is about erroneous outcomes of statistical tests.  For related, but non-synonymous terms in sciences that use statistical tests, see <a href="http://en.m.wikipedia.org/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">sensitivity and specificity</a>.</div>
+<table class="metadata plainlinks ambox ambox-style ambox-technical" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>may be too <a href="http://en.wiktionary.org/wiki/technical#Adjective" class="extiw" title="wikt:technical">technical</a> for most readers to understand</b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Type_I_and_type_II_errors&amp;action=edit">improve</a> this article to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Make_technical_articles_understandable" title="Wikipedia:Make technical articles understandable">make it understandable to non-experts</a>, without removing the technical details. The <a href="http://en.m.wikipedia.org/wiki/Talk:Type_I_and_type_II_errors" title="Talk:Type I and type II errors">talk page</a> may contain suggestions.</span> <small><i>(December 2011)</i></small> </span></td>
+</tr></table>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Statistics" title="Statistics">statistics</a>, a <b>Type I error</b> is the rejection of a potentially true <a href="http://en.m.wikipedia.org/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a>. A <b>Type II error</b> is the failure to reject a false null hypothesis.<sup id="cite_ref-Sheskin_1-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-Sheskin-1"><span>[</span>1<span>]</span></a></sup> A type I error is a false positive. Usually a type I error leads one to conclude that a thing or relationship exists when really it doesn't: for example, that a patient has a disease being tested for when really the patient does not have the disease, or that a medical treatment cures a disease when really it doesn't. A type II error is a false negative. Examples of type II errors would be a blood test failing to detect the disease it was designed to detect, in a patient who really has the disease; or a clinical trial of a medical treatment failing to show that the treatment works when really it does.<sup id="cite_ref-Peck_2-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-Peck-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Type I and Type II errors are also called <b>errors of the first kind</b> and <b>errors of the second kind</b>.</p>
+<p>All statistical <a href="http://en.m.wikipedia.org/wiki/Hypothesis_testing" title="Hypothesis testing" class="mw-redirect">hypothesis tests</a> have a probability of making type I and type II errors. For example, all blood tests for a disease will falsely detect the disease in some proportion of people who don't have it, and will fail to detect the disease in some proportion of people who do have it. A test's probability of making a type I error is denoted by <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png">. A test's probability of making a type II error is denoted by <img class="tex" alt="\beta" src="http://upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png">.</p>
+<p>These terms are also used in a more general way by social scientists and others to refer to flaws in reasoning.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2012">citation needed</span></a></i>]</sup> This article is specifically devoted to the statistical meanings of those terms and the technical issues of the statistical errors that those terms describe.</p>
+<h2> <span class="mw-headline" id="Statistical_test_theory">Statistical test theory</span>
+</h2>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Statistical_test" title="Statistical test" class="mw-redirect">statistical test</a> theory the notion of <b>statistical error</b> is an integral part of <a href="http://en.m.wikipedia.org/wiki/Hypothesis_testing" title="Hypothesis testing" class="mw-redirect">hypothesis testing</a>. The test requires an unambiguous statement of a null hypothesis, which usually corresponds to a default "state of nature", for example "this person is healthy", "this accused is not guilty" or "this product is not broken". An alternative hypothesis is the negation of null hypothesis, for example, "this person is not healthy", "this accused is guilty" or "this product is broken". The result of the test may be negative, relative to null hypothesis (not healthy, guilty, broken) or positive (healthy, not guilty, not broken). If the result of the test corresponds with reality, then a correct decision has been made. However, if the result of the test does not correspond with reality, then an error has occurred. Due to the statistical nature of a test, the result is never, except in very rare cases, free of error. Two types of error are distinguished: <b>type I error</b> and <b>type II error</b>.</p>
+<h3> <span class="mw-headline" id="Type_I_error">Type I error</span>
+</h3>
+<p>A <b>type I error</b>, also known as an <b>error of the first kind</b>, occurs when the <a href="http://en.m.wikipedia.org/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a> (<i>H</i><sub>0</sub>) is true, but is rejected. It is <b>asserting something that is absent</b>, a <b>false hit</b>. A type I error may be compared with a so called <i>false positive</i> (a result that indicates that a given condition is present when it actually is not present) in tests where a single condition is tested for. Type I errors are philosophically a focus of skepticism and <a href="http://en.m.wikipedia.org/wiki/Occam%27s_razor" title="Occam's razor">Occam's razor</a>. A Type I error occurs when we believe a falsehood.<sup id="cite_ref-Shermer_2002_455_3-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-Shermer_2002_455-3"><span>[</span>3<span>]</span></a></sup> In terms of folk tales, an investigator may be "crying wolf" without a wolf in sight (raising a false alarm) (<i>H</i><sub>0</sub>: no wolf).</p>
+<p>The rate of the type I error is called the <i>size</i> of the test and denoted by the Greek letter <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png"> (alpha). It usually equals the <a href="http://en.m.wikipedia.org/wiki/Statistical_significance" title="Statistical significance">significance level</a> of a test. In the case of a simple null hypothesis <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png"> is the probability of a type I error. If the null hypothesis is composite, <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png"> is the maximum (supremum) of the possible probabilities of a type I error.</p>
+<h4> <span class="mw-headline" id="False_positive_error">False positive error</span>
+</h4>
+<p>A <b>false positive error</b>, commonly called a "<b>false alarm</b>" is a result that indicates a given condition has been fulfilled, when it actually has not been fulfilled. In the case of "crying wolf" – the condition tested for was "is there a wolf near the herd?", the actual result was that there had not been a wolf near the herd. The shepherd wrongly indicated there was one, by calling "Wolf, wolf!".</p>
+<p>A false positive error is a Type I error where the test is checking a single condition, and results in an affirmative or negative decision usually designated as "true or false".</p>
+<h3> <span class="mw-headline" id="Type_II_error">Type II error</span>
+</h3>
+<p>A <b>type II error</b>, also known as an <b>error of the second kind</b>, occurs when the null hypothesis is false, but erroneously fails to be rejected. It is <b>failing to assert what is present</b>, a <b>miss</b>. A type II error may be compared with a so-called <i>false negative</i> (where an actual 'hit' was disregarded by the test and seen as a 'miss') in a test checking for a single condition with a definitive result of true or false. A Type II error is committed when we fail to believe a truth.<sup id="cite_ref-Shermer_2002_455_3-1" class="reference"><a href="Type_I_and_type_II_errors#cite_note-Shermer_2002_455-3"><span>[</span>3<span>]</span></a></sup> In terms of folk tales, an investigator may fail to see the wolf ("failing to raise an alarm"). Again, <i>H</i><sub>0</sub>: no wolf.</p>
+<p>The rate of the type II error is denoted by the Greek letter <img class="tex" alt="\beta" src="http://upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png"> (beta) and related to the <a href="http://en.m.wikipedia.org/wiki/Statistical_power" title="Statistical power">power</a> of a test (which equals <img class="tex" alt="1-\beta" src="http://upload.wikimedia.org/math/2/4/1/241fdde82642fe76d01efcd04c4067b9.png">).</p>
+<p>What we actually call type I or type II error depends directly on the null hypothesis. Negation of the null hypothesis causes type I and type II errors to switch roles.</p>
+<p>The goal of the test is to determine if the null hypothesis can be rejected. A statistical test can either reject (prove false) or fail to reject (fail to prove false) a null hypothesis, but never prove it true (i.e., failing to reject a null hypothesis does not prove it true).</p>
+<h4> <span class="mw-headline" id="False_negative_error">False negative error</span>
+</h4>
+<p>A <b>false negative error</b> is where a test result indicates that a condition failed, while it actually was successful. A common example is a guilty prisoner freed from jail. The condition: "<i>Is the prisoner guilty?</i>" actually had a positive result (yes, he is guilty). But the test failed to realize this, and wrongly decided the prisoner was not guilty.</p>
+<p>A false negative error is a type II error occurring in test steps where a single condition is checked for and the result can either be positive or negative.</p>
+<h3> <span class="mw-headline" id="Example">Example</span>
+</h3>
+<p>As it is conjectured that adding <a href="http://en.m.wikipedia.org/wiki/Fluoride" title="Fluoride">fluoride</a> to toothpaste protects against <a href="http://en.m.wikipedia.org/wiki/Dental_caries" title="Dental caries">cavities</a>, the null hypothesis of no effect is tested. When the null hypothesis is true (i.e., there is indeed no effect), but the data give rise to rejection of this hypothesis, falsely suggesting that adding fluoride is effective against cavities, a type I error has occurred.</p>
+<p>A type II error occurs when the null hypothesis is false (i.e., adding fluoride is actually effective against cavities), but the data are such that the null hypothesis cannot be rejected, failing to prove the existing effect.</p>
+<p>In colloquial usage type I error can be thought of as "convicting an innocent person" and type II error "letting a guilty person go free".</p>
+<p>Tabularised relations between truth/falseness of the null hypothesis and outcomes of the test:</p>
+<table class="wikitable">
+<tr>
+<th></th>
+<th>Null hypothesis (<i>H</i><sub>0</sub>) is true</th>
+<th>Null hypothesis (<i>H</i><sub>0</sub>) is false</th>
+</tr>
+<tr>
+<th>Reject null hypothesis</th>
+<td style="text-align: center;">Type I error<br>
+False positive</td>
+<td style="text-align: center;">Correct outcome<br>
+True negative</td>
+</tr>
+<tr>
+<th>Fail to reject null hypothesis</th>
+<td style="text-align: center;">Correct outcome<br>
+True positive</td>
+<td style="text-align: center;">Type II error<br>
+False negative</td>
+</tr>
+</table>
+<h3> <span class="mw-headline" id="Theory">Theory</span>
+</h3>
+<p>From the Bayesian point of view, a type I error is one that looks at information that should not substantially change one's prior estimate of probability, but does. A type II error is one that looks at information which should change one's estimate, but does not. (Though the null hypothesis is not quite the same thing as one's prior estimate, it is, rather, one's <i>pro forma</i> prior estimate.)</p>
+<p>Hypothesis testing is the art of testing whether a variation between two sample distributions can be explained by chance or not. In many practical applications type I errors are more delicate than type II errors. In these cases, care is usually focused on minimizing the occurrence of this statistical error. Suppose, the probability for a type I error is 1% , then there is a 1% chance that the observed variation is not true. This is called the <i>level of significance</i>, denoted with the Greek letter <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png"> (alpha). While 1% might be an acceptable level of significance for one application, a different application can require a very different level. For example, the standard goal of <a href="http://en.m.wikipedia.org/wiki/Six_sigma" title="Six sigma" class="mw-redirect">six sigma</a> is to achieve precision to 4.5 standard deviations above or below the mean. This means that only 3.4 parts per million are allowed to be deficient in a normally distributed process</p>
+<h2> <span class="mw-headline" id="Consequences">Consequences</span>
+</h2>
+<p>Both types of errors are problems for individuals, corporations, and <a href="http://en.m.wikipedia.org/wiki/Data_analysis" title="Data analysis">data analysis</a>. A false positive (with null hypothesis of health) in medicine causes unnecessary worry or treatment, while a false negative gives the patient the dangerous illusion of good health and the patient might not get an available treatment. A false positive in manufacturing <a href="http://en.m.wikipedia.org/wiki/Quality_control" title="Quality control">quality control</a> (with a null hypothesis of a product being well made) discards a product that is actually well made, while a false negative stamps a broken product as operational. A false positive (with null hypothesis of no effect) in scientific research suggest an effect that is not actually there, while a false negative fails to detect an effect that is there.</p>
+<p>Based on the real-life consequences of an error, one type may be more serious than the other. For example, <a href="http://en.m.wikipedia.org/wiki/NASA" title="NASA">NASA</a> engineers would prefer to throw out an electronic circuit that is really fine (null hypothesis <i>H</i><sub>0</sub>: <i>not broken</i>; reality: <i>not broken</i>; action: thrown out; error: type I, false positive) than to use one on a spacecraft that is actually broken (null hypothesis <i>H</i><sub>0</sub>: <i>not broken</i>; reality: <i>broken</i>; action: use it; error: type II, false negative). In that situation a type I error raises the budget, but a type II error would risk the entire mission.</p>
+<p>On the other hand, criminal courts set a <a href="http://en.m.wikipedia.org/wiki/Reasonable_doubt" title="Reasonable doubt">high bar for proof</a> and procedure and sometimes acquit someone who is guilty (null hypothesis: <i>innocent</i>; reality: <i>guilty</i>; test find: not guilty; action: acquit; error: type II, false negative) rather than convict someone who is innocent (null hypothesis: <i>innocent</i>; reality: <i>not guilty</i>; test find: guilty; action: convict; error: type I, false positive). In totalitarian states, the opposite may occur, with the preference to jail someone innocent, rather than allow an actual dissident to roam free. Each system makes its own choice regarding where to draw the line.</p>
+<p>Minimizing errors of decision is not a simple issue; for any given <a href="http://en.m.wikipedia.org/wiki/Sample_size" title="Sample size" class="mw-redirect">sample size</a> the effort to reduce one type of error generally results in increasing the other type of error. The only way to minimize both types of error, without just improving the test, is to increase the sample size, and this may not be feasible.</p>
+<h2> <span class="mw-headline" id="Etymology">Etymology</span>
+</h2>
+<p>In 1928, <a href="http://en.m.wikipedia.org/wiki/Jerzy_Neyman" title="Jerzy Neyman">Jerzy Neyman</a> (1894–1981) and <a href="http://en.m.wikipedia.org/wiki/Egon_Pearson" title="Egon Pearson">Egon Pearson</a> (1895–1980), both eminent statisticians, discussed the problems associated with "<i>deciding whether or not a particular sample may be judged as likely to have been randomly drawn from a certain population</i>"<sup id="cite_ref-neyman1928_4-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-neyman1928-4"><span>[</span>4<span>]</span></a></sup><sup>p. 1</sup>: and, as <a href="http://en.m.wikipedia.org/wiki/Florence_Nightingale_David" title="Florence Nightingale David">Florence Nightingale David</a> remarked, "<i>it is necessary to remember the adjective 'random' [in the term 'random sample'] should apply to the method of drawing the sample and not to the sample itself</i>".<sup id="cite_ref-5" class="reference"><a href="Type_I_and_type_II_errors#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>They identified "<i>two sources of error</i>", namely:</p>
+<dl>
+<dd>(a) the error of rejecting a hypothesis that should have been accepted, and</dd>
+<dd>(b) the error of accepting a hypothesis that should have been rejected.<sup id="cite_ref-neyman1928_4-1" class="reference"><a href="Type_I_and_type_II_errors#cite_note-neyman1928-4"><span>[</span>4<span>]</span></a></sup><sup>p.31</sup>
+</dd>
+</dl>
+<p>In 1930, they elaborated on these <i>two sources of error</i>, remarking that:</p>
+<dl>
+<dd>
+<dl>
+<dd>
+<i>...in testing hypotheses two considerations must be kept in view, (1) we must be able to reduce the chance of rejecting a true hypothesis to as low a value as desired; (2) the test must be so devised that it will reject the hypothesis tested when it is likely to be false</i>.<sup id="cite_ref-6" class="reference"><a href="Type_I_and_type_II_errors#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>In 1933, they observed that these "<i>problems are rarely presented in such a form that we can discriminate with certainty between the true and false hypothesis</i>" (p. 187). They also noted that, in deciding whether to accept or reject a particular hypothesis amongst a "<i>set of alternative hypotheses</i>" (p. 201), <img class="tex" alt="H_1,\, H_2,\, \ldots" src="http://upload.wikimedia.org/math/7/e/1/7e10d32bfd5c8e2dffc1296c98bac4e8.png">, it was easy to make an error:</p>
+<dl>
+<dd>
+<i>...[and] these errors will be of two kinds:</i>
+<dl>
+<dd>
+<i>(I) we reject</i> <img class="tex" alt="H_0" src="http://upload.wikimedia.org/math/7/c/5/7c5081abe6c2100f0e44396b6ac51661.png"><i>[i.e., the hypothesis to be tested] when it is true,</i>
+</dd>
+<dd>
+<i>(II) we accept</i> <img class="tex" alt="H_0" src="http://upload.wikimedia.org/math/7/c/5/7c5081abe6c2100f0e44396b6ac51661.png"><i>when some alternative <a href="http://en.m.wikipedia.org/wiki/Hypothesis" title="Hypothesis">hypothesis</a></i> <img class="tex" alt="H_i" src="http://upload.wikimedia.org/math/4/5/d/45d4bf87d928aada05c4b8df8e5f057e.png"><i>is true.</i><sup id="cite_ref-neyman1933_7-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-neyman1933-7"><span>[</span>7<span>]</span></a></sup><sup>p.187</sup>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>In all of the papers co-written by Neyman and Pearson the expression <img class="tex" alt="H_0" src="http://upload.wikimedia.org/math/7/c/5/7c5081abe6c2100f0e44396b6ac51661.png"> always signifies "the hypothesis to be tested".</p>
+<p>In the same paper<sup id="cite_ref-neyman1933_7-1" class="reference"><a href="Type_I_and_type_II_errors#cite_note-neyman1933-7"><span>[</span>7<span>]</span></a></sup><sup>p. 190</sup> they call these <i>two sources of error</i>, <b>errors of type I</b> and <b>errors of type II</b> respectively.</p>
+<h2> <span class="mw-headline" id="Related_terms">Related terms</span>
+</h2>
+<h3> <span class="mw-headline" id="False_positive_rate">False positive rate</span>
+</h3>
+<p>The <b><a href="http://en.m.wikipedia.org/wiki/False_positive_rate" title="False positive rate">false positive rate</a></b> is the proportion of absent events that yield positive test outcomes, i.e., the conditional probability of a positive test result given an absent event.</p>
+<p>The false positive rate is equal to the <a href="http://en.m.wikipedia.org/wiki/Significance_level" title="Significance level" class="mw-redirect">significance level</a>. The <a href="http://en.m.wikipedia.org/wiki/Specificity_(tests)" title="Specificity (tests)" class="mw-redirect">specificity</a> of the test is equal to <b>1</b> minus the false positive rate.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">statistical hypothesis testing</a>, this fraction is given the Greek letter <img class="tex" alt="\alpha" src="http://upload.wikimedia.org/math/b/c/c/bccfc7022dfb945174d9bcebad2297bb.png">, and <img class="tex" alt="1-\alpha" src="http://upload.wikimedia.org/math/b/b/d/bbd45151eefa33fe8c5129499e7669bb.png"> is defined as the <i><a href="http://en.m.wikipedia.org/wiki/Specificity_(tests)" title="Specificity (tests)" class="mw-redirect">specificity</a></i> of the test. Increasing the <i><a href="http://en.m.wikipedia.org/wiki/Specificity_(tests)" title="Specificity (tests)" class="mw-redirect">specificity</a></i> of the test lowers the probability of <b>type I errors</b>, but raises the probability of <b>type II errors</b> (false negatives that reject the alternative hypothesis when it is true).<sup id="cite_ref-algorithm_8-0" class="reference"><a href="Type_I_and_type_II_errors#cite_note-algorithm-8"><span>[</span>Note 1<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="False_negative_rate">False negative rate</span>
+</h3>
+<p>The <b>false negative rate</b> is the proportion of events that are being tested for which yield negative test outcomes with the test, i.e., the conditional probability of a negative test result given that the event being looked for has taken place.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">statistical hypothesis testing</a>, this fraction is given the letter <img class="tex" alt="\beta" src="http://upload.wikimedia.org/math/0/7/1/071997f13634882f823041b057f90923.png">. The "<a href="http://en.m.wikipedia.org/wiki/Statistical_power" title="Statistical power">power</a>" (or the "<a href="http://en.m.wikipedia.org/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">sensitivity</a>") of the test is equal to <img class="tex" alt="1-\beta" src="http://upload.wikimedia.org/math/2/4/1/241fdde82642fe76d01efcd04c4067b9.png">.</p>
+<h3> <span class="mw-headline" id="Receiver_Operating_Characteristic">Receiver Operating Characteristic</span>
+</h3>
+<p>The article <a href="http://en.m.wikipedia.org/wiki/Receiver_Operating_Characteristic" title="Receiver Operating Characteristic" class="mw-redirect">Receiver Operating Characteristic</a> discusses parameters in statistical signal processing based on ratios of errors of various types.</p>
+<h3> <span class="mw-headline" id="Null_hypothesis">Null hypothesis</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Null_hypothesis" title="Null hypothesis">Null hypothesis</a>
+</div>
+<p>It is standard practice for statisticians to conduct <a href="http://en.m.wikipedia.org/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">tests</a> in order to determine whether or not a "<i>speculative <a href="http://en.m.wikipedia.org/wiki/Hypothesis" title="Hypothesis">hypothesis</a></i>" concerning the observed phenomena of the world (or its inhabitants) can be supported. The results of such testing determine whether a particular set of results agrees reasonably (or does not agree) with the speculated hypothesis.</p>
+<p>On the basis that it is always assumed, by <i>statistical convention</i>, that the speculated hypothesis is wrong, and the so-called "<i>null hypothesis</i>" that the observed phenomena simply occur by chance (and that, as a consequence, the speculated agent has no effect) – the test will determine whether this hypothesis is right or wrong. This is why the hypothesis under test is often called the null hypothesis (most likely, coined by Fisher (1935, p. 19)), because it is <i>this</i> hypothesis that is to be either <b>nullified</b> or <b>not nullified</b> by the test. When the null hypothesis is nullified, it is possible to conclude that data support the "<i>alternative hypothesis</i>" (which is the original speculated one).</p>
+<p>The consistent application by statisticians of Neyman and Pearson's convention of representing "<i>the hypothesis to be tested</i>" (or "<i>the hypothesis to be nullified</i>") with the expression <b><i>H</i><sub>0</sub></b> has led to circumstances where many understand the term "<i>the null hypothesis</i>" as meaning "<i>the</i> <i><b>nil</b></i> <i>hypothesis</i>" – a statement that the results in question have arisen through chance. This is not necessarily the case – the key restriction, as per Fisher (1966), is that "<i>the null hypothesis must be exact, that is free from vagueness and ambiguity, because it must supply the basis of the 'problem of distribution,' of which the test of significance is the solution.</i>"<sup id="cite_ref-9" class="reference"><a href="Type_I_and_type_II_errors#cite_note-9"><span>[</span>8<span>]</span></a></sup> As a consequence of this, in experimental science the null hypothesis is generally a statement that a particular treatment has <i>no effect</i>; in observational science, it is that there is <i>no difference</i> between the value of a particular measured variable, and that of an experimental prediction.</p>
+<p>The extent to which the test in question shows that the "speculated hypothesis" has (or has not) been nullified is called its <a href="http://en.m.wikipedia.org/wiki/Statistical_significance" title="Statistical significance"><b>significance level</b></a>; and the higher the significance level, the less likely it is that the phenomena in question could have been produced by chance alone. British statistician <a href="http://en.m.wikipedia.org/wiki/Ronald_Fisher" title="Ronald Fisher">Sir Ronald Aylmer Fisher</a> (1890–1962) stressed that the "null hypothesis":</p>
+<blockquote class="templatequote">
+<div class="Bug6200">... is never proved or established, but is possibly disproved, in the course of experimentation. Every experiment may be said to exist only in order to give the facts a chance of disproving the null hypothesis.</div>
+<div class="templatequotecite">—1935, p.19</div>
+</blockquote>
+<h3> <span class="mw-headline" id="Bayes.27_theorem">Bayes' theorem</span>
+</h3>
+<p>The probability that an observed positive result is a <b>false</b> <i>positive</i> (as contrasted with an observed positive result being a <b>true</b> <i>positive</i>) may be calculated using <a href="http://en.m.wikipedia.org/wiki/Bayes%27_theorem" title="Bayes' theorem">Bayes' theorem</a>.</p>
+<p>The key concept of Bayes' theorem is that the true rates of <b>false positives</b> and <b>false negatives</b> are not a function of the <a href="http://en.m.wikipedia.org/wiki/Accuracy" title="Accuracy" class="mw-redirect">accuracy</a> of the test alone, but also the actual rate or <a href="http://en.m.wikipedia.org/wiki/Frequency_(statistics)" title="Frequency (statistics)">frequency</a> of occurrence within the test population; and, often, the more powerful issue is the actual rates of the condition within the sample being tested.</p>
+<h2> <span class="mw-headline" id="Various_proposals_for_further_extension">Various proposals for further extension</span>
+</h2>
+<p><span id="Type_III_errors"></span><span id="Type_IV_errors"></span> Since the paired notions of <b>type I errors</b> (or "<b>false positives</b>") and <b>type II errors</b> (or "<b>false negatives</b>") that were introduced by Neyman and Pearson are now widely used, their choice of terminology ("<b>errors of the first kind</b>" and "<b>errors of the second kind</b>"), has led others to suppose that certain sorts of mistake that they have identified might be an "<b>error of the third kind</b>", "<b>fourth kind</b>", etc.<sup id="cite_ref-11" class="reference"><a href="Type_I_and_type_II_errors#cite_note-11"><span>[</span>Note 2<span>]</span></a></sup></p>
+<p>None of these proposed categories have met with any sort of wide acceptance. The following is a brief account of some of these proposals.</p>
+<h3> <span class="mw-headline" id="Systems_Theory">Systems Theory</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Systems_theory" title="Systems theory">systems theory</a> an additional type III error is often defined<sup id="cite_ref-12" class="reference"><a href="Type_I_and_type_II_errors#cite_note-12"><span>[</span>10<span>]</span></a></sup>: type III (δ): asking the wrong question and using the wrong <a href="http://en.m.wikipedia.org/wiki/Null_hypothesis" title="Null hypothesis">null hypothesis</a>.</p>
+<h3> <span class="mw-headline" id="David">David</span>
+</h3>
+<p>Florence Nightingale David (1909–1993) <a rel="nofollow" class="external autonumber" href="http://www.agnesscott.edu/lriddle/women/david.htm">[4]</a> a sometime colleague of both Neyman and Pearson at the <a href="http://en.m.wikipedia.org/wiki/University_College_London" title="University College London">University College London</a>, making a humorous aside at the end of her 1947 paper, suggested that, in the case of her own research, perhaps Neyman and Pearson's "two sources of error" could be extended to a third:</p>
+<blockquote class="templatequote">
+<div class="Bug6200">I have been concerned here with trying to explain what I believe to be the basic ideas [of my "theory of the conditional power functions"], and to forestall possible criticism that I am falling into error (of the third kind) and am choosing the test falsely to suit the significance of the sample.</div>
+<div class="templatequotecite">—1947, p.339</div>
+</blockquote>
+<h3> <span class="mw-headline" id="Mosteller">Mosteller</span>
+</h3>
+<p>In 1948, <a href="http://en.m.wikipedia.org/wiki/Frederick_Mosteller" title="Frederick Mosteller">Frederick Mosteller</a> (1916–2006)<sup id="cite_ref-13" class="reference"><a href="Type_I_and_type_II_errors#cite_note-13"><span>[</span>Note 3<span>]</span></a></sup> argued that a "third kind of error" was required to describe circumstances he had observed, namely:</p>
+<ul>
+<li>
+<b>Type I error</b>: "<i>rejecting the null hypothesis when it is true</i>".</li>
+<li>
+<b>Type II error</b>: "<i>accepting the null hypothesis when it is false</i>".</li>
+<li>
+<b>Type III error</b>: "<i>correctly rejecting the null hypothesis for the wrong reason</i>". (1948, p. 61)<sup id="cite_ref-14" class="reference"><a href="Type_I_and_type_II_errors#cite_note-14"><span>[</span>Note 4<span>]</span></a></sup>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Kaiser">Kaiser</span>
+</h3>
+<p>According to Henry F. Kaiser (1927–1992), in his 1966 paper extended Mosteller's classification such that an <i>error of the third kind</i> entailed an incorrect decision of direction following a rejected two-tailed test of hypothesis. In his discussion (1966, pp. 162–163), Kaiser also speaks of <b><i>α</i> errors</b>, <b><i>β</i> errors</b>, and <b><i>γ</i> errors</b> for <b>type I</b>, <b>type II</b> and <b>type III</b> errors respectively (C.O. Dellomos).</p>
+<h3> <span class="mw-headline" id="Kimball">Kimball</span>
+</h3>
+<p>In 1957, Allyn W. Kimball, a statistician with the <a href="http://en.m.wikipedia.org/wiki/Oak_Ridge_National_Laboratory" title="Oak Ridge National Laboratory">Oak Ridge National Laboratory</a>, proposed a different kind of error to stand beside "<i>the first and second types of error in the theory of testing hypotheses</i>". Kimball defined this new "<i>error of the third kind</i>" as being "<i>the error committed by giving the right answer to the wrong problem</i>" (1957, p. 134).</p>
+<p>Mathematician <a href="http://en.m.wikipedia.org/wiki/Richard_Hamming" title="Richard Hamming">Richard Hamming</a> (1915–1998) expressed his view that "<i>It is better to solve the right problem the wrong way than to solve the wrong problem the right way</i>".</p>
+<p>Harvard economist <a href="http://en.m.wikipedia.org/wiki/Howard_Raiffa" title="Howard Raiffa">Howard Raiffa</a> describes an occasion when he, too, "fell into the trap of working on the wrong problem" (1968, pp. 264–265).<sup id="cite_ref-15" class="reference"><a href="Type_I_and_type_II_errors#cite_note-15"><span>[</span>Note 5<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Mitroff_and_Featheringham">Mitroff and Featheringham</span>
+</h3>
+<p>In 1974, Ian Mitroff and Tom Featheringham extended Kimball's category, arguing that "<i>one of the most important determinants of a problem's solution is how that problem has been represented or formulated in the first place</i>".</p>
+<p>They defined <b>type III errors</b> as either "<i>the error ... of having solved the wrong problem ... when one should have solved the right problem</i>" or "<i>the error ... [of] choosing the wrong problem representation ... when one should have ... chosen the right problem representation</i>" (1974), p. 383.</p>
+<p>In the 2009 book <i><span class="new" title="Dirty rotten strategies (page does not exist)">Dirty rotten strategies</span></i> by <a href="http://en.m.wikipedia.org/wiki/Ian_I._Mitroff" title="Ian I. Mitroff" class="mw-redirect">Ian I. Mitroff</a> and <span class="new" title="Abraham Silvers (page does not exist)">Abraham Silvers</span> described type III and type IV errors providing many examples of both developing good answers to the wrong questions (III) and deliberately selecting the wrong questions for intensive and skilled investigation (IV). Most of the examples have nothing to do with statistics, many being problems of public policy or business decisions.<sup id="cite_ref-16" class="reference"><a href="Type_I_and_type_II_errors#cite_note-16"><span>[</span>11<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Raiffa">Raiffa</span>
+</h3>
+<p>In 1969, the Harvard economist Howard Raiffa jokingly suggested "a candidate for the error of the fourth kind: solving the right problem too late" (1968, p. 264).</p>
+<h3> <span class="mw-headline" id="Marascuilo_and_Levin">Marascuilo and Levin</span>
+</h3>
+<p>In 1970, L. A. Marascuilo and J. R. Levin proposed a "<i>fourth kind of error</i>" – a "<b>type IV error</b>" – which they defined in a Mosteller-like manner as being the mistake of "<i>the incorrect interpretation of a correctly rejected hypothesis</i>"; which, they suggested, was the equivalent of "<i>a physician's correct diagnosis of an ailment followed by the prescription of a wrong medicine</i>" (1970, p. 398).</p>
+<h3> <span class="mw-headline" id="Russell_Ackoff">Russell Ackoff</span>
+</h3>
+<p>In 2006, as part of his "<a href="http://en.m.wikipedia.org/wiki/Russell_L._Ackoff#f-Laws" title="Russell L. Ackoff">f-laws</a>" Russell Ackoff made a distinction between errors of commission and omission, or, in organizational science jargon, mistakes of commission and omission. A mistake of commission is something that the organization should not have done; a mistake of omission is something that the organization should have done. Ackoff suggested that mistakes of omission are much more serious, because they cannot be corrected or retrieved. Ackoff proposed that accounting systems in the western world only take account of errors of commission. Finally Ackoff proposed that a manager only has to be concerned about doing something that should not have been done in organizations that look down on mistakes and in which only errors of commission are identified. The Ackoff reference is important because it demonstrates applicability of the error typology in social sciences, as opposed to statistics, etc.</p>
+<h2> <span class="mw-headline" id="Usage_examples">Usage examples</span>
+</h2>
+<p>Statistical tests always involve a trade-off between:</p>
+<ol>
+<li>the acceptable level of false positives (in which a non-match is declared to be a match) and</li>
+<li>the acceptable level of false negatives (in which an actual match is not detected).</li>
+</ol>
+<p>A threshold value can be varied to make the test more restrictive or more sensitive, with the more restrictive tests increasing the risk of rejecting true positives, and the more <a href="http://en.m.wikipedia.org/wiki/Sensitivity_(tests)" title="Sensitivity (tests)" class="mw-redirect">sensitive tests</a> increasing the risk of accepting false positives.</p>
+<h3> <span class="mw-headline" id="Inventory_control">Inventory control</span>
+</h3>
+<p>An automated inventory control system that rejects high-quality goods of a consignment commits a type I error, while a system that accepts low-quality goods commits a type II error.</p>
+<h3> <span class="mw-headline" id="Computers">Computers</span>
+</h3>
+<p>The notions of false positives and false negatives have a wide currency in the realm of computers and computer applications, as follows.</p>
+<h4> <span class="mw-headline" id="Computer_security">Computer security</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/Computer_security" title="Computer security">computer security</a> and <a href="http://en.m.wikipedia.org/wiki/Computer_insecurity" title="Computer insecurity">computer insecurity</a>
+</div>
+<p>Security vulnerabilities are an important consideration in the task of keeping computer data safe, while maintaining access to that data for appropriate users. Moulton (1983), stresses the importance of:</p>
+<ul>
+<li>avoiding the type I errors (or false positives) that classify <i>authorized users</i> as <i>imposters</i>.</li>
+<li>avoiding the type II errors (or false negatives) that classify <i>imposters</i> as <i>authorized users</i> (1983, p. 125).</li>
+</ul>
+<h4> <span class="mw-headline" id="Spam_filtering">Spam filtering</span>
+</h4>
+<p>A false positive occurs when <a href="http://en.m.wikipedia.org/wiki/Spam_filtering" title="Spam filtering" class="mw-redirect">spam filtering</a> or spam blocking techniques wrongly classify a legitimate email message as <a href="http://en.m.wikipedia.org/wiki/E-mail_spam" title="E-mail spam" class="mw-redirect">spam</a> and, as a result, interferes with its delivery. While most anti-spam tactics can block or filter a high percentage of unwanted emails, doing so without creating significant false-positive results is a much more demanding task.</p>
+<p>A false negative occurs when a spam email is not detected as spam, but is classified as <i>non-spam</i>. A low number of false negatives is an indicator of the efficiency of spam filtering.</p>
+<h4> <span class="mw-headline" id="Malware">Malware</span>
+</h4>
+<p>The term "false positive" is also used when <a href="http://en.m.wikipedia.org/wiki/Antivirus" title="Antivirus" class="mw-redirect">antivirus</a> software wrongly classifies an innocuous file as a <a href="http://en.m.wikipedia.org/wiki/Computer_virus" title="Computer virus">virus</a>. The incorrect detection may be due to <a href="http://en.m.wikipedia.org/wiki/Heuristic_(computer_science)" title="Heuristic (computer science)">heuristics</a> or to an incorrect <a href="http://en.m.wikipedia.org/wiki/Virus_signature" title="Virus signature" class="mw-redirect">virus signature</a> in a database. Similar problems can occur with <a href="http://en.m.wikipedia.org/wiki/Antitrojan" title="Antitrojan" class="mw-redirect">antitrojan</a> or <a href="http://en.m.wikipedia.org/wiki/Antispyware" title="Antispyware" class="mw-redirect">antispyware</a> software.</p>
+<h4> <span class="mw-headline" id="Optical_character_recognition">Optical character recognition</span>
+</h4>
+<p>Detection <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a> of all kinds often create false positives. <a href="http://en.m.wikipedia.org/wiki/Optical_character_recognition" title="Optical character recognition">Optical character recognition</a> (OCR) software may detect an "a" where there are only some dots that <i>appear</i> to be an "a" to the algorithm being used.</p>
+<h3> <span class="mw-headline" id="Security_screening">Security screening</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/Explosive_detection" title="Explosive detection">explosive detection</a> and <a href="http://en.m.wikipedia.org/wiki/Metal_detector" title="Metal detector">metal detector</a>
+</div>
+<p>False positives are routinely found every day in <a href="http://en.m.wikipedia.org/wiki/Computer_Assisted_Passenger_Prescreening_System#False_positives_and_alleged_misuses" title="Computer Assisted Passenger Prescreening System">airport security screening</a>, which are ultimately <a href="http://en.m.wikipedia.org/wiki/Visual_inspection" title="Visual inspection">visual inspection</a> systems. The installed security alarms are intended to prevent weapons being brought onto aircraft; yet they are often set to such high <a href="http://en.m.wikipedia.org/wiki/Sensitivity_(electronics)" title="Sensitivity (electronics)">sensitivity</a> that they alarm many times a day for minor items, such as keys, belt buckles, loose change, mobile phones, and tacks in shoes.</p>
+<p>The ratio of false positives (identifying an innocent traveller as a terrorist) to true positives (detecting a would-be terrorist) is, therefore, very high; and because almost every alarm is a false positive, the <a href="http://en.m.wikipedia.org/wiki/Positive_predictive_value" title="Positive predictive value">positive predictive value</a> of these screening tests is very low.</p>
+<p>The relative cost of false results determines the likelihood that test creators allow these events to occur. As the cost of a false negative in this scenario is extremely high (not detecting a bomb being brought onto a plane could result in hundreds of deaths) whilst the cost of a false positive is relatively low (a reasonably simple further inspection) the most appropriate test is one with a low statistical <a href="http://en.m.wikipedia.org/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">specificity</a> but high statistical <a href="http://en.m.wikipedia.org/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">sensitivity</a> (one that allows a high rate of false positives in return for minimal false negatives).</p>
+<h3> <span class="mw-headline" id="Biometrics">Biometrics</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Biometric" title="Biometric" class="mw-redirect">Biometric</a> matching, such as for <a href="http://en.m.wikipedia.org/wiki/Fingerprint" title="Fingerprint">fingerprint</a>, <a href="http://en.m.wikipedia.org/wiki/Face" title="Face">facial recognition</a> or <a href="http://en.m.wikipedia.org/wiki/Iris_(anatomy)" title="Iris (anatomy)">iris</a> recognition, is susceptible to type I and type II errors. The null hypothesis is that the input <i>does</i> identify someone in the searched list of people, so:</p>
+<ul>
+<li>the probability of type I errors is called the "false reject rate" (<a href="http://en.m.wikipedia.org/wiki/Biometrics#Performance" title="Biometrics">FRR</a>) or false non-match rate (FNMR),</li>
+<li>while the probability of type II errors is called the "false accept rate" (FAR) or false match rate (FMR).<sup id="cite_ref-17" class="reference"><a href="Type_I_and_type_II_errors#cite_note-17"><span>[</span>12<span>]</span></a></sup>
+</li>
+</ul>
+<p>If the system is designed to <a href="http://en.m.wikipedia.org/wiki/Watch_list" title="Watch list" class="mw-redirect">rarely match suspects</a> then the probability of type II errors can be called the "<a href="http://en.m.wikipedia.org/wiki/False_alarm" title="False alarm">false alarm</a> rate". On the other hand, if the system is used for validation (and acceptance is the norm) then the FAR is a measure of system security, while the FRR measures user inconvenience level.</p>
+<h3> <span class="mw-headline" id="Medical_screening">Medical screening</span>
+</h3>
+<p>In the practice of medicine, there is a significant difference between the applications of <i><a href="http://en.m.wikipedia.org/wiki/Screening_(medicine)" title="Screening (medicine)">screening</a></i> and <i><a href="http://en.m.wikipedia.org/wiki/Medical_test" title="Medical test">testing</a></i>.</p>
+<ul>
+<li>
+<i>Screening</i> involves relatively <i>cheap</i> tests that are given to large populations, none of whom manifest any clinical indication of disease (e.g., <a href="http://en.m.wikipedia.org/wiki/Pap_smear" title="Pap smear" class="mw-redirect">Pap smears</a>).</li>
+<li>
+<i>Testing</i> involves far more <i>expensive</i>, often invasive, procedures that are given only to those who manifest some clinical indication of disease, and are most often applied to confirm a suspected diagnosis.</li>
+</ul>
+<p>For example, most states in the USA require newborns to be screened for <a href="http://en.m.wikipedia.org/wiki/Phenylketonuria" title="Phenylketonuria">phenylketonuria</a> and <a href="http://en.m.wikipedia.org/wiki/Hypothyroidism" title="Hypothyroidism">hypothyroidism</a>, among other <a href="http://en.m.wikipedia.org/wiki/Congenital_disorder" title="Congenital disorder">congenital disorders</a>. Although they display a high rate of false positives, the screening tests are considered valuable because they greatly increase the likelihood of detecting these disorders at a far earlier stage.<sup id="cite_ref-18" class="reference"><a href="Type_I_and_type_II_errors#cite_note-18"><span>[</span>Note 6<span>]</span></a></sup></p>
+<p>The simple blood tests used to <i>screen</i> possible <a href="http://en.m.wikipedia.org/wiki/Blood_transfusion" title="Blood transfusion">blood donors</a> for HIV and <a href="http://en.m.wikipedia.org/wiki/Hepatitis" title="Hepatitis">hepatitis</a> have a significant rate of false positives; however, physicians use much more expensive and far more precise <i>tests</i> to determine whether a person is actually infected with either of these viruses.</p>
+<p>Perhaps the most widely discussed false positives in medical screening come from the breast cancer screening procedure <a href="http://en.m.wikipedia.org/wiki/Mammography" title="Mammography">mammography</a>. The US rate of false positive mammograms is up to 15%, the highest in world. One consequence of the high false positive rate in the US is that, in any 10-year period, half of the American women screened receive a false positive mammogram. False positive mammograms are costly, with over $100 million spent annually in the U.S. on follow-up testing and treatment. They also cause women unneeded anxiety. As a result of the high false positive rate in the US, as many as 90–95% of women who get a positive mammogram do <i>not</i> have the condition.&lt;/ref&gt; The lowest rate in the world is in the <a href="http://en.m.wikipedia.org/wiki/Netherlands" title="Netherlands">Netherlands</a>, 1%. The lowest rates are generally in Northern Europe where mammography films are read twice and a high threshold for additional testing is set (the high threshold decreases the <a href="http://en.m.wikipedia.org/wiki/Statistical_power" title="Statistical power">power</a> of the test).</p>
+<p>The ideal population screening test would be cheap, easy to administer, and produce <i>zero</i> false-negatives, if possible. Such tests usually produce more false-positives, which can subsequently be sorted out by more sophisticated (and expensive) testing.</p>
+<h3> <span class="mw-headline" id="Medical_testing">Medical testing</span>
+</h3>
+<p>False negatives and false positives are significant issues in <a href="http://en.m.wikipedia.org/wiki/Medical_test" title="Medical test">medical testing</a>. False negatives may provide a falsely reassuring message to patients and physicians that disease is absent, when it is actually present. This sometimes leads to inappropriate or inadequate treatment of both the patient and their disease. A common example is relying on <a href="http://en.m.wikipedia.org/wiki/Cardiac_stress_test" title="Cardiac stress test">cardiac stress tests</a> to detect coronary <a href="http://en.m.wikipedia.org/wiki/Atherosclerosis" title="Atherosclerosis">atherosclerosis</a>, even though cardiac stress tests are known to only detect limitations of <a href="http://en.m.wikipedia.org/wiki/Coronary_artery" title="Coronary artery" class="mw-redirect">coronary artery</a> blood flow due to advanced <a href="http://en.m.wikipedia.org/wiki/Stenosis" title="Stenosis">stenosis</a>.</p>
+<p>False negatives produce serious and counter-intuitive problems, especially when the condition being searched for is common. If a test with a <i>false negative rate</i> of only 10%, is used to test a population with a <i>true occurrence rate</i> of 70%, many of the negatives detected by the test will be false.</p>
+<p>False positives can also produce serious and counter-intuitive problems when the condition being searched for is rare, as in screening. If a test has a <i>false positive rate</i> of one in ten thousand, but only one in a million samples (or people) is a <i>true positive</i>, most of the positives detected by that test will be false. The probability that an observed positive result is a false positive may be calculated using <a href="http://en.m.wikipedia.org/wiki/Bayes%27_theorem" title="Bayes' theorem">Bayes' theorem</a>.</p>
+<h3> <span class="mw-headline" id="Paranormal_investigation">Paranormal investigation</span>
+</h3>
+<p>The notion of a false positive is common in cases of <a href="http://en.m.wikipedia.org/wiki/Paranormal" title="Paranormal">paranormal</a> or ghost phenomena seen in images and such, when there is another plausible explanation. When observing a photograph, recording, or some other evidence that appears to have a paranormal origin – in this usage, a false positive is a disproven piece of media "evidence" (image, movie, audio recording, etc.) that actually has a normal explanation.<sup id="cite_ref-19" class="reference"><a href="Type_I_and_type_II_errors#cite_note-19"><span>[</span>Note 7<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Fisher_iris_versicolor_sepalwidth.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fisher_iris_versicolor_sepalwidth.svg/32px-Fisher_iris_versicolor_sepalwidth.svg.png" width="32" height="22" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fisher_iris_versicolor_sepalwidth.svg/48px-Fisher_iris_versicolor_sepalwidth.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/40/Fisher_iris_versicolor_sepalwidth.svg/64px-Fisher_iris_versicolor_sepalwidth.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Statistics" title="Portal:Statistics">Statistics  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Detection_theory" title="Detection theory">Detection theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Egon_Pearson" title="Egon Pearson">Egon Pearson</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/False_positive_paradox" title="False positive paradox">False positive paradox</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Family-wise_error_rate" title="Family-wise error rate" class="mw-redirect">Family-wise error rate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_retrieval#Performance_measures" title="Information retrieval">Information retrieval performance measures</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Negative_information" title="Negative information" class="mw-redirect">Negative information</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Neyman-Pearson_lemma" title="Neyman-Pearson lemma" class="mw-redirect">Neyman-Pearson lemma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Null_hypothesis" title="Null hypothesis">Null hypothesis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prosecutor%27s_fallacy" title="Prosecutor's fallacy">Prosecutor's fallacy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prozone_phenomenon" title="Prozone phenomenon">Prozone phenomenon</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Receiver_operating_characteristic" title="Receiver operating characteristic">Receiver operating characteristic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sensitivity_and_specificity" title="Sensitivity and specificity">Sensitivity and specificity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statisticians%27_and_engineers%27_cross-reference_of_statistical_terms" title="Statisticians' and engineers' cross-reference of statistical terms">Statisticians' and engineers' cross-reference of statistical terms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Testing_hypotheses_suggested_by_the_data" title="Testing hypotheses suggested by the data">Testing hypotheses suggested by the data</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-algorithm-8">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-algorithm_8-0">^</a></b></span> <span class="reference-text">When developing detection algorithms or tests, a balance must be chosen between risks of false negatives and false positives. Usually there is a threshold of how close a match to a given sample must be achieved before the algorithm reports a match. The higher this threshold, the more false negatives and the fewer false positives.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-11">^</a></b></span> <span class="reference-text">For example, Onwuegbuzie &amp; Daniel claim to have identified an additional eight kinds of error.<sup id="cite_ref-10" class="reference"><a href="Type_I_and_type_II_errors#cite_note-10"><span>[</span>9<span>]</span></a></sup></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-13">^</a></b></span> <span class="reference-text">The 1981 President of the <a href="http://en.m.wikipedia.org/wiki/American_Association_for_the_Advancement_of_Science" title="American Association for the Advancement of Science">American Association for the Advancement of Science</a> <a rel="nofollow" class="external autonumber" href="http://www.umass.edu/wsp/statistics/tales/mosteller.html">[1]</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-14">^</a></b></span> <span class="reference-text">Compare with <a href="http://en.m.wikipedia.org/wiki/Kantian_ethics" title="Kantian ethics">Kantian ethics</a>, where it is not enough to do the right thing, but it must be done for the right reason, and <a href="http://en.m.wikipedia.org/wiki/Gettier_problems" title="Gettier problems" class="mw-redirect">Gettier problems</a>, where "justified true belief" is not equated with knowledge.</span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-15">^</a></b></span> <span class="reference-text">Note that Raiffa, from his imperfect recollection, incorrectly attributed this "error of the third kind" to <a href="http://en.m.wikipedia.org/wiki/John_Tukey" title="John Tukey">John Tukey</a> (1915–2000).</span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-18">^</a></b></span> <span class="reference-text">In relation to this newborn screening, recent studies have shown that there are more than 12 times more false positives than correct screens (Gambrill, 2006. <a rel="nofollow" class="external autonumber" href="http://www.nlm.nih.gov/medlineplus/news/fullstory_34471.html">[2]</a>)</span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-19">^</a></b></span> <span class="reference-text">Several sites provide examples of false positives, including <a rel="nofollow" class="external text" href="http://the-atlantic-paranormal-society.com/images/tapspics/index.html">The Atlantic Paranormal Society (TAPS)</a> and <a rel="nofollow" class="external text" href="http://www.moorestownghostresearch.com/FalsePositives.html">Moorestown Ghost Research</a>.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Sheskin-1">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-Sheskin_1-0">^</a></b></span> <span class="reference-text"><span class="citation book">Sheskin, David (2004). <i>Handbook of Parametric and Nonparametric Statistical Procedures</i>. CRC Press. p. <a rel="nofollow" class="external text" href="http://books.google.com/books?id=bmwhcJqq01cC&amp;pg=PA59">59</a>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1584884401" title="Special:BookSources/1584884401">1584884401</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+Parametric+and+Nonparametric+Statistical+Procedures&amp;rft.aulast=Sheskin%2C+David&amp;rft.au=Sheskin%2C+David&amp;rft.date=2004&amp;rft.pages=p.%26nbsp%3B%5Bhttp%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DbmwhcJqq01cC%26pg%3DPA59+59%5D&amp;rft.pub=CRC+Press&amp;rft.isbn=1584884401&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Peck-2">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-Peck_2-0">^</a></b></span> <span class="reference-text"><span class="citation book">Peck, Roxy and Jay L. Devore (2011). <i>Statistics: The Exploration and Analysis of Data</i>. Cengage Learning. pp. <a rel="nofollow" class="external text" href="http://books.google.com/books?id=NsAh3P-WrswC&amp;pg=PA464">464–465</a>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0840058012" title="Special:BookSources/0840058012">0840058012</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Statistics%3A+The+Exploration+and+Analysis+of+Data&amp;rft.aulast=Peck%2C+Roxy+and+Jay+L.+Devore&amp;rft.au=Peck%2C+Roxy+and+Jay+L.+Devore&amp;rft.date=2011&amp;rft.pages=pp.%26nbsp%3B%5Bhttp%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DNsAh3P-WrswC%26pg%3DPA464+464%E2%80%93465%5D&amp;rft.pub=Cengage+Learning&amp;rft.isbn=0840058012&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Shermer_2002_455-3">
+<span class="mw-cite-backlink">^ <a href="Type_I_and_type_II_errors#cite_ref-Shermer_2002_455_3-0"><sup><i><b>a</b></i></sup></a> <a href="Type_I_and_type_II_errors#cite_ref-Shermer_2002_455_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Shermer, Michael (2002). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=Gr4snwg7iaEC&amp;pg=PA455&amp;lpg=PA455&amp;dq=type+ii+error+skepticism&amp;source=bl&amp;ots=bCBz8JJBTo&amp;sig=FpB-13Igea9cS40ZZkP8CiAwxm8&amp;hl=en&amp;ei=3M4rTfq1EsWblgeK8oj_Cw&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=5&amp;ved=0CDQQ6AEwBA#v=onepage&amp;q=type%20ii%20error%20skepticism&amp;f=false"><i>The Skeptic Encyclopedia of Pseudoscience 2 volume set</i></a>. ABC-CLIO. p. 455. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-57607-653-9" title="Special:BookSources/1-57607-653-9">1-57607-653-9</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://books.google.com/books?id=Gr4snwg7iaEC&amp;pg=PA455&amp;lpg=PA455&amp;dq=type+ii+error+skepticism&amp;source=bl&amp;ots=bCBz8JJBTo&amp;sig=FpB-13Igea9cS40ZZkP8CiAwxm8&amp;hl=en&amp;ei=3M4rTfq1EsWblgeK8oj_Cw&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=5&amp;ved=0CDQQ6AEwBA#v=onepage&amp;q=type%20ii%20error%20skepticism&amp;f=false">http://books.google.com/books?id=Gr4snwg7iaEC&amp;pg=PA455&amp;lpg=PA455&amp;dq=type+ii+error+skepticism&amp;source=bl&amp;ots=bCBz8JJBTo&amp;sig=FpB-13Igea9cS40ZZkP8CiAwxm8&amp;hl=en&amp;ei=3M4rTfq1EsWblgeK8oj_Cw&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=5&amp;ved=0CDQQ6AEwBA#v=onepage&amp;q=type%20ii%20error%20skepticism&amp;f=false</a></span><span class="reference-accessdate">. Retrieved 10 January 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Skeptic+Encyclopedia+of+Pseudoscience+2+volume+set&amp;rft.aulast=Shermer&amp;rft.aufirst=Michael&amp;rft.au=Shermer%2C%26%2332%3BMichael&amp;rft.date=2002&amp;rft.pages=p.%26nbsp%3B455&amp;rft.pub=ABC-CLIO&amp;rft.isbn=1-57607-653-9&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DGr4snwg7iaEC%26pg%3DPA455%26lpg%3DPA455%26dq%3Dtype%2Bii%2Berror%2Bskepticism%26source%3Dbl%26ots%3DbCBz8JJBTo%26sig%3DFpB-13Igea9cS40ZZkP8CiAwxm8%26hl%3Den%26ei%3D3M4rTfq1EsWblgeK8oj_Cw%26sa%3DX%26oi%3Dbook_result%26ct%3Dresult%26resnum%3D5%26ved%3D0CDQQ6AEwBA%23v%3Donepage%26q%3Dtype%2520ii%2520error%2520skepticism%26f%3Dfalse&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-neyman1928-4">
+<span class="mw-cite-backlink">^ <a href="Type_I_and_type_II_errors#cite_ref-neyman1928_4-0"><sup><i><b>a</b></i></sup></a> <a href="Type_I_and_type_II_errors#cite_ref-neyman1928_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Neyman, J.; Pearson, E.S. (1967) [1928]. "On the Use and Interpretation of Certain Test Criteria for Purposes of Statistical Inference, Part I". <i>Joint Statistical Papers</i>. Cambridge University Press. pp. 1–66.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=On+the+Use+and+Interpretation+of+Certain+Test+Criteria+for+Purposes+of+Statistical+Inference%2C+Part+I&amp;rft.atitle=Joint+Statistical+Papers&amp;rft.aulast=Neyman&amp;rft.aufirst=J.&amp;rft.au=Neyman%2C%26%2332%3BJ.&amp;rft.au=Pearson%2C%26%2332%3BE.S.&amp;rft.date=1967&amp;rft.pages=pp.%26nbsp%3B1%E2%80%9366&amp;rft.pub=Cambridge+University+Press&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation book">David, F.N. (1949). <i>Probability Theory for Statistical Methods</i>. Cambridge University Press. p. 28.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Probability+Theory+for+Statistical+Methods&amp;rft.aulast=David&amp;rft.aufirst=F.N.&amp;rft.au=David%2C%26%2332%3BF.N.&amp;rft.date=1949&amp;rft.pages=p.%26nbsp%3B28&amp;rft.pub=Cambridge+University+Press&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation book">Pearson, E.S.; Neyman, J. (1967) [1930]. "On the Problem of Two Samples". <i>Joint Statistical Papers</i>. Cambridge University Press. p. 100.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=On+the+Problem+of+Two+Samples&amp;rft.atitle=Joint+Statistical+Papers&amp;rft.aulast=Pearson&amp;rft.aufirst=E.S.&amp;rft.au=Pearson%2C%26%2332%3BE.S.&amp;rft.au=Neyman%2C%26%2332%3BJ.&amp;rft.date=1967&amp;rft.pages=p.%26nbsp%3B100&amp;rft.pub=Cambridge+University+Press&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-neyman1933-7">
+<span class="mw-cite-backlink">^ <a href="Type_I_and_type_II_errors#cite_ref-neyman1933_7-0"><sup><i><b>a</b></i></sup></a> <a href="Type_I_and_type_II_errors#cite_ref-neyman1933_7-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Neyman, J.; Pearson, E.S. (1967) [1933]. "The testing of statistical hypotheses in relation to probabilities a priori". <i>Joint Statistical Papers</i>. Cambridge University Press. pp. 186–202.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+testing+of+statistical+hypotheses+in+relation+to+probabilities+a+priori&amp;rft.atitle=Joint+Statistical+Papers&amp;rft.aulast=Neyman&amp;rft.aufirst=J.&amp;rft.au=Neyman%2C%26%2332%3BJ.&amp;rft.au=Pearson%2C%26%2332%3BE.S.&amp;rft.date=1967&amp;rft.pages=pp.%26nbsp%3B186%E2%80%93202&amp;rft.pub=Cambridge+University+Press&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-9">^</a></b></span> <span class="reference-text">Fisher, R.A. (1966). <i>The design of experiments.</i> 8th edition. Hafner:Edinburgh.</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation Journal">Onwuegbuzie, A.J.; Daniel, L. G. (19 February 2003). <a rel="nofollow" class="external text" href="http://cie.ed.asu.edu/volume6/number2">"Typology of analytical and interpretational errors in quantitative and qualitative educational research"</a>. <i>Current Issues in Education</i> <b>6</b> (2)<span class="printonly">. <a rel="nofollow" class="external free" href="http://cie.ed.asu.edu/volume6/number2">http://cie.ed.asu.edu/volume6/number2</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Typology+of+analytical+and+interpretational+errors+in+quantitative+and+qualitative+educational+research&amp;rft.jtitle=Current+Issues+in+Education&amp;rft.aulast=Onwuegbuzie&amp;rft.aufirst=A.J.&amp;rft.au=Onwuegbuzie%2C%26%2332%3BA.J.&amp;rft.au=Daniel%2C%26%2332%3BL.+G.&amp;rft.date=19+February+2003&amp;rft.volume=6&amp;rft.issue=2&amp;rft_id=http%3A%2F%2Fcie.ed.asu.edu%2Fvolume6%2Fnumber2&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.brl.com/pdfs/checklnd.pdf">[3]</a> P.J. Boxer 1994 Notes on Checkland's Soft Systems Methodology</span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-16">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/Ian_I._Mitroff" title="Ian I. Mitroff" class="mw-redirect">Ian I. Mitroff</a> and <span class="new" title="Abraham Silvers (page does not exist)">Abraham Silvers</span>, <i>Dirty rotten strategies: How We Trick Ourselves and Others into Solving the Wrong Problems Precisely</i>, Stanford Business Press (2009), hardcover, 210 pages, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9780804759960" class="internal mw-magiclink-isbn">ISBN 978-0-8047-5996-0</a></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Type_I_and_type_II_errors#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web">Williams, G.O. (1996). <a rel="nofollow" class="external text" href="http://debut.cis.nctu.edu.tw/~ching/Face/Articles/Biometric%20Identification/00551842.pdf">"Iris Recognition Technology"</a>. debut.cis.nctu.edu.tw. p. 56<span class="printonly">. <a rel="nofollow" class="external free" href="http://debut.cis.nctu.edu.tw/~ching/Face/Articles/Biometric%20Identification/00551842.pdf">http://debut.cis.nctu.edu.tw/~ching/Face/Articles/Biometric%20Identification/00551842.pdf</a></span><span class="reference-accessdate">. Retrieved 2010-05-23</span>. "crossover error rate (that point where the probabilities of False Reject (Type I error) and False Accept (Type II error) are approximately equal) is .00076%"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Iris+Recognition+Technology&amp;rft.atitle=&amp;rft.aulast=Williams&amp;rft.aufirst=G.O.&amp;rft.au=Williams%2C%26%2332%3BG.O.&amp;rft.date=1996&amp;rft.pages=p.%26nbsp%3B56&amp;rft.pub=debut.cis.nctu.edu.tw&amp;rft_id=http%3A%2F%2Fdebut.cis.nctu.edu.tw%2F%7Eching%2FFace%2FArticles%2FBiometric%2520Identification%2F00551842.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Type_I_and_type_II_errors"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<ul>
+<li>Betz, M.A. &amp; Gabriel, K.R., "Type IV Errors and Analysis of Simple Effects", <i>Journal of Educational Statistics</i>, Vol.3, No.2, (Summer 1978), pp. 121–144.</li>
+<li>David, F.N., "A Power Function for Tests of Randomness in a Sequence of Alternatives", <i>Biometrika</i>, Vol.34, Nos.3/4, (December 1947), pp. 335–339.</li>
+<li>Fisher, R.A., <i>The Design of Experiments</i>, Oliver &amp; Boyd (Edinburgh), 1935.</li>
+<li>Gambrill, W., "False Positives on Newborns' Disease Tests Worry Parents", <i>Health Day</i>, (5 June 2006). <a rel="nofollow" class="external text" href="http://www.nlm.nih.gov/medlineplus/news/fullstory">34471.html</a>
+</li>
+<li>Kaiser, H.F., "Directional Statistical Decisions", <i>Psychological Review</i>, Vol.67, No.3, (May 1960), pp. 160–167.</li>
+<li>Kimball, A.W., "Errors of the Third Kind in Statistical Consulting", <i>Journal of the American Statistical Association</i>, Vol.52, No.278, (June 1957), pp. 133–142.</li>
+<li>Lubin, A., "The Interpretation of Significant Interaction", <i>Educational and Psychological Measurement</i>, Vol.21, No.4, (Winter 1961), pp. 807–817.</li>
+<li>Marascuilo, L.A. &amp; Levin, J.R., "Appropriate Post Hoc Comparisons for Interaction and nested Hypotheses in Analysis of Variance Designs: The Elimination of Type-IV Errors", <i>American Educational Research Journal</i>, Vol.7., No.3, (May 1970), pp. 397–421.</li>
+<li>Mitroff, I.I. &amp; Featheringham, T.R., "On Systemic Problem Solving and the Error of the Third Kind", <i>Behavioral Science</i>, Vol.19, No.6, (November 1974), pp. 383–393.</li>
+<li>Mosteller, F., "A <i><b>k</b></i>-Sample Slippage Test for an Extreme Population", <i>The Annals of Mathematical Statistics</i>, Vol.19, No.1, (March 1948), pp. 58–65.</li>
+<li>Moulton, R.T., “Network Security”, <i>Datamation</i>, Vol.29, No.7, (July 1983), pp. 121–127.</li>
+<li>Raiffa, H., <i>Decision Analysis: Introductory Lectures on Choices Under Uncertainty</i>, Addison-Wesley, (Reading), 1968.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.publichealth.pitt.edu/supercourse/SupercoursePPT/18011-19001/18951.ppt">Bias and Confounding</a> – presentation by Nigel Paneth, Graduate School of Public Health, University of Pittsburgh</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Statistics" title="Template:Statistics"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Statistics" title="Template talk:Statistics"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Statistics&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Statistics" title="Statistics">Statistics</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Descriptive_statistics" title="Descriptive statistics">Descriptive statistics</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Continuous_probability_distribution" title="Continuous probability distribution" class="mw-redirect">Continuous data</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Location_parameter" title="Location parameter">Location</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mean" title="Mean">Mean</a> (<a href="http://en.m.wikipedia.org/wiki/Arithmetic_mean" title="Arithmetic mean">Arithmetic</a>, <a href="http://en.m.wikipedia.org/wiki/Geometric_mean" title="Geometric mean">Geometric</a>, <a href="http://en.m.wikipedia.org/wiki/Harmonic_mean" title="Harmonic mean">Harmonic</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Median" title="Median">Median</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mode_(statistics)" title="Mode (statistics)">Mode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Statistical_dispersion" title="Statistical dispersion">Dispersion</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Range_(statistics)" title="Range (statistics)">Range</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_deviation" title="Standard deviation">Standard deviation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coefficient_of_variation" title="Coefficient of variation">Coefficient of variation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Percentile" title="Percentile">Percentile</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interquartile_range" title="Interquartile range">Interquartile range</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Shape_of_the_distribution" title="Shape of the distribution">Shape</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Variance" title="Variance">Variance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Skewness" title="Skewness">Skewness</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kurtosis" title="Kurtosis">Kurtosis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Moment_(mathematics)" title="Moment (mathematics)">Moments</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/L-moment" title="L-moment">L-moments</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Discrete_probability_distribution" title="Discrete probability distribution" class="mw-redirect">Count data</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Index_of_dispersion" title="Index of dispersion">Index of dispersion</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Summary tables</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Grouped_data" title="Grouped data">Grouped data</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Frequency_distribution" title="Frequency distribution">Frequency distribution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Contingency_table" title="Contingency table">Contingency table</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation and dependence">Dependence</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient" title="Pearson product-moment correlation coefficient">Pearson product-moment correlation</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Rank_correlation" title="Rank correlation">Rank correlation</a> (<a href="http://en.m.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient" title="Spearman's rank correlation coefficient">Spearman's rho</a>, <a href="http://en.m.wikipedia.org/wiki/Kendall_tau_rank_correlation_coefficient" title="Kendall tau rank correlation coefficient">Kendall's tau</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Statistical_graphics" title="Statistical graphics">Statistical graphics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bar_chart" title="Bar chart">Bar chart</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biplot" title="Biplot">Biplot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Box_plot" title="Box plot">Box plot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_chart" title="Control chart">Control chart</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Correlogram" title="Correlogram">Correlogram</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Forest_plot" title="Forest plot">Forest plot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Histogram" title="Histogram">Histogram</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Q%E2%80%93Q_plot" title="Q–Q plot">Q–Q plot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Run_chart" title="Run chart">Run chart</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scatter_plot" title="Scatter plot">Scatter plot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stemplot" title="Stemplot">Stemplot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Radar_chart" title="Radar chart">Radar chart</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Data_collection" title="Data collection">Data collection</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;">Designing studies</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Effect_size" title="Effect size">Effect size</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_error" title="Standard error">Standard error</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statistical_power" title="Statistical power">Statistical power</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sample_size_determination" title="Sample size determination">Sample size determination</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Survey_methodology" title="Survey methodology">Survey methodology</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sampling_(statistics)" title="Sampling (statistics)">Sampling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stratified_sampling" title="Stratified sampling">Stratified sampling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opinion_poll" title="Opinion poll">Opinion poll</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Questionnaire" title="Questionnaire">Questionnaire</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Experiment#Controlled_experiments" title="Experiment">Controlled experiment</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Design_of_experiments" title="Design of experiments">Design of experiments</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Randomized_experiment" title="Randomized experiment">Randomized experiment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Random_assignment" title="Random assignment">Random assignment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Replication_(statistics)" title="Replication (statistics)">Replication</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Blocking_(statistics)" title="Blocking (statistics)">Blocking</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Factorial_experiment" title="Factorial experiment">Factorial experiment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Optimal_design" title="Optimal design">Optimal design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Uncontrolled studies</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Natural_experiment" title="Natural experiment">Natural experiment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quasi-experiment" title="Quasi-experiment">Quasi-experiment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Observational_study" title="Observational study">Observational study</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Statistical_inference" title="Statistical inference">Statistical inference</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Statistical_theory" title="Statistical theory">Statistical theory</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sampling_distribution" title="Sampling distribution">Sampling distribution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sufficient_statistic" title="Sufficient statistic">Sufficient statistic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Meta-analysis" title="Meta-analysis">Meta-analysis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Bayesian_inference" title="Bayesian inference">Bayesian inference</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bayesian_probability" title="Bayesian probability">Bayesian probability</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prior_probability" title="Prior probability">Prior</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Posterior_probability" title="Posterior probability">Posterior</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Credible_interval" title="Credible interval">Credible interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bayes_factor" title="Bayes factor">Bayes factor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bayes_estimator" title="Bayes estimator">Bayesian estimator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maximum_a_posteriori_estimation" title="Maximum a posteriori estimation">Maximum posterior estimator</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Frequentist_inference" title="Frequentist inference">Frequentist inference</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Confidence_interval" title="Confidence interval">Confidence interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statistical_hypothesis_testing" title="Statistical hypothesis testing">Hypothesis testing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Likelihood-ratio_test" title="Likelihood-ratio test">Likelihood-ratio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Specific tests</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Z-test" title="Z-test">Z-test (normal)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Student%27s_t-test" title="Student's t-test">Student's t-test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/F-test" title="F-test">F-test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chi-squared_test" title="Chi-squared test">Chi-squared test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wald_test" title="Wald test">Wald test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mann%E2%80%93Whitney_U" title="Mann–Whitney U">Mann–Whitney U</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shapiro%E2%80%93Wilk_test" title="Shapiro–Wilk test">Shapiro–Wilk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wilcoxon_signed-rank_test" title="Wilcoxon signed-rank test">Signed-rank</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" title="Kolmogorov–Smirnov test">Kolmogorov–Smirnov test</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Estimator" title="Estimator">General estimation</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bias_of_an_estimator" title="Bias of an estimator">Bias</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Robust_statistics" title="Robust statistics">Robustness</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Efficiency_(statistics)" title="Efficiency (statistics)">Efficiency</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maximum_likelihood" title="Maximum likelihood">Maximum likelihood</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Method_of_moments_(statistics)" title="Method of moments (statistics)">Method of moments</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minimum_distance_estimation" title="Minimum distance estimation">Minimum distance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Density_estimation" title="Density estimation">Density estimation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;">
+<a href="http://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a> and <a href="http://en.m.wikipedia.org/wiki/Regression_analysis" title="Regression analysis">regression analysis</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Correlation_and_dependence" title="Correlation and dependence">Correlation</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient" title="Pearson product-moment correlation coefficient">Pearson product–moment correlation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Partial_correlation" title="Partial correlation">Partial correlation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Confounding" title="Confounding">Confounding variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coefficient_of_determination" title="Coefficient of determination">Coefficient of determination</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Regression_analysis" title="Regression analysis">Regression analysis</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Errors_and_residuals_in_statistics" title="Errors and residuals in statistics">Errors and residuals</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Regression_model_validation" title="Regression model validation">Regression model validation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mixed_model" title="Mixed model">Mixed effects models</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simultaneous_equations_model" title="Simultaneous equations model">Simultaneous equations models</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Linear_regression" title="Linear regression">Linear regression</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Simple_linear_regression" title="Simple linear regression">Simple linear regression</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ordinary_least_squares" title="Ordinary least squares">Ordinary least squares</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/General_linear_model" title="General linear model">General linear model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bayesian_linear_regression" title="Bayesian linear regression">Bayesian regression</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Non-standard predictors</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Nonlinear_regression" title="Nonlinear regression">Nonlinear regression</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nonparametric_regression" title="Nonparametric regression">Nonparametric</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semiparametric_regression" title="Semiparametric regression">Semiparametric</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Isotonic_regression" title="Isotonic regression">Isotonic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Robust_regression" title="Robust regression">Robust</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Generalized_linear_model" title="Generalized linear model">Generalized linear model</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Exponential_family" title="Exponential family">Exponential families</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logistic_regression" title="Logistic regression">Logistic (Bernoulli)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Binomial_regression" title="Binomial regression">Binomial</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Poisson_regression" title="Poisson regression">Poisson</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Partition_of_sums_of_squares" title="Partition of sums of squares">Partition of variance</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Analysis_of_variance" title="Analysis of variance">Analysis of variance (ANOVA)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Analysis_of_covariance" title="Analysis of covariance">Analysis of covariance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multivariate_analysis_of_variance" title="Multivariate analysis of variance">Multivariate ANOVA</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Degrees_of_freedom_(statistics)" title="Degrees of freedom (statistics)">Degrees of freedom</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;">
+<a href="http://en.m.wikipedia.org/wiki/Categorical_data" title="Categorical data">Categorical</a>, <a href="http://en.m.wikipedia.org/wiki/Multivariate_statistics" title="Multivariate statistics">multivariate</a>, <a href="http://en.m.wikipedia.org/wiki/Time_series" title="Time series">time-series</a>, or <a href="http://en.m.wikipedia.org/wiki/Survival_analysis" title="Survival analysis">survival</a> analysis</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Categorical_data" title="Categorical data">Categorical data</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cohen%27s_kappa" title="Cohen's kappa">Cohen's kappa</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Contingency_table" title="Contingency table">Contingency table</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Graphical_model" title="Graphical model">Graphical model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Poisson_regression" title="Poisson regression">Log-linear model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/McNemar%27s_test" title="McNemar's test">McNemar's test</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Multivariate_statistics" title="Multivariate statistics">Multivariate statistics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/General_linear_model" title="General linear model">Multivariate regression</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Principal_component_analysis" title="Principal component analysis">Principal components</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Factor_analysis" title="Factor analysis">Factor analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cluster_analysis" title="Cluster analysis">Cluster analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statistical_classification" title="Statistical classification">Classification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Copula_(probability_theory)" title="Copula (probability theory)">Copulas</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Time_series" title="Time series">Time series analysis</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Decomposition_of_time_series" title="Decomposition of time series">Decomposition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Trend_estimation" title="Trend estimation">Trend</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stationary_process" title="Stationary process">Stationarity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Seasonal_adjustment" title="Seasonal adjustment">Seasonal adjustment</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Time_domain" title="Time domain">Time domain</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Autocorrelation_function" title="Autocorrelation function" class="mw-redirect">ACF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Partial_autocorrelation_function" title="Partial autocorrelation function">PACF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cross-correlation_function" title="Cross-correlation function" class="mw-redirect">XCF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Autoregressive%E2%80%93moving-average_model" title="Autoregressive–moving-average model">ARMA model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Box%E2%80%93Jenkins" title="Box–Jenkins">ARIMA model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vector_autoregression" title="Vector autoregression">Vector autoregression</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Frequency_domain" title="Frequency domain">Frequency domain</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Spectral_density_estimation" title="Spectral density estimation">Spectral density estimation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Survival_analysis" title="Survival analysis">Survival analysis</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Survival_function" title="Survival function">Survival function</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kaplan%E2%80%93Meier_estimator" title="Kaplan–Meier estimator">Kaplan–Meier</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logrank_test" title="Logrank test">Logrank test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Failure_rate" title="Failure rate">Failure rate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Proportional_hazards_models" title="Proportional hazards models">Proportional hazards models</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Accelerated_failure_time_model" title="Accelerated failure time model">Accelerated failure time model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="col" style=";;" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/List_of_fields_of_application_of_statistics" title="List of fields of application of statistics">Applications</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Biostatistics" title="Biostatistics">Biostatistics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biometrics" title="Biometrics">Biometrics</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Clinical_trial" title="Clinical trial">Clinical trials</a> &amp; <a href="http://en.m.wikipedia.org/wiki/Clinical_study_design" title="Clinical study design">studies</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Epidemiology" title="Epidemiology">Epidemiology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Medical_statistics" title="Medical statistics">Medical statistics</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Engineering_statistics" title="Engineering statistics">Engineering statistics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Chemometrics" title="Chemometrics">Chemometrics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Methods_engineering" title="Methods engineering">Methods engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Probabilistic_design" title="Probabilistic design">Probabilistic design</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Statistical_process_control" title="Statistical process control">Process &amp;</a> <a href="http://en.m.wikipedia.org/wiki/Quality_control" title="Quality control">Quality control</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reliability_engineering" title="Reliability engineering">Reliability</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/System_identification" title="System identification">System identification</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Social_statistics" title="Social statistics">Social statistics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Actuarial_science" title="Actuarial science">Actuarial science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Census" title="Census">Census</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Crime_statistics" title="Crime statistics">Crime statistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Demographic_statistics" title="Demographic statistics">Demography</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Econometrics" title="Econometrics">Econometrics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/National_accounts" title="National accounts">National accounts</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Official_statistics" title="Official statistics">Official statistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statistical_population" title="Statistical population">Population</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Psychometrics" title="Psychometrics">Psychometrics</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Spatial_analysis" title="Spatial analysis">Spatial statistics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cartography" title="Cartography">Cartography</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Environmental_statistics" title="Environmental statistics">Environmental statistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Geographic_information_system" title="Geographic information system">Geographic information system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Geostatistics" title="Geostatistics">Geostatistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kriging" title="Kriging">Kriging</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Category:Statistics" title="Category:Statistics">Category</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Portal:Statistics" title="Portal:Statistics">Portal</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Outline_of_statistics" title="Outline of statistics">Outline</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/List_of_statistics_articles" title="List of statistics articles">Index</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 15 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bg.m.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D1%88%D0%BA%D0%B8_%D0%BE%D1%82_%D0%BF%D1%8A%D1%80%D0%B2%D0%B8_%D0%B8_%D0%BE%D1%82_%D0%B2%D1%82%D0%BE%D1%80%D0%B8_%D1%80%D0%BE%D0%B4" lang="bg" hreflang="bg">български</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Errors_de_tipus_I_i_de_tipus_II" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Chyby_typu_I_a_II" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Fehler#Statistik" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Errores_de_tipo_I_y_de_tipo_II" lang="es" hreflang="es">español</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93_%EC%96%91%EC%84%B1" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://is.m.wikipedia.org/wiki/H%C3%B6fnunar-_og_fastheldnismist%C3%B6k" lang="is" hreflang="is">íslenska</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A9%D7%92%D7%99%D7%90%D7%95%D7%AA_%D7%9E%D7%A1%D7%95%D7%92_I_%D7%95-II" lang="he" hreflang="he">עברית</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Fout_(statistiek)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E7%A8%AE%E9%81%8E%E8%AA%A4%E3%81%A8%E7%AC%AC%E4%BA%8C%E7%A8%AE%E9%81%8E%E8%AA%A4" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Statistisk_feil" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B8_%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B3%D0%BE_%D0%B8_%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE_%D1%80%D0%BE%D0%B4%D0%B0" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Type_I_and_type_II_errors" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%85%D0%B8%D0%B1%D0%BA%D0%B8_%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE_%D1%96_%D0%B4%D1%80%D1%83%D0%B3%D0%BE%D0%B3%D0%BE_%D1%80%D0%BE%D0%B4%D1%83" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E7%AC%AC%E4%B8%80%E5%9E%8B%E5%8F%8A%E7%AC%AC%E4%BA%8C%E5%9E%8B%E9%8C%AF%E8%AA%A4" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Type_I_and_type_II_errors&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Type_I_and_type_II_errors&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Type+I+and+type+II+errors&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

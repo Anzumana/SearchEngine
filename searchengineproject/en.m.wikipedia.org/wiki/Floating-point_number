@@ -1,0 +1,1200 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Floating point - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Floating point","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Floating_point" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Floating+point"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Floating point</h1>			
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Z3_Deutsches_Museum.JPG" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Z3_Deutsches_Museum.JPG/200px-Z3_Deutsches_Museum.JPG" width="200" height="150" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Z3_Deutsches_Museum.JPG/300px-Z3_Deutsches_Museum.JPG 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Z3_Deutsches_Museum.JPG/400px-Z3_Deutsches_Museum.JPG 2x"></a>
+<div class="thumbcaption">
+
+The first programmable computer, the <a href="http://en.m.wikipedia.org/wiki/Z3_(computer)" title="Z3 (computer)">Z3</a> included floating point arithmetic (replica on display at <a href="http://en.m.wikipedia.org/wiki/Deutsches_Museum" title="Deutsches Museum">Deutsches Museum</a> in <a href="http://en.m.wikipedia.org/wiki/Munich" title="Munich">Munich</a>).</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Float_mantissa_exponent.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Float_mantissa_exponent.png/200px-Float_mantissa_exponent.png" width="200" height="80" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Float_mantissa_exponent.png/300px-Float_mantissa_exponent.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Float_mantissa_exponent.png/400px-Float_mantissa_exponent.png 2x"></a>
+<div class="thumbcaption">
+
+A diagram showing a representation of a floating point number using a <a href="http://en.m.wikipedia.org/wiki/Significand" title="Significand">mantissa</a> and an <a href="http://en.m.wikipedia.org/wiki/Exponent" title="Exponent" class="mw-redirect">exponent</a>.</div>
+</div>
+</div>
+<p>In <a href="Computing" title="Computing">computing</a>, <b>floating point</b> describes a method of representing an approximation to <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> in a way that can support a wide range of values. Numbers are, in general, represented approximately to a fixed number of <a href="http://en.m.wikipedia.org/wiki/Significant_figures" title="Significant figures">significant digits</a> and scaled using an <a href="http://en.m.wikipedia.org/wiki/Exponentiation" title="Exponentiation">exponent</a>. The base for the scaling is normally 2, 10 or 16. The typical number that can be represented exactly is of the form:</p>
+<dl>
+<dd>
+<i>Significant digits</i> × <i>base</i><sup><i>exponent</i></sup>
+</dd>
+</dl>
+<p>The term <i>floating point</i> refers to the fact that the <a href="http://en.m.wikipedia.org/wiki/Radix_point" title="Radix point">radix point</a> (decimal point, or, more commonly in computers, binary point) can "float"; that is, it can be placed anywhere relative to the significant digits of the number. This position is indicated separately in the internal representation, and floating-point representation can thus be thought of as a computer realization of <a href="http://en.m.wikipedia.org/wiki/Scientific_notation" title="Scientific notation">scientific notation</a>. Over the years, a variety of floating-point representations have been used in computers. However, since the 1990s, the most commonly encountered representation is that defined by the <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> Standard.</p>
+<p>The advantage of floating-point representation over <a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">fixed-point</a> and <a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">integer</a> representation is that it can support a much wider range of values. For example, a fixed-point representation that has seven decimal digits with two decimal places can represent the numbers 12345.67, 123.45, 1.23 and so on, whereas a floating-point representation (such as the IEEE 754 <a href="http://en.m.wikipedia.org/wiki/Decimal32_floating-point_format" title="Decimal32 floating-point format">decimal32</a> format) with seven decimal digits could in addition represent 1.234567, 123456.7, 0.00001234567, 1234567000000000, and so on. The floating-point format needs slightly more storage (to encode the position of the radix point), so when stored in the same space, floating-point numbers achieve their greater range at the expense of <a href="http://en.m.wikipedia.org/wiki/Accuracy_and_precision" title="Accuracy and precision">precision</a>.</p>
+<p>The speed of floating-point operations, commonly referred to in performance measurements as <a href="http://en.m.wikipedia.org/wiki/FLOPS" title="FLOPS">FLOPS</a>, is an important machine characteristic, especially in <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">software</a> that performs large-scale mathematical calculations.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>A number representation (called a <a href="http://en.m.wikipedia.org/wiki/Numeral_system" title="Numeral system">numeral system</a> in mathematics) specifies some way of storing a number that may be encoded as a string of digits. The arithmetic is defined as a set of actions on the representation that simulate classical arithmetic operations.</p>
+<p>There are several mechanisms by which strings of digits can represent numbers. In common mathematical notation, the digit string can be of any length, and the location of the <a href="http://en.m.wikipedia.org/wiki/Radix_point" title="Radix point">radix point</a> is indicated by placing an explicit <a href="http://en.m.wikipedia.org/wiki/Decimal_separator" title="Decimal separator" class="mw-redirect">"point" character</a> (dot or comma) there. If the radix point is omitted then it is implicitly assumed to lie at the right (least significant) end of the string (that is, the number is an <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">integer</a>). In <a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">fixed-point</a> systems, some specific assumption is made about where the radix point is located in the string. For example, the convention could be that the string consists of 8 decimal digits with the decimal point in the middle, so that "00012345" has a value of 1.2345.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Scientific_notation" title="Scientific notation">scientific notation</a>, the given number is scaled by a <a href="http://en.m.wikipedia.org/wiki/Exponentiation" title="Exponentiation">power of 10</a> so that it lies within a certain range—typically between 1 and 10, with the radix point appearing immediately after the first digit. The scaling factor, as a power of ten, is then indicated separately at the end of the number. For example, the revolution period of <a href="http://en.m.wikipedia.org/wiki/Jupiter" title="Jupiter">Jupiter</a>'s moon <a href="http://en.m.wikipedia.org/wiki/Io_(moon)" title="Io (moon)">Io</a> is 152853.5047 seconds, a value that would be represented in standard-form scientific notation as 1.528535047<span style="margin:0 .15em 0 .25em">×</span>10<sup>5</sup> seconds.</p>
+<p>Floating-point representation is similar in concept to scientific notation. Logically, a floating-point number consists of:</p>
+<ul>
+<li>A signed digit string of a given length in a given <a href="http://en.m.wikipedia.org/wiki/Base_(exponentiation)" title="Base (exponentiation)">base</a> (or <a href="http://en.m.wikipedia.org/wiki/Radix" title="Radix">radix</a>). This digit string is referred to as the <a href="http://en.m.wikipedia.org/wiki/Significand" title="Significand">significand</a>, <a href="http://en.m.wikipedia.org/wiki/Coefficient" title="Coefficient">coefficient</a> or, less often, the mantissa (see below). The length of the significand determines the <i>precision</i> to which numbers can be represented. The radix point position is assumed to always be somewhere within the significand—often just after or just before the most significant digit, or to the right of the rightmost (least significant) digit. This article will generally follow the convention that the radix point is just after the most significant (leftmost) digit.</li>
+<li>A signed integer <a href="http://en.m.wikipedia.org/wiki/Exponent" title="Exponent" class="mw-redirect">exponent</a>, also referred to as the characteristic or scale, which modifies the magnitude of the number.</li>
+</ul>
+<p>To derive the value of the floating point number, one must multiply the <i>significand</i> by the <i>base</i> raised to the power of the <i>exponent</i>, equivalent to shifting the radix point from its implied position by a number of places equal to the value of the exponent—to the right if the exponent is positive or to the left if the exponent is negative.</p>
+<p>Using base-10 (the familiar <a href="http://en.m.wikipedia.org/wiki/Decimal_representation" title="Decimal representation">decimal</a> notation) as an example, the number 152853.5047, which has ten decimal digits of precision, is represented as the significand 1528535047 together with an exponent of 5 (if the implied position of the radix point is after the first most significant digit, here 1). To determine the actual value, a decimal point is placed after the first digit of the significand and the result is multiplied by 10<sup>5</sup> to give 1.528535047 × 10<sup>5</sup>, or 152853.5047. In storing such a number, the base (10) need not be stored, since it will be the same for the entire range of supported numbers, and can thus be inferred.</p>
+<p>Symbolically, this final value is</p>
+<dl>
+<dd><img class="tex" alt="s \times b^e" src="http://upload.wikimedia.org/math/6/a/0/6a06106cda85af68c47c98f1bceeb366.png"></dd>
+</dl>
+<p>where <i>s</i> is the value of the significand (after taking into account the implied radix point), <i>b</i> is the base, and <i>e</i> is the exponent.</p>
+<p>Equivalently:</p>
+<dl>
+<dd><img class="tex" alt="\frac{s}{b^{p-1}} \times b^e" src="http://upload.wikimedia.org/math/1/b/c/1bc838e9f01209b00c6e771c2d84099f.png"></dd>
+</dl>
+<p>where <i>s</i> here means the integer value of the entire significand, ignoring any implied decimal point, and <i>p</i> is the precision—the number of digits in the significand.</p>
+<p>Historically, several number bases have been used for representing floating-point numbers, with base 2 (<a href="http://en.m.wikipedia.org/wiki/Binary_numeral_system" title="Binary numeral system">binary</a>) being the most common, followed by base 10 (decimal), and other less common varieties, such as base 16 (<a href="http://en.m.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal notation</a>), as well as some exotic ones like 3 (see <a href="http://en.m.wikipedia.org/wiki/Setun" title="Setun">Setun</a>).</p>
+<p>Floating point numbers are <a href="http://en.m.wikipedia.org/wiki/Rational_number" title="Rational number">rational numbers</a> because they can be represented as one integer divided by another. For example 1.45*10^3 is (145/100)*1000 or 145000/100. The base however determines the fractions that can be represented. For instance, 1/5 cannot be represented exactly as a floating point number using a binary base but can be represented exactly using a decimal base (0.2, or 2x10^-1). However 1/3 cannot be represented exactly by either binary (0.010101...) nor decimal (0.333....), but in <a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">base 3</a> it is trivial (0.1 or 1*3^-1) . The occasions on which infinite expansions occur depend on the base and its <a href="http://en.m.wikipedia.org/wiki/Prime_factors" title="Prime factors" class="mw-redirect">prime factors</a>, as described in the article on <a href="http://en.m.wikipedia.org/wiki/Positional_notation#Infinite_representations" title="Positional notation">Positional Notation</a>.</p>
+<p>The way in which the significand, exponent and sign bits are internally stored on a computer is implementation-dependent. The common IEEE formats are described in detail later and elsewhere, but as an example, in the binary single-precision (32-bit) floating-point representation <i>p</i>=24 and so the significand is a string of 24 <a href="Bit" title="Bit">bits</a>. For instance, the number <a href="http://en.m.wikipedia.org/wiki/Pi" title="Pi">π</a>'s first 33 bits are 11001001 00001111 11011010 10100010 0. Rounding to 24 bits in binary mode means attributing the 24th bit the value of the 25th which yields 11001001 00001111 11011011. When this is stored using the IEEE 754 encoding, this becomes the significand <i>s</i> with <i>e</i> = 1 (where <i>s</i> is assumed to have a binary point to the right of the first bit) after a left-adjustment (or <i>normalization</i>) during which leading or trailing zeros are truncated should there be any. Note that they do not matter anyway. Then since the first bit of a non-zero binary significand is always 1 it need not be stored, giving an extra bit of precision. To calculate π the formula is</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+   &amp;\left( 1 + \sum_{n=1}^{p-1} \text{bit}_n\times 2^{-n} \right) \times 2^e\\
+ = &amp;\left( 1 + 1\times 2^{-1} + 0\times 2^{-2} + 1\times 2^{-4} + 1\times2^{-7} + \dots + 1\times 2^{-23} \right) \times 2^1\\
+ = &amp;\; 1.5707964\times 2
+\end{align}" src="http://upload.wikimedia.org/math/0/8/7/087b307776fc13cdd636da70d992e829.png"></dd>
+</dl>
+<p>where n is the normalized significand's n-th bit from the left. Normalization, which is reversed when 1 is being added above, can be thought of as a form of compression; it allows a binary significand to be compressed into a field one bit shorter than the maximum precision, at the expense of extra processing.</p>
+<p>The word "mantissa" is often used as a synonym for significand. Use of mantissa in place of significand or coefficient is discouraged, as the mantissa is traditionally defined as the fractional part of a logarithm, while the <i>characteristic</i> is the integer part. This terminology comes from the manner in which <a href="http://en.m.wikipedia.org/wiki/Common_logarithm" title="Common logarithm">logarithm</a> tables were used before computers became commonplace. Log tables were actually tables of mantissas.</p>
+<h3> <span class="mw-headline" id="Some_other_computer_representations_for_non-integral_numbers">Some other computer representations for non-integral numbers</span>
+</h3>
+<p>Floating-point representation, in particular the standard IEEE format, is by far the most common way of representing an approximation to real numbers in computers because it is efficiently handled in most large computer processors. However, there are alternatives:</p>
+<ul>
+<li>
+<a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point</a> representation uses integer hardware operations controlled by a software implementation of a specific convention about the location of the binary or decimal point, for example, 6 bits or digits from the right. The hardware to manipulate these representations is less costly than floating-point and is also commonly used to perform integer operations. Binary fixed point is usually used in special-purpose applications on embedded processors that can only do integer arithmetic, but decimal fixed point is common in commercial applications.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Binary-coded_decimal" title="Binary-coded decimal">Binary-coded decimal</a> (BCD) is an encoding for decimal numbers in which each digit is represented by its own binary sequence. It is possible to implement a floating point system with BCD encoding.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logarithmic_number_system" title="Logarithmic number system">Logarithmic number systems</a> represent a real number by the logarithm of its absolute value and a sign bit. The value distribution is similar to floating-point, but the value-to-representation curve, i. e. the graph of the logarithm function, is smooth (except at 0). Contrary to floating-point arithmetic, in a logarithmic number system multiplication, division and exponentiation are easy to implement but addition and subtraction are difficult. The <a href="http://en.m.wikipedia.org/wiki/Symmetric_level-index_arithmetic" title="Symmetric level-index arithmetic">level index arithmetic</a> of Clenshaw, Olver, and Turner is a scheme based on a generalised logarithm representation.</li>
+<li>Where greater precision is desired, floating-point arithmetic can be implemented (typically in software) with variable-length significands (and sometimes exponents) that are sized depending on actual need and depending on how the calculation proceeds. This is called <a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">arbitrary-precision</a> floating point arithmetic.</li>
+<li>Some numbers (e.g., 1/3 and 0.1) cannot be represented exactly in binary floating-point no matter what the precision. Software packages that perform <a href="http://en.m.wikipedia.org/wiki/Fraction_(mathematics)" title="Fraction (mathematics)">rational arithmetic</a> represent numbers as fractions with integral numerator and denominator, and can therefore represent any rational number exactly. Such packages generally need to use "<a href="http://en.m.wikipedia.org/wiki/Bignum" title="Bignum" class="mw-redirect">bignum</a>" arithmetic for the individual integers.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Computer_algebra_system" title="Computer algebra system">Computer algebra systems</a> such as <a href="Mathematica" title="Mathematica">Mathematica</a> and <a href="http://en.m.wikipedia.org/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a> can often handle irrational numbers like <img class="tex" alt="\pi" src="http://upload.wikimedia.org/math/5/2/2/522359592d78569a9eac16498aa7a087.png"> or <img class="tex" alt="\sqrt{3}" src="http://upload.wikimedia.org/math/1/7/c/17c68e294ba0dc1356295bac633bf868.png"> in a completely "formal" way, without dealing with a specific encoding of the significand. Such programs can evaluate expressions like "<img class="tex" alt="\sin 3\pi" src="http://upload.wikimedia.org/math/e/d/9/ed9abea8a0342871392383a472339b58.png">" exactly, because they "know" the underlying mathematics.</li>
+</ul>
+<h2> <span class="mw-headline" id="Range_of_floating-point_numbers">Range of floating-point numbers</span>
+</h2>
+<p>By allowing the <a href="http://en.m.wikipedia.org/wiki/Radix_point" title="Radix point">radix point</a> to be adjustable, floating-point notation allows calculations over a wide range of magnitudes, using a fixed number of digits, while maintaining good precision. For example, in a decimal floating-point system with three digits, the multiplication that humans would write as</p>
+<dl>
+<dd>0.12 × 0.12 = 0.0144</dd>
+</dl>
+<p>would be expressed as</p>
+<dl>
+<dd>(1.20<span style="margin:0 .15em 0 .25em">×</span>10<sup>−1</sup>) × (1.20<span style="margin:0 .15em 0 .25em">×</span>10<sup>−1</sup>) = (1.44<span style="margin:0 .15em 0 .25em">×</span>10<sup>−2</sup>).</dd>
+</dl>
+<p>In a fixed-point system with the decimal point at the left, it would be</p>
+<dl>
+<dd>0.120 × 0.120 = 0.014.</dd>
+</dl>
+<p>A digit of the result was lost because of the inability of the digits and decimal point to 'float' relative to each other within the digit string.</p>
+<p>The range of floating-point numbers depends on the number of bits or digits used for representation of the significand (the significant digits of the number) and for the exponent. On a typical computer system, a 'double precision' (64-bit) binary floating-point number has a coefficient of 53 bits (one of which is implied), an exponent of 11 bits, and one sign bit. Positive floating-point numbers in this format have an approximate range of 10<sup>−308</sup> to 10<sup>308</sup>, because the range of the exponent is [−1022,1023] and 308 is approximately log<sub>10</sub>(2<sup>1023</sup>). The complete range of the format is from about −10<sup>308</sup> through +10<sup>308</sup> (see <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a>).</p>
+<p>The number of normalized floating point numbers in a system F (<i>B</i>, <i>P</i>, <i>L</i>, <i>U</i>) (where <i>B</i> is the base of the system, <i>P</i> is the precision of the system to <i>P</i> numbers, <i>L</i> is the smallest exponent representable in the system, and <i>U</i> is the largest exponent used in the system) is: <img class="tex" alt="2 (B - 1) (B^{P-1}) (U - L + 1) + 1" src="http://upload.wikimedia.org/math/6/2/9/629013407b781b4f70cea949fdcfc820.png">.</p>
+<p>There is a smallest positive normalized floating-point number, Underflow level = UFL = <img class="tex" alt="B^L" src="http://upload.wikimedia.org/math/b/6/0/b607ad3876a1476a2d23a1dfeba876cf.png"> which has a 1 as the leading digit and 0 for the remaining digits of the significand, and the smallest possible value for the exponent.</p>
+<p>There is a largest floating point number, Overflow level = OFL = <img class="tex" alt="(1 - B^{-P}) (B^{U + 1})" src="http://upload.wikimedia.org/math/7/7/1/7713102c7add2eba015acb4d3c2ef605.png"> which has <i>B</i> − 1 as the value for each digit of the significand and the largest possible value for the exponent.</p>
+<p>In addition there are representable values strictly between −UFL and UFL. Namely, zero and negative zero, as well as <a href="http://en.m.wikipedia.org/wiki/Subnormal_numbers" title="Subnormal numbers" class="mw-redirect">subnormal numbers</a>.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:182px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Leonardo_Torres_Quevedo.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Leonardo_Torres_Quevedo.jpg/180px-Leonardo_Torres_Quevedo.jpg" width="180" height="247" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/3/3c/Leonardo_Torres_Quevedo.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/3/3c/Leonardo_Torres_Quevedo.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Leonardo_Torres_y_Quevedo" title="Leonardo Torres y Quevedo">Leonardo Torres y Quevedo</a>, in 1914 published an analysis of floating point based on the <a href="http://en.m.wikipedia.org/wiki/Analytic_engine" title="Analytic engine" class="mw-redirect">analytic engine</a>.</div>
+</div>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Leonardo_Torres_y_Quevedo" title="Leonardo Torres y Quevedo">Leonardo Torres y Quevedo</a> in 1914 designed an electro-mechanical version of the <a href="http://en.m.wikipedia.org/wiki/Analytical_Engine" title="Analytical Engine">Analytical Engine</a> of <a href="http://en.m.wikipedia.org/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a> which included floating-point arithmetic.<sup id="cite_ref-1" class="reference"><a href="Floating-point_number#cite_note-1"><span>[</span>1<span>]</span></a></sup> In 1938, <a href="http://en.m.wikipedia.org/wiki/Konrad_Zuse" title="Konrad Zuse">Konrad Zuse</a> of Berlin completed the <a href="http://en.m.wikipedia.org/wiki/Z1_(computer)" title="Z1 (computer)">Z1</a>, the first mechanical binary programmable computer, this was however unreliable in operation.<sup id="cite_ref-2" class="reference"><a href="Floating-point_number#cite_note-2"><span>[</span>2<span>]</span></a></sup> It worked with 22-bit binary floating-point numbers having a 7-bit signed exponent, a 15-bit significand (including one implicit bit), and a sign bit. The memory used sliding metal parts to store 64 words of such numbers. The <a href="http://en.m.wikipedia.org/wiki/Relay" title="Relay">relay</a>-based <a href="http://en.m.wikipedia.org/wiki/Z3_(computer)" title="Z3 (computer)">Z3</a>, completed in 1941 had representations for plus and minus infinity. It implemented defined operations with infinity such as <span class="texhtml">1/∞ = 0</span> and stopped on undefined operations like <span class="texhtml">0×∞</span>. It also implemented the square root operation in hardware.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Konrad_Zuse_(1992).jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Konrad_Zuse_%281992%29.jpg/220px-Konrad_Zuse_%281992%29.jpg" width="220" height="293" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/da/Konrad_Zuse_%281992%29.jpg/330px-Konrad_Zuse_%281992%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/d/da/Konrad_Zuse_%281992%29.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Konrad_Zuse" title="Konrad Zuse">Konrad Zuse</a>, architect of the first programmable computer, which used 22-bit binary floating point.</div>
+</div>
+</div>
+<p>Zuse also proposed, but did not complete, carefully rounded floating–point arithmetic that would have included ±∞ and NaNs, anticipating features of IEEE Standard floating–point by four decades.<sup id="cite_ref-kahansiam_3-0" class="reference"><a href="Floating-point_number#cite_note-kahansiam-3"><span>[</span>3<span>]</span></a></sup> By contrast, <a href="http://en.m.wikipedia.org/wiki/John_von_Neumann" title="John von Neumann">von Neumann</a> recommended against floating point for the 1951 <a href="http://en.m.wikipedia.org/wiki/IAS_machine" title="IAS machine">IAS machine</a>, arguing that fixed point arithmetic was preferable.<sup id="cite_ref-4" class="reference"><a href="Floating-point_number#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>The first <i>commercial</i> computer with floating point hardware was Zuse's <a href="http://en.m.wikipedia.org/wiki/Z4_(computer)" title="Z4 (computer)">Z4</a> computer designed in 1942–1945. The Bell Laboratories Mark V computer implemented decimal floating point in 1946.<sup id="cite_ref-5" class="reference"><a href="Floating-point_number#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Pilot_ACE" title="Pilot ACE">Pilot ACE</a> had binary floating point arithmetic which became operational at <a href="http://en.m.wikipedia.org/wiki/National_Physical_Laboratory,_UK" title="National Physical Laboratory, UK" class="mw-redirect">National Physical Laboratory, UK</a> in 1950. A total of 33 were later sold commercially as the <a href="http://en.m.wikipedia.org/wiki/English_Electric_DEUCE" title="English Electric DEUCE">English Electric DEUCE</a>. The arithmetic was actually implemented as subroutines, but with a one megahertz clock rate, the speed of floating point operations and fixed point was initially faster than many competing computers, and since it was only software, all the DEUCE's had it.</p>
+<p>The mass-produced <a href="http://en.m.wikipedia.org/wiki/Vacuum_tube" title="Vacuum tube">vacuum tube</a>-based <a href="http://en.m.wikipedia.org/wiki/IBM_704" title="IBM 704">IBM 704</a> followed in 1954; it introduced the use of a <a href="http://en.m.wikipedia.org/wiki/Exponent_bias" title="Exponent bias">biased exponent</a>. For many decades after that, floating-point hardware was typically an optional feature, and computers that had it were said to be "scientific computers", or to have "scientific computing" capability. It was not until the launch of the Intel i486 in 1989 that <i>general-purpose</i> personal computers had floating point capability in hardware as standard.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/UNIVAC_1100/2200_series" title="UNIVAC 1100/2200 series">UNIVAC 1100/2200 series</a>, introduced in 1962, supported two floating-point formats. Single precision used 36 bits, organized into a 1-bit sign, an 8-bit exponent, and a 27-bit significand. Double precision used 72 bits organized as a 1-bit sign, an 11-bit exponent, and a 60-bit significand. The <a href="http://en.m.wikipedia.org/wiki/IBM_7094" title="IBM 7094" class="mw-redirect">IBM 7094</a>, introduced the same year, also supported single and double precision, with slightly different formats.</p>
+<p>Prior to the <a href="http://en.m.wikipedia.org/wiki/IEEE-754" title="IEEE-754" class="mw-redirect">IEEE-754</a> standard, computers used many different forms of floating-point. These differed in the word sizes, the format of the representations, and the rounding behavior of operations. These differing systems implemented different parts of the arithmetic in hardware and software, with varying accuracy.</p>
+<p>The IEEE-754 standard was created in the early 1980s after word sizes of 32 bits (or 16 or 64) had been generally settled upon. This was based on a proposal from Intel who were designing the <a href="http://en.m.wikipedia.org/wiki/Intel_8087" title="Intel 8087">i8087</a> numerical coprocessor. <a href="http://en.m.wikipedia.org/wiki/William_Kahan" title="William Kahan">Prof. W. Kahan</a> was the primary architect behind this proposal, along with his student Jerome Coonen at U.C. Berkeley and visiting Prof. Harold Stone, for which he was awarding the 1989 Turing award.<sup id="cite_ref-6" class="reference"><a href="Floating-point_number#cite_note-6"><span>[</span>6<span>]</span></a></sup> Among the innovations are these:</p>
+<ul>
+<li>A precisely specified encoding of the bits, so that all compliant computers would interpret bit patterns the same way. This made it possible to transfer floating-point numbers from one computer to another.</li>
+<li>A precisely specified behavior of the arithmetic operations: arithmetic operations were required to be correctly rounded, i.e. to give the same result as if infinitely precise arithmetic was used and then rounded. This meant that a given program, with given data, would always produce the same result on any compliant computer. This helped reduce the almost mystical reputation that floating-point computation had for seemingly nondeterministic behavior.</li>
+<li>The ability of exceptional conditions (overflow, divide by zero, etc.) to propagate through a computation in a benign manner and be handled by the software in a controlled way.</li>
+</ul>
+<h2> <span class="mw-headline" id="IEEE_754:_floating_point_in_modern_computers">IEEE 754: floating point in modern computers</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE floating point</a>
+</div>
+<table class="vertical-navbox nowraplinks plainlist" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;">
+<a href="http://en.m.wikipedia.org/wiki/Floating-point" title="Floating-point" class="mw-redirect">Floating-point</a> <a href="http://en.m.wikipedia.org/wiki/Precision_(computer_science)" title="Precision (computer science)">precisions</a>
+</th>
+</tr>
+<tr>
+<th class="" style="padding-top: 0.2em; ;"><a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE 754</a></th>
+</tr>
+<tr>
+<td class="" style="padding-bottom: 0.2em; ;">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/16-bit" title="16-bit">16-bit</a>: <a href="http://en.m.wikipedia.org/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">Half</a> (binary16)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/32-bit" title="32-bit">32-bit</a>: <a href="http://en.m.wikipedia.org/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">Single</a> (binary32), <a href="http://en.m.wikipedia.org/wiki/Decimal32_floating-point_format" title="Decimal32 floating-point format">decimal32</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/64-bit" title="64-bit" class="mw-redirect">64-bit</a>: <a href="http://en.m.wikipedia.org/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">Double</a> (binary64), <a href="http://en.m.wikipedia.org/wiki/Decimal64_floating-point_format" title="Decimal64 floating-point format">decimal64</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/128-bit" title="128-bit">128-bit</a>: <a href="http://en.m.wikipedia.org/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">Quadruple</a> (binary128), <a href="http://en.m.wikipedia.org/wiki/Decimal128_floating-point_format" title="Decimal128 floating-point format">decimal128</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">Extended precision formats</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<th class="" style="padding-top: 0.2em; ;">Other</th>
+</tr>
+<tr>
+<td class="" style="padding-bottom: 0.2em; ;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Minifloat" title="Minifloat">Minifloat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Arbitrary precision</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Floating-point" title="Template:Floating-point"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Floating-point" title="Template talk:Floating-point"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Floating-point&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>The <a href="http://en.m.wikipedia.org/wiki/IEEE" title="IEEE" class="mw-redirect">IEEE</a> has standardized the computer representation for binary floating-point numbers in <a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE 754</a> (aka. IEC 60559). This standard is followed by almost all modern machines. Notable exceptions include IBM mainframes, which support <a href="http://en.m.wikipedia.org/wiki/IBM_Floating_Point_Architecture" title="IBM Floating Point Architecture">IBM's own format</a> (in addition to the IEEE 754 binary and decimal formats), and <a href="http://en.m.wikipedia.org/wiki/Cray" title="Cray">Cray</a> vector machines, where the <a href="http://en.m.wikipedia.org/wiki/Cray_T90" title="Cray T90">T90</a> series had an IEEE version, but the <a href="http://en.m.wikipedia.org/wiki/Cray_SV1" title="Cray SV1">SV1</a> still uses Cray floating-point format.</p>
+<p>The standard provides for many closely related formats, differing in only a few details. Five of these formats are called <i>basic formats</i> and others are termed <i>extended formats</i>, and three of these are especially widely used in computer hardware and languages:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Single_precision" title="Single precision" class="mw-redirect">Single precision</a>, called "float" in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> language family, and "real" or "real*4" in <a href="Fortran" title="Fortran">Fortran</a>. This is a binary format that occupies 32 bits (4 bytes) and its significand has a precision of 24 bits (about 7 decimal digits).</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Double_precision" title="Double precision" class="mw-redirect">Double precision</a>, called "double" in the C language family, and "double precision" or "real*8" in Fortran. This is a binary format that occupies 64 bits (8 bytes) and its significand has a precision of 53 bits (about 16 decimal digits).</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">Double extended</a> format, 80-bit floating point value. This is implemented on most personal computers but not on other devices. Sometimes "<a href="http://en.m.wikipedia.org/wiki/Long_double" title="Long double">long double</a>" is used for this in the C language family (the <a href="C99" title="C99">C99</a> and <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a> standards "IEC 60559 floating-point arithmetic extension- Annex F" recommend the 80-bit extended format to be provided as "long double" when available), though "long double" may be a synonym for "double" or may stand for quadruple precision. Extended precision can help minimise accumulation of <a href="http://en.m.wikipedia.org/wiki/Round-off_error" title="Round-off error">round-off error</a> in intermediate calculations.<sup id="cite_ref-7" class="reference"><a href="Floating-point_number#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+</li>
+</ul>
+<p>Less common IEEE formats include:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Quadruple_precision" title="Quadruple precision" class="mw-redirect">Quadruple precision</a> (binary128). This is a binary format that occupies 128 bits (16 bytes) and its significand has a precision of 113 bits (about 34 decimal digits).</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Decimal64_floating-point_format" title="Decimal64 floating-point format">Double precision</a> (decimal64) and <a href="http://en.m.wikipedia.org/wiki/Decimal128_floating-point_format" title="Decimal128 floating-point format">quadruple precision</a> (decimal128) decimal floating point formats. These formats, along with the <a href="http://en.m.wikipedia.org/wiki/Decimal32_floating-point_format" title="Decimal32 floating-point format">single precision</a> (decimal32) format, are intended for performing decimal rounding correctly.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Half_precision" title="Half precision" class="mw-redirect">Half</a>, also called float16, a 16-bit floating point value.</li>
+</ul>
+<p>Any integer with absolute value less than or equal to 2<sup>24</sup> can be exactly represented in the single precision format, and any integer with absolute value less than or equal to 2<sup>53</sup> can be exactly represented in the double precision format. Furthermore, a wide range of powers of 2 times such a number can be represented. These properties are sometimes used for purely integer data, to get 53-bit integers on platforms that have double precision floats but only 32-bit integers.</p>
+<p>The standard specifies some special values, and their representation: positive <a href="http://en.m.wikipedia.org/wiki/Infinity" title="Infinity">infinity</a> (+∞), negative infinity (−∞), a <a href="http://en.m.wikipedia.org/wiki/Negative_zero" title="Negative zero" class="mw-redirect">negative zero</a> (−0) distinct from ordinary ("positive") zero, and "not a number" values (<a href="http://en.m.wikipedia.org/wiki/NaN" title="NaN">NaNs</a>).</p>
+<p>Comparison of floating-point numbers, as defined by the IEEE standard, is a bit different from usual integer comparison. Negative and positive zero compare equal, and every NaN compares unequal to every value, including itself. All values except NaN are strictly smaller than +∞ and strictly greater than −∞. Finite floating-point numbers are ordered in the same way as their values (in the set of real numbers).</p>
+<p>To a rough approximation, the bit representation of an IEEE binary floating-point number is proportional to its base 2 logarithm, with an average error of about 3%. (This is because the exponent field is in the more significant part of the datum.) This can be exploited in some applications, such as volume ramping in digital sound processing.</p>
+<p>A project for revising the IEEE 754 standard was started in 2000 (see <a href="http://en.m.wikipedia.org/wiki/IEEE_754_revision" title="IEEE 754 revision">IEEE 754 revision</a>); it was completed and approved in June 2008. It includes decimal floating-point formats and a 16 bit floating point format ("binary16"). binary16 has the same structure and rules as the older formats, with 1 sign bit, 5 exponent bits and 10 trailing significand bits. It is being used in the NVIDIA <a href="http://en.m.wikipedia.org/wiki/Cg_(programming_language)" title="Cg (programming language)">Cg</a> graphics language, and in the openEXR standard.<sup id="cite_ref-8" class="reference"><a href="Floating-point_number#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Internal_representation">Internal representation</span>
+</h3>
+<p>Floating-point numbers are typically packed into a computer datum as the sign bit, the exponent field, and the significand (mantissa), from left to right. For the IEEE 754 binary formats (basic and extended) which have extant hardware implementations, they are apportioned as follows:</p>
+<table class="wikitable" style="text-align: right;">
+<tr>
+<th>Type</th>
+<th>Sign</th>
+<th>Exponent</th>
+<th>Significand</th>
+<th>Total bits</th>
+<th></th>
+<th>Exponent bias</th>
+<th>Bits precision</th>
+<th>Number of decimal digits</th>
+</tr>
+<tr>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Half_precision" title="Half precision" class="mw-redirect">Half</a> (<a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE 754-2008</a>)</td>
+<td>1</td>
+<td>5</td>
+<td>10</td>
+<td>16</td>
+<td></td>
+<td>15</td>
+<td>11</td>
+<td>~3.3</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Single_precision" title="Single precision" class="mw-redirect">Single</a></td>
+<td>1</td>
+<td>8</td>
+<td>23</td>
+<td>32</td>
+<td></td>
+<td>127</td>
+<td>24</td>
+<td>~7.2</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Double_precision" title="Double precision" class="mw-redirect">Double</a></td>
+<td>1</td>
+<td>11</td>
+<td>52</td>
+<td>64</td>
+<td></td>
+<td>1023</td>
+<td>53</td>
+<td>~15.9</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">Double extended (80-bit)</a></td>
+<td>1</td>
+<td>15</td>
+<td>64</td>
+<td>80</td>
+<td></td>
+<td>16383</td>
+<td>64</td>
+<td>~19.2</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Quad_precision" title="Quad precision" class="mw-redirect">Quad</a></td>
+<td>1</td>
+<td>15</td>
+<td>112</td>
+<td>128</td>
+<td></td>
+<td>16383</td>
+<td>113</td>
+<td>~34.0</td>
+</tr>
+</table>
+<p>While the exponent can be positive or negative, in binary formats it is stored as an unsigned number that has a fixed "bias" added to it. Values of all 0s in this field are reserved for the zeros and <a href="http://en.m.wikipedia.org/wiki/Subnormal_numbers" title="Subnormal numbers" class="mw-redirect">subnormal numbers</a>, values of all 1s are reserved for the infinities and NaNs. The exponent range for normalized numbers is [−126, 127] for single precision, [−1022, 1023] for double, or [−16382, 16383] for quad. Normalised numbers exclude subnormal values, zeros, infinities, and NaNs.</p>
+<p>In the IEEE binary interchange formats the leading 1 bit of a normalized significand is not actually stored in the computer datum. It is called the "hidden" or "implicit" bit. Because of this, single precision format actually has a significand with 24 bits of precision, double precision format has 53, and quad has 113.</p>
+<p>For example, it was shown above that π, rounded to 24 bits of precision, has:</p>
+<ul>
+<li>sign = 0 ; <i>e</i> = 1 ; <i>s</i> = 110010010000111111011011 (including the hidden bit)</li>
+</ul>
+<p>The sum of the exponent bias (127) and the exponent (1) is 128, so this is represented in single precision format as</p>
+<ul>
+<li>0 10000000 10010010000111111011011 (excluding the hidden bit) = 40490FDB<sup id="cite_ref-9" class="reference"><a href="Floating-point_number#cite_note-9"><span>[</span>9<span>]</span></a></sup> as a <a href="http://en.m.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> number.</li>
+</ul>
+<h3> <span class="mw-headline" id="Special_values">Special values</span>
+</h3>
+<h4> <span class="mw-headline" id="Signed_zero">Signed zero</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Signed_zero" title="Signed zero">Signed zero</a>
+</div>
+<p>In the IEEE 754 standard, zero is signed, meaning that there exist both a "positive zero" (+0) and a "negative zero" (−0). In most <a href="http://en.m.wikipedia.org/wiki/Run-time_environment" title="Run-time environment" class="mw-redirect">run-time environments</a>, positive zero is usually printed as "0", while negative zero may be printed as "-0". The two values behave as equal in numerical comparisons, but some operations return different results for +0 and −0. For instance, 1/(−0) returns negative infinity (exactly), while 1/+0 returns positive infinity (exactly) (so that the identity 1/(1/±∞) = ±∞ is maintained). A sign symmetric arccot operation will give different results for +0 and −0 without any exception. The difference between +0 and −0 is mostly noticeable for complex operations at so-called <a href="http://en.m.wikipedia.org/wiki/Branch_cut" title="Branch cut" class="mw-redirect">branch cuts</a>.</p>
+<h4> <span class="mw-headline" id="Subnormal_numbers">Subnormal numbers</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Subnormal_numbers" title="Subnormal numbers" class="mw-redirect">Subnormal numbers</a>
+</div>
+<p>Subnormal values fill the <a href="http://en.m.wikipedia.org/wiki/Arithmetic_underflow" title="Arithmetic underflow">underflow</a> gap with values where the absolute distance between them are the same as for adjacent values just outside of the underflow gap. This is an improvement over the older practice to just have zero in the underflow gap, and where underflowing results were replaced by zero (flush to zero).</p>
+<p>Modern floating point hardware usually handles subnormal values (as well as normal values), and does not require software emulation for subnormals.</p>
+<h4> <span class="mw-headline" id="Infinities">Infinities</span>
+</h4>
+<div class="rellink boilerplate seealso">For more details on the concept of infinite, see <a href="http://en.m.wikipedia.org/wiki/Infinity" title="Infinity">Infinity</a>.</div>
+<p>The infinities of the <a href="http://en.m.wikipedia.org/wiki/Extended_real_number_line" title="Extended real number line">extended real number line</a> can be represented in IEEE floating point datatypes, just like ordinary floating point values like 1, 1.5 etc. They are not error values in any way, though they are often (but not always, as it depends on the rounding) used as replacement values when there is an <a href="http://en.m.wikipedia.org/wiki/Arithmetic_overflow" title="Arithmetic overflow">overflow</a>. Upon a divide by zero exception, a positive or negative infinity is returned as an exact result. An infinity can also be introduced as a numeral (like C's "INFINITY" macro, or "∞" if the programming language allows that syntax).</p>
+<p>IEEE 754 requires infinities to be handled in a reasonable way, such as</p>
+<ul>
+<li>(+∞) + (+7) = (+∞)</li>
+<li>(+∞) × (−2) = (−∞)</li>
+<li>(+∞) × 0 = NaN – there is no meaningful thing to do</li>
+</ul>
+<h4> <span class="mw-headline" id="NaNs">NaNs</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/NaN" title="NaN">NaN</a>
+</div>
+<p>IEEE 754 specifies a special value called "Not a Number" (NaN) to be returned as the result of certain "invalid" operations, such as 0/0, ∞×0, or sqrt(−1). In general, NaNs will be propagated i.e. most operations involving a NaN will result in a NaN, although functions that would give some defined result for any given floating point value will do so for NaNs as well, e.g. NaN ^ 0 == 1. There are two kinds of NaNs: the default <i>quiet</i> NaNs and, optionally, <i>signaling</i> NaNs. A signaling NaN in any arithmetic operation (including numerical comparisons) will cause an "invalid" <a href="http://en.m.wikipedia.org/wiki/Exception_(computing)" title="Exception (computing)" class="mw-redirect">exception</a> to be signalled.</p>
+<p>The representation of NaNs specified by the standard has some unspecified bits that could be used to encode the type or source of error; but there is no standard for that encoding. In theory, signaling NaNs could be used by a <a href="http://en.m.wikipedia.org/wiki/Runtime_system" title="Runtime system" class="mw-redirect">runtime system</a> to flag uninitialised variables, or extend the floating-point numbers with other special values without slowing down the computations with ordinary values, although such extensions are not common.</p>
+<h4> <span class="mw-headline" id="IEEE_754_design_rationale">IEEE 754 design rationale</span>
+</h4>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:William_Kahan.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/William_Kahan.jpg/220px-William_Kahan.jpg" width="220" height="155" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b1/William_Kahan.jpg/330px-William_Kahan.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/b/b1/William_Kahan.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/William_Kahan" title="William Kahan">William Kahan</a>. A primary architect of the Intel <a href="http://en.m.wikipedia.org/wiki/80x87" title="80x87" class="mw-redirect">80x87</a> floating point coprocessor and <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> floating point standard.</div>
+</div>
+</div>
+<p>It is a common misconception that the more esoteric features of the IEEE 754 standard discussed here, such as extended formats, NaN, infinities, subnormals etc., are only of interest to <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysts</a>, or for advanced numerical applications; in fact the opposite is true: these features are designed to give safe robust defaults for numerically unsophisticated programmers, in addition to supporting sophisticated numerical libraries by experts. The key designer of IEEE 754, <a href="http://en.m.wikipedia.org/wiki/William_Kahan" title="William Kahan">Prof. W. Kahan</a> notes that it is incorrect to "... [deem] features of IEEE Standard 754 for Binary Floating- Point Arithmetic that ...[are] not appreciated to be features usable by none but numerical experts. The facts are quite the opposite. In 1977 those features were designed into the Intel 8087 to serve the widest possible market... . Error-analysis tells us how to design floating-point arithmetic, like IEEE Standard 754, moderately tolerant of well-meaning ignorance among programmers".<sup id="cite_ref-JavaHurt_10-0" class="reference"><a href="Floating-point_number#cite_note-JavaHurt-10"><span>[</span>10<span>]</span></a></sup></p>
+<ul>
+<li>The special values such as infinity and NaN ensure that the floating point arithmetic is algebraically completed, such that every floating point operation produces a well-defined result and will not by default throw a machine interrupt or trap. Moreover, the choices of special values returned in exceptional cases were designed to give the correct answer in many cases, e.g. continued fractions such as R(z) := 7 − 3/(z − 2 − 1/(z − 7 + 10/(z − 2 − 2/(z − 3)))) will give the correct answer in all inputs under IEEE-754 arithmetic as the potential divide by zero in e.g. R(3)=4.6 is correctly handled as +infinity and so can be safely ignored.<sup id="cite_ref-whyieee_11-0" class="reference"><a href="Floating-point_number#cite_note-whyieee-11"><span>[</span>11<span>]</span></a></sup> As noted by Kahan, the unhandled floating point overflow exception that caused the <a href="http://en.m.wikipedia.org/wiki/Cluster_(spacecraft)" title="Cluster (spacecraft)">loss of an Ariane 5</a> rocket would not have happened under IEEE 754 floating point.<sup id="cite_ref-JavaHurt_10-1" class="reference"><a href="Floating-point_number#cite_note-JavaHurt-10"><span>[</span>10<span>]</span></a></sup>
+</li>
+<li>Subnormal numbers ensure that x - y == 0 if and only if x == y, as expected, but which did not hold under earlier floating point representations.<sup id="cite_ref-12" class="reference"><a href="Floating-point_number#cite_note-12"><span>[</span>12<span>]</span></a></sup>
+</li>
+<li>On the design rationale of the x87 <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">80-bit format</a>, Prof. Kahan notes: "This Extended format is designed to be used, with negligible loss of speed, for all but the simplest arithmetic with float and double operands. For example, it should be used for scratch variables in loops that implement recurrences like polynomial evaluation, scalar products, partial and continued fractions. It often averts premature Over/Underflow or severe local cancellation that can spoil simple algorithms.<sup id="cite_ref-Baleful_13-0" class="reference"><a href="Floating-point_number#cite_note-Baleful-13"><span>[</span>13<span>]</span></a></sup> Computing intermediate results in an extended format with high precision and extended exponent has precedents in the historical practice of scientific <a href="http://en.m.wikipedia.org/wiki/Significant_figures#Arithmetic" title="Significant figures">calculation</a> and in the design of scientific calculators e.g. Hewlett- Packard’s financial calculators performed arithmetic and financial functions to three more significant decimals than they stored or displayed.<sup id="cite_ref-Baleful_13-1" class="reference"><a href="Floating-point_number#cite_note-Baleful-13"><span>[</span>13<span>]</span></a></sup> The implementation of extended precision enabled standard elementary function libraries to be readily developed that normally gave double precision results within one <a href="http://en.m.wikipedia.org/wiki/Unit_in_the_last_place" title="Unit in the last place">unit in the last place</a> (ULP) at high speed.</li>
+<li>Correct rounding of values to the nearest representable value avoids systematic biases in calculations and slows the growth of errors. Rounding ties to even removes the statistical bias that can occur in adding similar figures.</li>
+<li>Directed rounding was intended as an aid with checking error bounds, for instance in interval arithmetic. It is also used in the implementation of some functions.</li>
+<li>The mathematical basis of the operations enabled high precision multiword arithmetic subroutines to be built relatively easily.</li>
+<li>The single and double precision formats were designed to be easy to sort without using floating point hardware.</li>
+</ul>
+<h2> <span class="mw-headline" id="Representable_numbers.2C_conversion_and_rounding">Representable numbers, conversion and rounding</span>
+</h2>
+<p>By their nature, all numbers expressed in floating-point format are <a href="http://en.m.wikipedia.org/wiki/Rational_number" title="Rational number">rational numbers</a> with a terminating expansion in the relevant base (for example, a terminating decimal expansion in base-10, or a terminating binary expansion in base-2). Irrational numbers, such as <a href="http://en.m.wikipedia.org/wiki/Pi" title="Pi">π</a> or √2, or non-terminating rational numbers, must be approximated. The number of digits (or bits) of precision also limits the set of rational numbers that can be represented exactly. For example, the number 123456789 cannot be exactly represented if only eight decimal digits of precision are available.</p>
+<p>When a number is represented in some format (such as a character string) which is not a native floating-point representation supported in a computer implementation, then it will require a conversion before it can be used in that implementation. If the number can be represented exactly in the floating-point format then the conversion is exact. If there is not an exact representation then the conversion requires a choice of which floating-point number to use to represent the original value. The representation chosen will have a different value to the original, and the value thus adjusted is called the <i>rounded value</i>.</p>
+<p>Whether or not a rational number has a terminating expansion depends on the base. For example, in base-10 the number 1/2 has a terminating expansion (0.5) while the number 1/3 does not (0.333...). In base-2 only rationals with denominators that are powers of 2 (such as 1/2 or 3/16) are terminating. Any rational with a denominator that has a prime factor other than 2 will have an infinite binary expansion. This means that numbers which appear to be short and exact when written in decimal format may need to be approximated when converted to binary floating-point. For example, the decimal number 0.1 is not representable in binary floating-point of any finite precision; the exact binary representation would have a "1100" sequence continuing endlessly:</p>
+<dl>
+<dd>
+<i>e</i> = −4; <i>s</i> = 1100110011001100110011001100110011...,</dd>
+</dl>
+<p>where, as previously, <i>s</i> is the significand and <i>e</i> is the exponent.</p>
+<p>When rounded to 24 bits this becomes</p>
+<dl>
+<dd>
+<i>e</i> = −4; <i>s</i> = 110011001100110011001101,</dd>
+</dl>
+<p>which is actually 0.100000001490116119384765625 in decimal.</p>
+<p>As a further example, the real number <a href="http://en.m.wikipedia.org/wiki/Pi" title="Pi">π</a>, represented in binary as an infinite series of bits is</p>
+<dl>
+<dd>11.0010010000111111011010101000100010000101101000110000100011010011...</dd>
+</dl>
+<p>but is</p>
+<dl>
+<dd>11.0010010000111111011011</dd>
+</dl>
+<p>when approximated by <a href="http://en.m.wikipedia.org/wiki/Rounding" title="Rounding">rounding</a> to a precision of 24 bits.</p>
+<p>In binary single-precision floating-point, this is represented as <i>s</i> = 1.10010010000111111011011 with <i>e</i> = 1. This has a decimal value of</p>
+<dl>
+<dd>
+<b>3.141592</b>7410125732421875,</dd>
+</dl>
+<p>whereas a more accurate approximation of the true value of π is</p>
+<dl>
+<dd>
+<b>3.14159265358979323846264338327950</b>...</dd>
+</dl>
+<p>The result of rounding differs from the true value by about 0.03 parts per million, and matches the decimal representation of π in the first 7 digits. The difference is the <a href="http://en.m.wikipedia.org/wiki/Discretization_error" title="Discretization error">discretization error</a> and is limited by the <a href="http://en.m.wikipedia.org/wiki/Machine_epsilon" title="Machine epsilon">machine epsilon</a>.</p>
+<p>The arithmetical difference between two consecutive representable floating-point numbers which have the same exponent is called a <a href="http://en.m.wikipedia.org/wiki/Unit_in_the_last_place" title="Unit in the last place">unit in the last place</a> (ULP). For example, if there is no representable number lying between the representable numbers 1.45a70c22<sub>hex</sub> and 1.45a70c24<sub>hex</sub>, the ULP is 2×16<sup>−8</sup>, or 2<sup>−31</sup>. For numbers with a base-2 exponent part of 0, i.e. numbers with an absolute value higher than or equal to 1 but lower than 2, an ULP is exactly 2<sup>−23</sup> or about 10<sup>−7</sup> in single precision, and exactly 2<sup>-53</sup> or about 10<sup>−16</sup> in double precision. The mandated behavior of IEEE-compliant hardware is that the result be within one-half of a ULP.</p>
+<h3> <span class="mw-headline" id="Rounding_modes">Rounding modes</span>
+</h3>
+<p>Rounding is used when the exact result of a floating-point operation (or a conversion to floating-point format) would need more digits than there are digits in the significand. IEEE 754 requires <i>correct rounding</i>: that is, the rounded result is as if infinitely precise arithmetic was used to compute the value and then rounded (although in implementation only three extra bits are needed to ensure this). There are several different <a href="http://en.m.wikipedia.org/wiki/Rounding" title="Rounding">rounding schemes</a> (or <i>rounding modes</i>). Historically, <a href="http://en.m.wikipedia.org/wiki/Truncation" title="Truncation">truncation</a> was the typical approach. Since the introduction of IEEE 754, the default method (<a href="http://en.m.wikipedia.org/wiki/Rounding" title="Rounding"><i>round to nearest, ties to even</i></a>, sometimes called Banker's Rounding) is more commonly used. This method rounds the ideal (infinitely precise) result of an arithmetic operation to the nearest representable value, and gives that representation as the result.<sup id="cite_ref-14" class="reference"><a href="Floating-point_number#cite_note-14"><span>[</span>14<span>]</span></a></sup> In the case of a tie, the value that would make the significand end in an even digit is chosen. The IEEE 754 standard requires the same rounding to be applied to all fundamental algebraic operations, including square root and conversions, when there is a numeric (non-NaN) result. It means that the results of IEEE 754 operations are completely determined in all bits of the result, except for the representation of NaNs. ("Library" functions such as cosine and log are not mandated.)</p>
+<p>Alternative rounding options are also available. IEEE 754 specifies the following rounding modes:</p>
+<ul>
+<li>round to nearest, where ties round to the nearest even digit in the required position (the default and by far the most common mode)</li>
+<li>round to nearest, where ties round away from zero (optional for binary floating-point and commonly used in decimal)</li>
+<li>round up (toward +∞; negative results thus round toward zero)</li>
+<li>round down (toward −∞; negative results thus round away from zero)</li>
+<li>round toward zero (truncation; it is similar to the common behavior of float-to-integer conversions, which convert −3.9 to −3 and 3.9 to 3)</li>
+</ul>
+<p>Alternative modes are useful when the amount of error being introduced must be bounded. Applications that require a bounded error are multi-precision floating-point, and <a href="http://en.m.wikipedia.org/wiki/Interval_arithmetic" title="Interval arithmetic">interval arithmetic</a>. The alternative rounding modes are also useful in diagnosing numerical instability: if the results of a subroutine vary substantially between rounding to + and - infinity then it is likely numerically unstable and affected by round-off error.<sup id="cite_ref-name_15-0" class="reference"><a href="Floating-point_number#cite_note-name-15"><span>[</span>15<span>]</span></a></sup> A further use of rounding is when a number is explicitly rounded to a certain number of decimal (or binary) places, as when rounding a result to euros and cents (two decimal places).</p>
+<h2> <span class="mw-headline" id="Floating-point_arithmetic_operations">Floating-point arithmetic operations</span>
+</h2>
+<p>For ease of presentation and understanding, decimal <a href="http://en.m.wikipedia.org/wiki/Radix" title="Radix">radix</a> with 7 digit precision will be used in the examples, as in the IEEE 754 <i>decimal32</i> format. The fundamental principles are the same in any <a href="http://en.m.wikipedia.org/wiki/Radix" title="Radix">radix</a> or precision, except that normalization is optional (it does not affect the numerical value of the result). Here, <i>s</i> denotes the significand and <i>e</i> denotes the exponent.</p>
+<h3> <span class="mw-headline" id="Addition_and_subtraction">Addition and subtraction</span>
+</h3>
+<p>A simple method to add floating-point numbers is to first represent them with the same exponent. In the example below, the second number is shifted right by three digits, and we then proceed with the usual addition method:</p>
+<pre>
+  123456.7 = 1.234567 × 10^5
+  101.7654 = 1.017654 × 10^2 = 0.001017654 × 10^5
+</pre>
+<pre>
+  Hence:
+  123456.7 + 101.7654 = (1.234567 × 10^5) + (1.017654 × 10^2)
+                      = (1.234567 × 10^5) + (0.001017654 × 10^5)
+                      = (1.234567 + 0.001017654) × 10^5
+                      =  1.235584654 × 10^5
+</pre>
+<p>In detail:</p>
+<pre>
+  e=5;  s=1.234567     (123456.7)
++ e=2;  s=1.017654     (101.7654)
+</pre>
+<pre>
+  e=5;  s=1.234567
++ e=5;  s=0.001017654  (after shifting)
+--------------------
+  e=5;  s=1.235584654  (true sum: 123558.4654)
+</pre>
+<p>This is the true result, the exact sum of the operands. It will be rounded to seven digits and then normalized if necessary. The final result is</p>
+<pre>
+  e=5;  s=1.235585    (final sum: 123558.5)
+</pre>
+<p>Note that the low 3 digits of the second operand (654) are essentially lost. This is <a href="http://en.m.wikipedia.org/wiki/Round-off_error" title="Round-off error">round-off error</a>. In extreme cases, the sum of two non-zero numbers may be equal to one of them:</p>
+<pre>
+  e=5;  s=1.234567
++ e=−3; s=9.876543
+</pre>
+<pre>
+  e=5;  s=1.234567
++ e=5;  s=0.00000009876543 (after shifting)
+----------------------
+  e=5;  s=1.23456709876543 (true sum)
+  e=5;  s=1.234567         (after rounding/normalization)
+</pre>
+<p>Note that in the above conceptual examples it would appear that a large number of extra digits would need to be provided by the adder to ensure correct rounding: in fact for binary addition or subtraction using careful implementation techniques only two extra <i>guard</i> bits and one extra <i>sticky</i> bit need to be carried beyond the precision of the operands.<sup id="cite_ref-16" class="reference"><a href="Floating-point_number#cite_note-16"><span>[</span>16<span>]</span></a></sup></p>
+<p>Another problem of loss of significance occurs when two close numbers are subtracted. In the following example <i>e</i> = 5; <i>s</i> = 1.234571 and <i>e</i> = 5; <i>s</i> = 1.234567 are representations of the rationals 123457.1467 and 123456.659.</p>
+<pre>
+  e=5;  s=1.234571
+− e=5;  s=1.234567
+----------------
+  e=5;  s=0.000004
+  e=−1; s=4.000000 (after rounding/normalization)
+</pre>
+<p>The best representation of this difference is <i>e</i> = −1; <i>s</i> = 4.877000, which differs more than 20% from <i>e</i> = −1; <i>s</i> = 4.000000. In extreme cases, all significant digits of precision can be lost (although gradual underflow ensures that the result will not be zero unless the two operands were equal). This <i><a href="http://en.m.wikipedia.org/wiki/Loss_of_significance" title="Loss of significance">cancellation</a></i> illustrates the danger in assuming that all of the digits of a computed result are meaningful. Dealing with the consequences of these errors is a topic in <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>; see also <a href="Floating-point_number#Accuracy_problems">Accuracy problems</a>.</p>
+<h3> <span class="mw-headline" id="Multiplication_and_division">Multiplication and division</span>
+</h3>
+<p>To multiply, the significands are multiplied while the exponents are added, and the result is rounded and normalized.</p>
+<pre>
+  e=3;  s=4.734612
+× e=5;  s=5.417242
+-----------------------
+  e=8;  s=25.648538980104 (true product)
+  e=8;  s=25.64854        (after rounding)
+  e=9;  s=2.564854        (after normalization)
+</pre>
+<p>Similarly, division is accomplished by subtracting the divisor's exponent from the dividend's exponent, and dividing the dividend's significand by the divisor's significand.</p>
+<p>There are no cancellation or absorption problems with multiplication or division, though small errors may accumulate as operations are performed in succession.<sup id="cite_ref-goldberg_17-0" class="reference"><a href="Floating-point_number#cite_note-goldberg-17"><span>[</span>17<span>]</span></a></sup> In practice, the way these operations are carried out in digital logic can be quite complex (see <a href="http://en.m.wikipedia.org/wiki/Booth%27s_multiplication_algorithm" title="Booth's multiplication algorithm">Booth's multiplication algorithm</a> and <a href="http://en.m.wikipedia.org/wiki/Division_algorithm" title="Division algorithm">Division algorithm</a>).<sup id="cite_ref-18" class="reference"><a href="Floating-point_number#cite_note-18"><span>[</span>18<span>]</span></a></sup> For a fast, simple method, see the <a href="http://en.m.wikipedia.org/wiki/Horner_scheme#Floating_point_multiplication_and_division" title="Horner scheme" class="mw-redirect">Horner method</a>.</p>
+<h2> <span class="mw-headline" id="Dealing_with_exceptional_cases">Dealing with exceptional cases</span>
+</h2>
+<p>Floating-point computation in a computer can run into three kinds of problems:</p>
+<ul>
+<li>An operation can be mathematically undefined, such as ∞/∞, or division by zero.</li>
+<li>An operation can be legal in principle, but not supported by the specific format, for example, calculating the square root of −1 or the inverse sine of 2 (both of which result in <a href="Complex_number" title="Complex number">complex numbers</a>).</li>
+<li>An operation can be legal in principle, but the result can be impossible to represent in the specified format, because the exponent is too large or too small to encode in the exponent field. Such an event is called an <a href="http://en.m.wikipedia.org/wiki/Arithmetic_overflow" title="Arithmetic overflow">overflow</a> (exponent too large), <a href="http://en.m.wikipedia.org/wiki/Arithmetic_underflow" title="Arithmetic underflow">underflow</a> (exponent too small) or <a href="http://en.m.wikipedia.org/wiki/Denormal_number" title="Denormal number">denormalization</a> (precision loss).</li>
+</ul>
+<p>Prior to the IEEE standard, such conditions usually caused the program to terminate, or triggered some kind of <a href="http://en.m.wikipedia.org/wiki/Trap_(computing)" title="Trap (computing)">trap</a> that the programmer might be able to catch. How this worked was system-dependent, meaning that floating-point programs were not <a href="Porting" title="Porting">portable</a>. (Note that the term "exception" as used in IEEE-754 is a general term meaning an exceptional condition, which is not necessarily an error, and is a different usage to that typically defined in programming languages such as a C++ or Java, in which an "<a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a>" is an alternative flow of control, closer to what is termed a "trap" in IEEE-754 terminology).</p>
+<p>Here, the required default method of handling exceptions according to IEEE 754 is discussed (the IEEE-754 optional trapping and other "alternate exception handling" modes are not discussed). Arithmetic exceptions are (by default) required to be recorded in "sticky" status flag bits. That they are "sticky" means that they are not reset by the next (arithmetic) operation, but stay set until explicitly reset. The use of "sticky" flags thus allows for testing of exceptional conditions to be delayed until after a full floating point expression or subroutine: without them exceptional conditions that could not be otherwise ignored would require explicit testing immediately after every floating point operation. By default, an operation always returns a result according to specification without interrupting computation. For instance, 1/0 returns +∞, while also setting the divide-by-zero flag bit (this default of ∞ is designed so as to often return a finite result when used in subsequent operations and so be safely ignored).</p>
+<p>The original IEEE 754 standard, however, failed to recommend operations to handle such sets of arithmetic exception flag bits. So while these were implemented in hardware, initially programming language implementations typically did not provide a means to access them (apart from assembler). Over time some programming language standards (e.g., <a href="C99" title="C99">C99</a>/C11 and Fortran) have been updated to specify methods to access and change status flag bits. The 2008 version of the IEEE 754 standard now specifies a few operations for accessing and handling the arithmetic flag bits. The programming model is based on a single thread of execution and use of them by multiple threads has to be handled by a <a href="http://en.m.wikipedia.org/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">means</a> outside of the standard (e.g. <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a> specifies that the flags have <a href="http://en.m.wikipedia.org/wiki/Thread-local_storage" title="Thread-local storage">thread-local storage</a>).</p>
+<p>IEEE 754 specifies five arithmetic exceptions that are to be recorded in the status flags ("sticky bits"):</p>
+<ul>
+<li>
+<b>inexact</b>, set if the rounded (and returned) value is different from the mathematically exact result of the operation.</li>
+<li>
+<b>underflow</b>, set if the rounded value is tiny (as specified in IEEE 754) <i>and</i> inexact (or maybe limited to if it has denormalisation loss, as per the 1984 version of IEEE 754), returning a subnormal value including the zeros.</li>
+<li>
+<b>overflow</b>, set if the absolute value of the rounded value is too large to be represented. An infinity or maximal finite value is returned, depending on which rounding is used.</li>
+<li>
+<b>divide-by-zero</b>, set if the result is infinite given finite operands, returning an infinity, either +∞ or −∞.</li>
+<li>
+<b>invalid</b>, set if a real-valued result cannot be returned e.g. sqrt(−1) or 0/0, returning a quiet NaN.</li>
+</ul>
+<div class="thumb tleft">
+<div class="thumbinner" style="width:202px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Resistors_in_Parallel.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Resistors_in_Parallel.svg/200px-Resistors_in_Parallel.svg.png" width="200" height="80" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Resistors_in_Parallel.svg/300px-Resistors_in_Parallel.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/64/Resistors_in_Parallel.svg/400px-Resistors_in_Parallel.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Fig. 1: resistances in parallel, with total resistance <img class="tex" alt="R_{tot}" src="http://upload.wikimedia.org/math/7/b/2/7b22dd5502a0bfb41bd2881cc2751345.png">
+</div>
+</div>
+</div>
+<p>The default return value for each of the exceptions is designed to give the correct result in the majority of cases such that the exceptions can be ignored in the majority of codes. <i>inexact</i> returns a correctly rounded result, and <i>underflow</i> returns a denormalised small value and so can almost always be ignored.<sup id="cite_ref-19" class="reference"><a href="Floating-point_number#cite_note-19"><span>[</span>19<span>]</span></a></sup><i>divide-by-zero</i> returns infinity exactly, which will typically then divide a finite number and so give zero, or else will give an <i>invalid</i> exception subsequently if not, and so can also typically be ignored. For example, the effective resistance of three resistors in parallel (see fig. 1) is given by <img class="tex" alt="R_{tot}=1/(1/R_1+1/R_2+..+1/R_n)" src="http://upload.wikimedia.org/math/e/a/4/ea488535f0ebfe9f32299658e616fdfe.png">. If a short-circuit develops with <img class="tex" alt="R_1" src="http://upload.wikimedia.org/math/b/e/4/be473692ca1cbc48985e5e93af6755bf.png"> set to 0, <img class="tex" alt="1/R_1" src="http://upload.wikimedia.org/math/5/b/5/5b5c2c4187c91c9b936829930b275878.png"> will return +infinity which will give a final <img class="tex" alt="R_{tot}" src="http://upload.wikimedia.org/math/7/b/2/7b22dd5502a0bfb41bd2881cc2751345.png"> of 0, as expected <sup id="cite_ref-20" class="reference"><a href="Floating-point_number#cite_note-20"><span>[</span>20<span>]</span></a></sup> (see the continued fraction example of <a href="http://en.m.wikipedia.org/wiki/Floating_point#IEEE_754:_floating_point_in_modern_computers" title="Floating point">IEEE 754 design rationale</a> for another example).</p>
+<p><i>Overflow</i> and <i>invalid</i> exceptions can typically not be ignored, but do not necessarily represent errors: for example, a <a href="http://en.m.wikipedia.org/wiki/Zero_of_a_function" title="Zero of a function">root-finding</a> routine, as part of its normal operation, may evaluate a passed-in function at values outside of its domain, returning NaN and an <i>invalid</i> exception flag to be ignored until finding a useful start point.<sup id="cite_ref-21" class="reference"><a href="Floating-point_number#cite_note-21"><span>[</span>21<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Accuracy_problems">Accuracy problems</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Wilkinson.jpeg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Wilkinson.jpeg/220px-Wilkinson.jpeg" width="220" height="268" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/6/6a/Wilkinson.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/6/6a/Wilkinson.jpeg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/James_H._Wilkinson" title="James H. Wilkinson">James H. Wilkinson</a>, a pioneer in <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>, demonstrated that floating point algorithms could be rigorously analysed.</div>
+</div>
+</div>
+<p>The fact that floating-point numbers cannot precisely represent all real numbers, and that floating-point operations cannot precisely represent true arithmetic operations, leads to many surprising situations. This is related to the finite <a href="http://en.m.wikipedia.org/wiki/Precision_(computer_science)" title="Precision (computer science)">precision</a> with which computers generally represent numbers.</p>
+<p>For example, the non-representability of 0.1 and 0.01 (in binary) means that the result of attempting to square 0.1 is neither 0.01 nor the representable number closest to it. In 24-bit (single precision) representation, 0.1 (decimal) was given previously as <i>e</i> = −4; <i>s</i> = 110011001100110011001101, which is</p>
+<dl>
+<dd>0.100000001490116119384765625 exactly.</dd>
+</dl>
+<p>Squaring this number gives</p>
+<dl>
+<dd>0.010000000298023226097399174250313080847263336181640625 exactly.</dd>
+</dl>
+<p>Squaring it with single-precision floating-point hardware (with rounding) gives</p>
+<dl>
+<dd>0.010000000707805156707763671875 exactly.</dd>
+</dl>
+<p>But the representable number closest to 0.01 is</p>
+<dl>
+<dd>0.009999999776482582092285156250 exactly.</dd>
+</dl>
+<p>Also, the non-representability of π (and π/2) means that an attempted computation of tan(π/2) will not yield a result of infinity, nor will it even overflow. It is simply not possible for standard floating-point hardware to attempt to compute tan(π/2), because π/2 cannot be represented exactly. This computation in C:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="coMULTI">/* Enough digits to be sure we get the correct approximation. */</span>
+<span class="kw4">double</span> pi <span class="sy0">=</span> <span class="nu16">3.1415926535897932384626433832795</span><span class="sy0">;</span>
+<span class="kw4">double</span> z <span class="sy0">=</span> <span class="kw3">tan</span><span class="br0">(</span>pi<span class="sy0">/</span><span class="nu16">2.0</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>will give a result of 16331239353195370.0. In single precision (using the tanf function), the result will be −22877332.0.</p>
+<p>By the same token, an attempted computation of sin(π) will not yield zero. The result will be (approximately) 0.1225<span style="margin:0 .15em 0 .25em">×</span>10<sup>−15</sup> in double precision, or −0.8742<span style="margin:0 .15em 0 .25em">×</span>10<sup>−7</sup> in single precision.<sup id="cite_ref-22" class="reference"><a href="Floating-point_number#cite_note-22"><span>[</span>22<span>]</span></a></sup></p>
+<p>While floating-point addition and multiplication are both <a href="http://en.m.wikipedia.org/wiki/Commutative" title="Commutative" class="mw-redirect">commutative</a> (<i>a</i> + <i>b</i> = <i>b</i> + <i>a</i> and <i>a</i>×<i>b</i> = <i>b</i>×<i>a</i>), they are not necessarily <a href="http://en.m.wikipedia.org/wiki/Associative" title="Associative" class="mw-redirect">associative</a>. That is, (<i>a</i> + <i>b</i>) + <i>c</i> is not necessarily equal to <i>a</i> + (<i>b</i> + <i>c</i>). Using 7-digit decimal arithmetic:</p>
+<pre>
+ a = 1234.567, b = 45.67834, c = 0.0004
+</pre>
+<pre>
+ (a + b) + c:
+     1234.567   (a)
+   +   45.67834 (b)
+   ____________
+     1280.24534   rounds to   1280.245
+</pre>
+<pre>
+    1280.245  (a + b)
+   +   0.0004 (c)
+   ____________
+    1280.2454   rounds to   <b>1280.245</b>  &lt;--- (a + b) + c
+</pre>
+<pre>
+ a + (b + c):
+   45.67834 (b)
+ +  0.0004  (c)
+ ____________
+   45.67874
+</pre>
+<pre>
+   1234.567   (a)
+ +   45.67874 (b + c)
+ ____________
+   1280.24574   rounds to   <b>1280.246</b> &lt;--- a + (b + c)
+</pre>
+<p>They are also not necessarily <a href="http://en.m.wikipedia.org/wiki/Distributive" title="Distributive" class="mw-redirect">distributive</a>. That is, (<i>a</i> + <i>b</i>) ×<i>c</i> may not be the same as <i>a</i>×<i>c</i> + <i>b</i>×<i>c</i>:</p>
+<pre>
+ 1234.567 × 3.333333 = 4115.223
+ 1.234567 × 3.333333 = 4.115223
+                       4115.223 + 4.115223 = 4119.338
+ but
+ 1234.567 + 1.234567 = 1235.802
+                       1235.802 × 3.333333 = 4119.340
+</pre>
+<p>In addition to loss of significance, inability to represent numbers such as π and 0.1 exactly, and other slight inaccuracies, the following phenomena may occur:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Loss_of_significance" title="Loss of significance">Cancellation</a>: subtraction of nearly equal operands may cause extreme loss of accuracy.<sup id="cite_ref-23" class="reference"><a href="Floating-point_number#cite_note-23"><span>[</span>23<span>]</span></a></sup> When we subtract two almost equal numbers we set the most significant digits to zero, leaving ourselves with just the insignificant, and most erroneous, digits. For example, when determining a <a href="http://en.m.wikipedia.org/wiki/Derivative" title="Derivative">derivative</a> of a function the following formula is used:</li>
+</ul>
+<dl>
+<dd><img class="tex" alt="Q(h) = \frac{f(a + h) - f(a)}{h}." src="http://upload.wikimedia.org/math/a/3/0/a302c220e330c52c50dbedeb7ff8859b.png"></dd>
+<dd>Intuitively one would want an <i>h</i> very close to zero, however when using floating point operations, the smallest number won't give the best approximation of a derivative. As <i>h</i> grows smaller the difference between f (a + h) and f(a) grows smaller, cancelling out the most significant and least erroneous digits and making the most erroneous digits more important. As a result the smallest number of <i>h</i> possible will give a more erroneous approximation of a derivative than a somewhat larger number. This is perhaps the most common and serious accuracy problem.</dd>
+</dl>
+<ul>
+<li>Conversions to integer are not intuitive: converting (63.0/9.0) to integer yields 7, but converting (0.63/0.09) may yield 6. This is because conversions generally truncate rather than round. <a href="http://en.m.wikipedia.org/wiki/Floor_and_ceiling_functions" title="Floor and ceiling functions">Floor and ceiling functions</a> may produce answers which are off by one from the intuitively expected value.</li>
+<li>Limited exponent range: results might overflow yielding infinity, or underflow yielding a <a href="http://en.m.wikipedia.org/wiki/Subnormal_number" title="Subnormal number" class="mw-redirect">subnormal number</a> or zero. In these cases precision will be lost.</li>
+<li>Testing for <a href="http://en.m.wikipedia.org/wiki/Division_by_zero#In_computer_arithmetic" title="Division by zero">safe division</a> is problematic: Checking that the divisor is not zero does not guarantee that a division will not overflow.</li>
+<li>Testing for equality is problematic. Two computational sequences that are mathematically equal may well produce different floating-point values.</li>
+</ul>
+<h3> <span class="mw-headline" id="Machine_precision_and_backward_error_analysis">Machine precision and backward error analysis</span>
+</h3>
+<p><i>Machine precision</i> is a quantity that characterizes the accuracy of a floating point system, and is used in <a href="http://en.m.wikipedia.org/wiki/Error_analysis#Error_analysis_in_numerical_modeling" title="Error analysis">backward error analysis</a> of floating point algorithms. It is also known as unit roundoff or <i><a href="http://en.m.wikipedia.org/wiki/Machine_epsilon" title="Machine epsilon">machine epsilon</a></i>. Usually denoted Ε<sub>mach</sub>, its value depends on the particular rounding being used.</p>
+<p>With rounding to zero,</p>
+<dl>
+<dd><img class="tex" alt="\Epsilon_\text{mach} = B^{1-P},\," src="http://upload.wikimedia.org/math/c/8/4/c844d729e0caf7827255c120c4d5dc77.png"></dd>
+</dl>
+<p>whereas rounding to nearest,</p>
+<dl>
+<dd><img class="tex" alt="\Epsilon_\text{mach} = \tfrac{1}{2} B^{1-P}." src="http://upload.wikimedia.org/math/f/6/0/f609497c6a24be26ef17f415c35e656f.png"></dd>
+</dl>
+<p>This is important since it bounds the <i><a href="http://en.m.wikipedia.org/wiki/Relative_error" title="Relative error" class="mw-redirect">relative error</a></i> in representing any non-zero real number x within the normalised range of a floating point system:</p>
+<dl>
+<dd><img class="tex" alt="\left| \frac{fl(x) - x}{x} \right| \le \Epsilon_\text{mach}." src="http://upload.wikimedia.org/math/1/8/f/18f8b1f72daf487751a98b0822a57e0a.png"></dd>
+</dl>
+<p>Backward error analysis, popularized by <a href="http://en.m.wikipedia.org/wiki/James_H._Wilkinson" title="James H. Wilkinson">James H. Wilkinson</a>, can be used to establish that an algorithm implementing a numerical function is numerically stable. The basic approach is to show that although the calculated result, due to roundoff errors, will not be exactly correct, it is the exact solution to a nearby problem with slightly perturbed input data. If the perturbation required is small, on the order of the uncertainty in the input data, then the results are in some sense as accurate as the data "deserves". The algorithm is then defined as <i><a href="http://en.m.wikipedia.org/wiki/Numerical_stability#Forward.2C_backward.2C_and_mixed_stability" title="Numerical stability">backward stable</a></i>.</p>
+<p>As a trivial example, consider a simple expression giving the inner product of (length two) vectors <img class="tex" alt="x" src="http://upload.wikimedia.org/math/9/d/d/9dd4e461268c8034f5c8564e155c67a6.png"> and <img class="tex" alt="y" src="http://upload.wikimedia.org/math/4/1/5/415290769594460e2e485922904f345d.png">, then</p>
+<dl>
+<dd>
+<img class="tex" alt="fl(x \cdot y)=fl(fl(x_1*y_1)+fl(x_2*y_2))" src="http://upload.wikimedia.org/math/7/3/a/73aa13baf7ccb369acbe70598483fac9.png"> where <img class="tex" alt="fl()" src="http://upload.wikimedia.org/math/2/d/0/2d029573e0d81a5d5f8d9a2d944ddec6.png"> indicates correctly rounded floating point arithmetic
+<dl>
+<dd>
+<dl>
+<dd>
+<img class="tex" alt="= fl((x_1*y_1)(1+\delta_1)+(x_2*y_2)(1+\delta_2))" src="http://upload.wikimedia.org/math/3/2/c/32c05ec51fee7b251ca6bb2037785b4e.png"> where <img class="tex" alt="\delta_n \leq \Epsilon_\text{mach}" src="http://upload.wikimedia.org/math/9/b/6/9b6a53cbacaa64963a015b5e28a5293f.png">, from above</dd>
+<dd><img class="tex" alt="= ((x_1*y_1)(1+\delta_1)+(x_2*y_2)(1+\delta_2))(1+\delta_3)" src="http://upload.wikimedia.org/math/9/5/6/9566214d2e3d74e7888fb578cd8c4356.png"></dd>
+<dd><img class="tex" alt="= (x_1*y_1)(1+\delta_1)(1+\delta_3)+(x_2*y_2)(1+\delta_2)(1+\delta_3)" src="http://upload.wikimedia.org/math/5/3/8/53836c22ee0eea1e4e4b0c4b4790c083.png"></dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>and so</p>
+<dl>
+<dd>
+<img class="tex" alt="fl(x \cdot y)=\hat{x} \cdot \hat{y}" src="http://upload.wikimedia.org/math/0/6/7/067eefee9145be8789df074db0b1b34e.png"> where</dd>
+<dd>
+<img class="tex" alt="\hat{x}_1 = x_1(1+\delta_1)" src="http://upload.wikimedia.org/math/0/c/e/0cee0561d78b325589ee0d0c80a5a659.png">; <img class="tex" alt="\hat{x}_2=x_2(1+\delta_2)" src="http://upload.wikimedia.org/math/7/b/f/7bf90e92f1f4b57160c643d4af6a0b68.png">;</dd>
+<dd>
+<img class="tex" alt="\hat{y}_1 = y_1(1+\delta_3)" src="http://upload.wikimedia.org/math/9/5/c/95c5f0aba70c963d1b50af3b0fd46239.png">; <img class="tex" alt="\hat{y}_2 = y_2(1+\delta_3)" src="http://upload.wikimedia.org/math/2/f/5/2f5e0be8bb0950d7915e265ad77b2011.png">
+</dd>
+<dd>where <img class="tex" alt="\delta_n \leq \Epsilon_\text{mach}" src="http://upload.wikimedia.org/math/9/b/6/9b6a53cbacaa64963a015b5e28a5293f.png">, by definition</dd>
+</dl>
+<p>which is the sum of two slightly perturbed (on the order of Ε<sub>mach</sub>) input data, and so is backward stable. More realistic examples require estimating the <a href="http://en.m.wikipedia.org/wiki/Condition_number" title="Condition number">condition number</a> of the function (see Higham 2002 and other references below).</p>
+<h3> <span class="mw-headline" id="Minimizing_the_effect_of_accuracy_problems">Minimizing the effect of accuracy problems</span>
+</h3>
+<p>Although, as noted previously, individual arithmetic operations of IEEE 754 are guaranteed accurate to within half a ULP, more complicated formulae can suffer from larger errors due to round-off. The loss of accuracy can be substantial if a problem or its data are <a href="http://en.m.wikipedia.org/wiki/Condition_number" title="Condition number">ill-conditioned</a>, meaning that the correct result is hypersensitive to tiny perturbations in its data. However, even functions that are well-conditioned can suffer from large loss of accuracy if an algorithm <a href="http://en.m.wikipedia.org/wiki/Numerical_stability" title="Numerical stability">numerically unstable</a> for that data is used: apparently equivalent formulations of expressions in a programming language can differ markedly in their numerical stability. One approach to remove the risk of such loss of accuracy is the design and analysis of numerically stable algorithms, which is an aim of the branch of mathematics known as <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>. Another approach that can protect against the risk of numerical instabilities is the computation of intermediate (scratch) values in an algorithm at a higher precision than the final result requires, which can remove, or reduce by orders of magnitude, such risk: <a href="http://en.m.wikipedia.org/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">IEEE 754 quadruple precision</a> and <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">extended precision</a> are designed for this purpose when computing at double precision.<sup id="cite_ref-debug_24-0" class="reference"><a href="Floating-point_number#cite_note-debug-24"><span>[</span>24<span>]</span></a></sup><sup id="cite_ref-25" class="reference"><a href="Floating-point_number#cite_note-25"><span>[</span>25<span>]</span></a></sup></p>
+<p>For example, the following algorithm is a direct implementation to compute the function A(x) = (x–1)/( exp(x–1) – 1) which is well-conditioned at 1.0,<sup id="cite_ref-26" class="reference"><a href="Floating-point_number#cite_note-26"><span>[</span>26<span>]</span></a></sup> however it can be shown to be numerically unstable and lose up to half the significant digits carried by the arithmetic when computed near 1.0.<sup id="cite_ref-JavaHurt_10-2" class="reference"><a href="Floating-point_number#cite_note-JavaHurt-10"><span>[</span>10<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">double</span> A<span class="br0">(</span><span class="kw4">double</span> X<span class="br0">)</span>
+<span class="br0">{</span>
+        <span class="kw4">double</span>  Y<span class="sy0">,</span> Z<span class="sy0">;</span>  <span class="co1">// [1]</span>
+        Y <span class="sy0">=</span> X <span class="sy0">-</span> <span class="nu16">1.0</span><span class="sy0">;</span>
+        Z <span class="sy0">=</span> <span class="kw3">exp</span><span class="br0">(</span>Y<span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">if</span> <span class="br0">(</span>Z <span class="sy0">!=</span> <span class="nu16">1.0</span><span class="br0">)</span> Z <span class="sy0">=</span> Y<span class="sy0">/</span><span class="br0">(</span>Z <span class="sy0">-</span> <span class="nu16">1.0</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [2]</span>
+        <span class="kw1">return</span><span class="br0">(</span>Z<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>If, however, intermediate computations are all performed in extended precision (e.g. by setting line [1] to <a href="C99" title="C99">C99</a> long double), then up to full precision in the final double result can be maintained.<sup id="cite_ref-27" class="reference"><a href="Floating-point_number#cite_note-27"><span>[</span>27<span>]</span></a></sup> Alternatively, a numerical analysis of the algorithm reveals that if the following non-obvious change to line [2] is made:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw1">if</span> <span class="br0">(</span>Z <span class="sy0">!=</span> <span class="nu16">1.0</span><span class="br0">)</span> Z <span class="sy0">=</span> <span class="kw3">log</span><span class="br0">(</span>Z<span class="br0">)</span><span class="sy0">/</span><span class="br0">(</span>Z <span class="sy0">-</span> <span class="nu16">1.0</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>then the algorithm becomes numerically stable and can compute to full double precision.</p>
+<p>To maintain the properties of such carefully constructed numerically stable programs, careful handling by the <a href="Compiler" title="Compiler">compiler</a> is required. Certain "optimizations" that compilers might make (for example, reordering operations) can work against the goals of well-behaved software. There is some controversy about the failings of compilers and language designs in this area: <a href="C99" title="C99">C99</a> is an example of a language where such optimisations are carefully specified so as to maintain numerical precision. See the external references at the bottom of this article.</p>
+<p>A detailed treatment of the techniques for writing high-quality floating-point software is beyond the scope of this article, and the reader is referred to,<sup id="cite_ref-28" class="reference"><a href="Floating-point_number#cite_note-28"><span>[</span>28<span>]</span></a></sup><sup id="cite_ref-kahan_maths_29-0" class="reference"><a href="Floating-point_number#cite_note-kahan_maths-29"><span>[</span>29<span>]</span></a></sup> and the other references at the bottom of this article. Kahan suggests several rules of thumb that can substantially decrease by orders of magnitude <sup id="cite_ref-kahan_maths_29-1" class="reference"><a href="Floating-point_number#cite_note-kahan_maths-29"><span>[</span>29<span>]</span></a></sup> the risk of numerical anomalies, in addition to, or in lieu of, a more careful numerical analysis. These include: as noted above, computing all expressions and intermediate results in the highest precision supported in hardware (a common rule of thumb is to carry twice the precision of the desired result i.e. compute in double precision for a final single precision result, or in double extended or quad precision for up to double precision results <sup id="cite_ref-30" class="reference"><a href="Floating-point_number#cite_note-30"><span>[</span>30<span>]</span></a></sup>); and rounding input data and results to only the precision required and supported by the input data (carrying excess precision in the final result beyond that required and supported by the input data can be misleading, increases storage cost and decreases speed, and the excess bits can affect convergence of numerical procedures:<sup id="cite_ref-31" class="reference"><a href="Floating-point_number#cite_note-31"><span>[</span>31<span>]</span></a></sup> notably, the first form of the iterative example given below converges correctly when using this rule of thumb). Brief descriptions of several additional issues and techniques follow.</p>
+<p>As decimal fractions can often not be exactly represented in binary floating-point, such arithmetic is at its best when it is simply being used to measure real-world quantities over a wide range of scales (such as the orbital period of a moon around Saturn or the mass of a <a href="http://en.m.wikipedia.org/wiki/Proton" title="Proton">proton</a>), and at its worst when it is expected to model the interactions of quantities expressed as decimal strings that are expected to be exact.<sup id="cite_ref-32" class="reference"><a href="Floating-point_number#cite_note-32"><span>[</span>32<span>]</span></a></sup><sup id="cite_ref-33" class="reference"><a href="Floating-point_number#cite_note-33"><span>[</span>33<span>]</span></a></sup> An example of the latter case is financial calculations. For this reason, financial software tends not to use a binary floating-point number representation.<sup id="cite_ref-34" class="reference"><a href="Floating-point_number#cite_note-34"><span>[</span>34<span>]</span></a></sup> The "decimal" data type of the <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="Python_(programming_language)" title="Python (programming language)">Python</a> programming languages, and the <a href="http://en.m.wikipedia.org/wiki/IEEE_754-2008" title="IEEE 754-2008" class="mw-redirect">IEEE 754-2008</a> decimal floating-point standard, are designed to avoid the problems of binary floating-point representations when applied to human-entered exact decimal values, and make the arithmetic always behave as expected when numbers are printed in decimal.</p>
+<p>Expectations from mathematics may not be realised in the field of floating-point computation. For example, it is known that <img class="tex" alt="(x+y)(x-y) = x^2-y^2\," src="http://upload.wikimedia.org/math/e/4/a/e4a8f9d1785121505817aec7f100ebeb.png">, and that <img class="tex" alt="\sin^2{\theta}+\cos^2{\theta} = 1\," src="http://upload.wikimedia.org/math/0/0/0/0003793e1c0afcf8afb4c48f0c1e0c57.png">, however these facts cannot be relied on when the quantities involved are the result of floating-point computation.</p>
+<p>The use of the equality test (<code>if (x==y) ...</code>) requires care when dealing with floating point numbers. Even simple expressions like <code>0.6/0.2-3==0</code> will, on most computers, fail to be true<sup id="cite_ref-35" class="reference"><a href="Floating-point_number#cite_note-35"><span>[</span>35<span>]</span></a></sup> (in IEEE 754 double precision, for example, <code>0.6/0.2-3</code> is approximately equal to -4.44089209850063e-16). Consequently, such tests are sometimes replaced with "fuzzy" comparisons (<code>if (abs(x-y) &lt; epsilon) ...</code>, where <a href="http://en.m.wikipedia.org/wiki/Machine_epsilon" title="Machine epsilon">epsilon</a> is sufficiently small and tailored to the application, such as 1.0E−13). The wisdom of doing this varies greatly, and can require numerical analysis to bound epsilon.<sup id="cite_ref-36" class="reference"><a href="Floating-point_number#cite_note-36"><span>[</span>36<span>]</span></a></sup> Values derived from the primary data representation and their comparisons should be performed in a wider, extended, precision to minimise the risk of such inconsistencies due to round-off errors.<sup id="cite_ref-kahan_maths_29-2" class="reference"><a href="Floating-point_number#cite_note-kahan_maths-29"><span>[</span>29<span>]</span></a></sup> It is often better to organize the code in such a way that such tests are unnecessary. For example, in <a href="http://en.m.wikipedia.org/wiki/Computational_geometry" title="Computational geometry">computational geometry</a>, exact tests of whether a point lies off or on a line or plane defined by other points can be performed using adaptive precision or exact arithmetic methods.<sup id="cite_ref-37" class="reference"><a href="Floating-point_number#cite_note-37"><span>[</span>37<span>]</span></a></sup></p>
+<p>Small errors in floating-point arithmetic can grow when mathematical algorithms perform operations an enormous number of times. A few examples are <a href="http://en.m.wikipedia.org/wiki/Matrix_inversion" title="Matrix inversion" class="mw-redirect">matrix inversion</a>, <a href="http://en.m.wikipedia.org/wiki/Eigenvector" title="Eigenvector" class="mw-redirect">eigenvector</a> computation, and differential equation solving. These algorithms must be very carefully designed, using numerical approaches such as <a href="http://en.m.wikipedia.org/wiki/Iterative_refinement" title="Iterative refinement">Iterative refinement</a>, if they are to work well.<sup id="cite_ref-38" class="reference"><a href="Floating-point_number#cite_note-38"><span>[</span>38<span>]</span></a></sup></p>
+<p>Summation of a vector of floating point values is a basic algorithm in <a href="http://en.m.wikipedia.org/wiki/Computational_science" title="Computational science">scientific computing</a>, and so an awareness of when loss of significance can occur is essential. For example, if one is adding a very large number of numbers, the individual addends are very small compared with the sum. This can lead to loss of significance. A typical addition would then be something like</p>
+<pre>
+3253.671
++  3.141276
+--------
+3256.812
+</pre>
+<p>The low 3 digits of the addends are effectively lost. Suppose, for example, that one needs to add many numbers, all approximately equal to 3. After 1000 of them have been added, the running sum is about 3000; the lost digits are not regained. The <a href="http://en.m.wikipedia.org/wiki/Kahan_summation_algorithm" title="Kahan summation algorithm">Kahan summation algorithm</a> may be used to reduce the errors.<sup id="cite_ref-39" class="reference"><a href="Floating-point_number#cite_note-39"><span>[</span>39<span>]</span></a></sup></p>
+<p>Round-off error can affect the convergence and accuracy of iterative numerical procedures. As an example, <a href="http://en.m.wikipedia.org/wiki/Archimedes" title="Archimedes">Archimedes</a> approximated π by calculating the perimeters of polygons inscribing and circumscribing a circle, starting with hexagons, and successively doubling the number of sides. As noted above, computations may be rearranged in a way that is mathematically equivalent but less prone to error (<a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>). Two forms of the recurrence formula for the circumscribed polygon are:</p>
+<dl>
+<dd><img class="tex" alt="t_0 = \frac{1}{\sqrt{3}}" src="http://upload.wikimedia.org/math/4/3/2/4329f82cd4a36a21e140157da12e5ceb.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\qquad\mathrm{first\ form:}\qquad t_{i+1} = \frac{\sqrt{t_i^2+1}-1}{t_i}\qquad\mathrm{second\ form:}\qquad t_{i+1} = \frac{t_i}{\sqrt{t_i^2+1}+1}" src="http://upload.wikimedia.org/math/c/f/7/cf7fad650bb86f0d0d72062ed610ae4a.png"></dd>
+</dl>
+<dl>
+<dd><img class="tex" alt="\pi \sim 6 \times 2^i \times t_i,\qquad\mathrm{converging\ as\ i \rightarrow \infty}\," src="http://upload.wikimedia.org/math/7/9/7/797fb30ed647a1f4983c9744b3feeb6d.png"></dd>
+</dl>
+<p>Here is a computation using IEEE "double" (a significand with 53 bits of precision) arithmetic:</p>
+<pre>
+ i   6 × 2<sup>i</sup> × t<sub>i</sub>, first form    6 × 2<sup>i</sup> × t<sub>i</sub>, second form
+</pre>
+<pre>
+ 0   <b><span style="color:purple;">3</span></b>.4641016151377543863      <b><span style="color:purple;">3</span></b>.4641016151377543863
+ 1   <b><span style="color:purple;">3</span></b>.2153903091734710173      <b><span style="color:purple;">3</span></b>.2153903091734723496
+ 2   <b><span style="color:purple;">3.1</span></b>596599420974940120      <b><span style="color:purple;">3.1</span></b>596599420975006733
+ 3   <b><span style="color:purple;">3.14</span></b>60862151314012979      <b><span style="color:purple;">3.14</span></b>60862151314352708
+ 4   <b><span style="color:purple;">3.14</span></b>27145996453136334      <b><span style="color:purple;">3.14</span></b>27145996453689225
+ 5   <b><span style="color:purple;">3.141</span></b>8730499801259536      <b><span style="color:purple;">3.141</span></b>8730499798241950
+ 6   <b><span style="color:purple;">3.141</span></b>6627470548084133      <b><span style="color:purple;">3.141</span></b>6627470568494473
+ 7   <b><span style="color:purple;">3.141</span></b>6101765997805905      <b><span style="color:purple;">3.141</span></b>6101766046906629
+ 8   <b><span style="color:purple;">3.14159</span></b>70343230776862      <b><span style="color:purple;">3.14159</span></b>70343215275928
+ 9   <b><span style="color:purple;">3.14159</span></b>37488171150615      <b><span style="color:purple;">3.14159</span></b>37487713536668
+10   <b><span style="color:purple;">3.141592</span></b>9278733740748      <b><span style="color:purple;">3.141592</span></b>9273850979885
+11   <b><span style="color:purple;">3.141592</span></b>7256228504127      <b><span style="color:purple;">3.141592</span></b>7220386148377
+12   <b><span style="color:purple;">3.1415926</span></b>717412858693      <b><span style="color:purple;">3.1415926</span></b>707019992125
+13   <b><span style="color:purple;">3.1415926</span></b>189011456060      <b><span style="color:purple;">3.14159265</span></b>78678454728
+14   <b><span style="color:purple;">3.1415926</span></b>717412858693      <b><span style="color:purple;">3.14159265</span></b>46593073709
+15   <b><span style="color:purple;">3.14159</span></b>19358822321783      <b><span style="color:purple;">3.141592653</span></b>8571730119
+16   <b><span style="color:purple;">3.1415926</span></b>717412858693      <b><span style="color:purple;">3.141592653</span></b>6566394222
+17   <b><span style="color:purple;">3.1415</span></b>810075796233302      <b><span style="color:purple;">3.141592653</span></b>6065061913
+18   <b><span style="color:purple;">3.1415926</span></b>717412858693      <b><span style="color:purple;">3.1415926535</span></b>939728836
+19   <b><span style="color:purple;">3.141</span></b>4061547378810956      <b><span style="color:purple;">3.1415926535</span></b>908393901
+20   <b><span style="color:purple;">3.14</span></b>05434924008406305      <b><span style="color:purple;">3.1415926535</span></b>900560168
+21   <b><span style="color:purple;">3.14</span></b>00068646912273617      <b><span style="color:purple;">3.141592653589</span></b>8608396
+22   <b><span style="color:purple;">3.1</span></b>349453756585929919      <b><span style="color:purple;">3.141592653589</span></b>8122118
+23   <b><span style="color:purple;">3.14</span></b>00068646912273617      <b><span style="color:purple;">3.14159265358979</span></b>95552
+24   <b><span style="color:purple;">3</span></b>.2245152435345525443      <b><span style="color:purple;">3.14159265358979</span></b>68907
+25                              <b><span style="color:purple;">3.14159265358979</span></b>62246
+26                              <b><span style="color:purple;">3.14159265358979</span></b>62246
+27                              <b><span style="color:purple;">3.14159265358979</span></b>62246
+28                              <b><span style="color:purple;">3.14159265358979</span></b>62246
+              The true value is <b><span style="color:purple;">3.14159265358979323846264338327...</span></b>
+</pre>
+<p>While the two forms of the recurrence formula are clearly mathematically equivalent,<sup id="cite_ref-40" class="reference"><a href="Floating-point_number#cite_note-40"><span>[</span>40<span>]</span></a></sup> the first subtracts 1 from a number extremely close to 1, leading to an increasingly problematic loss of <a href="http://en.m.wikipedia.org/wiki/Significant_digit" title="Significant digit" class="mw-redirect">significant digits</a>. As the recurrence is applied repeatedly, the accuracy improves at first, but then it deteriorates. It never gets better than about 8 digits, even though 53-bit arithmetic should be capable of about 16 digits of precision. When the second form of the recurrence is used, the value converges to 15 digits of precision.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science  portal</a></td>
+</tr></table>
+</div>
+<div style="column-count:3;-moz-column-count:3;-webkit-column-count:3">
+<ul>
+<li>
+<a href="C99#IEEE_754_floating_point_support" title="C99">C99</a> for code examples demonstrating access and use of IEEE 754 features.</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computable_number" title="Computable number">Computable number</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coprocessor" title="Coprocessor">Coprocessor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decimal_floating_point" title="Decimal floating point">Decimal floating point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Double_precision" title="Double precision" class="mw-redirect">Double precision</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Experimental_mathematics" title="Experimental mathematics">Experimental mathematics</a> -- utilises high precision floating point computations</li>
+<li><a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point arithmetic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FLOPS" title="FLOPS">FLOPS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gal%27s_accurate_tables" title="Gal's accurate tables">Gal's accurate tables</a></li>
+<li><a href="GNU_Multi-Precision_Library" title="GNU Multi-Precision Library" class="mw-redirect">GNU Multi-Precision Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Half_precision" title="Half precision" class="mw-redirect">Half precision</a></li>
+<li>
+<a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> — Standard for Binary Floating-Point Arithmetic</li>
+<li><a href="http://en.m.wikipedia.org/wiki/IBM_Floating_Point_Architecture" title="IBM Floating Point Architecture">IBM Floating Point Architecture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Binary_Format" title="Microsoft Binary Format">Microsoft Binary Format</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minifloat" title="Minifloat">Minifloat</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Q_(number_format)" title="Q (number format)">Q (number format)</a> for constant resolution</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quad_precision" title="Quad precision" class="mw-redirect">Quad precision</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Significant_digits" title="Significant digits" class="mw-redirect">Significant digits</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Single_precision" title="Single precision" class="mw-redirect">Single precision</a></li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="Notes_and_references">Notes and references</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book">B. Randell (1982). <i>From analytical engine to electronic digital computer: the contributions of Ludgate, Torres, and Bush. IEEE Annals of the History of Computing, 04(4)</i>. pp. 327–341.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=From+analytical+engine+to+electronic+digital+computer%3A+the+contributions+of+Ludgate%2C+Torres%2C+and+Bush.+IEEE+Annals+of+the+History+of+Computing%2C+04%284%29&amp;rft.aulast=B.+Randell&amp;rft.au=B.+Randell&amp;rft.date=1982&amp;rft.pages=pp.%26nbsp%3B327%E2%80%93341&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation Journal"><a rel="nofollow" class="external text" href="http://ed-thelen.org/comp-hist/Zuse_Z1_and_Z3.pdf">"Konrad Zuse’s Legacy: The Architecture of the Z1 and Z3"</a>. <i>IEEE Annals of the History of Computing</i> <b>19</b> (2): 5–15. 1997<span class="printonly">. <a rel="nofollow" class="external free" href="http://ed-thelen.org/comp-hist/Zuse_Z1_and_Z3.pdf">http://ed-thelen.org/comp-hist/Zuse_Z1_and_Z3.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Konrad+Zuse%E2%80%99s+Legacy%3A+The+Architecture+of+the+Z1+and+Z3&amp;rft.jtitle=IEEE+Annals+of+the+History+of+Computing&amp;rft.date=1997&amp;rft.volume=19&amp;rft.issue=2&amp;rft.pages=5%E2%80%9315&amp;rft_id=http%3A%2F%2Fed-thelen.org%2Fcomp-hist%2FZuse_Z1_and_Z3.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-kahansiam-3">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-kahansiam_3-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (15 July 1997). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf">"The Baleful Effect of Computer Languages and Benchmarks upon Applied Mathematics, Physics and Chemistry"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf">http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The%09Baleful+Effect%09of+Computer+Languages+and+Benchmarks+upon+Applied+Mathematics%2C+Physics+and+Chemistry&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=15+July+1997&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FSIAMjvnl.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf">"The Baleful Effect of Computer Languages and Benchmarks upon Applied Mathematics, Physics and Chemistry. John von Neumann Lecture"</a>. 16 July 1997. p. 3<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf">http://www.cs.berkeley.edu/~wkahan/SIAMjvnl.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The%09Baleful+Effect+of+Computer+Languages+and+Benchmarks+upon+Applied+Mathematics%2C+Physics+and+Chemistry.+John+von+Neumann+Lecture&amp;rft.atitle=&amp;rft.date=16+July+1997&amp;rft.pages=p.%26nbsp%3B3&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FSIAMjvnl.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation book">Randell, Brian, ed. (1982) [1973]. <i>The Origins of Digital Computers: Selected Papers</i> (3rd ed.). Berlin; New York: Springer-Verlag. p. 244. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/3-540-11319-3" title="Special:BookSources/3-540-11319-3">3-540-11319-3</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Origins+of+Digital+Computers%3A+Selected+Papers&amp;rft.date=1982&amp;rft.pages=p.%26nbsp%3B244&amp;rft.edition=3rd&amp;rft.place=Berlin%3B+New+York&amp;rft.pub=Springer-Verlag&amp;rft.isbn=3-540-11319-3&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web">Severance, Charles (20 February 1998). <a rel="nofollow" class="external text" href="http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html">"An Interview with the Old Man of Floating-Point"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html">http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=An+Interview+with+the+Old+Man+of+Floating-Point&amp;rft.atitle=&amp;rft.aulast=Severance&amp;rft.aufirst=Charles&amp;rft.au=Severance%2C%26%2332%3BCharles&amp;rft.date=20+February+1998&amp;rft_id=http%3A%2F%2Fwww.eecs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2F754story.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/Qdrtcs.pdf">"W. Kahn. "On the Cost of Floating-Point Computation Without Extra-Precise Arithmetic""</a> (PDF). 20 November 2004<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/Qdrtcs.pdf">http://www.cs.berkeley.edu/~wkahan/Qdrtcs.pdf</a></span><span class="reference-accessdate">. Retrieved 19 February 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=W.+Kahn.+%22On+the+Cost+of+Floating-Point+Computation+Without+Extra-Precise+Arithmetic%22&amp;rft.atitle=&amp;rft.date=20+November+2004&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FQdrtcs.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openexr.com/about.html">"openEXR"</a>. openEXR<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openexr.com/about.html">http://www.openexr.com/about.html</a></span><span class="reference-accessdate">. Retrieved 25 April 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=openEXR&amp;rft.atitle=&amp;rft.pub=openEXR&amp;rft_id=http%3A%2F%2Fwww.openexr.com%2Fabout.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://babbage.cs.qc.edu/IEEE-754/32bit.html">http://babbage.cs.qc.edu/IEEE-754/32bit.html</a></span>
+</li>
+<li id="cite_note-JavaHurt-10">
+<span class="mw-cite-backlink">^ <a href="Floating-point_number#cite_ref-JavaHurt_10-0"><sup><i><b>a</b></i></sup></a> <a href="Floating-point_number#cite_ref-JavaHurt_10-1"><sup><i><b>b</b></i></sup></a> <a href="Floating-point_number#cite_ref-JavaHurt_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web">William Kahan (1 March 1998). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf">"How JAVA's Floating-Point Hurts Everyone Everywhere"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf">http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=How+JAVA%27s+Floating-Point+Hurts+Everyone+Everywhere&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=1+March+1998&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FJAVAhurt.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-whyieee-11">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-whyieee_11-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (12 February 1981). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf">"Why do we need a floating-point arithmetic standard?"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf">http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Why+do+we+need+a+floating-point+arithmetic+standard%3F&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=12+February+1981&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2Fwhy-ieee.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web">Charles Severance (20 February 1998). <a rel="nofollow" class="external text" href="http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html">"An Interview with the Old Man of Floating-Point"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html">http://www.eecs.berkeley.edu/~wkahan/ieee754status/754story.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=An+Interview+with+the+Old+Man+of+Floating-Point&amp;rft.atitle=&amp;rft.aulast=Charles+Severance&amp;rft.au=Charles+Severance&amp;rft.date=20+February+1998&amp;rft_id=http%3A%2F%2Fwww.eecs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2F754story.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Baleful-13">
+<span class="mw-cite-backlink">^ <a href="Floating-point_number#cite_ref-Baleful_13-0"><sup><i><b>a</b></i></sup></a> <a href="Floating-point_number#cite_ref-Baleful_13-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web">William Kahan (11 June 1996). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf">"The Baleful Effect of Computer Benchmarks upon Applied Mathematics, Physics and Chemistry"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf">http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Baleful+Effect+of+Computer+Benchmarks+upon+Applied+Mathematics%2C+Physics+and+Chemistry&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=11+June+1996&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2Fbaleful.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-14">^</a></b></span> <span class="reference-text">Computer hardware doesn't necessarily compute the exact value; it simply has to produce the equivalent rounded result as though it had computed the infinitely precise result.</span>
+</li>
+<li id="cite_note-name-15">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-name_15-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (11 January 2006). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/Mindless.pdf">"How Futile are Mindless Assessments of Roundoff in Floating-Point Computation ?"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/Mindless.pdf">http://www.cs.berkeley.edu/~wkahan/Mindless.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=How+Futile+are+Mindless+Assessments+of+Roundoff+in+Floating-Point+Computation+%3F&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=11+January+2006&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FMindless.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web">David Goldberg (March 1991). <a rel="nofollow" class="external text" href="http://www.validlab.com/goldberg/paper.pdf">"What every computer scientist should know about floating-point arithmetic. ACM Computing Surveys, volume 23, issue 1"</a>. p. 195<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.validlab.com/goldberg/paper.pdf">http://www.validlab.com/goldberg/paper.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=What+every+computer+scientist+should+know+about+floating-point+arithmetic.+ACM+Computing+Surveys%2C+volume+23%2C+issue+1&amp;rft.atitle=&amp;rft.aulast=David+Goldberg&amp;rft.au=David+Goldberg&amp;rft.date=March+1991&amp;rft.pages=p.%26nbsp%3B195&amp;rft_id=http%3A%2F%2Fwww.validlab.com%2Fgoldberg%2Fpaper.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-goldberg-17">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-goldberg_17-0">^</a></b></span> <span class="reference-text"><span class="citation Journal">Goldberg, David (1991). <a rel="nofollow" class="external text" href="http://docs.sun.com/source/806-3568/ncg_goldberg.html">"What Every Computer Scientist Should Know About Floating-Point Arithmetic"</a>. <i>ACM Computing Surveys</i> <b>23</b>: 5–48. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F103162.103163">10.1145/103162.103163</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.sun.com/source/806-3568/ncg_goldberg.html">http://docs.sun.com/source/806-3568/ncg_goldberg.html</a></span><span class="reference-accessdate">. Retrieved 2 September 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=What+Every+Computer+Scientist+Should+Know+About+Floating-Point+Arithmetic&amp;rft.jtitle=ACM+Computing+Surveys&amp;rft.aulast=Goldberg&amp;rft.aufirst=David&amp;rft.au=Goldberg%2C%26%2332%3BDavid&amp;rft.date=1991&amp;rft.volume=23&amp;rft.pages=5%E2%80%9348&amp;rft_id=info:doi/10.1145%2F103162.103163&amp;rft_id=http%3A%2F%2Fdocs.sun.com%2Fsource%2F806-3568%2Fncg_goldberg.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-18">^</a></b></span> <span class="reference-text">The enormous complexity of modern division algorithms once led to a famous error. An early version of the Intel Pentium chip was shipped with a division instruction that, on rare occasions, gave slightly incorrect results. Many computers had been shipped before the error was discovered. Until the defective computers were replaced, patched versions of compilers were developed that could avoid the failing cases. See <i><a href="http://en.m.wikipedia.org/wiki/Pentium_FDIV_bug" title="Pentium FDIV bug">Pentium FDIV bug</a></i>.</span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (1 October 1997). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF">"Lecture Notes on the Status of IEEE Standard 754 for Binary Floating-Point Arithmetic"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF">http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lecture+Notes+on+the+Status+of+IEEE+Standard+754+for+Binary+Floating-Point+Arithmetic&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=1+October+1997&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2FIEEE754.PDF&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html">"Intel® 64 and IA-32 Architectures Software Developers' Manuals. Volume 1. section D.3.2.1"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html">http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Intel%C2%AE+64+and+IA-32+Architectures+Software+Developers%27+Manuals.+Volume+1.+section+D.3.2.1&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.intel.com%2Fcontent%2Fwww%2Fus%2Fen%2Fprocessors%2Farchitectures-software-developer-manuals.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-21">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (1 October 1997). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF">"Lecture Notes on the Status of IEEE Standard 754 for Binary Floating-Point Arithmetic (page 9)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF">http://www.cs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lecture+Notes+on+the+Status+of+IEEE+Standard+754+for+Binary+Floating-Point+Arithmetic+%28page+9%29&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=1+October+1997&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2FIEEE754.PDF&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-22">^</a></b></span> <span class="reference-text">But an attempted computation of cos(π) yields −1 exactly. Since the derivative is nearly zero near π, the effect of the inaccuracy in the argument is far smaller than the spacing of the floating-point numbers around −1, and the rounded result is exact.</span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-23">^</a></b></span> <span class="reference-text"><span class="citation Journal">Richard Harris (October 2010). <a rel="nofollow" class="external text" href="http://accu.org/index.php/journals/1702">"You're Going To Have To Think!"</a>. <i><a href="http://en.m.wikipedia.org/wiki/Overload_(magazine)" title="Overload (magazine)">Overload</a></i> (<a rel="nofollow" class="external text" href="http://accu.org/var/uploads/journals/overload99.pdf">99</a>): 5–10. <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/1354-3172">1354-3172</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://accu.org/index.php/journals/1702">http://accu.org/index.php/journals/1702</a></span><span class="reference-accessdate">. Retrieved 24 September 2011</span>. "Far more worrying is cancellation error which can yield catastrophic loss of precision."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=You%27re+Going+To+Have+To+Think%21&amp;rft.jtitle=%5B%5BOverload+%28magazine%29%7COverload%5D%5D&amp;rft.aulast=Richard+Harris&amp;rft.au=Richard+Harris&amp;rft.date=October+2010&amp;rft.issue=%5Bhttp%3A%2F%2Faccu.org%2Fvar%2Fuploads%2Fjournals%2Foverload99.pdf+99%5D&amp;rft.pages=5%26ndash%3B10&amp;rft.issn=1354-3172&amp;rft_id=http%3A%2F%2Faccu.org%2Findex.php%2Fjournals%2F1702&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-debug-24">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-debug_24-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (3 August 2011). <a rel="nofollow" class="external text" href="http://www.eecs.berkeley.edu/~wkahan/Boulder.pdf">"Desperately Needed Remedies for the Undebuggability of Large Floating-Point Computations in Science and Engineering"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.eecs.berkeley.edu/~wkahan/Boulder.pdf">http://www.eecs.berkeley.edu/~wkahan/Boulder.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Desperately+Needed+Remedies+for+the+Undebuggability+of+Large+Floating-Point+Computations+in+Science+and+Engineering&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=3+August+2011&amp;rft_id=http%3A%2F%2Fwww.eecs.berkeley.edu%2F%7Ewkahan%2FBoulder.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-25">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-25">^</a></b></span> <span class="reference-text">Kahan notes: "Except in extremely uncommon situations, extra-precise arithmetic generally attenuates risks due to roundoff at far less cost than the price of a competent error-analyst."</span>
+</li>
+<li id="cite_note-26">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-26">^</a></b></span> <span class="reference-text">note: the Taylor expansion of this function demonstrates that it is well-conditioned near 1: A(x) = 1 – (x–1)/2 + (x–1)^2/12 – (x–1)^4/720 + (x–1)^6/30240 – (x–1)^8/1209600 + ... for |x–1| &lt; π</span>
+</li>
+<li id="cite_note-27">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-27">^</a></b></span> <span class="reference-text">if long double is IEEE quad precision then full double precision is retained; if long double is IEEE double extended precision then additional, but not full, precision is retained</span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-28">^</a></b></span> <span class="reference-text"><span class="citation book">Higham, Nicholas (2002). <i>"Designing stable algorithms" in Accuracy and Stability of Numerical Algorithms (2 ed)</i>. SIAM. pp. 27–28.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%22Designing+stable+algorithms%22+in+Accuracy+and+Stability+of+Numerical+Algorithms+%282+ed%29&amp;rft.aulast=Higham&amp;rft.aufirst=Nicholas&amp;rft.au=Higham%2C%26%2332%3BNicholas&amp;rft.date=2002&amp;rft.pages=pp.%26nbsp%3B27%E2%80%9328&amp;rft.pub=SIAM&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-kahan_maths-29">
+<span class="mw-cite-backlink">^ <a href="Floating-point_number#cite_ref-kahan_maths_29-0"><sup><i><b>a</b></i></sup></a> <a href="Floating-point_number#cite_ref-kahan_maths_29-1"><sup><i><b>b</b></i></sup></a> <a href="Floating-point_number#cite_ref-kahan_maths_29-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web">William Kahan. <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf">""Four Rules of Thumb for Best Use of Modern Floating-point Hardware" in Marketing versus Mathematics"</a>. p. 47<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf">http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=%22Four+Rules+of+Thumb+for+Best+Use+of+Modern+Floating-point+Hardware%22+in+Marketing+versus+Mathematics&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.pages=p.%26nbsp%3B47&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FMktgMath.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-30">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-30">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (12 February 1981). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf">"Why do we need a floating-point arithmetic standard? (page 26)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf">http://www.cs.berkeley.edu/~wkahan/ieee754status/why-ieee.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Why+do+we+need+a+floating-point+arithmetic+standard%3F+%28page+26%29&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=12+February+1981&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2Fwhy-ieee.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-31">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-31">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (transcribed by David Bindel) (4 June 2001). <a rel="nofollow" class="external text" href="http://www.cims.nyu.edu/~dbindel/class/cs279/notes-06-04.pdf">"Lecture notes of System Support for Scientific Computation"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cims.nyu.edu/~dbindel/class/cs279/notes-06-04.pdf">http://www.cims.nyu.edu/~dbindel/class/cs279/notes-06-04.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lecture+notes+of+System+Support+for+Scientific+Computation&amp;rft.atitle=&amp;rft.aulast=William+Kahan+%28transcribed+by+David+Bindel%29&amp;rft.au=William+Kahan+%28transcribed+by+David+Bindel%29&amp;rft.date=4+June+2001&amp;rft_id=http%3A%2F%2Fwww.cims.nyu.edu%2F%7Edbindel%2Fclass%2Fcs279%2Fnotes-06-04.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-32">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-32">^</a></b></span> <span class="reference-text"><span class="citation web">Prof. W. Kahan (27 August 2000). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf">"Marketing versus Mathematics (p 15)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf">http://www.cs.berkeley.edu/~wkahan/MktgMath.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Marketing+versus+Mathematics+%28p+15%29&amp;rft.atitle=&amp;rft.aulast=Prof.+W.+Kahan&amp;rft.au=Prof.+W.+Kahan&amp;rft.date=27+August+2000&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FMktgMath.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-33">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-33">^</a></b></span> <span class="reference-text"><span class="citation web">Prof. W. Kahan (5 July 2005). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ARITH_17.pdf">"Floating-Point Arithmetic Besieged by "Business Decisions": Keynote Address for the IEEE-Sponsored ARITH 17 Symposium on Computer Arithmetic"</a>. p. 6<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ARITH_17.pdf">http://www.cs.berkeley.edu/~wkahan/ARITH_17.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Floating-Point+Arithmetic+Besieged+by+%22Business+Decisions%22%3A+Keynote+Address+for+the+IEEE-Sponsored+ARITH+17+Symposium+on+Computer+Arithmetic&amp;rft.atitle=&amp;rft.aulast=Prof.+W.+Kahan&amp;rft.au=Prof.+W.+Kahan&amp;rft.date=5+July+2005&amp;rft.pages=p.%26nbsp%3B6&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FARITH_17.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-34">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-34">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://speleotrove.com/decimal/">"General Decimal Arithmetic"</a>. Speleotrove.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://speleotrove.com/decimal/">http://speleotrove.com/decimal/</a></span><span class="reference-accessdate">. Retrieved 25 April 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=General+Decimal+Arithmetic&amp;rft.atitle=&amp;rft.pub=Speleotrove.com&amp;rft_id=http%3A%2F%2Fspeleotrove.com%2Fdecimal%2F&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-35">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-35">^</a></b></span> <span class="reference-text"><span class="citation web">Tom Christiansen, Nathan Torkington, and others (2006). <a rel="nofollow" class="external text" href="http://perldoc.perl.org/5.8.8/perlfaq4.html#Why-is-int%28%29-broken?">"perlfaq4 / Why is int() broken?"</a>. perldoc.perl.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://perldoc.perl.org/5.8.8/perlfaq4.html#Why-is-int%28%29-broken">http://perldoc.perl.org/5.8.8/perlfaq4.html#Why-is-int%28%29-broken</a>?</span><span class="reference-accessdate">. Retrieved 11 January 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=perlfaq4+%2F+Why+is+int%28%29+broken%3F&amp;rft.atitle=&amp;rft.aulast=Tom+Christiansen%2C+Nathan+Torkington%2C+and+others&amp;rft.au=Tom+Christiansen%2C+Nathan+Torkington%2C+and+others&amp;rft.date=2006&amp;rft.pub=perldoc.perl.org&amp;rft_id=http%3A%2F%2Fperldoc.perl.org%2F5.8.8%2Fperlfaq4.html%23Why-is-int%2528%2529-broken%3F&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-36">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-36">^</a></b></span> <span class="reference-text"><span class="citation book">Higham, Nicholas (2002). <i>"Subtleties of floating point arithmetic" in Accuracy and Stability of Numerical Algorithms (2 ed)</i>. SIAM. p. 493.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%22Subtleties+of+floating+point+arithmetic%22+in+Accuracy+and+Stability+of+Numerical+Algorithms+%282+ed%29&amp;rft.aulast=Higham&amp;rft.aufirst=Nicholas&amp;rft.au=Higham%2C%26%2332%3BNicholas&amp;rft.date=2002&amp;rft.pages=p.%26nbsp%3B493&amp;rft.pub=SIAM&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-37">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-37">^</a></b></span> <span class="reference-text"><span class="citation Journal">Jonathan Richard Shewchuk (1997). <a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~quake/robust.html"><i>Adaptive Precision Floating-Point Arithmetic and Fast Robust Geometric Predicates, Discrete &amp; Computational Geometry 18:305-363</i></a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.cmu.edu/~quake/robust.html">http://www.cs.cmu.edu/~quake/robust.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Adaptive+Precision+Floating-Point+Arithmetic+and+Fast+Robust+Geometric+Predicates%2C+Discrete+%26+Computational+Geometry+18%3A305-363&amp;rft.aulast=Jonathan+Richard+Shewchuk&amp;rft.au=Jonathan+Richard+Shewchuk&amp;rft.date=1997&amp;rft_id=http%3A%2F%2Fwww.cs.cmu.edu%2F%7Equake%2Frobust.html&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-38">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-38">^</a></b></span> <span class="reference-text"><span class="citation web">Prof. W. Kahan and Ms. Melody Y. Ivory (3 July 1997). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/Cantilever.pdf">"Roundoff Degrades an Idealized Cantilever"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/Cantilever.pdf">http://www.cs.berkeley.edu/~wkahan/Cantilever.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Roundoff+Degrades+an+Idealized+Cantilever&amp;rft.atitle=&amp;rft.aulast=Prof.+W.+Kahan+and+Ms.+Melody+Y.+Ivory&amp;rft.au=Prof.+W.+Kahan+and+Ms.+Melody+Y.+Ivory&amp;rft.date=3+July+1997&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FCantilever.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-39">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-39">^</a></b></span> <span class="reference-text"><span class="citation book">Higham, Nicholas (2002). <i>Summation in "Subtleties of floating point arithmetic" in Accuracy and Stability of Numerical Algorithms (2 ed)</i>. SIAM. pp. 110–123.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Summation+in+%22Subtleties+of+floating+point+arithmetic%22+in+Accuracy+and+Stability+of+Numerical+Algorithms+%282+ed%29&amp;rft.aulast=Higham&amp;rft.aufirst=Nicholas&amp;rft.au=Higham%2C%26%2332%3BNicholas&amp;rft.date=2002&amp;rft.pages=pp.%26nbsp%3B110%E2%80%93123&amp;rft.pub=SIAM&amp;rfr_id=info:sid/en.wikipedia.org:Floating_point"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-40">
+<span class="mw-cite-backlink"><b><a href="Floating-point_number#cite_ref-40">^</a></b></span> <span class="reference-text">The equivalence of the two forms can be verified algebraically by noting that the <a href="http://en.m.wikipedia.org/wiki/Denominator" title="Denominator" class="mw-redirect">denominator</a> of the fraction in the second form is the <a href="http://en.m.wikipedia.org/wiki/Conjugate_(algebra)" title="Conjugate (algebra)">conjugate</a> of the <a href="http://en.m.wikipedia.org/wiki/Numerator" title="Numerator" class="mw-redirect">numerator</a> of the first. By multiplying the top and bottom of the first expression by this conjugate, one obtains the second expression.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<i><a rel="nofollow" class="external text" href="http://download.oracle.com/docs/cd/E19422-01/819-3693/ncg_goldberg.html">What Every Computer Scientist Should Know About Floating-Point Arithmetic</a></i>, by David Goldberg, published in the March, 1991 issue of Computing Surveys.</li>
+<li>Nicholas Higham. <i>Accuracy and Stability of Numerical Algorithms</i>, Second Edition. SIAM, 2002. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0898713552" class="internal mw-magiclink-isbn">ISBN 0-89871-355-2</a>.</li>
+<li>Gene F. Golub and Charles F. van Loan. <i>Matrix Computations</i>, Third Edition. Johns Hopkins University Press, 1986. ISBN 0-8018-5413.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a>. <i>The Art of Computer Programming</i>, Volume 2: <i>Seminumerical Algorithms</i>, Third Edition. Addison-Wesley, 1997. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0201896842" class="internal mw-magiclink-isbn">ISBN 0-201-89684-2</a>. Section 4.2: Floating Point Arithmetic, pp. 214–264.</li>
+<li>Press et al. <i><a href="http://en.m.wikipedia.org/wiki/Numerical_Recipes" title="Numerical Recipes">Numerical Recipes</a> in <a href="C++" title="C++">C++</a>. The Art of Scientific Computing</i>, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0521750334" class="internal mw-magiclink-isbn">ISBN 0-521-75033-4</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/James_H._Wilkinson" title="James H. Wilkinson">James H. Wilkinson</a>. <i>Rounding errors in algebraic processes</i>. 1963. -- Classic influential treatises on floating point arithmetic.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/James_H._Wilkinson" title="James H. Wilkinson">James H. Wilkinson</a>. <i>The Algebraic Eigenvalue Problem</i>, Clarendon Press, 1965.</li>
+<li>P.H. Sterbenz. <i>Floating point computation</i>. 1974. -- Another classic book on floating point and <a href="http://en.m.wikipedia.org/wiki/Error_analysis#Error_analysis_in_numerical_modeling" title="Error analysis">error analysis</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>Kahan, William and Darcy, Joseph (2001). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/JAVAhurt.pdf">How Java's floating-point hurts everyone everywhere</a>. Retrieved 5 September 2003.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.mrob.com/pub/math/floatformats.html">Survey of Floating-Point Formats</a> This page gives a very brief summary of floating-point formats that have been used over the years.</li>
+<li>
+<i><a rel="nofollow" class="external text" href="http://hal.archives-ouvertes.fr/hal-00128124/en/">The pitfalls of verifying floating-point computations</a></i>, by David Monniaux, also printed in <i><a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> Transactions on programming languages and systems (TOPLAS)</i>, May 2008: a compendium of non-intuitive behaviours of floating-point on popular architectures, with implications for program verification and testing</li>
+<li>
+<a rel="nofollow" class="external free" href="http://www.opencores.org">http://www.opencores.org</a> The OpenCores website contains open source floating point IP cores for the implementation of floating point operators in FPGA or ASIC devices. The project, double_fpu, contains verilog source code of a double precision floating point unit. The project, fpuvhdl, contains vhdl source code of a single precision floating point unit.</li>
+<li>
+<a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/aa289157(v=vs.71).aspx">http://msdn.microsoft.com/en-us/library/aa289157(v=vs.71).aspx</a> "Microsoft Visual C++ Floating-Point Optimization", by Eric Fleegal, MSDN, 2004</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Data_types" title="Template:Data types"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Data_types" title="Template talk:Data types"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Data_types&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Data_type" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Uninterpreted</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Bit" title="Bit">Bit</a></li>
+<li><a href="Byte" title="Byte">Byte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Numeric</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Signedness" title="Signedness">signedness</a></li>
+</ul>
+</li>
+<li><a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point</a></li>
+<li><strong class="selflink">Floating-point</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rational_data_type" title="Rational data type">Rational</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Bignum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interval_arithmetic" title="Interval arithmetic">Interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">Text</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li>
+<a href="String_(computer_science)" title="String (computer science)">String</a>
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">null-terminated</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">Address</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li>
+</ul>
+</li>
+<li><a href="Reference_(computer_science)" title="Reference (computer science)">Reference</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Composite_data_type" title="Composite data type">Composite</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li>
+</ul>
+</li>
+<li><a href="Array_data_type" title="Array data type">Array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">Associative array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_(computing)" title="List (computing)" class="mw-redirect">List</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaobject" title="Metaobject">Metaobject</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="Record_(computer_science)" title="Record (computer science)">Record</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Set_(computer_science)" title="Set (computer science)" class="mw-redirect">Set</a></li>
+<li>
+<a href="Union_(computer_science)" title="Union (computer science)">Union</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">Collection</a></li>
+<li><a href="Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphore</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_type" title="Top type">Top type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><a href="Void_type" title="Void type">Void</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">Protocol</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Interface_(computing)#Software_interfaces_in_object-oriented_languages" title="Interface (computing)">Interface</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaclass" title="Metaclass">Metaclass</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 30 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%81%D8%A7%D8%B5%D9%84%D8%A9_%D8%B9%D8%A7%D8%A6%D9%85%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Coma_flotant" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Pohybliv%C3%A1_%C5%99%C3%A1dov%C3%A1_%C4%8D%C3%A1rka" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Gleitkommazahl" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Ujukomaarv" lang="et" hreflang="et">eesti</a></li><li><a href="http://es.m.wikipedia.org/wiki/Coma_flotante" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Glitkomo" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%85%D9%85%DB%8C%D8%B2_%D8%B4%D9%86%D8%A7%D9%88%D8%B1" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Virgule_flottante" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Floating-point" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Numero_in_virgola_mobile" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A0%D7%A7%D7%95%D7%93%D7%94_%D7%A6%D7%A4%D7%94" lang="he" hreflang="he">עברית</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Lebeg%C5%91pontos_sz%C3%A1m%C3%A1br%C3%A1zol%C3%A1s" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Zwevendekommagetal" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%B5%AE%E5%8B%95%E5%B0%8F%E6%95%B0%E7%82%B9%E6%95%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Flyttall" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Liczba_zmiennoprzecinkowa" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Ponto_flutuante" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Virgul%C4%83_mobil%C4%83" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A7%D0%B8%D1%81%D0%BB%D0%BE_%D1%81_%D0%BF%D0%BB%D0%B0%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B9_%D0%B7%D0%B0%D0%BF%D1%8F%D1%82%D0%BE%D0%B9" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Float" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Pohybliv%C3%A1_r%C3%A1dov%C3%A1_%C4%8Diarka" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Plavajo%C4%8Da_vejica" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Liukuluku" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Flyttal" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%88%E0%B8%B8%E0%B8%94%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B8%95%E0%B8%B1%E0%B8%A7" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Kayan_nokta" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://vi.m.wikipedia.org/wiki/S%E1%BB%91_th%E1%BB%B1c_d%E1%BA%A5u_ph%E1%BA%A9y_%C4%91%E1%BB%99ng" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%B5%AE%E7%82%B9%E6%95%B0" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Floating-point_number&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Floating-point_number&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Floating+point&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

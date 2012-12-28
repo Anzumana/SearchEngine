@@ -1,0 +1,305 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Dev-C++ - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Dev-C++","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Dev-C%2B%2B" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Dev-C%2B%2B"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Dev-C++</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Dev-C++</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Dev-C%2B%2B_logo.png" class="image"><img alt="Dev-C++ logo.png" src="http://upload.wikimedia.org/wikipedia/commons/5/5d/Dev-C%2B%2B_logo.png" width="48" height="48"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Devcpp5110.png" class="image"><img alt="Devcpp5110.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Devcpp5110.png/250px-Devcpp5110.png" width="250" height="182" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Devcpp5110.png/375px-Devcpp5110.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Devcpp5110.png/500px-Devcpp5110.png 2x"></a><br><span style="">Dev-C++ showing its updated UI and new variable browsing options</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Bloodshed Software (till 2005), Orwell</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">5.3.0.2<br>
+/ October 24, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-24</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Development status</th>
+<td class="" style="">Active</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Delphi_programming_language" title="Delphi programming language" class="mw-redirect">Delphi</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> (alpha only)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style="">
+<span class="url"><a rel="nofollow" class="external text" href="http://orwelldevcpp.blogspot.com">orwelldevcpp.blogspot.com</a></span> (the new developer)<br><span class="url"><a rel="nofollow" class="external text" href="http://www.bloodshed.net">www.bloodshed.net</a></span> (the old developer)</td>
+</tr>
+</table>
+<p><b>Dev-C++</b> is a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free</a> <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) distributed under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> for programming in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>. <a href="http://en.m.wikipedia.org/wiki/MinGW" title="MinGW">MinGW</a>, a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free</a> compiler, is bundled with it. The IDE is written in <a href="http://en.m.wikipedia.org/wiki/Delphi_programming_language" title="Delphi programming language" class="mw-redirect">Delphi</a>.</p>
+<p>The project is hosted by <a href="http://en.m.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge</a>. Dev-C++ was originally developed by programmer Colin Laplace. Dev-C++ runs exclusively on <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>.</p>
+<p>Bloodshed Dev-C++ is a full-featured Integrated Development Environment (IDE) for the C and C++ programming languages. It uses the <a href="http://en.m.wikipedia.org/wiki/MinGW" title="MinGW">MinGW</a> or TDM-GCC 64bit port of the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> as its compiler. Dev-C++ can also be used in combination with <a href="http://en.m.wikipedia.org/wiki/Cygwin" title="Cygwin">Cygwin</a> or any other GCC-based compiler.<sup id="cite_ref-0" class="reference"><a href="Dev-C++#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>One additional aspect of Dev-C++ is its use of DevPaks, packaged extensions on the programming environment with additional libraries, templates, and utilities. DevPaks often contain, but are not limited to, <a href="Graphical_user_interface" title="Graphical user interface">GUI</a> utilities, including popular toolkits such as <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a>, <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a>, and <a href="http://en.m.wikipedia.org/wiki/FLTK" title="FLTK">FLTK</a>. Other DevPaks include libraries for more advanced function use.</p>
+<p>Dev-C++ is generally considered a Windows-only program, but there are attempts to create a Linux version: header files and path delimiters are switchable between platforms. More work needs to be done though.</p>
+<h2> <span class="mw-headline" id="Devpaks">Devpaks</span>
+</h2>
+<p>Users of Dev-C++ can download additional libraries, or packages of code that increase the scope and functionality of Dev-C++, such as graphics, compression, animation, sound support and many more. Users can create Devpaks and host them for free on the site. Also, they are not limited to use with Dev-C++. The site says "A typical devpak will work with any MinGW distribution (with any IDE for MinGW)".</p>
+<h2> <span class="mw-headline" id="Development_status">Development status</span>
+</h2>
+<p>The project was no longer noticeably active, with no news posted nor any updated versions released from February 22, 2005 to June 2011. In a 2006 forum post, lead developer Colin Laplace stated that he was busy with real-life issues and did not have time to continue development of Dev-C++.<sup id="cite_ref-1" class="reference"><a href="Dev-C++#cite_note-1"><span>[</span>2<span>]</span></a></sup> However there is a <a rel="nofollow" class="external text" href="http://wxdsgn.sourceforge.net/?q=node/19">development team</a> that has taken the Dev-C++ IDE and added new features such as support for multiple compilers and a RAD designer for <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a> applications. This IDE can be found under the name <a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a>.</p>
+<p>On June 30, 2011 an unofficial version 4.9.9.3 of Dev-C++ was released by an independent programmer,<sup id="cite_ref-2" class="reference"><a href="Dev-C++#cite_note-2"><span>[</span>3<span>]</span></a></sup> featuring the more recent GCC 4.5.2 compiler, Windows' SDK resources (Win32 and D3D), numerous bugfixes, and improved stability. On August 27, after five years of officially being in a beta stage, version 5.0 was released by the developer from Orwell's blog.<sup id="cite_ref-3" class="reference"><a href="Dev-C++#cite_note-3"><span>[</span>4<span>]</span></a></sup> This version also has its own separate SourceForge<sup id="cite_ref-4" class="reference"><a href="Dev-C++#cite_note-4"><span>[</span>5<span>]</span></a></sup> page since version 5.0.0.5, because the old developer isn't responding to combining requests.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Comparison_of_integrated_development_environments#C.2FC.2B.2B" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Dev-C++#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.bloodshed.net/index.html">bloodshed.net</a></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Dev-C++#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/dev-cpp/forums/forum/33286/topic/1334635">Dev-C++ / Discussion / Project Developers (Delphi):Is dev-cpp being actively developed?</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Dev-C++#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://orwelldevcpp.blogspot.com/2011/06/dev-c-4993-released.html">Orwell Dev-C++: Dev-C++ 4.9.9.3 released</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Dev-C++#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://orwelldevcpp.blogspot.com/2012/04/dev-c-5201-released.html">Orwell Dev-C++: Dev-C++ 5.2.0.1 released</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Dev-C++#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://sourceforge.net/projects/orwelldevcpp/">Orwell Dev-C++ | Free Development software downloads at SourceForge.net</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://sourceforge.net/projects/dev-cpp/">Dev-C++</a> on <a href="http://en.m.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge.net</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://orwelldevcpp.blogspot.com/">Orwell Dev-C++</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://sourceforge.net/projects/orwelldevcpp/">post-4.9.9.2 Dev-C++ releases</a> on <a href="http://en.m.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge.net</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://devpaks.org">DevPaks.org</a></li>
+<li><a rel="nofollow" class="external text" href="http://orwelldevcpp.blogspot.com/">Blog of post-4.9.9.2 releases</a></li>
+<li><a rel="nofollow" class="external text" href="http://wxdsgn.sourceforge.net/">wxDev-C++</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://sourceforge.net/projects/devcpp-portable/">Dev-C++ Portable</a> on <a href="http://en.m.wikipedia.org/wiki/SourceForge" title="SourceForge">SourceForge.net</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.nigels.com/glt/devpak/">GLUT Packages for Dev C++ users</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.paked.net/subject_pages/computer_science/Articles/installing_glut.htm">GLUT Installation for Dev C++</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><strong class="selflink">Dev-C++</strong></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 24 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bg.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="bg" hreflang="bg">български</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Orwell_Dev-C%2B%2B" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="he" hreflang="he">עברית</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%A1%E0%B5%86%E0%B4%B5%E0%B5%8D-%E0%B4%B8%E0%B4%BF%2B%2B" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://uz.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="uz" hreflang="uz">oʻzbekcha</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="ru" hreflang="ru">русский</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Dev-C%2B%2B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Dev-C%2B%2B&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Dev-C%2B%2B&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Dev-C%2B%2B&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

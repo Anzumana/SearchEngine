@@ -1,0 +1,338 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Internationalization and localization - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Internationalization and localization","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Internationalization_and_localization" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Internationalization+and+localization"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Internationalization and localization</h1>			
+<div class="dablink">For the term in economics, see <a href="http://en.m.wikipedia.org/wiki/Internationalization" title="Internationalization">Internationalization</a>.  For <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>-specified term, see <a href="http://en.m.wikipedia.org/wiki/Multilingual_User_Interface" title="Multilingual User Interface">Multilingual User Interface</a>.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/Localization_(disambiguation)" title="Localization (disambiguation)" class="mw-redirect">Localization (disambiguation)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:352px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Italian_localisation.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Italian_localisation.png/350px-Italian_localisation.png" width="350" height="263" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/97/Italian_localisation.png/525px-Italian_localisation.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/97/Italian_localisation.png/700px-Italian_localisation.png 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of software programs localized to <a href="http://en.m.wikipedia.org/wiki/Italian_language" title="Italian language">Italian</a>.</div>
+</div>
+</div>
+<p>In <a href="Computing" title="Computing">computing</a>, <b>internationalization and localization</b> <i>(<a href="http://en.m.wikipedia.org/wiki/American_and_British_English_spelling_differences#-ise.2C_-ize_.28-isation.2C_-ization.29" title="American and British English spelling differences">other correct spellings are</a> <b>internationalisation and localisation</b>)</i> are means of adapting <a href="http://en.m.wikipedia.org/wiki/Computer_software" title="Computer software" class="mw-redirect">computer software</a> to different languages, regional differences and technical requirements of a target market. Internationalization is the process of designing a software application so that it can be adapted to various languages and regions without engineering changes. Localization is the process of adapting internationalized software for a specific region or language by adding <a href="Locale" title="Locale">locale</a>-specific components and translating text.</p>
+<p>The terms are frequently abbreviated to the <a href="http://en.m.wikipedia.org/wiki/Numeronym" title="Numeronym">numeronyms</a> <b>i18n</b> (where 18 stands for the number of letters between the first <i>i</i> and last <i>n</i> in <i>internationalization</i>, a usage coined at <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a> in the 1970s or 80s)<sup id="cite_ref-1" class="reference"><a href="Internationalization_and_localization#cite_note-1"><span>[</span>1<span>]</span></a></sup> and <b>L10n</b> respectively, due to the length of the words. The capital L in L10n helps to distinguish it from the lowercase i in i18n<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2012">citation needed</span></a></i>]</sup>.</p>
+<p>Some companies, like <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a> and <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a>, use the term "globalization" for the combination of internationalization and localization.<sup id="cite_ref-2" class="reference"><a href="Internationalization_and_localization#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p><a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a><sup id="cite_ref-3" class="reference"><a href="Internationalization_and_localization#cite_note-3"><span>[</span>3<span>]</span></a></sup> defines Internationalization as a combination of World-Readiness and localization. World-Readiness is a developer task, which enables a product to be used with multiple scripts and cultures (globalization) and separating user interface resources in a localizable format (localizability, abbreviated to <b>L12y</b>).<sup id="cite_ref-4" class="reference"><a href="Internationalization_and_localization#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>This concept is also known as <b>NLS</b> (<b>National Language Support</b> or <b>Native Language Support</b>).</p>
+<h2> <span class="mw-headline" id="Nomenclature">Nomenclature</span>
+</h2>
+<p>The support of multiple languages by computer systems can be considered a continuum between localization ("L10n"), through multilingualization (or "m17n"), to internationalization ("i18n").</p>
+<ul>
+<li>A <b>localized</b> system has been adapted or converted for use in a particular <b><a href="Locale" title="Locale">locale</a></b> (other than the one it was originally developed for), including the language of the user interface (UI), input, and display, and features such as time/date display and currency. Each instance of the system only supports a single locale, and there is no explicit support for languages that are not part of that locale (although the character set may coincidentally be usable for other languages).</li>
+<li>
+<b>Multilingualized</b> software supports multiple languages for display and input, but has a single UI language which cannot be changed after installation of the software. Multi-locale support for other features like date, time, number, and currency formats varies as the system tends towards full <i>internationalization</i>. At present, most multi-lingual software relies for these features on the host operating system (e.g., Microsoft Windows or Mac OS X) of the machine on which the software runs, and may thus be able to support character sets for different languages within the same document. In general, a multilingualized system is intended for use in one specific locale, but is capable of handling multilingual content as data.</li>
+<li>An <b>internationalized</b> system is equipped for use in a range of "locales" (or by users of multiple languages), by allowing the co-existence of several languages and character sets for input, display, <i>and</i> UI. In particular, a system may not be considered internationalized in the fullest sense unless the UI language is selectable by the user at runtime. Full internationalization may extend beyond support for multiple languages and orthography to compliance with jurisdiction-specific legislation (in respect of copyright, for instance) and other non-linguistic conventions.</li>
+</ul>
+<p>The distinction arises because it is significantly more difficult to create a multi-lingual UI than simply to support the character sets and keyboards needed to express multiple languages. To internationalize a UI, every text string employed in interaction must be translated into all supported languages; then all output of literal strings, and literal parsing of input in UI code must be replaced by hooks to i18n libraries.</p>
+<p>It should be noted that "internationalized" does not necessarily mean that a system can be used absolutely anywhere, since simultaneous support for <i>all</i> possible locales is both practically almost impossible and commercially very hard to justify. In many cases an internationalized system includes full support only for the <a href="http://en.m.wikipedia.org/wiki/Most_spoken_languages" title="Most spoken languages" class="mw-redirect">most spoken languages</a>, plus any others of particular relevance to the application.</p>
+<h2> <span class="mw-headline" id="Scope">Scope</span>
+</h2>
+<p>Focal points of internationalization and localization efforts include:</p>
+<ul>
+<li>Language
+<ul>
+<li>Computer-encoded text
+<ul>
+<li>Alphabets/scripts; most recent systems use the <a href="Unicode" title="Unicode">Unicode</a> standard to solve many of the <a href="Character_encoding" title="Character encoding">character encoding</a> problems.</li>
+<li>Different systems of <a href="http://en.m.wikipedia.org/wiki/Numeral_(linguistics)" title="Numeral (linguistics)">numerals</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Writing_direction" title="Writing direction" class="mw-redirect">Writing direction</a> left to right in most European languages (e.g. <a href="http://en.m.wikipedia.org/wiki/German_language" title="German language">German</a>), right-to-left in Hebrew and Arabic, vertical in some Asian languages</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_text_layout" title="Complex text layout">Complex text layout</a></li>
+<li>Text processing differences, such as the concept of <a href="http://en.m.wikipedia.org/wiki/Capitalization" title="Capitalization">capitalization</a> which exists in some scripts and not in others, different <a href="http://en.m.wikipedia.org/wiki/Collation" title="Collation">text sorting</a> rules, etc.</li>
+<li>Plural forms in text output, which differ depending upon language<sup id="cite_ref-5" class="reference"><a href="Internationalization_and_localization#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+</li>
+</ul>
+</li>
+<li>Input
+<ul>
+<li>Enablement of keyboard shortcuts on any keyboard layout<sup id="cite_ref-6" class="reference"><a href="Internationalization_and_localization#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</li>
+</ul>
+</li>
+<li>Graphical representations of text (printed materials, online images containing text)</li>
+<li>Spoken (<a href="http://en.m.wikipedia.org/wiki/Sound" title="Sound">Audio</a>)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Subtitle_(captioning)" title="Subtitle (captioning)">Subtitling</a> of <a href="http://en.m.wikipedia.org/wiki/Film" title="Film">film</a> and <a href="http://en.m.wikipedia.org/wiki/Video" title="Video">video</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Culture" title="Culture">Culture</a>
+<ul>
+<li>Images and colors: issues of comprehensibility and cultural appropriateness</li>
+<li>Names and titles</li>
+<li>Government assigned numbers (such as the <a href="http://en.m.wikipedia.org/wiki/Social_Security_number" title="Social Security number">Social Security number</a> in the US, <a href="http://en.m.wikipedia.org/wiki/National_Insurance_number" title="National Insurance number">National Insurance number</a> in the UK, <a href="http://en.m.wikipedia.org/wiki/Isikukood" title="Isikukood" class="mw-redirect">Isikukood</a> in Estonia, and <a href="http://en.m.wikipedia.org/wiki/Resident_registration_number" title="Resident registration number">Resident registration number</a> in <a href="http://en.m.wikipedia.org/wiki/South_Korea" title="South Korea">South Korea</a>) and passports</li>
+<li>Telephone numbers, addresses and international <a href="http://en.m.wikipedia.org/wiki/Postal_code" title="Postal code">postal codes</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Currency" title="Currency">Currency</a> (symbols, positions of currency markers)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Weights_and_measures" title="Weights and measures" class="mw-redirect">Weights and measures</a></li>
+<li>Paper sizes</li>
+</ul>
+</li>
+<li>Writing <a href="http://en.m.wikipedia.org/wiki/Convention_(norm)" title="Convention (norm)">conventions</a>
+<ul>
+<li>Date/time format, including use of different calendars</li>
+<li>Time zones (<a href="http://en.m.wikipedia.org/wiki/Coordinated_Universal_Time" title="Coordinated Universal Time">UTC</a> in internationalized environments)</li>
+<li>Formatting of numbers (<a href="http://en.m.wikipedia.org/wiki/Decimal_separator" title="Decimal separator" class="mw-redirect">decimal separator</a>, digit grouping)</li>
+<li>Differences in symbols (e.g. quoting text using double-quotes (" "), as in English, or <a href="http://en.m.wikipedia.org/wiki/Guillemet" title="Guillemet">guillemets</a> (« »), as in French).</li>
+</ul>
+</li>
+<li>Any other aspect of the product or service that is subject to <a href="http://en.m.wikipedia.org/wiki/Compliance_(regulation)" title="Compliance (regulation)" class="mw-redirect">regulatory compliance</a>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Border_dispute" title="Border dispute" class="mw-redirect">Disputed borders</a> shown on maps (e.g. failing to show <a href="http://en.m.wikipedia.org/wiki/Kashmir" title="Kashmir">Kashmir</a> as Indian is a crime in <a href="http://en.m.wikipedia.org/wiki/India" title="India">India</a>)</li>
+</ul>
+</li>
+</ul>
+<p>The distinction between internationalization and localization is subtle but important. Internationalization is the adaptation of products for <i>potential</i> use virtually everywhere, while localization is the addition of special features for use in a <i>specific</i> <a href="Locale" title="Locale">locale</a>. Internationalization is done once per product, while localization is done once for each combination of product and locale. The processes are complementary, and must be combined to lead to the objective of a system that works globally. Subjects unique to localization include the following:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_translation" title="Language translation" class="mw-redirect">Language translation</a></li>
+<li>National varieties of languages (see <a href="http://en.m.wikipedia.org/wiki/Language_localization" title="Language localization" class="mw-redirect">language localization</a>)</li>
+<li>Special support for certain languages such as <a href="http://en.m.wikipedia.org/wiki/East_Asian_language" title="East Asian language" class="mw-redirect">East Asian languages</a>
+</li>
+<li>Local customs</li>
+<li>Local content</li>
+<li>Symbols</li>
+<li>Order of sorting (<a href="http://en.m.wikipedia.org/wiki/Collation" title="Collation">Collation</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aesthetics" title="Aesthetics">Aesthetics</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Culture#Culture_as_values.2C_norms.2C_and_artifacts" title="Culture">Cultural values</a> and <a href="http://en.m.wikipedia.org/wiki/Social_context" title="Social context" class="mw-redirect">social context</a>
+</li>
+<li>Differing laws/regulations (e.g. taxation laws, labour laws, etc.)</li>
+</ul>
+<h2> <span class="mw-headline" id="Business_process_for_internationalizing_software">Business process for internationalizing software</span>
+</h2>
+<p>In order to <i>internationalize</i> a product, it is important to look at a variety of markets that your product will foreseeably enter. Details such as field length for street addresses, unique format for the address, ability to make the <a href="http://en.m.wikipedia.org/wiki/Zip_code" title="Zip code" class="mw-redirect">zip code</a> field optional to address countries that do not have zip codes, plus the introduction of new registration flows that adhere to local laws are just some of the examples that make internationalization a complex project.<sup id="cite_ref-7" class="reference"><a href="Internationalization_and_localization#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>A broader approach takes into account cultural factors regarding for example the adaptation of the business process logic or the inclusion of individual cultural (behavioral) aspects.<sup id="cite_ref-8" class="reference"><a href="Internationalization_and_localization#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Coding_practice">Coding practice</span>
+</h2>
+<p>The current prevailing practice is for applications to place text in resource strings which are loaded during program execution as needed. These strings, stored in resource files, are relatively easy to translate. Programs are often built to reference resource libraries depending on the selected locale data. One <a href="http://en.m.wikipedia.org/wiki/Software_library" title="Software library" class="mw-redirect">software library</a> that aids this is <a href="http://en.m.wikipedia.org/wiki/Gettext" title="Gettext">gettext</a>. No prior internationalization need be in place.</p>
+<p>Thus to get an application to support multiple languages one would design the application to select the relevant language resource file at runtime. Resource files are translated to the required languages. This method tends to be application-specific and, at best, vendor-specific. The code required to manage date entry verification and many other locale-sensitive data types also must support differing locale requirements. Alternatively there is an emerging class of software which can localize an application without altering the underlying code in any way<sup id="cite_ref-9" class="reference"><a href="Internationalization_and_localization#cite_note-9"><span>[</span>9<span>]</span></a></sup> Modern development systems and operating systems include sophisticated libraries for international support of these types.</p>
+<p>Some tools help in detecting i18n issues and guiding software resolution of those issues, such as Lingoport's <a rel="nofollow" class="external text" href="http://www.globalyzer.com">Globalyzer</a><sup id="cite_ref-10" class="reference"><a href="Internationalization_and_localization#cite_note-10"><span>[</span>10<span>]</span></a></sup> or <a rel="nofollow" class="external text" href="http://www.parasoft.com">Parasoft Test</a>.<sup id="cite_ref-11" class="reference"><a href="Internationalization_and_localization#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Difficulties">Difficulties</span>
+</h2>
+<p>While translating existing text to other languages may seem easy, it is more difficult to maintain the parallel versions of texts throughout the life of the product. For instance, if a message displayed to the user is modified, all of the translated versions must be changed. This in turn results in a somewhat longer development cycle.</p>
+<p>Many localization issues (e.g. writing direction, text sorting) require more profound changes in the software than text translation. For example, <a href="http://en.m.wikipedia.org/wiki/OpenOffice.Org" title="OpenOffice.Org" class="mw-redirect">OpenOffice.Org</a> achieves this with compilation switches.</p>
+<p>To some degree (e.g. for <a href="http://en.m.wikipedia.org/wiki/Quality_assurance" title="Quality assurance">Quality assurance</a>), the development team needs someone who understands foreign languages and cultures and has a technical background. In large societies with one dominant language/culture, it may be difficult to find such a person.</p>
+<p>One example of the pitfalls of localization is the attempt made by Microsoft to keep some <a href="http://en.m.wikipedia.org/wiki/Keyboard_shortcuts" title="Keyboard shortcuts" class="mw-redirect">keyboard shortcuts</a> significant in local languages. This has resulted in some (but not all) programs in the Italian version of <a href="http://en.m.wikipedia.org/wiki/Microsoft_Office" title="Microsoft Office">Microsoft Office</a> using "CTRL + S" (<i>sottolineato</i>) as a replacement for "CTRL + U" (<a href="http://en.m.wikipedia.org/wiki/Underline" title="Underline">underline</a>), rather than the (almost) universal "Save" function.</p>
+<h2> <span class="mw-headline" id="Costs_and_benefits">Costs and benefits</span>
+</h2>
+<p>In a commercial setting, the benefit from localization is access to more markets. However, there are considerable costs involved, which go far beyond just engineering. First, software must generally be re-engineered to make it world-ready.</p>
+<p>Then, providing a localization package for a given language is in itself a non-trivial undertaking, requiring specialized technical writers to construct a culturally appropriate syntax for potentially complicated concepts, coupled with engineering resources to deploy and test the localization elements. Further, business operations must adapt to manage the production, storage and distribution of multiple discrete localized products, which are often being sold in completely different currencies, regulatory environments and tax regimes.</p>
+<p>Finally, sales, marketing and technical support must also facilitate their own operations in the new languages, in order to support customers for the localized products. Particularly for relatively small language populations, it may thus never be economically viable to offer a localized product. Even where large language populations could justify localization for a given product, and a product's internal structure already permits localization, a given software developer/publisher may lack the size and sophistication to manage the ancillary functions associated with operating in multiple locales. For example, Microsoft Windows 7 has 96 language packs available.<sup id="cite_ref-12" class="reference"><a href="Internationalization_and_localization#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>One alternative, most often used by <a href="http://en.m.wikipedia.org/wiki/Open_source_software" title="Open source software" class="mw-redirect">open source software</a> communities, is self-localization by teams of end-users and volunteers. The <a href="http://en.m.wikipedia.org/wiki/KDE3" title="KDE3" class="mw-redirect">KDE3</a> project, for example, has been translated into over 100 languages, and <a href="http://en.m.wikipedia.org/wiki/KDE4" title="KDE4" class="mw-redirect">KDE4</a> is available in 68.<sup id="cite_ref-13" class="reference"><a href="Internationalization_and_localization#cite_note-13"><span>[</span>13<span>]</span></a></sup> However, self-localization requires that the underlying product first be engineered to support such activities, which is a non-trivial endeavor.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SDL_Passolo" title="SDL Passolo">SDL Passolo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Alchemy_Catalyst" title="Alchemy Catalyst">Alchemy Catalyst</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bidirectional_script_support" title="Bidirectional script support" class="mw-redirect">Bidirectional script support</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CJK" title="CJK" class="mw-redirect">CJK</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Computer_russification" title="Computer russification" class="mw-redirect">Computer russification</a>, localization into Russian language</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Game_localization" title="Game localization">Game localization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Global_information_system" title="Global information system">Global information system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Globalization" title="Globalization">Globalization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Globalization_Management_System" title="Globalization Management System" class="mw-redirect">Globalization Management System</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Globalocal" title="Globalocal">Globalocal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Glocalization" title="Glocalization">Glocalization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Input_method_editor" title="Input method editor" class="mw-redirect">Input method editor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Components_for_Unicode" title="International Components for Unicode">International Components for Unicode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_code" title="Language code">Language code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_industry" title="Language industry">Language industry</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_localisation" title="Language localisation">Language localization</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Multilanguage_Electronic_Phototypesetting_System" title="Multilanguage Electronic Phototypesetting System">Multilanguage Electronic Phototypesetting System</a> (MEPS)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Pseudolocalization" title="Pseudolocalization">Pseudolocalization</a>, a <a href="http://en.m.wikipedia.org/wiki/Software_testing" title="Software testing">software testing</a> method for testing a software product's readiness for localization.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Punycode" title="Punycode">Punycode</a>, translating Unicode into the character sets for network host names</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Region_code" title="Region code" class="mw-redirect">Region code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">Separation of concerns</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transifex" title="Transifex">Transifex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Translation" title="Translation">Translation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Website_localization" title="Website localization">Website localization</a></li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/37px-Wiktionary-logo-en.svg.png" width="37" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Look up <i><b><a href="http://en.wiktionary.org/wiki/internationalization" class="extiw" title="wiktionary:internationalization">internationalization</a></b></i> or <i><b><a href="http://en.wiktionary.org/wiki/localization" class="extiw" title="wiktionary:localization">localization</a></b></i> in Wiktionary, the free dictionary.</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/FOSS_Localization" class="extiw" title="wikibooks:FOSS Localization">FOSS Localization</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.linguanext.net/blog/">Localization Blog</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.w3.org/2001/12/Glossary#I18N">"Glossary of W3C Jargon"</a>. <a href="http://en.m.wikipedia.org/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">World Wide Web Consortium</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.w3.org/2001/12/Glossary#I18N">http://www.w3.org/2001/12/Glossary#I18N</a></span><span class="reference-accessdate">. Retrieved 2008-10-13</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Glossary+of+W3C+Jargon&amp;rft.atitle=&amp;rft.pub=%5B%5BWorld+Wide+Web+Consortium%5D%5D&amp;rft_id=http%3A%2F%2Fwww.w3.org%2F2001%2F12%2FGlossary%23I18N&amp;rfr_id=info:sid/en.wikipedia.org:Internationalization_and_localization"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ibm.com/software/globalization/">IBM Globalization web site</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/goglobal/bb688110.aspx">Microsoft "Globalization Step-by-Step" guide</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/goglobal/bb688112.aspx">MSDN.microsoft.com</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.gnu.org/software/hello/manual/gettext/Plural-forms.html">GNU.org</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.i18n.ro/are-we-supposed-to-localize-keyboard-shortcuts/">Blog.i18n.ro</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.svpma.org/newsarch0103.html">Internationalizing a Product: Product Internationalization 101</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-8">^</a></b></span> <span class="reference-text">Pawlowski, J.M. (2008): Culture Profiles: Facilitating Global Learning and Knowledge Sharing. Proc. of ICCE 2008, Taiwan, Nov. 2008. <a rel="nofollow" class="external text" href="http://users.jyu.fi/~japawlow/culture_profiles_pawlowski_draft20080901.pdf">Draft Version</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.linguanext.net/us/products/linguify.html">LinguaNext Linguify</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://globalyzer.com">Globalyzer.com</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.parasoft.com">Parasoft.com</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://windows.microsoft.com/en-US/windows/downloads/languages">See</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Internationalization_and_localization#cite_ref-13">^</a></b></span> <span class="reference-text">For the current list see <a rel="nofollow" class="external text" href="http://l10n.kde.org/teams-list.php">KDE.org</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<i>.NET Internationalization: The Developer's Guide to Building Global Windows and Web Applications</i>, Guy Smith-Ferrier, Addison-Wesley Professional, 7 August 2006. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0321341384" class="internal mw-magiclink-isbn">ISBN 0-321-34138-4</a>
+</li>
+<li>
+<i>A Practical Guide to Localization</i>, Bert Esselink, John Benjamins Publishing, [2000]. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1588110060" class="internal mw-magiclink-isbn">ISBN 1-58811-006-0</a>
+</li>
+<li>
+<span class="new" title="Lydia Ash (page does not exist)">Lydia Ash</span>: <i>The Web Testing Companion: The Insider's Guide to Efficient and Effective Tests</i>, Wiley, May 2, 2003. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0471430218" class="internal mw-magiclink-isbn">ISBN 0-471-43021-8</a>
+</li>
+<li>
+<i>Business Without Borders: A Strategic Guide to Global Marketing</i>, Donald A. DePalma, Globa Vista Press [2004]. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9780976516903" class="internal mw-magiclink-isbn">ISBN 978-0-9765169-0-3</a>
+</li>
+</ul>
+</div>
+<p><span id="interwiki-pt-fa"></span></p>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 30 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%AA%D9%88%D8%B7%D9%8A%D9%86_%D9%88%D8%B9%D9%88%D9%84%D9%85%D8%A9_(%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA%D9%8A%D8%A9)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://zh-min-nan.m.wikipedia.org/wiki/Kok-ch%C3%A8-h%C3%B2a_kap_ch%C4%81i-t%C4%93-h%C3%B2a" lang="zh-min-nan" hreflang="zh-min-nan">Bân-lâm-gú</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Internacionalitzaci%C3%B3_i_localitzaci%C3%B3" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Internacionalizace_a_lokalizace" lang="cs" hreflang="cs">česky</a></li><li><a href="http://cy.m.wikipedia.org/wiki/Rhyngwladoli_a_lleoleiddio" lang="cy" hreflang="cy">Cymraeg</a></li><li><a href="http://de.m.wikipedia.org/wiki/Internationalisierung_(Softwareentwicklung)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Internacionalizaci%C3%B3n_y_localizaci%C3%B3n" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Internaciigo" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A8%DB%8C%D9%86%E2%80%8C%D8%A7%D9%84%D9%85%D9%84%D9%84%DB%8C%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C_%D9%88_%D9%85%D8%AD%D9%84%DB%8C%E2%80%8C%D8%B3%D8%A7%D8%B2%DB%8C" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Internationalisation_(informatique)" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Internacionalizaci%C3%B3n_e_localizaci%C3%B3n" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EA%B5%AD%EC%A0%9C%ED%99%94%EC%99%80_%EC%A7%80%EC%97%AD%ED%99%94" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Internasionalisasi_dan_Pelokalan" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Internazionalizzazione_e_localizzazione" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9C%D7%95%D7%A7%D7%9C%D7%99%D7%96%D7%A6%D7%99%D7%94" lang="he" hreflang="he">עברית</a></li><li><a href="http://jv.m.wikipedia.org/wiki/Internasionalisasi" lang="jv" hreflang="jv">Basa Jawa</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Internacionalizacija" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Internacionaliz%C3%A1l%C3%A1s_%C3%A9s_honos%C3%ADt%C3%A1s" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mr.m.wikipedia.org/wiki/%E0%A4%86%E0%A4%82%E0%A4%A4%E0%A4%B0%E0%A4%B0%E0%A4%BE%E0%A4%B7%E0%A5%8D%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AF%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A4%A3_%E0%A4%86%E0%A4%A3%E0%A4%BF_%E0%A4%B8%E0%A5%8D%E0%A4%A5%E0%A4%BE%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%80%E0%A4%95%E0%A4%B0%E0%A4%A3" lang="mr" hreflang="mr">मराठी</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%8C%96%E3%81%A8%E5%9C%B0%E5%9F%9F%E5%8C%96" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Internasjonalisering_og_lokalisering" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Internacjonalizacja_(informatyka)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Internacionaliza%C3%A7%C3%A3o_(software)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Internacionaliz%C3%A1cia_a_lokaliz%C3%A1cia" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Kansainv%C3%A4list%C3%A4minen_ja_lokalisointi" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Internationalisering" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%9A%E0%AE%B0%E0%AF%8D%E0%AE%B5%E0%AE%A4%E0%AF%87%E0%AE%9A%E0%AE%AE%E0%AE%AF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B2%E0%AF%81%E0%AE%AE%E0%AF%8D_%E0%AE%89%E0%AE%B3%E0%AF%8D%E0%AE%B3%E0%AF%82%E0%AE%B0%E0%AF%8D%E0%AE%AE%E0%AE%AF%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%9F%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AE%B2%E0%AF%81%E0%AE%AE%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%86%D1%96%D0%BE%D0%BD%D0%B0%D0%BB%D1%96%D0%B7%D0%B0%D1%86%D1%96%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E4%B8%8E%E6%9C%AC%E5%9C%B0%E5%8C%96" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Internationalization_and_localization&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Internationalization_and_localization&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Internationalization+and+localization&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

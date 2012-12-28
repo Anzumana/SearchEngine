@@ -1,0 +1,808 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Character encoding - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Character encoding","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Character_encoding" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Character+encoding"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Character encoding</h1>			
+<p>A <b>character encoding</b> system consists of a <a href="http://en.m.wikipedia.org/wiki/Code" title="Code">code</a> that pairs each <a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">character</a> from a given repertoire with something else—such as a <a href="Bit" title="Bit">bit</a> pattern, sequence of natural <a href="http://en.m.wikipedia.org/wiki/Number" title="Number">numbers</a>, <a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octets</a>, or electrical pulses—in order to facilitate the transmission of <a href="http://en.m.wikipedia.org/wiki/Data" title="Data">data</a> (generally numbers or text) through <a href="http://en.m.wikipedia.org/wiki/Telecommunication_network" title="Telecommunication network" class="mw-redirect">telecommunication networks</a> or for <a href="http://en.m.wikipedia.org/wiki/Computer_data_storage" title="Computer data storage">data storage</a>. Other terms such as <b>character set</b>, <b>character map</b>, <b>codeset</b>, and <b>code page</b> are used almost interchangeably, but these terms have related but distinct meanings described below.</p>
+<p>Early character codes associated with the optical or electrical <a href="http://en.m.wikipedia.org/wiki/Telegraphy" title="Telegraphy">telegraph</a> could only represent a subset of the characters used in written language, sometimes restricted to upper case letters, numerals and some punctuation only. The low cost of digital representation of data in modern computer systems allows more elaborate character codes (such as <a href="Unicode" title="Unicode">Unicode</a>) which represent more of the characters used in many written languages. Character encoding using internationally-accepted standards permits worldwide interchange of text in electronic form.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Common examples of character encoding systems include <a href="http://en.m.wikipedia.org/wiki/Morse_code" title="Morse code">Morse code</a>, the <a href="http://en.m.wikipedia.org/wiki/Baudot_code" title="Baudot code">Baudot code</a>, the <a href="http://en.m.wikipedia.org/wiki/American_Standard_Code_for_Information_Interchange" title="American Standard Code for Information Interchange" class="mw-redirect">American Standard Code for Information Interchange</a> (<a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a>) and <a href="Unicode" title="Unicode">Unicode</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Morse_code" title="Morse code">Morse code</a> was introduced in the 1840s and is used to encode each letter of the <a href="http://en.m.wikipedia.org/wiki/Latin_alphabet" title="Latin alphabet">Latin alphabet</a>, each <a href="http://en.m.wikipedia.org/wiki/Arabic_numeral" title="Arabic numeral" class="mw-redirect">Arabic numeral</a>, and some other characters via a series of long and short presses of a <a href="http://en.m.wikipedia.org/wiki/Telegraph_key" title="Telegraph key">telegraph key</a>. Representations of characters encoded using Morse code varied in length.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Baudot_code" title="Baudot code">Baudot code</a> was created by <a href="http://en.m.wikipedia.org/wiki/%C3%89mile_Baudot" title="Émile Baudot">Émile Baudot</a> in 1870, patented in 1874, modified by Donald Murray in 1901, and standardized by CCITT as International Telegraph Alphabet No. 2 (ITA2) in 1930.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> was introduced in 1963 and is a 7-bit encoding scheme used to encode letters, numerals, symbols, and device <a href="http://en.m.wikipedia.org/wiki/Control_code" title="Control code" class="mw-redirect">control codes</a> as fixed-length codes using <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">integers</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a>'s <a href="http://en.m.wikipedia.org/wiki/Extended_Binary_Coded_Decimal_Interchange_Code" title="Extended Binary Coded Decimal Interchange Code" class="mw-redirect">Extended Binary Coded Decimal Interchange Code</a> (usually abbreviated <a href="http://en.m.wikipedia.org/wiki/EBCDIC" title="EBCDIC">EBCDIC</a>) is an 8-bit encoding scheme developed in 1963.</p>
+<p>The limitations of such sets soon became apparent, and a number of ad hoc methods were developed to extend them. The need to support more <a href="http://en.m.wikipedia.org/wiki/Writing_system" title="Writing system">writing systems</a> for different languages, including the <a href="http://en.m.wikipedia.org/wiki/CJK_characters" title="CJK characters">CJK</a> family of East Asian scripts, required support for a far larger number of characters and demanded a systematic approach to character encoding rather than the previous ad hoc approaches.</p>
+<p>Early binary repertoires include:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bacon%27s_cipher" title="Bacon's cipher">Bacon's cipher</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Braille" title="Braille">Braille</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_maritime_signal_flags" title="International maritime signal flags">International maritime signal flags</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Chinese_telegraph_code" title="Chinese telegraph code">Chinese telegraph code</a> (<a href="http://en.m.wikipedia.org/wiki/Hans_Schjellerup" title="Hans Schjellerup">Hans Schjellerup</a>, 1869, modified 1872 and following)
+<dl>
+<dd>Encoding of Chinese characters as 4-digit decimals.</dd>
+</dl>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Code_unit">Code unit</span>
+</h2>
+<p>The code unit, is a unit used for character encoding.</p>
+<ul>
+<li>With <a href="http://en.m.wikipedia.org/wiki/US-ASCII" title="US-ASCII" class="mw-redirect">US-ASCII</a>, code unit is 7 bits.</li>
+<li>With <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a>, code unit is 8 bits.</li>
+<li>With <a href="http://en.m.wikipedia.org/wiki/EBCDIC" title="EBCDIC">EBCDIC</a>, code unit is 8 bits.</li>
+<li>With <a href="http://en.m.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a>, code unit is 16 bits.</li>
+<li>With <a href="http://en.m.wikipedia.org/wiki/UTF-32" title="UTF-32">UTF-32</a>, code unit is 32 bits.</li>
+</ul>
+<p>Then the encoding associates a meaning with each of some (or, usually, all) possible values for either a single code unit or a sequence of code units.</p>
+<h2> <span class="mw-headline" id="Unicode_encoding_model">Unicode encoding model</span>
+</h2>
+<p><a href="Unicode" title="Unicode">Unicode</a> and its parallel standard, the ISO/IEC 10646 <a href="http://en.m.wikipedia.org/wiki/Universal_Character_Set" title="Universal Character Set">Universal Character Set</a>, together constitute a modern, unified character encoding. Rather than mapping characters directly to octets (<a href="Byte" title="Byte">bytes</a>), they separately define what characters are available, their numbering, how those numbers are encoded as a series of "<b>code units</b>" (limited-size numbers), and finally how those units are encoded as a stream of octets. The idea behind this decomposition is to establish a universal set of characters that can be encoded in a variety of ways.<sup id="cite_ref-utr17_1-0" class="reference"><a href="Character_encoding#cite_note-utr17-1"><span>[</span>1<span>]</span></a></sup> To describe this model correctly one needs more precise terms than "character set" and "character encoding." The terms used in the modern model follow:<sup id="cite_ref-utr17_1-1" class="reference"><a href="Character_encoding#cite_note-utr17-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>A <b>character repertoire</b> is the full set of abstract characters that a system supports. The repertoire may be closed, i.e. no additions are allowed without creating a new standard (as is the case with ASCII and most of the ISO-8859 series), or it may be open, allowing additions (as is the case with Unicode and to a limited extent the <a href="http://en.m.wikipedia.org/wiki/Windows_code_page" title="Windows code page">Windows code pages</a>). The characters in a given repertoire reflect decisions that have been made about how to divide writing systems into basic information units. The basic variants of the <a href="http://en.m.wikipedia.org/wiki/Latin_alphabet" title="Latin alphabet">Latin</a>, <a href="http://en.m.wikipedia.org/wiki/Greek_alphabet" title="Greek alphabet">Greek</a>, and <a href="http://en.m.wikipedia.org/wiki/Cyrillic" title="Cyrillic" class="mw-redirect">Cyrillic</a> alphabets, can be broken down into letters, digits, punctuation, and a few <b>special characters</b> like the space,<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2010">citation needed</span></a></i>]</sup> which can all be arranged in simple linear sequences that are displayed in the same order they are read. Even with these alphabets, however, <a href="http://en.m.wikipedia.org/wiki/Diacritic" title="Diacritic">diacritics</a> pose a complication: they can be regarded either as part of a single character containing a letter and diacritic (known as a precomposed character), or as separate characters. The former allows a far simpler text handling system but the latter allows any letter/diacritic combination to be used in text. <a href="http://en.m.wikipedia.org/wiki/Typographic_ligature" title="Typographic ligature">Ligatures</a> pose similar problems. Other writing systems, such as Arabic and Hebrew, are represented with more complex character repertoires due to the need to accommodate things like bidirectional text and <a href="http://en.m.wikipedia.org/wiki/Glyph" title="Glyph">glyphs</a> that are joined together in different ways for different situations.</p>
+<p><span id="CCS"></span> A <b>coded character set</b> (CCS) specifies how to represent a repertoire of characters using a number of (typically non-negative) integer values called <i><a href="http://en.m.wikipedia.org/wiki/Code_point" title="Code point">code points</a></i>. For example, in a given repertoire, a character representing the capital letter "A" in the Latin alphabet might be assigned to the integer 65, the character for "B" to 66, and so on. A complete set of characters and corresponding integers is a <i>coded character set</i>. Multiple coded character sets may share the same repertoire; for example <a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">ISO/IEC 8859-1</a> and IBM code pages 037 and 500 all cover the same repertoire but map them to different codes. In a coded character set, each code point only represents one character, i.e., a coded character set is a <a href="http://en.m.wikipedia.org/wiki/Function_(mathematics)" title="Function (mathematics)">function</a>.</p>
+<p>A <b>character encoding form</b> (CEF) specifies the conversion of a coded character set's integer codes into a set of limited-size integer <i>code values</i> that facilitate storage in a system that represents numbers in binary form using a fixed number of bits (i.e. practically any computer system). For example, a system that stores numeric information in 16-bit units would only be able to directly represent integers from 0 to 65,535 in each unit, but larger integers could be represented if more than one 16-bit unit could be used. This is what a CEF accommodates: it defines a way of mapping a <i>single</i> code <i>point</i> from a range of, say, 0 to 1.4 million, to a series of <i>one or more</i> code <i>values</i> from a range of, say, 0 to 65,535.</p>
+<p>The simplest CEF system is simply to choose large enough units that the values from the coded character set can be encoded directly (one code point to one code value). This works well for coded character sets that fit in 8 bits (as most legacy non-CJK encodings do) and reasonably well for coded character sets that fit in 16 bits (such as early versions of Unicode). However, as the size of the coded character set increases (e.g. modern Unicode requires at least 21 bits/character), this becomes less and less efficient, and it is difficult to adapt existing systems to use larger code values. Therefore, most systems working with later versions of Unicode use either <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a>, which maps Unicode code points to variable-length sequences of octets, or <a href="http://en.m.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a>, which maps Unicode code points to variable-length sequences of 16-bit words.</p>
+<p>Next, a <b>character encoding scheme</b> (CES) specifies how the fixed-size integer code values should be mapped into an octet sequence suitable for saving on an octet-based file system or transmitting over an octet-based network. With Unicode, a simple character encoding scheme is used in most cases, simply specifying whether the bytes for each integer should be in big-<a href="Endianness" title="Endianness">endian</a> or little-endian order (even this isn't needed with UTF-8). However, there are also compound character encoding schemes, which use escape sequences to switch between several simple schemes (such as <a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ISO/IEC 2022</a>), and compressing schemes, which try to minimise the number of bytes used per code unit (such as <a href="http://en.m.wikipedia.org/wiki/Standard_Compression_Scheme_for_Unicode" title="Standard Compression Scheme for Unicode">SCSU</a>, <a href="http://en.m.wikipedia.org/wiki/Binary_Ordered_Compression_for_Unicode" title="Binary Ordered Compression for Unicode">BOCU</a>, and <a href="http://en.m.wikipedia.org/wiki/Punycode" title="Punycode">Punycode</a>). See <a href="http://en.m.wikipedia.org/wiki/Comparison_of_Unicode_encodings" title="Comparison of Unicode encodings">comparison of Unicode encodings</a> for a detailed discussion.</p>
+<p>Finally, there may be a <b>higher level protocol</b> which supplies additional information that can be used to select the particular variant of a <a href="Unicode" title="Unicode">Unicode</a> character, particularly where there are regional variants that have been 'unified' in Unicode as the same character. An example is the <a href="http://en.m.wikipedia.org/wiki/XML" title="XML">XML</a> attribute xml:lang.</p>
+<p>The Unicode model reserves the term <b>character map</b> for historical systems which directly assign a sequence of characters to a sequence of bytes, covering all of CCS, CEF and CES layers.<sup id="cite_ref-utr17_1-2" class="reference"><a href="Character_encoding#cite_note-utr17-1"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Character_sets.2C_code_pages.2C_and_character_maps">Character sets, code pages, and character maps</span>
+</h2>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, the terms <b>character encoding</b>, <b>character map</b>, <b>character set</b> or <b>code page</b> were historically synonymous<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2010">citation needed</span></a></i>]</sup>, as the same standard would specify a repertoire of characters and how they were to be encoded into a stream of code units – usually with a single character per code unit. The terms now have related but distinct meanings, reflecting the efforts of standards bodies to use precise terminology when writing about and unifying many different encoding systems.<sup id="cite_ref-utr17_1-3" class="reference"><a href="Character_encoding#cite_note-utr17-1"><span>[</span>1<span>]</span></a></sup> Regardless, the terms are still used interchangeably, with <i>character set</i> being nearly ubiquitous.</p>
+<p>A <b><a href="http://en.m.wikipedia.org/wiki/Code_page" title="Code page">code page</a></b> usually means a <a href="http://en.m.wikipedia.org/wiki/Byte_oriented" title="Byte oriented" class="mw-redirect">byte oriented</a> encoding, but with regard to some suite of encodings (covering different scripts), where many characters share the same <a href="http://en.m.wikipedia.org/wiki/Code_point" title="Code point">codes</a> in most or all those code pages. Well known code page suites are "Windows" (based on Windows-1252) and "IBM"/"DOS" (based on code page 437), see <a href="http://en.m.wikipedia.org/wiki/Windows_code_page" title="Windows code page">Windows code page</a> for details. Most, but not all, encodings referred to as code pages are single-byte encodings (but see <a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octet</a> on byte size.)</p>
+<p>IBM's Character Data Representation Architecture (CDRA) designates with coded character set identifiers (<a href="http://en.m.wikipedia.org/wiki/CCSID" title="CCSID">CCSIDs</a>) and each of which is variously called a <b>charset</b>, <b>character set</b>, <b>code page</b>, or <b>CHARMAP</b>.<sup id="cite_ref-utr17_1-4" class="reference"><a href="Character_encoding#cite_note-utr17-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>The term <b>code page</b> does not occur in Unix or Linux where <b>charmap</b> is preferred, usually in the larger context of locales.</p>
+<p>Contrasted to <a href="Character_encoding#CCS">CCS above</a>, a <b>character encoding</b> is a map from abstract characters to <a href="http://en.m.wikipedia.org/wiki/Code_word" title="Code word">code words</a>. A <b>character set</b> in <a href="http://en.m.wikipedia.org/wiki/HTTP" title="HTTP" class="mw-redirect">HTTP</a> (and <a href="http://en.m.wikipedia.org/wiki/MIME" title="MIME">MIME</a>) parlance is the same as a character encoding (but not the same as CCS).</p>
+<p><b><a href="http://en.m.wikipedia.org/wiki/Legacy_system" title="Legacy system">Legacy</a> encoding</b> is a term sometimes used to characterize old character encodings, but with an ambiguity of sense. Most of its use is in the context of <a href="Unicode" title="Unicode">Unicodification</a>, where it refers to encodings that fail to cover all Unicode code points, or, more generally, using a somewhat different character repertoire: several code points representing one Unicode character,<sup id="cite_ref-2" class="reference"><a href="Character_encoding#cite_note-2"><span>[</span>2<span>]</span></a></sup> or versa (see e.g. <a href="http://en.m.wikipedia.org/wiki/Code_page_437" title="Code page 437">code page 437</a>). Some sources refer to an encoding as <i>legacy</i> only because it preceded Unicode.<sup id="cite_ref-3" class="reference"><a href="Character_encoding#cite_note-3"><span>[</span>3<span>]</span></a></sup> All Windows code pages are usually referred to as legacy, both because they antedate Unicode and because they are unable to represent all 2<sup>21</sup> possible Unicode code points.</p>
+<h2> <span class="mw-headline" id="Character_encoding_translation">Character encoding translation</span>
+</h2>
+<p>As a result of having many character encoding methods in use (and the need for backward compatibility with archived data), many computer programs have been developed to translate data between encoding schemes. Some of these are cited below.</p>
+<p><a href="Cross-platform" title="Cross-platform">Cross-platform</a>:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Web_browser" title="Web browser">Web browsers</a> – most modern web browsers feature automatic character encoding detection. On Firefox 3, for example, see the View/Character Encoding submenu.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Iconv" title="Iconv">iconv</a> – program and standardized API to convert encodings</li>
+<li>convert_encoding.py – Python based utility to convert text files between arbitrary encodings and line endings.<sup id="cite_ref-4" class="reference"><a href="Character_encoding#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+</li>
+<li>decodeh.py – algorithm and module to heuristically guess the encoding of a string.<sup id="cite_ref-5" class="reference"><a href="Character_encoding#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/International_Components_for_Unicode" title="International Components for Unicode">International Components for Unicode</a> – A set of C and Java libraries to perform charset conversion. uconv can be used from ICU4C.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://pypi.python.org/pypi/chardet">chardet</a> – This is a translation of the <a href="http://en.m.wikipedia.org/wiki/Mozilla" title="Mozilla">Mozilla</a> automatic-encoding-detection code into the Python computer language.</li>
+<li>The newer versions of the unix <a href="http://en.m.wikipedia.org/wiki/File_(command)" title="File (command)">File</a> command attempt to do a basic detection of character encoding. (also available on cygwin and mac)</li>
+</ul>
+<p><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>:</p>
+<ul>
+<li>cmv - simple tool for transcoding filenames.<sup id="cite_ref-6" class="reference"><a href="Character_encoding#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</li>
+<li>convmv – convert a filename from one encoding to another.<sup id="cite_ref-7" class="reference"><a href="Character_encoding#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+</li>
+<li>cstocs – convert file contents from one encoding to another</li>
+<li>enca – analyzes encodings for given text files.<sup id="cite_ref-8" class="reference"><a href="Character_encoding#cite_note-8"><span>[</span>8<span>]</span></a></sup>
+</li>
+<li>recode – convert file contents from one encoding to another<sup id="cite_ref-9" class="reference"><a href="Character_encoding#cite_note-9"><span>[</span>9<span>]</span></a></sup>
+</li>
+<li>utrac – convert file contents from one encoding to another.<sup id="cite_ref-10" class="reference"><a href="Character_encoding#cite_note-10"><span>[</span>10<span>]</span></a></sup>
+</li>
+</ul>
+<p><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>:</p>
+<ul>
+<li>Encoding.Convert – .NET API<sup id="cite_ref-11" class="reference"><a href="Character_encoding#cite_note-11"><span>[</span>11<span>]</span></a></sup>
+</li>
+<li>MultiByteToWideChar/WideCharToMultiByte – Convert from ANSI to Unicode &amp; Unicode to ANSI<sup id="cite_ref-12" class="reference"><a href="Character_encoding#cite_note-12"><span>[</span>12<span>]</span></a></sup>
+</li>
+<li>cscvt – character set conversion tool<sup id="cite_ref-13" class="reference"><a href="Character_encoding#cite_note-13"><span>[</span>13<span>]</span></a></sup>
+</li>
+<li>enca – analyzes encodings for given text files.<sup id="cite_ref-14" class="reference"><a href="Character_encoding#cite_note-14"><span>[</span>14<span>]</span></a></sup>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Alt_code" title="Alt code">Alt code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_encodings_in_HTML" title="Character encodings in HTML">Character encodings in HTML</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Category:Character_encoding" title="Category:Character encoding">Character encoding</a> – articles related to character encoding in general</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Category:Character_sets" title="Category:Character sets">Character sets</a> – articles detailing specific character encodings</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page" title="Code page">Code page</a> – various character set encodings used by IBM, Microsoft, SAP…</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hexadecimal#Representing_hexadecimal" title="Hexadecimal">Hexadecimal representations</a></li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/Mojibake" title="Mojibake">Mojibake</a></i> – character set mismap.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mojikyo" title="Mojikyo">Mojikyo</a> – a system ('glyph set') that includes over 100,000 Chinese character drawings, modern and ancient, popular and obscure.<sup id="cite_ref-mojikyoorg_15-0" class="reference"><a href="Character_encoding#cite_note-mojikyoorg-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-jbrowsecom_16-0" class="reference"><a href="Character_encoding#cite_note-jbrowsecom-16"><span>[</span>16<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/TRON_(encoding)" title="TRON (encoding)">TRON</a>, part of the <a href="http://en.m.wikipedia.org/wiki/TRON_Project" title="TRON Project">TRON Project</a>, is an encoding system that does not use <a href="http://en.m.wikipedia.org/wiki/Han_Unification" title="Han Unification" class="mw-redirect">Han Unification</a>, instead it uses 'control codes' to switch between 16bit 'planes' of characters.<sup id="cite_ref-jbrowsecom_16-1" class="reference"><a href="Character_encoding#cite_note-jbrowsecom-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-tronorg_17-0" class="reference"><a href="Character_encoding#cite_note-tronorg-17"><span>[</span>17<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Universal_Character_Set_characters" title="Universal Character Set characters">Universal Character Set characters</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_code_page" title="Windows code page">Windows code page</a> – various character set encodings used by Microsoft Windows</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Charset_sniffing" title="Charset sniffing" class="mw-redirect">Charset sniffing</a> – used in some applications when character encoding metadata is not available</li>
+</ul>
+<h3> <span class="mw-headline" id="Common_character_encodings">Common character encodings</span>
+</h3>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_646" title="ISO/IEC 646">ISO 646</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Extended_Binary_Coded_Decimal_Interchange_Code" title="Extended Binary Coded Decimal Interchange Code" class="mw-redirect">EBCDIC</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_37" title="EBCDIC 37" class="mw-redirect">CP37</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_930" title="EBCDIC 930">CP930</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_1047" title="EBCDIC 1047">CP1047</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859" title="ISO/IEC 8859">ISO 8859</a>:
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">ISO 8859-1</a> Western Europe</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-2" title="ISO/IEC 8859-2">ISO 8859-2</a> Western and Central Europe</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-3" title="ISO/IEC 8859-3">ISO 8859-3</a> Western Europe and South European (Turkish, Maltese plus Esperanto)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-4" title="ISO/IEC 8859-4">ISO 8859-4</a> Western Europe and Baltic countries (Lithuania, Estonia, Latvia and Lapp)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-5" title="ISO/IEC 8859-5">ISO 8859-5</a> Cyrillic alphabet</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-6" title="ISO/IEC 8859-6">ISO 8859-6</a> Arabic</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-7" title="ISO/IEC 8859-7">ISO 8859-7</a> Greek</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-8" title="ISO/IEC 8859-8">ISO 8859-8</a> Hebrew</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-9" title="ISO/IEC 8859-9">ISO 8859-9</a> Western Europe with amended Turkish character set</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-10" title="ISO/IEC 8859-10">ISO 8859-10</a> Western Europe with rationalised character set for Nordic languages, including complete Icelandic set</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-11" title="ISO/IEC 8859-11">ISO 8859-11</a> Thai</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-13" title="ISO/IEC 8859-13">ISO 8859-13</a> Baltic languages plus Polish</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-14" title="ISO/IEC 8859-14">ISO 8859-14</a> Celtic languages (Irish Gaelic, Scottish, Welsh)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-15" title="ISO/IEC 8859-15">ISO 8859-15</a> Added the Euro sign and other rationalisations to ISO 8859-1</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-16" title="ISO/IEC 8859-16">ISO 8859-16</a> Central, Eastern and Southern European languages (Albanian, Croatian, Hungarian, Polish, Romanian, Serbian and Slovenian, but also French, German, Italian and Irish Gaelic)</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page_437" title="Code page 437">CP437</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_737" title="Code page 737">CP737</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_850" title="Code page 850">CP850</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_852" title="Code page 852">CP852</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_855" title="Code page 855">CP855</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_857" title="Code page 857">CP857</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_858" title="Code page 858">CP858</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_860" title="Code page 860">CP860</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_861" title="Code page 861">CP861</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_862" title="Code page 862">CP862</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_863" title="Code page 863">CP863</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_865" title="Code page 865">CP865</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_866" title="Code page 866">CP866</a>, <a href="http://en.m.wikipedia.org/wiki/Code_page_869" title="Code page 869">CP869</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page#Windows_.28ANSI.29_code_pages" title="Code page">MS-Windows character sets</a>:
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1250" title="Windows-1250">Windows-1250</a> for Central European languages that use Latin script, (Polish, Czech, Slovak, Hungarian, Slovene, Serbian, Croatian, Romanian and Albanian)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1251" title="Windows-1251">Windows-1251</a> for Cyrillic alphabets</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1252" title="Windows-1252">Windows-1252</a> for Western languages</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1253" title="Windows-1253">Windows-1253</a> for Greek</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1254" title="Windows-1254">Windows-1254</a> for Turkish</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1255" title="Windows-1255">Windows-1255</a> for Hebrew</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1256" title="Windows-1256">Windows-1256</a> for Arabic</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1257" title="Windows-1257">Windows-1257</a> for Baltic languages</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-1258" title="Windows-1258">Windows-1258</a> for Vietnamese</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS_Roman" title="Mac OS Roman">Mac OS Roman</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/KOI8-R" title="KOI8-R">KOI8-R</a>, <a href="http://en.m.wikipedia.org/wiki/KOI8-U" title="KOI8-U">KOI8-U</a>, <a href="http://en.m.wikipedia.org/wiki/KOI7" title="KOI7">KOI7</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIK_Code_page" title="MIK Code page" class="mw-redirect">MIK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Indian_Script_Code_for_Information_Interchange" title="Indian Script Code for Information Interchange">ISCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tamil_Script_Code_for_Information_Interchange" title="Tamil Script Code for Information Interchange">TSCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vietnamese_Standard_Code_for_Information_Interchange" title="Vietnamese Standard Code for Information Interchange">VISCII</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/JIS_X_0208" title="JIS X 0208">JIS X 0208</a> is a widely deployed standard for Japanese character encoding that has several encoding forms.
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Shift_JIS" title="Shift JIS">Shift JIS</a> (Microsoft <a href="http://en.m.wikipedia.org/wiki/Code_page_932" title="Code page 932">Code page 932</a> is a dialect of Shift_JIS)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extended_Unix_Code" title="Extended Unix Code">EUC-JP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ISO-2022-JP</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/JIS_X_0213" title="JIS X 0213">JIS X 0213</a> is an extended version of JIS X 0208.
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Shift_JIS" title="Shift JIS">Shift_JIS-2004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extended_Unix_Code" title="Extended Unix Code">EUC-JIS-2004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ISO-2022-JP-2004</a></li>
+</ul>
+</li>
+<li>Chinese <a href="http://en.m.wikipedia.org/wiki/List_of_GB_standards" title="List of GB standards" class="mw-redirect">Guobiao</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GB_2312" title="GB 2312">GB 2312</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GBK" title="GBK">GBK</a> (Microsoft Code page 936)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/GB_18030" title="GB 18030">GB 18030</a></li>
+</ul>
+</li>
+<li>Taiwan <a href="http://en.m.wikipedia.org/wiki/Big5" title="Big5">Big5</a> (a more famous variant is Microsoft <a href="http://en.m.wikipedia.org/wiki/Code_page_950" title="Code page 950">Code page 950</a>)</li>
+<li>Hong Kong <a href="http://en.m.wikipedia.org/wiki/HKSCS" title="HKSCS">HKSCS</a>
+</li>
+<li>Korean
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/KS_X_1001" title="KS X 1001">KS X 1001</a> is a Korean double-byte character encoding standard</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extended_Unix_Code#EUC-KR" title="Extended Unix Code">EUC-KR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ISO-2022-KR</a></li>
+</ul>
+</li>
+<li>
+<a href="Unicode" title="Unicode">Unicode</a> (and subsets thereof, such as the 16-bit 'Basic Multilingual Plane'). See <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ANSEL" title="ANSEL">ANSEL</a> or <a href="http://en.m.wikipedia.org/wiki/ISO/IEC_6937" title="ISO/IEC 6937">ISO/IEC 6937</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<span class="citation book">Mackenzie, Charles E. (1980). <i>Coded Character Sets, History and Development</i>. Addison-Wesley. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-201-14460-3" title="Special:BookSources/0-201-14460-3">0-201-14460-3</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Coded+Character+Sets%2C+History+and+Development&amp;rft.aulast=Mackenzie&amp;rft.aufirst=Charles+E.&amp;rft.au=Mackenzie%2C%26%2332%3BCharles+E.&amp;rft.date=1980&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-201-14460-3&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span>
+</li>
+</ul>
+</div>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-utr17-1">
+<span class="mw-cite-backlink">^ <a href="Character_encoding#cite_ref-utr17_1-0"><sup><i><b>a</b></i></sup></a> <a href="Character_encoding#cite_ref-utr17_1-1"><sup><i><b>b</b></i></sup></a> <a href="Character_encoding#cite_ref-utr17_1-2"><sup><i><b>c</b></i></sup></a> <a href="Character_encoding#cite_ref-utr17_1-3"><sup><i><b>d</b></i></sup></a> <a href="Character_encoding#cite_ref-utr17_1-4"><sup><i><b>e</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.unicode.org/reports/tr17/">"Unicode Technical Report #17: Unicode Character Encoding Model"</a>. 2008-11-11<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unicode.org/reports/tr17/">http://www.unicode.org/reports/tr17/</a></span><span class="reference-accessdate">. Retrieved 2009-08-08</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Unicode+Technical+Report+%2317%3A+Unicode+Character+Encoding+Model&amp;rft.atitle=&amp;rft.date=2008-11-11&amp;rft_id=http%3A%2F%2Fwww.unicode.org%2Freports%2Ftr17%2F&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.basistech.co.jp/knowledge-center/database/uc-trillium-2.ppt">"Processing database information using Unicode, a case study"</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web">Constable, Peter (2001-06-13). <a rel="nofollow" class="external text" href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=IWS-Chapter03#79e846db">"Character set encoding basics"</a>. <i>Implementing Writing Systems: An introduction</i>. <a href="http://en.m.wikipedia.org/wiki/SIL_International" title="SIL International">SIL International</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=IWS-Chapter03#79e846db">http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;item_id=IWS-Chapter03#79e846db</a></span><span class="reference-accessdate">. Retrieved 2010-03-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Character+set+encoding+basics&amp;rft.atitle=Implementing+Writing+Systems%3A+An+introduction&amp;rft.aulast=Constable&amp;rft.aufirst=Peter&amp;rft.au=Constable%2C%26%2332%3BPeter&amp;rft.date=2001-06-13&amp;rft.pub=%5B%5BSIL+International%5D%5D&amp;rft_id=http%3A%2F%2Fscripts.sil.org%2Fcms%2Fscripts%2Fpage.php%3Fsite_id%3Dnrsi%26item_id%3DIWS-Chapter03%2379e846db&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://users.physik.fu-berlin.de/~mgoerz/blog/programs/convert_encoding/">Homepage of Michael Goerz – convert_encoding.py</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://gizmojo.org/code/decodeh/">Decodeh – heuristically decode a string or text file</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cmv.fossrec.com">CharsetMove - Simple Tool for Transcoding Filenames</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.j3e.de/linux/convmv/man/">Convmv – converts filenames from one encoding to another</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://directory.fsf.org/project/enca/">Extremely Naive Charset Analyser</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.gnu.org/software/recode/recode.html">Recode – GNU Project – Free Software Foundation (FSF)</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://utrac.sourceforge.net/">Utrac Homepage</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/system.text.encoding.convert(VS.71).aspx">Microsoft .NET Framework Class Library – Encoding.Convert Method</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/138813">MultiByteToWideChar/WideCharToMultiByte – Convert from ANSI to Unicode &amp; Unicode to ANSI</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.kalytta.com/tools.php">Character Set Converter</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.john.geek.nz/2010/02/enca-binary-compiled-for-32-bit-windows/">Extremely Naive Charset Analyser</a></span>
+</li>
+<li id="cite_note-mojikyoorg-15">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-mojikyoorg_15-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mojikyo.org/html/abroad/abroad_top.html">"Mojikyo English page"</a>. mojikyo.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mojikyo.org/html/abroad/abroad_top.html">http://www.mojikyo.org/html/abroad/abroad_top.html</a></span><span class="reference-accessdate">. Retrieved 2009 11 07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Mojikyo+English+page&amp;rft.atitle=&amp;rft.pub=mojikyo.org&amp;rft_id=http%3A%2F%2Fwww.mojikyo.org%2Fhtml%2Fabroad%2Fabroad_top.html&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span><sup class="noprint Inline-Template"><span title=" since September 2010" style="white-space: nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></span>
+</li>
+<li id="cite_note-jbrowsecom-16">
+<span class="mw-cite-backlink">^ <a href="Character_encoding#cite_ref-jbrowsecom_16-0"><sup><i><b>a</b></i></sup></a> <a href="Character_encoding#cite_ref-jbrowsecom_16-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.jbrowse.com/text/unij.html">"Character Set List"</a>. jbrowse.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.jbrowse.com/text/unij.html">http://www.jbrowse.com/text/unij.html</a></span><span class="reference-accessdate">. Retrieved 2009 11 07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Character+Set+List&amp;rft.atitle=&amp;rft.pub=jbrowse.com&amp;rft_id=http%3A%2F%2Fwww.jbrowse.com%2Ftext%2Funij.html&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-tronorg-17">
+<span class="mw-cite-backlink"><b><a href="Character_encoding#cite_ref-tronorg_17-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www2.tron.org/troncode.html">"TRON code website"</a>. tron.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www2.tron.org/troncode.html">http://www2.tron.org/troncode.html</a></span><span class="reference-accessdate">. Retrieved 2009 11 07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=TRON+code+website&amp;rft.atitle=&amp;rft.pub=tron.org&amp;rft_id=http%3A%2F%2Fwww2.tron.org%2Ftroncode.html&amp;rfr_id=info:sid/en.wikipedia.org:Character_encoding"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.iana.org/assignments/character-sets">Character sets registered by Internet Assigned Numbers Authority</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.unicode.org/unicode/reports/tr17/">Unicode Technical Report #17: Character Encoding Model</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Character_encoding" title="Template:Character encoding"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Character_encoding" title="Template talk:Character encoding"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Character_encoding&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><strong class="selflink">Character encodings</strong></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Category:Character_sets" title="Category:Character sets">Character sets</a>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Early telecommunications</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_646" title="ISO/IEC 646">ISO/IEC 646</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_6937" title="ISO/IEC 6937">ISO/IEC 6937</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ITU_T.61" title="ITU T.61">T.61</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BCD_(6-bit)" title="BCD (6-bit)">BCD (6-bit)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Baudot_code" title="Baudot code">Baudot code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Morse_code" title="Morse code">Morse code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chinese_telegraph_code" title="Chinese telegraph code">Chinese telegraph code</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859" title="ISO/IEC 8859">ISO/IEC 8859</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-2" title="ISO/IEC 8859-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-3" title="ISO/IEC 8859-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-4" title="ISO/IEC 8859-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-5" title="ISO/IEC 8859-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-6" title="ISO/IEC 8859-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-7" title="ISO/IEC 8859-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-8" title="ISO/IEC 8859-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-9" title="ISO/IEC 8859-9">-9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-10" title="ISO/IEC 8859-10">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-11" title="ISO/IEC 8859-11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-12" title="ISO/IEC 8859-12">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-13" title="ISO/IEC 8859-13">-13</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-14" title="ISO/IEC 8859-14">-14</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-15" title="ISO/IEC 8859-15">-15</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-16" title="ISO/IEC 8859-16">-16</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Bibliographic use</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ANSEL" title="ANSEL">ANSEL</a></li>
+<li>ISO 5426 / 5426-2 / 5427 / 5428 / <a href="http://en.m.wikipedia.org/wiki/ISO_6438" title="ISO 6438">6438</a> / 6861 / 6862 / 10585 / 10586 / 10754 / 11822</li>
+<li><a href="http://en.m.wikipedia.org/wiki/MARC-8" title="MARC-8">MARC-8</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">National standards</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ArmSCII" title="ArmSCII">ArmSCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CNS_11643" title="CNS 11643">CNS 11643</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GOST_10859" title="GOST 10859">GOST 10859</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GB_2312" title="GB 2312">GB 2312</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HKSCS" title="HKSCS">HKSCS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISCII" title="ISCII" class="mw-redirect">ISCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JIS_X_0201" title="JIS X 0201">JIS X 0201</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JIS_X_0208" title="JIS X 0208">JIS X 0208</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JIS_X_0212" title="JIS X 0212">JIS X 0212</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JIS_X_0213" title="JIS X 0213">JIS X 0213</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KPS_9566" title="KPS 9566">KPS 9566</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KS_X_1001" title="KS X 1001">KS X 1001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Perso-Arabic_Script_Code_for_Information_Interchange" title="Perso-Arabic Script Code for Information Interchange">PASCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TIS-620" title="TIS-620" class="mw-redirect">TIS-620</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TSCII" title="TSCII" class="mw-redirect">TSCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VISCII" title="VISCII" class="mw-redirect">VISCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/YUSCII" title="YUSCII">YUSCII</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Extended_Unix_Code" title="Extended Unix Code">EUC</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EUC-CN" title="EUC-CN" class="mw-redirect">CN</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EUC-JP" title="EUC-JP" class="mw-redirect">JP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EUC-KR" title="EUC-KR" class="mw-redirect">KR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EUC-TW" title="EUC-TW" class="mw-redirect">TW</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">ISO/IEC 2022</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>CN</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO-2022-JP" title="ISO-2022-JP" class="mw-redirect">JP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO-2022-KR" title="ISO-2022-KR" class="mw-redirect">KR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CCCII" title="CCCII" class="mw-redirect">CCCII</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:Mac_OS_character_encodings" title="Category:Mac OS character encodings">MacOS codepages ("scripts")</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/MacArabic_encoding" title="MacArabic encoding">Arabic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macintosh_Central_European_encoding" title="Macintosh Central European encoding">CentralEurRoman</a></li>
+<li>ChineseSimp / <a href="http://en.m.wikipedia.org/wiki/EUC-CN" title="EUC-CN" class="mw-redirect">EUC-CN</a>
+</li>
+<li>ChineseTrad / <a href="http://en.m.wikipedia.org/wiki/Big5" title="Big5">Big5</a>
+</li>
+<li>Croatian</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macintosh_Cyrillic_encoding" title="Macintosh Cyrillic encoding">Cyrillic</a></li>
+<li>Devanagari</li>
+<li>Dingbats</li>
+<li>Farsi</li>
+<li>Greek</li>
+<li>Gujarati</li>
+<li>Gurmukhi</li>
+<li>Hebrew</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_Icelandic_encoding" title="Mac Icelandic encoding">Icelandic</a></li>
+<li>Japanese / <a href="http://en.m.wikipedia.org/wiki/Shift_JIS" title="Shift JIS">ShiftJIS</a>
+</li>
+<li>Korean / <a href="http://en.m.wikipedia.org/wiki/EUC-KR" title="EUC-KR" class="mw-redirect">EUC-KR</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS_Roman" title="Mac OS Roman">Roman</a></li>
+<li>Romanian</li>
+<li>Symbol</li>
+<li>Thai / <a href="http://en.m.wikipedia.org/wiki/TIS-620" title="TIS-620" class="mw-redirect">TIS-620</a>
+</li>
+<li>Turkish</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macintosh_Ukrainian_encoding" title="Macintosh Ukrainian encoding">Ukrainian</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:DOS_code_pages" title="Category:DOS code pages">DOS codepages</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_437" title="Code page 437">437</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_720" title="Code page 720">720</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_737" title="Code page 737">737</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_775" title="Code page 775">775</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_850" title="Code page 850">850</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_852" title="Code page 852">852</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_855" title="Code page 855">855</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_857" title="Code page 857">857</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_858" title="Code page 858">858</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_860" title="Code page 860">860</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_861" title="Code page 861">861</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_862" title="Code page 862">862</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_863" title="Code page 863">863</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_864" title="Code page 864">864</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_865" title="Code page 865">865</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_866" title="Code page 866">866</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_869" title="Code page 869">869</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kamenick%C3%BD_encoding" title="Kamenický encoding">Kamenický</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mazovia_encoding" title="Mazovia encoding">Mazovia</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIK_Code_page" title="MIK Code page" class="mw-redirect">MIK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Iran_System_encoding_standard" title="Iran System encoding standard">Iran System</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:Windows_code_pages" title="Category:Windows code pages">Windows codepages</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-874" title="Windows-874" class="mw-redirect">874</a> / <a href="http://en.m.wikipedia.org/wiki/TIS-620" title="TIS-620" class="mw-redirect">TIS-620</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page_932" title="Code page 932">932</a> / <a href="http://en.m.wikipedia.org/wiki/Shift_JIS" title="Shift JIS">Shift JIS</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page_936" title="Code page 936">936</a> / <a href="http://en.m.wikipedia.org/wiki/GBK" title="GBK">GBK</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page_949" title="Code page 949">949</a> / <a href="http://en.m.wikipedia.org/wiki/EUC-KR" title="EUC-KR" class="mw-redirect">EUC-KR</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Code_page_950" title="Code page 950">950</a> / <a href="http://en.m.wikipedia.org/wiki/Big5" title="Big5">Big5</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1250" title="Windows-1250">1250</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1251" title="Windows-1251">1251</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1252" title="Windows-1252">1252</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1253" title="Windows-1253">1253</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1254" title="Windows-1254">1254</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1255" title="Windows-1255">1255</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1256" title="Windows-1256">1256</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1257" title="Windows-1257">1257</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows-1258" title="Windows-1258">1258</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows-54936" title="Windows-54936" class="mw-redirect">54936</a> / <a href="http://en.m.wikipedia.org/wiki/GB_18030" title="GB 18030">GB18030</a>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:EBCDIC_code_pages" title="Category:EBCDIC code pages">EBCDIC codepages</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_037" title="EBCDIC 037">37/1140</a></li>
+<li>273/1141</li>
+<li>277/1142</li>
+<li>278/1143</li>
+<li>280/1144</li>
+<li>284/1145</li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_285" title="EBCDIC 285">285/1146</a></li>
+<li>297/1147</li>
+<li>420/16804</li>
+<li>424/12712</li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_500" title="EBCDIC 500">500/1148</a></li>
+<li>838/1160</li>
+<li>871/1149</li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_875" title="EBCDIC 875">875/9067</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_930" title="EBCDIC 930">930/1390</a></li>
+<li>933/1364</li>
+<li>937/1371</li>
+<li>935/1388</li>
+<li>939/1399</li>
+<li>1025/1154</li>
+<li>1026/1155</li>
+<li><a href="http://en.m.wikipedia.org/wiki/EBCDIC_1047" title="EBCDIC 1047">1047/924</a></li>
+<li>1112/1156</li>
+<li>1122/1157</li>
+<li>1123/1158</li>
+<li>1130/1164</li>
+<li><a href="http://en.m.wikipedia.org/wiki/JEF_codepage" title="JEF codepage">JEF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KEIS" title="KEIS">KEIS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Platform specific</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ATASCII" title="ATASCII">ATASCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CDC_display_code" title="CDC display code">CDC display code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multinational_Character_Set" title="Multinational Character Set">DEC-MCS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DEC_Radix-50" title="DEC Radix-50">DEC Radix-50</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fieldata" title="Fieldata">Fieldata</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GSM_03.38" title="GSM 03.38">GSM 03.38</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HP_roman8" title="HP roman8">HP roman8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PETSCII" title="PETSCII">PETSCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TI_calculator_character_sets" title="TI calculator character sets">TI calculator character sets</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wang_International_Standard_Code_for_Information_Interchange" title="Wang International Standard Code for Information Interchange">WISCII</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZX_Spectrum_character_set" title="ZX Spectrum character set">ZX Spectrum character set</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="Unicode" title="Unicode">Unicode</a> / <a href="http://en.m.wikipedia.org/wiki/ISO/IEC_10646" title="ISO/IEC 10646" class="mw-redirect">ISO/IEC 10646</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-16/UCS-2" title="UTF-16/UCS-2" class="mw-redirect">UTF-16/UCS-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-32/UCS-4" title="UTF-32/UCS-4" class="mw-redirect">UTF-32/UCS-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-7" title="UTF-7">UTF-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-1" title="UTF-1">UTF-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-EBCDIC" title="UTF-EBCDIC">UTF-EBCDIC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GB_18030" title="GB 18030">GB 18030</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_Compression_Scheme_for_Unicode" title="Standard Compression Scheme for Unicode">SCSU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Binary_Ordered_Compression_for_Unicode" title="Binary Ordered Compression for Unicode">BOCU-1</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Miscellaneous codepages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/APL_(codepage)" title="APL (codepage)">APL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cork_encoding" title="Cork encoding">Cork</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HZ_(character_encoding)" title="HZ (character encoding)">HZ</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Code_page_1133" title="Code page 1133">IBM code page 1133</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KOI_character_encodings" title="KOI character encodings">KOI8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TRON_(encoding)" title="TRON (encoding)">TRON</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_character" title="Control character">control character</a> (<a href="http://en.m.wikipedia.org/wiki/C0_and_C1_control_codes" title="C0 and C1 control codes">C0 C1</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/CCSID" title="CCSID">CCSID</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_encodings_in_HTML" title="Character encodings in HTML">Character encodings in HTML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Charset_detection" title="Charset detection">charset detection</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Han_unification" title="Han unification">Han unification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_6429" title="ISO/IEC 6429" class="mw-redirect">ISO 6429/IEC 6429/ANSI X3.64</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mojibake" title="Mojibake">mojibake</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 36 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ast.m.wikipedia.org/wiki/C%C3%B3digu_de_caracteres" lang="ast" hreflang="ast">asturianu</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A7%87%E0%A6%95%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0_%E0%A6%8F%E0%A6%A8%E0%A6%95%E0%A7%8B%E0%A6%A1%E0%A6%BF%E0%A6%82" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%A1%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BD%D0%BE_%D0%BA%D0%BE%D0%B4%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" lang="bg" hreflang="bg">български</a></li><li><a href="http://zh-min-nan.m.wikipedia.org/wiki/Pian-b%C3%A9" lang="zh-min-nan" hreflang="zh-min-nan">Bân-lâm-gú</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Codificaci%C3%B3_de_car%C3%A0cters" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Znakov%C3%A1_sada" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Tegns%C3%A6t" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Zeichenkodierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%9A%CF%89%CE%B4%CE%B9%CE%BA%CE%BF%CF%80%CE%BF%CE%AF%CE%B7%CF%83%CE%B7_%CF%87%CE%B1%CF%81%CE%B1%CE%BA%CF%84%CE%AE%CF%81%CF%89%CE%BD" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Codificaci%C3%B3n_de_caracteres" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%DA%A9%D8%AF%D8%A8%D9%86%D8%AF%DB%8C_%D9%86%D9%88%DB%8C%D8%B3%D9%87" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Codage_des_caract%C3%A8res" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Codificaci%C3%B3n_de_caracteres" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%AC%B8%EC%9E%90_%EC%9D%B8%EC%BD%94%EB%94%A9" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%85%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%B0_%E0%A4%95%E0%A5%8B%E0%A4%A1%E0%A4%A8" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://id.m.wikipedia.org/wiki/Pengkodean_karakter" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ia.m.wikipedia.org/wiki/Codification_de_characteres" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://it.m.wikipedia.org/wiki/Codifica_di_caratteri" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A7%D7%99%D7%93%D7%95%D7%93_%D7%AA%D7%95%D7%95%D7%99%D7%9D" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%91%D0%B5%D0%B4%D0%B5%D1%80%D0%B1%D0%B5%D0%BB%D0%B3%D1%96%D0%BB%D1%96%D0%BA_%D0%B6%D0%B8%D0%BD%D0%B0%D2%9B" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Rakstz%C4%ABmju_kod%C4%93jums" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Karakterk%C3%B3dol%C3%A1s" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mr.m.wikipedia.org/wiki/%E0%A4%95%E0%A5%85%E0%A4%B0%E0%A5%85%E0%A4%95%E0%A5%8D%E0%A4%9F%E0%A4%B0_%E0%A4%8F%E0%A4%A8%E0%A4%95%E0%A5%8B%E0%A4%A1%E0%A4%BF%E0%A4%82%E0%A4%97" lang="mr" hreflang="mr">मराठी</a></li><li><a href="http://mn.m.wikipedia.org/wiki/%D0%A2%D1%8D%D0%BC%D0%B4%D1%8D%D0%B3%D1%82%D0%B8%D0%B9%D0%BD_%D0%BA%D0%BE%D0%B4%D0%BB%D0%BE%D0%BB%D1%8B%D0%BD_%D1%81%D1%85%D0%B5%D0%BC" lang="mn" hreflang="mn">монгол</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Tekencodering" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Tegnsett" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Teiknsett" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Kod_znaku" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Codifica%C3%A7%C3%A3o_de_caracteres" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B1%D0%BE%D1%80_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BE%D0%B2" lang="ru" hreflang="ru">русский</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Merkist%C3%B6" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Teckenkodning" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%A3%E0%B8%AB%E0%B8%B1%E0%B8%AA%E0%B8%AD%E0%B8%B1%E0%B8%81%E0%B8%82%E0%B8%A3%E0%B8%B0" lang="th" hreflang="th">ไทย</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B4%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%96%D0%B2" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Character_encoding&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Character_encoding&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Character+encoding&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

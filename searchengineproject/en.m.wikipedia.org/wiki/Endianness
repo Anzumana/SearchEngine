@@ -1,0 +1,519 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Endianness - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Endianness","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Endianness" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Endianness"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Endianness</h1>			
+<div class="dablink">"Endian" redirects here. For Jonathan Swift's Big-Endian and Little-Endian parties in Lilliput, see <a href="http://en.m.wikipedia.org/wiki/Lilliput_and_Blefuscu" title="Lilliput and Blefuscu">Lilliput and Blefuscu</a>.</div>
+<p>In <a href="Computing" title="Computing">computing</a>, the term <b>endian</b> or <b>endianness</b> refers to the ordering of individually addressable sub-components within the representation of a larger data item as stored in <i><a href="http://en.m.wikipedia.org/wiki/External_memory" title="External memory" class="mw-redirect">external memory</a></i> (or, sometimes, as sent on a serial connection). Each sub-component in the representation has a unique degree of significance, like the <a href="http://en.m.wikipedia.org/wiki/Place_value" title="Place value" class="mw-redirect">place value</a> of digits in a decimal number. These sub-components are typically 16-, 32- or 64-bit <a href="http://en.m.wikipedia.org/wiki/Word_(data_type)" title="Word (data type)" class="mw-redirect">words</a>, 8-bit <a href="Byte" title="Byte">bytes</a>, or even <a href="Bit" title="Bit">bits</a>. Endianness is a difference in data representation at the hardware level and may or may not be <a href="http://en.m.wikipedia.org/wiki/Transparency_(human-computer_interaction)" title="Transparency (human-computer interaction)" class="mw-redirect">transparent</a> at higher levels, depending on factors such as the type of high level language used.</p>
+<p>The most common cases refer to how bytes are ordered within a single <a href="http://en.m.wikipedia.org/wiki/16-bit" title="16-bit">16-</a>, <a href="http://en.m.wikipedia.org/wiki/32-bit" title="32-bit">32-</a>, or <a href="http://en.m.wikipedia.org/wiki/64_bit" title="64 bit" class="mw-redirect">64-bit</a> word, and <i>endianness</i> is then the same as <b>byte order</b>.<sup id="cite_ref-1" class="reference"><a href="Endianness#cite_note-1"><span>[</span>1<span>]</span></a></sup> The usual contrast is whether the <a href="http://en.m.wikipedia.org/wiki/Most_significant_byte" title="Most significant byte" class="mw-redirect">most significant</a> or <a href="http://en.m.wikipedia.org/wiki/Least_significant_byte" title="Least significant byte" class="mw-redirect">least significant byte</a> is ordered first—i.e., at the lowest byte address—within the larger data item. A <b>big-endian</b> machine stores the <i>most</i> significant byte first, and a <b>little-endian</b> machine stores the <i>least</i> significant byte first. In these standard forms, the bytes remain ordered by significance. However, mixed forms are also possible where the ordering of bytes within a 16-bit word may differ from the ordering of 16-bit words within a 32-bit word, for instance. Although rare, such cases do exist and may sometimes be referred to as <b>mixed-endian</b> or <b>middle-endian</b>.</p>
+<p>Endianness is important as a low-level attribute of a particular data format. For example, the order in which the two bytes of a <a href="http://en.m.wikipedia.org/wiki/UCS-2" title="UCS-2" class="mw-redirect">UCS-2</a> character are stored in memory is of considerable importance in network programming where two computers with different byte orders may be communicating with each other. Failure to account for a varying endianness across architectures when writing code for mixed platforms leads to failures and <a href="http://en.m.wikipedia.org/wiki/Software_bug" title="Software bug">bugs</a> that can be difficult to detect.</p>
+<table class="wikitable" style="text-align: center;">
+<tr>
+<th scope="col">Endian</th>
+<th scope="col">First byte<br>
+(lowest address)</th>
+<th scope="col">Middle bytes</th>
+<th scope="col">Last byte<br>
+(highest address)</th>
+<th scope="col">Decimal 1000 (hexadecimal 3E8) in two bytes</th>
+<th scope="col">Notes</th>
+</tr>
+<tr>
+<td><b>big</b></td>
+<td>
+<i>most</i> significant</td>
+<td><b>...</b></td>
+<td>
+<i>least</i> significant</td>
+<td>03 E8</td>
+<td style="text-align: left;">Similar to a number written on paper (in <a href="http://en.m.wikipedia.org/wiki/Hindu-Arabic_numerals" title="Hindu-Arabic numerals" class="mw-redirect">Hindu-Arabic numerals</a> as used in most Western scripts)</td>
+</tr>
+<tr>
+<td><b>little</b></td>
+<td>
+<i>least</i> significant</td>
+<td><b>...</b></td>
+<td>
+<i>most</i> significant</td>
+<td>E8 03</td>
+<td style="text-align: left;">Arithmetic calculation order (see <a href="http://en.m.wikipedia.org/wiki/Carry_propagation" title="Carry propagation" class="mw-redirect">carry propagation</a>)</td>
+</tr>
+</table>
+<p>The term <i>endian</i> as derived from <i>end</i> may lead to confusion. Note that it denotes which end (i.e., outermost part) of the number comes first rather than which part comes at the end of the byte sequence (representing the number). See <a href="Endianness#Etymology">Etymology</a> for an explanation why it refers to the end from which something starts, but not to something coming last.</p>
+<h2> <span class="mw-headline" id="Endianness_and_hardware">Endianness and hardware</span>
+</h2>
+<p>The full register width among different CPUs and other processor types varies widely (typically between 4 and 64 bits<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2012">citation needed</span></a></i>]</sup>). The internal bit-, byte-, or word-ordering within such a <a href="http://en.m.wikipedia.org/wiki/CPU_register" title="CPU register" class="mw-redirect">register</a> is normally not considered "endianness", despite the fact that some CPU instructions may address individual bits (or other parts) using various kinds of internal addressing schemes. The "endianness" only describes how the bits are organized as seen from the outside (i.e., when stored in memory). The fact that some assembly languages <i>label</i> bits in an unorthodox manner is also largely another matter (a few architectures/assemblers turn the conventional <code>msb..lsb = D31..D0</code> the other way round, so that <code>msb=D0</code>).</p>
+<p>Large integers are usually stored in memory as a sequence of smaller ones and obtained by simple concatenation. The simple forms are:</p>
+<ul>
+<li>increasing numeric significance with increasing memory addresses (or increasing time), known as <i>little-endian</i>, and</li>
+<li>decreasing numeric significance with increasing memory addresses (or increasing time), known as <i>big-endian</i><sup id="cite_ref-2" class="reference"><a href="Endianness#cite_note-2"><span>[</span>2<span>]</span></a></sup>
+</li>
+</ul>
+<p>Well-known processor architectures that use the little-endian format include <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> (including <a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a>), <a href="http://en.m.wikipedia.org/wiki/MOS_Technology_6502" title="MOS Technology 6502">6502</a> (including <a href="http://en.m.wikipedia.org/wiki/65802" title="65802" class="mw-redirect">65802</a>, <a href="http://en.m.wikipedia.org/wiki/65C816" title="65C816" class="mw-redirect">65C816</a>), <a href="http://en.m.wikipedia.org/wiki/Z80" title="Z80" class="mw-redirect">Z80</a> (including <a href="http://en.m.wikipedia.org/wiki/Z180" title="Z180" class="mw-redirect">Z180</a>, <a href="http://en.m.wikipedia.org/wiki/EZ80" title="EZ80" class="mw-redirect">eZ80</a> etc.), <a href="http://en.m.wikipedia.org/wiki/MCS-48" title="MCS-48" class="mw-redirect">MCS-48</a>, <a href="http://en.m.wikipedia.org/wiki/8051" title="8051" class="mw-redirect">8051</a>, <a href="http://en.m.wikipedia.org/wiki/DEC_Alpha" title="DEC Alpha">DEC Alpha</a>, <a href="http://en.m.wikipedia.org/wiki/Altera" title="Altera">Altera</a> <a href="http://en.m.wikipedia.org/wiki/Nios_II" title="Nios II">Nios II</a>, <a href="http://en.m.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">Atmel AVR</a>, <a href="http://en.m.wikipedia.org/wiki/SuperH" title="SuperH">SuperH</a>, <a href="http://en.m.wikipedia.org/wiki/VAX" title="VAX">VAX</a>, and, largely, <a href="PDP-11" title="PDP-11">PDP-11</a>.</p>
+<p>Well-known processors that use the big-endian format include <a href="http://en.m.wikipedia.org/wiki/Motorola_6800" title="Motorola 6800">Motorola 6800</a> and <a href="http://en.m.wikipedia.org/wiki/68k" title="68k" class="mw-redirect">68k</a>, Xilinx <a href="http://en.m.wikipedia.org/wiki/Microblaze" title="Microblaze" class="mw-redirect">Microblaze</a>, <a href="http://en.m.wikipedia.org/wiki/IBM_POWER" title="IBM POWER">IBM POWER</a>, and <a href="http://en.m.wikipedia.org/wiki/System/360" title="System/360" class="mw-redirect">System/360</a> and its successors such as <a href="http://en.m.wikipedia.org/wiki/System/370" title="System/370" class="mw-redirect">System/370</a>, <a href="http://en.m.wikipedia.org/wiki/ESA/390" title="ESA/390" class="mw-redirect">ESA/390</a>, and <a href="http://en.m.wikipedia.org/wiki/Z/Architecture" title="Z/Architecture">z/Architecture</a>. The <a href="http://en.m.wikipedia.org/wiki/PDP-10" title="PDP-10">PDP-10</a> also used big-endian addressing for byte-oriented instructions. <a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a> historically used big-endian until version 9, which is bi-endian, similarly the <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM architecture</a> was little-endian before version 3 when it became bi-endian, and the <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> and <a href="http://en.m.wikipedia.org/wiki/Power_Architecture" title="Power Architecture">Power Architecture</a> descendants of IBM POWER are also bi-endian (see below).</p>
+<p>Serial protocols may also be regarded as either little or big-endian at the bit- and/or byte-levels (which may differ). Many serial interfaces, such as the ubiquitous <a href="http://en.m.wikipedia.org/wiki/USB" title="USB" class="mw-redirect">USB</a>, are little-endian at the bit-level. Physical standards like <a href="http://en.m.wikipedia.org/wiki/RS-232" title="RS-232">RS-232</a>, <a href="http://en.m.wikipedia.org/wiki/RS-422" title="RS-422">RS-422</a> and <a href="http://en.m.wikipedia.org/wiki/RS-485" title="RS-485">RS-485</a> are also typically used with <a href="http://en.m.wikipedia.org/wiki/UART" title="UART" class="mw-redirect">UARTs</a> that send the least significant bit first, such as in industrial instrumentation applications, lighting protocols (<a href="http://en.m.wikipedia.org/wiki/DMX512" title="DMX512">DMX512</a>), and so on. The same could be said for digital <a href="http://en.m.wikipedia.org/wiki/Current_loop" title="Current loop">current loop</a> signaling systems such as <a href="http://en.m.wikipedia.org/wiki/MIDI" title="MIDI">MIDI</a>. There are also several serial formats where the most significant bit is normally sent first, such as <a href="http://en.m.wikipedia.org/wiki/I%C2%B2C" title="I²C">I²C</a> and the related <a href="http://en.m.wikipedia.org/wiki/SMBus" title="SMBus" class="mw-redirect">SMBus</a>. However, the bit order may often be reversed (or is "transparent") in the interface between the <a href="http://en.m.wikipedia.org/wiki/UART" title="UART" class="mw-redirect">UART</a> or <a href="http://en.m.wikipedia.org/wiki/Communication_controller" title="Communication controller" class="mw-redirect">communication controller</a> and the host <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU</a> or <a href="http://en.m.wikipedia.org/wiki/Direct_memory_access" title="Direct memory access">DMA</a> controller (and/or system memory), especially in more complex systems and personal computers. These interfaces may be of any type and are often configurable.</p>
+<h3> <span class="mw-headline" id="Bi-endian_hardware">Bi-endian hardware</span>
+</h3>
+<p>Some architectures (including <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM</a> versions 3 and above, <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a>, <a href="http://en.m.wikipedia.org/wiki/DEC_Alpha" title="DEC Alpha">Alpha</a>, <a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a> V9, <a href="http://en.m.wikipedia.org/wiki/MIPS_architecture" title="MIPS architecture">MIPS</a>, <a href="http://en.m.wikipedia.org/wiki/PA-RISC" title="PA-RISC">PA-RISC</a>, <a href="http://en.m.wikipedia.org/wiki/SuperH" title="SuperH">SuperH SH-4</a> and <a href="http://en.m.wikipedia.org/wiki/IA-64" title="IA-64" class="mw-redirect">IA-64</a>) feature a setting which allows for switchable endianness in data segments, code segments or both. This feature can improve performance or simplify the logic of networking devices and software. The word <i>bi-endian</i>, when said of hardware, denotes the capability of the machine to compute or pass data in either endian format.</p>
+<p>Many of these architectures can be switched via software to default to a specific endian format (usually done when the computer starts up); however, on some systems the default endianness is selected by hardware on the motherboard and cannot be changed via software (e.g., the Alpha, which runs only in big-endian mode on the <a href="http://en.m.wikipedia.org/wiki/Cray_T3E" title="Cray T3E">Cray T3E</a>).</p>
+<p>Note that the term "bi-endian" refers primarily to how a processor treats <i>data</i> accesses. <i>Instruction</i> accesses (fetches of instruction words) on a given processor may still assume a fixed endianness, even if <i>data</i> accesses are fully bi-endian, though this is not always the case, such as on Intel's <a href="http://en.m.wikipedia.org/wiki/IA-64" title="IA-64" class="mw-redirect">IA-64</a>-based Itanium CPU, which allows both.</p>
+<p>Note, too, that some nominally bi-endian CPUs require motherboard help to fully switch endianness. For instance, the 32-bit desktop-oriented <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> processors in little-endian mode act as little-endian from the point of view of the executing programs but they require the motherboard to perform a 64-bit swap across all 8 byte lanes to ensure that the little-endian view of things will apply to <a href="http://en.m.wikipedia.org/wiki/Input/Output" title="Input/Output" class="mw-redirect">I/O</a> devices. In the absence of this unusual motherboard hardware, device driver software must write to different addresses to undo the incomplete transformation and also must perform a normal byte swap.</p>
+<p>Some CPUs, such as many PowerPC processors intended for embedded use, allow per-page choice of endianness.</p>
+<h3> <span class="mw-headline" id="Floating-point_and_endianness">Floating-point and endianness</span>
+</h3>
+<p>Although the ubiquitous x86 of today use little-endian storage for all types of data (integer, floating point, <a href="http://en.m.wikipedia.org/wiki/Binary_coded_decimal" title="Binary coded decimal" class="mw-redirect">BCD</a>), there have been a few historical machines where <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a> numbers were represented in big-endian form while integers were represented in little-endian form.<sup id="cite_ref-3" class="reference"><a href="Endianness#cite_note-3"><span>[</span>3<span>]</span></a></sup> There are old ARM processors that have half little-endian, half big-endian floating point representation. Because there have been many floating point formats with no "<a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">network</a>" standard representation for them, there is no formal standard for transferring floating point values between heterogeneous systems. It may therefore appear strange that the widespread <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> floating point standard does not specify endianness.<sup id="cite_ref-4" class="reference"><a href="Endianness#cite_note-4"><span>[</span>4<span>]</span></a></sup> Theoretically, this means that even standard IEEE floating point data written by one machine might not be readable by another. However, on modern standard computers (i.e., implementing IEEE 754), one may in practice safely assume that the endianness is the same for floating point numbers as for integers, making the conversion straightforward regardless of data type. (Small <a href="Embedded_system" title="Embedded system">embedded systems</a> using special floating point formats may be another matter however.)</p>
+<h2> <span class="mw-headline" id="Endianness_and_operating_systems_on_architectures">Endianness and operating systems on architectures</span>
+</h2>
+<p>Little-endian (operating systems with architectures on Little Endian):</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/DragonFlyBSD" title="DragonFlyBSD" class="mw-redirect">DragonFlyBSD</a> on x86, and x86-64</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> on x86, x86-64, MIPS, ARM and Itanium</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux</a> on x86, x86-64, MIPS<b>EL</b>, Alpha, Itanium, S+core, MN103, CRIS, Blackfin, Microblaze<b>EL</b>, ARM, M32R<b>EL</b>, TILE, SH, Xtensa<b>EL</b> and UniCore32</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> on x86, x86-64</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IOS" title="IOS">iOS</a> on ARM</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a> on x86, x86-64, Itanium, etc.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> on x86, x86-64, Alpha, VAX, Loongson (MIPS<b>EL</b>)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenVMS" title="OpenVMS">OpenVMS</a> on VAX, Alpha and Itanium</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> on x86, x86-64, PowerPC</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Tru64_UNIX" title="Tru64 UNIX">Tru64 UNIX</a> on Alpha</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/VMware_ESX" title="VMware ESX">ESX</a> on x86, x86-64</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows" title="Windows" class="mw-redirect">Windows</a> on x86, x86-64, Alpha, PowerPC, MIPS and Itanium</li>
+</ul>
+<p>Big-endian (operating systems with architectures on Big Endian):</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/AIX" title="AIX" class="mw-redirect">AIX</a> on POWER</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a> on PowerPC and 680x0</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> on MIPS, ARM, PowerPC and SPARC</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a> on Itanium and PA-RISC</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a> on MIPS</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux</a> on MIPS, SPARC, PA-RISC, POWER, PowerPC, 680x0, ESA/390, z/Architecture, H8, FR-V, AVR32, Microblaze, ARM<b>EB</b>, M32R, SH<b>EB</b>, Xtensa and ubicom32.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mac_OS#.22Classic.22_Mac_OS_.281984.E2.80.932001.29" title="Mac OS">Mac OS</a> on PowerPC and 680x0</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> on PowerPC</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a> on PowerPC, SPARC, etc.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> on PowerPC, SPARC, PA-RISC, SGI (MIPS<b>EB</b>), Motorola 68k and 88k, Landisk (SuperH-4)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MVS" title="MVS">MVS</a> and <a href="http://en.m.wikipedia.org/wiki/DOS/VSE" title="DOS/VSE" class="mw-redirect">DOS/VSE</a> on ESA/390, and <a href="http://en.m.wikipedia.org/wiki/Z/VSE" title="Z/VSE" class="mw-redirect">z/VSE</a> and <a href="http://en.m.wikipedia.org/wiki/Z/OS" title="Z/OS">z/OS</a> on z/Architecture</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> on SPARC</li>
+</ul>
+<h2> <span class="mw-headline" id="Etymology">Etymology</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/38px-Wikisource-logo.svg.png" width="38" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/57px-Wikisource-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/76px-Wikisource-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">
+<a href="http://en.m.wikipedia.org/wiki/Wikisource" title="Wikisource">Wikisource</a> has original text related to this article:
+<div style="margin-left: 10px;"><b><a href="http://en.wikisource.org/wiki/Gulliver%27s_Travels/Part_I/Chapter_IV" class="extiw" title="wikisource:Gulliver's Travels/Part I/Chapter IV">Gulliver's Travels (Part I, Chapter IV)</a></b></div>
+</td>
+</tr></table>
+<p>The term <i>big-endian</i> originally comes from <a href="http://en.m.wikipedia.org/wiki/Jonathan_Swift" title="Jonathan Swift">Jonathan Swift</a>'s satirical novel <i><a href="http://en.m.wikipedia.org/wiki/Gulliver%27s_Travels" title="Gulliver's Travels">Gulliver’s Travels</a></i> by way of <a href="http://en.m.wikipedia.org/wiki/Danny_Cohen_(engineer)" title="Danny Cohen (engineer)">Danny Cohen</a> in 1980.<sup id="cite_ref-HOLY_5-0" class="reference"><a href="Endianness#cite_note-HOLY-5"><span>[</span>5<span>]</span></a></sup> In 1726, Swift described tensions in <a href="http://en.m.wikipedia.org/wiki/Lilliput_and_Blefuscu" title="Lilliput and Blefuscu">Lilliput and Blefuscu</a>: whereas royal edict in Lilliput requires cracking open one's <a href="http://en.m.wikipedia.org/wiki/Soft-boiled_egg" title="Soft-boiled egg" class="mw-redirect">soft-boiled egg</a> at the small end, inhabitants of the rival kingdom of Blefuscu crack theirs at the big end (giving them the moniker <i>Big-endians</i>).<sup id="cite_ref-6" class="reference"><a href="Endianness#cite_note-6"><span>[</span>6<span>]</span></a></sup> The terms <i>little-endian</i> and <i>endianness</i> have a similar intent.<sup id="cite_ref-7" class="reference"><a href="Endianness#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>"On Holy Wars and a Plea for Peace"<sup id="cite_ref-HOLY_5-1" class="reference"><a href="Endianness#cite_note-HOLY-5"><span>[</span>5<span>]</span></a></sup> by Danny Cohen ends with: "Swift's point is that the difference between breaking the egg at the little-end and breaking it at the big-end is trivial. Therefore, he suggests, that everyone does it in his own preferred way. We agree that the difference between sending eggs with the little- or the big-end first is trivial, but we insist that everyone must do it in the same way, to avoid anarchy. Since the difference is trivial we may choose either way, but a decision must be made."</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The problem of dealing with data in different representations is sometimes termed the <i>NUXI problem</i>.<sup id="cite_ref-8" class="reference"><a href="Endianness#cite_note-8"><span>[</span>8<span>]</span></a></sup> This terminology alludes to the issue that a value represented by the byte-string "UNIX" on a big-endian system may be stored as "NUXI" on a PDP-11 middle-endian system; <a href="http://en.m.wikipedia.org/wiki/UNIX" title="UNIX" class="mw-redirect">UNIX</a> was one of the first systems to allow the same code to run on, and transfer data between, platforms with different internal representations.</p>
+<p>An often-cited argument in favor of big-endian is that it is consistent with the ordering commonly used in natural languages.<sup id="cite_ref-9" class="reference"><a href="Endianness#cite_note-9"><span>[</span>9<span>]</span></a></sup> Spoken languages have a wide variety of organizations of numbers: the decimal number 92 is spoken in English as <i>ninety-two</i>, in <a href="http://en.m.wikipedia.org/wiki/German_language" title="German language">German</a> and <a href="http://en.m.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a> as <i>two and ninety</i> and in <a href="http://en.m.wikipedia.org/wiki/French_language" title="French language">French</a> as <i>eighty-twelve</i> (or, to be precise, as <i>four-twenties twelve</i>) with a similar system in <a href="http://en.m.wikipedia.org/wiki/Danish_language" title="Danish language">Danish</a> (<i>two-and-half-five-times-twenty</i>). However, numbers are written almost universally in the <a href="http://en.m.wikipedia.org/wiki/Hindu-Arabic_numeral_system" title="Hindu-Arabic numeral system" class="mw-redirect">Hindu-Arabic numeral system</a>, in which the most significant digits are written first in languages written left-to-right, and last in languages written right-to-left.<sup id="cite_ref-10" class="reference"><a href="Endianness#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Optimization">Optimization</span>
+</h2>
+<p>The little-endian system has the property that the same value can be read from memory at different lengths without using different addresses (even when <a href="http://en.m.wikipedia.org/wiki/Byte_alignment" title="Byte alignment" class="mw-redirect">alignment</a> restrictions are imposed). For example, a 32-bit memory location with content 4A 00 00 00 can be read at the same address as either <a href="http://en.m.wikipedia.org/wiki/8-bit" title="8-bit">8-bit</a> (value = 4A), <a href="http://en.m.wikipedia.org/wiki/16-bit" title="16-bit">16-bit</a> (004A), <a href="http://en.m.wikipedia.org/wiki/24-bit" title="24-bit">24-bit</a> (00004A), or <a href="http://en.m.wikipedia.org/wiki/32-bit" title="32-bit">32-bit</a> (0000004A), all of which retain the same numeric value. Although this little-endian property is rarely used directly by high-level programmers, it is often employed by code optimizers as well as by <a href="Assembly_language" title="Assembly language">assembly language</a> programmers.</p>
+<p>On the other hand, in some situations it may be useful to obtain an approximation of a multi-byte or multi-word value by reading only its most-significant portion instead of the complete representation; a big-endian processor may read such an approximation using the same base-address that would be used for the full value.</p>
+<h3> <span class="mw-headline" id="Calculation_order">Calculation order</span>
+</h3>
+<p>Little-endian representation simplifies hardware in processors that add multi-byte integral values a byte at a time, such as small-scale byte-addressable processors and <a href="Microcontroller" title="Microcontroller">microcontrollers</a>. As carry propagation must start at the least significant bit (and thus byte), multi-byte addition can then be carried out with a monotonic incrementing address sequence, a simple operation already present in hardware. On a big-endian processor, its addressing unit has to be told how big the addition is going to be so that it can hop forward to the least significant byte, then count back down towards the most significant. However, high performance processors usually perform these operations as a single operation, fetching multi-byte operands from memory in a single operation, so that the complexity of the hardware is not affected by the byte ordering.</p>
+<h2> <span class="mw-headline" id="Diagram_for_mapping_registers_to_memory_locations">Diagram for mapping registers to memory locations</span>
+</h2>
+<div class="thumb tnone">
+<div class="thumbinner" style="width:252px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Endianessmap.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Endianessmap.svg/250px-Endianessmap.svg.png" width="250" height="353" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Endianessmap.svg/375px-Endianessmap.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Endianessmap.svg/500px-Endianessmap.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Mapping registers to memory locations</div>
+</div>
+</div>
+<p>Using this chart, one can map an access (or, for a concrete example: "write 32 bit value to address 0") from register to memory or from memory to register. To help in understanding that access, little and big endianness can be seen in the diagram as differing in their coordinate system's orientation. Big endianness's atomic units (in this example the atomic unit is the byte) and memory coordinate system increases in the diagram from left to right, while little endianness's units increase from right to left.</p>
+<p>A simple reminder is "In <b>L</b>ittle Endian, The <b>L</b>east significant byte goes into the <b>L</b>owest value slot". So in the above example, D, the least significant byte, goes into slot 0.</p>
+<p>If you are writing in a western language the hex value 0x0a0b0c0d you are writing the bytes from <i>left to right</i>, you are implicitly writing Big-Endian style. 0x0a at 0, 0x0b at 1, 0x0c at 2, 0x0d at 3. On the other hand the output of memory is normally also printed out bytewise from left to right, first memory address 0, then memory address 1, then memory address 2, then memory address 3. So on a Big-Endian system when you write a 32-bit value (from a register) to an address in memory and after that output the memory, you "see what you have written" (because you are using the left to right coordinate system for the output of values in registers as well as the output of memory). However on a Little-Endian system the logical 0 address of a value in a register (for 8-bit, 16-bit and 32-bit) is the <i>least significant byte</i>, the one to the right. 0x0d at 0, 0x0c at 1, 0x0b at 2, 0x0a at 3. If you write a 32 bit register value to a memory location on a Little-Endian system and after that output the memory location (with growing addresses from left to right), then the output of the memory will appear <i>reversed</i> (byte-swapped). You have 2 choices now to synchronize the output of what you are seeing as values in registers and what you are seeing as memory: You can swap the output of the register values (0x0a0b0c0d =&gt; 0x0d0c0b0a) or you can swap the output of the memory (print from right to left). Because the values of registers are interpreted as numbers, which are, in western languages, written from left to right, it is natural to use the second approach, to display the memory from right to left. The above diagram does exactly that, when visualizing memory (when "thinking memory") on a Little-Endian system the memory should be seen growing to the <i>left</i>.</p>
+<h2> <span class="mw-headline" id="Examples_of_storing_the_value_0A0B0C0Dh_in_memory">Examples of storing the value <tt>0A0B0C0D<sub>h</sub></tt> in memory</span>
+</h2>
+<dl>
+<dd><i>Note that <a href="http://en.m.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> notation is used.</i></dd>
+</dl>
+<p>To illustrate the notions this section provides example layouts of the 32-bit number <tt>0A0B0C0D<sub>h</sub></tt> in the most common variants of endianness. There exist several digital processors that use other formats, but these two are the most common in general processors. That is true for typical <a href="Embedded_system" title="Embedded system">embedded systems</a> as well as for general computer CPU(s). Most processors used in non CPU roles in typical computers (in storage units, peripherals etc.) also use one of these two basic formats, although not always 32-bit of course.</p>
+<p>All the examples refer to the storage in memory of the value.</p>
+<h3> <span class="mw-headline" id="Big-endian">Big-endian</span>
+</h3>
+<div class="floatright"><a href="http://en.m.wikipedia.org/wiki/File:Big-Endian.svg" class="image"><img alt="Big-Endian.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Big-Endian.svg/280px-Big-Endian.svg.png" width="280" height="250" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/54/Big-Endian.svg/420px-Big-Endian.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/54/Big-Endian.svg/560px-Big-Endian.svg.png 2x"></a></div>
+<h4> <span class="mw-headline" id="Atomic_element_size_8-bit.2C_address_increment_1-byte_.28octet.29">Atomic element size 8-bit, address increment 1-byte (octet)</span>
+</h4>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">
+<i>increasing addresses</i>  →</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0A<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0D<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Most_significant_byte" title="Most significant byte" class="mw-redirect">most significant byte</a> (<i>MSB</i>) value, which is <tt>0A<sub>h</sub></tt> in our example, is stored at the memory location with the lowest address, the next byte value in significance, <tt>0B<sub>h</sub></tt>, is stored at the following memory location and so on. This is akin to Left-to-Right reading in hexadecimal order.</p>
+<h4> <span class="mw-headline" id="Atomic_element_size_16-bit">Atomic element size 16-bit</span>
+</h4>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">
+<i>increasing addresses</i>  →</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0A0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C0D<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The most significant atomic element stores now the value <tt>0A0B<sub>h</sub></tt>, followed by <tt>0C0D<sub>h</sub></tt>.</p>
+<h3> <span class="mw-headline" id="Little-endian">Little-endian</span>
+</h3>
+<div class="floatright"><a href="http://en.m.wikipedia.org/wiki/File:Little-Endian.svg" class="image"><img alt="Little-Endian.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Little-Endian.svg/280px-Little-Endian.svg.png" width="280" height="250" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Little-Endian.svg/420px-Little-Endian.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Little-Endian.svg/560px-Little-Endian.svg.png 2x"></a></div>
+<h4> <span class="mw-headline" id="Atomic_element_size_8-bit.2C_address_increment_1-byte_.28octet.29_2">Atomic element size 8-bit, address increment 1-byte (octet)</span>
+</h4>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">
+<i>increasing addresses</i>  →</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0D<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0A<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Least_significant_byte" title="Least significant byte" class="mw-redirect">least significant byte</a> (<i>LSB</i>) value, <tt>0D<sub>h</sub></tt>, is at the lowest address. The other bytes follow in increasing order of significance.</p>
+<h4> <span class="mw-headline" id="Atomic_element_size_16-bit_2">Atomic element size 16-bit</span>
+</h4>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">
+<i>increasing addresses</i>  →</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0C0D<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0A0B<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The least significant 16-bit unit stores the value <tt>0C0D<sub>h</sub></tt>, immediately followed by <tt>0A0B<sub>h</sub></tt>. Note that <tt>0C0D<sub>h</sub></tt> and <tt>0A0B<sub>h</sub></tt> represent integers, not bit layouts (see <a href="http://en.m.wikipedia.org/wiki/Bit_numbering" title="Bit numbering">bit numbering</a>).</p>
+<h4> <span class="mw-headline" id="Byte_addresses_increasing_from_right_to_left">Byte addresses increasing from right to left</span>
+</h4>
+<p>Visualising memory addresses from left to right makes little-endian values appear backwards. If the addresses are written increasing <i>towards</i> the left instead, each individual little-endian value will appear forwards. However strings of values or characters appear reversed instead.</p>
+<p>With 8-bit atomic elements:</p>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">←  <i>increasing addresses</i>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0A<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0D<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Least_significant_byte" title="Least significant byte" class="mw-redirect">least significant byte</a> (<i>LSB</i>) value, <tt>0D<sub>h</sub></tt>, is at the lowest address. The other bytes follow in increasing order of significance.</p>
+<p>With 16-bit atomic elements:</p>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">←  <i>increasing addresses</i>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0A0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C0D<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The least significant 16-bit unit stores the value <tt>0C0D<sub>h</sub></tt>, immediately followed by <tt>0A0B<sub>h</sub></tt>.</p>
+<p>The display of text is reversed from the normal display of languages such as English that read from left to right. For example, the word "XRAY" displayed in this manner, with each character stored in an 8-bit atomic element:</p>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">←  <i>increasing addresses</i>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>"Y"</tt></td>
+<td style="border: 1px solid;"><tt>"A"</tt></td>
+<td style="border: 1px solid;"><tt>"R"</tt></td>
+<td style="border: 1px solid;"><tt>"X"</tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>If pairs of characters are stored in 16-bit atomic elements (using 8 bits per character), it could look even stranger:</p>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="4">←  <i>increasing addresses</i>
+</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>"AY"</tt></td>
+<td style="border: 1px solid;"><tt>"XR"</tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>This conflict between the memory arrangements of binary data and text is intrinsic to the nature of the little-endian convention, but is a conflict only for languages written left-to-right, such as <a href="http://en.m.wikipedia.org/wiki/Indo-European_languages" title="Indo-European languages">Indo-European languages</a> including English. For right-to-left languages such as <a href="http://en.m.wikipedia.org/wiki/Arabic" title="Arabic" class="mw-redirect">Arabic</a> and <a href="http://en.m.wikipedia.org/wiki/Hebrew" title="Hebrew" class="mw-redirect">Hebrew</a>, there is no conflict of text with binary, and the preferred display in both cases would be with addresses increasing to the left. (On the other hand, right-to-left languages have a complementary intrinsic conflict in the big-endian system.)</p>
+<h3> <span class="mw-headline" id="Middle-endian">Middle-endian</span>
+</h3>
+<p>Numerous other orderings, generically called <i>middle-endian</i> or <i>mixed-endian</i>, are possible. On the <a href="PDP-11" title="PDP-11">PDP-11</a> (16-bit little-endian) for example, the compiler stored 32-bit values with the 16-bit halves swapped from the expected little-endian order. This ordering is known as <i>PDP-endian</i>.</p>
+<ul>
+<li><i>storage of a 32-bit word on a PDP-11</i></li>
+</ul>
+<table cellpadding="4" style="border-collapse: collapse; margin: 0.4em 0.4em; text-align: center;">
+<tr>
+<td colspan="6">
+<i>increasing addresses</i>  →</td>
+</tr>
+<tr>
+<td style="border: 1px solid; border-left: hidden;"><tt>...</tt></td>
+<td style="border: 1px solid;"><tt>0B<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0A<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0D<sub>h</sub></tt></td>
+<td style="border: 1px solid;"><tt>0C<sub>h</sub></tt></td>
+<td style="border: 1px solid; border-right: hidden;"><tt>...</tt></td>
+</tr>
+</table>
+<p>The <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM architecture</a> can also produce this format when writing a 32-bit word to an address 2 bytes from a 32-bit word <a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">alignment</a></p>
+<p><a href="http://en.m.wikipedia.org/wiki/Segment_descriptors" title="Segment descriptors" class="mw-redirect">Segment descriptors</a> on <a href="http://en.m.wikipedia.org/wiki/Intel_80386" title="Intel 80386">Intel 80386</a> and compatible processors keep a base 32-bit address of the segment stored in little-endian order, but in four nonconsecutive bytes, at relative positions 2,3,4 and 7 of the descriptor start.</p>
+<h2> <span class="mw-headline" id="Endianness_in_networking">Endianness in networking</span>
+</h2>
+<p>Many <a href="http://en.m.wikipedia.org/wiki/IETF_RFC" title="IETF RFC" class="mw-redirect">IETF RFCs</a> use the term <i>network order</i>, meaning the order of transmission for bits and bytes <i>over the wire</i> in <a href="http://en.m.wikipedia.org/wiki/Network_protocols" title="Network protocols" class="mw-redirect">network protocols</a>. Among others, the historic <a class="external mw-magiclink-rfc" href="http://tools.ietf.org/html/rfc1700">RFC 1700</a> (also known as <a href="http://en.m.wikipedia.org/wiki/Internet_standard" title="Internet standard" class="mw-redirect">Internet standard</a> STD 2) has defined its network order to be <a href="Endianness#Big-endian">big endian</a>, though not all protocols do.<sup id="cite_ref-11" class="reference"><a href="Endianness#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Telephone_network" title="Telephone network">telephone network</a>, historically and presently, sends the most significant part first, the <a href="http://en.m.wikipedia.org/wiki/Area_code" title="Area code" class="mw-redirect">area code</a>; doing so allows <a href="http://en.m.wikipedia.org/wiki/Routing" title="Routing">routing</a> while a <a href="http://en.m.wikipedia.org/wiki/Telephone_number" title="Telephone number">telephone number</a> is being composed.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Internet_Protocol" title="Internet Protocol">Internet Protocol</a> defines big-endian as the standard <i>network byte order</i> used for all numeric values in the <a href="http://en.m.wikipedia.org/wiki/Packet_header" title="Packet header" class="mw-redirect">packet headers</a> and by many higher level protocols and file formats that are designed for use over IP. The <a href="http://en.m.wikipedia.org/wiki/Berkeley_sockets" title="Berkeley sockets">Berkeley sockets</a> <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a> defines a set of functions to convert 16-bit and 32-bit integers to and from network byte order: the <tt>htonl</tt> (host-to-network-long) and <tt>htons</tt> (host-to-network-short) functions convert 32-bit and 16-bit values respectively from machine (<i>host</i>) to network order; the <tt>ntohl</tt> and <tt>ntohs</tt> functions convert from network to host order. These functions may be a <a href="http://en.m.wikipedia.org/wiki/No-op" title="No-op" class="mw-redirect">no-op</a> on a big-endian system.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/CANopen" title="CANopen">CANopen</a> multi-byte parameters are always sent <a href="http://en.m.wikipedia.org/wiki/Least_significant_byte" title="Least significant byte" class="mw-redirect">least significant byte</a> first (little endian).</p>
+<p>While the lowest network protocols may deal with sub-byte formatting, all the layers above them usually consider the <i>byte</i> (mostly meant as <i><a href="http://en.m.wikipedia.org/wiki/Octet_(computing)" title="Octet (computing)">octet</a></i>) as their atomic unit.</p>
+<h2> <span class="mw-headline" id="Endianness_in_files_and_byte_swap">Endianness in files and byte swap</span>
+</h2>
+<p>Endianness is a problem when a binary file created on a computer is read on another computer with different endianness. Some <a href="Compiler" title="Compiler">compilers</a> have built-in facilities to deal with data written in other formats. For example, the <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> <a href="Fortran" title="Fortran">Fortran</a> compiler supports the non-standard <code>CONVERT</code> specifier, so a file can be opened as</p>
+<dl>
+<dd><code>OPEN(unit,CONVERT='BIG_ENDIAN',...)</code></dd>
+</dl>
+<p>or</p>
+<dl>
+<dd><code>OPEN(unit,CONVERT='LITTLE_ENDIAN',...)</code></dd>
+</dl>
+<p>Some compilers have options to generate code that globally enables the conversion for all file IO operations. This allows one to reuse code on a system with the opposite endianness without having to modify the code itself. If the compiler does not support such conversion, the programmer needs to swap the bytes via ad hoc code.</p>
+<p>Fortran sequential unformatted files created with one endianness usually cannot be read on a system using the other endianness because Fortran usually implements a <a href="http://en.m.wikipedia.org/wiki/Storage_record" title="Storage record">record</a> (defined as the data written by a single Fortran statement) as data preceded and succeeded by count fields, which are integers equal to the number of bytes in the data. An attempt to read such file on a system of the other endianness then results in a run-time error, because the count fields are incorrect. This problem can be avoided by writing out sequential binary files as opposed to sequential unformatted.</p>
+<p><a href="Unicode" title="Unicode">Unicode</a> text can optionally start with a <a href="http://en.m.wikipedia.org/wiki/Byte_order_mark" title="Byte order mark">byte order mark</a> (BOM) to signal the endianness of the file or stream. Its code point is U+FEFF. In <a href="http://en.m.wikipedia.org/wiki/UTF-32" title="UTF-32">UTF-32</a> for example, a big-endian file should start with <code>00 00 FE FF</code>. In a little-endian file these bytes are reversed.</p>
+<p>Application binary data formats, such as for example <a href="MATLAB" title="MATLAB">MATLAB</a> .mat files, or the .BIL data format, used in topography, are usually endianness-independent. This is achieved by storing the data always in one fixed endianness, or carrying with the data a switch to indicate which endianness the data was written with. When reading the file, the application converts the endianness, transparently to the user.</p>
+<p>This is the case of <a href="http://en.m.wikipedia.org/wiki/TIFF" title="TIFF" class="mw-redirect">TIFF</a> image files, which instructs in its header about endianness of their internal binary integers. If a file starts with the signature "<code>MM</code>" it means that integers are represented as big-endian, while "<code>II</code>" means little-endian. Those signatures need a single 16-bit word each, and they are <a href="http://en.m.wikipedia.org/wiki/Palindrome" title="Palindrome">palindromes</a> (that is, they read the same forwards and backwards), so they are endianness independent. "<code>I</code>" stands for <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> and "<code>M</code>" stands for <a href="http://en.m.wikipedia.org/wiki/Motorola" title="Motorola">Motorola</a>, the respective <a href="http://en.m.wikipedia.org/wiki/CPU" title="CPU" class="mw-redirect">CPU</a> providers of the <a href="IBM_PC" title="IBM PC" class="mw-redirect">IBM PC</a> compatibles and <a href="http://en.m.wikipedia.org/wiki/Apple_Macintosh" title="Apple Macintosh" class="mw-redirect">Apple Macintosh</a> platforms in the 1980s. Intel CPUs are little-endian, while Motorola 680x0 CPUs are big-endian. This explicit signature allows a TIFF reader program to swap bytes if necessary when a given file was generated by a TIFF writer program running on a computer with a different endianness.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/LabVIEW" title="LabVIEW">LabVIEW</a> programming environment, though most commonly installed on Windows machines, was first developed on a Macintosh, and uses Big Endian format for its binary numbers, while most Windows programs use Little Endian format.<sup id="cite_ref-12" class="reference"><a href="Endianness#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>Note that since the required byte swap depends on the size of the numbers stored in the file (two 2-byte integers require a different swap than one 4-byte integer), the file format must be known to perform endianness conversion.</p>
+<h2> <span class="mw-headline" id=".22Bit_endianness.22">"Bit endianness"</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Bit_numbering" title="Bit numbering">bit numbering</a>
+</div>
+<p>The terms <i>bit endianness</i> or <i>bit-level endianness</i> are seldom used when talking about the representation of a stored value, as they are only meaningful for the rare computer architectures where each individual bit has a unique address. They are used however to refer to the transmission order of bits over a serial medium. Most often that order is transparently managed by the hardware and is the bit-level analogue of little-endian (low-bit first), although protocols exist which require the opposite ordering (e.g. <a href="http://en.m.wikipedia.org/wiki/Teletext" title="Teletext">Teletext</a>, <a href="http://en.m.wikipedia.org/wiki/I%C2%B2C" title="I²C">I²C</a>, and <a href="http://en.m.wikipedia.org/wiki/Synchronous_optical_networking" title="Synchronous optical networking">SONET and SDH</a><sup id="cite_ref-13" class="reference"><a href="Endianness#cite_note-13"><span>[</span>13<span>]</span></a></sup>). In networking, the decision about the order of transmission of bits is made in the very bottom of the <a href="http://en.m.wikipedia.org/wiki/Data_link_layer" title="Data link layer">data link layer</a> of the <a href="http://en.m.wikipedia.org/wiki/OSI_model" title="OSI model">OSI model</a>. As bit ordering is usually only relevant on a very low level, terming transmissions "LSB first" or "MSB first" is more descriptive than assigning an endianness to bit ordering.</p>
+<p>Bit endianness is also used when referring to certain image formats, particularly <a href="http://en.m.wikipedia.org/wiki/Black-and-white" title="Black-and-white">bitonal</a> images, which store a series of pixels as individual bits within a byte. If the bit order is incorrect, every group of eight pixels in the image will appear backwards.</p>
+<h2> <span class="mw-headline" id="Other_meanings">Other meanings</span>
+</h2>
+<p>Some authors extend the usage of the word "endianness", and of related terms, to entities such as <a href="http://en.m.wikipedia.org/wiki/Postal_address#Address_format" title="Postal address" class="mw-redirect">street addresses</a>, <a href="http://en.m.wikipedia.org/wiki/Calendar_date#Date_format" title="Calendar date">date formats</a> and others. Such usages—basically reducing <i>endianness</i> to a mere synonym of <i>ordering of the parts</i>—are non-standard usage<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from November 2009">citation needed</span></a></i>]</sup> (e.g., <a href="http://en.m.wikipedia.org/wiki/ISO_8601" title="ISO 8601">ISO 8601:2004</a> talks about "descending order year-month-day", not about "big-endian format"), do not have widespread usage, and are generally (other than for date formats) employed in a metaphorical sense.</p>
+<p>"Endianness" is sometimes used to describe the order of the components of a domain name, e.g. 'en.wikipedia.org' (the usual modern 'little-endian' form) versus the <a href="http://en.m.wikipedia.org/wiki/Reverse-DNS" title="Reverse-DNS" class="mw-redirect">reverse-DNS</a> 'org.wikipedia.en' ('big-endian', used for naming components, packages, or types in computer systems, for example Java packages, Macintosh ".plist" files, etc.). <a href="http://en.m.wikipedia.org/wiki/URL" title="URL" class="mw-redirect">URLs</a> can be considered 'big-endian', even though the host part could be a 'little-endian' DNS name.</p>
+<h2> <span class="mw-headline" id="References_and_notes">References and notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-1">^</a></b></span> <span class="reference-text">For hardware, the <a href="http://en.m.wikipedia.org/wiki/Jargon_File" title="Jargon File">Jargon File</a> also reports the less common expression <i>byte sex</i> <a rel="nofollow" class="external autonumber" href="http://catb.org/jargon/html/B/byte-sex.html">[1]</a>. It is unclear whether this terminology is also used when more than two orderings are possible. Similarly, the manual for the ORCA/M <a href="Assembly_language#Assembler" title="Assembly language">assembler</a> refers to a field indicating the order of the bytes in a number field as <code>NUMSEX</code>, and the <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> operating system refers to "byte sex" in its compiler tools <a rel="nofollow" class="external autonumber" href="http://web.mit.edu/darwin/src/modules/cctools/libstuff/arch.c">[2]</a>.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-2">^</a></b></span> <span class="reference-text">Note that, in these expressions, the term "end" is meant as "extremity", not as "last part"; and that <i>big</i> and <i>little</i> say which extremity is written <i>first</i>.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.quadibloc.com/comp/cp0201.htm">"Floating point formats"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.quadibloc.com/comp/cp0201.htm">http://www.quadibloc.com/comp/cp0201.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Floating+point+formats&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.quadibloc.com%2Fcomp%2Fcp0201.htm&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.perl.com/doc/manual/html/pod/perlfunc/pack.html">"pack – convert a list into a binary representation"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.perl.com/doc/manual/html/pod/perlfunc/pack.html">http://www.perl.com/doc/manual/html/pod/perlfunc/pack.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=pack+%E2%80%93+convert+a+list+into+a+binary+representation&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.perl.com%2Fdoc%2Fmanual%2Fhtml%2Fpod%2Fperlfunc%2Fpack.html&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-HOLY-5">
+<span class="mw-cite-backlink">^ <a href="Endianness#cite_ref-HOLY_5-0"><sup><i><b>a</b></i></sup></a> <a href="Endianness#cite_ref-HOLY_5-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation IETF_document"><a href="http://en.m.wikipedia.org/wiki/Danny_Cohen_(engineer)" title="Danny Cohen (engineer)">Danny Cohen</a> (1980-04-01). <a rel="nofollow" class="external text" href="http://www.ietf.org/rfc/ien/ien137.txt"><i>On Holy Wars and a Plea for Peace</i></a>. IEN 137<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ietf.org/rfc/ien/ien137.txt">http://www.ietf.org/rfc/ien/ien137.txt</a></span>. "...which bit should travel first, the bit from the little end of the word, or the bit from the big end of the word? The followers of the former approach are called the Little-Endians, and the followers of the latter are called the Big-Endians."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=On+Holy+Wars+and+a+Plea+for+Peace&amp;rft.aulast=%5B%5BDanny+Cohen+%28engineer%29%7CDanny+Cohen%5D%5D&amp;rft.au=%5B%5BDanny+Cohen+%28engineer%29%7CDanny+Cohen%5D%5D&amp;rft.date=1980-04-01&amp;rft_id=http%3A%2F%2Fwww.ietf.org%2Frfc%2Fien%2Fien137.txt&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span> Also published at <i><a href="http://en.m.wikipedia.org/wiki/IEEE_Computer" title="IEEE Computer" class="mw-redirect">IEEE Computer</a></i>, <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1667115">October 1981 issue</a>.</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation book">Jonathan Swift (1726). <a class="external text" href="http://en.wikisource.org/wiki/Gulliver%27s_Travels/Part_I/Chapter_IV"><i>Gulliver's Travels</i></a><span class="printonly">. <a class="external free" href="http://en.wikisource.org/wiki/Gulliver%27s_Travels/Part_I/Chapter_IV">http://en.wikisource.org/wiki/Gulliver%27s_Travels/Part_I/Chapter_IV</a></span>. "Which two mighty powers have, as I was going to tell you, been engaged in a most obstinate war for six-and-thirty moons past. (...) the primitive way of breaking eggs, before we eat them, was upon the larger end; (...) the emperor his father published an edict, commanding all his subjects, upon great penalties, to break the smaller end of their eggs. (...) Many hundred large volumes have been published upon this controversy: but the books of the Big-endians have been long forbidden (...)"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Gulliver%27s+Travels&amp;rft.aulast=Jonathan+Swift&amp;rft.au=Jonathan+Swift&amp;rft.date=1726&amp;rft_id=http%3A%2F%2Fen.wikisource.org%2Fwiki%2FGulliver%2527s_Travels%2FPart_I%2FChapter_IV&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web">David Cary. <a rel="nofollow" class="external text" href="http://david.carybros.com/html/endian_faq.html">"Endian FAQ"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://david.carybros.com/html/endian_faq.html">http://david.carybros.com/html/endian_faq.html</a></span><span class="reference-accessdate">. Retrieved 2010-10-11</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Endian+FAQ&amp;rft.atitle=&amp;rft.aulast=David+Cary&amp;rft.au=David+Cary&amp;rft_id=http%3A%2F%2Fdavid.carybros.com%2Fhtml%2Fendian_faq.html&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://catb.org/jargon/html/N/NUXI-problem.html">"NUXI problem"</a>. <i>The <a href="http://en.m.wikipedia.org/wiki/Jargon_File" title="Jargon File">Jargon File</a></i><span class="printonly">. <a rel="nofollow" class="external free" href="http://catb.org/jargon/html/N/NUXI-problem.html">http://catb.org/jargon/html/N/NUXI-problem.html</a></span><span class="reference-accessdate">. Retrieved 2008-12-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=NUXI+problem&amp;rft.atitle=The+%5B%5BJargon+File%5D%5D&amp;rft_id=http%3A%2F%2Fcatb.org%2Fjargon%2Fhtml%2FN%2FNUXI-problem.html&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-9">^</a></b></span> <span class="reference-text"><i>Cf.</i> entries <a rel="nofollow" class="external text" href="http://ling.uni-konstanz.de:591/FMRes/FMPro?-db=universals&amp;number=539&amp;-format=FormVw.htm&amp;-lay=&amp;-max=1&amp;-skip=0&amp;-token=25&amp;-find">539</a> and <a rel="nofollow" class="external text" href="http://ling.uni-konstanz.de:591/FMRes/FMPro?-db=universals&amp;number=704&amp;-format=FormVw.htm&amp;-lay=&amp;-max=1&amp;-skip=0&amp;-token=25&amp;-find">704</a> of the Linguistic Universals Database</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://lists.w3.org/Archives/Public/www-international/2008AprJun/0104.html">"Digression: little/big endian numbers LTR/RTL"</a>. <i>www-international@<a href="http://en.m.wikipedia.org/wiki/World_Wide_Web_Consortium" title="World Wide Web Consortium">w3.org</a> Mail Archives</i>. 2008-05-02<span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.w3.org/Archives/Public/www-international/2008AprJun/0104.html">http://lists.w3.org/Archives/Public/www-international/2008AprJun/0104.html</a></span><span class="reference-accessdate">. Retrieved 2011-07-25</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Digression%3A+little%2Fbig+endian+numbers+LTR%2FRTL&amp;rft.atitle=www-international%40%5B%5BWorld+Wide+Web+Consortium%7Cw3.org%5D%5D+Mail+Archives&amp;rft.date=2008-05-02&amp;rft_id=http%3A%2F%2Flists.w3.org%2FArchives%2FPublic%2Fwww-international%2F2008AprJun%2F0104.html&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation IETF_document"><a href="http://en.m.wikipedia.org/wiki/Joyce_K._Reynolds" title="Joyce K. Reynolds">Reynolds, J.</a>; <a href="http://en.m.wikipedia.org/wiki/Jon_Postel" title="Jon Postel">Postel, J.</a> (October 1994). <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc1700#page-3">"Data Notations"</a>. <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc1700"><i>Assigned Numbers</i></a>. <a href="http://en.m.wikipedia.org/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. p. 3. STD 2. RFC 1700<span class="printonly">. <a rel="nofollow" class="external free" href="https://tools.ietf.org/html/rfc1700#page-3">https://tools.ietf.org/html/rfc1700#page-3</a></span><span class="reference-accessdate">. Retrieved 2012-03-02</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Data+Notations&amp;rft.atitle=Assigned+Numbers&amp;rft.aulast=Reynolds&amp;rft.aufirst=J.&amp;rft.au=Reynolds%2C%26%2332%3BJ.&amp;rft.au=Postel%2C%26%2332%3BJ.&amp;rft.date=October+1994&amp;rft.pages=p.%26nbsp%3B3&amp;rft.pub=%5B%5BInternet+Engineering+Task+Force%7CIETF%5D%5D&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc1700&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://digital.ni.com/public.nsf/allkb/97332426D63630EE862565070049FFBB">read write binary files with LabVIEW</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Endianness#cite_ref-13">^</a></b></span> <span class="reference-text">Cf. Sec. 2.1 Bit Transmission of <a rel="nofollow" class="external free" href="http://tools.ietf.org/html/draft-ietf-pppext-sonet-as-00">http://tools.ietf.org/html/draft-ietf-pppext-sonet-as-00</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<span class="citation IETF_document"><a href="http://en.m.wikipedia.org/wiki/Danny_Cohen_(engineer)" title="Danny Cohen (engineer)">Danny Cohen</a> (1980-04-01). <a rel="nofollow" class="external text" href="http://www.ietf.org/rfc/ien/ien137.txt"><i>On Holy Wars and a Plea for Peace</i></a>. IEN 137<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ietf.org/rfc/ien/ien137.txt">http://www.ietf.org/rfc/ien/ien137.txt</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=On+Holy+Wars+and+a+Plea+for+Peace&amp;rft.aulast=%5B%5BDanny+Cohen+%28engineer%29%7CDanny+Cohen%5D%5D&amp;rft.au=%5B%5BDanny+Cohen+%28engineer%29%7CDanny+Cohen%5D%5D&amp;rft.date=1980-04-01&amp;rft_id=http%3A%2F%2Fwww.ietf.org%2Frfc%2Fien%2Fien137.txt&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span> <small>Also published at <i><a href="http://en.m.wikipedia.org/wiki/IEEE_Computer" title="IEEE Computer" class="mw-redirect">IEEE Computer</a></i>, <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=1667115">October 1981 issue</a>.</small>
+</li>
+<li>
+<span class="citation Journal">David V. James (June 1990). <a rel="nofollow" class="external text" href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=56322">"Multiplexed buses: the endian wars continue"</a>. <i><a href="http://en.m.wikipedia.org/wiki/IEEE_Micro" title="IEEE Micro">IEEE Micro</a></i> <b>10</b> (3): 9–21. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1109%2F40.56322">10.1109/40.56322</a>. <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/0272-1732">0272-1732</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=56322">http://ieeexplore.ieee.org/xpl/freeabs_all.jsp?arnumber=56322</a></span><span class="reference-accessdate">. Retrieved 2008-12-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Multiplexed+buses%3A+the+endian+wars+continue&amp;rft.jtitle=%5B%5BIEEE+Micro%5D%5D&amp;rft.aulast=David+V.+James&amp;rft.au=David+V.+James&amp;rft.date=June+1990&amp;rft.volume=10&amp;rft.issue=3&amp;rft.pages=9%E2%80%9321&amp;rft_id=info:doi/10.1109%2F40.56322&amp;rft.issn=0272-1732&amp;rft_id=http%3A%2F%2Fieeexplore.ieee.org%2Fxpl%2Ffreeabs_all.jsp%3Farnumber%3D56322&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Bertrand Blanc, Bob Maaraoui (December 2005). <a rel="nofollow" class="external text" href="http://3bc.bertrand-blanc.com/endianness05.pdf"><i>Endianness or Where is Byte 0?</i></a><span class="printonly">. <a rel="nofollow" class="external free" href="http://3bc.bertrand-blanc.com/endianness05.pdf">http://3bc.bertrand-blanc.com/endianness05.pdf</a></span><span class="reference-accessdate">. Retrieved 2008-12-21</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Endianness+or+Where+is+Byte+0%3F&amp;rft.aulast=Bertrand+Blanc%2C+Bob+Maaraoui&amp;rft.au=Bertrand+Blanc%2C+Bob+Maaraoui&amp;rft.date=December+2005&amp;rft_id=http%3A%2F%2F3bc.bertrand-blanc.com%2Fendianness05.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Endianness"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://betterexplained.com/articles/understanding-big-and-little-endian-byte-order/">Understanding big and little endian byte order</a></li>
+<li><a rel="nofollow" class="external text" href="http://developer.apple.com/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/ByteOrdering.html">Byte Ordering PPC</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/aix/library/au-endianc/index.html?ca=drs-">Writing endian-independent code in C</a></li>
+<li><a rel="nofollow" class="external text" href="http://techforb.blogspot.com/2007/10/how-to-convert-integer-to-little-endian.html">How to convert an integer to little endian or big endian</a></li>
+<li><a rel="nofollow" class="external text" href="http://sites.google.com/site/insideoscore/endianness">C-Level Code Illustration</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.stanford.edu/dept/its/support/uspires/xlong/">xlong/xshort data-types, the Big-Endian, Little-Endian Rosetta stone</a></li>
+</ul>
+<p><span class="citation foldoc">This article is based on material taken from the <a href="http://en.m.wikipedia.org/wiki/Free_On-line_Dictionary_of_Computing" title="Free On-line Dictionary of Computing">Free On-line Dictionary of Computing</a> prior to 1 November 2008 and incorporated under the "relicensing" terms of the <a href="http://en.m.wikipedia.org/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">GFDL</a>, version 1.3 or later.</span></p>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 23 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Endianness" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Endianita" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Byte-Reihenfolge" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Endianness" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Endianness" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%97%94%EB%94%94%EC%96%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Ordine_dei_byte" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A1%D7%93%D7%A8_%D7%91%D7%AA%D7%99%D7%9D" lang="he" hreflang="he">עברית</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Bait%C5%B3_seka_%C5%BEodyje" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/B%C3%A1jtsorrend" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Endianness" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%A8%E3%83%B3%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Kolejno%C5%9B%C4%87_bajt%C3%B3w" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Extremidade_(ordena%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B1%D0%B0%D0%B9%D1%82%D0%BE%D0%B2" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Endianness" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Endianita" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/Big_endian" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Tavuj%C3%A4rjestys" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Endian" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Endian" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B1%D0%B0%D0%B9%D1%82%D1%96%D0%B2" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%AD%97%E8%8A%82%E5%BA%8F" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Endianness&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Endianness&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Endianness&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

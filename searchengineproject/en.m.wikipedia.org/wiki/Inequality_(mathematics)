@@ -1,0 +1,520 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Inequality (mathematics) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Inequality (mathematics)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Inequality_(mathematics)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Inequality+%28mathematics%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Inequality (mathematics)</h1>			
+<dl>
+<dd><i>Not to be confused with <a href="http://en.m.wikipedia.org/wiki/Inequation" title="Inequation">Inequation</a>. "Less than", "Greater than", and "More than" redirect here. For the use of the "&lt;" and "&gt;" signs as punctuation, see <a href="http://en.m.wikipedia.org/wiki/Bracket" title="Bracket">Bracket</a>. For the UK insurance brand "More Th&gt;n", see <a href="http://en.m.wikipedia.org/wiki/RSA_Insurance_Group" title="RSA Insurance Group">RSA Insurance Group</a>.</i></dd>
+</dl>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Linear_Programming_Feasible_Region.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Linear_Programming_Feasible_Region.svg/250px-Linear_Programming_Feasible_Region.svg.png" width="250" height="250" class="thumbimage"></a>
+<div class="thumbcaption">The <a href="http://en.m.wikipedia.org/wiki/Feasible_region" title="Feasible region" class="mw-redirect">feasible regions</a> of <a href="http://en.m.wikipedia.org/wiki/Linear_programming" title="Linear programming">linear programming</a> are defined by a set of inequalities.</div>
+</div>
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematics</a>, an <b>inequality</b> is a relation that holds between two values when they are different (see also: <a href="Equality_(mathematics)" title="Equality (mathematics)">equality</a>).</p>
+<ul>
+<li>The notation <i>a</i> ≠ <i>b</i> means that <i>a</i> is <b>not equal to</b> <i>b</i>.</li>
+</ul>
+<p>It does not say that one is greater than the other, or even that they can be compared in size.</p>
+<p>If the values in question are elements of an <a href="http://en.m.wikipedia.org/wiki/Ordered_set" title="Ordered set">ordered set</a>, such as the <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">integers</a> or the <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a>, they can be compared in size.</p>
+<ul>
+<li>The notation <i>a</i> &lt; <i>b</i> means that <i>a</i> is <b>less than</b> <i>b</i>.</li>
+<li>The notation <i>a</i> &gt; <i>b</i> means that <i>a</i> is <b>greater than</b> <i>b</i>.</li>
+</ul>
+<p>In either case, <i>a</i> is not equal to <i>b</i>. These relations are known as <b>strict inequalities</b>. The notation <i>a</i> &lt; <i>b</i> may also be read as "<i>a</i> is strictly less than <i>b</i>".</p>
+<p>In contrast to strict inequalities, there are two types of inequality relations that are not strict:</p>
+<ul>
+<li>The notation <i>a</i> ≤ <i>b</i> means that <i>a</i> is <b>less than or equal to</b> <i>b</i> (or, equivalently, <b>not greater than</b> <i>b</i>, or <b>at most</b> <i>b</i>).</li>
+<li>The notation <i>a</i> ≥ <i>b</i> means that <i>a</i> is <b>greater than or equal to</b> <i>b</i> (or, equivalently, <b>not less than</b> <i>b</i>, or <b>at least</b> <i>b</i>)</li>
+</ul>
+<p>An additional use of the notation is to show that one quantity is much greater than another, normally by several <a href="http://en.m.wikipedia.org/wiki/Orders_of_magnitude" title="Orders of magnitude" class="mw-redirect">orders of magnitude</a>.</p>
+<ul>
+<li>The notation <i>a</i> <span class="Unicode">≪</span> <i>b</i> means that <i>a</i> is <b>much less than</b> <i>b</i>. (In <a href="http://en.m.wikipedia.org/wiki/Measure_theory" title="Measure theory" class="mw-redirect">measure theory</a>, however, this notation is used for <a href="http://en.m.wikipedia.org/wiki/Absolute_continuity#Absolute_continuity_of_measures" title="Absolute continuity">absolute continuity</a>, an unrelated concept.)</li>
+<li>The notation <i>a</i> <span class="Unicode">≫</span> <i>b</i> means that <i>a</i> is <b>much greater than</b> <i>b</i>.</li>
+</ul>
+<p><br></p>
+<h2> <span class="mw-headline" id="Properties">Properties</span>
+</h2>
+<p>Inequalities are governed by the following <a href="http://en.m.wikipedia.org/wiki/Property_(philosophy)" title="Property (philosophy)">properties</a>. Note that, for the transitivity, converse, addition and subtraction, and multiplication and division properties, the property also holds if strict inequality signs (&lt; and &gt;) are replaced with their corresponding non-strict inequality sign (≤ and ≥).</p>
+<h3> <span class="mw-headline" id="Transitivity">Transitivity</span>
+</h3>
+<p>The Transitive property of inequality states:</p>
+<ul>
+<li>For any <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> <i>a</i>, <i>b</i>, <i>c</i>:
+<ul>
+<li>If <i>a</i> &gt; <i>b</i> and <i>b</i> &gt; <i>c</i>, then <i>a</i> &gt; <i>c</i>.</li>
+<li>If <i>a</i> &lt; <i>b</i> and <i>b</i> &lt; <i>c</i>, then <i>a</i> &lt; <i>c</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i> and <i>b</i> = <i>c</i>, then <i>a</i> &gt; <i>c</i>.</li>
+<li>If <i>a</i> &lt; <i>b</i> and <i>b</i> = <i>c</i>, then <i>a</i> &lt; <i>c</i>.</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Converse">Converse</span>
+</h3>
+<p>The relations &lt; and &gt; are each other's <a href="http://en.m.wikipedia.org/wiki/Converse_relation" title="Converse relation" class="mw-redirect">converse</a>:</p>
+<ul>
+<li>For any <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> <i>a</i> and <i>b</i>:
+<ul>
+<li>If <i>a</i> &lt; <i>b</i>, then <i>b</i> &gt; <i>a</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i>, then <i>b</i> &lt; <i>a</i>.</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Addition_and_subtraction">Addition and subtraction</span>
+</h3>
+<p>The properties that deal with <a href="Addition" title="Addition">addition</a> and <a href="Subtraction" title="Subtraction">subtraction</a> state:</p>
+<ul>
+<li>For any <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> <i>a</i>, <i>b</i>, <i>c</i>
+<ul>
+<li>If <i>a</i> &lt; <i>b</i>, then <i>a</i> + <i>c</i> &lt; <i>b</i> + <i>c</i> and <i>a</i> − <i>c</i> &lt; <i>b</i> − <i>c</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i>, then <i>a</i> + <i>c</i> &gt; <i>b</i> + <i>c</i> and <i>a</i> − <i>c</i> &gt; <i>b</i> − <i>c</i>.</li>
+</ul>
+</li>
+</ul>
+<p>i.e., the real numbers are an <a href="http://en.m.wikipedia.org/wiki/Ordered_group" title="Ordered group" class="mw-redirect">ordered group</a> under addition.</p>
+<h3> <span class="mw-headline" id="Multiplication_and_division">Multiplication and division</span>
+</h3>
+<p>The properties that deal with <a href="Multiplication" title="Multiplication">multiplication</a> and <a href="Division_(mathematics)" title="Division (mathematics)">division</a> state:</p>
+<ul>
+<li>For any real numbers, <i>a</i>, <i>b</i>, and non-zero <i>c</i>:
+<ul>
+<li>If <i>c</i> is <a href="http://en.m.wikipedia.org/wiki/Positive_number" title="Positive number" class="mw-redirect">positive</a> and <i>a</i> &lt; <i>b</i>, then <i>ac</i> &lt; <i>bc</i> and <i>a/c</i> &lt; <i>b/c</i>.</li>
+<li>If <i>c</i> is <a href="http://en.m.wikipedia.org/wiki/Negative_number" title="Negative number">negative</a> and <i>a</i> &lt; <i>b</i>, then <i>ac</i> &gt; <i>bc</i> and <i>a/c</i> &gt; <i>b/c</i>.</li>
+</ul>
+</li>
+</ul>
+<p>More generally this applies for an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a>, see below.</p>
+<h3> <span class="mw-headline" id="Additive_inverse">Additive inverse</span>
+</h3>
+<p>The properties for the <a href="http://en.m.wikipedia.org/wiki/Additive_inverse" title="Additive inverse">additive inverse</a> state:</p>
+<ul>
+<li>For any real numbers <i>a</i> and <i>b</i>:
+<ul>
+<li>If <i>a</i> &lt; <i>b</i> then −<i>a</i> &gt; −<i>b</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i> then −<i>a</i> &lt; −<i>b</i>.</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Multiplicative_inverse">Multiplicative inverse</span>
+</h3>
+<p>The properties for the <a href="http://en.m.wikipedia.org/wiki/Multiplicative_inverse" title="Multiplicative inverse">multiplicative inverse</a> state:</p>
+<ul>
+<li>For any non-zero real numbers <i>a</i> and <i>b</i> that are both <a href="http://en.m.wikipedia.org/wiki/Positive_number" title="Positive number" class="mw-redirect">positive</a> or both <a href="http://en.m.wikipedia.org/wiki/Negative_number" title="Negative number">negative</a>:
+<ul>
+<li>If <i>a</i> &lt; <i>b</i> then 1/<i>a</i> &gt; 1/<i>b</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i> then 1/<i>a</i> &lt; 1/<i>b</i>.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>If one of <i>a</i> and <i>b</i> is positive and the other is negative, then:
+<ul>
+<li>If <i>a</i> &lt; <i>b</i> then 1/<i>a</i> &lt; 1/<i>b</i>.</li>
+<li>If <i>a</i> &gt; <i>b</i> then 1/<i>a</i> &gt; 1/<i>b</i>.</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Applying_a_function_to_both_sides">Applying a function to both sides</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Log.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Log.svg/220px-Log.svg.png" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Log.svg/330px-Log.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Log.svg/440px-Log.svg.png 2x"></a>
+<div class="thumbcaption">
+
+The graph of <i>y</i> = ln <i>x</i>
+</div>
+</div>
+</div>
+<p>Any strictly <a href="http://en.m.wikipedia.org/wiki/Monotonic_function" title="Monotonic function">monotonically</a> increasing <a href="http://en.m.wikipedia.org/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> may be applied to both sides of an inequality (provided they are in the <a href="http://en.m.wikipedia.org/wiki/Domain_of_a_function" title="Domain of a function">domain</a> of that function) and it will still hold. Applying a strictly monotonically decreasing function to both sides of an inequality means the opposite inequality now holds. The rules for additive and multiplicative inverses are both examples of applying a monotonically decreasing function.</p>
+<p>For a non-strict inequality (<i>a</i> ≤ <i>b</i>, <i>a</i> ≥ <i>b</i>):</p>
+<ul>
+<li>Applying a monotonically increasing function preserves the relation (≤ remains ≤, ≥ remains ≥)</li>
+<li>Applying a monotonically decreasing function reverses the relation to its converse (≤ becomes ≥, ≥ becomes ≤)</li>
+</ul>
+<p>As an example, consider the application of the <a href="http://en.m.wikipedia.org/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a> to both sides of an inequality:</p>
+<dl>
+<dd><img class="tex" alt="0 &lt; a &lt; b \Leftrightarrow \ln(a) &lt; \ln(b)." src="http://upload.wikimedia.org/math/7/e/c/7ec9492ebc61b0eacb6c0d5a2e338257.png"></dd>
+</dl>
+<p>This is true because the natural logarithm is a strictly increasing function.</p>
+<h2> <span class="mw-headline" id="Ordered_fields">Ordered fields</span>
+</h2>
+<p>If (<i>F</i>, +, ×) is a <a href="http://en.m.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)">field</a> and ≤ is a <a href="http://en.m.wikipedia.org/wiki/Total_order" title="Total order">total order</a> on <i>F</i>, then (<i>F</i>, +, ×, ≤) is called an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a> if and only if:</p>
+<ul>
+<li>
+<i>a</i> ≤ <i>b</i> implies <i>a</i> + <i>c</i> ≤ <i>b</i> + <i>c</i>;</li>
+<li>0 ≤ <i>a</i> and 0 ≤ <i>b</i> implies 0 ≤ <i>a</i> × <i>b</i>.</li>
+</ul>
+<p>Note that both (<b>Q</b>, +, ×, ≤) and (<b>R</b>, +, ×, ≤) are <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered fields</a>, but ≤ cannot be defined in order to make (<b>C</b>, +, ×, ≤) an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a>, because −1 is the square of <i>i</i> and would therefore be positive.</p>
+<p>The non-strict inequalities ≤ and ≥ on real numbers are <a href="http://en.m.wikipedia.org/wiki/Total_order" title="Total order">total orders</a>. The strict inequalities &lt; and &gt; on real numbers are <a href="http://en.m.wikipedia.org/wiki/Total_order#Strict_total_order" title="Total order">strict total orders</a>.</p>
+<h2> <span class="mw-headline" id="Chained_notation">Chained notation</span>
+</h2>
+<p>The notation <b><i>a</i> &lt; <i>b</i> &lt; <i>c</i></b> stands for "<i>a</i> &lt; <i>b</i> and <i>b</i> &lt; <i>c</i>", from which, by the transitivity property above, it also follows that <i>a</i> &lt; <i>c</i>. Obviously, by the above laws, one can add/subtract the same number to all three terms, or multiply/divide all three terms by same nonzero number and reverse all inequalities according to sign. Hence, for example, <i>a</i> &lt; <i>b</i> + <i>e</i> &lt; <i>c</i> is equivalent to <i>a</i> − <i>e</i> &lt; <i>b</i> &lt; <i>c</i> − <i>e</i>.</p>
+<p>This notation can be generalized to any number of terms: for instance, <b><i>a</i><sub>1</sub> ≤ <i>a</i><sub>2</sub> ≤ ... ≤ <i>a</i><sub><i>n</i></sub></b> means that <i>a</i><sub><i>i</i></sub> ≤ <i>a</i><sub><i>i</i>+1</sub> for <i>i</i> = 1, 2, ..., <i>n</i> − 1. By transitivity, this condition is equivalent to <i>a</i><sub><i>i</i></sub> ≤ <i>a</i><sub><i>j</i></sub> for any 1 ≤ <i>i</i> ≤ <i>j</i> ≤ <i>n</i>.</p>
+<p>When solving inequalities using chained notation, it is possible and sometimes necessary to evaluate the terms independently. For instance to solve the inequality 4<i>x</i> &lt; 2<i>x</i> + 1 ≤ 3<i>x</i> + 2, it is not possible to isolate <i>x</i> in any one part of the inequality through addition or subtraction. Instead, the inequalities must be solved independently, yielding <i>x</i> &lt; 1/2 and <i>x</i> ≥ −1 respectively, which can be combined into the final solution −1 ≤ <i>x</i> &lt; 1/2.</p>
+<p>Occasionally, chained notation is used with inequalities in different directions, in which case the meaning is the <a href="http://en.m.wikipedia.org/wiki/Logical_conjunction" title="Logical conjunction">logical conjunction</a> of the inequalities between adjacent terms. For instance, <i>a</i> &lt; <i>b</i> = <i>c</i> ≤ <i>d</i> means that <i>a</i> &lt; <i>b</i>, <i>b</i> = <i>c</i>, and <i>c</i> ≤ <i>d</i>. This notation exists in a few <a href="Programming_language" title="Programming language">programming languages</a> such as <a href="Python_(programming_language)" title="Python (programming language)">Python</a>.</p>
+<p><br></p>
+<h2> <span class="mw-headline" id="Inequalities_between_means">Inequalities between means</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Inequality_of_arithmetic_and_geometric_means" title="Inequality of arithmetic and geometric means">Inequality of arithmetic and geometric means</a>
+</div>
+<p>There are many inequalities between means. For example, for any positive numbers <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, …, <i>a</i><sub><i>n</i></sub> we have <span class="nowrap"><i>H</i> ≤ <i>G</i> ≤ <i>A</i> ≤ <i>Q</i>,</span> where</p>
+<dl>
+<dd>
+<table style="height:200px">
+<tr>
+<td>
+<img class="tex" alt="H = \frac{n}{1/a_1 + 1/a_2 + \cdots + 1/a_n}" src="http://upload.wikimedia.org/math/d/5/c/d5c69484cf715d48881b6caf19d50154.png">  </td>
+<td>(<a href="http://en.m.wikipedia.org/wiki/Harmonic_mean" title="Harmonic mean">harmonic mean</a>),</td>
+</tr>
+<tr>
+<td><img class="tex" alt="G = \sqrt[n]{a_1 \cdot a_2 \cdots a_n} " src="http://upload.wikimedia.org/math/c/4/b/c4b2be327655964f6682cd4b090a3882.png"></td>
+<td>(<a href="http://en.m.wikipedia.org/wiki/Geometric_mean" title="Geometric mean">geometric mean</a>),</td>
+</tr>
+<tr>
+<td><img class="tex" alt="A = \frac{a_1 + a_2 + \cdots + a_n}{n}" src="http://upload.wikimedia.org/math/3/a/a/3aa7ab6534d54386abcf12c818fdd45a.png"></td>
+<td>(<a href="http://en.m.wikipedia.org/wiki/Arithmetic_mean" title="Arithmetic mean">arithmetic mean</a>),</td>
+</tr>
+<tr>
+<td><img class="tex" alt="Q = \sqrt{\frac{a_1^2 + a_2^2 + \cdots + a_n^2}{n}}" src="http://upload.wikimedia.org/math/b/d/4/bd41114206a08217b353bafc94dea086.png"></td>
+<td>(<a href="http://en.m.wikipedia.org/wiki/Root_mean_square" title="Root mean square">quadratic mean</a>).</td>
+</tr>
+</table>
+</dd>
+</dl>
+<h2> <span class="mw-headline" id="Power_inequalities">Power inequalities</span>
+</h2>
+<p>Sometimes with notation "<b>power inequality</b>" understand inequalities that contain <i>a</i><sup><i>b</i></sup> type expressions where <i>a</i> and <i>b</i> are real positive numbers or expressions of some variables. They can appear in exercises of <a href="http://en.m.wikipedia.org/wiki/Mathematical_olympiads" title="Mathematical olympiads" class="mw-redirect">mathematical olympiads</a> and some calculations.</p>
+<h3> <span class="mw-headline" id="Examples">Examples</span>
+</h3>
+<ul>
+<li>For any real <i>x</i>,</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="e^x \ge 1+x.\," src="http://upload.wikimedia.org/math/9/7/6/9761fe80556318046cccf03404747a0f.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>x</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="x^x \ge \left( \frac{1}{e}\right)^{1/e}.\," src="http://upload.wikimedia.org/math/b/7/3/b731ba83890ce30b8d55b145f07f6280.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>x</i> &gt;= 1, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="x^{x^x} \ge x.\," src="http://upload.wikimedia.org/math/4/3/a/43a6c98f5dcd99ea0f767834991ed2cc.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>x</i>, <i>y</i>, <i>z</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="(x+y)^z + (x+z)^y + (y+z)^x &gt; 2.\," src="http://upload.wikimedia.org/math/8/a/9/8a9aa76dd0f5a531bd012c25709a4ff9.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>For any real distinct numbers <i>a</i> and <i>b</i>,</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="\frac{e^b-e^a}{b-a} &gt; e^{(a+b)/2}." src="http://upload.wikimedia.org/math/e/9/2/e921eff95a578dc485b9b891db64fc78.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>x</i>, <i>y</i> &gt; 0 and 0 &lt; <i>p</i> &lt; 1, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="(x+y)^p &lt; x^p+y^p.\," src="http://upload.wikimedia.org/math/d/b/c/dbcfbfedb980fd4f9e675bb724dbb693.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>x</i>, <i>y</i>, <i>z</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="x^x y^y z^z \ge (xyz)^{(x+y+z)/3}.\," src="http://upload.wikimedia.org/math/4/4/c/44cd0f544159b47a7d53b0e115ec4eba.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>a</i>, <i>b</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="a^a + b^b \ge a^b + b^a.\," src="http://upload.wikimedia.org/math/7/e/5/7e5e7da85b75a3820f06d49ecef0d786.png"></dd>
+</dl>
+</dd>
+<dd>This inequality was solved by I.Ilani in JSTOR,AMM,Vol.97,No.1,1990.</dd>
+</dl>
+<ul>
+<li>If <i>a</i>, <i>b</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="a^{ea} + b^{eb} \ge a^{eb} + b^{ea}.\," src="http://upload.wikimedia.org/math/8/4/c/84c8f135ed104d8862b7c7799a264591.png"></dd>
+</dl>
+</dd>
+<dd>This inequality was solved by S.Manyama in AJMAA,Vol.7,Issue 2,No.1,2010 and by V.Cirtoaje in JNSA,Vol.4,Issue 2,130-137,2011.</dd>
+</dl>
+<ul>
+<li>If <i>a</i>, <i>b</i>, <i>c</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="a^{2a} + b^{2b} + c^{2c} \ge a^{2b} + b^{2c} + c^{2a}.\," src="http://upload.wikimedia.org/math/b/0/2/b02c908763868f795170fbb4e20ec3cd.png"></dd>
+</dl>
+</dd>
+</dl>
+<ul>
+<li>If <i>a</i>, <i>b</i> &gt; 0, then</li>
+</ul>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="a^b + b^a &gt; 1.\," src="http://upload.wikimedia.org/math/3/b/e/3be5c5e6b19dc89f642c24b84bd78974.png"></dd>
+</dl>
+</dd>
+<dd>This result was generalized by R. Ozols in 2002 who proved that if <i>a</i><sub>1</sub>, ..., <i>a</i><sub><i>n</i></sub> &gt; 0, then
+<dl>
+<dd><img class="tex" alt="a_1^{a_2}+a_2^{a_3}+\cdots+a_n^{a_1}&gt;1" src="http://upload.wikimedia.org/math/6/3/8/63878477319f15e9d258cd530544c30c.png"></dd>
+</dl>
+</dd>
+<dd>(result is published in Latvian popular-scientific quarterly <i>The Starry Sky</i>, see references).</dd>
+</dl>
+<h2> <span class="mw-headline" id="Well-known_inequalities">Well-known inequalities</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_inequalities" title="List of inequalities">List of inequalities</a>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Mathematician" title="Mathematician">Mathematicians</a> often use inequalities to bound quantities for which exact formulas cannot be computed easily. Some inequalities are used so often that they have names:</p>
+<div style="-moz-column-count:2; column-count:2;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Azuma%27s_inequality" title="Azuma's inequality">Azuma's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bernoulli%27s_inequality" title="Bernoulli's inequality">Bernoulli's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Boole%27s_inequality" title="Boole's inequality">Boole's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cauchy%E2%80%93Schwarz_inequality" title="Cauchy–Schwarz inequality">Cauchy–Schwarz inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chebyshev%27s_inequality" title="Chebyshev's inequality">Chebyshev's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chernoff%27s_inequality" title="Chernoff's inequality" class="mw-redirect">Chernoff's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cram%C3%A9r%E2%80%93Rao_inequality" title="Cramér–Rao inequality" class="mw-redirect">Cramér–Rao inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hoeffding%27s_inequality" title="Hoeffding's inequality">Hoeffding's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/H%C3%B6lder%27s_inequality" title="Hölder's inequality">Hölder's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inequality_of_arithmetic_and_geometric_means" title="Inequality of arithmetic and geometric means">Inequality of arithmetic and geometric means</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Jensen%27s_inequality" title="Jensen's inequality">Jensen's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kolmogorov%27s_inequality" title="Kolmogorov's inequality">Kolmogorov's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Markov%27s_inequality" title="Markov's inequality">Markov's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minkowski_inequality" title="Minkowski inequality">Minkowski inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nesbitt%27s_inequality" title="Nesbitt's inequality">Nesbitt's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pedoe%27s_inequality" title="Pedoe's inequality">Pedoe's inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Poincar%C3%A9_inequality" title="Poincaré inequality">Poincaré inequality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Triangle_inequality" title="Triangle inequality">Triangle inequality</a></li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="Complex_numbers_and_inequalities">Complex numbers and inequalities</span>
+</h2>
+<p>The set of <a href="Complex_number" title="Complex number">complex numbers</a> <img class="tex" alt="\mathbb{C}" src="http://upload.wikimedia.org/math/f/0/b/f0b01fe0a1eec87c634584ac0694fb71.png"> with its operations of <a href="Addition" title="Addition">addition</a> and <a href="Multiplication" title="Multiplication">multiplication</a> is a <a href="http://en.m.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)">field</a>, but it is impossible to define any relation ≤ so that <img class="tex" alt="(\mathbb{C},+,\times,\le)" src="http://upload.wikimedia.org/math/a/f/b/afbf59f2a84ae53e70beae937f124d86.png"> becomes an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a>. To make <img class="tex" alt="(\mathbb{C},+,\times,\le)" src="http://upload.wikimedia.org/math/a/f/b/afbf59f2a84ae53e70beae937f124d86.png"> an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a>, it would have to satisfy the following two properties:</p>
+<ul>
+<li>if <i>a</i> ≤ <i>b</i> then <i>a</i> + <i>c</i> ≤ <i>b</i> + <i>c</i>
+</li>
+<li>if 0 ≤ <i>a</i> and 0 ≤ <i>b</i> then 0 ≤ <i>a b</i>
+</li>
+</ul>
+<p>Because ≤ is a <a href="http://en.m.wikipedia.org/wiki/Total_order" title="Total order">total order</a>, for any number <i>a</i>, either 0 ≤ <i>a</i> or <i>a</i> ≤ 0 (in which case the first property above implies that 0 ≤ <img class="tex" alt="-a" src="http://upload.wikimedia.org/math/3/7/c/37caf0ee262229a9ddc60877eec6883f.png">). In either case 0 ≤ <i>a</i><sup>2</sup>; this means that <img class="tex" alt="i^2&gt;0" src="http://upload.wikimedia.org/math/1/7/f/17f8f50d7421818f9a08769297257225.png"> and <img class="tex" alt="1^2&gt;0" src="http://upload.wikimedia.org/math/0/7/8/0787874dbc1b419f6fbf7cd2c0a73679.png">; so <img class="tex" alt="-1&gt;0" src="http://upload.wikimedia.org/math/b/2/1/b2140ec20466e975e1b1ae57cbfad9af.png"> and <img class="tex" alt="1&gt;0" src="http://upload.wikimedia.org/math/1/a/b/1ab4e2d1136854fbb042404772121520.png">, which means <img class="tex" alt="(-1+1)&gt;0" src="http://upload.wikimedia.org/math/1/8/2/182502d59cbc0ac4a2c39722dfa57368.png">; contradiction.</p>
+<p>However, an operation ≤ can be defined so as to satisfy only the first property (namely, "if <i>a</i> ≤ <i>b</i> then <i>a</i> + <i>c</i> ≤ <i>b</i> + <i>c</i>"). Sometimes the <a href="http://en.m.wikipedia.org/wiki/Lexicographical_order" title="Lexicographical order">lexicographical order</a> definition is used:</p>
+<ul>
+<li>a ≤ b if <img class="tex" alt=" Re(a)" src="http://upload.wikimedia.org/math/2/3/f/23f0ed9b75a2efac3ce5bff464bd14c6.png"> &lt; <img class="tex" alt="Re(b)" src="http://upload.wikimedia.org/math/5/0/b/50be8238b3a2a93f69fd0ac4938e45db.png"> or (<img class="tex" alt="Re(a) = Re(b)" src="http://upload.wikimedia.org/math/7/3/8/738e5a3b80b73d41a790216a4dba5dd5.png"> and <img class="tex" alt="Im(a)" src="http://upload.wikimedia.org/math/a/8/6/a868bb557d9bd2cf908dca98cf39600a.png"> ≤ <img class="tex" alt="Im(b)" src="http://upload.wikimedia.org/math/9/3/7/937bd94ed25258ac4809c7aea7838f19.png">)</li>
+</ul>
+<p>It can easily be proven that for this definition <i>a</i> ≤ <i>b</i> implies <i>a</i> + <i>c</i> ≤ <i>b</i> + <i>c</i>.</p>
+<h2> <span class="mw-headline" id="Vector_inequalities">Vector inequalities</span>
+</h2>
+<p>Inequality relationships similar to those defined above can also be defined for <a href="http://en.m.wikipedia.org/wiki/Column_vector" title="Column vector">column vector</a>. If we let the vectors <img class="tex" alt="x,y\in\mathbb{R}^n" src="http://upload.wikimedia.org/math/c/4/7/c47befe0f6b81a346d2e5472181c536d.png"> (meaning that <img class="tex" alt="x = \left(x_1,x_2,\ldots,x_n\right)^T" src="http://upload.wikimedia.org/math/2/0/c/20c41aeea82694fa27a19b2c3244d562.png"> and <img class="tex" alt="y = \left(y_1,y_2,\ldots,y_n\right)^T" src="http://upload.wikimedia.org/math/9/c/0/9c093e4433ac199306e20771a1fc827b.png"> where <img class="tex" alt="x_i" src="http://upload.wikimedia.org/math/0/5/e/05e42209d67fe1eb15a055e9d3b3770e.png"> and <img class="tex" alt="y_i" src="http://upload.wikimedia.org/math/1/8/d/18daef71b5d25ce76b8628a81e4fc76b.png"> are real numbers for <img class="tex" alt="i=1,\ldots,n" src="http://upload.wikimedia.org/math/0/c/c/0ccf5455d21e83c396573de9c87adc07.png">), we can define the following relationships.</p>
+<ul>
+<li>
+<img class="tex" alt="x = y \ " src="http://upload.wikimedia.org/math/2/2/3/2235ba47a64fdf0d02da7cb0e2c3dc25.png"> if <img class="tex" alt="x_i = y_i\ " src="http://upload.wikimedia.org/math/9/2/e/92e009209c96536498b6ce2619f395c2.png"> for <img class="tex" alt="i=1,\ldots,n" src="http://upload.wikimedia.org/math/0/c/c/0ccf5455d21e83c396573de9c87adc07.png">
+</li>
+<li>
+<img class="tex" alt="x &lt; y \ " src="http://upload.wikimedia.org/math/c/f/3/cf3904572b42c571060f5cea160eb990.png"> if <img class="tex" alt="x_i &lt; y_i\ " src="http://upload.wikimedia.org/math/8/b/b/8bb54fa8bfcf7235f6be575b21a8e6ee.png"> for <img class="tex" alt="i=1,\ldots,n" src="http://upload.wikimedia.org/math/0/c/c/0ccf5455d21e83c396573de9c87adc07.png">
+</li>
+<li>
+<img class="tex" alt="x \leq y " src="http://upload.wikimedia.org/math/0/4/9/0499fbc0b0f937d8f3a192a94edcd193.png"> if <img class="tex" alt="x_i \leq y_i " src="http://upload.wikimedia.org/math/9/3/a/93ac0044e3e8c7d2df4159d793c09aee.png"> for <img class="tex" alt="i=1,\ldots,n" src="http://upload.wikimedia.org/math/0/c/c/0ccf5455d21e83c396573de9c87adc07.png"> and <img class="tex" alt="x \neq y" src="http://upload.wikimedia.org/math/7/3/c/73c7070fbc887c38daea22738774c01c.png">
+</li>
+<li>
+<img class="tex" alt="x \leqq y " src="http://upload.wikimedia.org/math/d/c/1/dc1b25f51e3faddea4639ff0788583b8.png"> if <img class="tex" alt="x_i \leq y_i " src="http://upload.wikimedia.org/math/9/3/a/93ac0044e3e8c7d2df4159d793c09aee.png"> for <img class="tex" alt="i=1,\ldots,n" src="http://upload.wikimedia.org/math/0/c/c/0ccf5455d21e83c396573de9c87adc07.png">
+</li>
+</ul>
+<p>Similarly, we can define relationships for <img class="tex" alt=" x &gt; y " src="http://upload.wikimedia.org/math/1/0/3/10342149cd04422c7be79506cb544ac5.png">, <img class="tex" alt=" x \geq y " src="http://upload.wikimedia.org/math/7/7/c/77c3f188e2905561a0ed31d83c26f789.png">, and <img class="tex" alt=" x \geqq y " src="http://upload.wikimedia.org/math/9/2/2/922952ceb7e5803521348de4ca1e8b1e.png">. We note that this notation is consistent with that used by Matthias Ehrgott in <i>Multicriteria Optimization</i> (see References).</p>
+<p>We observe that the property of Trichotomy (as stated above) is not valid for vector relationships. We consider the case where <img class="tex" alt="x = \left[ 2, 5 \right]^T " src="http://upload.wikimedia.org/math/7/7/e/77efd506bc60a41518cabbb204552c6c.png"> and <img class="tex" alt="y = \left[ 3, 4 \right]^T " src="http://upload.wikimedia.org/math/4/7/5/4753d9479062cc04a276edeb8ebb842d.png">. There exists no valid inequality relationship between these two vectors. Also, a <a href="http://en.m.wikipedia.org/wiki/Multiplicative_inverse" title="Multiplicative inverse">multiplicative inverse</a> would need to be defined on a vector before this property could be considered. However, for the rest of the aforementioned properties, a parallel property for vector inequalities exists.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Binary_relation" title="Binary relation">Binary relation</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Bracket" title="Bracket">Bracket</a> for the use of the &lt; and &gt; signs as brackets</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fourier-Motzkin_elimination" title="Fourier-Motzkin elimination" class="mw-redirect">Fourier-Motzkin elimination</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inclusion_(set_theory)" title="Inclusion (set theory)" class="mw-redirect">Inclusion (set theory)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inequation" title="Inequation">Inequation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interval_(mathematics)" title="Interval (mathematics)">Interval (mathematics)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_inequalities" title="List of inequalities">List of inequalities</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Partially_ordered_set" title="Partially ordered set">Partially ordered set</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Relational_operator" title="Relational operator">Relational operators</a>, used in programming languages to denote inequality</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;"></div>
+<ul>
+<li>
+<span class="citation book">Hardy, G., Littlewood J.E., Polya, G. (1999). <i>Inequalities</i>. Cambridge Mathematical Library, Cambridge University Press. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-521-05206-8" title="Special:BookSources/0-521-05206-8">0-521-05206-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Inequalities&amp;rft.aulast=Hardy%2C+G.%2C+Littlewood+J.E.%2C+Polya%2C+G.&amp;rft.au=Hardy%2C+G.%2C+Littlewood+J.E.%2C+Polya%2C+G.&amp;rft.date=1999&amp;rft.pub=Cambridge+Mathematical+Library%2C+Cambridge+University+Press&amp;rft.isbn=0-521-05206-8&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Beckenbach, E.F., Bellman, R. (1975). <i>An Introduction to Inequalities</i>. Random House Inc. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-394-01559-2" title="Special:BookSources/0-394-01559-2">0-394-01559-2</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+Inequalities&amp;rft.aulast=Beckenbach%2C+E.F.%2C+Bellman%2C+R.&amp;rft.au=Beckenbach%2C+E.F.%2C+Bellman%2C+R.&amp;rft.date=1975&amp;rft.pub=Random+House+Inc&amp;rft.isbn=0-394-01559-2&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Drachman, Byron C., Cloud, Michael J. (1998). <i>Inequalities: With Applications to Engineering</i>. Springer-Verlag. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-387-98404-6" title="Special:BookSources/0-387-98404-6">0-387-98404-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Inequalities%3A+With+Applications+to+Engineering&amp;rft.aulast=Drachman%2C+Byron+C.%2C+Cloud%2C+Michael+J.&amp;rft.au=Drachman%2C+Byron+C.%2C+Cloud%2C+Michael+J.&amp;rft.date=1998&amp;rft.pub=Springer-Verlag&amp;rft.isbn=0-387-98404-6&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Murray S. Klamkin. <a rel="nofollow" class="external text" href="http://ua-mirror.pims.math.ca/pi/issue7/page26-29.pdf">""Quickie" inequalities"</a> (PDF). <i>Math Strategies</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://ua-mirror.pims.math.ca/pi/issue7/page26-29.pdf">http://ua-mirror.pims.math.ca/pi/issue7/page26-29.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=%22Quickie%22+inequalities&amp;rft.jtitle=Math+Strategies&amp;rft.aulast=Murray+S.+Klamkin&amp;rft.au=Murray+S.+Klamkin&amp;rft_id=http%3A%2F%2Fua-mirror.pims.math.ca%2Fpi%2Fissue7%2Fpage26-29.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web">Arthur Lohwater (1982). <a rel="nofollow" class="external text" href="http://www.mediafire.com/?1mw1tkgozzu">"Introduction to Inequalities"</a>. Online e-book in PDF format<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mediafire.com/?1mw1tkgozzu">http://www.mediafire.com/?1mw1tkgozzu</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Introduction+to+Inequalities&amp;rft.atitle=&amp;rft.aulast=Arthur+Lohwater&amp;rft.au=Arthur+Lohwater&amp;rft.date=1982&amp;rft.pub=Online+e-book+in+PDF+format&amp;rft_id=http%3A%2F%2Fwww.mediafire.com%2F%3F1mw1tkgozzu&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web">Harold Shapiro (2005,1972–1985). <a rel="nofollow" class="external text" href="http://www.math.kth.se/math/TOPS/index.html">"Mathematical Problem Solving"</a>. <i>The Old Problem Seminar</i>. Kungliga Tekniska högskolan<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.math.kth.se/math/TOPS/index.html">http://www.math.kth.se/math/TOPS/index.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Mathematical+Problem+Solving&amp;rft.atitle=The+Old+Problem+Seminar&amp;rft.aulast=Harold+Shapiro&amp;rft.au=Harold+Shapiro&amp;rft.date=2005%2C1972%E2%80%931985&amp;rft.pub=Kungliga+Tekniska+h%C3%B6gskolan&amp;rft_id=http%3A%2F%2Fwww.math.kth.se%2Fmath%2FTOPS%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://web.archive.org/web/20080203070350/www.kalva.demon.co.uk/usa/usa74.html">"3rd USAMO"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.kalva.demon.co.uk/usa/usa74.html">the original</a> on 2008-02-03<span class="printonly">. <a rel="nofollow" class="external free" href="http://web.archive.org/web/20080203070350/www.kalva.demon.co.uk/usa/usa74.html">http://web.archive.org/web/20080203070350/www.kalva.demon.co.uk/usa/usa74.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=3rd+USAMO&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20080203070350%2Fwww.kalva.demon.co.uk%2Fusa%2Fusa74.html&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Pachpatte, B.G. (2005). <i>Mathematical Inequalities</i>. North-Holland Mathematical Library. <b>67</b> (first ed.). Amsterdam, The Netherlands: <a href="http://en.m.wikipedia.org/wiki/Elsevier" title="Elsevier">Elsevier</a>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-444-51795-2" title="Special:BookSources/0-444-51795-2">0-444-51795-2</a>. <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/0924-6509">0924-6509</a>. <a href="http://en.m.wikipedia.org/wiki/Mathematical_Reviews" title="Mathematical Reviews">MR</a> <a rel="nofollow" class="external text" href="http://www.ams.org/mathscinet-getitem?mr=2147066">2147066</a>. <a href="http://en.m.wikipedia.org/wiki/Zentralblatt_MATH" title="Zentralblatt MATH">Zbl</a> <a rel="nofollow" class="external text" href="http://www.zentralblatt-math.org/zmath/en/search/?q=an:1091.26008&amp;format=complete">1091.26008</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematical+Inequalities&amp;rft.aulast=Pachpatte&amp;rft.aufirst=B.G.&amp;rft.au=Pachpatte%2C%26%2332%3BB.G.&amp;rft.date=2005&amp;rft.series=North-Holland+Mathematical+Library&amp;rft.volume=67&amp;rft.edition=first&amp;rft.place=Amsterdam%2C+The+Netherlands&amp;rft.pub=%5B%5BElsevier%5D%5D&amp;rft.isbn=0-444-51795-2&amp;rft.issn=0924-6509&amp;rft.mr=2147066&amp;rft_id=info:zbl/1091.26008&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Ehrgott, Matthias (2005). <i>Multicriteria Optimization</i>. Springer-Berlin. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/3-540-21398-8" title="Special:BookSources/3-540-21398-8">3-540-21398-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Multicriteria+Optimization&amp;rft.aulast=Ehrgott%2C+Matthias&amp;rft.au=Ehrgott%2C+Matthias&amp;rft.date=2005&amp;rft.pub=Springer-Berlin&amp;rft.isbn=3-540-21398-8&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book"><a href="http://en.m.wikipedia.org/wiki/J._Michael_Steele" title="J. Michael Steele">Steele, J. Michael</a> (2004). <a rel="nofollow" class="external text" href="http://www-stat.wharton.upenn.edu/~steele/Publications/Books/CSMC/CSMC_index.html"><i>The Cauchy-Schwarz Master Class: An Introduction to the Art of Mathematical Inequalities</i></a>. Cambridge University Press. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-521-54677-5" title="Special:BookSources/978-0-521-54677-5">978-0-521-54677-5</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www-stat.wharton.upenn.edu/~steele/Publications/Books/CSMC/CSMC_index.html">http://www-stat.wharton.upenn.edu/~steele/Publications/Books/CSMC/CSMC_index.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Cauchy-Schwarz+Master+Class%3A+An+Introduction+to+the+Art+of+Mathematical+Inequalities&amp;rft.aulast=Steele&amp;rft.aufirst=J.+Michael&amp;rft.au=Steele%2C%26%2332%3BJ.+Michael&amp;rft.date=2004&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=978-0-521-54677-5&amp;rft_id=http%3A%2F%2Fwww-stat.wharton.upenn.edu%2F%7Esteele%2FPublications%2FBooks%2FCSMC%2FCSMC_index.html&amp;rfr_id=info:sid/en.wikipedia.org:Inequality_(mathematics)"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/GraphOfInequalities/">Graph of Inequalities</a> by <a href="http://en.m.wikipedia.org/wiki/Ed_Pegg,_Jr." title="Ed Pegg, Jr.">Ed Pegg, Jr.</a>, <a href="http://en.m.wikipedia.org/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a>.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 49 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D8%AA%D8%A8%D8%A7%D9%8A%D9%86%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%85%E0%A6%B8%E0%A6%AE%E0%A6%A4%E0%A6%BE" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://be.m.wikipedia.org/wiki/%D0%9D%D1%8F%D1%80%D0%BE%D1%9E%D0%BD%D0%B0%D1%81%D1%86%D1%8C" lang="be" hreflang="be">беларуская</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/%D0%9D%D1%8F%D1%80%D0%BE%D1%9E%D0%BD%D0%B0%D1%81%D1%8C%D1%86%D1%8C" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Nejednakost" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Inequaci%C3%B3" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Nerovnost_(matematika)" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Ulighed_(matematik)" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Ungleichung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Desigualdad_matem%C3%A1tica" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Neegala%C4%B5o_(pli_granda,_malpli_granda)" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Desberdintza" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%86%D8%A7%D8%A8%D8%B1%D8%A7%D8%A8%D8%B1%DB%8C" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/In%C3%A9galit%C3%A9_(math%C3%A9matiques)" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Inecuaci%C3%B3n" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B6%80%EB%93%B1%EC%8B%9D" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%85%E0%A4%B8%E0%A4%AE%E0%A4%BF%E0%A4%95%E0%A4%BE" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Nejednad%C5%BEba" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://io.m.wikipedia.org/wiki/Ne_egaleso" lang="io" hreflang="io">Ido</a></li><li><a href="http://id.m.wikipedia.org/wiki/Pertidaksamaan" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Disuguaglianza" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%90%D7%99-%D7%A9%D7%95%D7%95%D7%99%D7%95%D7%9F" lang="he" hreflang="he">עברית</a></li><li><a href="http://ky.m.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D0%B0%D0%B1%D0%B0%D1%80%D1%81%D1%8B%D0%B7%D0%B4%D1%8B%D0%BA" lang="ky" hreflang="ky">Кыргызча</a></li><li><a href="http://la.m.wikipedia.org/wiki/Inaequatio" lang="la" hreflang="la">Latina</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Nevien%C4%81d%C4%ABba" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Egyenl%C5%91tlens%C3%A9g" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Ongelijkheid" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E4%B8%8D%E7%AD%89%E5%BC%8F" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Ulikskap_i_matematikk" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://oc.m.wikipedia.org/wiki/Inequacion" lang="oc" hreflang="oc">occitan</a></li><li><a href="http://km.m.wikipedia.org/wiki/%E1%9E%9C%E1%9E%B7%E1%9E%9F%E1%9E%98%E1%9E%97%E1%9E%B6%E1%9E%96%E1%9E%9F%E1%9F%92%E1%9E%9C%E1%9F%90%E1%9E%99%E1%9E%82%E1%9E%BB%E1%9E%8E" lang="km" hreflang="km">ភាសាខ្មែរ</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Nier%C3%B3wno%C5%9B%C4%87" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Desigualdade" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Inegalitate" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9D%D0%B5%D1%80%D0%B0%D0%B2%D0%B5%D0%BD%D1%81%D1%82%D0%B2%D0%BE" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Inequality" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Nerovnos%C5%A5" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://ckb.m.wikipedia.org/wiki/%D9%86%D8%A7%DB%8C%DB%95%DA%A9%D8%B3%D8%A7%D9%86%DB%8C" lang="ckb" hreflang="ckb">کوردی</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9D%D0%B5%D1%98%D0%B5%D0%B4%D0%BD%D0%B0%D0%BA%D0%BE%D1%81%D1%82" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Nejednakost" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Ep%C3%A4yht%C3%A4l%C3%B6" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Olikhet" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%AD%E0%B8%AA%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3" lang="th" hreflang="th">ไทย</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9D%D0%B5%D1%80%D1%96%D0%B2%D0%BD%D1%96%D1%81%D1%82%D1%8C" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D9%86%D8%A7%D9%85%D8%B3%D8%A7%D9%88%D8%A7%D8%AA" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/B%E1%BA%A5t_%C4%91%E1%BA%B3ng_th%E1%BB%A9c" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://war.m.wikipedia.org/wiki/Pagkadirikapatas_(matematika)" lang="war" hreflang="war">Winaray</a></li><li><a href="http://yi.m.wikipedia.org/wiki/%D7%90%D7%95%D7%9E%D7%92%D7%9C%D7%99%D7%99%D7%9B%D7%94%D7%99%D7%99%D7%98" lang="yi" hreflang="yi">ייִדיש</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E4%B8%8D%E7%AD%89" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Inequality_(mathematics)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Inequality_(mathematics)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Inequality+%28mathematics%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

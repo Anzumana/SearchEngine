@@ -1,0 +1,619 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Conditional (programming) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Conditional (programming)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Conditional_(programming)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Conditional+%28programming%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Conditional (programming)</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <b>conditional statements</b>, <b>conditional expressions</b> and <b>conditional constructs</b> are features of a <a href="Programming_language" title="Programming language">programming language</a> which perform different computations or actions depending on whether a programmer-specified <a href="Boolean_datatype" title="Boolean datatype" class="mw-redirect">boolean</a> <i>condition</i> evaluates to true or false. Apart from the case of <a href="http://en.m.wikipedia.org/wiki/Branch_predication" title="Branch predication">branch predication</a>, this is always achieved by selectively altering the <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control flow</a> based on some condition.</p>
+<p>In <a href="Imperative_programming" title="Imperative programming">imperative programming</a> languages, the term "conditional <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statement</a>" is usually used, whereas in <a href="Functional_programming" title="Functional programming">functional programming</a>, the terms "conditional <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expression</a>" or "conditional construct" are preferred, because these terms all have distinct meanings.</p>
+<p>Although <a href="http://en.m.wikipedia.org/wiki/Dynamic_dispatch" title="Dynamic dispatch">dynamic dispatch</a> is not usually classified as a conditional construct, it is another way to select between alternatives at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">runtime</a>.</p>
+<h2> <span class="mw-headline" id="If.E2.80.93then.28.E2.80.93else.29">If–then(–else)</span>
+</h2>
+<p>The <code>if–then</code> construct (sometimes called <code>if–then–else</code>) is common across many programming languages. Although the syntax varies quite a bit from language to language, the basic structure (in <a href="http://en.m.wikipedia.org/wiki/Pseudocode" title="Pseudocode">pseudocode</a> form) looks like this: (The example is actually perfectly valid Visual Basic or QuickBASIC syntax.)</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="qbasic source-qbasic">
+<pre class="de1">
+ <span class="kw1">IF</span> <span class="br0">(</span>boolean condition<span class="br0">)</span>
+    <span class="br0">(</span>consequent<span class="br0">)</span>
+ <span class="kw1">ELSE</span>
+    <span class="br0">(</span>alternative<span class="br0">)</span>
+ <span class="kw3">END</span> <span class="kw1">IF</span>
+</pre>
+</div>
+</div>
+<p><br>
+When an <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> finds an <code>If</code>, it expects a <a href="Boolean_datatype" title="Boolean datatype" class="mw-redirect">boolean</a> condition – for example, <code>x &gt; 0</code>, which means "the variable x contains a number that is greater than zero" – and evaluates that condition. If the condition is <code>true</code>, the statements following the <code>then</code> are executed. Otherwise, the execution continues in the following branch – either in the <code>else</code> block (which is usually optional), or if there is no <code>else</code> branch, then after the <code>end If</code>.</p>
+<p>After either branch has been executed, <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control</a> returns to the point after the <code>end If</code>.</p>
+<p>In early programming languages, especially some dialects of <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> in the 1980s <a href="http://en.m.wikipedia.org/wiki/Home_computer" title="Home computer">home computers</a>, an <code>if–then</code> statement could only contain <code><a href="http://en.m.wikipedia.org/wiki/GOTO" title="GOTO" class="mw-redirect">GOTO</a></code> statements. This led to a hard-to-read style of programming known as <a href="http://en.m.wikipedia.org/wiki/Spaghetti_programming" title="Spaghetti programming" class="mw-redirect">spaghetti programming</a>, with programs in this style called <i>spaghetti code</i>. As a result, so called <a href="Structured_programming" title="Structured programming">structured programming</a> which allows (virtually) arbitrary statements to be put in statement blocks inside an <code>if</code> statement, gained in popularity, until it became the norm even in most BASIC programming circles. Such mechanisms and principles were based on the older but more advanced <a href="ALGOL" title="ALGOL">ALGOL</a> family of languages, and ALGOL-like languages such as <i><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a></i> and <i><a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a></i> influenced modern BASIC variants for many years. While it is possible while using only <code>GOTO</code> statements in <code>if-then</code> statements to write programs that are not spaghetti code and are just as well structured and readable as programs written in a structured programming language, so called structured programming makes this easier and enforces it. Structured <code>if-then-else</code> statements like the example above are one of the key elements of structured programming, and they are present in most popular high-level programming languages including <i><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></i>, its derivatives (including <i><a href="C++" title="C++">C++</a></i> and <i><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></i>), <i><a href="Java_(programming_language)" title="Java (programming language)">Java</a></i>, <i><a href="JavaScript" title="JavaScript">JavaScript</a></i> and <i><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a></i> (all versions including .NET).</p>
+<h3> <span class="mw-headline" id="Else_if">Else if</span>
+</h3>
+<p>By using <code>else if</code>, it is possible to combine several conditions. Only the statements following the first condition that is found to be true will be executed. All other statements will be skipped. The statements of</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+<span class="kw1">if</span> condition <span class="kw1">then</span>
+    <span class="co1">-- statements;</span>
+<span class="kw1">elsif</span> condition <span class="kw1">then</span>
+    <span class="co1">-- more statements</span>
+<span class="kw1">elsif</span> condition <span class="kw1">then</span>
+    <span class="co1">-- more statements;</span>
+...
+<span class="kw1">else</span>
+    <span class="co1">-- other statements;</span>
+<span class="kw1">end</span> <span class="kw1">if</span>;
+</pre>
+</div>
+</div>
+<p><code>elsif</code>, in Ada, is simply <a href="Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a> for <code>else</code> followed by <code>if</code>. In Ada, the difference is that only one <code>end if</code> is needed, if one uses <code>elsif</code> instead of <code>else</code> followed by <code>if</code>.</p>
+<p>In some other languages, such as <i><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></i> and <i><a href="Java_(programming_language)" title="Java (programming language)">Java</a></i>, <code>else if</code> literally just means <code>else</code> followed by <code>if</code>, and syntactic sugar is neither needed nor provided. This works because in these languages, an <code>else</code> followed by one statement (in this case the <code>if</code>) does not need braces. This is not true in <a href="Perl" title="Perl">Perl</a>, which provides the keyword <code>elsif</code> to avoid the large number of braces that would be required by multiple <code>if</code> and <code>else</code> statements. Similarly, <a href="Python_(programming_language)" title="Python (programming language)">Python</a> uses the special keyword <code>elif</code> because structure is denoted by indentation rather than braces, so a repeated use of <code>else</code> and <code>if</code> would require increased indentation after every condition.</p>
+<p>C and Java implementations, however, do have a disadvantage that each <code>else if</code> branch is, effectively, adding an extra nesting level, which will complicate compiler's writer job if arbitrarily long <code>else if</code> chains are to be supported.</p>
+<h3> <span class="mw-headline" id="If_expressions">If expressions</span>
+</h3>
+<p>Many languages support <i>if expressions</i>, which are similar to if statements, but return a value as a result. Thus, they are true expressions (which evaluate to a value), not statements (which just perform an action).</p>
+<h4> <span class="mw-headline" id="As_a_ternary_operator">As a ternary operator</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="?:" title="?:">?:</a>
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and C-like languages conditional expressions take the form of a <a href="http://en.m.wikipedia.org/wiki/Ternary_operator" title="Ternary operator" class="mw-redirect">ternary operator</a> called the conditional expression operator, <a href="?:" title="?:">?:</a>, which follows this template:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="br0">(</span>condition<span class="br0">)</span><span class="sy0">?</span><span class="br0">(</span>evaluate <span class="kw1">if</span> condition was <span class="kw2">true</span><span class="br0">)</span><span class="sy0">:</span><span class="br0">(</span>evaluate <span class="kw1">if</span> condition was <span class="kw2">false</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>This means that conditions can be inlined into expressions, unlike with if statements, as shown here using C syntax:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">//Invalid in most programming languages. Two of the exceptions are Ruby and Scala</span>
+my_variable <span class="sy0">=</span> <span class="kw1">if</span><span class="br0">(</span>x <span class="sy0">&gt;</span> <span class="nu0">10</span><span class="br0">)</span> <span class="br0">{</span> <span class="st0">"foo"</span> <span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span> <span class="st0">"bar"</span> <span class="br0">}</span><span class="sy0">;</span>
+<span class="co1">//Valid</span>
+my_variable <span class="sy0">=</span> <span class="br0">(</span>x <span class="sy0">&gt;</span> <span class="nu0">10</span><span class="br0">)</span><span class="sy0">?</span><span class="st0">"foo"</span><span class="sy0">:</span><span class="st0">"bar"</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>To accomplish the same as the second (correct) line above, using a standard if/else statement, this would take more than one line of code (under standard layout conventions):</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">(</span>x <span class="sy0">&gt;</span> <span class="nu0">10</span><span class="br0">)</span>
+  my_variable <span class="sy0">=</span> <span class="st0">'foo'</span><span class="sy0">;</span>
+<span class="kw1">else</span>
+  my_variable <span class="sy0">=</span> <span class="st0">'bar'</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The explicit if/then statement is easier to read and usually compiles more efficiently than the ternary operator.<sup id="cite_ref-1" class="reference"><a href="Conditional_(programming)#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> and some other members of the <a href="ALGOL" title="ALGOL">ALGOL</a> family have the <code>if</code> expression which performs the same function.</p>
+<p>In ALGOL:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+  myvariable <span class="sy1">:</span><span class="sy3">=</span> <span class="kw1">if</span> x &gt; <span class="nu0">10</span> <span class="kw1">then</span> <span class="nu0">1</span> <span class="kw1">else</span> <span class="nu0">2</span>
+</pre>
+</div>
+</div>
+<p>In the <span class="new" title="Lisp dialect (page does not exist)">Lisp dialects</span> <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> and <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, the former of which was inspired to a great extent by ALGOL:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+ <span class="co1">;; Scheme</span>
+ <span class="br0">(</span>define myvariable <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&gt;</span> x <span class="nu0">10</span><span class="br0">)</span> <span class="nu0">1</span> <span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span>   <span class="co1">; Assigns ‘myvariable’ to 1 or 2, depending on the value of ‘x’</span>
+ 
+ <span class="co1">;; Common Lisp</span>
+ <span class="br0">(</span><span class="kw1">let</span> <span class="br0">(</span><span class="br0">(</span>x <span class="nu0">5</span><span class="br0">)</span><span class="br0">)</span>
+   <span class="br0">(</span><span class="kw1">setq</span> myvariable <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&gt;</span> x <span class="nu0">10</span><span class="br0">)</span> <span class="nu0">1</span> <span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>  <span class="co1">; Assigns ‘myvariable’ to 2</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="As_a_function">As a function</span>
+</h4>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> and some other languages, a function called <code><a href="http://en.m.wikipedia.org/wiki/IIf" title="IIf">IIf</a></code> is provided, which can be used as a conditional expression. However, it does not behave like a true conditional expression, because both the true and false branches are always evaluated; it is just that the result of one of them is thrown away, while the result of the other is returned by the IIf function.</p>
+<h4> <span class="mw-headline" id="In_Haskell">In Haskell</span>
+</h4>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> 98, there is only an <i>if expression</i>, no <i>if statement</i>, and the <code>else</code> part is compulsory, as every expression must have some value.<sup id="cite_ref-haskell98report_2-0" class="reference"><a href="Conditional_(programming)#cite_note-haskell98report-2"><span>[</span>2<span>]</span></a></sup> Logic that would be expressed with conditionals in other languages is usually expressed with <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a> in recursive functions.</p>
+<p>Because Haskell is <a href="http://en.m.wikipedia.org/wiki/Lazy_evaluation" title="Lazy evaluation">lazy</a>, it is possible to write control structures,. such as <i>if</i>, as ordinary expressions; the lazy evaluation means that an <i>if function</i> can evaluate only the condition and proper branch (where a strict language would evaluate all three). It can be written like this:<sup id="cite_ref-haskell-ifthenelse-proposal_3-0" class="reference"><a href="Conditional_(programming)#cite_note-haskell-ifthenelse-proposal-3"><span>[</span>3<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+ <span class="kw1">if</span><span class="st0">' :: Bool -&gt; a -&gt; a -&gt; a
+ if'</span> True x <span class="sy0">_</span> <span class="sy0">=</span> x
+ <span class="kw1">if</span><span class="st0">' False _ y = y</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Arithmetic_if">Arithmetic if</span>
+</h3>
+<p>Up to <a href="http://en.m.wikipedia.org/wiki/Fortran_77" title="Fortran 77" class="mw-redirect">Fortran 77</a>, the language Fortran has an "arithmetic if" statement which is halfway between a computed IF and a case statement, based on the <a href="http://en.m.wikipedia.org/wiki/Trichotomy_(mathematics)" title="Trichotomy (mathematics)">trichotomy</a> <img class="tex" alt="x &lt; 0" src="http://upload.wikimedia.org/math/9/7/f/97fdf90850f660f05349f4ad145b62dc.png">, <img class="tex" alt="x = 0" src="http://upload.wikimedia.org/math/e/1/1/e11729b0b65ecade3fc272548a3883fc.png">, <img class="tex" alt="x &gt; 0" src="http://upload.wikimedia.org/math/8/8/7/887fb68a10cbd4369b27c90bee0334d8.png">. This was the earliest conditional statement in Fortran. <sup id="cite_ref-fortran77_4-0" class="reference"><a href="Conditional_(programming)#cite_note-fortran77-4"><span>[</span>4<span>]</span></a></sup>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="kw1">IF</span> <span class="br0">(</span>e<span class="br0">)</span> label1, label2, label3
+</pre>
+</div>
+</div>
+<p>Where e is any numeric expression (not necessarily an integer); this is equivalent to</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="kw1">IF</span> <span class="br0">(</span>e <span class="kw2">.<span class="me1">LT</span>.</span> <span class="nu0">0</span><span class="br0">)</span> <span class="kw1">GOTO</span> label1
+<span class="kw1">IF</span> <span class="br0">(</span>e <span class="kw2">.<span class="me1">EQ</span>.</span> <span class="nu0">0</span><span class="br0">)</span> <span class="kw1">GOTO</span> label2
+<span class="kw1">IF</span> <span class="br0">(</span>e <span class="kw2">.<span class="me1">GT</span>.</span> <span class="nu0">0</span><span class="br0">)</span> <span class="kw1">GOTO</span> label3
+</pre>
+</div>
+</div>
+<p>Because this <a href="http://en.m.wikipedia.org/wiki/Arithmetic_IF" title="Arithmetic IF">arithmetic IF</a> is equivalent to multiple <code>GOTO</code> statements, it is considered to be an unstructured control statement, and should not be used if more structured statements can be used. In practice it has been observed that most arithmetic <code>IF</code> statements referenced the following statement with one or two of the labels.</p>
+<p>This was the only conditional control statement in the original implementation of Fortran on the <a href="http://en.m.wikipedia.org/wiki/IBM_704" title="IBM 704">IBM 704</a> computer. On that computer it could be implemented quite efficiently using instructions such as 'Branch if accumulator negative'.</p>
+<h3> <span class="mw-headline" id="Object-oriented_implementation_in_Smalltalk">Object-oriented implementation in Smalltalk</span>
+</h3>
+<p>In contrast to other languages, in <a href="Smalltalk" title="Smalltalk">Smalltalk</a> the conditional statement is not a <a href="http://en.m.wikipedia.org/wiki/Language_construct" title="Language construct">language construct</a> but defined in the class <code>Boolean</code> as an abstract method that takes two parameters, both <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closures</a>. <code>Boolean</code> has two subclasses, <code>True</code> and <code>False</code>, which both define the method, <code>True</code> executing the first closure only, <code>False</code> executing the second closure only.<sup id="cite_ref-Smalltalk_conditionals_5-0" class="reference"><a href="Conditional_(programming)#cite_note-Smalltalk_conditionals-5"><span>[</span>5<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="smalltalk source-smalltalk">
+<pre class="de1">
+var <span class="sy0">=</span> <span class="re5">condition</span> 
+    ifTrue: <span class="br0">[</span> <span class="st0">'foo'</span> <span class="br0">]</span>
+    ifFalse: <span class="br0">[</span> <span class="st0">'bar'</span> <span class="br0">]</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Case_and_switch_statements">Case and switch statements</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="Switch_statement" title="Switch statement">Switch statement</a>
+</div>
+<p><a href="Switch_statement" title="Switch statement">Switch statements</a> (in some languages, <i>case statements</i> or multiway branches) compare a given value with specified constants and take action according to the first constant to match. There is usually a provision for a default action ('else','otherwise') to be taken if no match succeeds. Switch statements can allow compiler optimizations, such as <a href="http://en.m.wikipedia.org/wiki/Lookup_table" title="Lookup table">lookup tables</a>. In dynamic languages, the cases may not be limited to constant expressions, and might extend to <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>, as in the <a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">shell script</a> example on the right, where the '*)' implements the default case as a <a href="http://en.m.wikipedia.org/wiki/Regular_expression" title="Regular expression">regular expression</a> matching any string.</p>
+<table class="wikitable">
+<tr>
+<th>
+<a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>:</th>
+<th>
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>:</th>
+<th>
+<a href="Java_(programming_language)" title="Java (programming language)">Java</a>:</th>
+<th>
+<a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">Shell script</a>:</th>
+</tr>
+<tr>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">case</span> someChar <span class="kw1">of</span>
+  <span class="st0">'a'</span><span class="sy1">:</span> actionOnA<span class="sy1">;</span>
+  <span class="st0">'x'</span><span class="sy1">:</span> actionOnX<span class="sy1">;</span>
+  <span class="st0">'y'</span><span class="sy1">,</span><span class="st0">'z'</span><span class="sy1">:</span>actionOnYandZ<span class="sy1">;</span>
+  <span class="kw1">else</span> actionOnNoMatch<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">switch</span> <span class="br0">(</span>someChar<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="st0">'a'</span><span class="sy0">:</span> actionOnA<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="st0">'x'</span><span class="sy0">:</span> actionOnX<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="st0">'y'</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="st0">'z'</span><span class="sy0">:</span> actionOnYandZ<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">default</span><span class="sy0">:</span> actionOnNoMatch<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw1">switch</span> <span class="br0">(</span>age<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="nu0">1</span><span class="sy0">:</span> <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"You're one."</span><span class="br0">)</span><span class="sy0">;</span> <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">2</span><span class="sy0">:</span> <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"You're two."</span><span class="br0">)</span><span class="sy0">;</span> <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">3</span><span class="sy0">:</span> <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"You're three."</span><span class="br0">)</span><span class="sy0">;</span> <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="nu0">4</span><span class="sy0">:</span> <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"You're four."</span><span class="br0">)</span><span class="sy0">;</span> <span class="kw1">break</span><span class="sy0">;</span>
+  <span class="kw1">default</span><span class="sy0">:</span> <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"You're neither!"</span><span class="br0">)</span><span class="sy0">;</span> <span class="kw1">break</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw1">case</span> <span class="re1">$someChar</span> <span class="kw1">in</span> 
+   a<span class="br0">)</span>    actionOnA; <span class="sy0">;;</span>
+   x<span class="br0">)</span>    actionOnX; <span class="sy0">;;</span>
+   <span class="br0">[</span>yz<span class="br0">]</span><span class="br0">)</span> actionOnYandZ; <span class="sy0">;;</span>
+  <span class="sy0">*</span><span class="br0">)</span>     actionOnNoMatch  <span class="sy0">;;</span>
+<span class="kw1">esac</span>
+</pre>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="Pattern_matching">Pattern matching</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">Pattern matching</a>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">Pattern matching</a> may be seen as a more sophisticated alternative to both <i>if-then-else</i>, and <i>case</i> statements. It is available in many programming languages with functional programming features, such as <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> and many others. Here is a simple example written in the <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> language:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ocaml source-ocaml">
+<pre class="de1">
+ <span class="kw1">match</span> fruit <span class="kw1">with</span>
+ <span class="sy0">|</span> <span class="st0">"apple"</span> <span class="sy0">-&gt;</span> cook pie
+ <span class="sy0">|</span> <span class="st0">"coconut"</span> <span class="sy0">-&gt;</span> cook dango_mochi
+ <span class="sy0">|</span> <span class="st0">"banana"</span> <span class="sy0">-&gt;</span> mix<span class="sy0">;;</span>
+</pre>
+</div>
+</div>
+<p>The power of pattern matching is the ability to <i>concisely</i> match not only actions but also <i>values</i> to patterns of data. Here is an example written in <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> which illustrates both of these features:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+ <span class="kw3">map</span> <span class="sy0">_</span> <span class="br0">[</span><span class="br0">]</span>      <span class="sy0">=</span> <span class="br0">[</span><span class="br0">]</span>
+ <span class="kw3">map</span> f <span class="br0">(</span>h : t<span class="br0">)</span> <span class="sy0">=</span> f h : <span class="kw3">map</span> f t
+</pre>
+</div>
+</div>
+<p>This code defines a function <i>map</i>, which applies the first argument (a function) to each of the elements of the second argument (a list), and returns the resulting list. The two lines are the two definitions of the function for the two kinds of arguments possible in this case – one where the list is empty (just return an empty list) and the other case where the list is not empty.</p>
+<p>Pattern matching is not strictly speaking <i>always</i> a choice construct, because it is possible in Haskell to write only one alternative, which is guaranteed to always be matched – in this situation, it is not being used as a choice construct, but simply as a way to bind names to values. However, it is frequently used as a choice construct in the languages in which it is available.</p>
+<h2> <span class="mw-headline" id="Branch_predication">Branch predication</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Branch_predication" title="Branch predication">Branch predication</a>
+</div>
+<p>In <a href="Assembly_language" title="Assembly language">assembly language</a>, <a href="http://en.m.wikipedia.org/wiki/Branch_predication" title="Branch predication">branch predication</a> is a feature of certain <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">central processing unit</a> (CPU) instruction sets which permits conditional execution of instructions, without having to perform costly conditional jumps.</p>
+<h2> <span class="mw-headline" id="Choice_system_cross_reference">Choice system cross reference</span>
+</h2>
+<p>This table refers to the most recent language specification of each language. For languages that do not have a specification, the latest officially released implementation is referred to.</p>
+<table class="wikitable">
+<tr>
+<th rowspan="2"><a href="Programming_language" title="Programming language">Programming language</a></th>
+<th colspan="3">Structured if</th>
+<th rowspan="2">
+<a href="Switch_statement" title="Switch statement">switch</a>/select/case</th>
+<th rowspan="2">Arithmetic if</th>
+<th rowspan="2">Pattern matching<sup class="reference" id="ref_pattern_matchingnone"><a href="Conditional_(programming)#endnote_pattern_matchingnone">[A]</a></sup>
+</th>
+</tr>
+<tr>
+<th>then</th>
+<th>else</th>
+<th>else-if</th>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C/C++</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_else_if1"><a href="Conditional_(programming)#endnote_choice_else_if1">[B]</a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">fall-through</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_else_if2"><a href="Conditional_(programming)#endnote_choice_else_if2">[B]</a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes"><a href="Switch_statement#Eiffel" title="Switch statement">Yes</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_const1"><a href="Conditional_(programming)#endnote_choice_const1">[C]</a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh">
+<a href="Fortran" title="Fortran">Fortran</a><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text in the vicinity of this tag needs clarification or removal of jargon from July 2009">clarification needed</span></a></i>]</sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">needed</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_else_if3"><a href="Conditional_(programming)#endnote_choice_else_if3">[B]</a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_const2"><a href="Conditional_(programming)#endnote_choice_const2">[C]</a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="Java_(programming_language)" title="Java (programming language)">Java</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_else_if4"><a href="Conditional_(programming)#endnote_choice_else_if4">[B]</a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">fall-through<sup id="cite_ref-JLS_6-0" class="reference"><a href="Conditional_(programming)#cite_note-JLS-6"><span>[</span>6<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/ECMAScript" title="ECMAScript">ECMAScript (JavaScript)</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded<sup class="reference" id="ref_choice_else_if5"><a href="Conditional_(programming)#endnote_choice_else_if5">[B]</a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">fall-through<sup id="cite_ref-ECMA-262_7-0" class="reference"><a href="Conditional_(programming)#cite_note-ECMA-262-7"><span>[</span>7<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="Perl" title="Perl">Perl</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="PHP" title="PHP">PHP</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">fall-through</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal, Delphi</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">unneeded</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="Python_(programming_language)" title="Python (programming language)">Python</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/QuickBASIC" title="QuickBASIC">QuickBASIC</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh">
+<a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>, classic</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td style="background: #ececec; color: black; font-weight: bold; vertical-align: middle; text-align: left;" class="table-rh"><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">fall-through</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+</table>
+<ol style="list-style-type: A;">
+<li>
+<span class="citation wikicite" id="endnote_pattern_matchingnone"><a href="Conditional_(programming)#ref_pattern_matchingnone"><b><sup>^</sup></b></a></span> This refers to pattern matching as a distinct conditional construct in the programming language – as opposed to mere string pattern matching support, such as <a href="http://en.m.wikipedia.org/wiki/Regular_expression" title="Regular expression">regular expression</a> support.</li>
+<li>
+<span class="citation wikicite" id="endnote_choice_else_if1"><a href="Conditional_(programming)#ref_choice_else_if1"><b><sup>1</sup></b></a></span> <span class="citation wikicite" id="endnote_choice_else_if2"><a href="Conditional_(programming)#ref_choice_else_if2"><b><sup>2</sup></b></a></span> <span class="citation wikicite" id="endnote_choice_else_if3"><a href="Conditional_(programming)#ref_choice_else_if3"><b><sup>3</sup></b></a></span> <span class="citation wikicite" id="endnote_choice_else_if4"><a href="Conditional_(programming)#ref_choice_else_if4"><b><sup>4</sup></b></a></span> <span class="citation wikicite" id="endnote_choice_else_if5"><a href="Conditional_(programming)#ref_choice_else_if5"><b><sup>5</sup></b></a></span> The often-encountered <code>else if</code> in the C family of languages, and in Haskell, is not a language feature but a set of nested and independent <i>if then else</i> statements combined with a particular source code layout. However, this also means that a distinct else-if construct is not really needed in these languages.</li>
+<li>
+<span class="citation wikicite" id="endnote_choice_const1"><a href="Conditional_(programming)#ref_choice_const1"><b><sup>1</sup></b></a></span> <span class="citation wikicite" id="endnote_choice_const2"><a href="Conditional_(programming)#ref_choice_const2"><b><sup>2</sup></b></a></span> In Haskell and F#, a separate constant choice construct is unneeded, because the same task can be done with pattern matching.</li>
+</ol>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/37px-Wiktionary-logo-en.svg.png" width="37" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Look up <i><b><a href="http://en.wiktionary.org/wiki/then" class="extiw" title="wiktionary:then">then</a></b></i> or <i><b><a href="http://en.wiktionary.org/wiki/else" class="extiw" title="wiktionary:else">else</a></b></i> in Wiktionary, the free dictionary.</td>
+</tr></table>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">Branch (computer science)</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dynamic_dispatch" title="Dynamic dispatch">Dynamic dispatch</a> for another way to make execution choices</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/McCarthy_Formalism" title="McCarthy Formalism">McCarthy Formalism</a> for history and historical references</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Named_condition" title="Named condition" class="mw-redirect">Named condition</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://embeddedgurus.com/stack-overflow/2009/02/efficient-c-tips-6-dont-use-the-ternary-operator/">"Efficient C Tips #6 – Don’t use the ternary operator « Stack Overflow"</a>. Embeddedgurus.com. 2009-02-18<span class="printonly">. <a rel="nofollow" class="external free" href="http://embeddedgurus.com/stack-overflow/2009/02/efficient-c-tips-6-dont-use-the-ternary-operator/">http://embeddedgurus.com/stack-overflow/2009/02/efficient-c-tips-6-dont-use-the-ternary-operator/</a></span><span class="reference-accessdate">. Retrieved 2012-09-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Efficient+C+Tips+%236+%E2%80%93+Don%E2%80%99t+use+the+ternary+operator+%C2%AB+Stack+Overflow&amp;rft.atitle=&amp;rft.date=2009-02-18&amp;rft.pub=Embeddedgurus.com&amp;rft_id=http%3A%2F%2Fembeddedgurus.com%2Fstack-overflow%2F2009%2F02%2Fefficient-c-tips-6-dont-use-the-ternary-operator%2F&amp;rfr_id=info:sid/en.wikipedia.org:Conditional_(programming)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-haskell98report-2">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-haskell98report_2-0">^</a></b></span> <span class="reference-text"><i><a rel="nofollow" class="external text" href="http://www.haskell.org/onlinereport/">Haskell 98 Language and Libraries: The Revised Report</a></i></span>
+</li>
+<li id="cite_note-haskell-ifthenelse-proposal-3">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-haskell-ifthenelse-proposal_3-0">^</a></b></span> <span class="reference-text">"<a rel="nofollow" class="external text" href="http://haskell.org/haskellwiki/If-then-else">If-then-else Proposal on HaskellWiki</a>"</span>
+</li>
+<li id="cite_note-fortran77-4">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-fortran77_4-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.fortran.com/fortran/F77_std/rjcnf0001-sh-11.html#sh-11.4">"American National Standard Programming Language FORTRAN"</a>. 1978-04-03<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.fortran.com/fortran/F77_std/rjcnf0001-sh-11.html#sh-11.4">http://www.fortran.com/fortran/F77_std/rjcnf0001-sh-11.html#sh-11.4</a></span><span class="reference-accessdate">. Retrieved 2007-09-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=American+National+Standard+Programming+Language+FORTRAN&amp;rft.atitle=&amp;rft.date=1978-04-03&amp;rft_id=http%3A%2F%2Fwww.fortran.com%2Ffortran%2FF77_std%2Frjcnf0001-sh-11.html%23sh-11.4&amp;rfr_id=info:sid/en.wikipedia.org:Conditional_(programming)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Smalltalk_conditionals-5">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-Smalltalk_conditionals_5-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://wiki.cs.uiuc.edu/VisualWorks/Conditional+Processing">"VisualWorks: Conditional Processing"</a>. 2006-12-16<span class="printonly">. <a rel="nofollow" class="external free" href="http://wiki.cs.uiuc.edu/VisualWorks/Conditional+Processing">http://wiki.cs.uiuc.edu/VisualWorks/Conditional+Processing</a></span><span class="reference-accessdate">. Retrieved 2007-09-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=VisualWorks%3A+Conditional+Processing&amp;rft.atitle=&amp;rft.date=2006-12-16&amp;rft_id=http%3A%2F%2Fwiki.cs.uiuc.edu%2FVisualWorks%2FConditional%2BProcessing&amp;rfr_id=info:sid/en.wikipedia.org:Conditional_(programming)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-JLS-6">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-JLS_6-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/download/langspec-3.0.pdf">Java.sun.com</a>, Java Language Specification, 3rd Edition.</span>
+</li>
+<li id="cite_note-ECMA-262-7">
+<span class="mw-cite-backlink"><b><a href="Conditional_(programming)#cite_ref-ECMA-262_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">Ecma-international.org</a> ECMAScript Language Specification, 5th Edition.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://ifelse.com">Coding samples</a> and links to user documentation in many languages: ActionScript, Assembly, Bash, BASIC, C, C++, C#, Excel, Fortran, Java, JavaScript, JSP, Objective-C, Pascal, Perl, PHP, Python, Ruby, Tcl, Velocity, Windows PowerShell, XSL/XSLT</li>
+<li>
+<a rel="nofollow" class="external text" href="http://everythingfla.com/courses/video/8/69/">IF NOT (ActionScript 3.0)</a> video</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 12 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Bedingte_Anweisung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Sentencia_condicional" lang="es" hreflang="es">español</a></li><li><a href="http://et.m.wikipedia.org/wiki/Tingimuslause" lang="et" hreflang="et">eesti</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%A1%B0%EA%B1%B4%EB%AC%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Uvjetna_naredba" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A4%D7%A7%D7%95%D7%93%D7%AA_if" lang="he" hreflang="he">עברית</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Felt%C3%A9teles_utas%C3%ADt%C3%A1s" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ja.m.wikipedia.org/wiki/If%E6%96%87" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Instrukcja_warunkowa" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Estrutura_de_sele%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A3%D0%BC%D0%BE%D0%B2%D0%BD%D0%B8%D0%B9_%D0%BF%D0%B5%D1%80%D0%B5%D1%85%D1%96%D0%B4" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Conditional_(programming)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Conditional_(programming)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Conditional+%28programming%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

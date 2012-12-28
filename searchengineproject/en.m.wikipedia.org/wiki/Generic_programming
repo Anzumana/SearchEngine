@@ -1,0 +1,995 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Generic programming - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Generic programming","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Generic_programming" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Generic+programming"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Generic programming</h1>			
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul>
+<li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul>
+</li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><strong class="selflink">Generic</strong></li>
+<li>
+<a href="Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="Structured_programming" title="Structured programming">Structured</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li>
+<a href="Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul>
+<li>
+<a href="Modular_programming" title="Modular programming">Modular</a> (contrast: Monolithic)</li>
+<li>
+<a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>In the simplest definition, <b>generic programming</b> is a style of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a> in which algorithms are written in terms of <i>to-be-specified-later</i> types that are then <i>instantiated</i> when needed for specific types provided as <a href="http://en.m.wikipedia.org/wiki/Parameter_(computer_programming)" title="Parameter (computer programming)">parameters</a>. This approach, pioneered by <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> in 1983, permits writing common <a href="http://en.m.wikipedia.org/wiki/Function_(computer_science)" title="Function (computer science)" class="mw-redirect">functions</a> or <a href="http://en.m.wikipedia.org/wiki/Type_(computer_science)" title="Type (computer science)" class="mw-redirect">types</a> that differ only in the set of types on which they operate when used, thus reducing <a href="http://en.m.wikipedia.org/wiki/Duplicate_code" title="Duplicate code">duplication</a>. Such software entities are known as <i>generics</i> in <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/Delphi_(programming_language)" title="Delphi (programming language)" class="mw-redirect">Delphi</a>, <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>, and <a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a>; <i><a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">parametric polymorphism</a></i> in <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>, <a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a> and <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> (the Haskell community also uses the term "generic" for a related but somewhat different concept); <i><a href="http://en.m.wikipedia.org/wiki/Template_(programming)" title="Template (programming)" class="mw-redirect">templates</a></i> in <a href="C++" title="C++">C++</a> and <a href="D_(programming_language)" title="D (programming language)">D</a>; and <i>parameterized types</i> in the influential 1994 book <i><a href="http://en.m.wikipedia.org/wiki/Design_Patterns_(book)" title="Design Patterns (book)" class="mw-redirect">Design Patterns</a></i>. The authors of <i>Design Patterns</i> note that this technique, especially when combined with <a href="http://en.m.wikipedia.org/wiki/Delegation_(programming)" title="Delegation (programming)">delegation</a>, is very powerful but that "[dynamic], highly parameterized software is harder to understand than more static software."<sup id="cite_ref-1" class="reference"><a href="Generic_programming#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>The term <b>generic programming</b> was originally coined by <a href="http://en.m.wikipedia.org/wiki/David_Musser" title="David Musser">David Musser</a> and <a href="http://en.m.wikipedia.org/wiki/Alexander_Stepanov" title="Alexander Stepanov">Alexander Stepanov</a><sup id="cite_ref-2" class="reference"><a href="Generic_programming#cite_note-2"><span>[</span>2<span>]</span></a></sup> in a more specific sense than the above, to describe an approach to software decomposition whereby fundamental requirements on types are abstracted from across concrete examples of algorithms and data structures and formalised as <a href="http://en.m.wikipedia.org/wiki/Concept_(generic_programming)" title="Concept (generic programming)">concepts</a>, analogously to the abstraction of algebraic theories in <a href="http://en.m.wikipedia.org/wiki/Abstract_algebra" title="Abstract algebra">abstract algebra</a>.<sup id="cite_ref-3" class="reference"><a href="Generic_programming#cite_note-3"><span>[</span>3<span>]</span></a></sup> Early examples of this programming approach were implemented in Scheme and Ada,<sup id="cite_ref-4" class="reference"><a href="Generic_programming#cite_note-4"><span>[</span>4<span>]</span></a></sup> although the best known example is the <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> (STL)<sup id="cite_ref-5" class="reference"><a href="Generic_programming#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="Generic_programming#cite_note-6"><span>[</span>6<span>]</span></a></sup> in which is developed a theory of <a href="http://en.m.wikipedia.org/wiki/Iterator" title="Iterator">iterators</a> which is used to decouple sequence data structures and the algorithms operating on them.</p>
+<p>For example, given <img class="tex" alt="N" src="http://upload.wikimedia.org/math/8/d/9/8d9c307cb7f3c4a32822a51922d1ceaa.png"> sequence data structures, e.g. singly linked list, vector etc., and <img class="tex" alt="M" src="http://upload.wikimedia.org/math/6/9/6/69691c7bdcc3ce6d5d8a1361f22d04ac.png"> algorithms to operate on them, e.g. <code>find</code>, <code>sort</code> etc., a direct approach would implement each algorithm specifically for each data structure, giving <img class="tex" alt="NM" src="http://upload.wikimedia.org/math/e/0/f/e0f3dba3248a6ccb26950955635d93e2.png"> combinations to implement. However, in the generic programming approach, each data structure returns a model of an iterator concept (a simple value type which can be dereferenced to retrieve the current value, or changed to point to another value in the sequence) and each algorithm is instead written generically with arguments of such iterators, e.g. a pair of iterators pointing to the beginning and end of the subsequence to process. Thus, only <img class="tex" alt="N+M" src="http://upload.wikimedia.org/math/1/1/b/11b93b2b20898b83da6277827dfc9731.png"> data structure-algorithm combinations need be implemented. Several iterator concepts are specified in the STL, each a refinement of more restrictive concepts e.g. forward iterators only provide movement to the next value in a sequence (e.g. suitable for a singly linked list), whereas a random-access iterator also provides direct constant-time access to any element of the sequence (e.g. suitable for a vector). An important point is that a data structure will return a model of the most general concept that can be implemented efficiently—<a href="http://en.m.wikipedia.org/wiki/Computational_complexity" title="Computational complexity" class="mw-redirect">computational complexity</a> requirements are explicitly part of the concept definition. This limits which data structures a given algorithm can be applied to and such complexity requirements are a major determinant of data structure choice. Generic programming similarly has been applied in other domains e.g. graph algorithms.<sup id="cite_ref-7" class="reference"><a href="Generic_programming#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Note that although this approach often utilizes language features of <a href="http://en.m.wikipedia.org/wiki/Compile-time" title="Compile-time" class="mw-redirect">compile-time</a> genericity/templates, it is in fact independent of particular language-technical details. Generic programming pioneer Alexander Stepanov wrote: "Generic programming is about abstracting and classifying algorithms and data structures. It gets its inspiration from Knuth and not from type theory. Its goal is the incremental construction of systematic catalogs of useful, efficient and abstract algorithms and data structures. Such an undertaking is still a dream.";<sup id="cite_ref-name_8-0" class="reference"><a href="Generic_programming#cite_note-name-8"><span>[</span>8<span>]</span></a></sup> and "I believe that iterator theories are as central to Computer Science as theories of rings or <a href="http://en.m.wikipedia.org/wiki/Banach_space" title="Banach space">Banach spaces</a> are central to Mathematics."<sup id="cite_ref-stepanov2011_9-0" class="reference"><a href="Generic_programming#cite_note-stepanov2011-9"><span>[</span>9<span>]</span></a></sup> Following Stepanov, <a href="Bjarne_Stroustrup" title="Bjarne Stroustrup">Bjarne Stroustrup</a> defined generic programming without mentioning language features: "[l]ift algorithms and data structures from concrete examples to their most general and abstract form."<sup id="cite_ref-10" class="reference"><a href="Generic_programming#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<p>Other programming paradigms that have been described as generic programming includes <i>datatype generic programming</i> as described in “Generic Programming — an Introduction”.<sup id="cite_ref-11" class="reference"><a href="Generic_programming#cite_note-11"><span>[</span>11<span>]</span></a></sup> The <i>Scrap your <a href="http://en.m.wikipedia.org/wiki/Boilerplate_(text)" title="Boilerplate (text)">boilerplate</a></i> approach is a lightweight generic programming approach for Haskell (Lämmel and Peyton Jones, 2003).<sup id="cite_ref-12" class="reference"><a href="Generic_programming#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>In this article we distinguish the high-level <a href="Programming_paradigm" title="Programming paradigm">programming paradigms</a> of <i>generic programming</i>, above, from the lower-level programming language <i>genericity mechanisms</i> used to implement them (see <a href="Generic_programming#Programming_language_support_for_genericity">Programming language support for genericity</a>). For further discussion and comparison of generic programming paradigms, see.<sup id="cite_ref-13" class="reference"><a href="Generic_programming#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Programming_language_support_for_genericity">Programming language support for genericity</span>
+</h2>
+<p>Genericity facilities have existed in high-level languages since at least the 1970s in languages such as <a href="http://en.m.wikipedia.org/wiki/CLU_programming_language" title="CLU programming language" class="mw-redirect">CLU</a> and <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a>, and were subsequently adopted by many <a href="http://en.m.wikipedia.org/wiki/Object-based_programming" title="Object-based programming" class="mw-redirect">object-based</a> and <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a> languages, including <a href="http://en.m.wikipedia.org/wiki/BETA_programming_language" title="BETA programming language" class="mw-redirect">BETA</a>, <a href="C++" title="C++">C++</a>, <a href="http://en.m.wikipedia.org/wiki/D_programming_language" title="D programming language" class="mw-redirect">D</a>, <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a>'s now defunct <span class="new" title="Trellis-Owl (page does not exist)">Trellis-Owl</span> language. Implementations of generics in languages such as <a href="Java_(programming_language)" title="Java (programming language)">Java</a> and <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> are formally based on the notion of <a href="http://en.m.wikipedia.org/wiki/Parametricity" title="Parametricity">parametricity</a>, due to <a href="http://en.m.wikipedia.org/wiki/John_C._Reynolds" title="John C. Reynolds">John C. Reynolds</a>.</p>
+<p>Genericity is implemented and supported differently in various programming languages; the term "generic" has also been used differently in various programming contexts. For example, in <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a> the <a href="Compiler" title="Compiler">compiler</a> can execute code while compiling and one can create new <i>compiler keywords</i> and new implementations for those words on the fly. It has few <i>words</i> that expose the compiler behaviour and therefore naturally offers <i>genericity</i> capacities which, however, are not referred to as such in most Forth texts. The term has been used in <a href="Functional_programming" title="Functional programming">functional programming</a>, specifically in <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell-like</a> languages, which use a <a href="http://en.m.wikipedia.org/wiki/Structural_type_system" title="Structural type system">structural type system</a> where types are always parametric and the actual code on those types is generic. These usages still serve a similar purpose of code-saving and the rendering of an abstraction.</p>
+<p><a href="Array_data_type" title="Array data type">Arrays</a> and <a href="Struct_(C_programming_language)" title="Struct (C programming language)">structs</a> can be viewed as predefined generic types. Every usage of an array or struct type instantiates a new concrete type, or reuses a previous instantiated type. Array element types and struct element types are parameterized types, which are used to instantiate the corresponding generic type. All this is usually built-in in the <a href="Compiler" title="Compiler">compiler</a> and the syntax differs from other generic constructs. Some <a href="http://en.m.wikipedia.org/wiki/Extensible_programming" title="Extensible programming">extensible programming languages</a> try to unify built-in and user defined generic types.</p>
+<p>A broad survey of genericity mechanisms in programming languages follows. For a specific survey comparing suitability of mechanisms for generic programming, see.<sup id="cite_ref-14" class="reference"><a href="Generic_programming#cite_note-14"><span>[</span>14<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="In_object-oriented_languages">In object-oriented languages</span>
+</h3>
+<p>When creating container classes in statically typed languages, it is inconvenient to have to write specific implementations for each datatype contained, especially if the code for each datatype is virtually identical. For example, in C++, this duplication of code can be circumvented by defining a template class:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span> 
+<span class="kw2">class</span> List 
+<span class="br0">{</span> 
+   <span class="coMULTI">/* class contents */</span> 
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+List<span class="sy1">&lt;</span>Animal<span class="sy1">&gt;</span> list_of_animals<span class="sy4">;</span>
+List<span class="sy1">&lt;</span>Car<span class="sy1">&gt;</span> list_of_cars<span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<p>Above, <tt>T</tt> is a placeholder for whatever type is specified when the list is created. These "containers-of-type-T", commonly called <a href="http://en.m.wikipedia.org/wiki/Template_(programming)" title="Template (programming)" class="mw-redirect">templates</a> allow a class to be reused with different datatypes as long as certain contracts such as <a href="http://en.m.wikipedia.org/wiki/Subtype" title="Subtype" class="mw-redirect">subtypes</a> and <a href="http://en.m.wikipedia.org/wiki/Signature_(computer_science)" title="Signature (computer science)" class="mw-redirect">signature</a> are kept. This genericity mechanism should not be confused with <i><a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">inclusion polymorphism</a></i>, which is the <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithmic</a> usage of exchangeable sub-classes: for instance, a list of objects of type <tt>Moving_Object</tt> containing objects of type <tt>Animal</tt> and <tt>Car</tt>. Templates can also be used for type-independent functions as in the <code>Swap</code> example below:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">template</span><span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span>
+<span class="kw4">void</span> Swap<span class="br0">(</span>T <span class="sy3">&amp;</span> a, T <span class="sy3">&amp;</span> b<span class="br0">)</span> <span class="co1">//"&amp;" passes parameters by reference</span>
+<span class="br0">{</span>
+   T temp <span class="sy1">=</span> b<span class="sy4">;</span>
+   b <span class="sy1">=</span> a<span class="sy4">;</span>
+   a <span class="sy1">=</span> temp<span class="sy4">;</span>
+<span class="br0">}</span>
+ 
+string hello <span class="sy1">=</span> <span class="st0">"world!"</span>, world <span class="sy1">=</span> <span class="st0">"Hello, "</span><span class="sy4">;</span>
+Swap<span class="br0">(</span> world, hello <span class="br0">)</span><span class="sy4">;</span>
+<span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> hello <span class="sy1">&lt;&lt;</span> world <span class="sy1">&lt;&lt;</span> endl<span class="sy4">;</span> <span class="co1">//Output is "Hello, world!"</span>
+</pre>
+</div>
+</div>
+<p>The C++ <code>template</code> construct used above is widely cited<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2010">citation needed</span></a></i>]</sup> as the genericity construct that popularized the notion among programmers and language designers and supports many generic programming idioms. The D programming language also offers fully generic-capable templates based on the C++ precedent but with a simplified syntax. The Java programming language has provided genericity facilities syntactically based on C++'s since the introduction of <a href="http://en.m.wikipedia.org/wiki/Java_Platform,_Standard_Edition" title="Java Platform, Standard Edition">J2SE</a> 5.0.</p>
+<p><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> 2.0, <a href="http://en.m.wikipedia.org/wiki/Chrome_programming_language" title="Chrome programming language" class="mw-redirect">Chrome 1.5</a> and <a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET 2005</a> have constructs that take advantage of the support for generics present in the <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">Microsoft .NET Framework</a> since version 2.0.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Dynamic_typing" title="Dynamic typing" class="mw-redirect">Dynamic typing</a> (such as is featured in <a href="Objective-C" title="Objective-C">Objective-C</a>) and judicious use of <a href="http://en.m.wikipedia.org/wiki/Interface_(computing)" title="Interface (computing)">protocols</a> circumvent the need for use of genericity mechanisms, since there exists a general type to contain any object. While Java does so also, the casting that needs to be done breaks the discipline of <a href="Static_typing" title="Static typing" class="mw-redirect">static typing</a>, and generics are one way of achieving some of the benefits of dynamic typing with the advantages of having static typing.</p>
+<h4> <span class="mw-headline" id="Generics_in_Ada">Generics in Ada</span>
+</h4>
+<p><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> has had generics since it was first designed in 1977–1980. The standard library uses generics to provide many services. Ada 2005 adds a comprehensive generic container library to the standard library, which was inspired by C++'s standard template library.</p>
+<p>A <i>generic unit</i> is a package or a subprogram that takes one or more <i>generic formal parameters</i>.</p>
+<p>A <i>generic formal parameter</i> is a value, a variable, a constant, a type, a subprogram, or even an instance of another, designated, generic unit. For generic formal types, the syntax distinguishes between discrete, floating-point, fixed-point, access (pointer) types, etc. Some formal parameters can have default values.</p>
+<p>To <i>instantiate</i> a generic unit, the programmer passes <i>actual</i> parameters for each formal. The generic instance then behaves just like any other unit. It is possible to instantiate generic units at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run-time</a>, for example inside a loop.</p>
+<h5> <span class="mw-headline" id="Example">Example</span>
+</h5>
+<p>The specification of a generic package:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ <span class="kw3">generic</span>
+    Max_Size : Natural; <span class="co1">-- a generic formal value</span>
+    <span class="kw3">type</span> Element_Type <span class="kw1">is</span> <span class="kw3">private</span>; <span class="co1">-- a generic formal type; accepts any nonlimited type</span>
+ <span class="kw3">package</span> Stacks <span class="kw1">is</span>
+    <span class="kw3">type</span> Size_Type <span class="kw1">is</span> <span class="kw3">range</span> <span class="nu0">0</span> .. <span class="me1">Max_Size</span>;
+    <span class="kw3">type</span> Stack <span class="kw1">is</span> <span class="kw3">limited</span> <span class="kw3">private</span>;
+    <span class="kw3">procedure</span> Create <span class="br0">(</span>S : <span class="kw3">out</span> Stack;
+                      Initial_Size : <span class="kw3">in</span> Size_Type := Max_Size<span class="br0">)</span>;
+    <span class="kw3">procedure</span> Push <span class="br0">(</span>Into : <span class="kw3">in</span> <span class="kw3">out</span> Stack; Element : <span class="kw3">in</span> Element_Type<span class="br0">)</span>;
+    <span class="kw3">procedure</span> Pop <span class="br0">(</span>From : <span class="kw3">in</span> <span class="kw3">out</span> Stack; Element : <span class="kw3">out</span> Element_Type<span class="br0">)</span>;
+    Overflow : <span class="kw1">exception</span>;
+    Underflow : <span class="kw1">exception</span>;
+ <span class="kw3">private</span>
+    <span class="kw3">subtype</span> Index_Type <span class="kw1">is</span> Size_Type <span class="kw3">range</span> <span class="nu0">1</span> .. <span class="me1">Max_Size</span>;
+    <span class="kw3">type</span> Vector <span class="kw1">is</span> <span class="kw3">array</span> <span class="br0">(</span>Index_Type <span class="kw3">range</span> &lt;&gt;<span class="br0">)</span> <span class="kw3">of</span> Element_Type;
+    <span class="kw3">type</span> Stack <span class="br0">(</span>Allocated_Size : Size_Type := <span class="nu0">0</span><span class="br0">)</span> <span class="kw1">is</span> <span class="kw3">record</span>
+       Top : Index_Type;
+       Storage : Vector <span class="br0">(</span><span class="nu0">1</span> .. <span class="me1">Allocated_Size</span><span class="br0">)</span>;
+    <span class="kw1">end</span> <span class="kw3">record</span>;
+ <span class="kw1">end</span> Stacks;
+</pre>
+</div>
+</div>
+<p>Instantiating the generic package:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ <span class="kw3">type</span> Bookmark_Type <span class="kw1">is</span> <span class="kw3">new</span> Natural;
+ <span class="co1">-- records a location in the text document we are editing</span>
+ 
+ <span class="kw3">package</span> Bookmark_Stacks <span class="kw1">is</span> <span class="kw3">new</span> Stacks <span class="br0">(</span>Max_Size =&gt; <span class="nu0">20</span>,
+                                        Element_Type =&gt; Bookmark_Type<span class="br0">)</span>;
+ <span class="co1">-- Allows the user to jump between recorded locations in a document</span>
+</pre>
+</div>
+</div>
+<p>Using an instance of a generic package:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ <span class="kw3">type</span> Document_Type <span class="kw1">is</span> <span class="kw3">record</span>
+    Contents : Ada.<span class="me1">Strings</span>.<span class="me1">Unbounded</span>.<span class="me1">Unbounded_String</span>;
+    Bookmarks : Bookmark_Stacks.<span class="me1">Stack</span>;
+ <span class="kw1">end</span> <span class="kw3">record</span>;
+ 
+ <span class="kw3">procedure</span> Edit <span class="br0">(</span>Document_Name : <span class="kw3">in</span> String<span class="br0">)</span> <span class="kw1">is</span>
+   Document : Document_Type;
+ <span class="kw1">begin</span>
+   <span class="co1">-- Initialise the stack of bookmarks:</span>
+   Bookmark_Stacks<span class="br0">{</span><span class="br0">{</span><span class="kw2">Not</span> a typo|.<span class="br0">}</span><span class="br0">}</span>Create <span class="br0">(</span>S =&gt; Document<span class="br0">{</span><span class="br0">{</span><span class="kw2">Not</span> a typo|.<span class="br0">}</span><span class="br0">}</span>Bookmarks, Initial_Size =&gt; <span class="nu0">10</span><span class="br0">)</span>;
+   <span class="co1">-- Now, open the file Document_Name and read it in...</span>
+ <span class="kw1">end</span> Edit;
+</pre>
+</div>
+</div>
+<h5> <span class="mw-headline" id="Advantages_and_limitations">Advantages and limitations</span>
+</h5>
+<p>The language syntax allows precise specification of constraints on generic formal parameters. For example, it is possible to specify that a generic formal type will only accept a modular type as the actual. It is also possible to express constraints <i>between</i> generic formal parameters; for example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ <span class="kw3">generic</span>
+    <span class="kw3">type</span> Index_Type <span class="kw1">is</span> <span class="br0">(</span>&lt;&gt;<span class="br0">)</span>; <span class="co1">-- must be a discrete type</span>
+    <span class="kw3">type</span> Element_Type <span class="kw1">is</span> <span class="kw3">private</span>; <span class="co1">-- can be any nonlimited type</span>
+    <span class="kw3">type</span> Array_Type <span class="kw1">is</span> <span class="kw3">array</span> <span class="br0">(</span>Index_Type <span class="kw3">range</span> &lt;&gt;<span class="br0">)</span> <span class="kw3">of</span> Element_Type;
+</pre>
+</div>
+</div>
+<p>In this example, Array_Type is constrained by both Index_Type and Element_Type. When instantiating the unit, the programmer must pass an actual array type that satisfies these constraints.</p>
+<p>The disadvantage of this fine-grained control is a complicated syntax, but, because all generic formal parameters are completely defined in the specification, the <a href="Compiler" title="Compiler">compiler</a> can instantiate generics without looking at the body of the generic.</p>
+<p>Unlike C++, Ada does not allow specialised generic instances, and requires that all generics be instantiated explicitly. These rules have several consequences:</p>
+<ul>
+<li>the compiler can implement <i>shared generics</i>: the object code for a generic unit can be shared between all instances (unless the programmer requests inlining of subprograms, of course). As further consequences:
+<ul>
+<li>there is no possibility of code bloat (code bloat is common in C++ and requires special care, as explained below).</li>
+<li>it is possible to instantiate generics at run-time, as well as at compile time, since no new object code is required for a new instance.</li>
+<li>actual objects corresponding to a generic formal object are always considered to be nonstatic inside the generic; see <a href="http://en.wikibooks.org/wiki/Ada_Programming/Generics#Generic_formal_objects" class="extiw" title="wikibooks:Ada Programming/Generics">Generic formal objects</a> in the Wikibook for details and consequences.</li>
+</ul>
+</li>
+<li>all instances of a generic being exactly the same, it is easier to review and understand programs written by others; there are no "special cases" to take into account.</li>
+<li>all instantiations being explicit, there are no hidden instantiations that might make it difficult to understand the program.</li>
+<li>Ada does not permit "template metaprogramming", because it does not allow specialisations.</li>
+</ul>
+<h4> <span class="mw-headline" id="Templates_in_C.2B.2B">Templates in C++</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Template_(C%2B%2B)" title="Template (C++)">Template (C++)</a>
+</div>
+<p>C++ uses templates to enable generic programming techniques. The C++ Standard Library includes the <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> or STL that provides a framework of templates for common data structures and algorithms. Templates in C++ may also be used for <a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">template metaprogramming</a>, which is a way of pre-evaluating some of the code at compile-time rather than <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run-time</a>. Using template specialization, C++ Templates are considered <a href="http://en.m.wikipedia.org/wiki/Turing_complete" title="Turing complete" class="mw-redirect">Turing complete</a>.</p>
+<h5> <span class="mw-headline" id="Technical_overview">Technical overview</span>
+</h5>
+<p>There are two kinds of templates: function templates and class templates. A <i>function template</i> is a pattern for creating ordinary functions based upon the parameterizing types supplied when instantiated. For example, the C++ Standard Template Library contains the function template <code>max(x, y)</code> which creates functions that return either <i>x</i> or <i>y,</i> whichever is larger. <code>max()</code> could be defined like this:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">template</span> <span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span>
+T max<span class="br0">(</span>T x, T y<span class="br0">)</span> 
+<span class="br0">{</span>
+    <span class="kw1">return</span> x <span class="sy1">&lt;</span> y <span class="sy4">?</span> y <span class="sy4">:</span> x<span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p><i>Specializations</i> of this function template, instantiations with specific types, can be called just like an ordinary function:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> max<span class="br0">(</span><span class="nu0">3</span>, <span class="nu0">7</span><span class="br0">)</span><span class="sy4">;</span>   <span class="co1">// outputs 7</span>
+</pre>
+</div>
+</div>
+<p>The compiler examines the arguments used to call <code>max</code> and determines that this is a call to <code>max(int, int)</code>. It then instantiates a version of the function where the parameterizing type <code>T</code> is <code>int</code>, making the equivalent of the following function:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw4">int</span> max<span class="br0">(</span><span class="kw4">int</span> x, <span class="kw4">int</span> y<span class="br0">)</span> 
+<span class="br0">{</span>
+    <span class="kw1">return</span> x <span class="sy1">&lt;</span> y <span class="sy4">?</span> y <span class="sy4">:</span> x<span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This works whether the arguments <code>x</code> and <code>y</code> are integers, strings, or any other type for which the expression <code>x &lt; y</code> is sensible, or more specifically, for any type for which <code>operator&lt;</code> is defined. Common inheritance is not needed for the set of types that can be used, and so it is very similar to <a href="http://en.m.wikipedia.org/wiki/Duck_typing#Templates_or_generic_types" title="Duck typing">duck typing</a>. A program defining a custom data type can use operator overloading to define the meaning of <code>&lt;</code> for that type, thus allowing its use with the <code>max()</code> function template. While this may seem a minor benefit in this isolated example, in the context of a comprehensive library like the STL it allows the programmer to get extensive functionality for a new data type, just by defining a few operators for it. Merely defining <code>&lt;</code> allows a type to be used with the standard <code>sort()</code>, <code>stable_sort()</code>, and <code>binary_search()</code> algorithms or to be put inside data structures such as <code>set</code>s, heaps, and associative arrays.</p>
+<p>C++ templates are completely <a href="http://en.m.wikipedia.org/wiki/Type_safety" title="Type safety">type safe</a> at compile time. As a demonstration, the standard type <code>complex</code> does not define the <code>&lt;</code> operator, because there is no strict order on <a href="Complex_number" title="Complex number">complex numbers</a>. Therefore <code>max(x, y)</code> will fail with a compile error if <i>x</i> and <i>y</i> are <code>complex</code> values. Likewise, other templates that rely on <code>&lt;</code> cannot be applied to <code>complex</code> data unless a comparison (in the form of a functor or function) is provided. E.g.: A <code>complex</code> cannot be used as key for a <code>map</code> unless a comparison is provided. Unfortunately, compilers historically generate somewhat esoteric, long, and unhelpful error messages for this sort of error. Ensuring that a certain object adheres to a <a href="http://en.m.wikipedia.org/wiki/Protocol_(computer_science)" title="Protocol (computer science)" class="mw-redirect">method protocol</a> can alleviate this issue. Languages which use <code>compare</code> instead of <code>&lt;</code> can also use <code>complex</code> values as keys.</p>
+<p>The second kind of template, a <i>class template,</i> extends the same concept to classes. A class template specialization is a class. Class templates are often used to make generic containers. For example, the STL has a <a href="Linked_list" title="Linked list">linked list</a> container. To make a linked list of integers, one writes <code>list&lt;int&gt;</code>. A list of strings is denoted <code>list&lt;string&gt;</code>. A <code>list</code> has a set of standard functions associated with it, which work for any compatible parameterizing types.</p>
+<h5> <span class="mw-headline" id="Template_specialization">Template specialization</span>
+</h5>
+<p>A powerful feature of C++'s templates is <i>template specialization</i>. This allows alternative implementations to be provided based on certain characteristics of the parameterized type that is being instantiated. Template specialization has two purposes: to allow certain forms of optimization, and to reduce code bloat.</p>
+<p>For example, consider a <code>sort()</code> template function. One of the primary activities that such a function does is to swap or exchange the values in two of the container's positions. If the values are large (in terms of the number of bytes it takes to store each of them), then it is often quicker to first build a separate list of pointers to the objects, sort those pointers, and then build the final sorted sequence. If the values are quite small however it is usually fastest to just swap the values in-place as needed. Furthermore if the parameterized type is already of some pointer-type, then there is no need to build a separate pointer array. Template specialization allows the template creator to write different implementations and to specify the characteristics that the parameterized type(s) must have for each implementation to be used.</p>
+<p>Unlike function templates, class templates can be <a href="http://en.m.wikipedia.org/wiki/Partial_template_specialization" title="Partial template specialization">partially specialized</a>. That means that an alternate version of the class template code can be provided when some of the template parameters are known, while leaving other template parameters generic. This can be used, for example, to create a default implementation (the <i>primary specialization</i>) that assumes that copying a parameterizing type is expensive and then create partial specializations for types that are cheap to copy, thus increasing overall efficiency. Clients of such a class template just use specializations of it without needing to know whether the compiler used the primary specialization or some partial specialization in each case. Class templates can also be <i>fully specialized,</i> which means that an alternate implementation can be provided when all of the parameterizing types are known.</p>
+<h5> <span class="mw-headline" id="Advantages_and_disadvantages">Advantages and disadvantages</span>
+</h5>
+<p>Some uses of templates, such as the <code>max()</code> function, were previously filled by function-like <a href="http://en.m.wikipedia.org/wiki/Preprocessor" title="Preprocessor">preprocessor</a> <a href="Macro_(computer_science)" title="Macro (computer science)">macros</a> (a legacy of the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>). For example, here is a possible <code>max()</code> macro:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co2">#define max(a,b) ((a) &lt; (b) ? (b) : (a))</span>
+</pre>
+</div>
+</div>
+<p>Both macros and templates are expanded at compile time. Macros are always expanded inline; templates can also be expanded as inline functions when the compiler deems it appropriate. Thus both function-like macros and function templates have no run-time overhead.</p>
+<p>However, templates are generally considered an improvement over macros for these purposes. Templates are type-safe. Templates avoid some of the common errors found in code that makes heavy use of function-like macros, such as evaluating parameters with side effects twice. Perhaps most importantly, templates were designed to be applicable to much larger problems than macros.</p>
+<p>There are three primary drawbacks to the use of templates: compiler support, poor error messages, and <a href="http://en.m.wikipedia.org/wiki/Code_bloat" title="Code bloat">code bloat</a>. Many compilers historically have poor support for templates, thus the use of templates can make code somewhat less portable. Support may also be poor when a C++ compiler is being used with a <a href="Linker_(computing)" title="Linker (computing)">linker</a> which is not C++-aware, or when attempting to use templates across <a href="Library_(computer_science)#Shared_libraries" title="Library (computer science)" class="mw-redirect">shared library</a> boundaries. Most modern compilers however now have fairly robust and standard template support, and the new C++ standard, <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a>, further address these issues.</p>
+<p>Almost all compilers produce confusing, long, or sometimes unhelpful error messages when errors are detected in code that uses templates.<sup id="cite_ref-15" class="reference"><a href="Generic_programming#cite_note-15"><span>[</span>15<span>]</span></a></sup> This can make templates difficult to develop.</p>
+<p>Finally, the use of templates requires the compiler to generate a separate <i>instance</i> of the templated class or function for every <a href="http://en.m.wikipedia.org/wiki/Permutation" title="Permutation">permutation</a> of type parameters used with it. (This is necessary because types in C++ are not all the same size, and the sizes of data fields are important to how classes work.) So the indiscriminate use of templates can lead to <a href="http://en.m.wikipedia.org/wiki/Code_bloat" title="Code bloat">code bloat</a>, resulting in excessively large executables.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2009">citation needed</span></a></i>]</sup> However, judicious use of template specialization can dramatically reduce such code bloat in some cases. The extra instantiations generated by templates can also cause debuggers to have difficulty working gracefully with templates. For example, setting a debug breakpoint within a template from a source file may either miss setting the breakpoint in the actual instantiation desired or may set a breakpoint in every place the template is instantiated.</p>
+<p>Also, because the compiler needs to perform macro-like expansions of templates and generate different instances of them at compile time, the implementation source code for the templated class or function must be available (e.g. included in a header) to the code using it. Templated classes or functions, including much of the Standard Template Library (STL), cannot be compiled. (This is in contrast to non-templated code, which may be compiled to binary, providing only a declarations header file for code using it.) This may be a disadvantage by exposing the implementing code, which removes some abstractions, and could restrict its use in closed-source projects.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2009">citation needed</span></a></i>]</sup></p>
+<h4> <span class="mw-headline" id="Genericity_in_Eiffel">Genericity in Eiffel</span>
+</h4>
+<p>Generic classes have been a part of <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> since the original method and language design. The foundation publications of Eiffel,<sup id="cite_ref-16" class="reference"><a href="Generic_programming#cite_note-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-17" class="reference"><a href="Generic_programming#cite_note-17"><span>[</span>17<span>]</span></a></sup> use the term <i>genericity</i> to describe the creation and use of generic classes.</p>
+<h5> <span class="mw-headline" id="Basic.2FUnconstrained_genericity">Basic/Unconstrained genericity</span>
+</h5>
+<p>Generic classes are declared with their class name and a list of one or more <i>formal generic parameters</i>. In the following code, class <code lang="eiffel" xml:lang="eiffel">LIST</code> has one formal generic parameter <code lang="eiffel" xml:lang="eiffel">G</code></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+<span class="kw1">class</span>
+    <span class="kw4">LIST</span> <span class="br0">[</span>G<span class="br0">]</span>
+            ...
+<span class="kw1">feature</span>   <span class="co1">-- Access</span>
+    item<span class="sy0">:</span> G
+            <span class="co1">-- The item currently pointed to by cursor</span>
+            ...
+<span class="kw1">feature</span>   <span class="co1">-- Element change</span>
+    put <span class="br0">(</span>new_item<span class="sy0">:</span> G<span class="br0">)</span>
+            <span class="co1">-- Add `new_item' at the end of the list</span>
+            ...
+</pre>
+</div>
+</div>
+<p>The formal generic parameters are placeholders for arbitrary class names which will be supplied when a declaration of the generic class is made, as shown in the two <i>generic derivations</i> below, where <code lang="eiffel" xml:lang="eiffel">ACCOUNT</code> and <code lang="eiffel" xml:lang="eiffel">DEPOSIT</code> are other class names. <code lang="eiffel" xml:lang="eiffel">ACCOUNT</code> and <code lang="eiffel" xml:lang="eiffel">DEPOSIT</code> are considered <i>actual generic parameters</i> as they provide real class names to substitute for <code lang="eiffel" xml:lang="eiffel">G</code> in actual use.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    list_of_accounts<span class="sy0">:</span> <span class="kw4">LIST</span> <span class="br0">[</span>ACCOUNT<span class="br0">]</span>
+            <span class="co1">-- Account list</span>
+ 
+    list_of_deposits<span class="sy0">:</span> <span class="kw4">LIST</span> <span class="br0">[</span>DEPOSIT<span class="br0">]</span>
+            <span class="co1">-- Deposit list</span>
+</pre>
+</div>
+</div>
+<p>Within the Eiffel type system, although class <code lang="eiffel" xml:lang="eiffel">LIST [G]</code> is considered a class, it is not considered a type. However, a generic derivation of <code lang="eiffel" xml:lang="eiffel">LIST [G]</code> such as <code lang="eiffel" xml:lang="eiffel">LIST [ACCOUNT]</code> is considered a type.</p>
+<h5> <span class="mw-headline" id="Constrained_genericity">Constrained genericity</span>
+</h5>
+<p>For the list class shown above, an actual generic parameter substituting for <code lang="eiffel" xml:lang="eiffel">G</code> can be any other available class. To constrain the set of classes from which valid actual generic parameters can be chosen, a <i>generic constraint</i> can be specified. In the declaration of class <code lang="eiffel" xml:lang="eiffel">SORTED_LIST</code> below, the generic constraint dictates that any valid actual generic parameter will be a class which inherits from class <code lang="eiffel" xml:lang="eiffel">COMPARABLE</code>. The generic constraint ensures that elements of a <code lang="eiffel" xml:lang="eiffel">SORTED_LIST</code> can in fact be sorted.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+<span class="kw1">class</span>
+    <span class="kw4">SORTED_LIST</span> <span class="br0">[</span>G <span class="sy0">-&gt;</span> <span class="kw4">COMPARABLE</span><span class="br0">]</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="Generics_in_Java">Generics in Java</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Generics_in_Java" title="Generics in Java">Generics in Java</a>
+</div>
+<p>Support for the <i>generics</i>, or "containers-of-type-T" were added to the <a href="Java_(programming_language)" title="Java (programming language)">Java programming language</a> in 2004 as part of J2SE 5.0. In Java, generics are only checked at compile time for type correctness. The generic type information is then removed via a process called <a href="http://en.m.wikipedia.org/wiki/Type_erasure" title="Type erasure">type erasure</a>, to maintain compatibility with old JVM implmentations, making it unavailable at runtime. For example, a <code>List&lt;String&gt;</code> is converted to the raw type <code>List</code>. The compiler inserts <a href="Type_conversion" title="Type conversion">type casts</a> to convert the elements to the <code>String</code> type when they are retrieved from the list, reducing performance compared to other implementations such as C++ templates.</p>
+<h4> <span class="mw-headline" id="Genericity_in_.NET">Genericity in .NET</span>
+</h4>
+<p>Generics were added as part of <a href="http://en.m.wikipedia.org/wiki/.NET_Framework#.NET_Framework_2.0" title=".NET Framework">.NET Framework 2.0</a> in November 2005, based on a research prototype from Microsoft Research started in 1999.<sup id="cite_ref-18" class="reference"><a href="Generic_programming#cite_note-18"><span>[</span>18<span>]</span></a></sup> Although similar to generics in Java, .NET generics do not apply <a href="http://en.m.wikipedia.org/wiki/Type_erasure" title="Type erasure">type erasure</a>, but implement generics as a first class mechanism in the runtime using <a href="http://en.m.wikipedia.org/wiki/Reification_(computer_science)" title="Reification (computer science)">reification</a>. This design choice provides additional functionality, such as allowing <a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_science)" title="Reflection (computer science)" class="mw-redirect">reflection</a> with preservation of generic types, as well as alleviating some of the limitations of erasure (such as being unable to create generic arrays).<sup id="cite_ref-19" class="reference"><a href="Generic_programming#cite_note-19"><span>[</span>19<span>]</span></a></sup><sup id="cite_ref-20" class="reference"><a href="Generic_programming#cite_note-20"><span>[</span>20<span>]</span></a></sup> This also means that there is no performance hit from runtime <a href="Type_conversion" title="Type conversion">casts</a> and normally expensive <a href="http://en.m.wikipedia.org/wiki/Boxing_(computer_science)" title="Boxing (computer science)" class="mw-redirect">boxing conversions</a>. When primitive and value types are used as generic arguments, they get specialized implementations, allowing for efficient generic <a href="http://en.m.wikipedia.org/wiki/Collection_class" title="Collection class" class="mw-redirect">collections</a> and methods. As in C++ and Java, nested generic types such as Dictionary&lt;string, List&lt;int&gt;&gt; are valid types, however are advised against for member signatures in code analysis design rules.<sup id="cite_ref-21" class="reference"><a href="Generic_programming#cite_note-21"><span>[</span>21<span>]</span></a></sup></p>
+<p>.NET allows six varieties of generic type constraints using the <code>where</code> keyword including restricting generic types to be value types, to be classes, to have constructors, and to inherit from interfaces.<sup id="cite_ref-22" class="reference"><a href="Generic_programming#cite_note-22"><span>[</span>22<span>]</span></a></sup> Below is an example with an interface constraint:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+<span class="kw1">using</span> <span class="co3">System</span><span class="sy0">;</span>
+ 
+<span class="kw4">class</span> Sample <span class="br0">{</span>
+    <span class="kw1">static</span> <span class="kw4">void</span> Main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw4">int</span><span class="br0">[</span><span class="br0">]</span> array <span class="sy0">=</span> <span class="br0">{</span> <span class="nu0">0</span>, <span class="nu0">1</span>, <span class="nu0">2</span>, <span class="nu0">3</span> <span class="br0">}</span><span class="sy0">;</span>
+        MakeAtLeast<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span><span class="br0">(</span>array, <span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Change array to { 2, 2, 2, 3 }</span>
+        <span class="kw1">foreach</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="kw1">in</span> array<span class="br0">)</span>
+            Console<span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span>i<span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Print results.</span>
+        Console<span class="sy0">.</span><span class="me1">ReadKey</span><span class="br0">(</span><span class="kw1">true</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="kw1">static</span> <span class="kw4">void</span> MakeAtLeast<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span><span class="br0">(</span>T<span class="br0">[</span><span class="br0">]</span> list, T lowest<span class="br0">)</span> <span class="kw1">where</span> T <span class="sy0">:</span> IComparable<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span> <span class="br0">{</span>
+        <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> list<span class="sy0">.</span><span class="me1">Length</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+            <span class="kw1">if</span> <span class="br0">(</span>list<span class="br0">[</span>i<span class="br0">]</span><span class="sy0">.</span><span class="me1">CompareTo</span><span class="br0">(</span>lowest<span class="br0">)</span> <span class="sy0">&lt;</span> <span class="nu0">0</span><span class="br0">)</span>
+                list<span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">=</span> lowest<span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The <code>MakeAtLeast()</code> method allows operation on arrays, with elements of generic type <code>T</code>. The method's type constraint indicates that the method is applicable to any type <code>T</code> that implements the generic <code>IComparable&lt;T&gt;</code> interface. This ensures a <a href="http://en.m.wikipedia.org/wiki/Compile_time" title="Compile time">compile time</a> error if the method is called if the type does not support comparison. The interface provides the generic method <code>CompareTo(T)</code>.</p>
+<p>The above method could also be written without generic types, simply using the non-generic <code>Array</code> type. However since arrays are <a href="http://en.m.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)" title="Covariance and contravariance (computer science)">contravariant</a>, the casting would not be <a href="http://en.m.wikipedia.org/wiki/Type_safe" title="Type safe" class="mw-redirect">type safe</a>, and compiler may miss errors that would otherwise be caught while making use of the generic types. In addition, the method would need to access the array items as objects instead, and would require <a href="Type_conversion" title="Type conversion">casting</a> to compare two elements. (For value types like types such as <code>int</code> this requires a <a href="http://en.m.wikipedia.org/wiki/Boxing_(computer_science)" title="Boxing (computer science)" class="mw-redirect">boxing</a> conversion, although this can be worked around using the <code>Comparer&lt;T&gt;</code> class, as is done in the standard collection classes.)</p>
+<p>A notable behavior of static members in a generic .NET class is static member instantiation per run-time type (see example below).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+    <span class="co1">//A generic class</span>
+    <span class="kw1">public</span> <span class="kw4">class</span> GenTest<span class="sy0">&lt;</span>T<span class="sy0">&gt;</span>
+    <span class="br0">{</span>
+        <span class="co1">//A static variable - will be created for each type on refraction</span>
+        <span class="kw1">static</span> CountedInstances OnePerType <span class="sy0">=</span> <span class="kw3">new</span> CountedInstances<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+        <span class="co1">//a data member</span>
+        <span class="kw1">private</span> T mT<span class="sy0">;</span>
+ 
+        <span class="co1">//simple constructor</span>
+        <span class="kw1">public</span> GenTest<span class="br0">(</span>T pT<span class="br0">)</span>
+        <span class="br0">{</span>
+            mT <span class="sy0">=</span> pT<span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+ 
+    <span class="co1">//a class</span>
+    <span class="kw1">public</span> <span class="kw4">class</span> CountedInstances
+    <span class="br0">{</span>
+        <span class="co1">//Static variable - this will be incremented once per instance</span>
+        <span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">int</span> Counter<span class="sy0">;</span>
+ 
+        <span class="co1">//simple constructor</span>
+        <span class="kw1">public</span> CountedInstances<span class="br0">(</span><span class="br0">)</span>
+        <span class="br0">{</span>
+            <span class="co1">//increase counter by one during object instantiation</span>
+            CountedInstances<span class="sy0">.</span><span class="me1">Counter</span><span class="sy0">++;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+ 
+  <span class="co1">//main code entry point</span>
+  <span class="co1">//at the end of execution, CountedInstances{{Not a typo|.}}Counter = 2</span>
+  GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span> g1 <span class="sy0">=</span> <span class="kw3">new</span> GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span><span class="br0">(</span><span class="nu0">1</span><span class="br0">)</span><span class="sy0">;</span>
+  GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span> g11 <span class="sy0">=</span> <span class="kw3">new</span> GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span><span class="br0">(</span><span class="nu0">11</span><span class="br0">)</span><span class="sy0">;</span>
+  GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span> g111 <span class="sy0">=</span> <span class="kw3">new</span> GenTest<span class="sy0">&lt;</span><span class="kw4">int</span><span class="sy0">&gt;</span><span class="br0">(</span><span class="nu0">111</span><span class="br0">)</span><span class="sy0">;</span>
+  GenTest<span class="sy0">&lt;</span><span class="kw4">double</span><span class="sy0">&gt;</span> g2 <span class="sy0">=</span> <span class="kw3">new</span> GenTest<span class="sy0">&lt;</span><span class="kw4">double</span><span class="sy0">&gt;</span><span class="br0">(</span><span class="nu0">1.0</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="Genericity_in_Delphi">Genericity in Delphi</span>
+</h4>
+<p><a href="http://en.m.wikipedia.org/wiki/Delphi_(programming_language)" title="Delphi (programming language)" class="mw-redirect">Delphi's</a> Object Pascal dialect acquired generics in the Delphi 2007 release, initially only with the (now discontinued) .NET compiler before being added to the native code one in the Delphi 2009 release. The semantics and capabilities of Delphi generics are largely modelled on those had by generics in .NET 2.0, though the implementation is by necessity quite different. Here's a more or less direct translation of the first C# example shown above:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="delphi source-delphi">
+<pre class="de1">
+<span class="kw1">program</span> Sample<span class="sy1">;</span>
+ 
+<span class="co2">{$APPTYPE CONSOLE}</span>
+ 
+<span class="kw1">uses</span>
+  Generics<span class="sy1">.</span><span class="me1">Defaults</span><span class="sy1">;</span> <span class="co1">//for IComparer&lt;&gt;</span>
+ 
+<span class="kw1">type</span>
+  TUtils <span class="sy3">=</span> <span class="kw1">class</span>
+    <span class="kw1">class</span> <span class="kw1">procedure</span> MakeAtLeast&lt;T&gt;<span class="br0">(</span>Arr<span class="sy1">:</span> TArray&lt;T&gt;<span class="sy1">;</span> <span class="kw1">const</span> Lowest<span class="sy1">:</span> T<span class="sy1">;</span>
+      Comparer<span class="sy1">:</span> IComparer&lt;T&gt;<span class="br0">)</span><span class="sy1">;</span> <span class="kw1">overload</span><span class="sy1">;</span>
+    <span class="kw1">class</span> <span class="kw1">procedure</span> MakeAtLeast&lt;T&gt;<span class="br0">(</span>Arr<span class="sy1">:</span> TArray&lt;T&gt;<span class="sy1">;</span> <span class="kw1">const</span> Lowest<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">;</span> <span class="kw1">overload</span><span class="sy1">;</span>
+  <span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">class</span> <span class="kw1">procedure</span> TUtils<span class="sy1">.</span><span class="me1">MakeAtLeast</span>&lt;T&gt;<span class="br0">(</span>Arr<span class="sy1">:</span> TArray&lt;T&gt;<span class="sy1">;</span> <span class="kw1">const</span> Lowest<span class="sy1">:</span> T<span class="sy1">;</span>
+  Comparer<span class="sy1">:</span> IComparer&lt;T&gt;<span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">var</span>
+  I<span class="sy1">:</span> <span class="kw4">Integer</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+  <span class="kw1">if</span> Comparer <span class="sy3">=</span> <span class="kw1">nil</span> <span class="kw1">then</span> Comparer <span class="sy1">:</span><span class="sy3">=</span> TComparer&lt;T&gt;<span class="sy1">.</span><span class="kw1">Default</span><span class="sy1">;</span>
+  <span class="kw1">for</span> I <span class="sy1">:</span><span class="sy3">=</span> <span class="kw3">Low</span><span class="br0">(</span>Arr<span class="br0">)</span> <span class="kw1">to</span> <span class="kw3">High</span><span class="br0">(</span>Arr<span class="br0">)</span> <span class="kw1">do</span>
+    <span class="kw1">if</span> Comparer<span class="sy1">.</span><span class="me1">Compare</span><span class="br0">(</span>Arr<span class="br0">[</span>I<span class="br0">]</span><span class="sy1">,</span> Lowest<span class="br0">)</span> &lt; <span class="nu0">0</span> <span class="kw1">then</span>
+      Arr<span class="br0">[</span>I<span class="br0">]</span> <span class="sy1">:</span><span class="sy3">=</span> Lowest<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">class</span> <span class="kw1">procedure</span> TUtils<span class="sy1">.</span><span class="me1">MakeAtLeast</span>&lt;T&gt;<span class="br0">(</span>Arr<span class="sy1">:</span> TArray&lt;T&gt;<span class="sy1">;</span> <span class="kw1">const</span> Lowest<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+  MakeAtLeast&lt;T&gt;<span class="br0">(</span>Arr<span class="sy1">,</span> Lowest<span class="sy1">,</span> <span class="kw1">nil</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">var</span>
+  Ints<span class="sy1">:</span> TArray&lt;Integer&gt;<span class="sy1">;</span>
+  Value<span class="sy1">:</span> <span class="kw4">Integer</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+  Ints <span class="sy1">:</span><span class="sy3">=</span> TArray&lt;Integer&gt;<span class="sy1">.</span><span class="me1">Create</span><span class="br0">(</span><span class="nu0">0</span><span class="sy1">,</span> <span class="nu0">1</span><span class="sy1">,</span> <span class="nu0">2</span><span class="sy1">,</span> <span class="nu0">3</span><span class="br0">)</span><span class="sy1">;</span>
+  TUtils<span class="sy1">.</span><span class="me1">MakeAtLeast</span>&lt;Integer&gt;<span class="br0">(</span>Ints<span class="sy1">,</span> <span class="nu0">2</span><span class="br0">)</span><span class="sy1">;</span>
+  <span class="kw1">for</span> Value <span class="kw1">in</span> Ints <span class="kw1">do</span>
+    <span class="kw3">WriteLn</span><span class="br0">(</span>Value<span class="br0">)</span><span class="sy1">;</span>
+  ReadLn<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<p>As with C#, methods as well as whole types can have one or more type parameters. In the example, TArray is a generic type (defined by the language) and MakeAtLeast a generic method. The available constraints are very similar to the available constraints in C#: any value type, any class, a specific class or interface, and a class with a parameterless constructor. Multiple constraints act as an additive union.</p>
+<h4> <span class="mw-headline" id="Genericity_in_Free_Pascal">Genericity in Free Pascal</span>
+</h4>
+<p><a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a> implemented generics before Delphi, and with different syntax and semantics. However, work is now underway to implement Delphi generics alongside native FPC ones (see <a rel="nofollow" class="external text" href="http://wiki.lazarus.freepascal.org/User_Changes_2.6.0">Wiki</a>). This allows Free Pascal programmers to use generics in whatever style they prefer.</p>
+<p>Delphi and Free Pascal example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="delphi source-delphi">
+<pre class="de1">
+<span class="co1">// Delphi style</span>
+<span class="kw1">unit</span> A<span class="sy1">;</span>
+ 
+<span class="co2">{$ifdef fpc}</span>
+  <span class="co2">{$mode delphi}</span>
+<span class="co2">{$endif}</span>
+ 
+<span class="kw1">interface</span>
+ 
+<span class="kw1">type</span>
+  TGenericClass&lt;T&gt; <span class="sy3">=</span> <span class="kw1">class</span>
+    <span class="kw1">function</span> <span class="kw4">Double</span><span class="br0">(</span><span class="kw1">const</span> AValue<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">:</span> T<span class="sy1">;</span>
+  <span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">implementation</span>
+ 
+<span class="kw1">function</span> TGenericClass&lt;T&gt;<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="kw1">const</span> AValue<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">:</span> T<span class="sy1">;</span>
+<span class="kw1">begin</span>
+  Result <span class="sy1">:</span><span class="sy3">=</span> AValue <span class="sy3">+</span> AValue<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">end</span><span class="sy1">.</span>
+ 
+<span class="co1">// Free Pascal's ObjFPC style</span>
+<span class="kw1">unit</span> B<span class="sy1">;</span>
+ 
+<span class="co2">{$ifdef fpc}</span>
+  <span class="co2">{$mode objfpc}</span>
+<span class="co2">{$endif}</span>
+ 
+<span class="kw1">interface</span>
+ 
+<span class="kw1">type</span>
+  <span class="kw1">generic</span> TGenericClass&lt;T&gt; <span class="sy3">=</span> <span class="kw1">class</span>
+    <span class="kw1">function</span> <span class="kw4">Double</span><span class="br0">(</span><span class="kw1">const</span> AValue<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">:</span> T<span class="sy1">;</span>
+  <span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">implementation</span>
+ 
+<span class="kw1">function</span> TGenericClass<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="kw1">const</span> AValue<span class="sy1">:</span> T<span class="br0">)</span><span class="sy1">:</span> T<span class="sy1">;</span>
+<span class="kw1">begin</span>
+  Result <span class="sy1">:</span><span class="sy3">=</span> AValue <span class="sy3">+</span> AValue<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">end</span><span class="sy1">.</span>
+ 
+<span class="co1">// example usage, Delphi style</span>
+<span class="kw1">program</span> TestGenDelphi<span class="sy1">;</span>
+ 
+<span class="co2">{$ifdef fpc}</span>
+  <span class="co2">{$mode delphi}</span>
+<span class="co2">{$endif}</span>
+ 
+<span class="kw1">uses</span>
+  A<span class="sy1">,</span>B<span class="sy1">;</span>
+ 
+<span class="kw1">var</span>
+  GC1<span class="sy1">:</span> A<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;Integer&gt;<span class="sy1">;</span>
+  GC2<span class="sy1">:</span> B<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;String&gt;<span class="sy1">;</span>
+<span class="kw1">begin</span>
+  GC1 <span class="sy1">:</span><span class="sy3">=</span> A<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;Integer&gt;<span class="sy1">.</span><span class="me1">Create</span><span class="sy1">;</span>
+  GC2 <span class="sy1">:</span><span class="sy3">=</span> B<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;String&gt;<span class="sy1">.</span><span class="me1">Create</span><span class="sy1">;</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span>GC1<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">;</span> <span class="co1">// 200</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span>GC2<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="st0">'hello'</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">;</span> <span class="co1">// hellohello</span>
+  GC1<span class="sy1">.</span><span class="me1">Free</span><span class="sy1">;</span>
+  GC2<span class="sy1">.</span><span class="me1">Free</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+ 
+<span class="co1">// example usage, ObjFPC style</span>
+<span class="kw1">program</span> TestGenDelphi<span class="sy1">;</span>
+ 
+<span class="co2">{$ifdef fpc}</span>
+  <span class="co2">{$mode objfpc}</span>
+<span class="co2">{$endif}</span>
+ 
+<span class="kw1">uses</span>
+  A<span class="sy1">,</span>B<span class="sy1">;</span>
+ 
+<span class="co1">// required in ObjFPC</span>
+<span class="kw1">type</span>
+  TAGenericClassInt <span class="sy3">=</span> <span class="kw1">specialize</span> A<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;Integer&gt;<span class="sy1">;</span>
+  TBGenericClassString <span class="sy3">=</span> <span class="kw1">specialize</span> B<span class="sy1">.</span><span class="me1">TGenericClass</span>&lt;String&gt;<span class="sy1">;</span>
+<span class="kw1">var</span>
+  GC1<span class="sy1">:</span> TAGenericClassInt<span class="sy1">;</span>
+  GC2<span class="sy1">:</span> TBGenericClassString<span class="sy1">;</span>
+<span class="kw1">begin</span>
+  GC1 <span class="sy1">:</span><span class="sy3">=</span> TAGenericClassInt<span class="sy1">.</span><span class="me1">Create</span><span class="sy1">;</span>
+  GC2 <span class="sy1">:</span><span class="sy3">=</span> TBGenericClassString<span class="sy1">.</span><span class="me1">Create</span><span class="sy1">;</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span>GC1<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">;</span> <span class="co1">// 200</span>
+  <span class="kw3">WriteLn</span><span class="br0">(</span>GC2<span class="sy1">.</span><span class="kw4">Double</span><span class="br0">(</span><span class="st0">'hello'</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">;</span> <span class="co1">// hellohello</span>
+  GC1<span class="sy1">.</span><span class="me1">Free</span><span class="sy1">;</span>
+  GC2<span class="sy1">.</span><span class="me1">Free</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Functional_languages">Functional languages</span>
+</h3>
+<h4> <span class="mw-headline" id="Genericity_in_Haskell">Genericity in Haskell</span>
+</h4>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">type class</a> mechanism of <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> supports generic programming. Six of the predefined type classes in Haskell (including <code>Eq</code>, the types that can be compared for equality, and <code>Show</code>, the types whose values can be rendered as strings) have the special property of supporting <i>derived instances.</i> This means that a programmer defining a new type can state that this type is to be an instance of one of these special type classes, without providing implementations of the class methods as is usually necessary when declaring class instances. All the necessary methods will be "derived" – that is, constructed automatically – based on the structure of the type. For instance, the following declaration of a type of <a href="http://en.m.wikipedia.org/wiki/Binary_tree" title="Binary tree">binary trees</a> states that it is to be an instance of the classes <code>Eq</code> and <code>Show</code>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+<span class="kw1">data</span> BinTree a <span class="sy0">=</span> Leaf a <span class="sy0">|</span> Node <span class="br0">(</span>BinTree a<span class="br0">)</span> a <span class="br0">(</span>BinTree a<span class="br0">)</span>
+      <span class="kw1">deriving</span> <span class="br0">(</span><span class="kw4">Eq</span><span class="sy0">,</span> <span class="kw4">Show</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>This results in an equality function (<code>==</code>) and a string representation function (<code>show</code>) being automatically defined for any type of the form <code>BinTree T</code> provided that <code>T</code> itself supports those operations.</p>
+<p>The support for derived instances of <code>Eq</code> and <code>Show</code> makes their methods <code>==</code> and <code>show</code> generic in a qualitatively different way from parametrically polymorphic functions: these "functions" (more accurately, type-indexed families of functions) can be applied to values of various types, and although they behave differently for every argument type, little work is needed to add support for a new type. Ralf Hinze (2004) has shown that a similar effect can be achieved for user-defined type classes by certain programming techniques. Other researchers have proposed approaches to this and other kinds of genericity in the context of Haskell and extensions to Haskell (discussed below).</p>
+<h5> <span class="mw-headline" id="PolyP">PolyP</span>
+</h5>
+<p>PolyP was the first generic programming language extension to <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>. In PolyP, generic functions are called <i>polytypic</i>. The language introduces a special construct in which such polytypic functions can be defined via structural induction over the structure of the pattern functor of a regular datatype. Regular datatypes in PolyP are a subset of Haskell datatypes. A regular datatype t must be of <a href="http://en.m.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">kind</a> <i>* → *</i>, and if <i>a</i> is the formal type argument in the definition, then all recursive calls to <i>t</i> must have the form <i>t a</i>. These restrictions rule out higher-kinded datatypes as well as nested datatypes, where the recursive calls are of a different form. The flatten function in PolyP is here provided as an example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+   flatten <span class="sy0">::</span> Regular d <span class="sy0">=&gt;</span> d a <span class="sy0">-&gt;</span> <span class="br0">[</span>a<span class="br0">]</span>
+   flatten <span class="sy0">=</span> cata fl
+ 
+   polytypic fl <span class="sy0">::</span> f a <span class="br0">[</span>a<span class="br0">]</span> <span class="sy0">-&gt;</span> <span class="br0">[</span>a<span class="br0">]</span>
+     <span class="kw1">case</span> f <span class="kw1">of</span>
+       g<span class="sy0">+</span>h <span class="sy0">-&gt;</span> <span class="kw3">either</span> fl fl
+       g<span class="sy0">*</span>h <span class="sy0">-&gt;</span> \<span class="br0">(</span>x<span class="sy0">,</span>y<span class="br0">)</span> <span class="sy0">-&gt;</span> fl x <span class="sy0">++</span> fl y
+       <span class="br0">(</span><span class="br0">)</span> <span class="sy0">-&gt;</span> \x <span class="sy0">-&gt;</span> <span class="br0">[</span><span class="br0">]</span>
+       Par <span class="sy0">-&gt;</span> \x <span class="sy0">-&gt;</span> <span class="br0">[</span>x<span class="br0">]</span>
+       Rec <span class="sy0">-&gt;</span> \x <span class="sy0">-&gt;</span> x
+       d<span class="sy0">@</span>g <span class="sy0">-&gt;</span> <span class="kw3">concat</span> <span class="sy0">.</span> flatten <span class="sy0">.</span> pmap fl
+       Con t <span class="sy0">-&gt;</span> \x <span class="sy0">-&gt;</span> <span class="br0">[</span><span class="br0">]</span>
+ 
+   cata <span class="sy0">::</span> Regular d <span class="sy0">=&gt;</span> <span class="br0">(</span>FunctorOf d a b <span class="sy0">-&gt;</span> b<span class="br0">)</span> <span class="sy0">-&gt;</span> d a <span class="sy0">-&gt;</span> b
+</pre>
+</div>
+</div>
+<h5> <span class="mw-headline" id="Generic_Haskell">Generic Haskell</span>
+</h5>
+<p>Generic Haskell is another extension to <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, developed at <a href="http://en.m.wikipedia.org/wiki/Utrecht_University" title="Utrecht University">Utrecht University</a> in the <a href="http://en.m.wikipedia.org/wiki/Netherlands" title="Netherlands">Netherlands</a>. The extensions it provides are:</p>
+<ul>
+<li>
+<i>Type-indexed values</i> are defined as a value indexed over the various Haskell type constructors (unit, primitive types, sums, products, and user-defined type constructors). In addition, we can also specify the behaviour of a type-indexed values for a specific constructor using <i>constructor cases</i>, and reuse one generic definition in another using <i>default cases</i>.</li>
+</ul>
+<p>The resulting type-indexed value can be specialised to any type.</p>
+<ul>
+<li>
+<i>Kind-indexed types</i> are types indexed over kinds, defined by giving a case for both <i>*</i> and <i>k → k'</i>. Instances are obtained by applying the kind-indexed type to a kind.</li>
+<li>Generic definitions can be used by applying them to a type or kind. This is called <i>generic application</i>. The result is a type or value, depending on which sort of generic definition is applied.</li>
+<li>
+<i>Generic abstraction</i> enables generic definitions be defined by abstracting a type parameter (of a given kind).</li>
+<li>
+<i>Type-indexed types</i> are types which are indexed over the type constructors. These can be used to give types to more involved generic values. The resulting type-indexed types can be specialised to any type.</li>
+</ul>
+<p>As an example, the equality function in Generic Haskell:<sup id="cite_ref-23" class="reference"><a href="Generic_programming#cite_note-23"><span>[</span>23<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="haskell source-haskell">
+<pre class="de1">
+   <span class="kw1">type</span> <span class="kw4">Eq</span> <span class="br0">{</span><span class="br0">[</span> <span class="sy0">*</span> <span class="br0">]</span><span class="br0">}</span> t1 t2 <span class="sy0">=</span> t1 <span class="sy0">-&gt;</span> t2 <span class="sy0">-&gt;</span> <span class="kw4">Bool</span>
+   <span class="kw1">type</span> <span class="kw4">Eq</span> <span class="br0">{</span><span class="br0">[</span> k <span class="sy0">-&gt;</span> l <span class="br0">]</span><span class="br0">}</span> t1 t2 <span class="sy0">=</span> <span class="kw1">forall</span> u1 u2<span class="sy0">.</span> <span class="kw4">Eq</span> <span class="br0">{</span><span class="br0">[</span> k <span class="br0">]</span><span class="br0">}</span> u1 u2 <span class="sy0">-&gt;</span> <span class="kw4">Eq</span> <span class="br0">{</span><span class="br0">[</span> l <span class="br0">]</span><span class="br0">}</span> <span class="br0">(</span>t1 u1<span class="br0">)</span> <span class="br0">(</span>t2 u2<span class="br0">)</span>
+ 
+   eq <span class="br0">{</span><span class="sy0">|</span> t <span class="sy0">::</span> k <span class="sy0">|</span><span class="br0">}</span> <span class="sy0">::</span> <span class="kw4">Eq</span> <span class="br0">{</span><span class="br0">[</span> k <span class="br0">]</span><span class="br0">}</span> t t
+   eq <span class="br0">{</span><span class="sy0">|</span> Unit <span class="sy0">|</span><span class="br0">}</span> <span class="sy0">_</span> <span class="sy0">_</span> <span class="sy0">=</span> True
+   eq <span class="br0">{</span><span class="sy0">|</span> :<span class="sy0">+</span>: <span class="sy0">|</span><span class="br0">}</span> eqA eqB <span class="br0">(</span>Inl a1<span class="br0">)</span> <span class="br0">(</span>Inl a2<span class="br0">)</span> <span class="sy0">=</span> eqA a1 a2
+   eq <span class="br0">{</span><span class="sy0">|</span> :<span class="sy0">+</span>: <span class="sy0">|</span><span class="br0">}</span> eqA eqB <span class="br0">(</span>Inr b1<span class="br0">)</span> <span class="br0">(</span>Inr b2<span class="br0">)</span> <span class="sy0">=</span> eqB b1 b2
+   eq <span class="br0">{</span><span class="sy0">|</span> :<span class="sy0">+</span>: <span class="sy0">|</span><span class="br0">}</span> eqA eqB <span class="sy0">_</span> <span class="sy0">_</span> <span class="sy0">=</span> False
+   eq <span class="br0">{</span><span class="sy0">|</span> :<span class="sy0">*</span>: <span class="sy0">|</span><span class="br0">}</span> eqA eqB <span class="br0">(</span>a1 :<span class="sy0">*</span>: b1<span class="br0">)</span> <span class="br0">(</span>a2 :<span class="sy0">*</span>: b2<span class="br0">)</span> <span class="sy0">=</span> eqA a1 a2 <span class="sy0">&amp;&amp;</span> eqB b1 b2
+   eq <span class="br0">{</span><span class="sy0">|</span> <span class="kw4">Int</span> <span class="sy0">|</span><span class="br0">}</span> <span class="sy0">=</span> <span class="br0">(</span><span class="sy0">==</span><span class="br0">)</span>
+   eq <span class="br0">{</span><span class="sy0">|</span> <span class="kw4">Char</span> <span class="sy0">|</span><span class="br0">}</span> <span class="sy0">=</span> <span class="br0">(</span><span class="sy0">==</span><span class="br0">)</span>
+   eq <span class="br0">{</span><span class="sy0">|</span> <span class="kw4">Bool</span> <span class="sy0">|</span><span class="br0">}</span> <span class="sy0">=</span> <span class="br0">(</span><span class="sy0">==</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="Clean">Clean</span>
+</h4>
+<p><a href="http://en.m.wikipedia.org/wiki/Clean_(programming_language)" title="Clean (programming language)">Clean</a> offers generic programming based PolyP and the generic Haskell as supported by the GHC&gt;=6.0. It parametrizes by kind as those but offers overloading.</p>
+<h3> <span class="mw-headline" id="Other_languages">Other languages</span>
+</h3>
+<p>The <a href="http://en.m.wikipedia.org/wiki/ML_programming_language" title="ML programming language" class="mw-redirect">ML</a> family of programming languages support generic programming through <a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">parametric polymorphism</a> and generic <a href="http://en.m.wikipedia.org/wiki/Module_(programming)" title="Module (programming)" class="mw-redirect">modules</a> called <i>functors.</i> Both <a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a> and <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> provide functors, which are similar to class templates and to Ada's generic packages. <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> syntactic abstractions also have a connection to genericity – these are in fact a superset of templating à la C++.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Partial_evaluation" title="Partial evaluation">Partial evaluation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concept_(generic_programming)" title="Concept (generic programming)">Concept (generic programming)</a></li>
+<li><a href="Type_polymorphism" title="Type polymorphism" class="mw-redirect">Type polymorphism</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-1">^</a></b></span> <span class="reference-text">Gamma, et al. 1994, p. 21.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-2">^</a></b></span> <span class="reference-text">David R. Musser and Alexander A. Stepanov: "Generic Programming" in P. Gianni, ed., Symbolic and Algebraic Computation: International symposium ISSAC 1988, pages 13-25</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book">Alexander Stepanov and Paul McJones (June 19, 2009). <i>Elements of Programming</i>. Addison-Wesley Professional. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-321-63537-2" title="Special:BookSources/978-0-321-63537-2">978-0-321-63537-2</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elements+of+Programming&amp;rft.aulast=Alexander+Stepanov+and+Paul+McJones&amp;rft.au=Alexander+Stepanov+and+Paul+McJones&amp;rft.date=June+19%2C+2009&amp;rft.pub=Addison-Wesley+Professional&amp;rft.isbn=978-0-321-63537-2&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-4">^</a></b></span> <span class="reference-text">David R. Musser and Alexander A. Stepanov: A library of generic algorithms in Ada. Proceedings of the 1987 annual ACM SIGAda international conference on Ada, pages 216-225</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-5">^</a></b></span> <span class="reference-text">Alexander Stepanov and Meng Lee: The Standard Template Library. HP Laboratories Technical Report 95-11(R.1), 14 November 1995</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-6">^</a></b></span> <span class="reference-text">Matthew H. Austern: Generic programming and the STL: using and extending the C++ Standard Template Library. Addison-Wesley Longman Publishing Co., Inc. Boston, MA, USA 1998</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-7">^</a></b></span> <span class="reference-text">Jeremy G. Siek, Lie-Quan Lee, Andrew Lumsdaine: The Boost Graph Library: User Guide and Reference Manual. Addison-Wesley 2001</span>
+</li>
+<li id="cite_note-name-8">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-name_8-0">^</a></b></span> <span class="reference-text">Bjarne 2007, p. 17.</span>
+</li>
+<li id="cite_note-stepanov2011-9">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-stepanov2011_9-0">^</a></b></span> <span class="reference-text"><span class="citation web">Lo Russo, Graziano. <a rel="nofollow" class="external text" href="http://www.stlport.org/resources/StepanovUSA.html">"An Interview with A. Stepanov"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.stlport.org/resources/StepanovUSA.html">http://www.stlport.org/resources/StepanovUSA.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=An+Interview+with+A.+Stepanov&amp;rft.atitle=&amp;rft.aulast=Lo+Russo&amp;rft.aufirst=Graziano&amp;rft.au=Lo+Russo%2C%26%2332%3BGraziano&amp;rft_id=http%3A%2F%2Fwww.stlport.org%2Fresources%2FStepanovUSA.html&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-10">^</a></b></span> <span class="reference-text">Bjarne 2007, p. 35.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation book">Roland Backhouse, Patrik Jansson, Johan Jeuring, and Lambert Meertens (1999). <i>Advanced Functional Programming, volume 1608 of Lecture Notes in Computer Science, chapter Generic Programming — An introduction, pages 28–115. Verlag</i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Advanced+Functional+Programming%2C+volume+1608+of+Lecture+Notes+in+Computer+Science%2C+chapter+Generic+Programming+%E2%80%94+An+introduction%2C+pages+28%E2%80%93115.+Verlag&amp;rft.aulast=Roland+Backhouse%2C+Patrik+Jansson%2C+Johan+Jeuring%2C+and+Lambert+Meertens&amp;rft.au=Roland+Backhouse%2C+Patrik+Jansson%2C+Johan+Jeuring%2C+and+Lambert+Meertens&amp;rft.date=1999&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www-users.cs.york.ac.uk/~ndm/uniplate/"><i>Uniplate</i> is a package with a similar basic approach</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web">Gabriel Dos Reis and Jaakko Ja ̈rvi (2005). <a rel="nofollow" class="external text" href="http://lcsd05.cs.tamu.edu/papers/dos_reis_et_al.pdf">"What is Generic Programming? (preprint LCSD’05)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://lcsd05.cs.tamu.edu/papers/dos_reis_et_al.pdf">http://lcsd05.cs.tamu.edu/papers/dos_reis_et_al.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=What+is+Generic+Programming%3F+%28preprint+LCSD%E2%80%9905%29&amp;rft.atitle=&amp;rft.aulast=Gabriel+Dos+Reis+and++Jaakko+Ja+%CC%88rvi&amp;rft.au=Gabriel+Dos+Reis+and++Jaakko+Ja+%CC%88rvi&amp;rft.date=2005&amp;rft_id=http%3A%2F%2Flcsd05.cs.tamu.edu%2Fpapers%2Fdos_reis_et_al.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web">R. Garcia, J. Ja ̈rvi, A. Lumsdaine, J. Siek, J. Willcock (2005). <a rel="nofollow" class="external text" href="http://www.osl.iu.edu/publications/prints/2005/garcia05:_extended_comparing05.pdf">"An extended comparative study of language support for generic programming (preprint)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.osl.iu.edu/publications/prints/2005/garcia05:_extended_comparing05.pdf">http://www.osl.iu.edu/publications/prints/2005/garcia05:_extended_comparing05.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=An+extended+comparative+study+of+language+support+for+generic+programming+%28preprint%29&amp;rft.atitle=&amp;rft.aulast=R.+Garcia%2C+J.+Ja+%CC%88rvi%2C+A.+Lumsdaine%2C+J.+Siek%2C+J.+Willcock&amp;rft.au=R.+Garcia%2C+J.+Ja+%CC%88rvi%2C+A.+Lumsdaine%2C+J.+Siek%2C+J.+Willcock&amp;rft.date=2005&amp;rft_id=http%3A%2F%2Fwww.osl.iu.edu%2Fpublications%2Fprints%2F2005%2Fgarcia05%3A_extended_comparing05.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.research.att.com/~bs/N1522-concept-criteria.pdf">Stroustrup, Dos Reis (2003): Concepts - Design choices for template argument checking</a></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-16">^</a></b></span> <span class="reference-text"><i>Object-Oriented Software Construction,</i> Prentice Hall, 1988, and <i>Object-Oriented Software Construction, second edition,</i> Prentice Hall, 1997.</span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-17">^</a></b></span> <span class="reference-text"><i>Eiffel: The Language,</i> Prentice Hall, 1991.</span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blogs.msdn.com/b/dsyme/archive/2011/03/15/net-c-generics-history-some-photos-from-feb-1999.aspx">.NET/C# Generics History: Some Photos From Feb 1999</a></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ondotnet.com/pub/a/dotnet/2005/10/17/interview-with-anders-hejlsberg.html">C#: Yesterday, Today, and Tomorrow: An Interview with Anders Hejlsberg</a></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.artima.com/intv/generics2.html">Generics in C#, Java, and C++</a></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/ms182144.aspx">Code Analysis CA1006: Do not nest generic types in member signatures</a></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/d5x73970.aspx">Constraints on Type Parameters (C# Programming Guide)</a></span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Generic_programming#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.uu.nl/research/projects/generic-haskell/compiler/diamond/GHUsersGuide.pdf">The Generic Haskell User's Guide</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li>
+<span class="citation book"><a href="Bjarne_Stroustrup" title="Bjarne Stroustrup">Stroustrup, Bjarne</a> (2007). <a rel="nofollow" class="external text" href="http://www.research.att.com/~bs/hopl-almost-final.pdf">"Evolving a language in and for the real world: C++ 1991-2006"</a>. ACM HOPL 2007<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.research.att.com/~bs/hopl-almost-final.pdf">http://www.research.att.com/~bs/hopl-almost-final.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Evolving+a+language+in+and+for+the+real+world%3A+C%2B%2B+1991-2006&amp;rft.atitle=&amp;rft.aulast=Stroustrup&amp;rft.aufirst=Bjarne&amp;rft.au=Stroustrup%2C%26%2332%3BBjarne&amp;rft.date=2007&amp;rft_id=http%3A%2F%2Fwww.research.att.com%2F%7Ebs%2Fhopl-almost-final.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Gamma, Erich; Helm, Richard; Johnson, Ralph; Vlissides, John (1994). <i>Design Patterns: Elements of Reusable Object-Oriented Software</i>. Addison-Wesley. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-201-63361-2" title="Special:BookSources/0-201-63361-2">0-201-63361-2</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Design+Patterns%3A+Elements+of+Reusable+Object-Oriented+Software&amp;rft.aulast=Gamma&amp;rft.aufirst=Erich&amp;rft.au=Gamma%2C%26%2332%3BErich&amp;rft.au=Helm%2C%26%2332%3BRichard&amp;rft.au=Johnson%2C%26%2332%3BRalph&amp;rft.au=Vlissides%2C%26%2332%3BJohn&amp;rft.date=1994&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-201-63361-2&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>Gabriel Dos Reis and Jaakko Järvi, <i><a rel="nofollow" class="external text" href="http://lcsd05.cs.tamu.edu/papers/dos_reis_et_al.pdf">What is Generic Programming?</a>,</i> <a rel="nofollow" class="external text" href="http://lcsd05.cs.tamu.edu">LCSD 2005</a>.</li>
+<li>
+<span class="citation book"><a href="http://en.m.wikipedia.org/wiki/Jeremy_Gibbons" title="Jeremy Gibbons">Gibbons, Jeremy</a> (2007). "Datatype-generic programming". In Backhouse, R.; Gibbons, J.; Hinze, R. et al.. Lecture Notes in Computer Science. <b>4719</b>. Spring School on Datatype-Generic Programming 2006. Heidelberg: Springer. pp. 1–71. <a href="http://en.m.wikipedia.org/wiki/CiteSeer#CiteSeerX" title="CiteSeer">CiteSeerX</a>: <span class="url"><a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.159.1228">10.1.1.159.1228</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Datatype-generic+programming&amp;rft.atitle=&amp;rft.aulast=Gibbons&amp;rft.aufirst=Jeremy&amp;rft.au=Gibbons%2C%26%2332%3BJeremy&amp;rft.date=2007&amp;rft.series=Lecture+Notes+in+Computer+Science&amp;rft.volume=4719&amp;rft.pages=pp.%26nbsp%3B1%E2%80%9371&amp;rft.place=Heidelberg&amp;rft.pub=Springer&amp;rfr_id=info:sid/en.wikipedia.org:Generic_programming"><span style="display: none;"> </span></span>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Bertrand_Meyer" title="Bertrand Meyer">Bertrand Meyer</a>. "<a rel="nofollow" class="external text" href="http://se.ethz.ch/~meyer/publications/acm/geninh.pdf">Genericity vs Inheritance</a>." In <i>OOPSLA (First ACM Conference on Object-Oriented Programming Systems, Languages and Applications),</i> Portland (Oregon), 29 September–2 October 1986, pages 391–405.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.generic-programming.org">generic-programming.org</a></li>
+<li>Alexander A. Stepanov, <a rel="nofollow" class="external text" href="http://www.stepanovpapers.com/">Collected Papers of Alexander A. Stepanov</a> (creator of the <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">STL</a>)</li>
+</ul>
+<dl>
+<dt>C++/D</dt>
+</dl>
+<ul>
+<li>Walter Bright, <i><a rel="nofollow" class="external text" href="http://www.digitalmars.com/d/templates-revisited.html">Templates Revisited</a>.</i>
+</li>
+<li>David Vandevoorde, Nicolai M Josuttis, <i>C++ Templates: The Complete Guide</i>, 2003 Addison-Wesley. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0201734842" class="internal mw-magiclink-isbn">ISBN 0-201-73484-2</a>
+</li>
+</ul>
+<dl>
+<dt>C#/.NET</dt>
+</dl>
+<ul>
+<li>Jason Clark, "<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/msdnmag/issues/03/09/NET/">Introducing Generics in the Microsoft CLR</a>," September 2003, <i>MSDN Magazine</i>, Microsoft.</li>
+<li>Jason Clark, "<a rel="nofollow" class="external text" href="http://msdn.microsoft.com/msdnmag/issues/03/10/NET/">More on Generics in the Microsoft CLR</a>," October 2003, <i>MSDN Magazine</i>, Microsoft.</li>
+<li>M. Aamir Maniar, <a rel="nofollow" class="external text" href="http://codeplex.com/Wiki/View.aspx?ProjectName=genericsnet">Generics.Net</a>. An open source generics library for C#.</li>
+</ul>
+<dl>
+<dt>Delphi/Object Pascal</dt>
+</dl>
+<ul>
+<li>Nick Hodges, "<a rel="nofollow" class="external text" href="http://dn.codegear.com/article/38757">Delphi 2009 Reviewers Guide</a>," October 2008, <i>CodeGear Developer Network</i>, CodeGear.</li>
+<li>Craig Stuntz, "<a rel="nofollow" class="external text" href="http://blogs.teamb.com/craigstuntz/2008/08/29/37832/">Delphi 2009 Generics and Type Constraints</a>," October 2008</li>
+<li>Dr. Bob, "<a rel="nofollow" class="external text" href="http://www.drbob42.com/examines/examinA4.htm">Delphi 2009 Generics</a>"</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Free_Pascal" title="Free Pascal">Free Pascal</a>: <a rel="nofollow" class="external text" href="http://www.freepascal.org/docs-html/ref/refch8.html">Free Pascal Reference guide Chapter 8: Generics</a>, Michaël Van Canneyt, 2007</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/CodeGear_Delphi" title="CodeGear Delphi" class="mw-redirect">Delphi</a> for Win32: <a rel="nofollow" class="external text" href="http://sjrd.developpez.com/delphi/tutoriel/generics/">Generics with Delphi 2009 Win32</a>, Sébastien DOERAENE, 2008</li>
+<li>Delphi for .NET: <a rel="nofollow" class="external text" href="http://www.felix-colibri.com/papers/oop_components/delphi_generics_tutorial/delphi_generics_tutorial.html">Delphi Generics</a>, Felix COLIBRI, 2008</li>
+</ul>
+<dl>
+<dt>Eiffel</dt>
+</dl>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/standards/Ecma-367.htm">Eiffel ISO/ECMA specification document</a></li>
+</ul>
+<dl>
+<dt>Haskell</dt>
+</dl>
+<ul>
+<li>Johan Jeuring, Sean Leather, José Pedro Magalhães, and Alexey Rodriguez Yakushev. <a rel="nofollow" class="external text" href="http://www.cs.uu.nl/wiki/pub/GP/CourseLiterature/afp08.pdf"><i>Libraries for Generic Programming in Haskell</i></a>. Utrecht University.</li>
+<li>Dæv Clarke, Johan Jeuring and Andres Löh, <a rel="nofollow" class="external text" href="http://www.cs.uu.nl/research/projects/generic-haskell/compiler/diamond/GHUsersGuide.pdf">The Generic Haskell user's guide</a>
+</li>
+<li>Ralf Hinze, "<a rel="nofollow" class="external text" href="http://www.informatik.uni-bonn.de/~ralf/publications/ICFP04.pdf">Generics for the Masses</a>," In <i>Proceedings of the <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="SIGPLAN" title="SIGPLAN">SIGPLAN</a> <a href="http://en.m.wikipedia.org/wiki/International_Conference_on_Functional_Programming" title="International Conference on Functional Programming">International Conference on Functional Programming</a> (ICFP),</i> 2004.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Simon_Peyton_Jones" title="Simon Peyton Jones">Simon Peyton Jones</a>, editor, <i><a rel="nofollow" class="external text" href="http://haskell.org/onlinereport/index.html">The Haskell 98 Language Report</a>,</i> Revised 2002.</li>
+<li>
+<span class="new" title="Ralf Lämmel (page does not exist)">Ralf Lämmel</span> and <a href="http://en.m.wikipedia.org/wiki/Simon_Peyton_Jones" title="Simon Peyton Jones">Simon Peyton Jones</a>, "Scrap Your Boilerplate: A Practical Design Pattern for Generic Programming," In <i>Proceedings of the <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <a href="SIGPLAN" title="SIGPLAN">SIGPLAN</a> International Workshop on Types in Language Design and Implementation (TLDI'03),</i> 2003. (Also see the website <a rel="nofollow" class="external text" href="http://www.cs.vu.nl/boilerplate/">devoted to this research</a>)</li>
+<li>Andres Löh, <i><a rel="nofollow" class="external text" href="http://www.cs.uu.nl/~andres/ExploringGH.pdf">Exploring Generic Haskell</a>,</i> Ph.D. thesis, 2004 <a href="http://en.m.wikipedia.org/wiki/Utrecht_University" title="Utrecht University">Utrecht University</a>. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9039337659" class="internal mw-magiclink-isbn">ISBN 90-393-3765-9</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.generic-haskell.org/">Generic Haskell: a language for generic programming</a></li>
+</ul>
+<dl>
+<dt>Java</dt>
+</dl>
+<ul>
+<li>Gilad Bracha, <i><a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5/pdf/generics-tutorial.pdf">Generics in the Java Programming Language</a>,</i> 2004.</li>
+<li>Maurice Naftalin and Philip Wadler, <i>Java Generics and Collections,</i> 2006, O'Reilly Media, Inc. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0596527756" class="internal mw-magiclink-isbn">ISBN 0-596-52775-6</a>
+</li>
+<li>Peter Sestoft, <i>Java Precisely, Second Edition,</i> 2005 MIT Press. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0262693259" class="internal mw-magiclink-isbn">ISBN 0-262-69325-9</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://download.oracle.com/javase/7/docs/">Java SE 7</a>, 2004 Sun Microsystems, Inc.</li>
+<li>Angelika Langer, <a rel="nofollow" class="external text" href="http://www.angelikalanger.com/GenericsFAQ/JavaGenericsFAQ.html">Java Generics FAQs</a>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 17 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Generick%C3%A9_programov%C3%A1n%C3%AD" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Generische_Programmierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/%C3%9Cldistav_programmeerimine" lang="et" hreflang="et">eesti</a></li><li><a href="http://es.m.wikipedia.org/wiki/Programaci%C3%B3n_gen%C3%A9rica" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D8%AC%D9%86%D8%B1%DB%8C%DA%A9" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/G%C3%A9n%C3%A9ricit%C3%A9" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%A0%9C%EB%84%A4%EB%A6%AD_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Genericiteit" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AA%E3%83%83%E3%82%AF%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Generisk_programmering" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Programowanie_uog%C3%B3lnione" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_gen%C3%A9rica" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9E%D0%B1%D0%BE%D0%B1%D1%89%D1%91%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%93%D0%B5%D0%BD%D0%B5%D1%80%D0%B8%D1%87%D0%BA%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A3%D0%B7%D0%B0%D0%B3%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh-yue.m.wikipedia.org/wiki/%E9%80%9A%E7%94%A8%E7%B7%A8%E7%A8%8B" lang="zh-yue" hreflang="zh-yue">粵語</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%B3%9B%E5%9E%8B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Generic_programming&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Generic_programming&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Generic+programming&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

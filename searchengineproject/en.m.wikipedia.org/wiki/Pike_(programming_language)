@@ -1,0 +1,294 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Pike (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Pike (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Pike_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Pike+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Pike (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Pike</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Gotpike.png" class="image" title="Pike logo"><img alt="Pike logo" src="http://upload.wikimedia.org/wikipedia/en/e/e3/Gotpike.png" width="108" height="46"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm</a>: <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="Functional_programming" title="Functional programming">functional</a>, <a href="Procedural_programming" title="Procedural programming">procedural</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1994</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">Fredrik Hübinette</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_developer" title="Software developer">Developer</a></th>
+<td class="" style="">Pike development team supported by the Software and Systems division of the Department of Computer and Information Science (IDA) at Linköping University</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">7.8.700 (September 16, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-16</span>)</span>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style="">
+<a href="Static_typing" title="Static typing" class="mw-redirect">static</a>, <a href="http://en.m.wikipedia.org/wiki/Dynamic_typing" title="Dynamic typing" class="mw-redirect">dynamic</a>, <a href="Manifest_typing" title="Manifest typing">manifest</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style="">Pike</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style="">
+<a href="LPC_(programming_language)" title="LPC (programming language)">LPC</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style="">Any <a href="Unix-like" title="Unix-like">Unix-like</a>, <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>/<a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">LGPL</a>/<a href="http://en.m.wikipedia.org/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://pike.lysator.liu.se/">pike.lysator.liu.se</a></span></td>
+</tr>
+</table>
+<p><b>Pike</b> is an <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computer_software)" title="Interpreter (computer software)" class="mw-redirect">interpreted</a>, <a href="http://en.m.wikipedia.org/wiki/General-purpose_programming_language" title="General-purpose programming language">general-purpose</a>, <a href="http://en.m.wikipedia.org/wiki/High_level_programming_language" title="High level programming language" class="mw-redirect">high-level</a>, <a href="Cross-platform" title="Cross-platform">cross-platform</a>, <a href="http://en.m.wikipedia.org/wiki/Dynamic_programming_language" title="Dynamic programming language">dynamic programming language</a>, with a syntax similar to that of <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>. Unlike many other dynamic languages, Pike is both statically and dynamically typed, and requires explicit type definitions. It features a flexible type system that allows the rapid development and flexible code of dynamically typed languages, while still providing some of the benefits of a statically typed language.</p>
+<p>Pike features <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>, advanced data types, and first-class anonymous functions, with support for many programming paradigms, including <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="Functional_programming" title="Functional programming">functional</a> and <a href="Imperative_programming" title="Imperative programming">imperative programming</a>. Pike is <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a>, released under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GPL</a>, <a href="http://en.m.wikipedia.org/wiki/LGPL" title="LGPL" class="mw-redirect">LGPL</a> and <a href="http://en.m.wikipedia.org/wiki/Mozilla_Public_License" title="Mozilla Public License">MPL</a> licenses.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Pike has its roots in <a href="LPC_(programming_language)" title="LPC (programming language)">LPC</a>, which was a language developed for <a href="http://en.m.wikipedia.org/wiki/MUD" title="MUD">MUDs</a>. Programmers at <a href="http://en.m.wikipedia.org/wiki/Lysator" title="Lysator">Lysator</a> in <a href="http://en.m.wikipedia.org/wiki/Link%C3%B6ping" title="Linköping">Linköping</a>, Sweden, most notably Fredrik Hübinette and Per Hedbor, separated the language and virtual machine from the rest of the MUD driver, and used it as a rapid prototyping language for various applications, calling it LPC4.</p>
+<p>LPC's license did not allow use for commercial purposes, and so a new GPL implementation was written in 1994, called µLPC (micro LPC).</p>
+<p>In 1996, µLPC was renamed to Pike in order to provide a more commercially viable name. Although the name of the company has changed over the years, the company now known as Roxen Internet Software employed many Pike developers, and provided resources for Pike's development. <a href="http://en.m.wikipedia.org/wiki/Roxen_(web_server)" title="Roxen (web server)">Roxen</a> is also the name of a web server developed by the company in Pike. In 2002, the programming environment laboratory at <a href="http://en.m.wikipedia.org/wiki/Link%C3%B6ping_University" title="Linköping University">Linköping University</a> took over maintenance of Pike from Roxen. Several Pike programmers have found their way to the Linköping office of <a href="http://en.m.wikipedia.org/wiki/Opera_Software" title="Opera Software">Opera Software</a>, where the language plays a central role in the server/gateway parts of the <a href="http://en.m.wikipedia.org/wiki/Opera_Mini" title="Opera Mini">Opera Mini</a> application.<sup id="cite_ref-0" class="reference"><a href="Pike_(programming_language)#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Syntax_highlights">Syntax highlights</span>
+</h2>
+<h3> <span class="mw-headline" id="Hello_World">Hello World</span>
+</h3>
+<dl>
+<dd><i>For an explanation of the tradition of programming "Hello World", see <a href="http://en.m.wikipedia.org/wiki/Hello_world_program" title="Hello world program">Hello world program</a>.</i></dd>
+</dl>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+    write<span class="br0">(</span><span class="st0">"Hello world!<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The syntax above requires some explanation. Those who are familiar with <a href="http://en.m.wikipedia.org/wiki/C_programing_language" title="C programing language" class="mw-redirect">C</a> or <a href="C++" title="C++">C++</a> should pick it up right away.</p>
+<ul>
+<li>The first line contains the <a href="http://en.m.wikipedia.org/wiki/Main_function" title="Main function">main function</a>. This is the first function executed when a program starts. The "int" in front of it tells that a number of type <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">Integer</a> will be returned when the function ends.</li>
+<li>The write function sends a <a href="http://en.m.wikipedia.org/wiki/String_literal" title="String literal">string literal</a> to the standard output buffer, which in most cases is a <a href="http://en.m.wikipedia.org/wiki/Command_line_interface" title="Command line interface" class="mw-redirect">command line interface</a>.</li>
+<li>The third line returns a number to the caller of a function, in this case the <a href="http://en.m.wikipedia.org/wiki/Command_line_interface" title="Command line interface" class="mw-redirect">command line interface</a> where zero usually means the program executed without error.</li>
+<li>The curly brackets enclose the function and the semicolon separates statements (meaning the <a href="http://en.m.wikipedia.org/wiki/Function_(programming)" title="Function (programming)" class="mw-redirect">function</a> could have been written on a single line: <i>int main(){write("Hello world!\n");return 0;}</i>)</li>
+<li>The "\n" after "Hello world!" is a <a href="Newline" title="Newline">newline</a> character.</li>
+</ul>
+<h3> <span class="mw-headline" id="Data_types">Data types</span>
+</h3>
+<p>The following list shows all the standard data types that Pike provides. Advanced data types such as sequences, queues, heaps, stacks, etc. are available in the ADT module which is included with Pike.</p>
+<p>Basic data types:</p>
+<ul>
+<li>int</li>
+<li>float</li>
+<li>string</li>
+</ul>
+<p>Container types:</p>
+<ul>
+<li>array</li>
+<li>mapping</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multiset" title="Multiset">multiset</a></li>
+</ul>
+<p>Other types:</p>
+<ul>
+<li>program (the compiled representation of a class)</li>
+<li>object (an instance of a class)</li>
+<li>function</li>
+</ul>
+<p>Pike requires explicit type definitions for all variables. It uses this information to report type errors at compile time. The following code will cause a compile error because the value of the variable "number" must be an integer but the code is attempting to assign floating point and string values to it.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> number<span class="sy0">;</span>     <span class="co1">// integer variable, it only accepts integers</span>
+number <span class="sy0">=</span> <span class="nu16">5.5</span><span class="sy0">;</span>   <span class="co1">// 5.5 is a floating point value, error</span>
+number <span class="sy0">=</span> <span class="st0">"5"</span><span class="sy0">;</span>   <span class="co1">// "5" is a string, not the integer value 5, error</span>
+</pre>
+</div>
+</div>
+<p>That kind of behavior is traditionally considered restrictive and limiting by proponents of dynamically typed languages. However unlike C, C++, and Java, Pike uses a more flexible type system—specifically, a system of <a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged unions</a>. The system allows programmers to declare variables that may contain values of multiple types, something impossible in most of the C-family languages without straying from the bounds of <a href="Union_(computer_science)#C.2FC.2B.2B" title="Union (computer science)">safe usage</a>.</p>
+<p>The following demonstrates a variable that can hold either an integer or a floating point number.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span><span class="sy0">|</span><span class="kw4">float</span> number<span class="sy0">;</span> <span class="co1">// integer OR float variable</span>
+number <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>       <span class="co1">// this is legal</span>
+number <span class="sy0">=</span> <span class="nu16">5.5</span><span class="sy0">;</span>     <span class="co1">// this is legal also</span>
+</pre>
+</div>
+</div>
+<p>Because a variable can be declared as holding many different data types, functions are provided to determine what type of data is currently stored. These functions are all of the form typenamep, as in intp, floatp, stringp, etc.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span><span class="sy0">|</span><span class="kw4">float</span> number<span class="sy0">;</span>
+number <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>
+intp<span class="br0">(</span>number<span class="br0">)</span><span class="sy0">;</span>      <span class="co1">// returns true because number holds an int</span>
+floatp<span class="br0">(</span>number<span class="br0">)</span><span class="sy0">;</span>    <span class="co1">// returns false</span>
+number <span class="sy0">=</span> <span class="nu16">5.5</span><span class="sy0">;</span>
+floatp<span class="br0">(</span>number<span class="br0">)</span><span class="sy0">;</span>    <span class="co1">// returns true because number now holds a float</span>
+</pre>
+</div>
+</div>
+<p>Additionally, there is a special "mixed" data type. That definition allows a variable to hold any kind of data type.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+mixed anything<span class="sy0">;</span>
+anything <span class="sy0">=</span> <span class="nu0">5</span><span class="sy0">;</span>    <span class="co1">// anything is now the integer value 5</span>
+anything <span class="sy0">=</span> <span class="nu16">5.5</span><span class="sy0">;</span>  <span class="co1">// anything is now the float value 5.5</span>
+anything <span class="sy0">=</span> <span class="st0">"5"</span><span class="sy0">;</span>  <span class="co1">// anything is now the string value "5"</span>
+</pre>
+</div>
+</div>
+<p>In order to convert a value from one type to another, Pike can use an explicit cast:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+mixed anything<span class="sy0">;</span>
+anything <span class="sy0">=</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span><span class="nu16">5.5</span><span class="sy0">;</span>         <span class="co1">// anything is now the integer value 5</span>
+anything <span class="sy0">=</span> <span class="br0">(</span>string<span class="br0">)</span>anything<span class="sy0">;</span> <span class="co1">// anything is now the string value "5"</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/LPMud_family_tree" title="LPMud family tree" class="mw-redirect">LPMud family tree</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Pike_(programming_language)#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web">Lextrait, Vincent (January 2010). <a rel="nofollow" class="external text" href="http://www.lextrait.com/Vincent/implementations.html">"The Programming Languages Beacon, v10.0"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.lextrait.com/Vincent/implementations.html">http://www.lextrait.com/Vincent/implementations.html</a></span><span class="reference-accessdate">. Retrieved 14 March 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Programming+Languages+Beacon%2C+v10.0&amp;rft.atitle=&amp;rft.aulast=Lextrait&amp;rft.aufirst=Vincent&amp;rft.au=Lextrait%2C%26%2332%3BVincent&amp;rft.date=January+2010&amp;rft_id=http%3A%2F%2Fwww.lextrait.com%2FVincent%2Fimplementations.html&amp;rfr_id=info:sid/en.wikipedia.org:Pike_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://pike.lysator.liu.se/">Official Homepage</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.gotpike.org/">Community Page</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Pike_(llenguatge_de_programaci%C3%B3)" lang="ca" hreflang="ca">català</a></li><li><a href="http://de.m.wikipedia.org/wiki/Pike_(Programmiersprache)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Pike_(langage)" lang="fr" hreflang="fr">français</a></li><li><a href="http://id.m.wikipedia.org/wiki/Pike_(bahasa_pemrograman)" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Pike" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Pike_(programmeringsspr%C3%A5k)" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Pike" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Pike" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Pike" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tg.m.wikipedia.org/wiki/Pike" lang="tg" hreflang="tg">тоҷикӣ</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Pike" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Pike_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Pike+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

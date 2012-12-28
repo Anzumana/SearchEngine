@@ -1,0 +1,141 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Unified Parallel C - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Unified Parallel C","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Unified_Parallel_C" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Unified+Parallel+C"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Unified Parallel C</h1>			<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Question_book-new.svg&amp;page=1" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(December 2011)</i></small> </span></td>
+</tr></table><table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;"><caption class="summary" style="">Unified Parallel C (UPC)</caption>
+<tr class=""><th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Parallel_programming" title="Parallel programming" class="mw-redirect">parallel</a>, <a href="http://en.m.wikipedia.org/wiki/Message_passing" title="Message passing">message passing</a>, <a href="Imperative_programming" title="Imperative programming">imperative</a> (<a href="Procedural_programming" title="Procedural programming">procedural</a>), <a href="Structured_programming" title="Structured programming">structured</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">UPC Consortium</td>
+</tr><tr class=""><th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">2.12.2/May 18, 2011<span style="display:none"> (<span class="bday dtstart published updated">2011-05-18</span>)</span></td>
+</tr><tr class=""><th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="Static_typing" title="Static typing" class="mw-redirect">static</a>, <a href="Weak_typing" title="Weak typing">weak</a>, <a href="Manifest_typing" title="Manifest typing">manifest</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left;"><a href="Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.gccupc.org/">GNU UPC</a>, <a rel="nofollow" class="external text" href="http://www.alphaworks.ibm.com/tech/upccompiler">IBM XL UPC Compilers</a>, <a rel="nofollow" class="external text" href="http://www.hp.com/go/upc">HP UPC</a>, <a rel="nofollow" class="external text" href="http://upc.lbl.gov/">Berkeley UPC</a>, <a rel="nofollow" class="external text" href="http://www.upc.mtu.edu/">Michigan Tech MuPC</a>, Cray UPC</td>
+</tr><tr class=""><th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, AC, <a href="Split-C" title="Split-C">Split-C</a>, Parallel C Preprocessor</td>
+</tr><tr class=""><th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://upc.gwu.edu/">http://upc.gwu.edu/</a></td>
+</tr></table><p><b>Unified Parallel C</b> (<b>UPC</b>) is an extension of the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> designed for <a href="http://en.m.wikipedia.org/wiki/High-performance_computing" title="High-performance computing" class="mw-redirect">high-performance computing</a> on large-scale <a href="http://en.m.wikipedia.org/wiki/Parallel_machine" title="Parallel machine" class="mw-redirect">parallel machines</a>, including those with a common global <a href="http://en.m.wikipedia.org/wiki/Address_space" title="Address space">address space</a> (<a href="http://en.m.wikipedia.org/wiki/Symmetric_multiprocessing" title="Symmetric multiprocessing">SMP</a> and <a href="http://en.m.wikipedia.org/wiki/Non-Uniform_Memory_Access" title="Non-Uniform Memory Access">NUMA</a>) and those with <a href="http://en.m.wikipedia.org/wiki/Distributed_memory" title="Distributed memory">distributed memory</a> (e.g. <a href="http://en.m.wikipedia.org/wiki/Computer_cluster" title="Computer cluster">clusters</a>). The <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">programmer</a> is presented with a single shared, partitioned address space, where variables may be directly read and written by any <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">processor</a>, but each variable is physically associated with a single processor. UPC uses a Single Program Multiple Data (<a href="http://en.m.wikipedia.org/wiki/SPMD" title="SPMD">SPMD</a>) model of computation in which the amount of parallelism is fixed at program startup time, typically with a single <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">thread</a> of execution per processor.</p>
+<p>In order to express parallelism, UPC extends <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)#C99" title="C (programming language)">ISO C 99</a> with the following constructs:</p>
+<ul><li>An explicitly parallel execution model</li>
+<li>A shared address space</li>
+<li>Synchronization primitives and a memory consistency model</li>
+<li>Explicit communication primitives, e.g. upc_memput</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a> primitives</li>
+</ul><p>The UPC language evolved from experiences with three other earlier languages that proposed parallel extensions to ISO C 99: AC, <a href="Split-C" title="Split-C">Split-C</a>, and Parallel C Preprocessor (PCP). UPC is not a <a href="Superset" title="Superset" class="mw-redirect">superset</a> of these three languages, but rather an attempt to distill the best characteristics of each. UPC combines the programmability advantages of the shared memory programming paradigm and the control over data layout and performance of the <a href="http://en.m.wikipedia.org/wiki/Message_passing" title="Message passing">message passing</a> <a href="Programming_paradigm" title="Programming paradigm">programming paradigm</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Co-array_Fortran" title="Co-array Fortran" class="mw-redirect">Co-array Fortran</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chapel_(programming_language)" title="Chapel (programming language)">Chapel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X10_(programming_language)" title="X10 (programming language)">X10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/High_Performance_Fortran" title="High Performance Fortran">High Performance Fortran</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Partitioned_global_address_space" title="Partitioned global address space">Partitioned global address space</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parallel_programming_model" title="Parallel programming model">Parallel programming model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_transactional_memory" title="Software transactional memory">Software transactional memory</a></li>
+<li>ParC (extended C++) <a rel="nofollow" class="external free" href="http://parallel.cc">http://parallel.cc</a></li>
+</ul><h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><span class="official website"><a rel="nofollow" class="external text" href="http://upc.gwu.edu">Official website</a></span></li>
+<li><a rel="nofollow" class="external autonumber" href="http://upc.gwu.edu/tutorials/tutorials_sc2003.pdf">[1]</a> (2003)</li>
+</ul>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Unified_Parallel_C" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Unified_Parallel_C" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Unified_Parallel_C" lang="fr" hreflang="fr">français</a></li><li><a href="http://it.m.wikipedia.org/wiki/Unified_Parallel_C" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Unified_Parallel_C" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Unified_Parallel_C" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Unified_Parallel_C&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Unified_Parallel_C&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Unified+Parallel+C&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

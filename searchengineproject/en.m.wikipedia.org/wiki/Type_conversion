@@ -1,0 +1,371 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Type conversion - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Type conversion","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Type_conversion" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Type+conversion"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Type conversion</h1>			
+<div class="dablink">This article is about the computer science concept.  For the aviation licensing process, see <a href="http://en.m.wikipedia.org/wiki/Type_conversion_(aviation)" title="Type conversion (aviation)" class="mw-redirect">Type conversion (aviation)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Type_conversion&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(May 2011)</i></small> </span></td>
+</tr></table>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <b>type conversion</b>, <b>typecasting</b>, and <b>coercion</b> are different ways of, implicitly or explicitly, changing an entity of one <a href="Data_type" title="Data type">data type</a> into another. This is done to take advantage of certain features of type hierarchies or type representations. One example would be small integers, which can be stored in a compact format and converted to a larger representation when used in arithmetic computations. In <a href="http://en.m.wikipedia.org/wiki/Object-oriented" title="Object-oriented" class="mw-redirect">object-oriented</a> programming, type conversion allows programs to treat objects of one type as one of their ancestor types to simplify interacting with them.</p>
+<p>Each <a href="Programming_language" title="Programming language">programming language</a> has its own rules on how types can be converted. In general, both objects and fundamental data types can be converted. In most languages, the word <b>coercion</b> is used to denote an <i>implicit</i> conversion, either during compilation or during <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a>. A typical example would be an expression mixing integer and floating point numbers (like 5 + 0.1), where the integers are normally converted into the latter. Explicit type conversions can either be performed via built-in routines (or a special syntax) or via separately defined conversion routines such as an <a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">overloaded</a> <a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">object</a> <a href="http://en.m.wikipedia.org/wiki/Constructor_(computer_science)" title="Constructor (computer science)" class="mw-redirect">constructor</a>.</p>
+<p>In most <a href="http://en.m.wikipedia.org/wiki/Algol_(programming_language)" title="Algol (programming language)" class="mw-redirect">Algol-based</a> languages with <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">nested function</a> definitions, such as Ada, Delphi, Modula 2 and Pascal, <b>conversion</b> and <b>casting</b> are distinctly different concepts. In these languages, <b>conversion</b> refers to either implicitly or explicitly changing a value from one data type to another, e.g. a 16-bit integer to a 32-bit integer. The storage requirements may change as a result of the conversion. A loss of precision or truncation may also occur. The word <b>cast</b>, on the other hand, refers to explicitly changing the <i>interpretation</i> of the <i>bit pattern</i> representing a value from one type to another. For example 32 contiguous bits may be treated as an array of 32 booleans, a two character Unicode string, an unsigned 32-bit integer or an IEEE single precision floating point value. While the storage requirements are never changed, it still requires knowledge of low level details such as representation format, byte order, and alignment requirements in order to be meaningful.</p>
+<p>In the C family of languages and <a href="http://en.m.wikipedia.org/wiki/Algol_68" title="Algol 68" class="mw-redirect">Algol 68</a>, the word <b>cast</b> typically refers to an <i>explicit</i> type conversion (as opposed to an implicit conversion), regardless of whether this is a re-interpretation of a bit-pattern or a real conversion.</p>
+<h2> <span class="mw-headline" id="C-like_languages">C-like languages</span>
+</h2>
+<h3> <span class="mw-headline" id="Implicit_type_conversion">Implicit type conversion</span>
+</h3>
+<p>Implicit type conversion, also known as <b>coercion</b>, is an automatic type conversion by the <a href="Compiler" title="Compiler">compiler</a>. Some <a href="Programming_language" title="Programming language">languages</a> allow, some require, compilers to provide coercion.</p>
+<p>In a mixed-type expression, data of one or more <a href="http://en.m.wikipedia.org/wiki/Subtype_and_derived_type" title="Subtype and derived type" class="mw-redirect">subtypes</a> can be converted to a <a href="http://en.m.wikipedia.org/wiki/Supertype" title="Supertype" class="mw-redirect">supertype</a> as needed at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">runtime</a> so that the program will run correctly. For example, the following is legal <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> code:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">double</span>  d<span class="sy0">;</span>
+<span class="kw4">long</span>    l<span class="sy0">;</span>
+<span class="kw4">int</span>     i<span class="sy0">;</span>
+ 
+<span class="kw1">if</span> <span class="br0">(</span>d <span class="sy0">&gt;</span> i<span class="br0">)</span>      d <span class="sy0">=</span> i<span class="sy0">;</span>
+<span class="kw1">if</span> <span class="br0">(</span>i <span class="sy0">&gt;</span> l<span class="br0">)</span>      l <span class="sy0">=</span> i<span class="sy0">;</span>
+<span class="kw1">if</span> <span class="br0">(</span>d <span class="sy0">==</span> l<span class="br0">)</span>     d <span class="sy0">*=</span> <span class="nu0">2</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Although <span class="mw-geshi c source-c">d</span>, <span class="mw-geshi c source-c">l</span> and <span class="mw-geshi c source-c">i</span> belong to different data types, they will be automatically converted to equal data types each time a comparison or assignment is executed. This behavior should be used with caution, as unintended consequences can arise. Data can be lost when floating-point representations are converted to integer representations as the fractional components of the floating-point values will be truncated (rounded towards zero). Conversely, converting from an integer representation to a floating-point one can also lose precision, since the floating-point type may be unable to represent the integer exactly (for example, <span class="mw-geshi c source-c"><span class="kw4">float</span></span> might be an <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> single precision type, which cannot represent the integer 16777217 exactly, while a 32-bit integer type can). This can lead to unintuitive behavior, as demonstrated by the following code:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#include &lt;stdio.h&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> i_value   <span class="sy0">=</span> <span class="nu0">16777217</span><span class="sy0">;</span>
+    <span class="kw4">float</span> f_value <span class="sy0">=</span> <span class="nu16">16777217.0</span><span class="sy0">;</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"The integer is: %d<span class="es1">\n</span>"</span><span class="sy0">,</span> i_value<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"The float is:   %f<span class="es1">\n</span>"</span><span class="sy0">,</span> f_value<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Their equality: %d<span class="es1">\n</span>"</span><span class="sy0">,</span> i_value <span class="sy0">==</span> f_value<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>On compilers that implement floats as IEEE single precision, and ints as at least 32 bits, this code will give the peculiar result of printing out <span class="mw-geshi c source-c">The integer is<span class="sy0">:</span> <span class="nu0">16777217</span></span>, followed by <span class="mw-geshi c source-c">The <span class="kw4">float</span> is<span class="sy0">:</span> <span class="nu16">16777216.000000</span></span>, then <span class="mw-geshi c source-c">Their equality<span class="sy0">:</span> <span class="nu0">1</span></span> (where 1 represents equal). This odd behavior is caused by an implicit cast of <span class="mw-geshi c source-c">i_value</span> to float when it is compared with <span class="mw-geshi c source-c">f_value</span>; a cast which loses precision, making the values being compared the same.</p>
+<p>Following important points:</p>
+<ol>
+<li>
+<span class="mw-geshi c source-c"><span class="kw4">float</span></span> to <span class="mw-geshi c source-c"><span class="kw4">int</span></span> causes <a href="http://en.m.wikipedia.org/wiki/Truncation" title="Truncation">truncation</a>, i.e. removal of the fractional part.</li>
+<li>
+<span class="mw-geshi c source-c"><span class="kw4">double</span></span> to <span class="mw-geshi c source-c"><span class="kw4">float</span></span> causes rounding of digit</li>
+<li>
+<span class="mw-geshi c source-c"><span class="kw4">long</span> <span class="kw4">int</span></span> to <span class="mw-geshi c source-c"><span class="kw4">int</span></span> causes dropping of excess higher order bits.</li>
+</ol>
+<h4> <span class="mw-headline" id="Type_promotion">Type promotion</span>
+</h4>
+<p>One special case of implicit type conversion is type <b>promotion</b>, where the compiler automatically expands the binary representation of objects of integer or floating-point types. Promotions are commonly used with types smaller than the native type of the target platform's <a href="http://en.m.wikipedia.org/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">ALU</a> prior to arithmetic and logical operations in order to make such operations possible, or more efficient if the ALU can work with more than one type. C and C++ perform such promotion for objects of boolean, character, wide character, enumeration, and short integer types which are promoted to int, and for objects of type float, which are promoted to double. Unlike some other type conversions, promotions never lose precision or modify the value stored in the object.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Java_language" title="Java language" class="mw-redirect">java language</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw4">int</span> x <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">;</span>
+<span class="kw4">double</span> y <span class="sy0">=</span> <span class="nu0">3.5</span><span class="sy0">;</span>
+<span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">(</span>x<span class="sy0">+</span>y<span class="br0">)</span><span class="sy0">;</span> <span class="co1">//The compiler will print 6.5</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Explicit_type_conversion">Explicit type conversion</span>
+</h3>
+<p>Explicit type conversion is a type conversion which is explicitly defined within a program (instead of being done by a compiler for implicit type conversion).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw4">double</span> da <span class="sy1">=</span> <span class="nu16">3.3</span><span class="sy4">;</span>
+<span class="kw4">double</span> db <span class="sy1">=</span> <span class="nu16">3.3</span><span class="sy4">;</span>
+<span class="kw4">double</span> dc <span class="sy1">=</span> <span class="nu16">3.4</span><span class="sy4">;</span>
+<span class="kw4">int</span> result <span class="sy1">=</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>da <span class="sy2">+</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>db <span class="sy2">+</span> <span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span>dc<span class="sy4">;</span> <span class="co1">//result == 9</span>
+<span class="co1">//if implicit conversion would be used (as if result = da + db + dc), result would be equal to 10</span>
+</pre>
+</div>
+</div>
+<p>There are several kinds of explicit conversion.</p>
+<dl>
+<dt>checked</dt>
+<dd>Before the conversion is performed, a runtime check is done to see if the destination type can hold the source value. If not, an error condition is raised.</dd>
+<dt>unchecked</dt>
+<dd>No check is performed. If the destination type cannot hold the source value, the result is undefined.</dd>
+<dt>bit pattern</dt>
+<dd>The raw bit representation of the source is copied verbatim, and it is re-interpreted according to the destination type. This can also be achieved via <a href="http://en.m.wikipedia.org/wiki/Aliasing_(computing)" title="Aliasing (computing)">aliasing</a>.</dd>
+</dl>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Object-oriented" title="Object-oriented" class="mw-redirect">object-oriented</a> programming languages, objects can also be <a href="http://en.m.wikipedia.org/wiki/Downcasting" title="Downcasting">downcast</a> : a reference of a base class is cast to one of its derived classes.</p>
+<h4> <span class="mw-headline" id="Using_overloaded_object_constructor">Using overloaded object constructor</span>
+</h4>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">class</span> Myclass <span class="br0">{</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+    <span class="kw4">double</span> myD<span class="sy4">;</span>
+    Myclass<span class="br0">(</span><span class="kw4">double</span> d<span class="br0">)</span> <span class="sy4">:</span> myD<span class="br0">(</span>d<span class="br0">)</span> <span class="br0">{</span><span class="br0">}</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
+    Myclass obj <span class="sy1">=</span> <span class="nu16">5.2</span><span class="sy4">;</span> <span class="co1">// here is the type conversion</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="C.23">C#</span>
+</h2>
+<p>In <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, type conversion can be made in a safe or unsafe (i.e. C-like) manner, the former called <i>checked type cast</i>.<sup id="cite_ref-0" class="reference"><a href="Type_conversion#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+Animal animal <span class="sy0">=</span> <span class="kw3">new</span> Cat<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+Bulldog b <span class="sy0">=</span> <span class="br0">(</span>Bulldog<span class="br0">)</span> animal<span class="sy0">;</span>   <span class="co1">// if (animal is Bulldog), stat.type(animal) is Bulldog, else an exception</span>
+b <span class="sy0">=</span> animal <span class="kw1">as</span> Bulldog<span class="sy0">;</span>          <span class="co1">// if (animal is Bulldog), b = (Bulldog) animal, else b = null</span>
+ 
+animal <span class="sy0">=</span> <span class="kw1">null</span><span class="sy0">;</span>
+b <span class="sy0">=</span> animal <span class="kw1">as</span> Bulldog<span class="sy0">;</span>          <span class="co1">// b == null</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Eiffel">Eiffel</span>
+</h2>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> the notion of type conversion is integrated into the rules of the type system. The <b>Assignment Rule</b> says that an assignment, such as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            x <span class="sy0">:=</span> y
+</pre>
+</div>
+</div>
+<p>is valid if and only if the type of its source expression, <code lang="eiffel" xml:lang="eiffel">y</code> in this case, is <b>compatible with</b> the type of its target entity, <code lang="eiffel" xml:lang="eiffel">x</code> in this case. In this rule, <b>compatible with</b> means that the type of the source expression either <b>conforms to</b> or <b>converts to</b> that of the target. Conformance of types is defined by the familiar rules for <a href="http://en.m.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming" title="Polymorphism in object-oriented programming">polymorphism in object-oriented programming</a>. For example, in the assignment above, the type of <code lang="eiffel" xml:lang="eiffel">y</code> conforms to the type of <code lang="eiffel" xml:lang="eiffel">x</code> if the class upon which <code lang="eiffel" xml:lang="eiffel">y</code> is based is a descendant of that upon which <code lang="eiffel" xml:lang="eiffel">x</code> is based.</p>
+<h3> <span class="mw-headline" id="Defintion_of_Type_Conversion_in_Eiffel">Defintion of Type Conversion in Eiffel</span>
+</h3>
+<p>The actions of type conversion in Eiffel, specifically <b>converts to</b> and <b>converts from</b> are defined as:</p>
+<blockquote>
+<p>A type based on a class CU <b>converts to</b> a type T based on a class CT (and T <b>converts from</b> U) if either</p>
+<dl>
+<dd>CT has a <i>conversion procedure</i> using U as a conversion type, or</dd>
+<dd>CU has a <i>conversion query</i> listing T as a conversion type</dd>
+</dl>
+</blockquote>
+<h3> <span class="mw-headline" id="Example">Example</span>
+</h3>
+<p>Eiffel is a fully compliant <a href="http://en.m.wikipedia.org/wiki/List_of_CLI_languages" title="List of CLI languages">language</a> for <a href="http://en.m.wikipedia.org/wiki/Microsoft_.Net" title="Microsoft .Net" class="mw-redirect">Microsoft .Net</a>. Prior to the development of .Net, Eiffel was already equipped with an extensive class libraries. Using the .Net type libraries, particularly with commonly used types such as strings, poses a conversion problem. Existing Eiffel software uses the string classes (such as <code lang="eiffel" xml:lang="eiffel">STRING_8</code>) from the Eiffel libraries, but Eiffel software written for .Net must use the .Net string class (<code lang="eiffel" xml:lang="eiffel">System.String</code>) in many cases, for example when calling .Net methods which expect items of the .Net type to be passed as arguments. So, the conversion of these types back and forth needs to be as seamless as possible.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    my_string<span class="sy0">:</span> STRING_8                 <span class="co1">-- Native Eiffel string</span>
+    my_dotnet_string<span class="sy0">:</span> SYSTEM_STRING     <span class="co1">-- Native Microsoft .Net string</span>
+ 
+        …
+ 
+            my_string <span class="sy0">:=</span> my_system_string
+</pre>
+</div>
+</div>
+<p>In the code above, two strings are declared, one of each different type (<code lang="eiffel" xml:lang="eiffel">SYSTEM_STRING</code> is the Eiffel compliant alias for System.String). Because <code lang="eiffel" xml:lang="eiffel">System.String</code> does not conform to <code lang="eiffel" xml:lang="eiffel">STRING_8</code>, then the assignment above is valid only if <code lang="eiffel" xml:lang="eiffel">System.String</code> converts to <code lang="eiffel" xml:lang="eiffel">STRING_8</code>.</p>
+<p>The Eiffel class <code lang="eiffel" xml:lang="eiffel">STRING_8</code> has a conversion procedure <code lang="eiffel" xml:lang="eiffel">make_from_cil</code> for objects of type <code lang="eiffel" xml:lang="eiffel">System.String</code>. Conversion procedures are also always designated as creation procedures (similar to constructors). The following is an excerpt from the <code lang="eiffel" xml:lang="eiffel">STRING_8</code> class:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    <span class="kw1">class</span> STRING_8
+        …
+    <span class="kw2">create</span>
+        make_from_cil
+        …
+    convert
+        make_from_cil <span class="br0">(</span><span class="br0">{</span>SYSTEM_STRING<span class="br0">}</span><span class="br0">)</span>
+        …
+</pre>
+</div>
+</div>
+<p>The presence of the conversion procedure makes the assignment:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            my_string <span class="sy0">:=</span> my_system_string
+</pre>
+</div>
+</div>
+<p>semantically equivalent to:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            <span class="kw2">create</span> my_string.<span class="me1">make_from_cil</span> <span class="br0">(</span>my_system_string<span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>in which <code lang="eiffel" xml:lang="eiffel">my_string</code> is constructed as a new object of type <code lang="eiffel" xml:lang="eiffel">STRING_8</code> with content equivalent to that of <code lang="eiffel" xml:lang="eiffel">my_system_string</code>.</p>
+<p>To handle an assignment with original source and target reversed:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            my_system_string <span class="sy0">:=</span> my_string
+</pre>
+</div>
+</div>
+<p>the class <code lang="eiffel" xml:lang="eiffel">STRING_8</code> also contains a conversion query <code lang="eiffel" xml:lang="eiffel">to_cil</code> which will produce a <code lang="eiffel" xml:lang="eiffel">System.String</code> from an instance of <code lang="eiffel" xml:lang="eiffel">STRING_8</code>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    <span class="kw1">class</span> STRING_8
+        …
+    <span class="kw2">create</span>
+        make_from_cil
+        …
+    convert
+        make_from_cil <span class="br0">(</span><span class="br0">{</span>SYSTEM_STRING<span class="br0">}</span><span class="br0">)</span>
+        to_cil<span class="sy0">:</span> <span class="br0">{</span>SYSTEM_STRING<span class="br0">}</span>
+        …
+</pre>
+</div>
+</div>
+<p>The assignment:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            my_system_string <span class="sy0">:=</span> my_string
+</pre>
+</div>
+</div>
+<p>then, becomes equivalent to:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+            my_system_string <span class="sy0">:=</span> my_string.<span class="me1">to_cil</span>
+</pre>
+</div>
+</div>
+<p>In Eiffel, the setup for type conversion is included in the class code, but then appears to happen as automatically as <a href="Type_conversion#Explicit_type_conversion">explicit type conversion</a> in client code. The includes not just assignments but other types of attachments as well, such as argument (parameter) substitution.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_cast" title="Dynamic cast">dynamic cast</a></li>
+<li><a href="Type_punning" title="Type punning">Type punning</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Type_conversion#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web">Mössenböck, Hanspeter (25 March 2002). <a rel="nofollow" class="external text" href="http://ssw.jku.at/Teaching/Lectures/CSharp/Tutorial/Part2.pdf">"Advanced C#: Checked Type Casts"</a>. <a rel="nofollow" class="external free" href="http://ssw.jku.at/Teaching/Lectures/CSharp/Tutorial/">http://ssw.jku.at/Teaching/Lectures/CSharp/Tutorial/</a>: Institut für Systemsoftware, Johannes Kepler Universität Linz, Fachbereich Informatik. p. 5<span class="printonly">. <a rel="nofollow" class="external free" href="http://ssw.jku.at/Teaching/Lectures/CSharp/Tutorial/Part2.pdf">http://ssw.jku.at/Teaching/Lectures/CSharp/Tutorial/Part2.pdf</a></span><span class="reference-accessdate">. Retrieved 4 August 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Advanced+C%23%3A+Checked+Type+Casts&amp;rft.atitle=&amp;rft.aulast=M%C3%B6ssenb%C3%B6ck&amp;rft.aufirst=Hanspeter&amp;rft.au=M%C3%B6ssenb%C3%B6ck%2C%26%2332%3BHanspeter&amp;rft.date=25+March+2002&amp;rft.pages=p.%26nbsp%3B5&amp;rft.place=http%3A%2F%2Fssw.jku.at%2FTeaching%2FLectures%2FCSharp%2FTutorial%2F&amp;rft.pub=Institut+f%C3%BCr+Systemsoftware%2C+Johannes+Kepler+Universit%C3%A4t+Linz%2C+Fachbereich+Informatik&amp;rft_id=http%3A%2F%2Fssw.jku.at%2FTeaching%2FLectures%2FCSharp%2FTutorial%2FPart2.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Type_conversion"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Transwiki:Type_conversion" class="extiw" title="wikibooks:Transwiki:Type conversion">Transwiki:Type conversion</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://help.sap.com/abapdocu_70/en/ABENCAST_CASTING_GLOSRY.htm">Casting in ABAP</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.adapower.com/index.php?Command=Class&amp;ClassID=FAQ&amp;CID=354">Casting in Ada</a></li>
+<li><a class="external text" href="http://en.wikibooks.org/wiki/C%2B%2B_Programming/Programming_Languages/C%2B%2B/Code/Statements/Variables/Type_Casting">Casting in C++</a></li>
+<li><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/third_edition/html/conversions.html#5.5">Casting in Java</a></li>
+<li><a rel="nofollow" class="external text" href="http://cppreference.com/wiki/language/implicit_cast">Implicit Type Casting at Cppreference.com</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/class/sum2003/cmsc311/Notes/BitOp/cast.html">Static and Reinterpretation castings in C++</a></li>
+<li><a class="external text" href="http://en.wikibooks.org/wiki/F_Sharp_Programming/Inheritance#Up-casting_and_Down-casting">Upcasting and Downcasting</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 10 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://da.m.wikipedia.org/wiki/Konvertering_(teknik)" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Typumwandlung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Conversi%C3%B3n_de_tipos" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Conversion_de_type" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%ED%98%95_%EB%B3%80%ED%99%98" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Conversione_di_tipo" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Typeconversie" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%9E%8B%E5%A4%89%E6%8F%9B" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Konwersja_typu" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5_%D1%82%D0%B8%D0%BF%D0%B0" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Type_conversion&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Type_conversion&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Type+conversion&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

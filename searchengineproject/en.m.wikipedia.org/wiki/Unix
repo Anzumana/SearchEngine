@@ -1,0 +1,1073 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Unix - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Unix","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Unix" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Unix"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Unix</h1>			
+<table class="infobox" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="" style="">Unix</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Unix_history-simple.svg" class="image"><img alt="Unix history-simple.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/250px-Unix_history-simple.svg.png" width="250" height="174" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/375px-Unix_history-simple.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/77/Unix_history-simple.svg/500px-Unix_history-simple.svg.png 2x"></a><br><span style="">Evolution of Unix and Unix-like systems</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">
+<a href="http://en.m.wikipedia.org/wiki/Software_industry" title="Software industry">Company</a> / <a href="Software_developer" title="Software developer">developer</a>
+</th>
+<td class="" style="">
+<a href="Ken_Thompson_(computer_programmer)" title="Ken Thompson (computer programmer)" class="mw-redirect">Ken Thompson</a>, <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>, <a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>, <a href="http://en.m.wikipedia.org/wiki/Douglas_McIlroy" title="Douglas McIlroy">Douglas McIlroy</a>, and <a href="http://en.m.wikipedia.org/wiki/Joe_Ossanna" title="Joe Ossanna">Joe Ossanna</a> at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Programmed in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">OS family</th>
+<td class="" style="">Unix</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Working state</th>
+<td class="" style="">Current</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Source model</th>
+<td class="" style="">Historically <a href="http://en.m.wikipedia.org/wiki/Closed_source_software" title="Closed source software" class="mw-redirect">closed source</a>, now some Unix projects (<a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> family and <a href="http://en.m.wikipedia.org/wiki/Illumos" title="Illumos">Illumos</a>) are <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open sourced</a>.</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Initial release</th>
+<td class="" style="">1969<span style="display:none"> (<span class="bday dtstart published updated">1969</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Available <a href="http://en.m.wikipedia.org/wiki/Natural_language" title="Natural language">language</a>(s)</th>
+<td class="" style="">English</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">
+<a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">Kernel</a> type</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Monolithic_Kernel" title="Monolithic Kernel" class="mw-redirect">Monolithic</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Default <a href="http://en.m.wikipedia.org/wiki/User_interface" title="User interface">user interface</a>
+</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">Command-line interface</a> &amp; <a href="Graphical_user_interface" title="Graphical user interface">Graphical</a> (<a href="http://en.m.wikipedia.org/wiki/X_Window_System" title="X Window System">X Window System</a>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Official website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.unix.org">unix.org</a></td>
+</tr>
+</table>
+<p><b>Unix</b> (officially trademarked as <b>UNIX</b>, sometimes also written as <b><span style="font-variant: small-caps;">Unix</span></b> in small caps) is a <a href="http://en.m.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">multitasking</a>, <a href="http://en.m.wikipedia.org/wiki/Multi-user" title="Multi-user">multi-user</a> computer <a href="Operating_system" title="Operating system">operating system</a> originally developed in 1969 by a group of <a href="http://en.m.wikipedia.org/wiki/American_Telephone_%26_Telegraph" title="American Telephone &amp; Telegraph" class="mw-redirect">AT&amp;T</a> employees at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a>, including <a href="Ken_Thompson" title="Ken Thompson">Ken Thompson</a>, <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>, <a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>, <a href="http://en.m.wikipedia.org/wiki/Douglas_McIlroy" title="Douglas McIlroy">Douglas McIlroy</a>, <a href="http://en.m.wikipedia.org/wiki/Michael_Lesk" title="Michael Lesk" class="mw-redirect">Michael Lesk</a> and <a href="http://en.m.wikipedia.org/wiki/Joe_Ossanna" title="Joe Ossanna">Joe Ossanna</a>. The Unix operating system was first developed in <a href="Assembly_language" title="Assembly language">assembly language</a>, but by 1973 had been almost entirely recoded in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, greatly facilitating its further development and <a href="Software_portability" title="Software portability">porting</a> to other hardware. Today's Unix system evolution is split into various branches, developed over time by AT&amp;T as well as various commercial vendors, universities (such as <a href="http://en.m.wikipedia.org/wiki/University_of_California,_Berkeley" title="University of California, Berkeley">University of California, Berkeley</a>'s <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a>), and <a href="http://en.m.wikipedia.org/wiki/Non-profit" title="Non-profit" class="mw-redirect">non-profit</a> organizations.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a>, an industry standards consortium, owns the UNIX trademark. Only systems fully compliant with and certified according to the <a href="Single_UNIX_Specification" title="Single UNIX Specification">Single UNIX Specification</a> are qualified to use the trademark; others might be called <i>Unix system-like</i> or <i><a href="Unix-like" title="Unix-like">Unix-like</a></i>, although the Open Group disapproves<sup id="cite_ref-1" class="reference"><a href="Unix#cite_note-1"><span>[</span>1<span>]</span></a></sup> of this term. However, the term <i>Unix</i> is often used informally to denote any operating system that closely resembles the trademarked system.</p>
+<p>During the late 1970s and early 1980s, the influence of Unix in academic circles led to large-scale adoption of Unix (particularly of the <a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> variant, originating from the <a href="http://en.m.wikipedia.org/wiki/University_of_California,_Berkeley" title="University of California, Berkeley">University of California, Berkeley</a>) by commercial startups, the most notable of which are <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>, <a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a>, <a href="http://en.m.wikipedia.org/wiki/Sequent_Computer_Systems" title="Sequent Computer Systems">Sequent</a>, and <a href="http://en.m.wikipedia.org/wiki/AIX_operating_system" title="AIX operating system" class="mw-redirect">AIX</a>, as well as <a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a>, which forms the core set of components upon which <a href="http://en.m.wikipedia.org/wiki/Apple_Inc." title="Apple Inc.">Apple</a>'s <a href="http://en.m.wikipedia.org/wiki/OS_X" title="OS X">OS X</a>, <a href="http://en.m.wikipedia.org/wiki/Apple_TV" title="Apple TV">Apple TV</a>, and <a href="http://en.m.wikipedia.org/wiki/IOS_(Apple)" title="IOS (Apple)" class="mw-redirect">iOS</a> are based.<sup id="cite_ref-2" class="reference"><a href="Unix#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Unix#cite_note-3"><span>[</span>3<span>]</span></a></sup> Today, in addition to certified Unix systems such as those already mentioned, <a href="Unix-like" title="Unix-like">Unix-like</a> operating systems such as <a href="http://en.m.wikipedia.org/wiki/MINIX" title="MINIX">MINIX</a>, <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, and <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a> descendants (<a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a>, <a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a>, and <a href="http://en.m.wikipedia.org/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a>) are commonly encountered. The term <i>traditional Unix</i> may be used to describe an operating system that has the characteristics of either <a href="http://en.m.wikipedia.org/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a> or <a href="http://en.m.wikipedia.org/wiki/UNIX_System_V" title="UNIX System V">UNIX System V</a>.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>Unix operating systems are widely used in <a href="http://en.m.wikipedia.org/wiki/Server_(computing)" title="Server (computing)">servers</a>, <a href="http://en.m.wikipedia.org/wiki/Workstation" title="Workstation">workstations</a>, and <a href="http://en.m.wikipedia.org/wiki/Mobile_device" title="Mobile device">mobile devices</a>.<sup id="cite_ref-4" class="reference"><a href="Unix#cite_note-4"><span>[</span>4<span>]</span></a></sup> The Unix environment and the <a href="http://en.m.wikipedia.org/wiki/Client%E2%80%93server" title="Client–server" class="mw-redirect">client–server</a> program model were essential elements in the development of the <a href="http://en.m.wikipedia.org/wiki/Internet" title="Internet">Internet</a> and the reshaping of computing as centered in <a href="http://en.m.wikipedia.org/wiki/Computer_networking" title="Computer networking" class="mw-redirect">networks</a> rather than in individual computers.</p>
+<p>Originally, Unix was meant to be a programmer's workbench more than to be used to run application software. The system grew larger as the operating system started spreading in the academic circle, as users added their own tools to the system and shared them with colleagues.<sup id="cite_ref-5" class="reference"><a href="Unix#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Both Unix and the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> were developed by AT&amp;T and distributed to government and academic institutions, which led to both being ported to a wider variety of machine families than any other operating system. As a result, Unix became synonymous with <a href="http://en.m.wikipedia.org/wiki/Open_system_(computing)" title="Open system (computing)">open systems</a>.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2012">citation needed</span></a></i>]</sup></p>
+<p>Unix was designed to be <a href="Porting" title="Porting">portable</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">multi-tasking</a> and <a href="http://en.m.wikipedia.org/wiki/Multi-user" title="Multi-user">multi-user</a> in a <a href="http://en.m.wikipedia.org/wiki/Time-sharing" title="Time-sharing">time-sharing</a> configuration. Unix systems are characterized by various concepts: the use of <a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">plain text</a> for storing data; a hierarchical <a href="http://en.m.wikipedia.org/wiki/File_system" title="File system">file system</a>; treating devices and certain types of <a href="http://en.m.wikipedia.org/wiki/Inter-process_communication" title="Inter-process communication">inter-process communication</a> (IPC) as files; and the use of a large number of <a href="http://en.m.wikipedia.org/wiki/Programming_tool" title="Programming tool">software tools</a>, small programs that can be strung together through a <a href="http://en.m.wikipedia.org/wiki/Command_line_interpreter" title="Command line interpreter" class="mw-redirect">command line interpreter</a> using <a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipes</a>, as opposed to using a single monolithic program that includes all of the same functionality. These concepts are collectively known as the <a href="http://en.m.wikipedia.org/wiki/Unix_philosophy" title="Unix philosophy">Unix philosophy</a>. Kernighan and <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a> summarize this in <a href="http://en.m.wikipedia.org/wiki/The_Unix_Programming_Environment" title="The Unix Programming Environment">The Unix Programming Environment</a> as "the idea that the power of a system comes more from the relationships among programs than from the programs themselves."</p>
+<p>Under Unix, the operating system consists of many utilities along with the master control program, the <a href="Kernel_(computer_science)" title="Kernel (computer science)" class="mw-redirect">kernel</a>. The kernel provides services to start and stop programs, handles the <a href="http://en.m.wikipedia.org/wiki/File_system" title="File system">file system</a> and other common "low level" tasks that most programs share, and schedules access to avoid conflicts when programs try to access the same resource or device simultaneously. To mediate such access, the kernel has special rights, reflected in the division between <a href="http://en.m.wikipedia.org/wiki/User-space" title="User-space" class="mw-redirect">user-space and kernel-space</a>.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">microkernel</a> concept was introduced in an effort to reverse the trend towards larger kernels and return to a system in which most tasks were completed by smaller utilities. In an era when a standard computer consisted of a hard disk for storage and a <a href="http://en.m.wikipedia.org/wiki/Data_terminal" title="Data terminal" class="mw-redirect">data terminal</a> for input and output (I/O), the Unix file model worked quite well, as most I/O was linear. However, modern systems include networking and other new devices. As graphical user interfaces developed, the file model proved inadequate to the task of handling asynchronous events such as those generated by a <a href="http://en.m.wikipedia.org/wiki/Mouse_(computing)" title="Mouse (computing)">mouse</a>. In the 1980s, <a href="http://en.m.wikipedia.org/wiki/Non-blocking_I/O" title="Non-blocking I/O" class="mw-redirect">non-blocking I/O</a> and the set of <a href="http://en.m.wikipedia.org/wiki/Inter-process_communication" title="Inter-process communication">inter-process communication</a> mechanisms were augmented with <a href="http://en.m.wikipedia.org/wiki/Unix_domain_socket" title="Unix domain socket">Unix domain sockets</a>, <a href="http://en.m.wikipedia.org/wiki/Shared_memory" title="Shared memory">shared memory</a>, <a href="http://en.m.wikipedia.org/wiki/Message_queue" title="Message queue">message queues</a>, and <a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">semaphores</a>. Functions such as network protocols were moved out of the kernel.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>In the 1960s, the <a href="http://en.m.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">Massachusetts Institute of Technology</a>, <a href="AT&amp;T_Bell_Labs" title="AT&amp;T Bell Labs" class="mw-redirect">AT&amp;T Bell Labs</a>, and <a href="http://en.m.wikipedia.org/wiki/General_Electric" title="General Electric">General Electric</a> developed an experimental operating system called <a href="Multics" title="Multics">Multics</a> for the <a href="http://en.m.wikipedia.org/wiki/GE-600_series" title="GE-600 series">GE-645</a> mainframe.<sup id="cite_ref-6" class="reference"><a href="Unix#cite_note-6"><span>[</span>6<span>]</span></a></sup> Multics introduced many <a href="Multics#Novel_ideas" title="Multics">innovations</a>, but had many problems.</p>
+<p><a href="Bell_Labs" title="Bell Labs">Bell Labs</a>, frustrated by the size and complexity of Multics but not the aims, slowly pulled out of the project. Their last researchers to leave Multics, Ken Thompson, Dennis Ritchie, M. D. McIlroy, and J. F. Ossanna,<sup id="cite_ref-DRM_7-0" class="reference"><a href="Unix#cite_note-DRM-7"><span>[</span>7<span>]</span></a></sup> decided to redo the work on a much smaller scale. At the time, Ritchie said, "what we wanted to preserve was not just a good environment in which to do programming, but a system around which a fellowship could form. We knew from experience that the essence of communal computing, as supplied by remote-access, time-shared machines, is not just to type programs into a terminal instead of a keypunch, but to encourage close communication."<sup id="cite_ref-DRM_7-1" class="reference"><a href="Unix#cite_note-DRM-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>While Ken Thompson still had access to the Multics environment, he wrote simulations for the new file and paging system on it. He also programmed a game called <a href="http://en.m.wikipedia.org/wiki/Space_Travel_(video_game)" title="Space Travel (video game)">Space Travel</a>, but the game needed a more efficient and less expensive machine to run on, and eventually he found a little-used <a href="PDP-7" title="PDP-7">PDP-7</a> at Bell Labs.<sup id="cite_ref-8" class="reference"><a href="Unix#cite_note-8"><span>[</span>8<span>]</span></a></sup> On this PDP-7, a team of Bell Labs researchers led by Thompson and Ritchie, including Rudd Canaday, developed a <a href="http://en.m.wikipedia.org/wiki/File_system#Aspects_of_file_systems" title="File system">hierarchical file system</a>, the concepts of <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">computer processes</a> and <a href="http://en.m.wikipedia.org/wiki/Device_file" title="Device file">device files</a>, a <a href="http://en.m.wikipedia.org/wiki/Command-line_interpreter" title="Command-line interpreter" class="mw-redirect">command-line interpreter</a>, and some small utility programs.<sup id="cite_ref-DRM_7-2" class="reference"><a href="Unix#cite_note-DRM-7"><span>[</span>7<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="1970s">1970s</span>
+</h3>
+<p>In 1970, <a href="http://en.m.wikipedia.org/wiki/Peter_G._Neumann" title="Peter G. Neumann">Peter Neumann</a> coined the project name <i>Unics</i> (UNiplexed Information and Computing Service) as a <a href="http://en.m.wikipedia.org/wiki/Word_play" title="Word play">pun</a> on <i><a href="Multics" title="Multics">Multics</a></i>, (Multiplexed Information and Computer Services).<sup id="cite_ref-9" class="reference"><a href="Unix#cite_note-9"><span>[</span>9<span>]</span></a></sup> Unics could eventually support multiple simultaneous users, and it was renamed <i>Unix</i>.</p>
+<p>Up until this point there had been no financial support from Bell Labs. When the Computer Science Research Group wanted to use Unix on a much larger machine than the PDP-7, Thompson and Ritchie managed to trade the promise of adding text processing capabilities to Unix for a <a href="http://en.m.wikipedia.org/wiki/PDP-11/20" title="PDP-11/20" class="mw-redirect">PDP-11/20</a> machine. This led to some financial support from Bell. For the first time in 1970, the Unix operating system was officially named and ran on the PDP-11/20. It added a text formatting program called <a href="http://en.m.wikipedia.org/wiki/Roff" title="Roff">roff</a> and a <a href="http://en.m.wikipedia.org/wiki/Text_editor" title="Text editor">text editor</a>. All three were written in PDP-11/20 assembly language. Bell Labs used this initial text processing system, consisting of Unix, roff, and the editor, for text processing of <a href="http://en.m.wikipedia.org/wiki/Patent" title="Patent">patent</a> applications. Roff soon evolved into <a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a>, the first electronic publishing program with a full <a href="http://en.m.wikipedia.org/wiki/Typesetting" title="Typesetting">typesetting</a> capability. The <i>UNIX Programmer's Manual</i> was published on 3 November 1971.</p>
+<p>The first commercial instance of Unix worldwide was installed in early 1972 at New York Telephone Co. Systems Development Center under the direction of Dan Gielan. An Operational Support System was developed entirely in assembly language by Neil Groundwater and it survived nearly 7 years without change.</p>
+<p>In 1972, Unix was rewritten in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, contrary to the general notion at the time "that something as complex as an operating system, which must deal with time-critical events, had to be written exclusively in assembly language".<sup id="cite_ref-Stallings_10-0" class="reference"><a href="Unix#cite_note-Stallings-10"><span>[</span>10<span>]</span></a></sup> The migration from <a href="http://en.m.wikipedia.org/wiki/Assembly_Language" title="Assembly Language" class="mw-redirect">assembly language</a> to the <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">higher-level language</a> C resulted in much more <a href="http://en.m.wikipedia.org/wiki/Software_quality#Portability" title="Software quality">portable</a> software, requiring only a relatively small amount of machine-dependent code to be replaced when porting Unix to other <a href="http://en.m.wikipedia.org/wiki/Platform_(computing)" title="Platform (computing)" class="mw-redirect">computing platforms</a>.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Usenix84_1.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Usenix84_1.jpg/220px-Usenix84_1.jpg" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Usenix84_1.jpg/330px-Usenix84_1.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/34/Usenix84_1.jpg/440px-Usenix84_1.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/USENIX" title="USENIX">USENIX</a> 1984 Summer speakers. USENIX was founded in 1975, focusing primarily on the study and development of Unix and similar systems.</div>
+</div>
+</div>
+<p>Under a 1956 consent decree in settlement of an antitrust case, AT&amp;T (the parent organization of Bell Labs) had been forbidden from entering the computer business. Unix could not, therefore, be turned into a product; indeed, under the terms of the consent decree, Bell Labs was required to license its non-telephone technology to anyone who asked. Ken Thompson quietly began answering requests by shipping out tapes and disks, each accompanied by—according to legend—a note signed, "Love, Ken”.<sup id="cite_ref-faqs.org_11-0" class="reference"><a href="Unix#cite_note-faqs.org-11"><span>[</span>11<span>]</span></a></sup></p>
+<p>AT&amp;T made Unix available to universities and commercial firms, as well as the <a href="http://en.m.wikipedia.org/wiki/United_States_government" title="United States government" class="mw-redirect">United States government</a>, under licenses. The licenses included all source code including the machine-dependent parts of the kernel, which were written in PDP-11 assembly language. Copies of the annotated Unix kernel sources circulated widely in the late 1970s in the form of a much-copied book by <a href="http://en.m.wikipedia.org/wiki/John_Lions" title="John Lions">John Lions</a> of the <a href="http://en.m.wikipedia.org/wiki/University_of_New_South_Wales" title="University of New South Wales">University of New South Wales</a>, the <i><a href="http://en.m.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code" title="Lions' Commentary on UNIX 6th Edition, with Source Code">Lions' Commentary on UNIX 6th Edition, with Source Code</a></i>, which led to considerable use of Unix as an educational example.</p>
+<p>Versions of the Unix system were determined by editions of its user manuals. For example, "Fifth Edition UNIX" and "UNIX Version 5" have both been used to designate the same version. Development expanded, with Versions 4, 5, and <a href="http://en.m.wikipedia.org/wiki/Version_6_Unix" title="Version 6 Unix">6</a> being released by 1975. These versions added the concept of pipes, which led to the development of a more modular code-base and quicker development cycles. Version 5, and especially Version 6, led to a plethora of different Unix versions both inside and outside Bell Labs, including <a href="http://en.m.wikipedia.org/wiki/PWB/UNIX" title="PWB/UNIX">PWB/UNIX</a> and the first commercial Unix, <a href="http://en.m.wikipedia.org/wiki/Interactive_Systems_Corporation" title="Interactive Systems Corporation">IS/1</a>. As more of Unix was rewritten in C, portability also increased. A group at the <a href="http://en.m.wikipedia.org/wiki/University_of_Wollongong" title="University of Wollongong">University of Wollongong</a> <a href="http://en.m.wikipedia.org/wiki/Wollongong_Unix" title="Wollongong Unix">ported Unix</a> to the <a href="http://en.m.wikipedia.org/wiki/Interdata_7/32" title="Interdata 7/32" class="mw-redirect">Interdata 7/32</a>. Bell Labs developed several ports for research purposes and internal use at AT&amp;T. Target machines included an <a href="http://en.m.wikipedia.org/wiki/Intel_8086" title="Intel 8086">Intel 8086</a>-based computer (with custom-built <a href="http://en.m.wikipedia.org/wiki/Memory_management_unit" title="Memory management unit">MMU</a>) and the <a href="http://en.m.wikipedia.org/wiki/UNIVAC_1100" title="UNIVAC 1100" class="mw-redirect">UNIVAC 1100</a>.<sup id="cite_ref-12" class="reference"><a href="Unix#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>In May 1975, <a href="http://en.m.wikipedia.org/wiki/DARPA" title="DARPA">ARPA</a> documented the benefits of the Unix time-sharing system which "presents several interesting capabilities" as an <a href="http://en.m.wikipedia.org/wiki/ARPANET" title="ARPANET">ARPA network</a> mini-host in <a href="Unix#ARPANET">RFC 681</a>.</p>
+<p>In 1978, <a href="http://en.m.wikipedia.org/wiki/UNIX/32V" title="UNIX/32V">UNIX/32V</a> was released for <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a>'s then new <a href="http://en.m.wikipedia.org/wiki/VAX" title="VAX">VAX</a> system. By this time, over 600 machines were running Unix in some form. <a href="http://en.m.wikipedia.org/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a>, the last version of <a href="http://en.m.wikipedia.org/wiki/Research_Unix" title="Research Unix">Research Unix</a> to be released widely, was released in 1979. Versions <a href="http://en.m.wikipedia.org/wiki/Version_8_Unix" title="Version 8 Unix">8</a>, <a href="http://en.m.wikipedia.org/wiki/Version_9_Unix" title="Version 9 Unix">9</a> and <a href="http://en.m.wikipedia.org/wiki/Version_10_Unix" title="Version 10 Unix">10</a> were developed through the 1980s but were only released to a few universities, though they did generate papers describing the new work. This research led to the development of <a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a>, a new portable distributed system.</p>
+<h3> <span class="mw-headline" id="1980s">1980s</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;">
+<a href="http://en.m.wikipedia.org/wiki/File:X-Window-System.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/X-Window-System.png/250px-X-Window-System.png" width="250" height="208" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/X-Window-System.png/375px-X-Window-System.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d4/X-Window-System.png/500px-X-Window-System.png 2x"></a>
+<div class="thumbcaption">
+
+A Unix<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2011">citation needed</span></a></i>]</sup> desktop running the <i><a href="http://en.m.wikipedia.org/wiki/X_Window_System" title="X Window System">X Window System</a></i> graphical user interface. Shown are a number of client applications common to the <a href="http://en.m.wikipedia.org/wiki/MIT_X_Consortium" title="MIT X Consortium" class="mw-redirect">MIT X Consortium</a>'s distribution, including <a href="http://en.m.wikipedia.org/wiki/Tom%27s_Window_Manager" title="Tom's Window Manager" class="mw-redirect">Tom's Window Manager</a>, an <a href="http://en.m.wikipedia.org/wiki/Xterm" title="Xterm">X Terminal</a>, <a href="http://en.m.wikipedia.org/wiki/Xbiff" title="Xbiff">Xbiff</a>, xload, and the xman graphical <a href="http://en.m.wikipedia.org/wiki/Man_page" title="Man page">manual page</a> browser.</div>
+</div>
+</div>
+<p>AT&amp;T licensed <a href="http://en.m.wikipedia.org/wiki/UNIX_System_III" title="UNIX System III">UNIX System III</a>, based largely on Version 7, for commercial use, the first version launching in 1982. This also included support for the VAX. AT&amp;T continued to issue licenses for older Unix versions. To end the confusion between all its differing internal versions, AT&amp;T combined them into <a href="http://en.m.wikipedia.org/wiki/UNIX_System_V" title="UNIX System V">UNIX System V</a> Release 1. This introduced a few features such as the <a href="http://en.m.wikipedia.org/wiki/Vi" title="Vi">vi</a> editor and <a href="http://en.m.wikipedia.org/wiki/Curses_(programming_library)" title="Curses (programming library)">curses</a> from the <a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">Berkeley Software Distribution</a> of Unix developed at the <a href="http://en.m.wikipedia.org/wiki/University_of_California,_Berkeley" title="University of California, Berkeley">University of California, Berkeley</a>. This also included support for the <a href="http://en.m.wikipedia.org/wiki/Western_Electric" title="Western Electric">Western Electric</a> <a href="http://en.m.wikipedia.org/wiki/3B_series_computers" title="3B series computers">3B series</a> of machines. AT&amp;T provided support for System III and System V through the Unix Support Group (USG), and these systems were sometimes referred to as USG Unix.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2011">citation needed</span></a></i>]</sup></p>
+<p>In 1983, the U.S. Department of Justice settled its second antitrust case against AT&amp;T and broke up the Bell System. This relieved AT&amp;T from the 1956 consent decree that had prevented them from turning Unix into a product. AT&amp;T promptly rushed to commercialize Unix System V, a move that nearly killed Unix.<sup id="cite_ref-faqs.org_11-1" class="reference"><a href="Unix#cite_note-faqs.org-11"><span>[</span>11<span>]</span></a></sup> The <a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU Project</a> was founded the same year by <a href="http://en.m.wikipedia.org/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a>.</p>
+<p>Since the newer commercial UNIX licensing terms were not as favorable for academic use as the older versions of Unix, the Berkeley researchers continued to develop BSD Unix as an alternative to UNIX System III and V, originally on the PDP-11 architecture (the 2.xBSD releases, ending with 2.11BSD) and later for the VAX-11 (the 4.x BSD releases). Many contributions to Unix first appeared on BSD releases, notably the <a href="C_shell" title="C shell">C shell</a> with <a href="http://en.m.wikipedia.org/wiki/Job_control_(Unix)" title="Job control (Unix)">job control</a> (modelled on <a href="http://en.m.wikipedia.org/wiki/Incompatible_Time_Sharing" title="Incompatible Time Sharing" class="mw-redirect">ITS</a>). Perhaps the most important aspect of the BSD development effort was the addition of <a href="http://en.m.wikipedia.org/wiki/TCP/IP" title="TCP/IP" class="mw-redirect">TCP/IP</a> <a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">network</a> code to the mainstream Unix <a href="Kernel_(computer_science)" title="Kernel (computer science)" class="mw-redirect">kernel</a>. The BSD effort produced several significant releases that contained network code: 4.1cBSD, 4.2BSD, 4.3BSD, 4.3BSD-Tahoe ("Tahoe" being the nickname of the <a href="http://en.m.wikipedia.org/wiki/Computer_Consoles_Inc." title="Computer Consoles Inc.">Computer Consoles Inc.</a> Power 6/32 architecture that was the first non-DEC release of the BSD kernel), Net/1, 4.3BSD-Reno (to match the "Tahoe" naming, and that the release was something of a gamble), Net/2, 4.4BSD, and 4.4BSD-lite. The network code found in these releases is the ancestor of much TCP/IP network code in use today, including code that was later released in AT&amp;T System V UNIX and early versions of <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>. The accompanying <a href="http://en.m.wikipedia.org/wiki/Berkeley_sockets" title="Berkeley sockets">Berkeley sockets</a> <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a> is a de facto standard for networking APIs and has been copied on many platforms.</p>
+<p>Other companies began to offer commercial versions of the UNIX System for their own mini-computers and workstations. Many of these new Unix flavors were developed from the System V base under a license from AT&amp;T; others were based on BSD. One of the leading developers of BSD, <a href="http://en.m.wikipedia.org/wiki/Bill_Joy" title="Bill Joy">Bill Joy</a>, went on to co-found <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> in 1982 and created <a href="http://en.m.wikipedia.org/wiki/SunOS" title="SunOS">SunOS</a> for their <a href="http://en.m.wikipedia.org/wiki/Workstation" title="Workstation">workstation</a> computers. In 1980, <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> announced its first Unix for <a href="http://en.m.wikipedia.org/wiki/16-bit" title="16-bit">16-bit</a> microcomputers called <a href="http://en.m.wikipedia.org/wiki/Xenix" title="Xenix">Xenix</a>, which the <a href="http://en.m.wikipedia.org/wiki/Santa_Cruz_Operation" title="Santa Cruz Operation">Santa Cruz Operation</a> (SCO) ported to the <a href="http://en.m.wikipedia.org/wiki/Intel_8086" title="Intel 8086">Intel 8086</a> processor in 1983, and eventually branched Xenix into <a href="http://en.m.wikipedia.org/wiki/SCO_UNIX" title="SCO UNIX" class="mw-redirect">SCO UNIX</a> in 1989.</p>
+<p>During this period (before <a href="http://en.m.wikipedia.org/wiki/PC_compatible" title="PC compatible" class="mw-redirect">PC compatible</a> computers with <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> became dominant), industry observers expected that UNIX, with its portability and rich capabilities, was likely to become the industry standard operating system for microcomputers.<sup id="cite_ref-13" class="reference"><a href="Unix#cite_note-13"><span>[</span>13<span>]</span></a></sup> In 1984, several companies established the <a href="http://en.m.wikipedia.org/wiki/X/Open" title="X/Open">X/Open</a> consortium with the goal of creating an open system specification based on UNIX. Despite early progress, the standardization effort collapsed into the "<a href="http://en.m.wikipedia.org/wiki/Unix_wars" title="Unix wars">Unix wars</a>", with various companies forming rival standardization groups. The most successful Unix-related standard turned out to be the <a href="http://en.m.wikipedia.org/wiki/IEEE" title="IEEE" class="mw-redirect">IEEE</a>'s <a href="POSIX" title="POSIX">POSIX</a> specification, designed as a compromise <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a> readily implemented on both BSD and System V platforms, published in 1988 and soon mandated by the <a href="http://en.m.wikipedia.org/wiki/United_States_government" title="United States government" class="mw-redirect">United States government</a> for many of its own systems.</p>
+<p>AT&amp;T added various features into UNIX System V, such as <a href="http://en.m.wikipedia.org/wiki/File_locking" title="File locking">file locking</a>, <a href="http://en.m.wikipedia.org/wiki/System_administration" title="System administration" class="mw-redirect">system administration</a>, <a href="http://en.m.wikipedia.org/wiki/STREAMS" title="STREAMS">STREAMS</a>, new forms of <a href="http://en.m.wikipedia.org/wiki/Inter-process_communication" title="Inter-process communication">IPC</a>, the <a href="http://en.m.wikipedia.org/wiki/Remote_File_System" title="Remote File System" class="mw-redirect">Remote File System</a> and <a href="http://en.m.wikipedia.org/wiki/Transport_Layer_Interface" title="Transport Layer Interface">TLI</a>. AT&amp;T cooperated with Sun Microsystems and between 1987 and 1989, merged features from <a href="http://en.m.wikipedia.org/wiki/Xenix" title="Xenix">Xenix</a>, BSD, SunOS, and System V into <a href="http://en.m.wikipedia.org/wiki/System_V_Release_4" title="System V Release 4" class="mw-redirect">System V Release 4</a> (SVR4), independently of X/Open. This new release consolidated all the previous features into one package, and heralded the end of competing versions. It also increased licensing fees.</p>
+<p>During this time a number of vendors including Digital Equipment, Sun, <a href="http://en.m.wikipedia.org/wiki/Addamax" title="Addamax">Addamax</a> and others began building <a href="http://en.m.wikipedia.org/wiki/Trusted_operating_system" title="Trusted operating system">trusted versions</a> of UNIX for high security applications, mostly designed for military and law enforcement applications.</p>
+<h3> <span class="mw-headline" id="1990s">1990s</span>
+</h3>
+<p>In 1990, the <a href="http://en.m.wikipedia.org/wiki/Open_Software_Foundation" title="Open Software Foundation">Open Software Foundation</a> released OSF/1, their standard Unix implementation, based on <a href="http://en.m.wikipedia.org/wiki/Mach_kernel" title="Mach kernel" class="mw-redirect">Mach</a> and BSD. The Foundation was started in 1988 and was funded by several Unix-related companies that wished to counteract the collaboration of AT&amp;T and Sun on SVR4. Subsequently, AT&amp;T and another group of licensees formed the group <a href="http://en.m.wikipedia.org/wiki/UNIX_International" title="UNIX International" class="mw-redirect">UNIX International</a> in order to counteract OSF. This escalation of conflict between competing vendors again gave rise to the phrase <i>Unix wars</i>.</p>
+<p>In 1991, a group of BSD developers (Donn Seeley, Mike Karels, <a href="http://en.m.wikipedia.org/wiki/Bill_Jolitz" title="Bill Jolitz" class="mw-redirect">Bill Jolitz</a>, and Trent Hein) left the University of California to found Berkeley Software Design, Inc (<a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Design" title="Berkeley Software Design">BSDI</a>). BSDI produced a fully functional commercial version of BSD Unix for the inexpensive and ubiquitous Intel platform, which started a wave of interest in the use of inexpensive hardware for production computing. Shortly after it was founded, Bill Jolitz left BSDI to pursue distribution of <a href="http://en.m.wikipedia.org/wiki/386BSD" title="386BSD">386BSD</a>, the free software ancestor of <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>, <a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a>, and <a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a>.</p>
+<p>In 1991, Linus Torvalds began work on <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, a Unix clone that initially ran on <a href="http://en.m.wikipedia.org/wiki/IBM_PC_compatible" title="IBM PC compatible">IBM PC compatible</a> computers.</p>
+<p>By 1993, most commercial vendors had changed their variants of Unix to be based on <a href="http://en.m.wikipedia.org/wiki/System_V" title="System V" class="mw-redirect">System V</a> with many BSD features added. The creation of the <a href="http://en.m.wikipedia.org/wiki/Common_Open_Software_Environment" title="Common Open Software Environment">Common Open Software Environment</a> (COSE) initiative that year by the major players in Unix marked the end of the most notorious phase of the Unix wars, and was followed by the merger of UI and OSF in 1994. The new combined entity, which retained the OSF name, stopped work on OSF/1. By that time the only vendor using it was <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">Digital Equipment Corporation</a>, which continued its own development, rebranding their product <a href="http://en.m.wikipedia.org/wiki/Digital_UNIX" title="Digital UNIX" class="mw-redirect">Digital UNIX</a> in early 1995.</p>
+<p>Shortly after UNIX System V Release 4 was produced, AT&amp;T sold all its rights to UNIX to <a href="http://en.m.wikipedia.org/wiki/Novell" title="Novell">Novell</a>. Dennis Ritchie likened this sale to the Biblical story of <a href="http://en.m.wikipedia.org/wiki/Esau" title="Esau">Esau</a> selling his birthright for the proverbial <a href="http://en.m.wikipedia.org/wiki/Mess_of_pottage" title="Mess of pottage">mess of pottage</a>.<sup id="cite_ref-14" class="reference"><a href="Unix#cite_note-14"><span>[</span>14<span>]</span></a></sup> Novell developed its own version, <a href="http://en.m.wikipedia.org/wiki/UnixWare" title="UnixWare">UnixWare</a>, merging its <a href="http://en.m.wikipedia.org/wiki/NetWare" title="NetWare">NetWare</a> with UNIX System V Release 4. Novell tried to use this as a marketing tool against <a href="http://en.m.wikipedia.org/wiki/Windows_NT" title="Windows NT">Windows NT</a>, but their core markets suffered considerably.</p>
+<p>In 1993, Novell decided to transfer the UNIX <a href="http://en.m.wikipedia.org/wiki/Trademark" title="Trademark">trademark</a> and certification rights to the <a href="http://en.m.wikipedia.org/wiki/X/Open" title="X/Open">X/Open</a> Consortium.<sup id="cite_ref-autogenerated2_15-0" class="reference"><a href="Unix#cite_note-autogenerated2-15"><span>[</span>15<span>]</span></a></sup> In 1996, X/Open merged with <a href="http://en.m.wikipedia.org/wiki/Open_Software_Foundation" title="Open Software Foundation">OSF</a>, creating the <a href="http://en.m.wikipedia.org/wiki/Open_Group" title="Open Group" class="mw-redirect">Open Group</a>. Various standards by the Open Group now define what is and what is not a UNIX operating system, notably the post-1998 <a href="Single_UNIX_Specification" title="Single UNIX Specification">Single UNIX Specification</a>.</p>
+<p>In 1995, the business of administering and supporting the existing UNIX licenses, plus rights to further develop the System V code base, were sold by Novell to the Santa Cruz Operation.<sup id="cite_ref-autogenerated1_16-0" class="reference"><a href="Unix#cite_note-autogenerated1-16"><span>[</span>16<span>]</span></a></sup> Whether Novell also sold the copyrights is currently the subject of litigation (see below).</p>
+<p>In 1997, <a href="http://en.m.wikipedia.org/wiki/Apple_Computer" title="Apple Computer" class="mw-redirect">Apple Computer</a> sought out a new foundation for its Macintosh operating system and chose <a href="http://en.m.wikipedia.org/wiki/NEXTSTEP" title="NEXTSTEP" class="mw-redirect">NEXTSTEP</a>, an operating system developed by <a href="http://en.m.wikipedia.org/wiki/NeXT" title="NeXT">NeXT</a>. The core operating system, which was based on <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a> and the <a href="http://en.m.wikipedia.org/wiki/Mach_kernel" title="Mach kernel" class="mw-redirect">Mach kernel</a>, was renamed <a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a> after Apple acquired it. The deployment of Darwin in <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> makes it, according to a statement made by an Apple employee at a <a href="http://en.m.wikipedia.org/wiki/USENIX" title="USENIX">USENIX</a> conference, the most widely used Unix-based system in the <a href="http://en.m.wikipedia.org/wiki/Desktop_computer" title="Desktop computer">desktop computer</a> market.</p>
+<h3> <span class="mw-headline" id="2000s">2000s</span>
+</h3>
+<p>In 2000, <a href="http://en.m.wikipedia.org/wiki/Santa_Cruz_Operation" title="Santa Cruz Operation">SCO</a> sold its entire UNIX business and assets to <a href="http://en.m.wikipedia.org/wiki/Caldera_Systems" title="Caldera Systems" class="mw-redirect">Caldera Systems</a>, which later on changed its name to <a href="http://en.m.wikipedia.org/wiki/SCO_Group" title="SCO Group">The SCO Group</a>.</p>
+<p>The bursting of the <a href="http://en.m.wikipedia.org/wiki/Dot-com_bubble" title="Dot-com bubble">dot-com bubble</a> (2001–2003) led to significant consolidation of versions of Unix. Of the many commercial variants of Unix that were born in the 1980s, only <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>, <a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a>, and <a href="http://en.m.wikipedia.org/wiki/IBM_AIX" title="IBM AIX">AIX</a> were still doing relatively well in the market, though SGI's <a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a> persisted for quite some time. Of these, Solaris had the largest market share in 2005.<sup id="cite_ref-17" class="reference"><a href="Unix#cite_note-17"><span>[</span>17<span>]</span></a></sup></p>
+<p>In 2003, the SCO Group started legal action against various users and vendors of Linux. SCO had alleged that Linux contained copyrighted Unix code now owned by The SCO Group. Other allegations included trade-secret violations by <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a>, or contract violations by former Santa Cruz customers who had since converted to Linux. However, Novell disputed the SCO Group's claim to hold copyright on the UNIX source base. According to Novell, SCO (and hence the SCO Group) are effectively franchise operators for Novell, which also retained the core copyrights, veto rights over future licensing activities of SCO, and 95% of the licensing revenue. The SCO Group disagreed with this, and the dispute resulted in the <i><a href="http://en.m.wikipedia.org/wiki/SCO_v._Novell" title="SCO v. Novell">SCO v. Novell</a></i> lawsuit. On 10 August 2007, a major portion of the case was decided in Novell's favor (that Novell had the copyright to UNIX, and that the SCO Group had improperly kept money that was due to Novell). The court also ruled that "SCO is obligated to recognize Novell's waiver of SCO's claims against IBM and Sequent". After the ruling, Novell announced they have no interest in suing people over Unix and stated, "We don't believe there is Unix in Linux".<sup id="cite_ref-18" class="reference"><a href="Unix#cite_note-18"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-doc377_19-0" class="reference"><a href="Unix#cite_note-doc377-19"><span>[</span>19<span>]</span></a></sup><sup id="cite_ref-20" class="reference"><a href="Unix#cite_note-20"><span>[</span>20<span>]</span></a></sup> SCO successfully got the 10th Circuit Court of Appeals to partially overturn this decision on 24 August 2009 which sent the lawsuit back to the courts for a jury trial.<sup id="cite_ref-21" class="reference"><a href="Unix#cite_note-21"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-22" class="reference"><a href="Unix#cite_note-22"><span>[</span>22<span>]</span></a></sup><sup id="cite_ref-23" class="reference"><a href="Unix#cite_note-23"><span>[</span>23<span>]</span></a></sup></p>
+<p>On 30 March 2010, following a jury trial, Novell, and not The SCO Group, was "unanimously [found]" to be the owner of the UNIX and UnixWare copyrights.<sup id="cite_ref-glNovell-846_24-0" class="reference"><a href="Unix#cite_note-glNovell-846-24"><span>[</span>24<span>]</span></a></sup> The SCO Group, through bankruptcy trustee Edward Cahn, decided to continue the lawsuit against IBM for causing a decline in SCO revenues.<sup id="cite_ref-sltrib14786202_25-0" class="reference"><a href="Unix#cite_note-sltrib14786202-25"><span>[</span>25<span>]</span></a></sup></p>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/SCO-Linux_controversies" title="SCO-Linux controversies" class="mw-redirect">SCO-Linux controversies</a>
+</div>
+<p>In 2005, <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> released the bulk of its Solaris system code (based on <a href="http://en.m.wikipedia.org/wiki/UNIX_System_V" title="UNIX System V">UNIX System V</a> Release 4) into an <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open source</a> project called <a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a>. New Sun OS technologies, notably the <a href="http://en.m.wikipedia.org/wiki/ZFS" title="ZFS">ZFS</a> file system, were first released as open source code via the OpenSolaris project. Soon afterwards, OpenSolaris spawned several non-Sun distributions. In 2010, after Oracle acquired Sun, OpenSolaris was officially discontinued, but the development of derivatives continued.</p>
+<h2> <span class="mw-headline" id="Standards">Standards</span>
+</h2>
+<p>Beginning in the late 1980s, an open operating system standardization effort now known as <a href="POSIX" title="POSIX">POSIX</a> provided a common baseline for all operating systems; <a href="http://en.m.wikipedia.org/wiki/IEEE" title="IEEE" class="mw-redirect">IEEE</a> based POSIX around the common structure of the major competing variants of the Unix system, publishing the first POSIX standard in 1988. In the early 1990s, a separate but very similar effort was started by an industry consortium, the <a href="http://en.m.wikipedia.org/wiki/Common_Open_Software_Environment" title="Common Open Software Environment">Common Open Software Environment</a> (COSE) initiative, which eventually became the <a href="Single_UNIX_Specification" title="Single UNIX Specification">Single UNIX Specification</a> administered by <a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a>. Starting in 1998, the Open Group and IEEE started the <a href="http://en.m.wikipedia.org/wiki/Austin_Group" title="Austin Group">Austin Group</a>, to provide a common definition of POSIX and the Single UNIX Specification.</p>
+<p>In 1999, in an effort towards compatibility, several Unix system vendors agreed on SVR4's <a href="http://en.m.wikipedia.org/wiki/Executable_and_Linkable_Format" title="Executable and Linkable Format">Executable and Linkable Format</a> (ELF) as the standard for binary and object code files. The common format allows substantial binary compatibility among Unix systems operating on the same CPU architecture.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Filesystem_Hierarchy_Standard" title="Filesystem Hierarchy Standard">Filesystem Hierarchy Standard</a> was created to provide a reference directory layout for Unix-like operating systems, particularly Linux.</p>
+<h2> <span class="mw-headline" id="Components">Components</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_Unix_programs" title="List of Unix programs" class="mw-redirect">List of Unix programs</a>
+</div>
+<p>The Unix system is composed of several components that are normally packaged together. By including – in addition to the <a href="Kernel_(computer_science)" title="Kernel (computer science)" class="mw-redirect">kernel</a> of an operating system – the development environment, libraries, documents, and the portable, modifiable source-code for all of these components, Unix was a self-contained software system. This was one of the key reasons it emerged as an important teaching and learning tool and has had such a broad influence.</p>
+<p>The inclusion of these components did not make the system large – the original V7 UNIX distribution, consisting of copies of all of the compiled binaries plus all of the source code and documentation occupied less than 10MB, and arrived on a single 9-track <a href="http://en.m.wikipedia.org/wiki/Magnetic_tape_data_storage" title="Magnetic tape data storage">magnetic tape</a>. The printed documentation, typeset from the on-line sources, was contained in two volumes.</p>
+<p>The names and filesystem locations of the Unix components have changed substantially across the history of the system. Nonetheless, the V7 implementation is considered by many to have the canonical early structure:</p>
+<ul>
+<li>
+<b>Kernel</b> – source code in /usr/sys, composed of several sub-components:
+<ul>
+<li>
+<i>conf</i> – configuration and machine-dependent parts, including boot code</li>
+<li>
+<i>dev</i> – device drivers for control of hardware (and some pseudo-hardware)</li>
+<li>
+<i>sys</i> – operating system "kernel", handling memory management, process scheduling, system calls, etc.</li>
+<li>
+<i>h</i> – header files, defining key structures within the system and important system-specific invariables</li>
+</ul>
+</li>
+<li>
+<b>Development Environment</b> – Early versions of Unix contained a development environment sufficient to recreate the entire system from source code:
+<ul>
+<li>
+<i>cc</i> – <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> compiler (first appeared in V3 Unix)</li>
+<li>
+<i>as</i> – machine-language assembler for the machine</li>
+<li>
+<i>ld</i> – linker, for combining object files</li>
+<li>
+<i>lib</i> – object-code libraries (installed in /lib or /usr/lib). <i><a href="http://en.m.wikipedia.org/wiki/Libc" title="Libc" class="mw-redirect">libc</a></i>, the system library with C run-time support, was the primary library, but there have always been additional libraries for such things as mathematical functions (<i><span class="new" title="Libm (page does not exist)">libm</span></i>) or database access. V7 Unix introduced the first version of the modern "Standard I/O" library <i>stdio</i> as part of the system library. Later implementations increased the number of libraries significantly.</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/Make_(software)" title="Make (software)">make</a></i> – build manager (introduced in <a href="http://en.m.wikipedia.org/wiki/PWB/UNIX" title="PWB/UNIX">PWB/UNIX</a>), for effectively automating the build process</li>
+<li>
+<i>include</i> – header files for software development, defining standard interfaces and system invariants</li>
+<li>
+<i>Other languages</i> – V7 Unix contained a Fortran-77 compiler, a programmable arbitrary-precision calculator (<i>bc</i>, <i>dc</i>), and the <a href="http://en.m.wikipedia.org/wiki/Awk" title="Awk" class="mw-redirect">awk</a> scripting language, and later versions and implementations contain many other language compilers and toolsets. Early BSD releases included <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> tools, and many modern Unix systems also include the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> as well as or instead of a proprietary compiler system.</li>
+<li>
+<i>Other tools</i> – including an object-code archive manager (<i>ar</i>), symbol-table lister (<i>nm</i>), compiler-development tools (e.g. <i>lex</i> &amp; <i>yacc</i>), and debugging tools.</li>
+</ul>
+</li>
+<li>
+<b>Commands</b> – Unix makes little distinction between commands (user-level programs) for system operation and maintenance (e.g. <i>cron</i>), commands of general utility (e.g. <i>grep</i>), and more general-purpose applications such as the text formatting and typesetting package. Nonetheless, some major categories are:
+<ul>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/Bourne_shell" title="Bourne shell">sh</a></i> – The "shell" programmable <a href="http://en.m.wikipedia.org/wiki/Command_line_interpreter" title="Command line interpreter" class="mw-redirect">command line interpreter</a>, the primary user interface on Unix before window systems appeared, and even afterward (within a "command window").</li>
+<li>
+<i>Utilities</i> – the core tool kit of the Unix command set, including <i>cp</i>, <i>ls</i>, <i>grep</i>, <i>find</i> and many others. Subcategories include:
+<ul>
+<li>
+<i>System utilities</i> – administrative tools such as <i><a href="http://en.m.wikipedia.org/wiki/Mkfs" title="Mkfs">mkfs</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Fsck" title="Fsck">fsck</a></i>, and many others.</li>
+<li>
+<i>User utilities</i> – environment management tools such as <i>passwd</i>, <i>kill</i>, and others.</li>
+</ul>
+</li>
+<li>
+<i>Document formatting</i> – Unix systems were used from the outset for document preparation and typesetting systems, and included many related programs such as <i><a href="http://en.m.wikipedia.org/wiki/Nroff" title="Nroff">nroff</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Tbl" title="Tbl">tbl</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Eqn" title="Eqn">eqn</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Refer_(software)" title="Refer (software)">refer</a></i>, and <i><a href="http://en.m.wikipedia.org/wiki/Pic_language" title="Pic language">pic</a></i>. Some modern Unix systems also include packages such as <a href="http://en.m.wikipedia.org/wiki/TeX" title="TeX">TeX</a> and <a href="http://en.m.wikipedia.org/wiki/Ghostscript" title="Ghostscript">Ghostscript</a>.</li>
+<li>
+<i>Graphics</i> – The <i>plot</i> subsystem provided facilities for producing simple vector plots in a device-independent format, with device-specific interpreters to display such files. Modern Unix systems also generally include <a href="http://en.m.wikipedia.org/wiki/X11" title="X11" class="mw-redirect">X11</a> as a standard windowing system and <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a>, and many support <a href="http://en.m.wikipedia.org/wiki/OpenGL" title="OpenGL">OpenGL</a>.</li>
+<li>
+<i>Communications</i> – Early Unix systems contained no inter-system communication, but did include the inter-user communication programs <i>mail</i> and <i>write</i>. V7 introduced the early inter-system communication system <a href="http://en.m.wikipedia.org/wiki/UUCP" title="UUCP">UUCP</a>, and systems beginning with BSD release 4.1c included <a href="http://en.m.wikipedia.org/wiki/TCP/IP" title="TCP/IP" class="mw-redirect">TCP/IP</a> utilities.</li>
+</ul>
+</li>
+<li>
+<b>Documentation</b> – Unix was the first operating system to include all of its documentation online in machine-readable form. The documentation included:
+<ul>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/Manual_page_(Unix)" title="Manual page (Unix)" class="mw-redirect">man</a></i> – manual pages for each command, library component, <a href="http://en.m.wikipedia.org/wiki/System_call" title="System call">system call</a>, header file, etc.</li>
+<li>
+<i>doc</i> – longer documents detailing major subsystems, such as the C language and troff</li>
+</ul>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Impact">Impact</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="Unix-like" title="Unix-like">Unix-like</a>
+</div>
+<p>The Unix system had significant impact on other operating systems. It won its success by:</p>
+<ul>
+<li>Direct interaction.</li>
+<li>Moving away from the total control of businesses like IBM and DEC.</li>
+<li>AT&amp;T giving the software away for free.</li>
+<li>Running on cheap hardware.</li>
+<li>Being easy to adopt and move to different machines.</li>
+</ul>
+<p>It was written in a high level language rather than <a href="Assembly_language" title="Assembly language">assembly language</a> (which had been thought necessary for systems implementation on early computers). Although this followed the lead of <a href="Multics" title="Multics">Multics</a> and <a href="Burroughs_large_systems" title="Burroughs large systems">Burroughs</a>, it was Unix that popularized the idea.</p>
+<p>Unix had a drastically simplified file model compared to many contemporary operating systems: treating all kinds of files as simple byte arrays. The file system hierarchy contained machine services and devices (such as <a href="http://en.m.wikipedia.org/wiki/Computer_printer" title="Computer printer" class="mw-redirect">printers</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_terminal" title="Computer terminal">terminals</a>, or <a href="http://en.m.wikipedia.org/wiki/Disk_drive" title="Disk drive" class="mw-redirect">disk drives</a>), providing a uniform interface, but at the expense of occasionally requiring additional mechanisms such as <a href="http://en.m.wikipedia.org/wiki/Ioctl" title="Ioctl">ioctl</a> and mode flags to access features of the hardware that did not fit the simple "stream of bytes" model. The <a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a> operating system pushed this model even further and eliminated the need for additional mechanisms.</p>
+<p>Unix also popularized the hierarchical file system with arbitrarily nested subdirectories, originally introduced by Multics. Other common operating systems of the era had ways to divide a storage device into multiple directories or sections, but they had a fixed number of levels, often only one level. Several major proprietary operating systems eventually added recursive subdirectory capabilities also patterned after Multics. DEC's <a href="http://en.m.wikipedia.org/wiki/RSX-11" title="RSX-11">RSX-11</a>M's "group, user" hierarchy evolved into <a href="http://en.m.wikipedia.org/wiki/Virtual_Memory_System" title="Virtual Memory System" class="mw-redirect">VMS</a> directories, <a href="http://en.m.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a>'s volumes evolved into <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> 2.0+ subdirectories, and HP's <a href="http://en.m.wikipedia.org/wiki/Multi-Programming_Executive" title="Multi-Programming Executive" class="mw-redirect">MPE</a> group.account hierarchy and IBM's <a href="http://en.m.wikipedia.org/wiki/System_Support_Program" title="System Support Program" class="mw-redirect">SSP</a> and <a href="http://en.m.wikipedia.org/wiki/OS/400" title="OS/400" class="mw-redirect">OS/400</a> library systems were folded into broader POSIX file systems.</p>
+<p>Making the command interpreter an ordinary user-level program, with additional commands provided as separate programs, was another Multics innovation popularized by Unix. The <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shell</a> used the same language for interactive commands as for scripting (<a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">shell scripts</a> – there was no separate job control language like IBM's <a href="http://en.m.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language">JCL</a>). Since the shell and OS commands were "just another program", the user could choose (or even write) his own shell. New commands could be added without changing the shell itself. Unix's innovative command-line syntax for creating modular chains of producer-consumer processes (<a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipelines</a>) made a powerful programming paradigm (<a href="http://en.m.wikipedia.org/wiki/Coroutine" title="Coroutine">coroutines</a>) widely available. Many later command-line interpreters have been inspired by the Unix shell.</p>
+<p>A fundamental simplifying assumption of Unix was its focus on <a href="Newline" title="Newline">newline</a>-<a href="http://en.m.wikipedia.org/wiki/Delimiter" title="Delimiter">delimited</a> <a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> text for nearly all file formats. There were no "binary" editors in the original version of Unix – the entire system was configured using textual shell command scripts. The common denominator in the I/O system was the byte – unlike <a href="http://en.m.wikipedia.org/wiki/Record-oriented_filesystem" title="Record-oriented filesystem">"record-based" file systems</a>. The focus on text for representing nearly everything made Unix pipes especially useful, and encouraged the development of simple, general tools that could be easily combined to perform more complicated <i>ad hoc</i> tasks. The focus on text and bytes made the system far more scalable and portable than other systems. Over time, text-based applications have also proven popular in application areas, such as printing languages (<a href="http://en.m.wikipedia.org/wiki/PostScript" title="PostScript">PostScript</a>, <a href="http://en.m.wikipedia.org/wiki/ODF" title="ODF" class="mw-redirect">ODF</a>), and at the application layer of the <a href="http://en.m.wikipedia.org/wiki/Internet_Protocol_Suite" title="Internet Protocol Suite" class="mw-redirect">Internet protocols</a>, e.g., <a href="http://en.m.wikipedia.org/wiki/FTP" title="FTP" class="mw-redirect">FTP</a>, <a href="http://en.m.wikipedia.org/wiki/SMTP" title="SMTP" class="mw-redirect">SMTP</a>, <a href="http://en.m.wikipedia.org/wiki/HTTP" title="HTTP" class="mw-redirect">HTTP</a>, <a href="http://en.m.wikipedia.org/wiki/SOAP" title="SOAP">SOAP</a>, and <a href="http://en.m.wikipedia.org/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a>.</p>
+<p>Unix popularized a syntax for <a href="http://en.m.wikipedia.org/wiki/Regular_expressions" title="Regular expressions" class="mw-redirect">regular expressions</a> that found widespread use. The Unix programming interface became the basis for a widely implemented operating system interface standard (POSIX, see above).</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> soon spread beyond Unix, and is now ubiquitous in systems and applications programming.</p>
+<p>Early Unix developers were important in bringing the concepts of <a href="http://en.m.wikipedia.org/wiki/Modularity_(programming)" title="Modularity (programming)" class="mw-redirect">modularity</a> and <a href="http://en.m.wikipedia.org/wiki/Reusability" title="Reusability">reusability</a> into <a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">software engineering</a> practice, spawning a "software tools" movement.</p>
+<p>Unix provided the TCP/IP networking protocol on relatively inexpensive computers, which contributed to the <a href="http://en.m.wikipedia.org/wiki/Internet" title="Internet">Internet</a> explosion of worldwide real-time connectivity, and which formed the basis for implementations on many other platforms. This also exposed numerous security holes in the networking implementations.</p>
+<p>The Unix policy of extensive on-line documentation and (for many years) ready access to all system source code raised programmer expectations, and contributed to the 1983 launch of the <a href="http://en.m.wikipedia.org/wiki/Free_software_movement" title="Free software movement">free software movement</a>.</p>
+<p>Over time, the leading developers of Unix (and programs that ran on it) established a set of cultural norms for developing software, norms which became as important and influential as the technology of Unix itself; this has been termed the <a href="http://en.m.wikipedia.org/wiki/Unix_philosophy" title="Unix philosophy">Unix philosophy</a>.</p>
+<h3> <span class="mw-headline" id="Free_Unix_and_Unix-like_operating_systems">Free Unix and Unix-like operating systems</span>
+</h3>
+<div class="rellink boilerplate seealso">See also: <a href="Operating_system#UNIX_and_UNIX-like_operating_systems" title="Operating system">Operating system#UNIX and UNIX-like operating systems</a>
+</div>
+<p>In 1983, <a href="http://en.m.wikipedia.org/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a> announced the <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> project, an ambitious effort to create a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a> <a href="Unix-like" title="Unix-like">Unix-like</a> system; "free" in that everyone who received a copy would be free to use, study, modify, and redistribute it. The GNU project's own kernel development project, <a href="http://en.m.wikipedia.org/wiki/GNU_Hurd" title="GNU Hurd">GNU Hurd</a>, had not produced a working kernel, but in 1991 <a href="http://en.m.wikipedia.org/wiki/Linus_Torvalds" title="Linus Torvalds">Linus Torvalds</a> released the <a href="http://en.m.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a> as free software under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>. In addition to their use in the <a href="http://en.m.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux" class="mw-redirect">GNU/Linux</a> operating system, many GNU packages – such as the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (and the rest of the <a href="http://en.m.wikipedia.org/wiki/GNU_toolchain" title="GNU toolchain">GNU toolchain</a>), the <a href="http://en.m.wikipedia.org/wiki/Glibc" title="Glibc" class="mw-redirect">GNU C library</a> and the <a href="http://en.m.wikipedia.org/wiki/Coreutils" title="Coreutils" class="mw-redirect">GNU core utilities</a> – have gone on to play central roles in other free Unix systems as well.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Linux_distributions" title="Linux distributions" class="mw-redirect">Linux distributions</a>, consisting of the <a href="http://en.m.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a> and large collections of compatible software have become popular both with individual users and in business. Popular distributions include <a href="http://en.m.wikipedia.org/wiki/Red_Hat_Enterprise_Linux" title="Red Hat Enterprise Linux">Red Hat Enterprise Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Fedora_(operating_system)" title="Fedora (operating system)">Fedora</a>, <a href="http://en.m.wikipedia.org/wiki/SUSE_Linux" title="SUSE Linux" class="mw-redirect">SUSE Linux Enterprise</a>, <a href="http://en.m.wikipedia.org/wiki/OpenSUSE" title="OpenSUSE">openSUSE</a>, <a href="http://en.m.wikipedia.org/wiki/Debian" title="Debian">Debian GNU/Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a>, <a href="http://en.m.wikipedia.org/wiki/Mandriva_Linux" title="Mandriva Linux">Mandriva Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Slackware_Linux" title="Slackware Linux" class="mw-redirect">Slackware Linux</a> and <a href="http://en.m.wikipedia.org/wiki/Gentoo_Linux" title="Gentoo Linux">Gentoo</a>.</p>
+<p>A free derivative of <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a> Unix, <a href="http://en.m.wikipedia.org/wiki/386BSD" title="386BSD">386BSD</a>, was also released in 1992 and led to the <a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a> and <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> projects. With the 1994 settlement of a lawsuit that <a href="http://en.m.wikipedia.org/wiki/UNIX_Systems_Laboratories" title="UNIX Systems Laboratories" class="mw-redirect">UNIX Systems Laboratories</a> brought against the University of California and Berkeley Software Design Inc. (<a href="http://en.m.wikipedia.org/wiki/USL_v._BSDi" title="USL v. BSDi">USL v. BSDi</a>), it was clarified that Berkeley had the right to distribute BSD Unix – for free, if it so desired. Since then, BSD Unix has been developed in several different directions, including <a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> and <a href="http://en.m.wikipedia.org/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a>.</p>
+<p>Linux and BSD are now rapidly occupying much of the market traditionally occupied by proprietary Unix operating systems, as well as expanding into new markets such as the consumer desktop and mobile and embedded devices. Due to the modularity of the Unix design, sharing bits and pieces is relatively common; consequently, most or all Unix and Unix-like systems include at least some BSD code, and modern systems also usually include some GNU utilities in their distributions.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a> is a relatively recent addition to the list of operating systems based on free software licenses marked as such by <a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation" title="Free Software Foundation">FSF</a> and <a href="http://en.m.wikipedia.org/wiki/Open_Source_Initiative" title="Open Source Initiative">OSI</a>. It includes a number of derivatives that combines <a href="http://en.m.wikipedia.org/wiki/CDDL" title="CDDL" class="mw-redirect">CDDL</a>-licensed kernel and system tools and also <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> userland and is currently the only open source System V derivative available.</p>
+<h3> <span class="mw-headline" id="2038">2038</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Year_2038_problem" title="Year 2038 problem">Year 2038 problem</a>
+</div>
+<p>Unix stores <a href="http://en.m.wikipedia.org/wiki/System_time" title="System time">system time</a> values as the number of seconds from midnight 1 January 1970 (the "<a href="http://en.m.wikipedia.org/wiki/Unix_Epoch" title="Unix Epoch" class="mw-redirect">Unix Epoch</a>") in variables of type <code><a href="http://en.m.wikipedia.org/wiki/Time_t" title="Time t" class="mw-redirect">time_t</a></code>, historically defined as "signed long". On 19 January 2038 on 32 bit Unix systems, the current time will roll over from a zero followed by 31 ones (<code>0x7FFFFFFF</code>) to a one followed by 31 zeros (<code>0x80000000</code>), which will reset time to the year 1901 or 1970, depending on implementation, because that toggles the <a href="http://en.m.wikipedia.org/wiki/Sign_bit" title="Sign bit">sign bit</a>.</p>
+<p>Since times before 1970 are rarely represented in <a href="http://en.m.wikipedia.org/wiki/Unix_time" title="Unix time">Unix time</a>, one possible solution that is compatible with existing binary formats would be to redefine <code>time_t</code> as "unsigned 32-bit integer". However, such a <a href="http://en.m.wikipedia.org/wiki/Kludge" title="Kludge">kludge</a> merely postpones the problem to 7 February 2106, and could introduce bugs in software that computes time differences.</p>
+<p>Some Unix versions have already addressed this. For example, in Solaris and Linux in 64-bit mode, <code>time_t</code> is 64 bits long, meaning that the OS itself and 64-bit applications will correctly handle dates for some 292 billion years. Existing 32-bit applications using a 32-bit <code>time_t</code> continue to work on 64-bit Solaris systems but are still prone to the 2038 problem. Some vendors have introduced an alternative 64-bit type and corresponding <a href="http://en.m.wikipedia.org/wiki/API" title="API" class="mw-redirect">API</a>, without addressing uses of the standard <code>time_t</code>. The <a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a> Project decided to instead bump <code>time_t</code> to 64-bit in its 6th major release for both 32-bit and 64-bit architectures, supporting 32-bit <code>time_t</code> in applications compiled for a former NetBSD release via its binary compatibility layer.</p>
+<h3> <span class="mw-headline" id="ARPANET">ARPANET</span>
+</h3>
+<p>In May 1975, <a href="http://en.m.wikipedia.org/wiki/DARPA" title="DARPA">DARPA</a> documented in <a class="external mw-magiclink-rfc" href="http://tools.ietf.org/html/rfc681">RFC 681</a> detailed very specifically why Unix was the operating system of choice for use as an <a href="http://en.m.wikipedia.org/wiki/ARPANET" title="ARPANET">ARPANET</a> mini-host. The evaluation process was also documented. Unix required a license that was very expensive with $20,000(US) for non-<a href="http://en.m.wikipedia.org/wiki/University" title="University">university</a> users and $150 for an educational license. It was noted that for an ARPA network-wide license Bell "were open to suggestions in that area".</p>
+<p>Specific features found beneficial were:</p>
+<ul>
+<li>Local processing facilities.</li>
+<li>
+<a href="Compiler" title="Compiler">Compilers</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Text_editor" title="Text editor">Editor</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Roff" title="Roff">Document preparation system</a>.</li>
+<li>Efficient file system and access control.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mount_(computing)" title="Mount (computing)">Mountable</a> and de-mountable volumes.</li>
+<li>Unified treatment of peripherals as <a href="http://en.m.wikipedia.org/wiki/Device_file_system" title="Device file system" class="mw-redirect">special files</a>.</li>
+<li>The <a href="http://en.m.wikipedia.org/wiki/Network_Control_Program" title="Network Control Program">network control program</a> (NCP) was integrated within the Unix file system.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Connection-oriented_protocol" title="Connection-oriented protocol">Network connections</a> treated as special files which can be accessed through standard Unix <a href="http://en.m.wikipedia.org/wiki/System_call" title="System call">I/O calls</a>.</li>
+<li>The system closes all files on program exit.</li>
+<li>"desirable to minimize the amount of code added to the basic Unix kernel".</li>
+</ul>
+<h2> <span class="mw-headline" id="Branding">Branding</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_Unix_systems" title="List of Unix systems">List of Unix systems</a>
+</div>
+<p>In October 1993, <a href="http://en.m.wikipedia.org/wiki/Novell" title="Novell">Novell</a>, the company that owned the rights to the Unix System V source at the time, transferred the <a href="http://en.m.wikipedia.org/wiki/Trademark" title="Trademark">trademarks</a> of Unix to the X/Open Company (now <a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a>),<sup id="cite_ref-autogenerated2_15-1" class="reference"><a href="Unix#cite_note-autogenerated2-15"><span>[</span>15<span>]</span></a></sup> and in 1995 sold the related business operations to <a href="http://en.m.wikipedia.org/wiki/Santa_Cruz_Operation" title="Santa Cruz Operation">Santa Cruz Operation</a>.<sup id="cite_ref-autogenerated1_16-1" class="reference"><a href="Unix#cite_note-autogenerated1-16"><span>[</span>16<span>]</span></a></sup> Whether Novell also sold the <a href="http://en.m.wikipedia.org/wiki/Copyright" title="Copyright">copyrights</a> to the actual software was the subject of a 2006 federal lawsuit, <a href="http://en.m.wikipedia.org/wiki/SCO_v._Novell" title="SCO v. Novell">SCO v. Novell</a>, which Novell won. The case was appealed, but on 30 Aug 2011, the United States Court of Appeals for the Tenth Circuit affirmed the trial decisions, closing the case.<sup id="cite_ref-26" class="reference"><a href="Unix#cite_note-26"><span>[</span>26<span>]</span></a></sup> Unix vendor <a href="http://en.m.wikipedia.org/wiki/SCO_Group" title="SCO Group">SCO Group Inc.</a> accused Novell of <a href="http://en.m.wikipedia.org/wiki/Slander_of_title" title="Slander of title">slander of title</a>.</p>
+<p>The present owner of the trademark <i>UNIX</i> is The Open Group, an industry standards consortium. Only systems fully compliant with and certified to the <a href="Single_UNIX_Specification" title="Single UNIX Specification">Single UNIX Specification</a> qualify as "UNIX" (others are called "Unix system-like" or "<a href="Unix-like" title="Unix-like">Unix-like</a>").</p>
+<p>By decree of The Open Group, the term "UNIX" refers more to a class of operating systems than to a specific implementation of an operating system; those operating systems which meet The Open Group's Single UNIX Specification should be able to bear the <a href="http://en.m.wikipedia.org/wiki/UNIX_98" title="UNIX 98" class="mw-redirect">UNIX 98</a> or <a href="http://en.m.wikipedia.org/wiki/UNIX_03" title="UNIX 03" class="mw-redirect">UNIX 03</a> trademarks today, after the operating system's vendor pays a substantial certification fee and annual trademark royalties<sup id="cite_ref-27" class="reference"><a href="Unix#cite_note-27"><span>[</span>27<span>]</span></a></sup> to The Open Group. Systems licensed to use the UNIX trademark include <a href="http://en.m.wikipedia.org/wiki/IBM_AIX_(operating_system)" title="IBM AIX (operating system)" class="mw-redirect">AIX</a>, <a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a>, <a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a>, <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>, <a href="http://en.m.wikipedia.org/wiki/Tru64" title="Tru64" class="mw-redirect">Tru64</a> (formerly "Digital UNIX"), <a href="http://en.m.wikipedia.org/wiki/A/UX" title="A/UX">A/UX</a>, <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>,<sup id="cite_ref-28" class="reference"><a href="Unix#cite_note-28"><span>[</span>28<span>]</span></a></sup><sup id="cite_ref-29" class="reference"><a href="Unix#cite_note-29"><span>[</span>29<span>]</span></a></sup> and a part of <a href="http://en.m.wikipedia.org/wiki/Z/OS" title="Z/OS">z/OS</a>.</p>
+<p>Sometimes a representation like <i>Un*x</i>, <i>*NIX</i>, or <i>*N?X</i> is used to indicate all operating systems similar to Unix. This comes from the use of the asterisk (<i>*</i>) and the question mark characters as wildcard indicators in many utilities. This notation is also used to describe other Unix-like systems, e.g., <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a>, etc., that have not met the requirements for UNIX branding from the Open Group.</p>
+<p>The Open Group requests that <i>UNIX</i> is always used as an adjective followed by a generic term such as <i>system</i> to help avoid the creation of a <a href="http://en.m.wikipedia.org/wiki/Genericized_trademark" title="Genericized trademark" class="mw-redirect">genericized trademark</a>.</p>
+<p>"Unix" was the original formatting, but the usage of "U<span style="font-variant:small-caps">NIX</span>" remains widespread because, according to <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>, when presenting the original <span style="font-variant: small-caps;">Unix</span> paper to the third Operating Systems Symposium of the American <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">Association for Computing Machinery</a>, “we had a new typesetter and <a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a> had just been invented and we were intoxicated by being able to produce small caps.”<sup id="cite_ref-30" class="reference"><a href="Unix#cite_note-30"><span>[</span>30<span>]</span></a></sup> Many of the operating system's predecessors and contemporaries used all-uppercase lettering, so many people wrote the name in upper case due to force of habit.</p>
+<p>Several plural forms of Unix are used casually to refer to multiple brands of Unix and Unix-like systems. Most common is the conventional <i>Unixes</i>, but <i>Unices</i>, treating Unix as a <a href="http://en.m.wikipedia.org/wiki/Latin" title="Latin">Latin</a> noun of the <a href="http://en.m.wikipedia.org/wiki/Latin_declension#Third_declension_.28i.29" title="Latin declension">third declension</a>, is also popular. The pseudo-<a href="http://en.m.wikipedia.org/wiki/Anglo-Saxon_language" title="Anglo-Saxon language" class="mw-redirect">Anglo-Saxon</a> plural form <i>Unixen</i> is not common, although occasionally seen. Trademark names can be registered by different entities in different countries and trademark laws in some countries allow the same trademark name to be controlled by two different entities if each entity uses the trademark in easily distinguishable categories. The result is that Unix has been used as a brand name for various products including book shelves, ink pens, bottled glue, diapers, hair driers and food containers.<sup id="cite_ref-31" class="reference"><a href="Unix#cite_note-31"><span>[</span>31<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">Comparison of operating systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_open_source_and_closed_source" title="Comparison of open source and closed source">Comparison of open source and closed source</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List of operating systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_Unix_systems" title="List of Unix systems">List of Unix systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_Unix_utilities" title="List of Unix utilities">List of Unix utilities</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">Market share of operating systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operating_systems_timeline" title="Operating systems timeline" class="mw-redirect">Operating systems timeline</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unix_time" title="Unix time">Unix time</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.unix.org/questions_answers/faq.html#7a">What is a "Unix-like" operating system?</a> Unix.org FAQ</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&amp;qpcustomd=0">"Operating system market share"</a>. Marketshare.hitslink.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&amp;qpcustomd=0">http://marketshare.hitslink.com/operating-system-market-share.aspx?qprid=8&amp;qpcustomd=0</a></span><span class="reference-accessdate">. Retrieved 2012-08-22</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Operating+system+market+share&amp;rft.atitle=&amp;rft.pub=Marketshare.hitslink.com&amp;rft_id=http%3A%2F%2Fmarketshare.hitslink.com%2Foperating-system-market-share.aspx%3Fqprid%3D8%26qpcustomd%3D0&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/OSX_Technology_Overview/SystemTechnology/SystemTechnology.html#//apple_ref/doc/uid/TP40001067-CH207-BCICAIFJ">"Loading"</a>. Developer.apple.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/OSX_Technology_Overview/SystemTechnology/SystemTechnology.html#//apple_ref/doc/uid/TP40001067-CH207-BCICAIFJ">http://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/OSX_Technology_Overview/SystemTechnology/SystemTechnology.html#//apple_ref/doc/uid/TP40001067-CH207-BCICAIFJ</a></span><span class="reference-accessdate">. Retrieved 2012-08-22</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Loading&amp;rft.atitle=&amp;rft.pub=Developer.apple.com&amp;rft_id=http%3A%2F%2Fdeveloper.apple.com%2Flibrary%2Fmac%2F%23documentation%2FMacOSX%2FConceptual%2FOSX_Technology_Overview%2FSystemTechnology%2FSystemTechnology.html%23%2F%2Fapple_ref%2Fdoc%2Fuid%2FTP40001067-CH207-BCICAIFJ&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web">8:30 AM (29 September 2010). <a rel="nofollow" class="external text" href="http://www.asymco.com/2010/09/29/unixs-revenge/">"Unix’s Revenge"</a>. asymco<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.asymco.com/2010/09/29/unixs-revenge/">http://www.asymco.com/2010/09/29/unixs-revenge/</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Unix%E2%80%99s+Revenge&amp;rft.atitle=&amp;rft.aulast=8%3A30+AM&amp;rft.au=8%3A30+AM&amp;rft.date=29+September+2010&amp;rft.pub=asymco&amp;rft_id=http%3A%2F%2Fwww.asymco.com%2F2010%2F09%2F29%2Funixs-revenge%2F&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation book">Powers, Shelley; Peek, Jerry; O'Reilly, Tim; Loukides, Mike (2002). <i>Unix Power Tools</i>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-596-00330-7" title="Special:BookSources/0-596-00330-7">0-596-00330-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Unix+Power+Tools&amp;rft.aulast=Powers&amp;rft.aufirst=Shelley&amp;rft.au=Powers%2C%26%2332%3BShelley&amp;rft.au=Peek%2C%26%2332%3BJerry&amp;rft.au=O%27Reilly%2C%26%2332%3BTim&amp;rft.au=Loukides%2C%26%2332%3BMike&amp;rft.date=2002&amp;rft.isbn=0-596-00330-7&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation book">Stuart, Brian L. (2009). <i>Principles of operating systems: design &amp; applications</i>. Boston, Massachusetts: Thompson Learning. p. 23. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-4188-3769-5" title="Special:BookSources/1-4188-3769-5">1-4188-3769-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Principles+of+operating+systems%3A+design+%26+applications&amp;rft.aulast=Stuart&amp;rft.aufirst=Brian+L.&amp;rft.au=Stuart%2C%26%2332%3BBrian+L.&amp;rft.date=2009&amp;rft.pages=p.%26nbsp%3B23&amp;rft.place=Boston%2C+Massachusetts&amp;rft.pub=Thompson+Learning&amp;rft.isbn=1-4188-3769-5&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-DRM-7">
+<span class="mw-cite-backlink">^ <a href="Unix#cite_ref-DRM_7-0"><sup><i><b>a</b></i></sup></a> <a href="Unix#cite_ref-DRM_7-1"><sup><i><b>b</b></i></sup></a> <a href="Unix#cite_ref-DRM_7-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Ritchie, Dennis M.. <a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">"The Evolution of the Unix Time-sharing System"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">http://cm.bell-labs.com/cm/cs/who/dmr/hist.html</a></span><span class="reference-accessdate">. Retrieved 2009-11-29</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Evolution+of+the+Unix+Time-sharing+System&amp;rft.atitle=&amp;rft.aulast=Ritchie&amp;rft.aufirst=Dennis+M.&amp;rft.au=Ritchie%2C%26%2332%3BDennis+M.&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fhist.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.bell-labs.com/history/unix/pdp7.html">"The Creation of the UNIX* Operating System: The famous PDP-7 comes to the rescue"</a>. Bell-labs.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.bell-labs.com/history/unix/pdp7.html">http://www.bell-labs.com/history/unix/pdp7.html</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Creation+of+the+UNIX%2A+Operating+System%3A+The+famous+PDP-7+comes+to+the+rescue&amp;rft.atitle=&amp;rft.pub=Bell-labs.com&amp;rft_id=http%3A%2F%2Fwww.bell-labs.com%2Fhistory%2Funix%2Fpdp7.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation book">Salus, Peter H. (1994). <i>A Quarter Century of UNIX</i>. Addison Wesley. p. 9. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-201-54777-5" title="Special:BookSources/0-201-54777-5">0-201-54777-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Quarter+Century+of+UNIX&amp;rft.aulast=Salus&amp;rft.aufirst=Peter+H.&amp;rft.au=Salus%2C%26%2332%3BPeter+H.&amp;rft.date=1994&amp;rft.pages=p.%26nbsp%3B9&amp;rft.pub=Addison+Wesley&amp;rft.isbn=0-201-54777-5&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Stallings-10">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-Stallings_10-0">^</a></b></span> <span class="reference-text">Stallings, William. "Operating Systems: Internals and Design Principles" 5th ed, page 91. Pearson Education, Inc. 2005.</span>
+</li>
+<li id="cite_note-faqs.org-11">
+<span class="mw-cite-backlink">^ <a href="Unix#cite_ref-faqs.org_11-0"><sup><i><b>a</b></i></sup></a> <a href="Unix#cite_ref-faqs.org_11-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.faqs.org/docs/artu/ch02s01.html">"Origins and History of Unix, 1969–1995"</a>. Faqs.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.faqs.org/docs/artu/ch02s01.html">http://www.faqs.org/docs/artu/ch02s01.html</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Origins+and+History+of+Unix%2C+1969%E2%80%931995&amp;rft.atitle=&amp;rft.pub=Faqs.org&amp;rft_id=http%3A%2F%2Fwww.faqs.org%2Fdocs%2Fartu%2Fch02s01.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web">D. E. Bodenstab, T. F. Houghton, K. A. Kelleman, G. Ronkin, and E. P. Schan (October 1984). <a rel="nofollow" class="external text" href="http://www.cs.bell-labs.com/who/dmr/otherports/newp.pdf">"UNIX Operating System Porting Experiences"</a> (PDF). <i>AT&amp;T Bell Laboratories Technical Journal, Vol. 63, No. 8 Part 2</i>. p. 9<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.bell-labs.com/who/dmr/otherports/newp.pdf">http://www.cs.bell-labs.com/who/dmr/otherports/newp.pdf</a></span><span class="reference-accessdate">. Retrieved 2009-04-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=UNIX+Operating+System+Porting+Experiences&amp;rft.atitle=AT%26T+Bell+Laboratories+Technical+Journal%2C+Vol.+63%2C+No.+8+Part+2&amp;rft.aulast=D.+E.+Bodenstab%2C+T.+F.+Houghton%2C+K.+A.+Kelleman%2C+G.+Ronkin%2C+and+E.+P.+Schan&amp;rft.au=D.+E.+Bodenstab%2C+T.+F.+Houghton%2C+K.+A.+Kelleman%2C+G.+Ronkin%2C+and+E.+P.+Schan&amp;rft.date=October+1984&amp;rft.pages=p.%26nbsp%3B9&amp;rft_id=http%3A%2F%2Fwww.cs.bell-labs.com%2Fwho%2Fdmr%2Fotherports%2Fnewp.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation episode"><a rel="nofollow" class="external text" href="http://www.archive.org/details/UNIX1985">"UNIX"</a>. <i><a href="http://en.m.wikipedia.org/wiki/Computer_Chronicles" title="Computer Chronicles">The Computer Chronicles</a></i>. 1985<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.archive.org/details/UNIX1985">http://www.archive.org/details/UNIX1985</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=UNIX&amp;rft.atitle=%5B%5BComputer+Chronicles%7CThe+Computer+Chronicles%5D%5D&amp;rft.date=1985&amp;rft_id=http%3A%2F%2Fwww.archive.org%2Fdetails%2FUNIX1985&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.unix.questions/browse_frm/thread/2f0b5e719fa3a3ec/3fa5e5fe4d58f96b">"comp.unix.questions | Google Groups"</a>. Groups.google.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.google.com/group/comp.unix.questions/browse_frm/thread/2f0b5e719fa3a3ec/3fa5e5fe4d58f96b">http://groups.google.com/group/comp.unix.questions/browse_frm/thread/2f0b5e719fa3a3ec/3fa5e5fe4d58f96b</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=comp.unix.questions+%26%23124%3B+Google+Groups&amp;rft.atitle=&amp;rft.pub=Groups.google.com&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fcomp.unix.questions%2Fbrowse_frm%2Fthread%2F2f0b5e719fa3a3ec%2F3fa5e5fe4d58f96b&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-autogenerated2-15">
+<span class="mw-cite-backlink">^ <a href="Unix#cite_ref-autogenerated2_15-0"><sup><i><b>a</b></i></sup></a> <a href="Unix#cite_ref-autogenerated2_15-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Chuck Karish   View profile    More options. <a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.std.unix/msg/c9974cf0022884f8">"The name UNIX is now the property of X/Open – comp.std.unix | Google Groups"</a>. Groups.google.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.google.com/group/comp.std.unix/msg/c9974cf0022884f8">http://groups.google.com/group/comp.std.unix/msg/c9974cf0022884f8</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+name+UNIX+is+now+the+property+of+X%2FOpen+%E2%80%93+comp.std.unix+%26%23124%3B+Google+Groups&amp;rft.atitle=&amp;rft.aulast=Chuck+Karish+%26nbsp%3B+View+profile+%26nbsp%3B+%26nbsp%3BMore+options&amp;rft.au=Chuck+Karish+%26nbsp%3B+View+profile+%26nbsp%3B+%26nbsp%3BMore+options&amp;rft.pub=Groups.google.com&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fcomp.std.unix%2Fmsg%2Fc9974cf0022884f8&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-autogenerated1-16">
+<span class="mw-cite-backlink">^ <a href="Unix#cite_ref-autogenerated1_16-0"><sup><i><b>a</b></i></sup></a> <a href="Unix#cite_ref-autogenerated1_16-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.novell.com/news/press/archive/1995/09/pr95220.html">"HP, Novell and SCO To Deliver High-Volume UNIX OS With Advanced Network And Enterprise Services"</a>. Novell.com. 20 September 1995<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.novell.com/news/press/archive/1995/09/pr95220.html">http://www.novell.com/news/press/archive/1995/09/pr95220.html</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=HP%2C+Novell+and+SCO+To+Deliver+High-Volume+UNIX+OS+With+Advanced+Network+And+Enterprise+Services&amp;rft.atitle=&amp;rft.date=20+September+1995&amp;rft.pub=Novell.com&amp;rft_id=http%3A%2F%2Fwww.novell.com%2Fnews%2Fpress%2Farchive%2F1995%2F09%2Fpr95220.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web">Stephen (7 December 2005). <a rel="nofollow" class="external text" href="http://web.archive.org/web/20060923185730/http://news.zdnet.com/2100-9584_22-5984747.html">"Itanium: A cautionary tale"</a>. <i>Tech News</i>. ZDNet. Archived from <a rel="nofollow" class="external text" href="http://news.zdnet.com/2100-9584_22-5984747.html">the original</a> on 23 September 2006<span class="printonly">. <a rel="nofollow" class="external free" href="http://web.archive.org/web/20060923185730/http://news.zdnet.com/2100-9584_22-5984747.html">http://web.archive.org/web/20060923185730/http://news.zdnet.com/2100-9584_22-5984747.html</a></span><span class="reference-accessdate">. Retrieved 2006-10-04</span>. "In the third quarter of this year, 7,845 Itanium servers were sold, according to research by Gartner. That compares with 62,776 machines with Sun Microsystems' UltraSparc, 31,648 with IBM's Power, and 9,147 with HP's PA-RISC."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Itanium%3A+A+cautionary+tale&amp;rft.atitle=Tech+News&amp;rft.aulast=Stephen&amp;rft.au=Stephen&amp;rft.date=7+December+2005&amp;rft.pub=ZDNet&amp;rft_id=http%3A%2F%2Fweb.archive.org%2Fweb%2F20060923185730%2Fhttp%3A%2F%2Fnews.zdnet.com%2F2100-9584_22-5984747.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.groklaw.net/staticpages/index.php?page=20070810205256644">"Memorandum and Decision Order in SCO v. Novell"</a>. Groklaw.net<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.groklaw.net/staticpages/index.php?page=20070810205256644">http://www.groklaw.net/staticpages/index.php?page=20070810205256644</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Memorandum+and+Decision+Order+in+SCO+v.+Novell&amp;rft.atitle=&amp;rft.pub=Groklaw.net&amp;rft_id=http%3A%2F%2Fwww.groklaw.net%2Fstaticpages%2Findex.php%3Fpage%3D20070810205256644&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-doc377-19">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-doc377_19-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://sco.tuxrocks.com/Docs/Novell/Novell-377.pdf">"Tuxrocks.com"</a> (PDF)<span class="printonly">. <a rel="nofollow" class="external free" href="http://sco.tuxrocks.com/Docs/Novell/Novell-377.pdf">http://sco.tuxrocks.com/Docs/Novell/Novell-377.pdf</a></span><span class="reference-accessdate">. Retrieved 2012-01-06</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Tuxrocks.com&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fsco.tuxrocks.com%2FDocs%2FNovell%2FNovell-377.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.pcworld.com/article/id,135959-c,unix/article.html">Novell Won't Pursue Unix Copyrights</a> 15 August 2007</span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.groklaw.net/pdf/AppealRuling.pdf">Groklaw.net</a> 24 August 2009</span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.novell.com/prblogs/?p=1134">Novell.com</a> 24 August 2009</span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wired.com/threatlevel/2009/08/sco/">Wired.com</a> 24 August 2009</span>
+</li>
+<li id="cite_note-glNovell-846-24">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-glNovell-846_24-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.groklaw.net/pdf2/Novell-846.pdf">"03/30/2010 – 846 – JURY VERDICT for Defendant Novell. (slm) (Entered: 03/30/2010)"</a> (PDF)<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.groklaw.net/pdf2/Novell-846.pdf">http://www.groklaw.net/pdf2/Novell-846.pdf</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=03%2F30%2F2010+%E2%80%93+846+%E2%80%93+JURY+VERDICT+for+Defendant+Novell.+%28slm%29+%28Entered%3A+03%2F30%2F2010%29&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.groklaw.net%2Fpdf2%2FNovell-846.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-sltrib14786202-25">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-sltrib14786202_25-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external free" href="http://www.sltrib.com+(30">http://www.sltrib.com+(30</a> March 2010). <a rel="nofollow" class="external text" href="http://www.sltrib.com/news/ci_14786202">"Jury says Novell owns Unix copyrights"</a>. Sltrib.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.sltrib.com/news/ci_14786202">http://www.sltrib.com/news/ci_14786202</a></span><span class="reference-accessdate">. Retrieved 2012-01-06</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Jury+says+Novell+owns+Unix+copyrights&amp;rft.atitle=&amp;rft.aulast=http%3A%2F%2Fwww.sltrib.com&amp;rft.au=http%3A%2F%2Fwww.sltrib.com&amp;rft.date=30+March+2010&amp;rft.pub=Sltrib.com&amp;rft_id=http%3A%2F%2Fwww.sltrib.com%2Fnews%2Fci_14786202&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-26">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-26">^</a></b></span> <span class="reference-text"><span class="citation web">Jones, Pamela. <a rel="nofollow" class="external text" href="http://groklaw.net/article.php?story=20100723230825165">"SCO Files Docketing Statement and We Find Out What Its Appeal Will Be About"</a>. <i>Groklaw</i>. Groklaw.net<span class="printonly">. <a rel="nofollow" class="external free" href="http://groklaw.net/article.php?story=20100723230825165">http://groklaw.net/article.php?story=20100723230825165</a></span><span class="reference-accessdate">. Retrieved 12 April 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=SCO+Files+Docketing+Statement+and+We+Find+Out+What+Its+Appeal+Will+Be+About&amp;rft.atitle=Groklaw&amp;rft.aulast=Jones&amp;rft.aufirst=Pamela&amp;rft.au=Jones%2C%26%2332%3BPamela&amp;rft.pub=Groklaw.net&amp;rft_id=http%3A%2F%2Fgroklaw.net%2Farticle.php%3Fstory%3D20100723230825165&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-27">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-27">^</a></b></span> <span class="reference-text"><span class="citation web">The Open Group. <a rel="nofollow" class="external text" href="http://www.opengroup.org/openbrand/Brandfees.htm">"The Open Brand Fee Schedule"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/openbrand/Brandfees.htm">http://www.opengroup.org/openbrand/Brandfees.htm</a></span><span class="reference-accessdate">. Retrieved 26 December 2011</span>. "The right to use the UNIX Trademark requires the Licensee to pay to The Open Group an additional annual fee, calculated in accordance with the fee table set out below."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Open+Brand+Fee+Schedule&amp;rft.atitle=&amp;rft.aulast=The+Open+Group&amp;rft.au=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fopenbrand%2FBrandfees.htm&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-28">^</a></b></span> <span class="reference-text"><span class="citation web">The Open Group. <a rel="nofollow" class="external text" href="http://www.opengroup.org/openbrand/register/brand3555.htm">"Mac OS X v10.5 Leopard on Intel-based Macintosh computers certification"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/openbrand/register/brand3555.htm">http://www.opengroup.org/openbrand/register/brand3555.htm</a></span><span class="reference-accessdate">. Retrieved 2007-06-12</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Mac+OS+X+v10.5+Leopard+on+Intel-based+Macintosh+computers+certification&amp;rft.atitle=&amp;rft.aulast=The+Open+Group&amp;rft.au=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fopenbrand%2Fregister%2Fbrand3555.htm&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-29">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-29">^</a></b></span> <span class="reference-text"><span class="citation web">The Open Group. <a rel="nofollow" class="external text" href="http://www.opengroup.org/openbrand/register/brand3581.htm">"Mac OS X v10.6 Snow Leopard certification"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/openbrand/register/brand3581.htm">http://www.opengroup.org/openbrand/register/brand3581.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Mac+OS+X+v10.6+Snow+Leopard+certification&amp;rft.atitle=&amp;rft.aulast=The+Open+Group&amp;rft.au=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fopenbrand%2Fregister%2Fbrand3581.htm&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-30">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-30">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://catb.org/jargon/html/U/Unix.html">"Unix"</a>. Catb.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://catb.org/jargon/html/U/Unix.html">http://catb.org/jargon/html/U/Unix.html</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Unix&amp;rft.atitle=&amp;rft.pub=Catb.org&amp;rft_id=http%3A%2F%2Fcatb.org%2Fjargon%2Fhtml%2FU%2FUnix.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-31">
+<span class="mw-cite-backlink"><b><a href="Unix#cite_ref-31">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/otherunix.html">"Autres Unix, autres moeurs (OtherUnix)"</a>. Cm.bell-labs.com. 1 April 2000<span class="printonly">. <a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/otherunix.html">http://cm.bell-labs.com/cm/cs/who/dmr/otherunix.html</a></span><span class="reference-accessdate">. Retrieved 2010-11-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Autres+Unix%2C+autres+moeurs+%28OtherUnix%29&amp;rft.atitle=&amp;rft.date=1+April+2000&amp;rft.pub=Cm.bell-labs.com&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fotherunix.html&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<div class="refbegin" style="">
+<ul>
+<li>Ritchie, D.M.; Thompson, K., The UNIX Time-Sharing System (The <a href="http://en.m.wikipedia.org/wiki/Bell_System_Technical_Journal" title="Bell System Technical Journal">Bell System Technical Journal</a>, <a rel="nofollow" class="external text" href="http://bstj.bell-labs.com/oldfiles/year.1978/BSTJ.1978.5706-2.html">July–August 1978, Vol. 57, No. 6, Part 2</a>)</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://www.levenez.com/unix/">"UNIX History"</a>. <i>www.levenez.com</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.levenez.com/unix/">http://www.levenez.com/unix/</a></span><span class="reference-accessdate">. Retrieved 17 March 2005</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=UNIX+History&amp;rft.atitle=www.levenez.com&amp;rft_id=http%3A%2F%2Fwww.levenez.com%2Funix%2F&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://www.unixguide.net/">"AIX, FreeBSD, HP-UX, Linux, Solaris, Tru64"</a>. <i>UNIXguide.net</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unixguide.net/">http://www.unixguide.net/</a></span><span class="reference-accessdate">. Retrieved 17 March 2005</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=AIX%2C+FreeBSD%2C+HP-UX%2C+Linux%2C+Solaris%2C+Tru64&amp;rft.atitle=UNIXguide.net&amp;rft_id=http%3A%2F%2Fwww.unixguide.net%2F&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://lwn.net/2002/0221/bigpage.php3">"Linux Weekly News, February 21, 2002"</a>. <i>lwn.net</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://lwn.net/2002/0221/bigpage.php3">http://lwn.net/2002/0221/bigpage.php3</a></span><span class="reference-accessdate">. Retrieved 7 April 2006</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Linux+Weekly+News%2C+February+21%2C+2002&amp;rft.atitle=lwn.net&amp;rft_id=http%3A%2F%2Flwn.net%2F2002%2F0221%2Fbigpage.php3&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/John_Lions" title="John Lions">Lions, John</a>: <i>Lions' <span class="citation web"><a rel="nofollow" class="external text" href="http://www.lemis.com/grog/Documentation/Lions/">"Commentary on the Sixth Edition UNIX Operating System"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.lemis.com/grog/Documentation/Lions/">http://www.lemis.com/grog/Documentation/Lions/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Commentary+on+the+Sixth+Edition+UNIX+Operating+System&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.lemis.com%2Fgrog%2FDocumentation%2FLions%2F&amp;rfr_id=info:sid/en.wikipedia.org:Unix"><span style="display: none;"> </span></span> with Source Code</i>, Peer-to-Peer Communications, 1996; <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1573980137" class="internal mw-magiclink-isbn">ISBN 1-57398-013-7</a>
+</li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<dl>
+<dt>Books</dt>
+</dl>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Peter_H._Salus" title="Peter H. Salus">Salus, Peter H.</a>: <i>A Quarter Century of UNIX</i>, Addison Wesley, 1 June 1994; <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0201547775" class="internal mw-magiclink-isbn">ISBN 0-201-54777-5</a>
+</li>
+</ul>
+<dl>
+<dt>Television.</dt>
+</dl>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Computer_Chronicles" title="Computer Chronicles">Computer Chronicles</a> (1985). "<a rel="nofollow" class="external text" href="http://www.archive.org/details/UNIX1985">UNIX</a>".</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Computer_Chronicles" title="Computer Chronicles">Computer Chronicles</a> (1989). "<a rel="nofollow" class="external text" href="http://www.archive.org/details/unix_2">Unix</a>".</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/Guide_to_Unix" class="extiw" title="wikibooks:Guide to Unix">Guide to Unix</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Guide_to_Unix/Commands" class="extiw" title="wikibooks:Guide to Unix/Commands">Commands</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.unix.org">The UNIX System</a>, at <a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/hist.html">The Evolution of the Unix Time-sharing System</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.bell-labs.com/history/unix/">The Creation of the UNIX Operating System</a></li>
+<li><a rel="nofollow" class="external text" href="http://minnie.tuhs.org/UnixTree/">The Unix Tree: files from historic releases</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.dmoz.org/Computers/Software/Operating_Systems/Unix//">Unix</a> at the <a href="http://en.m.wikipedia.org/wiki/Open_Directory_Project" title="Open Directory Project">Open Directory Project</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://man.cat-v.org/unix-1st/">The Unix 1st Edition Manuals</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://techchannel.att.com/play-video.cfm/2012/2/22/AT&amp;T-Archives-The-UNIX-System">1982 film about Unix featuring Dennis Ritchie, Ken Thompson, Brian Kernighan, Alfred Aho, and more</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.darwinsys.com/history/hist.html">A History of UNIX before Berkeley: UNIX Evolution: 1975-1984</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Unix_commands" title="Template:Unix commands"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Unix_commands" title="Template talk:Unix commands"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Unix_commands&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<strong class="selflink">Unix</strong> <a href="http://en.m.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">command-line interface</a> programs and <a href="http://en.m.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">shell builtins</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">File system</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cat_(Unix)" title="Cat (Unix)">cat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cd_(command)" title="Cd (command)">cd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chmod" title="Chmod">chmod</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chown" title="Chown">chown</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chgrp" title="Chgrp">chgrp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cksum" title="Cksum">cksum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cmp_(Unix)" title="Cmp (Unix)">cmp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cp_(Unix)" title="Cp (Unix)">cp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dd_(Unix)" title="Dd (Unix)">dd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Du_(Unix)" title="Du (Unix)">du</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Df_(Unix)" title="Df (Unix)">df</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/File_(command)" title="File (command)">file</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fsck" title="Fsck">fsck</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fuser_(Unix)" title="Fuser (Unix)">fuser</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ln_(Unix)" title="Ln (Unix)">ln</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ls" title="Ls">ls</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lsattr" title="Lsattr">lsattr</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lsof" title="Lsof">lsof</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mkdir" title="Mkdir">mkdir</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mount_(Unix)" title="Mount (Unix)">mount</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mv" title="Mv">mv</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pax_(Unix)" title="Pax (Unix)">pax</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pwd" title="Pwd">pwd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rmdir" title="Rmdir">rmdir</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Size_(Unix)" title="Size (Unix)">size</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Split_(Unix)" title="Split (Unix)">split</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tee_(command)" title="Tee (command)">tee</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Touch_(Unix)" title="Touch (Unix)">touch</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_(Unix)" title="Type (Unix)">type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Umask" title="Umask">umask</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Processes</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/At_(Unix)" title="At (Unix)">at</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bg_(Unix)" title="Bg (Unix)">bg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chroot" title="Chroot">chroot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cron" title="Cron">cron</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fg_(Unix)" title="Fg (Unix)">fg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kill_(Unix)" title="Kill (Unix)" class="mw-redirect">kill</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Killall" title="Killall">killall</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nice_(Unix)" title="Nice (Unix)">nice</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pgrep" title="Pgrep">pgrep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pidof" title="Pidof">pidof</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pkill" title="Pkill">pkill</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ps_(Unix)" title="Ps (Unix)">ps</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pstree" title="Pstree">pstree</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time_(Unix)" title="Time (Unix)">time</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_(software)" title="Top (software)">top</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">User environment</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Clear_(Unix)" title="Clear (Unix)">clear</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Env" title="Env">env</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exit_(command)" title="Exit (command)">exit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Finger_protocol" title="Finger protocol">finger</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_(Unix)" title="History (Unix)">history</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Id_(Unix)" title="Id (Unix)">id</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logname" title="Logname">logname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mesg" title="Mesg">mesg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Passwd_(command)" title="Passwd (command)">passwd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Su_(Unix)" title="Su (Unix)">su</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sudo" title="Sudo">sudo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uptime#Linux" title="Uptime">uptime</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Talk_(software)" title="Talk (software)">talk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tput" title="Tput">tput</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uname" title="Uname">uname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/W_(Unix)" title="W (Unix)">w</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wall_(Unix)" title="Wall (Unix)">wall</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Who_(Unix)" title="Who (Unix)">who</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whoami" title="Whoami">whoami</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Write_(Unix)" title="Write (Unix)">write</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Text processing</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="AWK" title="AWK">awk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Banner_(Unix)" title="Banner (Unix)">banner</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Basename" title="Basename">basename</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comm" title="Comm">comm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Csplit" title="Csplit">csplit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cut_(Unix)" title="Cut (Unix)">cut</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dirname" title="Dirname">dirname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ed_(text_editor)" title="Ed (text editor)">ed</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ex_(text_editor)" title="Ex (text editor)">ex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fmt_(Unix)" title="Fmt (Unix)" class="mw-redirect">fmt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Head_(Unix)" title="Head (Unix)">head</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Iconv" title="Iconv">iconv</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Join_(Unix)" title="Join (Unix)">join</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Less_(Unix)" title="Less (Unix)">less</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/More_(command)" title="More (command)">more</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paste_(Unix)" title="Paste (Unix)">paste</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sed" title="Sed">sed</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sort_(Unix)" title="Sort (Unix)">sort</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Spell_(Unix)" title="Spell (Unix)">spell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strings_(Unix)" title="Strings (Unix)">strings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tail_(Unix)" title="Tail (Unix)">tail</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tr_(Unix)" title="Tr (Unix)">tr</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uniq" title="Uniq">uniq</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vi" title="Vi">vi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wc_(Unix)" title="Wc (Unix)">wc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xargs" title="Xargs">xargs</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">Shell builtins</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Alias_(command)" title="Alias (command)">alias</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Echo_(command)" title="Echo (command)">echo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expr" title="Expr">expr</a></li>
+<li><a href="Printf" title="Printf" class="mw-redirect">printf</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sleep_(Unix)" title="Sleep (Unix)">sleep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Test_(Unix)" title="Test (Unix)">test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/True_and_false_(commands)" title="True and false (commands)">true and false</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unset" title="Unset">unset</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wait_(command)" title="Wait (command)">wait</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yes_(Unix)" title="Yes (Unix)">yes</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Network_utilities" title="Network utilities">Networking</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain_Information_Groper" title="Domain Information Groper" class="mw-redirect">dig</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Host_(Unix)" title="Host (Unix)">host</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ifconfig" title="Ifconfig">ifconfig</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inetd" title="Inetd">inetd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Netcat" title="Netcat">netcat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Netstat" title="Netstat">netstat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nslookup" title="Nslookup">nslookup</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ping_(networking_utility)" title="Ping (networking utility)">ping</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rdate" title="Rdate">rdate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rlogin" title="Rlogin">rlogin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSSH" title="OpenSSH">ssh</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Traceroute" title="Traceroute">traceroute</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Searching</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Find" title="Find">find</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Grep" title="Grep">grep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Locate_(Unix)" title="Locate (Unix)">locate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whatis" title="Whatis">whatis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whereis" title="Whereis">whereis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Documentation</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Apropos_(Unix)" title="Apropos (Unix)">apropos</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Help_(command)" title="Help (command)">help</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Man_page" title="Man page">man</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Miscellaneous</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bc_programming_language" title="Bc programming language">bc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dc_(Unix)" title="Dc (Unix)" class="mw-redirect">dc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cal_(Unix)" title="Cal (Unix)">cal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Date_(Unix)" title="Date (Unix)">date</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lp_(Unix)" title="Lp (Unix)">lp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lpr" title="Lpr">lpr</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div><i><a href="http://en.m.wikipedia.org/wiki/List_of_Unix_utilities" title="List of Unix utilities">List of Unix utilities</a></i></div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Unix-like" title="Template:Unix-like"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Unix-like" title="Template talk:Unix-like"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Unix-like&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<strong class="selflink">Unix</strong> and <a href="Unix-like" title="Unix-like">Unix-like</a> <a href="Operating_system" title="Operating system">operating systems</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/IBM_AIX" title="IBM AIX">AIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LynxOS" title="LynxOS">LynxOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MINIX" title="MINIX">MINIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OS_X" title="OS X">OS X</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QNX" title="QNX">QNX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Research_Unix" title="Research Unix">Research Unix</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SCO_OpenServer" title="SCO OpenServer">SCO OpenServer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UNIX_System_V" title="UNIX System V">UNIX System V</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tru64_UNIX" title="Tru64 UNIX">Tru64 UNIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UnixWare" title="UnixWare">UnixWare</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VxWorks" title="VxWorks">VxWorks</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xenix" title="Xenix">Xenix</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/Category:Unix_variants" title="Category:Unix variants">more</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Operating_system" title="Template:Operating system"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Operating_system" title="Template talk:Operating system"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Operating_system&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Operating_system" title="Operating system">Operating system</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_operating_systems" title="History of operating systems">History</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">Timeline</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">Comparison</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">Usage share</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operating_system_advocacy" title="Operating system advocacy">Advocacy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hobbyist_operating_system_development" title="Hobbyist operating system development">Hobbyist development</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">Kernel</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Architectures</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Monolithic_kernel" title="Monolithic kernel">Monolithic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exokernel" title="Exokernel">Exokernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hybrid_kernel" title="Hybrid kernel">Hybrid</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Components</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/User_space" title="User space">User space</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">Loadable kernel module</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">Device driver</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Process_management_(computing)" title="Process management (computing)">Process management</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Concepts</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_control_block" title="Process control block">Process control block</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Context_switch" title="Context switch">Context switch</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">Scheduling algorithms</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">Computer multitasking</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preemption_(computing)" title="Preemption (computing)">Preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Round-robin_scheduling" title="Round-robin scheduling">Round-robin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">Fixed-priority preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">Multilevel feedback queue</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shortest_job_next" title="Shortest job next">Shortest job next</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a> and<br><a href="http://en.m.wikipedia.org/wiki/Resource_(computer_science)" title="Resource (computer science)">resource</a> protection</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ring_(computer_security)" title="Ring (computer security)">Security rings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_protection" title="Memory protection">Memory protection</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">Virtual memory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paging" title="Paging">Paging</a></li>
+<li><a href="Segmentation_fault" title="Segmentation fault">Segmentation fault / Bus error</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/General_protection_fault" title="General protection fault">General protection fault</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MorphOS" title="MorphOS">MorphOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li><strong class="selflink">Unix</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Miscellaneous concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Booting" title="Booting">Boot loader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_CD" title="Live CD">Live CD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_USB" title="Live USB">Live USB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">PXE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_tape_library" title="Virtual tape library">Virtual tape library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">Computer network</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Operating_system_shell" title="Operating system shell">OS shell</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">CLI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Text-based_user_interface" title="Text-based user interface">TUI</a></li>
+<li><a href="Graphical_user_interface" title="Graphical user interface">GUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Voice_user_interface" title="Voice user interface">VUI</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware_abstraction" title="Hardware abstraction">HAL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 92 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Unix" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://als.m.wikipedia.org/wiki/UNIX" lang="als" hreflang="als">Alemannisch</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D9%8A%D9%88%D9%86%D9%83%D8%B3" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://an.m.wikipedia.org/wiki/Unix" lang="an" hreflang="an">aragonés</a></li><li><a href="http://ast.m.wikipedia.org/wiki/Unix" lang="ast" hreflang="ast">asturianu</a></li><li><a href="http://az.m.wikipedia.org/wiki/UNIX" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%87%E0%A6%89%E0%A6%A8%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B8" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://zh-min-nan.m.wikipedia.org/wiki/Unix" lang="zh-min-nan" hreflang="zh-min-nan">Bân-lâm-gú</a></li><li><a href="http://be.m.wikipedia.org/wiki/Unix" lang="be" hreflang="be">беларуская</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/UNIX" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bg.m.wikipedia.org/wiki/Unix" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/UNIX" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://br.m.wikipedia.org/wiki/Unix" lang="br" hreflang="br">brezhoneg</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Unix" lang="ca" hreflang="ca">català</a></li><li><a href="http://cv.m.wikipedia.org/wiki/UNIX" lang="cv" hreflang="cv">Чӑвашла</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Unix" lang="cs" hreflang="cs">česky</a></li><li><a href="http://cy.m.wikipedia.org/wiki/Unix" lang="cy" hreflang="cy">Cymraeg</a></li><li><a href="http://da.m.wikipedia.org/wiki/UNIX" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Unix" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/UNIX" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/Unix" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Unix" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Unikso" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Unix" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%DB%8C%D9%88%D9%86%DB%8C%DA%A9%D8%B3" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://hif.m.wikipedia.org/wiki/UNIX" lang="hif" hreflang="hif">Fiji Hindi</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Unix" lang="fr" hreflang="fr">français</a></li><li><a href="http://ga.m.wikipedia.org/wiki/UNIX" lang="ga" hreflang="ga">Gaeilge</a></li><li><a href="http://gl.m.wikipedia.org/wiki/UNIX" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%9C%A0%EB%8B%89%EC%8A%A4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hy.m.wikipedia.org/wiki/UNIX" lang="hy" hreflang="hy">Հայերեն</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%AF%E0%A5%82%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B8" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://hr.m.wikipedia.org/wiki/UNIX" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://ilo.m.wikipedia.org/wiki/UNIX" lang="ilo" hreflang="ilo">Ilokano</a></li><li><a href="http://id.m.wikipedia.org/wiki/Unix" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ia.m.wikipedia.org/wiki/UNIX" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://os.m.wikipedia.org/wiki/UNIX" lang="os" hreflang="os">Ирон</a></li><li><a href="http://is.m.wikipedia.org/wiki/Unix" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Unix" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/Unix" lang="he" hreflang="he">עברית</a></li><li><a href="http://kn.m.wikipedia.org/wiki/%E0%B2%AF%E0%B3%81%E0%B2%A8%E0%B2%BF%E0%B2%95%E0%B3%8D%E0%B2%B8%E0%B3%8D" lang="kn" hreflang="kn">ಕನ್ನಡ</a></li><li><a href="http://ka.m.wikipedia.org/wiki/UNIX" lang="ka" hreflang="ka">ქართული</a></li><li><a href="http://kk.m.wikipedia.org/wiki/UNIX" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://ku.m.wikipedia.org/wiki/Unix" lang="ku" hreflang="ku">Kurdî</a></li><li><a href="http://ky.m.wikipedia.org/wiki/Unix" lang="ky" hreflang="ky">Кыргызча</a></li><li><a href="http://la.m.wikipedia.org/wiki/Unix" lang="la" hreflang="la">Latina</a></li><li><a href="http://lv.m.wikipedia.org/wiki/UNIX" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://lt.m.wikipedia.org/wiki/UNIX" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Unix" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/Unix_(%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%B5%D0%BD_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC)" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://mg.m.wikipedia.org/wiki/UNIX" lang="mg" hreflang="mg">Malagasy</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AF%E0%B5%81%E0%B4%A3%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%B8%E0%B5%8D" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://mr.m.wikipedia.org/wiki/%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B8" lang="mr" hreflang="mr">मराठी</a></li><li><a href="http://ms.m.wikipedia.org/wiki/UNIX" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://cdo.m.wikipedia.org/wiki/Unix" lang="cdo" hreflang="cdo">Mìng-dĕ̤ng-ngṳ̄</a></li><li><a href="http://my.m.wikipedia.org/wiki/%E1%80%9A%E1%80%B0%E1%80%B8%E1%80%94%E1%80%85%E1%80%BA%E1%80%85%E1%80%BA" lang="my" hreflang="my">မြန်မာဘာသာ</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Unix" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ne.m.wikipedia.org/wiki/%E0%A4%AF%E0%A5%81%E0%A4%A8%E0%A4%BF%E0%A4%95%E0%A5%8D%E0%A4%B8" lang="ne" hreflang="ne">नेपाली</a></li><li><a href="http://ja.m.wikipedia.org/wiki/UNIX" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Unix" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Unix" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://oc.m.wikipedia.org/wiki/Unix" lang="oc" hreflang="oc">occitan</a></li><li><a href="http://uz.m.wikipedia.org/wiki/UNIX" lang="uz" hreflang="uz">oʻzbekcha</a></li><li><a href="http://nds.m.wikipedia.org/wiki/Unix" lang="nds" hreflang="nds">Plattdüütsch</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Unix" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Unix" lang="pt" hreflang="pt">português</a></li><li><a href="http://kaa.m.wikipedia.org/wiki/Unix" lang="kaa" hreflang="kaa">Qaraqalpaqsha</a></li><li><a href="http://ro.m.wikipedia.org/wiki/UNIX" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/UNIX" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sah.m.wikipedia.org/wiki/Unix" lang="sah" hreflang="sah">саха тыла</a></li><li><a href="http://sc.m.wikipedia.org/wiki/UNIX" lang="sc" hreflang="sc">sardu</a></li><li><a href="http://sq.m.wikipedia.org/wiki/UNIX" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://simple.m.wikipedia.org/wiki/UNIX" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Unix" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Unix" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%88%D1%83%D0%BD%D0%B8%D0%BA%D1%81" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Unix" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Unix" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Unix" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%AF%E0%AF%81%E0%AE%A9%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%9A%E0%AF%81" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://tt.m.wikipedia.org/wiki/Unix" lang="tt" hreflang="tt">татарча/tatarça</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%A2%E0%B8%B9%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%8B%E0%B9%8C" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/UNIX" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/UNIX" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%DB%8C%D9%88%D9%86%DA%A9%D8%B3" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Unix" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://fiu-vro.m.wikipedia.org/wiki/Unix" lang="fiu-vro" hreflang="fiu-vro">Võro</a></li><li><a href="http://war.m.wikipedia.org/wiki/Unix" lang="war" hreflang="war">Winaray</a></li><li><a href="http://yi.m.wikipedia.org/wiki/%D7%99%D7%95%D7%A0%D7%99%D7%A7%D7%A1" lang="yi" hreflang="yi">ייִדיש</a></li><li><a href="http://zh-yue.m.wikipedia.org/wiki/UNIX" lang="zh-yue" hreflang="zh-yue">粵語</a></li><li><a href="http://bat-smg.m.wikipedia.org/wiki/UNIX" lang="bat-smg" hreflang="bat-smg">žemaitėška</a></li><li><a href="http://zh.m.wikipedia.org/wiki/UNIX" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Unix&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Unix&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Unix&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

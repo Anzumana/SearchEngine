@@ -1,0 +1,1012 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Mathematica - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Mathematica","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Mathematica" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Mathematica"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Mathematica</h1>			
+<div class="dablink">For other uses, see <a href="http://en.m.wikipedia.org/wiki/Mathematica_(disambiguation)" title="Mathematica (disambiguation)">Mathematica (disambiguation)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-POV" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="Unbalanced scales.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/45px-Unbalanced_scales.svg.png" width="45" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/68px-Unbalanced_scales.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Unbalanced_scales.svg/90px-Unbalanced_scales.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">The <b><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Neutral_point_of_view" title="Wikipedia:Neutral point of view">neutrality</a> of this article is <a href="http://en.m.wikipedia.org/wiki/Wikipedia:NPOV_dispute" title="Wikipedia:NPOV dispute">disputed</a></b>. <span class="hide-when-compact">Relevant discussion may be found on the <a href="http://en.m.wikipedia.org/wiki/Talk:Mathematica#Mathematica_page_suffering_from_a_pro-Wolfram_bias_again" title="Talk:Mathematica">talk page</a>. Please do not remove this message until the <a href="http://en.m.wikipedia.org/wiki/Wikipedia:NPOVD#What_is_an_NPOV_dispute.3F" title="Wikipedia:NPOVD" class="mw-redirect">dispute is resolved</a>.</span> <small><i>(October 2012)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-too_few_opinions" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">The examples and perspective in this article <b>may not <a href="http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Countering_systemic_bias" title="Wikipedia:WikiProject Countering systemic bias">include all significant viewpoints</a></b>. <span class="hide-when-compact">Please <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Mathematica&amp;action=edit">improve the article</a> or <a href="http://en.m.wikipedia.org/wiki/Talk:Mathematica" title="Talk:Mathematica">discuss the issue</a>.</span> <small><i>(October 2012)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Mathematica</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:MathematicaSpikeyVersion8.png" class="image"><img alt="MathematicaSpikeyVersion8.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/b/bf/MathematicaSpikeyVersion8.png/100px-MathematicaSpikeyVersion8.png" width="100" height="105" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/bf/MathematicaSpikeyVersion8.png/150px-MathematicaSpikeyVersion8.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/bf/MathematicaSpikeyVersion8.png/200px-MathematicaSpikeyVersion8.png 2x"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Mathematica_logistic_bifurcation.png" class="image"><img alt="Mathematica logistic bifurcation.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mathematica_logistic_bifurcation.png/256px-Mathematica_logistic_bifurcation.png" width="256" height="243" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mathematica_logistic_bifurcation.png/384px-Mathematica_logistic_bifurcation.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Mathematica_logistic_bifurcation.png/512px-Mathematica_logistic_bifurcation.png 2x"></a><br><span style="">Mathematica 8.0.0 GNU/Linux frontend</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">June 23, 1988<sup id="cite_ref-1" class="reference"><a href="Mathematica#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">
+<span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Mathematica&amp;action=edit">8.0.4</a></span>  <small>(October 24, 2011)</small> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/Mathematica&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style="">
+<span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/Mathematica&amp;action=edit">Non</a></span> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/Mathematica&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style="">
+<strong class="selflink">Mathematica</strong>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style="">
+<a href="Cross-platform" title="Cross-platform">Cross-platform</a> <a rel="nofollow" class="external text" href="http://www.wolfram.com/products/mathematica/platforms/">(list)</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Available in</th>
+<td class="" style="">English, Chinese and Japanese.</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Computer_algebra_system" title="Computer algebra system">Computer algebra</a>, <a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">numerical computations</a>, <a href="http://en.m.wikipedia.org/wiki/Information_visualization" title="Information visualization">Information visualization</a>, <a href="http://en.m.wikipedia.org/wiki/List_of_statistical_packages" title="List of statistical packages">statistics</a>, <a href="Graphical_user_interface" title="Graphical user interface">user interface creation</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.wolfram.com/mathematica/">www.wolfram.com/mathematica/</a></span></td>
+</tr>
+</table>
+<p><b>Mathematica</b> is a computational software program used in scientific, engineering, and mathematical fields and other areas of technical computing. It was conceived by <a href="http://en.m.wikipedia.org/wiki/Stephen_Wolfram" title="Stephen Wolfram">Stephen Wolfram</a> and is developed by <a href="http://en.m.wikipedia.org/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a> of <a href="http://en.m.wikipedia.org/wiki/Champaign,_Illinois" title="Champaign, Illinois">Champaign, Illinois</a>.<sup id="cite_ref-2" class="reference"><a href="Mathematica#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Mathematica#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:327px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Mathematica_dinis_surface.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mathematica_dinis_surface.png/325px-Mathematica_dinis_surface.png" width="325" height="521" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mathematica_dinis_surface.png/488px-Mathematica_dinis_surface.png 1.5x, //upload.wikimedia.org/wikipedia/commons/3/30/Mathematica_dinis_surface.png 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Dini%27s_surface" title="Dini's surface">Dini's surface</a> plotted with adjustable parameters</div>
+</div>
+</div>
+<p>Features of Mathematica include:<sup id="cite_ref-4" class="reference"><a href="Mathematica#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Elementary_function" title="Elementary function">Elementary</a> mathematical function library</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Special_functions" title="Special functions">Special</a> mathematical function library</li>
+<li>Matrix and data manipulation tools including support for <a href="http://en.m.wikipedia.org/wiki/Sparse_array" title="Sparse array">sparse arrays</a>
+</li>
+<li>Support for <a href="Complex_number" title="Complex number">complex number</a>, <a href="http://en.m.wikipedia.org/wiki/Arbitrary_precision_arithmetic" title="Arbitrary precision arithmetic" class="mw-redirect">arbitrary precision</a>, interval arithmetic and symbolic computation</li>
+<li>2D and 3D data and function <a href="http://en.m.wikipedia.org/wiki/Visualization_(graphic)" title="Visualization (graphic)" class="mw-redirect">visualization</a> and animation tools</li>
+<li>Solvers for systems of equations, <a href="http://en.m.wikipedia.org/wiki/Diophantine_equation" title="Diophantine equation">diophantine equations</a>, <a href="http://en.m.wikipedia.org/wiki/Ordinary_differential_equation" title="Ordinary differential equation">ODEs</a>, <a href="http://en.m.wikipedia.org/wiki/Partial_differential_equation" title="Partial differential equation">PDEs</a>, <a href="http://en.m.wikipedia.org/wiki/Differential_algebraic_equation" title="Differential algebraic equation">DAEs</a>, <a href="http://en.m.wikipedia.org/wiki/Delay_differential_equation" title="Delay differential equation">DDEs</a> and <a href="http://en.m.wikipedia.org/wiki/Recurrence_relation" title="Recurrence relation">recurrence relations</a>
+</li>
+<li>Numeric and symbolic tools for discrete and continuous calculus</li>
+<li>Multivariate <a href="http://en.m.wikipedia.org/wiki/Statistics" title="Statistics">statistics</a> libraries including fitting, hypothesis testing, and probability and expectation calculations on over 100 distributions.</li>
+<li>Constrained and unconstrained local and global <a href="http://en.m.wikipedia.org/wiki/Optimization_(mathematics)" title="Optimization (mathematics)" class="mw-redirect">optimization</a>
+</li>
+<li>Programming language supporting <a href="Procedural_programming" title="Procedural programming">procedural</a>, <a href="Functional_programming" title="Functional programming">functional</a> and <a href="Object-oriented_programming" title="Object-oriented programming">object oriented</a> constructs</li>
+<li>Toolkit for adding <a href="http://en.m.wikipedia.org/wiki/User_interface" title="User interface">user interfaces</a> to calculations and applications</li>
+<li>Tools for <a href="http://en.m.wikipedia.org/wiki/Image_processing" title="Image processing">image processing</a><sup id="cite_ref-5" class="reference"><a href="Mathematica#cite_note-5"><span>[</span>5<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/Morphological_image_processing" title="Morphological image processing" class="mw-redirect">morphological image processing</a> including <a href="http://en.m.wikipedia.org/wiki/Image_recognition" title="Image recognition" class="mw-redirect">image recognition</a>
+</li>
+<li>Tools for visualizing and analysing <a href="http://en.m.wikipedia.org/wiki/Graph_(mathematics)" title="Graph (mathematics)">graphs</a>
+</li>
+<li>Tools for combinatoric problems</li>
+<li>Tools for <a href="http://en.m.wikipedia.org/wiki/Text_mining" title="Text mining">text mining</a> including regular expressions and semantic analysis</li>
+<li>Data mining tools such as <a href="http://en.m.wikipedia.org/wiki/Cluster_analysis" title="Cluster analysis">cluster analysis</a>, <a href="http://en.m.wikipedia.org/wiki/Sequence_alignment" title="Sequence alignment">sequence alignment</a> and <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>
+</li>
+<li>Number theory function library</li>
+<li>Tools for financial calculations including bonds, annuities, derivatives, options etc.</li>
+<li>Group theory functions</li>
+<li>Libraries for <a href="http://en.m.wikipedia.org/wiki/Wavelet" title="Wavelet">wavelet</a> analysis on sounds, images and data</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_systems" title="Control systems" class="mw-redirect">Control systems</a> libraries</li>
+<li>Continuous and discrete <a href="http://en.m.wikipedia.org/wiki/Integral_transform" title="Integral transform">integral transforms</a>
+</li>
+<li>Import and export filters for data, images, video, sound, <a href="http://en.m.wikipedia.org/wiki/CAD" title="CAD" class="mw-redirect">CAD</a>, <a href="http://en.m.wikipedia.org/wiki/GIS" title="GIS" class="mw-redirect">GIS</a>,<sup id="cite_ref-6" class="reference"><a href="Mathematica#cite_note-6"><span>[</span>6<span>]</span></a></sup> document and biomedical formats</li>
+<li>Database collection for mathematical, scientific, and socio-economic information and access to <a href="http://en.m.wikipedia.org/wiki/WolframAlpha" title="WolframAlpha" class="mw-redirect">WolframAlpha</a> data and computations</li>
+<li>Technical word processing including <a href="http://en.m.wikipedia.org/wiki/Formula_editor" title="Formula editor">formula editing</a> and automated report generating</li>
+<li>Tools for connecting to DLLs. <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a>, <a href="http://en.m.wikipedia.org/wiki/Java_(software_platform)" title="Java (software platform)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/.NET_framework" title=".NET framework" class="mw-redirect">.NET</a>, <a href="C++" title="C++">C++</a>, <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a>, <a href="http://en.m.wikipedia.org/wiki/CUDA" title="CUDA">CUDA</a>, <a href="http://en.m.wikipedia.org/wiki/OpenCL" title="OpenCL">OpenCL</a> and <a href="http://en.m.wikipedia.org/wiki/Http" title="Http" class="mw-redirect">http</a> based systems</li>
+<li>Tools for parallel programing</li>
+<li>Using both "free-form linguistic input" (a <a href="http://en.m.wikipedia.org/wiki/Natural_language_user_interface" title="Natural language user interface">natural language user interface</a>) <sup id="cite_ref-7" class="reference"><a href="Mathematica#cite_note-7"><span>[</span>7<span>]</span></a></sup> and Mathematica language in notebook when connected to the Internet</li>
+</ul>
+<h2> <span class="mw-headline" id="Interface">Interface</span>
+</h2>
+<p>Mathematica is split into two parts, the <a href="Kernel_(computer_science)" title="Kernel (computer science)" class="mw-redirect">kernel</a> and the <a href="http://en.m.wikipedia.org/wiki/Front_and_back_ends" title="Front and back ends">front end</a>. The kernel interprets expressions (Mathematica code) and returns result expressions.</p>
+<p>The front end, designed by <a href="http://en.m.wikipedia.org/wiki/Theodore_Gray" title="Theodore Gray">Theodore Gray</a>, provides a <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a>, which allows the creation and editing of Notebook documents containing program code with <a href="http://en.m.wikipedia.org/wiki/Prettyprint" title="Prettyprint">prettyprinting</a>, formatted text together with results including <a href="http://en.m.wikipedia.org/wiki/Formula_editor" title="Formula editor">typeset mathematics</a>, graphics, GUI components, tables, and sounds. All contents and formatting can be generated algorithmically or interactively edited. Most standard word processing capabilities are supported, but there is only one level of "undo."</p>
+<p>Documents can be structured using a hierarchy of cells, which allow for outlining and sectioning of a document and support automatic numbering index creation. Documents can be presented in a slideshow environment for presentations. Notebooks and their contents are represented as Mathematica expressions that can be created, modified or analysed by Mathematica programs. This allows conversion to other formats such as <a href="http://en.m.wikipedia.org/wiki/TeX" title="TeX">TeX</a> or <a href="http://en.m.wikipedia.org/wiki/XML" title="XML">XML</a>.</p>
+<p>The front end includes development tools such as a debugger, input completion and automatic syntax coloring.</p>
+<p>The standard front end is used by default, but alternative front ends are available. They include the Wolfram Workbench, an <a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a> based <a href="Integrated_development_environment" title="Integrated development environment">IDE</a>, introduced in 2006. It provides project-based code development tools for Mathematica, including revision management, debugging, profiling, and testing.<sup id="cite_ref-8" class="reference"><a href="Mathematica#cite_note-8"><span>[</span>8<span>]</span></a></sup> Mathematica also includes a command line front end.<sup id="cite_ref-9" class="reference"><a href="Mathematica#cite_note-9"><span>[</span>9<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="High-performance_computing">High-performance computing</span>
+</h2>
+<p>In recent years, the capabilities for <a href="http://en.m.wikipedia.org/wiki/High-performance_computing" title="High-performance computing" class="mw-redirect">high-performance computing</a> have been extended with the introduction of <a href="http://en.m.wikipedia.org/wiki/Packed_array" title="Packed array" class="mw-redirect">packed arrays</a> (version 4, 1999)<sup id="cite_ref-10" class="reference"><a href="Mathematica#cite_note-10"><span>[</span>10<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/Sparse_matrix" title="Sparse matrix">sparse matrices</a> (version 5, 2003),<sup id="cite_ref-11" class="reference"><a href="Mathematica#cite_note-11"><span>[</span>11<span>]</span></a></sup> and by adopting the <a href="GNU_Multi-Precision_Library" title="GNU Multi-Precision Library" class="mw-redirect">GNU Multi-Precision Library</a> to evaluate high-precision arithmetic.</p>
+<p>Version 5.2 (2005) added automatic <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">multi-threading</a> when computations are performed on <a href="http://en.m.wikipedia.org/wiki/Multi-core" title="Multi-core" class="mw-redirect">multi-core</a> computers.<sup id="cite_ref-12" class="reference"><a href="Mathematica#cite_note-12"><span>[</span>12<span>]</span></a></sup> This release included CPU specific optimized libraries. In addition Mathematica is supported by third party specialist acceleration hardware such as <a href="http://en.m.wikipedia.org/wiki/ClearSpeed" title="ClearSpeed">ClearSpeed</a>.<sup id="cite_ref-13" class="reference"><a href="Mathematica#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>In 2002, <a href="http://en.m.wikipedia.org/wiki/GridMathematica" title="GridMathematica">gridMathematica</a> was introduced to allow user level <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel programming</a> on heterogeneous clusters and multiprocessor systems <sup id="cite_ref-14" class="reference"><a href="Mathematica#cite_note-14"><span>[</span>14<span>]</span></a></sup> and in 2008 parallel computing technology was included in all Mathematica licenses including support for grid technology such as <a href="http://en.m.wikipedia.org/wiki/Windows_HPC_Server_2008" title="Windows HPC Server 2008">Windows HPC Server 2008</a>, <a href="http://en.m.wikipedia.org/wiki/Windows_Server_2003" title="Windows Server 2003">Microsoft Compute Cluster Server</a> and <a href="http://en.m.wikipedia.org/wiki/Sun_Grid" title="Sun Grid" class="mw-redirect">Sun Grid</a>.</p>
+<p>Support for <a href="http://en.m.wikipedia.org/wiki/CUDA" title="CUDA">CUDA</a> and <a href="http://en.m.wikipedia.org/wiki/OpenCL" title="OpenCL">OpenCL</a> <a href="http://en.m.wikipedia.org/wiki/GPU" title="GPU" class="mw-redirect">GPU</a> hardware was added in 2010. Also, version 8 can generate <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> code, which is automatically compiled by a system C compiler, such as <a href="Intel_C++_Compiler" title="Intel C++ Compiler">Intel C++ Compiler</a> or compiler of <a href="http://en.m.wikipedia.org/wiki/Visual_Studio_2010" title="Visual Studio 2010" class="mw-redirect">Visual Studio 2010</a>.</p>
+<h2> <span class="mw-headline" id="Development">Development</span>
+</h2>
+<p>There are several ways to deploy applications written in Mathematica:</p>
+<ul>
+<li>Mathematica Player Pro is a runtime version of Mathematica that will run any Mathematica application but does not allow editing or creation of the code.<sup id="cite_ref-15" class="reference"><a href="Mathematica#cite_note-15"><span>[</span>15<span>]</span></a></sup>
+</li>
+<li>A <a href="http://en.m.wikipedia.org/wiki/Gratis_versus_libre" title="Gratis versus libre">free-of-charge</a> version, Wolfram <a href="http://en.m.wikipedia.org/wiki/CDF_Player" title="CDF Player">CDF Player</a>, is provided for running Mathematica programs that have been saved in the <a href="http://en.m.wikipedia.org/wiki/Computable_Document_Format" title="Computable Document Format">Computable Document Format</a> (CDF).<sup id="cite_ref-16" class="reference"><a href="Mathematica#cite_note-16"><span>[</span>16<span>]</span></a></sup> It can also view standard Mathematica files, but not run them. It includes plugins for common web browsers.</li>
+<li>webMathematica allows a web browser to act as a front end to a remote Mathematica server. It is designed to allow a user written application to be remotely accessed via a browser on any platform. It may not be used to give full access to Mathematica.</li>
+<li>Mathematica code can be converted to C code or to an automatically generated DLL.</li>
+</ul>
+<h2> <span class="mw-headline" id="Connections_with_other_applications">Connections with other applications</span>
+</h2>
+<p>Communication with other applications occurs through a protocol called <a rel="nofollow" class="external text" href="http://www.wolfram.com/solutions/mathlink/mathlink.html">MathLink</a>. It allows communication between the Mathematica kernel and front-end, and also provides a general interface between the kernel and other applications.</p>
+<p>Although Mathematica has a large array of functionality, a number of interfaces to other software have been developed, for use where other programs have functionality that Mathematica does not provide, to enhance those applications, or to access legacy code.</p>
+<p>Wolfram Research freely distributes a developer kit for linking applications written in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> to the Mathematica kernel through <i>MathLink</i>.<sup id="cite_ref-accessmylibrary.com_17-0" class="reference"><a href="Mathematica#cite_note-accessmylibrary.com-17"><span>[</span>17<span>]</span></a></sup></p>
+<p>Using <i>.NET/Link</i>.,<sup id="cite_ref-18" class="reference"><a href="Mathematica#cite_note-18"><span>[</span>18<span>]</span></a></sup> a .NET program can ask Mathematica to perform computations; likewise, a Mathematica program can load .NET <a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">classes</a>, manipulate .NET objects and perform method calls. This makes it possible to build .NET <a href="Graphical_user_interface" title="Graphical user interface">graphical user interfaces</a> from within Mathematica. Similar functionality is achieved with <i>J/Link</i>.,<sup id="cite_ref-macworld.com_19-0" class="reference"><a href="Mathematica#cite_note-macworld.com-19"><span>[</span>19<span>]</span></a></sup> but with Java programs instead of .NET programs.</p>
+<p>Communication with <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a> databases is achieved through built-in support for <a href="http://en.m.wikipedia.org/wiki/JDBC" title="JDBC" class="mw-redirect">JDBC</a>.<sup id="cite_ref-20" class="reference"><a href="Mathematica#cite_note-20"><span>[</span>20<span>]</span></a></sup> Mathematica can also install <a href="http://en.m.wikipedia.org/wiki/Web_services" title="Web services" class="mw-redirect">web services</a> from a <a href="http://en.m.wikipedia.org/wiki/Web_Services_Description_Language" title="Web Services Description Language">WSDL</a> description.<sup id="cite_ref-21" class="reference"><a href="Mathematica#cite_note-21"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-22" class="reference"><a href="Mathematica#cite_note-22"><span>[</span>22<span>]</span></a></sup></p>
+<p>Other languages that connect to Mathematica include <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>,<sup id="cite_ref-23" class="reference"><a href="Mathematica#cite_note-23"><span>[</span>23<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/AppleScript" title="AppleScript">AppleScript</a>,<sup id="cite_ref-24" class="reference"><a href="Mathematica#cite_note-24"><span>[</span>24<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Racket_(programming_language)" title="Racket (programming language)">Racket</a>,<sup id="cite_ref-25" class="reference"><a href="Mathematica#cite_note-25"><span>[</span>25<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>,<sup id="cite_ref-26" class="reference"><a href="Mathematica#cite_note-26"><span>[</span>26<span>]</span></a></sup><a href="Python_(programming_language)" title="Python (programming language)">Python</a><sup id="cite_ref-27" class="reference"><a href="Mathematica#cite_note-27"><span>[</span>27<span>]</span></a></sup><sup id="cite_ref-28" class="reference"><a href="Mathematica#cite_note-28"><span>[</span>28<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a>.<sup id="cite_ref-29" class="reference"><a href="Mathematica#cite_note-29"><span>[</span>29<span>]</span></a></sup></p>
+<p>Links are available to many specialized mathematical software packages including <a href="http://en.m.wikipedia.org/wiki/OpenOffice.org_Calc" title="OpenOffice.org Calc" class="mw-redirect">OpenOffice.org Calc</a>,<sup id="cite_ref-30" class="reference"><a href="Mathematica#cite_note-30"><span>[</span>30<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Microsoft_Excel" title="Microsoft Excel">Microsoft Excel</a>,<sup id="cite_ref-31" class="reference"><a href="Mathematica#cite_note-31"><span>[</span>31<span>]</span></a></sup><a href="MATLAB" title="MATLAB">MATLAB</a>,<sup id="cite_ref-32" class="reference"><a href="Mathematica#cite_note-32"><span>[</span>32<span>]</span></a></sup><sup id="cite_ref-33" class="reference"><a href="Mathematica#cite_note-33"><span>[</span>33<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/R_Statistics" title="R Statistics" class="mw-redirect">R</a>,<sup id="cite_ref-34" class="reference"><a href="Mathematica#cite_note-34"><span>[</span>34<span>]</span></a></sup><sup id="cite_ref-35" class="reference"><a href="Mathematica#cite_note-35"><span>[</span>35<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a>,<sup id="cite_ref-36" class="reference"><a href="Mathematica#cite_note-36"><span>[</span>36<span>]</span></a></sup><sup id="cite_ref-37" class="reference"><a href="Mathematica#cite_note-37"><span>[</span>37<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/SINGULAR" title="SINGULAR" class="mw-redirect">SINGULAR</a>,<sup id="cite_ref-38" class="reference"><a href="Mathematica#cite_note-38"><span>[</span>38<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Wolfram_SystemModeler" title="Wolfram SystemModeler">Wolfram SystemModeler</a> and <a href="http://en.m.wikipedia.org/wiki/Origin_(software)" title="Origin (software)">Origin</a>.<sup id="cite_ref-39" class="reference"><a href="Mathematica#cite_note-39"><span>[</span>39<span>]</span></a></sup></p>
+<p>Mathematical equations can be exchanged with other computational or typesetting software via <a href="http://en.m.wikipedia.org/wiki/MathML" title="MathML">MathML</a>.</p>
+<p>Mathematica can capture real-time data via a link to <a href="http://en.m.wikipedia.org/wiki/LabView" title="LabView" class="mw-redirect">LabView</a>,<sup id="cite_ref-40" class="reference"><a href="Mathematica#cite_note-40"><span>[</span>40<span>]</span></a></sup> from financial data feeds<sup id="cite_ref-41" class="reference"><a href="Mathematica#cite_note-41"><span>[</span>41<span>]</span></a></sup> and directly from hardware devices via GPIB (IEEE 488),<sup id="cite_ref-42" class="reference"><a href="Mathematica#cite_note-42"><span>[</span>42<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/USB" title="USB" class="mw-redirect">USB</a><sup id="cite_ref-43" class="reference"><a href="Mathematica#cite_note-43"><span>[</span>43<span>]</span></a></sup> and serial interfaces.<sup id="cite_ref-44" class="reference"><a href="Mathematica#cite_note-44"><span>[</span>44<span>]</span></a></sup> It automatically detects and reads from <a href="http://en.m.wikipedia.org/wiki/Human_interface_device" title="Human interface device">HID</a> devices.</p>
+<p>Alternative interfaces are available such as JMath,<sup id="cite_ref-45" class="reference"><a href="Mathematica#cite_note-45"><span>[</span>45<span>]</span></a></sup> based on <a href="http://en.m.wikipedia.org/wiki/GNU_readline" title="GNU readline">GNU readline</a> and MASH<sup id="cite_ref-46" class="reference"><a href="Mathematica#cite_note-46"><span>[</span>46<span>]</span></a></sup> which runs self-contained Mathematica programs (with arguments) from the UNIX command line.</p>
+<h2> <span class="mw-headline" id="Computable_data">Computable data</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:327px;">
+<a href="http://en.m.wikipedia.org/wiki/File:MathematicaWind.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/6/64/MathematicaWind.png/325px-MathematicaWind.png" width="325" height="207" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/6/64/MathematicaWind.png/488px-MathematicaWind.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/6/64/MathematicaWind.png/650px-MathematicaWind.png 2x"></a>
+<div class="thumbcaption">
+
+A stream plot of live weather data</div>
+</div>
+</div>
+<p>Mathematica includes collections of curated data provided for use in computations. Mathematica is also integrated with <a href="http://en.m.wikipedia.org/wiki/Wolfram_Alpha" title="Wolfram Alpha">Wolfram Alpha</a>, an online service which provides additional data, some of which is kept updated in real time. Some of the data sets include astronomical, chemical, geopolitical, language, biomedical and weather data, in addition to mathematical data (such as knots and polyhedra).<sup id="cite_ref-47" class="reference"><a href="Mathematica#cite_note-47"><span>[</span>47<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Licensing">Licensing</span>
+</h2>
+<p>Mathematica is <a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">proprietary software</a> restricted by both <a href="http://en.m.wikipedia.org/wiki/Copyright" title="Copyright">copyright law</a> and <a href="http://en.m.wikipedia.org/wiki/Trade_secret" title="Trade secret">trade secret</a>.<sup id="cite_ref-48" class="reference"><a href="Mathematica#cite_note-48"><span>[</span>48<span>]</span></a></sup></p>
+<p>A regular single-user license for Mathematica used in a commercial environment costs $2495 although new customers can purchase the "Starter Edition" for $995. They include four additional kernels for parallel computations and one year of service that includes updates, technical support, a home use license, a webMathematica Amateur license,<sup id="cite_ref-49" class="reference"><a href="Mathematica#cite_note-49"><span>[</span>49<span>]</span></a></sup> a Wolfram Workbench license and three Mathematica Player Pro licenses. Discounts are available for government, charity, educational, pre-college, school, student, home use<sup id="cite_ref-50" class="reference"><a href="Mathematica#cite_note-50"><span>[</span>50<span>]</span></a></sup> and retiree use and depend on geographical region. Student licenses cost $140. A general "home use" license ("Mathematica Home Edition") is also available to the public and is priced at $295. Educational site licenses allow use by students at home. A license manager similar to <a href="http://en.m.wikipedia.org/wiki/Flexlm" title="Flexlm" class="mw-redirect">FLEXnet</a> is available to provide sharing of licenses within a group.</p>
+<h2> <span class="mw-headline" id="Platform_availability">Platform availability</span>
+</h2>
+<p>Mathematica 8 is supported on various versions of <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, Apple's <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>, and NT-based <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>. All platforms are supported with 64-bit implementations.<sup id="cite_ref-51" class="reference"><a href="Mathematica#cite_note-51"><span>[</span>51<span>]</span></a></sup> Earlier versions of Mathematica up to 6.0.3 supported other operating systems, including <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>, <a href="http://en.m.wikipedia.org/wiki/IBM_AIX_(operating_system)" title="IBM AIX (operating system)" class="mw-redirect">AIX</a>, <a href="http://en.m.wikipedia.org/wiki/Convex_Computer" title="Convex Computer">Convex</a>, <a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a>, <a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a>, <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a>, <a href="http://en.m.wikipedia.org/wiki/NeXTSTEP" title="NeXTSTEP">NeXTSTEP</a>, <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a>, <a href="http://en.m.wikipedia.org/wiki/Ultrix" title="Ultrix">Ultrix</a> and <a href="http://en.m.wikipedia.org/wiki/Windows_Me" title="Windows Me">Windows Me</a>.<sup id="cite_ref-52" class="reference"><a href="Mathematica#cite_note-52"><span>[</span>52<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Version_history">Version history</span>
+</h2>
+<p>Mathematica built on the ideas in Cole and Wolfram's earlier <a href="http://en.m.wikipedia.org/wiki/Symbolic_Manipulation_Program" title="Symbolic Manipulation Program">Symbolic Manipulation Program</a> (SMP).<sup id="cite_ref-53" class="reference"><a href="Mathematica#cite_note-53"><span>[</span>53<span>]</span></a></sup><sup id="cite_ref-54" class="reference"><a href="Mathematica#cite_note-54"><span>[</span>54<span>]</span></a></sup></p>
+<p><a href="http://en.m.wikipedia.org/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a> has released the following versions of Mathematica<sup id="cite_ref-revhistory_55-0" class="reference"><a href="Mathematica#cite_note-revhistory-55"><span>[</span>55<span>]</span></a></sup>:</p>
+<div style="-moz-column-count:2; column-count:2;">
+<ul>
+<li>Mathematica 1.0 (June 23, 1988)<sup id="cite_ref-56" class="reference"><a href="Mathematica#cite_note-56"><span>[</span>56<span>]</span></a></sup><sup id="cite_ref-57" class="reference"><a href="Mathematica#cite_note-57"><span>[</span>57<span>]</span></a></sup><sup id="cite_ref-58" class="reference"><a href="Mathematica#cite_note-58"><span>[</span>58<span>]</span></a></sup><sup id="cite_ref-12000.org_59-0" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup>
+</li>
+<li>Mathematica 1.1 (1989)<sup id="cite_ref-60" class="reference"><a href="Mathematica#cite_note-60"><span>[</span>60<span>]</span></a></sup>
+</li>
+<li>Mathematica 1.2 (August 1, 1989)<sup id="cite_ref-61" class="reference"><a href="Mathematica#cite_note-61"><span>[</span>61<span>]</span></a></sup><sup id="cite_ref-12000.org_59-1" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup>
+</li>
+<li>Mathematica 2.0 (January 15, 1991)<sup id="cite_ref-62" class="reference"><a href="Mathematica#cite_note-62"><span>[</span>62<span>]</span></a></sup><sup id="cite_ref-12000.org_59-2" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup>
+</li>
+<li>Mathematica 2.1 (June 15, 1992)<sup id="cite_ref-12000.org_59-3" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-accessmylibrary.com_17-1" class="reference"><a href="Mathematica#cite_note-accessmylibrary.com-17"><span>[</span>17<span>]</span></a></sup>
+</li>
+<li>Mathematica 2.2 (June 1, 1993)<sup id="cite_ref-12000.org_59-4" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-63" class="reference"><a href="Mathematica#cite_note-63"><span>[</span>63<span>]</span></a></sup>
+</li>
+<li>Mathematica 3.0 (September 3, 1996)<sup id="cite_ref-64" class="reference"><a href="Mathematica#cite_note-64"><span>[</span>64<span>]</span></a></sup>
+</li>
+<li>Mathematica 4.0 (May 19, 1999)<sup id="cite_ref-12000.org_59-5" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-65" class="reference"><a href="Mathematica#cite_note-65"><span>[</span>65<span>]</span></a></sup>
+</li>
+<li>Mathematica 4.1 (November 2, 2000)<sup id="cite_ref-12000.org_59-6" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup>
+</li>
+<li>Mathematica 4.2 (November 1, 2002)<sup id="cite_ref-12000.org_59-7" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup>
+</li>
+<li>Mathematica 5.0 (June 12, 2003)<sup id="cite_ref-12000.org_59-8" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-66" class="reference"><a href="Mathematica#cite_note-66"><span>[</span>66<span>]</span></a></sup>
+</li>
+<li>Mathematica 5.1 (October 25, 2004)<sup id="cite_ref-12000.org_59-9" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-67" class="reference"><a href="Mathematica#cite_note-67"><span>[</span>67<span>]</span></a></sup>
+</li>
+<li>Mathematica 5.2 (June 20, 2005)<sup id="cite_ref-12000.org_59-10" class="reference"><a href="Mathematica#cite_note-12000.org-59"><span>[</span>59<span>]</span></a></sup><sup id="cite_ref-68" class="reference"><a href="Mathematica#cite_note-68"><span>[</span>68<span>]</span></a></sup>
+</li>
+<li>Mathematica 6.0 (May 1, 2007)<sup id="cite_ref-69" class="reference"><a href="Mathematica#cite_note-69"><span>[</span>69<span>]</span></a></sup><sup id="cite_ref-70" class="reference"><a href="Mathematica#cite_note-70"><span>[</span>70<span>]</span></a></sup>
+</li>
+<li>Mathematica 6.0.1 (July 5, 2007)<sup id="cite_ref-71" class="reference"><a href="Mathematica#cite_note-71"><span>[</span>71<span>]</span></a></sup>
+</li>
+<li>Mathematica 6.0.2 (2008)<sup id="cite_ref-revhistory_55-1" class="reference"><a href="Mathematica#cite_note-revhistory-55"><span>[</span>55<span>]</span></a></sup>
+</li>
+<li>Mathematica 6.0.3 (2008)<sup id="cite_ref-revhistory_55-2" class="reference"><a href="Mathematica#cite_note-revhistory-55"><span>[</span>55<span>]</span></a></sup>
+</li>
+<li>Mathematica 7.0 (November 18, 2008)<sup id="cite_ref-72" class="reference"><a href="Mathematica#cite_note-72"><span>[</span>72<span>]</span></a></sup>
+</li>
+<li>Mathematica 7.0.1 (March 5, 2009)<sup id="cite_ref-73" class="reference"><a href="Mathematica#cite_note-73"><span>[</span>73<span>]</span></a></sup>
+</li>
+<li>Mathematica 8.0 (November 15, 2010)</li>
+<li>Mathematica 8.0.1 (March 7, 2011)</li>
+<li>Mathematica 8.0.4 (October 24, 2011)</li>
+</ul>
+</div>
+<p>The name of the program “Mathematica” was suggested to Stephen Wolfram by Apple co-founder <a href="http://en.m.wikipedia.org/wiki/Steve_Jobs" title="Steve Jobs">Steve Jobs</a> although Stephen Wolfram had thought about it earlier and rejected it.<sup id="cite_ref-74" class="reference"><a href="Mathematica#cite_note-74"><span>[</span>74<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Mathematica" class="extiw" title="wikibooks:Mathematica">Mathematica</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Mathematica" class="extiw" title="commons:Category:Mathematica">Mathematica</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Wolfram_Alpha" title="Wolfram Alpha">Wolfram Alpha</a>, a web answer engine</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Wolfram_SystemModeler" title="Wolfram SystemModeler">Wolfram SystemModeler</a>, a physical modeling and simulation tool which integrates with Mathematica</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IMTEK_Mathematica_Supplement" title="IMTEK Mathematica Supplement">IMTEK Mathematica Supplement</a>, an open-source Mathematica add-on for finite element simulation</li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_computer_simulation_software" title="List of computer simulation software">List of computer simulation software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_graphing_software" title="List of graphing software" class="mw-redirect">List of graphing software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathematical_software" title="Mathematical software">Mathematical software</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFWolfram2008">Wolfram, Stephen (23 Jun 2008), <a rel="nofollow" class="external text" href="http://blog.wolfram.com/2008/06/23/mathematica-turns-20-today/"><i>Mathematica Turns 20 Today</i></a>, Wolfram<span class="printonly">, <a rel="nofollow" class="external free" href="http://blog.wolfram.com/2008/06/23/mathematica-turns-20-today/">http://blog.wolfram.com/2008/06/23/mathematica-turns-20-today/</a></span><span class="reference-accessdate">, retrieved 16 May 2012</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematica+Turns+20+Today&amp;rft.aulast=Wolfram&amp;rft.aufirst=Stephen&amp;rft.au=Wolfram%2C%26%2332%3BStephen&amp;rft.date=23+Jun+2008&amp;rft.pub=Wolfram&amp;rft_id=http%3A%2F%2Fblog.wolfram.com%2F2008%2F06%2F23%2Fmathematica-turns-20-today%2F&amp;rfr_id=info:sid/en.wikipedia.org:Mathematica"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.businessweek.com/magazine/content/05_40/b3953024.htm">Stephen Wolfram: Simple Solutions; The iconoclastic physicist's Mathematica software nails complex puzzles</a>, BusinessWeek, October 3, 2005.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/company/contact.cgi">Wolfram Research Contact Info</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://reference.wolfram.com">Mathematica documentation</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/138219/mathematica_7.html">Review: Mathematica 7. Technical computing powerhouse gets more oomph</a> Macworld, Jan 2009</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cadalyst.com/general-software/mathematica-6-cadalyst-labs-review-6299">Mathematica 6 Labs Review</a> Cadalyst Feb 1, 2008</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.wolfram.com/2010/11/15/the-free-form-linguistics-revolution-in-mathematica/">The Free-Form Linguistics Revolution in Mathematica</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.com/news/2006/06/21/workbench/index.php">MacWorld review of Wolfram Workbench</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://reference.wolfram.com/mathematica/tutorial/UsingATextBasedInterface.html">Using a Text-Based Interface</a> documentation at wolfram.com</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://goliath.ecnext.com/premium/0199/0199-1526706.html">Math software packs new power; new programs automate such tedious processes as solving nonlinear differential equations and converting units</a> by Agnes Shanley, <i>Chemical Engineering</i>, March 1, 2002.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-9587712_ITM">Mathematica 5.1: additional features make software well-suited for operations research professionals</a> by ManMohan S. Sodhi, <i>OR/MS Today</i>, December 1, 2004.</span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-12336000_ITM">The 21st annual Editors' Choice Awards</a>, Macworld, February 1, 2006.</span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.thefreelibrary.com/ClearSpeed+Advance(TM)+Accelerator+Boards+Certified+by+Wolfram...-a0147498410">ClearSpeed Advance(TM) Accelerator Boards Certified by Wolfram Research; Math Coprocessors Enable Mathematica Users to Quadruple Performance.</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.com/news/2002/11/20/mathematica/index.php">gridMathematica offers parallel computing solution</a> by Dennis Sellers, MacWorld, November 20, 2002.</span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.gizmag.com/mathematica-player-pro-new-application-delivery-system-for-mathematica/9096/">Mathematica Player Pro - new Application Delivery System for Mathematica</a> www.gizmag.com</span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://wolfram.com/cdf">Computable Document Format for Interactive Content</a></span>
+</li>
+<li id="cite_note-accessmylibrary.com-17">
+<span class="mw-cite-backlink">^ <a href="Mathematica#cite_ref-accessmylibrary.com_17-0"><sup><i><b>a</b></i></sup></a> <a href="Mathematica#cite_ref-accessmylibrary.com_17-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-9256461_ITM">New Mathematica: faster, leaner, linkable and QuickTime-compatible: MathLink kit allows ties to other apps. (Wolfram Research Inc. ships Mathematica 2.1, new QuickTime-compatible version of Mathematica software)</a> by Daniel Todd, MacWeek, June 15, 1992.</span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/solutions/mathlink/netlink/">.NET/Link</a>: .NET/Link is a toolkit that integrates Mathematica and the Microsoft .NET Framework.</span>
+</li>
+<li id="cite_note-macworld.com-19">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-macworld.com_19-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.com/2002/11/reviews/mathematica/">Mathematica 4.2</a> by Charles Seiter, <i>Macworld</i>, November 1, 2002.</span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.databasejournal.com/news/article.php/3453911">Mathematica 5.1 Available</a> , Database Journal, Jan 3, 2005.</span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.w3.org/Math/Documents/Notes/services.xml">Mathematical Web Services: W3C Note 1 August 2003</a></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://reference.wolfram.com/mathematica/WebServices/tutorial/Introduction.html">Introduction to Web Services</a>, Mathematica Web Services Tutorial</span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hackage.haskell.org/package/mathlink">Haskell packages</a></span>
+</li>
+<li id="cite_note-24">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.unisoftwareplus.com/products/mathlinkosax/">Unisoftware plus</a></span>
+</li>
+<li id="cite_note-25">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.utah.edu/~czhu/SchemeLink/mrmma.html">MrMathematica website</a></span>
+</li>
+<li id="cite_note-26">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/TechNotes/4710/">Mathematica for ActivX</a></span>
+</li>
+<li id="cite_note-27">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-27">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://dkbza.org/pythonika.html">Pythonika MathLink module for Python</a></span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-28">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/MathSource/585/">PYML (Python Mathematica interface)</a></span>
+</li>
+<li id="cite_note-29">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://clojuratica.weebly.com/">[1]</a></span>
+</li>
+<li id="cite_note-30">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-30">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.lauschkeconsulting.net/calclink.html">CalcLink</a> Lauschke Consulting</span>
+</li>
+<li id="cite_note-31">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-31">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/products/applications/excel_link/">Mathematica Link for Excel</a></span>
+</li>
+<li id="cite_note-32">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-32">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mathworks.com/matlabcentral/fileexchange/6044-mathematica-symbolic-toolbox-for-matlab-version-2-0">Mathematica Toolbox for Matlab</a></span>
+</li>
+<li id="cite_note-33">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-33">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/MathSource/618/">Mathsource item #618 for calling MATLAB from Mathematica</a> Roger Germundsson from <a href="http://en.m.wikipedia.org/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a></span>
+</li>
+<li id="cite_note-34">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-34">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.scienceops.com/Rlink2.asp">R-Link</a> Calling <a href="http://en.m.wikipedia.org/wiki/R_Statistics" title="R Statistics" class="mw-redirect">R</a> from within Mathematica</span>
+</li>
+<li id="cite_note-35">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-35">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/Conferences/6510/">Using R's functionality with Mathematica</a> Wolfram Technology Conference in 2006</span>
+</li>
+<li id="cite_note-36">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-36">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://facstaff.unca.edu/mcmcclur/Mathematica/Sage/">Calling Sage from Mathematica</a></span>
+</li>
+<li id="cite_note-37">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-37">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://facstaff.unca.edu/mcmcclur/Mathematica/Sage/UsingSage.nb">A Mathematica notebook</a> to call <a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a> from Mathematica.</span>
+</li>
+<li id="cite_note-38">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-38">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.risc.uni-linz.ac.at/people/mkauers/publications/kauers06m.pdf">Manuel Kauers and Viktor Levandovskyy</a> of the <a href="http://en.m.wikipedia.org/wiki/Johannes_Kepler_University_Linz" title="Johannes Kepler University Linz" class="mw-redirect">Johannes Kepler University in Austria</a></span>
+</li>
+<li id="cite_note-39">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-39">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://electronicdesign.com/Articles/ArticleID/1323/1323.html">* Interface Links Origin And Mathematica Software</a> Electronic Design</span>
+</li>
+<li id="cite_note-40">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-40">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.bettervi.com/mlink/index.html">Mathematica Link to Labview</a> BetterView Consulting</span>
+</li>
+<li id="cite_note-41">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-41">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.lauschkeconsulting.net/ddfplus.html">DDFLink</a> Lauschke Consulting</span>
+</li>
+<li id="cite_note-42">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-42">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/gitm/">GITM</a> SourceForge</span>
+</li>
+<li id="cite_note-43">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-43">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/news/btoptools.html">BTopTools</a> A commercial interface to USB devices</span>
+</li>
+<li id="cite_note-44">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-44">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/MathSource/6380/">Interfacing Hardware with Mathematica</a></span>
+</li>
+<li id="cite_note-45">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-45">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://robotics.caltech.edu/~radford/jmath/">JMath website</a></span>
+</li>
+<li id="cite_note-46">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-46">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ai.eecs.umich.edu/people/dreeves/mash/">MASH website</a></span>
+</li>
+<li id="cite_note-47">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-47">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://reference.wolfram.com/mathematica/guide/ScientificAndTechnicalData.html">"Scientific and Technical Data"</a>, <i>Mathematic Guide</i>, Wolfram Research<span class="printonly">, <a rel="nofollow" class="external free" href="http://reference.wolfram.com/mathematica/guide/ScientificAndTechnicalData.html">http://reference.wolfram.com/mathematica/guide/ScientificAndTechnicalData.html</a></span><span class="reference-accessdate">, retrieved 16 May 2012</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Scientific+and+Technical+Data&amp;rft.atitle=Mathematic+Guide&amp;rft.pub=Wolfram+Research&amp;rft_id=http%3A%2F%2Freference.wolfram.com%2Fmathematica%2Fguide%2FScientificAndTechnicalData.html&amp;rfr_id=info:sid/en.wikipedia.org:Mathematica"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-48">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-48">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/terms/MathematicaLicenseAgreement.pdf">Wolfram Mathematica License Agreement</a></span>
+</li>
+<li id="cite_note-49">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-49">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/products/webmathematica/versions/amateurorder.html">webMathematica terms</a></span>
+</li>
+<li id="cite_note-50">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-50">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.com/article/138664/2009/02/mathematica.html">Mathematica Home Edition Released</a> Macworld, Feb 2009</span>
+</li>
+<li id="cite_note-51">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-51">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/products/mathematica/platforms/">Supported platforms list</a></span>
+</li>
+<li id="cite_note-52">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-52">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.serc.iisc.ernet.in/ComputingFacilities/software/mathematica-6.0/platform.html">Mathematica 6 Platform Availability</a></span>
+</li>
+<li id="cite_note-53">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-53">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-11287695_ITM">Math, the universe, and Stephen: the author of Mathematica created a whirlwind of scientific controversy this year when, after more than 10 years of research, he published his treatise on the ability of simple structures to create unpredictable complex patterns. (2002 Scientist Of The Year).(Stephen Wolfram)</a> by Tim Studt, R&amp;D, November 1 , 2002.</span>
+</li>
+<li id="cite_note-54">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-54">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://query.nytimes.com/gst/fullpage.html?res=940DE5DA173AF937A15755C0A96E948260">A Top Scientist's Latest: Math Software</a> by Andrew Pollack, <i>The New York Times</i>, June 24, 1988.</span>
+</li>
+<li id="cite_note-revhistory-55">
+<span class="mw-cite-backlink">^ <a href="Mathematica#cite_ref-revhistory_55-0"><sup><i><b>a</b></i></sup></a> <a href="Mathematica#cite_ref-revhistory_55-1"><sup><i><b>b</b></i></sup></a> <a href="Mathematica#cite_ref-revhistory_55-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.wolfram.com/products/mathematica/quickrevisionhistory.html">Quick Revision History of Mathematica</a></span>
+</li>
+<li id="cite_note-56">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-56">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.wolfram.com/company/scrapbook/page03.html"><i>Mathematica: The Scrapbook</i></a>, Wolfram<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.wolfram.com/company/scrapbook/page03.html">http://www.wolfram.com/company/scrapbook/page03.html</a></span><span class="reference-accessdate">, retrieved 16 May 2012</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Mathematica%3A+The+Scrapbook&amp;rft.pub=Wolfram&amp;rft_id=http%3A%2F%2Fwww.wolfram.com%2Fcompany%2Fscrapbook%2Fpage03.html&amp;rfr_id=info:sid/en.wikipedia.org:Mathematica"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-57">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-57">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mathematica-journal.com/issue/v9i1/news.html">Mathematica Journal, Volume 9, Issue 1</a></span>
+</li>
+<li id="cite_note-58">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-58">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://query.nytimes.com/gst/fullpage.html?res=940DE6DB133EF933A05753C1A96E948260">Supercomputer Pictures Solve the Once Insoluble</a>, John Markoff, October 30, 1988.</span>
+</li>
+<li id="cite_note-12000.org-59">
+<span class="mw-cite-backlink">^ <a href="Mathematica#cite_ref-12000.org_59-0"><sup><i><b>a</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-1"><sup><i><b>b</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-2"><sup><i><b>c</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-3"><sup><i><b>d</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-4"><sup><i><b>e</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-5"><sup><i><b>f</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-6"><sup><i><b>g</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-7"><sup><i><b>h</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-8"><sup><i><b>i</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-9"><sup><i><b>j</b></i></sup></a> <a href="Mathematica#cite_ref-12000.org_59-10"><sup><i><b>k</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Nasser M. Abbasi. <a rel="nofollow" class="external text" href="http://12000.org/my_notes/compare_mathematica/index.htm">"A little bit of Mathematica history"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://12000.org/my_notes/compare_mathematica/index.htm">http://12000.org/my_notes/compare_mathematica/index.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=A+little+bit+of+Mathematica+history&amp;rft.atitle=&amp;rft.aulast=Nasser+M.+Abbasi&amp;rft.au=Nasser+M.+Abbasi&amp;rft_id=http%3A%2F%2F12000.org%2Fmy_notes%2Fcompare_mathematica%2Findex.htm&amp;rfr_id=info:sid/en.wikipedia.org:Mathematica"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-60">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-60">^</a></b></span> <span class="reference-text">Mathematica 1.1. Biotechnology Software. Vogel, W. K. (1989)</span>
+</li>
+<li id="cite_note-61">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-61">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-9205258_ITM">Mathematica 1.2 adds new graphics options: upgrade also promises concurrent operations</a> by Elinor Craig, <i>MacWeek</i>, July 25, 1989.</span>
+</li>
+<li id="cite_note-62">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-62">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.accessmylibrary.com/coms2/summary_0286-9227849_ITM">Mathematica + 283 functions = Mathematica 2.0</a> by Raines Cohen, <i>MacWeek</i>, January 15, 1991.</span>
+</li>
+<li id="cite_note-63">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-63">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.highbeam.com/doc/1G1-13185601.html">New version of Mathematica</a>, <i>Mechanical Engineering</i>, June 1, 1993.</span>
+</li>
+<li id="cite_note-64">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-64">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.wolfram.com/news/archive/#1996">[2]</a>, Wolfram news archive, 1996.</span>
+</li>
+<li id="cite_note-65">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-65">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.highbeam.com/doc/1G1-61370961.html">Mathematica 4.0</a> by Charles Seiters, <i>Macworld</i>, October 1, 1999.</span>
+</li>
+<li id="cite_note-66">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-66">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mywire.com/pubs/PCMagazine/2003/09/02/420220?extID=10051">Mathematica 5.0 Adds Up: Exactly 15 years after Mathematica's initial release, Wolfram Research has released Mathematica</a> , <i>PC Magazine</i>, September 3, 2003.</span>
+</li>
+<li id="cite_note-67">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-67">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://moreresults.factiva.com/results/index/index.aspx?ref=PCW0000020050115e0c60001i">Mathematica 5.1's Web Services Add Up; Mathematica 5.1 delivers improvements over Version 5.0 that are vastly out of proportion for a .1 upgrade.</a> by Peter Coffee, <i>eWeek</i>, December 6, 2004.</span>
+</li>
+<li id="cite_note-68">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-68">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.macworld.co.uk/news/index.cfm?NewsID=12069&amp;Page=1&amp;pagePos=6">Mathematica hits 64-bit</a>, <i>MacWorld</i> UK, July 13, 2005.</span>
+</li>
+<li id="cite_note-69">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-69">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.wolfram.com/2007/05/">Today, Mathematica is reinvented</a> - Blog by Stephen Wolfram</span>
+</li>
+<li id="cite_note-70">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-70">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.scientific-computing.com/products/review_details.php?review_id=17">Mathematica 6: Felix Grant finds that version 6 of Wolfram Research's symbolic mathematical software really does live up to its expectations.</a> Scientific Computing, 2007.</span>
+</li>
+<li id="cite_note-71">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-71">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.wolfram.com/?year=2007&amp;monthnum=07&amp;name=mathematica-601-arrives.">Wolfram Blog</a>, 2007.</span>
+</li>
+<li id="cite_note-72">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-72">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://blog.wolfram.com/2008/11/">Mathematica 7.0 Released Today!</a> - Blog by Stephen Wolfram</span>
+</li>
+<li id="cite_note-73">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-73">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://forums.wolfram.com/mathgroup/archive/2009/Mar/msg00118.html">Announcing Mathematica 7.0.1.</a></span>
+</li>
+<li id="cite_note-74">
+<span class="mw-cite-backlink"><b><a href="Mathematica#cite_ref-74">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFWolfram2011">Wolfram, Stephen (6 Oct 2011), <a rel="nofollow" class="external text" href="http://blog.wolframalpha.com/2011/10/06/steve-jobs-a-few-memories/#more-15338"><i>STEVE JOBS: A FEW MEMORIES</i></a>, Wolfram Alpha<span class="printonly">, <a rel="nofollow" class="external free" href="http://blog.wolframalpha.com/2011/10/06/steve-jobs-a-few-memories/#more-15338">http://blog.wolframalpha.com/2011/10/06/steve-jobs-a-few-memories/#more-15338</a></span><span class="reference-accessdate">, retrieved 16 May 2012</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=STEVE+JOBS%3A+A+FEW+MEMORIES&amp;rft.aulast=Wolfram&amp;rft.aufirst=Stephen&amp;rft.au=Wolfram%2C%26%2332%3BStephen&amp;rft.date=6+Oct+2011&amp;rft.pub=Wolfram+Alpha&amp;rft_id=http%3A%2F%2Fblog.wolframalpha.com%2F2011%2F10%2F06%2Fsteve-jobs-a-few-memories%2F%23more-15338&amp;rfr_id=info:sid/en.wikipedia.org:Mathematica"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.wolfram.com/mathematica/">Wolfram Mathematica 8</a></li>
+<li><a rel="nofollow" class="external text" href="http://reference.wolfram.com/">Mathematica Documentation Center</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/LevelsOfAMathematicaExpression/">Levels Of A Mathematica Expression</a> by Enrique Zeleny, <a href="http://en.m.wikipedia.org/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://12000.org/my_notes/compare_mathematica/index.htm">A little bit of Mathematica history</a> documenting the growth of code base and number of functions over time</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Computer_algebra_systems" title="Template:Computer algebra systems"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Computer_algebra_systems" title="Template talk:Computer algebra systems"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_algebra_systems&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Computer_algebra_system" title="Computer algebra system">Computer algebra systems</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Algebrator" title="Algebrator">Algebrator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Casio_ClassPad_300" title="Casio ClassPad 300">ClassPad Manager</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LiveMath" title="LiveMath">LiveMath</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Magma_computer_algebra_system" title="Magma computer algebra system">Magma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><strong class="selflink">Mathematica</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MuPAD" title="MuPAD">MuPAD (MATLAB symbolic math toolbox)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TI_InterActive!" title="TI InterActive!">TI InterActive!</a></li>
+<li><span class="new" title="WIRIS (page does not exist)">WIRIS</span></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Open_source_software" title="Open source software" class="mw-redirect">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Axiom_(computer_algebra_system)" title="Axiom (computer algebra system)">Axiom</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cadabra_(computer_program)" title="Cadabra (computer program)">Cadabra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CoCoA" title="CoCoA">CoCoA</a></li>
+<li><span class="new" title="DoCon (page does not exist)">DoCon</span></li>
+<li><span class="new" title="Eigenmath (page does not exist)">Eigenmath</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FriCAS" title="FriCAS" class="mw-redirect">FriCAS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GAP_(computer_algebra_system)" title="GAP (computer algebra system)">GAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GiNaC" title="GiNaC">GiNaC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macaulay2" title="Macaulay2">Macaulay2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathomatic" title="Mathomatic">Mathomatic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenAxiom" title="OpenAxiom" class="mw-redirect">OpenAxiom</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PARI/GP" title="PARI/GP">PARI/GP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reduce_(computer_algebra_system)" title="Reduce (computer algebra system)">Reduce</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Singular_(software)" title="Singular (software)">SINGULAR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SymPy" title="SymPy">SymPy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xcas" title="Xcas">Xcas</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yacas" title="Yacas">Yacas</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="Freeware" title="Freeware">Free</a>/<a href="http://en.m.wikipedia.org/wiki/Shareware" title="Shareware">shareware</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Fermat_(computer_algebra_system)" title="Fermat (computer algebra system)">Fermat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KANT_(software)" title="KANT (software)">KANT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Discontinued</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cambridge_Algebra_System" title="Cambridge Algebra System">CAMAL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Derive_(computer_algebra_system)" title="Derive (computer algebra system)">Derive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_Computer_Algebra_System" title="Dynamic Computer Algebra System">DCAS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macsyma" title="Macsyma">Macsyma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MuMATH" title="MuMATH">muMATH</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Category:Computer_algebra_systems" title="Category:Computer algebra systems">Category</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Comparison_of_computer_algebra_systems" title="Comparison of computer algebra systems">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Numerical_analysis_software" title="Template:Numerical analysis software"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Numerical_analysis_software" title="Template talk:Numerical analysis software"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Numerical_analysis_software&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical software</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">Free Software</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Euler_(software)" title="Euler (software)">Euler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeMat" title="FreeMat">FreeMat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Genius_(mathematics_software)" title="Genius (mathematics software)">Genius</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scilab" title="Scilab">Scilab</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/DADiSP" title="DADiSP">DADiSP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LabVIEW" title="LabVIEW">LabVIEW</a></li>
+<li><a href="MATLAB" title="MATLAB">MATLAB</a></li>
+<li><strong class="selflink">Mathematica</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Speakeasy_(computational_environment)" title="Speakeasy (computational environment)">Speakeasy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VisSim" title="VisSim">VisSim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Statistical_software" title="Template:Statistical software"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Statistical_software" title="Template talk:Statistical software"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Statistical_software&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/List_of_statistical_packages" title="List of statistical packages">Statistical software</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Public_domain" title="Public domain">Public domain</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dataplot" title="Dataplot">Dataplot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Epi_Info" title="Epi Info">Epi Info</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CSPro" title="CSPro">CSPro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X-12-ARIMA" title="X-12-ARIMA">X-12-ARIMA</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DAP_(software)" title="DAP (software)">DAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Just_another_Gibbs_sampler" title="Just another Gibbs sampler">JAGS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JMulTi" title="JMulTi">JMulTi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenBUGS" title="OpenBUGS">OpenBUGS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PSPP" title="PSPP">PSPP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SimFiT" title="SimFiT">SimFiT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SOFA_Statistics" title="SOFA Statistics">SOFA Statistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XLispStat" title="XLispStat">XLispStat</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/BV4.1_(software)" title="BV4.1 (software)">BV4.1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CumFreq" title="CumFreq">CumFreq</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XploRe" title="XploRe">XploRe</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WinBUGS" title="WinBUGS">WinBUGS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Cross-platform" title="Cross-platform">Cross-platform</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_Desk" title="Data Desk">Data Desk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GraphPad_InStat" title="GraphPad InStat">GraphPad InStat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GraphPad_Prism" title="GraphPad Prism">GraphPad Prism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JMP_(statistical_software)" title="JMP (statistical software)">JMP</a></li>
+<li><a href="MATLAB" title="MATLAB">MATLAB</a></li>
+<li><strong class="selflink">Mathematica</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OxMetrics" title="OxMetrics">OxMetrics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Regression_Analysis_of_Time_Series" title="Regression Analysis of Time Series">RATS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SAS_(software)" title="SAS (software)">SAS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPSS" title="SPSS">SPSS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stata" title="Stata">Stata</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SUDAAN" title="SUDAAN">SUDAAN</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/S-PLUS" title="S-PLUS">S-PLUS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows only</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/BMDP" title="BMDP">BMDP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/EViews" title="EViews">EViews</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GenStat" title="GenStat">GenStat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MedCalc" title="MedCalc">MedCalc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minitab" title="Minitab">Minitab</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NCSS_(statistical_software)" title="NCSS (statistical software)">NCSS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Q_research_software" title="Q research software">Q</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SHAZAM_(Econometrics_and_Statistics_Software)" title="SHAZAM (Econometrics and Statistics Software)" class="mw-redirect">SHAZAM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SigmaStat" title="SigmaStat">SigmaStat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/STATISTICA" title="STATISTICA">STATISTICA</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/StatXact" title="StatXact">StatXact</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SYSTAT" title="SYSTAT">SYSTAT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_Unscrambler" title="The Unscrambler">The Unscrambler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UNISTAT" title="UNISTAT" class="mw-redirect">UNISTAT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Microsoft_Excel" title="Microsoft Excel">Excel add-ons</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Analyse-it" title="Analyse-it">Analyse-it</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPC_XL" title="SPC XL">SPC XL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sigmaxl" title="Sigmaxl">SigmaXL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UNISTAT" title="UNISTAT" class="mw-redirect">UNISTAT for Excel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XLfit_(software)" title="XLfit (software)">XLfit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Category:Statistical_software" title="Category:Statistical software">Category</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Comparison_of_statistical_packages" title="Comparison of statistical packages">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Image_Processing_Software" title="Template:Image Processing Software"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Image Processing Software (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Image_Processing_Software&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Image Processing Software</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">Free Software</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CellProfiler" title="CellProfiler">CellProfiler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ImageJ" title="ImageJ">imageJ</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FIJI_(software)" title="FIJI (software)">FIJI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Endrov" title="Endrov">Endrov</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mango_(software)" title="Mango (software)">Mango</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenCV" title="OpenCV">OpenCV</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GemIdent" title="GemIdent">GemIdent</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/3DSlicer" title="3DSlicer">3D Slicer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OsiriX" title="OsiriX">OsiriX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeSurfer" title="FreeSurfer">FreeSurfer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/InVesalius" title="InVesalius">InVesalius</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FMRIB_Software_Library" title="FMRIB Software Library">FMRIB Software Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/AFNI" title="AFNI" class="mw-redirect">AFNI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Insight_Segmentation_and_Registration_Toolkit" title="Insight Segmentation and Registration Toolkit">ITK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ITK-SNAP" title="ITK-SNAP">ITK-SNAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Integrating_Vision_Toolkit" title="Integrating Vision Toolkit">IVT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VXL" title="VXL">VXL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CellCognition" title="CellCognition">CellCognition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VIGRA" title="VIGRA">VIGRA</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ilastik" title="Ilastik">ilastik</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Matlab" title="Matlab" class="mw-redirect">Matlab</a></li>
+<li><strong class="selflink">Mathematica</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bitplane" title="Bitplane">Bitplane</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 29 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D8%A7%D8%AB%D9%85%D8%A7%D8%AA%D9%8A%D9%83%D8%A7" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://az.m.wikipedia.org/wiki/Mathematica" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bg.m.wikipedia.org/wiki/Mathematica" lang="bg" hreflang="bg">български</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Mathematica" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Mathematica" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Mathematica" lang="es" hreflang="es">español</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Mathematica" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%85%D8%AA%D9%85%D8%AA%DB%8C%DA%A9%D8%A7" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Mathematica" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%A7%A4%EC%8A%A4%EB%A7%A4%ED%8B%B0%EC%B9%B4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Mathematica" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Mathematica" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/Mathematica" lang="he" hreflang="he">עברית</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Mathematica" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Mathematica" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AE%E0%B4%BE%E0%B4%A4%E0%B5%8D%E0%B4%A4%E0%B4%AE%E0%B4%BE%E0%B4%B1%E0%B5%8D%E0%B4%B1%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%95" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Mathematica_(software)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Mathematica" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Mathematica" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Mathematica" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Mathematica" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Mathematica" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Mathematica" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Mathematica" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Mathematica" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Mathematica" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Mathematica" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Mathematica" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Mathematica" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Mathematica&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Mathematica&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Mathematica&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>lint (software) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Lint (software)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Lint_(software)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Lint+%28software%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">lint (software)</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, <b>lint</b> was the name originally given to a particular program that flagged some <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)#Language_tools" title="C (programming language)">suspicious and non-portable constructs</a> (likely to be bugs) in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> <a href="Source_code" title="Source code">source code</a>. The term is now applied generically to tools that flag suspicious usage in software written in any <a href="http://en.m.wikipedia.org/wiki/Computer_language" title="Computer language" class="mw-redirect">computer language</a>. The term <b>lint-like behavior</b> is sometimes applied to the process of flagging suspicious language usage. Lint-like tools generally perform <a href="http://en.m.wikipedia.org/wiki/Static_code_analysis" title="Static code analysis" class="mw-redirect">static analysis</a> of source code.</p>
+<h2> <span class="mw-headline" id="Background">Background</span>
+</h2>
+<p>Lint first appeared (outside of <a href="Bell_Labs" title="Bell Labs">Bell Labs</a>) in the seventh version (V7) of the <a href="Unix" title="Unix">Unix</a> operating system in 1979. It was derived from PCC, the <a href="Portable_C_Compiler" title="Portable C Compiler">Portable C Compiler</a>, which was included with that system. Lint and PCC were developed by <a href="http://en.m.wikipedia.org/wiki/Stephen_C._Johnson" title="Stephen C. Johnson">Stephen C. Johnson</a>, who also authored the parser generator <a href="http://en.m.wikipedia.org/wiki/Yacc" title="Yacc">yacc</a>.</p>
+<p>The term was derived from the name of the undesirable bits of fiber and fluff found in sheep's wool.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>Suspicious constructs include: variables being used before being set, conditions that are constant, and calculations whose result is likely to be outside the range of values representable in the <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">type</a> used.</p>
+<p>Many of the forms of analysis performed by lint-like tools are also performed by <a href="http://en.m.wikipedia.org/wiki/Optimizing_compiler" title="Optimizing compiler">optimizing compilers</a>, whose prime motivation is to generate faster code. Modern <a href="Compiler" title="Compiler">compilers</a> can often detect many of the constructs traditionally warned about by lint.</p>
+<p>Writers of lint-like tools have continued to improve the range of suspicious constructs that they detect. Modern tools perform forms of analysis that many optimizing compilers typically don't do, such as cross-module consistency checking, checking that the code will be portable to other compilers, and supporting annotations that specify intended behavior or properties of code.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_tools_for_static_code_analysis" title="List of tools for static code analysis">List of tools for static code analysis</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Stephen_C._Johnson" title="Stephen C. Johnson">Stephen Johnson</a>. <i>Lint, a C program checker</i>. Computer Science Technical Report 65, <a href="http://en.m.wikipedia.org/wiki/Bell_Laboratories" title="Bell Laboratories" class="mw-redirect">Bell Laboratories</a>, December 1977.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<span class="citation book">Darwin, Ian F.. <i>Checking C Programs with Lint</i>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-937175-30-7" title="Special:BookSources/0-937175-30-7">0-937175-30-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Checking+C+Programs+with+Lint&amp;rft.aulast=Darwin&amp;rft.aufirst=Ian+F.&amp;rft.au=Darwin%2C%26%2332%3BIan+F.&amp;rft.isbn=0-937175-30-7&amp;rfr_id=info:sid/en.wikipedia.org:Lint_(software)"><span style="display: none;"> </span></span>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.unix.com/man-page/FreeBSD/1/lint">Lint man page</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 7 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Lint_(Programmierwerkzeug)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Lint" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Lint_(komputiko)" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Lint_(logiciel)" lang="fr" hreflang="fr">français</a></li><li><a href="http://ia.m.wikipedia.org/wiki/Lint" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Lint" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Lint" lang="pl" hreflang="pl">polski</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Lint_programming_tool&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Lint_programming_tool&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Lint+%28software%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

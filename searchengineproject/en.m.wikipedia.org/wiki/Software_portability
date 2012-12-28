@@ -1,0 +1,156 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Software portability - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Software portability","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Software_portability" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Software+portability"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Software portability</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Software_portability&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(November 2011)</i></small> </span></td>
+</tr></table>
+<p><b>Portability</b> in <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">high-level computer programming</a> is the usability of the same <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">software</a> in different environments. The prerequirement for portability is the generalized <a href="http://en.m.wikipedia.org/wiki/Abstraction_(computer_science)" title="Abstraction (computer science)">abstraction</a> between the application logic and <a href="http://en.m.wikipedia.org/wiki/Interface_(computer_science)" title="Interface (computer science)" class="mw-redirect">system interfaces</a>. When software with the same functionality is produced for several <a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">computing platforms</a>, portability is the key issue for development cost reduction.</p>
+<p>This article is about portability in itself. The work required to make software portable is described in the article on <a href="Porting" title="Porting">porting</a>.</p>
+<h2> <span class="mw-headline" id="Strategies_for_portability">Strategies for portability</span>
+</h2>
+<p>Software portability may involve:</p>
+<ul>
+<li>Transferring installed program files to another computer of basically the same architecture.</li>
+<li>Reinstalling a program from distribution files on another computer of basically the same architecture.</li>
+<li>
+<a href="Compiler" title="Compiler">Building</a> <a href="http://en.m.wikipedia.org/wiki/Executable" title="Executable">executable</a> programs for different platforms from <a href="Source_code" title="Source code">source code</a>; this is what is usually understood by "<a href="Porting" title="Porting">porting</a>".</li>
+</ul>
+<h3> <span class="mw-headline" id="Similar_systems">Similar systems</span>
+</h3>
+<p>When <a href="Operating_system" title="Operating system">operating systems</a> of the same family are installed on two computers with <a href="http://en.m.wikipedia.org/wiki/CPU" title="CPU" class="mw-redirect">processors</a> with similar <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction sets</a> it is often possible to transfer the files implementing a program files between them.</p>
+<p>In the simplest case the file or files may simply be copied from one machine to the other. However, in many case the software is <a href="http://en.m.wikipedia.org/wiki/Installation_(computer_programs)" title="Installation (computer programs)">installed</a> on a computer in a way which depends upon its detailed hardware, software, and setup, with <a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">device drivers</a> for particular devices, using installed operating system and supporting software components, and using different <a href="http://en.m.wikipedia.org/wiki/Logical_drive" title="Logical drive" class="mw-redirect">drives</a> or <a href="http://en.m.wikipedia.org/wiki/Directory_(file_systems)" title="Directory (file systems)" class="mw-redirect">directories</a>.</p>
+<p>In some cases software, usually described as "<a href="http://en.m.wikipedia.org/wiki/Portable_application" title="Portable application">portable software</a>" is specifically designed to run on different computers with compatible operating systems and processors without any machine-dependent installation; it is sufficient to transfer specified directories and their contents. Software installed on portable <a href="http://en.m.wikipedia.org/wiki/Mass_storage" title="Mass storage">mass storage</a> devices such as <a href="http://en.m.wikipedia.org/wiki/USB_stick" title="USB stick" class="mw-redirect">USB sticks</a> can be used on any compatible computer on simply plugging the storage device in, and stores all configuration information on the removable device. Hardware- and software-specific information is often stored in <a href="http://en.m.wikipedia.org/wiki/Configuration_file" title="Configuration file">configuration files</a> in specified locations (the <a href="http://en.m.wikipedia.org/wiki/Windows_registry" title="Windows registry" class="mw-redirect">registry</a> on machines running <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>).</p>
+<p>Software which is not portable in this sense will have to be transferred with modifications to support the environment on the destination machine.</p>
+<h3> <span class="mw-headline" id="Different_operating_systems.2C_similar_processors">Different operating systems, similar processors</span>
+</h3>
+<p>When the systems in question have compatible <a href="http://en.m.wikipedia.org/wiki/Processors" title="Processors" class="mw-redirect">processors</a> (usually <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a>-compatible processors on desktop computers), they will execute the low-level program instructions in the same manner, but the <a href="http://en.m.wikipedia.org/wiki/System_call" title="System call">system calls</a> are likely to differ between different operating systems. Later operating systems of <a href="http://en.m.wikipedia.org/wiki/UNIX" title="UNIX" class="mw-redirect">UNIX</a> heritage, including <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a>, <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> and <a href="http://en.m.wikipedia.org/wiki/OS_X" title="OS X">OS X</a>, are able to achieve a high degree of software portability by using the <a href="POSIX" title="POSIX">POSIX</a> standard for calling OS functions. Such POSIX-based programs can be compiled for use in <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> by means of interface software such as <a href="http://en.m.wikipedia.org/wiki/Cygwin" title="Cygwin">Cygwin</a>.</p>
+<h3> <span class="mw-headline" id="Different_processors">Different processors</span>
+</h3>
+<p>As of 2011<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Software_portability&amp;action=edit">[update]</a></sup> the majority of desktop and laptop computers used <a href="http://en.m.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessors</a> compatible with the 32- and 64-bit <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> instruction sets. Smaller portable devices use processors with different and incompatible instruction sets, such as <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM</a>. The difference between larger and smaller devices is such that detailed software operation is different; an application designed to display suitably on a large screen cannot simply be ported to a pocket-sized smartphone with a tiny screen even if the functionality is similar.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Web_applications" title="Web applications" class="mw-redirect">Web applications</a> are required to be processor independent, so portability can be achieved by using web programming techniques, writing in <a href="JavaScript" title="JavaScript">JavaScript</a>. Such a program can run in a common web browser, which as of 2011<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Software_portability&amp;action=edit">[update]</a></sup> can be assumed to have a Java package containing the <a href="Java_virtual_machine" title="Java virtual machine">Java virtual machine</a> and its <a href="http://en.m.wikipedia.org/wiki/Java_Class_Library" title="Java Class Library">Java Class Library</a>. Such <a href="http://en.m.wikipedia.org/wiki/Web_application" title="Web application">web applications</a> must, for security reasons, have limited control over the host computer, especially regarding reading and writing files. Non-web programs, installed upon a computer in the normal manner, can have more control, and yet achieve system portability by linking to the Java package. By using <a href="http://en.m.wikipedia.org/wiki/Java_bytecode" title="Java bytecode">Java bytecode</a> instructions instead of processor-dependent machine code, maximum software portability is achieved. Programs need not be written in <a href="http://en.m.wikipedia.org/wiki/Java_language" title="Java language" class="mw-redirect">Java</a>, as compilers for several other languages can generate Java bytecode: <a href="http://en.m.wikipedia.org/wiki/Jruby" title="Jruby" class="mw-redirect">Jruby</a> does it from <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> programs, <a href="http://en.m.wikipedia.org/wiki/Jython" title="Jython">Jython</a> from <a href="Python_(programming_language)" title="Python (programming language)">Python</a> programs, and there are <a href="http://en.m.wikipedia.org/wiki/List_of_JVM_languages" title="List of JVM languages">several others</a>.</p>
+<h2> <span class="mw-headline" id="Recompilation">Recompilation</span>
+</h2>
+<p>Software can be recompiled and <a href="Linker_(computing)" title="Linker (computing)">linked</a> from source code for different operating systems and processors if written in a programming language supporting compilation for the platforms. This is usually a task for the program developers; typical users have neither access to the source code nor the required skills.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Open-source" title="Open-source" class="mw-redirect">open-source</a> environments such as Linux the source code is available to all. In earlier days source code was often distributed in a standardised format, and could be built into executable code with a standard <a href="http://en.m.wikipedia.org/wiki/Make_(software)" title="Make (software)">Make tool</a> for any particular system by moderately knowledgeable users if no errors occurred during the build. Some <a href="http://en.m.wikipedia.org/wiki/Linux_distribution" title="Linux distribution">Linux distributions</a> distribute software to users in source form. In these cases there is usually no need for detailed adaptation of the software for the system; it is distributed in a way which <a href="Conditional_compilation" title="Conditional compilation">modifies the compilation process to match the system</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware-dependent_Software" title="Hardware-dependent Software">Hardware-dependent Software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_(software_platform)" title="Java (software platform)">Java (software platform)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portability_testing" title="Portability testing">Portability testing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Platform_Productisation" title="Platform Productisation">Platform Productisation</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Sources">Sources</span>
+</h2>
+<ul>
+<li>
+<span class="citation Journal">Mooney (1997) (PDF). <a rel="nofollow" class="external text" href="http://www.cs.wvu.edu/~jdm/research/portability/reports/TR_97-1.pdf"><i>Bringing Portability to the Software Process</i></a>. West Virginia University. Dept. of Statistics and Computer Science<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.wvu.edu/~jdm/research/portability/reports/TR_97-1.pdf">http://www.cs.wvu.edu/~jdm/research/portability/reports/TR_97-1.pdf</a></span><span class="reference-accessdate">. Retrieved 2008-03-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Bringing+Portability+to+the+Software+Process&amp;rft.aulast=Mooney&amp;rft.au=Mooney&amp;rft.date=1997&amp;rft.pub=West+Virginia+University.+Dept.+of+Statistics+and+Computer+Science&amp;rft_id=http%3A%2F%2Fwww.cs.wvu.edu%2F%7Ejdm%2Fresearch%2Fportability%2Freports%2FTR_97-1.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Software_portability"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Garen (2007). <a rel="nofollow" class="external text" href="http://findarticles.com/p/articles/mi_qa5346/is_200711/ai_n21298624/">"Software Portability: Weighing Options, Making Choices"</a>. <i>The CPA Journal</i> <b>77</b> (11): 3<span class="printonly">. <a rel="nofollow" class="external free" href="http://findarticles.com/p/articles/mi_qa5346/is_200711/ai_n21298624/">http://findarticles.com/p/articles/mi_qa5346/is_200711/ai_n21298624/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Software+Portability%3A+Weighing+Options%2C+Making+Choices&amp;rft.jtitle=The+CPA+Journal&amp;rft.aulast=Garen&amp;rft.au=Garen&amp;rft.date=2007&amp;rft.volume=77&amp;rft.issue=11&amp;rft.pages=3&amp;rft_id=http%3A%2F%2Ffindarticles.com%2Fp%2Farticles%2Fmi_qa5346%2Fis_200711%2Fai_n21298624%2F&amp;rfr_id=info:sid/en.wikipedia.org:Software_portability"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Lehey (1995) (PDF). <a rel="nofollow" class="external text" href="http://www.lemis.com/grog/Documentation/PUS/"><i>Porting UNIX Software: From Download to Debug</i></a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.lemis.com/grog/Documentation/PUS/">http://www.lemis.com/grog/Documentation/PUS/</a></span><span class="reference-accessdate">. Retrieved 2010-05-27</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Porting+UNIX+Software%3A+From+Download+to+Debug&amp;rft.aulast=Lehey&amp;rft.au=Lehey&amp;rft.date=1995&amp;rft_id=http%3A%2F%2Fwww.lemis.com%2Fgrog%2FDocumentation%2FPUS%2F&amp;rfr_id=info:sid/en.wikipedia.org:Software_portability"><span style="display: none;"> </span></span>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Portace_softwaru" lang="cs" hreflang="cs">česky</a></li><li><a href="http://es.m.wikipedia.org/wiki/Portabilidad" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Portabilit%C3%A9_(informatique)" lang="fr" hreflang="fr">français</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Softwareportabiliteit" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E7%A7%BB%E6%A4%8D%E6%80%A7" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Przeno%C5%9Bno%C5%9B%C4%87_oprogramowania" lang="pl" hreflang="pl">polski</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Software_portability&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Software_portability&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Software+portability&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

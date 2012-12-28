@@ -1,0 +1,520 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>KDevelop - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"KDevelop","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/KDevelop" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=KDevelop"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">KDevelop</h1>			<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;"><caption class="summary" style="">KDevelop</caption>
+<tr class=""><td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Kdevelop_icon.svg" class="image"><img alt="Kdevelop icon.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kdevelop_icon.svg/70px-Kdevelop_icon.svg.png" width="70" height="70" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kdevelop_icon.svg/105px-Kdevelop_icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kdevelop_icon.svg/140px-Kdevelop_icon.svg.png 2x"></a></td>
+</tr><tr class=""><td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:KDevelop_4_Screenshot.png" class="image"><img alt="KDevelop 4 Screenshot.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/KDevelop_4_Screenshot.png/300px-KDevelop_4_Screenshot.png" width="300" height="181" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/KDevelop_4_Screenshot.png/450px-KDevelop_4_Screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/KDevelop_4_Screenshot.png/600px-KDevelop_4_Screenshot.png 2x"></a><br><span style="">KDevelop 4</span></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/KDE" title="KDE">KDE</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.kdevelop.org/index.html?filename=main1999.html">1.0</a> (1999-12-6)</td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style=""><span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/KDevelop&amp;action=edit">4.4.0</a></span>  <small>(October 23, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-23</span>)</span>)</small> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/KDevelop&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style=""><span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/KDevelop&amp;action=edit">Non</a></span> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/KDevelop&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="C++" title="C++">C++</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a>(Unix-like OS's)</td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/KDE_Platform" title="KDE Platform">KDE Platform</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;">Available in</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://l10n.kde.org/stats/gui/stable/package/kdevelop/">more than 30 languages</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr><tr class=""><th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.kdevelop.org">www.kdevelop.org</a></span></td>
+</tr></table><p><b>KDevelop</b> is a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a> <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) for the <a href="http://en.m.wikipedia.org/wiki/KDE_Platform" title="KDE Platform">KDE Platform</a> on <a href="Unix-like" title="Unix-like">Unix-like</a> computer <a href="Operating_system" title="Operating system">operating systems</a>. KDevelop includes no <a href="Compiler" title="Compiler">compiler</a>. Instead, it uses an external compiler such as <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> to produce <a href="http://en.m.wikipedia.org/wiki/Executable" title="Executable">executable</a> code.</p>
+<p>The current version, 4.4.0, was officially released on 23 October 2012. It builds on KDE 4 technology and supports <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a> and <a href="PHP" title="PHP">PHP</a> development.</p>
+<p>The last stable release of the previous major version, 3.5.5, which is based on <a href="http://en.m.wikipedia.org/wiki/K_Desktop_Environment_3" title="K Desktop Environment 3">K Desktop Environment 3</a> technology, supports many <a href="Programming_language" title="Programming language">programming languages</a> such as <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Fortran" title="Fortran">Fortran</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="Perl" title="Perl">Perl</a>, <a href="PHP" title="PHP">PHP</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a> and <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>. Released under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>, KDevelop is <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a>.</p>
+<h2> <span class="mw-headline" id="History">History</span></h2>
+<table class="wikitable" style="float: right;"><tr style="background:#efefef;"><th colspan="4">KDevelop Meeting</th>
+</tr><tr style="background:#efefef;"><th>Year</th>
+<th>Venue</th>
+<th>Date</th>
+<th>Notes</th>
+</tr><tr><th>2008<sup id="cite_ref-1" class="reference"><a href="KDevelop#cite_note-1"><span>[</span>1<span>]</span></a></sup></th>
+<td><a href="http://en.m.wikipedia.org/wiki/Munich" title="Munich">Munich</a>, <a href="http://en.m.wikipedia.org/wiki/Germany" title="Germany">Germany</a></td>
+<td>4/12-4/18</td>
+<td></td>
+</tr><tr><th>2009<sup id="cite_ref-2" class="reference"><a href="KDevelop#cite_note-2"><span>[</span>2<span>]</span></a></sup></th>
+<td><a href="http://en.m.wikipedia.org/wiki/Mykolayiv" title="Mykolayiv" class="mw-redirect">Mykolayiv</a>, <a href="http://en.m.wikipedia.org/wiki/Ukraine" title="Ukraine">Ukraine</a></td>
+<td>4/19-4/26</td>
+<td></td>
+</tr><tr><th>2010<sup id="cite_ref-3" class="reference"><a href="KDevelop#cite_note-3"><span>[</span>3<span>]</span></a></sup></th>
+<td><a href="http://en.m.wikipedia.org/wiki/Berlin" title="Berlin">Berlin</a>, Germany</td>
+<td>2/13-2/21</td>
+<td>co-hosted with <a href="http://en.m.wikipedia.org/wiki/Kate_(text_editor)" title="Kate (text editor)">Kate</a> and <span class="new" title="Okteta (page does not exist)">Okteta</span> Meeting</td>
+</tr></table><p>KDevelop 1.x and 2.x were developed over a period of four years from the <a rel="nofollow" class="external text" href="http://lists.kde.org/?l=kde-announce&amp;m=90648146015087&amp;w=2">initial KDevelop codebase</a>. Bernd Gehrmann started a complete rewrite from scratch and announced KDevelop 3.x with this mail: <a rel="nofollow" class="external text" href="http://lists.kde.org/?l=kde-core-devel&amp;m=98598814600661&amp;w=2">A new IDE for a new millennium</a>, on March 30, 2001. Its first release was together with <a href="http://en.m.wikipedia.org/wiki/K_Desktop_Environment_3" title="K Desktop Environment 3">K Desktop Environment 3</a>.2 in February 2004. The development of KDevelop 3.x stopped in 2008. KDevelop 4.x has been under development since August 2005. It is a complete rewrite with a better core and a more object-oriented programming model.<sup id="cite_ref-4" class="reference"><a href="KDevelop#cite_note-4"><span>[</span>4<span>]</span></a></sup> In May 2010, the final version of KDevelop 4.0.0 was released.<sup id="cite_ref-5" class="reference"><a href="KDevelop#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Features">Features</span></h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Update" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/wiki/File:Gnome_globe_current_event.svg" class="image"><img alt="Gnome globe current event.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Gnome_globe_current_event.svg/42px-Gnome_globe_current_event.svg.png" width="42" height="42" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Gnome_globe_current_event.svg/63px-Gnome_globe_current_event.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Gnome_globe_current_event.svg/84px-Gnome_globe_current_event.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article is <b>outdated</b>. <span class="hide-when-compact">Please update this section to reflect recent events or newly available information.</span> <small><i>(May 2011)</i></small> </span></td>
+</tr></table><p>KDevelop uses an embedded <a href="http://en.m.wikipedia.org/wiki/Text_editor" title="Text editor">text editor</a> component through the <a href="http://en.m.wikipedia.org/wiki/KPart" title="KPart" class="mw-redirect">KPart</a> framework. The default editor is <a href="http://en.m.wikipedia.org/wiki/Kate_(text_editor)" title="Kate (text editor)">KDE Advanced Text Editor</a>, which can optionally be replaced with a <a href="http://en.m.wikipedia.org/wiki/Qt_(framework)" title="Qt (framework)">Qt</a> Designer-based editor. This list focuses on the features of KDevelop itself. For features specific to the editor component, see the article on <a href="http://en.m.wikipedia.org/wiki/Kate_(text_editor)" title="Kate (text editor)">Kate</a>.</p>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Source_code_editor" title="Source code editor">Source code editor</a> with <a href="http://en.m.wikipedia.org/wiki/Syntax_highlighting" title="Syntax highlighting">syntax highlighting</a> and automatic <a href="http://en.m.wikipedia.org/wiki/Indentation" title="Indentation">indentation</a> (Kate).</li>
+<li>Project management for different project types, such as <a href="http://en.m.wikipedia.org/wiki/Automake" title="Automake">Automake</a>, <i>qmake</i> for <a href="http://en.m.wikipedia.org/wiki/Qt_(toolkit)" title="Qt (toolkit)" class="mw-redirect">Qt</a> based projects and <a href="http://en.m.wikipedia.org/wiki/Apache_Ant" title="Apache Ant">Ant</a> for <a href="Java_(programming_language)" title="Java (programming language)">Java</a> based projects.</li>
+<li>Class browser.</li>
+<li>GUI Designer</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Front-end" title="Front-end" class="mw-redirect">Front-end</a> for the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> and <a href="http://en.m.wikipedia.org/wiki/GNU_Debugger" title="GNU Debugger">GNU Debugger</a>.</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wizard_(software)" title="Wizard (software)">Wizards</a> to generate and update <a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">class</a> definitions and application <a href="http://en.m.wikipedia.org/wiki/Software_framework" title="Software framework">framework</a>.</li>
+<li>Automatic <a href="http://en.m.wikipedia.org/wiki/Code_completion" title="Code completion" class="mw-redirect">code completion</a> (<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>/<a href="C++" title="C++">C++</a>).</li>
+<li>Built-in <a href="http://en.m.wikipedia.org/wiki/Doxygen" title="Doxygen">Doxygen</a> support.</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Revision_control" title="Revision control">Revision control</a> (also known as SCM) support. Supported systems include <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a>, <a href="http://en.m.wikipedia.org/wiki/Subversion_(software)" title="Subversion (software)" class="mw-redirect">Subversion</a>, <a href="http://en.m.wikipedia.org/wiki/Perforce" title="Perforce">Perforce</a>, <a href="http://en.m.wikipedia.org/wiki/Rational_ClearCase" title="Rational ClearCase" class="mw-redirect">ClearCase</a>, <a href="http://en.m.wikipedia.org/wiki/Git_(software)" title="Git (software)">Git</a>, <a href="http://en.m.wikipedia.org/wiki/Mercurial" title="Mercurial">Mercurial</a>, and <a href="http://en.m.wikipedia.org/wiki/Bazaar_(software)" title="Bazaar (software)" class="mw-redirect">Bazaar</a></li>
+</ul><p>KDevelop 3 is a completely <a href="http://en.m.wikipedia.org/wiki/Plug-in_(computing)" title="Plug-in (computing)">plugin</a>-based architecture. When a developer makes a change, they only must <a href="Compiler" title="Compiler">compile</a> the plugin. There is a possibility to keep several profiles each of which determines which plugins to be loaded. KDevelop does not come with a text editor, but instead uses a plugin for this purpose as well. KDevelop is programming language independent and build system-independent, supporting <a href="http://en.m.wikipedia.org/wiki/KDE" title="KDE">KDE</a>, <a href="http://en.m.wikipedia.org/wiki/GNOME" title="GNOME">GNOME</a>, and many other technologies such as <a href="http://en.m.wikipedia.org/wiki/Qt_(toolkit)" title="Qt (toolkit)" class="mw-redirect">Qt</a>, <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a>, and <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a>.</p>
+<p>KDevelop has supported a variety of <a href="Programming_language" title="Programming language">programming languages</a>, including <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Perl" title="Perl">Perl</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="PHP" title="PHP">PHP</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="Fortran" title="Fortran">Fortran</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a>, and <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> scripting. Supported build systems include GNU (automake), cmake, qmake, and make for custom projects (KDevelop does not destroy user <a href="http://en.m.wikipedia.org/wiki/Makefile" title="Makefile" class="mw-redirect">Makefiles</a> if they are used) and scripting projects which don't need one.</p>
+<p><i>Code completion</i> is available for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>. Symbols are kept in a <a href="http://en.m.wikipedia.org/wiki/Berkeley_DB" title="Berkeley DB">Berkeley DB</a> file for quick lookups without re-<a href="http://en.m.wikipedia.org/wiki/Parsing" title="Parsing">parsing</a>. KDevelop also offers a developer framework which helps to write new parsers for other programming languages.</p>
+<p>An integrated <a href="http://en.m.wikipedia.org/wiki/Debugger" title="Debugger">debugger</a> allows graphically doing all debugging with breakpoints and backtraces. It even works with dynamically loaded plugins unlike <a href="http://en.m.wikipedia.org/wiki/Command_line" title="Command line" class="mw-redirect">command line</a> <a href="http://en.m.wikipedia.org/wiki/GDB" title="GDB" class="mw-redirect">GDB</a>.</p>
+<p><i>Quick Open</i> allows quick navigation between files.</p>
+<p>Currently, 50 to 100 plugins exist for the <a href="Integrated_development_environment" title="Integrated development environment">IDE</a>. Major ones include persistent project-wide code <a href="http://en.m.wikipedia.org/wiki/Internet_bookmark" title="Internet bookmark" class="mw-redirect">bookmarks</a>, <i>Code abbreviations</i> which allow expanding text quickly, a <i>Source formatter</i> which reformats code to a <i>style guide</i> before saving, <i>Regular expressions search</i>, and project-wide <i>search/replace</i> which helps in <a href="http://en.m.wikipedia.org/wiki/Refactoring" title="Refactoring" class="mw-redirect">refactoring</a> code.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr><td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table></div>
+<ul><li><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_KDE_applications" title="List of KDE applications">List of KDE applications</a></li>
+</ul><h2> <span class="mw-headline" id="Further_reading">Further reading</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.freehackers.org/interviews/kdevelop-2002-08/">Freehackers interview with KDevelop team</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dazzle.plus.com/linux/">KDE programming tutorial using KDevelop</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist references-column-count references-column-count-3" style="-moz-column-count: 3; -webkit-column-count: 3; column-count: 3; list-style-type: decimal;">
+<ol class="references"><li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="KDevelop#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation news">harryF (2008-04-10). <a rel="nofollow" class="external text" href="http://dot.kde.org/2008/04/10/kdevelop-team-meeting-agenda">"KDevelop Team Meeting Agenda"</a>. KDE.NEWS. KDE<span class="printonly">. <a rel="nofollow" class="external free" href="http://dot.kde.org/2008/04/10/kdevelop-team-meeting-agenda">http://dot.kde.org/2008/04/10/kdevelop-team-meeting-agenda</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=KDevelop+Team+Meeting+Agenda&amp;rft.atitle=&amp;rft.aulast=harryF&amp;rft.au=harryF&amp;rft.date=2008-04-10&amp;rft.series=KDE.NEWS&amp;rft.pub=KDE&amp;rft_id=http%3A%2F%2Fdot.kde.org%2F2008%2F04%2F10%2Fkdevelop-team-meeting-agenda&amp;rfr_id=info:sid/en.wikipedia.org:KDevelop"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="KDevelop#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Danny Allen, Artur Souza, Claudia Rauch, Torsten Thelke (in English). <a rel="nofollow" class="external text" href="http://ev.kde.org/reports/ev-quarterly-2009Q2-2010Q1.pdf"><i>KDE e.V. Quarterly Report 2009Q2-2010Q1 (Issue 13)</i></a>. KDE e.V.. pp. 2<span class="printonly">. <a rel="nofollow" class="external free" href="http://ev.kde.org/reports/ev-quarterly-2009Q2-2010Q1.pdf">http://ev.kde.org/reports/ev-quarterly-2009Q2-2010Q1.pdf</a></span><span class="reference-accessdate">. Retrieved 2011-04-09</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=KDE+e.V.+Quarterly+Report+2009Q2-2010Q1+%28Issue+13%29&amp;rft.aulast=Danny+Allen%2C+Artur+Souza%2C+Claudia+Rauch%2C+Torsten+Thelke&amp;rft.au=Danny+Allen%2C+Artur+Souza%2C+Claudia+Rauch%2C+Torsten+Thelke&amp;rft.pages=pp.%26nbsp%3B2&amp;rft.pub=KDE+e.V.&amp;rft_id=http%3A%2F%2Fev.kde.org%2Freports%2Fev-quarterly-2009Q2-2010Q1.pdf&amp;rfr_id=info:sid/en.wikipedia.org:KDevelop"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="KDevelop#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation news">Dominik Haumann (2010-03-08). <a rel="nofollow" class="external text" href="http://dot.kde.org/2010/03/08/kate-kdevelop-and-okteta-developers-meet-berlin">"Kate, KDevelop and Okteta Developers Meet in Berlin"</a>. KDE.NEWS. KDE<span class="printonly">. <a rel="nofollow" class="external free" href="http://dot.kde.org/2010/03/08/kate-kdevelop-and-okteta-developers-meet-berlin">http://dot.kde.org/2010/03/08/kate-kdevelop-and-okteta-developers-meet-berlin</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Kate%2C+KDevelop+and+Okteta+Developers+Meet+in+Berlin&amp;rft.atitle=&amp;rft.aulast=Dominik+Haumann&amp;rft.au=Dominik+Haumann&amp;rft.date=2010-03-08&amp;rft.series=KDE.NEWS&amp;rft.pub=KDE&amp;rft_id=http%3A%2F%2Fdot.kde.org%2F2010%2F03%2F08%2Fkate-kdevelop-and-okteta-developers-meet-berlin&amp;rfr_id=info:sid/en.wikipedia.org:KDevelop"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="KDevelop#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://apaku.wordpress.com/2009/11/29/kdevelop4-moved/">"KDevelop4 moved"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://apaku.wordpress.com/2009/11/29/kdevelop4-moved/">http://apaku.wordpress.com/2009/11/29/kdevelop4-moved/</a></span><span class="reference-accessdate">. Retrieved 29 November 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=KDevelop4+moved&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fapaku.wordpress.com%2F2009%2F11%2F29%2Fkdevelop4-moved%2F&amp;rfr_id=info:sid/en.wikipedia.org:KDevelop"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="KDevelop#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://apaku.wordpress.com/2010/05/01/finally-kdevelop-4-0-final-published/">"Finally KDevelop 4.0 final published"</a>. 1 May 2010<span class="printonly">. <a rel="nofollow" class="external free" href="http://apaku.wordpress.com/2010/05/01/finally-kdevelop-4-0-final-published/">http://apaku.wordpress.com/2010/05/01/finally-kdevelop-4-0-final-published/</a></span><span class="reference-accessdate">. Retrieved 2010-05-01</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Finally+KDevelop+4.0+final+published&amp;rft.atitle=&amp;rft.date=1+May+2010&amp;rft_id=http%3A%2F%2Fapaku.wordpress.com%2F2010%2F05%2F01%2Ffinally-kdevelop-4-0-final-published%2F&amp;rfr_id=info:sid/en.wikipedia.org:KDevelop"><span style="display: none;"> </span></span></span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><span class="official website"><a rel="nofollow" class="external text" href="http://www.kdevelop.org">Official website</a></span></li>
+<li><a rel="nofollow" class="external text" href="http://www.kdevelop.org/mediawiki/index.php/KDevelop_4/KDev3_KDev4_comparison_table">KDev3 KDev4 comparison table</a> broken link 2011-09-12</li>
+<li><a rel="nofollow" class="external text" href="http://freecode.com/projects/kdevelop/">KDevelop</a> at <a href="http://en.m.wikipedia.org/wiki/Freecode" title="Freecode">Freecode</a></li>
+</ul><table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a></div>
+</th>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><strong class="selflink">KDevelop</strong></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul><li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr></table><table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:KDE" title="Template:KDE"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:KDE" title="Template talk:KDE"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:KDE&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/KDE" title="KDE">KDE</a></div>
+</th>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Community</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/KDE_e.V." title="KDE e.V.">KDE e.V.</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Akademy" title="Akademy">Akademy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Dot_News" title="KDE Dot News">KDE.News</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Konqi" title="Konqi">Konqi</a></li>
+</ul></div>
+</td>
+<td class="navbox-image" style="width:0%;padding:0px 0px 0px 2px;" rowspan="13">
+<div><a href="http://en.m.wikipedia.org/wiki/File:KDE_logo.svg" class="image"><img alt="KDE logo.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/60px-KDE_logo.svg.png" width="60" height="60" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/90px-KDE_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/KDE_logo.svg/120px-KDE_logo.svg.png 2x"></a></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">People</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Matthias_Kalle_Dalheimer" title="Matthias Kalle Dalheimer">Matthias Kalle Dalheimer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Matthias_Ettrich" title="Matthias Ettrich">Matthias Ettrich</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Adriaan_de_Groot_(Software_developer)" title="Adriaan de Groot (Software developer)">Adriaan de Groot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Frank_Karlitschek" title="Frank Karlitschek">Frank Karlitschek</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Celeste_Lyn_Paul" title="Celeste Lyn Paul">Celeste Lyn Paul</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nuno_Pinheiro_(artist)" title="Nuno Pinheiro (artist)">Nuno Pinheiro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cornelius_Schumacher" title="Cornelius Schumacher">Cornelius Schumacher</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aaron_Seigo" title="Aaron Seigo">Aaron Seigo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/David_Vignoni" title="David Vignoni">David Vignoni</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/KDE_Software_Compilation" title="KDE Software Compilation">Software Compilation</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/K_Desktop_Environment_1" title="K Desktop Environment 1">KDE 1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/K_Desktop_Environment_2" title="K Desktop Environment 2">KDE 2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/K_Desktop_Environment_3" title="K Desktop Environment 3">KDE 3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Software_Compilation_4" title="KDE Software Compilation 4">KDE SC 4</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Workspaces</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/KDE_Display_Manager" title="KDE Display Manager">KDM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KWin" title="KWin">KWin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Plasma_Workspaces" title="KDE Plasma Workspaces">Plasma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/System_Settings" title="System Settings">System Settings</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/List_of_KDE_applications" title="List of KDE applications">Applications</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;padding:0;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;"><tr><th scope="row" class="navbox-group" style=";;">Development</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Cervisia" title="Cervisia">Cervisia</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDbg" title="KDbg">KDbg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDESvn" title="KDESvn">KDESvn</a></li>
+<li><strong class="selflink">KDevelop</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KImageMapEditor" title="KImageMapEditor">KImageMapEditor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kompare" title="Kompare">Kompare</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lokalize" title="Lokalize">Lokalize</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quanta_Plus" title="Quanta Plus">Quanta Plus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Umbrello_UML_Modeller" title="Umbrello UML Modeller">Umbrello</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Education</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Cantor_(software)" title="Cantor (software)">Cantor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kalzium" title="Kalzium">Kalzium</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KBibTeX" title="KBibTeX">KBibTeX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KGeography" title="KGeography">KGeography</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KHangMan" title="KHangMan">KHangMan</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kig_(software)" title="Kig (software)">Kig</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kiten_(program)" title="Kiten (program)">Kiten</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kst_(software)" title="Kst (software)">kst</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KStars" title="KStars">KStars</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KTouch" title="KTouch">KTouch</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KTurtle" title="KTurtle">KTurtle</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KWordQuiz" title="KWordQuiz">KWordQuiz</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LabPlot" title="LabPlot">LabPlot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Marble_(KDE)" title="Marble (KDE)" class="mw-redirect">Marble</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RKWard" title="RKWard">RKWard</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Step_(software)" title="Step (software)">Step</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Games</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/KAtomic" title="KAtomic">KAtomic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KBounce" title="KBounce">KBounce</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kolf_(video_game)" title="Kolf (video game)">Kolf</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KMines" title="KMines">KMines</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Graphics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/DigiKam" title="DigiKam">digiKam</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gwenview" title="Gwenview">Gwenview</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Karbon_(software)" title="Karbon (software)">Karbon</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KColorEdit" title="KColorEdit">KColorEdit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KolourPaint" title="KolourPaint">KolourPaint</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KPhotoAlbum" title="KPhotoAlbum">KPhotoAlbum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KPovModeler" title="KPovModeler">KPovModeler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Krita" title="Krita">Krita</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KSnapshot" title="KSnapshot">KSnapshot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Okular" title="Okular">Okular</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Skanlite" title="Skanlite">Skanlite</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Internet</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Kontact#News_Feed_Aggregator" title="Kontact">Akregator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KGet" title="KGet">KGet</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KMail" title="KMail" class="mw-redirect">KMail</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KMLDonkey" title="KMLDonkey">KMLDonkey</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KNode" title="KNode" class="mw-redirect">KNode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Konqueror" title="Konqueror">Konqueror</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Konversation" title="Konversation">Konversation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kopete" title="Kopete">Kopete</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KPPP" title="KPPP" class="mw-redirect">KPPP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KRDC" title="KRDC">KRDC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KTorrent" title="KTorrent">KTorrent</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OwnCloud" title="OwnCloud">ownCloud</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rekonq" title="Rekonq">Rekonq</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Multimedia</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Amarok_(software)" title="Amarok (software)">Amarok</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dragon_Player" title="Dragon Player" class="mw-redirect">Dragon Player</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Frescobaldi_(software)" title="Frescobaldi (software)">Frescobaldi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JuK" title="JuK">JuK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/K3b" title="K3b">K3b</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/K9Copy" title="K9Copy">K9Copy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kaffeine" title="Kaffeine">Kaffeine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdenlive" title="Kdenlive">Kdenlive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Konqueror_Media_Player" title="Konqueror Media Player">KMPlayer</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Office</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Calligra_Flow" title="Calligra Flow">Flow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KAddressBook" title="KAddressBook" class="mw-redirect">KAddressBook</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kexi" title="Kexi">Kexi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kile" title="Kile">Kile</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KMyMoney" title="KMyMoney">KMyMoney</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kontact" title="Kontact">Kontact</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KOrganizer" title="KOrganizer" class="mw-redirect">KOrganizer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KPilot" title="KPilot">KPilot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KWord" title="KWord">KWord</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calligra_Plan" title="Calligra Plan">Plan</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calligra_Stage" title="Calligra Stage">Stage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calligra_Tables" title="Calligra Tables" class="mw-redirect">Tables</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tellico" title="Tellico">Tellico</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calligra_Words" title="Calligra Words">Words</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">System</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Dolphin_(file_manager)" title="Dolphin (file manager)">Dolphin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Partition_Manager" title="KDE Partition Manager">KDE Partition Manager</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_System_Guard" title="KDE System Guard">KDE System Guard</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kinfocenter" title="Kinfocenter">KInfoCenter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Konsole" title="Konsole">Konsole</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yakuake" title="Yakuake">Yakuake</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Utilities</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Ark_(software)" title="Ark (software)">Ark</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BasKet_Note_Pads" title="BasKet Note Pads">BasKet Note Pads</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KAlarm" title="KAlarm">KAlarm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kate_(text_editor)" title="Kate (text editor)">Kate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KCalc" title="KCalc">KCalc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KGPG" title="KGPG">KGPG</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Klipper" title="Klipper">Klipper</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KJots" title="KJots">KJots</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Krusader" title="Krusader">Krusader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KRename" title="KRename">KRename</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KWallet" title="KWallet">KWallet</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KWrite" title="KWrite">KWrite</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RSIBreak" title="RSIBreak">RSIBreak</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SuperKaramba" title="SuperKaramba">SuperKaramba</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/KDE_Platform" title="KDE Platform">Platform</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Akonadi" title="Akonadi">Akonadi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decibel_(KDE)" title="Decibel (KDE)">Decibel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Flake_(KDE)" title="Flake (KDE)">Flake</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KJS_(KDE)" title="KJS (KDE)">KJS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KHTML" title="KHTML">KHTML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KIO" title="KIO">KIO</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kiosk_(KDE)" title="Kiosk (KDE)">Kiosk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Image_Plugin_Interface" title="KDE Image Plugin Interface">KIPI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KParts" title="KParts" class="mw-redirect">KParts</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kross_(KDE)" title="Kross (KDE)">Kross</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NEPOMUK_(framework)" title="NEPOMUK (framework)">NEPOMUK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oxygen_Project" title="Oxygen Project">Oxygen</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Phonon_(KDE)" title="Phonon (KDE)">Phonon</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QtRuby" title="QtRuby">QtRuby</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solid_(KDE)" title="Solid (KDE)" class="mw-redirect">Solid</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sonnet_(KDE)" title="Sonnet (KDE)">Sonnet</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Soprano_(KDE)" title="Soprano (KDE)">Soprano</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strigi" title="Strigi">Strigi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ThreadWeaver" title="ThreadWeaver">ThreadWeaver</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XMLGUI" title="XMLGUI">XMLGUI</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Packages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/KDELibs" title="KDELibs" class="mw-redirect">KDELibs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDEBase" title="KDEBase" class="mw-redirect">KDEBase</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Accessibility_Project" title="KDE Accessibility Project">Accessibility</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdeadmin" title="Kdeadmin">Administration</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdebindings" title="Kdebindings" class="mw-redirect">Bindings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KDE_Education_Project" title="KDE Education Project">Education</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdegames" title="Kdegames">Games</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdegraphics" title="Kdegraphics">Graphics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdemultimedia" title="Kdemultimedia">Multimedia</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdenetwork" title="Kdenetwork">Network</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdepim" title="Kdepim" class="mw-redirect">PIM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdesdk" title="Kdesdk">SDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdeutils" title="Kdeutils">Utils</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kdewebdev" title="Kdewebdev">Web Dev</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calligra_Suite" title="Calligra Suite">Calligra Suite</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KOffice" title="KOffice">KOffice</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extragear" title="Extragear">Extragear</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><td class="navbox-abovebelow hlist" style=";" colspan="3">
+<div>
+<ul><li><b><img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Category:KDE" title="Category:KDE">Category</a></b></li>
+<li><b><img alt="Project page" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Symbol_information_vote.svg/16px-Symbol_information_vote.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Symbol_information_vote.svg/24px-Symbol_information_vote.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Symbol_information_vote.svg/32px-Symbol_information_vote.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_KDE" title="Wikipedia:WikiProject KDE">Project</a></b></li>
+<li><b><img alt="File" src="http://upload.wikimedia.org/wikipedia/en/thumb/e/e7/Video-x-generic.svg/16px-Video-x-generic.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/e/e7/Video-x-generic.svg/24px-Video-x-generic.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/e/e7/Video-x-generic.svg/32px-Video-x-generic.svg.png 2x"><a href="http://commons.wikimedia.org/wiki/KDE" class="extiw" title="commons:KDE">Commons</a></b></li>
+<li><b><img alt="Template" src="http://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/16px-Symbol_template_class.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/24px-Symbol_template_class.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/5/5c/Symbol_template_class.svg/32px-Symbol_template_class.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Template:KDE" title="Template:KDE">Template</a></b></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr></table>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 26 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%83%D9%8A_%D8%AF%D9%8A%D9%81%D9%8A%D9%84%D9%88%D8%A8" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ca.m.wikipedia.org/wiki/KDevelop" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/KDevelop" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/KDevelop" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/KDevelop" lang="es" hreflang="es">español</a></li><li><a href="http://eu.m.wikipedia.org/wiki/KDevelop" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%DA%A9%DB%8C%E2%80%8C%D8%AF%D9%88%D8%A7%D9%84%D8%A7%D9%BE" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/KDevelop" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/KDevelop" lang="gl" hreflang="gl">galego</a></li><li><a href="http://hr.m.wikipedia.org/wiki/KDevelop" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/KDevelop" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/KDevelop" lang="it" hreflang="it">italiano</a></li><li><a href="http://hu.m.wikipedia.org/wiki/KDevelop" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/KDevelop" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/KDevelop" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/KDevelop" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/KDevelop" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/KDevelop" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/KDevelop" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/KDevelop" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/KDevelop" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9A-%D0%B4%D0%B5%D0%B2%D0%B5%D0%BB%D0%BE%D0%BF" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sv.m.wikipedia.org/wiki/KDevelop" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/KDevelop" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/KDevelop" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/KDevelop" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=KDevelop&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=KDevelop&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=KDevelop&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

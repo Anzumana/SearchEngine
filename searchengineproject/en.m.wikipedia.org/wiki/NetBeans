@@ -1,0 +1,973 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>NetBeans - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"NetBeans","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/NetBeans" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=NetBeans"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">NetBeans</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">NetBeans IDE</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:NetBeans.svg" class="image"><img alt="NetBeans.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/0/01/NetBeans.svg/150px-NetBeans.svg.png" width="150" height="41" srcset="//upload.wikimedia.org/wikipedia/en/thumb/0/01/NetBeans.svg/225px-NetBeans.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/0/01/NetBeans.svg/300px-NetBeans.svg.png 2x"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:NetBeansIDE.png" class="image"><img alt="NetBeansIDE.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/NetBeansIDE.png/250px-NetBeansIDE.png" width="250" height="133" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/NetBeansIDE.png/375px-NetBeansIDE.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/NetBeansIDE.png/500px-NetBeansIDE.png 2x"></a><br><span style="">NetBeans IDE 6.9 in <a href="http://en.m.wikipedia.org/wiki/Windows_7" title="Windows 7">Microsoft Windows 7</a>.</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">7.2 / July 17, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-07-17</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="Java_(programming_language)" title="Java (programming language)">Java</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform (multi-platform)</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Java_SE" title="Java SE" class="mw-redirect">Java SE</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Available in</th>
+<td class="" style=""><a href="NetBeans#Localization">Multilingual</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">Java IDE</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/CDDL" title="CDDL" class="mw-redirect">CDDL</a> or <a href="http://en.m.wikipedia.org/wiki/GPL2" title="GPL2" class="mw-redirect">GPL2</a> + <a rel="nofollow" class="external text" href="http://www.netbeans.org/cddl-gplv2.html">"certain source files"</a> allow <a href="http://en.m.wikipedia.org/wiki/Classpath_exception" title="Classpath exception" class="mw-redirect">classpath exception</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.netbeans.org/">netbeans.org</a></td>
+</tr>
+</table>
+<p><b>NetBeans</b> refers to both a <a href="http://en.m.wikipedia.org/wiki/Platform_(computing)" title="Platform (computing)" class="mw-redirect">platform</a> framework for <a href="Java_(programming_language)" title="Java (programming language)">Java</a> desktop applications and an <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) for developing with Java<sup id="cite_ref-Release_Notes_7.0_1-0" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="JavaScript" title="JavaScript">JavaScript</a><sup id="cite_ref-Release_Notes_7.0_1-1" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="PHP" title="PHP">PHP</a><sup id="cite_ref-Release_Notes_7.0_1-2" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a><sup id="cite_ref-2" class="reference"><a href="NetBeans#cite_note-2"><span>[</span>2<span>]</span></a></sup> (no longer supported after NetBeans 7), <a href="http://en.m.wikipedia.org/wiki/Groovy_(programming_language)" title="Groovy (programming language)">Groovy</a><sup id="cite_ref-Release_Notes_7.0_1-3" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a><sup id="cite_ref-Release_Notes_7.0_1-4" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="C++" title="C++">C++</a><sup id="cite_ref-Release_Notes_7.0_1-5" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, <a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a> <sup id="cite_ref-3" class="reference"><a href="NetBeans#cite_note-3"><span>[</span>3<span>]</span></a></sup>, <a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a> <sup id="cite_ref-4" class="reference"><a href="NetBeans#cite_note-4"><span>[</span>4<span>]</span></a></sup> and others. The NetBeans IDE 7.0 no longer officially supports <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> and <a href="http://en.m.wikipedia.org/wiki/Ruby_on_Rails" title="Ruby on Rails">Ruby on Rails</a><sup id="cite_ref-Release_Notes_7.0_1-6" class="reference"><a href="NetBeans#cite_note-Release_Notes_7.0-1"><span>[</span>1<span>]</span></a></sup>, but a third party plug-in allows for development.</p>
+<p>The NetBeans IDE is written in Java and can run on Windows, OS X, Linux, Solaris and other platforms supporting a compatible <a href="http://en.m.wikipedia.org/wiki/Java_Virtual_Machine" title="Java Virtual Machine" class="mw-redirect">JVM</a>. A pre-existing JVM or a <a href="http://en.m.wikipedia.org/wiki/Java_Development_Kit" title="Java Development Kit">JDK</a> is not required.</p>
+<p>The NetBeans platform allows applications to be developed from a set of modular <a href="http://en.m.wikipedia.org/wiki/Software_component" title="Software component" class="mw-redirect">software components</a> called <i>modules</i>. Applications based on the NetBeans platform (including the NetBeans IDE) can be extended by <a href="http://en.m.wikipedia.org/wiki/Third_party_developer" title="Third party developer" class="mw-redirect">third party developers</a>.<sup id="cite_ref-5" class="reference"><a href="NetBeans#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<div style="float: right">
+<p><map name="timeline_2a71e8b7de1bb29cdb5866fa0b1abb73" id="timeline_2a71e8b7de1bb29cdb5866fa0b1abb73"></map><img usemap="#timeline_2a71e8b7de1bb29cdb5866fa0b1abb73" src="http://upload.wikimedia.org/wikipedia/en/timeline/2a71e8b7de1bb29cdb5866fa0b1abb73.png"></p>
+<p><b>NetBeans IDE Releases</b><sup id="cite_ref-6" class="reference"><a href="NetBeans#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<table class="toccolours collapsible collapsed" style="float: right; margin-left: 1em;">
+<tr>
+<th>Version</th>
+<th>Released</th>
+</tr>
+<tr>
+<td>3.5</td>
+<td>June 2003</td>
+</tr>
+<tr>
+<td>3.6</td>
+<td>April 2004</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>December 2004</td>
+</tr>
+<tr>
+<td>4.1</td>
+<td>May 2005</td>
+</tr>
+<tr>
+<td>5.0</td>
+<td>January 2006</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>October 30, 2006</td>
+</tr>
+<tr>
+<td>5.5.1</td>
+<td>May 24, 2007</td>
+</tr>
+<tr>
+<td>6.0</td>
+<td>December 3, 2007</td>
+</tr>
+<tr>
+<td>6.1</td>
+<td>April 28, 2008</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>November 20, 2008</td>
+</tr>
+<tr>
+<td>6.5.1</td>
+<td>March 16, 2009</td>
+</tr>
+<tr>
+<td>6.7</td>
+<td>June 29, 2009</td>
+</tr>
+<tr>
+<td>6.7.1</td>
+<td>July 27, 2009</td>
+</tr>
+<tr>
+<td>6.8</td>
+<td>December 10, 2009</td>
+</tr>
+<tr>
+<td>6.9</td>
+<td>June 15, 2010</td>
+</tr>
+<tr>
+<td>6.9.1</td>
+<td>August 4, 2010</td>
+</tr>
+<tr>
+<td>7.0</td>
+<td>April 19, 2011</td>
+</tr>
+<tr>
+<td>7.0.1</td>
+<td>August 1, 2011</td>
+</tr>
+<tr>
+<td>7.1</td>
+<td>January 5, 2012</td>
+</tr>
+<tr>
+<td>7.1.1</td>
+<td>February 29, 2012</td>
+</tr>
+<tr>
+<td>7.1.2</td>
+<td>April 24, 2012</td>
+</tr>
+<tr>
+<td>7.2</td>
+<td>July 17, 2012</td>
+</tr>
+</table>
+</div>
+<p>NetBeans began in 1996 as Xelfi (word play on <i><a href="http://en.m.wikipedia.org/wiki/Borland_Delphi" title="Borland Delphi" class="mw-redirect">Delphi</a></i>),<sup id="cite_ref-7" class="reference"><a href="NetBeans#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="NetBeans#cite_note-8"><span>[</span>8<span>]</span></a></sup> a Java IDE student project under the guidance of the Faculty of Mathematics and Physics at <a href="http://en.m.wikipedia.org/wiki/Charles_University" title="Charles University" class="mw-redirect">Charles University</a> in <a href="http://en.m.wikipedia.org/wiki/Prague" title="Prague">Prague</a>. In 1997 Roman Staněk formed a company around the project and produced commercial versions of the NetBeans IDE until it was bought by <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> in 1999. Sun open-sourced the NetBeans IDE in June of the following year. Since then, the NetBeans community has continued to grow.<sup id="cite_ref-9" class="reference"><a href="NetBeans#cite_note-9"><span>[</span>9<span>]</span></a></sup> In 2010, Sun (and thus NetBeans) <a href="http://en.m.wikipedia.org/wiki/Sun_acquisition_by_Oracle" title="Sun acquisition by Oracle">was acquired</a> by <a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle</a>.</p>
+<h3> <span class="mw-headline" id="Current_versions">Current versions</span>
+</h3>
+<p>NetBeans IDE 6.0 introduced support for developing IDE modules and rich client applications based on the NetBeans platform, a Java Swing <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a> builder (formerly known as "Project Matisse"), improved <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a> support, <a href="http://en.m.wikipedia.org/wiki/WebLogic" title="WebLogic" class="mw-redirect">WebLogic</a> 9 and <a href="http://en.m.wikipedia.org/wiki/JBoss" title="JBoss">JBoss</a> 4 support, and many editor enhancements. NetBeans 6 is available in official repositories of major Linux distributions.</p>
+<p>NetBeans IDE 6.5, released in November 2008, extended the existing <a href="http://en.m.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition" title="Java Platform, Enterprise Edition">Java EE</a> features (including Java Persistence support, EJB 3 and JAX-WS). Additionally, the NetBeans Enterprise Pack supports development of Java EE 5 enterprise applications, including <a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">SOA</a> visual design tools, XML schema tools, web services orchestration (for BPEL), and <a href="http://en.m.wikipedia.org/wiki/Unified_Modeling_Language" title="Unified Modeling Language">UML</a> modeling. The NetBeans IDE Bundle for C/C++ supports C/C++ and FORTRAN development.</p>
+<p>NetBeans IDE 6.8 is the first IDE to provide complete support of Java EE 6 and the <a href="http://en.m.wikipedia.org/wiki/GlassFish" title="GlassFish">GlassFish Enterprise Server v3</a>. Developers hosting their open-source projects on <a href="http://en.m.wikipedia.org/wiki/Project_Kenai" title="Project Kenai">kenai.com</a> additionally benefit from instant messaging and issue tracking integration and navigation right in the IDE, support for web application development with PHP 5.3 and the Symfony framework, and improved code completion, layouting, hints and navigation in JavaFX projects.</p>
+<p>NetBeans IDE 6.9, released in June 2010, added support for <a href="http://en.m.wikipedia.org/wiki/OSGi" title="OSGi">OSGi</a>, <a href="http://en.m.wikipedia.org/wiki/Spring_Framework" title="Spring Framework">Spring Framework</a> 3.0, Java EE dependency injection (JSR-299), <a href="http://en.m.wikipedia.org/wiki/Zend_Framework" title="Zend Framework">Zend Framework</a> for <a href="PHP" title="PHP">PHP</a>, and easier code navigation (such as "Is Overridden/Implemented" annotations), formatting, hints, and refactoring across several languages.</p>
+<p>NetBeans IDE 7.0 was released in April 2011. On August 1, 2011, the NetBeans Team released NetBeans IDE 7.0.1, which has full support for the official release of the <a href="http://en.m.wikipedia.org/wiki/Java_version_history#Java_SE_7_.28July_28.2C_2011.29" title="Java version history">Java SE 7</a> platform.<sup id="cite_ref-10" class="reference"><a href="NetBeans#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="NetBeans_Platform">NetBeans Platform</span>
+</h2>
+<p>The <b>NetBeans Platform</b> is a reusable <a href="http://en.m.wikipedia.org/wiki/Software_framework" title="Software framework">framework</a> for simplifying the development of <a href="http://en.m.wikipedia.org/wiki/Java_Swing" title="Java Swing" class="mw-redirect">Java Swing</a> desktop applications. The NetBeans IDE bundle for Java SE contains what is needed to start developing NetBeans plugins and NetBeans Platform based applications; no additional SDK is required.</p>
+<p>Applications can install modules dynamically. Any application can include the Update Center module to allow users of the application to download <a href="http://en.m.wikipedia.org/wiki/Digital_signature" title="Digital signature">digitally signed</a> upgrades and new features directly into the running application. Reinstalling an upgrade or a new release does not force users to download the entire application again.</p>
+<p>The platform offers reusable services common to desktop applications, allowing developers to focus on the logic specific to their application. Among the features of the platform are:</p>
+<ul>
+<li>User interface management (e.g. menus and toolbars)</li>
+<li>User settings management</li>
+<li>Storage management (saving and loading any kind of data)</li>
+<li>Window management</li>
+<li>Wizard framework (supports step-by-step dialogs)</li>
+<li>NetBeans Visual Library</li>
+<li>Integrated development tools</li>
+</ul>
+<p>NetBeans IDE is a free, open-source, cross-platform IDE with built-in-support for Java Programming Language.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Netbeans_global.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Netbeans_global.png/220px-Netbeans_global.png" width="220" height="128" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/92/Netbeans_global.png/330px-Netbeans_global.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/92/Netbeans_global.png/440px-Netbeans_global.png 2x"></a>
+<div class="thumbcaption">
+
+NetBeans screenshot</div>
+</div>
+</div>
+<h2> <span class="mw-headline" id="NetBeans_IDE">NetBeans IDE</span>
+</h2>
+<p><b>NetBeans IDE</b> is an <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open-source</a> integrated development environment. NetBeans IDE supports development of all Java application types (<a href="http://en.m.wikipedia.org/wiki/Java_Platform,_Standard_Edition" title="Java Platform, Standard Edition">Java SE</a> (including <a href="http://en.m.wikipedia.org/wiki/JavaFX" title="JavaFX">JavaFX</a>), <a href="http://en.m.wikipedia.org/wiki/Java_Platform,_Micro_Edition" title="Java Platform, Micro Edition">Java ME</a>, <a href="http://en.m.wikipedia.org/wiki/Web_application" title="Web application">web</a>, <a href="http://en.m.wikipedia.org/wiki/EJB" title="EJB" class="mw-redirect">EJB</a> and <a href="http://en.m.wikipedia.org/wiki/MIDlet" title="MIDlet">mobile</a> applications) out of the box. Among other features are an <a href="http://en.m.wikipedia.org/wiki/Apache_Ant" title="Apache Ant">Ant</a>-based project system, Maven support, <a href="http://en.m.wikipedia.org/wiki/Refactoring" title="Refactoring" class="mw-redirect">refactorings</a>, <a href="http://en.m.wikipedia.org/wiki/Version_control_system" title="Version control system" class="mw-redirect">version control</a> (supporting <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a>, <a href="http://en.m.wikipedia.org/wiki/Subversion_(software)" title="Subversion (software)" class="mw-redirect">Subversion</a>, <a href="http://en.m.wikipedia.org/wiki/Mercurial_(software)" title="Mercurial (software)" class="mw-redirect">Mercurial</a> and <a href="http://en.m.wikipedia.org/wiki/Clearcase" title="Clearcase" class="mw-redirect">Clearcase</a>).</p>
+<p><b>Modularity</b>: All the functions of the IDE are provided by modules. Each module provides a well defined function, such as support for the <a href="Java_(programming_language)" title="Java (programming language)">Java language</a>, editing, or support for the <a href="http://en.m.wikipedia.org/wiki/Concurrent_Versions_System" title="Concurrent Versions System">CVS</a> versioning system, and SVN. NetBeans contains all the modules needed for Java development in a single download, allowing the user to start working immediately. Modules also allow NetBeans to be extended. New features, such as support for other programming languages, can be added by installing additional modules. For instance, <a href="http://en.m.wikipedia.org/wiki/Sun_Studio_Compiler_Suite" title="Sun Studio Compiler Suite" class="mw-redirect">Sun Studio</a>, Sun Java Studio Enterprise, and <a href="http://en.m.wikipedia.org/wiki/Sun_Java_Studio_Creator" title="Sun Java Studio Creator">Sun Java Studio Creator</a> from <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> are all based on the NetBeans IDE.</p>
+<p><b>License</b>: From July 2006 through 2007, NetBeans IDE was licensed under Sun's <a href="http://en.m.wikipedia.org/wiki/Common_Development_and_Distribution_License" title="Common Development and Distribution License">Common Development and Distribution License</a> (CDDL), a license based on the <a href="http://en.m.wikipedia.org/wiki/Mozilla_Public_License" title="Mozilla Public License">Mozilla Public License</a> (MPL). In October 2007, Sun announced that NetBeans would henceforth be offered under a <a href="http://en.m.wikipedia.org/wiki/Dual_license" title="Dual license" class="mw-redirect">dual license</a> of the CDDL and the <a href="http://en.m.wikipedia.org/wiki/GPL" title="GPL" class="mw-redirect">GPL</a> version 2 licenses, with the <a href="http://en.m.wikipedia.org/wiki/GPL_linking_exception" title="GPL linking exception">GPL linking exception</a> for <a href="http://en.m.wikipedia.org/wiki/GNU_Classpath" title="GNU Classpath">GNU Classpath</a><sup id="cite_ref-11" class="reference"><a href="NetBeans#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Integrated_modules">Integrated modules</span>
+</h2>
+<p>These modules are part of the NetBeans IDE.</p>
+<h3> <span class="mw-headline" id="NetBeans_Profiler">NetBeans Profiler</span>
+</h3>
+<p>The <b>NetBeans Profiler</b><sup id="cite_ref-12" class="reference"><a href="NetBeans#cite_note-12"><span>[</span>12<span>]</span></a></sup> is a tool for the monitoring of Java applications: It helps developers find memory leaks and optimize speed. Formerly downloaded separately, it is integrated into the core IDE since version 6.0.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Profiler_(computer_science)" title="Profiler (computer science)" class="mw-redirect">Profiler</a> is based on a Sun Laboratories research project that was named JFluid. That research uncovered specific techniques that can be used to lower the overhead of profiling a Java application. One of those techniques is dynamic bytecode instrumentation, which is particularly useful for profiling large Java applications. Using dynamic bytecode instrumentation and additional algorithms, the NetBeans Profiler is able to obtain runtime information on applications that are too large or complex for other profilers. NetBeans also support Profiling Points that let you profile precise points of execution and measure execution time.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Gui-builder.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gui-builder.png/220px-Gui-builder.png" width="220" height="133" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gui-builder.png/330px-Gui-builder.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Gui-builder.png/440px-Gui-builder.png 2x"></a>
+<div class="thumbcaption">
+
+NetBeans GUI Builder</div>
+</div>
+</div>
+<h3> <span class="mw-headline" id="GUI_design_tool">GUI design tool</span>
+</h3>
+<p>Formerly known as <i>project Matisse</i>, the GUI design-tool enables developers to prototype and design <a href="http://en.m.wikipedia.org/wiki/Swing_(Java)" title="Swing (Java)">Swing</a> <a href="Graphical_user_interface" title="Graphical user interface">GUIs</a> by dragging and positioning GUI components.<sup id="cite_ref-13" class="reference"><a href="NetBeans#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>The GUI builder has built-in support for JSR 295 (Beans Binding technology), but the support for JSR 296 (<a href="http://en.m.wikipedia.org/wiki/Swing_Application_Framework" title="Swing Application Framework">Swing Application Framework</a>) was removed in 7.1.</p>
+<h3> <span class="mw-headline" id="NetBeans_JavaScript_editor">NetBeans JavaScript editor</span>
+</h3>
+<p>The NetBeans JavaScript editor provides extended support for <a href="JavaScript" title="JavaScript">JavaScript</a>, Ajax, and <a href="http://en.m.wikipedia.org/wiki/CSS" title="CSS" class="mw-redirect">CSS</a>.<sup id="cite_ref-14" class="reference"><a href="NetBeans#cite_note-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-15" class="reference"><a href="NetBeans#cite_note-15"><span>[</span>15<span>]</span></a></sup></p>
+<p>JavaScript editor features comprise <a href="http://en.m.wikipedia.org/wiki/Syntax_highlighting" title="Syntax highlighting">syntax highlighting</a>, <a href="http://en.m.wikipedia.org/wiki/Code_refactoring" title="Code refactoring">refactoring</a>, <a href="http://en.m.wikipedia.org/wiki/Autocomplete" title="Autocomplete">code completion</a> for native objects and functions, generation of JavaScript class skeletons, generation of <a href="http://en.m.wikipedia.org/wiki/Ajax_(programming)" title="Ajax (programming)">Ajax</a> <a href="Callback_(computer_science)" title="Callback (computer science)" class="mw-redirect">callbacks</a> from a template; and automatic <a href="JavaScript#Compatibility_considerations" title="JavaScript">browser compatibility</a> checks.</p>
+<p>CSS editor features comprise <a href="http://en.m.wikipedia.org/wiki/Autocomplete" title="Autocomplete">code completion</a> for styles names, quick navigation through the navigator panel, displaying the CSS rule declaration in a List View and file structure in a Tree View, sorting the outline view by name, type or declaration order (List &amp; Tree), creating rule declarations (Tree only), refactoring a part of a rule name (Tree only).</p>
+<h2> <span class="mw-headline" id="NetBeans_IDE_Download_Bundles">NetBeans IDE Download Bundles</span>
+</h2>
+<p>Users can choose to download NetBeans IDE bundles tailored to specific development needs. Users can also download and install all other features at a later date directly through the NetBeans IDE.</p>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Bundle_for_Web_and_Java_EE">NetBeans IDE Bundle for Web and Java EE</span>
+</h3>
+<p>The <b>NetBeans IDE Bundle for Web &amp; Java EE</b><sup id="cite_ref-16" class="reference"><a href="NetBeans#cite_note-16"><span>[</span>16<span>]</span></a></sup> provides complete tools for all the latest Java EE 6 standards, including the new Java EE 6 Web Profile, Enterprise Java Beans (EJBs), servlets, Java Persistence API, web services, and annotations. NetBeans also supports the JSF 2.0 (Facelets), JavaServer Pages (JSP), Hibernate, Spring, and Struts frameworks, and the Java EE 5 and J2EE 1.4 platforms. It includes <a href="http://en.m.wikipedia.org/wiki/GlassFish" title="GlassFish">GlassFish</a> and <a href="http://en.m.wikipedia.org/wiki/Apache_Tomcat" title="Apache Tomcat">Apache Tomcat</a>. Some of its features with javaEE includes</p>
+<ul>
+<li>Improved support for CDI, REST services and Java Persistence</li>
+<li>New support for Bean Validation</li>
+<li>Support for JSF component libraries, including bundled PrimeFaces library</li>
+<li>Improved editing for Expression Language in JSF, including code completion, refactoring and hints</li>
+</ul>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Bundle_for_Ruby">NetBeans IDE Bundle for Ruby</span>
+</h3>
+<p>The <b>NetBeans IDE Bundle for Ruby</b><sup id="cite_ref-17" class="reference"><a href="NetBeans#cite_note-17"><span>[</span>17<span>]</span></a></sup> Versions prior to 7.0 includes a Ruby editor (with code completion, and syntactic and semantic highlighting), debugger, and full support for the <a href="http://en.m.wikipedia.org/wiki/Ruby_on_Rails" title="Ruby on Rails">Ruby on Rails</a> framework. NetBeans supports development with <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> and <a href="http://en.m.wikipedia.org/wiki/JRuby" title="JRuby">JRuby</a>, as well as Rails for these two implementations of Ruby.<sup id="cite_ref-18" class="reference"><a href="NetBeans#cite_note-18"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-19" class="reference"><a href="NetBeans#cite_note-19"><span>[</span>19<span>]</span></a></sup></p>
+<p>NetBeans release 7.0 and above no longer supports Ruby (and Rails).<sup id="cite_ref-20" class="reference"><a href="NetBeans#cite_note-20"><span>[</span>20<span>]</span></a></sup> There is however, a third-party plug-in for Ruby and Rails for release 7.0.<sup id="cite_ref-21" class="reference"><a href="NetBeans#cite_note-21"><span>[</span>21<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Bundle_for_Java_ME">NetBeans IDE Bundle for Java ME</span>
+</h3>
+<p>The <b>NetBeans IDE Bundle for Java ME</b> is a tool for developing applications that run on mobile devices; generally mobile phones, but this also includes entry-level <a href="http://en.m.wikipedia.org/wiki/PDA" title="PDA" class="mw-redirect">PDAs</a>, and <a href="http://en.m.wikipedia.org/wiki/Java_Card" title="Java Card">Java Card</a>, among others.</p>
+<p>The NetBeans IDE comes bundled with the latest Java ME SDK 3.0 which supports both CLDC and CDC development. One can easily integrate third-party emulators for a robust testing environment. You can download other Java platforms, including the Java Card Platform 3.0, and register them in the IDE.</p>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Bundle_for_PHP">NetBeans IDE Bundle for PHP</span>
+</h3>
+<p>NetBeans supports <a href="PHP" title="PHP">PHP</a> since version 6.5. The bundle for PHP includes:</p>
+<ul>
+<li>syntax highlighting, code completion, occurrence highlighting, error highlighting, CVS version control</li>
+<li>semantic analysis with highlighting of parameters and unused local variables</li>
+<li>PHP code debugging with <a href="http://en.m.wikipedia.org/wiki/Xdebug" title="Xdebug">xdebug</a>
+</li>
+<li>PHP Unit testing with <a href="http://en.m.wikipedia.org/wiki/PHPUnit" title="PHPUnit">PHPUnit</a> and <a href="http://en.m.wikipedia.org/wiki/Selenium_(software)" title="Selenium (software)">Selenium</a>
+</li>
+<li>Code coverage</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Symfony" title="Symfony">Symfony</a> framework support (since version 6.8)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Zend_Framework" title="Zend Framework">Zend Framework</a> support (since version 6.9)</li>
+<li>PHP 5.3 namespace and closure support (since version 6.8)</li>
+<li>Code Folding for Control Structures (since version 7.2 dev<sup id="cite_ref-Netbeans_Bugzilla_-_Bug_186731_22-0" class="reference"><a href="NetBeans#cite_note-Netbeans_Bugzilla_-_Bug_186731-22"><span>[</span>22<span>]</span></a></sup> )</li>
+</ul>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Bundle_for_JavaFX">NetBeans IDE Bundle for JavaFX</span>
+</h3>
+<p>A NetBeans IDE Bundle is also available for <a href="http://en.m.wikipedia.org/wiki/JavaFX" title="JavaFX">JavaFX</a> since NetBeans 6.5.<sup id="cite_ref-23" class="reference"><a href="NetBeans#cite_note-23"><span>[</span>23<span>]</span></a></sup> Additional to full Java SE support it provides a JavaFX editor and a JavaFX Composer, and it allows to create, preview and profile JavaFX Desktop or JavaFX Mobile applications.</p>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Complete_Bundle">NetBeans IDE Complete Bundle</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> also releases a version of NetBeans that includes all of the features of the above bundles. This bundle includes:</p>
+<ul>
+<li>NetBeans Base IDE</li>
+<li>Java SE, JavaFX</li>
+<li>Web and Java EE</li>
+<li>Java ME</li>
+<li>C/C++</li>
+<li>PHP (Version 6.5 and later)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/GlassFish" title="GlassFish">GlassFish</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Apache_Tomcat" title="Apache Tomcat">Apache Tomcat</a></li>
+</ul>
+<p>Official Ruby support was removed with the release of 7.0</p>
+<h3> <span class="mw-headline" id="NetBeans_IDE_Starter_Kit_.28DVD.29">NetBeans IDE Starter Kit (DVD)</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> used to offer a free DVD-ROM which included all of the components needed to run NetBeans. An ISO of the DVD is still available for download.<sup id="cite_ref-DVD_24-0" class="reference"><a href="NetBeans#cite_note-DVD-24"><span>[</span>24<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Other_NetBeans_IDE_Bundles">Other NetBeans IDE Bundles</span>
+</h3>
+<p>Apart from the above mentioned, a NetBeans IDE Bundle is also available for <a href="Python_(programming_language)" title="Python (programming language)">Python</a>. NetBeans for Python is available as an "early access" download in an IDE bundle form and as a plugin for any NetBeans 6.5 IDE bundle as well. The Python bundle has been discontinued as of Netbeans 7.0</p>
+<h2> <span class="mw-headline" id="Localization">Localization</span>
+</h2>
+<p>NetBeans IDE is translated into the following languages:<sup id="cite_ref-25" class="reference"><a href="NetBeans#cite_note-25"><span>[</span>25<span>]</span></a></sup></p>
+<ul>
+<li>Brazilian <a href="http://en.m.wikipedia.org/wiki/Portuguese_language" title="Portuguese language">Portuguese</a> (BR), as of 5.5<sup id="cite_ref-nb55l10nbr_26-0" class="reference"><a href="NetBeans#cite_note-nb55l10nbr-26"><span>[</span>26<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Japanese_language" title="Japanese language">Japanese</a> (JP), as of 3.4<sup id="cite_ref-nb36l10n_27-0" class="reference"><a href="NetBeans#cite_note-nb36l10n-27"><span>[</span>27<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Simplified_Chinese" title="Simplified Chinese" class="mw-redirect">Simplified Chinese</a> (ZH)</li>
+</ul>
+<p>Community translations of the IDE are also available in the following languages:</p>
+<table class="wikitable">
+<caption>
+<b>Community translations</b><sup id="cite_ref-28" class="reference"><a href="NetBeans#cite_note-28"><span>[</span>28<span>]</span></a></sup>
+</caption>
+<tr>
+<th>Language</th>
+<th>Platform</th>
+<th>Java SE<br>
+(IDE)</th>
+<th>ALL</th>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Afrikaans_language" title="Afrikaans language" class="mw-redirect">Afrikaans</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Albanian_language" title="Albanian language">Albanian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb55pl10n_29-0" class="reference"><a href="NetBeans#cite_note-nb55pl10n-29"><span>[</span>29<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Azerbaijani_language" title="Azerbaijani language">Azerbaijani</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Catalan_language" title="Catalan language">Catalan</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.7.1<sup id="cite_ref-osolcat_30-0" class="reference"><a href="NetBeans#cite_note-osolcat-30"><span>[</span>30<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.7.1<sup id="cite_ref-osolcat_30-1" class="reference"><a href="NetBeans#cite_note-osolcat-30"><span>[</span>30<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9.1<sup id="cite_ref-osolcat_30-2" class="reference"><a href="NetBeans#cite_note-osolcat-30"><span>[</span>30<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Czech_language" title="Czech language">Czech</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.0<sup id="cite_ref-31" class="reference"><a href="NetBeans#cite_note-31"><span>[</span>31<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Filipino_language" title="Filipino language">Filipino</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/French_language" title="French language">French</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Galician_language" title="Galician language">Galician</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.8</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/German_language" title="German language">German</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb551l10n_32-0" class="reference"><a href="NetBeans#cite_note-nb551l10n-32"><span>[</span>32<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb551l10n_32-1" class="reference"><a href="NetBeans#cite_note-nb551l10n-32"><span>[</span>32<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Greek_language" title="Greek language">Greek</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Hindi_language" title="Hindi language" class="mw-redirect">Hindi</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Indonesian_language" title="Indonesian language">Indonesian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb55pl10n_29-1" class="reference"><a href="NetBeans#cite_note-nb55pl10n-29"><span>[</span>29<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Italian_language" title="Italian language">Italian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Korean_language" title="Korean language">Korean</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.0<sup id="cite_ref-nb50l10n_33-0" class="reference"><a href="NetBeans#cite_note-nb50l10n-33"><span>[</span>33<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.0<sup id="cite_ref-nb50l10n_33-1" class="reference"><a href="NetBeans#cite_note-nb50l10n-33"><span>[</span>33<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Lithuanian_language" title="Lithuanian language">Lithuanian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Romanian_language" title="Romanian language">Romanian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.8</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Russian_language" title="Russian language">Russian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.0<sup id="cite_ref-nb50l10n_33-2" class="reference"><a href="NetBeans#cite_note-nb50l10n-33"><span>[</span>33<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.0<sup id="cite_ref-nb50l10n_33-3" class="reference"><a href="NetBeans#cite_note-nb50l10n-33"><span>[</span>33<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9.1</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Serbian_language" title="Serbian language">Serbian</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Spanish_language" title="Spanish language">Spanish</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb551l10n_32-2" class="reference"><a href="NetBeans#cite_note-nb551l10n-32"><span>[</span>32<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 5.5<sup id="cite_ref-nb551l10n_32-3" class="reference"><a href="NetBeans#cite_note-nb551l10n-32"><span>[</span>32<span>]</span></a></sup>
+</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Swedish_language" title="Swedish language">Swedish</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Traditional_Chinese_character" title="Traditional Chinese character" class="mw-redirect">Traditional Chinese</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Turkish_language" title="Turkish language">Turkish</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Vietnamese_language" title="Vietnamese language">Vietnamese</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">As of 6.9</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NetBeans_BlueJ_Edition" title="NetBeans BlueJ Edition">NetBeans BlueJ Edition</a></li>
+<li><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eclipse_IDE" title="Eclipse IDE" class="mw-redirect">Eclipse IDE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_NetBeans-based_software" title="List of NetBeans-based software">List of NetBeans-based software</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Release_Notes_7.0-1">
+<span class="mw-cite-backlink">^ <a href="NetBeans#cite_ref-Release_Notes_7.0_1-0"><sup><i><b>a</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-1"><sup><i><b>b</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-2"><sup><i><b>c</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-3"><sup><i><b>d</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-4"><sup><i><b>e</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-5"><sup><i><b>f</b></i></sup></a> <a href="NetBeans#cite_ref-Release_Notes_7.0_1-6"><sup><i><b>g</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://netbeans.org/community/releases/70/relnotes.html">http://netbeans.org/community/releases/70/relnotes.html</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://wiki.netbeans.org/Python">http://wiki.netbeans.org/Python</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://wiki.netbeans.org/Scala">http://wiki.netbeans.org/Scala</a> Scala Plugins for NetBeans</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://inclojurewetrust.blogspot.com/2010/11/how-to-build-gui-with-netbeans-and.html">http://inclojurewetrust.blogspot.com/2010/11/how-to-build-gui-with-netbeans-and.html</a> How to build a GUI with NetBeans and Clojure</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://platform.netbeans.org/tutorials/">platform: NetBeans Modules and Rich-Client Applications Learning Trail</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://netbeans.org/community/releases/roadmap.html">http://netbeans.org/community/releases/roadmap.html</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.xelfi.cz/">"original Xelfi homepage"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.xelfi.cz/">http://www.xelfi.cz/</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=original+Xelfi+homepage&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.xelfi.cz%2F&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/community/articles/interviews/yarda-tulach.html">"Happy Birthday NetBeans - interview with Jaroslav "Yarda" Tulach"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/community/articles/interviews/yarda-tulach.html">http://www.netbeans.org/community/articles/interviews/yarda-tulach.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Happy+Birthday+NetBeans+-+interview+with+Jaroslav+%22Yarda%22+Tulach&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Fcommunity%2Farticles%2Finterviews%2Fyarda-tulach.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/about/history.html">"A Brief History of NetBeans"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/about/history.html">http://www.netbeans.org/about/history.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=A+Brief+History+of+NetBeans&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Fabout%2Fhistory.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blogs.oracle.com/java/entry/netbeans_ide_7_0_1">"NetBeans IDE 7.0.1 Now Available for Download"</a>. Oracle<span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.oracle.com/java/entry/netbeans_ide_7_0_1">http://blogs.oracle.com/java/entry/netbeans_ide_7_0_1</a></span><span class="reference-accessdate">. Retrieved 2011-09-11</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=NetBeans+IDE+7.0.1+Now+Available+for+Download&amp;rft.atitle=&amp;rft.pub=Oracle&amp;rft_id=http%3A%2F%2Fblogs.oracle.com%2Fjava%2Fentry%2Fnetbeans_ide_7_0_1&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.netbeans.org/gplv2-faqs.html">Why dual license NetBeans faq</a></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://profiler.netbeans.org/">"Profiler"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://profiler.netbeans.org/">http://profiler.netbeans.org/</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Profiler&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fprofiler.netbeans.org%2F&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/features/java/swing.html">"Swing GUI Builder (formerly Project Matisse)"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/features/java/swing.html">http://www.netbeans.org/features/java/swing.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Swing+GUI+Builder+%28formerly+Project+Matisse%29&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Ffeatures%2Fjava%2Fswing.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://wiki.netbeans.org/JavaScript">"Javascript"</a>. Netbeans wiki. 2007-03-31<span class="printonly">. <a rel="nofollow" class="external free" href="http://wiki.netbeans.org/JavaScript">http://wiki.netbeans.org/JavaScript</a></span><span class="reference-accessdate">. Retrieved 2008-04-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Javascript&amp;rft.atitle=&amp;rft.date=2007-03-31&amp;rft.pub=Netbeans+wiki&amp;rft_id=http%3A%2F%2Fwiki.netbeans.org%2FJavaScript&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/features/web/web-app.html">"Java Web Applications"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/features/web/web-app.html">http://www.netbeans.org/features/web/web-app.html</a></span><span class="reference-accessdate">. Retrieved 2008-04-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Java+Web+Applications&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Ffeatures%2Fweb%2Fweb-app.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/features/web/index.html">"Web &amp; Java EE"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/features/web/index.html">http://www.netbeans.org/features/web/index.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Web+%26+Java+EE&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Ffeatures%2Fweb%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/features/ruby/index.html">"Ruby"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/features/ruby/index.html">http://www.netbeans.org/features/ruby/index.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Ruby&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Ffeatures%2Fruby%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://netbeans.org/community/news/show/1015.html">http://netbeans.org/community/news/show/1015.html</a></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.infoworld.com/article/07/03/01/HNsunruby_1.html">http://www.infoworld.com/article/07/03/01/HNsunruby_1.html</a></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://netbeans.org/community/news/show/1507.html">http://netbeans.org/community/news/show/1507.html</a></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://plugins.netbeans.org/plugin/38549/ruby-and-rails">http://plugins.netbeans.org/plugin/38549/ruby-and-rails</a></span>
+</li>
+<li id="cite_note-Netbeans_Bugzilla_-_Bug_186731-22">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-Netbeans_Bugzilla_-_Bug_186731_22-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://netbeans.org/bugzilla/show_bug.cgi?id=186731">"Netbeans Bugzilla - Bug 186731"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://netbeans.org/bugzilla/show_bug.cgi?id=186731">http://netbeans.org/bugzilla/show_bug.cgi?id=186731</a></span><span class="reference-accessdate">. Retrieved 23 May 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Netbeans+Bugzilla+-+Bug+186731&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fnetbeans.org%2Fbugzilla%2Fshow_bug.cgi%3Fid%3D186731&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-23">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.netbeans.org/features/javafx/index.html">"JavaFX"</a>. Netbeans.org<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netbeans.org/features/javafx/index.html">http://www.netbeans.org/features/javafx/index.html</a></span><span class="reference-accessdate">. Retrieved 2009-03-29</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=JavaFX&amp;rft.atitle=&amp;rft.pub=Netbeans.org&amp;rft_id=http%3A%2F%2Fwww.netbeans.org%2Ffeatures%2Fjavafx%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-DVD-24">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-DVD_24-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.netbeans.org/about/media.html">NetBeans DVD Starter Kit Program</a></span>
+</li>
+<li id="cite_note-25">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://netbeans.org/community/releases/69/relnotes.html">http://netbeans.org/community/releases/69/relnotes.html</a></span>
+</li>
+<li id="cite_note-nb55l10nbr-26">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-nb55l10nbr_26-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://netbeans.org/community/news/show/969.html">NetBeans.org Community News: NetBeans 5.5 Multilingual Release Candidate 1</a></span>
+</li>
+<li id="cite_note-nb36l10n-27">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-nb36l10n_27-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://netbeans.org/community/news/show/244.html">NetBeans.org Community News: Japanese version of NetBeans</a></span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-28">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://wiki.netbeans.org/TFL10nCommunityStatus">http://wiki.netbeans.org/TFL10nCommunityStatus</a></span>
+</li>
+<li id="cite_note-nb55pl10n-29">
+<span class="mw-cite-backlink">^ <a href="NetBeans#cite_ref-nb55pl10n_29-0"><sup><i><b>a</b></i></sup></a> <a href="NetBeans#cite_ref-nb55pl10n_29-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://netbeans.org/community/news/show/1086.html">NetBeans.org Community News: NetBeans 5.5 Platform in Albanian &amp; Indonesian!</a></span>
+</li>
+<li id="cite_note-osolcat-30">
+<span class="mw-cite-backlink">^ <a href="NetBeans#cite_ref-osolcat_30-0"><sup><i><b>a</b></i></sup></a> <a href="NetBeans#cite_ref-osolcat_30-1"><sup><i><b>b</b></i></sup></a> <a href="NetBeans#cite_ref-osolcat_30-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://hub.opensolaris.org/bin/view/Community+Group+int_localization/ca_group?language=en">Catalan localization group at OpenSolaris</a></span>
+</li>
+<li id="cite_note-31">
+<span class="mw-cite-backlink"><b><a href="NetBeans#cite_ref-31">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://netbeans.org/community/news/show/1129.html">NetBeans.org Community News: Translate NetBeans 6 into Your Language!</a></span>
+</li>
+<li id="cite_note-nb551l10n-32">
+<span class="mw-cite-backlink">^ <a href="NetBeans#cite_ref-nb551l10n_32-0"><sup><i><b>a</b></i></sup></a> <a href="NetBeans#cite_ref-nb551l10n_32-1"><sup><i><b>b</b></i></sup></a> <a href="NetBeans#cite_ref-nb551l10n_32-2"><sup><i><b>c</b></i></sup></a> <a href="NetBeans#cite_ref-nb551l10n_32-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.netbeans.org/servlets/NewsItemView?newsItemID=1056">NetBeans.org Community News: Go Multilingual with NetBeans IDE 5.5.1!</a></span>
+</li>
+<li id="cite_note-nb50l10n-33">
+<span class="mw-cite-backlink">^ <a href="NetBeans#cite_ref-nb50l10n_33-0"><sup><i><b>a</b></i></sup></a> <a href="NetBeans#cite_ref-nb50l10n_33-1"><sup><i><b>b</b></i></sup></a> <a href="NetBeans#cite_ref-nb50l10n_33-2"><sup><i><b>c</b></i></sup></a> <a href="NetBeans#cite_ref-nb50l10n_33-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://netbeans.org/community/news/show/910.html">NetBeans.org Community News: Looking for NetBeans in Your Language?</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<span class="citation Journal">Boudreau, Tim; Glick, Jesse; Greene, Simeon; Woehr, Jack; Spurlin, Vaughn (October 15, 2002). <a rel="nofollow" class="external text" href="http://oreilly.com/catalog/9780596002800/"><i>NetBeans: The Definitive Guide</i></a> (First ed.). <a href="http://en.m.wikipedia.org/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>. pp. 672. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-596-00280-7" title="Special:BookSources/0-596-00280-7">0-596-00280-7</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://oreilly.com/catalog/9780596002800/">http://oreilly.com/catalog/9780596002800/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=NetBeans%3A+The+Definitive+Guide&amp;rft.aulast=Boudreau&amp;rft.aufirst=Tim&amp;rft.au=Boudreau%2C%26%2332%3BTim&amp;rft.au=Glick%2C%26%2332%3BJesse&amp;rft.au=Greene%2C%26%2332%3BSimeon&amp;rft.au=Woehr%2C%26%2332%3BJack&amp;rft.au=Spurlin%2C%26%2332%3BVaughn&amp;rft.date=October+15%2C+2002&amp;rft.pages=pp.%26nbsp%3B672&amp;rft.edition=First&amp;rft.pub=%5B%5BO%27Reilly+Media%5D%5D&amp;rft.isbn=0-596-00280-7&amp;rft_id=http%3A%2F%2Foreilly.com%2Fcatalog%2F9780596002800%2F&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Heffelfinger, David (October 31, 2008). <a rel="nofollow" class="external text" href="http://www.packtpub.com/java-ee5-development-with-netbeans-6/book"><i>Java EE 5 Development with NetBeans 6</i></a> (First ed.). <a href="http://en.m.wikipedia.org/wiki/Packt" title="Packt">Packt Publishing</a>. pp. 400. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-84719-546-6" title="Special:BookSources/1-84719-546-6">1-84719-546-6</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.packtpub.com/java-ee5-development-with-netbeans-6/book">http://www.packtpub.com/java-ee5-development-with-netbeans-6/book</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Java+EE+5+Development+with+NetBeans+6&amp;rft.aulast=Heffelfinger&amp;rft.aufirst=David&amp;rft.au=Heffelfinger%2C%26%2332%3BDavid&amp;rft.date=October+31%2C+2008&amp;rft.pages=pp.%26nbsp%3B400&amp;rft.edition=First&amp;rft.pub=%5B%5BPackt%7CPackt+Publishing%5D%5D&amp;rft.isbn=1-84719-546-6&amp;rft_id=http%3A%2F%2Fwww.packtpub.com%2Fjava-ee5-development-with-netbeans-6%2Fbook&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Myatt, Adam (February 21, 2008). <a rel="nofollow" class="external text" href="http://www.apress.com/book/view/9781590598955"><i>Pro Netbeans IDE 6 Rich Client Platform Edition</i></a> (First ed.). <a href="http://en.m.wikipedia.org/wiki/Apress" title="Apress">Apress</a>. pp. 491. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-59059-895-4" title="Special:BookSources/1-59059-895-4">1-59059-895-4</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.apress.com/book/view/9781590598955">http://www.apress.com/book/view/9781590598955</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Pro+Netbeans+IDE+6+Rich+Client+Platform+Edition&amp;rft.aulast=Myatt&amp;rft.aufirst=Adam&amp;rft.au=Myatt%2C%26%2332%3BAdam&amp;rft.date=February+21%2C+2008&amp;rft.pages=pp.%26nbsp%3B491&amp;rft.edition=First&amp;rft.pub=%5B%5BApress%5D%5D&amp;rft.isbn=1-59059-895-4&amp;rft_id=http%3A%2F%2Fwww.apress.com%2Fbook%2Fview%2F9781590598955&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Keegan, Patrick; Champenois, Ludovic; Crawley, Gregory; Hunt, Charlie; Webster, Christopher (May 9, 2006). <a rel="nofollow" class="external text" href="http://www.informit.com/store/product.aspx?isbn=0131876201"><i>NetBeans IDE Field Guide: Developing Desktop, Web, Enterprise, and Mobile Applications</i></a> (Second ed.). <a href="Prentice_Hall" title="Prentice Hall">Prentice Hall</a>. pp. 424. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-13-239552-6" title="Special:BookSources/978-0-13-239552-6">978-0-13-239552-6</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.informit.com/store/product.aspx?isbn=0131876201">http://www.informit.com/store/product.aspx?isbn=0131876201</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=NetBeans+IDE+Field+Guide%3A+Developing+Desktop%2C+Web%2C+Enterprise%2C+and+Mobile+Applications&amp;rft.aulast=Keegan&amp;rft.aufirst=Patrick&amp;rft.au=Keegan%2C%26%2332%3BPatrick&amp;rft.au=Champenois%2C%26%2332%3BLudovic&amp;rft.au=Crawley%2C%26%2332%3BGregory&amp;rft.au=Hunt%2C%26%2332%3BCharlie&amp;rft.au=Webster%2C%26%2332%3BChristopher&amp;rft.date=May+9%2C+2006&amp;rft.pages=pp.%26nbsp%3B424&amp;rft.edition=Second&amp;rft.pub=%5B%5BPrentice+Hall%5D%5D&amp;rft.isbn=978-0-13-239552-6&amp;rft_id=http%3A%2F%2Fwww.informit.com%2Fstore%2Fproduct.aspx%3Fisbn%3D0131876201&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Böck, Heiko (July 01, 2009). <a rel="nofollow" class="external text" href="http://www.apress.com/book/view/1430224177"><i>The Definitive Guide to NetBeans Platform</i></a> (First ed.). Apress. pp. 450. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-4302-2417-7" title="Special:BookSources/1-4302-2417-7">1-4302-2417-7</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.apress.com/book/view/1430224177">http://www.apress.com/book/view/1430224177</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Definitive+Guide+to+NetBeans+Platform&amp;rft.aulast=B%C3%B6ck&amp;rft.aufirst=Heiko&amp;rft.au=B%C3%B6ck%2C%26%2332%3BHeiko&amp;rft.date=July+01%2C+2009&amp;rft.pages=pp.%26nbsp%3B450&amp;rft.edition=First&amp;rft.pub=Apress&amp;rft.isbn=1-4302-2417-7&amp;rft_id=http%3A%2F%2Fwww.apress.com%2Fbook%2Fview%2F1430224177&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Petri, Jürgen (August 11, 2010). <a rel="nofollow" class="external text" href="https://www.packtpub.com/netbeans-platform-6-8-developers-guide/book"><i>NetBeans Platform 6.9 Developer's Guide</i></a> (First ed.). <a href="http://en.m.wikipedia.org/wiki/Packt" title="Packt">Packt Publishing</a>. pp. 288. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-84951-176-4" title="Special:BookSources/1-84951-176-4">1-84951-176-4</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://www.packtpub.com/netbeans-platform-6-8-developers-guide/book">https://www.packtpub.com/netbeans-platform-6-8-developers-guide/book</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=NetBeans+Platform+6.9+Developer%27s+Guide&amp;rft.aulast=Petri&amp;rft.aufirst=J%C3%BCrgen&amp;rft.au=Petri%2C%26%2332%3BJ%C3%BCrgen&amp;rft.date=August+11%2C+2010&amp;rft.pages=pp.%26nbsp%3B288&amp;rft.edition=First&amp;rft.pub=%5B%5BPackt%7CPackt+Publishing%5D%5D&amp;rft.isbn=1-84951-176-4&amp;rft_id=https%3A%2F%2Fwww.packtpub.com%2Fnetbeans-platform-6-8-developers-guide%2Fbook&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Böck, Heiko (December 28, 2011). <a rel="nofollow" class="external text" href="http://www.apress.com/9781430241010"><i>The Definitive Guide to NetBeans Platform 7</i></a> (First ed.). Apress. pp. 592. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-1-4302-4101-0" title="Special:BookSources/978-1-4302-4101-0">978-1-4302-4101-0</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.apress.com/9781430241010">http://www.apress.com/9781430241010</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Definitive+Guide+to+NetBeans+Platform+7&amp;rft.aulast=B%C3%B6ck&amp;rft.aufirst=Heiko&amp;rft.au=B%C3%B6ck%2C%26%2332%3BHeiko&amp;rft.date=December+28%2C+2011&amp;rft.pages=pp.%26nbsp%3B592&amp;rft.edition=First&amp;rft.pub=Apress&amp;rft.isbn=978-1-4302-4101-0&amp;rft_id=http%3A%2F%2Fwww.apress.com%2F9781430241010&amp;rfr_id=info:sid/en.wikipedia.org:NetBeans"><span style="display: none;"> </span></span>
+</li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">
+<a href="http://en.m.wikipedia.org/wiki/Wikimedia_Commons" title="Wikimedia Commons">Wikimedia Commons</a> has media related to:
+<div style="margin-left: 10px;">
+<i><b><a href="http://commons.wikimedia.org/wiki/Special:Search/NetBeans" class="extiw" title="commons:Special:Search/NetBeans">NetBeans</a></b></i> (<a href="http://commons.wikimedia.org/wiki/Category:NetBeans" class="extiw" title="commons:Category:NetBeans">category</a>)</div>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.netbeans.org/">Official site</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://plugins.netbeans.org/PluginPortal/">Plugin Portal</a> NetBeans plugins from the community</li>
+<li><a rel="nofollow" class="external text" href="http://www.sun.com/service/developer/index.jsp">Developer Support Services from Sun Microsystems</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><strong class="selflink">NetBeans</strong></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Sun_Microsystems" title="Template:Sun Microsystems"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Sun_Microsystems" title="Template talk:Sun Microsystems"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Sun_Microsystems&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> <span style="font-size:85%;">(acquired by <a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a>, 2010)</span>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Hardware</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-1" title="Sun-1">Sun-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-2" title="Sun-2">Sun-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-3" title="Sun-3">Sun-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun386i" title="Sun386i">Sun386i</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-4" title="Sun-4">Sun-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARCstation" title="SPARCstation">SPARCstation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Netra" title="Sun Netra">Netra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Ultra_series" title="Sun Ultra series">Ultra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Enterprise" title="Sun Enterprise">Enterprise</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Blade" title="Sun Blade">Sun Blade</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Fire" title="Sun Fire">Sun Fire</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARC_Enterprise" title="SPARC Enterprise">SPARC Enterprise</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JavaStation" title="JavaStation">JavaStation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Ray" title="Sun Ray">Sun Ray</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Modular_Datacenter" title="Sun Modular Datacenter">Sun Modular Datacenter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Sun_Microsystems_hardware" title="Category:Sun Microsystems hardware"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Software</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SunOS" title="SunOS">SunOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Network_Information_Service" title="Network Information Service">NIS</a> (<a href="http://en.m.wikipedia.org/wiki/NIS%2B" title="NIS+">+</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Network_File_System_(protocol)" title="Network File System (protocol)" class="mw-redirect">NFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZFS" title="ZFS">ZFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SunView" title="SunView">SunView</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NeWS" title="NeWS">NeWS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenWindows" title="OpenWindows">OpenWindows</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_Desktop_System" title="Java Desktop System" class="mw-redirect">Java Desktop System</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_(Sun)" title="Java (Sun)" class="mw-redirect">Java</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/StarOffice" title="StarOffice">StarOffice</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IPlanet" title="IPlanet">iPlanet</a>/<a href="http://en.m.wikipedia.org/wiki/Sun_ONE" title="Sun ONE">Sun ONE</a>/<a href="http://en.m.wikipedia.org/wiki/Java_Enterprise_System" title="Java Enterprise System" class="mw-redirect">Java Enterprise System</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Secure_Global_Desktop" title="Sun Secure Global Desktop">Sun Secure Global Desktop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MySQL" title="MySQL">MySQL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_xVM" title="Sun xVM">Sun xVM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GlassFish" title="GlassFish">GlassFish</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Sun_Microsystems_software" title="Category:Sun Microsystems software"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Storage</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/StorageTek" title="StorageTek" class="mw-redirect">StorageTek</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Open_Storage" title="Sun Open Storage">Sun Open Storage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QFS" title="QFS">QFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZFS" title="ZFS">ZFS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">High-performance computing</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Cloud" title="Sun Cloud">Sun Cloud</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Constellation_System" title="Sun Constellation System">Sun Constellation System</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Visualization_System" title="Sun Visualization System">Sun Visualization System</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oracle_Grid_Engine" title="Oracle Grid Engine">Sun Grid Engine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Research</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems_Laboratories" title="Sun Microsystems Laboratories">Sun Labs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PicoJava" title="PicoJava">picoJava</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Project_Looking_Glass" title="Project Looking Glass">Project Looking Glass</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Education and recognition</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Certified_Professional" title="Sun Certified Professional">SCPs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_notable_Sun_Microsystems_employees" title="List of notable Sun Microsystems employees" class="mw-redirect">List of notable employees</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BlueJ" title="BlueJ">BlueJ</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Community</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CDDL" title="CDDL" class="mw-redirect">CDDL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_Community_Process" title="Java Community Process">Java Community Process</a></li>
+<li><strong class="selflink">NetBeans</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenOffice" title="OpenOffice">OpenOffice.org</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSPARC" title="OpenSPARC">OpenSPARC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenJDK" title="OpenJDK">OpenJDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Source_University_Meetup" title="Open Source University Meetup">OSUM</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 28 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%86%D8%AA%E2%80%8C%D8%A8%D9%8A%D9%86%D8%B2" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%A8%E0%A7%87%E0%A6%9F%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8D%E0%A6%B8" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://bg.m.wikipedia.org/wiki/NetBeans" lang="bg" hreflang="bg">български</a></li><li><a href="http://cs.m.wikipedia.org/wiki/NetBeans" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/NetBeans_IDE" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/NetBeans" lang="es" hreflang="es">español</a></li><li><a href="http://eu.m.wikipedia.org/wiki/NetBeans" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%86%D8%AA%E2%80%8C%D8%A8%DB%8C%D9%86%D8%B2" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/NetBeans" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%84%B7%EB%B9%88%EC%A6%88" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%A8%E0%A5%87%E0%A4%9F%E0%A4%AC%E0%A5%80%E0%A4%A8%E0%A5%8D%E0%A4%B8" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://it.m.wikipedia.org/wiki/NetBeans" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/NetBeans" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/NetBeans" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://lt.m.wikipedia.org/wiki/NetBeans" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/NetBeans" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/NetBeans" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/NetBeans" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/NetBeans" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/NetBeans" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/NetBeans" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/NetBeans" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/NetBeans" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/NetBeans" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%80%E0%B8%99%E0%B9%87%E0%B8%95%E0%B8%9A%E0%B8%B5%E0%B8%99%E0%B8%AA%E0%B9%8C" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/NetBeans" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/NetBeans" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/NetBeans" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=NetBeans&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=NetBeans&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=NetBeans&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

@@ -1,0 +1,302 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Call stack - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Call stack","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Call_stack" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Call+stack"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Call stack</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Call_stack&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(September 2012)</i></small> </span></td>
+</tr></table>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, a <b>call stack</b> is a <a href="http://en.m.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">stack</a> data structure that stores information about the active <a href="Subroutine" title="Subroutine">subroutines</a> of a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a>. This kind of stack is also known as an <b>execution stack</b>, <b>control stack</b>, <b>run-time stack</b>, or <b>machine stack</b>, and is often shortened to just "the stack". Although maintenance of the call stack is important for the proper functioning of most <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">software</a>, the details are normally hidden and automatic in <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">high-level programming languages</a>.</p>
+<p>A call stack is used for several related purposes, but the main reason for having one is to keep track of the point to which each active subroutine should return control when it finishes executing. An active subroutine is one that has been called but is yet to complete execution after which control should be handed back to the point of call. Such activations of subroutines may be nested to any level (recursive as a special case), hence the stack structure. If, for example, a subroutine <code>DrawSquare</code> calls a subroutine <code>DrawLine</code> from four different places, <code>DrawLine</code> must know where to return when its execution completes. To accomplish this, the <a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">address</a> following the call <a href="http://en.m.wikipedia.org/wiki/Instruction_(computer_science)" title="Instruction (computer science)" class="mw-redirect">instruction</a>, the <i>return address</i>, is pushed onto the call stack with each call.</p>
+<h2> <span class="mw-headline" id="Description">Description</span>
+</h2>
+<p>Since the call stack is organized as a <a href="http://en.m.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">stack</a>, the caller <i>pushes</i> the return address onto the stack, and the called subroutine, when it finishes, <a href="http://en.m.wikipedia.org/wiki/Pop_(computer_programming)" title="Pop (computer programming)" class="mw-redirect">pops</a> the return address off the call stack and transfers control to that address. If a called subroutine calls on to yet another subroutine, it will push another return address onto the call stack, and so on, with the information stacking up and unstacking as the program dictates. If the pushing consumes all of the space allocated for the call stack, an error called a <a href="http://en.m.wikipedia.org/wiki/Stack_overflow" title="Stack overflow">stack overflow</a> occurs, generally causing the program to <a href="http://en.m.wikipedia.org/wiki/Crash_(computing)" title="Crash (computing)">crash</a>. Adding a subroutine's entry to the call stack is sometimes called <b>winding</b>; conversely, removing entries is <b>unwinding</b>.</p>
+<p>There is usually exactly one call stack associated with a running program (or more accurately, with each <a href="http://en.m.wikipedia.org/wiki/Task_(computers)" title="Task (computers)" class="mw-redirect">task</a> or <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">thread</a> of a <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">process</a>), although additional stacks may be created for <a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">signal</a> handling or <a href="http://en.m.wikipedia.org/wiki/Cooperative_multitasking" title="Cooperative multitasking" class="mw-redirect">cooperative multitasking</a> (as with <a href="http://en.m.wikipedia.org/wiki/Setcontext" title="Setcontext">setcontext</a>). Since there is only one in this important context, it can be referred to as <i>the</i> stack (implicitly, "of the task"); however, in the <a href="http://en.m.wikipedia.org/wiki/Forth_programming_language" title="Forth programming language" class="mw-redirect">Forth programming language</a> the <i>data stack</i> or <i>parameter stack</i> is accessed more explicitly than the call stack and is commonly referred to as <i>the</i> stack (see below).</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">high-level programming languages</a>, the specifics of the call stack are usually hidden from the programmer. They are given access only to a set of functions, and not the memory on the stack itself. Most <a href="Assembly_language" title="Assembly language">assembly languages</a>, on the other hand, require programmers to be involved with manipulating the stack. The actual details of the stack in a <a href="Programming_language" title="Programming language">programming language</a> depend upon the <a href="Compiler" title="Compiler">compiler</a>, <a href="Operating_system" title="Operating system">operating system</a>, and the available <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set</a>.</p>
+<h2> <span class="mw-headline" id="Functions_of_the_call_stack">Functions of the call stack</span>
+</h2>
+<p>As noted above, the primary purpose of a call stack is:</p>
+<dl>
+<dt>
+<b>Storing the return address</b> </dt>
+<dd>When a subroutine is called, the location (address) of the instruction at which it can later resume needs to be saved somewhere. Using a stack to save the return address has important advantages over alternatives. One is that each task has its own stack, and thus the subroutine can be <a href="http://en.m.wikipedia.org/wiki/Reentrant_(subroutine)" title="Reentrant (subroutine)" class="mw-redirect">reentrant</a>, that is, can be active simultaneously for different tasks doing different things. Another benefit is that <a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursion</a> is automatically supported. When a function calls itself recursively, a return address needs to be stored for each activation of the function so that it can later be used to return from the function activation. This capability is automatic with a stack.</dd>
+</dl>
+<p>A call stack may serve additional functions, depending on the language, operating system, and machine environment. Among them can be:</p>
+<dl>
+<dt>
+<b>Local data storage</b> </dt>
+<dd>A subroutine frequently needs memory space for storing the values of <a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local variables</a>, the variables that are known only within the active subroutine and do not retain values after it returns. It is often convenient to allocate space for this use by simply moving the top of the stack by enough to provide the space. This is very fast compared to <a href="Dynamic_memory_allocation" title="Dynamic memory allocation" class="mw-redirect">heap</a> allocation. Note that each separate activation of a subroutine gets its own separate space in the stack for locals.</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameter passing</b> </dt>
+<dd>Subroutines often require that values for <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">parameters</a> be supplied to them by the code which calls them, and it is not uncommon that space for these parameters may be laid out in the call stack. Generally if there are only a few small parameters, <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">processor registers</a> will be used to pass the values, but if there are more parameters than can be handled this way, memory space will be needed. The call stack works well as a place for these parameters, especially since each call to a subroutine, which will have differing values for parameters, will be given separate space on the call stack for those values.</dd>
+</dl>
+<dl>
+<dt>
+<b>Evaluation stack</b> </dt>
+<dd>Operands for arithmetic or logical operations are most often placed into registers and operated on there. However, in some situations the operands may be stacked up to an arbitrary depth, which means something more than registers must be used (this is the case of register spilling). The stack of such operands, rather like that in an <a href="http://en.m.wikipedia.org/wiki/RPN_calculator" title="RPN calculator" class="mw-redirect">RPN calculator</a>, is called an evaluation stack, and may occupy space in the call stack.</dd>
+</dl>
+<dl>
+<dt>
+<b>Pointer to current instance</b> </dt>
+<dd>Some <a href="http://en.m.wikipedia.org/wiki/Object-oriented_language" title="Object-oriented language" class="mw-redirect">object-oriented languages</a> (e.g., <a href="C++" title="C++">C++</a>), store the <a href="http://en.m.wikipedia.org/wiki/This_(computer_science)" title="This (computer science)" class="mw-redirect"><i>this</i> pointer</a> along with function arguments in the call stack when invoking methods. The <i>this</i> pointer points to the <a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">object</a> <a href="http://en.m.wikipedia.org/wiki/Instance_(computer_science)" title="Instance (computer science)">instance</a> associated with the method to be invoked.</dd>
+</dl>
+<dl>
+<dt>
+<b>Enclosing subroutine context</b> </dt>
+<dd>Some programming languages (e.g., <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> and <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>) support <a href="http://en.m.wikipedia.org/wiki/Nested_functions" title="Nested functions" class="mw-redirect">nested subroutines</a>, allowing an inner routine to access the context of its outer enclosing routine, i.e., the parameters and local variables within the scope of the outer routine. Such static nesting can repeat - a function declared within a function declared within a function... The implementation must provide a means by which a called function at any given static nesting level can reference the enclosing frame at each enclosing nesting level. Commonly this reference is implemented by a pointer to the encompassing frame, called a "downstack link" or "static link", to distinguish it from the "dynamic link" that refers to the immediate caller (which need not be the static parent function). For example, languages often allow inner routines to call themselves recursively, resulting in multiple call frames for the inner routine's invocations, all of whose static links point to the same outer routine context. Instead of a static link, the references to the enclosing static frames may be collected into an array of pointers known as a <i>display</i> which is indexed to locate a desired frame. The <a href="Burroughs_large_systems" title="Burroughs large systems">Burroughs B6500</a> had such a display in hardware that supported up to 32 levels of static nesting.</dd>
+</dl>
+<dl>
+<dt>
+<b>Other return state</b> </dt>
+<dd>Besides the return address, in some environments there may be other machine or software states that need to be restored when a subroutine returns. This might include things like privilege level, exception handling information, arithmetic modes, and so on. If needed, this may be stored in the call stack just as the return address is.</dd>
+</dl>
+<p>The typical call stack is used for the return address, locals, and parameters (known as a <i>call frame</i>). In some environments there may be more or fewer functions assigned to the call stack. In the <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth programming language</a>, for example, ordinarily only the return address, counted loop parameters and indexes, and possibly local variables are stored on the call stack (which in that environment is named the <i>return stack</i>), although any data can be temporarily placed there using special return stack handling code so long as the needs of calls and returns are respected; parameters are ordinarily stored on a separate <i>data stack</i> or <i>parameter stack</i>, typically called <i>the</i> stack in Forth terminology even though there is a call stack since it is usually accessed more explicitly. Some Forths also have a third stack for <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a> parameters.</p>
+<h2> <span class="mw-headline" id="Structure">Structure</span>
+</h2>
+<p>A call stack is composed of <b>stack frames</b> (also called <b>activation records</b> or <b>activation frames</b>). These are <a href="http://en.m.wikipedia.org/wiki/Machine_dependent" title="Machine dependent" class="mw-redirect">machine dependent</a> and <a href="http://en.m.wikipedia.org/wiki/Application_binary_interface" title="Application binary interface">ABI</a>-dependent data structures containing subroutine state information. Each stack frame corresponds to a call to a subroutine which has not yet terminated with a return. For example, if a subroutine named <code>DrawLine</code> is currently running, having been called by a subroutine <code>DrawSquare</code>, the top part of the call stack might be laid out like this:</p>
+<div class="center">
+<div class="floatnone"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Call_stack_layout.svg&amp;page=1" class="image"><img alt="Call stack layout.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Call_stack_layout.svg/342px-Call_stack_layout.svg.png" width="342" height="279"></a></div>
+</div>
+<p>A diagram like this can be drawn in either direction as long as the placement of the top, and so direction of stack growth, is understood. Furthermore, independently of this, architectures differ as to whether call stacks grow towards higher addresses or towards lower addresses. The logic of the diagram is independent of the addressing choice.</p>
+<p>The stack frame at the top of the stack is for the currently executing routine. The stack frame usually includes at least the following items (in push order):</p>
+<ul>
+<li>the arguments (parameter values) passed to the routine (if any);</li>
+<li>the return address back to the routine's caller (e.g. in the <code>DrawLine</code> stack frame, an address into <code>DrawSquare</code>'s code); and</li>
+<li>space for the local variables of the routine (if any).</li>
+</ul>
+<h3> <span class="mw-headline" id="The_stack_and_frame_pointers">The stack and frame pointers</span>
+</h3>
+<p>The data stored in the stack frame may sometimes be accessed directly via the <b>stack pointer</b> register (SP, which indicates the current top of the stack). However, as the stack pointer is variable during the activation of the routine, memory locations within the stack frame are more typically accessed via a separate register which makes relative addressing simpler and also enables dynamic allocation mechanisms (see below). This register is often termed the <b>frame pointer</b> or <b>stack base pointer</b> (BP) and is set up at procedure entry to point to a <i>fixed</i> location in the frame structure (such as the return address).</p>
+<h3> <span class="mw-headline" id="Stack_frame_sizes">Stack frame sizes</span>
+</h3>
+<p>As different routines have different parameters and local data, stack frames have varying sizes. Although they may often be fixed across all activations of a particular routine, many modern languages also support <i>dynamic</i> allocations on the stack, which means that the local data area will vary from activation to activation with a size that may be unspecified when the program is <a href="Compiler" title="Compiler">compiled</a>. In this case, access via a frame pointer, rather than via the stack pointer, is usually necessary since the offsets from the stack top to values such as the return address would not be known at compile time. If the subroutine does not use dynamic stack allocation and does not call any further subroutines, the frame pointer is not needed, and the register may be used for other purposes.</p>
+<h3> <span class="mw-headline" id="Storing_the_address_to_the_caller.27s_frame">Storing the address to the caller's frame</span>
+</h3>
+<p>In most systems a stack frame has a field to contain the previous value of the frame pointer register, the value it had while the caller was executing. For example, the stack frame of <code>DrawLine</code> would have a memory location holding the frame pointer value that <code>DrawSquare</code> uses (not shown in the diagram above). The value is saved upon entry to the subroutine and restored upon return. Having such a field in a known location in the stack frame enables code to access each frame successively underneath the currently executing routine's frame, and also allows the routine to easily restore the frame pointer to the caller's frame, just before it returns.</p>
+<h3> <span class="mw-headline" id="Lexically_nested_routines">Lexically nested routines</span>
+</h3>
+<div class="rellink">Further information: <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">Nested function</a> and <a href="http://en.m.wikipedia.org/wiki/Non-local_variable" title="Non-local variable">Non-local variable</a>
+</div>
+<p>Programming languages that support <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">nested subroutines</a> also have a field in the call frame that points to the stack frame of the <i>latest</i> activation of the procedure that most closely encapsulates the callee, i.e. the immediate <i>scope</i> of the callee. This is called an <b>access link</b> or <b>static link</b> (as it keeps track of static nesting during dynamic and recursive calls) and provides the routine (as well as any other routines it may invoke) access to the local data of its encapsulating routines at every nesting level. Some architectures, compilers, or optimization cases store one link for each enclosing level (not just the immediately enclosing), so that deeply nested routines that access shallow data do not have to traverse several links; this strategy is often called a <b>display</b>.<sup id="cite_ref-0" class="reference"><a href="Call_stack#cite_note-0"><span>[</span>1<span>]</span></a></sup> Access link(s) can be optimized away in cases where an inner function does not access any (non constant) local data in the encapsulation—pure functions, i.e. routines communicating via argument(s) and return value(s) only would be an example of this. Some historical computers, such as the <a href="Burroughs_large_systems" title="Burroughs large systems">Burroughs large systems</a>, had special "display registers" to support nested functions while compilers for most modern machines (such as the ubiquitous x86) simply reserve a few words on the stack for the pointers, as needed.</p>
+<h3> <span class="mw-headline" id="Overlap">Overlap</span>
+</h3>
+<p>For some purposes, the stack frame of a subroutine and that of its caller can be considered to overlap, the overlap consisting of the area where the parameters are passed from the caller to the callee. In some environments, the caller pushes each argument onto the stack, thus extending its stack frame, then invokes the callee. In other environments, the caller has a preallocated area at the top of its stack frame to hold the arguments it supplies to other subroutines it calls. This area is sometimes termed the <b>outgoing arguments area</b> or <b>callout area</b>. Under this approach, the size of the area is calculated by the compiler to be the largest needed by any called subroutine.</p>
+<h2> <span class="mw-headline" id="Use">Use</span>
+</h2>
+<h3> <span class="mw-headline" id="Call_site_processing">Call site processing</span>
+</h3>
+<p>Usually the call stack manipulation needed at the site of a call to a subroutine is minimal (which is good since there can be many call sites for each subroutine to be called). The values for the actual arguments are evaluated at the call site, since they are specific to the particular call, and either pushed onto the stack or placed into registers, as determined by the <a href="http://en.m.wikipedia.org/wiki/Calling_convention" title="Calling convention">calling convention</a> being used. The actual call instruction, such as "Branch and Link," is then typically executed to transfer control to the code of the target subroutine.</p>
+<h3> <span class="mw-headline" id="Subroutine_entry_processing">Subroutine entry processing</span>
+</h3>
+<p>In the called subroutine, the first code executed is usually termed the <a href="http://en.m.wikipedia.org/wiki/Function_prologue" title="Function prologue">subroutine prologue</a>, since it does the necessary housekeeping before the code for the statements of the routine is begun.</p>
+<p>The prologue will commonly save the return address left in a register by the call instruction by pushing the value onto the call stack. Similarly, the current stack pointer and/or frame pointer values may be pushed. Alternatively, some instruction set architectures automatically provide comparable functionality as part of the action of the call instruction itself, and in such an environment the prologue need not do this.</p>
+<p>If frame pointers are being used, the prologue will typically set the new value of the frame pointer register from the stack pointer. Space on the stack for local variables can then be allocated by incrementally changing the stack pointer.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth programming language</a> allows explicit winding of the call stack (called there the "return stack").</p>
+<h3> <span class="mw-headline" id="Return_processing">Return processing</span>
+</h3>
+<p>When a subroutine is ready to return, it executes an epilogue that undoes the steps of the prologue. This will typically restore saved register values (such as the frame pointer value) from the stack frame, pop the entire stack frame off the stack by changing the stack pointer value, and finally branch to the instruction at the return address. Under many calling conventions the items popped off the stack by the epilogue include the original argument values, in which case there usually are no further stack manipulations that need to be done by the caller. With some calling conventions, however, it is the caller's responsibility to remove the arguments from the stack after the return.</p>
+<h3> <span class="mw-headline" id="Unwinding">Unwinding</span>
+</h3>
+<p>Returning from the called function will pop the top frame off of the stack, perhaps leaving a return value.</p>
+<p>Some languages (such as <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a>) allow a global <a href="http://en.m.wikipedia.org/wiki/GOTO" title="GOTO" class="mw-redirect">goto</a> statement to transfer control out of a nested function and into a previously invoked outer function. This operation requires the stack to be unwound, removing as many stack frames as necessary to restore the proper context to transfer control to the target statement within the enclosing outer function. Such transfers of control are generally used only for error handling.</p>
+<p>Other languages (such as <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>) provide <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception handling</a>, which also requires unwinding of the stack. The stack frame of a function contains one or more entries specifying exception handlers. When an exception is thrown, the stack is unwound until an exception handler is found that is prepared to handle (catch) the exception. <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> allows control of what happens when the stack is unwound by using the <code>unwind-protect</code> special operator.</p>
+<p>When applying a <a href="http://en.m.wikipedia.org/wiki/Continuation" title="Continuation">continuation</a>, the stack is (logically) unwound and then rewound with the stack of the continuation. This is not the only way to implement continuations; for example, using multiple, explicit stacks, application of a continuation can simply activate its stack and wind a value to be passed. The <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme programming language</a> allows arbitrary <a href="http://en.m.wikipedia.org/wiki/Thunk" title="Thunk">thunks</a> to be executed in specified points on "unwinding" or "rewinding" of the control stack when a continuation is invoked.</p>
+<h2> <span class="mw-headline" id="Call_stack_inspection">Call stack inspection</span>
+</h2>
+<p>The call stack can sometimes be inspected as the program is running. Depending on how the program is written and compiled, the information on the stack can be used to determine intermediate values and function call traces. This has been used to generate fine-grained automated tests,<sup id="cite_ref-1" class="reference"><a href="Call_stack#cite_note-1"><span>[</span>2<span>]</span></a></sup> and in cases like Ruby and Smalltalk, to implement first-class continuations.</p>
+<h2> <span class="mw-headline" id="Performance_analysis">Performance analysis</span>
+</h2>
+<p>Taking random-time samples of the call stack can be very useful in optimizing performance of programs. The reason is if a subroutine call instruction appears on the call stack for a certain fraction of execution time, its possible removal would save that much time.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Disputed_statement" title="Wikipedia:Disputed statement"><span title="The material in the vicinity of this tag may not be factual or accurate from June 2011">dubious</span></a> <span class="metadata">– <a href="http://en.m.wikipedia.org/wiki/Talk:Call_stack#Dubious" title="Talk:Call stack">discuss</a></span></i>]</sup> See <a href="http://en.m.wikipedia.org/wiki/Performance_analysis" title="Performance analysis" class="mw-redirect">Performance analysis</a> and <a href="http://en.m.wikipedia.org/wiki/Deep_sampling" title="Deep sampling">Deep sampling</a>.</p>
+<h2> <span class="mw-headline" id="Security">Security</span>
+</h2>
+<p>In a language with free pointers and/or non-checked array writes (such as C), the mixing of control flow data affecting the execution of code (return addresses, saved frame pointers) and simple program data (parameters, return values) in a call stack is a security risk, possibly <a href="http://en.m.wikipedia.org/wiki/Exploit_(computer_security)" title="Exploit (computer security)">exploitable</a> through <a href="Buffer_overflow" title="Buffer overflow">buffer overflows</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Automatic_memory_allocation" title="Automatic memory allocation" class="mw-redirect">Automatic memory allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calling_convention" title="Calling convention">Calling convention</a></li>
+<li><a href="Dynamic_memory_allocation" title="Dynamic memory allocation" class="mw-redirect">Dynamic memory allocation</a></li>
+<li><span class="new" title="Segmented stack (page does not exist)">Segmented stack</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stack-based_memory_allocation" title="Stack-based memory allocation">Stack-based memory allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stack_buffer_overflow" title="Stack buffer overflow">Stack buffer overflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stack_machine" title="Stack machine">Stack machine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stack_overflow" title="Stack overflow">Stack overflow</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Call_stack#cite_ref-0">^</a></b></span> <span class="reference-text"><a href="http://c2.com/cgi/wiki?AlternativeMicroprocessorDesign" class="extiw" title="wiki:AlternativeMicroprocessorDesign">Alternative Microprocessor Design</a></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Call_stack#cite_ref-1">^</a></b></span> <span class="reference-text">“Call Stack Coverage for GUI Test-Suite Reduction” by Scott McMaster and Atif M. Memon. In Proceedings of the 17th IEEE International Symposium on Software Reliability Engineering (ISSRE 2006), Nov. 2006.</span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li>
+<span class="citation Journal"><a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijsktra, Edsger W.</a> (1960). "Recursive Programming". <i>Numerische Mathematik</i> <b>2</b> (1): 312–318. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1007%2FBF01386232">10.1007/BF01386232</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Recursive+Programming&amp;rft.jtitle=Numerische+Mathematik&amp;rft.aulast=Dijsktra&amp;rft.aufirst=Edsger+W.&amp;rft.au=Dijsktra%2C%26%2332%3BEdsger+W.&amp;rft.date=1960&amp;rft.volume=2&amp;rft.issue=1&amp;rft.pages=312%26ndash%3B318&amp;rft_id=info:doi/10.1007%2FBF01386232&amp;rfr_id=info:sid/en.wikipedia.org:Call_stack"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.eventhelix.com/RealtimeMantra/Basics/CToAssemblyTranslation.htm">Function Calling and Frame Pointer Operations in 68000</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Application_binary_interface" title="Template:Application binary interface"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Application binary interface (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Application_binary_interface&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Application_binary_interface" title="Application binary interface">Application binary interface</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">Alignment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Calling_convention" title="Calling convention">Calling convention</a></li>
+<li><strong class="selflink">Call stack</strong></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Library_(computing)" title="Library (computing)">Library</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Static_library" title="Static library">static</a></li>
+</ul>
+</li>
+<li>
+<a href="Linker_(computing)" title="Linker (computing)">Linker</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_linker" title="Dynamic linker">dynamic</a></li>
+</ul>
+</li>
+<li><a href="Loader_(computing)" title="Loader (computing)">Loader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">Machine code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_segmentation" title="Memory segmentation">Memory segmentation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Name_mangling" title="Name mangling">Name mangling</a></li>
+<li><a href="Object_code" title="Object code">Object code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opaque_pointer" title="Opaque pointer">Opaque pointer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Position-independent_code" title="Position-independent code">Position-independent code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Register_allocation" title="Register allocation">Register allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Relocation_(computing)" title="Relocation (computing)">Relocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/System_call" title="System call">System call</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_method_table" title="Virtual method table">Virtual method table</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 16 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Z%C3%A1sobn%C3%ADk_vol%C3%A1n%C3%AD" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Aufrufstapel" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A3%CF%84%CE%BF%CE%AF%CE%B2%CE%B1_%CE%BA%CE%BB%CE%AE%CF%83%CE%B5%CF%89%CE%BD" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Pila_de_llamadas" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%81%D8%B1%D8%A7%D8%AE%D9%88%D8%A7%D9%86%DB%8C_%D9%BE%D8%B4%D8%AA%D9%87" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Pile_d%27ex%C3%A9cution" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%BD%9C_%EC%8A%A4%ED%83%9D" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://is.m.wikipedia.org/wiki/Kallhla%C3%B0i" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Call_stack" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Call_stack" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%AB%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Pilha_de_chamada" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BA_%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D0%BE%D0%B2" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Stackpekare" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BA_%D0%B2%D0%B8%D0%BA%D0%BB%D0%B8%D0%BA%D1%96%D0%B2" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E8%B0%83%E7%94%A8%E6%A0%88" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Call_stack&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Call_stack&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Call+stack&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

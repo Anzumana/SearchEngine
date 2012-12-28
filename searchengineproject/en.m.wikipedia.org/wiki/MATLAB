@@ -1,0 +1,1161 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>MATLAB - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"MATLAB","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/MATLAB" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=MATLAB"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">MATLAB</h1>			
+<div class="dablink">For the region in Bangladesh, see <a href="http://en.m.wikipedia.org/wiki/Matlab_Upazila" title="Matlab Upazila">Matlab Upazila</a>.</div>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">MATLAB</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Matlab_Logo.png" class="image"><img alt="Matlab Logo.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/100px-Matlab_Logo.png" width="100" height="90" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/150px-Matlab_Logo.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Matlab_Logo.png/200px-Matlab_Logo.png 2x"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:MATLAB-R2008a-for-Linux.png" class="image"><img alt="MATLAB-R2008a-for-Linux.png" src="http://upload.wikimedia.org/wikipedia/en/thumb/7/77/MATLAB-R2008a-for-Linux.png/300px-MATLAB-R2008a-for-Linux.png" width="300" height="159" srcset="//upload.wikimedia.org/wikipedia/en/thumb/7/77/MATLAB-R2008a-for-Linux.png/450px-MATLAB-R2008a-for-Linux.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/7/77/MATLAB-R2008a-for-Linux.png/600px-MATLAB-R2008a-for-Linux.png 2x"></a><br><span style="">MATLAB R2011a screenshot</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/MathWorks" title="MathWorks">MathWorks</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">
+<span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/MATLAB&amp;action=edit">R2012B</a></span>  <small>(September 11, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-11</span>)</span>)</small> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_stable_software_release/MATLAB&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style="">
+<span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/MATLAB&amp;action=edit">None</a></span> <sub class="plainlinks">[<a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Latest_preview_software_release/MATLAB&amp;action=edit&amp;preload=Template:LSR/syntax">±</a>]</sub>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="Cross-platform" title="Cross-platform">Cross-platform</a><sup id="cite_ref-1" class="reference"><a href="MATLAB#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Technical computing</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.mathworks.com/products/matlab?s_cid=wiki_matlab_2">MATLAB product page</a></td>
+</tr>
+</table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">multi-paradigm: <a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Procedural_programming" title="Procedural programming">procedural</a>, <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">array</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">late 1970s</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Dynamic_typing" title="Dynamic typing" class="mw-redirect">dynamic</a>, <a href="Weak_typing" title="Weak typing">weak</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Usual <a href="Filename_extension" title="Filename extension">filename extensions</a>
+</th>
+<td class="" style="">.m</td>
+</tr>
+</table>
+<p><b>MATLAB</b> (<b>mat</b>rix <b>lab</b>oratory) is a <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical computing</a> environment and <a href="http://en.m.wikipedia.org/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">fourth-generation programming language</a>. Developed by <a href="http://en.m.wikipedia.org/wiki/MathWorks" title="MathWorks">MathWorks</a>, MATLAB allows <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> manipulations, plotting of <a href="http://en.m.wikipedia.org/wiki/Function_(mathematics)" title="Function (mathematics)">functions</a> and data, implementation of <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a>, creation of <a href="http://en.m.wikipedia.org/wiki/User_interface" title="User interface">user interfaces</a>, and interfacing with programs written in other languages, including <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and <a href="Fortran" title="Fortran">Fortran</a>.</p>
+<p>Although MATLAB is intended primarily for numerical computing, an optional toolbox uses the <a href="http://en.m.wikipedia.org/wiki/MuPAD" title="MuPAD">MuPAD</a> <a href="http://en.m.wikipedia.org/wiki/Computer_algebra_system" title="Computer algebra system">symbolic engine</a>, allowing access to <a href="http://en.m.wikipedia.org/wiki/Symbolic_computing" title="Symbolic computing" class="mw-redirect">symbolic computing</a> capabilities. An additional package, <a href="http://en.m.wikipedia.org/wiki/Simulink" title="Simulink">Simulink</a>, adds graphical multi-domain simulation and <a href="http://en.m.wikipedia.org/wiki/Model_based_design" title="Model based design" class="mw-redirect">Model-Based Design</a> for <a href="http://en.m.wikipedia.org/wiki/Dynamical_system" title="Dynamical system">dynamic</a> and <a href="Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a>.</p>
+<p>In 2004, MATLAB had around one million users across industry and academia.<sup id="cite_ref-eetimes2004_2-0" class="reference"><a href="MATLAB#cite_note-eetimes2004-2"><span>[</span>2<span>]</span></a></sup> MATLAB users come from various backgrounds of <a href="http://en.m.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a>, <a href="http://en.m.wikipedia.org/wiki/Science" title="Science">science</a>, and <a href="http://en.m.wikipedia.org/wiki/Economics" title="Economics">economics</a>. MATLAB is widely used in academic and research institutions as well as industrial enterprises.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p><a href="http://en.m.wikipedia.org/wiki/Cleve_Moler" title="Cleve Moler">Cleve Moler</a>, the chairman of the <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer-science</a> department at the <a href="http://en.m.wikipedia.org/wiki/University_of_New_Mexico" title="University of New Mexico">University of New Mexico</a>, started developing MATLAB in the late 1970s.<sup id="cite_ref-origins_3-0" class="reference"><a href="MATLAB#cite_note-origins-3"><span>[</span>3<span>]</span></a></sup> He designed it to give his students access to <a href="http://en.m.wikipedia.org/wiki/LINPACK" title="LINPACK">LINPACK</a> and <a href="http://en.m.wikipedia.org/wiki/EISPACK" title="EISPACK">EISPACK</a> without them having to learn <a href="Fortran" title="Fortran">Fortran</a>. It soon spread to other universities and found a strong audience within the <a href="http://en.m.wikipedia.org/wiki/Applied_mathematics" title="Applied mathematics">applied mathematics</a> community. <a href="http://en.m.wikipedia.org/wiki/John_N._Little" title="John N. Little">Jack Little</a>, an engineer, was exposed to it during a visit Moler made to <a href="http://en.m.wikipedia.org/wiki/Stanford_University" title="Stanford University">Stanford University</a> in 1983. Recognizing its commercial potential, he joined with Moler and Steve Bangert. They rewrote MATLAB in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and founded <a href="http://en.m.wikipedia.org/wiki/MathWorks" title="MathWorks">MathWorks</a> in 1984 to continue its development. These rewritten libraries were known as JACKPAC.<sup id="cite_ref-4" class="reference"><a href="MATLAB#cite_note-4"><span>[</span>4<span>]</span></a></sup> In 2000, MATLAB was rewritten to use a newer set of libraries for matrix manipulation, <a href="http://en.m.wikipedia.org/wiki/LAPACK" title="LAPACK">LAPACK</a>.<sup id="cite_ref-5" class="reference"><a href="MATLAB#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>MATLAB was first adopted by researchers and practitioners in <a href="http://en.m.wikipedia.org/wiki/Control_engineering" title="Control engineering">control engineering</a>, Little's specialty, but quickly spread to many other domains. It is now also used in education, in particular the teaching of <a href="Linear_algebra" title="Linear algebra">linear algebra</a> and <a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">numerical analysis</a>, and is popular amongst scientists involved in <a href="http://en.m.wikipedia.org/wiki/Image_processing" title="Image processing">image processing</a>.<sup id="cite_ref-origins_3-1" class="reference"><a href="MATLAB#cite_note-origins-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Syntax">Syntax</span>
+</h2>
+<p>The MATLAB application is built around the MATLAB language, and most use of MATLAB involves typing MATLAB code into the Command Window (as an interactive mathematical <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shell</a>), or executing text files containing MATLAB code and <a href="Functional_programming" title="Functional programming">functions</a>.<sup id="cite_ref-6" class="reference"><a href="MATLAB#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Variables">Variables</span>
+</h3>
+<p>Variables are defined using the assignment operator, <code>=</code>. MATLAB is a <a href="Type_system#Strong_and_weak_typing" title="Type system">weakly typed</a> programming language. It is a weakly typed language because types are implicitly converted.<sup id="cite_ref-7" class="reference"><a href="MATLAB#cite_note-7"><span>[</span>7<span>]</span></a></sup> It is a dynamically typed language because variables can be assigned without declaring their type, except if they are to be treated as symbolic objects,<sup id="cite_ref-8" class="reference"><a href="MATLAB#cite_note-8"><span>[</span>8<span>]</span></a></sup> and that their type can change. Values can come from <a href="http://en.m.wikipedia.org/wiki/Constant_(computer_science)" title="Constant (computer science)" class="mw-redirect">constants</a>, from computation involving values of other variables, or from the output of a function. For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; x = <span class="nu0">17</span>
+x =
+ <span class="nu0">17</span>
+&gt;&gt; x = <span class="co2">'hat'</span>
+x =
+hat
+&gt;&gt; y = x + <span class="nu0">0</span>
+y =
+       <span class="nu0">104</span>        <span class="nu0">97</span>       <span class="nu0">116</span>
+&gt;&gt; x = <span class="br0">[</span><span class="nu0">3</span>*<span class="nu0">4</span>, <span class="kw2">pi</span>/<span class="nu0">2</span><span class="br0">]</span>
+x =
+   <span class="nu0">12.0000</span>    <span class="nu0">1.5708</span>
+&gt;&gt; y = <span class="nu0">3</span>*<span class="kw2">sin</span><span class="br0">(</span>x<span class="br0">)</span>
+y =
+   -<span class="nu0">1.6097</span>    <span class="nu0">3.0000</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Vectors.2Fmatrices">Vectors/matrices</span>
+</h3>
+<p>As suggested by its name (a contraction of "Matrix Laboratory"), MATLAB can create and manipulate arrays of 1 (vectors), 2 (matrices), or more dimensions. In the MATLAB vernacular, a <i>vector</i> refers to a one dimensional (1×<i>N</i> or <i>N</i>×1) matrix, commonly referred to as an array in other programming languages. A <i>matrix</i> generally refers to a 2-dimensional array, i.e. an <i>m</i>×<i>n</i> array where <i>m</i> and <i>n</i> are greater than 1. Arrays with more than two dimensions are referred to as multidimensional arrays. Arrays are a fundamental type and many standard functions natively support array operations allowing work on arrays without explicit loops.</p>
+<p>A simple array is defined using the syntax: <i>init</i><code>:</code><i>increment</i><code>:</code><i>terminator</i>. For instance:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; array = <span class="nu0">1</span>:<span class="nu0">2</span>:<span class="nu0">9</span>
+array =
+ <span class="nu0">1</span> <span class="nu0">3</span> <span class="nu0">5</span> <span class="nu0">7</span> <span class="nu0">9</span>
+</pre>
+</div>
+</div>
+<p>defines a variable named <code>array</code> (or assigns a new value to an existing variable with the name <code>array</code>) which is an array consisting of the values 1, 3, 5, 7, and 9. That is, the array starts at 1 (the <i>init</i> value), increments with each step from the previous value by 2 (the <i>increment</i> value), and stops once it reaches (or to avoid exceeding) 9 (the <i>terminator</i> value).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; array = <span class="nu0">1</span>:<span class="nu0">3</span>:<span class="nu0">9</span>
+array =
+ <span class="nu0">1</span> <span class="nu0">4</span> <span class="nu0">7</span>
+</pre>
+</div>
+</div>
+<p>the <i>increment</i> value can actually be left out of this syntax (along with one of the colons), to use a default value of 1.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; ari = <span class="nu0">1</span>:<span class="nu0">5</span>
+ari =
+ <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span>
+</pre>
+</div>
+</div>
+<p>assigns to the variable named <code>ari</code> an array with the values 1, 2, 3, 4, and 5, since the default value of 1 is used as the incrementer.</p>
+<p><a href="Array_data_type#Index_origin" title="Array data type">Indexing</a> is one-based,<sup id="cite_ref-9" class="reference"><a href="MATLAB#cite_note-9"><span>[</span>9<span>]</span></a></sup> which is the usual convention for <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrices</a> in mathematics, although not for some programming languages.</p>
+<p>Matrices can be defined by separating the elements of a row with blank space or comma and using a semicolon to terminate each row. The list of elements should be surrounded by square brackets: []. Parentheses: () are used to access elements and subarrays (they are also used to denote a function argument list).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; A = <span class="br0">[</span><span class="nu0">16</span> <span class="nu0">3</span> <span class="nu0">2</span> <span class="nu0">13</span>; <span class="nu0">5</span> <span class="nu0">10</span> <span class="nu0">11</span> <span class="nu0">8</span>; <span class="nu0">9</span> <span class="nu0">6</span> <span class="nu0">7</span> <span class="nu0">12</span>; <span class="nu0">4</span> <span class="nu0">15</span> <span class="nu0">14</span> <span class="nu0">1</span><span class="br0">]</span>
+A =
+ <span class="nu0">16</span>  <span class="nu0">3</span>  <span class="nu0">2</span> <span class="nu0">13</span>
+  <span class="nu0">5</span> <span class="nu0">10</span> <span class="nu0">11</span>  <span class="nu0">8</span>
+  <span class="nu0">9</span>  <span class="nu0">6</span>  <span class="nu0">7</span> <span class="nu0">12</span>
+  <span class="nu0">4</span> <span class="nu0">15</span> <span class="nu0">14</span>  <span class="nu0">1</span>
+ 
+&gt;&gt; A<span class="br0">(</span><span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">)</span>
+<span class="kw2">ans</span> =
+ <span class="nu0">11</span>
+</pre>
+</div>
+</div>
+<p>Sets of indices can be specified by expressions such as "2:4", which evaluates to [2, 3, 4]. For example, a submatrix taken from rows 2 through 4 and columns 3 through 4 can be written as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; A<span class="br0">(</span><span class="nu0">2</span>:<span class="nu0">4</span>,<span class="nu0">3</span>:<span class="nu0">4</span><span class="br0">)</span>
+<span class="kw2">ans</span> =
+ <span class="nu0">11</span> <span class="nu0">8</span>
+ <span class="nu0">7</span> <span class="nu0">12</span>
+ <span class="nu0">14</span> <span class="nu0">1</span>
+</pre>
+</div>
+</div>
+<p>A square <a href="http://en.m.wikipedia.org/wiki/Identity_matrix" title="Identity matrix">identity matrix</a> of size <i>n</i> can be generated using the function <i>eye</i>, and matrices of any size with zeros or ones can be generated with the functions <i>zeros</i> and <i>ones</i>, respectively.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; <span class="kw2">eye</span><span class="br0">(</span><span class="nu0">3</span><span class="br0">)</span>
+<span class="kw2">ans</span> =
+ <span class="nu0">1</span> <span class="nu0">0</span> <span class="nu0">0</span>
+ <span class="nu0">0</span> <span class="nu0">1</span> <span class="nu0">0</span>
+ <span class="nu0">0</span> <span class="nu0">0</span> <span class="nu0">1</span>
+&gt;&gt; <span class="kw2">zeros</span><span class="br0">(</span><span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">)</span>
+<span class="kw2">ans</span> =
+ <span class="nu0">0</span> <span class="nu0">0</span> <span class="nu0">0</span>
+ <span class="nu0">0</span> <span class="nu0">0</span> <span class="nu0">0</span>
+&gt;&gt; <span class="kw2">ones</span><span class="br0">(</span><span class="nu0">2</span>,<span class="nu0">3</span><span class="br0">)</span>
+<span class="kw2">ans</span> =
+ <span class="nu0">1</span> <span class="nu0">1</span> <span class="nu0">1</span>
+ <span class="nu0">1</span> <span class="nu0">1</span> <span class="nu0">1</span>
+</pre>
+</div>
+</div>
+<p>Most MATLAB functions can accept matrices and will apply themselves to each element. For example, <code>mod(2*J,n)</code> will multiply every element in "J" by 2, and then reduce each element modulo "n". MATLAB does include standard "for" and "while" loops, but (as in other similar applications such as <a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a>), using the vectorized notation often produces code that is faster to execute. This code, excerpted from the function <i>magic.m</i>, creates a <a href="http://en.m.wikipedia.org/wiki/Magic_square" title="Magic square">magic square</a> <i>M</i> for odd values of <i>n</i> (MATLAB function <i>meshgrid</i> is used here to generate square matrices I and J containing 1:n).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+<span class="br0">[</span><span class="kw2">J</span>,<span class="kw2">I</span><span class="br0">]</span> = <span class="kw2">meshgrid</span><span class="br0">(</span><span class="nu0">1</span>:n<span class="br0">)</span>;
+A = <span class="kw2">mod</span><span class="br0">(</span><span class="kw2">I</span> + <span class="kw2">J</span> - <span class="br0">(</span>n + <span class="nu0">3</span><span class="br0">)</span> / <span class="nu0">2</span>, n<span class="br0">)</span>;
+B = <span class="kw2">mod</span><span class="br0">(</span><span class="kw2">I</span> + <span class="nu0">2</span> * <span class="kw2">J</span> - <span class="nu0">2</span>, n<span class="br0">)</span>;
+M = n * A + B + <span class="nu0">1</span>;
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Structures">Structures</span>
+</h3>
+<p>MATLAB has structure data types. Since all variables in MATLAB are arrays, a more adequate name is "structure array", where each element of the array has the same field names. In addition, MATLAB supports dynamic field names (field look-ups by name, field manipulations, etc.). Unfortunately, MATLAB JIT does not support MATLAB structures, therefore just a simple bundling of various variables into a structure will come at a cost.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from November 2010">citation needed</span></a></i>]</sup></p>
+<h3> <span class="mw-headline" id="Function_handles">Function handles</span>
+</h3>
+<p>MATLAB supports elements of lambda-calculus by introducing function handles, or function references, which are implemented either in .m files or anonymous/nested functions.</p>
+<h3> <span class="mw-headline" id="Classes">Classes</span>
+</h3>
+<p>Although MATLAB has classes, the syntax and calling conventions are significantly different from other languages. MATLAB has value classes and reference classes, depending on whether the class has <i>handle</i> as a super-class (for reference classes) or not (for value classes).</p>
+<p>Method call behavior is different between value and reference classes. For example, a call to a method</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+object.<span class="me1">method</span><span class="br0">(</span><span class="br0">)</span>;
+</pre>
+</div>
+</div>
+<p>can alter any member of <i>object</i> only if <i>object</i> is an instance of a reference class.</p>
+<h2> <span class="mw-headline" id="Graphics_and_graphical_user_interface_programming">Graphics and graphical user interface programming</span>
+</h2>
+<p>MATLAB supports developing applications with <a href="Graphical_user_interface" title="Graphical user interface">graphical user interface</a> features. It also has tightly integrated graph-plotting features. For example the function <i>plot</i> can be used to produce a graph from two vectors <i>x</i> and <i>y</i>. The code:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+x = <span class="nu0">0</span>:<span class="kw2">pi</span>/<span class="nu0">100</span>:<span class="nu0">2</span>*<span class="kw2">pi</span>;
+y = <span class="kw2">sin</span><span class="br0">(</span>x<span class="br0">)</span>;
+<span class="kw2">plot</span><span class="br0">(</span>x,y<span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>produces the following figure of the <a href="http://en.m.wikipedia.org/wiki/Sine_wave" title="Sine wave">sine function</a>:</p>
+<p><a href="http://en.m.wikipedia.org/wiki/File:Matlab_plot_sin.svg" class="image"><img alt="Matlab plot sin.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Matlab_plot_sin.svg/350px-Matlab_plot_sin.svg.png" width="350" height="248" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Matlab_plot_sin.svg/525px-Matlab_plot_sin.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Matlab_plot_sin.svg/700px-Matlab_plot_sin.svg.png 2x"></a></p>
+<p>A MATLAB program can produce three-dimensional graphics using the functions <i>surf</i>, <i>plot3</i> or <i>mesh</i>.</p>
+<table>
+<tr>
+<td style="vertical-align: top;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+<span class="br0">[</span>X,Y<span class="br0">]</span> = <span class="kw2">meshgrid</span><span class="br0">(</span>-<span class="nu0">10</span>:<span class="nu0">0.25</span>:<span class="nu0">10</span>,-<span class="nu0">10</span>:<span class="nu0">0.25</span>:<span class="nu0">10</span><span class="br0">)</span>;
+f = sinc<span class="br0">(</span><span class="kw2">sqrt</span><span class="br0">(</span><span class="br0">(</span>X/<span class="kw2">pi</span><span class="br0">)</span>.^<span class="nu0">2</span>+<span class="br0">(</span>Y/<span class="kw2">pi</span><span class="br0">)</span>.^<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span>;
+<span class="kw2">mesh</span><span class="br0">(</span>X,Y,f<span class="br0">)</span>;
+<span class="kw2">axis</span><span class="br0">(</span><span class="br0">[</span>-<span class="nu0">10</span> <span class="nu0">10</span> -<span class="nu0">10</span> <span class="nu0">10</span> -<span class="nu0">0.3</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span>
+<span class="kw2">xlabel</span><span class="br0">(</span><span class="co2">'{\bfx}'</span><span class="br0">)</span>
+<span class="kw2">ylabel</span><span class="br0">(</span><span class="co2">'{\bfy}'</span><span class="br0">)</span>
+<span class="kw2">zlabel</span><span class="br0">(</span><span class="co2">'{\bfsinc} ({\bfR})'</span><span class="br0">)</span>
+<span class="kw2">hidden</span> off
+</pre>
+</div>
+</div>
+</td>
+<td>   </td>
+<td style="vertical-align: top;">
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+<span class="br0">[</span>X,Y<span class="br0">]</span> = <span class="kw2">meshgrid</span><span class="br0">(</span>-<span class="nu0">10</span>:<span class="nu0">0.25</span>:<span class="nu0">10</span>,-<span class="nu0">10</span>:<span class="nu0">0.25</span>:<span class="nu0">10</span><span class="br0">)</span>;
+f = sinc<span class="br0">(</span><span class="kw2">sqrt</span><span class="br0">(</span><span class="br0">(</span>X/<span class="kw2">pi</span><span class="br0">)</span>.^<span class="nu0">2</span>+<span class="br0">(</span>Y/<span class="kw2">pi</span><span class="br0">)</span>.^<span class="nu0">2</span><span class="br0">)</span><span class="br0">)</span>;
+<span class="kw2">surf</span><span class="br0">(</span>X,Y,f<span class="br0">)</span>;
+<span class="kw2">axis</span><span class="br0">(</span><span class="br0">[</span>-<span class="nu0">10</span> <span class="nu0">10</span> -<span class="nu0">10</span> <span class="nu0">10</span> -<span class="nu0">0.3</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span>
+<span class="kw2">xlabel</span><span class="br0">(</span><span class="co2">'{\bfx}'</span><span class="br0">)</span>
+<span class="kw2">ylabel</span><span class="br0">(</span><span class="co2">'{\bfy}'</span><span class="br0">)</span>
+<span class="kw2">zlabel</span><span class="br0">(</span><span class="co2">'{\bfsinc} ({\bfR})'</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td>This code produces a <b><a href="http://en.m.wikipedia.org/wiki/Wire_frame_model" title="Wire frame model" class="mw-redirect">wireframe</a></b> 3D plot of the two-dimensional unnormalized <a href="http://en.m.wikipedia.org/wiki/Sinc_function" title="Sinc function">sinc function</a>:</td>
+<td>   </td>
+<td>This code produces a <b>surface</b> 3D plot of the two-dimensional unnormalized <a href="http://en.m.wikipedia.org/wiki/Sinc_function" title="Sinc function">sinc function</a>:</td>
+</tr>
+<tr>
+<td style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:MATLAB_mesh_sinc3D.svg" class="image"><img alt="MATLAB mesh sinc3D.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/MATLAB_mesh_sinc3D.svg/512px-MATLAB_mesh_sinc3D.svg.png" width="512" height="384" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c4/MATLAB_mesh_sinc3D.svg/768px-MATLAB_mesh_sinc3D.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c4/MATLAB_mesh_sinc3D.svg/1024px-MATLAB_mesh_sinc3D.svg.png 2x"></a></td>
+<td>   </td>
+<td style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:MATLAB_surf_sinc3D.svg" class="image"><img alt="MATLAB surf sinc3D.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/16/MATLAB_surf_sinc3D.svg/512px-MATLAB_surf_sinc3D.svg.png" width="512" height="384" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/16/MATLAB_surf_sinc3D.svg/768px-MATLAB_surf_sinc3D.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/16/MATLAB_surf_sinc3D.svg/1024px-MATLAB_surf_sinc3D.svg.png 2x"></a></td>
+</tr>
+</table>
+<p>In MATLAB, graphical user interfaces can be programed with the GUI design environment (GUIDE) tool.<sup id="cite_ref-10" class="reference"><a href="MATLAB#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Object-oriented_programming">Object-oriented programming</span>
+</h2>
+<p>MATLAB's support for <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> includes classes, inheritance, virtual dispatch, packages, pass-by-value semantics, and pass-by-reference semantics.<sup id="cite_ref-11" class="reference"><a href="MATLAB#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+classdef hello
+    methods
+        <span class="kw1">function</span> doit<span class="br0">(</span>this<span class="br0">)</span>
+            <span class="kw2">disp</span><span class="br0">(</span><span class="co2">'Hello!'</span><span class="br0">)</span>
+        <span class="kw1">end</span>
+    <span class="kw1">end</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>When put into a file named <tt>hello.m</tt>, this can be executed with the following commands:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+&gt;&gt; x = hello;
+&gt;&gt; x.<span class="me1">doit</span>;
+Hello!
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Interfacing_with_other_languages">Interfacing with other languages</span>
+</h2>
+<p>MATLAB can call functions and subroutines written in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> or <a href="Fortran" title="Fortran">Fortran</a>. A wrapper function is created allowing MATLAB data types to be passed and returned. The dynamically loadable object files created by compiling such functions are termed "<a href="http://en.m.wikipedia.org/wiki/MEX_file" title="MEX file">MEX-files</a>" (for <b>M</b>ATLAB <b>ex</b>ecutable).<sup id="cite_ref-12" class="reference"><a href="MATLAB#cite_note-12"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-13" class="reference"><a href="MATLAB#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>Libraries written in <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/ActiveX" title="ActiveX">ActiveX</a> or <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET</a> can be directly called from MATLAB and many MATLAB libraries (for example <a href="http://en.m.wikipedia.org/wiki/XML" title="XML">XML</a> or <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a> support) are implemented as wrappers around Java or ActiveX libraries. Calling MATLAB from Java is more complicated, but can be done with MATLAB extension,<sup id="cite_ref-14" class="reference"><a href="MATLAB#cite_note-14"><span>[</span>14<span>]</span></a></sup> which is sold separately by <a href="http://en.m.wikipedia.org/wiki/MathWorks" title="MathWorks">MathWorks</a>, or using an undocumented mechanism called JMI (Java-to-MATLAB Interface),<sup id="cite_ref-15" class="reference"><a href="MATLAB#cite_note-15"><span>[</span>15<span>]</span></a></sup> which should not be confused with the unrelated <a href="http://en.m.wikipedia.org/wiki/Java_Metadata_Interface" title="Java Metadata Interface">Java Metadata Interface</a> that is also called JMI.</p>
+<p>As alternatives to the <a href="http://en.m.wikipedia.org/wiki/MuPAD" title="MuPAD">MuPAD</a> based Symbolic Math Toolbox available from MathWorks, MATLAB can be connected to <a href="http://en.m.wikipedia.org/wiki/Maple_(software)" title="Maple (software)">Maple</a> or <a href="Mathematica" title="Mathematica">Mathematica</a>.<sup id="cite_ref-16" class="reference"><a href="MATLAB#cite_note-16"><span>[</span>16<span>]</span></a></sup></p>
+<p>Libraries also exist to import and export <a href="http://en.m.wikipedia.org/wiki/MathML" title="MathML">MathML</a>.<sup id="cite_ref-17" class="reference"><a href="MATLAB#cite_note-17"><span>[</span>17<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="License">License</span>
+</h2>
+<p>MATLAB is a <a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">proprietary</a> product of MathWorks, so users are subject to <a href="http://en.m.wikipedia.org/wiki/Vendor_lock-in" title="Vendor lock-in">vendor lock-in</a>.<sup id="cite_ref-eetimes2004_2-1" class="reference"><a href="MATLAB#cite_note-eetimes2004-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-18" class="reference"><a href="MATLAB#cite_note-18"><span>[</span>18<span>]</span></a></sup> Although MATLAB Builder can deploy MATLAB functions as library files which can be used with <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET</a> or <a href="http://en.m.wikipedia.org/wiki/Java_(software_platform)" title="Java (software platform)">Java</a> application building environment, future development will still be tied to the MATLAB language.</p>
+<p>Each toolbox is purchased separately. If an evaluation licence is requested, the MathWorks sales department requires detailed information about the project for which MATLAB is to be evaluated. Overall the process of acquiring a licence is expensive in terms of money and time<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from December 2011">citation needed</span></a></i>]</sup>. If granted (which it often is), the evaluation licence is valid for two to four weeks. A student version of MATLAB is also available.</p>
+<p>It has been reported that <a href="http://en.m.wikipedia.org/wiki/European_Union" title="European Union">EU</a> antitrust regulators are investigating whether Mathworks refused to sell licences to a competitor. <sup id="cite_ref-19" class="reference"><a href="MATLAB#cite_note-19"><span>[</span>19<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Alternatives">Alternatives</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">list of numerical analysis software</a> and <a href="http://en.m.wikipedia.org/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">comparison of numerical analysis software</a>
+</div>
+<p>MATLAB has a number of competitors.<sup id="cite_ref-20" class="reference"><a href="MATLAB#cite_note-20"><span>[</span>20<span>]</span></a></sup> Commercial competitors include <a href="Mathematica" title="Mathematica">Mathematica</a>, <a href="http://en.m.wikipedia.org/wiki/Maple_software" title="Maple software" class="mw-redirect">Maple</a>, <a href="http://en.m.wikipedia.org/wiki/NAG_Numerical_Libraries" title="NAG Numerical Libraries" class="mw-redirect">NAG</a>, and <a href="http://en.m.wikipedia.org/wiki/IDL_(programming_language)" title="IDL (programming language)">IDL</a>. There are also <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free</a> <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open source</a> alternatives to MATLAB, in particular <a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a>, <a href="http://en.m.wikipedia.org/wiki/FreeMat" title="FreeMat">FreeMat</a>, and <a href="http://en.m.wikipedia.org/wiki/Scilab" title="Scilab">Scilab</a> which are intended to be mostly compatible with the MATLAB language. Among other languages that treat arrays as basic entities (array programming languages) are <a href="http://en.m.wikipedia.org/wiki/APL_(programming_language)" title="APL (programming language)">APL</a> and <a href="http://en.m.wikipedia.org/wiki/J_(programming_language)" title="J (programming language)">J</a>, <a href="Fortran" title="Fortran">Fortran</a> 90 and higher, as well as the statistical language <a href="http://en.m.wikipedia.org/wiki/S_(programming_language)" title="S (programming language)">S</a> (the main implementations of S are <a href="http://en.m.wikipedia.org/wiki/S-PLUS" title="S-PLUS">S-PLUS</a> and the popular open source language <a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a>). There are also several libraries to add similar functionality to existing languages, such as <a href="http://en.m.wikipedia.org/wiki/IT%2B%2B" title="IT++">IT++</a> for <a href="C++" title="C++">C++</a>, <a href="http://en.m.wikipedia.org/wiki/Perl_Data_Language" title="Perl Data Language">Perl Data Language</a> for <a href="Perl" title="Perl">Perl</a>, <i>ScalaLab</i> for <a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a> and <a href="http://en.m.wikipedia.org/wiki/SciPy" title="SciPy">SciPy</a> together with <a href="http://en.m.wikipedia.org/wiki/NumPy" title="NumPy">NumPy</a> and <a href="http://en.m.wikipedia.org/wiki/Matplotlib" title="Matplotlib">Matplotlib</a> for <a href="Python_(programming_language)" title="Python (programming language)">Python</a>.</p>
+<h2> <span class="mw-headline" id="Release_history">Release history</span>
+</h2>
+<table class="wikitable">
+<tr>
+<th>Version<sup id="cite_ref-growth_21-0" class="reference"><a href="MATLAB#cite_note-growth-21"><span>[</span>21<span>]</span></a></sup>
+</th>
+<th>Release name</th>
+<th>Number</th>
+<th>Bundled JVM</th>
+<th>Year</th>
+<th>Release Date</th>
+<th>Notes</th>
+</tr>
+<tr>
+<td>MATLAB 1.0</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1984</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 2</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1986</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 3</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1987</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 3.5</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1990</td>
+<td></td>
+<td>Ran on <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> but required at least a <a href="http://en.m.wikipedia.org/wiki/Intel_80386" title="Intel 80386">386</a> processor. Version 3.5m required <a href="http://en.m.wikipedia.org/wiki/X87#80387" title="X87">math coprocessor</a>
+</td>
+</tr>
+<tr>
+<td>MATLAB 4</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1992</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 4.2c</td>
+<td></td>
+<td></td>
+<td></td>
+<td>1994</td>
+<td></td>
+<td>Ran on <a href="http://en.m.wikipedia.org/wiki/Windows_3.1x" title="Windows 3.1x">Windows 3.1</a>. Required a math coprocessor</td>
+</tr>
+<tr>
+<td>MATLAB 5.0</td>
+<td>Volume 8</td>
+<td></td>
+<td></td>
+<td>1996</td>
+<td>December, 1996</td>
+<td>Unified releases across all platforms.</td>
+</tr>
+<tr>
+<td>MATLAB 5.1</td>
+<td>Volume 9</td>
+<td></td>
+<td></td>
+<td rowspan="2">1997</td>
+<td>May, 1997</td>
+</tr>
+<tr>
+<td>MATLAB 5.1.1</td>
+<td>R9.1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 5.2</td>
+<td>R10</td>
+<td></td>
+<td></td>
+<td rowspan="2">1998</td>
+<td>March, 1998</td>
+</tr>
+<tr>
+<td>MATLAB 5.2.1</td>
+<td>R10.1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 5.3</td>
+<td>R11</td>
+<td></td>
+<td></td>
+<td rowspan="2">1999</td>
+<td>January, 1999</td>
+</tr>
+<tr>
+<td>MATLAB 5.3.1</td>
+<td>R11.1</td>
+<td></td>
+<td></td>
+<td>November, 1999</td>
+</tr>
+<tr>
+<td>MATLAB 6.0</td>
+<td>R12</td>
+<td rowspan="2">12</td>
+<td>1.1.8</td>
+<td>2000</td>
+<td>November, 2000</td>
+<td>First release with bundled Java machine (JVM).</td>
+</tr>
+<tr>
+<td>MATLAB 6.1</td>
+<td>R12.1</td>
+<td>1.3.0</td>
+<td>2001</td>
+<td>June, 2001</td>
+</tr>
+<tr>
+<td>MATLAB 6.5</td>
+<td>R13</td>
+<td rowspan="3">13</td>
+<td>1.3.1</td>
+<td>2002</td>
+<td>July, 2002</td>
+</tr>
+<tr>
+<td>MATLAB 6.5.1</td>
+<td>R13SP1</td>
+<td></td>
+<td rowspan="2">2003</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 6.5.2</td>
+<td>R13SP2</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 7</td>
+<td>R14</td>
+<td rowspan="4">14</td>
+<td>1.4.2</td>
+<td rowspan="2">2004</td>
+<td>June, 2004</td>
+</tr>
+<tr>
+<td>MATLAB 7.0.1</td>
+<td>R14SP1</td>
+<td></td>
+<td>October, 2004</td>
+</tr>
+<tr>
+<td>MATLAB 7.0.4</td>
+<td>R14SP2</td>
+<td>1.5.0</td>
+<td rowspan="2">2005</td>
+<td>March 7, 2005</td>
+</tr>
+<tr>
+<td>MATLAB 7.1</td>
+<td>R14SP3</td>
+<td>1.5.0</td>
+<td>September 1, 2005</td>
+</tr>
+<tr>
+<td>MATLAB 7.2</td>
+<td>R2006a</td>
+<td>15</td>
+<td>1.5.0</td>
+<td rowspan="2">2006</td>
+<td>March 1, 2006</td>
+</tr>
+<tr>
+<td>MATLAB 7.3</td>
+<td>R2006b</td>
+<td>16</td>
+<td>1.5.0</td>
+<td>September 1, 2006</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Hierarchical_Data_Format" title="Hierarchical Data Format">HDF5</a>-based MAT-file support</td>
+</tr>
+<tr>
+<td>MATLAB 7.4</td>
+<td>R2007a</td>
+<td>17</td>
+<td>1.5.0_07</td>
+<td rowspan="2">2007</td>
+<td>March 1, 2007</td>
+</tr>
+<tr>
+<td>MATLAB 7.5</td>
+<td>R2007b</td>
+<td>18</td>
+<td>1.6.0</td>
+<td>September 1, 2007</td>
+<td>Last release for Windows 2000 and <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> Mac. License Server support for Windows Vista<sup id="cite_ref-matsol_22-0" class="reference"><a href="MATLAB#cite_note-matsol-22"><span>[</span>22<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>MATLAB 7.6</td>
+<td>R2008a</td>
+<td>19</td>
+<td>1.6.0</td>
+<td rowspan="2">2008</td>
+<td>March 1, 2008</td>
+</tr>
+<tr>
+<td>MATLAB 7.7</td>
+<td>R2008b</td>
+<td>20</td>
+<td>1.6.0_04</td>
+<td>October 9, 2008</td>
+</tr>
+<tr>
+<td>MATLAB 7.8</td>
+<td>R2009a</td>
+<td>21</td>
+<td>1.6.0_04</td>
+<td rowspan="2">2009</td>
+<td>March 6, 2009</td>
+<td>First release for 32-bit &amp; 64-bit Microsoft Windows 7.</td>
+</tr>
+<tr>
+<td>MATLAB 7.9</td>
+<td>R2009b</td>
+<td rowspan="2">22</td>
+<td>1.6.0_12</td>
+<td>September 4, 2009</td>
+<td>First release for <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X_Snow_Leopard#64-bit_architecture" title="Mac OS X Snow Leopard">Intel 64-bit Mac</a>, and last for <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> <a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a>.</td>
+</tr>
+<tr>
+<td>MATLAB 7.9.1</td>
+<td>R2009bSP1</td>
+<td>1.6.0_12</td>
+<td rowspan="3">2010</td>
+<td>April 1, 2010</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 7.10</td>
+<td>R2010a</td>
+<td>23</td>
+<td>1.6.0_12</td>
+<td>March 5, 2010</td>
+<td>Last release for <a href="http://en.m.wikipedia.org/wiki/Apple%E2%80%93Intel_architecture" title="Apple–Intel architecture">Intel 32-bit Mac</a>.</td>
+</tr>
+<tr>
+<td>MATLAB 7.11</td>
+<td>R2010b</td>
+<td rowspan="2">24</td>
+<td>1.6.0_17</td>
+<td>September 3, 2010</td>
+</tr>
+<tr>
+<td>MATLAB 7.11.1</td>
+<td>R2010bSP1</td>
+<td>1.6.0_17</td>
+<td rowspan="3">2011</td>
+<td>March 17, 2011</td>
+</tr>
+<tr>
+<td>MATLAB 7.12</td>
+<td>R2011a</td>
+<td>25</td>
+<td>1.6.0_17</td>
+<td>April 8, 2011</td>
+<td></td>
+</tr>
+<tr>
+<td>MATLAB 7.13</td>
+<td>R2011b</td>
+<td>26</td>
+<td>1.6.0_17</td>
+<td>September 1, 2011</td>
+</tr>
+<tr>
+<td>MATLAB 7.14</td>
+<td>R2012a</td>
+<td>27</td>
+<td></td>
+<td rowspan="2">2012</td>
+<td>March 1, 2012</td>
+</tr>
+<tr>
+<td>MATLAB 8</td>
+<td>R2012b</td>
+<td>28</td>
+<td></td>
+<td>September 11, 2012</td>
+<td>First release with Ribbon interface.</td>
+</tr>
+</table>
+<p>The number (or Release number) is the version reported by Concurrent License Manager program FlexLM.</p>
+<h2> <span class="mw-headline" id="File_extensions">File extensions</span>
+</h2>
+<h3> <span class="mw-headline" id="Native">Native</span>
+</h3>
+<dl>
+<dt>.fig</dt>
+<dd>MATLAB figure</dd>
+<dt>.m </dt>
+<dd>MATLAB function, script, or class</dd>
+<dt>.mat </dt>
+<dd>MATLAB binary file for storing variables</dd>
+<dt>.mex... </dt>
+<dd>MATLAB executable (platform specific, e.g. ".mexmac" for the <a href="http://en.m.wikipedia.org/wiki/Macintosh" title="Macintosh">Mac</a>, ".mexglx" for <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, etc.)</dd>
+<dt>.p </dt>
+<dd>MATLAB content-obscured .m file (result e() )</dd>
+</dl>
+<h3> <span class="mw-headline" id="Third-party">Third-party</span>
+</h3>
+<dl>
+<dt>.jkt </dt>
+<dd>GPU Cache file generated by Jacket for MATLAB (AccelerEyes)</dd>
+<dt>.mum </dt>
+<dd>MATLAB CAPE-OPEN Unit Operation Model File (AmsterCHEM)</dd>
+</dl>
+<h2> <span class="mw-headline" id="Easter_eggs">Easter eggs</span>
+</h2>
+<p>Several <a href="http://en.m.wikipedia.org/wiki/Easter_egg_(media)" title="Easter egg (media)">easter eggs</a> exist in MATLAB.<sup id="cite_ref-23" class="reference"><a href="MATLAB#cite_note-23"><span>[</span>23<span>]</span></a></sup> These include hidden pictures, and random in-jokes. For example, typing in "spy" will generate a picture of the spies from <a href="http://en.m.wikipedia.org/wiki/Spy_vs_Spy" title="Spy vs Spy" class="mw-redirect">Spy vs Spy</a>.<sup class="noprint selfreference">[<i><a href="http://en.m.wikipedia.org/wiki/Talk:MATLAB#Jargon" title="Talk:MATLAB">discuss</a></i>]</sup> Typing in "why" randomly outputs a philosophical answer. Other commands include "penny", "toilet", and "life".</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/products/matlab/requirements.html?s_cid=wiki_matlab_1">"Requirements"</a>. MathWorks<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/products/matlab/requirements.html?s_cid=wiki_matlab_1">http://www.mathworks.com/products/matlab/requirements.html?s_cid=wiki_matlab_1</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Requirements&amp;rft.atitle=&amp;rft.pub=MathWorks&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fproducts%2Fmatlab%2Frequirements.html%3Fs_cid%3Dwiki_matlab_1&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-eetimes2004-2">
+<span class="mw-cite-backlink">^ <a href="MATLAB#cite_ref-eetimes2004_2-0"><sup><i><b>a</b></i></sup></a> <a href="MATLAB#cite_ref-eetimes2004_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">Richard Goering, "<a rel="nofollow" class="external text" href="http://www.eetimes.com/news/design/showArticle.jhtml?articleID=49400392">Matlab edges closer to electronic design automation world</a>," <i>EE Times</i>, 10/04/2004</span>
+</li>
+<li id="cite_note-origins-3">
+<span class="mw-cite-backlink">^ <a href="MATLAB#cite_ref-origins_3-0"><sup><i><b>a</b></i></sup></a> <a href="MATLAB#cite_ref-origins_3-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Cleve Moler, the creator of MATLAB (December 2004). <a rel="nofollow" class="external text" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/dec04.html?s_cid=wiki_matlab_3">"The Origins of MATLAB"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/dec04.html?s_cid=wiki_matlab_3">http://www.mathworks.com/company/newsletters/news_notes/clevescorner/dec04.html?s_cid=wiki_matlab_3</a></span><span class="reference-accessdate">. Retrieved April 15, 2007</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Origins+of+MATLAB&amp;rft.atitle=&amp;rft.aulast=Cleve+Moler%2C+the+creator+of+MATLAB&amp;rft.au=Cleve+Moler%2C+the+creator+of+MATLAB&amp;rft.date=December+2004&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fcompany%2Fnewsletters%2Fnews_notes%2Fclevescorner%2Fdec04.html%3Fs_cid%3Dwiki_matlab_3&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.altiusdirectory.com/Computers/matlab-programming-language.php">"MATLAB Programming Language"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.altiusdirectory.com/Computers/matlab-programming-language.php">http://www.altiusdirectory.com/Computers/matlab-programming-language.php</a></span><span class="reference-accessdate">. Retrieved 2010-12-17</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+Programming+Language&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.altiusdirectory.com%2FComputers%2Fmatlab-programming-language.php&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-5">^</a></b></span> <span class="reference-text">Note from Cleve Moler in a Mathworks newsletter <span class="citation web">Cleve Moler, the creator of MATLAB (2000). <a rel="nofollow" class="external text" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html?s_cid=wiki_matlab_4">"MATLAB Incorporates LAPACK"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html?s_cid=wiki_matlab_4">http://www.mathworks.com/company/newsletters/news_notes/clevescorner/winter2000.cleve.html?s_cid=wiki_matlab_4</a></span><span class="reference-accessdate">. Retrieved December 20, 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+Incorporates+LAPACK&amp;rft.atitle=&amp;rft.aulast=Cleve+Moler%2C+the+creator+of+MATLAB&amp;rft.au=Cleve+Moler%2C+the+creator+of+MATLAB&amp;rft.date=2000&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fcompany%2Fnewsletters%2Fnews_notes%2Fclevescorner%2Fwinter2000.cleve.html%3Fs_cid%3Dwiki_matlab_4&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab.html?s_cid=wiki_matlab_5">"MATLAB technical documentation"</a>. Mathworks.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab.html?s_cid=wiki_matlab_5">http://www.mathworks.com/access/helpdesk/help/techdoc/matlab.html?s_cid=wiki_matlab_5</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+technical+documentation&amp;rft.atitle=&amp;rft.pub=Mathworks.com&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Faccess%2Fhelpdesk%2Fhelp%2Ftechdoc%2Fmatlab.html%3Fs_cid%3Dwiki_matlab_5&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_oop/brqzfut-1.html?s_cid=wiki_matlab_6">[1]</a> Documentation on MATLAB in relation to other languages</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.mathworks.com/access/helpdesk/help/toolbox/symbolic/f0-49321.html#brbg3pf?s_cid=wiki_matlab_7">sym function</a> Documentation for the MATLAB Symbolic Toolbox</span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/access/helpdesk/help/techdoc/math/f1-85462.html?s_cid=wiki_matlab_8">"MATLAB Online Documentation"</a>. Mathworks.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/access/helpdesk/help/techdoc/math/f1-85462.html?s_cid=wiki_matlab_8">http://www.mathworks.com/access/helpdesk/help/techdoc/math/f1-85462.html?s_cid=wiki_matlab_8</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+Online+Documentation&amp;rft.atitle=&amp;rft.pub=Mathworks.com&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Faccess%2Fhelpdesk%2Fhelp%2Ftechdoc%2Fmath%2Ff1-85462.html%3Fs_cid%3Dwiki_matlab_8&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation book">Smith, S. T. (2006). <i>Matlab: Advanced GUI Developmen</i>. Dog Ear Publishing. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-59858-181-3,_9781598581812" title="Special:BookSources/1-59858-181-3, 9781598581812">1-59858-181-3, 9781598581812</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Matlab%3A+Advanced+GUI+Developmen&amp;rft.aulast=Smith%2C+S.+T.&amp;rft.au=Smith%2C+S.+T.&amp;rft.date=2006&amp;rft.pub=Dog+Ear+Publishing&amp;rft.isbn=1-59858-181-3%2C+9781598581812&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/matlab_oop/bqs290n-1.html">"MATLAB Class Overview"</a>. Mathworks.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/matlab_oop/bqs290n-1.html">http://www.mathworks.com/access/helpdesk/help/techdoc/index.html?/access/helpdesk/help/techdoc/matlab_oop/bqs290n-1.html</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+Class+Overview&amp;rft.atitle=&amp;rft.pub=Mathworks.com&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Faccess%2Fhelpdesk%2Fhelp%2Ftechdoc%2Findex.html%3F%2Faccess%2Fhelpdesk%2Fhelp%2Ftechdoc%2Fmatlab_oop%2Fbqs290n-1.html&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/bp_kqh7.html?s_cid=wiki_matlab_9">"MATLAB external interface guide"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/bp_kqh7.html?s_cid=wiki_matlab_9">http://www.mathworks.com/access/helpdesk/help/techdoc/matlab_external/bp_kqh7.html?s_cid=wiki_matlab_9</a></span><span class="reference-accessdate">. Retrieved 2008-05-25</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+external+interface+guide&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Faccess%2Fhelpdesk%2Fhelp%2Ftechdoc%2Fmatlab_external%2Fbp_kqh7.html%3Fs_cid%3Dwiki_matlab_9&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web">Spielman, Dan (2004-02-10). <a rel="nofollow" class="external text" href="http://www.cs.yale.edu/homes/spielman/ECC/cMatlab.html">"Connecting C and Matlab"</a>. Yale University, Computer Science Department<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.yale.edu/homes/spielman/ECC/cMatlab.html">http://www.cs.yale.edu/homes/spielman/ECC/cMatlab.html</a></span><span class="reference-accessdate">. Retrieved 2008-05-20</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Connecting+C+and+Matlab&amp;rft.atitle=&amp;rft.aulast=Spielman&amp;rft.aufirst=Dan&amp;rft.au=Spielman%2C%26%2332%3BDan&amp;rft.date=2004-02-10&amp;rft.pub=Yale+University%2C+Computer+Science+Department&amp;rft_id=http%3A%2F%2Fwww.cs.yale.edu%2Fhomes%2Fspielman%2FECC%2FcMatlab.html&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/products/javabuilder?s_cid=wiki_matlab_10">"MATLAB Builder JA"</a>. MathWorks<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/products/javabuilder?s_cid=wiki_matlab_10">http://www.mathworks.com/products/javabuilder?s_cid=wiki_matlab_10</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MATLAB+Builder+JA&amp;rft.atitle=&amp;rft.pub=MathWorks&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fproducts%2Fjavabuilder%3Fs_cid%3Dwiki_matlab_10&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://undocumentedmatlab.com/blog/jmi-java-to-matlab-interface/">"Java-to-Matlab Interface"</a>. Undocumented Matlab. 2010-04-14<span class="printonly">. <a rel="nofollow" class="external free" href="http://undocumentedmatlab.com/blog/jmi-java-to-matlab-interface/">http://undocumentedmatlab.com/blog/jmi-java-to-matlab-interface/</a></span><span class="reference-accessdate">. Retrieved 2010-06-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Java-to-Matlab+Interface&amp;rft.atitle=&amp;rft.date=2010-04-14&amp;rft.pub=Undocumented+Matlab&amp;rft_id=http%3A%2F%2Fundocumentedmatlab.com%2Fblog%2Fjmi-java-to-matlab-interface%2F&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://library.wolfram.com/infocenter/MathSource/618/">Mathsource item #618 for calling MATLAB from Mathematica</a> Roger Germundsson from <a href="http://en.m.wikipedia.org/wiki/Wolfram_Research" title="Wolfram Research">Wolfram Research</a></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.nl.mathworks.com/matlabcentral/fileexchange/7709-mathml-importexport?s_cid=wiki_matlab_11">http://www.nl.mathworks.com/matlabcentral/fileexchange/7709-mathml-importexport?s_cid=wiki_matlab_11</a></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-18">^</a></b></span> <span class="reference-text">Jan Stafford, "<a rel="nofollow" class="external text" href="http://searchenterpriselinux.techtarget.com/news/article/0,289142,sid39_gci902076,00.html#">The Wrong Choice: Locked in by license restrictions</a>," <i>SearchOpenSource.com</i>, 21 May 2003</span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-19">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.bloomberg.com/news/2012-03-01/mathworks-software-licenses-probed-by-eu-antitrust-regulators.html">Mathworks software license probed by EU antitrust regulators</a> Bloomberg news</span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.scientificweb.com/ncrunch/ncrunch5.pdf">Comparison of mathematical programs for data analysis</a> ScientificWeb</span>
+</li>
+<li id="cite_note-growth-21">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-growth_21-0">^</a></b></span> <span class="reference-text"><span class="citation web">Cleve Moler (January 2006). <a rel="nofollow" class="external text" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf?s_cid=wiki_matlab_12">"The Growth of MATLAB and The MathWorks over Two Decades"</a> (PDF)<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf?s_cid=wiki_matlab_12">http://www.mathworks.com/company/newsletters/news_notes/clevescorner/jan06.pdf?s_cid=wiki_matlab_12</a></span><span class="reference-accessdate">. Retrieved August 18, 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Growth+of+MATLAB+and+The+MathWorks+over+Two+Decades&amp;rft.atitle=&amp;rft.aulast=Cleve+Moler&amp;rft.au=Cleve+Moler&amp;rft.date=January+2006&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fcompany%2Fnewsletters%2Fnews_notes%2Fclevescorner%2Fjan06.pdf%3Fs_cid%3Dwiki_matlab_12&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-matsol-22">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-matsol_22-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.mathworks.com/support/solutions/en/data/1-43EHE5/?solution=1-43EHE5&amp;s_cid=wiki_matlab_13">"Do MATLAB versions prior to R2007a run under Windows Vista?"</a>. September 2010<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.mathworks.com/support/solutions/en/data/1-43EHE5/?solution=1-43EHE5&amp;s_cid=wiki_matlab_13">http://www.mathworks.com/support/solutions/en/data/1-43EHE5/?solution=1-43EHE5&amp;s_cid=wiki_matlab_13</a></span><span class="reference-accessdate">. Retrieved February 8, 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Do+MATLAB+versions+prior+to+R2007a+run+under+Windows+Vista%3F&amp;rft.atitle=&amp;rft.date=September+2010&amp;rft_id=http%3A%2F%2Fwww.mathworks.com%2Fsupport%2Fsolutions%2Fen%2Fdata%2F1-43EHE5%2F%3Fsolution%3D1-43EHE5%26s_cid%3Dwiki_matlab_13&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="MATLAB#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.mathworks.com/matlabcentral/answers/2001-what-matlab-easter-eggs-do-you-know?s_cid=wiki_matlab_14">http://www.mathworks.com/matlabcentral/answers/2001-what-matlab-easter-eggs-do-you-know?s_cid=wiki_matlab_14</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<span class="citation book">Gilat, Amos (2004). <i>MATLAB: An Introduction with Applications 2nd Edition</i>. John Wiley &amp; Sons. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-471-69420-5" title="Special:BookSources/978-0-471-69420-5">978-0-471-69420-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=MATLAB%3A+An+Introduction+with+Applications+2nd+Edition&amp;rft.aulast=Gilat&amp;rft.aufirst=Amos&amp;rft.au=Gilat%2C%26%2332%3BAmos&amp;rft.date=2004&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.isbn=978-0-471-69420-5&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Quarteroni, Alfio; Fausto Saleri (2006). <i>Scientific Computing with MATLAB and Octave</i>. Springer. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-3-540-32612-0" title="Special:BookSources/978-3-540-32612-0">978-3-540-32612-0</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Scientific+Computing+with+MATLAB+and+Octave&amp;rft.aulast=Quarteroni&amp;rft.aufirst=Alfio&amp;rft.au=Quarteroni%2C%26%2332%3BAlfio&amp;rft.date=2006&amp;rft.pub=Springer&amp;rft.isbn=978-3-540-32612-0&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Ferreira, A.J.M. (2009). <i>MATLAB Codes for Finite Element Analysis</i>. Springer. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-1-4020-9199-5" title="Special:BookSources/978-1-4020-9199-5">978-1-4020-9199-5</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=MATLAB+Codes+for+Finite+Element+Analysis&amp;rft.aulast=Ferreira&amp;rft.aufirst=A.J.M.&amp;rft.au=Ferreira%2C%26%2332%3BA.J.M.&amp;rft.date=2009&amp;rft.pub=Springer&amp;rft.isbn=978-1-4020-9199-5&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation book">Lynch, Stephen (2004). <i>Dynamical Systems with Applications using MATLAB</i>. Birkhäuser. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-8176-4321-8" title="Special:BookSources/978-0-8176-4321-8">978-0-8176-4321-8</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Dynamical+Systems+with+Applications+using+MATLAB&amp;rft.aulast=Lynch&amp;rft.aufirst=Stephen&amp;rft.au=Lynch%2C%26%2332%3BStephen&amp;rft.date=2004&amp;rft.pub=Birkh%C3%A4user&amp;rft.isbn=978-0-8176-4321-8&amp;rfr_id=info:sid/en.wikipedia.org:MATLAB"><span style="display: none;"> </span></span>
+</li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/MATLAB_Programming" class="extiw" title="wikibooks:MATLAB Programming">MATLAB Programming</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:MATLAB" class="extiw" title="commons:Category:MATLAB">MATLAB</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.mathworks.com/products/matlab?s_cid=wiki_matlab_15">MATLAB overview</a>, at the MathWorks website</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.mathworks.com/support/sysreq/roadmap.html?s_cid=wiki_matlab_16">System Requirements - Platform Roadmap</a>, at the MathWorks website.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.mathworks.com/matlabcentral/fileexchange?s_cid=wiki_matlab_17">MATLAB Central File Exchange</a> - library of over 12,000 MATLAB files and toolboxes, mostly distributed under <a href="http://en.m.wikipedia.org/wiki/BSD_License" title="BSD License" class="mw-redirect">BSD License</a>.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://nclab.com">NCLab</a> - Store your MATLAB files in the cloud and run them using Octave. Compute, share, collaborate. NCLab is free for individual, non-commercial use.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.dmoz.org/Science/Math/Software/MATLAB//">MATLAB</a> at the <a href="http://en.m.wikipedia.org/wiki/Open_Directory_Project" title="Open Directory Project">Open Directory Project</a>
+</li>
+<li><a rel="nofollow" class="external text" href="news://comp.soft-sys.matlab">comp.soft-sys.matlab</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.literateprograms.org/Category:Programming_language:Matlab">LiteratePrograms (MATLAB)</a></li>
+<li><a rel="nofollow" class="external text" href="http://blogs.mathworks.com?s_cid=wiki_matlab_18">Official blogs</a></li>
+<li><a rel="nofollow" class="external text" href="http://www2.rohde-schwarz.com/en/service_and_support/Downloads/Application_Notes/?query=matlab&amp;queryButton=Go#">Examples to remote control R&amp;S instruments from MATLAB</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.scientificweb.com/ncrunch/ncrunch5.pdf">Comparison of mathematical programs for data analysis</a> ScientificWeb</li>
+<li>
+<a rel="nofollow" class="external text" href="http://greenteapress.com/matlab/"><i>Physical Modeling in MATLAB</i></a> by Allen B. Downey, Green Tea Press, <a rel="nofollow" class="external text" href="http://greenteapress.com/matlab/downey08matlab.pdf">PDF</a>, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9780615185507" class="internal mw-magiclink-isbn">ISBN 978-0-615-18550-7</a>. An introduction to MATLAB.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.getreuer.info/matopt.pdf"><i>Writing Fast MATLAB Code</i></a> by P. Getreuer</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.virginia.edu/~whitehouse/matlab/JavaMatlab.html">Calling MATLAB from Java: MatlabControl JMI Wrapper, The MatlabJava Server, MatlabControl</a></li>
+<li><a rel="nofollow" class="external text" href="http://matlab4java.wordpress.com/instructions/">Calling MATLAB from Java: using Java RMI server - JAMAL</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.gomatlab.com/forum/">Persian MATLAB forum</a></li>
+</ul>
+<p><br></p>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Numerical_analysis_software" title="Template:Numerical analysis software"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Numerical_analysis_software" title="Template talk:Numerical analysis software"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Numerical_analysis_software&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical software</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">Free Software</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ADMB" title="ADMB">ADMB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Euler_(software)" title="Euler (software)">Euler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeMat" title="FreeMat">FreeMat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Genius_(mathematics_software)" title="Genius (mathematics software)">Genius</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gretl" title="Gretl">gretl</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scilab" title="Scilab">Scilab</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/DADiSP" title="DADiSP">DADiSP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GAUSS_(software)" title="GAUSS (software)">GAUSS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LabVIEW" title="LabVIEW">LabVIEW</a></li>
+<li><strong class="selflink">MATLAB</strong></li>
+<li><a href="Mathematica" title="Mathematica">Mathematica</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Speakeasy_(computational_environment)" title="Speakeasy (computational environment)">Speakeasy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VisSim" title="VisSim">VisSim</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Comparison_of_numerical_analysis_software" title="Comparison of numerical analysis software">Comparison of numerical analysis software</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Computer_algebra_systems" title="Template:Computer algebra systems"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Computer_algebra_systems" title="Template talk:Computer algebra systems"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_algebra_systems&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Computer_algebra_system" title="Computer algebra system">Computer algebra systems</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Algebrator" title="Algebrator">Algebrator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Casio_ClassPad_300" title="Casio ClassPad 300">ClassPad Manager</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LiveMath" title="LiveMath">LiveMath</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Magma_computer_algebra_system" title="Magma computer algebra system">Magma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathcad" title="Mathcad">Mathcad</a></li>
+<li><a href="Mathematica" title="Mathematica">Mathematica</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MuPAD" title="MuPAD">MuPAD (MATLAB symbolic math toolbox)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TI_InterActive!" title="TI InterActive!">TI InterActive!</a></li>
+<li><span class="new" title="WIRIS (page does not exist)">WIRIS</span></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Open_source_software" title="Open source software" class="mw-redirect">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Axiom_(computer_algebra_system)" title="Axiom (computer algebra system)">Axiom</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cadabra_(computer_program)" title="Cadabra (computer program)">Cadabra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CoCoA" title="CoCoA">CoCoA</a></li>
+<li><span class="new" title="DoCon (page does not exist)">DoCon</span></li>
+<li><span class="new" title="Eigenmath (page does not exist)">Eigenmath</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FriCAS" title="FriCAS" class="mw-redirect">FriCAS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GAP_(computer_algebra_system)" title="GAP (computer algebra system)">GAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GiNaC" title="GiNaC">GiNaC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macaulay2" title="Macaulay2">Macaulay2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathomatic" title="Mathomatic">Mathomatic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maxima_(software)" title="Maxima (software)">Maxima</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenAxiom" title="OpenAxiom" class="mw-redirect">OpenAxiom</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PARI/GP" title="PARI/GP">PARI/GP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reduce_(computer_algebra_system)" title="Reduce (computer algebra system)">Reduce</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sage_(mathematics_software)" title="Sage (mathematics software)">Sage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Singular_(software)" title="Singular (software)">SINGULAR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SymPy" title="SymPy">SymPy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xcas" title="Xcas">Xcas</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yacas" title="Yacas">Yacas</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="Freeware" title="Freeware">Free</a>/<a href="http://en.m.wikipedia.org/wiki/Shareware" title="Shareware">shareware</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Fermat_(computer_algebra_system)" title="Fermat (computer algebra system)">Fermat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/KANT_(software)" title="KANT (software)">KANT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Discontinued</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cambridge_Algebra_System" title="Cambridge Algebra System">CAMAL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Derive_(computer_algebra_system)" title="Derive (computer algebra system)">Derive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_Computer_Algebra_System" title="Dynamic Computer Algebra System">DCAS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Macsyma" title="Macsyma">Macsyma</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MuMATH" title="MuMATH">muMATH</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Category:Computer_algebra_systems" title="Category:Computer algebra systems">Category</a></b></li>
+<li><b><a href="http://en.m.wikipedia.org/wiki/Comparison_of_computer_algebra_systems" title="Comparison of computer algebra systems">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Image_Processing_Software" title="Template:Image Processing Software"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Image Processing Software (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Image_Processing_Software&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Image Processing Software</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">Free Software</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CellProfiler" title="CellProfiler">CellProfiler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ImageJ" title="ImageJ">imageJ</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FIJI_(software)" title="FIJI (software)">FIJI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Endrov" title="Endrov">Endrov</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mango_(software)" title="Mango (software)">Mango</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenCV" title="OpenCV">OpenCV</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GemIdent" title="GemIdent">GemIdent</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/3DSlicer" title="3DSlicer">3D Slicer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OsiriX" title="OsiriX">OsiriX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeSurfer" title="FreeSurfer">FreeSurfer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/InVesalius" title="InVesalius">InVesalius</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FMRIB_Software_Library" title="FMRIB Software Library">FMRIB Software Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/AFNI" title="AFNI" class="mw-redirect">AFNI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Insight_Segmentation_and_Registration_Toolkit" title="Insight Segmentation and Registration Toolkit">ITK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ITK-SNAP" title="ITK-SNAP">ITK-SNAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Integrating_Vision_Toolkit" title="Integrating Vision Toolkit">IVT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VXL" title="VXL">VXL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CellCognition" title="CellCognition">CellCognition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VIGRA" title="VIGRA">VIGRA</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ilastik" title="Ilastik">ilastik</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Matlab" title="Matlab" class="mw-redirect">Matlab</a></li>
+<li><a href="Mathematica" title="Mathematica">Mathematica</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bitplane" title="Bitplane">Bitplane</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 48 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D8%A7%D8%AA%D9%84%D8%A7%D8%A8" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://az.m.wikipedia.org/wiki/MATLAB" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%AE%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AC" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://bg.m.wikipedia.org/wiki/MATLAB" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/MATLAB" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/MATLAB" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/MATLAB" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/MATLAB" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/MATLAB" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/MATLAB" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/MATLAB" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%85%D8%AA%D9%84%D8%A8" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/MATLAB" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/MATLAB" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%AE%E0%A5%88%E0%A4%9F%E0%A4%B2%E0%A5%88%E0%A4%AC" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://hr.m.wikipedia.org/wiki/MATLAB" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/MATLAB" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://is.m.wikipedia.org/wiki/MATLAB" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/MATLAB" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/MATLAB" lang="he" hreflang="he">עברית</a></li><li><a href="http://lt.m.wikipedia.org/wiki/MATLAB" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/MATLAB" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/MATLAB" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ms.m.wikipedia.org/wiki/MATLAB" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://my.m.wikipedia.org/wiki/MATLAB" lang="my" hreflang="my">မြန်မာဘာသာ</a></li><li><a href="http://nl.m.wikipedia.org/wiki/MATLAB" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/MATLAB" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/MATLAB" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/MATLAB" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/MATLAB" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/MATLAB" lang="pt" hreflang="pt">português</a></li><li><a href="http://kaa.m.wikipedia.org/wiki/MATLAB" lang="kaa" hreflang="kaa">Qaraqalpaqsha</a></li><li><a href="http://ro.m.wikipedia.org/wiki/MATLAB" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/MATLAB" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/MATLAB" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/MATLAB" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/MATLAB" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/MATLAB" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Matlab" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tl.m.wikipedia.org/wiki/MATLAB" lang="tl" hreflang="tl">Tagalog</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%AE%E0%AF%87%E0%AE%9F%E0%AF%8D%E0%AE%B2%E0%AF%87%E0%AE%AA%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%81%E0%B8%A1%E0%B8%95%E0%B9%81%E0%B8%A5%E0%B9%87%E0%B8%9A" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tg.m.wikipedia.org/wiki/MATLAB" lang="tg" hreflang="tg">тоҷикӣ</a></li><li><a href="http://tr.m.wikipedia.org/wiki/MATLAB" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/MATLAB" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D9%85%DB%8C%D9%B9%D9%84%DB%8C%D8%A8" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/MATLAB" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/MATLAB" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=MATLAB&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=MATLAB&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=MATLAB&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

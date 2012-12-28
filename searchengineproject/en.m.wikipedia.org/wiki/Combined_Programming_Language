@@ -1,0 +1,174 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>CPL (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"CPL (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/CPL_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=CPL+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">CPL (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">CPL</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<p><a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm</a>:</p>
+<a href="Procedural_programming" title="Procedural programming">procedural</a>, <a href="http://en.m.wikipedia.org/wiki/Imperative_programming_language" title="Imperative programming language" class="mw-redirect">imperative</a>, <a href="Structured_programming" title="Structured programming">structured</a>, <a href="Functional_programming" title="Functional programming">functional</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1963</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">
+<a href="http://en.m.wikipedia.org/wiki/Christopher_Strachey" title="Christopher Strachey">Christopher Strachey</a> et al.</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style="">
+<a href="BCPL" title="BCPL">BCPL</a>, <a href="http://en.m.wikipedia.org/wiki/POP-2" title="POP-2">POP-2</a>
+</td>
+</tr>
+</table>
+<p><b>CPL</b> (from <b>Combined Programming Language</b> and <b>Cambridge Programming Language</b> before that) was a <a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multi-paradigm</a> <a href="Programming_language" title="Programming language">programming language</a>, that was developed in the early 1960s.</p>
+<h2> <span class="mw-headline" id="Design">Design</span>
+</h2>
+<p>CPL was developed jointly between the Mathematical Laboratory at the <a href="http://en.m.wikipedia.org/wiki/University_of_Cambridge" title="University of Cambridge">University of Cambridge</a> and the <a href="http://en.m.wikipedia.org/wiki/University_of_London" title="University of London">University of London</a> Computer Unit during the 1960s hence CPL gained the nickname "Cambridge Plus London".<sup id="cite_ref-0" class="reference"><a href="Combined_Programming_Language#cite_note-0"><span>[</span>1<span>]</span></a></sup> The collaborative effort was responsible for the "Combined" in the name of the language (previously, the name was Cambridge Programming Language). <a href="http://en.m.wikipedia.org/wiki/D.W._Barron" title="D.W. Barron" class="mw-redirect">D. W. Barron</a> and <a href="http://en.m.wikipedia.org/wiki/Christopher_Strachey" title="Christopher Strachey">Christopher Strachey</a> were involved (for others see paper). In 1963 (when the paper was published) it was concurrently being implemented on the <a href="http://en.m.wikipedia.org/wiki/Titan_(computer)" title="Titan (computer)">Titan Computer</a> at Cambridge and the <a href="http://en.m.wikipedia.org/wiki/Atlas_Computer_(Manchester)" title="Atlas Computer (Manchester)" class="mw-redirect">Atlas Computer</a> at London.</p>
+<p>It was heavily influenced by <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a>, but instead of being extremely small, elegant and simple, CPL was intended for a wider application area than scientific calculations and was therefore much more complex and not as elegant as ALGOL 60. CPL was a big language for its time. CPL attempted to go beyond ALGOL to include industrial process control and business data processing, among other things. CPL was also intended to allow low-level programming and high level abstractions using the same language.</p>
+<p>However, CPL was only implemented very slowly. The first CPL compiler was probably written about 1970,<sup id="cite_ref-1" class="reference"><a href="Combined_Programming_Language#cite_note-1"><span>[</span>2<span>]</span></a></sup> but the language never gained much popularity and seems to have disappeared without trace sometime in the 1970s.</p>
+<p>A later language based on CPL, called <a href="BCPL" title="BCPL">BCPL</a> (for "Basic CPL", although originally "Bootstrap CPL"), was a much simpler language intended primarily as a <a href="http://en.m.wikipedia.org/wiki/Systems_programming" title="Systems programming" class="mw-redirect">systems programming</a> language, particularly for writing <a href="Compiler" title="Compiler">compilers</a>. BCPL then led, via <a href="B_(programming_language)" title="B (programming language)">B</a>, to the popular and influential <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>.</p>
+<h2> <span class="mw-headline" id="Example">Example</span>
+</h2>
+<p>The function MAX as formulated by Peter Norvig<sup id="cite_ref-2" class="reference"><a href="Combined_Programming_Language#cite_note-2"><span>[</span>3<span>]</span></a></sup>:</p>
+<pre>
+Max(Items, ValueFunction) = value of
+§ (Best, BestVal) = (NIL, -∞)
+while Items do §
+(Item, Val) = (Head(Items), ValueFunction(Head(Items)))
+if Val &gt; BestVal then (Best, BestVal) := (Item, Val)
+Items := Rest(Items) §
+result is Best §
+</pre>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><i><a href="http://en.m.wikipedia.org/wiki/Fundamental_Concepts_in_Programming_Languages" title="Fundamental Concepts in Programming Languages">Fundamental Concepts in Programming Languages</a></i></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Combined_Programming_Language#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/clive-on-history.html">"Clive Feather on CPL and BCPL"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.lysator.liu.se/c/clive-on-history.html">http://www.lysator.liu.se/c/clive-on-history.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clive+Feather+on+CPL+and+BCPL&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.lysator.liu.se%2Fc%2Fclive-on-history.html&amp;rfr_id=info:sid/en.wikipedia.org:CPL_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Combined_Programming_Language#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a href="http://en.m.wikipedia.org/wiki/Peter_Norvig" title="Peter Norvig">Peter Norvig</a>. <a rel="nofollow" class="external text" href="http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article">"Prescient but Not Perfect: A Look Back at a 1966 Scientific American Article on Systems Analysis"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article">http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Prescient+but+Not+Perfect%3A+A+Look+Back+at+a+1966+Scientific+American+Article+on+Systems+Analysis&amp;rft.atitle=&amp;rft.aulast=%5B%5BPeter+Norvig%5D%5D&amp;rft.au=%5B%5BPeter+Norvig%5D%5D&amp;rft_id=http%3A%2F%2Fblogs.scientificamerican.com%2Fat-scientific-american%2F2011%2F08%2F23%2Fsystems-analysis-look-back-1966-scientific-american-article&amp;rfr_id=info:sid/en.wikipedia.org:CPL_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Combined_Programming_Language#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a href="http://en.m.wikipedia.org/wiki/Peter_Norvig" title="Peter Norvig">Peter Norvig</a>. <a rel="nofollow" class="external text" href="http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article">"Prescient but Not Perfect: A Look Back at a 1966 Scientific American Article on Systems Analysis"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article">http://blogs.scientificamerican.com/at-scientific-american/2011/08/23/systems-analysis-look-back-1966-scientific-american-article</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Prescient+but+Not+Perfect%3A+A+Look+Back+at+a+1966+Scientific+American+Article+on+Systems+Analysis&amp;rft.atitle=&amp;rft.aulast=%5B%5BPeter+Norvig%5D%5D&amp;rft.au=%5B%5BPeter+Norvig%5D%5D&amp;rft_id=http%3A%2F%2Fblogs.scientificamerican.com%2Fat-scientific-american%2F2011%2F08%2F23%2Fsystems-analysis-look-back-1966-scientific-american-article&amp;rfr_id=info:sid/en.wikipedia.org:CPL_(programming_language)"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="Bibliography">Bibliography</span>
+</h2>
+<ul>
+<li>Collected papers of Christopher Strachey, section pertaining to CPL, archived at the Bodleian Library, Oxford; <a rel="nofollow" class="external text" href="http://www.nationalarchives.gov.uk/a2a/records.aspx?cat=161-csac71180&amp;cid=3-5-1#3-5-1">CSAC 71.1.80/C.136-C.184</a>
+</li>
+<li>D. W. Barron, J. N. Buxton, D. F. Hartley, E. Nixon, and C. Strachey. <a rel="nofollow" class="external text" href="http://comjnl.oxfordjournals.org/cgi/reprint/6/2/134">"The main features of CPL"</a> <i>The Computer Journal</i> <b>6</b>:2:134-143 (1963).</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 9 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://es.m.wikipedia.org/wiki/Combined_Programming_Language" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Combined_Programming_Language" lang="fr" hreflang="fr">français</a></li><li><a href="http://it.m.wikipedia.org/wiki/Combined_Programming_Language" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/CPL_(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/CPL_(j%C4%99zyk_programowania)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Linguagem_de_Programa%C3%A7%C3%A3o_Combinada" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/CPL_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Combined_Programming_Language" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://zh.m.wikipedia.org/wiki/CPL_(%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80)" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Combined_Programming_Language&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Combined_Programming_Language&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=CPL+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

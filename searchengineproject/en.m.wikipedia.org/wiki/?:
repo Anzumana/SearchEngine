@@ -1,0 +1,901 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>?: - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"?:","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/%3F:" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=%3F%3A"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">?:</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, <b><code>?:</code></b> is a <a href="http://en.m.wikipedia.org/wiki/Ternary_operator" title="Ternary operator" class="mw-redirect">ternary operator</a> that is part of the syntax for a basic <a href="Conditional_(programming)" title="Conditional (programming)">conditional expression</a> in several <a href="Programming_language" title="Programming language">programming languages</a>. It is commonly referred to as the <b>conditional operator</b>, <b>inline if (iif)</b>, or <b>ternary if</b>.</p>
+<p>It originally comes from <a href="http://en.m.wikipedia.org/wiki/CPL_(programming_language)" title="CPL (programming language)">CPL</a>, in which equivalent syntax for <code><i>e</i><sub>1</sub> ? <i>e</i><sub>2</sub> : <i>e</i><sub>3</sub></code> was <code><i>e</i><sub>1</sub> → <i>e</i><sub>2</sub>, <i>e</i><sub>3</sub></code>.<sup id="cite_ref-1" class="reference"><a href="?:#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="?:#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Conditional_assignment">Conditional assignment</span>
+</h2>
+<p><code>?:</code> is used as follows:</p>
+<pre>
+<i>condition</i> ? <i>value_if_true</i> : <i>value_if_false</i> 
+</pre>
+<p>The <i>condition</i> is evaluated <i>true</i> or <i>false</i> as a <a href="http://en.m.wikipedia.org/wiki/Boolean_expression" title="Boolean expression">Boolean expression</a>. On the basis of the evaluation of the Boolean condition, the entire expression returns <i>value_if_true</i> if <i>condition</i> is true, but <i>value_if_false</i> otherwise. Usually the two sub-expressions <i>value_if_true</i> and <i>value_if_false</i> must have the same type, which determines the type of the whole expression. The importance of this type-checking lies in the operator's most common use—in <a href="Conditional_(programming)" title="Conditional (programming)">conditional</a> <a href="Assignment_(computer_science)" title="Assignment (computer science)">assignment</a> statements. In this usage it appears as an <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expression</a> on the right side of an assignment <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statement</a>, as follows:</p>
+<pre>
+<i>variable</i> = <i>condition</i> ? <i>value_if_true</i> : <i>value_if_false</i>
+</pre>
+<p>The ?: operator is similar to the way conditional expressions (<b>if-then-else</b> constructs) work in <a href="Functional_programming" title="Functional programming">functional programming</a> languages, like <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>, and <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, since if-then-else forms an expression instead of a statement in those languages.</p>
+<h2> <span class="mw-headline" id="Usage">Usage</span>
+</h2>
+<p>The conditional operator's most common usage is to make a terse simple conditional assignment statement. For example, if we wish to implement some C code to change a shop's opening hours from 9 o'clock during weekdays to 12 o'clock on weekends, we may use</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> opening_time <span class="sy0">=</span> <span class="br0">(</span>day <span class="sy0">==</span> WEEKEND<span class="br0">)</span> <span class="sy0">?</span> <span class="nu0">12</span> <span class="sy0">:</span> <span class="nu0">9</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>instead of the more verbose</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> opening_time<span class="sy0">;</span>
+ 
+<span class="kw1">if</span> <span class="br0">(</span>day <span class="sy0">==</span> WEEKEND<span class="br0">)</span>
+    opening_time <span class="sy0">=</span> <span class="nu0">12</span><span class="sy0">;</span>
+<span class="kw1">else</span>
+    opening_time <span class="sy0">=</span> <span class="nu0">9</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The two forms are nearly equivalent. Keep in mind that the ?: is an expression and if-then-else is a statement. Note that neither <i>value if true</i> nor <i>value if false</i> expressions can be omitted from the conditional operator without an error report upon parsing. This contrasts with if..else <i>statements</i>, where the else clause can be omitted.</p>
+<p>Most of the languages emphasizing <a href="Functional_programming" title="Functional programming">functional programming</a> don't need such an operator as their regular conditional expression(s) is an expression in the first place e.g. the <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> expression <code>(if (&gt; a b) a b)</code> is equivalent in semantics to the C expression <code>(a &gt; b) ? a : b</code>. This is also the case in many imperative languages, starting with <a href="ALGOL" title="ALGOL">ALGOL</a> where it is possible to write <code>result := if a &gt; b then a else b</code>, or <a href="Smalltalk" title="Smalltalk">Smalltalk</a> (<code>result := (a &gt; b) ifTrue: [ a ] ifFalse: [ b ]</code>) or <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> (<code>result = if a &gt; b then a else b end</code>, although <code>result = a &gt; b ? a : b</code> works as well).</p>
+<h3> <span class="mw-headline" id="Actionscript_3">Actionscript 3</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="actionscript3 source-actionscript3">
+<pre class="de1">
+condition <span class="sy0">?</span> value_if_true <span class="sy0">:</span> value_if_false
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="ALGOL_68">ALGOL 68</span>
+</h3>
+<p>Both <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>'s <a href="ALGOL_68#Expressions_and_compound_statements" title="ALGOL 68">choice clauses</a> (<b>if</b> and the <b>case</b> clauses) provide the coder with a choice of <i>either</i> the "<b>bold</b>" syntax or the "<i>brief</i>" form.</p>
+<ul>
+<li>Single <b>if</b> choice clause:</li>
+</ul>
+<pre>
+ <b>if</b> condition <b>then</b> statements [ <b>else</b> statements ] <b>fi</b>
+ "<i>brief</i>" form:  ( condition | statements | statements )
+</pre>
+<ul>
+<li>Chained <b>if</b> choice clause:</li>
+</ul>
+<pre>
+ <b>if</b> condition1 <b>then</b> statements <b>elif</b> condition2 <b>then</b> statements [ <b>else</b> statements ] <b>fi</b>
+ "<i>brief</i>" form:  ( condition1 | statements |: condition2 | statements | statements )
+</pre>
+<h3> <span class="mw-headline" id="C">C</span>
+</h3>
+<p>A traditional if-else construct in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a> and <a href="JavaScript" title="JavaScript">JavaScript</a> is written:<sup id="cite_ref-c_3-0" class="reference"><a href="?:#cite_note-c-3"><span>[</span>3<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">(</span>a <span class="sy0">&gt;</span> b<span class="br0">)</span> <span class="br0">{</span>
+    result <span class="sy0">=</span> x<span class="sy0">;</span>
+<span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    result <span class="sy0">=</span> y<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This can be rewritten as the following statement:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+result <span class="sy0">=</span> a <span class="sy0">&gt;</span> b <span class="sy0">?</span> x <span class="sy0">:</span> y<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>A <a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU</a> extension to C allows omitting the second operand, and using implicitly the first operand as the second also:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+a <span class="sy0">=</span> x <span class="sy0">?</span> <span class="sy0">:</span> y<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The expression is equivalent to</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+a <span class="sy0">=</span> x <span class="sy0">?</span> x <span class="sy0">:</span> y<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>except that if <i>x</i> is an expression, it is evaluated only once. The difference is significant if evaluating the expression has <a href="http://en.m.wikipedia.org/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effects</a>.</p>
+<p><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="Perl" title="Perl">Perl</a> provide similar functionality with their <a href="http://en.m.wikipedia.org/wiki/Null_coalescing_operator" title="Null coalescing operator">null coalescing operator</a>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+a <span class="sy0">=</span> x <span class="sy0">??</span> y<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>(Unlike the above usage of "x ?: y", ?? will only test if <i>x</i> is non-null, as opposed to non-false.)</p>
+<h3> <span class="mw-headline" id="C.2B.2B">C++</span>
+</h3>
+<p>In <a href="C++" title="C++">C++</a> there are conditional assignment situations where use of the <i>if-else</i> statement is impossible, since this language explicitly distinguishes between <a href="http://en.m.wikipedia.org/wiki/Initialization_(programming)" title="Initialization (programming)">initialization</a> and <a href="http://en.m.wikipedia.org/wiki/Assignment_(programming)" title="Assignment (programming)" class="mw-redirect">assignment</a>. In such case it is always possible to use a function call, but this can be cumbersome and inelegant. For example, to pass conditionally different values as an argument for a constructor of a field or a base class, it is impossible to use a plain <i>if-else</i> statement; in this case we can use a conditional assignment expression, or a function call. Mind also that some types allow initialization, but do not allow assignment, or even the assignment operator does totally different things than the constructor. The latter is true for reference types, for example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co2">#include &lt;iostream&gt;</span>
+<span class="co2">#include &lt;fstream&gt;</span>
+<span class="co2">#include &lt;string&gt;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc, <span class="kw4">char</span> <span class="sy2">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+<span class="br0">{</span>
+   std<span class="sy4">::</span><span class="me2">string</span> name<span class="sy4">;</span>
+   std<span class="sy4">::</span><span class="me2">ofstream</span> fout<span class="sy4">;</span>
+   <span class="kw1">if</span> <span class="br0">(</span>argc <span class="sy1">&gt;</span> <span class="nu0">1</span> <span class="sy3">&amp;&amp;</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span>
+   <span class="br0">{</span>
+     name <span class="sy1">=</span> argv<span class="br0">[</span><span class="nu0">1</span><span class="br0">]</span><span class="sy4">;</span>
+     fout.<span class="me1">open</span><span class="br0">(</span>name.<span class="me1">c_str</span><span class="br0">(</span><span class="br0">)</span>, std<span class="sy4">::</span><span class="me2">ios</span><span class="sy4">::</span><span class="me2">out</span> <span class="sy3">|</span> std<span class="sy4">::</span><span class="me2">ios</span><span class="sy4">::</span><span class="me2">app</span><span class="br0">)</span><span class="sy4">;</span>
+   <span class="br0">}</span>
+ 
+    std<span class="sy4">::</span><span class="me2">ostream</span> <span class="sy3">&amp;</span>sout <span class="sy1">=</span> name.<span class="me1">empty</span><span class="br0">(</span><span class="br0">)</span> <span class="sy4">?</span> <span class="kw3">cout</span> <span class="sy4">:</span> fout<span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>In this case there's no possibility to replace the use of ?: operator with <b>if-else</b> statement. (Although, we can replace the use of ?: with a function call, inside of which can be an <i>if-else</i> statement.)</p>
+<p>Furthermore, the conditional operator can yield a lvalue, i.e. a value to which another value can be assigned. Consider the following example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<ol start="0">
+<li class="li1">
+<pre class="de1">
+<span class="co2">#include &lt;iostream&gt;</span>
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+<span class="kw4">int</span> main <span class="br0">(</span><span class="br0">)</span> 
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+<span class="br0">{</span>
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+    <span class="kw4">int</span> a<span class="sy1">=</span><span class="nu0">0</span>, b<span class="sy1">=</span><span class="nu0">0</span><span class="sy4">;</span>
+</pre>
+</li>
+<li class="li2">
+<pre class="de2">
+ 
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+    <span class="kw4">const</span> <span class="kw4">bool</span> cond <span class="sy1">=</span> ...<span class="sy4">;</span>
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+    <span class="br0">(</span>cond <span class="sy4">?</span> a <span class="sy4">:</span> b<span class="br0">)</span> <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+    std<span class="sy4">::</span><span class="kw3">cout</span> <span class="sy1">&lt;&lt;</span> <span class="st0">"a="</span> <span class="sy1">&lt;&lt;</span> a <span class="sy1">&lt;&lt;</span> <span class="st0">','</span>
+</pre>
+</li>
+<li class="li1">
+<pre class="de1">
+              <span class="sy1">&lt;&lt;</span> <span class="st0">"b="</span> <span class="sy1">&lt;&lt;</span> b <span class="sy1">&lt;&lt;</span> <span class="st0">'<span class="es1">\n</span>'</span><span class="sy4">;</span>
+</pre>
+</li>
+<li class="li2">
+<pre class="de2">
+<span class="br0">}</span>
+</pre>
+</li>
+</ol>
+</div>
+</div>
+<p>In this example, if the boolean variable <b>cond</b> yields the value <b>true</b> in line 5, the value <b>1</b> is assigned to the variable <b>a</b>, otherwise, it is assigned to <b>b</b>.</p>
+<h3> <span class="mw-headline" id="C.23">C#</span>
+</h3>
+<p>In <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, if condition is true, first expression is evaluated and becomes the result; if false, the second expression is evaluated and becomes the result. Only one of two expressions is ever evaluated.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">//condition ? first_expression : second_expression;</span>
+ 
+<span class="kw4">static</span> <span class="kw4">double</span> sinc<span class="br0">(</span><span class="kw4">double</span> x<span class="br0">)</span> 
+<span class="br0">{</span>
+     <span class="kw1">return</span> x <span class="sy0">!=</span> <span class="nu16">0.0</span> <span class="sy0">?</span> Math.<span class="me1">Sin</span><span class="br0">(</span>x<span class="br0">)</span><span class="sy0">/</span>x <span class="sy0">:</span> <span class="nu16">1.0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="CoffeeScript">CoffeeScript</span>
+</h3>
+<p>Example of using this operator in <a href="http://en.m.wikipedia.org/wiki/CoffeeScript" title="CoffeeScript">CoffeeScript</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="coffeescript source-coffeescript">
+<pre class="de1">
+<span class="kw1">if</span> <span class="nu0">1</span> <span class="kw2">is</span> <span class="nu0">2</span> <span class="kw1">then</span> <span class="st0">"true value"</span> <span class="kw1">else</span> <span class="st0">"false value"</span>
+</pre>
+</div>
+</div>
+<p>Returns "false value".</p>
+<h3> <span class="mw-headline" id="ColdFusion_Markup_Language">ColdFusion Markup Language</span>
+</h3>
+<p>A <a href="http://en.m.wikipedia.org/wiki/ColdFusion_Markup_Language" title="ColdFusion Markup Language">ColdFusion Markup Language</a> (CFML) example, for the <a href="http://en.m.wikipedia.org/wiki/Railo" title="Railo">Railo</a> compiler:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cfm source-cfm">
+<pre class="de1">
+<span class="sc5"><span class="sy0">&lt;</span><span class="kw1">cfscript</span><span class="sy0">&gt;</span></span>
+/** EXAMPLE 1 **/
+arg = "T";
+vehicle = ( ( arg == 'B' ) ? 'bus' : 
+            ( arg == 'A' ) ? 'airplane' : 
+            ( arg == 'T' ) ? 'train' : 
+            ( arg == 'C' ) ? 'car' : 
+            ( arg == 'H' ) ? 'horse' : 
+                             'feet' );
+writeOutput(vehicle);
+// outputs 'train'
+ 
+/** EXAMPLE 2 **/
+price = 1000;
+hasPrice = ( price &gt; 0 ) ? true : false;
+// returns true
+<span class="sc5"><span class="sy0">&lt;/</span><span class="kw1">cfscript</span><span class="sy0">&gt;</span></span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Common_Lisp">Common Lisp</span>
+</h3>
+<p>Assignment using a conditional expression in <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">setf</span> result <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&gt;</span> a b<span class="br0">)</span> x y<span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>Imperative form:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="sy0">&gt;</span> a b<span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">setf</span> result x<span class="br0">)</span>
+  <span class="br0">(</span><span class="kw1">setf</span> result y<span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Java">Java</span>
+</h3>
+<p>In <a href="Java_(programming_language)" title="Java (programming language)">Java</a> this expression evaluates to:</p>
+<p><code>if foo is selected assign selected foo to bar else assign selected baz to bar.</code></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw3">Object</span> bar <span class="sy0">=</span> foo.<span class="me1">isSelected</span><span class="br0">(</span><span class="br0">)</span> <span class="sy0">?</span> getSelected<span class="br0">(</span>foo<span class="br0">)</span> <span class="sy0">:</span> getSelected<span class="br0">(</span>baz<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="JavaScript">JavaScript</span>
+</h3>
+<p>The conditional operator in <a href="JavaScript" title="JavaScript">JavaScript</a> has the same syntax and precedence structure as in the other <a href="BCPL" title="BCPL">BCPL</a>-derived variants, but a significant difference exists in the semantics: it returns an <a href="http://en.m.wikipedia.org/wiki/Value_(computer_science)" title="Value (computer science)">l-value</a>. (This situation apparently was improperly specified in the original JavaScript specification,<sup id="cite_ref-4" class="reference"><a href="?:#cite_note-4"><span>[</span>4<span>]</span></a></sup> but has been clarified in the December 2009 <a href="http://en.m.wikipedia.org/wiki/ECMA-262" title="ECMA-262" class="mw-redirect">ECMA-262</a> specification.<sup id="cite_ref-5" class="reference"><a href="?:#cite_note-5"><span>[</span>5<span>]</span></a></sup>)</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="javascript source-javascript">
+<pre class="de1">
+<span class="kw1">var</span> fooNotNull <span class="sy0">=</span> <span class="br0">(</span>foo <span class="sy0">!==</span> <span class="kw2">null</span><span class="br0">)</span> <span class="sy0">?</span> <span class="kw2">true</span> <span class="sy0">:</span> <span class="kw2">false</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Lua">Lua</span>
+</h3>
+<p>Lua doesn't have a traditional conditional operator. However, the short-circuit behaviour of its "and" and "or" operators allows the emulation of this behaviour:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lua source-lua">
+<pre class="de1">
+<span class="co1">-- equivalent to var = cond ? a : b;</span>
+var <span class="sy0">=</span> cond <span class="kw2">and</span> a <span class="kw2">or</span> b
+</pre>
+</div>
+</div>
+<p>This will succeed unless "a" is logically false (false or nil); in this case, the expression will always result in b. This can result in some surprising behaviour if ignored.</p>
+<h3> <span class="mw-headline" id="MySQL">MySQL</span>
+</h3>
+<p>This syntax is not SQL standard; it is MySQL specific.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="mysql source-mysql">
+<pre class="de1">
+<span class="kw12">IF</span><span class="br0">(</span>cond<span class="sy2">,</span>a<span class="sy2">,</span>b<span class="br0">)</span><span class="sy2">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Oracle_SQL">Oracle SQL</span>
+</h3>
+<p>While Oracle doesn't provide an explicit conditional operator, it does have a <a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">variadic functional</a> counterpart which operates similarly to a <a href="Switch_statement" title="Switch statement">switch statement</a> and can be used to emulate the conditional operator when testing for equality (more complicated logic can be encapsulated in a switch statement).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="oracle8 source-oracle8">
+<pre class="de1">
+<span class="co1">-- General syntax takes case-result pairs, comparing against an expression, followed by a fall-back result:</span>
+<span class="kw1">DECODE</span><span class="br0">(</span>expression<span class="sy0">,</span> case1<span class="sy0">,</span> result1<span class="sy0">,</span>
+                   ...
+                   caseN<span class="sy0">,</span> resultN<span class="sy0">,</span>
+                          resultElse<span class="br0">)</span>
+ 
+<span class="co1">-- We can emulate the conditional operator by just selecting one case:</span>
+<span class="kw1">DECODE</span><span class="br0">(</span>expression<span class="sy0">,</span> condition<span class="sy0">,</span> <span class="kw1">TRUE</span><span class="sy0">,</span> <span class="kw1">FALSE</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>The <code>decode</code> function is, today, deprecated in favour of Oracle's full switch statement, <code>case</code>. This can be used in both Oracle SQL queries as well as PL/SQL blocks, whereas <code>decode</code> can only be used in the former.</p>
+<h3> <span class="mw-headline" id="Perl">Perl</span>
+</h3>
+<p>A traditional if-else construct in <a href="Perl" title="Perl">Perl</a> or <a href="PHP" title="PHP">PHP</a> is written:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">(</span><span class="re0">$a</span> <span class="sy0">&gt;</span> <span class="re0">$b</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="re0">$result</span> <span class="sy0">=</span> <span class="re0">$x</span><span class="sy0">;</span>
+<span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+    <span class="re0">$result</span> <span class="sy0">=</span> <span class="re0">$y</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Rewritten to use the conditional operator:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="re0">$result</span> <span class="sy0">=</span> <span class="br0">(</span><span class="re0">$a</span> <span class="sy0">&gt;</span> <span class="re0">$b</span><span class="br0">)</span> <span class="sy0">?</span> <span class="re0">$x</span> <span class="sy0">:</span> <span class="re0">$y</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Another example of using this operator on Perl:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="re0">$secondVar</span> <span class="sy0">=</span> <span class="br0">(</span><span class="re0">$firstVar</span> <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">)</span> <span class="sy0">?</span> <span class="nu0">0</span> <span class="sy0">:</span> <span class="re0">$array</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="Perl_6">Perl 6</span>
+</h4>
+<p>Uses double "?" symbols and double "!" instead of ":" <sup id="cite_ref-perl6op_6-0" class="reference"><a href="?:#cite_note-perl6op-6"><span>[</span>6<span>]</span></a></sup>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="re0">$result</span> <span class="sy0">=</span> <span class="br0">(</span><span class="re0">$a</span> <span class="sy0">&gt;</span> <span class="re0">$b</span><span class="br0">)</span> <span class="sy0">??</span> <span class="re0">$x</span> <span class="sy0">!!</span> <span class="re0">$y</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="PHP">PHP</span>
+</h3>
+<p>A simple <a href="PHP" title="PHP">PHP</a> implementation is this:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="kw2">&lt;?php</span>
+<span class="re0">$valueOne</span> <span class="sy0">=</span> <span class="br0">(</span><span class="nu0">5</span> <span class="sy0">&gt;</span> <span class="nu0">1</span><span class="br0">)</span> ? <span class="kw4">true</span> <span class="sy0">:</span> <span class="kw4">false</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+</pre>
+</div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="kw2">&lt;?php</span>
+<span class="re0">$arg</span> <span class="sy0">=</span> <span class="st0">"T"</span><span class="sy0">;</span>
+<span class="re0">$vehicle</span> <span class="sy0">=</span> <span class="br0">(</span> <span class="br0">(</span> <span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'B'</span> <span class="br0">)</span> ? <span class="st_h">'bus'</span> <span class="sy0">:</span> 
+             <span class="br0">(</span> <span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'A'</span> <span class="br0">)</span> ? <span class="st_h">'airplane'</span> <span class="sy0">:</span> 
+             <span class="br0">(</span> <span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'T'</span> <span class="br0">)</span> ? <span class="st_h">'train'</span> <span class="sy0">:</span> 
+             <span class="br0">(</span> <span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'C'</span> <span class="br0">)</span> ? <span class="st_h">'car'</span> <span class="sy0">:</span> 
+             <span class="br0">(</span> <span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'H'</span> <span class="br0">)</span> ? <span class="st_h">'horse'</span> <span class="sy0">:</span> 
+                               <span class="st_h">'feet'</span> <span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">echo</span> <span class="re0">$vehicle</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+</pre>
+</div>
+</div>
+<p>Due to an unfortunate error in the language grammar, the implementation of ?: in <a href="PHP" title="PHP">PHP</a> uses the incorrect <a href="http://en.m.wikipedia.org/wiki/Operator_associativity" title="Operator associativity">associativity</a> when compared to other languages, and given a value of <b>T</b> for <b>arg</b>, the PHP code in the above example would yield the value <b>horse</b> instead of <b>train</b> as one might expect.<sup id="cite_ref-7" class="reference"><a href="?:#cite_note-7"><span>[</span>7<span>]</span></a></sup> The reason is that nesting two conditional operators produces an oversized condition with the last two options as its branches: c1 ? o1 : c2 ? o2 : o3 is really ((c1 ? o1 : c2) ? o2 : o3). This is acknowledged<sup id="cite_ref-8" class="reference"><a href="?:#cite_note-8"><span>[</span>8<span>]</span></a></sup> and would probably not change.<sup id="cite_ref-9" class="reference"><a href="?:#cite_note-9"><span>[</span>9<span>]</span></a></sup> To avoid this, nested parenthesis are needed, as in this example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="kw2">&lt;?php</span>
+<span class="re0">$arg</span> <span class="sy0">=</span> <span class="st0">"T"</span><span class="sy0">;</span>
+<span class="re0">$vehicle</span> <span class="sy0">=</span> <span class="br0">(</span><span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'B'</span><span class="br0">)</span> ? <span class="st_h">'bus'</span> <span class="sy0">:</span>
+          <span class="br0">(</span><span class="br0">(</span><span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'A'</span><span class="br0">)</span> ? <span class="st_h">'airplane'</span> <span class="sy0">:</span>
+          <span class="br0">(</span><span class="br0">(</span><span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'T'</span><span class="br0">)</span> ? <span class="st_h">'train'</span> <span class="sy0">:</span>
+          <span class="br0">(</span><span class="br0">(</span><span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'C'</span><span class="br0">)</span> ? <span class="st_h">'car'</span> <span class="sy0">:</span>
+          <span class="br0">(</span><span class="br0">(</span><span class="re0">$arg</span> <span class="sy0">==</span> <span class="st_h">'H'</span><span class="br0">)</span> ? <span class="st_h">'horse'</span> <span class="sy0">:</span>
+                           <span class="st_h">'feet'</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">echo</span> <span class="re0">$vehicle</span><span class="sy0">;</span>
+<span class="sy1">?&gt;</span>
+</pre>
+</div>
+</div>
+<p>This will produce the correct result of <b>train</b> being printed to the output.</p>
+<p><br></p>
+<h4> <span class="mw-headline" id="PHP_5.3">PHP 5.3</span>
+</h4>
+<p>Since PHP 5.3 there is a short-form of the conditional operator:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="re0">$c</span> <span class="sy0">=</span> <span class="re0">$a</span> ?<span class="sy0">:</span> <span class="re0">$b</span><span class="sy0">;</span> <span class="co1">// equivalent to $c = $a ? $a : $b;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Python">Python</span>
+</h3>
+<p>Though it had been delayed for several years by disagreements over syntax, an operator for a conditional expression in <a href="Python_(programming_language)" title="Python (programming language)">Python</a> was approved as <a rel="nofollow" class="external text" href="http://www.python.org/dev/peps/pep-0308/">Python Enhancement Proposal 308</a> and was added to the 2.5 release in September 2006. Python's conditional operator differs from the common <code>?:</code> operator in the order of its operands. The general form is:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> x <span class="kw1">if</span> a <span class="sy0">&gt;</span> b <span class="kw1">else</span> y
+</pre>
+</div>
+</div>
+<p>This form invites considering <code>x</code> as the normal value and <code>y</code> as an exceptional case. One can use the syntax</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">lambda</span>:y<span class="sy0">,</span> <span class="kw1">lambda</span>:x<span class="br0">)</span><span class="br0">[</span>a <span class="sy0">&gt;</span> b<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>as a workaround for code that also needs to run under Python versions before 2.5. Note that operands are <a href="http://en.m.wikipedia.org/wiki/Lazy_evaluation" title="Lazy evaluation">lazily evaluated</a>, it is possible to remove the lambdas and function calls but the operands will be eagerly evaluated which isn't consistent with the conditional operator of most other languages, e.g. by indexing a tuple,</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> <span class="br0">(</span>y<span class="sy0">,</span> x<span class="br0">)</span><span class="br0">[</span>a <span class="sy0">&gt;</span> b<span class="br0">]</span>
+</pre>
+</div>
+</div>
+<p>or using an explicitly constructed dictionary:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> <span class="br0">{</span><span class="kw2">True</span>: x<span class="sy0">,</span> <span class="kw2">False</span>: y<span class="br0">}</span><span class="br0">[</span>a <span class="sy0">&gt;</span> b<span class="br0">]</span>
+</pre>
+</div>
+</div>
+<p>A less reliable but simpler to read alternative is to abuse the <code>and</code> and <code>or</code> operators and write</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> <span class="br0">(</span>a <span class="sy0">&gt;</span> b<span class="br0">)</span> <span class="kw1">and</span> x <span class="kw1">or</span> y
+</pre>
+</div>
+</div>
+<p>but this code would break if <code>x</code> could be a "falsy" value (<code>None</code>, <code>False</code>, <code>0</code>, an empty sequence or collection, …) as the expression would return <code>y</code> (whether it was truthy or falsy) instead of the (falsy) <code>x</code>. A possible workaround is to make <code>x</code> and <code>y</code> lists or tuples, so they are never falsy, and then grab the first element of the resulting sequence as in the following</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> <span class="br0">(</span><span class="br0">(</span>a <span class="sy0">&gt;</span> b<span class="br0">)</span> <span class="kw1">and</span> <span class="br0">[</span>x<span class="br0">]</span> <span class="kw1">or</span> <span class="br0">[</span>y<span class="br0">]</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+</pre>
+</div>
+</div>
+<p>or</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+result <span class="sy0">=</span> <span class="br0">(</span><span class="br0">(</span>a <span class="sy0">&gt;</span> b<span class="br0">)</span> <span class="kw1">and</span> <span class="br0">(</span>x<span class="sy0">,</span><span class="br0">)</span> <span class="kw1">or</span> <span class="br0">(</span>y<span class="sy0">,</span><span class="br0">)</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+</pre>
+</div>
+</div>
+<p>NB when wrapping Python's conditional construct into a utility function, the unalterably eager nature of the more intuitive language construct for <b>side-effect functions</b></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+func <span class="sy0">=</span> <span class="kw1">lambda</span> b<span class="sy0">,</span>a1<span class="sy0">,</span>a2 : <span class="br0">(</span>a1<span class="sy0">,</span>a2<span class="br0">)</span><span class="br0">[</span><span class="kw1">not</span> b<span class="br0">]</span>
+<span class="kw1">def</span> true<span class="br0">(</span><span class="br0">)</span>:
+    <span class="kw1">print</span> <span class="st0">"true"</span>
+    <span class="kw1">return</span> <span class="st0">"truly"</span>
+<span class="kw1">def</span> false<span class="br0">(</span><span class="br0">)</span>:
+    <span class="kw1">print</span> <span class="st0">"false"</span>
+    <span class="kw1">return</span> <span class="st0">"falsely"</span>
+func<span class="br0">(</span><span class="kw2">True</span><span class="sy0">,</span> true<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> false<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+true
+false
+<span class="st0">'truly'</span>
+func<span class="br0">(</span><span class="kw2">False</span><span class="sy0">,</span> true<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> false<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+true
+false
+<span class="st0">'falsely'</span>
+</pre>
+</div>
+</div>
+<p>similar results from</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+func <span class="sy0">=</span> <span class="kw1">lambda</span> b<span class="sy0">,</span>a1<span class="sy0">,</span>a2: a1 <span class="kw1">if</span> b <span class="kw1">else</span> a2
+func <span class="sy0">=</span> <span class="kw1">lambda</span> b<span class="sy0">,</span>a1<span class="sy0">,</span>a2: <span class="br0">(</span>b <span class="kw1">and</span> <span class="br0">[</span>a1<span class="br0">]</span> <span class="kw1">or</span> <span class="br0">[</span>a2<span class="br0">]</span><span class="br0">)</span><span class="br0">[</span><span class="nu0">0</span><span class="br0">]</span>
+func <span class="sy0">=</span> <span class="kw1">lambda</span> b<span class="sy0">,</span>a1<span class="sy0">,</span>a2: <span class="br0">(</span><span class="kw1">lambda</span>:a1<span class="sy0">,</span> <span class="kw1">lambda</span>:a2<span class="br0">)</span><span class="br0">[</span><span class="kw1">not</span> b<span class="br0">]</span><span class="br0">(</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>as the correct call would be</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+func<span class="br0">(</span><span class="kw2">True</span><span class="sy0">,</span> true<span class="sy0">,</span> false<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span>
+true
+<span class="st0">'truly'</span>
+func<span class="br0">(</span><span class="kw2">False</span><span class="sy0">,</span> true<span class="sy0">,</span> false<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span>
+false
+<span class="st0">'falsely'</span>
+</pre>
+</div>
+</div>
+<p>however the python 2.5 construct is safer; calling the construct directly works more intuitively</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+true<span class="br0">(</span><span class="br0">)</span> <span class="kw1">if</span> <span class="kw2">True</span> <span class="kw1">else</span> false<span class="br0">(</span><span class="br0">)</span>
+true
+<span class="st0">'truly'</span>
+true<span class="br0">(</span><span class="br0">)</span> <span class="kw1">if</span> <span class="kw2">False</span> <span class="kw1">else</span> false<span class="br0">(</span><span class="br0">)</span>
+false
+<span class="st0">'falsely'</span>
+</pre>
+</div>
+</div>
+<p>clearly the reason being that in the case of</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+func<span class="br0">(</span><span class="kw2">True</span><span class="sy0">,</span> true<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> false<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>the functions are called when sent as parameters rather than when returned from func()</p>
+<h3> <span class="mw-headline" id="Ruby">Ruby</span>
+</h3>
+<p>Example of using this operator in <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="nu0">1</span> == <span class="nu0">2</span> ? <span class="st0">"true value"</span> : <span class="st0">"false value"</span>
+</pre>
+</div>
+</div>
+<p>Returns "false value".</p>
+<h3> <span class="mw-headline" id="Ruby_2">Ruby</span>
+</h3>
+<p>A traditional if-else construct in <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> is written:<sup id="cite_ref-pickaxe_10-0" class="reference"><a href="?:#cite_note-pickaxe-10"><span>[</span>10<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">if</span> a <span class="sy0">&gt;</span> b
+  result = x
+<span class="kw1">else</span>
+  result = y
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>This could also be written as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+result = <span class="kw1">if</span> a <span class="sy0">&gt;</span> b
+  x
+<span class="kw1">else</span>
+  y
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>These can be rewritten as the following statement:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+result = a <span class="sy0">&gt;</span> b ? x : y
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="PL.2FSQL">PL/SQL</span>
+</h3>
+<p>A specific conditional operator for <a href="http://en.m.wikipedia.org/wiki/PL/SQL" title="PL/SQL">PL/SQL</a> is not available, but a special case of the <code><a href="http://en.m.wikipedia.org/wiki/PL/SQL#Conditional_Statements" title="PL/SQL">CASE</a></code> expression works exactly as a conditional operator:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="plsql source-plsql">
+<pre class="de1">
+<span class="kw1">SELECT</span> <span class="br0">(</span><span class="kw1">CASE</span> <span class="kw1">WHEN</span> a <span class="sy0">&gt;</span> b <span class="kw1">THEN</span> x <span class="kw1">ELSE</span> y <span class="kw1">END</span><span class="br0">)</span> <span class="kw1">AS</span> <span class="st0">"Conditional_Example"</span>
+  <span class="kw1">FROM</span> DUAL<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="TestStand">TestStand</span>
+</h3>
+<p>In a <a rel="nofollow" class="external text" href="http://www.ni.com/teststand/">National Instruments TestStand</a> expression, if condition is true, the first expression is evaluated and becomes the output of the conditional operation; if false, the second expression is evaluated and becomes the result. Only one of two expressions is ever evaluated.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+condition <span class="sy0">?</span> first_expression <span class="sy0">:</span> second_expression
+</pre>
+</div>
+</div>
+<p>For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+RunState.<span class="me1">Root</span>.<span class="me1">Parameters</span>.<span class="me1">TestSocket</span>.<span class="me1">Index</span> <span class="sy0">==</span> <span class="nu0">3</span> <span class="sy0">?</span> Locals.<span class="me1">UUTIndex</span> <span class="sy0">=</span> <span class="nu0">3</span> <span class="sy0">:</span> Locals.<span class="me1">UUTIndex</span> <span class="sy0">=</span> <span class="nu0">0</span>
+</pre>
+</div>
+</div>
+<p>Sets the <b>UUTIndex</b> local variable to 3 if <b>TestSocket.Index</b> is 3, otherwise it sets <b>UUTIndex</b> to 0.</p>
+<p>Similar to other languages, <b>first_expression</b> and <b>second_expression</b> do not need to be autonomous expressions, allowing the operator to be used for variable assignment:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+Locals.<span class="me1">UUTIndex</span> <span class="sy0">=</span> <span class="br0">(</span> RunState.<span class="me1">Root</span>.<span class="me1">Parameters</span>.<span class="me1">TestSocket</span>.<span class="me1">Index</span> <span class="sy0">==</span> <span class="nu0">3</span> <span class="sy0">?</span> <span class="nu0">3</span> <span class="sy0">:</span> <span class="nu0">0</span> <span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Visual_Basic">Visual Basic</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> doesn't use <code>?:</code> per se, but has a very similar implementation of this shorthand <code>if...else</code> statement. Using the first example provided in this article, it can do:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vbnet source-vbnet">
+<pre class="de1">
+<span class="co1">' variable = IIf(condition, value_if_true, value_if_false)</span>
+<span class="kw1">Dim</span> opening_time <span class="kw1">As</span> <span class="kw2">Integer</span> <span class="sy0">=</span> <span class="kw7">IIf</span><span class="br0">(</span><span class="br0">(</span>day <span class="sy0">=</span> WEEKEND<span class="br0">)</span>, <span class="nu0">12</span>, <span class="nu0">9</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>In the above example, <code>IIf</code> is a ternary function, but not a ternary operator. As a function, the values of all three portions are evaluated before the function call occurs. This imposed limitations, and in Visual Basic .Net 9.0, released with Visual Studio 2008, an actual conditional operator was introduced, using the <code>If</code> keyword instead of <code>IIf</code>. This allows the following example code to work:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vbnet source-vbnet">
+<pre class="de1">
+<span class="kw1">Dim</span> name <span class="kw1">As</span> <span class="kw2">String</span> <span class="sy0">=</span> <span class="kw1">If</span><span class="br0">(</span>person <span class="kw1">Is</span> <span class="kw1">Nothing</span>, <span class="st0">""</span>, person<span class="sy0">.</span><span class="me1">Name</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>Using <code>IIf</code>, <code>person.Name</code> would be evaluated even if person is <code><a href="Null_pointer" title="Null pointer" class="mw-redirect">null</a></code> (Nothing), causing an <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a>. With a true short-circuiting conditional operator, <code>person.Name</code> is not evaluated unless person is not <code>null</code>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic</a> Version 9 has added the operator <code>If()</code> in addition to the existing <code>IIf()</code> function that existed previously. As a true operator, it does not have the side effects and potential inefficiencies of the <code>IIf()</code> function.</p>
+<p>The syntaxes of the tokens are similar: <code>If([condition], op1, op2)</code> vs <code>IIf(condition, op1, op2)</code>. As mentioned above, the function call has significant disadvantages, because the sub-expressions must all be evaluated, according to Visual Basic's <a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">evaluation strategy</a> for function calls and the result will always be of type variant (VB) or object (VB.NET). The <code>If()</code>operator however does not suffer from these problems as it supports conditional evaluation and determines the type of the expression based on the types of its operands.</p>
+<h3> <span class="mw-headline" id="Delphi">Delphi</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Delphi</a> the <code>IfThen</code> function can be used to achieve the same as <code>?:</code>. If the <code>System.Math</code> library is used, the <code>IfThen</code> funtion returns a numberic value such as an <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">Integer</a>, <a href="http://en.m.wikipedia.org/wiki/Double" title="Double">Double</a> or <a href="http://en.m.wikipedia.org/wiki/Extended" title="Extended" class="mw-redirect">Extended</a>. If the <code>System.StrUtils</code> library is used this function return a <a href="String_(computer_science)" title="String (computer science)">string</a> value.</p>
+<p>Using <code>System.Math</code></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="delphi source-delphi">
+<pre class="de1">
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">Integer</span><span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> <span class="kw4">Integer</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Integer</span><span class="sy1">;</span>
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">Int64</span><span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> <span class="kw4">Int64</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Int64</span><span class="sy1">;</span>
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> UInt64<span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> UInt64<span class="br0">)</span><span class="sy1">:</span> UInt64<span class="sy1">;</span>
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">Single</span><span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> <span class="kw4">Single</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Single</span><span class="sy1">;</span>
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">Double</span><span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> <span class="kw4">Double</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Double</span><span class="sy1">;</span>
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">Extended</span><span class="sy1">;</span> <span class="kw1">const</span> AFalse<span class="sy1">:</span> <span class="kw4">Extended</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Extended</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>Using the <code>System.StrUtils</code> library</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="delphi source-delphi">
+<pre class="de1">
+<span class="kw1">function</span> IfThen<span class="br0">(</span>AValue<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="sy1">;</span> <span class="kw1">const</span> ATrue<span class="sy1">:</span> <span class="kw4">string</span><span class="sy1">;</span> AFalse<span class="sy1">:</span> <span class="kw4">string</span> <span class="sy3">=</span> <span class="st0">''</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">string</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>Typical Example</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="delphi source-delphi">
+<pre class="de1">
+<span class="kw1">function</span> CheckIfEmployeeHaveMoney<span class="br0">(</span>MoneyInTheBank<span class="sy1">:</span> <span class="kw4">Boolean</span><span class="br0">)</span><span class="sy1">:</span> <span class="kw4">Integer</span><span class="sy1">;</span>
+<span class="kw1">begin</span>
+  <span class="coMULTI">{ This function will return "1" as "true" or "0" as "false", making it much easier to save "true" or "false" values in databases etc. }</span>
+  Result <span class="sy1">:</span><span class="sy3">=</span> IfThen<span class="br0">(</span><span class="br0">(</span>MoneyInTheBank <span class="sy3">=</span> <span class="kw2">True</span><span class="br0">)</span><span class="sy1">,</span> <span class="nu0">1</span><span class="sy1">,</span> <span class="nu0">0</span><span class="br0">)</span><span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Result_type">Result type</span>
+</h2>
+<p>Clearly the type of the result of the <code>?:</code> operator must be in some sense the <span class="new" title="Type unification (page does not exist)">type unification</span> of the types of its second and third operands. In C this is accomplished for <span class="new" title="Numeric type (page does not exist)">numeric types</span> by <span class="new" title="Arithmetic promotion (page does not exist)">arithmetic promotion</span>; since C does not have a <span class="new" title="Type hierarchy (page does not exist)">type hierarchy</span> for <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointer</a> types, pointer operands may only be used if they are of the same type (ignoring <span class="new" title="Type qualifier (page does not exist)">type qualifiers</span>) or one is <a href="Void_type" title="Void type">void</a> or <a href="Null_pointer" title="Null pointer" class="mw-redirect">NULL</a>. It is <a href="http://en.m.wikipedia.org/wiki/Undefined_behaviour" title="Undefined behaviour" class="mw-redirect">undefined behaviour</a> to mix pointer and integral or incompatible pointer types; thus</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+number <span class="sy0">=</span> spell_out_numbers <span class="sy0">?</span> <span class="st0">"forty-two"</span> <span class="sy0">:</span> <span class="nu0">42</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>will result in a <a href="http://en.m.wikipedia.org/wiki/Compile-time_error" title="Compile-time error" class="mw-redirect">compile-time error</a> in most compilers.</p>
+<h2> <span class="mw-headline" id=".3F:_in_style_guidelines">?: in style guidelines</span>
+</h2>
+<p>Some corporate programming guidelines list the use of the conditional operator as bad practice because it can harm readability and long-term maintainability.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from November 2007">citation needed</span></a></i>]</sup> Conditional operators are widely used and can be useful in certain circumstances to avoid the use of an <code>if</code> statement, either because the extra verbiage would be too lengthy or because the syntactic context does not permit a statement. For example:</p>
+<pre>
+<a href="C_preprocessor" title="C preprocessor">#define</a> MAX(a, b) (((a)&gt;(b)) ? (a) : (b))
+</pre>
+<p>or</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw1">for</span> <span class="br0">(</span>i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> MAX_PATTERNS<span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span>
+    c_patterns<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">ShowWindow</span><span class="br0">(</span>m_data.<span class="me1">fOn</span><span class="br0">[</span>i<span class="br0">]</span> <span class="sy0">?</span> SW_SHOW <span class="sy0">:</span> SW_HIDE<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>(The latter example uses the <a href="http://en.m.wikipedia.org/wiki/Microsoft_Foundation_Classes" title="Microsoft Foundation Classes" class="mw-redirect">Microsoft Foundation Classes</a> Framework for <a href="http://en.m.wikipedia.org/wiki/Win32" title="Win32" class="mw-redirect">Win32</a>.)</p>
+<p>When properly formatted, the conditional operator can be used to write simple and coherent case selectors. For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+vehicle <span class="sy0">=</span> arg <span class="sy0">==</span> <span class="st0">'B'</span> <span class="sy0">?</span> bus <span class="sy0">:</span>
+          arg <span class="sy0">==</span> <span class="st0">'A'</span> <span class="sy0">?</span> airplane <span class="sy0">:</span>
+          arg <span class="sy0">==</span> <span class="st0">'T'</span> <span class="sy0">?</span> train <span class="sy0">:</span>
+          arg <span class="sy0">==</span> <span class="st0">'C'</span> <span class="sy0">?</span> car <span class="sy0">:</span>
+          arg <span class="sy0">==</span> <span class="st0">'H'</span> <span class="sy0">?</span> horse <span class="sy0">:</span>
+                       feet<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Appropriate use of the conditional operator in a variable assignment context reduces the probability of a bug from a faulty assignment as the assigned variable is stated just once as opposed to multiple times.</p>
+<h2> <span class="mw-headline" id="Programming_languages_without_the_conditional_operator">Programming languages without the conditional operator</span>
+</h2>
+<p>The following are examples of notable general-purpose programming languages that don't provide a conditional operator:</p>
+<ul>
+<li>
+<a href="Go_(programming_language)" title="Go (programming language)">Go</a> programming language<sup id="cite_ref-11" class="reference"><a href="?:#cite_note-11"><span>[</span>11<span>]</span></a></sup>
+</li>
+<li>
+<a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> Although <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal / Delphi</a> do have a function <code>IfThen</code> to do the same</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IIf" title="IIf">IIf</a>, inline if function</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Null_coalescing_operator" title="Null coalescing operator">Null coalescing operator</a>, ?? operator</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation Journal"><a href="http://en.m.wikipedia.org/wiki/Christopher_Strachey" title="Christopher Strachey">Strachey, Christopher</a> (2000). "<a href="http://en.m.wikipedia.org/wiki/Fundamental_Concepts_in_Programming_Languages" title="Fundamental Concepts in Programming Languages">Fundamental Concepts in Programming Languages</a>". <i><a href="http://en.m.wikipedia.org/wiki/Higher-Order_and_Symbolic_Computation" title="Higher-Order and Symbolic Computation">Higher-Order and Symbolic Computation</a></i> <b>13</b>: 11–49. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1023%2FA%3A1010000313106">10.1023/A:1010000313106</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=%5B%5BFundamental+Concepts+in+Programming+Languages%5D%5D&amp;rft.jtitle=%5B%5BHigher-Order+and+Symbolic+Computation%5D%5D&amp;rft.aulast=Strachey&amp;rft.aufirst=Christopher&amp;rft.au=Strachey%2C%26%2332%3BChristopher&amp;rft.date=2000&amp;rft.volume=13&amp;rft.pages=11%E2%80%9349&amp;rft_id=info:doi/10.1023%2FA%3A1010000313106&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/bcpl.pdf">"BCPL Ternary operator (page 15)"</a>. <i>BCPL Reference Manual</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/bcpl.pdf">http://cm.bell-labs.com/cm/cs/who/dmr/bcpl.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=BCPL+Ternary+operator+%28page+15%29&amp;rft.atitle=BCPL+Reference+Manual&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fbcpl.pdf&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-c-3">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-c_3-0">^</a></b></span> <span class="reference-text">Learning GNU C: <a rel="nofollow" class="external text" href="http://www.faqs.org/docs/learnc/x598.html">The Conditional Operator</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a href="http://en.m.wikipedia.org/wiki/Brendan_Eich" title="Brendan Eich">Eich, Brendan</a>; C. Rand McKinney (1996-11-18). <a rel="nofollow" class="external text" href="http://hepunx.rl.ac.uk/~adye/jsspec11/expr.htm#1004949">"Conditional Operator (section 4.14)"</a>. <i>JavaScript Language Specification</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://hepunx.rl.ac.uk/~adye/jsspec11/expr.htm#1004949">http://hepunx.rl.ac.uk/~adye/jsspec11/expr.htm#1004949</a></span><span class="reference-accessdate">. Retrieved 2010-08-29</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Conditional+Operator+%28section+4.14%29&amp;rft.atitle=JavaScript+Language+Specification&amp;rft.aulast=Eich&amp;rft.aufirst=Brendan&amp;rft.au=Eich%2C%26%2332%3BBrendan&amp;rft.date=1996-11-18&amp;rft_id=http%3A%2F%2Fhepunx.rl.ac.uk%2F%7Eadye%2Fjsspec11%2Fexpr.htm%231004949&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">"Conditional Operator (section 11.12, page 93)"</a> (PDF). <i>ECMAScript Language Specification</i>. 2009-12. <a rel="nofollow" class="external text" href="http://web.archive.org/web/20100816042313/http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">Archived</a> from the original on 16 August 2010<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf">http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-262.pdf</a></span><span class="reference-accessdate">. Retrieved 2010-08-29</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Conditional+Operator+%28section+11.12%2C+page+93%29&amp;rft.atitle=ECMAScript+Language+Specification&amp;rft.date=2009-12&amp;rft_id=http%3A%2F%2Fwww.ecma-international.org%2Fpublications%2Ffiles%2FECMA-ST%2FECMA-262.pdf&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-perl6op-6">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-perl6op_6-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://perlcabal.org/syn/S03.html#Conditional_operator_precedence/">"Perl6 Operators"</a>. Larry Wall<span class="printonly">. <a rel="nofollow" class="external free" href="http://perlcabal.org/syn/S03.html#Conditional_operator_precedence/">http://perlcabal.org/syn/S03.html#Conditional_operator_precedence/</a></span><span class="reference-accessdate">. Retrieved 2010-05-18</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Perl6+Operators&amp;rft.atitle=&amp;rft.pub=Larry+Wall&amp;rft_id=http%3A%2F%2Fperlcabal.org%2Fsyn%2FS03.html%23Conditional_operator_precedence%2F&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/#operators">[1]</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://php.net/ternary#example-120">Comparison Operators, Example #3 Non-obvious Ternary Behaviour</a> on the PHP.net Website</span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://bugs.php.net/bug.php?id=61915">"can't fix this without breaking code" answer</a> on Bug #61915: incorrect associativity of ternary operator</span>
+</li>
+<li id="cite_note-pickaxe-10">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-pickaxe_10-0">^</a></b></span> <span class="reference-text">Programming Ruby: <a rel="nofollow" class="external text" href="http://ruby-doc.org/docs/ProgrammingRuby/html/tut_expressions.html#S4">Conditional Execution</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="?:#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://golang.org/doc/go_faq.html#Does_Go_have_a_ternary_form">"Does Go have the ?: operator?"</a>. <i>The Go Programming Language FAQ</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://golang.org/doc/go_faq.html#Does_Go_have_a_ternary_form">http://golang.org/doc/go_faq.html#Does_Go_have_a_ternary_form</a></span><span class="reference-accessdate">. Retrieved 2012-08-05</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Does+Go+have+the+%3F%3A+operator%3F&amp;rft.atitle=The+Go+Programming+Language+FAQ&amp;rft_id=http%3A%2F%2Fgolang.org%2Fdoc%2Fgo_faq.html%23Does_Go_have_a_ternary_form&amp;rfr_id=info:sid/en.wikipedia.org:%3F:"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/ty67wk28(VS.80).aspx">Description of Conditional Operator in C#</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/bb513985.aspx">Description of If operator in Visual Basic</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.python.org/peps/pep-0308.html">Description of Conditional Expression in Python (PEP 308)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.diveintopython.net/power_of_introspection/and_or.html">Alternative workaround for conditional operator expression in Python</a></li>
+<li><a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/third_edition/html/expressions.html#15.25">Description in the Java Language Specification</a></li>
+<li><a rel="nofollow" class="external text" href="http://php.net/manual/en/language.operators.comparison.php#language.operators.comparison.ternary">Description in the PHP Language Documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.microsoft.com/downloads/details.aspx?familyid=39DE1DD0-F775-40BF-A191-09F5A95EF500&amp;displaylang=en">Visual Basic 9.0 Language Specification</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Tern%C3%A1rn%C3%AD_oper%C3%A1tor_(programov%C3%A1n%C3%AD)" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/%3F:" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E6%BC%94%E7%AE%97%E5%AD%90" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Operator_warunkowy" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A2%D0%B5%D1%80%D0%BD%D0%B0%D1%80%D0%BD%D0%B0%D1%8F_%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0%D1%8F_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=%3F:&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=%3F:&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=%3F%3A&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

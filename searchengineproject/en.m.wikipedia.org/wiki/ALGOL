@@ -1,0 +1,685 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>ALGOL - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"ALGOL","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/ALGOL" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=ALGOL"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">ALGOL</h1>			
+<div class="dablink">This article is about the programming language family.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/Algol_(disambiguation)" title="Algol (disambiguation)">Algol (disambiguation)</a>.</div>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">ALGOL</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style="">
+<a href="Procedural_programming" title="Procedural programming">procedural</a>, <a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Structured_programming" title="Structured programming">structured</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1958</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">
+<a href="http://en.m.wikipedia.org/wiki/Friedrich_L._Bauer" title="Friedrich L. Bauer">Bauer</a>, <span class="new" title="Hermann Bottenbruch (page does not exist)">Bottenbruch</span>, <a href="http://en.m.wikipedia.org/wiki/Heinz_Rutishauser" title="Heinz Rutishauser">Rutishauser</a>, <a href="http://en.m.wikipedia.org/wiki/Klaus_Samelson" title="Klaus Samelson">Samelson</a>, <a href="http://en.m.wikipedia.org/wiki/John_Backus" title="John Backus">Backus</a>, <span class="new" title="Charles Katz (page does not exist)">Katz</span>, <a href="http://en.m.wikipedia.org/wiki/Alan_Perlis" title="Alan Perlis">Perlis</a>, <span class="new" title="Joseph Henry Wegstein (page does not exist)">Wegstein</span>, <a href="http://en.m.wikipedia.org/wiki/Peter_Naur" title="Peter Naur">Naur</a>, <span class="new" title="Bernard Vauquois (page does not exist)">Vauquois</span>, <a href="http://en.m.wikipedia.org/wiki/Adriaan_van_Wijngaarden" title="Adriaan van Wijngaarden">van Wijngaarden</a>, <span class="new" title="Michael Woodger (page does not exist)">Woodger</span>, <span class="new" title="Julien Green (computer scientist) (page does not exist)">Green</span>, <a href="http://en.m.wikipedia.org/wiki/John_McCarthy_(computer_scientist)" title="John McCarthy (computer scientist)">McCarthy</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style="">Most subsequent imperative languages (so-called <i>ALGOL-like</i> languages)<br>
+e.g. <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="Combined_Programming_Language" title="Combined Programming Language" class="mw-redirect">CPL</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>
+</td>
+</tr>
+</table>
+<p><b>ALGOL</b> (short for <b>ALGO</b>rithmic <b>L</b>anguage)<sup id="cite_ref-0" class="reference"><a href="ALGOL#cite_note-0"><span>[</span>1<span>]</span></a></sup> is a family of <a href="Imperative_programming" title="Imperative programming">imperative</a> computer <a href="Programming_language" title="Programming language">programming languages</a> originally developed in the mid 1950s which greatly influenced many other languages and was the standard method for <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithm</a> description used by the <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a>, in textbooks, and academic works for the next 30 years and more.<sup id="cite_ref-1" class="reference"><a href="ALGOL#cite_note-1"><span>[</span>2<span>]</span></a></sup> In the sense that most modern languages are "algol-like",<sup id="cite_ref-2" class="reference"><a href="ALGOL#cite_note-2"><span>[</span>3<span>]</span></a></sup> it was arguably the most successful of the four high level programming languages with which it was roughly contemporary, <a href="Fortran" title="Fortran">Fortran</a>, <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, and <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>. It was designed to avoid some of the perceived problems with <a href="Fortran" title="Fortran">FORTRAN</a> and eventually gave rise to many other programming languages, including <a href="BCPL" title="BCPL">BCPL</a>, <a href="B_(programming_language)" title="B (programming language)">B</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a>, and <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>. ALGOL introduced code blocks and the <code>begin</code> and <code>end</code> pairs for delimiting them and it was also the first language implementing <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">nested function</a> definitions with <a href="http://en.m.wikipedia.org/wiki/Lexical_scope" title="Lexical scope" class="mw-redirect">lexical scope</a>. Moreover, it was the first programming language which gave serious attention to formal language definition and through the <i><span class="new" title="Algol 60 Report (page does not exist)">Algol 60 Report</span></i> introduced <a href="http://en.m.wikipedia.org/wiki/Backus-Naur_Form" title="Backus-Naur Form" class="mw-redirect">Backus-Naur Form</a>, a principal notation for language design.</p>
+<p>There were three major specifications:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a> – originally proposed to be called <b>IAL</b> (for <b>I</b>nternational <b>A</b>lgorithmic <b>L</b>anguage).</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> – first implemented as <i>X1 ALGOL 60</i> in mid 1960 – revised 1963<sup id="cite_ref-3" class="reference"><a href="ALGOL#cite_note-3"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="ALGOL#cite_note-4"><span>[</span>5<span>]</span></a></sup>
+</li>
+<li>
+<a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a> – revised 1973<sup id="cite_ref-5" class="reference"><a href="ALGOL#cite_note-5"><span>[</span>6<span>]</span></a></sup> – introduced new elements including flexible arrays, slices, parallelism, operator identification, and various extensibility features.</li>
+</ul>
+<p><a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a> based his own <a href="http://en.m.wikipedia.org/wiki/ALGOL_W" title="ALGOL W">ALGOL W</a> on ALGOL 60 before developing <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>. Algol-W was intended to be the next generation ALGOL but the ALGOL 68 committee decided on a design that was more complex and advanced rather than a cleaned simplified ALGOL 60. The official ALGOL versions are named after the year they were first published.</p>
+<p>Algol 68 is substantially different from Algol 60 but was not well received, so that in general "Algol" means Algol 60 and dialects thereof. Fragments of ALGOL-like <a href="http://en.m.wikipedia.org/wiki/Programming_language_syntax" title="Programming language syntax" class="mw-redirect">syntax</a> are sometimes still used as <a href="http://en.m.wikipedia.org/wiki/Pseudocode" title="Pseudocode">pseudocode</a>.</p>
+<h2> <span class="mw-headline" id="Important_implementations">Important implementations</span>
+</h2>
+<p>The <a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">International Algorithmic Language</a> (IAL) was extremely influential and generally considered the ancestor of most of the modern programming languages (the so-called Algol-like languages). Additionally, in <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <b>ALGOL object code</b> was a simple and compact and stack-based <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set architecture</a> mainly used in teaching <a href="Compiler" title="Compiler">compiler</a> construction and other high order language (of which Algol is generally considered the first).</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>ALGOL was developed jointly by a committee of European and American computer scientists in a meeting in 1958 at <a href="http://en.m.wikipedia.org/wiki/ETH_Zurich" title="ETH Zurich">ETH Zurich</a> (cf. <a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a>). It specified three different syntaxes: a reference syntax, a publication syntax, and an implementation syntax. The different syntaxes permitted it to use different keyword names and conventions for decimal points (commas vs periods) for different languages.</p>
+<p>ALGOL was used mostly by research computer scientists in the United States and in Europe. Its use in commercial applications was hindered by the absence of standard input/output facilities in its description and the lack of interest in the language by large computer vendors other than <a href="http://en.m.wikipedia.org/wiki/Burroughs_Corporation" title="Burroughs Corporation">Burroughs Corporation</a>. ALGOL 60 did however become the standard for the publication of algorithms and had a profound effect on future language development.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/John_Backus" title="John Backus">John Backus</a> developed the <a href="http://en.m.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" title="Backus–Naur Form">Backus normal form</a> method of describing programming languages specifically for ALGOL 58. It was revised and expanded by <a href="http://en.m.wikipedia.org/wiki/Peter_Naur" title="Peter Naur">Peter Naur</a> for ALGOL 60, and at <a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a>'s suggestion renamed <a href="http://en.m.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" title="Backus–Naur Form">Backus–Naur Form</a>.<sup id="cite_ref-6" class="reference"><a href="ALGOL#cite_note-6"><span>[</span>7<span>]</span></a></sup></p>
+<p>Peter Naur: "As editor of the ALGOL Bulletin I was drawn into the international discussions of the language and was selected to be member of the European language design group in November 1959. In this capacity I was the editor of the ALGOL 60 report, produced as the result of the ALGOL 60 meeting in Paris in January 1960."<sup id="cite_ref-naur_acm_7-0" class="reference"><a href="ALGOL#cite_note-naur_acm-7"><span>[</span>8<span>]</span></a></sup></p>
+<p>The following people attended the meeting in Paris (from 1 to 16 January):</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Friedrich_L._Bauer" title="Friedrich L. Bauer">Friedrich L. Bauer</a>, <a href="http://en.m.wikipedia.org/wiki/Peter_Naur" title="Peter Naur">Peter Naur</a>, <a href="http://en.m.wikipedia.org/wiki/Heinz_Rutishauser" title="Heinz Rutishauser">Heinz Rutishauser</a>, <a href="http://en.m.wikipedia.org/wiki/Klaus_Samelson" title="Klaus Samelson">Klaus Samelson</a>, <span class="new" title="Bernard Vauquois (page does not exist)">Bernard Vauquois</span>, <a href="http://en.m.wikipedia.org/wiki/Adriaan_van_Wijngaarden" title="Adriaan van Wijngaarden">Adriaan van Wijngaarden</a>, and <span class="new" title="Michael Woodger (page does not exist)">Michael Woodger</span> (from Europe)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/John_Backus" title="John Backus">John W. Backus</a>, <span class="new" title="Julien Green (computer scientist) (page does not exist)">Julien Green</span>, <span class="new" title="Charles Katz (page does not exist)">Charles Katz</span>, <a href="http://en.m.wikipedia.org/wiki/John_McCarthy_(computer_scientist)" title="John McCarthy (computer scientist)">John McCarthy</a>, <a href="http://en.m.wikipedia.org/wiki/Alan_Perlis" title="Alan Perlis">Alan J. Perlis</a>, and <span class="new" title="Joseph Henry Wegstein (page does not exist)">Joseph Henry Wegstein</span> (from the USA).</li>
+</ul>
+<p>Alan Perlis gave a vivid description of the meeting: "The meetings were exhausting, interminable, and exhilarating. One became aggravated when one's good ideas were discarded along with the bad ones of others. Nevertheless, diligence persisted during the entire period. The chemistry of the 13 was excellent."</p>
+<p>ALGOL 60 inspired many languages that followed it. <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a> remarked: "Here is a language so far ahead of its time that it was not only an improvement on its predecessors but also on nearly all its successors."<sup id="cite_ref-8" class="reference"><a href="ALGOL#cite_note-8"><span>[</span>9<span>]</span></a></sup> The <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> programming language, a variant of <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> that adopted the block structure and lexical scope of ALGOL, also adopted the wording "Revised Report on the Algorithmic Language Scheme" for its standards documents in homage to ALGOL.<sup id="cite_ref-r3rs_9-0" class="reference"><a href="ALGOL#cite_note-r3rs-9"><span>[</span>10<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Algol_and_programming_language_research">Algol and programming language research</span>
+</h3>
+<p>As <a href="http://en.m.wikipedia.org/wiki/Peter_Landin" title="Peter Landin">Peter Landin</a> noted, the language Algol was the first language to seamlessly combine imperative effects with the (call-by-name) <a href="http://en.m.wikipedia.org/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a>. Perhaps the most elegant formulation of the language is due to <a href="http://en.m.wikipedia.org/wiki/John_C._Reynolds" title="John C. Reynolds">John C. Reynolds</a>, and it best exhibits its syntactic and semantic purity. Reynolds's "idealized" Algol also made a convincing methodological argument regarding the suitability of "local" effects in the context of call-by-name languages, to be contrasted with the "global" effects used by call-by-value languages such as <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>. The conceptual integrity of the language made it one of the main objects of semantic research, along with <a href="http://en.m.wikipedia.org/wiki/Programming_language_for_Computable_Functions" title="Programming language for Computable Functions" class="mw-redirect">PCF</a> and ML.<sup id="cite_ref-10" class="reference"><a href="ALGOL#cite_note-10"><span>[</span>11<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="IAL_implementations_timeline">IAL implementations timeline</span>
+</h3>
+<p>To date there have been at least 70 augmentations, extensions, derivations and sublanguages of Algol 60.<sup id="cite_ref-11" class="reference"><a href="ALGOL#cite_note-11"><span>[</span>12<span>]</span></a></sup></p>
+<p>A discussion of implementation issues of an <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> implementations can be found in the article "<a rel="nofollow" class="external text" href="http://www.cs.man.ac.uk/CCS/res/res04.htm#d">The early days of Algol</a>" by Nicholas Enticknap and Pat Woodroffe.</p>
+<table class="wikitable" border="1" style="border-collapse: collapse;">
+<tr>
+<th>Name</th>
+<th>Year</th>
+<th>Author</th>
+<th>State</th>
+<th>Description</th>
+<th>Target CPU</th>
+</tr>
+<tr>
+<td>ZMMD-implementation</td>
+<td>1958</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Friedrich_L._Bauer" title="Friedrich L. Bauer">Friedrich L. Bauer</a>, Heinz Rutishauser, Klaus Samelson, Hermann Bottenbruch</td>
+<td>Germany</td>
+<td>implementation of <a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a>
+</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Z22_(computer)" title="Z22 (computer)">Z22</a><br>
+(later <a href="http://en.m.wikipedia.org/wiki/Konrad_Zuse" title="Konrad Zuse">Zuse</a>'s <span class="new" title="Z23 (computer) (page does not exist)">Z23</span> was delivered with an Algol 60 compiler)<sup id="cite_ref-12" class="reference"><a href="ALGOL#cite_note-12"><span>[</span>13<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>X1 ALGOL 60</td>
+<td>August 1960<sup id="cite_ref-13" class="reference"><a href="ALGOL#cite_note-13"><span>[</span>14<span>]</span></a></sup>
+</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Edsger W. Dijkstra</a> and <a href="http://nl.wikipedia.org/wiki/Jaap_Zonneveld" class="extiw" title="nl:Jaap Zonneveld">Jaap A. Zonneveld</a>
+</td>
+<td>Netherlands</td>
+<td>First implementation of ALGOL 60<sup id="cite_ref-14" class="reference"><a href="ALGOL#cite_note-14"><span>[</span>15<span>]</span></a></sup>
+</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Electrologica_X1" title="Electrologica X1">Electrologica X1</a></td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Elliott_ALGOL" title="Elliott ALGOL">Elliott ALGOL</a></td>
+<td>1960s</td>
+<td><a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a></td>
+<td>UK</td>
+<td>Subject of the famous <a href="http://en.m.wikipedia.org/wiki/Turing_test" title="Turing test">Turing</a> lecture</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Elliott_803" title="Elliott 803">Elliott 803</a> &amp; the Elliott 503</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/JOVIAL" title="JOVIAL">JOVIAL</a></td>
+<td>1960</td>
+<td><span class="new" title="Jules Schwarz (page does not exist)">Jules Schwarz</span></td>
+<td>USA</td>
+<td>A <a href="http://en.m.wikipedia.org/wiki/United_States_Department_of_Defense" title="United States Department of Defense">DOD</a> <a href="http://en.m.wikipedia.org/wiki/High_level_language" title="High level language" class="mw-redirect">HOL</a> prior to <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>
+</td>
+<td>Various (see article)</td>
+</tr>
+<tr>
+<td>
+<a href="Burroughs_large_systems#ALGOL" title="Burroughs large systems">Burroughs Algol</a><br>
+(Several variants)</td>
+<td>1961</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Burroughs_Corporation" title="Burroughs Corporation">Burroughs Corporation</a> (with participation by Hoare, <a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra</a>, and others)</td>
+<td>USA</td>
+<td>Basis of the <a href="http://en.m.wikipedia.org/wiki/Burroughs_Corporation" title="Burroughs Corporation">Burroughs</a> (and now <a href="http://en.m.wikipedia.org/wiki/Unisys" title="Unisys">Unisys</a> <a href="http://en.m.wikipedia.org/wiki/Burroughs_MCP" title="Burroughs MCP">MCP</a> based) computers</td>
+<td>
+<a href="Burroughs_large_systems" title="Burroughs large systems">Burroughs large systems</a><br>
+and their midrange as well.</td>
+</tr>
+<tr>
+<td><span class="new" title="Case ALGOL (page does not exist)">Case ALGOL</span></td>
+<td>1961</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Case_Western_Reserve_University" title="Case Western Reserve University">Case Institute of Technology</a><sup id="cite_ref-15" class="reference"><a href="ALGOL#cite_note-15"><span>[</span>16<span>]</span></a></sup>
+</td>
+<td>USA</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> was originally contracted as a simulation extension of the Case ALGOL</td>
+<td><a href="http://en.m.wikipedia.org/wiki/UNIVAC_1107" title="UNIVAC 1107">UNIVAC 1107</a></td>
+</tr>
+<tr>
+<td><span class="new" title="GOGOL (page does not exist)">GOGOL</span></td>
+<td>1961</td>
+<td><span class="new" title="Bill McKeeman (page does not exist)">Bill McKeeman</span></td>
+<td>USA</td>
+<td>For <a href="http://en.m.wikipedia.org/wiki/Odin" title="Odin">ODIN</a> time-sharing system</td>
+<td><a href="http://en.m.wikipedia.org/wiki/PDP-1" title="PDP-1">PDP-1</a></td>
+</tr>
+<tr>
+<td><span class="new" title="RegneCentralen ALGOL (page does not exist)">RegneCentralen ALGOL</span></td>
+<td>1961</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Peter_Naur" title="Peter Naur">Peter Naur</a>, <a href="http://en.m.wikipedia.org/wiki/J%C3%B8rn_Jensen" title="Jørn Jensen">Jørn Jensen</a>
+</td>
+<td>Denmark</td>
+<td>Inplementation of full Algol 60</td>
+<td>DASK at Regnecentralen</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Dartmouth_ALGOL_30" title="Dartmouth ALGOL 30">Dartmouth ALGOL 30</a></td>
+<td>1962</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Thomas_Eugene_Kurtz" title="Thomas Eugene Kurtz">Thomas Eugene Kurtz</a> et al.</td>
+<td>USA</td>
+<td></td>
+<td><a href="http://en.m.wikipedia.org/wiki/LGP-30" title="LGP-30">LGP-30</a></td>
+</tr>
+<tr>
+<td><span class="new" title="USS 90 Algol (page does not exist)">USS 90 Algol</span></td>
+<td>1962</td>
+<td><span class="new" title="L. Petrone (page does not exist)">L. Petrone</span></td>
+<td>Italy</td>
+<td></td>
+</tr>
+<tr>
+<td>Algol Translator</td>
+<td>1962</td>
+<td>G. van der Mey and <a href="http://en.m.wikipedia.org/wiki/Willem_van_der_Poel" title="Willem van der Poel">W.L. van der Poel</a>
+</td>
+<td>Netherlands</td>
+<td>Staatsbedrijf der Posterijen, Telegrafie en Telefonie</td>
+<td><a href="http://en.m.wikipedia.org/wiki/ZEBRA_(computer)" title="ZEBRA (computer)">ZEBRA</a></td>
+</tr>
+<tr>
+<td><span class="new" title="Kidsgrove Algol (page does not exist)">Kidsgrove Algol</span></td>
+<td>1963</td>
+<td><span class="new" title="F. G. Duncan (page does not exist)">F. G. Duncan</span></td>
+<td>UK</td>
+<td></td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/English_Electric" title="English Electric">English Electric Company</a> <a href="http://en.m.wikipedia.org/wiki/English_Electric_KDF9" title="English Electric KDF9">KDF9</a>
+</td>
+</tr>
+<tr>
+<td><span class="new" title="VALGOL (page does not exist)">VALGOL</span></td>
+<td>1963</td>
+<td><span class="new" title="Val Schorre (page does not exist)">Val Schorre</span></td>
+<td>USA</td>
+<td>A test of the <a href="http://en.m.wikipedia.org/wiki/META_II" title="META II">META II</a> compiler compiler</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Whetstone_(benchmark)" title="Whetstone (benchmark)">Whetstone</a></td>
+<td>1964</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Brian_Randell" title="Brian Randell">Brian Randell</a> and L J Russell</td>
+<td>UK</td>
+<td>Atomic Power Division of English Electric Company. Precursor to <a href="http://en.m.wikipedia.org/wiki/Ferranti_Pegasus" title="Ferranti Pegasus">Ferranti Pegasus</a>, National Physical Laboratories <a href="http://en.m.wikipedia.org/wiki/Automatic_Computing_Engine" title="Automatic Computing Engine">ACE</a> and <a href="http://en.m.wikipedia.org/wiki/English_Electric_DEUCE" title="English Electric DEUCE">English Electric DEUCE</a> implementations.</td>
+<td>English Electric Company <a href="http://en.m.wikipedia.org/wiki/English_Electric_KDF9" title="English Electric KDF9">KDF9</a>
+</td>
+</tr>
+<tr>
+<td><span class="new" title="NU ALGOL (page does not exist)">NU ALGOL</span></td>
+<td>1965</td>
+<td></td>
+<td>Norway</td>
+<td></td>
+<td><a href="http://en.m.wikipedia.org/wiki/UNIVAC" title="UNIVAC">UNIVAC</a></td>
+</tr>
+<tr>
+<td>ALGEK</td>
+<td>1965</td>
+<td></td>
+<td><a href="http://en.m.wikipedia.org/wiki/Soviet_Union" title="Soviet Union">USSR</a></td>
+<td><a href="http://en.m.wikipedia.org/wiki/Minsk_family_of_computers" title="Minsk family of computers">Minsk-22</a></td>
+<td>АЛГЭК, based on ALGOL-60 and <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> support, for economical tasks</td>
+</tr>
+<tr>
+<td><span class="new" title="MALGOL (page does not exist)">MALGOL</span></td>
+<td>1966</td>
+<td>publ. A. Viil, M Kotli &amp; M. Rakhendi,</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Estonian_Soviet_Socialist_Republic" title="Estonian Soviet Socialist Republic">Estonian SSR</a></td>
+<td><a href="http://en.m.wikipedia.org/wiki/Minsk_family_of_computers" title="Minsk family of computers">Minsk-22</a></td>
+</tr>
+<tr>
+<td><span class="new" title="ALGAMS (page does not exist)">ALGAMS</span></td>
+<td>1967</td>
+<td>GAMS group (ГАМС, группа автоматизации программирования для машин среднего класса), cooperation of Comecon Academies of Science</td>
+<td><a href="http://en.m.wikipedia.org/wiki/Comecon" title="Comecon">Comecon</a></td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Minsk_family_of_computers" title="Minsk family of computers">Minsk-22</a>, later <a href="http://en.m.wikipedia.org/wiki/ES_EVM" title="ES EVM">ES EVM</a>, <a href="http://en.m.wikipedia.org/wiki/BESM" title="BESM">BESM</a>
+</td>
+</tr>
+<tr>
+<td><span class="new" title="ALGOL/ZAM (page does not exist)">ALGOL/ZAM</span></td>
+<td>1967</td>
+<td></td>
+<td>Poland</td>
+<td></td>
+<td>Polish <span class="new" title="ZAM (computer) (page does not exist)">ZAM</span> computer</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula 67</a></td>
+<td>1967</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Ole-Johan_Dahl" title="Ole-Johan Dahl">Ole-Johan Dahl</a> and <a href="http://en.m.wikipedia.org/wiki/Kristen_Nygaard" title="Kristen Nygaard">Kristen Nygaard</a>
+</td>
+<td>Norway</td>
+<td>Algol 60 with classes</td>
+<td><a href="http://en.m.wikipedia.org/wiki/UNIVAC_1107" title="UNIVAC 1107">UNIVAC 1107</a></td>
+</tr>
+<tr>
+<td><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=7288&amp;language=Chinese%20Algol">Chinese Algol</a></td>
+<td>1972</td>
+<td></td>
+<td>China</td>
+<td>Chinese characters, expressed via the Symbol system</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/DG/L" title="DG/L">DG/L</a></td>
+<td>1972</td>
+<td></td>
+<td>USA</td>
+<td></td>
+<td>DG <a href="http://en.m.wikipedia.org/wiki/Data_General_Eclipse" title="Data General Eclipse">Eclipse</a> family of Computers</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/S-algol" title="S-algol">S-algol</a></td>
+<td>1979</td>
+<td>Prof. <a href="http://en.m.wikipedia.org/wiki/Ron_Morrison" title="Ron Morrison">Ron Morrison</a>
+</td>
+<td>UK</td>
+<td>Addition of orthogonal datatypes with intended use as a teaching language</td>
+<td>
+<a href="PDP-11" title="PDP-11">PDP-11</a> with a subsequent implementation on the <a href="http://en.m.wikipedia.org/wiki/Java_VM" title="Java VM" class="mw-redirect">Java VM</a>
+</td>
+</tr>
+</table>
+<p>The Burroughs dialects included special Bootstrapping dialects such as <a href="http://en.m.wikipedia.org/wiki/Executive_Systems_Problem_Oriented_Language" title="Executive Systems Problem Oriented Language">ESPOL</a> and <a href="http://en.m.wikipedia.org/wiki/NEWP" title="NEWP">NEWP</a>. The latter is still used for Unisys MCP system software.</p>
+<h2> <span class="mw-headline" id="Properties">Properties</span>
+</h2>
+<p>ALGOL 60 as officially defined had no <a href="http://en.m.wikipedia.org/wiki/I/O" title="I/O" class="mw-redirect">I/O</a> facilities; implementations defined their own in ways that were rarely compatible with each other. In contrast, ALGOL 68 offered an extensive library of <i>transput</i> (ALGOL 68 parlance for Input/Output) facilities.</p>
+<p>ALGOL 60 allowed for two <a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">evaluation strategies</a> for <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">parameter</a> passing: the common <a href="Call-by-value" title="Call-by-value" class="mw-redirect">call-by-value</a>, and <a href="http://en.m.wikipedia.org/wiki/Call-by-name" title="Call-by-name" class="mw-redirect">call-by-name</a>. Call-by-name had certain limitations in contrast to <a href="http://en.m.wikipedia.org/wiki/Call-by-reference" title="Call-by-reference" class="mw-redirect">call-by-reference</a>, making it an undesirable feature in imperative language design. For example, it is impossible in ALGOL 60 to develop a procedure that will swap the values of two parameters if the actual parameters that are passed in are an integer variable and an array that is indexed by that same integer variable.<sup id="cite_ref-16" class="reference"><a href="ALGOL#cite_note-16"><span>[</span>17<span>]</span></a></sup> Think of passing a pointer to swap(i, A[i]) in to a function. Now that every time swap is referenced, it's reevaluated. Say i := 1 and A[i] := 2, so every time swap is referenced it'll return the other combination of the values ([1,2], [2,1], [1,2] and so on). Another problematic situation is passing a random function.</p>
+<p>However, call-by-name is still beloved of ALGOL implementors for the interesting "<a href="http://en.m.wikipedia.org/wiki/Thunk_(delayed_computation)" title="Thunk (delayed computation)" class="mw-redirect">thunks</a>" that are used to implement it. <a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> devised the "<a href="http://en.m.wikipedia.org/wiki/Man_or_boy_test" title="Man or boy test">man or boy test</a>" to separate compilers that correctly implemented "<a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursion</a> and non-local references." This test contains an example of call-by-name.</p>
+<p>ALGOL 68 was defined using a two-level grammar formalism invented by <a href="http://en.m.wikipedia.org/wiki/Adriaan_van_Wijngaarden" title="Adriaan van Wijngaarden">Adriaan van Wijngaarden</a> and which bears his name. <a href="http://en.m.wikipedia.org/wiki/Van_Wijngaarden_grammar" title="Van Wijngaarden grammar">Van Wijngaarden grammars</a> use a <a href="http://en.m.wikipedia.org/wiki/Context-free_grammar" title="Context-free grammar">context-free grammar</a> to generate an infinite set of productions that will recognize a particular ALGOL 68 program; notably, they are able to express the kind of requirements that in many other programming language standards are labelled "semantics" and have to be expressed in ambiguity-prone natural language prose, and then implemented in compilers as <i>ad hoc</i> code attached to the formal language parser.</p>
+<h2> <span class="mw-headline" id="Examples_and_portability_issues">Examples and portability issues</span>
+</h2>
+<h3> <span class="mw-headline" id="Code_sample_comparisons">Code sample comparisons</span>
+</h3>
+<h4> <span class="mw-headline" id="ALGOL_60">ALGOL 60</span>
+</h4>
+<p>(The way the bold text has to be written depends on the implementation, e.g. 'INTEGER' (including the quotation marks) for <b>integer</b>; this is known as <a href="http://en.m.wikipedia.org/wiki/Stropping_(programming)" title="Stropping (programming)" class="mw-redirect">stropping</a>.)</p>
+<pre>
+<b>procedure</b> Absmax(a) Size:(n, m) Result:(y) Subscripts:(i, k);
+    <b>value</b> n, m; <b>array</b> a; <b>integer</b> n, m, i, k; <b>real</b> y;
+<b>comment</b> The absolute greatest element of the matrix a, of size n by m
+is transferred to y, and the subscripts of this element to i and k;
+<b>begin</b> <b>integer</b> p, q;
+    y := 0; i := k := 1;
+    <b>for</b> p:=1 <b>step</b> 1 <b>until</b> n <b>do</b>
+    <b>for</b> q:=1 <b>step</b> 1 <b>until</b> m <b>do</b>
+        <b>if</b> abs(a[p, q]) &gt; y <b>then</b>
+            <b>begin</b> y := abs(a[p, q]);
+            i := p; k := q
+            <b>end</b>
+<b>end</b> Absmax
+</pre>
+<p>Here's an example of how to produce a table using Elliott 803 ALGOL.<sup id="cite_ref-17" class="reference"><a href="ALGOL#cite_note-17"><span>[</span>18<span>]</span></a></sup></p>
+<pre>
+ FLOATING POINT ALGOL TEST'
+ BEGIN REAL A,B,C,D'
+  
+ READ D'
+  
+ FOR A:= 0.0 STEP D UNTIL 6.3 DO
+ BEGIN
+   PRINT PUNCH(3),££L??'
+   B := SIN(A)'
+   C := COS(A)'
+   PRINT PUNCH(3),SAMELINE,ALIGNED(1,6),A,B,C'
+ END'
+ END'
+</pre>
+<p>PUNCH(3) sends output to the teleprinter rather than the tape punch.<br>
+SAMELINE suppresses the carriage return + line feed normally printed between arguments.<br>
+ALIGNED(1,6) controls the format of the output with 1 digit before and 6 after the decimal point.</p>
+<h4> <span class="mw-headline" id="ALGOL_68">ALGOL 68</span>
+</h4>
+<p>The following code samples are ALGOL 68 versions of the above ALGOL 60 code samples.</p>
+<p>ALGOL 68 reuses ALGOL 60's <a href="http://en.m.wikipedia.org/wiki/Stropping_(programming)" title="Stropping (programming)" class="mw-redirect">stropping</a>. In ALGOL 68's case tokens with the <b>bold</b> typeface are reserved words, types (<b>mode</b>s) or operators.</p>
+<pre>
+<b>proc</b> abs max = ([,]<b>real</b> a, <b>ref</b> <b>real</b> y, <b>ref</b> <b>int</b> i, k)<b>real</b>:
+<b>comment</b> The absolute greatest element of the matrix a, of size ⌈a by 2⌈a
+is transferred to y, and the subscripts of this element to i and k; <b>comment</b>
+<b>begin</b>
+   <b>real</b> y := 0; i := ⌊a; k := 2⌊a;
+   <b>for</b> p <b>from</b> ⌊a <b>to</b> ⌈a <b>do</b>
+     <b>for</b> q <b>from</b> 2⌊a <b>to</b> 2⌈a <b>do</b>
+       <b>if</b> <b>abs</b> a[p, q] &gt; y <b>then</b>
+           y := <b>abs</b> a[p, q];
+           i := p; k := q
+       <b>fi</b>
+     <b>od</b>
+   <b>od</b>;
+   y
+<b>end</b> # abs max #
+</pre>
+<p>Note: lower (⌊) and upper (⌈) bounds of an array, and array slicing, are directly available to the programmer.</p>
+<pre>
+floating point algol68 test:
+(
+  <b>real</b> a,b,c,d;
+   
+  printf(($pg$,"Enter d:"));
+  read(d);
+   
+  <b>for</b> step <b>from</b> 0 <b>while</b> a:=step*d; a &lt;= 2*pi <b>do</b>
+    printf($l$);
+    b := sin(a);
+    c := cos(a);
+    printf(($z-d.6d$,a,b,c))
+  <b>od</b>
+)
+</pre>
+<p><i>printf</i> - sends output to the <b>file</b> <i>stand out</i>.<br><i>printf($p$);</i> – selects a <i>new page</i>.<br><i>printf($l$);</i> – selects a <i>new line</i>.<br><i>printf(($z-d.6d$,a,b,c))</i> – formats output with 1 digit before and 6 after the decimal point.</p>
+<h3> <span class="mw-headline" id="Timeline:_Hello_world">Timeline: Hello world</span>
+</h3>
+<p>The variations and lack of portability of the programs from one implementation to another is easily demonstrated by the classic <a href="http://en.m.wikipedia.org/wiki/Hello_world_program" title="Hello world program">hello world program</a>.</p>
+<h4> <span class="mw-headline" id="ALGOL_58_.28IAL.29">ALGOL 58 (IAL)</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/ALGOL_58" title="ALGOL 58">ALGOL 58</a>
+</div>
+<p>ALGOL 58 had no I/O facilities.</p>
+<h4> <span class="mw-headline" id="ALGOL_60_family">ALGOL 60 family</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a>
+</div>
+<p>Since ALGOL 60 had no I/O facilities, there is no portable <a href="http://en.m.wikipedia.org/wiki/Hello_world_program" title="Hello world program">hello world program</a> in ALGOL. The following program could (and still will) compile and run on an ALGOL implementation for a Unisys A-Series mainframe, and is a straightforward simplification of code taken from <a rel="nofollow" class="external text" href="http://www.engin.umd.umich.edu/CIS/course.des/cis400/index.html">The Language Guide</a> at the <a href="http://en.m.wikipedia.org/wiki/University_of_Michigan" title="University of Michigan">University of Michigan</a>-Dearborn Computer and Information Science Department <a rel="nofollow" class="external text" href="http://www.engin.umd.umich.edu/CIS/course.des/cis400/algol/hworld.html">Hello world! ALGOL Example Program page</a>.</p>
+<pre>
+BEGIN
+  FILE F(KIND=REMOTE);
+  EBCDIC ARRAY E[0:11];
+  REPLACE E BY "HELLO WORLD!";
+  WRITE(F, *, E);
+END.
+</pre>
+<p>A simpler program using an inline format:</p>
+<pre>
+BEGIN
+  FILE F(KIND=REMOTE);
+  WRITE(F, &lt;"HELLO WORLD!"&gt;);
+END.
+</pre>
+<p>An even simpler program using the Display statement:</p>
+<pre>
+BEGIN DISPLAY("HELLO WORLD!") END.
+</pre>
+<p>An alternative example, using Elliott Algol I/O is as follows. Elliott Algol used different characters for "open-string-quote" and "close-string-quote":</p>
+<pre>
+ <b>program</b> HiFolks;
+ <b>begin</b>
+    <b>print</b> ‘Hello world’;
+ <b>end</b>;
+</pre>
+<p>Here's a version for the Elliott 803 Algol (A104) The standard Elliott 803 used 5 hole paper tape and thus only had upper case. The code lacked any quote characters so £ (UK Pound Sign) was used for open quote and ? (Question Mark) for close quote. Special sequences were placed in double quotes (e.g. ££L?? produced a new line on the teleprinter).</p>
+<pre>
+  HIFOLKS'
+  BEGIN
+     PRINT £HELLO WORLD£L??'
+  END'
+</pre>
+<p>The <a href="http://en.m.wikipedia.org/wiki/ICT_1900_series" title="ICT 1900 series">ICT 1900 series</a> Algol I/O version allowed input from paper tape or punched card. Paper tape 'full' mode allowed lower case. Output was to a line printer.</p>
+<pre>
+  'BEGIN'
+     'WRITE TEXT'("HELLO WORLD");
+  'END'
+</pre>
+<h4> <span class="mw-headline" id="ALGOL_68_2">ALGOL 68</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>
+</div>
+<p><b>ALGOL 68</b> code was published with reserved words typically in lowercase, but bolded or underlined.</p>
+<pre>
+<b>begin</b>
+  printf(($gl$,"Hello, world!"))
+<b>end</b>
+</pre>
+<p>In the language of the "Algol 68 Report" the input/output facilities were collectively called the "<a href="Input/output" title="Input/output">Transput</a>".</p>
+<h3> <span class="mw-headline" id="Timeline_of_ALGOL_special_characters">Timeline of ALGOL special characters</span>
+</h3>
+<table class="metadata mbox-small noprint selfref" style="border:1px solid #aaa; background-color:#f9f9f9; width: 22em;"><tr>
+<td style="width:1px;"></td>
+<td class="mbox-text plainlist" style="vertical-align:middle; font-size:95%;">
+<b>This article contains Unicode 6.0 "<a rel="nofollow" class="external text" href="http://www.unicode.org/charts/PDF/U2300.pdf">Miscellaneous Technical</a>" characters.</b> Without proper <a href="Unicode#External_links" title="Unicode">rendering support</a>, you may see <a href="http://en.m.wikipedia.org/wiki/Mojibake" title="Mojibake">question marks, boxes, or other symbols</a> instead of something like "₁₀" (<a rel="nofollow" class="external text" href="http://mailcom.com/unicode/DecimalExponent.ttf">Decimal Exponent Symbol U+23E8 TTF</a>).</td>
+</tr></table>
+<p>The ALGOLs were conceived at a time when character sets were diverse and evolving rapidly; also, the ALGOLs were defined so that only <i>uppercase</i> letters were required.</p>
+<p>1960: <a href="http://en.m.wikipedia.org/wiki/IFIP" title="IFIP" class="mw-redirect">IFIP</a> – The Algol 60 language and report included several mathematical symbols which are available on modern computers and operating systems, but, unfortunately, were not supported on most computing systems at the time. For instance: ×, ÷, ≤, ≥, ≠, ¬, ∨, ∧, ⊂, ≡, ␣ and ⏨.</p>
+<p>1961 September: ASCII – The <a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a> character set, then in an early stage of development, had the <a href="http://en.m.wikipedia.org/wiki/%5C" title="\" class="mw-redirect">\</a> (Back slash) character added to it in order to support ALGOL's <a href="http://en.m.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">boolean</a> operators <a href="http://en.m.wikipedia.org/wiki/Backslash#History" title="Backslash">/\</a> and <a href="http://en.m.wikipedia.org/wiki/%5C/" title="\/" class="mw-redirect">\/</a>.<sup id="cite_ref-18" class="reference"><a href="ALGOL#cite_note-18"><span>[</span>19<span>]</span></a></sup></p>
+<p>1962: <a href="http://en.m.wikipedia.org/wiki/ALCOR" title="ALCOR">ALCOR</a> – This character set included the unusual "᛭" (<a rel="nofollow" class="external text" href="http://www.fileformat.info/info/unicode/char/16ed/index.htm">iron/runic cross</a>) character and the "⏨" (<a rel="nofollow" class="external text" href="http://unicode.org/charts/PDF/U2300.pdf">Decimal Exponent Symbol</a>) for floating point notation. <sup id="cite_ref-19" class="reference"><a href="ALGOL#cite_note-19"><span>[</span>20<span>]</span></a></sup><sup id="cite_ref-20" class="reference"><a href="ALGOL#cite_note-20"><span>[</span>21<span>]</span></a></sup><sup id="cite_ref-21" class="reference"><a href="ALGOL#cite_note-21"><span>[</span>22<span>]</span></a></sup></p>
+<p>1964: <a href="http://en.m.wikipedia.org/wiki/GOST" title="GOST">GOST</a> – The 1964 Russian standard <a href="http://en.m.wikipedia.org/wiki/GOST_10859" title="GOST 10859">GOST 10859</a> allowed the encoding of 4-bit, 5-bit, 6-bit and 7-bit characters in ALGOL.<sup id="cite_ref-22" class="reference"><a href="ALGOL#cite_note-22"><span>[</span>23<span>]</span></a></sup></p>
+<p>1968: The "Algol 68 Report" – used existing ALGOL characters, and further adopted →, ↓, ↑, □, ⌊, ⌈, ⎩, ⎧, ○, ⊥ and ¢ characters which can be found on the <a href="http://en.m.wikipedia.org/wiki/IBM_2741" title="IBM 2741">IBM 2741</a> keyboard with "golf-ball" print heads inserted (such as the <a href="http://en.m.wikipedia.org/wiki/APL_syntax_and_symbols" title="APL syntax and symbols">APL</a> golfball), these became available in the mid 1960s while ALGOL 68 was being drafted. The report was translated into Russian, German, French and Bulgarian, and allowed programming in languages with larger character sets, e.g. <a href="http://en.m.wikipedia.org/wiki/Cyrillic" title="Cyrillic" class="mw-redirect">Cyrillic</a> alphabet of the Russian <a href="http://en.m.wikipedia.org/wiki/BESM" title="BESM">BESM-4</a>. All ALGOL's characters are also part of the <a href="Unicode" title="Unicode">Unicode</a> standard and most of them are available in several popular <a href="http://en.m.wikipedia.org/wiki/Font" title="Font">fonts</a>.</p>
+<p>2009 October: <a href="Unicode" title="Unicode">Unicode</a> – The "⏨" (<a rel="nofollow" class="external text" href="http://unicode.org/charts/PDF/U2300.pdf">Decimal Exponent Symbol</a>) for floating point notation was added to Unicode 5.2 for backward compatibility with historic <a href="http://en.m.wikipedia.org/wiki/Buran_(spacecraft)" title="Buran (spacecraft)">Buran (spacecraft)</a> ALGOL software.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="multicol" style="border-collapse: collapse; padding: 0px; border: 0px; background:transparent; width:100%;"><tr>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Address_programming_language" title="Address programming language">Address programming language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Atlas_Autocode" title="Atlas Autocode">Atlas Autocode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coral_66" title="Coral 66">Coral 66</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Edinburgh_IMP" title="Edinburgh IMP">Edinburgh IMP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Jensen%27s_Device" title="Jensen's Device">Jensen's Device</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISWIM" title="ISWIM">ISWIM</a></li>
+</ul>
+</td>
+<td style="width:50%; text-align:left; vertical-align:top;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/JOVIAL" title="JOVIAL">JOVIAL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tron_(video_game)" title="Tron (video game)">Tron (video game)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NELIAC" title="NELIAC">NELIAC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/S-algol" title="S-algol">S-algol</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme (programming language)</a></li>
+</ul>
+</td>
+</tr></table>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-0">^</a></b></span> <span class="reference-text">The name of the family is sometimes given in mixed case (<a rel="nofollow" class="external text" href="http://www.masswerk.at/algol60/report.htm"><i>Algol 60</i></a>), and sometimes in all uppercase (<a rel="nofollow" class="external text" href="http://burks.brighton.ac.uk/burks/language/other/a68rr/rrtoc.htm"><i>ALGOL 68</i></a>). For simplicity this article uses <i>ALGOL</i>.</span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://calgo.acm.org/"><i>Collected Algorithms of the ACM</i></a> Compressed archives of the algorithms. <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a>.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">P. W. O'Hearn; R. D. Tennent (September 1996). <a rel="nofollow" class="external text" href="http://www.eecs.qmul.ac.uk/~ohearn/Algol/intro.html">"Algol-like languages ,Introduction"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.eecs.qmul.ac.uk/~ohearn/Algol/intro.html">http://www.eecs.qmul.ac.uk/~ohearn/Algol/intro.html</a></span><span class="reference-accessdate">. Retrieved 17 January 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Algol-like+languages+%2CIntroduction&amp;rft.atitle=&amp;rft.aulast=P.+W.+O%27Hearn&amp;rft.au=P.+W.+O%27Hearn&amp;rft.au=R.+D.+Tennent&amp;rft.date=September+1996&amp;rft_id=http%3A%2F%2Fwww.eecs.qmul.ac.uk%2F%7Eohearn%2FAlgol%2Fintro.html&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book">Backus, J. W.; Bauer, F. L.; Green, J.; Katz, C.; McCarthy, J.; Perlis, A. J.; Rutishauser, H.; Samelson, K. et al. (May 1960). Naur, Peter. ed. <i>Report on the Algorithmic Language ALGOL 60</i>. Copenhagen. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F367236.367262">10.1145/367236.367262</a>. <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/0001-0782">0001-0782</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Report+on+the+Algorithmic+Language+ALGOL+60&amp;rft.aulast=Backus&amp;rft.aufirst=J.+W.&amp;rft.au=Backus%2C%26%2332%3BJ.+W.&amp;rft.au=Bauer%2C%26%2332%3BF.+L.&amp;rft.au=Green%2C%26%2332%3BJ.&amp;rft.au=Katz%2C%26%2332%3BC.&amp;rft.au=McCarthy%2C%26%2332%3BJ.&amp;rft.au=Perlis%2C%26%2332%3BA.+J.&amp;rft.au=Rutishauser%2C%26%2332%3BH.&amp;rft.au=Samelson%2C%26%2332%3BK.&amp;rft.au=Vauquois%2C%26%2332%3BB.&amp;rft.date=May+1960&amp;rft.place=Copenhagen&amp;rft_id=info:doi/10.1145%2F367236.367262&amp;rft.issn=0001-0782&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.masswerk.at/algol60/report.htm">"Revised Report on the Algorithmic Language Algol 60"</a>. 1963. <a rel="nofollow" class="external text" href="http://web.archive.org/web/20070625171638/http://www.masswerk.at/algol60/report.htm">Archived</a> from the original on 25 June 2007<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.masswerk.at/algol60/report.htm">http://www.masswerk.at/algol60/report.htm</a></span><span class="reference-accessdate">. Retrieved 8 June 2007</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Revised+Report+on+the+Algorithmic+Language+Algol+60&amp;rft.atitle=&amp;rft.date=1963&amp;rft_id=http%3A%2F%2Fwww.masswerk.at%2Falgol60%2Freport.htm&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://vestein.arb-phys.uni-dortmund.de/~wb/RR/rr.pdf">"Revised Report on the Algorithmic Language ALGOL 68"</a>. 1973<span class="printonly">. <a rel="nofollow" class="external free" href="http://vestein.arb-phys.uni-dortmund.de/~wb/RR/rr.pdf">http://vestein.arb-phys.uni-dortmund.de/~wb/RR/rr.pdf</a></span><span class="reference-accessdate">. Retrieved 25 August 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Revised+Report+on+the+Algorithmic+Language+ALGOL+68&amp;rft.atitle=&amp;rft.date=1973&amp;rft_id=http%3A%2F%2Fvestein.arb-phys.uni-dortmund.de%2F%7Ewb%2FRR%2Frr.pdf&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation Journal">Knuth, Donald E. (1964). "Backus Normal Form vs Backus Naur Form". <i>Communications of the ACM</i> <b>7</b> (12): 735–736. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F355588.365140">10.1145/355588.365140</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Backus+Normal+Form+vs+Backus+Naur+Form&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=Knuth&amp;rft.aufirst=Donald+E.&amp;rft.au=Knuth%2C%26%2332%3BDonald+E.&amp;rft.date=1964&amp;rft.volume=7&amp;rft.issue=12&amp;rft.pages=735%E2%80%93736&amp;rft_id=info:doi/10.1145%2F355588.365140&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-naur_acm-7">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-naur_acm_7-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://awards.acm.org/citation.cfm?id=1024454&amp;srt=all&amp;aw=140&amp;ao=AMTURING&amp;yr=2005">ACM Award Citation / Peter Naur</a>, 2005</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.eecs.umich.edu/~bchandra/courses/papers/Hoare_Hints.pdf">"Hints on Programming Language Design"</a>, C.A.R. Hoare, December 1973. Page 27. (This statement is sometimes erroneously attributed to <a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Edsger W. Dijkstra</a>, also involved in implementing the first ALGOL 60 <a href="Compiler" title="Compiler">compiler</a>.)</span>
+</li>
+<li id="cite_note-r3rs-9">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-r3rs_9-0">^</a></b></span> <span class="reference-text"><span class="citation web">Jonathan Rees and William Clinger (Editors), Hal Abelson, R. K. Dybvig et al.. <a rel="nofollow" class="external text" href="http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html">"Revised(3) Report on the Algorithmic Language Scheme, (Dedicated to the Memory of ALGOL 60)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html">http://groups.csail.mit.edu/mac/ftpdir/scheme-reports/r3rs-html/r3rs_toc.html</a></span><span class="reference-accessdate">. Retrieved 20 October 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Revised%283%29+Report+on+the+Algorithmic+Language+Scheme%2C+%28Dedicated+to+the+Memory+of+ALGOL+60%29&amp;rft.atitle=&amp;rft.aulast=Jonathan+Rees+and+William+Clinger+%28Editors%29%2C+Hal+Abelson%2C+R.+K.+Dybvig+et+al.&amp;rft.au=Jonathan+Rees+and+William+Clinger+%28Editors%29%2C+Hal+Abelson%2C+R.+K.+Dybvig+et+al.&amp;rft_id=http%3A%2F%2Fgroups.csail.mit.edu%2Fmac%2Fftpdir%2Fscheme-reports%2Fr3rs-html%2Fr3rs_toc.html&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-10">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/Peter_O%27Hearn" title="Peter O'Hearn">Peter O'Hearn</a> and <span class="new" title="Robert D. Tennent (page does not exist)">Robert D. Tennent</span>. 1996. Algol-Like Languages. Birkhauser Boston Inc., Cambridge, MA, USA.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=1807">"The Encyclopedia of Computer Languages"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://hopl.murdoch.edu.au/showlanguage.prx?exp=1807">http://hopl.murdoch.edu.au/showlanguage.prx?exp=1807</a></span><span class="reference-accessdate">. Retrieved 20 January 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Encyclopedia+of+Computer+Languages&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fhopl.murdoch.edu.au%2Fshowlanguage.prx%3Fexp%3D1807&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.computerhistory.org/projects/zuse_z23/">Computer Museum History</a>, Historical Zuse-Computer Z23, restored by the Konrad Zuse Schule in Hünfeld, for the Computer Museum History Center in Mountain View (California) USA</span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation Journal">Daylight, E. G. (2011). <a rel="nofollow" class="external text" href="http://www.dijkstrascry.com/node/4">"Dijkstra's Rallying Cry for Generalization: the Advent of the Recursive Procedure, late 1950s – early 1960s"</a>. <i><a href="http://en.m.wikipedia.org/wiki/The_Computer_Journal" title="The Computer Journal">The Computer Journal</a></i>. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1093%2Fcomjnl%2Fbxr002">10.1093/comjnl/bxr002</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.dijkstrascry.com/node/4">http://www.dijkstrascry.com/node/4</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Dijkstra%27s+Rallying+Cry+for+Generalization%3A+the+Advent+of+the+Recursive+Procedure%2C+late+1950s%26nbsp%3B%E2%80%93+early+1960s&amp;rft.jtitle=%5B%5BThe+Computer+Journal%5D%5D&amp;rft.aulast=Daylight&amp;rft.aufirst=E.+G.&amp;rft.au=Daylight%2C%26%2332%3BE.+G.&amp;rft.date=2011&amp;rft_id=info:doi/10.1093%2Fcomjnl%2Fbxr002&amp;rft_id=http%3A%2F%2Fwww.dijkstrascry.com%2Fnode%2F4&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation book">Kruseman Aretz, F.E.J. (30 June 2003). <a rel="nofollow" class="external text" href="http://oai.cwi.nl/oai/asset/4155/04155D.pdf">"The Dijkstra-Zonneveld ALGOL 60 compiler for the Electrologica X1"</a>. <i>Software Engineering</i>. History of Computer Science. Kruislaan 413, 1098 SJ Amsterdam: Centrum Wiskunde &amp; Informatica<span class="printonly">. <a rel="nofollow" class="external free" href="http://oai.cwi.nl/oai/asset/4155/04155D.pdf">http://oai.cwi.nl/oai/asset/4155/04155D.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Dijkstra-Zonneveld+ALGOL+60+compiler+for+the+Electrologica+X1&amp;rft.atitle=Software+Engineering&amp;rft.aulast=Kruseman+Aretz&amp;rft.aufirst=F.E.J.&amp;rft.au=Kruseman+Aretz%2C%26%2332%3BF.E.J.&amp;rft.date=30+June+2003&amp;rft.series=History+of+Computer+Science&amp;rft.place=Kruislaan+413%2C+1098+SJ+Amsterdam&amp;rft.pub=Centrum+Wiskunde+%26+Informatica&amp;rft_id=http%3A%2F%2Foai.cwi.nl%2Foai%2Fasset%2F4155%2F04155D.pdf&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web">Koffman, Eliot. <a rel="nofollow" class="external text" href="http://www.temple.edu/cis/directory/tenure/documents/KoffmanSIGCSESlides.pdf">"All I Really Need to KnowI Learned in CS1"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.temple.edu/cis/directory/tenure/documents/KoffmanSIGCSESlides.pdf">http://www.temple.edu/cis/directory/tenure/documents/KoffmanSIGCSESlides.pdf</a></span><span class="reference-accessdate">. Retrieved 20 May 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=All+I+Really+Need+to+KnowI+Learned+in+CS1&amp;rft.atitle=&amp;rft.aulast=Koffman&amp;rft.aufirst=Eliot&amp;rft.au=Koffman%2C%26%2332%3BEliot&amp;rft_id=http%3A%2F%2Fwww.temple.edu%2Fcis%2Fdirectory%2Ftenure%2Fdocuments%2FKoffmanSIGCSESlides.pdf&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="http://en.m.wikipedia.org/wiki/Alfred_V._Aho" title="Alfred V. Aho" class="mw-redirect">Aho, Alfred V.</a>; <a href="http://en.m.wikipedia.org/wiki/Ravi_Sethi" title="Ravi Sethi">Ravi Sethi</a>, <a href="http://en.m.wikipedia.org/wiki/Jeffrey_Ullman" title="Jeffrey Ullman">Jeffrey D. Ullman</a> (1986). <i><a href="http://en.m.wikipedia.org/wiki/Dragon_Book_(computer_science)" title="Dragon Book (computer science)" class="mw-redirect">Compilers: Principles, Techniques, and Tools</a></i> (1st ed.). Addison-Wesley. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-201-10194-7" title="Special:BookSources/0-201-10194-7">0-201-10194-7</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=%5B%5BDragon+Book+%28computer+science%29%7CCompilers%3A+Principles%2C+Techniques%2C+and+Tools%5D%5D&amp;rft.aulast=Aho&amp;rft.aufirst=Alfred+V.&amp;rft.au=Aho%2C%26%2332%3BAlfred+V.&amp;rft.date=1986&amp;rft.edition=1st&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-201-10194-7&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span>, Section 7.5, and references therein</span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.billp.org/ccs/A104/">"803 ALGOL"</a>, the manual for Elliott 803 ALGOL</span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.bobbemer.com/BACSLASH.HTM">How ASCII Got Its Backslash</a>, Bob Bemer</span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation Journal">Baumann, R. (October 1961). "ALGOL Manual of the ALCOR Group, Part 1 [ALGOL Manual of the ALCOR Group]" (in German). <i>Elektronische Rechenanlagen</i>: 206–212.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=ALGOL+Manual+of+the+ALCOR+Group%2C+Part+1&amp;rft.jtitle=Elektronische+Rechenanlagen&amp;rft.aulast=Baumann&amp;rft.aufirst=R.&amp;rft.au=Baumann%2C%26%2332%3BR.&amp;rft.date=October+1961&amp;rft.pages=206%E2%80%93212&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation Journal">Baumann, R. (December 1961). "ALGOL Manual of the ALCOR Group, Part 2 [ALGOL Manual of the ALCOR Group]" (in German). <i>Elektronische Rechenanlagen</i> <b>6</b>: 259–265.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=ALGOL+Manual+of+the+ALCOR+Group%2C+Part+2&amp;rft.jtitle=Elektronische+Rechenanlagen&amp;rft.aulast=Baumann&amp;rft.aufirst=R.&amp;rft.au=Baumann%2C%26%2332%3BR.&amp;rft.date=December+1961&amp;rft.volume=6&amp;rft.pages=259%E2%80%93265&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-21">^</a></b></span> <span class="reference-text"><span class="citation Journal">Baumann, R. (April 1962). "ALGOL Manual of the ALCOR Group, Part 3 [ALGOL Manual of the ALCOR Group]" (in German). <i>Elektronische Rechenanlagen</i> <b>2</b>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=ALGOL+Manual+of+the+ALCOR+Group%2C+Part+3&amp;rft.jtitle=Elektronische+Rechenanlagen&amp;rft.aulast=Baumann&amp;rft.aufirst=R.&amp;rft.au=Baumann%2C%26%2332%3BR.&amp;rft.date=April+1962&amp;rft.volume=2&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="ALGOL#cite_ref-22">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://homepages.cwi.nl/~dik/english/codes/stand.html#gost10859">"GOST 10859 standard"</a>. <a rel="nofollow" class="external text" href="http://web.archive.org/web/20070616201227/http://homepages.cwi.nl/~dik/english/codes/stand.html#gost10859">Archived</a> from the original on 16 June 2007<span class="printonly">. <a rel="nofollow" class="external free" href="http://homepages.cwi.nl/~dik/english/codes/stand.html#gost10859">http://homepages.cwi.nl/~dik/english/codes/stand.html#gost10859</a></span><span class="reference-accessdate">. Retrieved 5 June 2007</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=GOST+10859+standard&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fhomepages.cwi.nl%2F%7Edik%2Fenglish%2Fcodes%2Fstand.html%23gost10859&amp;rfr_id=info:sid/en.wikipedia.org:ALGOL"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>F.L. Bauer, R. Baumann, M. Feliciano, K. Samelson, <i>Introduction to Algol</i>. Prentice Hall, 1964, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0134778286" class="internal mw-magiclink-isbn">ISBN 0-13-477828-6</a>
+</li>
+<li>B. Randell and L.J. Russell, <i>ALGOL 60 Implementation: The Translation and Use of ALGOL 60 Programs on a Computer</i>. Academic Press, 1964. The design of the <b>Whetstone Compiler</b>. One of the early published descriptions of implementing a compiler. See the related papers: <a rel="nofollow" class="external text" href="http://www.cs.ncl.ac.uk/research/pubs/articles/papers/427.pdf">Whetstone Algol Revisited</a>, and <a rel="nofollow" class="external text" href="http://www.cs.ncl.ac.uk/publications/books/papers/124.pdf">The Whetstone KDF9 Algol Translator</a> by B. Randell</li>
+<li>E. W, Dijkstra, <i>Algol 60 translation: an algol 60 translator for the x1 and making a translator for algol 60</i>, report MR 35/61. Mathematisch Centrum, Amsterdam, 1961. <a rel="nofollow" class="external autonumber" href="http://www.cs.utexas.edu/users/EWD/MCReps/MR35.PDF">[1]</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.compileonline.com/execute_algol_online.php">Algol-68 Execution online using browsers.</a> by Mohtashim</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.masswerk.at/algol60/report.htm">Revised Report on the Algorithmic Language Algol 60</a> by Peter Naur, et al. ALGOL definition</li>
+<li>A BNF <a rel="nofollow" class="external text" href="http://www.lrz.de/~bernhard/Algol-BNF.html">syntax summary</a> of ALGOL 60</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.softwarepreservation.org/projects/ALGOL/">History of ALGOL</a> at the <a href="http://en.m.wikipedia.org/wiki/Computer_History_Museum" title="Computer History Museum">Computer History Museum</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.gnu.org/software/marst/">MARST</a>, a free Algol-to-C translator (<a rel="nofollow" class="external text" href="http://www.sfr-fresh.com/unix/misc/marst-2.6.tar.gz:a/marst-2.6/doc/marst.texi">User Guide</a>)</li>
+<li>
+<a rel="nofollow" class="external text" href="http://rogerdmoore.ca/JOUR/">AN IMPLEMENTATION OF ALGOL 60 FOR THE FP6000</a> Discussion of some implementation issues.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/ft_gateway.cfm?id=808370&amp;type=pdf&amp;coll=&amp;dl=ACM&amp;CFID=15151515&amp;CFTOKEN=6184618">"The European Side of the Last Phase of the Development of ALGOL 60" by Peter Naur</a></li>
+<li>Edinburgh University wrote compilers for Algol60 (later updated for Algol60M) based on their Atlas Autocode compilers initially bootstrapped from the Atlas to the KDF-9. The Edinburgh compilers generated code for the ICL1900, the ICL4/75 (an IBM360 clone), and the ICL2900. Here is the <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/users/ercc07/emas-2900/algolps9.txt">BNF for Algol60</a> and the <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/emas2/compilers/algol/algol60fs.imp.html">ICL2900 compiler source</a>, <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/emas2/compilers/algol/bsyslib.txt-view.html">library documentation</a>, and <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/users/ercc07/emas-2900/">a considerable test suite</a> including <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/users/ercc07/emas-2900/wichtests_pete1.txt">Brian Wichmann's tests.</a> Also there is a rather superficial <a rel="nofollow" class="external text" href="http://history.dcs.ed.ac.uk/archive/os/emas/users/ercc07/emas-2900/palgcons.txt">Algol60 to Atlas Autocode source-level translator</a>.</li>
+<li>A Windows Algol <a rel="nofollow" class="external text" href="http://www.xs4all.nl/~jmvdveer/algol.html">Algol running on Vista win64</a> system by Marcel van der Veer, Algol 68 Genie works on normal Windows up through the latest.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Eric_S._Raymond" title="Eric S. Raymond">Eric S. Raymond</a>'s <a rel="nofollow" class="external text" href="http://www.catb.org/retro/">Retrocomputing Museum</a>, among others a link to the NASE Algol-60 interpreter written in C.</li>
+<li>Stories about The Burroughs B5000 and the People Who Were There <a rel="nofollow" class="external autonumber" href="http://ed-thelen.org/comp-hist/B5000-AlgolRWaychoff.html">[2]</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://mailcom.com/unicode/DecimalExponent.ttf">TrueType font containing U+23E8 Decimal Exponent Symbol</a>.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 36 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://az.m.wikipedia.org/wiki/Algol_dili" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bg.m.wikipedia.org/wiki/ALGOL" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/ALGOL" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/ALGOL" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/ALGOL" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/ALGOL" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/ALGOL" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/ALGOL" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/ALGOL" lang="es" hreflang="es">español</a></li><li><a href="http://eu.m.wikipedia.org/wiki/ALGOL" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A7%D9%84%DA%AF%D9%88%D9%84" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Algol_(langage)" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Algol" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%95%8C%EA%B3%A8_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/ALGOL" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/ALGOL" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D0%BB" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://hu.m.wikipedia.org/wiki/ALGOL" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ms.m.wikipedia.org/wiki/ALGOL" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Algol_(programmeertaal)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/ALGOL" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/ALGOL_(programmeringsspr%C3%A5k)" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/ALGOL" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Algol_(j%C4%99zyk_programowania)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/ALGOL" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/ALGOL" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D0%BB" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/ALGOL" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D0%BB" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/ALGOL" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/ALGOL" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Algol_(programspr%C3%A5k)" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tg.m.wikipedia.org/wiki/%D0%90%D0%BB%D0%B3%D0%BE%D0%BB" lang="tg" hreflang="tg">тоҷикӣ</a></li><li><a href="http://tr.m.wikipedia.org/wiki/ALGOL" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%90%D0%9B%D0%93%D0%9E%D0%9B" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/ALGOL" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=ALGOL&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=ALGOL&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=ALGOL&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

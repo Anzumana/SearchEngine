@@ -1,0 +1,152 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>System programming - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"System programming","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/System_programming" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=System+programming"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">System programming</h1>			
+<p><b>System programming</b> (or <b>systems programming</b>) is the activity of <a href="http://en.m.wikipedia.org/wiki/Programming" title="Programming" class="mw-redirect">programming</a> <a href="System_software" title="System software">system software</a>. The primary distinguishing characteristic of systems programming when compared to <a href="http://en.m.wikipedia.org/wiki/Application_programming" title="Application programming" class="mw-redirect">application programming</a> is that <a href="http://en.m.wikipedia.org/wiki/Application_software" title="Application software">application</a> programming aims to produce software which provides services to the user (e.g. <a href="http://en.m.wikipedia.org/wiki/Word_processor" title="Word processor">word processor</a>), whereas systems programming aims to produce software which provides services to the <a href="http://en.m.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">computer hardware</a> (e.g. <a href="http://en.m.wikipedia.org/wiki/Defragmentation" title="Defragmentation">disk defragmenter</a>). It requires a greater degree of hardware awareness.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>In system programming more specifically:</p>
+<ul>
+<li>the <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">programmer</a> will make assumptions about the hardware and other properties of the system that the program runs on, and will often exploit those properties (for example by using an <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithm</a> that is known to be efficient when used with specific hardware)</li>
+<li>usually a low-level programming language or programming language dialect is used that:
+<ul>
+<li>can operate in resource-constrained environments</li>
+<li>is very efficient and has little <a href="Run-time_system" title="Run-time system">runtime</a> overhead</li>
+<li>has a small <a href="http://en.m.wikipedia.org/wiki/Runtime_library" title="Runtime library">runtime library</a>, or none at all</li>
+<li>allows for direct and "raw" control over memory access and <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control flow</a>
+</li>
+<li>lets the programmer write parts of the program directly in <a href="Assembly_language" title="Assembly language">assembly language</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Debugging" title="Debugging">debugging</a> can be difficult if it is not possible to run the program in a debugger due to resource constraints. Running the program in a <a href="http://en.m.wikipedia.org/wiki/Computer_simulation" title="Computer simulation">simulated environment</a> can be used to reduce this problem.</li>
+</ul>
+<p>Systems programming is sufficiently different from application programming that programmers tend to specialize in one or the other.</p>
+<p>In system programming, often limited programming facilities are available. The use of <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">automatic garbage collection</a> is not common and <a href="http://en.m.wikipedia.org/wiki/Debugging" title="Debugging">debugging</a> is sometimes hard to do. The <a href="http://en.m.wikipedia.org/wiki/Runtime_library" title="Runtime library">runtime library</a>, if available at all, is usually far less powerful, and does less error checking. Because of those limitations, <a href="http://en.m.wikipedia.org/wiki/System_monitoring" title="System monitoring">monitoring</a> and <a href="http://en.m.wikipedia.org/wiki/Data_logging" title="Data logging" class="mw-redirect">logging</a> are often used; <a href="Operating_system" title="Operating system">operating systems</a> may have extremely elaborate logging subsystems.</p>
+<p>Implementing certain parts in operating system and networking requires systems programming (for example implementing Paging (<a href="http://en.m.wikipedia.org/wiki/Virtual_Memory" title="Virtual Memory" class="mw-redirect">Virtual Memory</a>) or a <a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">device driver</a> for an operating system).</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Originally systems programmers invariably wrote in <a href="Assembly_language" title="Assembly language">assembly language</a>. Experiments with hardware support in <a href="http://en.m.wikipedia.org/wiki/High_level_languages" title="High level languages" class="mw-redirect">high level languages</a> in the late 1960s led to such languages as <a href="http://en.m.wikipedia.org/wiki/IBM_PL/S" title="IBM PL/S">PL/S</a>, <a href="http://en.m.wikipedia.org/wiki/BLISS" title="BLISS">BLISS</a>, <a href="BCPL" title="BCPL">BCPL</a>, and extended <a href="ALGOL" title="ALGOL">ALGOL</a> for <a href="Burroughs_large_systems" title="Burroughs large systems">Burroughs large systems</a>. <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a> also has applications as a systems language. In the 1980s, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> became ubiquitous, aided by the growth of <a href="Unix" title="Unix">Unix</a>. More recently <a href="C++" title="C++">C++</a> has seen some use, for instance a subset of it is used in the <a href="http://en.m.wikipedia.org/wiki/I/O_Kit" title="I/O Kit">I/O Kit</a> drivers of <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>.</p>
+<h2> <span class="mw-headline" id="Alternate_usage">Alternate usage</span>
+</h2>
+<p>For historical reasons, some organizations use the term <i>systems programmer</i> to describe a job function which would be more accurately termed <a href="http://en.m.wikipedia.org/wiki/Systems_administrator" title="Systems administrator" class="mw-redirect">systems administrator</a>. This is particularly true in organizations whose computer resources have historically been dominated by <a href="Mainframe_computer" title="Mainframe computer">mainframes</a>, although the term is even used to describe job functions which do not involve mainframes. This usage arose because administration of <a href="http://en.m.wikipedia.org/wiki/IBM_mainframes" title="IBM mainframes" class="mw-redirect">IBM mainframes</a> often involved the writing of custom <a href="http://en.m.wikipedia.org/wiki/Assembler_code" title="Assembler code" class="mw-redirect">assembler code</a> (IBM's Basic Assembly Language - "BAL"), which integrated with the <a href="http://en.m.wikipedia.org/wiki/Operating_System" title="Operating System" class="mw-redirect">Operating System</a> such as <a href="http://en.m.wikipedia.org/wiki/OS/MVS" title="OS/MVS" class="mw-redirect">OS/MVS</a>, <a href="http://en.m.wikipedia.org/wiki/DOS/VSE" title="DOS/VSE" class="mw-redirect">DOS/VSE</a> or <a href="http://en.m.wikipedia.org/wiki/VM/CMS" title="VM/CMS" class="mw-redirect">VM/CMS</a>. Indeed, some <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a> software products had substantial code contributions from customer programming staff. This type of programming is progressively less common, but the term <i>systems programmer</i> is still the defacto job title for staff directly administering IBM mainframes.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ousterhout%27s_dichotomy" title="Ousterhout's dichotomy">Ousterhout's dichotomy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/System_programming_language" title="System programming language">System programming language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scripting_language" title="Scripting language">Scripting language</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Question_book-new.svg&amp;page=1" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=System_programming&amp;action=edit">improve this article</a> by <a href="http://en.m.wikipedia.org/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(April 2007)</i></small> </span></td>
+</tr></table>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://catalog.loc.gov/cgi-bin/Pwebrecon.cgi?v1=5&amp;ti=1,5&amp;Search_Arg=Donovan%2C%20John%20J.&amp;Search_Code=NAME%40&amp;CNT=100&amp;PID=fahdDtIh7Y1ODWe5X_fO2_UUafeDT&amp;SEQ=20090914123346&amp;SID=1">Systems Programming</a> by <span class="new" title="Anowar CST (page does not exist)">Anowar CST</span>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Systemprogrammierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Programmation_syst%C3%A8me" lang="fr" hreflang="fr">français</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Programowanie_systemowe" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/L%E1%BA%ADp_tr%C3%ACnh_h%E1%BB%87_th%E1%BB%91ng" lang="vi" hreflang="vi">Tiếng Việt</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=System_programming&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=System_programming&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=System+programming&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

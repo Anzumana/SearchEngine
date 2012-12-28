@@ -1,0 +1,638 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C data types - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C data types","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C_data_types" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C+data+types"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C data types</h1>			
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="http://en.m.wikipedia.org/wiki/C_Standard_Library" title="C Standard Library" class="mw-redirect">C Standard Library</a></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><strong class="selflink">Data types</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_character_classification" title="C character classification">Character classification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">Strings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_mathematical_functions" title="C mathematical functions">Mathematics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_file_input/output" title="C file input/output">File input/output</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_date_and_time_functions" title="C date and time functions">Date/time</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_localization_functions" title="C localization functions">Localization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_dynamic_memory_allocation" title="C dynamic memory allocation">Memory allocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_process_control" title="C process control">Process control</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_signal_handling" title="C signal handling">Signals</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_alternative_tokens" title="C alternative tokens">Alternative tokens</a></li>
+</ul>
+<dl>
+<dd>
+<b>Miscellaneous headers</b>:</dd>
+</dl>
+<ul>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Assert.h" title="Assert.h">assert.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Errno.h" title="Errno.h">errno.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Setjmp.h" title="Setjmp.h">setjmp.h</a>&gt;</code></li>
+<li><code>&lt;<a href="http://en.m.wikipedia.org/wiki/Stdarg.h" title="Stdarg.h">stdarg.h</a>&gt;</code></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:C_Standard_Library" title="Template:C Standard Library"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:C_Standard_Library" title="Template talk:C Standard Library"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:C_Standard_Library&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>In the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, <b>data types</b> refers to an extensive system for declaring variables of different types. The language itself provides basic arithmetic types and syntax to build array and compound types. Several headers in the <a href="C_standard_library" title="C standard library">standard library</a> contain definitions of support types, that have additional properties, such as exact size, guaranteed.<sup id="cite_ref-1" class="reference"><a href="Declaration_reflects_use#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-c99_2-0" class="reference"><a href="Declaration_reflects_use#cite_note-c99-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Basic_types">Basic types</span>
+</h2>
+<p>The C language provides many basic types. Most of them are formed from one of the four basic arithmetic type identifiers in C (<code>char</code>, <code>int</code>, <code>float</code> and <code>double</code>), and optional specifiers (<code>signed</code>, <code>unsigned</code>, <code>short</code>, <code>long</code>). All available basic arithmetic types are listed below:</p>
+<table class="wikitable" style="font-size:0.90em; line-height:1.3em;">
+<tr>
+<th style="width:14em;">Type</th>
+<th>Explanation</th>
+<th style="width:15em;">Type</th>
+<th>Explanation</th>
+</tr>
+<tr>
+<td rowspan="2"><span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span></td>
+<td rowspan="2">smallest addressable unit of the machine that can contain basic character set. It is an integer type. Actual type can be either signed or unsigned depending on implementation</td>
+<td><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span></td>
+<td>same as <code>char</code>, but guaranteed to be signed.</td>
+</tr>
+<tr>
+<td><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span></td>
+<td>same as <code>char</code>, but guaranteed to be unsigned.</td>
+</tr>
+<tr>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">short</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">short</span> <span class="kw4">int</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">short</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">short</span> <span class="kw4">int</span></span>
+</td>
+<td>
+<i>short</i> signed integer type. At least 16 bits in size.</td>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">short</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">short</span> <span class="kw4">int</span></span>
+</td>
+<td>same as <code>short</code>, but unsigned.</td>
+</tr>
+<tr>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">int</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">int</span></span>
+</td>
+<td>basic signed integer type. At least 16 bits in size.</td>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>
+</td>
+<td>same as <code>int</code>, but unsigned.</td>
+</tr>
+<tr>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">int</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">int</span></span>
+</td>
+<td>
+<i>long</i> signed integer type. At least 32 bits in size.</td>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">int</span></span>
+</td>
+<td>same as <code>long</code>, but unsigned.</td>
+</tr>
+<tr>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">long</span> <span class="kw4">int</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">long</span> <span class="kw4">int</span></span>
+</td>
+<td>
+<i>long long</i> signed integer type. At least 64 bits in size. Specified since the <a href="C99" title="C99">C99</a> version of the standard.</td>
+<td>
+<span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span><br><span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span> <span class="kw4">int</span></span>
+</td>
+<td>same as <code>long long</code>, but unsigned. Specified only in <a href="C99" title="C99">C99</a> version of the standard.</td>
+</tr>
+<tr>
+<td><span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span></td>
+<td>(single precision) floating-point type. Actual properties unspecified, however on most systems this is <a href="http://en.m.wikipedia.org/wiki/Single_precision_floating-point_format" title="Single precision floating-point format" class="mw-redirect">IEEE 754 single precision floating point format</a>.</td>
+</tr>
+<tr>
+<td><span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span></td>
+<td>double precision floating-point type. Actual properties unspecified, however on most systems this is <a href="http://en.m.wikipedia.org/wiki/Double_precision_floating-point_format" title="Double precision floating-point format" class="mw-redirect">IEEE 754 double precision floating point format</a>.</td>
+</tr>
+<tr>
+<td><span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span></td>
+<td>extended precision floating-point type. Actual properties unspecified. Unlike types <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span> and <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, it can be either <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">80-bit floating point format</a>, the non-IEEE "double-double" or <a href="http://en.m.wikipedia.org/wiki/Quadruple_precision_floating-point_format" title="Quadruple precision floating-point format" class="mw-redirect">IEEE 754 quadruple precision floating-point format</a> if a higher precision format is provided, otherwise it is the same as <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>. See <a href="http://en.m.wikipedia.org/wiki/Long_double" title="Long double">this</a> page for details.</td>
+</tr>
+</table>
+<p>The actual size of integer types varies by implementation. The only guarantee is that the <code>long long</code> is not smaller than <code>long</code>, which is not smaller than <code>int</code>, which is not smaller than <code>short</code>. Also, <code>int</code> should be the integer type that the target processor is most efficient working with. This allows great flexibility: for example, all types can be 64-bit. However, only several different integer width schemes (data models) are popular and since data model defines how different programs communicate, a uniform data model is used within a given operating system application interface.<sup id="cite_ref-3" class="reference"><a href="Declaration_reflects_use#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The actual size of floating point types also varies by implementation. The only guarantee is that the <code>long double</code> is not smaller than <code>double</code>, which is not smaller than <code>float</code>. Usually, 32-bit and 64-bit <a href="IEEE_754" title="IEEE 754" class="mw-redirect">IEEE 754</a> floating point formats are used, if supported by hardware.</p>
+<h3> <span class="mw-headline" id="Boolean_type"><span id="stdbool.h"></span>Boolean type</span>
+</h3>
+<p>The boolean (true/false) type is <code>_Bool</code>. The <code>stdbool.h</code> type also defines a few useful identifiers as macros: <code>bool</code> is defined as <code>_Bool</code>, <code>true</code> as 1, <code>false</code> as 0. Additionally, <code>__bool_true_false_are_defined</code> is defined as 1. The <code>_Bool</code> type and <code>stdbool.h</code> header did not exist in pre-1999 versions of the standard.</p>
+<h3> <span class="mw-headline" id="Size_and_pointer_difference_types"><span id="stddef.h"></span>Size and pointer difference types</span>
+</h3>
+<p>The C language provides the separate types <code>size_t</code> and <code>ptrdiff_t</code> to represent memory-related quantities. Existing types were deemed insufficient, because their size is defined according to the target processor's arithmetic capabilities, not the memory capabilities, such as available address space. Both of these types are defined in the <code>stddef.h</code> header (<code>cstddef</code> header in C++).</p>
+<p><code>size_t</code> is used to represent the maximum size of any object (including arrays) in the particular implementation. It is used as the return type of the <code>sizeof</code> operator. The maximum size of <code>size_t</code> is provided via <code>SIZE_MAX</code>, a macro constant which is defined in the <code>stdint.h</code> header (<code>cstdint</code> header in C++). It is guaranteed to be at least 65535.</p>
+<p><code>ptrdiff_t</code> is used to represent the difference between pointers.</p>
+<h3> <span class="mw-headline" id="Interface_to_the_properties_of_the_basic_types"><span id="limits.h"></span><span id="float.h"></span>Interface to the properties of the basic types</span>
+</h3>
+<p>Information about the actual properties, such as size, of the basic arithmetic types, is provided via macro constants in two headers: <code>limits.h</code> header (<code>climits</code> header in C++) defines macros for integer types and <code>float.h</code> header (<code>cfloat</code> header in C++) defines macros for floating-point types. The actual values depend on the implementation.</p>
+<dl>
+<dt>Properties of integer types</dt>
+</dl>
+<ul>
+<li>
+<code>CHAR_BIT</code> - size of the <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span> type in bits (at least 8 bits)</li>
+<li>
+<code>SCHAR_MIN</code>, <code>SHRT_MIN</code>, <code>INT_MIN</code>, <code>LONG_MIN</code>, <code>LLONG_MIN</code><small>(C99)</small> - minimum possible value of signed integer types: <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">short</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">int</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">long</span></span>
+</li>
+<li>
+<code>SCHAR_MAX</code>, <code>SHRT_MAX</code>, <code>INT_MAX</code>, <code>LONG_MAX</code>, <code>LLONG_MAX</code><small>(C99)</small> - maximum possible value of signed integer types: <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">char</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">short</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">int</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">signed</span> <span class="kw4">long</span> <span class="kw4">long</span></span>
+</li>
+<li>
+<code>UCHAR_MAX</code>, <code>USHRT_MAX</code>, <code>UINT_MAX</code>, <code>ULONG_MAX</code>, <code>ULLONG_MAX</code><small>(C99)</small> - maximum possible value of unsigned integer types: <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">char</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">short</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">int</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">unsigned</span> <span class="kw4">long</span> <span class="kw4">long</span></span>
+</li>
+<li>
+<code>CHAR_MIN</code> - minimum possible value of <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span>
+</li>
+<li>
+<code>CHAR_MAX</code> - maximum possible value of <span class="mw-geshi cpp source-cpp"><span class="kw4">char</span></span>
+</li>
+<li>
+<code>MB_LEN_MAX</code> - maximum number of bytes in a multibyte character</li>
+</ul>
+<dl>
+<dt>Properties of floating-point types</dt>
+</dl>
+<ul>
+<li>
+<code>FLT_MIN</code>, <code>DBL_MIN</code>, <code>LDBL_MIN</code> - minimum value of <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MAX</code>, <code>DBL_MAX</code>, <code>LDBL_MAX</code> - maximum value of <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_ROUNDS</code> - rounding mode for floating-point operations</li>
+<li>
+<code>FLT_EVAL_METHOD</code> - evaluation method of expressions involving different floating-point types (only available in C99)</li>
+<li>
+<code>FLT_RADIX</code> - radix of the exponent in the floating-point types</li>
+<li>
+<code>FLT_DIG</code>, <code>DBL_DIG</code>, <code>LDBL_DIG</code> - number of decimal digits that can be represented without losing precision by <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_EPSILON</code>, <code>DBL_EPSILON</code>, <code>LDBL_EPSILON</code> - difference between 1.0 and the next representable value of <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MANT_DIG</code>, <code>DBL_MANT_DIG</code>, <code>LDBL_MANT_DIG</code> - number of <code>FLT_RADIX</code>-base digits in the floating-point mantissa for types <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MIN_EXP</code>, <code>DBL_MIN_EXP</code>, <code>LDBL_MIN_EXP</code> - minimum negative integer such that <code>FLT_RADIX</code> raised to a power one less than that number is a normalized <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MIN_10_EXP</code>, <code>DBL_MIN_10_EXP</code>, <code>LDBL_MIN_10_EXP</code> - minimum negative integer such that 10 raised to a power one less than that number is a normalized <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MAX_EXP</code>, <code>DBL_MAX_EXP</code>, <code>LDBL_MAX_EXP</code> - maximum positive integer such that <code>FLT_RADIX</code> raised to a power one more than that number is a normalized <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>FLT_MAX_10_EXP</code>, <code>DBL_MAX_10_EXP</code>, <code>LDBL_MAX_10_EXP</code> - maximum positive integer such that 10 raised to a power one more than that number is a normalized <span class="mw-geshi cpp source-cpp"><span class="kw4">float</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">double</span></span>, <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span> respectively</li>
+<li>
+<code>DECIMAL_DIG</code> - minimum number of decimal digits needed to represent all the significant digits for <span class="mw-geshi cpp source-cpp"><span class="kw4">long</span> <span class="kw4">double</span></span>.<sup id="cite_ref-4" class="reference"><a href="Declaration_reflects_use#cite_note-4"><span>[</span>4<span>]</span></a></sup> The value is at least 10. (only available in C99)</li>
+</ul>
+<h2> <span class="mw-headline" id="Fixed_width_integer_types"><span id="stdint.h"></span><span id="inttypes.h"></span>Fixed width integer types</span>
+</h2>
+<p>The <a href="C99" title="C99">C99</a> standard includes definitions of several new integer types to enhance the portability of programs<sup id="cite_ref-c99_2-1" class="reference"><a href="Declaration_reflects_use#cite_note-c99-2"><span>[</span>2<span>]</span></a></sup>. The already available basic integer types were deemed insufficient, because their actual sizes are implementation defined and may vary across different systems. The new types are especially useful in <a href="Embedded_system" title="Embedded system">embedded environments</a> where hardware supports usually only several types and that support varies from system to system. All new types are defined in <code>inttypes.h</code> header (<code>cinttypes</code> header in C++) and also are available at <code>stdint.h</code> header (<code>cstdint</code> header in C++). The types can be grouped into the following categories:</p>
+<ul>
+<li>Exact width integer types which are guaranteed to have the same number <b>N</b> of bits across all implementations. Included only if it is available in the implementation.</li>
+<li>Least width integer types which are guaranteed to be the smallest type available in the implementation, that has at least specified number <b>N</b> of bits. Guaranteed to be specified for at least N=8,16,32,64.</li>
+<li>Fastest integer types which are guaranteed to be the fastest integer type available in the implementation, that has at least specified number <b>N</b> of bits. Guaranteed to be specified for at least N=8,16,32,64.</li>
+<li>Pointer integer types which are guaranteed to be able to hold a pointer</li>
+<li>Maximum width integer types which are guaranteed to be the largest integer type in the implementation</li>
+</ul>
+<p>The following table summarizes the types and the interface to acquire the implementation details (<b>N</b> refers to the number of bits):</p>
+<table class="wikitable">
+<tr>
+<th rowspan="2">Type category</th>
+<th colspan="3">Signed types</th>
+<th colspan="3">Unsigned types</th>
+</tr>
+<tr>
+<th>Type</th>
+<th>Minimum value</th>
+<th>Maximum value</th>
+<th>Type</th>
+<th>Minimum value</th>
+<th>Maximum value</th>
+</tr>
+<tr>
+<th>Exact width</th>
+<td><code>int<b>N</b>_t</code></td>
+<td><code>INT<b>N</b>_MIN</code></td>
+<td><code>INT<b>N</b>_MAX</code></td>
+<td><code>uint<b>N</b>_t</code></td>
+<td>0</td>
+<td><code>UINT<b>N</b>_MAX</code></td>
+</tr>
+<tr>
+<th>Least width</th>
+<td><code>int_least<b>N</b>_t</code></td>
+<td><code>INT_LEAST<b>N</b>_MIN</code></td>
+<td><code>INT_LEAST<b>N</b>_MAX</code></td>
+<td><code>uint_least<b>N</b>_t</code></td>
+<td>0</td>
+<td><code>UINT_LEAST<b>N</b>_MAX</code></td>
+</tr>
+<tr>
+<th>Fastest</th>
+<td><code>int_fast<b>N</b>_t</code></td>
+<td><code>INT_FAST<b>N</b>_MIN</code></td>
+<td><code>INT_FAST<b>N</b>_MAX</code></td>
+<td><code>uint_fast<b>N</b>_t</code></td>
+<td>0</td>
+<td><code>UINT_FAST<b>N</b>_MAX</code></td>
+</tr>
+<tr>
+<th>Pointer</th>
+<td><code>intptr_t</code></td>
+<td><code>INTPTR_MIN</code></td>
+<td><code>INTPTR_MAX</code></td>
+<td><code>uintptr_t</code></td>
+<td>0</td>
+<td><code>UINTPTR_MAX</code></td>
+</tr>
+<tr>
+<th>Maximum width</th>
+<td><code>intmax_t</code></td>
+<td><code>INTMAX_MIN</code></td>
+<td><code>INTMAX_MAX</code></td>
+<td><code>uintmax_t</code></td>
+<td>0</td>
+<td><code>UINTMAX_MAX</code></td>
+</tr>
+</table>
+<p><br></p>
+<h3> <span class="mw-headline" id="Printf_and_scanf_format_specifiers">Printf and scanf format specifiers</span>
+</h3>
+<p>The <code>inttypes.h</code> header (<code>cinttypes</code> header in C++) provides features that enhance the functionality of the types defined in <code>stdint.h</code> header. Included are macros that define <a href="http://en.m.wikipedia.org/wiki/Printf_format_string" title="Printf format string">printf format string</a> and <a href="http://en.m.wikipedia.org/wiki/Scanf_format_string" title="Scanf format string">scanf format string</a> specifiers corresponding to the <code>stdint.h</code> types and several functions for working with <code>intmax_t</code> and <code>uintmax_t</code> types. This header was added in <a href="C99" title="C99">C99</a>.</p>
+<dl>
+<dt>Printf format string</dt>
+</dl>
+<p>The macros are in the format <code>PRI<i>{fmt}{type}</i></code>. Here <i>{fmt}</i> defines the output formatting and is one of <code>d</code> (decimal), <code>x</code> (hexadecimal), <code>o</code> (octal), <code>u</code> (unsigned) and <code>i</code> (integer). <i>{type}</i> defines the type of the argument and is one of <code><b>N</b></code>, <code>FAST<b>N</b></code>, <code>LEAST<b>N</b></code>, <code>PTR</code>, <code>MAX</code>, where <code><b>N</b></code> corresponds to the number of bits in the argument.</p>
+<dl>
+<dt>Scanf format string</dt>
+</dl>
+<p>The macros are in the format <code>SCN<i>{fmt}{type}</i></code>. Here <i>{fmt}</i> defines the output formatting and is one of <code>d</code> (decimal), <code>x</code> (hexadecimal), <code>o</code> (octal), <code>u</code> (unsigned) and <code>i</code> (integer). <i>{type}</i> defines the type of the argument and is one of <code><b>N</b></code>, <code>FAST<b>N</b></code>, <code>LEAST<b>N</b></code>, <code>PTR</code>, <code>MAX</code>, where <code><b>N</b></code> corresponds to the number of bits in the argument.</p>
+<dl>
+<dt>Functions</dt>
+</dl>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content" style=""><tr>
+<td class="mbox-image"><a href="http://en.m.wikipedia.org/wiki/File:Wiki_letter_w_cropped.svg" class="image"><img alt="[icon]" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section requires <a class="external text" href="http://en.wikipedia.org/w/index.php?title=C_data_types&amp;action=edit">expansion</a>. <small><i>(October 2011)</i></small></span></td>
+</tr></table>
+<h2> <span class="mw-headline" id="Structures">Structures</span>
+</h2>
+<p>Structures are a way of storing multiple pieces of data in one variable. For example, say we wanted to store the name and birthday of a person in strings, in one variable. We could use a structure to house that data:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">struct</span> birthday
+<span class="br0">{</span>
+    <span class="kw4">char</span> name<span class="br0">[</span><span class="nu0">20</span><span class="br0">]</span><span class="sy0">;</span>
+    <span class="kw4">int</span> day<span class="sy0">;</span>
+    <span class="kw4">int</span> month<span class="sy0">;</span>
+    <span class="kw4">int</span> year<span class="sy0">;</span>
+<span class="br0">}</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Structures may contain pointers to structs of its own type, which is common in <a href="http://en.m.wikipedia.org/wiki/Linked_data_structure" title="Linked data structure">linked datastructures</a>.</p>
+<p>A C implementation has freedom to design the memory layout of the struct, with few restrictions; one being that the memory address of the first member will be the same as the address of struct itself. Structs may be <a href="C_syntax#Initialization" title="C syntax">initialized</a> or assigned to using compound literals.</p>
+<h2> <span class="mw-headline" id="Arrays">Arrays</span>
+</h2>
+<p>For every type <i>T</i>, except void and function types, there exist the types “array of <i>N</i> elements of type <i>T</i>”.</p>
+<p>An array is a collection of values, all of the same type, stored contiguously in memory. An array of size <i>N</i> is indexed by integers from <i>0</i> up to and including <i>N-1</i>.</p>
+<p>For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> cat<span class="br0">[</span><span class="nu0">10</span><span class="br0">]</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Arrays can be initialized with a compound initializer, but not assigned. Arrays are passed to functions by passing a pointer to the first element.</p>
+<h2> <span class="mw-headline" id="Pointer_types">Pointer types</span>
+</h2>
+<p>For every type <i>T</i> there exists a type “pointer to <i>T</i>”.</p>
+<p>Variables can be declared as being <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> to values of various types, by means of the <code>*</code> type declarator. To declare a variable as a pointer, precede its name with an asterisk.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">char</span> <span class="sy0">*</span>square<span class="sy0">;</span>
+<span class="kw4">long</span> <span class="sy0">*</span>circle<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Unions">Unions</span>
+</h2>
+<p>Union types are special structures which allow access to the same memory using different type descriptions; one could, for example, describe a union of data types which would allow reading the same data as an integer, a float or a user declared type:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">union</span>
+<span class="br0">{</span>
+    <span class="kw4">int</span> i<span class="sy0">;</span>
+    <span class="kw4">float</span> f<span class="sy0">;</span>
+    <span class="kw4">struct</span>
+    <span class="br0">{</span>
+        <span class="kw4">unsigned</span> <span class="kw4">int</span> u<span class="sy0">;</span>
+        <span class="kw4">double</span> d<span class="sy0">;</span>
+    <span class="br0">}</span> s<span class="sy0">;</span>
+<span class="br0">}</span> u<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>In the above example the total size of <code>u</code> is the size of <code>u.s</code> (which is the sum of the sizes of <code>u.s.u</code> and <code>u.s.d</code>), since s is larger than both <code>i</code> and <code>f</code>. When assigning something to <code>u.i</code>, some parts of <code>u.f</code> may be preserved if <code>u.i</code> is smaller than <code>u.f</code>.</p>
+<p>Reading from a union member is not the same as casting since the value of the member is not converted, but merely read.</p>
+<h2> <span class="mw-headline" id="Function_pointers">Function pointers</span>
+</h2>
+<p>Function pointers allow referencing functions with a particular signature. For example, to store the address of the standard function <code>abs</code> in the variable <code>my_int_f</code>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> <span class="br0">(</span><span class="sy0">*</span>my_int_f<span class="br0">)</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy0">=</span> <span class="kw3">abs</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Function pointers are invoked by name just like normal function calls. Function pointers are separate from pointers and <a href="http://en.m.wikipedia.org/wiki/Void_pointer" title="Void pointer" class="mw-redirect">void pointers</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/C_Programming" class="extiw" title="wikibooks:C Programming">C Programming</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/C_Programming/Variables" class="extiw" title="wikibooks:C Programming/Variables">C Programming</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a href="C_syntax" title="C syntax">C syntax</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uninitialized_variable" title="Uninitialized variable">Uninitialized variable</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.boost.org/doc/libs/release/libs/integer">Boost Integer library</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Declaration_reflects_use#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web">Barr, Michael (2 December 2007). <a rel="nofollow" class="external text" href="http://www.netrino.com/node/140">"Portable Fixed-Width Integers in C"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.netrino.com/node/140">http://www.netrino.com/node/140</a></span><span class="reference-accessdate">. Retrieved 8 November 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Portable+Fixed-Width+Integers+in+C&amp;rft.atitle=&amp;rft.aulast=Barr&amp;rft.aufirst=Michael&amp;rft.au=Barr%2C%26%2332%3BMichael&amp;rft.date=2+December+2007&amp;rft_id=http%3A%2F%2Fwww.netrino.com%2Fnode%2F140&amp;rfr_id=info:sid/en.wikipedia.org:C_data_types"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-c99-2">
+<span class="mw-cite-backlink">^ <a href="Declaration_reflects_use#cite_ref-c99_2-0"><sup><i><b>a</b></i></sup></a> <a href="Declaration_reflects_use#cite_ref-c99_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf"><i>ISO/IEC 9899:1999 specification</i></a>. p. 264, § 7.18 <i>Integer types</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf">http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1124.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=ISO%2FIEC+9899%3A1999+specification&amp;rft.pages=p.+264%2C+%C2%A7+7.18+%27%27Integer+types%27%27&amp;rft_id=http%3A%2F%2Fwww.open-std.org%2Fjtc1%2Fsc22%2Fwg14%2Fwww%2Fdocs%2Fn1124.pdf&amp;rfr_id=info:sid/en.wikipedia.org:C_data_types"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Declaration_reflects_use#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.unix.org/version2/whatsnew/lp64_wp.html">"64-Bit Programming Models: Why LP64?"</a>. The Open Group<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unix.org/version2/whatsnew/lp64_wp.html">http://www.unix.org/version2/whatsnew/lp64_wp.html</a></span><span class="reference-accessdate">. Retrieved 9 November 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=64-Bit+Programming+Models%3A+Why+LP64%3F&amp;rft.atitle=&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.unix.org%2Fversion2%2Fwhatsnew%2Flp64_wp.html&amp;rfr_id=info:sid/en.wikipedia.org:C_data_types"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Declaration_reflects_use#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.dinkumware.com/manuals/?manual=compleat&amp;page=float.html">http://www.dinkumware.com/manuals/?manual=compleat&amp;page=float.html</a></span>
+</li>
+</ol>
+</div>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><strong class="selflink">Variable types and declarations</strong></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 1 language</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://vi.m.wikipedia.org/wiki/Ki%E1%BB%83u_v%C3%A0_khai_b%C3%A1o_bi%E1%BA%BFn_trong_C" lang="vi" hreflang="vi">Tiếng Việt</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Declaration_reflects_use&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Declaration_reflects_use&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C+data+types&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

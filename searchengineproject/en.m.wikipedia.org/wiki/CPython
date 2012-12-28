@@ -1,0 +1,363 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>CPython - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"CPython","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/CPython" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=CPython"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">CPython</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">CPython</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Python_logo.svg" class="image"><img alt="Python logo.svg" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Python_logo.svg/301px-Python_logo.svg.png" width="301" height="89" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/06/Python_logo.svg/452px-Python_logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/06/Python_logo.svg/602px-Python_logo.svg.png 2x"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Python core developers and the Python community</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">3.3 / September 29, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-29</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">Python Programming Language Interpreter</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Python_Software_Foundation_License" title="Python Software Foundation License">Python Software Foundation License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.python.org/">www.python.org</a></span></td>
+</tr>
+</table>
+<dl>
+<dd><i>Not to be confused with <a href="http://en.m.wikipedia.org/wiki/Cython" title="Cython">Cython</a>.</i></dd>
+</dl>
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(November 2010)</i></small> </span></td>
+</tr></table>
+<p><b>CPython</b> is the default, most-widely used <a href="Programming_language_implementation" title="Programming language implementation">implementation</a> of the <a href="Python_(programming_language)" title="Python (programming language)">Python programming language</a>. It is written in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>. In addition to CPython, there are two other production-quality Python implementations: <a href="http://en.m.wikipedia.org/wiki/Jython" title="Jython">Jython</a>, written in <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and <a href="http://en.m.wikipedia.org/wiki/IronPython" title="IronPython">IronPython</a>, which is written for the <a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a>. There are also <a href="Python_(programming_language)#Alternative_implementations" title="Python (programming language)">several experimental implementations</a>.<sup id="cite_ref-1" class="reference"><a href="CPython#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>CPython is a <a href="http://en.m.wikipedia.org/wiki/Bytecode" title="Bytecode">bytecode</a> <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a>. It has a <a href="http://en.m.wikipedia.org/wiki/Foreign_function_interface" title="Foreign function interface">foreign function interface</a> with several languages including C, in which one must explicitly write <a href="http://en.m.wikipedia.org/wiki/Language_binding" title="Language binding">bindings</a> in a language other than Python.</p>
+<h2> <span class="mw-headline" id="Supported_platforms.5B2.5D">Supported platforms<sup id="cite_ref-2" class="reference"><a href="CPython#cite_note-2"><span>[</span>2<span>]</span></a></sup></span>
+</h2>
+<table class="multicol" style="border-collapse: collapse; padding: 0px; border: 0px; background:transparent; width:100%;"><tr>
+<td style="text-align: left; vertical-align: top; width: 25%;">
+<dl>
+<dt>Unix-like</dt>
+</dl>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/AIX_operating_system" title="AIX operating system" class="mw-redirect">AIX operating system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a> 5 and later</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_Operating_System" title="Solaris Operating System" class="mw-redirect">Solaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tru64" title="Tru64" class="mw-redirect">Tru64</a></li>
+<li>Other <a href="Unix" title="Unix">Unixes</a>
+</li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top; width: 25%;">
+<dl>
+<dt>Other<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from July 2012">citation needed</span></a></i>]</sup>
+</dt>
+</dl>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/AROS" title="AROS" class="mw-redirect">AROS</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_NT" title="Windows NT">Windows NT</a>/<a href="http://en.m.wikipedia.org/wiki/Windows_2000" title="Windows 2000">2000</a>/<a href="http://en.m.wikipedia.org/wiki/Windows_XP" title="Windows XP">XP</a>/<a href="http://en.m.wikipedia.org/wiki/Windows_Vista" title="Windows Vista">Vista</a>/<a href="http://en.m.wikipedia.org/wiki/Windows_7" title="Windows 7">7</a>/<a href="http://en.m.wikipedia.org/wiki/Windows_8" title="Windows 8">8</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RISC_OS" title="RISC OS">RISC OS</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top; width: 25%;">
+<dl>
+<dt>Special and embedded<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from July 2012">citation needed</span></a></i>]</sup>
+</dt>
+</dl>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GP2X" title="GP2X">GP2X</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IPodLinux" title="IPodLinux">iPodLinux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nintendo_DS" title="Nintendo DS">Nintendo DS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nintendo_Gamecube" title="Nintendo Gamecube" class="mw-redirect">Nintendo Gamecube</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/S60_(software_platform)" title="S60 (software platform)">Symbian OS Series60</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nokia_770_Internet_Tablet" title="Nokia 770 Internet Tablet">Nokia 770 Internet Tablet</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nokia_N800" title="Nokia N800">Nokia N800</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nokia_N810" title="Nokia N810">Nokia N810</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nokia_N900" title="Nokia N900">Nokia N900</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Palm_OS" title="Palm OS">Palm OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PlayStation_2" title="PlayStation 2">PlayStation 2</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PlayStation_3" title="PlayStation 3">PlayStation 3</a> (Linux)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Psion" title="Psion">Psion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QNX" title="QNX">QNX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sharp_Zaurus" title="Sharp Zaurus">Sharp Zaurus</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Xbox" title="Xbox">Xbox</a>/<a href="http://en.m.wikipedia.org/wiki/XBMC" title="XBMC">XBMC</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/VxWorks" title="VxWorks">VxWorks</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Openmoko" title="Openmoko">Openmoko</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Apple_iOS" title="Apple iOS" class="mw-redirect">Apple iOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top; width: 25%;">
+<dl>
+<dt>Mainframe and other</dt>
+</dl>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/OS/390" title="OS/390">OS/390</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenVMS" title="OpenVMS">VMS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z/OS" title="Z/OS">z/OS</a></li>
+</ul>
+</td>
+</tr></table>
+<h3> <span class="mw-headline" id="Previously_supported_platforms">Previously supported platforms</span>
+</h3>
+<p><a rel="nofollow" class="external text" href="http://www.python.org/dev/peps/pep-0011/">PEP 11</a> lists platforms which are not supported in CPython by <a href="http://en.m.wikipedia.org/wiki/Python_Software_Foundation" title="Python Software Foundation">Python Software Foundation</a>. These platforms can still be supported by external ports. See below.</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/AtheOS" title="AtheOS">AtheOS</a> (unsupported since 2.6)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a> (unsupported since 2.6)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a> (unsupported since 2.0)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a> 4 (unsupported since 2.3)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mac_OS_9" title="Mac OS 9">Mac OS 9</a> (unsupported since 2.4)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MINIX" title="MINIX">MINIX</a> (unsupported since 2.3)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_3.x" title="Windows 3.x">Windows 3.x</a> (unsupported since 2.0)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_9x" title="Windows 9x">Windows 9x</a> (unsupported since 2.6)</li>
+</ul>
+<h3> <span class="mw-headline" id="External_ports">External ports</span>
+</h3>
+<p>These are ports not integrated to <a href="http://en.m.wikipedia.org/wiki/Python_Software_Foundation" title="Python Software Foundation">Python Software Foundation</a>'s official version of CPython, with links to its main development site. Ports often include additional modules for platform-specific functionalities, like graphics and sound API for PSP and SMS and camera API for S60.</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Amiga" title="Amiga">Amiga</a>: <a rel="nofollow" class="external text" href="http://www.monkeyhouse.eclipse.co.uk/amiga/python/">AmigaPython</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/AS/400" title="AS/400" class="mw-redirect">AS/400</a>: <a rel="nofollow" class="external text" href="http://www.iseriespython.com/">iSeriesPython</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a> using <a href="http://en.m.wikipedia.org/wiki/DJGPP" title="DJGPP">DJGPP</a>: <a rel="nofollow" class="external text" href="http://www.caddit.net/pythond">PythonD</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PlayStation_Portable" title="PlayStation Portable">PlayStation Portable</a>: <a rel="nofollow" class="external text" href="http://code.google.com/p/pspstacklesspython/">Stackless Python for PSP</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Symbian_OS" title="Symbian OS" class="mw-redirect">Symbian OS</a>: <a rel="nofollow" class="external text" href="http://opensource.nokia.com/projects/pythonfors60/">Python for S60</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_CE" title="Windows CE">Windows CE</a>/<a href="http://en.m.wikipedia.org/wiki/Pocket_PC" title="Pocket PC">Pocket PC</a>: <a rel="nofollow" class="external text" href="http://pythonce.sourceforge.net/">Python Windows CE port</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Concurrency_issues">Concurrency issues</span>
+</h2>
+<p>A significant drawback to using CPython on a <a href="http://en.m.wikipedia.org/wiki/Multitasking" title="Multitasking" class="mw-redirect">multitasking</a> computer is the presence of a <a href="http://en.m.wikipedia.org/wiki/Global_Interpreter_Lock" title="Global Interpreter Lock">Global Interpreter Lock</a> on each CPython interpreter process, which effectively disables concurrent Python threads within one process.<sup id="cite_ref-3" class="reference"><a href="CPython#cite_note-3"><span>[</span>3<span>]</span></a></sup> To be truly concurrent in multitasking environment, separate CPython interpreter processes have to be run, which makes establishing communication between them a difficult task, though the <i>multiprocessing</i> module mitigates this somewhat. There is constant discussion whether to remove the GIL from CPython.<sup id="cite_ref-4" class="reference"><a href="CPython#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="CPython#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="http://en.m.wikipedia.org/wiki/Alex_Martelli" title="Alex Martelli">Martelli, Alex</a> (2006). <i>Python in a Nutshell</i> (2nd edition ed.). <a href="http://en.m.wikipedia.org/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly</a>. pp. 5–7. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-596-10046-9" title="Special:BookSources/978-0-596-10046-9">978-0-596-10046-9</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Python+in+a+Nutshell&amp;rft.aulast=Martelli&amp;rft.aufirst=Alex&amp;rft.au=Martelli%2C%26%2332%3BAlex&amp;rft.date=2006&amp;rft.pages=pp.%26nbsp%3B5%E2%80%937&amp;rft.edition=2nd+edition&amp;rft.pub=%5B%5BO%27Reilly+Media%7CO%27Reilly%5D%5D&amp;rft.isbn=978-0-596-10046-9&amp;rfr_id=info:sid/en.wikipedia.org:CPython"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="CPython#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://wiki.python.org/moin/PythonImplementations">"PythonImplementations"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://wiki.python.org/moin/PythonImplementations">http://wiki.python.org/moin/PythonImplementations</a></span><span class="reference-accessdate">. Retrieved 19 July 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=PythonImplementations&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwiki.python.org%2Fmoin%2FPythonImplementations&amp;rfr_id=info:sid/en.wikipedia.org:CPython"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="CPython#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://docs.python.org/api/threads.html">Python/C API Reference Manual: Thread State and the Global Interpreter Lock</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="CPython#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://docs.python.org/faq/library#can-t-we-get-rid-of-the-global-interpreter-lock">Python Library and Extension FAQ: Can't we get rid of the Global Interpreter Lock?</a> <a rel="nofollow" class="external text" href="http://www.webcitation.org/5w9US5NPs">Archived</a> 31 January 2011 at <a href="http://en.m.wikipedia.org/wiki/WebCite" title="WebCite">WebCite</a></span>
+</li>
+</ol>
+</div>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Python_(programming_language)" title="Template:Python (programming language)"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Python_(programming_language)" title="Template talk:Python (programming language)"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Python_(programming_language)&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Python_(programming_language)" title="Python (programming language)">Python</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Implementations</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CLPython" title="CLPython">CLPython</a></li>
+<li><strong class="selflink">CPython</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Jython" title="Jython">Jython</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IronPython" title="IronPython">IronPython</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PyPy" title="PyPy">PyPy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Python_for_S60" title="Python for S60">Python for S60</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Psyco" title="Psyco">Psyco</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stackless_Python" title="Stackless Python">Stackless Python</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unladen_Swallow" title="Unladen Swallow">Unladen Swallow</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">IDE</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Comparison_of_integrated_development_environments#Python" title="Comparison of integrated development environments">Boa</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IDLE_(Python)" title="IDLE (Python)">IDLE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stani%27s_Python_Editor" title="Stani's Python Editor">SPE</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/List_of_integrated_development_environments_for_Python#Python" title="List of integrated development environments for Python" class="mw-redirect">more</a>...</i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_Python_software" title="List of Python software">software (list)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Python_Software_Foundation" title="Python Software Foundation">Python Software Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PyCon" title="PyCon" class="mw-redirect">PyCon</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%B3%D9%8A_%D8%A8%D8%A7%D9%8A%D8%AB%D9%88%D9%86" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ca.m.wikipedia.org/wiki/CPython" lang="ca" hreflang="ca">català</a></li><li><a href="http://de.m.wikipedia.org/wiki/CPython" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/CPython" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/CPython" lang="fr" hreflang="fr">français</a></li><li><a href="http://hy.m.wikipedia.org/wiki/CPython" lang="hy" hreflang="hy">Հայերեն</a></li><li><a href="http://ja.m.wikipedia.org/wiki/CPython" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/CPython" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/CPython" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/CPython" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/CPython" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=CPython&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=CPython&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=CPython&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

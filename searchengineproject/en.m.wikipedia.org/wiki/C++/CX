@@ -1,0 +1,374 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C++/CX - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/C%2B%2B/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C++\/CX","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C%2B%2B/CX" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="../Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="../Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C%2B%2B%2FCX"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="../Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C++/CX</h1>			
+<p><b>C++/CX</b> <i>(Component Extensions)</i> is a language extension for <a href="../C++" title="C++">C++</a> <a href="../Compiler" title="Compiler">compilers</a> from <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> that enables C++ programmers to write programs for the new <a href="http://en.m.wikipedia.org/wiki/Windows_Runtime" title="Windows Runtime">Windows Runtime</a> platform, or <i>WinRT</i>. It brings a set of syntax and library abstractions that interface with the <a href="http://en.m.wikipedia.org/wiki/Component_Object_Model" title="Component Object Model">COM</a>-based WinRT <a href="http://en.m.wikipedia.org/wiki/Programming_model" title="Programming model" class="mw-redirect">programming model</a> in a way that is natural to native C++-programmers.</p>
+<p>The language extensions borrow syntax from <a href="CLI" title="C++/CLI">C++/CLI</a> but target the Windows Runtime and <a href="http://en.m.wikipedia.org/wiki/Native_code" title="Native code" class="mw-redirect">native code</a> instead of the <a href="http://en.m.wikipedia.org/wiki/Common_Language_Runtime" title="Common Language Runtime">Common Language Runtime</a> and <a href="http://en.m.wikipedia.org/wiki/Managed_code" title="Managed code">managed code</a>.</p>
+<h2> <span class="mw-headline" id="Extension_syntax">Extension syntax</span>
+</h2>
+<p>C++/CX introduces syntax extensions for programming for the Windows Runtime. The overall non platform-specific syntax is compatible with the <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a> standard.</p>
+<h3> <span class="mw-headline" id="Objects">Objects</span>
+</h3>
+<p>WinRT objects are created, or <i>activated</i>, using <code>ref new</code> and assigned to variables declared with the <code>^</code> (hat) notation inherited from C++/CLI.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+Foo<span class="sy3">^</span> foo <span class="sy1">=</span> ref <span class="kw3">new</span> Foo<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<p>A WinRT variable is simply a pair of a pointer to <a href="http://en.m.wikipedia.org/wiki/Virtual_method_table" title="Virtual method table">virtual method table</a> and pointer to the object's <a href="http://en.m.wikipedia.org/wiki/Opaque_pointer" title="Opaque pointer">internal data</a>.</p>
+<h4> <span class="mw-headline" id="Reference_counting">Reference counting</span>
+</h4>
+<p>A WinRT object is <a href="http://en.m.wikipedia.org/wiki/Reference_counting" title="Reference counting">reference counted</a> and thus handles similarly to ordinary C++ objects enclosed in <a href="http://en.m.wikipedia.org/wiki/Smart_pointer#shared_ptr_and_weak_ptr" title="Smart pointer">shared_ptrs</a>. An object will be deleted when there are no remaining references that can be led to it.</p>
+<p>There is no <a href="../Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a> involved. Nevertheless, the keyword <code>gcnew</code> has been reserved for possible future use.</p>
+<h4> <span class="mw-headline" id="Classes">Classes</span>
+</h4>
+<h5> <span class="mw-headline" id="Runtime_classes">Runtime classes</span>
+</h5>
+<p>There are special kinds of <i>runtime classes</i> that may contain component extension constructs. These are simply referred to as <i>ref classes</i> because they are declared using <code>ref class</code>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">public</span> ref <span class="kw2">class</span> MyClass
+<span class="br0">{</span>
+ 
+<span class="br0">}</span><span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<h5> <span class="mw-headline" id="Partial_classes">Partial classes</span>
+</h5>
+<p>C++/CX introduces the concept of <a href="http://en.m.wikipedia.org/wiki/Partial_classes" title="Partial classes" class="mw-redirect">partial classes</a>. The feature allows a single class to be split across multiple files, mainly to enable the <a href="http://en.m.wikipedia.org/wiki/XAML" title="XAML" class="mw-redirect">XAML</a> <a href="../Graphical_user_interface" title="Graphical user interface">graphical user interface</a> design tools to auto-generate code in a separate file in order not to break the logic written by the developer. The parts are later merged at compilation.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/.NET_language" title=".NET language" class="mw-redirect">.NET languages</a> like <a href="../C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> have had this feature for many years. Partial classes have not yet made it into the <a href="../C++" title="C++">C++</a> standard and cannot therefore be used in pure C++11.</p>
+<p>A file generated and updated by the GUI-designer, and thus should not be modified by the programmer. Note the keyword <code>partial</code>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co1">// foo.private.h</span>
+<span class="co2">#pragma once</span>
+ 
+partial ref <span class="kw2">class</span> foo
+<span class="br0">{</span>
+<span class="kw2">private</span><span class="sy4">:</span>
+   <span class="kw4">int</span> id_<span class="sy4">;</span>
+   Platform<span class="sy4">::</span><span class="me2">String</span><span class="sy3">^</span> name_<span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<p>The file where the programmer writes user-interface logic. The header in which the compiler-generated part of the class is defined is imported. Note that the keyword <code>partial</code> is not necessary.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co1">// foo.public.h</span>
+<span class="co2">#pragma once</span>
+<span class="co2">#include "foo.private.h"</span>
+ 
+ref <span class="kw2">class</span> foo
+<span class="br0">{</span>
+<span class="kw2">public</span><span class="sy4">:</span>
+   <span class="kw4">int</span> GetId<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+   Platform<span class="sy4">::</span><span class="me2">String</span><span class="sy3">^</span> GetName<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<p>This is the file in which the members of the partial class are implemented.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co1">// foo.cpp</span>
+<span class="co2">#include "pch.h"</span>
+<span class="co2">#include "foo.public.h"</span>
+ 
+<span class="kw4">int</span> foo<span class="sy4">::</span><span class="me2">GetId</span><span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span><span class="kw1">return</span> id_<span class="sy4">;</span><span class="br0">}</span>
+Platform<span class="sy4">::</span><span class="me2">String</span><span class="sy3">^</span> foo<span class="sy4">::</span><span class="me2">GetName</span> <span class="br0">{</span><span class="kw1">return</span> name_<span class="sy4">;</span><span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h4> <span class="mw-headline" id="Generics">Generics</span>
+</h4>
+<p>Windows Runtime and thus C++/CX supports runtime-based <a href="../Generic_programming" title="Generic programming">generics</a>. Generic type information is contained in the metadata and instantiated at runtime, unlike <a href="http://en.m.wikipedia.org/wiki/C%2B%2B_template" title="C++ template" class="mw-redirect">C++ templates</a> which are compile-time constructs. Both are supported by the compiler and can be combined.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+generic<span class="sy1">&lt;</span><span class="kw2">typename</span> T<span class="sy1">&gt;</span> 
+<span class="kw2">public</span> ref <span class="kw2">class</span> bag 
+<span class="br0">{</span>
+     property T Item<span class="sy4">;</span>
+<span class="br0">}</span><span class="sy4">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Metadata">Metadata</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Metadata_(CLI)" title="Metadata (CLI)">Metadata (CLI)</a>
+</div>
+<p>All WinRT programs expose their declared classes and members through <a href="http://en.m.wikipedia.org/wiki/Metadata" title="Metadata">metadata</a>. The format is the same that was standardized as part of the <a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">Common Language Infrastructure</a> (CLI), the standard created from the <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>. Because of this code can be shared across C++/CX, <a href="http://en.m.wikipedia.org/wiki/List_of_CLI_languages" title="List of CLI languages">CLI languages</a> and Javascript that target Windows Runtime.</p>
+<h2> <span class="mw-headline" id="Runtime_library">Runtime library</span>
+</h2>
+<p>The C++/CX has a set of libraries that target the Windows Runtime. These help bridge the functionality of the <a href="http://en.m.wikipedia.org/wiki/C%2B%2B_Standard_Library" title="C++ Standard Library">C++ Standard Library</a> and WinRT.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Runtime" title="Windows Runtime">Windows Runtime</a></li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://blogs.msdn.com/b/vcblog/archive/2011/10/20/10228473.aspx">Inside the C++/CX Design - Visual C++ Team Blog</a></li>
+<li><a rel="nofollow" class="external text" href="http://channel9.msdn.com/Shows/C9-GoingNative/GoingNative-3-The-CCX-Episode-with-Marian-Luparu">GoingNative 3: The C++/CX Episode with Marian Luparu - Channel 9</a></li>
+<li><a rel="nofollow" class="external text" href="http://mariusbancila.ro/blog/tag/ccx/">WinRT and winmd Files - Marius Bancila's Blog</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="../Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="../Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="../ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="../ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="../C99" title="C99">C99</a></li>
+<li><a href="../C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="../Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="../Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="../Clang" title="Clang">Clang</a></li>
+<li><a href="../GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="../LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="../Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="../Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="../Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="../Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="CLI" title="C++/CLI">C++/CLI</a></li>
+<li><strong class="selflink">C++/CX</strong></li>
+</ul>
+</li>
+<li><a href="../Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="../Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="../C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="../GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="../Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="../UClibc" title="UClibc">uClibc</a></li>
+<li><a href="../Newlib" title="Newlib">Newlib</a></li>
+<li><a href="../Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="../Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="../Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="../C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="../C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="../C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="../C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="../C++" title="C++">C++</a></li>
+<li><a href="../C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="../D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="../Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="../Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="../Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="../Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="../Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="../Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="../Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="../Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="../Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="../Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 1 language</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/C%2B%2B/CX" lang="de" hreflang="de">Deutsch</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=C%2B%2B/CX&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=C%2B%2B/CX&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="../Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C%2B%2B%2FCX&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="../Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="../Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

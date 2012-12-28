@@ -1,0 +1,343 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Void type - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Void type","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Void_type" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Void+type"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Void type</h1>			
+<div class="dablink">This article is about the void type in computer programming languages.  For types of astronomical voids, see <a href="http://en.m.wikipedia.org/wiki/Void_(astronomy)" title="Void (astronomy)">Void (astronomy)</a>.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/Void_(disambiguation)" title="Void (disambiguation)" class="mw-redirect">Void (disambiguation)</a>.</div>
+<p>The <b>void type</b>, in several <a href="http://en.m.wikipedia.org/wiki/Curly_bracket_programming_language" title="Curly bracket programming language" class="mw-redirect">programming languages derived from C and Algol68</a>, is the <a href="http://en.m.wikipedia.org/wiki/Type_theory" title="Type theory">type</a> for the result of a <a href="http://en.m.wikipedia.org/wiki/Function_(computer_science)" title="Function (computer science)" class="mw-redirect">function</a> that returns normally, but does not provide a result value to its caller. Usually such functions are called for their <a href="http://en.m.wikipedia.org/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effects</a>, such as performing some task or writing to their output parameters. The usage of the void type in such context is comparable to that of the syntactic constructs which define <a href="Subroutines" title="Subroutines" class="mw-redirect">subroutines</a> in <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> and <a href="Procedure_(computer_science)" title="Procedure (computer science)" class="mw-redirect">procedures</a> in <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a>. It is also similar to the <a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">unit type</a> used in <a href="http://en.m.wikipedia.org/wiki/Functional_programming_languages" title="Functional programming languages" class="mw-redirect">functional programming languages</a> and type theory; however, there are some differences in allowable usage, in that the void type is taken to be an empty type with no values. See <a href="http://en.m.wikipedia.org/wiki/Unit_type#In_programming_languages" title="Unit type">Unit type#In programming languages</a> for a comparison.</p>
+<p>C and <a href="C++" title="C++">C++</a> also support the <b>pointer to void type</b> (specified as <code>void *</code>), but this is an unrelated notion. Variables of this type are <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a> to data of an <i>unspecified</i> type, so in this context (but not the others) void acts as a universal or <a href="http://en.m.wikipedia.org/wiki/Top_type" title="Top type">top type</a>. A program can convert a pointer to any type of data (except a <a href="Function_pointer" title="Function pointer">function pointer</a>) to a pointer to void and back to the original type without losing information, which makes these pointers useful for <a href="http://en.m.wikipedia.org/wiki/Polymorphism_(computer_science)" title="Polymorphism (computer science)">polymorphic</a> functions.</p>
+<h2> <span class="mw-headline" id="In_C_and_C.2B.2B">In C and C++</span>
+</h2>
+<p>A function with void result type ends either by reaching the end of the function or by executing a <a href="http://en.m.wikipedia.org/wiki/Return_statement" title="Return statement">return statement</a> with no returned value. The void type may also appear as the sole <a href="http://en.m.wikipedia.org/wiki/Function_argument" title="Function argument" class="mw-redirect">argument</a> of a <a href="Function_prototype" title="Function prototype">function prototype</a> to indicate that the function takes no arguments. Note that despite the name, in all of these situations, the void type serves as a <a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">unit type</a>, not as a zero or <a href="http://en.m.wikipedia.org/wiki/Bottom_type" title="Bottom type">bottom type</a>, even though unlike a real unit type which is a singleton, the void type is said to comprise an empty set of values, and the language does not provide any way to declare an object or represent a value with type <code>void</code>.</p>
+<p>In the earliest versions of C, functions with no specific result defaulted to a return type of <code>int</code> and functions with no arguments simply had empty argument lists. Pointers to untyped data were declared as integers or pointers to <code>char</code>. Some early C <a href="Compiler" title="Compiler">compilers</a> had the feature, now seen as an annoyance, of generating a warning on any function call that did not use the function's returned value. Old code sometimes <a href="http://en.m.wikipedia.org/wiki/Typecasting_(programming)" title="Typecasting (programming)" class="mw-redirect">casts</a> such function calls to void to suppress this warning. By the time <a href="Bjarne_Stroustrup" title="Bjarne Stroustrup">Bjarne Stroustrup</a> began his work on <a href="C++" title="C++">C++</a> in 1979–1980, void and void pointers were part of the C language dialect supported by AT&amp;T-derived compilers.<sup id="cite_ref-1" class="reference"><a href="Void_type#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>The explicit use of void vs. giving no arguments in a <a href="Function_prototype" title="Function prototype">function prototype</a> has different semantics in C and C++, as detailed in the following table:<sup id="cite_ref-2" class="reference"><a href="Void_type#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<table class="wikitable" border="1">
+<tr>
+<th>C</th>
+<th>C++ equivalent</th>
+</tr>
+<tr>
+<td><code>void f(void);</code></td>
+<td><code>void f(); //preferred</code></td>
+</tr>
+<tr>
+<td><code>void f(void);</code></td>
+<td><code>void f(void);</code></td>
+</tr>
+<tr>
+<td><code>void f(...); /*accepts a variable number of arguments*/</code></td>
+<td><code>void f(...); //accepts a variable number of arguments</code></td>
+</tr>
+<tr>
+<td><code>void f(); /*accepts a constant but unknown number of arguments*/</code></td>
+<td><code>// no equivalent</code></td>
+</tr>
+</table>
+<p>A C prototype taking no arguments, e.g. <code>void f()</code> above, has been deprecated however in <a href="C99" title="C99">C99</a>.<sup id="cite_ref-3" class="reference"><a href="Void_type#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Void_type#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/chist.html">http://cm.bell-labs.com/cm/cs/who/dmr/chist.html</a>, "Standardisation."</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Void_type#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Stroustrup, Bjarne (2009). <i>Programming: Principles and Practice Using C++</i>. Boston: Addison-Wesley. p. 996. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-321-54372-6" title="Special:BookSources/0-321-54372-6">0-321-54372-6</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programming%3A+Principles+and+Practice+Using+C%2B%2B&amp;rft.aulast=Stroustrup&amp;rft.aufirst=Bjarne&amp;rft.au=Stroustrup%2C%26%2332%3BBjarne&amp;rft.date=2009&amp;rft.pages=p.%26nbsp%3B996&amp;rft.place=Boston&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-321-54372-6&amp;rfr_id=info:sid/en.wikipedia.org:Void_type"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Void_type#cite_ref-3">^</a></b></span> <span class="reference-text">Bjarne Stroustrup, <i><a rel="nofollow" class="external text" href="http://www.ddj.com/cpp/184401562">C and C++: Case Studies in Compatibility. Reconcilable differences? You decide</a></i>, <a href="http://en.m.wikipedia.org/wiki/Dr._Dobb%27s" title="Dr. Dobb's" class="mw-redirect">Dr. Dobb's</a>, September 01, 2002; <a rel="nofollow" class="external text" href="http://www.research.att.com/~bs/examples_short.pdf">print version</a></span>
+</li>
+</ol>
+</div>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Data_types" title="Template:Data types"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Data_types" title="Template talk:Data types"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Data_types&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Data_type" title="Data type">Data types</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Uninterpreted</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Bit" title="Bit">Bit</a></li>
+<li><a href="Byte" title="Byte">Byte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Numeric</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Signedness" title="Signedness">signedness</a></li>
+</ul>
+</li>
+<li><a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">Floating-point</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rational_data_type" title="Rational data type">Rational</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Bignum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interval_arithmetic" title="Interval arithmetic">Interval</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">Text</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li>
+<a href="String_(computer_science)" title="String (computer science)">String</a>
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">null-terminated</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">Address</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li>
+</ul>
+</li>
+<li><a href="Reference_(computer_science)" title="Reference (computer science)">Reference</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Composite_data_type" title="Composite data type">Composite</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li>
+</ul>
+</li>
+<li><a href="Array_data_type" title="Array data type">Array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">Associative array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_(computing)" title="List (computing)" class="mw-redirect">List</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaobject" title="Metaobject">Metaobject</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="Record_(computer_science)" title="Record (computer science)">Record</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Set_(computer_science)" title="Set (computer science)" class="mw-redirect">Set</a></li>
+<li>
+<a href="Union_(computer_science)" title="Union (computer science)">Union</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">Collection</a></li>
+<li><a href="Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphore</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_type" title="Top type">Top type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><strong class="selflink">Void</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">Protocol</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Interface_(computing)#Software_interfaces_in_object-oriented_languages" title="Interface (computing)">Interface</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaclass" title="Metaclass">Metaclass</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Void_(Schl%C3%BCsselwort)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Void" lang="fr" hreflang="fr">français</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Void_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Pusty_typ_danych" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Void" lang="ru" hreflang="ru">русский</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Void_(ki%E1%BB%83u_d%E1%BB%AF_li%E1%BB%87u)" lang="vi" hreflang="vi">Tiếng Việt</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Void_type&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Void_type&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Void+type&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

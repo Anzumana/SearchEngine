@@ -1,0 +1,271 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Callback (computer programming) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Callback (computer programming)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Callback_(computer_programming)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Callback+%28computer+programming%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Callback (computer programming)</h1>			
+<div class="dablink">For a discussion of callback with computer <a href="http://en.m.wikipedia.org/wiki/Modem" title="Modem">modems</a>, see <a href="http://en.m.wikipedia.org/wiki/Callback_(telecommunications)" title="Callback (telecommunications)">callback (telecommunications)</a>.</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, a <b>callback</b> is a <a href="Reference_(computer_science)" title="Reference (computer science)">reference</a> to a piece of <a href="http://en.m.wikipedia.org/wiki/Executable_code" title="Executable code" class="mw-redirect">executable code</a> that is passed as an <a href="http://en.m.wikipedia.org/wiki/Argument_(computer_science)" title="Argument (computer science)" class="mw-redirect">argument</a> to other code. This allows a lower-level <a href="http://en.m.wikipedia.org/wiki/Abstraction_layer" title="Abstraction layer">software layer</a> to call a <a href="Subroutine" title="Subroutine">subroutine</a> (or function) defined in a higher-level layer.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:372px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Callback-notitle.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Callback-notitle.svg/370px-Callback-notitle.svg.png" width="370" height="138" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Callback-notitle.svg/555px-Callback-notitle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Callback-notitle.svg/740px-Callback-notitle.svg.png 2x"></a>
+<div class="thumbcaption">
+
+A callback is often back on the level of the original caller.</div>
+</div>
+</div>
+<p><br></p>
+<h2> <span class="mw-headline" id="Use">Use</span>
+</h2>
+<p>Callbacks have a wide variety of uses. For example, imagine a function that reads a configuration file and associates values with options. If the options are identified by a <a href="http://en.m.wikipedia.org/wiki/Hash_function" title="Hash function">hash</a>, then writing the function so that it takes a callback makes it more flexible: its user can choose whatever hashing algorithm is desired and the function will continue to work, since it uses the callback to turn option names into hashes; thus, callbacks allow the user of a function to fine-tune it at runtime. Another use is in error signaling. A <a href="Unix" title="Unix">Unix</a> program, for example, might not want to terminate immediately when it receives <a href="http://en.m.wikipedia.org/wiki/SIGTERM" title="SIGTERM" class="mw-redirect">SIGTERM</a>; to make sure things get taken care of, it would register the cleanup function as a callback.</p>
+<p>Callbacks may also be used to control whether a function acts or not: <a href="http://en.m.wikipedia.org/wiki/Xlib" title="Xlib">Xlib</a> allows custom <a href="http://en.m.wikipedia.org/wiki/Branch_predication" title="Branch predication">predicates</a> to be specified to determine whether a program wishes to handle an event. The following code in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> demonstrates the use of callbacks to display two numbers.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+ 
+<span class="coMULTI">/* The calling function takes a single callback as a parameter. */</span>
+<span class="kw4">void</span> PrintTwoNumbers<span class="br0">(</span><span class="kw4">int</span> <span class="br0">(</span><span class="sy0">*</span>numberSource<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"%d and %d<span class="es1">\n</span>"</span><span class="sy0">,</span> numberSource<span class="br0">(</span><span class="br0">)</span><span class="sy0">,</span> numberSource<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/* A possible callback */</span>
+<span class="kw4">int</span> overNineThousand<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">return</span> <span class="br0">(</span><span class="kw3">rand</span><span class="br0">(</span><span class="br0">)</span> <span class="sy0">%</span> <span class="nu0">1000</span><span class="br0">)</span> <span class="sy0">+</span> <span class="nu0">9001</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/* Another possible callback. */</span>
+<span class="kw4">int</span> meaningOfLife<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">return</span> <span class="nu0">42</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="coMULTI">/* Here we call PrintTwoNumbers() with three different callbacks. */</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>
+    PrintTwoNumbers<span class="br0">(</span><span class="sy0">&amp;</span><span class="kw3">rand</span><span class="br0">)</span><span class="sy0">;</span>
+    PrintTwoNumbers<span class="br0">(</span><span class="sy0">&amp;</span>overNineThousand<span class="br0">)</span><span class="sy0">;</span>
+    PrintTwoNumbers<span class="br0">(</span><span class="sy0">&amp;</span>meaningOfLife<span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>This should provide output similar to:</p>
+<pre>
+ 125185 and 89187225
+ 9084 and 9441
+ 42 and 42
+</pre>
+<p>Note how this is different from simply passing the output of the callback function to the calling function, PrintTwoNumbers() - rather than printing the same value twice, the PrintTwoNumbers calls the callback as many times as it requires. This is one of the two main advantages of callbacks.</p>
+<p>The other advantage is that the calling function can pass whatever parameters it wishes to the called functions (not shown in the above example). This allows correct <a href="http://en.m.wikipedia.org/wiki/Information_hiding" title="Information hiding">information hiding</a>: the code that passes a callback to a calling function does not need to know the parameter values that will be passed to the function. If it only passed the return value, then the parameters would need to be exposed publicly.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text in the vicinity of this tag needs examples for clarification from July 2012">examples needed</span></a></i>]</sup></p>
+<p>Another example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">//$ cat cbtest.c</span>
+<span class="co1">//# Simple C program , the function is inside same file. the function can later be put into external library like a shared object</span>
+ 
+<span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;string.h&gt;</span>
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+ 
+<span class="kw4">typedef</span> <span class="kw4">struct</span> _MyMsg
+<span class="br0">{</span>
+  <span class="kw4">int</span> appId<span class="sy0">;</span>
+  <span class="kw4">char</span> msgbody<span class="br0">[</span><span class="nu0">32</span><span class="br0">]</span><span class="sy0">;</span>
+<span class="br0">}</span> MyMsg<span class="sy0">;</span>
+ 
+<span class="kw4">void</span> myfunc<span class="br0">(</span> MyMsg <span class="sy0">*</span>msg<span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw1">if</span> <span class="br0">(</span><span class="kw3">strlen</span><span class="br0">(</span>msg<span class="sy0">-&gt;</span>msgbody<span class="br0">)</span>  <span class="sy0">&gt;</span> <span class="nu0">0</span> <span class="br0">)</span>
+  <span class="br0">{</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">" App Id = %d <span class="es1">\n</span> Msg = %s <span class="es1">\n</span>"</span><span class="sy0">,</span>msg<span class="sy0">-&gt;</span>appId<span class="sy0">,</span> msg<span class="sy0">-&gt;</span>msgbody<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+  <span class="kw1">else</span>
+  <span class="br0">{</span>
+    <span class="kw3">printf</span><span class="br0">(</span><span class="st0">" App Id = %d <span class="es1">\n</span> Msg =  No Msg<span class="es1">\n</span>"</span><span class="sy0">,</span>msg<span class="sy0">-&gt;</span>appId<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> <span class="br0">(</span><span class="sy0">*</span>callback<span class="br0">)</span><span class="br0">(</span><span class="kw4">void</span> <span class="sy0">*</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Prototype definition</span>
+ 
+main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+  MyMsg msg1<span class="sy0">;</span>
+  msg1.<span class="me1">appId</span> <span class="sy0">=</span> <span class="nu0">100</span><span class="sy0">;</span>
+  <span class="kw3">strcpy</span><span class="br0">(</span>msg1.<span class="me1">msgbody</span><span class="sy0">,</span> <span class="st0">"This is a test<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">//Register</span>
+  callback <span class="sy0">=</span> <span class="br0">(</span><span class="kw4">void</span> <span class="sy0">*</span><span class="br0">)</span> myfunc <span class="sy0">;</span>
+  callback<span class="br0">(</span><span class="br0">(</span>MyMsg <span class="sy0">*</span><span class="br0">)</span> <span class="sy0">&amp;</span>msg1<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The output after compilation:</p>
+<pre>
+$ gcc cbtest.c
+
+$ ./a.out
+
+ App Id = 100
+ Msg = This is a test
+
+</pre>
+<p>This information hiding means that callbacks can be used when communicating between processes or threads, or through serialised communications and tabular data.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text in the vicinity of this tag needs clarification or removal of jargon from August 2011">clarification needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="Callback_Design">Callback Design</span>
+</h2>
+<p>There are two types of callbacks: blocking callbacks (also known as synchronous callbacks or just callbacks) and deferred callbacks (also known as asynchronous callbacks). These two design choices differ in how they control data flow at runtime. While blocking callbacks are invoked before a function returns (in the example above: main), deferred callbacks may be invoked after a function returns. The above is an example of a blocking callback. Deferred callbacks are often used in the context of I/O operations or event handling. While deferred callbacks imply the existence of multiple threads, blocking callbacks are often (but not always) relying on a single thread. Therefore blocking callbacks are no common cause for synchronization.</p>
+<h2> <span class="mw-headline" id="Implementation">Implementation</span>
+</h2>
+<p>The form of a callback varies among <a href="Programming_language" title="Programming language">programming languages</a>.</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a> and <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> allow <a href="Function_pointer" title="Function pointer">function pointers</a> as arguments to other functions. Other languages, such as <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="http://en.m.wikipedia.org/wiki/Lua" title="Lua">Lua</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="Perl" title="Perl">Perl</a><sup id="cite_ref-0" class="reference"><a href="Callback_(computer_science)#cite_note-0"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-1" class="reference"><a href="Callback_(computer_science)#cite_note-1"><span>[</span>2<span>]</span></a></sup> and <a href="PHP" title="PHP">PHP</a>, simply allow the name of a function or a function literal (lambda expression) to be passed through.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/List_of_CLI_languages" title="List of CLI languages">CLI languages</a> such as <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="http://en.m.wikipedia.org/wiki/VB.NET" title="VB.NET" class="mw-redirect">VB.NET</a>, provides a <a href="http://en.m.wikipedia.org/wiki/Type_safety" title="Type safety">type-safe</a> encapsulating reference, a '<a href="http://en.m.wikipedia.org/wiki/Delegate_(CLI)" title="Delegate (CLI)">delegate</a>', to define well-typed <a href="Function_pointer" title="Function pointer">function pointers</a>. These can be used as callbacks.</li>
+<li>Events and <a href="http://en.m.wikipedia.org/wiki/Event_handlers" title="Event handlers" class="mw-redirect">event handlers</a>, as used in .NET languages, provide generalized syntax for callbacks.</li>
+<li>Functional languages generally support <a href="http://en.m.wikipedia.org/wiki/First-class_functions" title="First-class functions" class="mw-redirect">first-class functions</a>, which can be passed as callbacks to other functions, stored as data or returned from functions.</li>
+<li>Some languages, such as <a href="http://en.m.wikipedia.org/wiki/Algol_68" title="Algol 68" class="mw-redirect">Algol 68</a>, <a href="Perl" title="Perl">Perl</a>, <a href="Smalltalk" title="Smalltalk">Smalltalk</a>, newer versions of C# and VB.NET as well as most functional languages, allow unnamed blocks of code (<a href="http://en.m.wikipedia.org/wiki/Lambda_expression" title="Lambda expression">lambda expressions</a>) to be supplied instead of references to functions defined elsewhere.</li>
+<li>In some languages, e.g. <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="Perl" title="Perl">Perl</a>, <a href="Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="PHP" title="PHP">PHP</a> (since 5.3.0)<sup id="cite_ref-2" class="reference"><a href="Callback_(computer_science)#cite_note-2"><span>[</span>3<span>]</span></a></sup>, and many others, such functions can be <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closures</a>, i.e. they can access and modify variables locally defined in the context in which the function was defined.</li>
+<li>In <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> languages without function-valued arguments, such as <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, can be simulated by passing an instance of an abstract class or interface, of which the receiver will call one or more methods, while the calling end provides a concrete implementation. Such objects are effectively a bundle of callbacks, plus the data they need to manipulate. They are useful in implementing various <a href="http://en.m.wikipedia.org/wiki/Design_patterns_(computer_science)" title="Design patterns (computer science)" class="mw-redirect">design patterns</a> such as <a href="http://en.m.wikipedia.org/wiki/Visitor_pattern" title="Visitor pattern">Visitor</a>, <a href="http://en.m.wikipedia.org/wiki/Observer_pattern" title="Observer pattern">Observer</a>, and <a href="http://en.m.wikipedia.org/wiki/Strategy_pattern" title="Strategy pattern">Strategy</a>.</li>
+<li>C++ allows objects to provide their own implementation of the function call operation. The <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> accepts these objects (called <i><a href="http://en.m.wikipedia.org/wiki/Function_object" title="Function object">functors</a></i>), as well as function pointers, as parameters to various polymorphic algorithms</li>
+</ul>
+<p><br></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Continuation-passing_style" title="Continuation-passing style">Continuation-passing style</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Signals_and_slots" title="Signals and slots">Signals and slots</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Event_loop" title="Event loop">Event loop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Libsigc%2B%2B" title="Libsigc++">libsigc++</a>, a callback library for C++</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Implicit_invocation" title="Implicit invocation">Implicit invocation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/User_exit" title="User exit">User exit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inversion_of_control" title="Inversion of control">Inversion of control</a></li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://gotw.ca/gotw/083.htm">Style Case Study #2: Generic Callbacks</a></li>
+<li><a rel="nofollow" class="external text" href="http://partow.net/programming/templatecallback/index.html">C++ Callback Solution</a></li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/msdnmag/issues/02/12/basicinstincts">Basic Instincts: Implementing Callback Notifications Using Delegates</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.codeproject.com/aspnet/ScriptCallbackFramework.asp">Implement Script Callback Framework in ASP.NET</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.javaworld.com/javaworld/javatips/jw-javatip10.html">Implement callback routines in Java</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.comp.ua.ac.be/publications/files/Adapter-Para04.pdf">Interfacing C++ member functions with C libraries</a></li>
+</ul>
+<p><br></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Callback_(computer_science)#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.unix.org.ua/orelly/perl/cookbook/ch11_05.htm">"Perl Cookbook - 11.4. Taking References to Functions"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unix.org.ua/orelly/perl/cookbook/ch11_05.htm">http://www.unix.org.ua/orelly/perl/cookbook/ch11_05.htm</a></span><span class="reference-accessdate">. Retrieved 2008-03-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Perl+Cookbook+-+11.4.+Taking+References+to+Functions&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.unix.org.ua%2Forelly%2Fperl%2Fcookbook%2Fch11_05.htm&amp;rfr_id=info:sid/en.wikipedia.org:Callback_(computer_programming)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Callback_(computer_science)#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.unix.org.ua/orelly/perl/advprog/ch04_02.htm">"Advanced Perl Programming - 4.2 Using Subroutine References"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unix.org.ua/orelly/perl/advprog/ch04_02.htm">http://www.unix.org.ua/orelly/perl/advprog/ch04_02.htm</a></span><span class="reference-accessdate">. Retrieved 2008-03-03</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Advanced+Perl+Programming+-+4.2+Using+Subroutine+References&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.unix.org.ua%2Forelly%2Fperl%2Fadvprog%2Fch04_02.htm&amp;rfr_id=info:sid/en.wikipedia.org:Callback_(computer_programming)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Callback_(computer_science)#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://php.net/manual/en/functions.anonymous.php">"PHP Language Reference - Anonymous functions"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://php.net/manual/en/functions.anonymous.php">http://php.net/manual/en/functions.anonymous.php</a></span><span class="reference-accessdate">. Retrieved 2011-06-08</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=PHP+Language+Reference+-+Anonymous+functions&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fphp.net%2Fmanual%2Fen%2Ffunctions.anonymous.php&amp;rfr_id=info:sid/en.wikipedia.org:Callback_(computer_programming)"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 10 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/R%C3%BCckruffunktion" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Callback_(inform%C3%A1tica)" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Fonction_de_rappel" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%BD%9C%EB%B0%B1" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Callback" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%B3%E3%83%BC%E3%83%AB%E3%83%90%E3%83%83%E3%82%AF_(%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Attendekall" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Callback_(programowanie)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Callback_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%9B%9E%E8%B0%83%E5%87%BD%E6%95%B0" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Callback_(computer_science)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Callback_(computer_science)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Callback+%28computer+programming%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

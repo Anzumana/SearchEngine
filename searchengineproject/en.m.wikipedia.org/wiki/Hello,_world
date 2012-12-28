@@ -1,0 +1,405 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Hello world program - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Hello world program","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Hello_world_program" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Hello+world+program"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Hello world program</h1>			
+<div class="dablink">"Hello World" redirects here. For the <a href="http://en.m.wikipedia.org/wiki/Iamus_(computer)" title="Iamus (computer)">Iamus (computer)</a> composition, see <a href="http://en.m.wikipedia.org/wiki/Hello_World!_(composition)" title="Hello World! (composition)">Hello World! (composition)</a>.  For the 2009 compilation album by <a href="http://en.m.wikipedia.org/wiki/Michael_Jackson" title="Michael Jackson">Michael Jackson</a>, see <a href="http://en.m.wikipedia.org/wiki/Hello_World:_The_Motown_Solo_Collection" title="Hello World: The Motown Solo Collection">Hello World: The Motown Solo Collection</a>.  For the song by Lady Antebellum, see <a href="http://en.m.wikipedia.org/wiki/Hello_World_(song)" title="Hello World (song)">Hello World (song)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Hello_World_Perl_GTk2_2012-12-04.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hello_World_Perl_GTk2_2012-12-04.png/220px-Hello_World_Perl_GTk2_2012-12-04.png" width="220" height="235" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hello_World_Perl_GTk2_2012-12-04.png/330px-Hello_World_Perl_GTk2_2012-12-04.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hello_World_Perl_GTk2_2012-12-04.png/440px-Hello_World_Perl_GTk2_2012-12-04.png 2x"></a>
+<div class="thumbcaption">
+
+A <a href="Graphical_user_interface" title="Graphical user interface">GUI</a> "Hello World" program, written in <a href="Perl" title="Perl">Perl</a>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:PSP-Homebrew.jpeg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/220px-PSP-Homebrew.jpeg" width="220" height="165" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/330px-PSP-Homebrew.jpeg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8c/PSP-Homebrew.jpeg/440px-PSP-Homebrew.jpeg 2x"></a>
+<div class="thumbcaption">
+
+It is possible to execute unsigned code on Sony's <a href="http://en.m.wikipedia.org/wiki/PlayStation_Portable_homebrew" title="PlayStation Portable homebrew">PlayStation Portable</a>.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:UT_HelloWorld.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/UT_HelloWorld.jpg/220px-UT_HelloWorld.jpg" width="220" height="216" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/83/UT_HelloWorld.jpg/330px-UT_HelloWorld.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/83/UT_HelloWorld.jpg/440px-UT_HelloWorld.jpg 2x"></a>
+<div class="thumbcaption">
+
+A light-programmable <a href="http://en.m.wikipedia.org/wiki/Biofilm" title="Biofilm">biofilm</a> displaying the Hello World message</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:CNC_Hello_World.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/00/CNC_Hello_World.jpg/220px-CNC_Hello_World.jpg" width="220" height="146" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/00/CNC_Hello_World.jpg/330px-CNC_Hello_World.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/00/CNC_Hello_World.jpg/440px-CNC_Hello_World.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/CNC" title="CNC" class="mw-redirect">CNC</a> machining test in <a href="http://en.m.wikipedia.org/wiki/Perspex" title="Perspex" class="mw-redirect">Perspex</a>
+</div>
+</div>
+</div>
+<p>A <b>"Hello world" program</b> is a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a> that outputs "Hello, world" on a <a href="http://en.m.wikipedia.org/wiki/Display_device" title="Display device">display device</a>. Because it is typically one of the simplest programs possible in most <a href="Programming_language" title="Programming language">programming languages</a>, it is by tradition often used to illustrate to beginners the most basic syntax of a programming language, or to verify that a language or system is operating correctly.</p>
+<p>In a device that does not display text, a simple program to produce a signal, such as turning on an <a href="http://en.m.wikipedia.org/wiki/Light-emitting_diode" title="Light-emitting diode">LED</a>, is often substituted for "Hello world" as the introductory program.</p>
+<h2> <span class="mw-headline" id="Purpose">Purpose</span>
+</h2>
+<p>A "Hello World" program has become the traditional first program that many people learn. In general, it is simple enough so that people who have no experience with computer programming can easily understand it, especially with the guidance of a teacher or a written guide. Using this simple program as a basis, <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a> principles or elements of a specific programming language can be explained to novice programmers. Experienced programmers learning new languages can also gain a lot of information about a given language's syntax and structure from a hello world program.</p>
+<p>In addition, hello world can be a useful <a href="http://en.m.wikipedia.org/wiki/Sanity_test" title="Sanity test" class="mw-redirect">sanity test</a> to make sure that a language's <a href="Compiler" title="Compiler">compiler</a>, <a href="http://en.m.wikipedia.org/wiki/Development_environment_(software_development_process)" title="Development environment (software development process)">development environment</a>, and <a href="http://en.m.wikipedia.org/wiki/Run-time_environment" title="Run-time environment" class="mw-redirect">run-time environment</a> are correctly installed. Configuring a complete programming <a href="http://en.m.wikipedia.org/wiki/Toolchain" title="Toolchain">toolchain</a> from scratch to the point where even trivial programs can be compiled and run can involve substantial amounts of work. For this reason, a simple program is used first when testing a new tool chain.</p>
+<p>"Hello world" is also used by computer hackers as a <a href="http://en.m.wikipedia.org/wiki/Proof_of_concept" title="Proof of concept">proof of concept</a> that arbitrary code can be executed through an <a href="http://en.m.wikipedia.org/wiki/Exploit_(computer_security)" title="Exploit (computer security)">exploit</a> where the system designers did not intend code to be executed—for example, on Sony's <a href="http://en.m.wikipedia.org/wiki/PlayStation_Portable" title="PlayStation Portable">PlayStation Portable</a>. This is the first step in using homemade content ("<a href="http://en.m.wikipedia.org/wiki/Homebrew_(video_games)" title="Homebrew (video games)">home brew</a>") on such a device.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Original_research" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>may contain <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Hello_world_program&amp;action=edit">improve it</a> by <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="http://en.m.wikipedia.org/wiki/Wikipedia:References" title="Wikipedia:References" class="mw-redirect">references</a>. Statements consisting only of original research may be removed.</span> <small><i>(September 2012)</i></small> </span></td>
+</tr></table>
+<p>While small test programs existed since the development of programmable <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">computers</a>, the tradition of using the phrase "Hello, world!" as a test message was influenced by an example program in the seminal book <i><a href="The_C_Programming_Language_(book)" title="The C Programming Language (book)" class="mw-redirect">The C Programming Language</a></i>. The example program from that book prints "<code>hello, world</code>" (without capital letters or exclamation mark), and was inherited from a 1974 <a href="Bell_Labs" title="Bell Labs">Bell Laboratories</a> internal memorandum by <a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>, <i>Programming in C: A Tutorial</i>, which contains the first known version:</p>
+<div style="overflow:auto" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ main<span class="br0">(</span><span class="br0">)</span>
+ <span class="br0">{</span>
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"hello, world"</span><span class="br0">)</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The first known instance of the usage of the words "hello" and "world" together in computer literature occurred earlier, in Kernighan's 1972 <i>Tutorial Introduction to the Language <a href="B_(programming_language)" title="B (programming language)">B</a></i>,<sup id="cite_ref-langb_1-0" class="reference"><a href="Hello,_world#cite_note-langb-1"><span>[</span>1<span>]</span></a></sup> with the following code:</p>
+<div style="overflow:auto" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="text source-text">
+<pre class="de1">
+ main( ) {
+   extrn a, b, c;
+   putchar(a); putchar(b); putchar(c); putchar('!*n');
+ }
+ a 'hell';
+ b 'o, w';
+ c 'orld';
+</pre>
+</div>
+</div>
+<p><br>
+For modern languages, the hello world program tends to subtly grow in sophistication. For example, the <a href="http://en.m.wikipedia.org/wiki/Go_programming_language" title="Go programming language" class="mw-redirect">Go programming language</a> introduced a multilingual hello world program,<sup id="cite_ref-2" class="reference"><a href="Hello,_world#cite_note-2"><span>[</span>2<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun</a> demonstrated a <a href="Java_(programming_language)" title="Java (programming language)">Java</a> hello world based on <a href="http://en.m.wikipedia.org/wiki/Scalable_vector_graphics" title="Scalable vector graphics" class="mw-redirect">scalable vector graphics</a>,<sup id="cite_ref-3" class="reference"><a href="Hello,_world#cite_note-3"><span>[</span>3<span>]</span></a></sup> and the <a href="http://en.m.wikipedia.org/wiki/XL_(programming_language)" title="XL (programming language)">XL</a> programming language features a spinning Earth hello world using 3D graphics.<sup id="cite_ref-4" class="reference"><a href="Hello,_world#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Variations">Variations</span>
+</h2>
+<p>There are many variations on the punctuation and casing of the phrase. Variations include the presence or absence of the comma and exclamation mark, and the capitalization of the 'H', both the 'H' and the 'W', or neither. Some languages are forced to implement different forms, such as "<code>HELLO WORLD!</code>", on systems that support only capital letters, while many "hello world" programs in <a href="http://en.m.wikipedia.org/wiki/Esoteric_programming_language" title="Esoteric programming language">esoteric languages</a> print out a slightly modified string. For example, the first non-trivial <a href="http://en.m.wikipedia.org/wiki/Malbolge" title="Malbolge">Malbolge</a> program printed "HEllO WORld", this having been determined to be <a href="http://en.m.wikipedia.org/wiki/Principle_of_good_enough" title="Principle of good enough">good enough</a>.</p>
+<p>There are variations in spirit, as well. <a href="Functional_programming" title="Functional programming">Functional programming</a> languages, like <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> and <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, tend to substitute a <a href="http://en.m.wikipedia.org/wiki/Factorial" title="Factorial">factorial</a> program for Hello World, as the former emphasizes recursive techniques, which are a large part of functional programming, while the latter emphasizes I/O, which violates the spirit of pure functional programming by producing side effects.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Debian" title="Debian">Debian</a> and <a href="http://en.m.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a> <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> distributions provide the "hello world" program through the <a href="http://en.m.wikipedia.org/wiki/Advanced_Packaging_Tool" title="Advanced Packaging Tool">apt</a> packaging system; this allows users to simply type "apt-get install hello" for the program to be installed, along with any <a href="http://en.m.wikipedia.org/wiki/Dependency_(software)" title="Dependency (software)" class="mw-redirect">software dependencies</a>. While of itself useless, it serves as a <a href="http://en.m.wikipedia.org/wiki/Sanity_check" title="Sanity check" class="mw-redirect">sanity check</a> and a simple example to newcomers of how to install a package. It is significantly more useful for developers, however, as it provides an example of how to create a <a href="http://en.m.wikipedia.org/wiki/.deb" title=".deb" class="mw-redirect">.deb</a> package, either traditionally or using <a href="http://en.m.wikipedia.org/wiki/Debhelper" title="Debhelper">debhelper</a>, and the version of hello used, <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> hello, serves as an example of how to write a GNU program.<sup id="cite_ref-5" class="reference"><a href="Hello,_world#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science  portal</a></td>
+</tr>
+<tr valign="middle">
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computing" title="Portal:Computing" class="mw-redirect">Computing  portal</a></td>
+</tr>
+<tr valign="middle">
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:8bit-dynamiclist.gif" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/8bit-dynamiclist.gif/28px-8bit-dynamiclist.gif" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/1/1d/8bit-dynamiclist.gif 1.5x, //upload.wikimedia.org/wikipedia/commons/1/1d/8bit-dynamiclist.gif 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computer_programming" title="Portal:Computer programming">Computer programming  portal</a></td>
+</tr>
+</table>
+</div>
+<div class="column-count column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/99_Bottles_of_Beer#References_in_science" title="99 Bottles of Beer">"99 Bottles Of Beer" as used in computer science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Foobar" title="Foobar">Foobar</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hello_world_program_examples" title="Hello world program examples" class="mw-redirect">Hello world program examples</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Just_another_Perl_hacker" title="Just another Perl hacker">Just another Perl hacker</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_basic_computer_science_topics" title="List of basic computer science topics" class="mw-redirect">List of basic computer science topics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Trabb_Pardo-Knuth_algorithm" title="Trabb Pardo-Knuth algorithm" class="mw-redirect">Trabb Pardo-Knuth algorithm</a></li>
+<li>At <a href="Wikibooks" title="Wikibooks">Wikibooks</a>:
+<ul>
+<li><a href="http://en.wikibooks.org/wiki/Algorithm_Implementation/Mathematics/Fibonacci_Number_Program" class="extiw" title="b:Algorithm Implementation/Mathematics/Fibonacci Number Program">Algorithm Implementation/Mathematics/Fibonacci Number Program</a></li>
+<li><a href="http://en.wikibooks.org/wiki/Computer_Programming/Hello_world" class="extiw" title="b:Computer Programming/Hello world">Computer Programming/Hello world</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="clear:both;"></div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-langb-1">
+<span class="mw-cite-backlink"><b><a href="Hello,_world#cite_ref-langb_1-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/bintro.html">"The Programming Language B"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/bintro.html">http://cm.bell-labs.com/cm/cs/who/dmr/bintro.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Programming+Language+B&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fbintro.html&amp;rfr_id=info:sid/en.wikipedia.org:Hello_world_program"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Hello,_world#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://golang.org/doc/go_tutorial.html#tmp_20">A Tutorial for the Go Programming Language.</a> The Go Programming Language. Retrieved July 26, 2011.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Hello,_world#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation news">Jolif, Christophe (January 2003). "Bringing SVG Power to Java Applications". <i>Sun Developer Network</i>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Bringing+SVG+Power+to+Java+Applications&amp;rft.jtitle=Sun+Developer+Network&amp;rft.aulast=Jolif&amp;rft.aufirst=Christophe&amp;rft.au=Jolif%2C%26%2332%3BChristophe&amp;rft.date=January+2003&amp;rfr_id=info:sid/en.wikipedia.org:Hello_world_program"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Hello,_world#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web">de Dinechin, Christophe (July 24, 2010). <a rel="nofollow" class="external text" href="http://grenouillebouillie.wordpress.com/2010/07/24/hello-world/">"Hello world!"</a>. Grenouille Bouillie<span class="printonly">. <a rel="nofollow" class="external free" href="http://grenouillebouillie.wordpress.com/2010/07/24/hello-world/">http://grenouillebouillie.wordpress.com/2010/07/24/hello-world/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Hello+world%21&amp;rft.atitle=&amp;rft.aulast=de+Dinechin&amp;rft.aufirst=Christophe&amp;rft.au=de+Dinechin%2C%26%2332%3BChristophe&amp;rft.date=July+24%2C+2010&amp;rft.pub=Grenouille+Bouillie&amp;rft_id=http%3A%2F%2Fgrenouillebouillie.wordpress.com%2F2010%2F07%2F24%2Fhello-world%2F&amp;rfr_id=info:sid/en.wikipedia.org:Hello_world_program"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Hello,_world#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.scriptol.com/programming/hello-world.php">List of Hello World Programs in 200 Programming Languages.</a> Scriptol.com</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/37px-Wiktionary-logo-en.svg.png" width="37" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Look up <i><b><a href="http://en.wiktionary.org/wiki/Hello_World" class="extiw" title="wiktionary:Hello World">Hello World</a></b></i> in Wiktionary, the free dictionary.</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Hello_World" class="extiw" title="commons:Category:Hello World">Hello World</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.helloworldexample.net/">Hello World Examples</a> Hello World examples in many different programming languages.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/bwk-tutor.html#simple-c"><i>Programming in C: A Tutorial</i></a> by Brian Kernighan — internal Bell Labs memo, containing the above C program</li>
+<li><a rel="nofollow" class="external text" href="http://boredzo.org/helloworld/">"Hello World" in four different ways - Worst possible to best possible</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.poromenos.org/node/89">The "Hello World" curve</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.roesler-ac.de/wolfram/hello.htm">Hello World collection</a> with 400+ programs, including "Hello World" in 60+ human languages</li>
+<li><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/ms676538(VS.85).aspx">MSDN – "Hello Data" example database</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://hellowiki.org">HelloWiki.org</a>, a wiki based Hello World collection, with helpful comments and links for starting.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.visual-prolog.com/video/HelloWorld/default.htm">Hello World! Visual Prolog Video Tutorial</a> demonstrates basic IDE features while creating a <a href="http://en.m.wikipedia.org/wiki/Visual_Prolog" title="Visual Prolog">Visual Prolog</a> "Hello World!" program.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://theunsungheroesofit.com/helloworld">The unsung heroes of IT: hello world</a> a site celebrating 40 years of hello world</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autolistlapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Standard_test_item" title="Template:Standard test item"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Standard_test_item" title="Template talk:Standard test item"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Standard_test_item&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Standard test items</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Pangram" title="Pangram">Pangram</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reference_implementation" title="Reference implementation">Reference implementation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_test_image" title="Standard test image">Standard test image</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Television" title="Television">Television</a> (<a href="http://en.m.wikipedia.org/wiki/Test_card" title="Test card">test card</a>)</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SMPTE_color_bars" title="SMPTE color bars">SMPTE color bars</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Indian_Head_test_card" title="Indian Head test card">Indian Head test card</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Test_Card_F" title="Test Card F">Test Card F</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Philips_PM5544" title="Philips PM5544">Philips PM5544</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">Computer programming</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Hello world program</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quine_(computing)" title="Quine (computing)">Quine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Trabb_Pardo%E2%80%93Knuth_algorithm" title="Trabb Pardo–Knuth algorithm">Trabb Pardo–Knuth algorithm</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Data_compression" title="Data compression">Data compression</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Calgary_Corpus" title="Calgary Corpus">Calgary Corpus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Canterbury_Corpus" title="Canterbury Corpus">Canterbury Corpus</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/3D_computer_graphics" title="3D computer graphics">3D computer graphics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cornell_Box" title="Cornell Box">Cornell Box</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stanford_Bunny" title="Stanford Bunny">Stanford Bunny</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stanford_Dragon" title="Stanford Dragon">Stanford Dragon</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Utah_teapot" title="Utah teapot">Utah teapot</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Typography" title="Typography">Typography</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Lorem_ipsum" title="Lorem ipsum">Lorem ipsum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/The_quick_brown_fox_jumps_over_the_lazy_dog" title="The quick brown fox jumps over the lazy dog">The quick brown fox jumps over the lazy dog</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sample_font_displays_in_other_languages" title="Sample font displays in other languages" class="mw-redirect">Sample font displays in other languages</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EICAR_test_file" title="EICAR test file">EICAR test file</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GTUBE" title="GTUBE">GTUBE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lenna" title="Lenna">Lenna</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tom%27s_Diner#The_.22Mother_of_the_MP3.22" title="Tom's Diner">"Tom's Diner"</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:HelloWorld.svg" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/50px-HelloWorld.svg.png" width="50" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/75px-HelloWorld.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/100px-HelloWorld.svg.png 2x"></a></td>
+<td>
+<i>This <a href="Programming_language" title="Programming language">programming language</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Hello_world_program&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Prog-lang-stub" title="Template:Prog-lang-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Prog-lang-stub" title="Template talk:Prog-lang-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Prog-lang-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 50 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC_%D8%A3%D9%87%D9%84%D8%A7_%D8%A8%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://az.m.wikipedia.org/wiki/Salam_d%C3%BCnya_proqram%C4%B1_(Hello_World)" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bg.m.wikipedia.org/wiki/Hello,_world" lang="bg" hreflang="bg">български</a></li><li><a href="http://bar.m.wikipedia.org/wiki/Servus-Woid-Programm" lang="bar" hreflang="bar">Boarisch</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Hello_world_program" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Hola_m%C3%B3n" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Hello_world" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Hello_world-program" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Hallo-Welt-Programm" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Hello_world" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A0%CF%81%CF%8C%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1_hello_world" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Hola_mundo" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Saluton,_Mondo!" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Kaixo_mundua" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/Hello_World" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Hello_world" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Hello_world_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hy.m.wikipedia.org/wiki/Hello,_world!" lang="hy" hreflang="hy">Հայերեն</a></li><li><a href="http://id.m.wikipedia.org/wiki/Hello_world" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ia.m.wikipedia.org/wiki/Hello_World" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://it.m.wikipedia.org/wiki/Hello_world" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%AA%D7%95%D7%9B%D7%A0%D7%99%D7%AA_Hello_world" lang="he" hreflang="he">עברית</a></li><li><a href="http://ka.m.wikipedia.org/wiki/Hello_world" lang="ka" hreflang="ka">ქართული</a></li><li><a href="http://hu.m.wikipedia.org/wiki/%E2%80%9EHell%C3%B3,_vil%C3%A1g!%E2%80%9D_program" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/Hello_World" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%B9%E0%B4%B2%E0%B5%8B_%E0%B4%B5%E0%B5%87%E0%B5%BE%E0%B4%A1%E0%B5%8D_(%E0%B4%95%E0%B4%AE%E0%B5%8D%E0%B4%AA%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%BC_%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%82)" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Hello_world" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Hello_world_(programma)" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Hello_world" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Hello,_world" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Hello_World" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Hello_world" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Programa_Ol%C3%A1_Mundo" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Program_Hello,_world!" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Hello,_world!" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sah.m.wikipedia.org/wiki/Hello_world" lang="sah" hreflang="sah">саха тыла</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Njatjeta_Bot%C3%AB_(programi)" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Hello_world_program" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Hello_world" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Pozdravljen,_svet" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/Hello_World" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Hello_World" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Hei_maailma_-ohjelma" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Hello_World" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%80%E0%B8%AE%E0%B8%A5%E0%B9%82%E0%B8%A5%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A5%E0%B8%94%E0%B9%8C" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Merhaba_d%C3%BCnya_program%C4%B1" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Hello_world!" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/Hello_World_Program" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Ch%C6%B0%C6%A1ng_tr%C3%ACnh_l%E1%BA%ADp_tr%C3%ACnh_Xin_ch%C3%A0o_th%E1%BA%BF_gi%E1%BB%9Bi" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Hello_World" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Hello,_world&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Hello,_world&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Hello+world+program&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

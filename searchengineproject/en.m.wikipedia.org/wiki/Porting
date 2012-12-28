@@ -1,0 +1,189 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Porting - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Porting","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Porting" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Porting"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Porting</h1>			
+<div class="dablink">This article is about moving software to a different system.  For engine tuning, see <a href="http://en.m.wikipedia.org/wiki/Porting_(engine)" title="Porting (engine)" class="mw-redirect">Porting (engine)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Original_research" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>may contain <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Porting&amp;action=edit">improve it</a> by <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="http://en.m.wikipedia.org/wiki/Wikipedia:References" title="Wikipedia:References" class="mw-redirect">references</a>. Statements consisting only of original research may be removed.</span> <small><i>(October 2008)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Porting&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(October 2008)</i></small> </span></td>
+</tr></table>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">software engineering</a>, <b>porting</b> is the process of adapting software so that an executable <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> can be created for a computing environment that is different from the one for which it was originally designed (e.g. different <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU</a>, <a href="Operating_system" title="Operating system">operating system</a>, or third party <a href="Library_(computer_science)" title="Library (computer science)" class="mw-redirect">library</a>). The term is also used when software/hardware is changed to make them usable in different environments.</p>
+<p>Software is <a href="Software_portability" title="Software portability">portable</a> when the cost of porting it to a new platform is less than the cost of writing it from scratch. The lower the cost of porting software, relative to its implementation cost, the more portable it is said to be.</p>
+<h2> <span class="mw-headline" id="Etymology">Etymology</span>
+</h2>
+<p>The term "port" is derived from the Latin <i><a href="http://en.wiktionary.org/wiki/port" class="extiw" title="wikt:port">portare</a></i>, meaning "to carry".<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from April 2010">citation needed</span></a></i>]</sup> When code is not compatible with a particular <a href="Operating_system" title="Operating system">operating system</a> or <a href="Computer_architecture" title="Computer architecture">architecture</a>, the code must be "carried" to the new system.</p>
+<p>The term is not generally applied to the process of adapting software to run with less memory on the same CPU and operating system, nor is it applied to the rewriting of source code in a different <a href="Programming_language" title="Programming language">language</a> (i.e. language conversion or translation).</p>
+<p>Software developers often claim that the software they write is <i><a href="http://en.m.wikipedia.org/wiki/Portability_(software)" title="Portability (software)" class="mw-redirect">portable</a></i>, meaning that little effort is needed to adapt it to a new environment. The amount of effort actually needed depends on several factors, including the extent to which the original environment (the <i>source platform</i>) differs from the new environment (the <i>target platform</i>), the experience of the original authors in knowing which <a href="Programming_language" title="Programming language">programming language</a> constructs and third party library calls are unlikely to be portable, and the amount of effort invested by the original authors in only using portable constructs (platform specific constructs often provide a cheaper solution).</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The number of significantly different CPUs and operating systems used on the desktop today is much smaller than in the past. The dominance of the <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">architecture</a> means that most desktop software is never ported to a different CPU. In that same market, the choice of operating systems has effectively been reduced to three: <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a>/<a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>, and <a href="Unix" title="Unix">Unix</a>/<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>. However, in the <a href="Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a> market, <a href="http://en.m.wikipedia.org/wiki/Portability_(software)" title="Portability (software)" class="mw-redirect">portability</a> remains a significant issue.</p>
+<p>International standards, such as those promulgated by the <a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a>, greatly facilitate porting by specifying details of the computing environment in a way that helps reduce differences between different standards-conforming <a href="http://en.m.wikipedia.org/wiki/Platform_(computing)" title="Platform (computing)" class="mw-redirect">platforms</a>. Writing software that stays within the bounds specified by these standards represents a practical although nontrivial effort. Porting such a program between two standards-compliant platforms (such as <a href="POSIX" title="POSIX">POSIX.1</a>) can be just a matter of loading the source code and <a href="http://en.m.wikipedia.org/wiki/Compiling" title="Compiling" class="mw-redirect">recompiling</a> it on the new platform. However, practitioners often find that various minor corrections are required, due to subtle platform differences. Most standards suffer from "gray areas" where differences in interpretation of standards lead to small variations from platform to platform.</p>
+<p>There also exists an ever-increasing number of tools to facilitate porting, such as the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a>, which provides consistent programming languages on different platforms, and <a href="http://en.m.wikipedia.org/wiki/Autotools" title="Autotools" class="mw-redirect">Autotools</a>, which automates the detection of minor variations in the environment and adapts the software accordingly before compilation.</p>
+<p>The compilers for some high-level programming languages (e.g. <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a>, <a href="http://en.m.wikipedia.org/wiki/Esterel" title="Esterel">Esterel</a>) gain portability by outputting source code in another high level <a href="Intermediate_language" title="Intermediate language">intermediate language</a> (such as <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>) for which compilers for many platforms are generally available.</p>
+<p>Two activities related to (but distinct from) porting are <a href="http://en.m.wikipedia.org/wiki/Emulator" title="Emulator">emulating</a> and <a href="http://en.m.wikipedia.org/wiki/Cross-compiling" title="Cross-compiling" class="mw-redirect">cross-compiling</a>.</p>
+<h2> <span class="mw-headline" id="Porting_compilers">Porting compilers</span>
+</h2>
+<p>Instead of translating directly into <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a>, modern <a href="http://en.m.wikipedia.org/wiki/Compilers" title="Compilers" class="mw-redirect">compilers</a> translate to a machine independent intermediate code in order to enhance portability of the compiler and minimize design efforts. The intermediate language defines a <i>virtual machine</i> that can execute all programs written in the intermediate language (a machine is defined by its language and vice versa).<sup id="cite_ref-Machinelanguage_1-0" class="reference"><a href="Porting#cite_note-Machinelanguage-1"><span>[</span>1<span>]</span></a></sup> The intermediate code instructions are translated into equivalent machine code sequences by a <i>code generator</i> to create executable code. It is also possible to skip the generation of machine code by actually implementing the virtual machine in machine code. This virtual machine implementation is called an <i>interpreter</i>, because it reads in the intermediate code instructions one by one and after each read executes the equivalent machine code sequences (the interpretation) of the read intermediate instruction directly.<sup id="cite_ref-2" class="reference"><a href="Porting#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The use of intermediate code enhances portability of the compiler, because only the machine dependent code (the interpreter or the code generator) of the compiler itself needs to be ported to the target machine. The remainder of the compiler can be imported as intermediate code and then further processed by the ported code generator or interpreter, thus producing the compiler software or directly executing the intermediate code on the interpreter. The machine independent part can be developed and tested on another machine (the <i>host machine</i>). This greatly reduces design efforts, because the machine independent part needs to be developed only once to create portable intermediate code.<sup id="cite_ref-3" class="reference"><a href="Porting#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>An interpreter is less complex and therefore easier to port than a code generator, because it is not able to do code optimizations due to its limited view of the program code (it only sees one instruction at a time and you need a sequence to do optimization). Some interpreters are extremely easy to port, because they only make minimal assumptions about the instruction set of the underlying hardware. As a result the virtual machine is even simpler than the target CPU.<sup id="cite_ref-4" class="reference"><a href="Porting#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Writing the compiler sources entirely in the programming language the compiler is supposed to translate, makes the following approach, better known as <i><a href="http://en.m.wikipedia.org/wiki/Bootstrapping_(compilers)" title="Bootstrapping (compilers)">compiler bootstrapping</a></i>, feasible on the target machine:</p>
+<ol>
+<li>Port the interpreter. This needs to be coded in <a href="http://en.m.wikipedia.org/wiki/Assembly_code" title="Assembly code" class="mw-redirect">assembly code</a>, using an already present <a href="http://en.m.wikipedia.org/wiki/Assembler" title="Assembler">assembler</a> on the target.</li>
+<li>Adapt the source of the code generator to the new machine.</li>
+<li>Execute the adapted source using the interpreter with the code generator source as input. This will generate the machine code for the code generator.</li>
+</ol>
+<p>The difficult part of coding the optimization routines is done using the high-level language instead of the assembly language of the target.</p>
+<p>According to the designers of the <a href="BCPL" title="BCPL">BCPL</a> language, interpreted code (in the BCPL case) is more compact than machine code; typically by a factor of two to one. Interpreted code however runs about ten times slower than compiled code on the same machine.<sup id="cite_ref-5" class="reference"><a href="Porting#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>The designers of the <a href="Java_(programming_language)" title="Java (programming language)">Java programming language</a> try to take advantage of the compactness of interpreted code, because in Java a program needs to be transmitted over the Internet before execution can start on the target's <a href="http://en.m.wikipedia.org/wiki/Java_Virtual_Machine" title="Java Virtual Machine" class="mw-redirect">Java Virtual Machine</a>.</p>
+<h2> <span class="mw-headline" id="Porting_in_gaming">Porting in gaming</span>
+</h2>
+<p>Porting is also the term used when a <a href="http://en.m.wikipedia.org/wiki/Video_game" title="Video game">video game</a> designed to run on one platform, be it an <a href="http://en.m.wikipedia.org/wiki/Arcade_game" title="Arcade game">arcade</a>, <a href="http://en.m.wikipedia.org/wiki/Video_game_console" title="Video game console">video game console</a>, or <a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">personal computer</a>, is converted to run on a different platform. Earlier video game "ports" were often not true ports, but rather reworked versions of the games. However, more and more video games are now being developed using software that can output code for one or more consoles as well as for a PC without the need for actual porting. Many early ports suffered significant gameplay quality issues because the hardware of PCs and consoles differed so dramatically.</p>
+<p><i>Arcade perfect</i> video games that have been ported from an <a href="http://en.m.wikipedia.org/wiki/Arcade_game" title="Arcade game">arcade</a> version to another platform, such as a console or computer, without any alterations to the game's workings. This means that graphics, sound and <a href="http://en.m.wikipedia.org/wiki/Gameplay" title="Gameplay">gameplay</a>, along with the game's other characteristics, are identical to the arcade version.</p>
+<p>"(Console) port" a game that was originally made for a console (such as Wii or Xbox 360) before an identical version is created which can be played on a <a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">personal computer</a> or any other console. This term has been widely used by the gaming community. The process of porting a game from a console to a PC is often regarded negatively due to the higher levels of performance that computers generally have been underutilized, partially due to console hardware being fixed throughout their run (with games being developed for console specs), while PCs become more powerful as hardware evolves, but also due to ported games sometimes being poorly optimized for PCs, or lazily ported.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Software_portability" title="Software portability">Software portability</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_binding" title="Language binding">Language binding</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Console_emulator" title="Console emulator" class="mw-redirect">Console emulator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_system_quality_attributes" title="List of system quality attributes" class="mw-redirect">List of system quality attributes</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Source_port" title="Source port">Source port</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Write_once,_compile_anywhere" title="Write once, compile anywhere">Write once, compile anywhere</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Poshlib" title="Poshlib">Poshlib</a></li>
+<li><a href="Cross-platform" title="Cross-platform">Cross-platform</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Program_transformation" title="Program transformation">Program transformation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mobile_number_portability" title="Mobile number portability">Mobile number portability</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Machinelanguage-1">
+<span class="mw-cite-backlink"><b><a href="Porting#cite_ref-Machinelanguage_1-0">^</a></b></span> <span class="reference-text">Tanenbaum 1984, Section 1.1 - LANGUAGES,LEVELS, AND VIRTUAL MACHINES, p. 3, describes the terms and their relations.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Porting#cite_ref-2">^</a></b></span> <span class="reference-text">Tanenbaum 1984, Chapter 1 - INTRODUCTION, p. 2, explains translation and interpretation.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Porting#cite_ref-3">^</a></b></span> <span class="reference-text">Richards,Whitby-Strevens 1984, Section 7.1 - Introduction, p. 124, explains compiler portability using intermediate code.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Porting#cite_ref-4">^</a></b></span> <span class="reference-text">Richards,Whitby-Strevens 1984, Section 7.4 - The bootstrapping process and INTCODE, p. 133, explains the role of the INTCODE interpreter.</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Porting#cite_ref-5">^</a></b></span> <span class="reference-text">Richards,Whitby-Strevens 1984, Section 7.4.3 - Example, p. 136, gives an example translation of a BCPL program into INTCODE for the interpreter.</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li>Martin Richards and Colin Whitby-Strevens (1984): <i>BCPL, the language and its compiler. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0521286816" class="internal mw-magiclink-isbn">ISBN 0-521-28681-6</a>.</i>
+</li>
+<li>Andrew S. Tanenbaum (1984): <i>Structured computer organization</i> 10th Print. <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0138546053" class="internal mw-magiclink-isbn">ISBN 0-13-854605-3</a>.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 19 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Portierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B2%DA%AF%D8%A7%D8%B1_%DA%A9%D8%B1%D8%AF%D9%86" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Portage_informatique" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%9D%B4%EC%8B%9D_(%EC%BB%B4%ED%93%A8%ED%8C%85)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Portiranje" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/Porting" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Portabilit%C3%A0" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/Porting" lang="he" hreflang="he">עברית</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Pengalihan_(perisian)" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Porten" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E7%A7%BB%E6%A4%8D_(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Portering" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Port_(oprogramowanie)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Portabilidade_(inform%C3%A1tica)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Portovanie" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Portering_(datorteknik)" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E7%A7%BB%E6%A4%8D" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Porting&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Porting&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Porting&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

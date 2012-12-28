@@ -1,0 +1,462 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Processing (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Processing (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Processing_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Processing+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Processing (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Processing</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Processing_Logo_Clipped.svg" class="image" title="Processing logo"><img alt="Processing logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/180px-Processing_Logo_Clipped.svg.png" width="180" height="180" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/270px-Processing_Logo_Clipped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/360px-Processing_Logo_Clipped.svg.png 2x"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style=""><a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">2001<span style="display:none"> (<span class="bday dtstart published updated">2001</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">1.5.1 (May 15, 2011<span style="display:none"> (<span class="bday dtstart published updated">2011-05-15</span>)</span>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style="">2.0 Beta 5 (October 22, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-22</span>)</span>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Strong_typing" title="Strong typing">strong</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Design_By_Numbers_(programming_language)" title="Design By Numbers (programming language)">Design By Numbers</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/OpenGL" title="OpenGL">OpenGL</a>, <a href="http://en.m.wikipedia.org/wiki/PostScript" title="PostScript">PostScript</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/GPL" title="GPL" class="mw-redirect">GPL</a>, <a href="http://en.m.wikipedia.org/wiki/LGPL" title="LGPL" class="mw-redirect">LGPL</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Usual <a href="Filename_extension" title="Filename extension">filename extensions</a>
+</th>
+<td class="" style="">.pde</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.processing.org">www.processing.org</a></span></td>
+</tr>
+</table>
+<p><b>Processing</b> is an <a href="Open-source_software" title="Open-source software">open source</a> <a href="Programming_language" title="Programming language">programming language</a> and <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) built for the electronic arts and visual design communities with the purpose of teaching the fundamentals of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a> in a visual context, and to serve as the foundation for electronic sketchbooks. The project was initiated in 2001 by <a href="http://en.m.wikipedia.org/wiki/C.E.B._Reas" title="C.E.B. Reas">Casey Reas</a> and <a href="http://en.m.wikipedia.org/wiki/Benjamin_Fry" title="Benjamin Fry">Benjamin Fry</a>, both formerly of the Aesthetics and Computation Group at the <a href="http://en.m.wikipedia.org/wiki/MIT_Media_Lab" title="MIT Media Lab">MIT Media Lab</a>. One of the stated aims of Processing is to act as a tool to get non-programmers started with programming, through the instant gratification of visual feedback. The language builds on the <a href="Java_(programming_language)" title="Java (programming language)">Java language</a>, but uses a simplified syntax and graphics programming model.</p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Processing_Logo_Clipped.svg" class="image" title="Processing logo"><img alt="Processing logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/80px-Processing_Logo_Clipped.svg.png" width="80" height="80" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/120px-Processing_Logo_Clipped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/59/Processing_Logo_Clipped.svg/160px-Processing_Logo_Clipped.svg.png 2x"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Processing-1.2.1.png" class="image"><img alt="Processing-1.2.1.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Processing-1.2.1.png/250px-Processing-1.2.1.png" width="250" height="300" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/57/Processing-1.2.1.png/375px-Processing-1.2.1.png 1.5x, //upload.wikimedia.org/wikipedia/commons/5/57/Processing-1.2.1.png 2x"></a><br><span style="">A screenshot of the Processing IDE</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">1.5.1 / May 15, 2011<span style="display:none"> (<span class="bday dtstart published updated">2011-05-15</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style="">2.0 Beta 5 / October 22, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-22</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style="">
+<a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/GLSL" title="GLSL">GLSL</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.processing.org">www.processing.org</a></span></td>
+</tr>
+</table>
+<p>Processing includes a <i>sketchbook</i>, a minimal alternative to an <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> (IDE) for organizing projects.</p>
+<p>Every Processing sketch is actually a subclass of the <code><a rel="nofollow" class="external text" href="http://processing.googlecode.com/svn/trunk/processing/build/javadoc/core/processing/core/PApplet.html">PApplet</a></code> Java class which implements most of the Processing language's features.</p>
+<p>When programming in Processing, all additional classes defined will be treated as <a href="http://en.m.wikipedia.org/wiki/Inner_class" title="Inner class">inner classes</a> when the code is translated into pure Java before compiling. This means that the use of static variables and methods in classes is prohibited unless you explicitly tell Processing that you want to code in pure Java mode.</p>
+<p>Processing also allows for users to create their own classes within the PApplet sketch. This allows for complex data types that can include any number of arguments and avoids the limitations of solely using standard data types such as: int (integer), char (character), float (real number), and color (RGB, ARGB, hex).</p>
+<h3> <span class="mw-headline" id="Internet_Info">Internet Info</span>
+</h3>
+<p>Accessing information from the web can be done through Processing with the use of an additional library created by Daniel Shiffman called simpleML, the library is imported at the beginning of the sketch to allow access to its resources, a simple example may look as follows:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw1">import</span> <span class="co2">simpleML.*</span><span class="sy0">;</span>
+PFont font<span class="sy0">;</span>
+HTMLRequest r<span class="sy0">;</span>
+<span class="kw3">String</span> html <span class="sy0">=</span> <span class="st0">" "</span><span class="sy0">;</span>
+<span class="kw4">float</span> startTime<span class="sy0">;</span>
+<span class="kw4">float</span> x <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="kw4">int</span> interval <span class="sy0">=</span> <span class="nu0">15000</span><span class="sy0">;</span>
+<span class="kw4">boolean</span> gotnew <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+<span class="kw4">int</span> America <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+ 
+<span class="kw4">void</span> setup<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  size<span class="br0">(</span><span class="nu0">600</span>,<span class="nu0">600</span><span class="br0">)</span><span class="sy0">;</span>
+  font <span class="sy0">=</span> loadFont<span class="br0">(</span><span class="st0">"Helvetica-48.vlw"</span><span class="br0">)</span><span class="sy0">;</span>
+  r <span class="sy0">=</span> <span class="kw1">new</span> HTMLRequest<span class="br0">(</span><span class="kw1">this</span>,<span class="st0">"http://www.cnn.com"</span><span class="br0">)</span><span class="sy0">;</span>
+  r.<span class="me1">makeRequest</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw4">void</span> draw<span class="br0">(</span><span class="br0">)</span><span class="br0">{</span>
+  <span class="kw4">float</span> now <span class="sy0">=</span> millis<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">if</span><span class="br0">(</span>now<span class="sy0">&gt;</span>startTime<span class="sy0">+</span>interval<span class="br0">)</span><span class="br0">{</span>
+    r.<span class="me1">makeRequest</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    startTime<span class="sy0">=</span>now<span class="sy0">;</span>
+  <span class="br0">}</span>
+  <span class="kw1">if</span><span class="br0">(</span>gotnew<span class="br0">)</span> <span class="br0">{</span>
+    gotnew <span class="sy0">=</span> <span class="kw2">false</span><span class="sy0">;</span>
+    America <span class="sy0">=</span> getMatchCount<span class="br0">(</span><span class="st0">"America"</span>, html<span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+  println<span class="br0">(</span><span class="st0">"America: "</span><span class="sy0">+</span>America<span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw4">void</span> netEvent<span class="br0">(</span>HTMLRequest r<span class="br0">)</span> <span class="br0">{</span>
+  html <span class="sy0">=</span> r.<span class="me1">readRawSource</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  gotnew <span class="sy0">=</span> <span class="kw2">true</span><span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw4">int</span> getMatchCount<span class="br0">(</span><span class="kw3">String</span> find, <span class="kw3">String</span> s<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw4">int</span> m <span class="sy0">=</span>s.<span class="me1">split</span><span class="br0">(</span>find<span class="br0">)</span>.<span class="me1">length</span><span class="sy0">;</span>
+  <span class="kw1">return</span> m<span class="sy0">-</span><span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p><br>
+This example will print the line, "America: #" the # indicating the number of times the word appears on the main page of cnn.com. After each fifteen second interval Processing will retrieve the information from the source page and update the println if the results have changed.</p>
+<h3> <span class="mw-headline" id="Hello_World">Hello World</span>
+</h3>
+<p>While the Java-like command</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+println<span class="br0">(</span><span class="st0">"Hello World!"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>is a valid <a href="http://en.m.wikipedia.org/wiki/Hello_World_program" title="Hello World program" class="mw-redirect">Hello World program</a> in Processing, the following code is a better example of the look and feel of the language.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw4">void</span> setup<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co1">// define the window size &amp; enable anti-aliasing</span>
+  size<span class="br0">(</span><span class="nu0">200</span>, <span class="nu0">200</span><span class="br0">)</span><span class="sy0">;</span>
+  smooth<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// Set "ink" color, font, and alignment for rendering text.</span>
+  fill<span class="br0">(</span><span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// Black</span>
+  <span class="co1">// set up the font (system default sans serif)</span>
+  textFont<span class="br0">(</span>createFont<span class="br0">(</span><span class="st0">"SansSerif"</span>,<span class="nu0">18</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  textAlign<span class="br0">(</span>CENTER<span class="br0">)</span><span class="sy0">;</span>
+  noLoop<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>  <span class="co1">// draw() executes only once</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> draw<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co1">// Draw text to screen using the previously set font.</span>
+  text<span class="br0">(</span><span class="st0">"Hello World!"</span>, width<span class="sy0">/</span><span class="nu0">2</span>, height<span class="sy0">/</span><span class="nu0">2</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="United_States_presidential_election_map">United States presidential election map</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Processing-sketch_jun11a.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Processing-sketch_jun11a.png/220px-Processing-sketch_jun11a.png" width="220" height="144" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Processing-sketch_jun11a.png/330px-Processing-sketch_jun11a.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Processing-sketch_jun11a.png/440px-Processing-sketch_jun11a.png 2x"></a>
+<div class="thumbcaption">
+
+Output of the following example</div>
+</div>
+</div>
+<p>The next example shows a map of the results of the <a href="http://en.m.wikipedia.org/wiki/United_States_presidential_election,_2008" title="United States presidential election, 2008">2008 USA presidential election</a>. Blue denotes states won by <a href="http://en.m.wikipedia.org/wiki/Barack_Obama" title="Barack Obama">Barack Obama</a>, and red denotes those won by <a href="http://en.m.wikipedia.org/wiki/John_McCain" title="John McCain">John McCain</a>. (Note: this map does not show the <a href="http://en.m.wikipedia.org/wiki/Electoral_College_(United_States)#Congressional_District_Method" title="Electoral College (United States)">Nebraska district in which Obama won an elector</a>.)</p>
+<div style="clear:both;"></div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+PShape usa<span class="sy0">;</span>
+PShape state<span class="sy0">;</span>
+<span class="kw3">String</span> <span class="br0">[</span><span class="br0">]</span> Obama  <span class="sy0">=</span> <span class="br0">{</span> <span class="st0">"HI"</span>, <span class="st0">"RI"</span>, <span class="st0">"CT"</span>, <span class="st0">"MA"</span>, <span class="st0">"ME"</span>, <span class="st0">"NH"</span>, <span class="st0">"VT"</span>, <span class="st0">"NY"</span>, <span class="st0">"NJ"</span>,
+         <span class="st0">"FL"</span>, <span class="st0">"NC"</span>, <span class="st0">"OH"</span>, <span class="st0">"IN"</span>, <span class="st0">"IA"</span>, <span class="st0">"CO"</span>, <span class="st0">"NV"</span>, <span class="st0">"PA"</span>, <span class="st0">"DE"</span>, <span class="st0">"MD"</span>, <span class="st0">"MI"</span>,
+         <span class="st0">"WA"</span>, <span class="st0">"CA"</span>, <span class="st0">"OR"</span>, <span class="st0">"IL"</span>, <span class="st0">"MN"</span>, <span class="st0">"WI"</span>, <span class="st0">"DC"</span>, <span class="st0">"NM"</span>, <span class="st0">"VA"</span> <span class="br0">}</span><span class="sy0">;</span>
+ 
+<span class="kw3">String</span> <span class="br0">[</span><span class="br0">]</span> McCain <span class="sy0">=</span> <span class="br0">{</span> <span class="st0">"AK"</span>, <span class="st0">"GA"</span>, <span class="st0">"AL"</span>, <span class="st0">"TN"</span>, <span class="st0">"WV"</span>, <span class="st0">"KY"</span>, <span class="st0">"SC"</span>, <span class="st0">"WY"</span>, <span class="st0">"MT"</span>,
+         <span class="st0">"ID"</span>, <span class="st0">"TX"</span>, <span class="st0">"AZ"</span>, <span class="st0">"UT"</span>, <span class="st0">"ND"</span>, <span class="st0">"SD"</span>, <span class="st0">"NE"</span>, <span class="st0">"MS"</span>, <span class="st0">"MO"</span>, <span class="st0">"AR"</span>, <span class="st0">"OK"</span>,
+         <span class="st0">"KS"</span>, <span class="st0">"LA"</span> <span class="br0">}</span><span class="sy0">;</span>
+ 
+<span class="kw4">void</span> setup<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  size<span class="br0">(</span><span class="nu0">950</span>, <span class="nu0">600</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// The file Blank_US_Map.svg can be found at Wikimedia Commons</span>
+  usa <span class="sy0">=</span> loadShape<span class="br0">(</span><span class="st0">"http://upload.wikimedia.org/wikipedia/commons/3/32/Blank_US_Map.svg"</span><span class="br0">)</span><span class="sy0">;</span>
+  smooth<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// Improves the drawing quality of the SVG</span>
+  noLoop<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> draw<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+  background<span class="br0">(</span><span class="nu0">255</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// Draw the full map</span>
+  shape<span class="br0">(</span>usa, <span class="nu0">0</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// Blue denotes states won by Obama</span>
+  statesColoring<span class="br0">(</span>Obama , color<span class="br0">(</span><span class="nu0">0</span>, <span class="nu0">0</span>, <span class="nu0">255</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// Red  denotes states won by McCain</span>
+  statesColoring<span class="br0">(</span>McCain, color<span class="br0">(</span><span class="nu0">255</span>, <span class="nu0">0</span>, <span class="nu0">0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="co1">// Save the map as image</span>
+  saveFrame<span class="br0">(</span><span class="st0">"map output.png"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">void</span> statesColoring<span class="br0">(</span><span class="kw3">String</span><span class="br0">[</span><span class="br0">]</span> states, <span class="kw4">int</span> c<span class="br0">)</span><span class="br0">{</span>
+  <span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> states.<span class="me1">length</span><span class="sy0">;</span> <span class="sy0">++</span>i<span class="br0">)</span> <span class="br0">{</span>
+    PShape state <span class="sy0">=</span> usa.<span class="me1">getChild</span><span class="br0">(</span>states<span class="br0">[</span>i<span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="co1">// Disable the colors found in the SVG file</span>
+    state.<span class="me1">disableStyle</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="co1">// Set our own coloring</span>
+    fill<span class="br0">(</span>c<span class="br0">)</span><span class="sy0">;</span>
+    noStroke<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="co1">// Draw a single state</span>
+    shape<span class="br0">(</span>state, <span class="nu0">0</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Related_projects">Related projects</span>
+</h2>
+<h3> <span class="mw-headline" id="Design_By_Numbers">Design By Numbers</span>
+</h3>
+<p>Processing was based on the original work done on <a href="http://en.m.wikipedia.org/wiki/Design_By_Numbers_(programming_language)" title="Design By Numbers (programming language)">Design By Numbers</a> project in MIT. It shares many of the same ideas and is a direct child of that experiment.</p>
+<h3> <span class="mw-headline" id="Wiring.2C_Arduino.2C_and_Fritzing">Wiring, Arduino, and Fritzing</span>
+</h3>
+<p>Processing has spawned another project, <a href="http://en.m.wikipedia.org/wiki/Wiring_(development_platform)" title="Wiring (development platform)">Wiring</a>, which uses the Processing IDE with a simplified version of the <a href="C++" title="C++">C++</a> language as a way to teach artists how to program <a href="Microcontroller" title="Microcontroller">microcontrollers</a>. There are now two separate hardware projects, Wiring and <a href="http://en.m.wikipedia.org/wiki/Arduino" title="Arduino">Arduino</a>, using the Wiring environment and language. <a href="http://en.m.wikipedia.org/wiki/Fritzing" title="Fritzing">Fritzing</a> is another software environment of the same sort, which helps designers and artists to document their interactive prototypes and to take the step from physical prototyping to actual product.</p>
+<h3> <span class="mw-headline" id="Mobile_Processing">Mobile Processing</span>
+</h3>
+<p>Another spin-off project, <a rel="nofollow" class="external text" href="http://mobile.processing.org/">Mobile Processing</a> by Francis Li, allows software written using the Processing language and environment to run on Java powered mobile devices.</p>
+<h3> <span class="mw-headline" id="Processing.js">Processing.js</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Processing.js" title="Processing.js">Processing.js</a>
+</div>
+<p>In 2008, <a href="http://en.m.wikipedia.org/wiki/John_Resig" title="John Resig">John Resig</a> ported Processing to <a href="JavaScript" title="JavaScript">JavaScript</a> using the <a href="http://en.m.wikipedia.org/wiki/Canvas_(HTML_element)" title="Canvas (HTML element)" class="mw-redirect">Canvas element</a> for rendering,<sup id="cite_ref-1" class="reference"><a href="Processing_(programming_language)#cite_note-1"><span>[</span>1<span>]</span></a></sup> allowing Processing to be used in modern web browsers without the need for a Java plugin. Since then, the open source community including students at <a href="http://en.m.wikipedia.org/wiki/Seneca_College" title="Seneca College">Seneca College</a> have taken over the project.</p>
+<h3> <span class="mw-headline" id="iProcessing">iProcessing</span>
+</h3>
+<p>iProcessing was built to help people develop native <a href="http://en.m.wikipedia.org/wiki/IPhone" title="IPhone">iPhone</a> applications using the Processing language. It is an integration of the <a href="http://en.m.wikipedia.org/wiki/Processing.js" title="Processing.js">Processing.js</a> library and a Javascript application framework for iPhone.</p>
+<h3> <span class="mw-headline" id="Spde">Spde</span>
+</h3>
+<p>Spde (standing for Scala Processing Development Environment) replaces Processing's reduced Java syntax and custom preprocessor with the off-the-shelf <a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a> programming language which also <a href="http://en.m.wikipedia.org/wiki/List_of_JVM_languages" title="List of JVM languages">runs on</a> the <a href="http://en.m.wikipedia.org/wiki/Java_platform" title="Java platform" class="mw-redirect">Java platform</a> and enforces some of the same restrictions such as disallowing <a href="http://en.m.wikipedia.org/wiki/Static_method" title="Static method" class="mw-redirect">static methods</a>, while also allowing more concise code, and supporting <a href="Functional_programming" title="Functional programming">functional programming</a>.<sup id="cite_ref-2" class="reference"><a href="Processing_(programming_language)#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Processing_(programming_language)#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="Processing_(programming_language)#cite_note-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="Processing_(programming_language)#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Quil">Quil</span>
+</h3>
+<p>Quil (formerly named <i>clj-processing</i>) is a wrapper for Processing in the <a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a> language, a <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> that runs on the Java platform.<sup id="cite_ref-6" class="reference"><a href="Processing_(programming_language)#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Processing_Monsters">Processing Monsters</span>
+</h3>
+<p>Processing Monsters is a project by Lukas Vojir intended to help people learn the language in an entertaining fashion. The <i>monsters</i> are simple graphical programs that are only black and white and are mouse reactive. As of May 3, 2010, 70 monsters are featured on Vojir's site.<sup id="cite_ref-7" class="reference"><a href="Processing_(programming_language)#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Awards">Awards</span>
+</h2>
+<p>In 2005 Reas and Fry won the prestigious Golden Nica award from <a href="http://en.m.wikipedia.org/wiki/Ars_Electronica" title="Ars Electronica">Ars Electronica</a> in its Net Vision category for their work on Processing.</p>
+<p>Ben Fry won the <a rel="nofollow" class="external text" href="http://cooperhewitt.org/nda/awards/interaction-design">2011 National Design Award</a> given by the Smithsonian Cooper-Hewitt National Design Museum in the category of Interaction Design. The award statement says:</p>
+<p>"Drawing on a background in graphic design and computer science, Ben Fry pursues a long-held fascination with visualizing data. As Principal of Fathom Information Design in Boston, Fry develops software, printed works, installations, and books that depict and explain topics from the human genome to baseball salaries to the evolution of text documents. With Casey Reas, he founded the Processing Project, an open-source programming environment for teaching computational design and sketching interactive-media software. It provides artists and designers with accessible means of working with code while encouraging engineers and computer scientists to think about design concepts."</p>
+<h2> <span class="mw-headline" id="License">License</span>
+</h2>
+<p>Processing's core libraries, the code included in exported applications and applets, is licensed under the <a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a>, allowing users to release their original code with a choice of license.</p>
+<p>The IDE is licensed under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>.</p>
+<h2> <span class="mw-headline" id="Name">Name</span>
+</h2>
+<p>Originally, Processing had the URL at proce55ing.net, because the <i>processing</i> domain was taken. Eventually, however, Reas and Fry acquired the domain. Although the name had a combination of letters and numbers, it was still pronounced <i>processing</i>. They do not prefer the environment being referred to as <i>Proce55ing</i>. But, despite the name change, Processing still uses the term <i>p5</i> sometimes as a shortened name. However, they specifically use <i>p5</i> and not <i>p55</i>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Cinder_(programming_language)" title="Cinder (programming language)">Cinder</a> (C++)</li>
+<li>
+<span class="new" title="NodeBox (page does not exist)">NodeBox</span> (Python)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenFrameworks" title="OpenFrameworks">OpenFrameworks</a> (C++)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/JavaFX" title="JavaFX">JavaFX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Max_(software)" title="Max (software)">Max (software)</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Footnotes">Footnotes</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ejohn.org/blog/processingjs/">John Resig - Processing.js</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://technically.us/spde/About">http://technically.us/spde/About</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://technically.us/code/x/runaway-processing/">http://technically.us/code/x/runaway-processing/</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://technically.us/code/x/flocking-with-spde/">http://technically.us/code/x/flocking-with-spde/</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://processing.org/discourse/yabb2/YaBB.pl?num=1219975973">http://processing.org/discourse/yabb2/YaBB.pl?num=1219975973</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://github.com/quil/quil">http://github.com/quil/quil</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Processing_(programming_language)#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.rmx.cz/monsters/">Processing Monsters, by Lukas Vojir</a></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="refbegin" style="">
+<ul>
+<li>
+<span class="citation" id="CITEREFBohnackerGrossLaubLazzeroni2012">Bohnacker, Hartmut; Gross, Benedikt; Laub, Julia; Lazzeroni, Claudius (August 22, 2012), <i>Generative Design: Visualize, Program, and Create with Processing</i> (1st ed.), <a href="http://en.m.wikipedia.org/wiki/Princeton_Architectural_Press" title="Princeton Architectural Press">Princeton Architectural Press</a>, pp. 472, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-1616890773" title="Special:BookSources/978-1616890773">978-1616890773</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Generative+Design%3A+Visualize%2C+Program%2C+and+Create+with+Processing&amp;rft.aulast=Bohnacker&amp;rft.aufirst=Hartmut&amp;rft.au=Bohnacker%2C%26%2332%3BHartmut&amp;rft.au=Gross%2C%26%2332%3BBenedikt&amp;rft.au=Laub%2C%26%2332%3BJulia&amp;rft.au=Lazzeroni%2C%26%2332%3BClaudius&amp;rft.date=August+22%2C+2012&amp;rft.pages=pp.%26nbsp%3B472&amp;rft.edition=1st&amp;rft.pub=%5B%5BPrinceton+Architectural+Press%5D%5D&amp;rft.isbn=978-1616890773&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFGlassner2010">Glassner, Andrew (August 9, 2010), <a rel="nofollow" class="external text" href="http://www.crcpress.com/ecommerce_product/product_detail.jsf?isbn=9781568817163"><i>Processing for Visual Artists: How to Create Expressive Images and Interactive Art</i></a> (1st ed.), A K Peters/CRC Press, pp. 955, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-56881-716-9" title="Special:BookSources/1-56881-716-9">1-56881-716-9</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.crcpress.com/ecommerce_product/product_detail.jsf?isbn=9781568817163">http://www.crcpress.com/ecommerce_product/product_detail.jsf?isbn=9781568817163</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Processing+for+Visual+Artists%3A+How+to+Create+Expressive+Images+and+Interactive+Art&amp;rft.aulast=Glassner&amp;rft.aufirst=Andrew&amp;rft.au=Glassner%2C%26%2332%3BAndrew&amp;rft.date=August+9%2C+2010&amp;rft.pages=pp.%26nbsp%3B955&amp;rft.edition=1st&amp;rft.pub=A+K+Peters%2FCRC+Press&amp;rft.isbn=1-56881-716-9&amp;rft_id=http%3A%2F%2Fwww.crcpress.com%2Fecommerce_product%2Fproduct_detail.jsf%3Fisbn%3D9781568817163&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFReasFry2010">Reas, Casey; Fry, Ben (June 17, 2010), <i>Getting Started with Processing</i> (1st ed.), Make, pp. 208, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-4493-7980-X" title="Special:BookSources/1-4493-7980-X">1-4493-7980-X</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Getting+Started+with+Processing&amp;rft.aulast=Reas&amp;rft.aufirst=Casey&amp;rft.au=Reas%2C%26%2332%3BCasey&amp;rft.au=Fry%2C%26%2332%3BBen&amp;rft.date=June+17%2C+2010&amp;rft.pages=pp.%26nbsp%3B208&amp;rft.edition=1st&amp;rft.pub=Make&amp;rft.isbn=1-4493-7980-X&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFNoble2009">Noble, Joshua (July 21, 2009), <a rel="nofollow" class="external text" href="http://oreilly.com/catalog/9780596154141/"><i>Programming Interactivity: A Designer's Guide to Processing, Arduino, and Openframeworks</i></a> (1st ed.), <a href="http://en.m.wikipedia.org/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>, pp. 736, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-596-15414-3" title="Special:BookSources/0-596-15414-3">0-596-15414-3</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://oreilly.com/catalog/9780596154141/">http://oreilly.com/catalog/9780596154141/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programming+Interactivity%3A+A+Designer%27s+Guide+to+Processing%2C+Arduino%2C+and+Openframeworks&amp;rft.aulast=Noble&amp;rft.aufirst=Joshua&amp;rft.au=Noble%2C%26%2332%3BJoshua&amp;rft.date=July+21%2C+2009&amp;rft.pages=pp.%26nbsp%3B736&amp;rft.edition=1st&amp;rft.pub=%5B%5BO%27Reilly+Media%5D%5D&amp;rft.isbn=0-596-15414-3&amp;rft_id=http%3A%2F%2Foreilly.com%2Fcatalog%2F9780596154141%2F&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFTerzidis2009">Terzidis, Kostas (May 11, 2009), <a rel="nofollow" class="external text" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470375485.html"><i>Algorithms for Visual Design Using the Processing Language</i></a> (1st ed.), <a href="http://en.m.wikipedia.org/wiki/John_Wiley_%26_Sons" title="John Wiley &amp; Sons">Wiley</a>, pp. 384, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-470-37548-5" title="Special:BookSources/0-470-37548-5">0-470-37548-5</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470375485.html">http://www.wiley.com/WileyCDA/WileyTitle/productCd-0470375485.html</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Algorithms+for+Visual+Design+Using+the+Processing+Language&amp;rft.aulast=Terzidis&amp;rft.aufirst=Kostas&amp;rft.au=Terzidis%2C%26%2332%3BKostas&amp;rft.date=May+11%2C+2009&amp;rft.pages=pp.%26nbsp%3B384&amp;rft.edition=1st&amp;rft.pub=%5B%5BJohn+Wiley+%26+Sons%7CWiley%5D%5D&amp;rft.isbn=0-470-37548-5&amp;rft_id=http%3A%2F%2Fwww.wiley.com%2FWileyCDA%2FWileyTitle%2FproductCd-0470375485.html&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFReasFryMaeda2007">Reas, Casey; Fry, Ben; Maeda, John (September 30, 2007), <a rel="nofollow" class="external text" href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&amp;tid=11251"><i>Processing: A Programming Handbook for Visual Designers and Artists</i></a> (1st ed.), The MIT Press, pp. 736, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-262-18262-9" title="Special:BookSources/0-262-18262-9">0-262-18262-9</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&amp;tid=11251">http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&amp;tid=11251</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Processing%3A+A+Programming+Handbook+for+Visual+Designers+and+Artists&amp;rft.aulast=Reas&amp;rft.aufirst=Casey&amp;rft.au=Reas%2C%26%2332%3BCasey&amp;rft.au=Fry%2C%26%2332%3BBen&amp;rft.au=Maeda%2C%26%2332%3BJohn&amp;rft.date=September+30%2C+2007&amp;rft.pages=pp.%26nbsp%3B736&amp;rft.edition=1st&amp;rft.pub=The+MIT+Press&amp;rft.isbn=0-262-18262-9&amp;rft_id=http%3A%2F%2Fmitpress.mit.edu%2Fcatalog%2Fitem%2Fdefault.asp%3Fttype%3D2%26tid%3D11251&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFFry2008">Fry, Ben (January 11, 2008), <a rel="nofollow" class="external text" href="http://oreilly.com/catalog/9780596514556/"><i>Visualizing Data</i></a> (1st ed.), <a href="http://en.m.wikipedia.org/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>, pp. 382, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-596-51455-7" title="Special:BookSources/0-596-51455-7">0-596-51455-7</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://oreilly.com/catalog/9780596514556/">http://oreilly.com/catalog/9780596514556/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Visualizing+Data&amp;rft.aulast=Fry&amp;rft.aufirst=Ben&amp;rft.au=Fry%2C%26%2332%3BBen&amp;rft.date=January+11%2C+2008&amp;rft.pages=pp.%26nbsp%3B382&amp;rft.edition=1st&amp;rft.pub=%5B%5BO%27Reilly+Media%5D%5D&amp;rft.isbn=0-596-51455-7&amp;rft_id=http%3A%2F%2Foreilly.com%2Fcatalog%2F9780596514556%2F&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFGreenberg2007">Greenberg, Ira (May 28, 2007), <a rel="nofollow" class="external text" href="http://friendsofed.com/book.html?isbn=159059617X"><i>Processing: Creative Coding and Computational Art (Foundation)</i></a> (1st ed.), friends of ED, pp. 840, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1-59059-617-X" title="Special:BookSources/1-59059-617-X">1-59059-617-X</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://friendsofed.com/book.html?isbn=159059617X">http://friendsofed.com/book.html?isbn=159059617X</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Processing%3A+Creative+Coding+and+Computational+Art+%28Foundation%29&amp;rft.aulast=Greenberg&amp;rft.aufirst=Ira&amp;rft.au=Greenberg%2C%26%2332%3BIra&amp;rft.date=May+28%2C+2007&amp;rft.pages=pp.%26nbsp%3B840&amp;rft.edition=1st&amp;rft.pub=friends+of+ED&amp;rft.isbn=1-59059-617-X&amp;rft_id=http%3A%2F%2Ffriendsofed.com%2Fbook.html%3Fisbn%3D159059617X&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFShiffman2008">Shiffman, Daniel (August 19, 2008), <a rel="nofollow" class="external text" href="http://www.learningprocessing.com/"><i>Learning Processing: A Beginner's Guide to Programming Images, Animation, and Interaction</i></a> (1st ed.), Morgan Kaufmann, pp. 450, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-12-373602-1" title="Special:BookSources/0-12-373602-1">0-12-373602-1</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.learningprocessing.com/">http://www.learningprocessing.com/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Learning+Processing%3A+A+Beginner%27s+Guide+to+Programming+Images%2C+Animation%2C+and+Interaction&amp;rft.aulast=Shiffman&amp;rft.aufirst=Daniel&amp;rft.au=Shiffman%2C%26%2332%3BDaniel&amp;rft.date=August+19%2C+2008&amp;rft.pages=pp.%26nbsp%3B450&amp;rft.edition=1st&amp;rft.pub=Morgan+Kaufmann&amp;rft.isbn=0-12-373602-1&amp;rft_id=http%3A%2F%2Fwww.learningprocessing.com%2F&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFFaludi2011">Faludi, Robert (January 4, 2011), <a rel="nofollow" class="external text" href="http://faludi.com/bwsn"><i>Building Wireless Sensor Networks: with ZigBee, XBee, Arduino, and Processing</i></a> (1st ed.), <a href="http://en.m.wikipedia.org/wiki/O%27Reilly_Media" title="O'Reilly Media">O'Reilly Media</a>, pp. 320, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-596-80774-0" title="Special:BookSources/978-0-596-80774-0">978-0-596-80774-0</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://faludi.com/bwsn">http://faludi.com/bwsn</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Building+Wireless+Sensor+Networks%3A+with+ZigBee%2C+XBee%2C+Arduino%2C+and+Processing&amp;rft.aulast=Faludi&amp;rft.aufirst=Robert&amp;rft.au=Faludi%2C%26%2332%3BRobert&amp;rft.date=January+4%2C+2011&amp;rft.pages=pp.%26nbsp%3B320&amp;rft.edition=1st&amp;rft.pub=%5B%5BO%27Reilly+Media%5D%5D&amp;rft.isbn=978-0-596-80774-0&amp;rft_id=http%3A%2F%2Ffaludi.com%2Fbwsn&amp;rfr_id=info:sid/en.wikipedia.org:Processing_(programming_language)"><span style="display: none;"> </span></span>
+</li>
+</ul>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://www.processing.org">Official website</a></span></li>
+<li><a rel="nofollow" class="external free" href="http://www.processingjs.org/">http://www.processingjs.org/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.processinghacks.com/">http://www.processinghacks.com/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.openprocessing.org/">http://www.openprocessing.org/</a></li>
+<li><a rel="nofollow" class="external free" href="http://ejohn.org/blog/processingjs/">http://ejohn.org/blog/processingjs/</a></li>
+<li><a rel="nofollow" class="external free" href="http://groups.google.com/group/processingjs">http://groups.google.com/group/processingjs</a></li>
+<li><a rel="nofollow" class="external free" href="http://hyper-metrix.com/processing/docs">http://hyper-metrix.com/processing/docs</a></li>
+<li><a rel="nofollow" class="external text" href="http://luckylarry.co.uk/category/programming/processing/">Working with Processing and Arduino</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.generative-gestaltung.de">Website (German) to the book (soon in English) with nice source-codes and examples</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 16 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%B3%D9%8A%D8%B3%D9%86%D8%AC" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Processing" lang="ca" hreflang="ca">català</a></li><li><a href="http://de.m.wikipedia.org/wiki/Processing" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/Processing_(%CE%93%CE%BB%CF%8E%CF%83%CF%83%CE%B1_%CE%A0%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CE%BF%CF%8D)" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Processing" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Processing" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Processing" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EC%84%B8%EC%8B%B1_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%96%B8%EC%96%B4)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Processing" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Processing" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Processing" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Processing" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Processing" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Processing_(linguagem_de_programa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Processing" lang="ru" hreflang="ru">русский</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Processing" lang="fi" hreflang="fi">suomi</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Processing_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Processing_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Processing+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

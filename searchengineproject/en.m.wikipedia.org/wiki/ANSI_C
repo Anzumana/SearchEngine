@@ -1,0 +1,362 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>ANSI C - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"ANSI C","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/ANSI_C" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=ANSI+C"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">ANSI C</h1>			
+<div class="dablink">This article is about the programming language standard.  For the paper size, see <a href="http://en.m.wikipedia.org/wiki/Paper_size#ANSI_paper_sizes" title="Paper size">Paper size#ANSI paper sizes</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=ANSI_C&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(July 2010)</i></small> </span></td>
+</tr></table>
+<p><b>ANSI C</b> refers to the family of successive standards published by the <a href="American_National_Standards_Institute" title="American National Standards Institute">American National Standards Institute</a> (ANSI) for the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. Software developers writing in C are encouraged to conform to the standards, as doing so aids <a href="Porting" title="Porting">portability</a> between compilers.</p>
+<h2> <span class="mw-headline" id="History_and_outlook">History and outlook</span>
+</h2>
+<p>The first standard for C was published by ANSI. Although this document was subsequently adopted by <a href="International_Organization_for_Standardization" title="International Organization for Standardization">International Organization for Standardization</a> (ISO) and subsequent revisions published by ISO have been adopted by ANSI, the name ANSI C (rather than ISO C) is still more widely used. While some software developers use the term <b>ISO C</b>, others are standards body–neutral and use <b>Standard C</b>.</p>
+<h3> <span class="mw-headline" id="C89_and_C90">C89 and C90</span>
+</h3>
+<p>In 1983, the American National Standards Institute formed a committee, X3J11, to establish a standard specification of C. After a long and arduous process, the standard was completed in 1989 and ratified as ANSI X3.159-1989 "Programming Language C." This version of the language is often referred to as "ANSI C", or sometimes "C89" (to distinguish it from C99).</p>
+<p>The same standard was ratified by the International Organization for Standardization as ISO/IEC 9899:1990, with only formatting changes,<sup id="cite_ref-1" class="reference"><a href="ANSI_C#cite_note-1"><span>[</span>1<span>]</span></a></sup> which is sometimes referred to as C90. Therefore, the terms "C89" and "C90" refer to essentially the same language.</p>
+<p>ISO also published in 1994 an amendment, referred to as AMD1, introducing minor changes to the language and the library.</p>
+<p>This standard has been withdrawn by both INCITS<sup id="cite_ref-ref1_2-0" class="reference"><a href="ANSI_C#cite_note-ref1-2"><span>[</span>2<span>]</span></a></sup> and ISO/IEC.<sup id="cite_ref-3" class="reference"><a href="ANSI_C#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="C99">C99</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="C99" title="C99">C99</a>
+</div>
+<p>In March 2000, ANSI adopted the ISO/IEC 9899:1999 standard. This standard is commonly referred to as C99.</p>
+<p>This standard has been withdrawn by ISO/IEC,<sup id="cite_ref-4" class="reference"><a href="ANSI_C#cite_note-4"><span>[</span>4<span>]</span></a></sup> but is still approved by INCITS.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2012">citation needed</span></a></i>]</sup></p>
+<h3> <span class="mw-headline" id="C11">C11</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11 (C standard revision)</a>
+</div>
+<p>"C11" is the new <a href="http://en.m.wikipedia.org/wiki/Open_standard" title="Open standard">standard</a> for the <a href="http://en.m.wikipedia.org/wiki/C_programming_language" title="C programming language" class="mw-redirect">C programming language</a>.</p>
+<h2> <span class="mw-headline" id="Support_from_major_compilers">Support from major compilers</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <small><i>(June 2011)</i></small></span></td>
+</tr></table>
+<p>ANSI C is now supported by almost all the widely used compilers. Most of the C code being written nowadays is based on ANSI C. Any program written <i>only</i> in standard C and without any hardware dependent assumptions is virtually guaranteed to compile correctly on any <a href="System_platform" title="System platform" class="mw-redirect">platform</a> with a conforming C implementation. Without such precautions, most programs may compile only on a certain platform or with a particular compiler, due, for example, to the use of non-standard libraries, such as <a href="Graphical_user_interface" title="Graphical user interface">GUI</a> libraries, or to the reliance on compiler- or platform-specific attributes such as the exact size of certain data types and byte <a href="Endianness" title="Endianness">endianness</a>.</p>
+<h3> <span class="mw-headline" id="Compliance_detectability">Compliance detectability</span>
+</h3>
+<p>To mitigate the differences between <a href="http://en.m.wikipedia.org/wiki/K%26R_C" title="K&amp;R C" class="mw-redirect">K&amp;R C</a> and the ANSI C standard, the <code>__STDC__</code> ("standard c") macro can be used to split code into ANSI and K&amp;R sections.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="co2">#if __STDC__</span>
+ <span class="kw2">extern</span> <span class="kw4">int</span> getopt<span class="br0">(</span><span class="kw4">int</span><span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">*</span> <span class="kw4">const</span> <span class="sy0">*,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span><span class="br0">)</span><span class="sy0">;</span>
+ <span class="co2">#else</span>
+ <span class="kw2">extern</span> <span class="kw4">int</span> getopt<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ <span class="co2">#endif</span>
+</pre>
+</div>
+</div>
+<p>It's better to use "<code>#if __STDC__</code>" as above rather than "<code>#ifdef __STDC__</code>" because some implementation may set <code>__STDC__</code> to zero to indicate non-ANSI compliance. "<code>#if</code>" will treat any identifiers that couldn't be replaced by a macro as zero (<code>0</code>). Thus even if the macro "<code>__STDC__</code>" is not defined to signify non-ANSI compliance, "<code>#if</code>" will work as shown.</p>
+<p>In the above example, a prototype is used in a function declaration for ANSI compliant implementations, while an obsolescent non-prototype declaration is used otherwise. Those are still ANSI-compliant as of C99 and C90, but their use is discouraged.</p>
+<h2> <span class="mw-headline" id="Compilers_supporting_ANSI_C">Compilers supporting ANSI C</span>
+</h2>
+<ul>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Microsoft Visual C++</a> (C90. A few features of C99)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/LabWindows/CVI" title="LabWindows/CVI">LabWindows/CVI</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ARM_Holdings" title="ARM Holdings">ARM</a> RealView</li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenWatcom" title="OpenWatcom" class="mw-redirect">OpenWatcom</a> (C89/90 and some C99)</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="ANSI_C#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/onlinedocs/gcc/Standards.html">"Standards - Using the GNU Compiler Collection (GCC)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/onlinedocs/gcc/Standards.html">http://gcc.gnu.org/onlinedocs/gcc/Standards.html</a></span><span class="reference-accessdate">. Retrieved 2012-06-24</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Standards+-+Using+the+GNU+Compiler+Collection+%28GCC%29&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fonlinedocs%2Fgcc%2FStandards.html&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-ref1-2">
+<span class="mw-cite-backlink"><b><a href="ANSI_C#cite_ref-ref1_2-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.techstreet.com/cgi-bin/detail?doc_no=incits_iso_iec%7C9899;product_id=232462">http://www.techstreet.com/cgi-bin/detail?doc_no=incits_iso_iec%7C9899;product_id=232462</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="ANSI_C#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=17782">"ISO/IEC 9899:1990 - Programming Languages -- C"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=17782">http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=17782</a></span><span class="reference-accessdate">. Retrieved 2012-06-24</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ISO%2FIEC+9899%3A1990+-+Programming+Languages+--+C&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.iso.org%2Fiso%2Fiso_catalogue%2Fcatalogue_ics%2Fcatalogue_detail_ics.htm%3Fcsnumber%3D17782&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="ANSI_C#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=29237">"ISO/IEC 9899:1999 - Programming Languages -- C"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=29237">http://www.iso.org/iso/iso_catalogue/catalogue_ics/catalogue_detail_ics.htm?csnumber=29237</a></span><span class="reference-accessdate">. Retrieved 2012-06-24</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ISO%2FIEC+9899%3A1999+-+Programming+Languages+--+C&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.iso.org%2Fiso%2Fiso_catalogue%2Fcatalogue_ics%2Fcatalogue_detail_ics.htm%3Fcsnumber%3D29237&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/">ISO C working group</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://flash-gordon.me.uk/ansi.c.txt"><i>Draft ANSI C Standard</i> (ANSI X3J11/88-090)</a> (May 13, 1988), <a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.lang.c/msg/20b174b18cdd919d?hl=en">Third Public Review</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0BxVCLS4f8Sg5NWZmM2NjZWEtYmExMS00Y2EzLWE3ZTMtNzFmYjYwYzBiOTIw&amp;hl=en_US"><i>Draft ANSI C Rationale</i> (ANSI X3J11/88-151)</a> (Nov 18, 1988)</li>
+<li>
+<a rel="nofollow" class="external text" href="https://docs.google.com/viewer?a=v&amp;pid=explorer&amp;chrome=true&amp;srcid=0B-3PfyBhOSOxOTdjYmM1N2ItMmE0ZC00OGE3LTllODUtZDNkMDMzYWU3NDlk&amp;hl=en_US"><i>C Information Bulletin #1</i> (ANSI X3J11/93-007)</a> (May 27, 1992)</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.quut.com/c/ANSI-C-grammar-y.html">ANSI C Yacc grammar</a>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/ANSI-C-grammar-l.html">ANSI C grammar, Lex specification</a></li>
+</ul>
+</li>
+<li>
+<span class="citation book"><span class="new" title="Axel-Tobias Schreiner (page does not exist)">Schreiner, Axel-Tobias</span> (Hanser). <i>Object oriented programming with ANSI-C</i>. Hanser. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/3-446-17426-5" title="Special:BookSources/3-446-17426-5">3-446-17426-5</a>. <a href="http://en.m.wikipedia.org/wiki/Handle_System" title="Handle System">hdl</a>:<a rel="nofollow" class="external text" href="http://hdl.handle.net/1850%2F8544">1850/8544</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Object+oriented+programming+with+ANSI-C&amp;rft.aulast=Schreiner&amp;rft.aufirst=Axel-Tobias&amp;rft.au=Schreiner%2C%26%2332%3BAxel-Tobias&amp;rft.date=Hanser&amp;rft.pub=Hanser&amp;rft.isbn=3-446-17426-5&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://webstore.ansi.org/RecordDetail.aspx?sku=ISO%2FIEC+9899%3A1999">"ISO/IEC 9899:1999 Programming Languages -- C"</a>. American National Standards Institute<span class="printonly">. <a rel="nofollow" class="external free" href="http://webstore.ansi.org/RecordDetail.aspx?sku=ISO%2FIEC+9899%3A1999">http://webstore.ansi.org/RecordDetail.aspx?sku=ISO%2FIEC+9899%3A1999</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ISO%2FIEC+9899%3A1999+Programming+Languages+--+C&amp;rft.atitle=&amp;rft.pub=American+National+Standards+Institute&amp;rft_id=http%3A%2F%2Fwebstore.ansi.org%2FRecordDetail.aspx%3Fsku%3DISO%252FIEC%2B9899%253A1999&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Action/2005%20PDFs/SAV3648.pdf">"ANSI Standards Action Vol. 36, #48"</a>. American National Standards Institute. 2005-12-02<span class="printonly">. <a rel="nofollow" class="external free" href="http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Action/2005%20PDFs/SAV3648.pdf">http://publicaa.ansi.org/sites/apdl/Documents/Standards%20Action/2005%20PDFs/SAV3648.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ANSI+Standards+Action+Vol.+36%2C+%2348&amp;rft.atitle=&amp;rft.date=2005-12-02&amp;rft.pub=American+National+Standards+Institute&amp;rft_id=http%3A%2F%2Fpublicaa.ansi.org%2Fsites%2Fapdl%2FDocuments%2FStandards%2520Action%2F2005%2520PDFs%2FSAV3648.pdf&amp;rfr_id=info:sid/en.wikipedia.org:ANSI_C"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<strong class="selflink">ANSI C</strong>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 9 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bg.m.wikipedia.org/wiki/ANSI_C" lang="bg" hreflang="bg">български</a></li><li><a href="http://de.m.wikipedia.org/wiki/Varianten_der_Programmiersprache_C" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/ANSI_C" lang="es" hreflang="es">español</a></li><li><a href="http://id.m.wikipedia.org/wiki/ANSI_C" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://nn.m.wikipedia.org/wiki/ANSI_C" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://ru.m.wikipedia.org/wiki/ANSI_C" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/ANSI_C" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/ANSI_C" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://zh.m.wikipedia.org/wiki/ANSI_C" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=ANSI_C&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=ANSI_C&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=ANSI+C&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

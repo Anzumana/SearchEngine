@@ -1,0 +1,645 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>For loop - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"For loop","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/For_loop" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=For+loop"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">For loop</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a> a <b>for loop</b> is a <a href="Programming_language" title="Programming language">programming language</a> <a href="Statement_(programming)" title="Statement (programming)" class="mw-redirect">statement</a> which allows code to be repeatedly <a href="http://en.m.wikipedia.org/wiki/Execution_(computers)" title="Execution (computers)" class="mw-redirect">executed</a>. A <i>for loop</i> is classified as an <a href="http://en.m.wikipedia.org/wiki/Iteration" title="Iteration">iteration</a> statement.</p>
+<p>Unlike many other kinds of <a href="http://en.m.wikipedia.org/wiki/Control_flow#Loops" title="Control flow">loops</a>, such as the <a href="While_loop" title="While loop">while loop</a>, the for loop is often distinguished by an explicit <a href="http://en.m.wikipedia.org/wiki/Loop_counter" title="Loop counter">loop counter</a> or loop variable. This allows the body of the for loop (the code that is being repeatedly executed) to know about the sequencing of each iteration. For loops are also typically used when the number of iterations is known before entering the loop. For loops are the shorthand way to make loops when the number of iterations is known, as a for loop can be written as a while loop.</p>
+<p>The name <i>for loop</i> comes from the English word <a href="http://en.wiktionary.org/wiki/for" class="extiw" title="wiktionary:for">for</a>, which is used as the <a href="http://en.m.wikipedia.org/wiki/Keyword_(computing)" title="Keyword (computing)" class="mw-redirect">keyword</a> in most programming languages to introduce a for loop. The loop body is executed "for" the given values of the loop variable, though this is more explicit in the <a href="ALGOL" title="ALGOL">ALGOL</a> version of the statement, in which a list of possible values and/or increments can be specified.</p>
+<p>In <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a> and <a href="PL/I" title="PL/I">PL/I</a> though, the keyword <i>DO</i> is used and it is called a <b>do loop</b>, but it is otherwise identical to the for loop described here and is not to be confused with the <a href="Do_while_loop" title="Do while loop">do while loop</a>.</p>
+<h2> <span class="mw-headline" id="Kinds_of_for_loops">Kinds of for loops</span>
+</h2>
+<p>A for loop statement is available in most <a href="Imperative_programming" title="Imperative programming">imperative programming</a> languages. Even ignoring minor differences in <a href="http://en.m.wikipedia.org/wiki/Syntax" title="Syntax">syntax</a> there are many differences in how these statements work and the level of expressiveness they support. Generally, for loops fall into one of the following categories:</p>
+<h3> <span class="mw-headline" id="Iterator-based_for_loops">Iterator-based for loops</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Foreach" title="Foreach" class="mw-redirect">Foreach</a>
+</div>
+<p>This type of for loop is a falsification of the numeric range type of for loop; as it allows for the enumeration of sets of items other than number sequences. It is usually characterized by the use of an implicit or explicit <a href="http://en.m.wikipedia.org/wiki/Iterator" title="Iterator">iterator</a>, in which the loop variable takes on each of the values in a sequence or other order able data collection. A representative example in <a href="Python_(programming_language)" title="Python (programming language)">Python</a> is:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">for</span> item <span class="kw1">in</span> some_iterable_object:
+    do Something
+    do Something Else
+</pre>
+</div>
+</div>
+<p>Where <code>some_iterable_object</code> is either a data collection that supports implicit iteration (like a list of employee's names), or may in fact be an iterator itself. Some languages have this in addition to another for-loop syntax; notably, PHP has this type of loop under the name <code><a href="http://en.m.wikipedia.org/wiki/For_each" title="For each">for each</a></code>, as well as a three-expression for loop (see below) under the name <code>for</code>.</p>
+<h3> <span class="mw-headline" id="Vectorised_for_loops">Vectorised for loops</span>
+</h3>
+<p>Some languages offer a <i>for</i> loop that acts as if processing all iterations in <a href="http://en.m.wikipedia.org/wiki/Vectorization_(parallel_computing)" title="Vectorization (parallel computing)">parallel</a>, such as the <code>for all</code> keyword in <span class="new" title="FORTRAN 95 (page does not exist)">FORTRAN 95</span> which has the interpretation that <i>all</i> <a href="http://en.m.wikipedia.org/wiki/Sides_of_an_equation" title="Sides of an equation">right-hand-side</a> expressions are evaluated before <i>any</i> assignments are made, as distinct from the explicit iteration form. For example, in the <code>for</code> loop in the following pseudocode fragment, when calculating the new value for <code>A(i)</code>, except for the first (with <code>i = 2</code>) the reference to <code>A(i - 1)</code> will obtain the new value that had been placed there in the previous step. In the <code>for all</code> version, however, each calculation refers only to the original, unaltered <code>A</code>.</p>
+<pre>
+<b>for</b>     i:=2:N - 1 <b>do</b> A(i):=[A(i - 1) + A(i) + A(i + 1)]/3; <b>next</b> i;
+<b>for all</b> i:=2:N - 1 <b>do</b> A(i):=[A(i - 1) + A(i) + A(i + 1)]/3;
+</pre>
+<p>The difference may be significant.</p>
+<p>Some languages (such as FORTRAN 95, pl/i) also offer array assignment statements, that enable many for-loops to be omitted. Thus pseudocode such as <code>A:=0;</code> would set all elements of array A to zero, no matter its size or dimensionality. The example loop could be rendered as</p>
+<pre>
+A(2:N - 1):=[A(1:N - 2) + A(2:N - 1) + A(3:N)]/3;
+</pre>
+<p>But whether that would be rendered in the style of the for-loop or the for all-loop or something else may not be clearly described in the compiler manual.</p>
+<h3> <span class="mw-headline" id="Compound_for_loops">Compound for loops</span>
+</h3>
+<p>Introduced with <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a> and followed by <a href="PL/I" title="PL/I">PL/I</a>, this allows the iteration of a loop to be compounded with a test, as in</p>
+<pre>
+for i:=1:N while A(i) &gt; 0 do <i>etc.</i>
+</pre>
+<p>That is, a value is assigned to the loop variable <i>i</i> and only if the <i>while expression</i> is <b>true</b> will the loop body be executed. If the result were <b>false</b> the for-loop's execution stops short. Granted that the loop variable's value <i>is</i> defined after the termination of the loop, then the above statement will find the first non-positive element in array <i>A</i> (and if no such, its value will be <i>N + 1</i>), or, with suitable variations, the first non-blank character in a string, and so on.</p>
+<h2> <span class="mw-headline" id="Additional_semantics_and_constructs">Additional semantics and constructs</span>
+</h2>
+<h3> <span class="mw-headline" id="Use_as_infinite_loops">Use as infinite loops</span>
+</h3>
+<p>This C-style for loop is commonly the source of an <a href="http://en.m.wikipedia.org/wiki/Infinite_loop" title="Infinite loop">infinite loop</a> since the fundamental steps of iteration are completely in the control of the programmer. In fact, when infinite loops are intended, this type of for loop can be used (with empty expressions), such as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="sy0">;;</span><span class="br0">)</span>
+   <span class="co1">//loop body</span>
+</pre>
+</div>
+</div>
+<p>This style is used instead of infinite <tt>while(1)</tt> loops to avoid a warning in <a href="Visual_C++" title="Visual C++">Visual C++</a>.<sup id="cite_ref-1" class="reference"><a href="For_loop#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Early_exit_and_continuation">Early exit and continuation</span>
+</h3>
+<p>Some languages may also provide other supporting statements, which when present can alter how the for loop iteration proceeds. Common among these are the <a href="http://en.m.wikipedia.org/wiki/Break_statement" title="Break statement" class="mw-redirect">break</a> and <a href="http://en.m.wikipedia.org/wiki/Control_flow#Continuation_with_next_iteration" title="Control flow">continue</a> statements found in C and its derivatives. The break statement causes the inner-most loop to be terminated immediately when executed. The continue statement will move at once to the next iteration without further progress through the loop body for the current iteration. Other languages may have similar statements or otherwise provide means to alter the for loop progress; for example in FORTRAN 95:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="kw1">DO</span> I <span class="sy0">=</span> <span class="nu0">1</span>, N
+  statements               <span class="co1">!Executed for all values of "I", up to a disaster if any.</span>
+  <span class="kw1">IF</span> <span class="br0">(</span>no good<span class="br0">)</span> <span class="kw1">CYCLE</span>       <span class="co1">!Skip this value of "I", continue with the next.</span>
+  statements               <span class="co1">!Executed only where goodness prevails.</span>
+  <span class="kw1">IF</span> <span class="br0">(</span>disaster<span class="br0">)</span> <span class="kw1">EXIT</span>       <span class="co1">!Abandon the loop.</span>
+  statements               <span class="co1">!While good and, no disaster.</span>
+<span class="kw1">END</span> <span class="kw1">DO</span>                     <span class="co1">!Should align with the "DO".</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Loop_variable_scope_and_semantics">Loop variable scope and semantics</span>
+</h3>
+<p>Different languages specify different rules for what value the loop variable will hold on termination of its loop, and indeed some hold that it "becomes undefined". This permits a <a href="Compiler" title="Compiler">compiler</a> to generate code that leaves any value in the loop variable, or perhaps even leaves it unchanged because the loop value was held in a register and never stored to memory.</p>
+<p>In some languages (not <a href="http://en.m.wikipedia.org/wiki/C_(language)" title="C (language)" class="mw-redirect">C</a> or <a href="C++" title="C++">C++</a>) the loop variable is <a href="http://en.m.wikipedia.org/wiki/Immutable_object" title="Immutable object">immutable</a> within the scope of the loop body, with any attempt to modify its value being regarded as a semantic error. Such modifications are sometimes a consequence of a programmer error, which can be very difficult to identify once made. However only overt changes are likely to be detected by the compiler. Situations where the address of the loop variable is passed as an argument to a <a href="Subroutine" title="Subroutine">subroutine</a> make it very difficult to check, because the routine's behavior is in general unknowable to the compiler. Some examples in the style of Fortran:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="kw1">DO</span> I <span class="sy0">=</span> <span class="nu0">1</span>, N
+  I <span class="sy0">=</span> <span class="nu0">7</span>                           <span class="co1">!Overt adjustment of the loop variable. Compiler complaint likely.</span>
+  Z <span class="sy0">=</span> ADJUST<span class="br0">(</span>I<span class="br0">)</span>                   <span class="co1">!Function "ADJUST" might alter "I", to uncertain effect.</span>
+  normal statements               <span class="co1">!Memory might fade that "I" is the loop variable.</span>
+  PRINT <span class="br0">(</span>A<span class="br0">(</span>I<span class="br0">)</span>, B<span class="br0">(</span>I<span class="br0">)</span>, I <span class="sy0">=</span> <span class="nu0">1</span>, N, <span class="nu0">2</span><span class="br0">)</span> <span class="co1">!Implicit for-loop to print odd elements of arrays A and B, reusing "I"…</span>
+  PRINT I                         <span class="co1">!What value will be presented?</span>
+<span class="kw1">END</span> <span class="kw1">DO</span>                            <span class="co1">!How many times will the loop be executed?</span>
+</pre>
+</div>
+</div>
+<p>Still another possibility is that the code generated may employ an auxiliary variable as the loop variable, possibly held in a machine register, whose value may or may not be copied to <i>I</i> on each iteration. In this case, modifications of <i>I</i> would not affect the control of the loop, but now a disjunction is possible: within the loop, references to the value of <i>I</i> might be to the (possibly altered) current value of <i>I</i> or to the auxiliary variable (held safe from improper modification) and confusing results are guaranteed. For instance, within the loop a reference to element <i>I</i> of an array would likely employ the auxiliary variable (especially if it were held in a machine register), but if <i>I</i> is a parameter to some routine (for instance, a <i>print</i>-statement to reveal its value), it would likely be a reference to the proper variable <i>I</i> instead. It is best to avoid such possibilities.</p>
+<h3> <span class="mw-headline" id="List_of_value_ranges">List of value ranges</span>
+</h3>
+<p>PL/I and Algol 68, allows loops in which the loop variable is iterated over a list of ranges of values instead of a single range. The following PL/I example will execute the loop with six values of i: 1, 7, 12, 13, 14, 15:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pli source-pli">
+<pre class="de1">
+<span class="kw1">do</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">7</span><span class="sy0">,</span> <span class="nu0">12</span> <span class="kw1">to</span> <span class="nu0">15</span><span class="sy0">;</span>
+  <span class="coMULTI">/*statements*/</span>
+  <span class="kw1">end</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Equivalence_with_while_loops">Equivalence with while loops</span>
+</h2>
+<p>A for loop can be converted into an equivalent while loop by incrementing a counter variable directly. The following <a href="http://en.m.wikipedia.org/wiki/Pseudocode" title="Pseudocode">pseudocode</a> illustrates this technique:</p>
+<pre>
+ factorial = 1
+ for counter from 1 to 5
+     factorial = factorial * counter
+</pre>
+<p>is easily translated into the following while loop:</p>
+<pre>
+ factorial = 1
+ counter = 1
+ while counter &lt;= 5
+    factorial = factorial * counter
+    counter = counter + 1
+</pre>
+<p>This translation is slightly complicated by languages which allow a statement to jump to the next iteration of the loop (such as the "continue" statement in C). These statements will typically implicitly increment the counter of a for loop, but not the equivalent while loop (since in the latter case the counter is not an integral part of the loop construct). Any translation will have to place all such statements within a block that increments the explicit counter before running the statement.</p>
+<h2> <span class="mw-headline" id="Syntax">Syntax</span>
+</h2>
+<p>Given an action that must be repeated, for instance, five times, different languages' for loops will be written differently. The syntax for a three-expression for loop is nearly identical in all languages that have it, after accounting for different styles of block termination and so on.</p>
+<h3> <span class="mw-headline" id="Action_Script_3">Action Script 3</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="actionscript3 source-actionscript3">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="kw2">var</span> counter<span class="sy0">:</span><span class="kw5">int</span> = <span class="nu0">1</span><span class="sy0">;</span> counter <span class="sy0">&lt;</span>= <span class="nu0">5</span><span class="sy0">;</span> counter<span class="sy0">++</span><span class="br0">)</span>
+  <span class="co1">//statement;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Ada">Ada</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+<span class="kw1">for</span> Counter <span class="kw3">in</span> <span class="nu0">1</span> .. <span class="nu0">5</span> <span class="kw1">loop</span>
+   <span class="co1">-- statements</span>
+<span class="kw1">end</span> <span class="kw1">loop</span>;
+</pre>
+</div>
+</div>
+<p>The <i>exit</i> statement may be used to exit the loop. Loops can be labeled, and <i>exit</i> may leave a specific labeled loop in a group of nested loops:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+Counting:
+    <span class="kw1">for</span> Counter <span class="kw3">in</span> <span class="nu0">1</span> .. <span class="nu0">5</span> <span class="kw1">loop</span>
+   Triangle:
+       <span class="kw1">for</span> Secondary_Index <span class="kw3">in</span> <span class="nu0">2</span> .. <span class="me1">Counter</span> <span class="kw1">loop</span>
+          <span class="co1">-- statements</span>
+          <span class="kw3">exit</span> Counting;
+          <span class="co1">-- statements</span>
+       <span class="kw1">end</span> <span class="kw1">loop</span> Triangle;
+    <span class="kw1">end</span> <span class="kw1">loop</span> Counting;
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="AppleScript">AppleScript</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="applescript source-applescript">
+<pre class="de1">
+<span class="kw3">repeat</span> <span class="kw3">with</span> i <span class="kw3">from</span> <span class="nu0">1</span> <span class="kw3">to</span> <span class="nu0">5</span>
+        <span class="co1">-- statements</span>
+        log i
+<span class="kw3">end</span> <span class="kw3">repeat</span>
+</pre>
+</div>
+</div>
+<p>You can also iterate through a list of items, similar to what you can do with arrays in other languages:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="applescript source-applescript">
+<pre class="de1">
+<span class="kw3">set</span> x <span class="kw3">to</span> <span class="br0">{</span><span class="nu0">1</span>, <span class="st0">"waffles"</span>, <span class="st0">"bacon"</span>, <span class="nu0">5.1</span>, <span class="kw1">false</span><span class="br0">}</span>
+<span class="kw3">repeat</span> <span class="kw3">with</span> i <span class="kw3">in</span> x
+        log i
+<span class="kw3">end</span> <span class="kw3">repeat</span>
+</pre>
+</div>
+</div>
+<p>You may also use "exit repeat" to exit a loop at any time. Unlike other languages, AppleScript does not currently have any command to continue to the next iteration of the loop.</p>
+<h3> <span class="mw-headline" id="Bash">Bash</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0"># first form</span>
+<span class="kw1">for</span> i <span class="kw1">in</span> <span class="nu0">1</span> <span class="nu0">2</span> <span class="nu0">3</span> <span class="nu0">4</span> <span class="nu0">5</span>
+<span class="kw1">do</span>
+    <span class="co0"># must have at least one command in loop</span>
+    <span class="kw3">echo</span> <span class="re1">$i</span>  <span class="co0"># just print value of i</span>
+<span class="kw1">done</span>
+</pre>
+</div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="co0"># second form</span>
+<span class="kw1">for</span> <span class="br0">(</span><span class="br0">(</span> i = <span class="nu0">1</span>; i <span class="sy0">&lt;</span>= <span class="nu0">5</span>; i++ <span class="br0">)</span><span class="br0">)</span>
+<span class="kw1">do</span>
+    <span class="co0"># must have at least one command in loop</span>
+    <span class="kw3">echo</span> <span class="re1">$i</span>  <span class="co0"># just print value of i</span>
+<span class="kw1">done</span>
+</pre>
+</div>
+</div>
+<p>Note that an empty loop (i.e., one with no commands between <code>do</code> and <code>done</code>) is a syntax error. If the above loops contained only comments, execution would result in the message "<code>syntax error near unexpected token 'done'</code>".</p>
+<h3> <span class="mw-headline" id="BASIC">BASIC</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="freebasic source-freebasic">
+<pre class="de1">
+<span class="kw1">For</span> I = <span class="nu0">1</span> <span class="kw1">to</span> <span class="nu0">5</span>;
+<span class="kw1">Print</span> I;
+<span class="kw1">Next</span> I
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="C">C</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span>initialization<span class="sy0">;</span> condition<span class="sy0">;</span> increment<span class="sy0">-</span>decrement<span class="br0">)</span> <span class="br0">{</span>
+    <span class="co1">// Statements.</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="C.2C_C.2B.2B.2C_C.23.2C_Objective-C_and_D"><span id="C_or_C.2B.2B"></span> C, C++, C#, Objective-C and D</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="kw4">int</span> counter <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> counter <span class="sy0">&lt;=</span> <span class="nu0">5</span><span class="sy0">;</span> counter<span class="sy0">++</span><span class="br0">)</span>
+  <span class="co1">//statement;</span>
+  <span class="co1">//can use the statement 'break;' to exit early;</span>
+</pre>
+</div>
+</div>
+<p>The ISO/IEC 9899:1999 publication (commonly known as <a href="C99" title="C99">C99</a>) also allows initial declarations in <code>for</code> loops.</p>
+<h3> <span class="mw-headline" id="FORTRAN">FORTRAN</span>
+</h3>
+<p>While using the keyword do instead of for, this type of <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a> do loop behaves similarly to the three argument for loop in other languages. This example behaves the same as the others, initializing the counter variable to 1, incrementing by 1 each iteration of the loop and stopping at five (inclusive).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="kw1">do</span> counter <span class="sy0">=</span> <span class="nu0">1</span>, <span class="nu0">5</span>, <span class="nu0">1</span>
+  write<span class="br0">(</span><span class="sy0">*</span>, <span class="st0">'(i2)'</span><span class="br0">)</span> counte<span class="st0">''</span><span class="st0">'r'</span><span class="st0">''</span>
+<span class="kw1">end</span> <span class="kw1">do</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Java">Java</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw1">for</span><span class="br0">(</span><span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">5</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span><span class="br0">{</span>
+    <span class="co1">//perform functions within the loop;</span>
+    <span class="co1">//can use the statement 'break;' to exit early;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>For the extended for loop, see <a href="http://en.m.wikipedia.org/wiki/Foreach_loop#Java" title="Foreach loop">Foreach loop</a></p>
+<h3> <span class="mw-headline" id="JavaScript">JavaScript</span>
+</h3>
+<p>JavaScript supports C-style "three-expression" loops. The <code>break</code> and <code>continue</code> statements are supported inside loops.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="javascript source-javascript">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> i <span class="sy0">&lt;</span> <span class="nu0">5</span><span class="sy0">;</span> i<span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="co1">// ...</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Lua">Lua</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lua source-lua">
+<pre class="de1">
+<span class="kw1">for</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">5</span> <span class="kw1">do</span>
+     <span class="co1">-- statements</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p>Generic for-loop making use of <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closures</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lua source-lua">
+<pre class="de1">
+<span class="kw1">for</span> name<span class="sy0">,</span> phone<span class="sy0">,</span> address <span class="kw2">in</span> contacts<span class="br0">(</span><span class="br0">)</span> <span class="kw1">do</span>
+     <span class="co1">-- contacts() must be an iterator function</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="MATLAB">MATLAB</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="matlab source-matlab">
+<pre class="de1">
+<span class="kw1">for</span> <span class="kw2"><span class="re0">i</span></span> = <span class="nu0">1</span>:<span class="nu0">5</span> 
+     -- statements
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Maxima_CAS">Maxima CAS</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Maxima_CAS" title="Maxima CAS" class="mw-redirect">Maxima CAS</a> one can use also non integer values :</p>
+<pre>
+for x:0.5 step 0.1 thru 0.9 do
+  disp(x)$
+</pre>
+<h3> <span class="mw-headline" id="Oberon-2.2C_Oberon-07.2C_or_Component_Pascal">Oberon-2, Oberon-07, or Component Pascal</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="oberon2 source-oberon2">
+<pre class="de1">
+<span class="kw1">FOR</span> Counter <span class="sy0">:=</span> <span class="nu0">1</span> <span class="kw1">TO</span> <span class="nu0">5</span> <span class="kw1">DO</span>
+  <span class="coMULTI">(* statement sequence *)</span>
+<span class="kw1">END</span>
+</pre>
+</div>
+</div>
+<p>Note that in the original Oberon language the for loop was omitted in favor of the more general Oberon loop construct. The for loop was reintroduced in Oberon-2.</p>
+<h3> <span class="mw-headline" id="Pascal">Pascal</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">for</span> Counter <span class="sy1">:</span><span class="sy3">=</span> <span class="nu0">1</span> <span class="kw1">to</span> <span class="nu0">5</span> <span class="kw1">do</span>
+  <span class="coMULTI">(*statement*)</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<p>The numeric-range for loop varies somewhat more. Pascal would use the above-displayed code, whereas Perl would use the following:</p>
+<h3> <span class="mw-headline" id="Perl">Perl</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="re0">$counter</span> <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="re0">$counter</span> <span class="sy0">&lt;=</span> <span class="nu0">5</span><span class="sy0">;</span> <span class="re0">$counter</span><span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co1"># statements;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>(Note that <code>for(1..5) { }</code> is really a <i>foreach</i> in Perl.)</p>
+<h3> <span class="mw-headline" id="PHP">PHP</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="php source-php">
+<pre class="de1">
+<span class="kw1">for</span> <span class="br0">(</span><span class="re0">$i</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span> <span class="re0">$i</span> <span class="sy0">&lt;</span> <span class="nu0">5</span><span class="sy0">;</span> <span class="re0">$i</span><span class="sy0">++</span><span class="br0">)</span> <span class="br0">{</span>
+  <span class="co2"># statements;
+</span><span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="PL.2FI">PL/I</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pli source-pli">
+<pre class="de1">
+<span class="kw1">do</span> <span class="kw1">counter</span> <span class="sy0">=</span> <span class="nu0">1</span> <span class="kw1">to</span> <span class="nu0">5</span> <span class="kw1">by</span> <span class="nu0">1</span><span class="sy0">;</span> <span class="coMULTI">/* "by 1" is the default if not specified */</span>
+  <span class="coMULTI">/*statements*/</span><span class="sy0">;</span>
+  <span class="kw1">end</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The <i>LEAVE</i> statement may be used to exit the loop. Loops can be labeled, and <i>leave</i> may leave a specific labeled loop in a group of nested loops. Some PL/I dialects include the <i>ITERATE</i> statement to terminate the current loop iteration and begin the next.</p>
+<h3> <span class="mw-headline" id="Python">Python</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">for</span> counter <span class="kw1">in</span> <span class="kw2">range</span><span class="br0">(</span><span class="nu0">1</span><span class="sy0">,</span> <span class="nu0">6</span><span class="br0">)</span>:  <span class="co1"># range(1, 6) gives values from 1 to 5 inclusive (but not 6)</span>
+  <span class="co1"># statements</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Ruby">Ruby</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">for</span> counter <span class="kw1">in</span> <span class="nu0">1</span>..<span class="nu0">5</span>
+  <span class="co1"># statements</span>
+<span class="kw1">end</span>
+ 
+<span class="nu0">5</span>.<span class="me1">times</span> <span class="kw1">do</span> <span class="sy0">|</span>counter<span class="sy0">|</span>  <span class="co1"># counter iterates from 0 to 4</span>
+  <span class="co1"># statements</span>
+<span class="kw1">end</span>
+ 
+<span class="nu0">1</span>.<span class="me1">upto</span><span class="br0">(</span><span class="nu0">5</span><span class="br0">)</span> <span class="kw1">do</span> <span class="sy0">|</span>counter<span class="sy0">|</span>
+  <span class="co1"># statements</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Ruby_programming_language" title="Ruby programming language" class="mw-redirect">Ruby</a> has several possible syntaxes, including the above samples.</p>
+<h3> <span class="mw-headline" id="Smalltalk">Smalltalk</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="smalltalk source-smalltalk">
+<pre class="de1">
+<span class="nu0">1</span> to: <span class="re5">5</span> do: <span class="br0">[</span> :<span class="re5">counter</span> | <span class="coMULTI">"statements"</span> <span class="br0">]</span>
+</pre>
+</div>
+</div>
+<p>Contrary to other languages, in <a href="Smalltalk" title="Smalltalk">Smalltalk</a> a for loop is not a <a href="http://en.m.wikipedia.org/wiki/Language_construct" title="Language construct">language construct</a> but defined in the class Number as a method with two parameters, the end value and a <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closure</a>, using self as start value.</p>
+<h2> <span class="mw-headline" id="Timeline_of_the_for_loop_in_various_programming_languages">Timeline of the <i>for loop</i> in various programming languages</span>
+</h2>
+<h3> <span class="mw-headline" id="1957:_FORTRAN">1957: FORTRAN</span>
+</h3>
+<p>Fortran's equivalent of the <code>for</code> loop is the <code>DO</code> loop. The syntax of Fortran's <code>DO</code> loop is:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+        <span class="kw1">DO</span> label counter<span class="sy0">=</span>start, <span class="kw1">stop</span>, step
+        statements
+ label  statement
+</pre>
+</div>
+</div>
+<p>Where the step part may be omitted if the step is one. Example: (spaces are irrelevant in Fortran statements, thus SUM SQ is the same as SUMSQ)</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="co1">! DO loop example</span>
+       <span class="kw1">PROGRAM</span> MAIN
+         SUM SQ <span class="sy0">=</span> <span class="nu0">0</span>
+         <span class="kw1">DO</span> <span class="nu0">101</span> I <span class="sy0">=</span> <span class="nu0">1</span>, <span class="nu0">9999999</span>
+           <span class="kw1">IF</span> <span class="br0">(</span>SUM SQ.<span class="me1">GT</span>.1000<span class="br0">)</span> <span class="kw1">GO</span> <span class="kw1">TO</span> <span class="nu0">109</span>
+           SUM SQ <span class="sy0">=</span> SUM SQ <span class="sy0">+</span> I<span class="sy0">**</span><span class="nu0">2</span>
+<span class="nu0">101</span>      <span class="kw1">CONTINUE</span>
+<span class="nu0">109</span>      <span class="kw1">CONTINUE</span>
+       <span class="kw1">END</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="1958:_Algol">1958: Algol</span>
+</h3>
+<p><a href="ALGOL" title="ALGOL">Algol</a> was first formalised in the Algol58 report.</p>
+<h3> <span class="mw-headline" id="1960:_COBOL">1960: COBOL</span>
+</h3>
+<p>COBOL was formalised in late 1959 and has had many elaborations. It uses the PERFORM verb which has many options, with the later addition of "structured" statements such as END-PERFORM. Ignoring the need for declaring and initialising variables, the equivalent of a <i>for</i>-loop would be</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cobol source-cobol">
+<pre class="de1">
+<span class="kw2">PERFORM</span> <span class="kw2">VARYING</span> I <span class="kw3">FROM</span> <span class="nu0">1</span> <span class="kw3">BY</span> <span class="nu0">1</span> <span class="kw2">UNTIL</span> I &gt; <span class="nu0">1000</span>
+   <span class="kw2">ADD</span> I**<span class="nu0">2</span> <span class="kw2">to</span> SumSQ<span class="sy0">.</span>
+END-<span class="kw2">PERFORM</span>
+</pre>
+</div>
+</div>
+<p>If the PERFORM verb has the optional clause TEST AFTER, the resulting loop is slightly different: the loop body is executed at least once, before any test.</p>
+<h2> <span class="mw-headline" id="1968:_Algol_68">1968: Algol 68</span>
+</h2>
+<p><a href="http://en.m.wikipedia.org/wiki/Algol68" title="Algol68" class="mw-redirect">Algol68</a> has what was considered <i>the</i> universal loop, the full syntax is:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="algol68 source-algol68">
+<pre class="de1">
+<span class="kw2">FOR</span> i <span class="kw2">FROM</span> 1 <span class="kw2">BY</span> 2 <span class="kw2">TO</span> 3 <span class="kw2">WHILE</span> i<span class="sy1">≠</span>4 <span class="kw2">DO</span> <span class="sy1">~</span> <span class="kw2">OD</span>
+</pre>
+</div>
+</div>
+<p>Further, the single iteration range could be replaced by a list of such ranges. There are several unusual aspects of the construct</p>
+<ul>
+<li>only the "<b>do</b> ~ <b>od</b>" portion was compulsory, in which case the loop will iterate indefinitely.</li>
+<li>thus the clause "<b>to</b> 100 <b>do</b> ~ <b>od</b>", will iterate exactly 100 times.</li>
+<li>the "<b>while</b>" <i>syntactic element</i> allowed a programmer to break from a "<b>for</b>" loop early, as in:</li>
+</ul>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="algol68 source-algol68">
+<pre class="de1">
+<span class="kw3">INT</span> sum sq<span class="sy1">:=</span>0<span class="sy1">;</span>
+<span class="kw2">FOR</span> i
+ <span class="kw2">WHILE</span>
+  <span class="kw22">print</span><span class="br0">(</span><span class="br0">(</span><span class="st0">"So far:"</span><span class="sy1">,</span>i<span class="sy1">,</span> <span class="kw22">new line</span><span class="br0">)</span><span class="br0">)</span><span class="sy1">;</span> <span class="sy1">/*</span>Interposed for tracing purposes.<span class="sy1">*/</span>
+  sum sq <span class="sy1">≠</span> 70<span class="sy1">↑</span>2                    <span class="sy1">/*</span>This is the test for the <span class="kw2">WHILE</span><span class="sy1">*/</span>
+<span class="kw2">DO</span>
+  sum sq <span class="sy1">+:=</span> i<span class="sy1">↑</span>2
+<span class="kw2">OD</span>
+</pre>
+</div>
+</div>
+<p>Subsequent <i>extensions</i> to the standard Algol68 allowed the "<b>to</b>" syntactic element to be replaced with "<b>upto</b>" and "<b>downto</b>" to achieve a small optimization. The same compilers also incorporated:</p>
+<ul>
+<li>
+<b>until</b> - for late loop termination.</li>
+<li>
+<b>foreach</b> - for working on arrays in <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel</a>.</li>
+</ul>
+<h3> <span class="mw-headline" id="1983:_Ada_83_and_above">1983: Ada 83 and above</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+<span class="kw3">procedure</span> Main <span class="kw1">is</span>
+  Sum_Sq : Integer := <span class="nu0">0</span>;
+<span class="kw1">begin</span>
+  <span class="kw1">for</span> I <span class="kw3">in</span> <span class="nu0">1</span> .. <span class="nu0">9999999</span> <span class="kw1">loop</span> 
+    <span class="kw1">if</span> Sum_Sq &lt;= <span class="nu0">1000</span> <span class="kw1">then</span>
+      Sum_Sq := Sum_Sq + I**<span class="nu0">2</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="For_loop#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/6t66728h.aspx">"Compiler Warning (level 4) C4127"</a>. Microsoft<span class="printonly">. <a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/6t66728h.aspx">http://msdn.microsoft.com/en-us/library/6t66728h.aspx</a></span><span class="reference-accessdate">. Retrieved 29 June 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Compiler+Warning+%28level+4%29+C4127&amp;rft.atitle=&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fmsdn.microsoft.com%2Fen-us%2Flibrary%2F6t66728h.aspx&amp;rfr_id=info:sid/en.wikipedia.org:For_loop"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Do_while_loop" title="Do while loop">Do while loop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Foreach" title="Foreach" class="mw-redirect">Foreach</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Loop_counter" title="Loop counter">Loop counter</a></li>
+<li><a href="While_loop" title="While loop">While loop</a></li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/Ada_Programming" class="extiw" title="wikibooks:Ada Programming">Ada_Programming</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Ada_Programming/Control" class="extiw" title="wikibooks:Ada Programming/Control">Control</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a href="http://www.wikia.com/wiki/c:Code:For_loop" class="extiw" title="wikia:Code:For loop">For loop</a> implementation in different languages at <a href="http://www.wikia.com/wiki/c:Code" class="extiw" title="wikia:Code">Wikia:Code</a>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 15 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Bucle_For" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Cyklus_for" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/For-l%C3%B8kke" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/For-Schleife" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Bucle_for" lang="es" hreflang="es">español</a></li><li><a href="http://ko.m.wikipedia.org/wiki/For_%EB%A3%A8%ED%94%84" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/For_petlja" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://it.m.wikipedia.org/wiki/Ciclo_for" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9C%D7%95%D7%9C%D7%90%D7%94" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://ja.m.wikipedia.org/wiki/For%E6%96%87" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://mhr.m.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB" lang="mhr" hreflang="mhr">олык марий</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A6%D0%B8%D0%BA%D0%BB_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/For%E8%BF%B4%E5%9C%88" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=For_loop&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=For_loop&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=For+loop&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

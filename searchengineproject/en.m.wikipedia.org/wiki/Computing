@@ -1,0 +1,811 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Computing - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Computing","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Computing" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Computing"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Computing</h1>			
+<div class="dablink">For the formal concept of computation, see <a href="http://en.m.wikipedia.org/wiki/Computation" title="Computation">computation</a>.  For the magazine, see <a href="http://en.m.wikipedia.org/wiki/Computing_(magazine)" title="Computing (magazine)">Computing (magazine)</a>.  For the scientific journal, see <a href="http://en.m.wikipedia.org/wiki/Computing_(journal)" title="Computing (journal)">Computing (journal)</a>.</div>
+<table class="metadata plainlinks ambox ambox-style ambox-lead_too_short" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article's <b><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section" title="Wikipedia:Manual of Style/Lead section">lead section</a> may not adequately <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Summary_style" title="Wikipedia:Summary style">summarize</a> key points of its contents</b>. <span class="hide-when-compact">Please consider expanding the lead to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview" title="Wikipedia:Manual of Style/Lead section">provide an accessible overview</a> of all important aspects of the article.</span> <small><i>(June 2012)</i></small> </span></td>
+</tr></table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Babbage_Difference_Engine_(Being_utilised).jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Babbage_Difference_Engine_%28Being_utilised%29.jpg/300px-Babbage_Difference_Engine_%28Being_utilised%29.jpg" width="300" height="228" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Babbage_Difference_Engine_%28Being_utilised%29.jpg/450px-Babbage_Difference_Engine_%28Being_utilised%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Babbage_Difference_Engine_%28Being_utilised%29.jpg/600px-Babbage_Difference_Engine_%28Being_utilised%29.jpg 2x"></a>
+<div class="thumbcaption">
+
+A <a href="http://en.m.wikipedia.org/wiki/Difference_engine" title="Difference engine">difference engine</a>: computing the solution to a <a href="http://en.m.wikipedia.org/wiki/Polynomial_function" title="Polynomial function" class="mw-redirect">polynomial function</a>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Moody_Hall_computer_lab.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Moody_Hall_computer_lab.jpg/250px-Moody_Hall_computer_lab.jpg" width="250" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Moody_Hall_computer_lab.jpg/375px-Moody_Hall_computer_lab.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/80/Moody_Hall_computer_lab.jpg/500px-Moody_Hall_computer_lab.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Computer_laboratory" title="Computer laboratory" class="mw-redirect">Computer laboratory</a>, Moody Hall, James Madison University, 2003</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:252px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Wikimedia-servers.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wikimedia-servers.jpg/250px-Wikimedia-servers.jpg" width="250" height="188" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wikimedia-servers.jpg/375px-Wikimedia-servers.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wikimedia-servers.jpg/500px-Wikimedia-servers.jpg 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Wikimedia_Foundation" title="Wikimedia Foundation">Wikimedia</a> <a href="http://en.m.wikipedia.org/wiki/Server_(computing)" title="Server (computing)">servers</a>
+</div>
+</div>
+</div>
+<p><b>Computing</b> is the activity of using <a href="http://en.m.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">computer hardware</a> and <a href="http://en.m.wikipedia.org/wiki/Computer_software" title="Computer software" class="mw-redirect">software</a>.</p>
+<h2> <span class="mw-headline" id="Definitions">Definitions</span>
+</h2>
+<p>The <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> <i>Computing Curricula 2005</i><sup id="cite_ref-curricula_1-0" class="reference"><a href="Computing#cite_note-curricula-1"><span>[</span>1<span>]</span></a></sup> defined "computing" as:</p>
+<blockquote>
+<p>"In a general way, we can define computing to mean any goal-oriented activity requiring, benefiting from, or creating computers. Thus, computing includes designing and building hardware and software systems for a wide range of purposes; processing, structuring, and managing various kinds of information; doing scientific studies using computers; making computer systems behave intelligently; creating and using communications and entertainment media; finding and gathering information relevant to any particular purpose, and so on. The list is virtually endless, and the possibilities are vast."</p>
+</blockquote>
+<p>The <i>Computing Curricula 2005</i> guidelines define five sub-disciplines of <i>computing</i>: <a href="http://en.m.wikipedia.org/wiki/Computer_Science" title="Computer Science" class="mw-redirect">Computer Science</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_Engineering" title="Computer Engineering" class="mw-redirect">Computer Engineering</a>, <a href="http://en.m.wikipedia.org/wiki/Information_Systems" title="Information Systems" class="mw-redirect">Information Systems</a>, <a href="http://en.m.wikipedia.org/wiki/Information_Technology" title="Information Technology" class="mw-redirect">Information Technology</a>, and <a href="http://en.m.wikipedia.org/wiki/Software_Engineering" title="Software Engineering" class="mw-redirect">Software Engineering</a>.<sup id="cite_ref-2" class="reference"><a href="Computing#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The term "computing" has sometimes been narrowly defined, as in a 1989 <a href="Association_for_Computing_Machinery" title="Association for Computing Machinery">ACM</a> report on <i>Computing as a Discipline</i><sup id="cite_ref-3" class="reference"><a href="Computing#cite_note-3"><span>[</span>3<span>]</span></a></sup>:</p>
+<blockquote>
+<p><i>The discipline of computing is the systematic study of algorithmic</i> processes that describe and transform information: their theory, analysis, design, efficiency, implementation, and application. The fundamental question underlying all computing is "What can be (efficiently) automated?"</p>
+</blockquote>
+<p><i>Computing Curricula 2005</i><sup id="cite_ref-curricula_1-1" class="reference"><a href="Computing#cite_note-curricula-1"><span>[</span>1<span>]</span></a></sup> also recognizes that the meaning of "computing" depends on the context:</p>
+<blockquote>
+<p><i>Computing also has other meanings that are more specific, based on the context in which the term is used. For example, an information systems specialist will view computing somewhat differently from a software engineer. Regardless of the context, doing computing well can be complicated and difficult. Because society needs people to do computing well, we must think of computing not only as a profession but also as a discipline.</i></p>
+</blockquote>
+<p>The term "computing" is also synonymous with counting and calculating. In earlier times, it was used in reference to mechanical computing machines.</p>
+<p>A computer is a machine that reads, stores, manipulates and displays data. The most common example are the various <a href="http://en.m.wikipedia.org/wiki/Personal_computers" title="Personal computers" class="mw-redirect">personal computers</a>. Other common examples include: <a href="http://en.m.wikipedia.org/wiki/Mobile_phones" title="Mobile phones" class="mw-redirect">mobile phones</a>, <a href="http://en.m.wikipedia.org/wiki/Mp3_players" title="Mp3 players" class="mw-redirect">mp3 players</a>, or <a href="http://en.m.wikipedia.org/wiki/Video_game_consoles" title="Video game consoles" class="mw-redirect">video game consoles</a>.</p>
+<h2> <span class="mw-headline" id="Computer">Computer</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">Computer</a>, <a href="http://en.m.wikipedia.org/wiki/Outline_of_computers" title="Outline of computers">Outline of computers</a>, and <a href="http://en.m.wikipedia.org/wiki/Glossary_of_computer_terms" title="Glossary of computer terms">Glossary of computer terms</a>
+</div>
+<p>A computer is a <a href="http://en.m.wikipedia.org/wiki/Machine" title="Machine">machine</a> that manipulates <a href="http://en.m.wikipedia.org/wiki/Data_(computing)" title="Data (computing)">data</a> according to a set of <a href="Source_code" title="Source code">instructions</a> called a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a>. The program has an <a href="http://en.m.wikipedia.org/wiki/Execution_(computing)" title="Execution (computing)">executable</a> form that the computer can use directly to execute the instructions. The same program in its human-readable <a href="Source_code" title="Source code">source code</a> form, enables a <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">programmer</a> to study and develop the <a href="http://en.m.wikipedia.org/wiki/Algorithm#Formalization" title="Algorithm">algorithm</a>. Because the instructions can be carried out in different types of computers, a single set of source instructions converts to machine instructions according to the <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">central processing unit</a> type.</p>
+<p>The execution <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">process</a> carries out the instructions in a computer program. Instructions express the <a href="http://en.m.wikipedia.org/wiki/Computation" title="Computation">computations</a> performed by the computer. They trigger sequences of simple actions on the executing machine. Those actions produce effects according to the <a href="http://en.m.wikipedia.org/wiki/Formal_semantics_of_programming_languages" title="Formal semantics of programming languages" class="mw-redirect">semantics</a> of the instructions.</p>
+<h3> <span class="mw-headline" id="Computer_software">Computer software</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">Software</a>
+</div>
+<p>Computer software or just "software", is a collection of <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer programs</a> and related <a href="http://en.m.wikipedia.org/wiki/Data" title="Data">data</a> that provides the instructions for telling a <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">computer</a> what to do and how to do it. Software refers to one or more computer programs and data held in the storage of the computer for some purposes. In other words, software is a set of <i>programs, procedures, algorithms</i> and its <i>documentation</i> concerned with the operation of a data processing system. Program software performs the <a href="http://en.m.wikipedia.org/wiki/Function_(engineering)" title="Function (engineering)">function</a> of the <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> it implements, either by directly providing <a href="http://en.m.wikipedia.org/wiki/Instruction_(computer_science)" title="Instruction (computer science)" class="mw-redirect">instructions</a> to the computer hardware or by serving as input to another piece of software. The <a href="http://en.m.wikipedia.org/wiki/Terminology" title="Terminology">term</a> was coined to contrast to the old term <a href="http://en.m.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">hardware</a> (meaning physical devices). In contrast to hardware, software "cannot be touched".<sup id="cite_ref-4" class="reference"><a href="Computing#cite_note-4"><span>[</span>4<span>]</span></a></sup> Software is also sometimes used in a more narrow sense, meaning <a href="http://en.m.wikipedia.org/wiki/Application_software" title="Application software">application software</a> only. Sometimes the term includes data that has not traditionally been associated with computers, such as film, tapes, and records.<sup id="cite_ref-5" class="reference"><a href="Computing#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h4> <span class="mw-headline" id="Application_software">Application software</span>
+</h4>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Application_software" title="Application software">Application software</a>
+</div>
+<p>Application software, also known as an "application" or an "app", is <a href="http://en.m.wikipedia.org/wiki/Computer_software" title="Computer software" class="mw-redirect">computer software</a> designed to help the user to perform specific tasks. Examples include <a href="http://en.m.wikipedia.org/wiki/Enterprise_software" title="Enterprise software">enterprise software</a>, <a href="http://en.m.wikipedia.org/wiki/Accounting_software" title="Accounting software">accounting software</a>, <a href="http://en.m.wikipedia.org/wiki/Office_suite" title="Office suite">office suites</a>, <a href="http://en.m.wikipedia.org/wiki/Graphics_software" title="Graphics software">graphics software</a> and <a href="http://en.m.wikipedia.org/wiki/Media_player_(application_software)" title="Media player (application software)">media players</a>. Many application programs deal principally with <a href="http://en.m.wikipedia.org/wiki/Document_file_format" title="Document file format">documents</a>. Apps may be <a href="http://en.m.wikipedia.org/wiki/Product_bundling" title="Product bundling">bundled</a> with the computer and its system software, or may be published separately. Some users are satisfied with the bundled apps and need never install one.</p>
+<p>Application software is contrasted with <a href="System_software" title="System software">system software</a> and <a href="http://en.m.wikipedia.org/wiki/Middleware" title="Middleware">middleware</a>, which manage and integrate a computer's capabilities, but typically do not directly apply them in the performance of tasks that benefit the user. The system software serves the application, which in turn serves the user.</p>
+<p>Similar relationships apply in other fields. For example, a shopping mall does not provide the merchandise a shopper is seeking, but provides space and services for retailers that serve the shopper. A bridge may similarly support rail tracks which support trains, allowing the trains to transport passengers.</p>
+<p>Application software applies the power of a particular <a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">computing platform</a> or system software to a particular purpose. Some apps such as <a href="http://en.m.wikipedia.org/wiki/Microsoft_Office" title="Microsoft Office">Microsoft Office</a> are available in versions for several different platforms; others have narrower requirements and are thus called, for example, a <a href="http://en.m.wikipedia.org/wiki/Geographic_information_system" title="Geographic information system">Geography</a> application for <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> or an <a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> application for <a href="http://en.m.wikipedia.org/wiki/Educational_software" title="Educational software">education</a> or <a href="http://en.m.wikipedia.org/wiki/Linux_gaming" title="Linux gaming">Linux gaming</a>. Sometimes a new and popular application arises which only runs on one platform, increasing the desirability of that platform. This is called a <a href="http://en.m.wikipedia.org/wiki/Killer_application" title="Killer application">killer application</a>.</p>
+<h2> <span class="mw-headline" id="Computer_user">Computer user</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/User_(computing)" title="User (computing)">User (computing)</a> and <a href="http://en.m.wikipedia.org/wiki/End-user" title="End-user">End-user</a>
+</div>
+<p>A user is an agent, either a human agent (end-user) or software agent, who uses a computer or network service. A user often has a user account and is identified by a username (also user name), screen name (also screenname), nickname (also nick), or handle, which is derived from the identical Citizen's Band radio term.</p>
+<p>Users are also widely characterized as the class of people that use a system without complete technical expertise required to understand the system fully.[1] In hacker-related contexts, such users are also divided into lusers and power users.</p>
+<p>In projects in which the actor of the system is another system or a software agent, it is quite possible that there is no end-user for the system. In this case, the end-users for the system would be indirect end-users.</p>
+<h3> <span class="mw-headline" id="Enthusiast_computing">Enthusiast computing</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Enthusiast_computing" title="Enthusiast computing">Enthusiast computing</a>
+</div>
+<p>Enthusiast computing refers to a sub-culture of <a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">personal computer</a> users who focus on extremely high-performance computers. Manufacturers of performance-oriented parts typically include an enthusiast model in their offerings. Enthusiast computers (often referred to as a "box", "build", or "rig" by their owners) commonly feature extravagant cases and high-end components, and are sometimes liquid cooled.</p>
+<p>Although high-end computers may be bought retail in the same manner as the common computer, they are frequently built by their owners. Enthusiasts build their systems in order to produce a computer that will out-perform an opponent's computer, thereby "winning" in a contest; to simply enjoy the best images and effects a new PC game has to offer; or even simply to obtain the best possible performance at a variety of tasks.</p>
+<h2> <span class="mw-headline" id="Computer_programming">Computer programming</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">Computer programming</a> and <a href="http://en.m.wikipedia.org/wiki/Outline_of_computer_programming" title="Outline of computer programming">Outline of computer programming</a>
+</div>
+<p>Computer programming in general is the process of writing, testing, debugging, and maintaining the <a href="Source_code" title="Source code">source code</a> and documentation of <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer programs</a>. This source code is written in a <a href="Programming_language" title="Programming language">programming language</a>, which is an <a href="http://en.m.wikipedia.org/wiki/Artificial_language" title="Artificial language">artificial language</a> often more restrictive or demanding than <a href="http://en.m.wikipedia.org/wiki/Natural_language" title="Natural language">natural languages</a>, but easily translated by the computer. The purpose of programming is to invoke the desired behaviour (customization) from the machine. The process of writing high quality source code requires knowledge of both the application's domain <i>and</i> the computer science domain. The highest-quality software is thus developed by a team of various domain experts, each person a specialist in some area of development. But the term <i>programmer</i> may apply to a range of program quality, from <a href="http://en.m.wikipedia.org/wiki/Hacker_(hobbyist)" title="Hacker (hobbyist)">hacker</a> to <a href="http://en.m.wikipedia.org/wiki/Hacker_(programmer_subculture)" title="Hacker (programmer subculture)">open source contributor</a> to professional. And a single programmer could do most or all of the computer programming needed to generate the <a href="http://en.m.wikipedia.org/wiki/Proof_of_concept" title="Proof of concept">proof of concept</a> to launch a new <a href="http://en.m.wikipedia.org/wiki/Killer_application" title="Killer application">"killer" application</a>.</p>
+<h3> <span class="mw-headline" id="Computer_programmer">Computer programmer</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Programmer" title="Programmer">Programmer</a>
+</div>
+<p>A programmer, computer programmer, or coder is a person who writes <a href="http://en.m.wikipedia.org/wiki/Computer_software" title="Computer software" class="mw-redirect">computer software</a>. The term <i>computer programmer</i> can refer to a specialist in one area of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a> or to a generalist who writes code for many kinds of software. One who practices or professes a formal approach to programming may also be known as a programmer analyst. A programmer's primary computer language (<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="http://en.m.wikipedia.org/wiki/Python_programming_language" title="Python programming language" class="mw-redirect">Python</a> etc.) is often prefixed to the above titles, and those who work in a web environment often prefix their titles with <i>web</i>. The term <i>programmer</i> can be used to refer to a <a href="Software_developer" title="Software developer">software developer</a>, <a href="http://en.m.wikipedia.org/wiki/Software_engineer" title="Software engineer">software engineer</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_scientist" title="Computer scientist">computer scientist</a>, or <a href="http://en.m.wikipedia.org/wiki/Software_analyst" title="Software analyst">software analyst</a>. However, members of these <a href="http://en.m.wikipedia.org/wiki/Profession" title="Profession">professions</a> typically<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2011">citation needed</span></a></i>]</sup> possess other <a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">software engineering</a> skills, beyond programming; for this reason, the term <i>programmer</i> is sometimes considered an insulting or derogatory oversimplification of these other professions<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2011">citation needed</span></a></i>]</sup>. This has sparked much debate amongst developers, analysts, computer scientists, programmers, and outsiders who continue to be puzzled at the subtle differences in the definitions of these occupations.<sup id="cite_ref-6" class="reference"><a href="Computing#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="Computing#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="Computing#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="Computing#cite_note-9"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-10" class="reference"><a href="Computing#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Computer_science">Computer science</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">Computer science</a>
+</div>
+<p>Computer science or computing science (abbreviated <b>CS</b> or <b>compsci</b>) is the <a href="http://en.m.wikipedia.org/wiki/Science" title="Science">scientific</a> and <a href="http://en.m.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematical</a> approach in <a href="http://en.m.wikipedia.org/wiki/Information_technology" title="Information technology">information technology</a> and computing.<sup id="cite_ref-11" class="reference"><a href="Computing#cite_note-11"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="Computing#cite_note-12"><span>[</span>12<span>]</span></a></sup> A <a href="http://en.m.wikipedia.org/wiki/Computer_scientist" title="Computer scientist">computer scientist</a> is a person who does work at a professional level in computer science and/or has attained a degree in computer science or a related field.</p>
+<p>Its subfields can be divided into practical techniques for its implementation and application in <a href="http://en.m.wikipedia.org/wiki/Computer_system" title="Computer system" class="mw-redirect">computer systems</a> and purely theoretical areas. Some, such as <a href="http://en.m.wikipedia.org/wiki/Computational_complexity_theory" title="Computational complexity theory">computational complexity theory</a>, which studies fundamental properties of <a href="http://en.m.wikipedia.org/wiki/Computational_problem" title="Computational problem">computational problems</a>, are highly abstract, while others, such as <a href="http://en.m.wikipedia.org/wiki/Computer_graphics_(computer_science)" title="Computer graphics (computer science)">computer graphics</a>, emphasize real-world applications. Still others focus on the challenges in implementing computations. For example, <a href="http://en.m.wikipedia.org/wiki/Programming_language_theory" title="Programming language theory">programming language theory</a> studies approaches to description of computations, while the study of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a> itself investigates various aspects of the use of <a href="Programming_language" title="Programming language">programming languages</a> and <a href="http://en.m.wikipedia.org/wiki/Complex_systems" title="Complex systems">complex systems</a>, and <a href="http://en.m.wikipedia.org/wiki/Human-computer_interaction" title="Human-computer interaction" class="mw-redirect">human-computer interaction</a> focuses on the challenges in making computers and computations useful, usable, and universally accessible to <a href="http://en.m.wikipedia.org/wiki/Humans" title="Humans" class="mw-redirect">humans</a>.</p>
+<h2> <span class="mw-headline" id="History_of_computing">History of computing</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/History_of_computing" title="History of computing">History of computing</a> and <a href="http://en.m.wikipedia.org/wiki/Timeline_of_computing" title="Timeline of computing">Timeline of computing</a>
+</div>
+<p>The history of computing is longer than the <a href="http://en.m.wikipedia.org/wiki/History_of_computing_hardware" title="History of computing hardware">history of computing hardware</a> and <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">modern computing technology</a> and includes the history of methods intended for pen and paper or for chalk and slate, with or without the aid of tables.</p>
+<p>Computing is intimately tied to the representation of <a href="http://en.m.wikipedia.org/wiki/Number" title="Number">numbers</a>. But long before <a href="http://en.m.wikipedia.org/wiki/Abstraction" title="Abstraction">abstractions</a> like <i>the number</i> arose, there were mathematical concepts to serve the purposes of civilization. These concepts include <a href="http://en.m.wikipedia.org/wiki/One-to-one_correspondence" title="One-to-one correspondence" class="mw-redirect">one-to-one correspondence</a> (the basis of counting), comparison to a standard (used for measurement), and the <i>3-4-5</i> right triangle (a device for assuring a <i>right angle</i>).</p>
+<p>Eventually, the concept of numbers became concrete and familiar enough for counting to arise, at times with sing-song mnemonics to teach <a href="http://en.m.wikipedia.org/wiki/Sequence" title="Sequence">sequences</a> to others. All the known languages have words for at least <a href="http://en.m.wikipedia.org/wiki/Numbers_in_various_languages" title="Numbers in various languages" class="mw-redirect">"one" and "two"</a> (although this is disputed: see <a href="http://en.m.wikipedia.org/wiki/Piraha_language" title="Piraha language" class="mw-redirect">Piraha language</a>), and even some animals like the <a href="http://en.m.wikipedia.org/wiki/Common_Blackbird" title="Common Blackbird">blackbird</a> can distinguish a surprising number of items.<sup id="cite_ref-13" class="reference"><a href="Computing#cite_note-13"><span>[</span>13<span>]</span></a></sup></p>
+<p>The earliest known tool for use in computation was the <a href="http://en.m.wikipedia.org/wiki/Abacus" title="Abacus">abacus</a>, and it was thought to have been invented in <a href="http://en.m.wikipedia.org/wiki/Babylon" title="Babylon">Babylon</a> circa <a href="http://en.m.wikipedia.org/wiki/2400_BC" title="2400 BC" class="mw-redirect">2400 BC</a>. Its original style of usage was by lines drawn in sand with pebbles. Abaci, of a more modern design, are still used as calculation tools today. This was the first known computer and most advanced system of calculation known to date - preceding Greek methods by 2,000 years.</p>
+<h2> <span class="mw-headline" id="Computer_network">Computer network</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">Computer network</a>
+</div>
+<p>A computer network, often simply referred to as a network, is a collection of hardware components and computers interconnected by communication channels that allow sharing of resources and information.<sup id="cite_ref-14" class="reference"><a href="Computing#cite_note-14"><span>[</span>14<span>]</span></a></sup> Where at least one process in one device is able to send/receive data to/from at least one process residing in a remote device, then the two devices are said to be in a network.</p>
+<p>Networks may be classified according to a wide variety of characteristics such as the medium used to transport the data, <a href="http://en.m.wikipedia.org/wiki/Communications_protocol" title="Communications protocol">communications protocol</a> used, scale, <a href="http://en.m.wikipedia.org/wiki/Network_topology" title="Network topology">topology</a>, and organizational scope.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Communications_protocol" title="Communications protocol">Communications protocols</a> define the rules and data formats for exchanging information in a computer network, and provide the basis for <a href="http://en.m.wikipedia.org/wiki/Computer_network_programming" title="Computer network programming">network programming</a>. Well-known communications protocols are <a href="http://en.m.wikipedia.org/wiki/Ethernet" title="Ethernet">Ethernet</a>, a hardware and <a href="http://en.m.wikipedia.org/wiki/Link_Layer" title="Link Layer" class="mw-redirect">Link Layer</a> standard that is ubiquitous in <a href="http://en.m.wikipedia.org/wiki/Local_area_network" title="Local area network">local area networks</a>, and the <a href="http://en.m.wikipedia.org/wiki/Internet_Protocol_Suite" title="Internet Protocol Suite" class="mw-redirect">Internet Protocol Suite</a>, which defines a set of protocols for internetworking, i.e. for data communication between multiple networks, as well as host-to-host data transfer, and application-specific data transmission formats.</p>
+<p>Computer networking is sometimes considered a sub-discipline of <a href="http://en.m.wikipedia.org/wiki/Electrical_engineering" title="Electrical engineering">electrical engineering</a>, <a href="http://en.m.wikipedia.org/wiki/Telecommunications" title="Telecommunications" class="mw-redirect">telecommunications</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <a href="http://en.m.wikipedia.org/wiki/Information_technology" title="Information technology">information technology</a> or <a href="http://en.m.wikipedia.org/wiki/Computer_engineering" title="Computer engineering">computer engineering</a>, since it relies upon the theoretical and practical application of these disciplines.</p>
+<h3> <span class="mw-headline" id="Internet">Internet</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main articles: <a href="http://en.m.wikipedia.org/wiki/Internet" title="Internet">Internet</a>, <a href="http://en.m.wikipedia.org/wiki/Outline_of_the_Internet" title="Outline of the Internet">Outline of the Internet</a>, and <a href="http://en.m.wikipedia.org/wiki/Glossary_of_Internet-related_terms" title="Glossary of Internet-related terms">Glossary of Internet-related terms</a>
+</div>
+<p>The Internet is a global system of interconnected <a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">computer networks</a> that use the standard <a href="http://en.m.wikipedia.org/wiki/Internet_protocol_suite" title="Internet protocol suite">Internet protocol suite</a> (TCP/IP) to serve billions of users worldwide. It is a <i>network of networks</i> that consists of millions of private, public, academic, business, and government networks, of local to global scope, that are linked by a broad array of electronic, wireless and optical networking technologies. The Internet carries an extensive range of <a href="http://en.m.wikipedia.org/wiki/Information" title="Information">information</a> resources and services, such as the inter-linked <a href="http://en.m.wikipedia.org/wiki/Hypertext" title="Hypertext">hypertext</a> documents of the <a href="http://en.m.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a> (WWW) and the <a href="http://en.m.wikipedia.org/wiki/Information_infrastructure" title="Information infrastructure" class="mw-redirect">infrastructure</a> to support <a href="http://en.m.wikipedia.org/wiki/Email" title="Email">email</a>.</p>
+<h2> <span class="mw-headline" id="Computer_industry">Computer industry</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Computer_industry" title="Computer industry">Computer industry</a>
+</div>
+<p>The computer industry is made up of all of the businesses involved in developing <a href="http://en.m.wikipedia.org/wiki/Computer_software" title="Computer software" class="mw-redirect">computer software</a>, designing <a href="http://en.m.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">computer hardware</a> and <a href="http://en.m.wikipedia.org/wiki/Computer_networking" title="Computer networking" class="mw-redirect">computer networking</a> infrastructures, the manufacture of <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">computer</a> components and the provision of <a href="http://en.m.wikipedia.org/wiki/Information_technology" title="Information technology">information technology</a> services including System Administration and Maintenance.</p>
+<h3> <span class="mw-headline" id="Software_industry">Software industry</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Software_industry" title="Software industry">Software industry</a>
+</div>
+<p>The software industry includes businesses for <a href="http://en.m.wikipedia.org/wiki/Software_development" title="Software development">development</a>, <a href="http://en.m.wikipedia.org/wiki/Software_maintenance" title="Software maintenance">maintenance</a> and <a href="http://en.m.wikipedia.org/wiki/Software_publisher" title="Software publisher">publication</a> of <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">software</a> that are using any business model. The industry also includes software <a href="http://en.m.wikipedia.org/wiki/Service_(economics)" title="Service (economics)">services</a>, such as <a href="http://en.m.wikipedia.org/wiki/Training" title="Training">training</a>, <a href="http://en.m.wikipedia.org/wiki/Software_documentation" title="Software documentation">documentation</a>, and <a href="http://en.m.wikipedia.org/wiki/Consultancy" title="Consultancy" class="mw-redirect">consulting</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;">
+<tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Information_technology" title="Portal:Information technology">Information technology  portal</a></td>
+</tr>
+<tr valign="middle">
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/42px-Internet_map_1024.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/56px-Internet_map_1024.jpg 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science  portal</a></td>
+</tr>
+</table>
+</div>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/40px-Wikiversity-logo.svg.png" width="40" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/60px-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikiversity has learning materials about <i><b><a href="http://en.wikiversity.org/wiki/computing" class="extiw" title="v:computing">computing</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Index_of_history_of_computing_articles" title="Index of history of computing articles">Index of history of computing articles</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_computer_term_etymologies" title="List of computer term etymologies">List of computer term etymologies</a></li>
+</ul>
+<p><br style="clear:both;"></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-curricula-1">
+<span class="mw-cite-backlink">^ <a href="Computing#cite_ref-curricula_1-0"><sup><i><b>a</b></i></sup></a> <a href="Computing#cite_ref-curricula_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text">The Joint Task Force for Computing Curricula 2005. <a rel="nofollow" class="external text" href="http://www.acm.org/education/curric_vols/CC2005-March06Final.pdf">Computing Curricula 2005: The Overview Report (pdf)</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-2">^</a></b></span> <span class="reference-text">{cite web|<a rel="nofollow" class="external free" href="http://www.acm.org/education/curricula-recommendations%7D">http://www.acm.org/education/curricula-recommendations}</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cs.gmu.edu/cne/pjd/GP/CompDisc.pdf">Computing as a Discipline (pdf)</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.wordreference.com/definition/software">"Wordreference.com: WordNet 2.0"</a>. Princeton University, Princeton, NJ<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.wordreference.com/definition/software">http://www.wordreference.com/definition/software</a></span><span class="reference-accessdate">. Retrieved 2007-08-19</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Wordreference.com%3A+WordNet+2.0&amp;rft.atitle=&amp;rft.pub=Princeton+University%2C+Princeton%2C+NJ&amp;rft_id=http%3A%2F%2Fwww.wordreference.com%2Fdefinition%2Fsoftware&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://dictionary.reference.com/browse/software">"software..(n.d.)."</a>. <i>Dictionary.com Unabridged (v 1.1)</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://dictionary.reference.com/browse/software">http://dictionary.reference.com/browse/software</a></span><span class="reference-accessdate">. Retrieved 2007-04-13</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=software..%28n.d.%29.&amp;rft.atitle=Dictionary.com+Unabridged+%28v+1.1%29&amp;rft_id=http%3A%2F%2Fdictionary.reference.com%2Fbrowse%2Fsoftware&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation news"><a rel="nofollow" class="external text" href="http://www.ericsink.com/No_Programmers.html">"No Programmers"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ericsink.com/No_Programmers.html">http://www.ericsink.com/No_Programmers.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=No+Programmers&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.ericsink.com%2FNo_Programmers.html&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation news"><a rel="nofollow" class="external text" href="http://codebetter.com/blogs/raymond.lewallen/archive/2005/02/22/55812.aspx">"Developer versus programmer"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://codebetter.com/blogs/raymond.lewallen/archive/2005/02/22/55812.aspx">http://codebetter.com/blogs/raymond.lewallen/archive/2005/02/22/55812.aspx</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Developer+versus+programmer&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fcodebetter.com%2Fblogs%2Fraymond.lewallen%2Farchive%2F2005%2F02%2F22%2F55812.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation news"><a rel="nofollow" class="external text" href="http://weblogs.asp.net/miked/archive/2006/10/13/_2200_Developers_2200_-and-_2200_Programmers_2200_.aspx">"Developers AND Programmers"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://weblogs.asp.net/miked/archive/2006/10/13/_2200_Developers_2200_-and-_2200_Programmers_2200_.aspx">http://weblogs.asp.net/miked/archive/2006/10/13/_2200_Developers_2200_-and-_2200_Programmers_2200_.aspx</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Developers+AND+Programmers&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fweblogs.asp.net%2Fmiked%2Farchive%2F2006%2F10%2F13%2F_2200_Developers_2200_-and-_2200_Programmers_2200_.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation news"><a rel="nofollow" class="external text" href="http://discuss.joelonsoftware.com/default.asp?joel.3.112837.37">"Programmer vs. Developer vs. Software Engineer"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://discuss.joelonsoftware.com/default.asp?joel.3.112837.37">http://discuss.joelonsoftware.com/default.asp?joel.3.112837.37</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Programmer+vs.+Developer+vs.+Software+Engineer&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fdiscuss.joelonsoftware.com%2Fdefault.asp%3Fjoel.3.112837.37&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation news"><a rel="nofollow" class="external text" href="http://www.xtremevbtalk.com/archive/index.php/t-233780.html">"Programmer vs. Developer vs. Software Engineer"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.xtremevbtalk.com/archive/index.php/t-233780.html">http://www.xtremevbtalk.com/archive/index.php/t-233780.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Programmer+vs.+Developer+vs.+Software+Engineer&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.xtremevbtalk.com%2Farchive%2Findex.php%2Ft-233780.html&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation Journal">Denning, P. J.; Comer, D. E.; Gries, D.; Mulder, M. C.; Tucker, A.; Turner, A. J.; Young, P. R. (Jan 1989). "Computing as a discipline". <i>Communications of the ACM</i> <b>32</b>: 9–23. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F63238.63239">10.1145/63238.63239</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Computing+as+a+discipline&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=Denning&amp;rft.aufirst=P.+J.&amp;rft.au=Denning%2C%26%2332%3BP.+J.&amp;rft.au=Comer%2C%26%2332%3BD.+E.&amp;rft.au=Gries%2C%26%2332%3BD.&amp;rft.au=Mulder%2C%26%2332%3BM.+C.&amp;rft.au=Tucker%2C%26%2332%3BA.&amp;rft.au=Turner%2C%26%2332%3BA.+J.&amp;rft.au=Young%2C%26%2332%3BP.+R.&amp;rft.date=Jan+1989&amp;rft.volume=32&amp;rft.pages=9%E2%80%9323&amp;rft_id=info:doi/10.1145%2F63238.63239&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span> volume = 64 <span class="plainlinks noprint" style="font-size:smaller"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Cite_doi/10.1145.2F63238.63239&amp;action=edit&amp;editintro=Template:Cite_doi/editintro2">edit</a></span> "Computer science and engineering is the systematic study of algorithmic processes-their theory, analysis, design, efficiency, implementation, and application-that describe and transform information."</span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation book">Wegner, P. (October 13–15, 1976). "Research paradigms in computer science". <i>Proceedings of the 2nd international Conference on Software Engineering</i>. San Francisco, California, United States: IEEE Computer Society Press, Los Alamitos, CA. "Computer science is the study of information structures"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Research+paradigms+in+computer+science&amp;rft.atitle=Proceedings+of+the+2nd+international+Conference+on+Software+Engineering&amp;rft.aulast=Wegner%2C+P.&amp;rft.au=Wegner%2C+P.&amp;rft.date=October+13%E2%80%9315%2C+1976&amp;rft.place=San+Francisco%2C+California%2C+United+States&amp;rft.pub=IEEE+Computer+Society+Press%2C+Los+Alamitos%2C+CA&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-13">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/Konrad_Lorenz" title="Konrad Lorenz">Konrad Lorenz</a>, <i><a href="http://en.m.wikipedia.org/wiki/King_Solomon%27s_Ring_(nonfiction)" title="King Solomon's Ring (nonfiction)">King Solomon's Ring</a></i></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Computing#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.atis.org/glossary/definition.aspx?id=6555"><i>Computer network definition</i></a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.atis.org/glossary/definition.aspx?id=6555">http://www.atis.org/glossary/definition.aspx?id=6555</a></span><span class="reference-accessdate">, retrieved 2011-11-12</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Computer+network+definition&amp;rft_id=http%3A%2F%2Fwww.atis.org%2Fglossary%2Fdefinition.aspx%3Fid%3D6555&amp;rfr_id=info:sid/en.wikipedia.org:Computing"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has more on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Special:Search/Computing" class="extiw" title="wikibooks:Special:Search/Computing">Computing</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/37px-Wiktionary-logo-en.svg.png" width="37" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/55px-Wiktionary-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Wiktionary-logo-en.svg/73px-Wiktionary-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Look up <i><b><a href="http://en.wiktionary.org/wiki/computing" class="extiw" title="wiktionary:computing">computing</a></b></i> in Wiktionary, the free dictionary.</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external free" href="http://foldoc.org/">http://foldoc.org/</a> Free on-line dictionary of computing</li>
+<li>
+<a rel="nofollow" class="external free" href="http://pubs.doc.ic.ac.uk/">http://pubs.doc.ic.ac.uk/</a> open-access repository of publications - Department of Computing - Imperial College London</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Technology" title="Template:Technology"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Technology" title="Template talk:Technology"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Technology&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Technology" title="Technology">Technology</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Outline_of_technology" title="Outline of technology">Outline of technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Outline_of_applied_science" title="Outline of applied science">Outline of applied science</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Fields</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Agriculture" title="Agriculture">Agriculture</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Agricultural_engineering" title="Agricultural engineering">Agricultural engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aquaculture" title="Aquaculture">Aquaculture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fisheries_science" title="Fisheries science">Fisheries science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Food_chemistry" title="Food chemistry">Food chemistry</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Food_engineering" title="Food engineering">Food engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Food_microbiology" title="Food microbiology">Food microbiology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Food_technology" title="Food technology">Food technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Genetic_use_restriction_technology" title="Genetic use restriction technology">GURT</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ICT_in_agriculture" title="ICT in agriculture">ICT in agriculture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nutrition" title="Nutrition">Nutrition</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Biomedical_technology" title="Biomedical technology">Biomedical</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biological_engineering" title="Biological engineering">Biological engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biomechatronics" title="Biomechatronics">Biomechatronics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biomedical_engineering" title="Biomedical engineering">Biomedical engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biotechnology" title="Biotechnology">Biotechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cheminformatics" title="Cheminformatics">Cheminformatics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Genetic_engineering" title="Genetic engineering">Genetic engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Healthcare_science" title="Healthcare science">Healthcare science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Medical_research" title="Medical research">Medical research</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Medical_technology" title="Medical technology" class="mw-redirect">Medical technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nanomedicine" title="Nanomedicine">Nanomedicine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Neuroscience" title="Neuroscience">Neuroscience</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Neurotechnology" title="Neurotechnology">Neurotechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pharmacology" title="Pharmacology">Pharmacology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reproductive_technology" title="Reproductive technology">Reproductive technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tissue_engineering" title="Tissue engineering">Tissue engineering</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Buildings and<br><a href="http://en.m.wikipedia.org/wiki/Construction" title="Construction">Construction</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Acoustical_engineering" title="Acoustical engineering">Acoustical engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Architectural_engineering" title="Architectural engineering">Architectural engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Building_services_engineering" title="Building services engineering">Building services engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Civil_engineering" title="Civil engineering">Civil engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Construction_engineering" title="Construction engineering">Construction engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domestic_technology" title="Domestic technology">Domestic technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Facade_engineering" title="Facade engineering">Facade engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fire_protection_engineering" title="Fire protection engineering">Fire protection engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Safety_engineering" title="Safety engineering">Safety engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sanitary_engineering" title="Sanitary engineering">Sanitary engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Structural_engineering" title="Structural engineering">Structural engineering</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Educational_technology" title="Educational technology">Educational</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Educational_software" title="Educational software">Educational software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Digital_technologies_in_education" title="Digital technologies in education">Digital technologies in education</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_and_communication_technologies_in_education" title="Information and communication technologies in education">ICT in education</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Impact_of_technology_on_the_educational_system" title="Impact of technology on the educational system">Impact</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multimedia_learning" title="Multimedia learning">Multimedia learning</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_campus" title="Virtual campus">Virtual campus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_education" title="Virtual education">Virtual education</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Energy_technology" title="Energy technology">Energy</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Nuclear_engineering" title="Nuclear engineering">Nuclear engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nuclear_technology" title="Nuclear technology">Nuclear technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Petroleum_engineering" title="Petroleum engineering">Petroleum engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Soft_energy_technology" title="Soft energy technology">Soft energy technology</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Environmental_technology" title="Environmental technology">Environmental</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Clean_technology" title="Clean technology">Clean technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Clean_coal_technology" title="Clean coal technology">Clean coal technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ecological_design" title="Ecological design">Ecological design</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ecological_engineering" title="Ecological engineering">Ecological engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ecotechnology" title="Ecotechnology">Ecotechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Environmental_engineering" title="Environmental engineering">Environmental engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Environmental_engineering_science" title="Environmental engineering science">Environmental engineering science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Green_building" title="Green building">Green building</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Green_nanotechnology" title="Green nanotechnology">Green nanotechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Landscape_engineering" title="Landscape engineering">Landscape engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Renewable_energy" title="Renewable energy">Renewable energy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sustainable_design" title="Sustainable design">Sustainable design</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sustainable_engineering" title="Sustainable engineering">Sustainable engineering</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Industrial_technology" title="Industrial technology">Industrial</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automation" title="Automation">Automation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Business_informatics" title="Business informatics">Business informatics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Engineering_management" title="Engineering management">Engineering management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Enterprise_engineering" title="Enterprise engineering">Enterprise engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_finance" title="Computational finance">Financial engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Industrial_biotechnology" title="Industrial biotechnology">Industrial biotechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Industrial_engineering" title="Industrial engineering">Industrial engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metallurgy" title="Metallurgy">Metallurgy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mining_engineering" title="Mining engineering">Mining engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Productivity_improving_technologies_(historical)" title="Productivity improving technologies (historical)">Productivity improving technologies</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Research_and_development" title="Research and development">Research and development</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Information_and_communications_technology" title="Information and communications technology">IT and communications</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial intelligence</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Broadcast_engineering" title="Broadcast engineering">Broadcast engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_engineering" title="Computer engineering">Computer engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">Computer science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_technology" title="Information technology">Information technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Music_technology" title="Music technology">Music technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ontology_engineering" title="Ontology engineering">Ontology engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RF_engineering" title="RF engineering">RF engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">Software engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Telecommunications_engineering" title="Telecommunications engineering">Telecommunications engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_technology" title="Visual technology">Visual technology</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Military_technology" title="Military technology">Military</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Army_engineering_maintenance" title="Army engineering maintenance">Army engineering maintenance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Electronic_warfare" title="Electronic warfare">Electronic warfare</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Military_communications" title="Military communications">Military communications</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Military_engineering" title="Military engineering">Military engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stealth_technology" title="Stealth technology">Stealth technology</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Transport" title="Transport">Transport</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aerospace_engineering" title="Aerospace engineering">Aerospace engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automotive_engineering" title="Automotive engineering">Automotive engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Naval_architecture" title="Naval architecture">Naval architecture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Space_technology" title="Space technology">Space technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Traffic_engineering_(transportation)" title="Traffic engineering (transportation)">Traffic engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transport_engineering" title="Transport engineering">Transport engineering</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other <a href="http://en.m.wikipedia.org/wiki/Applied_science" title="Applied science">applied sciences</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cryogenics" title="Cryogenics">Cryogenics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Electro-optics" title="Electro-optics">Electro-optics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Electronics" title="Electronics">Electronics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Engineering_geology" title="Engineering geology">Engineering geology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Engineering_physics" title="Engineering physics">Engineering physics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hydraulics" title="Hydraulics">Hydraulics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Materials_science" title="Materials science">Materials science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microtechnology" title="Microtechnology">Microtechnology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nanotechnology" title="Nanotechnology">Nanotechnology</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other <a href="http://en.m.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a> <a href="http://en.m.wikipedia.org/wiki/List_of_engineering_branches" title="List of engineering branches">fields</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Audio_engineering" title="Audio engineering">Audio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Biochemical_engineering" title="Biochemical engineering">Biochemical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ceramic_engineering" title="Ceramic engineering">Ceramic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chemical_engineering" title="Chemical engineering">Chemical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_engineering" title="Control engineering">Control</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Electrical_engineering" title="Electrical engineering">Electrical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Electronic_engineering" title="Electronic engineering">Electronic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Entertainment_technology" title="Entertainment technology">Entertainment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Geotechnical_engineering" title="Geotechnical engineering">Geotechnical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hydraulic_engineering" title="Hydraulic engineering">Hydraulic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mechanical_engineering" title="Mechanical engineering">Mechanical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mechatronics" title="Mechatronics">Mechatronics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Optical_engineering" title="Optical engineering">Optical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Protein_engineering" title="Protein engineering">Protein</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quantum_technology" title="Quantum technology">Quantum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Robotics" title="Robotics">Robotics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_engineering" title="Systems engineering">Systems</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Components</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Infrastructure" title="Infrastructure">Infrastructure</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Invention" title="Invention">Invention</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_historic_inventions" title="Timeline of historic inventions">Timeline</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Knowledge" title="Knowledge">Knowledge</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Machine" title="Machine">Machine</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Skill" title="Skill">Skill</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Craft" title="Craft">Craft</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Tool" title="Tool">Tool</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Gadget" title="Gadget">Gadget</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/History_of_technology" title="History of technology">History</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Outline_of_prehistoric_technology" title="Outline of prehistoric technology">Prehistoric technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Neolithic_Revolution" title="Neolithic Revolution">Neolithic Revolution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ancient_technology" title="Ancient technology">Ancient technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Medieval_technology" title="Medieval technology">Medieval technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Renaissance_technology" title="Renaissance technology">Renaissance technology</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Industrial_Revolution" title="Industrial Revolution">Industrial Revolution</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Second_Industrial_Revolution" title="Second Industrial Revolution">Second</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Jet_Age" title="Jet Age">Jet Age</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_Age" title="Information Age">Information Age</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Theories_of_technology" title="Theories of technology">Theories</a> and<br>
+concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Appropriate_technology" title="Appropriate technology">Appropriate technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Critique_of_technology" title="Critique of technology">Critique of technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Diffusion_of_innovations" title="Diffusion of innovations">Diffusion of innovations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Disruptive_innovation" title="Disruptive innovation">Disruptive innovation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dual-use_technology" title="Dual-use technology">Dual-use technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ephemeralization" title="Ephemeralization">Ephemeralization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ethics_of_technology" title="Ethics of technology">Ethics of technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/High_tech" title="High tech">High tech</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hype_cycle" title="Hype cycle">Hype cycle</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inevitability_thesis" title="Inevitability thesis">Inevitability thesis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Low-technology" title="Low-technology">Low-technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mature_technology" title="Mature technology">Mature technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Philosophy_of_technology" title="Philosophy of technology">Philosophy of technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strategy_of_Technology" title="Strategy of Technology">Strategy of Technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technicism" title="Technicism">Technicism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Techno-progressivism" title="Techno-progressivism">Techno-progressivism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technocapitalism" title="Technocapitalism">Technocapitalism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technocentrism" title="Technocentrism">Technocentrism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technocracy" title="Technocracy">Technocracy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technocriticism" title="Technocriticism">Technocriticism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technoetic" title="Technoetic">Technoetic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_change" title="Technological change">Technological change</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_convergence" title="Technological convergence">Technological convergence</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_determinism" title="Technological determinism">Technological determinism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_escalation" title="Technological escalation">Technological escalation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_evolution" title="Technological evolution">Technological evolution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_fix" title="Technological fix">Technological fix</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_innovation_system" title="Technological innovation system">Technological innovation system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_momentum" title="Technological momentum">Technological momentum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_nationalism" title="Technological nationalism">Technological nationalism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_rationality" title="Technological rationality">Technological rationality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_revival" title="Technological revival">Technological revival</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_singularity" title="Technological singularity">Technological singularity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_somnambulism" title="Technological somnambulism">Technological somnambulism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technological_utopianism" title="Technological utopianism">Technological utopianism</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Technology_lifecycle" title="Technology lifecycle" class="mw-redirect">Technology lifecycle</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_acceptance_model" title="Technology acceptance model">Technology acceptance model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_adoption_lifecycle" title="Technology adoption lifecycle">Technology adoption lifecycle</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technorealism" title="Technorealism">Technorealism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transhumanism" title="Transhumanism">Transhumanism</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Emerging_technologies" title="Emerging technologies">Emerging technologies</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_emerging_technologies" title="List of emerging technologies">List</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fictional_technology" title="Fictional technology">Fictional technology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:High-technology_business_districts" title="Category:High-technology business districts">High-technology business districts</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kardashev_scale" title="Kardashev scale">Kardashev scale</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_technologies" title="List of technologies">List of technologies</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Science_and_technology_by_country" title="Category:Science and technology by country">Science and technology by country</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_alignment" title="Technology alignment">Technology alignment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_assessment" title="Technology assessment">Technology assessment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_brokering" title="Technology brokering">Technology brokering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Technology_companies" title="Category:Technology companies">Technology companies</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_demonstration" title="Technology demonstration">Technology demonstration</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Technology_education" title="Technology education">Technology education</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Technical_universities_and_colleges" title="Category:Technical universities and colleges">Technical universities and colleges</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_evangelist" title="Technology evangelist">Technology evangelist</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_governance" title="Technology governance">Technology governance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_integration" title="Technology integration">Technology integration</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_journalism" title="Technology journalism">Technology journalism</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_management" title="Technology management">Technology management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_shock" title="Technology shock">Technology shock</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_strategy" title="Technology strategy">Technology strategy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_and_society" title="Technology and society">Technology and society</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Technology_transfer" title="Technology transfer">Technology transfer</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Wikipedia book" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/16px-Symbol_book_class2.svg.png" width="16" height="16" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/24px-Symbol_book_class2.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/89/Symbol_book_class2.svg/32px-Symbol_book_class2.svg.png 2x"><b><a href="http://en.m.wikipedia.org/wiki/Book:Technology" title="Book:Technology">Book</a></b>
+</li>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="http://en.m.wikipedia.org/wiki/Category:Technology" title="Category:Technology">Category</a></b>
+</li>
+<li>
+<img alt="Commons page" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/16px-Commons-logo.svg.png" width="16" height="22" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/32px-Commons-logo.svg.png 2x"><b><a href="http://commons.wikimedia.org/wiki/Category:Technology" class="extiw" title="commons:Category:Technology">Commons</a></b>
+</li>
+<li>
+<img alt="Portal" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/16px-Portal-puzzle.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/24px-Portal-puzzle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/fd/Portal-puzzle.svg/32px-Portal-puzzle.svg.png 2x"><b><a href="http://en.m.wikipedia.org/wiki/Portal:Technology" title="Portal:Technology">Portal</a></b>
+</li>
+<li>
+<img alt="Wikiquote page" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/16px-Wikiquote-logo.svg.png" width="16" height="19" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/24px-Wikiquote-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/32px-Wikiquote-logo.svg.png 2x"><b><a href="http://en.wikiquote.org/wiki/Technology" class="extiw" title="wikiquote:Technology">Wikiquotes</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 23 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%AD%D9%88%D8%B3%D8%A8%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%95%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%BF%E0%A6%89%E0%A6%9F%E0%A6%BF%E0%A6%82" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%98%D0%B7%D1%87%D0%B8%D1%81%D0%BB%D0%B8%D1%82%D0%B5%D0%BB%D0%BD%D0%B0_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0" lang="bg" hreflang="bg">български</a></li><li><a href="http://cs.m.wikipedia.org/wiki/V%C3%BDpo%C4%8Detn%C3%AD_technika" lang="cs" hreflang="cs">česky</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Komputado" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%B1%D8%A7%DB%8C%D8%A7%D9%86%D8%B4" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Informatique" lang="fr" hreflang="fr">français</a></li><li><a href="http://gd.m.wikipedia.org/wiki/Coimpiutaireachd" lang="gd" hreflang="gd">Gàidhlig</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%8C%85" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%85%E0%A4%AD%E0%A4%BF%E0%A4%95%E0%A4%B2%E0%A4%A8" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://ia.m.wikipedia.org/wiki/Informatica" lang="ia" hreflang="ia">interlingua</a></li><li><a href="http://id.m.wikipedia.org/wiki/Teknologi_komputasi" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://ie.m.wikipedia.org/wiki/Informatica" lang="ie" hreflang="ie">Interlingue</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%95%E0%B4%AE%E0%B5%8D%E0%B4%AA%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B4%BF%E0%B4%99%E0%B5%8D%E0%B4%99%E0%B5%8D%E2%80%8C" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ne.m.wikipedia.org/wiki/%E0%A4%97%E0%A4%A3%E0%A4%A8" lang="ne" hreflang="ne">नेपाली</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%95%D1%81%D0%B5%D0%BF%D1%82%D0%B5%D1%83_%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%D1%81%D1%8B" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Komputerologia" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Computa%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%A0%D0%B0%D1%87%D1%83%D0%BD%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D8%B4%D9%85%D8%A7%D8%B1%D9%86%D8%AF%DA%A9%D8%A7%D8%B1%DB%8C" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://yi.m.wikipedia.org/wiki/%D7%A7%D7%90%D7%9E%D7%A4%D7%99%D7%95%D7%98%D7%A2%D7%A8%D7%99%D7%99" lang="yi" hreflang="yi">ייִדיש</a></li><li><a href="http://yo.m.wikipedia.org/wiki/%C3%8C%E1%B9%A3i%E1%B9%A3%E1%BA%B9%CC%81_k%E1%BB%8D%CC%80mp%C3%BAt%C3%A0" lang="yo" hreflang="yo">Yorùbá</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Computing&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Computing&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Computing&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

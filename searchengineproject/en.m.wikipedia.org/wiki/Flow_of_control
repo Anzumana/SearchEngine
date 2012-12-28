@@ -1,0 +1,997 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Control flow - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Control flow","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Control_flow" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Control+flow"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Control flow</h1>			<div class="dablink">Not to be confused with <a href="http://en.m.wikipedia.org/wiki/Flow_control" title="Flow control">Flow control</a>.</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <b>control flow</b> (or alternatively, flow of control) refers to the order in which the individual <a href="http://en.m.wikipedia.org/wiki/Statement_(computer_science)" title="Statement (computer science)">statements</a>, <a href="http://en.m.wikipedia.org/wiki/Instruction_(computer_science)" title="Instruction (computer science)" class="mw-redirect">instructions</a> or <a href="http://en.m.wikipedia.org/wiki/Function_call" title="Function call" class="mw-redirect">function calls</a> of an <a href="Imperative_programming" title="Imperative programming">imperative</a> or a <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">declarative</a> <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> are <a href="http://en.m.wikipedia.org/wiki/Execution_(computers)" title="Execution (computers)" class="mw-redirect">executed</a> or evaluated.</p>
+<p>Within an imperative <a href="Programming_language" title="Programming language">programming language</a>, a <b>control flow statement</b> is a statement whose execution results in a choice being made as to which of two or more paths should be followed. For <a href="http://en.m.wikipedia.org/wiki/Strict_programming_language" title="Strict programming language">non-strict</a> functional languages, functions and language constructs exist to achieve the same result, but they are not necessarily called control flow statements.</p>
+<p>The kinds of control flow statements supported by different languages vary, but can be categorized by their effect:</p>
+<ul><li>continuation at a different statement (<a href="http://en.m.wikipedia.org/wiki/Unconditional_branch" title="Unconditional branch" class="mw-redirect">unconditional branch</a> or <a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">jump</a>),</li>
+<li>executing a set of statements only if some condition is met (choice - i.e., <a href="http://en.m.wikipedia.org/wiki/Conditional_branch" title="Conditional branch" class="mw-redirect">conditional branch</a>),</li>
+<li>executing a set of statements zero or more times, until some condition is met (i.e., loop - the same as <a href="http://en.m.wikipedia.org/wiki/Conditional_branch" title="Conditional branch" class="mw-redirect">conditional branch</a>),</li>
+<li>executing a set of distant statements, after which the flow of control usually returns (<a href="Subroutine" title="Subroutine">subroutines</a>, <a href="http://en.m.wikipedia.org/wiki/Coroutine" title="Coroutine">coroutines</a>, and <a href="http://en.m.wikipedia.org/wiki/Continuation" title="Continuation">continuations</a>),</li>
+<li>stopping the program, preventing any further execution (unconditional halt).</li>
+</ul><p><a href="http://en.m.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupts</a> and <a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">signals</a> are low-level mechanisms that can alter the flow of control in a way similar to a subroutine, but usually occur as a response to some external stimulus or event (that can occur <a href="http://en.m.wikipedia.org/wiki/Asynchronous_systems" title="Asynchronous systems" class="mw-redirect">asynchronously</a>), rather than execution of an 'in-line' control flow statement. <a href="http://en.m.wikipedia.org/wiki/Self-modifying_code" title="Self-modifying code">Self-modifying code</a> can also be used to affect control flow through its <a href="http://en.m.wikipedia.org/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side effects</a>, but does not usually involve an explicit control flow statement (an exception being the ALTER verb in <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2007">citation needed</span></a></i>]</sup>).</p>
+<p>At the level of <a href="http://en.m.wikipedia.org/wiki/Machine_language" title="Machine language" class="mw-redirect">machine</a> or <a href="Assembly_language" title="Assembly language">assembly language</a>, control flow instructions usually work by altering the <a href="http://en.m.wikipedia.org/wiki/Program_counter" title="Program counter">program counter</a>. For some <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPUs</a> the only control flow instructions available are conditional or unconditional <a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">branch instructions</a> (also called jumps).</p>
+<h2> <span class="mw-headline" id="Primitives">Primitives</span></h2>
+<h3> <span class="mw-headline" id="Labels">Labels</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Label_(computer_science)" title="Label (computer science)">Label (computer science)</a></div>
+<p>A <a href="Label_(programming_language)" title="Label (programming language)" class="mw-redirect">label</a> is an explicit name or number assigned to a fixed position within the <a href="Source_code" title="Source code">source code</a>, and which may be referenced by control flow statements appearing elsewhere in the source code. Other than marking a position within the source code a label has no effect.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Line_number" title="Line number">Line numbers</a> are an alternative to a named label (and used in some languages such as <a href="Fortran" title="Fortran">Fortran</a> and <a href="http://en.m.wikipedia.org/wiki/BASIC_programming_language" title="BASIC programming language" class="mw-redirect">BASIC</a>), that are <a href="http://en.m.wikipedia.org/wiki/Natural_number" title="Natural number">whole numbers</a> placed at the beginning of each line of text within the source code. Languages which use these often impose the constraint that the line numbers must increase in value in each subsequent line, but may not require that they be consecutive. For example, in BASIC:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="qbasic source-qbasic">
+<pre class="de1">
+<span class="co3">10</span> <span class="kw3">LET</span> X <span class="sy0">=</span> <span class="nu0">3</span>
+<span class="co3">20</span> <span class="kw3">PRINT</span> X
+</pre></div>
+</div>
+<p>In other languages such as <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a> a label is an <a href="http://en.m.wikipedia.org/wiki/Identifier" title="Identifier">identifier</a>, usually appearing at the beginning of a line and immediately followed by a colon. For example, in C:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+Success<span class="sy0">:</span> <span class="kw3">printf</span> <span class="br0">(</span><span class="st0">"The operation was successful.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Algol_60" title="Algol 60" class="mw-redirect">Algol 60</a> language allowed both whole numbers and identifiers as labels (both attached by colons to the following statement), but few if any other variants of Algol allowed whole numbers.</p>
+<h3> <span class="mw-headline" id="Goto">Goto</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/GOTO" title="GOTO" class="mw-redirect">GOTO</a></div>
+<p>The <b>goto</b> statement (a combination of the English words <i><a href="http://en.wiktionary.org/wiki/go" class="extiw" title="wiktionary:go">go</a></i> and <i><a href="http://en.wiktionary.org/wiki/to" class="extiw" title="wiktionary:to">to</a></i>, and pronounced accordingly) is the most basic form of unconditional transfer of control.</p>
+<p>Although the <a href="http://en.m.wikipedia.org/wiki/Keyword_(computing)" title="Keyword (computing)" class="mw-redirect">keyword</a> may either be in upper or lower case depending on the language, it is usually written as:</p>
+<pre>
+   <b>goto</b> <i>label</i>
+</pre>
+<p>The effect of a goto statement is to cause the next statement to be executed to be the statement appearing at (or immediately after) the indicated label.</p>
+<p>Goto statements have been <a href="http://en.m.wikipedia.org/wiki/Considered_harmful" title="Considered harmful">considered harmful</a> by many computer scientists, notably <a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra</a>.</p>
+<h3> <span class="mw-headline" id="Subroutines">Subroutines</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="Subroutine" title="Subroutine">Subroutine</a></div>
+<p>The terminology for <a href="Subroutine" title="Subroutine">subroutines</a> varies; they may alternatively be known as routines, procedures, functions (especially if they return results) or methods (especially if they belong to <a href="http://en.m.wikipedia.org/wiki/Class_(programming)" title="Class (programming)" class="mw-redirect">classes</a> or <a href="http://en.m.wikipedia.org/wiki/Type_class" title="Type class">type classes</a>).</p>
+<p>In the 1950s, computer memories were very small by current standards so subroutines were used primarily<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2007">citation needed</span></a></i>]</sup> to reduce program size; a piece of code was written once and then used many times from various other places in the program.</p>
+<p>Nowadays, subroutines are more frequently used to help make a program that is more structured, e.g. by isolating some particular algorithm or hiding some particular data access method. If many programmers are working on a single program, subroutines are one kind of <a href="http://en.m.wikipedia.org/wiki/Modularity_(programming)" title="Modularity (programming)" class="mw-redirect">modularity</a> that can help split up the work.</p>
+<h2> <span class="mw-headline" id="Minimal_structured_control_flow">Minimal structured control flow</span></h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Structured_program_theorem" title="Structured program theorem">Structured program theorem</a></div>
+<p>In May 1966, Böhm and Jacopini published an article<sup id="cite_ref-1" class="reference"><a href="Flow_of_control#cite_note-1"><span>[</span>1<span>]</span></a></sup> in <i>Communications of the ACM</i> which showed that any program with <b>goto</b>s could be transformed into a goto-free form involving only choice (IF THEN ELSE) and loops (WHILE condition DO xxx), possibly with duplicated code and/or the addition of Boolean variables (true/false flags). Later authors have shown that choice can be replaced by loops (and yet more Boolean variables).</p>
+<p>The fact that such minimalism is possible does not necessarily mean that it is desirable; after all, computers theoretically only need <a href="http://en.m.wikipedia.org/wiki/One_instruction_set_computer" title="One instruction set computer">one machine instruction</a> (subtract one number from another and branch if the result is negative), but practical computers have dozens or even hundreds of machine instructions.</p>
+<p>What Böhm and Jacopini's article showed was that all programs could be goto-free. Other research showed that control structures with one entry and one exit were much easier to understand than any other form, primarily because they could be used anywhere as a statement without disrupting the control flow. In other words, they were <i>composable</i>. (Later developments, such as <a href="http://en.m.wikipedia.org/wiki/Non-strict_programming_language" title="Non-strict programming language" class="mw-redirect">non-strict programming languages</a> - and more recently, composable <a href="http://en.m.wikipedia.org/wiki/Software_transactional_memory" title="Software transactional memory">software transactions</a> - have continued this line of thought, making components of programs even more freely composable.)</p>
+<h2> <span class="mw-headline" id="Control_structures_in_practice">Control structures in practice</span></h2>
+<p>Most programming languages with control structures have an initial keyword which indicates the type of control structure involved. Languages then divide as to whether or not control structures have a final keyword.</p>
+<ul><li>No final keyword: <a href="http://en.m.wikipedia.org/wiki/Algol_programming_language" title="Algol programming language" class="mw-redirect">Algol 60</a>, <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a>, <a href="Perl" title="Perl">Perl</a>, <a href="PHP" title="PHP">PHP</a>, <a href="http://en.m.wikipedia.org/wiki/PL/I_programming_language" title="PL/I programming language" class="mw-redirect">PL/I</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">PowerShell</a>. Such languages need some way of grouping statements together:
+<ul><li>Algol 60 and Pascal : <code>begin</code> ... <code>end</code></li>
+<li>C, C++, Java, Perl, PHP, and PowerShell: <a href="http://en.m.wikipedia.org/wiki/Curly_bracket_programming_language" title="Curly bracket programming language" class="mw-redirect">curly brackets</a> <code>{</code> ... <code>}</code></li>
+<li>PL/1: <code>DO</code> ... <code>END</code></li>
+<li>Python: uses indentation level (see <a href="http://en.m.wikipedia.org/wiki/Off-side_rule" title="Off-side rule">Off-side rule</a>)</li>
+<li>Haskell: either indentation level or curly brackets can be used, and they can be freely mixed</li>
+</ul></li>
+<li>Final keyword: <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/Algol_68" title="Algol 68" class="mw-redirect">Algol 68</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a>, <a href="Fortran" title="Fortran">Fortran 77</a>, <span class="new" title="Mythryl (page does not exist)">Mythryl</span>, <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>. The forms of the final keyword vary:
+<ul><li>Ada: final keyword is <code>end</code> + <i>space</i> + initial keyword e.g. <code>if</code> ... <code>end if</code>, <code>loop</code> ... <code>end loop</code></li>
+<li>Algol 68, Mythryl: initial keyword spelled backwards e.g. <code>if</code> ... <code>fi</code>, <code>case</code> ... <code>esac</code></li>
+<li>Fortran 77: final keyword is <code>end</code> + initial keyword e.g. <code>IF</code> ... <code>ENDIF</code>, <code>DO</code> ... <code>ENDDO</code></li>
+<li>Modula-2: same final keyword <code>END</code> for everything</li>
+<li>Visual Basic: every control structure has its own keyword. <code>If</code> ... <code>End If</code>; <code>For</code> ... <code>Next</code>; <code>Do</code> ... <code>Loop</code>; <code>While</code> ... <code>Wend</code></li>
+</ul></li>
+</ul><h2> <span class="mw-headline" id="Choice">Choice</span></h2>
+<h3> <span class="mw-headline" id="If-then-.28else.29_statements">If-then-(else) statements</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="Conditional_(programming)" title="Conditional (programming)">Conditional (programming)</a></div>
+<p>Conditional expressions and conditional constructs are features of a <a href="Programming_language" title="Programming language">programming language</a> which perform different computations or actions depending on whether a programmer-specified <a href="Boolean_datatype" title="Boolean datatype" class="mw-redirect">boolean</a> <i>condition</i> evaluates to true or false.</p>
+<ul><li><code>IF..GOTO</code>. A form found in unstructured languages, mimicking a typical machine code instruction, would jump to (GOTO) a label or line number when the condition was met.</li>
+<li><code>IF..THEN..(ENDIF)</code>. Rather than being restricted to a jump, any simple statement, or nested block, could follow the THEN key keyword. This a structured form.</li>
+<li><code>IF..THEN..ELSE..(ENDIF)</code>. As above, but with a second action to be performed if the condition is false. This is one of the most common forms, with many variations. Some require a terminal <code>ENDIF</code>, others do not. <a href="C" title="C">C</a> and related languages do not require a terminal keyword, or a 'then', but do require parentheses around the condition.</li>
+<li>Conditional statements can be and often are nested inside other conditional statements. Some languages allow <code>ELSE</code> and <code>IF</code> to be combined into <code>ELSEIF</code>, avoiding the need to have a series of <code>ENDIF</code> or other final statements at the end of a compound statement.</li>
+</ul><table class="wikitable"><tr><th><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>:</th>
+<th><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>:</th>
+<th><a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">Shell script</a>:</th>
+<th><a href="Python_(programming_language)" title="Python (programming language)">Python</a>:</th>
+<th><a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>:</th>
+</tr><tr><td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">if</span> a &gt; <span class="nu0">0</span> <span class="kw1">then</span> <span class="kw1">begin</span>
+      <span class="kw3">writeln</span><span class="br0">(</span>"yes"<span class="br0">)</span>
+<span class="kw1">end</span> <span class="kw1">else</span> <span class="kw1">begin</span>
+      <span class="kw3">writeln</span><span class="br0">(</span>"no"<span class="br0">)</span>
+<span class="kw1">end</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">(</span>a <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">)</span> <span class="br0">{</span> 
+      <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"yes"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span> <span class="kw1">else</span> <span class="br0">{</span>
+      <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"no"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw1">if</span> <span class="br0">[</span> <span class="re1">$a</span> <span class="re5">-gt</span> <span class="nu0">0</span> <span class="br0">]</span> 
+<span class="kw1">then</span>
+      <span class="kw3">echo</span> <span class="st0">"yes"</span>
+<span class="kw1">else</span>
+      <span class="kw3">echo</span> <span class="st0">"no"</span>
+<span class="kw1">fi</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">if</span> a <span class="sy0">&gt;</span> <span class="nu0">0</span>: 
+      <span class="kw1">print</span> <span class="st0">"yes"</span>
+<span class="kw1">else</span>:
+      <span class="kw1">print</span> <span class="st0">"no"</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+<span class="br0">(</span><span class="kw1">princ</span>
+  <span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="kw1">plusp</span> a<span class="br0">)</span>
+      <span class="st0">"yes"</span>
+      <span class="st0">"no"</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+</td>
+</tr></table><p>Less common variations include:-</p>
+<ul><li>Some languages, such as <a href="Fortran" title="Fortran">Fortran</a>, have a "three-way" or "<a href="http://en.m.wikipedia.org/wiki/Arithmetic_if" title="Arithmetic if" class="mw-redirect">arithmetic if</a>", testing whether a numeric value is positive, negative or zero.</li>
+<li>Some languages have a <a href="http://en.m.wikipedia.org/wiki/Functional_analysis" title="Functional analysis">functional</a> form of an "if" statement, for instance <a href="http://en.m.wikipedia.org/wiki/LISP" title="LISP" class="mw-redirect">LISP</a>'s <code>cond</code>.</li>
+<li>Some languages have an <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operator</a> form of an "if" statement, such as C's <a href="http://en.m.wikipedia.org/wiki/Ternary_operator" title="Ternary operator" class="mw-redirect">ternary operator</a>.</li>
+<li><a href="Perl" title="Perl">Perl</a> supplements a C-style <code>if</code> with <code>when</code> and <code>unless</code>.</li>
+<li><a href="Smalltalk" title="Smalltalk">Smalltalk</a> uses <code>ifTrue</code> and <code>ifFalse</code> messages to implement conditionals, rather than any fundamental language construct.</li>
+</ul><h3> <span class="mw-headline" id="Case_and_switch_statements">Case and switch statements</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="Switch_statement" title="Switch statement">Switch statement</a></div>
+<p><a href="Switch_statement" title="Switch statement">Switch statements</a> (or <i>case statements</i>, or <i>multiway branches</i>) compare a given value with specified constants and take action according to the first constant to match. There is usually a provision for a default action ("else", "otherwise") to be taken if no match succeeds. Switch statements can allow compiler optimizations, such as <a href="http://en.m.wikipedia.org/wiki/Lookup_table" title="Lookup table">lookup tables</a>. In <a href="http://en.m.wikipedia.org/wiki/Dynamic_language" title="Dynamic language" class="mw-redirect">dynamic languages</a>, the cases may not be limited to constant expressions, and might extend to <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>, as in the <a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">shell script</a> example on the right, where the <code>*)</code> implements the default case as a <a href="http://en.m.wikipedia.org/wiki/Glob_(programming)" title="Glob (programming)">glob</a> matching any string. Case logic can also be implemented in functional form, as in <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a>'s <code>decode</code> statement.</p>
+<table class="wikitable"><tr><th><a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>:</th>
+<th><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>:</th>
+<th><a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">Shell script</a>:</th>
+</tr><tr><td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">case</span> someChar <span class="kw1">of</span>
+  <span class="st0">'a'</span><span class="sy1">:</span> actionOnA<span class="sy1">;</span>
+  <span class="st0">'x'</span><span class="sy1">:</span> actionOnX<span class="sy1">;</span>
+  <span class="st0">'y'</span><span class="sy1">,</span><span class="st0">'z'</span><span class="sy1">:</span>actionOnYandZ<span class="sy1">;</span>
+  <span class="kw1">else</span> actionOnNoMatch<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">;</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw1">switch</span> <span class="br0">(</span>someChar<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">case</span> <span class="st0">'a'</span><span class="sy0">:</span> actionOnA<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="st0">'x'</span><span class="sy0">:</span> actionOnX<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">case</span> <span class="st0">'y'</span><span class="sy0">:</span>
+  <span class="kw1">case</span> <span class="st0">'z'</span><span class="sy0">:</span> actionOnYandZ<span class="sy0">;</span> <span class="kw2">break</span><span class="sy0">;</span>
+  <span class="kw1">default</span><span class="sy0">:</span> actionOnNoMatch<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+</td>
+<td>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw1">case</span> <span class="re1">$someChar</span> <span class="kw1">in</span> 
+   a<span class="br0">)</span>    actionOnA <span class="sy0">;;</span>
+   x<span class="br0">)</span>    actionOnX <span class="sy0">;;</span>
+   <span class="br0">[</span>yz<span class="br0">]</span><span class="br0">)</span> actionOnYandZ <span class="sy0">;;</span>
+  <span class="sy0">*</span><span class="br0">)</span>     actionOnNoMatch  <span class="sy0">;;</span>
+<span class="kw1">esac</span>
+</pre></div>
+</div>
+</td>
+</tr></table><h2> <span class="mw-headline" id="Loops">Loops</span></h2>
+<p>A loop is a sequence of statements which is specified once but which may be carried out several times in succession. The code "inside" the loop (the <i>body</i> of the loop, shown below as <i>xxx</i>) is obeyed a specified number of times, or once for each of a collection of items, or until some condition is met, or <a href="http://en.m.wikipedia.org/wiki/Infinite_loop" title="Infinite loop">indefinitely</a>.</p>
+<p>In <a href="Functional_programming" title="Functional programming">functional programming</a> languages, such as <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> and <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, loops can be expressed by using <a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursion</a> or <a href="http://en.m.wikipedia.org/wiki/Fixed_point_combinator" title="Fixed point combinator" class="mw-redirect">fixed point iteration</a> rather than explicit looping constructs. <a href="http://en.m.wikipedia.org/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">Tail recursion</a> is a special case of recursion which can be easily transformed to iteration.</p>
+<h3> <span class="mw-headline" id="Count-controlled_loops">Count-controlled loops</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="For_loop" title="For loop">For loop</a></div>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Loop_counter" title="Loop counter">Loop counter</a></div>
+<p>Most programming languages have constructions for repeating a loop a certain number of times. Note that if N is less than 1 in these examples then the language may specify that the body is skipped completely, or that the body is executed just once with N = 1. In most cases counting can go downwards instead of upwards and step sizes other than 1 can be used.</p>
+<pre>
+   FOR I = 1 TO N            <b>for</b> I := 1 <b>to</b> N <b>do</b> <b>begin</b>
+       xxx                       xxx
+   NEXT I                    <b>end</b>;
+
+   DO I = 1,N                <b>for</b> ( I=1; I&lt;=N; ++I ) {
+       xxx                       xxx
+   END DO                    }
+</pre>
+<p>In many programming languages, only integers can be reliably used in a count-controlled loop. Floating-point numbers are represented imprecisely due to hardware constraints, so a loop such as<br></p>
+<pre>
+   <b>for</b> X := 0.1 <b>step</b> 0.1 <b>to</b> 1.0 <b>do</b>
+</pre>
+<p>might be repeated 9 or 10 times, depending on rounding errors and/or the hardware and/or the compiler version. Furthermore, if the increment of X occurs by repeated addition, accumulated rounding errors may mean that the value of X in each iteration can differ quite significantly from the expected sequence 0.1, 0.2, 0.3, ..., 1.0.</p>
+<h3> <span class="mw-headline" id="Condition-controlled_loops">Condition-controlled loops</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="While_loop" title="While loop">While loop</a></div>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Do-while_loop" title="Do-while loop" class="mw-redirect">Do-while loop</a></div>
+<p>Most programming languages have constructions for repeating a loop until some condition changes. Note that some variations place the test at the start of the loop, while others have the test at the end of the loop. In the former case the body may be skipped completely, while in the latter case the body is always executed at least once.</p>
+<pre>
+   DO WHILE (test)           <b>repeat</b> 
+       xxx                       xxx 
+   LOOP                      <b>until</b> test;
+
+   <b>while</b> (test) {            <b>do</b>
+       xxx                       xxx
+   }                         <b>while</b> (test);
+</pre>
+<p>A <a href="http://en.m.wikipedia.org/wiki/Control_break" title="Control break">control break</a> is a value change detection method used within ordinary loops to trigger processing for groups of values. A key changeable value or values are monitored within the loop and a change diverts program flow to the handling of the group event associated with the changeable value.</p>
+<pre>
+   DO UNTIL (End-of-File)
+      IF new-zipcode &lt;&gt; current-zipcode
+         display_tally(current-zipcode, zipcount)
+         
+         current-zipcode = new-zipcode
+         zipcount = 0
+      ENDIF
+      
+      zipcount++
+   LOOP
+</pre>
+<h3> <span class="mw-headline" id="Collection-controlled_loops">Collection-controlled loops</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Foreach" title="Foreach" class="mw-redirect">Foreach</a></div>
+<p>Several programming languages (e.g. <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a>, <a href="http://en.m.wikipedia.org/wiki/D_programming_language" title="D programming language" class="mw-redirect">D</a>, <a href="Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="PHP" title="PHP">PHP</a>, <a href="Perl" title="Perl">Perl</a>, <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <span class="new" title="Mythryl (page does not exist)">Mythryl</span>, <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="http://en.m.wikipedia.org/wiki/Fortran_95" title="Fortran 95" class="mw-redirect">Fortran 95</a> and later) have special constructs which allow implicitly looping through all elements of an array, or all members of a set or collection.</p>
+<pre>
+   someCollection <b>do</b>: [:eachElement |xxx].
+   
+   <b>for</b> Item <b>in</b> Collection <b>do</b> <b>begin</b> xxx <b>end</b>;
+
+   <b>foreach</b> (item; myCollection) { xxx }
+
+   <b>foreach</b> someArray { xxx }
+
+   <b>foreach</b> ($someArray as $k =&gt; $v) { xxx }
+
+   Collection&lt;String&gt; coll; <b>for</b> (String s : coll) {}
+
+   <b>foreach</b> (<b>string</b> s <b>in</b> myStringCollection) { xxx }
+
+   $someCollection | ForEach-Object { $_ }
+   
+   <b>forall</b> ( index = first:last:step... )
+</pre>
+<h3> <span class="mw-headline" id="General_iteration">General iteration</span></h3>
+<p>General iteration constructs such as C's <b>for</b> statement and <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>'s <b>do</b> form can be used to express any of the above sorts of loops, as well as others—such as looping over a number of collections in parallel. Where a more specific looping construct can be used, it is usually preferred over the general iteration construct, since it often makes the purpose of the expression more clear.</p>
+<h3> <span class="mw-headline" id="Infinite_loops">Infinite loops</span></h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Infinite_loop" title="Infinite loop">Infinite loops</a> are used to assure a program segment loops forever or until an exceptional condition arises, such as an error. For instance, an event-driven program (such as a <a href="http://en.m.wikipedia.org/wiki/Server_(computing)" title="Server (computing)">server</a>) should loop forever handling events as they occur, only stopping when the process is terminated by an operator.</p>
+<p>Often, an infinite loop is unintentionally created by a programming error in a condition-controlled loop, wherein the loop condition uses variables that never change within the loop.</p>
+<h3> <span class="mw-headline" id="Continuation_with_next_iteration">Continuation with next iteration</span></h3>
+<p>Sometimes within the body of a loop there is a desire to skip the remainder of the loop body and continue with the next iteration of the loop. Some languages provide a statement such as <code>continue</code> (most languages), <code>skip</code>, or <code>next</code> (Perl and Ruby), which will do this. The effect is to prematurely terminate the innermost loop body and then resume as normal with the next iteration. If the iteration is the last one in the loop, the effect is to terminate the entire loop early.</p>
+<h3> <span class="mw-headline" id="Redo_current_iteration">Redo current iteration</span></h3>
+<p>Some languages, like Perl and Ruby, have a <code>redo</code> statement that restarts the current iteration from the beginning.</p>
+<h3> <span class="mw-headline" id="Restart_loop">Restart loop</span></h3>
+<p>Ruby has a <code>retry</code> statement that restarts the entire loop from the initial iteration.</p>
+<h3> <span class="mw-headline" id="Early_exit_from_loops">Early exit from loops</span></h3>
+<p>When using a count-controlled loop to search through a table, it might be desirable to stop searching as soon as the required item is found. Some programming languages provide a statement such as <code>break</code> (most languages), <code>exit</code>, or <code>last</code> (Perl), whose effect is to terminate the current loop immediately and transfer control to the statement immediately following that loop. One can also <code>return</code> out of a subroutine executing the looped statements, breaking out of both the nested loop and the subroutine. Things can get a bit messy if searching a multi-dimensional table using nested loops (see <a href="Flow_of_control#Proposed_control_structures">#Proposed control structures</a> below).</p>
+<p>The following example is done in <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a> which supports both <i>early exit from loops</i> and <i><a href="http://en.m.wikipedia.org/wiki/Control_flow#Loop_with_test_in_the_middle" title="Control flow">loops with test in the middle</a></i>. Both features are very similar and comparing both code snippets will show the difference: <i>early exit</i> needs to be combined with an <b>if</b> statement while a <i>condition in the middle</i> is a self contained construct.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+<span class="kw3">with</span> Ada.<span class="me1">Text</span> IO;
+<span class="kw3">with</span> Ada.<span class="me1">Integer</span> Text IO;
+ 
+<span class="kw3">procedure</span> Print_Squares <span class="kw1">is</span> 
+    X : Integer;
+<span class="kw1">begin</span>
+    Read_Data : <span class="kw1">loop</span>
+        Ada.<span class="me1">Integer</span> Text IO.<span class="me1">Get</span><span class="br0">(</span>X<span class="br0">)</span>;
+    <span class="kw3">exit</span> Read_Data <span class="kw3">when</span> X = <span class="nu0">0</span>;
+        Ada.<span class="me1">Text</span> IO.<span class="me1">Put</span> <span class="br0">(</span>X * X<span class="br0">)</span>;
+        Ada.<span class="me1">Text</span> IO.<span class="me1">New_Line</span>;
+    <span class="kw1">end</span> <span class="kw1">loop</span> Read_Data;
+<span class="kw1">end</span> Print_Squares;
+</pre></div>
+</div>
+<p><a href="Python_(programming_language)" title="Python (programming language)">Python</a> supports conditional execution of code depending on whether a loop was exited early (with a <code>break</code> statement) or not by using a else-clause with the loop. For example,</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">for</span> n <span class="kw1">in</span> set_of_numbers:
+    <span class="kw1">if</span> isprime<span class="br0">(</span>n<span class="br0">)</span>:
+        <span class="kw1">print</span> <span class="st0">"Set contains a prime number"</span>
+        <span class="kw1">break</span>
+<span class="kw1">else</span>:
+    <span class="kw1">print</span> <span class="st0">"Set did not contain any prime numbers"</span>
+</pre></div>
+</div>
+<p>Note that the <code>else</code> clause in the above example is attached to the <code>for</code> statement, and not the inner <code>if</code> statement. Both Python's <code>for</code> and <code>while</code> loops support such an else clause, which is executed only if early exit of the loop has not occurred.</p>
+<h3> <span class="mw-headline" id="Loop_variants_and_invariants">Loop variants and invariants</span></h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Loop_variant" title="Loop variant">Loop variants</a> and <a href="http://en.m.wikipedia.org/wiki/Loop_invariant" title="Loop invariant">loop invariants</a> are used to express correctness of loops.<sup id="cite_ref-2" class="reference"><a href="Flow_of_control#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>In practical terms, a loop variant is an integer expression which has an initial non-negative value. The variant's value must decrease during each loop iteration but must never become negative during the correct execution of the loop. Loop variants are used to guarantee that loops will terminate.</p>
+<p>A loop invariant is an assertion which must be true before the first loop iteration and remain true after each iteration. This implies that when a loop terminates correctly, both the exit condition and the loop invariant are satisfied. Loop invariants are used to monitor specific properties of a loop during successive iterations.</p>
+<p>Some programming languages, such as <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> contain native support for loop variants and invariants. In other cases, support is an add-on, such as the <a href="http://en.m.wikipedia.org/wiki/Java_Modeling_Language" title="Java Modeling Language">Java Modeling Language's</a> specification for <a rel="nofollow" class="external text" href="http://www.eecs.ucf.edu/~leavens/JML//jmlrefman/jmlrefman_12.html#SEC168">loop statements</a> in <a href="Java_(programming_language)" title="Java (programming language)">Java</a>.</p>
+<h2> <span class="mw-headline" id="Loop_sublanguage">Loop sublanguage</span></h2>
+<p>Some <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a> dialects are providing an extensive sublanguage for describing Loops. An early example can be found in Conversional Lisp of <a href="http://en.m.wikipedia.org/wiki/Interlisp" title="Interlisp">Interlisp</a>. <a href="http://en.m.wikipedia.org/wiki/Common_Lisp_(programming_language)" title="Common Lisp (programming language)" class="mw-redirect">Common Lisp</a><sup id="cite_ref-3" class="reference"><a href="Flow_of_control#cite_note-3"><span>[</span>3<span>]</span></a></sup> provides a Loop macro which implements such a sublanguage.</p>
+<h3> <span class="mw-headline" id="Loop_system_cross-reference_table">Loop system cross-reference table</span></h3>
+<table class="wikitable"><tr><th rowspan="2"><a href="Programming_language" title="Programming language">Programming language</a></th>
+<th colspan="3">conditional</th>
+<th colspan="4">loop</th>
+<th rowspan="2">early exit</th>
+<th rowspan="2">continuation</th>
+<th rowspan="2">redo</th>
+<th rowspan="2">retry</th>
+<th colspan="2">correctness facilities</th>
+</tr><tr><th>begin</th>
+<th>middle</th>
+<th>end</th>
+<th>count</th>
+<th>collection</th>
+<th>general</th>
+<th>infinite <sup class="reference" id="ref_loop_infinitea"><a href="Flow_of_control#endnote_loop_infinitea">[1]</a></sup></th>
+<th>variant</th>
+<th>invariant</th>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">arrays</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_fora"><a href="Flow_of_control#endnote_loop_fora">[2]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ca"><a href="Flow_of_control#endnote_deep_break_ca">[3]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ca"><a href="Flow_of_control#endnote_deep_break_ca">[3]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="C++" title="C++">C++</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_forb"><a href="Flow_of_control#endnote_loop_forb">[2]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes <sup class="reference" id="ref_loop_foreacha"><a href="Flow_of_control#endnote_loop_foreacha">[9]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_cb"><a href="Flow_of_control#endnote_deep_break_cb">[3]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ca"><a href="Flow_of_control#endnote_deep_break_ca">[3]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_forc"><a href="Flow_of_control#endnote_loop_forc">[2]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_cc"><a href="Flow_of_control#endnote_deep_break_cc">[3]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ca"><a href="Flow_of_control#endnote_deep_break_ca">[3]</a></sup></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="D_(programming_language)" title="D (programming language)">D</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes<sup class="reference" id="ref_DInfinitea"><a href="Flow_of_control#endnote_DInfinitea">[14]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes <sup class="reference" id="ref_count_loop_eiffela"><a href="Flow_of_control#endnote_count_loop_eiffela">[10]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">one level <sup class="reference" id="ref_count_loop_eiffela"><a href="Flow_of_control#endnote_count_loop_eiffela">[10]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_retry_in_eiffela"><a href="Flow_of_control#endnote_retry_in_eiffela">[11]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">integer only <sup class="reference" id="ref_integer_varianta"><a href="Flow_of_control#endnote_integer_varianta">[13]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_deep_break_eb"><a href="Flow_of_control#endnote_deep_break_eb">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="FORTRAN_77" title="FORTRAN 77" class="mw-redirect">FORTRAN 77</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">one level</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Fortran_90" title="Fortran 90" class="mw-redirect">Fortran 90</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Fortran_95" title="Fortran 95" class="mw-redirect">Fortran 95</a> and later</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">arrays</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_deep_break_ea"><a href="Flow_of_control#endnote_deep_break_ea">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="Java_(programming_language)" title="Java (programming language)">Java</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_ford"><a href="Flow_of_control#endnote_loop_ford">[2]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">non-native <sup class="reference" id="ref_requires_JMLa"><a href="Flow_of_control#endnote_requires_JMLa">[12]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">non-native <sup class="reference" id="ref_requires_JMLa"><a href="Flow_of_control#endnote_requires_JMLa">[12]</a></sup></td>
+</tr><tr><td><a href="JavaScript" title="JavaScript">JavaScript</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_forg"><a href="Flow_of_control#endnote_loop_forg">[2]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">arrays,lists</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_deep_break_eb"><a href="Flow_of_control#endnote_deep_break_eb">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="PHP" title="PHP">PHP</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_fore"><a href="Flow_of_control#endnote_loop_fore">[2]</a></sup><sup class="reference" id="ref_loop_forb"><a href="Flow_of_control#endnote_loop_forb">[5]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes <sup class="reference" id="ref_loop_phpforeacha"><a href="Flow_of_control#endnote_loop_phpforeacha">[4]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="Perl" title="Perl">Perl</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_forf"><a href="Flow_of_control#endnote_loop_forf">[2]</a></sup><sup class="reference" id="ref_loop_forc"><a href="Flow_of_control#endnote_loop_forc">[5]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">deep nested</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="Python_(programming_language)" title="Python (programming language)">Python</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_rangea"><a href="Flow_of_control#endnote_loop_rangea">[5]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ec"><a href="Flow_of_control#endnote_deep_break_ec">[6]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ec"><a href="Flow_of_control#endnote_deep_break_ec">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/REBOL" title="REBOL">REBOL</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_whilea"><a href="Flow_of_control#endnote_whilea">[7]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_usera"><a href="Flow_of_control#endnote_usera">[8]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">one level <sup class="reference" id="ref_deep_break_ed"><a href="Flow_of_control#endnote_deep_break_ed">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ee"><a href="Flow_of_control#endnote_deep_break_ee">[6]</a></sup></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">deep nested <sup class="reference" id="ref_deep_break_ee"><a href="Flow_of_control#endnote_deep_break_ee">[6]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">arrays,lists</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_deep_break_eb"><a href="Flow_of_control#endnote_deep_break_eb">[6]</a></sup></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">one level per type of loop</td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">one level per type of loop</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No <sup class="reference" id="ref_loop_forh"><a href="Flow_of_control#endnote_loop_forh">[2]</a></sup></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td><i><b>?</b></i></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr></table><ol><li><span class="citation wikicite" id="endnote_loop_infinitea"><a href="Flow_of_control#ref_loop_infinitea"><b><sup>a</sup></b></a></span> <code>while (true)</code> does not count as an infinite loop for this purpose, because it is not a dedicated language structure.</li>
+<li><span class="citation wikicite" id="endnote_loop_fora"><a href="Flow_of_control#ref_loop_fora"><b><sup>a</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_forb"><a href="Flow_of_control#ref_loop_forb"><b><sup>b</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_forc"><a href="Flow_of_control#ref_loop_forc"><b><sup>c</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_ford"><a href="Flow_of_control#ref_loop_ford"><b><sup>d</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_fore"><a href="Flow_of_control#ref_loop_fore"><b><sup>e</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_forf"><a href="Flow_of_control#ref_loop_forf"><b><sup>f</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_forg"><a href="Flow_of_control#ref_loop_forg"><b><sup>g</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_forh"><a href="Flow_of_control#ref_loop_forh"><b><sup>h</sup></b></a></span> C's <code>for (<i>init</i>; <i>test</i>; <i>increment</i>)</code> loop is a general loop construct, not specifically a counting one, although it is often used for that.</li>
+<li><span class="citation wikicite" id="endnote_deep_break_ca"><a href="Flow_of_control#ref_deep_break_ca"><b><sup>a</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_cb"><a href="Flow_of_control#ref_deep_break_cb"><b><sup>b</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_cc"><a href="Flow_of_control#ref_deep_break_cc"><b><sup>c</sup></b></a></span> Deep breaks may be accomplished in C, C++ and C# through the use of labels and gotos.</li>
+<li><span class="citation wikicite" id="endnote_loop_phpforeacha"><a href="Flow_of_control#ref_loop_phpforeacha"><b><sup>a</sup></b></a></span> Iteration over objects was <a rel="nofollow" class="external text" href="http://www.php.net/manual/en/language.oop5.iterations.php">added</a> in PHP 5.</li>
+<li><span class="citation wikicite" id="endnote_loop_rangea"><a href="Flow_of_control#ref_loop_rangea"><b><sup>a</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_rangeb"><a href="Flow_of_control#ref_loop_rangeb"><b><sup>b</sup></b></a></span> <span class="citation wikicite" id="endnote_loop_rangec"><a href="Flow_of_control#ref_loop_rangec"><b><sup>c</sup></b></a></span> A counting loop can be simulated by iterating over an incrementing list or generator, for instance, Python's <code>range()</code>.</li>
+<li><span class="citation wikicite" id="endnote_deep_break_ea"><a href="Flow_of_control#ref_deep_break_ea"><b><sup>a</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_eb"><a href="Flow_of_control#ref_deep_break_eb"><b><sup>b</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_ec"><a href="Flow_of_control#ref_deep_break_ec"><b><sup>c</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_ed"><a href="Flow_of_control#ref_deep_break_ed"><b><sup>d</sup></b></a></span> <span class="citation wikicite" id="endnote_deep_break_ee"><a href="Flow_of_control#ref_deep_break_ee"><b><sup>e</sup></b></a></span> Deep breaks may be accomplished through the use of exception handling.</li>
+<li><span class="citation wikicite" id="endnote_whilea"><a href="Flow_of_control#ref_whilea"><b><sup>a</sup></b></a></span> There is no special construct, since the <code>while</code> function can be used for this.</li>
+<li><span class="citation wikicite" id="endnote_usera"><a href="Flow_of_control#ref_usera"><b><sup>a</sup></b></a></span> There is no special construct, but users can define general loop functions.</li>
+<li><span class="citation wikicite" id="endnote_loop_foreacha"><a href="Flow_of_control#ref_loop_foreacha"><b><sup>a</sup></b></a></span> The <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a> standard introduced the <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11#Range-based_for-loop" title="C++11">range-based for</a>. In the <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">STL</a>, there is a <code>std::for_each</code> <a href="http://en.m.wikipedia.org/wiki/Template_(programming)" title="Template (programming)" class="mw-redirect">template</a> function which can iterate on STL <a href="http://en.m.wikipedia.org/wiki/Container_(data_structure)" title="Container (data structure)" class="mw-redirect">containers</a> and call a <a href="http://en.m.wikipedia.org/wiki/Unary_function" title="Unary function">unary function</a> for each element.<sup id="cite_ref-4" class="reference"><a href="Flow_of_control#cite_note-4"><span>[</span>4<span>]</span></a></sup> The functionality also can be constructed as <a href="C_preprocessor#Macro_definition_and_expansion" title="C preprocessor">macro</a> on these containers.<sup id="cite_ref-5" class="reference"><a href="Flow_of_control#cite_note-5"><span>[</span>5<span>]</span></a></sup></li>
+<li><span class="citation wikicite" id="endnote_count_loop_eiffela"><a href="Flow_of_control#ref_count_loop_eiffela"><b><sup>a</sup></b></a></span> Count-controlled looping is effected by iteration across an integer interval; early exit by including an additional condition for exit.</li>
+<li><span class="citation wikicite" id="endnote_retry_in_eiffela"><a href="Flow_of_control#ref_retry_in_eiffela"><b><sup>a</sup></b></a></span> Eiffel supports a reserved word <code>retry</code>, however it is used in <a href="http://en.m.wikipedia.org/wiki/Exception_handling#Exception_handling_based_on_Design_by_Contract" title="Exception handling">exception handling</a>, not loop control.</li>
+<li><span class="citation wikicite" id="endnote_requires_JMLa"><a href="Flow_of_control#ref_requires_JMLa"><b><sup>a</sup></b></a></span> Requires <a href="http://en.m.wikipedia.org/wiki/Java_Modeling_Language" title="Java Modeling Language">Java Modeling Language</a> (JML) behavioral interface specification language.</li>
+<li><span class="citation wikicite" id="endnote_integer_varianta"><a href="Flow_of_control#ref_integer_varianta"><b><sup>a</sup></b></a></span> Requires loop variants to be integers; transfinite variants are not supported. <a rel="nofollow" class="external autonumber" href="http://archive.eiffel.com/doc/faq/variant.html">[1]</a></li>
+<li><span class="citation wikicite" id="endnote_DInfinitea"><a href="Flow_of_control#ref_DInfinitea"><b><sup>a</sup></b></a></span> D supports infinite collections, and the ability to iterate over those collections. This does not require any special construct.</li>
+</ol><h2> <span class="mw-headline" id="Structured_non-local_control_flow">Structured non-local control flow</span></h2>
+<p>Many programming languages, particularly those which favor more dynamic styles of programming, offer constructs for <b>non-local control flow</b>. These cause the flow of execution to jump out of a given context and resume at some predeclared point. <i><a href="http://en.m.wikipedia.org/wiki/Exception_handling#Condition_systems" title="Exception handling">Conditions</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exceptions</a></i> and <i><a href="http://en.m.wikipedia.org/wiki/Continuation" title="Continuation">continuations</a></i> are three common sorts of non-local control constructs.</p>
+<h3> <span class="mw-headline" id="Conditions">Conditions</span></h3>
+<p><a href="http://en.m.wikipedia.org/wiki/PL/I_programming_language" title="PL/I programming language" class="mw-redirect">PL/I</a> has some 22 standard conditions (e.g. ZERODIVIDE SUBSCRIPTRANGE ENDFILE) which can be RAISEd and which can be intercepted by: ON <i>condition</i> action; Programmers can also define and use their own named conditions.</p>
+<p>Like the <i>unstructured if</i>, only one statement can be specified so in many cases a GOTO is needed to decide where flow of control should resume.</p>
+<p>Unfortunately, some implementations had a substantial overhead in both space and time (especially SUBSCRIPTRANGE), so many programmers tried to avoid using conditions.</p>
+<p>Common Syntax examples:</p>
+<pre>
+ <b>ON</b> <i>condition</i> <b>GOTO</b> <i>label</i>
+</pre>
+<h3> <span class="mw-headline" id="Exceptions">Exceptions</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception handling</a></div>
+<p>Modern languages have a structured construct for exception handling which does not rely on the use of <code>GOTO</code>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="kw2">try</span> <span class="br0">{</span>
+    xxx1                                  <span class="co1">// Somewhere in here</span>
+    xxx2                                  <span class="co1">//     use: '''throw''' someValue;</span>
+    xxx3
+<span class="br0">}</span> <span class="kw2">catch</span> <span class="br0">(</span>someClass<span class="sy3">&amp;</span> someId<span class="br0">)</span> <span class="br0">{</span>             <span class="co1">// catch value of someClass</span>
+    actionForSomeClass 
+<span class="br0">}</span> <span class="kw2">catch</span> <span class="br0">(</span>someType<span class="sy3">&amp;</span> anotherId<span class="br0">)</span> <span class="br0">{</span>           <span class="co1">// catch value of someType</span>
+    actionForSomeType
+<span class="br0">}</span> <span class="kw2">catch</span> <span class="br0">(</span>...<span class="br0">)</span> <span class="br0">{</span>                           <span class="co1">// catch anything not already caught</span>
+    actionForAnythingElse
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Any number and variety of <code>catch</code> clauses can be used above. In D, Java, C#, and Python a <code>finally</code> clause can be added to the <code>try</code> construct. No matter how control leaves the <code>try</code> the code inside the <code>finally</code> clause is guaranteed to execute. This is useful when writing code that must relinquish an expensive resource (such as an opened file or a database connection) when finished processing:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+FileStream stm <span class="sy0">=</span> <span class="kw1">null</span><span class="sy0">;</span>                    <span class="co1">// C# example</span>
+<span class="kw1">try</span> <span class="br0">{</span>
+    stm <span class="sy0">=</span> <span class="kw3">new</span> FileStream <span class="br0">(</span><span class="st0">"logfile.txt"</span>, FileMode<span class="sy0">.</span><span class="me1">Create</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> ProcessStuff<span class="br0">(</span>stm<span class="br0">)</span><span class="sy0">;</span>             <span class="co1">// may throw an exception</span>
+<span class="br0">}</span> <span class="kw1">finally</span> <span class="br0">{</span>
+    <span class="kw1">if</span> <span class="br0">(</span>stm <span class="sy0">!=</span> <span class="kw1">null</span><span class="br0">)</span>
+        stm<span class="sy0">.</span> <span class="me1">Close</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Since this pattern is fairly common, C# has a special syntax:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+<span class="kw1">using</span> <span class="br0">(</span>FileStream stm <span class="sy0">=</span> <span class="kw3">new</span> FileStream <span class="br0">(</span><span class="st0">"logfile.txt"</span>, FileMode<span class="sy0">.</span><span class="me1">Create</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">return</span> ProcessStuff<span class="br0">(</span>stm<span class="br0">)</span><span class="sy0">;</span>             <span class="co1">// may throw an exception</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Upon leaving the <code>using</code>-block, the compiler guarantees that the <code>stm</code> object is released. Python's <code>with</code> statement and Ruby's block argument to <code>File.open</code> are used to similar effect.</p>
+<p>All these languages define standard exceptions and the circumstances under which they are thrown. Users can throw exceptions of their own (in fact C++ allows users to throw and catch almost any type).</p>
+<p>If there is no <code>catch</code> matching a particular <code>throw</code>, control percolates back through subroutine calls and/or nested blocks until a matching <code>catch</code> is found or until the end of the main program is reached, at which point the program is forcibly stopped with a suitable error message.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/AppleScript" title="AppleScript">AppleScript</a> <a href="http://en.m.wikipedia.org/wiki/Scripting_programming_language" title="Scripting programming language" class="mw-redirect">scripting programming language</a> provides several pieces of information to a "<code>try</code>" block:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="applescript source-applescript">
+<pre class="de1">
+<span class="kw3">try</span>
+    <span class="kw3">set</span> myNumber <span class="kw3">to</span> myNumber <span class="sy0">/</span> <span class="nu0">0</span>
+<span class="kw3">on</span> <span class="kw3">error</span> e  <span class="kw1">number</span> n  <span class="kw3">from</span> f  <span class="kw3">to</span> t  partial <span class="kw1">result</span> pr
+    <span class="kw3">if</span> <span class="br0">(</span> e <span class="sy0">=</span> <span class="st0">"Can't divide by zero"</span> <span class="br0">)</span> <span class="kw3">then</span> <span class="kw1">display dialog</span> <span class="st0">"You must not do that"</span>
+<span class="kw3">end</span> <span class="kw3">try</span>
+</pre></div>
+</div>
+<h3> <span class="mw-headline" id="Continuations">Continuations</span></h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Continuation" title="Continuation">Continuation</a></div>
+<h3> <span class="mw-headline" id="Non-local_control_flow_cross_reference">Non-local control flow cross reference</span></h3>
+<table class="wikitable"><tr><th><a href="Programming_language" title="Programming language">Programming language</a></th>
+<th>conditions</th>
+<th>exceptions</th>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><td><a href="C++" title="C++">C++</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Common_Lisp_(programming_language)" title="Common Lisp (programming language)" class="mw-redirect">Common Lisp</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><td><a href="D_(programming_language)" title="D (programming language)">D</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="Java_(programming_language)" title="Java (programming language)">Java</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><span class="new" title="Mythryl (page does not exist)">Mythryl</span></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="Objective-C" title="Objective-C">Objective-C</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="PHP" title="PHP">PHP</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="PL/I" title="PL/I">PL/I</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+</tr><tr><td><a href="Python_(programming_language)" title="Python (programming language)">Python</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/REBOL" title="REBOL">REBOL</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Visual_Basic_.NET" title="Visual Basic .NET">Visual Basic .NET</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr><tr><td><a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Yes</td>
+</tr></table><h2> <span class="mw-headline" id="Proposed_control_structures">Proposed control structures</span></h2>
+<p>In a spoof <a href="http://en.m.wikipedia.org/wiki/Datamation" title="Datamation">Datamation</a> article<sup id="cite_ref-6" class="reference"><a href="Flow_of_control#cite_note-6"><span>[</span>6<span>]</span></a></sup> in 1973, R. Lawrence Clark suggested that the GOTO statement could be replaced by the <a href="http://en.m.wikipedia.org/wiki/COMEFROM" title="COMEFROM">COMEFROM</a> statement, and provides some entertaining examples. This was actually implemented in <a href="http://en.m.wikipedia.org/wiki/INTERCAL" title="INTERCAL">INTERCAL</a>, a deliberately <a href="http://en.m.wikipedia.org/wiki/Esoteric_programming_language" title="Esoteric programming language">esoteric programming language</a> language.</p>
+<p>In his 1974 article "Structured Programming with go to Statements",<sup id="cite_ref-7" class="reference"><a href="Flow_of_control#cite_note-7"><span>[</span>7<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> identified two situations which were not covered by the control structures listed above, and gave examples of control structures which could handle these situations. Despite their utility, these constructions have not yet found their way into mainstream programming languages.</p>
+<h3> <span class="mw-headline" id="Loop_with_test_in_the_middle">Loop with test in the middle</span></h3>
+<p>The following was proposed by <a href="http://en.m.wikipedia.org/wiki/Ole-Johan_Dahl" title="Ole-Johan Dahl">Dahl</a> in 1972:<sup id="cite_ref-8" class="reference"><a href="Flow_of_control#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<pre>
+   <b>loop</b>                           <b>loop</b>
+       xxx1                           read(char);
+   <b>while</b> test;                    <b>while</b> <b>not</b> atEndOfFile;
+       xxx2                           write(char);
+   <b>repeat</b>;                        <b>repeat</b>;
+</pre>
+<p>If <i>xxx1</i> is omitted we get a loop with the test at the top. If <i>xxx2</i> is omitted we get a loop with the test at the bottom. If <b>while</b> is omitted we get an infinite loop. Hence this single construction can replace several constructions in most programming languages. A possible variant is to allow more than one <b>while</b> test; within the loop, but the use of <b>exitwhen</b> (see next section) appears to cover this case better.</p>
+<p>Languages lacking this construct generally emulate it using an equivalent infinite-loop-with-break idiom:</p>
+<pre>
+<b>while</b> (true) {
+    xxx1
+    <b>if</b> (<b>not</b> test)
+        <b>break</b>
+    xxx2
+}
+</pre>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a>, the above loop construct (<b>loop</b>-<b>while</b>-<b>repeat</b>) can be represented using a standard infinite loop (<b>loop</b> - <b>end loop</b>) that has an <b>exit when</b> clause in the middle (not to be confused with the <b>exitwhen</b> statement in the following section).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+<span class="kw3">with</span> Ada.<span class="me1">Text_IO</span>;
+<span class="kw3">with</span> Ada.<span class="me1">Integer_Text_IO</span>;
+ 
+<span class="kw3">procedure</span> Print_Squares <span class="kw1">is</span> 
+    X : Integer;
+<span class="kw1">begin</span>
+    Read_Data : <span class="kw1">loop</span>
+        Ada.<span class="me1">Integer_Text_IO</span>.<span class="me1">Get</span><span class="br0">(</span>X<span class="br0">)</span>;
+    <span class="kw3">exit</span> Read_Data <span class="kw3">when</span> X = <span class="nu0">0</span>;
+        Ada.<span class="me1">Text</span> IO.<span class="me1">Put</span> <span class="br0">(</span>X * X<span class="br0">)</span>;
+        Ada.<span class="me1">Text</span> IO.<span class="me1">New_Line</span>;
+    <span class="kw1">end</span> <span class="kw1">loop</span> Read_Data;
+<span class="kw1">end</span> Print_Squares;
+</pre></div>
+</div>
+<p>Naming a loop (like <i>Read_Data</i> in this example) is optional but permits leaving the outer loop of several nested loops.</p>
+<h3> <span class="mw-headline" id="Multiple_early_exit.2Fexit_from_nested_loops">Multiple early exit/exit from nested loops</span></h3>
+<p>This was proposed by <a href="http://en.m.wikipedia.org/wiki/Zahn%27s_construct" title="Zahn's construct">Zahn</a> in 1974.<sup id="cite_ref-9" class="reference"><a href="Flow_of_control#cite_note-9"><span>[</span>9<span>]</span></a></sup> A modified version is presented here.</p>
+<pre>
+   <b>exitwhen</b> EventA <b>or</b> EventB <b>or</b> EventC;
+       xxx
+   <b>exits</b>
+       EventA: actionA
+       EventB: actionB
+       EventC: actionC
+   <b>endexit</b>;
+</pre>
+<p><b>exitwhen</b> is used to specify the events which may occur within <i>xxx</i>, their occurrence is indicated by using the name of the event as a statement. When some event does occur, the relevant action is carried out, and then control passes just after <b>endexit</b>. This construction provides a very clear separation between determining that some situation applies, and the action to be taken for that situation.</p>
+<p><b>exitwhen</b> is conceptually similar to <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception handling</a>, and exceptions or similar constructs are used for this purpose in many languages.</p>
+<p>The following simple example involves searching a two-dimensional table for a particular item.</p>
+<pre>
+   <b>exitwhen</b> found <b>or</b> missing;
+       <b>for</b> I := 1 <b>to</b> N <b>do</b>
+           <b>for</b> J := 1 <b>to</b> M <b>do</b>
+               <b>if</b> table[I,J] = target <b>then</b> found;
+       missing;
+   <b>exits</b>
+       found:   print ("item is in table");
+       missing: print ("item is not in table");
+   <b>endexit</b>;
+</pre>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">Branch (computer science)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_flow_diagram" title="Control flow diagram">Control flow diagram</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_flow_graph" title="Control flow graph">Control flow graph</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_table" title="Control table">Control table</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coroutine" title="Coroutine">Coroutine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cyclomatic_complexity" title="Cyclomatic complexity">Cyclomatic complexity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Flowchart" title="Flowchart">Flowchart</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GOTO" title="GOTO" class="mw-redirect">GOTO</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Jeroo" title="Jeroo">Jeroo</a>, helps learn control structures</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Main_loop" title="Main loop" class="mw-redirect">Main loop</a></li>
+<li><a href="Recursion" title="Recursion">Recursion</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Spaghetti_code" title="Spaghetti code">Spaghetti code</a></li>
+<li><a href="Structured_programming" title="Structured programming">Structured programming</a></li>
+<li><a href="Subroutine" title="Subroutine">Subroutine</a></li>
+<li><a href="Switch_statement" title="Switch statement">Switch statement</a>, alters control flow conditionally</li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-1">^</a></b></span> <span class="reference-text">Böhm, Jacopini. "Flow diagrams, turing machines and languages with only two formation rules" <a href="http://en.m.wikipedia.org/wiki/Comm._ACM" title="Comm. ACM" class="mw-redirect">Comm. ACM</a>, 9(5):366-371, May 1966.</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation book">Meyer, Bertrand (1991). <i>Eiffel: The Language</i>. Prentice Hall. pp. 129â131.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Eiffel%3A+The+Language&amp;rft.aulast=Meyer&amp;rft.aufirst=Bertrand&amp;rft.au=Meyer%2C%26%2332%3BBertrand&amp;rft.date=1991&amp;rft.pages=pp.%26nbsp%3B129%C3%A2%C2%80%C2%93131&amp;rft.pub=Prentice+Hall&amp;rfr_id=info:sid/en.wikipedia.org:Control_flow"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.lispworks.com/documentation/HyperSpec/Body/m_loop.htm">"Common Lisp LOOP macro"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.lispworks.com/documentation/HyperSpec/Body/m_loop.htm">http://www.lispworks.com/documentation/HyperSpec/Body/m_loop.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Common+Lisp+LOOP+macro&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.lispworks.com%2Fdocumentation%2FHyperSpec%2FBody%2Fm_loop.htm&amp;rfr_id=info:sid/en.wikipedia.org:Control_flow"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.sgi.com/tech/stl/for_each.html">for_each</a>. Sgi.com. Retrieved on 2010-11-09.</span></li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://boost-sandbox.sourceforge.net/libs/foreach/doc/html/">Chapter 1. Boost.Foreach</a>. Boost-sandbox.sourceforge.net (2009-12-19). Retrieved on 2010-11-09.</span></li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.fortran.com/fortran/come_from.html">We don't know where to GOTO if we don't know where we've COME FROM. This (spoof) linguistic innovation lives up to all expectations.</a> By R. Lawrence Clark* From DATAMATION, December, 1973</span></li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-7">^</a></b></span> <span class="reference-text">Knuth, Donald E. "Structured Programming with go to Statements" <a href="http://en.m.wikipedia.org/wiki/ACM_Computing_Surveys" title="ACM Computing Surveys">ACM Computing Surveys</a> 6(4):261-301, December 1974.</span></li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-8">^</a></b></span> <span class="reference-text">Dahl &amp; Dijkstra &amp; Hoare, "Structured Programming" Academic Press, 1972.</span></li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="Flow_of_control#cite_ref-9">^</a></b></span> <span class="reference-text">Zahn, C. T. "A control statement for natural top-down structured programming" presented at Symposium on Programming Languages, Paris, 1974.</span></li>
+</ol></div>
+<div class="refbegin" style="">
+<ul><li>Hoare, C. A. R. "Partition: Algorithm 63," "Quicksort: Algorithm 64," and "Find: Algorithm 65." Comm. ACM 4, 321-322, 1961.</li>
+</ul></div>
+<h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr><td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/Ada_Programming" class="extiw" title="wikibooks:Ada Programming">Ada Programming</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Ada_Programming/Control" class="extiw" title="wikibooks:Ada Programming/Control">Control</a></b></i></td>
+</tr></table><table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr><td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/Computer_Programming" class="extiw" title="wikibooks:Computer Programming">Computer Programming</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Computer_Programming/Control" class="extiw" title="wikibooks:Computer Programming/Control">Control</a></b></i></td>
+</tr></table><ul><li><a rel="nofollow" class="external text" href="http://www.acm.org/classics/oct95/">Go To Statement Considered Harmful</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.fortran.com/fortran/come_from.html">A Linguistic Contribution of GOTO-less Programming</a></li>
+<li><span class="PDFlink"><a rel="nofollow" class="external text" href="http://pplab.snu.ac.kr/courses/adv_pl05/papers/p261-knuth.pdf">Structured Programming with Go To Statements</a></span><span style="font-size:smaller;"> PDF (2.88 MB)</span></li>
+<li><span class="PDFlink"><a rel="nofollow" class="external text" href="http://www.bitsavers.org/pdf/ibm/704/24-6661-2_704_Manual_1955.pdf">IBM 704 Manual</a></span><span style="font-size:smaller;"> PDF (31.4 MB)</span></li>
+</ul>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 18 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%AA%D8%AF%D9%81%D9%82_%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Estructura_de_control" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/%C5%98%C3%ADdic%C3%AD_struktura" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Kontrollstruktur" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Estructuras_de_control" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Structure_de_contr%C3%B4le" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%A0%9C%EC%96%B4_%ED%9D%90%EB%A6%84" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Kontrolna_struktura" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://it.m.wikipedia.org/wiki/Struttura_di_controllo" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%91%D7%A7%D7%A8%D7%AA_%D7%96%D7%A8%D7%99%D7%9E%D7%94" lang="he" hreflang="he">עברית</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Control_flow" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%88%B6%E5%BE%A1%E6%A7%8B%E9%80%A0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Przep%C5%82yw_sterowania" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Estrutura_de_controle" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D0%BA_%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%95%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%BE%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81_%E0%AE%95%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%AE%E0%AF%88%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AF%81" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%82%D1%96%D0%BA_%D0%BA%D0%B5%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%8E%A7%E5%88%B6%E6%B5%81%E7%A8%8B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Flow_of_control&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Flow_of_control&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Control+flow&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

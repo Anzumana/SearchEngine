@@ -1,0 +1,296 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Null-terminated string - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Null-terminated string","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Null-terminated_string" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Null-terminated+string"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Null-terminated string</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, a <b>null-terminated string</b> is a <a href="http://en.m.wikipedia.org/wiki/Character_string" title="Character string" class="mw-redirect">character string</a> stored as an <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array</a> containing the characters and terminated with a <a href="http://en.m.wikipedia.org/wiki/Null_character" title="Null character">null character</a> ('\0', called NUL in <a href="http://en.m.wikipedia.org/wiki/ASCII" title="ASCII">ASCII</a>). Alternative names are <b><a href="C_string" title="C string" class="mw-redirect">C string</a></b>, which refers to the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> and <b>ASCIIZ</b> (note that C strings do not imply the use of ASCII).</p>
+<p>The length of a C string is found by searching for the (first) NUL byte. This can be slow as it takes O(<i>n</i>) (<a href="http://en.m.wikipedia.org/wiki/Linear_time" title="Linear time" class="mw-redirect">linear time</a>) with respect to the string length. It also means that a NUL cannot be inside the string, as the only NUL is the one marking the end.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Null-terminated strings were produced by the <code>.ASCIZ</code> directive of the <a href="PDP-11" title="PDP-11">PDP-11</a> <a href="Assembly_language" title="Assembly language">assembly languages</a> and the <code>ASCIZ</code> directive of the <a href="http://en.m.wikipedia.org/wiki/MACRO-10" title="MACRO-10">MACRO-10</a> macro assembly language for the <a href="http://en.m.wikipedia.org/wiki/PDP-10" title="PDP-10">PDP-10</a>. These predate the development of the C programming language, but other forms of strings were often used.</p>
+<p>At the time C (and the languages that it was derived from) were developed, memory was extremely limited, so using only one byte of overhead to store the length of a string was attractive. The only popular alternative at that time, usually called a "Pascal string" (though also used by early versions of <a href="http://en.m.wikipedia.org/wiki/Microsoft_BASIC" title="Microsoft BASIC">BASIC</a>), used a leading byte to store the length of the string. This allows the string to contain NUL and made finding the length need only one memory access (O(1) <a href="http://en.m.wikipedia.org/wiki/Constant_time" title="Constant time" class="mw-redirect">(constant) time</a>). But one byte limits the length to 255. This length limitation was far more restrictive than the problems with the C string, so the C string in general won out.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2011">citation needed</span></a></i>]</sup></p>
+<p>This had some influence on CPU <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set</a> design. Some CPUs in the 1970s and 1980s, such as the <a href="http://en.m.wikipedia.org/wiki/Zilog_Z80" title="Zilog Z80">Zilog Z80</a> and the <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC</a> <a href="http://en.m.wikipedia.org/wiki/VAX" title="VAX">VAX</a>, had dedicated instructions for handling length-prefixed strings. However, as the NUL-terminated string gained traction, CPU designers began to take it into account, as seen for example in IBM's decision to add the "Logical String Assist" instructions to the <a href="http://en.m.wikipedia.org/wiki/IBM_ES/9000_family" title="IBM ES/9000 family">ES/9000</a> 520 in 1992.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> developer <a href="http://en.m.wikipedia.org/wiki/Poul-Henning_Kamp" title="Poul-Henning Kamp">Poul-Henning Kamp</a>, writing in <i><a href="http://en.m.wikipedia.org/wiki/ACM_Queue" title="ACM Queue">ACM Queue</a></i>, would later refer to the victory of the C string over use of a 2-byte length as "the most expensive one-byte mistake" ever.<sup id="cite_ref-1" class="reference"><a href="Null-terminated_string#cite_note-1"><span>[</span>1<span>]</span></a></sup> However there are doubts that lengths longer than one byte were ever seriously considered.</p>
+<h2> <span class="mw-headline" id="Implementations">Implementations</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content" style=""><tr>
+<td class="mbox-image"><a href="http://en.m.wikipedia.org/wiki/File:Wiki_letter_w_cropped.svg" class="image"><img alt="[icon]" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section requires <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Null-terminated_string&amp;action=edit">expansion</a>. <small><i>(November 2011)</i></small></span></td>
+</tr></table>
+<p><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> supports null-terminated strings as the primary string type.<sup id="cite_ref-2" class="reference"><a href="Null-terminated_string#cite_note-2"><span>[</span>2<span>]</span></a></sup> There are a lot of <a href="http://en.m.wikipedia.org/wiki/C_string_handling" title="C string handling">functions for string handling</a> in the <a href="C_standard_library" title="C standard library">C standard library</a>.</p>
+<h2> <span class="mw-headline" id="Limitations">Limitations</span>
+</h2>
+<p>While simple to implement, this representation has been prone to errors and performance problems.</p>
+<p>The NUL termination has historically created <a href="http://en.m.wikipedia.org/wiki/Computer_insecurity" title="Computer insecurity">security problems</a>.<sup id="cite_ref-3" class="reference"><a href="Null-terminated_string#cite_note-3"><span>[</span>3<span>]</span></a></sup> A NUL byte inserted into the middle of a string will truncate it unexpectedly. A common bug was to not allocate the additional space for the NUL. Another was to not write the NUL at the end of a string, often not detected because there often happened to be a NUL already there. Due to the expense of finding the length, many programs did not bother before copying a string to a fixed-size buffer, causing a <a href="Buffer_overflow" title="Buffer overflow">buffer overflow</a> if it was too long.</p>
+<p>The inability to store a NUL requires that string data and binary data be kept distinct and handled by different functions (with the latter requiring the length of the data to also be supplied). This can lead to code redundancy and errors when the wrong function is used.</p>
+<p>The speed problems with finding the length can usually be mitigated by combining it with another operation that is O(n) anyway, such as in <code><a href="http://en.m.wikipedia.org/wiki/Strlcpy" title="Strlcpy" class="mw-redirect">strlcpy</a></code>. However, this does not always result in an intuitive <a href="http://en.m.wikipedia.org/wiki/API" title="API" class="mw-redirect">API</a>.</p>
+<h2> <span class="mw-headline" id="Character_encodings">Character encodings</span>
+</h2>
+<p>Null-terminated strings require of the encoding that it does not use the 0x00 value for any character. This allows any <a href="http://en.m.wikipedia.org/wiki/Extended_ASCII" title="Extended ASCII">ASCII extension</a> to be used, also <a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a>, which can also be used directly in source code. <a href="http://en.m.wikipedia.org/wiki/UTF-16" title="UTF-16">UTF-16</a> uses 2-byte integers and has to use arrays of such, ending with a 2-byte 0x0000 value. UTF-16 can not be used directly in ASCII based source code.</p>
+<h2> <span class="mw-headline" id="Improvements">Improvements</span>
+</h2>
+<p>Many attempts have been made to make C string handling less error prone. One strategy is to add safer and more useful functions such as <code><a href="http://en.m.wikipedia.org/wiki/Strdup" title="Strdup" class="mw-redirect">strdup</a></code> and <code><a href="http://en.m.wikipedia.org/wiki/Strlcpy" title="Strlcpy" class="mw-redirect">strlcpy</a></code>, while deprecating the use of unsafe functions such as <code><a href="http://en.m.wikipedia.org/wiki/Gets()" title="Gets()" class="mw-redirect">gets</a></code>. Another is to add an object-oriented wrapper around C strings so that only safe calls can be done.</p>
+<p>On modern systems memory usage is less of a concern, so a multi-byte length is acceptable (if you have so many small strings that the space used by this length is a concern, you will have enough duplicates that a <a href="http://en.m.wikipedia.org/wiki/Hash_table" title="Hash table">hash table</a> will use even less memory). Most replacements for C strings use a 32-bit or larger length value. Examples include the <a href="C++" title="C++">C++</a> <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> <code><a href="http://en.m.wikipedia.org/wiki/String_(C%2B%2B)" title="String (C++)">std::string</a></code>, the <a href="http://en.m.wikipedia.org/wiki/Qt_(toolkit)" title="Qt (toolkit)" class="mw-redirect">Qt</a> <code>QString</code>, the <a href="http://en.m.wikipedia.org/wiki/Microsoft_Foundation_Class_Library" title="Microsoft Foundation Class Library">MFC</a> <code>CString</code>, and the C-based implementation <code>CFString</code> from <a href="http://en.m.wikipedia.org/wiki/Core_Foundation" title="Core Foundation">Core Foundation</a> as well as its <a href="Objective-C" title="Objective-C">Objective-C</a> sibling <code>NSString</code> from <a href="http://en.m.wikipedia.org/wiki/Foundation" title="Foundation">Foundation</a>, both by Apple. More complex structures may also be used to store strings such as the <a href="http://en.m.wikipedia.org/wiki/Rope_(computer_science)" title="Rope (computer science)">rope</a>.</p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Null-terminated_string#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFKemp2011">Kemp, Poul-Henning (25 July 2011), <a rel="nofollow" class="external text" href="http://queue.acm.org/detail.cfm?id=2010365">"The Most Expensive One-byte Mistake"</a>, <i>ACM Queue</i> <b>9</b> (7), <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/1542-7730">1542-7730</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://queue.acm.org/detail.cfm?id=2010365">http://queue.acm.org/detail.cfm?id=2010365</a></span><span class="reference-accessdate">, retrieved 2 August 2011</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+Most+Expensive+One-byte+Mistake&amp;rft.jtitle=ACM+Queue&amp;rft.aulast=Kemp&amp;rft.aufirst=Poul-Henning&amp;rft.au=Kemp%2C%26%2332%3BPoul-Henning&amp;rft.date=25+July+2011&amp;rft.volume=9&amp;rft.issue=7&amp;rft.issn=1542-7730&amp;rft_id=http%3A%2F%2Fqueue.acm.org%2Fdetail.cfm%3Fid%3D2010365&amp;rfr_id=info:sid/en.wikipedia.org:Null-terminated_string"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Null-terminated_string#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">Richie, Dennis (2003). <a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/chist.html">"The Development of the C Language"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://cm.bell-labs.com/cm/cs/who/dmr/chist.html">http://cm.bell-labs.com/cm/cs/who/dmr/chist.html</a></span><span class="reference-accessdate">. Retrieved 9 November 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Development+of+the+C+Language&amp;rft.atitle=&amp;rft.aulast=Richie&amp;rft.aufirst=Dennis&amp;rft.au=Richie%2C%26%2332%3BDennis&amp;rft.date=2003&amp;rft_id=http%3A%2F%2Fcm.bell-labs.com%2Fcm%2Fcs%2Fwho%2Fdmr%2Fchist.html&amp;rfr_id=info:sid/en.wikipedia.org:Null-terminated_string"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Null-terminated_string#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation Journal">Rain Forest Puppy (9 September 1999). <a rel="nofollow" class="external text" href="http://artofhacking.com/files/phrack/phrack55/P55-07.TXT">"Perl CGI problems"</a>. <i>Phrack Magazine</i> (artofhacking.com) <b>9</b> (55): 7<span class="printonly">. <a rel="nofollow" class="external free" href="http://artofhacking.com/files/phrack/phrack55/P55-07.TXT">http://artofhacking.com/files/phrack/phrack55/P55-07.TXT</a></span><span class="reference-accessdate">. Retrieved 6 January 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Perl+CGI+problems&amp;rft.jtitle=Phrack+Magazine&amp;rft.aulast=Rain+Forest+Puppy&amp;rft.au=Rain+Forest+Puppy&amp;rft.date=9+September+1999&amp;rft.volume=9&amp;rft.issue=55&amp;rft.pages=7&amp;rft.pub=artofhacking.com&amp;rft_id=http%3A%2F%2Fartofhacking.com%2Ffiles%2Fphrack%2Fphrack55%2FP55-07.TXT&amp;rfr_id=info:sid/en.wikipedia.org:Null-terminated_string"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">String</strong></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://es.m.wikipedia.org/wiki/C_string" lang="es" hreflang="es">español</a></li><li><a href="http://ko.m.wikipedia.org/wiki/C_%EB%AC%B8%EC%9E%90%EC%97%B4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9D%D1%83%D0%BB%D1%8C-%D1%82%D0%B5%D1%80%D0%BC%D0%B8%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B0" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Null-terminated_string&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Null-terminated_string&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Null-terminated+string&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

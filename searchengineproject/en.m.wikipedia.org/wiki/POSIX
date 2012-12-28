@@ -1,0 +1,938 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>POSIX - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"POSIX","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/POSIX" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=POSIX"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">POSIX</h1>			
+<div class="dablink">Not to be confused with <a href="Unix" title="Unix">Unix</a>, <a href="Unix-like" title="Unix-like">Unix-like</a>, or <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>.</div>
+<p><b>POSIX</b> (<span class="nowrap"><span title="pronunciation:"><img alt="play" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'p' in 'pie'" style="border-bottom:1px dotted">p</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɒ/ short 'o' in 'body'" style="border-bottom:1px dotted">ɒ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'z' in 'Zion'" style="border-bottom:1px dotted">z</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɪ/ short 'i' in 'bid'" style="border-bottom:1px dotted">ɪ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'k' in 'kind'" style="border-bottom:1px dotted">k</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'s' in 'sigh'" style="border-bottom:1px dotted">s</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span></span> <span title="English pronunciation respelling" class="Unicode"><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key" title="Wikipedia:Pronunciation respelling key"><i><b><span class="smallcaps"><span class="SMALLCAPS" style="FONT-VARIANT:SMALL-CAPS;"><span class="NOCAPS" style="TEXT-TRANSFORM:LOWERCASE;">POZ</span></span></span></b>-iks</i></a></span>), an acronym for "<b>P</b>ortable <b>O</b>perating <b>S</b>ystem <b>I</b>nterface", is a family of <a href="http://en.m.wikipedia.org/wiki/Standardization" title="Standardization">standards</a> specified by the <a href="Institute_of_Electrical_and_Electronics_Engineers" title="Institute of Electrical and Electronics Engineers">IEEE</a> for maintaining compatibility between <a href="Operating_system" title="Operating system">operating systems</a>. POSIX defines the <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">application programming interface</a> (API), along with command line <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shells</a> and utility interfaces, for software compatibility with variants of <a href="Unix" title="Unix">Unix</a> and other operating systems.<sup id="cite_ref-FAQ_1-0" class="reference"><a href="POSIX#cite_note-FAQ-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-IET_2-0" class="reference"><a href="POSIX#cite_note-IET-2"><span>[</span>2<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Name">Name</span>
+</h2>
+<p>Originally, the name "POSIX" referred to IEEE Std 1003.1-1988, released in 1988. The family of POSIX standards is formally designated as <b>IEEE 1003</b> and the international standard name is <a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a>/<a href="http://en.m.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission">IEC</a> 9945.</p>
+<p>The standards, formerly known as IEEE-IX, emerged from a project that began circa 1985. <a href="http://en.m.wikipedia.org/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a> suggested the name <i>POSIX</i> in response to an IEEE request for a memorable name.<sup id="cite_ref-FAQ_1-1" class="reference"><a href="POSIX#cite_note-FAQ-1"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>The POSIX specifications for <a href="Unix" title="Unix">Unix</a>-like <a href="Operating_system" title="Operating system">operating system</a> environments originally consisted of a single document for the core programming interface, but eventually grew to 19 separate documents (for example, POSIX.1, POSIX.2 etc.) <a rel="nofollow" class="external autonumber" href="http://www.pasc.org/standing/sd11.html">[1]</a>. The standardized user <a href="http://en.m.wikipedia.org/wiki/Command_line_interface" title="Command line interface" class="mw-redirect">command line</a> and <a href="http://en.m.wikipedia.org/wiki/Command_line_interpreter" title="Command line interpreter" class="mw-redirect">scripting interface</a> were based on the <a href="http://en.m.wikipedia.org/wiki/Korn_shell" title="Korn shell">Korn shell</a><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2010">citation needed</span></a></i>]</sup>. Many user-level programs, services, and utilities including <a href="http://en.m.wikipedia.org/wiki/Awk" title="Awk" class="mw-redirect">awk</a>, <a href="http://en.m.wikipedia.org/wiki/Echo_(command)" title="Echo (command)">echo</a>, <a href="http://en.m.wikipedia.org/wiki/Ed_(Unix)" title="Ed (Unix)" class="mw-redirect">ed</a> were also standardized, along with required program-level services including basic <a href="Input/output" title="Input/output">I/O</a> (<a href="http://en.m.wikipedia.org/wiki/Computer_file" title="Computer file">file</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_terminal" title="Computer terminal">terminal</a>, and <a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">network</a>) services. POSIX also defines a standard <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_science)" title="Thread (computer science)" class="mw-redirect">threading</a> library API which is supported by most modern operating systems. Nowadays, most of POSIX parts are combined into a single standard, <i>IEEE Std 1003.1-2008</i>, also known as <i>POSIX.1-2008</i>.</p>
+<p>As of 2009<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=POSIX&amp;action=edit">[update]</a></sup>, POSIX documentation is divided in two parts:</p>
+<ul>
+<li>POSIX.1-2008: POSIX Base Definitions, System Interfaces, and Commands and Utilities (which include POSIX.1, extensions for POSIX.1, Real-time Services, Threads Interface, Real-time Extensions, Security Interface, Network File Access and Network Process-to-Process Communications, User Portability Extensions, Corrections and Extensions, Protection and Control Utilities and Batch System Utilities)</li>
+<li>POSIX Conformance Testing: A test suite for POSIX accompanies the standard: <b>PCTS</b> or the <b>POSIX Conformance Test Suite</b>.<sup id="cite_ref-NIST_3-0" class="reference"><a href="POSIX#cite_note-NIST-3"><span>[</span>3<span>]</span></a></sup>
+</li>
+</ul>
+<p>The development of the POSIX standard takes place in the <a href="http://en.m.wikipedia.org/wiki/Austin_Group" title="Austin Group">Austin Group</a>, a joint <a href="Working_group" title="Working group">working group</a> linking the Open Group and the ISO organization.</p>
+<h2> <span class="mw-headline" id="Versions">Versions</span>
+</h2>
+<h3> <span class="mw-headline" id="Parts_before_1997">Parts before 1997</span>
+</h3>
+<p>Before 1997, POSIX comprised several standards:</p>
+<h4> <span class="mw-headline" id="POSIX.1">POSIX.1</span>
+</h4>
+<ul>
+<li>POSIX.1, Core Services (incorporates Standard <a href="ANSI_C" title="ANSI C">ANSI C</a>) (IEEE Std 1003.1-1988)
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a> Creation and Control</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">Signals</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGFPE" title="SIGFPE" class="mw-redirect">Floating Point Exceptions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGSEGV" title="SIGSEGV" class="mw-redirect">Segmentation / Memory Violations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGILL" title="SIGILL" class="mw-redirect">Illegal Instructions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGBUS" title="SIGBUS" class="mw-redirect">Bus Errors</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGALRM" title="SIGALRM" class="mw-redirect">Timers</a></li>
+<li>File and Directory Operations</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">Pipes</a></li>
+<li><a href="C_standard_library" title="C standard library">C Library (Standard C)</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Input/Output" title="Input/Output" class="mw-redirect">I/O</a> Port Interface and Control</li>
+<li><span class="new" title="Process Triggers (page does not exist)">Process Triggers</span></li>
+</ul>
+</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX.1b">POSIX.1b</span>
+</h4>
+<ul>
+<li>POSIX.1b, Real-time extensions (IEEE Std 1003.1b-1993)
+<ul>
+<li>Priority <a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">Scheduling</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIGRTMIN_and_SIGRTMAX" title="SIGRTMIN and SIGRTMAX" class="mw-redirect">Real-Time Signals</a></li>
+<li>Clocks and Timers</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semaphore_(programming)" title="Semaphore (programming)">Semaphores</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Message_Passing" title="Message Passing" class="mw-redirect">Message Passing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shared_Memory" title="Shared Memory" class="mw-redirect">Shared Memory</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Asynchronous_I/O" title="Asynchronous I/O">Asynch</a> and Synch I/O</li>
+<li>Memory Locking Interface</li>
+</ul>
+</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX.1c">POSIX.1c</span>
+</h4>
+<ul>
+<li>POSIX.1c, <a href="http://en.m.wikipedia.org/wiki/POSIX_Threads" title="POSIX Threads">Threads extensions</a> (IEEE Std 1003.1c-1995)
+<ul>
+<li>Thread Creation, Control, and Cleanup</li>
+<li>Thread Scheduling</li>
+<li>Thread Synchronization</li>
+<li>Signal Handling</li>
+</ul>
+</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX.2">POSIX.2</span>
+</h4>
+<ul>
+<li>POSIX.2, Shell and Utilities (IEEE Std 1003.2-1992)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Command-line_interpreter" title="Command-line interpreter" class="mw-redirect">Command Interpreter</a></li>
+<li>Utility Programs</li>
+</ul>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Versions_after_1997">Versions after 1997</span>
+</h3>
+<p>After 1997, the <a href="http://en.m.wikipedia.org/wiki/Austin_Group" title="Austin Group">Austin Group</a> developed the POSIX revisions. The specifications are known under the name <a href="Single_UNIX_Specification" title="Single UNIX Specification">Single UNIX Specification</a>, before they become a POSIX standard when formally approved by the ISO.</p>
+<h4> <span class="mw-headline" id="POSIX.1-2001">POSIX.1-2001</span>
+</h4>
+<p><i>POSIX.1-2001</i> or IEEE Std 1003.1-2001 equates to the <i>Single UNIX Specification version 3</i><sup id="cite_ref-4" class="reference"><a href="POSIX#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>This standard consisted of:</p>
+<ul>
+<li>the Base Definitions, Issue 6,</li>
+<li>the System Interfaces and Headers, Issue 6,</li>
+<li>the Commands and Utilities, Issue 6.</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX.1-2001_.28with_two_TCs.29">POSIX.1-2001 (with two TCs)</span>
+</h4>
+<p>IEEE Std 1003.1-2004 involved a minor update of POSIX.1-2001. It incorporated two technical <a href="http://en.m.wikipedia.org/wiki/Erratum" title="Erratum">corrigenda</a>.<sup id="cite_ref-5" class="reference"><a href="POSIX#cite_note-5"><span>[</span>5<span>]</span></a></sup> Its contents are available on the web.<sup id="cite_ref-6" class="reference"><a href="POSIX#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h4> <span class="mw-headline" id="POSIX.1-2008">POSIX.1-2008</span>
+</h4>
+<p>As of 2009<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=POSIX&amp;action=edit">[update]</a></sup><i>POSIX.1-2008</i> or IEEE Std 1003.1-2008 represents the current version.<sup id="cite_ref-7" class="reference"><a href="POSIX#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="POSIX#cite_note-8"><span>[</span>8<span>]</span></a></sup> A free online copy is available.<sup id="cite_ref-9" class="reference"><a href="POSIX#cite_note-9"><span>[</span>9<span>]</span></a></sup></p>
+<p>This standard consists of:</p>
+<ul>
+<li>the Base Definitions, Issue 7,</li>
+<li>the System Interfaces and Headers, Issue 7,</li>
+<li>the Commands and Utilities, Issue 7.</li>
+</ul>
+<h2> <span class="mw-headline" id="Controversies">Controversies</span>
+</h2>
+<h3> <span class="mw-headline" id="512-_vs_1024-byte_blocks">512- vs 1024-byte blocks</span>
+</h3>
+<p>POSIX mandates 512-byte block sizes for the <a href="http://en.m.wikipedia.org/wiki/Df_(Unix)" title="Df (Unix)">df</a> and <a href="http://en.m.wikipedia.org/wiki/Du_(Unix)" title="Du (Unix)">du</a> utilities, reflecting the default size of blocks on disks. When <a href="http://en.m.wikipedia.org/wiki/Richard_M._Stallman" title="Richard M. Stallman" class="mw-redirect">Richard Stallman</a> and the <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> team were implementing POSIX for the <a href="http://en.m.wikipedia.org/wiki/GNU_Hurd" title="GNU Hurd">GNU operating system</a>, they objected to this on the grounds that most people think in terms of 1024 byte (or 1 <a href="http://en.m.wikipedia.org/wiki/Kibibyte" title="Kibibyte">KiB</a>) blocks. The environmental variable <i>POSIXLY_CORRECT</i> was introduced to force the standards-compliant behaviour.<sup id="cite_ref-10" class="reference"><a href="POSIX#cite_note-10"><span>[</span>10<span>]</span></a></sup> The variable <i>POSIX_ME_HARDER</i> was also discussed<sup id="cite_ref-11" class="reference"><a href="POSIX#cite_note-11"><span>[</span>11<span>]</span></a></sup> and was implemented in a few packages<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from September 2012">citation needed</span></a></i>]</sup> before being obsoleted by <i>POSIXLY_CORRECT</i>.</p>
+<h2> <span class="mw-headline" id="POSIX-oriented_operating_systems">POSIX-oriented operating systems</span>
+</h2>
+<p>Depending upon the degree of compliance with the standards, one can classify operating systems as fully or partly POSIX compatible. Certified products can be found at the IEEE's website.<sup id="cite_ref-certification_12-0" class="reference"><a href="POSIX#cite_note-certification-12"><span>[</span>12<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Fully_POSIX-compliant">Fully POSIX-compliant</span>
+</h3>
+<p>The following operating systems conform (i.e., are 100% compliant) to one or more of the various POSIX standards.</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/A/UX" title="A/UX">A/UX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IBM_AIX_(operating_system)" title="IBM AIX (operating system)" class="mw-redirect">AIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BSD/OS" title="BSD/OS">BSD/OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DSPnano_RTOS" title="DSPnano RTOS">DSPnano</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HP-UX" title="HP-UX">HP-UX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Integrity_(operating_system)" title="Integrity (operating system)">INTEGRITY</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IRIX" title="IRIX">IRIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LynxOS" title="LynxOS">LynxOS</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a><sup id="cite_ref-13" class="reference"><a href="POSIX#cite_note-13"><span>[</span>13<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPE/iX" title="MPE/iX" class="mw-redirect">MPE/iX</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/QNX" title="QNX">QNX</a><sup id="cite_ref-VxWorks_14-0" class="reference"><a href="POSIX#cite_note-VxWorks-14"><span>[</span>14<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/RTEMS" title="RTEMS">RTEMS</a> (POSIX 1003.13-2003 Profile 52)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_Operating_System" title="Solaris Operating System" class="mw-redirect">Solaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tru64_UNIX" title="Tru64 UNIX">Tru64</a></li>
+<li><span class="new" title="Unison Operating System (page does not exist)">Unison RTOS</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UnixWare" title="UnixWare">UnixWare</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Mostly_POSIX-compliant">Mostly POSIX-compliant</span>
+</h3>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content" style=""><tr>
+<td class="mbox-image"><a href="http://en.m.wikipedia.org/wiki/File:Wiki_letter_w_cropped.svg" class="image"><img alt="[icon]" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section requires <a class="external text" href="http://en.wikipedia.org/w/index.php?title=POSIX&amp;action=edit">expansion</a>. <small><i>(January 2007)</i></small></span></td>
+</tr></table>
+<p>The following, while not officially certified as POSIX compatible, conform in large part:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a> / <a href="http://en.m.wikipedia.org/wiki/Haiku_(operating_system)" title="Haiku (operating system)">Haiku</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a><sup id="cite_ref-FreeBSD_15-0" class="reference"><a href="POSIX#cite_note-FreeBSD-15"><span>[</span>15<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux" class="mw-redirect">GNU/Linux</a> (most distributions — see <a href="http://en.m.wikipedia.org/wiki/Linux_Standard_Base" title="Linux Standard Base">Linux Standard Base</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Contiki" title="Contiki">Contiki</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minix" title="Minix" class="mw-redirect">MINIX</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NetBSD" title="NetBSD">NetBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nucleus_RTOS" title="Nucleus RTOS">Nucleus RTOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PikeOS" title="PikeOS">PikeOS</a> RTOS for embedded systems with optional PSE51 and PSE52 partitions; see <a href="http://en.m.wikipedia.org/wiki/Partition_(mainframe)" title="Partition (mainframe)" class="mw-redirect">partition (mainframe)</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/RTEMS" title="RTEMS">RTEMS</a> – POSIX API support designed to IEEE Std. 1003.13-2003 PSE52</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sanos" title="Sanos">Sanos</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SkyOS" title="SkyOS">SkyOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Syllable_(operating_system)" title="Syllable (operating system)" class="mw-redirect">Syllable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/VSTa" title="VSTa">VSTa</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/VxWorks" title="VxWorks">VxWorks</a> <sup id="cite_ref-VxWorks_14-1" class="reference"><a href="POSIX#cite_note-VxWorks-14"><span>[</span>14<span>]</span></a></sup> ( VxWorks is often used as a shell around non-posix Kernels i.e. TiMOS/SROS )</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX_for_Windows">POSIX for Windows</span>
+</h4>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Cygwin" title="Cygwin">Cygwin</a> provides a largely POSIX-compliant development and run-time environment for <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>.
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MinGW" title="MinGW">MinGW</a>, formerly a <a href="http://en.m.wikipedia.org/wiki/Fork_(software_development)" title="Fork (software development)">fork</a> of Cygwin, provides less POSIX-compliant development environment and supports compatible <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>-programmed applications via <a href="http://en.m.wikipedia.org/wiki/Msvcrt" title="Msvcrt" class="mw-redirect">Msvcrt</a>, Microsoft's old Visual C runtime library.</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Microsoft_POSIX_subsystem" title="Microsoft POSIX subsystem">Microsoft POSIX subsystem</a>, an optional Windows subsystem included in Windows NT-based operating systems up to Windows 2000. Partial POSIX-1 — no threads, no sockets.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Interix" title="Interix">Interix</a>, originally OpenNT by Softway Systems, Inc., is an upgrade and replacement for <a href="http://en.m.wikipedia.org/wiki/Microsoft_POSIX_subsystem" title="Microsoft POSIX subsystem">Microsoft POSIX subsystem</a> that was purchased by <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> in 1999. It was initially marketed as a stand-alone add-on product and then later included it as a component in <a href="http://en.m.wikipedia.org/wiki/Windows_Services_for_UNIX" title="Windows Services for UNIX">Windows Services for UNIX</a> (SFU) and finally incorporated it as a component in Windows Vista and later Windows OS releases under the name "Subsystem for UNIX-based Applications" (SUA). It enables full POSIX compliance for certain <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> products<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from March 2011">citation needed</span></a></i>]</sup>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/UWIN" title="UWIN">UWIN</a> from AT&amp;T Research implements a POSIX layer on top of the Win32 APIs.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MKS_Toolkit" title="MKS Toolkit">MKS Toolkit</a>, originally created for MS-DOS, is a software package produced and maintained by <a href="http://en.m.wikipedia.org/wiki/MKS_Inc." title="MKS Inc.">MKS Inc.</a> that provides a <a href="Unix-like" title="Unix-like">Unix-like</a> environment for scripting, connectivity and porting <a href="Unix" title="Unix">Unix</a> and <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> software to both 32- and 64-bit <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> systems. A demonstration version of this was included in the first release of <a href="http://en.m.wikipedia.org/wiki/Windows_Services_for_UNIX" title="Windows Services for UNIX">Windows Services for UNIX</a> (SFU).<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2012">citation needed</span></a></i>]</sup>
+</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX_for_OS.2F2">POSIX for OS/2</span>
+</h4>
+<p>Mostly POSIX compliant environments for <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a>:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/EMX_(programming_environment)" title="EMX (programming environment)">emx+gcc</a> – largely POSIX compliant</li>
+</ul>
+<h4> <span class="mw-headline" id="POSIX_for_DOS">POSIX for DOS</span>
+</h4>
+<p>Partially POSIX compliant environments for <a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a> include:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/EMX_(programming_environment)" title="EMX (programming environment)">emx+gcc</a> – largely POSIX compliant</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/DJGPP" title="DJGPP">DJGPP</a> – partially POSIX compliant</li>
+</ul>
+<h4> <span class="mw-headline" id="Compliant_via_compatibility_feature">Compliant via compatibility feature</span>
+</h4>
+<p>The following are not officially certified as POSIX compatible, but they conform in large part to the standards by implementing POSIX support via some sort of compatibility feature, usually translation libraries, or a layer atop the kernel. Without these features, they are usually noncompliant.</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ECos" title="ECos">eCos</a> – POSIX is part of standard distribution, and used by many applications. 'external links' section below has more information.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MorphOS" title="MorphOS">MorphOS</a> (through the built-in ixemul library)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OpenVMS" title="OpenVMS">OpenVMS</a> (through optional POSIX package)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Stratus_VOS" title="Stratus VOS">OpenVOS</a> is an optional POSIX-compliant layer atop the <a href="http://en.m.wikipedia.org/wiki/Stratus_VOS" title="Stratus VOS">Stratus VOS</a> kernel<sup id="cite_ref-OpenVOS_16-0" class="reference"><a href="POSIX#cite_note-OpenVOS-16"><span>[</span>16<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a> APE - ANSI/POSIX Environment<sup id="cite_ref-APE_17-0" class="reference"><a href="POSIX#cite_note-APE-17"><span>[</span>17<span>]</span></a></sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Symbian_OS" title="Symbian OS" class="mw-redirect">Symbian OS</a> with PIPS (PIPS Is POSIX on Symbian)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Architecture_of_Windows_NT" title="Architecture of Windows NT">Windows NT kernel</a> when using Microsoft <a href="http://en.m.wikipedia.org/wiki/Windows_Services_for_Unix" title="Windows Services for Unix" class="mw-redirect">SFU</a> 3.5 or SUA
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_2000" title="Windows 2000">Windows 2000 Server or Professional with Service Pack 3 or later</a>. To be POSIX compliant, one must activate optional features of Windows NT and Windows 2000 Server.<sup id="cite_ref-MS_18-0" class="reference"><a href="POSIX#cite_note-MS-18"><span>[</span>18<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_XP" title="Windows XP">Windows XP Professional with Service Pack 1 or later</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Server_2003" title="Windows Server 2003">Windows Server 2003</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Vista" title="Windows Vista">Windows Vista</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_7" title="Windows 7">Windows 7</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z/OS" title="Z/OS">z/OS</a></li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/POSIX_signal" title="POSIX signal" class="mw-redirect">POSIX signal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/POSIX_Threads" title="POSIX Threads">POSIX Threads</a></li>
+<li>POSIX sockets are basically <a href="http://en.m.wikipedia.org/wiki/Berkeley_sockets" title="Berkeley sockets">Berkeley sockets</a><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from January 2012">citation needed</span></a></i>]</sup>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/TRON_Project" title="TRON Project">TRON Project</a> – alternative OS standard to POSIX</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Interix" title="Interix">Interix</a> – a full-featured POSIX and Unix environment subsystem for Microsoft's Windows NT-based operating systems</li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_POSIX_library" title="C POSIX library" class="mw-redirect">C POSIX library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Real-time_operating_system" title="Real-time operating system">Real-time operating system</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-FAQ-1">
+<span class="mw-cite-backlink">^ <a href="POSIX#cite_ref-FAQ_1-0"><sup><i><b>a</b></i></sup></a> <a href="POSIX#cite_ref-FAQ_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.opengroup.org/austin/papers/posix_faq.html">"POSIX 1003.1 FAQ Version 1.12"</a>. 2 February 2006<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/austin/papers/posix_faq.html">http://www.opengroup.org/austin/papers/posix_faq.html</a></span><span class="reference-accessdate">. Retrieved 16 July 2006</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX+1003.1+FAQ+Version+1.12&amp;rft.atitle=&amp;rft.date=2+February+2006&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Faustin%2Fpapers%2Fposix_faq.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-IET-2">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-IET_2-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://standards.ieee.org/regauth/posix/">"POSIX"</a>. <i>Standards</i>. IEEE<span class="printonly">. <a rel="nofollow" class="external free" href="http://standards.ieee.org/regauth/posix/">http://standards.ieee.org/regauth/posix/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX&amp;rft.atitle=Standards&amp;rft.pub=IEEE&amp;rft_id=http%3A%2F%2Fstandards.ieee.org%2Fregauth%2Fposix%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-NIST-3">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-NIST_3-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.itl.nist.gov/div897/ctg/posix_form.htm">"POSIX"</a>. NIST<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.itl.nist.gov/div897/ctg/posix_form.htm">http://www.itl.nist.gov/div897/ctg/posix_form.htm</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX&amp;rft.atitle=&amp;rft.pub=NIST&amp;rft_id=http%3A%2F%2Fwww.itl.nist.gov%2Fdiv897%2Fctg%2Fposix_form.htm&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation pressrelease"><a rel="nofollow" class="external text" href="http://www.unix.org/version3/pr.html">"The Open Group announces completion of the joint revision to POSIX and the Single UNIX Specification"</a> (Press release). The Open Group. 30 January 2002<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.unix.org/version3/pr.html">http://www.unix.org/version3/pr.html</a></span><span class="reference-accessdate">. Retrieved 26 July 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Open+Group+announces+completion+of+the+joint+revision+to+POSIX+and+the+Single+UNIX+Specification&amp;rft.atitle=&amp;rft.date=30+January+2002&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.unix.org%2Fversion3%2Fpr.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.unix.org/version3/ieee_std.html"><i>IEEE Std 1003.1</i></a> (2004 ed.), Unix.org<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.unix.org/version3/ieee_std.html">http://www.unix.org/version3/ieee_std.html</a></span><span class="reference-accessdate">, retrieved 26 July 2009</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=IEEE+Std+1003.1&amp;rft.edition=2004&amp;rft.pub=Unix.org&amp;rft_id=http%3A%2F%2Fwww.unix.org%2Fversion3%2Fieee_std.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation">(2004 ed.), The Open Group, <a rel="nofollow" class="external free" href="http://www.opengroup.org/onlinepubs/009695399/">http://www.opengroup.org/onlinepubs/009695399/</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=&amp;rft.edition=2004&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fonlinepubs%2F009695399%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.opengroup.org/bookstore/catalog/c082.htm">"Base Specifications, Issue 7"</a>. The Open Group<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/bookstore/catalog/c082.htm">http://www.opengroup.org/bookstore/catalog/c082.htm</a></span><span class="reference-accessdate">. Retrieved 27 July 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Base+Specifications%2C+Issue+7&amp;rft.atitle=&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fbookstore%2Fcatalog%2Fc082.htm&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.opengroup.org/austin/">"The Austin Common Standards Revision Group"</a>. The Open Group<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/austin/">http://www.opengroup.org/austin/</a></span><span class="reference-accessdate">. Retrieved 27 July 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Austin+Common+Standards+Revision+Group&amp;rft.atitle=&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Faustin%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/9699919799/"><i>POSIX.1-2008</i></a>, The Open Group<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.opengroup.org/onlinepubs/9699919799/">http://www.opengroup.org/onlinepubs/9699919799/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=POSIX.1-2008&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fonlinepubs%2F9699919799%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://groups.google.com/group/gnu.announce/msg/6c6e20b57ddb1a82?pli=1"><i>Announce</i></a> (Google Groups replica), GNU<span class="printonly">, <a rel="nofollow" class="external free" href="http://groups.google.com/group/gnu.announce/msg/6c6e20b57ddb1a82?pli=1">http://groups.google.com/group/gnu.announce/msg/6c6e20b57ddb1a82?pli=1</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Announce&amp;rft.pub=GNU&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fgnu.announce%2Fmsg%2F6c6e20b57ddb1a82%3Fpli%3D1&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.linuxdevcenter.com/pub/a/linux/2004/12/22/rms_interview.html?page=2"><i>Freedom, Innovation, and Convenience: The RMS Interview</i></a>, Linuxdevcenter, 22 December 2004<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.linuxdevcenter.com/pub/a/linux/2004/12/22/rms_interview.html?page=2">http://www.linuxdevcenter.com/pub/a/linux/2004/12/22/rms_interview.html?page=2</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Freedom%2C+Innovation%2C+and+Convenience%3A+The+RMS+Interview&amp;rft.date=22+December+2004&amp;rft.pub=Linuxdevcenter&amp;rft_id=http%3A%2F%2Fwww.linuxdevcenter.com%2Fpub%2Fa%2Flinux%2F2004%2F12%2F22%2Frms_interview.html%3Fpage%3D2&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</span>
+</li>
+<li id="cite_note-certification-12">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-certification_12-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://get.posixcertified.ieee.org/search_certprodlist.tpl?CALLER=cert_prodlist.tpl">"POSIX Certification"</a>. IEEE<span class="printonly">. <a rel="nofollow" class="external free" href="http://get.posixcertified.ieee.org/search_certprodlist.tpl?CALLER=cert_prodlist.tpl">http://get.posixcertified.ieee.org/search_certprodlist.tpl?CALLER=cert_prodlist.tpl</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX+Certification&amp;rft.atitle=&amp;rft.pub=IEEE&amp;rft_id=http%3A%2F%2Fget.posixcertified.ieee.org%2Fsearch_certprodlist.tpl%3FCALLER%3Dcert_prodlist.tpl&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-13">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.opengroup.org/homepage-items/c987.html">"New UNIX®; 03 Certification for Apple Inc."</a>. <i>Register of Open Branded Products</i>. The Open Group<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.opengroup.org/homepage-items/c987.html">http://www.opengroup.org/homepage-items/c987.html</a></span><span class="reference-accessdate">. Retrieved 7 August 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=New+UNIX%C2%AE%3B+03+Certification+for+Apple+Inc.&amp;rft.atitle=Register+of+Open+Branded+Products&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fhomepage-items%2Fc987.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-VxWorks-14">
+<span class="mw-cite-backlink">^ <a href="POSIX#cite_ref-VxWorks_14-0"><sup><i><b>a</b></i></sup></a> <a href="POSIX#cite_ref-VxWorks_14-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://get.posixcertified.ieee.org/cert_prodlist.tpl">"IEEE Std. 1003.13-2003 PSE52"</a>, <i>POSIX Certified</i>, IEEE<span class="printonly">, <a rel="nofollow" class="external free" href="http://get.posixcertified.ieee.org/cert_prodlist.tpl">http://get.posixcertified.ieee.org/cert_prodlist.tpl</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=IEEE+Std.+1003.13-2003+PSE52&amp;rft.atitle=POSIX+Certified&amp;rft.pub=IEEE&amp;rft_id=http%3A%2F%2Fget.posixcertified.ieee.org%2Fcert_prodlist.tpl&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</span>
+</li>
+<li id="cite_note-FreeBSD-15">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-FreeBSD_15-0">^</a></b></span> <span class="reference-text"><span class="citation web">Schweik. <a rel="nofollow" class="external text" href="http://people.freebsd.org/~schweikh/posix-utilities.html">"POSIX utilities"</a>. FreeBSD<span class="printonly">. <a rel="nofollow" class="external free" href="http://people.freebsd.org/~schweikh/posix-utilities.html">http://people.freebsd.org/~schweikh/posix-utilities.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX+utilities&amp;rft.atitle=&amp;rft.aulast=Schweik&amp;rft.au=Schweik&amp;rft.pub=FreeBSD&amp;rft_id=http%3A%2F%2Fpeople.freebsd.org%2F%7Eschweikh%2Fposix-utilities.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-OpenVOS-16">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-OpenVOS_16-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.stratus.com/Products/VSeries-Continuum/OperatingSystems.aspx">"OpenVOS: Stratus Virtual Operating System"</a>. Stratus Technologies<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.stratus.com/Products/VSeries-Continuum/OperatingSystems.aspx">http://www.stratus.com/Products/VSeries-Continuum/OperatingSystems.aspx</a></span><span class="reference-accessdate">. Retrieved 18 October 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=OpenVOS%3A+Stratus+Virtual+Operating+System&amp;rft.atitle=&amp;rft.pub=Stratus+Technologies&amp;rft_id=http%3A%2F%2Fwww.stratus.com%2FProducts%2FVSeries-Continuum%2FOperatingSystems.aspx&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-APE-17">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-APE_17-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://plan9.bell-labs.com/sys/doc/ape.html">"APE — ANSI/POSIX Environment"</a>. <i>Plan 9</i>. Bell Labs<span class="printonly">. <a rel="nofollow" class="external free" href="http://plan9.bell-labs.com/sys/doc/ape.html">http://plan9.bell-labs.com/sys/doc/ape.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=APE+%E2%80%94+ANSI%2FPOSIX+Environment&amp;rft.atitle=Plan+9&amp;rft.pub=Bell+Labs&amp;rft_id=http%3A%2F%2Fplan9.bell-labs.com%2Fsys%2Fdoc%2Fape.html&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-MS-18">
+<span class="mw-cite-backlink"><b><a href="POSIX#cite_ref-MS_18-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.microsoft.com/technet/archive/ntwrkstn/reskit/poscomp.mspx">"POSIX Compatibility"</a>. <i>MS Windows NT Workstation Resource Kit</i>. Microsoft<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.microsoft.com/technet/archive/ntwrkstn/reskit/poscomp.mspx">http://www.microsoft.com/technet/archive/ntwrkstn/reskit/poscomp.mspx</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=POSIX+Compatibility&amp;rft.atitle=MS+Windows+NT+Workstation+Resource+Kit&amp;rft.pub=Microsoft&amp;rft_id=http%3A%2F%2Fwww.microsoft.com%2Ftechnet%2Farchive%2Fntwrkstn%2Freskit%2Fposcomp.mspx&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://www.opengroup.org/austin/"><i>The Austin Group</i></a>, The Open Group<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.opengroup.org/austin/">http://www.opengroup.org/austin/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Austin+Group&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Faustin%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</li>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://www.pasc.org/"><i>The Portable Application Standards Committee</i></a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.pasc.org/">http://www.pasc.org/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Portable+Application+Standards+Committee&amp;rft_id=http%3A%2F%2Fwww.pasc.org%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://standards.ieee.org/regauth/posix/"><i>POSIX Certification Authority</i></a>, IEEE<span class="printonly">, <a rel="nofollow" class="external free" href="http://standards.ieee.org/regauth/posix/">http://standards.ieee.org/regauth/posix/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=POSIX+Certification+Authority&amp;rft.pub=IEEE&amp;rft_id=http%3A%2F%2Fstandards.ieee.org%2Fregauth%2Fposix%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>.</li>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://www.unix.org/"><i>The UNIX System</i></a> (home page), The Open Group<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.unix.org/">http://www.unix.org/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+UNIX+System&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.unix.org%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/9699919799/">"Base Specifications"</a>, <i>POSIX.1-2008</i>, The Open Group<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.opengroup.org/onlinepubs/9699919799/">http://www.opengroup.org/onlinepubs/9699919799/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Base+Specifications&amp;rft.atitle=POSIX.1-2008&amp;rft.issue=7&amp;rft.pub=The+Open+Group&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fonlinepubs%2F9699919799%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation"><a rel="nofollow" class="external text" href="http://wt.tuxomania.net/publications/posix.1e/"><i>What could have been IEEE 1003.1e/2c</i></a>, Tuxomania<span class="printonly">, <a rel="nofollow" class="external free" href="http://wt.tuxomania.net/publications/posix.1e/">http://wt.tuxomania.net/publications/posix.1e/</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=What+could+have+been+IEEE+1003.1e%2F2c&amp;rft.pub=Tuxomania&amp;rft_id=http%3A%2F%2Fwt.tuxomania.net%2Fpublications%2Fposix.1e%2F&amp;rfr_id=info:sid/en.wikipedia.org:POSIX"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible uncollapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Open_Group_standards" title="Template:Open Group standards"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Open_Group_standards" title="Template talk:Open Group standards"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Open_Group_standards&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Standards of <a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Application_Response_Measurement" title="Application Response Measurement">ARM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Desktop_Environment" title="Common Desktop Environment">CDE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Call_Level_Interface" title="Call Level Interface">CLI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Manageability_Programming_Interface" title="Common Manageability Programming Interface">CMPI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Distributed_Computing_Environment" title="Distributed Computing Environment">DCE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DRDA" title="DRDA">DRDA</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol">LDAP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Motif_(widget_toolkit)" title="Motif (widget toolkit)">Motif</a></li>
+<li>
+<a href="Single_UNIX_Specification" title="Single UNIX Specification">SUS</a> (<strong class="selflink">POSIX</strong>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/X_Window_System" title="X Window System">X11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:ISO_standards" title="Template:ISO standards"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:ISO_standards" title="Template talk:ISO standards"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:ISO_standards&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="International_Organization_for_Standardization" title="International Organization for Standardization">ISO</a> standards</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<dl>
+<dt>Lists</dt>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_International_Organization_for_Standardization_standards" title="List of International Organization for Standardization standards">List of ISO standards</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_ISO_romanizations" title="List of ISO romanizations">List of ISO romanizations</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/List_of_IEC_standards" title="List of IEC standards">List of IEC standards</a></dd>
+<dt>Categories</dt>
+<dd><a href="http://en.m.wikipedia.org/wiki/Category:ISO_standards" title="Category:ISO standards">Category:ISO standards</a></dd>
+<dd><a href="http://en.m.wikipedia.org/wiki/Category:OSI_protocols" title="Category:OSI protocols">Category:OSI protocols</a></dd>
+</dl>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">1–9999</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1" title="ISO 1">1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2" title="ISO 2">2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3" title="ISO 3" class="mw-redirect">3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4" title="ISO 4">4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5" title="ISO 5">5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6" title="ISO 6" class="mw-redirect">6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7" title="ISO 7" class="mw-redirect">7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9" title="ISO 9">9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_16" title="ISO 16" class="mw-redirect">16</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_31" title="ISO 31">31</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-0" title="ISO 31-0">-0</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-1" title="ISO 31-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-2" title="ISO 31-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-3" title="ISO 31-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-4" title="ISO 31-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-5" title="ISO 31-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-6" title="ISO 31-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-7" title="ISO 31-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-8" title="ISO 31-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-9" title="ISO 31-9">-9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-10" title="ISO 31-10">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-11" title="ISO 31-11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-12" title="ISO 31-12">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31-13" title="ISO 31-13">-13</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_128" title="ISO 128">128</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_216" title="ISO 216">216</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_217" title="ISO 217">217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_226" title="ISO 226" class="mw-redirect">226</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/British_standard_pipe_thread" title="British standard pipe thread" class="mw-redirect">228</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_233" title="ISO 233">233</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_259" title="ISO 259">259</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Envelope" title="Envelope">269</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kappa_number" title="Kappa number">302</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vicat_softening_point" title="Vicat softening point">306</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_428" title="ISO 428">428</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_518" title="ISO 518" class="mw-redirect">518</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_519" title="ISO 519" class="mw-redirect">519</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_639" title="ISO 639">639</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-1" title="ISO 639-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-2" title="ISO 639-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-3" title="ISO 639-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-5" title="ISO 639-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_639-6" title="ISO 639-6">-6</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_646" title="ISO/IEC 646">646</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_690" title="ISO 690">690</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_732" title="ISO 732">732</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Antimagnetic_watch" title="Antimagnetic watch">764</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_843" title="ISO 843">843</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_898" title="ISO 898">898</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1000" title="ISO 1000">1000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Magnetic_ink_character_recognition" title="Magnetic ink character recognition">1004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/135_film" title="135 film">1007</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OCR-A_font" title="OCR-A font">1073-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1413" title="ISO 1413" class="mw-redirect">1413</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">1538</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_1745" title="ISO 1745">1745</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2014" title="ISO 2014">2014</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2015" title="ISO 2015">2015</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_2022" title="ISO/IEC 2022">2022</a></li>
+<li><a href="International_Standard_Book_Number" title="International Standard Book Number">2108</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2145" title="ISO 2145">2145</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2146" title="ISO 2146">2146</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2240" title="ISO 2240" class="mw-redirect">2240</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Water_Resistant_mark" title="Water Resistant mark">2281</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2709" title="ISO 2709">2709</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2711" title="ISO 2711">2711</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2788" title="ISO 2788">2788</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_2852" title="ISO 2852">2852</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/126_film" title="126 film">3029</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3103" title="ISO 3103">3103</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_3166" title="ISO 3166">3166</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-1" title="ISO 3166-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-2" title="ISO 3166-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3166-3" title="ISO 3166-3">-3</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">3297</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3307" title="ISO 3307">3307</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kunrei-shiki_romanization" title="Kunrei-shiki romanization">3602</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3864" title="ISO 3864">3864</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Recording_Code" title="International Standard Recording Code">3901</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_3977" title="ISO 3977">3977</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4031" title="ISO 4031">4031</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4157" title="ISO 4157">4157</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_4217" title="ISO 4217">4217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_5218" title="ISO/IEC 5218">5218</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5775" title="ISO 5775">5775</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5776" title="ISO 5776">5776</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5800" title="ISO 5800" class="mw-redirect">5800</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_5964" title="ISO 5964">5964</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6166" title="ISO 6166">6166</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6344" title="ISO 6344">6344</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6346" title="ISO 6346">6346</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Water_Resistant_mark" title="Water Resistant mark">6425</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ANSI_escape_code" title="ANSI escape code">6429</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6438" title="ISO 6438">6438</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6523" title="ISO 6523" class="mw-redirect">6523</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_6709" title="ISO 6709">6709</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7001" title="ISO 7001">7001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7002" title="ISO 7002">7002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pinyin" title="Pinyin">7098</a></li>
+<li><a href="Pascal_(programming_language)" title="Pascal (programming language)">7185</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7200" title="ISO 7200">7200</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OSI_model" title="OSI model">7498</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_7736" title="ISO 7736">7736</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7810" title="ISO/IEC 7810">7810</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7811" title="ISO/IEC 7811">7811</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7812" title="ISO/IEC 7812">7812</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7813" title="ISO/IEC 7813">7813</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_7816" title="ISO/IEC 7816">7816</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8000" title="ISO 8000">8000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8178" title="ISO 8178">8178</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fuel_oil" title="Fuel oil">8217</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FTAM" title="FTAM">8571</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8583" title="ISO 8583">8583</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8601" title="ISO 8601">8601</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_Graphics_Metafile" title="Computer Graphics Metafile">8632</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8652" title="ISO/IEC 8652">8652</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_8691" title="ISO 8691">8691</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language_Of_Temporal_Ordering_Specification" title="Language Of Temporal Ordering Specification">8807</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8820-5" title="ISO/IEC 8820-5">8820-5</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859" title="ISO/IEC 8859">8859</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-1" title="ISO/IEC 8859-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-2" title="ISO/IEC 8859-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-3" title="ISO/IEC 8859-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-4" title="ISO/IEC 8859-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-5" title="ISO/IEC 8859-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-6" title="ISO/IEC 8859-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-7" title="ISO/IEC 8859-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-8" title="ISO/IEC 8859-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-9" title="ISO/IEC 8859-9">-9</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-10" title="ISO/IEC 8859-10">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-11" title="ISO/IEC 8859-11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-12" title="ISO/IEC 8859-12">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-13" title="ISO/IEC 8859-13">-13</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-14" title="ISO/IEC 8859-14">-14</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-15" title="ISO/IEC 8859-15">-15</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_8859-16" title="ISO/IEC 8859-16">-16</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_Generalized_Markup_Language" title="Standard Generalized Markup Language">8879</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9000" title="ISO 9000">9000/9001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">9075</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_9126" title="ISO/IEC 9126">9126</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/File_Allocation_Table" title="File Allocation Table">9293</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9241" title="ISO 9241">9241</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9362" title="ISO 9362">9362</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shoe_size" title="Shoe size">9407</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Manufacturing_Message_Specification" title="Manufacturing Message Specification">9506</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9529" title="ISO 9529">9529</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9564" title="ISO 9564">9564</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X.500" title="X.500">9594</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9660" title="ISO 9660">9660</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9897" title="ISO 9897">9897</a></li>
+<li><strong class="selflink">9945</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9984" title="ISO 9984">9984</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_9985" title="ISO 9985" class="mw-redirect">9985</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_9995" title="ISO/IEC 9995">9995</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">10000–19999</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10006" title="ISO 10006">10006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whirlpool_(cryptography)" title="Whirlpool (cryptography)">10118-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10160" title="ISO 10160">10160</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10161" title="ISO 10161">10161</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Guidelines_for_the_Definition_of_Managed_Objects" title="Guidelines for the Definition of Managed Objects">10165</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Document_Style_Semantics_and_Specification_Language" title="Document Style Semantics and Specification Language">10179</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10206" title="ISO 10206" class="mw-redirect">10206</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10218" title="ISO 10218">10218</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_10303" title="ISO 10303">10303</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/EXPRESS_(data_modeling_language)" title="EXPRESS (data modeling language)">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-21" title="ISO 10303-21">-21</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-22" title="ISO 10303-22">-22</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10303-28" title="ISO 10303-28">-28</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/STEP-NC" title="STEP-NC">-238</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10383" title="ISO 10383">10383</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10487" title="ISO 10487" class="mw-redirect">10487</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ArmSCII" title="ArmSCII">10585</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IS-IS" title="IS-IS">10589</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Universal_Character_Set" title="Universal Character Set">10646</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Torx" title="Torx">10664</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RM-ODP" title="RM-ODP">10746</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multibus" title="Multibus">10861</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Music_Number" title="International Standard Music Number">10957</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_10962" title="ISO 10962">10962</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_10967" title="ISO/IEC 10967">10967</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEEE_11073" title="ISO/IEEE 11073">11073</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11170" title="ISO 11170">11170</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11179" title="ISO/IEC 11179">11179</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11404" title="ISO/IEC 11404">11404</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JBIG" title="JBIG">11544</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11783" title="ISO 11783">11783</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11784</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11784_%26_11785" title="ISO 11784 &amp; 11785">11785</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_11801" title="ISO/IEC 11801">11801</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11898" title="ISO 11898">11898</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11940" title="ISO 11940">11940</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/TR_11941" title="ISO/TR 11941">11941</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/TR_11941" title="ISO/TR 11941">11941 (TR)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_11992" title="ISO 11992">11992</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_12006" title="ISO 12006">12006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_TR_12182" title="ISO/IEC TR 12182">12182</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_12207" title="ISO/IEC 12207">12207</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tag_Image_File_Format_/_Electronic_Photography" title="Tag Image File Format / Electronic Photography" class="mw-redirect">12234-2</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">13211</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Isofix" title="Isofix">13216</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Topic_Maps" title="Topic Maps">13250</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13399" title="ISO 13399">13399</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13406-2" title="ISO 13406-2">13406-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13407" title="ISO 13407" class="mw-redirect">13407</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/110_film" title="110 film">13450</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13485" title="ISO 13485">13485</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13490" title="ISO 13490">13490</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13567" title="ISO 13567">13567</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z_notation" title="Z notation">13568</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_13584" title="ISO 13584">13584</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Bank_Account_Number" title="International Bank Account Number">13616</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14000" title="ISO 14000">14000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14031" title="ISO 14031">14031</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Horsepower" title="Horsepower">14396</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_14443" title="ISO/IEC 14443">14443</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MPEG-4" title="MPEG-4">14496</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_2" title="MPEG-4 Part 2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_3" title="MPEG-4 Part 3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Delivery_Multimedia_Integration_Framework" title="Delivery Multimedia Integration Framework">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/H.264/MPEG-4_AVC" title="H.264/MPEG-4 AVC">-10</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_11" title="MPEG-4 Part 11">-11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_12" title="MPEG-4 Part 12" class="mw-redirect">-12</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-14</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-17</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-4_Part_14" title="MPEG-4 Part 14">-20</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_14644" title="ISO 14644">14644</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-1" title="ISO 14644-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-2" title="ISO 14644-2">-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-3" title="ISO 14644-3">-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-4" title="ISO 14644-4">-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-5" title="ISO 14644-5">-5</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-6" title="ISO 14644-6">-6</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-7" title="ISO 14644-7">-7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-8" title="ISO 14644-8">-8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14644-9" title="ISO 14644-9">-9</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/STEP-NC" title="STEP-NC">14649</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14651" title="ISO 14651">14651</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO_14698" title="ISO 14698">14698</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14698-2" title="ISO 14698-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14750" title="ISO 14750">14750</a></li>
+<li><a href="C++" title="C++">14882</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_14971" title="ISO 14971">14971</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15022" title="ISO 15022">15022</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15189" title="ISO 15189">15189</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15288" title="ISO/IEC 15288">15288</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ada_Semantic_Interface_Specification" title="Ada Semantic Interface Specification">15291</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15292" title="ISO 15292">15292</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Criteria" title="Common Criteria">15408</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JPEG_2000" title="JPEG 2000">15444</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HTML" title="HTML">15445</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PDF417" title="PDF417">15438</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15504" title="ISO/IEC 15504">15504</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Identifier_for_Libraries_and_Related_Organizations" title="International Standard Identifier for Libraries and Related Organizations">15511</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15686" title="ISO 15686">15686</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15693" title="ISO/IEC 15693">15693</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/International_Standard_Audiovisual_Number" title="International Standard Audiovisual Number">15706</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15706-2" title="ISO 15706-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Musical_Work_Code" title="International Standard Musical Work Code">15707</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15897" title="ISO 15897">15897</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15919" title="ISO 15919">15919</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15924" title="ISO 15924">15924</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15926" title="ISO 15926">15926</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_15926_WIP" title="ISO 15926 WIP">15926 WIP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portable_Document_Format" title="Portable Document Format">15930</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MaxiCode" title="MaxiCode">16023</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ECMAScript" title="ECMAScript">16262</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_16750" title="ISO 16750">16750</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_17024" title="ISO/IEC 17024">17024</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_17025" title="ISO/IEC 17025">17025</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SDMX" title="SDMX">17369</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27002" title="ISO/IEC 27002">17799</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18000" title="ISO/IEC 18000">18000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18004" title="ISO/IEC 18004" class="mw-redirect">18004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_18014" title="ISO/IEC 18014">18014</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_18245" title="ISO 18245">18245</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_Specification_Language" title="Process Specification Language">18629</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Photographic_Activity_Test" title="Photographic Activity Test">18916</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PDF/A" title="PDF/A">19005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19011" title="ISO 19011">19011</a></li>
+<li>19092
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19092-1" title="ISO 19092-1">-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19092-2" title="ISO 19092-2">-2</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19114" title="ISO 19114">19114</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19115" title="ISO 19115" class="mw-redirect">19115</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simple_feature_access" title="Simple feature access">19125</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19136" title="ISO 19136">19136</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_19439" title="ISO 19439">19439</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unified_Modeling_Language" title="Unified Modeling Language">19501:2005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19752" title="ISO/IEC 19752">19752</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RELAX_NG" title="RELAX NG">19757</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19770" title="ISO/IEC 19770">19770</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/X3D" title="X3D">19775-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_19794-5" title="ISO/IEC 19794-5">19794-5</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">20000+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_20000" title="ISO/IEC 20000">20000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_20022" title="ISO 20022">20022</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MPEG-21" title="MPEG-21">21000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Text_Code" title="International Standard Text Code">21047</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_21827" title="ISO/IEC 21827">21827:2002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_22000" title="ISO 22000">22000</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">23270</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">23271</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux_Standard_Base" title="Linux Standard Base">23360</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lexical_Markup_Framework" title="Lexical Markup Framework">24613</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_logic" title="Common logic">24707</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_25178" title="ISO 25178">25178</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_26000" title="ISO 26000">26000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenDocument" title="OpenDocument">26300</a></li>
+<li><a href="Digital_object_identifier" title="Digital object identifier">26324</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27000-series" title="ISO/IEC 27000-series">27000 series</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27000" title="ISO/IEC 27000">27000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27001" title="ISO/IEC 27001">27001</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27002" title="ISO/IEC 27002">27002</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27003" title="ISO/IEC 27003">27003</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27004" title="ISO/IEC 27004">27004</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27005" title="ISO/IEC 27005">27005</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27006" title="ISO/IEC 27006">27006</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_27007" title="ISO/IEC 27007">27007</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/International_Standard_Name_Identifier" title="International Standard Name Identifier">27729</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_27799" title="ISO 27799">27799</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/PAS_28000" title="ISO/PAS 28000">28000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_29110" title="ISO 29110">29110</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JPEG_XR" title="JPEG XR">29199-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Office_Open_XML" title="Office Open XML">29500</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO_31000" title="ISO 31000">31000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portable_Document_Format" title="Portable Document Format">32000</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_38500" title="ISO/IEC 38500">38500</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_42010" title="ISO/IEC 42010">42010</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ISO/IEC_80000" title="ISO/IEC 80000">80000</a> (<a href="http://en.m.wikipedia.org/wiki/ISO_80000-2" title="ISO 80000-2">-2</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<dl>
+<dt>See also</dt>
+<dd><span class="plainlinks"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Special:PrefixIndex&amp;prefix=ISO&amp;namespace=0">All articles with prefix "ISO"</a></span></dd>
+</dl>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 35 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D9%88%D8%B2%D9%8A%D9%83%D8%B3" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/POSIX" lang="bg" hreflang="bg">български</a></li><li><a href="http://ca.m.wikipedia.org/wiki/POSIX" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/POSIX" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/POSIX" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Portable_Operating_System_Interface" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/POSIX" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/POSIX" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/POSIX" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/POSIX" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B2%DB%8C%DA%A9%D8%B3" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/POSIX" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/POSIX" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/POSIX" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/POSIX" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/POSIX" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/POSIX" lang="he" hreflang="he">עברית</a></li><li><a href="http://lt.m.wikipedia.org/wiki/POSIX" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/POSIX" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8B%E0%B4%B8%E0%B4%BF%E0%B4%95%E0%B5%8D%E0%B4%B8%E0%B5%8D" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://nl.m.wikipedia.org/wiki/POSIX" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://nn.m.wikipedia.org/wiki/POSIX" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://ja.m.wikipedia.org/wiki/POSIX" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/POSIX" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/POSIX" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/POSIX" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/POSIX" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D0%B8%D0%BA%D1%81" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/POSIX" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/POSIX" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/POSIX" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/POSIX" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vec.m.wikipedia.org/wiki/POSIX" lang="vec" hreflang="vec">vèneto</a></li><li><a href="http://yo.m.wikipedia.org/wiki/POSIX" lang="yo" hreflang="yo">Yorùbá</a></li><li><a href="http://zh.m.wikipedia.org/wiki/POSIX" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=POSIX&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=POSIX&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=POSIX&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

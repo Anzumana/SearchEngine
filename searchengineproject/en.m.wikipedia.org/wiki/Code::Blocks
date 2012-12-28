@@ -1,0 +1,436 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Code::Blocks - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Code::Blocks","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Code::Blocks" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Code%3A%3ABlocks"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Code::Blocks</h1>			
+<div class="dablink">Not to be confused with the computer programming term <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">Code block</a>.</div>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Code::Blocks</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Code_Blocks_logo.jpg" class="image"><img alt="Code Blocks logo.jpg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/90/Code_Blocks_logo.jpg/180px-Code_Blocks_logo.jpg" width="180" height="56" srcset="//upload.wikimedia.org/wikipedia/en/9/90/Code_Blocks_logo.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/9/90/Code_Blocks_logo.jpg 2x"></a></td>
+</tr>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;">
+<a href="http://en.m.wikipedia.org/wiki/File:Cbmain.png" class="image"><img alt="Cbmain.png" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cbmain.png/280px-Cbmain.png" width="280" height="231" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cbmain.png/420px-Cbmain.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Cbmain.png/560px-Cbmain.png 2x"></a><br><span style="">Code::Blocks 10.05</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">The Code::Blocks team</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">10.05 / May 30, 2010<span style="display:none"> (<span class="bday dtstart published updated">2010-05-30</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Preview release</a></th>
+<td class="" style="">
+<a rel="nofollow" class="external text" href="http://forums.codeblocks.org/index.php?board=20.0">nightly build</a> (8476) / October 23, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-23</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Development status</th>
+<td class="" style="">Active</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style="">
+<a href="C++" title="C++">C++</a> (<a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">Windows, GNU/Linux, Mac OS(<a href="Cross-platform" title="Cross-platform">cross-platform</a>)</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Integrated_development_environment" title="Integrated development environment">IDE</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> 3<sup id="cite_ref-1" class="reference"><a href="Code::Blocks#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://www.codeblocks.org/">http://www.codeblocks.org/</a></td>
+</tr>
+</table>
+<p><b>Code::Blocks</b> is a <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free</a> and <a href="http://en.m.wikipedia.org/wiki/Open_source_software" title="Open source software" class="mw-redirect">open source</a>, <a href="Cross-platform" title="Cross-platform">cross-platform</a> <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> which supports multiple <a href="http://en.m.wikipedia.org/wiki/Compilers" title="Compilers" class="mw-redirect">compilers</a> including <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> and <a href="Visual_C++" title="Visual C++">Visual C++</a>. It is developed in <a href="C++" title="C++">C++</a> using <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a> as the GUI toolkit. Using a plugin architecture, its capabilities and features are defined by the provided plugins. Currently, Code::Blocks is oriented towards <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>. It can also be used for creating <a href="http://en.m.wikipedia.org/wiki/ARM" title="ARM" class="mw-redirect">ARM</a>, <a href="http://en.m.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR</a>, <a href="D_(programming_language)" title="D (programming language)">D</a>, <a href="http://en.m.wikipedia.org/wiki/DirectX" title="DirectX">DirectX</a>, <a href="http://en.m.wikipedia.org/wiki/FLTK" title="FLTK">FLTK</a>, <a href="Fortran" title="Fortran">Fortran</a>, GLFW, <a href="http://en.m.wikipedia.org/wiki/OpenGL_Utility_Toolkit" title="OpenGL Utility Toolkit">GLUT</a>, <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a>, <a href="http://en.m.wikipedia.org/wiki/Irrlicht_Engine" title="Irrlicht Engine">Irrlicht</a>, Lightfeather, <a href="MATLAB" title="MATLAB">MATLAB</a>, <a href="http://en.m.wikipedia.org/wiki/OGRE" title="OGRE">OGRE</a>, <a href="http://en.m.wikipedia.org/wiki/OpenGL" title="OpenGL">OpenGL</a>, <a href="http://en.m.wikipedia.org/wiki/Qt_(framework)" title="Qt (framework)">Qt</a>, <a href="http://en.m.wikipedia.org/wiki/Simple_DirectMedia_Layer" title="Simple DirectMedia Layer">SDL</a>, <a href="http://en.m.wikipedia.org/wiki/SFML" title="SFML">SFML</a>, <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">STL</a>, SmartWin and <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wx</a> programs and applications, although in some cases installing third-party <a href="http://en.m.wikipedia.org/wiki/SDK" title="SDK" class="mw-redirect">SDKs</a> or <a href="http://en.m.wikipedia.org/wiki/Software_framework" title="Software framework">frameworks</a> is necessary.</p>
+<p>Code::Blocks is being developed for <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, and <span class="nowrap"><a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a></span> and has been ported to <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>.<sup id="cite_ref-2" class="reference"><a href="Code::Blocks#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The latest stable version as of August 2012<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Code::Blocks&amp;action=edit">[update]</a></sup>, Code::Blocks 10.05, was released on May 30, 2010.<sup id="cite_ref-3" class="reference"><a href="Code::Blocks#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>After releasing two release candidate versions, 1.0rc1 on July 25, 2005 and 1.0rc2 on October 25, 2005, instead of making a final release, the project developers started adding many new features, with the final release being repeatedly postponed. Instead, there were binary packages of the latest <a href="http://en.m.wikipedia.org/wiki/Subversion_(software)" title="Subversion (software)" class="mw-redirect">SVN</a> version made available on a daily basis, called "nightly builds". These were supported better than the latest official 1.0rc2 release. While this approach provided users with bleeding-edge improvements and allowed developers to get constant feedback, it created an outside illusion that the project was stagnant (because no new releases have been made).<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2011">citation needed</span></a></i>]</sup></p>
+<p>The first stable release was finally made on February 28, 2008, with the version number changed to 8.02. The versioning scheme was changed to that of <a href="http://en.m.wikipedia.org/wiki/Ubuntu_(operating_system)" title="Ubuntu (operating system)">Ubuntu</a>, with the major and minor number representing the year and month of the release.</p>
+<p>Instead of creating a branch in the code tree where bugs are fixed in the stable release and new features are added in a separate branch the project continued as before; new features and bug fixes are all added into the same code space. Version 10.05 is the latest stable release; however for the most up-to-date version, the user has to download the relatively stable "<a rel="nofollow" class="external text" href="http://forums.codeblocks.org/index.php?board=20.0">nightly build</a>".</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Jennic_Limited" title="Jennic Limited" class="mw-redirect">Jennic Limited</a> distributes a version of Code::Blocks customized to work with its microcontrollers.<sup id="cite_ref-4" class="reference"><a href="Code::Blocks#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<h3> <span class="mw-headline" id="Compilers">Compilers</span>
+</h3>
+<p>Code::Blocks supports multiple compilers, including <a href="http://en.m.wikipedia.org/wiki/MinGW" title="MinGW">MinGW</a> / <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a>, <a href="http://en.m.wikipedia.org/wiki/Digital_Mars" title="Digital Mars">Digital Mars</a>, <a href="Visual_C++" title="Visual C++">Microsoft Visual C++</a>, <a href="http://en.m.wikipedia.org/wiki/Borland_C%2B%2B" title="Borland C++">Borland C++</a>, <a href="Watcom_C_compiler" title="Watcom C compiler" class="mw-redirect">Watcom</a>, <a href="LCC_(compiler)" title="LCC (compiler)">LCC</a> and the <a href="http://en.m.wikipedia.org/wiki/Intel_C%2B%2B_compiler" title="Intel C++ compiler" class="mw-redirect">Intel C++ compiler</a>. Although the IDE was designed for the C++ language, there is some support for compilers of other languages, including GNU Fortran, Digital Mars <a href="D_(programming_language)" title="D (programming language)">D</a> and <span class="new" title="GNU D Compiler (page does not exist)">GNU GDC</span>. A plug-in system is included to support other programming languages.</p>
+<h3> <span class="mw-headline" id="Code_editor">Code editor</span>
+</h3>
+<p>The IDE features syntax highlighting and <a href="http://en.m.wikipedia.org/wiki/Code_folding" title="Code folding">code folding</a> through the use of the <a href="http://en.m.wikipedia.org/wiki/Scintilla_(editing_component)" title="Scintilla (editing component)">Scintilla</a> editor component, C++ code completion and class browser and an integrated to-do list. All of the open files are organized into tabs, which can be closed and opened at the user's will with the navigation pane or the close (X) button on the tabs. The code editor supports font and font size selection, this allows the user to choose the font and font size with which he is comfortable. In addition, it can provide specific syntax highlighting color theme that can be personalized.</p>
+<h3> <span class="mw-headline" id="Debugger">Debugger</span>
+</h3>
+<p>The Code::Blocks debugger has full breakpoint support. It also allows the user to debug their program by having access and using the local function symbol and argument display, user-defined watches, call stack, <a href="http://en.m.wikipedia.org/wiki/Disassembly" title="Disassembly" class="mw-redirect">disassembly</a>, custom memory dump, thread switching, <a href="http://en.m.wikipedia.org/wiki/CPU" title="CPU" class="mw-redirect">CPU</a> registers, GNU <a href="http://en.m.wikipedia.org/wiki/GDB" title="GDB" class="mw-redirect">GDB</a> Interface and MS <span class="new" title="Microsoft Console Debugger (page does not exist)">CDB</span> (not fully supported yet).</p>
+<h3> <span class="mw-headline" id="GUI_designer">GUI designer</span>
+</h3>
+<p>Code::Blocks comes with a <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a> designer called wxSmith. It is a derivative version of <a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a>. To make a complete wxWidgets application, the appropriate wx SDK must be installed with set environment variables.</p>
+<h3> <span class="mw-headline" id="User_migration">User migration</span>
+</h3>
+<p>Some of Code::Blocks' features are targeted at users migrating from other IDEs - these include <a href="Dev-C++" title="Dev-C++">Dev-C++</a> and Microsoft Visual C++ project import, and Dev-C++ Devpak support.</p>
+<h3> <span class="mw-headline" id="Project_files_and_build_system">Project files and build system</span>
+</h3>
+<p>Code::Blocks uses a custom build system, which stores its information in XML-based project files, but it can optionally use external makefiles, which simplifies interfacing with projects using the GNU and <a href="http://en.m.wikipedia.org/wiki/Qt_Software" title="Qt Software" class="mw-redirect">Qt Software's</a> <a href="http://en.m.wikipedia.org/wiki/Qmake" title="Qmake">qmake</a> build systems.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison of integrated development environments</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scintilla_(editing_component)" title="Scintilla (editing component)">Scintilla</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SciTE" title="SciTE">SciTE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Codelite" title="Codelite" class="mw-redirect">Codelite</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Code::Blocks#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.codeblocks.org/license">http://www.codeblocks.org/license</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Code::Blocks#cite_ref-2">^</a></b></span> <span class="reference-text">Code::Blocks in FreeBSD's ports collection: <a rel="nofollow" class="external text" href="http://www.freshports.org/devel/codeblocks/">devel/codeblocks</a>.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Code::Blocks#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://forums.codeblocks.org/index.php/topic,12644.msg85618/">Code::Blocks forum - 10.05 release announcement</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Code::Blocks#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.jennic.com/jennic_support/user_guides/jn-ug-3028_codeblocks_ide">JN-UG-3028 Code::Blocks IDE User Guide</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Code::Blocks" class="extiw" title="commons:Category:Code::Blocks">Code::Blocks</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://www.codeblocks.org">Official website</a></span></li>
+<li><a rel="nofollow" class="external text" href="http://developer.berlios.de/projects/codeblocks/">BerliOS project site (nightly builds and Subversion access)</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.codeblocks.org/index.php?title=Comparison_of_wxSmith_features">Comparison of RADs for WxWidgets</a></li>
+<li><a rel="nofollow" class="external text" href="http://programming.learnbywatch.com/video/cpp/install-codeblocks-ide-develop-cc-programs-windows">Install Codeblocks on Windows (Hindi)</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://freecode.com/projects/codeblocks/">Code::Blocks</a> at <a href="http://en.m.wikipedia.org/wiki/Freecode" title="Freecode">Freecode</a> (outdated)</li>
+<li><a rel="nofollow" class="external text" href="http://www.comsytec.com/ipdefend.php">IPDefend Toolkit plugin</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><strong class="selflink">Code::Blocks</strong></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:WxWidgets" title="Template:WxWidgets"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:WxWidgets" title="Template talk:WxWidgets"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:WxWidgets&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Technologies</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/XML_Resource" title="XML Resource">XML Resource</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Rapid_application_development" title="Rapid application development">RAD</a>/<a href="Graphical_user_interface" title="Graphical user interface">GUI</a><br>
+Builders</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Free and <a href="Open-source_software" title="Open-source software">open source</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/WxFormBuilder" title="WxFormBuilder">wxFormBuilder</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><strong class="selflink">Code::Blocks</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxGlade" title="WxGlade">wxGlade</a></li>
+<li><span class="new" title="CodeDesigner RAD (page does not exist)">CodeDesigner RAD</span></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Padre_(software)" title="Padre (software)">Padre</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/HiAsm" title="HiAsm">HiAsm</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Proprietary_software" title="Proprietary software">Proprietary</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="new" title="WxDesigner (page does not exist)">wxDesigner</span></li>
+<li><span class="new" title="DialogBlocks (page does not exist)">DialogBlocks</span></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Libraries</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/WxSQLite3" title="WxSQLite3">wxSQLite3</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/WxWidgets#Implementation" title="WxWidgets">Bindings</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/WxPython" title="WxPython">wxPython</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxPerl" title="WxPerl">wxPerl</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxPHP" title="WxPHP">wxPHP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxBasic" title="WxBasic">wxBasic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxHaskell" title="WxHaskell">wxHaskell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GLUEscript" title="GLUEscript" class="mw-redirect">GLUEscript</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 18 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Code::Blocks" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Code::Blocks" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Code::Blocks" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%DA%A9%D8%AF::%D8%A8%D9%84%D8%A7%DA%A9%D8%B3" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Code::Blocks" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Code::Blocks" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Code::Blocks" lang="it" hreflang="it">italiano</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Code::Blocks" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Code::Blocks" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Code::Blocks" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Code::Blocks" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Code::Blocks" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Code::Blocks" lang="ru" hreflang="ru">русский</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Code::Blocks" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Code::Blocks" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Code::Blocks" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Code::Blocks" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Code::Blocks" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Code::Blocks&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Code::Blocks&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Code%3A%3ABlocks&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

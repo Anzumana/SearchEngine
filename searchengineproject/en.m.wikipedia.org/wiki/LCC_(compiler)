@@ -1,0 +1,201 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>LCC (compiler) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"LCC (compiler)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/LCC_(compiler)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=LCC+%28compiler%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">LCC (compiler)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">LCC</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Dave Hanson and Chris Fraser</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">4.2 / September 4, 2002<span style="display:none"> (<span class="bday dtstart published updated">2002-09-04</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Compiler" title="Compiler">Compiler</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">LCC License<sup id="cite_ref-license_1-0" class="reference"><a href="LCC_(compiler)#cite_note-license-1"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://sites.google.com/site/lccretargetablecompiler/">Official LCC website</a></td>
+</tr>
+</table>
+<p><b>LCC</b> ("Local C Compiler" or "Little C Compiler") is a small, <a href="http://en.m.wikipedia.org/wiki/Retargetable_compiler" title="Retargetable compiler" class="mw-redirect">retargetable compiler</a> for the <a href="ANSI_C" title="ANSI C">ANSI C</a> programming language. It is <a href="http://en.m.wikipedia.org/wiki/Open-source" title="Open-source" class="mw-redirect">open-source</a> and available at no charge for personal use, but it is not <a href="http://en.m.wikipedia.org/wiki/Free_software" title="Free software">free software</a>.<sup id="cite_ref-license_1-1" class="reference"><a href="LCC_(compiler)#cite_note-license-1"><span>[</span>1<span>]</span></a></sup> It was developed by <span class="new" title="Chris Fraser (page does not exist)">Chris Fraser</span> and <a href="http://en.m.wikipedia.org/wiki/David_Hanson_(computer_scientist)" title="David Hanson (computer scientist)">David Hanson</a>.</p>
+<h2> <span class="mw-headline" id="LCC">LCC</span>
+</h2>
+<p>LCC is intended to be simple to understand and is well-documented; its design is described in Fraser and Hanson's book <i>A Retargetable C Compiler: Design and Implementation</i>. The book includes most of the source code for version 3.6 of the compiler, which was written as a <a href="http://en.m.wikipedia.org/wiki/Literate_programming" title="Literate programming">literate program</a> using <a href="http://en.m.wikipedia.org/wiki/Noweb" title="Noweb">noweb</a>. As of July 2011 the current version of LCC is 4.2, but much of the book still applies to this version. The major change since the book was published is in the code-generator interface, which is described in a separate document.<sup id="cite_ref-2" class="reference"><a href="LCC_(compiler)#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The source code for LCC is around 20,000 lines, which is much smaller than many major compilers.<sup id="cite_ref-3" class="reference"><a href="LCC_(compiler)#cite_note-3"><span>[</span>3<span>]</span></a></sup> The <a href="Tiny_C_Compiler" title="Tiny C Compiler">Tiny C Compiler</a> is one of the few compilers smaller than LCC.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from July 2012">citation needed</span></a></i>]</sup></p>
+<p>LCC can generate code for several processor architectures, including <a href="http://en.m.wikipedia.org/wiki/DEC_Alpha" title="DEC Alpha">Alpha</a>, <a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a>, <a href="http://en.m.wikipedia.org/wiki/MIPS_architecture" title="MIPS architecture">MIPS</a>, and <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a>; there is also an LCC backend that generates Microsoft's <a href="http://en.m.wikipedia.org/wiki/Common_Intermediate_Language" title="Common Intermediate Language">Common Intermediate Language</a>.<sup id="cite_ref-4" class="reference"><a href="LCC_(compiler)#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Projects_incorporating_LCC">Projects incorporating LCC</span>
+</h2>
+<h3> <span class="mw-headline" id="Quake_3">Quake 3</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Id_Software" title="Id Software">id Software</a>'s <a href="http://en.m.wikipedia.org/wiki/Id_Tech_3" title="Id Tech 3">id Tech 3</a> <a href="http://en.m.wikipedia.org/wiki/Game_engine" title="Game engine">engine</a> relies on a modified version of LCC to compile the source code of each game module or third-party <a href="http://en.m.wikipedia.org/wiki/Mod_(video_gaming)" title="Mod (video gaming)">mod</a> into <a href="http://en.m.wikipedia.org/wiki/Bytecode" title="Bytecode">bytecode</a> targeting its <a href="http://en.m.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtual machine</a>.<sup id="cite_ref-5" class="reference"><a href="LCC_(compiler)#cite_note-5"><span>[</span>5<span>]</span></a></sup> This means that modules are oblivious to the system beyond the <a href="http://en.m.wikipedia.org/wiki/System_calls" title="System calls" class="mw-redirect">system calls</a> and limited <a href="http://en.m.wikipedia.org/wiki/File_system" title="File system">file system</a> scope offered by the engine, which is intended to reduce the threat posed by malicious mod authors. Another consideration is that games and mods written for the engine are <a href="Software_portability" title="Software portability">portable</a> without recompilation; only the virtual machine needs to be <a href="Porting" title="Porting">ported</a> to new platforms in order to execute the modules.</p>
+<h3> <span class="mw-headline" id="lcc-win">lcc-win</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Lcc-win32" title="Lcc-win32" class="mw-redirect">lcc-win32</a> is an <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a> package for <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> which includes a <a href="http://en.m.wikipedia.org/wiki/Software_fork" title="Software fork" class="mw-redirect">fork</a> of LCC. An <a href="http://en.m.wikipedia.org/wiki/Amd64" title="Amd64" class="mw-redirect">amd64</a> counterpart named lcc-win64 exists, which is in development and is not yet stable.<sup id="cite_ref-6" class="reference"><a href="LCC_(compiler)#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Pelles_C">Pelles C</span>
+</h3>
+<p><a href="Pelles_C" title="Pelles C">Pelles C</a>'s compiler is a heavily modified version of LCC providing <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a> support, amd64 support, and additional optimisation techniques such as <a href="http://en.m.wikipedia.org/wiki/Inline_expansion" title="Inline expansion">inline expansion</a>.<sup id="cite_ref-7" class="reference"><a href="LCC_(compiler)#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="License">License</span>
+</h2>
+<p>LCC is free for personal use and may be redistributed with attribution. LCC may not be sold for profit, but it may be included with other software that is sold for profit.<sup id="cite_ref-license_1-2" class="reference"><a href="LCC_(compiler)#cite_note-license-1"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-license-1">
+<span class="mw-cite-backlink">^ <a href="LCC_(compiler)#cite_ref-license_1-0"><sup><i><b>a</b></i></sup></a> <a href="LCC_(compiler)#cite_ref-license_1-1"><sup><i><b>b</b></i></sup></a> <a href="LCC_(compiler)#cite_ref-license_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://github.com/drh/lcc/blob/master/CPYRIGHT">"LCC License"</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://github.com/drh/lcc/blob/master/CPYRIGHT">https://github.com/drh/lcc/blob/master/CPYRIGHT</a></span><span class="reference-accessdate">. Retrieved 5 July 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=LCC+License&amp;rft.atitle=&amp;rft_id=https%3A%2F%2Fgithub.com%2Fdrh%2Flcc%2Fblob%2Fmaster%2FCPYRIGHT&amp;rfr_id=info:sid/en.wikipedia.org:LCC_(compiler)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">Fraser, Christopher W.; Hanson, David R. (July 2001). <a rel="nofollow" class="external text" href="http://storage.webhop.net/documents/interface4.pdf">"The lcc 4.x Code-Generation Interface"</a>. Microsoft Research. Technical Report MSR-TR-2001-64<span class="printonly">. <a rel="nofollow" class="external free" href="http://storage.webhop.net/documents/interface4.pdf">http://storage.webhop.net/documents/interface4.pdf</a></span><span class="reference-accessdate">. Retrieved 5 July, 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+lcc+4.x+Code-Generation+Interface&amp;rft.atitle=&amp;rft.aulast=Fraser&amp;rft.aufirst=Christopher+W.&amp;rft.au=Fraser%2C%26%2332%3BChristopher+W.&amp;rft.au=Hanson%2C%26%2332%3BDavid+R.&amp;rft.date=July+2001&amp;rft.pub=Microsoft+Research&amp;rft_id=http%3A%2F%2Fstorage.webhop.net%2Fdocuments%2Finterface4.pdf&amp;rfr_id=info:sid/en.wikipedia.org:LCC_(compiler)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-3">^</a></b></span> <span class="reference-text">Sao-Jie Chen, Guang-Huei Lin, Pao-Ann Hsiung, Yu-Hen Hu. "Hardware software co-design of a multimedia SOC platform". Section 5.6.1: LCC Compiler Infrastructure. <a rel="nofollow" class="external autonumber" href="http://books.google.com/books?id=OXyo3om9ZOkC&amp;pg=PA107&amp;dq=LCC+compiler&amp;hl=en&amp;ei=m6rHTqjbKsnFsQKnk5xS&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=3&amp;ved=0CEMQ6AEwAg#v=onepage&amp;q=LCC%20compiler&amp;f=false">[1]</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web">Hanson, David R. (March 2004). <a rel="nofollow" class="external text" href="http://storage.webhop.net/documents/msil-spe.pdf">"Lcc.NET: Targeting the .NET Common Intermediate Language from Standard C"</a>. Microsoft Research<span class="printonly">. <a rel="nofollow" class="external free" href="http://storage.webhop.net/documents/msil-spe.pdf">http://storage.webhop.net/documents/msil-spe.pdf</a></span><span class="reference-accessdate">. Retrieved 22 July, 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Lcc.NET%3A+Targeting+the+.NET+Common+Intermediate+Language+from+Standard+C&amp;rft.atitle=&amp;rft.aulast=Hanson&amp;rft.aufirst=David+R.&amp;rft.au=Hanson%2C%26%2332%3BDavid+R.&amp;rft.date=March+2004&amp;rft.pub=Microsoft+Research&amp;rft_id=http%3A%2F%2Fstorage.webhop.net%2Fdocuments%2Fmsil-spe.pdf&amp;rfr_id=info:sid/en.wikipedia.org:LCC_(compiler)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.team5150.com/~andrew/carmack/johnc_plan_1999.html#d19990724">John Carmack's .plan file, 24 July, 1999</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cs.virginia.edu/~lcc-win32/">lcc-win: A Compiler system for Windows</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="LCC_(compiler)#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.smorgasbordet.com/pellesc/">Pelles C Overview</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Bibliography">Bibliography</span>
+</h2>
+<ul>
+<li>
+<span class="citation book">Fraser, Christopher W.; Hanson, David R. (1995). <i>A Retargetable C Compiler: Design and Implementation</i>. Addison-Wesley. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-8053-1670-1" title="Special:BookSources/0-8053-1670-1">0-8053-1670-1</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Retargetable+C+Compiler%3A+Design+and+Implementation&amp;rft.aulast=Fraser&amp;rft.aufirst=Christopher+W.&amp;rft.au=Fraser%2C%26%2332%3BChristopher+W.&amp;rft.au=Hanson%2C%26%2332%3BDavid+R.&amp;rft.date=1995&amp;rft.pub=Addison-Wesley&amp;rft.isbn=0-8053-1670-1&amp;rfr_id=info:sid/en.wikipedia.org:LCC_(compiler)"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:HelloWorld.svg" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/50px-HelloWorld.svg.png" width="50" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/75px-HelloWorld.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/100px-HelloWorld.svg.png 2x"></a></td>
+<td>
+<i>This <a href="Programming_language" title="Programming language">programming language</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=LCC_(compiler)&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Prog-lang-stub" title="Template:Prog-lang-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Prog-lang-stub" title="Template talk:Prog-lang-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Prog-lang-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 1 language</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ru.m.wikipedia.org/wiki/LCC" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=LCC_(compiler)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=LCC_(compiler)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=LCC+%28compiler%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

@@ -1,0 +1,650 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Command-line interface - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Command-line interface","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Command-line_interface#Command-line_option" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Command-line+interface"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Command-line interface</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style="">
+<span class="mbox-text-span"><b>This article has multiple issues</b>. Please help <b><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Command-line_interface&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="http://en.m.wikipedia.org/wiki/Talk:Command-line_interface" title="Talk:Command-line interface">talk page</a></b>.</span>
+<table class="metadata plainlinks ambox ambox-style ambox-Cleanup" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>may require <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Cleanup" title="Wikipedia:Cleanup">cleanup</a> to meet Wikipedia's <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style">quality standards</a></b>. The specific problem is: <b>writing style</b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Command-line_interface&amp;action=edit">improve this article</a> if you can.</span> <small><i>(September 2012)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Command-line_interface&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(April 2012)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Original_research" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>may contain <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research" title="Wikipedia:No original research">original research</a></b>. <span class="hide-when-compact">Please <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Command-line_interface&amp;action=edit">improve it</a> by <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verifying</a> the claims made and adding <a href="http://en.m.wikipedia.org/wiki/Wikipedia:References" title="Wikipedia:References" class="mw-redirect">references</a>. Statements consisting only of original research may be removed.</span> <small><i>(April 2012)</i></small> </span></td>
+</tr></table>
+</td>
+</tr></table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Linux_command-line._Bash._GNOME_Terminal._screenshot.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/300px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/450px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png/600px-Linux_command-line._Bash._GNOME_Terminal._screenshot.png 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of a sample <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> session. <a href="http://en.m.wikipedia.org/wiki/GNOME_Terminal" title="GNOME Terminal">GNOME Terminal 3</a>, <a href="http://en.m.wikipedia.org/wiki/Fedora_15" title="Fedora 15" class="mw-redirect">Fedora 15</a>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Bash_screenshot.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Bash_screenshot.png/300px-Bash_screenshot.png" width="300" height="408" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Bash_screenshot.png/450px-Bash_screenshot.png 1.5x, //upload.wikimedia.org/wikipedia/commons/e/e7/Bash_screenshot.png 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of a sample <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> session, taken on an old release of <a href="http://en.m.wikipedia.org/wiki/Gentoo_Linux" title="Gentoo Linux">Gentoo Linux</a>.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Apple_Unix_with_Netscape.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/93/Apple_Unix_with_Netscape.jpg/300px-Apple_Unix_with_Netscape.jpg" width="300" height="225" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/9/93/Apple_Unix_with_Netscape.jpg 1.5x, //upload.wikimedia.org/wikipedia/en/9/93/Apple_Unix_with_Netscape.jpg 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of <a href="http://en.m.wikipedia.org/wiki/Apple_Computer" title="Apple Computer" class="mw-redirect">Apple Computer</a>'s CommandShell in <a href="http://en.m.wikipedia.org/wiki/A/UX" title="A/UX">A/UX</a> 3.0.1.</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Windows_PowerShell_1.0_PD.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Windows_PowerShell_1.0_PD.png/300px-Windows_PowerShell_1.0_PD.png" width="300" height="317" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Windows_PowerShell_1.0_PD.png/450px-Windows_PowerShell_1.0_PD.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Windows_PowerShell_1.0_PD.png/600px-Windows_PowerShell_1.0_PD.png 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of <a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a> 1.0, running under <a href="http://en.m.wikipedia.org/wiki/Windows_Vista" title="Windows Vista">Windows Vista</a>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Command_Prompt.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/3/38/Command_Prompt.png/300px-Command_Prompt.png" width="300" height="153" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/3/38/Command_Prompt.png/450px-Command_Prompt.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/3/38/Command_Prompt.png/600px-Command_Prompt.png 2x"></a>
+<div class="thumbcaption">
+
+The <a href="http://en.m.wikipedia.org/wiki/Cmd.exe" title="Cmd.exe" class="mw-redirect">cmd.exe</a> command-line interface in <a href="http://en.m.wikipedia.org/wiki/Windows_8" title="Windows 8">Windows 8</a>
+</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Mac_OS_X_Terminal.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Mac_OS_X_Terminal.png/300px-Mac_OS_X_Terminal.png" width="300" height="206" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/d/dd/Mac_OS_X_Terminal.png/450px-Mac_OS_X_Terminal.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/d/dd/Mac_OS_X_Terminal.png/600px-Mac_OS_X_Terminal.png 2x"></a>
+<div class="thumbcaption">
+
+The Mac OS X Terminal</div>
+</div>
+</div>
+<p>A <b>command-line interface (CLI)</b> is a means of interaction with a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a> where the <a href="http://en.m.wikipedia.org/wiki/User_(computing)" title="User (computing)">user</a> (or <a href="http://en.m.wikipedia.org/wiki/Client_(computing)" title="Client (computing)">client</a>) issues commands to a program in the form of successive lines of <a href="http://en.m.wikipedia.org/wiki/Plain_text" title="Plain text">text</a> (command lines).</p>
+<p>The command-line interface evolved from a form of dialog once conducted by humans over <a href="http://en.m.wikipedia.org/wiki/Teleprinter" title="Teleprinter">teleprinter</a> machines, in which human operators remotely exchanged information, usually one line of text at a time. Early computer systems often used teleprinter machines as the means of interaction with a human operator. The computer became one end of the human-to-human teleprinter model. So instead of a human communicating with another human over a teleprinter, a human communicated with a computer.</p>
+<p>In time, the actual mechanical teleprinter was replaced by a glass tty (keyboard and screen, but emulating the teleprinter), and then by a <a href="http://en.m.wikipedia.org/wiki/Computer_terminal#Text_terminals" title="Computer terminal">terminal</a> (where the computer software could address all of the screen, rather than only print successive lines).</p>
+<p>Due to its <a href="http://en.m.wikipedia.org/wiki/Text-based_(computing)" title="Text-based (computing)">text-based</a> nature, a command-line interface is sometimes confused with the <a href="http://en.m.wikipedia.org/wiki/Text-based_user_interface" title="Text-based user interface">text-based user interface</a>, a kind of <a href="http://en.m.wikipedia.org/wiki/User_interface" title="User interface">user interface</a> which uses only text, but not necessarily presented in successive lines. Text may be formatted and appear in fixed locations on a computer terminal display, as opposed to only appearing in successive lines.</p>
+<p>The CLI was the primary means of human interaction with most early operating systems,<sup class="noprint selfreference">[<i><a href="http://en.m.wikipedia.org/wiki/Talk:Command-line_interface#early_operating_systems_.28sic.29" title="Talk:Command-line interface">discuss</a></i>]</sup> including <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a>, <a href="http://en.m.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a>, <a href="Unix" title="Unix">Unix</a>, and <a href="http://en.m.wikipedia.org/wiki/Apple_DOS" title="Apple DOS">Apple DOS</a>. The interface is usually implemented with a command line <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shell</a>, which is a program that accepts commands as text input and converts commands to appropriate operating system functions.</p>
+<p>Alternatives to the command line include, but are not limited to <a href="http://en.m.wikipedia.org/wiki/Menu_(computing)" title="Menu (computing)">menus</a> and various <a href="http://en.m.wikipedia.org/wiki/Desktop_metaphor" title="Desktop metaphor">desktop metaphors</a> centered on the <a href="http://en.m.wikipedia.org/wiki/Pointer_(graphical_user_interfaces)" title="Pointer (graphical user interfaces)">pointer</a> (usually controlled with a <a href="http://en.m.wikipedia.org/wiki/Computer_mouse" title="Computer mouse" class="mw-redirect">mouse</a>).</p>
+<p>Today, command-line interfaces to a computer operating system are less widely used by casual computer users, who favor <a href="http://en.m.wikipedia.org/wiki/Graphical_User_Interface" title="Graphical User Interface" class="mw-redirect">graphical user interfaces</a>.</p>
+<p>Command-line interfaces are still often preferred by more advanced computer users, as they often provide a more concise and powerful means to control a program or operating system.</p>
+<p>Programs with command-line interfaces are often much easier to automate via <a href="http://en.m.wikipedia.org/wiki/Scripting" title="Scripting" class="mw-redirect">scripting</a>.</p>
+<h2> <span class="mw-headline" id="Operating_system_command-line_interfaces">Operating system command-line interfaces</span>
+</h2>
+<p>Operating System (OS) command line interfaces are usually distinct programs supplied with the operating system.</p>
+<p>A program that implements such a text interface is often called a command-line interpreter, command processor or <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shell</a>. The term 'shell', often used to describe a command-line interpreter, can be in principle any program that constitutes the user-interface, including fully graphically oriented ones—for example, the default Windows GUI is created by a shell program named EXPLORER.EXE, as defined in the SHELL=EXPLORER.EXE line in the WIN.INI configuration file.</p>
+<p>Examples of command-line interpreters include the various <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shells</a> (sh, ksh, csh, tcsh, bash, etc.), the historical <a href="http://en.m.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a> CCP, and <a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">MS-DOS/IBM-DOS/DR-DOS</a>'s <a href="http://en.m.wikipedia.org/wiki/COMMAND.COM" title="COMMAND.COM">COMMAND.COM</a>, as well as the <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a> and the Windows <a href="http://en.m.wikipedia.org/wiki/CMD.EXE" title="CMD.EXE" class="mw-redirect">CMD.EXE</a> programs, the latter groups being based heavily on <a href="http://en.m.wikipedia.org/wiki/Digital_Equipment_Corporation" title="Digital Equipment Corporation">DEC's</a> <a href="http://en.m.wikipedia.org/wiki/RSX-11" title="RSX-11">RSX</a> and <a href="http://en.m.wikipedia.org/wiki/RSTS/E" title="RSTS/E">RSTS</a> CLIs. Under most operating systems, it is possible to replace the default shell program by more specialized or powerful alternatives; some widespread examples include <a href="http://en.m.wikipedia.org/wiki/4DOS" title="4DOS">4DOS</a> for DOS, <a href="http://en.m.wikipedia.org/wiki/4OS2" title="4OS2" class="mw-redirect">4OS2</a> for OS/2, and <a href="http://en.m.wikipedia.org/wiki/4NT" title="4NT" class="mw-redirect">4NT</a> or <a href="http://en.m.wikipedia.org/wiki/Take_Command_(command_line_interpreter)" title="Take Command (command line interpreter)">Take Command</a> for Windows.</p>
+<p>The general pattern of an OS command line interface is:</p>
+<p>prompt command param1 param2 param3 ... paramN</p>
+<ul>
+<li>Prompt - generated by the program to provide context for the client.</li>
+<li>Command - provided by the client. Commands are usually one of three classes:
+<ol>
+<li>Internal - recognized and processed by the command line interpreter itself and not dependent upon any external executable file.</li>
+<li>Included - A separate executable file generally considered part of the operating environment and always included with the OS.</li>
+<li>External - External executable files not part of the basic OS, but added by other parties for specific purposes and applications.</li>
+</ol>
+</li>
+<li>param1 ...paramN - Optional parameters provided by the client. The format and meaning of the parameters depends upon the command issued. In the case of Included or External commands, the values of the parameters are delivered to the process (specified by the Command) as it is launched by the OS.</li>
+</ul>
+<p><br></p>
+<p><br></p>
+<h3> <span class="mw-headline" id="Evolution_of_OS_Shells">Evolution of OS Shells</span>
+</h3>
+<p>In November 2006, <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> released version 1.0 of <a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a> (formerly codenamed <i>Monad</i>), which combined features of traditional Unix shells with their object-oriented <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET Framework</a>. <a href="http://en.m.wikipedia.org/wiki/MinGW" title="MinGW">MinGW</a> and <a href="http://en.m.wikipedia.org/wiki/Cygwin" title="Cygwin">Cygwin</a> are <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open-source</a> packages for Windows that offer a Unix-like CLI. Microsoft provides <a href="http://en.m.wikipedia.org/wiki/MKS_Inc." title="MKS Inc.">MKS Inc.</a>'s <a href="http://en.m.wikipedia.org/wiki/Korn_shell" title="Korn shell">ksh</a> implementation <i>MKS Korn shell</i> for Windows through their <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows_Services_for_UNIX" title="Microsoft Windows Services for UNIX" class="mw-redirect">Services for UNIX</a> add-on.</p>
+<p>The latest versions of the <a href="http://en.m.wikipedia.org/wiki/Macintosh" title="Macintosh">Macintosh</a> operating system are based on a variation of Unix called <a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a>. On these computers, users can access a Unix-like command-line interface called <a href="http://en.m.wikipedia.org/wiki/Terminal_(Mac_OS_X)" title="Terminal (Mac OS X)" class="mw-redirect">Terminal</a> found in the Applications Utilities folder. (This terminal uses <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">bash</a> by default.)</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:302px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Matlab7.4.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/2/25/Matlab7.4.png/300px-Matlab7.4.png" width="300" height="195" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/2/25/Matlab7.4.png/450px-Matlab7.4.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/2/25/Matlab7.4.png/600px-Matlab7.4.png 2x"></a>
+<div class="thumbcaption">
+
+Screenshot of the <a href="MATLAB" title="MATLAB">MATLAB</a> 7.4 command-line interface and GUI.</div>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Application_command-line_interfaces">Application command-line interfaces</span>
+</h2>
+<p>Application programs (as opposed to operating systems) may also have command line interfaces.</p>
+<p>An application program may support none, any, or all of these three major types of command line interface mechanisms:</p>
+<ol>
+<li>Commands are specified as parameters upon invocation of the program.
+<ul>
+<li>Most operating systems support a means to pass additional information to a program when it is launched. When a program is launched from an OS command line shell, additional text provided at the shell command line along with the program name is passed to the launched program via command line arguments.</li>
+</ul>
+</li>
+<li>Commands are entered via an interactive command line session controlled by the application.
+<ul>
+<li>After launch, a program may provide an operator with an independent means to enter commands in the form of text.</li>
+</ul>
+</li>
+<li>Commands are entered via the operating system STDIN/STDOUT mechanism.</li>
+</ol>
+<p>Some applications provide both a CLI and a GUI. In some cases, the GUI is a wrapper around a CLI application; other times, there is a CLI to control a GUI application. The engineering/scientific numerical computation package <a href="MATLAB" title="MATLAB">MATLAB</a> provides no GUI for some calculations, but the CLI can handle any calculation. The three-dimensional-modelling program <a href="http://en.m.wikipedia.org/wiki/Rhinoceros_3D" title="Rhinoceros 3D">Rhinoceros 3D</a> provides a CLI as well as a distinct scripting language. In some computing environments, such as the <a href="http://en.m.wikipedia.org/wiki/Oberon_operating_system" title="Oberon operating system" class="mw-redirect">Oberon</a> or <a href="Smalltalk" title="Smalltalk">Smalltalk</a> user interface, most of the text which appears on the screen may be used for giving commands.</p>
+<p>There are command-line interpreters for editing text files like ED and EDLIN, DEBUG, for disk management DISKPART, DFSEE, calculators (PC-DOS ACALC), all of which present a usable command prompt.</p>
+<p>Some programs have the command line separate from the action window (where the output would appear). The early Sierra games, like the first three <a href="http://en.m.wikipedia.org/wiki/King%27s_Quest" title="King's Quest">King's Quest</a> games (1984-1986), use commands from an internal command line to move the character around in the graphic window. Editors like Vi and IBM PC DOS E Editor use commands typed on the command line, switching back and forth to edit mode, a kind of graphical ED or EDLIN, as it were. (ED and EDLIN are pure teletype programs).</p>
+<p>The Command-Line Interface continues to <a href="http://en.m.wikipedia.org/wiki/Co-evolve" title="Co-evolve" class="mw-redirect">co-evolve</a> with GUIs like those provided by <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, <a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a> and the <a href="http://en.m.wikipedia.org/wiki/X_Window_System" title="X Window System">X Window System</a>. Programs that make use of external helper programs, often make use of command lines embedded in the GUI interface or configuration. In some applications, such as <a href="MATLAB" title="MATLAB">MATLAB</a>, <a href="http://en.m.wikipedia.org/wiki/AutoCAD" title="AutoCAD">AutoCAD</a> or <a href="http://en.m.wikipedia.org/wiki/Eagle_(program)" title="Eagle (program)">EAGLE</a>, a CLI is integrated with the GUI, with some benefits of both.</p>
+<h2> <span class="mw-headline" id="Usage">Usage</span>
+</h2>
+<p>A CLI is used whenever a large vocabulary of commands or queries, coupled with a wide (or arbitrary) range of options, can be entered more rapidly as text than with a pure GUI. This is typically the case with <a href="http://en.m.wikipedia.org/wiki/Operating_system_shell" title="Operating system shell">operating system command shells</a>. CLIs are also used by systems with insufficient resources to support a graphical user interface. Some computer language systems (such as <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">Forth</a>, <a href="http://en.m.wikipedia.org/wiki/LISP" title="LISP" class="mw-redirect">LISP</a> and many dialects of <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a>) provide an interactive command-line mode to allow for experimentation.</p>
+<p>CLIs are often used by programmers and system administrators, in engineering and scientific environments, and by technically advanced personal computer users. CLIs are also popular among people with visual disability, since the commands and responses can be displayed using <a href="http://en.m.wikipedia.org/wiki/Refreshable_Braille_display" title="Refreshable Braille display" class="mw-redirect">Refreshable Braille displays</a>.</p>
+<h2> <span class="mw-headline" id="Anatomy_of_a_shell_CLI">Anatomy of a shell CLI</span>
+</h2>
+<p>A CLI can generally be considered as consisting of <a href="http://en.m.wikipedia.org/wiki/Syntax" title="Syntax">syntax</a> and <a href="http://en.m.wikipedia.org/wiki/Semantics" title="Semantics">semantics</a>. The <i>syntax</i> is the grammar that all commands must follow. In the case of <a href="Operating_system" title="Operating system">operating systems</a> (OS), <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> and <a href="Unix" title="Unix">Unix</a> each define their own set of rules that all commands must follow. In the case of <a href="Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a>, each vendor, such as <a href="http://en.m.wikipedia.org/wiki/Nortel" title="Nortel">Nortel</a>, <a href="http://en.m.wikipedia.org/wiki/Juniper_Networks" title="Juniper Networks">Juniper Networks</a> or <a href="http://en.m.wikipedia.org/wiki/Cisco_Systems" title="Cisco Systems">Cisco Systems</a>, defines their own proprietary set of rules that all commands within their CLI conform to. These rules also dictate how a user navigates through the system of <a href="http://en.m.wikipedia.org/wiki/Command_(computing)" title="Command (computing)">commands</a>. The <i>semantics</i> define what sort of operations are possible, on what sort of data these operations can be performed, and how the grammar represents these operations and data—the symbolic meaning in the syntax.</p>
+<p>Two different CLIs may agree on either syntax or semantics, but it is only when they agree on both that they can be considered sufficiently similar to allow users to use both CLIs without needing to learn anything, as well as to enable re-use of scripts.</p>
+<p>A simple CLI will display a prompt, accept a "command line" typed by the user terminated by the <a href="http://en.m.wikipedia.org/wiki/Enter_key" title="Enter key">Enter key</a>, then execute the specified command and provide textual display of results or error messages. Advanced CLIs will validate, interpret and parameter-expand the command line before executing the specified command, and optionally capture or redirect its output.</p>
+<p>Unlike a button or menu item in a GUI, a command line is typically self-documenting, stating exactly what the user wants done. In addition, command lines usually include many <a href="http://en.m.wikipedia.org/wiki/Default_(computer_science)" title="Default (computer science)">defaults</a> that can be changed to customize the results. Useful command lines can be saved by assigning a <a href="http://en.m.wikipedia.org/wiki/Character_string" title="Character string" class="mw-redirect">character string</a> or <a href="http://en.m.wikipedia.org/wiki/Alias_(command)" title="Alias (command)">alias</a> to represent the full command, or several commands can be grouped to perform a more complex sequence – for instance, compile the program, install it, and run it — creating a single entity, called a command procedure or script which itself can be treated as a command. These advantages mean that a user must figure out a complex command or series of commands only once, because they can be saved, to be used again.</p>
+<p>The commands given to a CLI shell are often in one of the following forms:</p>
+<ul>
+<li><i>doSomething how toFiles</i></li>
+<li><i>doSomething how sourceFile destinationFile</i></li>
+<li><i>doSomething how &lt; inputFile &gt; outputFile</i></li>
+<li><i>doSomething how | doSomething how | do Something how &gt; outputFile</i></li>
+</ul>
+<p>where <i>doSomething</i> is, in effect, a <a href="http://en.m.wikipedia.org/wiki/Verb" title="Verb">verb</a>, <i>how</i> an <a href="http://en.m.wikipedia.org/wiki/Adverb" title="Adverb">adverb</a> (for example, should the command be executed "verbosely" or "quietly") and <i>toFiles</i> an object or objects (typically one or more files) on which the command should act. The '&gt;' in the third example is a <a href="http://en.m.wikipedia.org/wiki/Redirection_operator" title="Redirection operator" class="mw-redirect">redirection operator</a>, telling the command-line interpreter to send the output of the command not to the screen but to the file named on the right of the '&gt;'. This will overwrite the file. Using '&gt;&gt;' will redirect the output and append it to the file. Another redirection operator is the <a href="http://en.m.wikipedia.org/wiki/Vertical_bar" title="Vertical bar">vertical bar</a> ('|'), which creates a <a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipeline</a> where the output of one command becomes the input to the next command.</p>
+<h3> <span class="mw-headline" id="CLI_and_resource_protection">CLI and resource protection</span>
+</h3>
+<p>One can modify the set of available commands by modifying which paths appear in the <a href="http://en.m.wikipedia.org/wiki/PATH_(variable)" title="PATH (variable)">PATH</a> environment variable. Under Unix, commands also need be marked as <a href="http://en.m.wikipedia.org/wiki/Executable" title="Executable">executable</a> files. The directories in the path variable are searched in the order they are given. By re-ordering the path, one can run e.g. \OS2\MDOS\E.EXE instead of \OS2\E.EXE, when the default is the opposite. Renaming of the executables also works: people often rename their favourite editor to EDIT, for example.</p>
+<p>The command line allows one to restrict available commands, such as access to advanced internal commands. The Windows <a href="http://en.m.wikipedia.org/wiki/CMD.EXE" title="CMD.EXE" class="mw-redirect">CMD.EXE</a> does this. Often, shareware programs will limit the range of commands, including printing a command 'your administrator has disabled running batch files' from the prompt.</p>
+<p>Some CLIs, such as those in <a href="http://en.m.wikipedia.org/wiki/Network_router" title="Network router" class="mw-redirect">network routers</a>, have a hierarchy of <a href="http://en.m.wikipedia.org/wiki/Mode_(computer_interface)" title="Mode (computer interface)">modes</a>, with a different set of commands supported in each mode. The set of commands are grouped by association with security, system, interface, etc. In these systems the user might traverse through a series of sub-modes. For example, if the CLI had two modes called <i>interface</i> and <i>system</i>, the user might use the command <i>interface</i> to enter the interface mode. At this point, commands from the system mode may not be accessible and the user exits the interface mode and enters the system mode.</p>
+<h3> <span class="mw-headline" id="Command_prompt">Command prompt</span>
+</h3>
+<p>A command prompt (or just <i>prompt</i>) is a sequence of (one or more) characters used in a command-line interface to indicate readiness to accept commands. Its intent is to literally <a href="http://en.wiktionary.org/wiki/prompt" class="extiw" title="wiktionary:prompt">prompt</a> the user to take action. A prompt usually ends with one of the characters $, %, #, :, &gt; and often includes other information, such as the path of the current <a href="http://en.m.wikipedia.org/wiki/Working_directory" title="Working directory">working directory</a>.</p>
+<p>On many <a href="Unix" title="Unix">Unix</a> system and derivative systems, it is common for the prompt to end in a $ or % character if the user is a normal user, but in a # character if the user is a <a href="http://en.m.wikipedia.org/wiki/Superuser" title="Superuser">superuser</a> ("root" in Unix terminology).</p>
+<p>It is common for prompts to be modifiable by the user. Depending on the environment, they may include colors, special characters, and other elements like variables and functions for the current time, user, shell number or working directory, in order, for instance, to make the prompt more informative or visually pleasing, to distinguish sessions on various machines, or to indicate the current level of nesting of commands. On some systems, special tokens in the definition of the prompt can be used to cause external programs to be called by the command-line interpreter while displaying the prompt.</p>
+<p>In DOS's COMMAND.COM and in the Windows NT's command-line interpreter <a href="http://en.m.wikipedia.org/wiki/Cmd.exe" title="Cmd.exe" class="mw-redirect">cmd.exe</a> the prompt is modifiable by issuing a <code>prompt</code> command or by directly changing the value of the corresponding <code>%PROMPT%</code> <a href="http://en.m.wikipedia.org/wiki/Environment_variable" title="Environment variable">environment variable</a>. The default of most modern systems, the <code>C:\&gt;</code> style is obtained, for instance, with "<code>prompt $P$G</code>". The default of older DOS systems, <code>C&gt;</code> is obtained by just "<code>prompt</code>", although on some systems this produces the newer <code>C:\&gt;</code> style, unless used on floppy drives A: or B:; on those systems "<code>prompt $N$G</code>" can be used to override the automatic default and explicitly switch to the older style.</p>
+<p>On many Unix systems, the <code>$PS1</code> variable can be used, although other variables also may have an impact on the prompt (depending on what <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">shell</a> is being used). In the <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">bash</a> shell, a prompt of the form</p>
+<dl>
+<dd><code>[time] user@host: work_dir $</code></dd>
+</dl>
+<p>could be set by issuing the command</p>
+<dl>
+<dd><code>export PS1='[\t] \u@\H: \W $'</code></dd>
+</dl>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Zsh" title="Zsh" class="mw-redirect">zsh</a> the <code>$RPROMPT</code> variable controls an optional "prompt" on the right hand side of the display. It is not a real prompt in that the location of text entry does not change. It is used to display information on the same line as the prompt, but right justified.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/RISC_OS" title="RISC OS">RISC OS</a>, the command prompt is a '<code>*</code>' symbol, and thus (OS)CLI commands are often referred to as "star commands".<sup id="cite_ref-1" class="reference"><a href="Compiler_flag#cite_note-1"><span>[</span>1<span>]</span></a></sup> It is also possible to access the same commands from other command lines (such as the <a href="http://en.m.wikipedia.org/wiki/BBC_BASIC" title="BBC BASIC">BBC BASIC</a> command line), by preceding the command with a '<code>*</code>'.</p>
+<h3> <span class="mw-headline" id="Arguments">Arguments</span>
+</h3>
+<p>A <b>command-line argument</b> or <b>parameter</b> is an <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">argument</a> sent to a program being called. In principle a program can take many command-line arguments, the meaning and importance of which depend entirely upon the program.</p>
+<p>When a command processor is active a program is typically invoked by typing its name followed by command-line arguments (if any). For example, in <a href="Unix" title="Unix">Unix</a> and <a href="Unix-like" title="Unix-like">Unix-like</a> environments, an example of a command-line argument is:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw2">rm</span> file.s
+</pre>
+</div>
+</div>
+<p>"file.s" is a command-line argument which tells the program <a href="http://en.m.wikipedia.org/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a> to remove the file "file.s".</p>
+<p>Some programming languages, such as <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a> and <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, allow a program to interpret the command-line arguments by handling them as string parameters in the <a href="Main_function_(programming)" title="Main function (programming)" class="mw-redirect">main function</a>. Other languages, such as <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, expose these arguments as global variables.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Unix-like_operating_system" title="Unix-like operating system" class="mw-redirect">Unix-like operating systems</a>, a single hyphen-minus by itself is usually a special value specifying that a program should handle data coming from the <a href="http://en.m.wikipedia.org/wiki/Standard_input" title="Standard input" class="mw-redirect">standard input</a> or send data to the <a href="Standard_output" title="Standard output" class="mw-redirect">standard output</a>.</p>
+<h4> <span class="mw-headline" id="Command-line_option"><span id="SwitChar"></span>Command-line option</span>
+</h4>
+<p>A <b>command-line option</b> or simply <b>option</b> (also known as a <b>flag</b> or <b>switch</b>) modifies the operation of a command; the effect is determined by the command's program. Options follow the command name on the command line, separated by spaces. A space before the first option is not always required.</p>
+<p>For example, in the <a href="http://en.m.wikipedia.org/wiki/OpenVMS" title="OpenVMS">OpenVMS</a> operating system, the command <i>directory</i> is used to list the <a href="http://en.m.wikipedia.org/wiki/Computer_file" title="Computer file">files</a> inside a <a href="http://en.m.wikipedia.org/wiki/Directory_(file_systems)" title="Directory (file systems)" class="mw-redirect">directory</a>. By default—that is, when the user simply types <i>directory</i>—it will list only the names of the files. By appending the <i>/owner</i> option (to form the command <i>directory/owner</i>), the user can instruct the <i>directory</i> command to also display the ownership of the files.</p>
+<p>The format of options varies widely between operating systems. In most cases the syntax is by convention rather than an operating system requirement; the entire command line is simply a string passed to a program, which can process it in any way the programmer wants.</p>
+<p>In <a href="Multics" title="Multics">Multics</a>, command-line options and subsystem keywords may be abbreviated. This idea appears to derive from the <a href="http://en.m.wikipedia.org/wiki/PL/I_programming_language" title="PL/I programming language" class="mw-redirect">PL/I programming language</a>, with its shortened keywords (e.g., STRGE for STRINGRANGE and DCL for DECLARE). For example, in the Multics "forum" subsystem, the <i>-long_subject</i> parameter can be abbreviated <i>-lgsj</i>. It is also common for Multics commands to be abbreviated, typically corresponding to the initial letters of the words that are strung together with underscores to form command names, such as the use of <i>did</i> for <i>delete_iacl_dir</i>.</p>
+<p>Sometimes different programs use different syntax in the same operating system. For example:</p>
+<ul>
+<li>Options may be indicated by <tt>-</tt>, <tt>/</tt>, or either.</li>
+<li>They may or may not be <a href="http://en.m.wikipedia.org/wiki/Case-sensitive" title="Case-sensitive" class="mw-redirect">case-sensitive</a>.</li>
+<li>Sometimes options and their arguments are run together, sometimes separated by whitespace, and sometimes by a character, typically <tt>:</tt> or <tt>=</tt>. Thus "Prog -fFilename", "Prog -f Filename", "Prog -f:Filename", "Prog -f=Filename".</li>
+<li>Some programs allow single-character options to be combined; others do not. The switch "-fA" may mean the same as "-f -A", or it may be incorrect, or it may even be a valid but different parameter.</li>
+</ul>
+<p>In <a href="Unix-like" title="Unix-like">Unix-like</a> systems, the ASCII <a href="http://en.m.wikipedia.org/wiki/Hyphen-minus" title="Hyphen-minus">hyphen-minus</a> is commonly used to specify options. The character is usually followed by one or more letters. Two hyphen-minus characters ( -- ) often indicate that the remaining arguments should not be treated as options, which is useful for example if a file name itself begins with a hyphen. Double hyphen-minuses are also sometimes used to prefix "long options" where more descriptive option names are used. This is a common feature of <a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> software. The <i><a href="http://en.m.wikipedia.org/wiki/Getopt" title="Getopt">getopt</a></i> function and program and the <i><a href="http://en.m.wikipedia.org/wiki/Getopts" title="Getopts">getopts</a></i> command are used for parsing command-line options.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a>, <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a> and <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>, the forward slash ('/') is more prevalent, although the hyphen-minus is also sometimes used. <a href="http://en.m.wikipedia.org/wiki/FlexOS" title="FlexOS">FlexOS</a>, <a href="http://en.m.wikipedia.org/wiki/IBM_4680_OS" title="IBM 4680 OS" class="mw-redirect">4680 OS</a> and <a href="http://en.m.wikipedia.org/wiki/IBM_4690_OS" title="IBM 4690 OS">4690 OS</a> use '-'. In many versions of DOS (MS-DOS/PC-DOS 2.xx and higher, all versions of DR-DOS since 5.0, as well as in <a href="http://en.m.wikipedia.org/wiki/PTS-DOS" title="PTS-DOS">PTS-DOS</a> and <a href="http://en.m.wikipedia.org/wiki/FreeDOS" title="FreeDOS">FreeDOS</a>) the switch character to be used is defined by a value returned from a system call (<a href="http://en.m.wikipedia.org/wiki/INT_21" title="INT 21" class="mw-redirect">INT 21</a>/AH=37h). The default character returned by this API is '/', but can be changed to a hyphen-minus on the above-mentioned systems, except for MS-DOS/PC-DOS 5.0 and higher. In some of these systems (MS-DOS/PC-DOS 2.xx/3.xx, DR-DOS 7.02 and higher, and FreeDOS), the setting can not only be controlled by programs, but also pre-configured by a SWITCHAR directive in <a href="http://en.m.wikipedia.org/wiki/CONFIG.SYS" title="CONFIG.SYS">CONFIG.SYS</a>. Many programs are hardwired to use '/' only, rather than retrieving this setting before parsing command line arguments. Under DR-DOS, if the setting has been changed from '/', the first directory separator '\' in the display of the PROMPT parameter $G will change to a forward slash '/' (also a valid directory separator in DOS, FlexOS, 4680 OS, 4690 OS, OS/2 and Windows) as a visual clue to indicate the change. Some command-line interpreters (including newer versions of DR-DOS <a href="http://en.m.wikipedia.org/wiki/COMMAND.COM" title="COMMAND.COM">COMMAND.COM</a> and <a href="http://en.m.wikipedia.org/wiki/4DOS" title="4DOS">4DOS</a>) also provide pseudo <a href="http://en.m.wikipedia.org/wiki/Environment_variable" title="Environment variable">environment variables</a> named %/% or %SWITCHAR% to allow portable batchjobs to be written.</p>
+<h3> <span class="mw-headline" id="Built-in_usage_help">Built-in usage help</span>
+</h3>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Help_(command)" title="Help (command)">help (command)</a>
+</div>
+<p>It is usual for a program to be able to display a brief summary of its parameters, typically when invoked with no arguments or one of <tt>?</tt>, <tt>-?</tt>, <tt>-h</tt>, <tt>/?</tt>, <tt>/h</tt>, <tt>-help</tt>, or <tt>--help</tt>. Entering a program name without parameters in the hope that it will display parameters can be hazardous, as some programs and scripts execute without further ado.</p>
+<h3> <span class="mw-headline" id="The_space_character">The space character</span>
+</h3>
+<p>In many areas of computing, but particularly in the command line, the <a href="http://en.m.wikipedia.org/wiki/Space_character" title="Space character" class="mw-redirect">space character</a> can cause problems as it has two distinct and incompatible functions: as part of a command or parameter, or as a parameter or name <a href="http://en.m.wikipedia.org/wiki/Delimiter" title="Delimiter">separator</a>. Ambiguity can be prevented either by prohibiting embedded spaces in file- and directory names in the first place (for example, by substituting them with <a href="http://en.m.wikipedia.org/wiki/Underscores" title="Underscores" class="mw-redirect">underscores</a> '_'), or, if supported by the command-line interpreter and the programs taking these parameters as arguments, by enclosing a name with embedded spaces between quote characters or using a <a href="http://en.m.wikipedia.org/wiki/Escape_character" title="Escape character">escape character</a> before the space, usually a <a href="http://en.m.wikipedia.org/wiki/Backslash" title="Backslash">backslash</a> ('\'). For example<br></p>
+<dl>
+<dd>
+<code>Long path/Long program name Parameter one Parameter two</code> ...</dd>
+</dl>
+<p>is ambiguous (is "program name" part of the program name, or two parameters?); however</p>
+<dl>
+<dd>
+<code>Long_path/Long_program_name Parameter_one Parameter_two</code> ...,</dd>
+<dd>
+<code>LongPath/LongProgramName ParameterOne ParameterTwo</code> ...,</dd>
+<dd>
+<code>"Long path/Long program name" "Parameter one" "Parameter two"</code> ...</dd>
+</dl>
+<p>and<br></p>
+<dl>
+<dd>
+<code>Long\ path/Long\ program\ name Parameter\ one Parameter\ two</code> ...</dd>
+</dl>
+<p>are not ambiguous. <a href="Unix" title="Unix">Unix</a>-based operating systems minimize the use of embedded spaces to minimize the need for quotes. In <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, one often has to use quotes because embedded spaces (such as in directory names) are common.</p>
+<h2> <span class="mw-headline" id="Command-line_interpreter">Command-line interpreter</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_command-line_interpreters" title="List of command-line interpreters">List of command-line interpreters</a>
+</div>
+<p>The terms <b>command-line interpreter</b>, <b>command line <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shell</a></b>, <b>command language interpreter</b>, or identical abbreviation <b>CLI</b>, are applied to <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer programs</a> designed to <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpret</a> a sequence of lines of text which may be entered by a user, read from a <a href="http://en.m.wikipedia.org/wiki/Computer_file" title="Computer file">file</a> or another kind of <a href="http://en.m.wikipedia.org/wiki/Data_stream" title="Data stream">data stream</a>. The context of interpretation is usually one of a given <a href="Operating_system" title="Operating system">operating system</a> or <a href="Programming_language" title="Programming language">programming language</a>.</p>
+<p>Command-line interpreters allow users to issue various commands in a very efficient (and often terse) way. This requires the user to know the names of the commands and their parameters, and the syntax of the <a href="Programming_language" title="Programming language">language</a> that is interpreted.</p>
+<p>The unix /# and OS/2 EXTPROC commands facilitate the passing of batch files to external processors. One can use this to write specific command processors for dedicated uses, and process external data files which reside in batch files.</p>
+<p>Many graphical interfaces, such as the OS/2 <a href="http://en.m.wikipedia.org/wiki/Presentation_Manager" title="Presentation Manager">Presentation Manager</a> and early versions of Microsoft Windows use command-lines to call helper programs to open documents and programs. The commands are stored in the graphical shell<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Please_clarify" title="Wikipedia:Please clarify"><span title="The text in the vicinity of this tag needs clarification or removal of jargon from May 2012">clarification needed</span></a></i>]</sup> or in files like the registry or the <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a> <code>os2user.ini</code> file.</p>
+<h3> <span class="mw-headline" id="Early_history">Early history</span>
+</h3>
+<p>From the 1960s onwards, user interaction with computers was primarily by means of command-line interfaces, initially on machines like the <a href="http://en.m.wikipedia.org/wiki/Teletype_Model_33" title="Teletype Model 33">Teletype Model 33</a> ASR, but then on early <a href="http://en.m.wikipedia.org/wiki/CRT" title="CRT">CRT</a>-based <a href="http://en.m.wikipedia.org/wiki/Computer_terminals" title="Computer terminals" class="mw-redirect">computer terminals</a> such as the <a href="http://en.m.wikipedia.org/wiki/VT52" title="VT52">VT52</a>.</p>
+<p>All of these devices were purely text based, with no ability to display graphic or pictures.<sup id="cite_ref-2" class="reference"><a href="Compiler_flag#cite_note-2"><span>[</span>2<span>]</span></a></sup> For business <a href="http://en.m.wikipedia.org/wiki/Application_software" title="Application software">application programs</a>, text-based <a href="http://en.m.wikipedia.org/wiki/Menu_(computing)" title="Menu (computing)">menus</a> were used, but for more general interaction the command line was the interface.</p>
+<p>From the early 1970s the <a href="Unix" title="Unix">Unix</a> operating system on <a href="http://en.m.wikipedia.org/wiki/Minicomputers" title="Minicomputers" class="mw-redirect">minicomputers</a> pioneered the concept of a powerful command-line environment, which Unix called the "shell", with the ability to "<a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipe</a>" the output of one command in as input to another, and to save and re-run strings of commands as "<a href="http://en.m.wikipedia.org/wiki/Shell_scripts" title="Shell scripts" class="mw-redirect">shell scripts</a>" which acted like custom commands.</p>
+<p>The command-line was also the main interface for the early home computers such as the <a href="http://en.m.wikipedia.org/wiki/Commodore_PET" title="Commodore PET">Commodore PET</a>, <a href="http://en.m.wikipedia.org/wiki/Apple_II" title="Apple II">Apple II</a> and <a href="http://en.m.wikipedia.org/wiki/BBC_Micro" title="BBC Micro">BBC Micro</a> – almost always in the form of a <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> interpreter. When more powerful business oriented microcomputers arrived with <a href="http://en.m.wikipedia.org/wiki/CP/M" title="CP/M">CP/M</a> and later <a href="http://en.m.wikipedia.org/wiki/MSDOS" title="MSDOS" class="mw-redirect">MSDOS</a> computers such as the <a href="IBM_PC" title="IBM PC" class="mw-redirect">IBM PC</a>, the command-line began to borrow some of the syntax and features of the Unix shells such as <a href="http://en.m.wikipedia.org/wiki/Globbing" title="Globbing" class="mw-redirect">globbing</a> and <a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">piping</a> of output.</p>
+<p>The command-line was first seriously challenged by the <a href="http://en.m.wikipedia.org/wiki/PARC_(company)" title="PARC (company)">PARC</a> <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a> approach used in the 1983 <a href="http://en.m.wikipedia.org/wiki/Apple_Lisa" title="Apple Lisa">Apple Lisa</a> and the 1984 <a href="http://en.m.wikipedia.org/wiki/Apple_Macintosh" title="Apple Macintosh" class="mw-redirect">Apple Macintosh</a>. The majority of <a href="IBM_PC" title="IBM PC" class="mw-redirect">IBM PC</a> users did not replace their <a href="http://en.m.wikipedia.org/wiki/Command.com" title="Command.com" class="mw-redirect">command.com</a> shell with a GUI until <a href="http://en.m.wikipedia.org/wiki/Windows_95" title="Windows 95">Windows 95</a> was released in 1995.</p>
+<h3> <span class="mw-headline" id="Modern_usage_as_an_operating_system_shell">Modern usage as an operating system shell</span>
+</h3>
+<p>While most computer users now use a GUI almost exclusively, more advanced users have access to powerful command-line environments:</p>
+<ul>
+<li>IBM OS/2 has the <a href="http://en.m.wikipedia.org/wiki/Cmd.exe" title="Cmd.exe" class="mw-redirect">cmd.exe</a> processor. This copies the <a href="http://en.m.wikipedia.org/wiki/Command.com" title="Command.com" class="mw-redirect">command.com</a> commands, with extensions to <a href="http://en.m.wikipedia.org/wiki/REXX" title="REXX">REXX</a>.</li>
+<li>MS Windows users have a CLI environment named <a href="http://en.m.wikipedia.org/wiki/Command_Prompt" title="Command Prompt">Command Prompt</a>, which might use the <a href="http://en.m.wikipedia.org/wiki/CScript" title="CScript" class="mw-redirect">CScript</a> interface to alternate programs. The new <a href="http://en.m.wikipedia.org/wiki/PowerShell" title="PowerShell" class="mw-redirect">PowerShell</a> program provides a command-line interface, but its applets are not written in shell-script. Implementations of the <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shell</a> are also available as part of the <a href="http://en.m.wikipedia.org/wiki/Microsoft_POSIX_subsystem" title="Microsoft POSIX subsystem">POSIX sub-system</a>,<sup id="cite_ref-3" class="reference"><a href="Compiler_flag#cite_note-3"><span>[</span>3<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Cygwin" title="Cygwin">Cygwin</a>, and other software packages.</li>
+<li>Apple Mac OS X<sup id="cite_ref-4" class="reference"><a href="Compiler_flag#cite_note-4"><span>[</span>4<span>]</span></a></sup> and many <a href="http://en.m.wikipedia.org/wiki/Linux_distribution" title="Linux distribution">Linux distributions</a> have the <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a> implementation of the <a href="http://en.m.wikipedia.org/wiki/Unix_shell" title="Unix shell">Unix shell</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Embedded_Linux" title="Embedded Linux">Embedded Linux</a> (and other embedded <a href="Unix-like" title="Unix-like">Unix-like</a>) devices often use the <a href="http://en.m.wikipedia.org/wiki/Almquist_shell" title="Almquist shell">Ash</a> implementation of the Unix shell, as part of <a href="http://en.m.wikipedia.org/wiki/Busybox" title="Busybox" class="mw-redirect">Busybox</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> uses a Unix shell derived from <a href="http://en.m.wikipedia.org/wiki/Almquist_shell" title="Almquist shell">Ash</a><sup id="cite_ref-5" class="reference"><a href="Compiler_flag#cite_note-5"><span>[</span>5<span>]</span></a></sup> with commands from the separate <i>toolbox</i>.<sup id="cite_ref-6" class="reference"><a href="Compiler_flag#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</li>
+<li>Routers with <a href="http://en.m.wikipedia.org/wiki/Cisco_IOS" title="Cisco IOS">Cisco IOS</a>,<sup id="cite_ref-7" class="reference"><a href="Compiler_flag#cite_note-7"><span>[</span>7<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Junos" title="Junos">Junos</a><sup id="cite_ref-8" class="reference"><a href="Compiler_flag#cite_note-8"><span>[</span>8<span>]</span></a></sup> and many others are commonly configured from the command line.</li>
+</ul>
+<h2> <span class="mw-headline" id="Scripting">Scripting</span>
+</h2>
+<p>Most command-line interpreters support <a href="http://en.m.wikipedia.org/wiki/Script_(computer_programming)" title="Script (computer programming)" class="mw-redirect">scripting</a>, to various extents. (They are, after all, interpreters of an interpreted <a href="Programming_language" title="Programming language">programming language</a>, albeit in many cases the language is unique to the particular command-line interpreter.) They will interpret scripts (variously termed <a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">shell scripts</a> or <a href="http://en.m.wikipedia.org/wiki/Batch_file" title="Batch file">batch files</a>) written in the <a href="Programming_language" title="Programming language">language</a> that they interpret. Some command-line interpreters also incorporate the interpreter engines of other languages, such as <a href="http://en.m.wikipedia.org/wiki/REXX" title="REXX">REXX</a>, in addition to their own, allowing the executing of scripts, in those languages, directly within the command-line interpreter itself.</p>
+<p>Conversely, <a href="http://en.m.wikipedia.org/wiki/Scripting_programming_language" title="Scripting programming language" class="mw-redirect">scripting programming languages</a>, in particular those with an <a href="http://en.m.wikipedia.org/wiki/Eval" title="Eval">eval</a> <a href="http://en.m.wikipedia.org/wiki/Function_(programming)" title="Function (programming)" class="mw-redirect">function</a> (such as <a href="http://en.m.wikipedia.org/wiki/REXX" title="REXX">REXX</a>, <a href="Perl" title="Perl">Perl</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a> or <a href="http://en.m.wikipedia.org/wiki/Jython" title="Jython">Jython</a>), can be used to implement command-line interpreters and filters. For a few <a href="Operating_system" title="Operating system">operating systems</a>, most notably <a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a>, such a command interpreter provides a more flexible command line interface than the one supplied. In other cases, such a command interpreter can present a highly customised user interface employing the user interface and input/output facilities of the language.</p>
+<h2> <span class="mw-headline" id="Other_command-line_interfaces">Other command-line interfaces</span>
+</h2>
+<p>The command line provides an interface between programs as well as the user. In this sense, a command line is an alternative to a dialog. Editors and data-bases present a command line, in which alternate command processors might run. On the other hand, one might have options on the command line which opens a dialog box. The latest version of 'Take Command' has this feature. DBase used a dialog box to construct command lines, which could be further edited before use.</p>
+<p>Programs like Basic, Diskpart, Edlin, and QBasic all provide command-line interfaces, some of which use the system shell. Basic is modeled on the default interface for 8-bit Intel computers. Calculators can be run as command-line or dialog interfaces.</p>
+<p>There are a number of pre-mouse games (like King's Quest 1-3), which relied on the user typing commands at the bottom of the screen. One controls the character by typing commands like 'get ring' or 'look'. The program returns a dialog which describes how the character sees it, or makes the action happen. The <a href="http://en.m.wikipedia.org/wiki/Text_adventure" title="Text adventure" class="mw-redirect">text adventure</a> <a href="http://en.m.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(video_game)" title="The Hitchhiker's Guide to the Galaxy (video game)">The Hitchhiker's Guide to the Galaxy</a>, a piece of <a href="http://en.m.wikipedia.org/wiki/Interactive_fiction" title="Interactive fiction">interactive fiction</a> based on <a href="http://en.m.wikipedia.org/wiki/Douglas_Adams" title="Douglas Adams">Douglas Adam's</a> book of the same name, is a teletype-style command-line game.</p>
+<p>The most notable of these interfaces is the <a href="http://en.m.wikipedia.org/wiki/Standard_streams" title="Standard streams">STDIO</a> interface, which allows the output of one command to be passed to the input of another. Text files can serve either purpose as well. This provides the interfaces of piping, filters and redirection. Under Unix, <a href="http://en.m.wikipedia.org/wiki/Everything_is_a_file" title="Everything is a file">devices are files</a> too, so the normal type of file for the shell used for stdin,stdout and stderr is a <a href="http://en.m.wikipedia.org/wiki/Teleprinter#Teleprinters_in_computing" title="Teleprinter">tty</a> device file.</p>
+<p>Another command-line interface allows a shell program to launch helper programs, either to launch documents or start a program. The command is processed internally by the shell, and then passed on to another program to launch the document. The graphical interface of Windows and OS/2 rely heavily on command-lines passed through to other programs – console or graphical, which then usually process the command line without presenting a user-console.</p>
+<p>Programs like the OS/2 <a href="http://en.m.wikipedia.org/wiki/E_(editor)" title="E (editor)" class="mw-redirect">E</a> editor and some other IBM <a href="http://en.m.wikipedia.org/wiki/Text_editor" title="Text editor">editors</a>, can process command-lines normally meant for the shell, the output being placed directly in the document window.</p>
+<p>One should remember that the 'address line' in a web browser is in fact a command line, even to the thing about about:blank interface. One can program extra commands for a web browser, say to open the registry at a given item, by using the reg: keyword.</p>
+<p>On the other hand, features like command history and editing are not nesseccarily part of the command-line interface.</p>
+<h2> <span class="mw-headline" id="Quotes">Quotes</span>
+</h2>
+<blockquote class="toccolours" style="float:none; padding: 10px 15px 10px 15px; display:table;">
+<p>Although most users think of the shell as an interactive command interpreter, it is really a programming language in which each statement runs a command. Because it must satisfy both the interactive and programming aspects of command execution, it is a strange language, shaped as much by history as by design.</p>
+<p style="text-align: right;">— <cite><a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a> &amp; <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a> <sup id="cite_ref-9" class="reference"><a href="Compiler_flag#cite_note-9"><span>[</span>9<span>]</span></a></sup></cite></p>
+</blockquote>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Batch_processing" title="Batch processing">Batch processing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Batch_file" title="Batch file">Batch file</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Clig" title="Clig">clig</a> for <a href="http://en.m.wikipedia.org/wiki/Tcl" title="Tcl">tcl</a>/<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">c</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_computer_shells" title="Comparison of computer shells" class="mw-redirect">Comparison of computer shells</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Console_application" title="Console application">Console application</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_terminal" title="Data terminal" class="mw-redirect">Text terminal</a></li>
+<li><a href="Graphical_user_interface#Comparison_to_other_interfaces" title="Graphical user interface">Graphical user interface#Comparison to other interfaces</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interpreter_directive" title="Interpreter directive">Interpreter directive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/In_the_Beginning..._Was_the_Command_Line" title="In the Beginning... Was the Command Line">In the Beginning... Was the Command Line</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Natural_user_interface" title="Natural user interface">Natural user interface</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Read-eval-print_loop" title="Read-eval-print loop" class="mw-redirect">Read-eval-print loop</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Run_command" title="Run command">Run command</a> in Microsoft Windows</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scripting_language" title="Scripting language">Scripting language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">Shell (computing)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">Shell script</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Terminal_emulator" title="Terminal emulator">Terminal emulator</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-1">^</a></b></span> <span class="reference-text">RISC OS 3 User Guide, Part 3: Outside the desktop (page 125) Published by Acorn Computers Limited, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1852501242" class="internal mw-magiclink-isbn">ISBN 1-85250-124-2</a>, Edition 2 Part number 0496,075 Issue 1 March 1992</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-2">^</a></b></span> <span class="reference-text">With the exception of <a href="http://en.m.wikipedia.org/wiki/ASCII_art" title="ASCII art">ASCII art</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://technet.microsoft.com/en-us/library/cc754351.aspx">"Windows POSIX shell compatibility"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://technet.microsoft.com/en-us/library/cc754351.aspx">http://technet.microsoft.com/en-us/library/cc754351.aspx</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Windows+POSIX+shell+compatibility&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Fcc754351.aspx&amp;rfr_id=info:sid/en.wikipedia.org:Command-line_interface"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-4">^</a></b></span> <span class="reference-text">via <i>Finder, Applications, Utilities, <a href="http://en.m.wikipedia.org/wiki/Terminal_(Mac_OS_X)" title="Terminal (Mac OS X)" class="mw-redirect">Terminal</a></i></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://github.com/android/platform_system_core/tree/master/sh">"Android sh source"</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://github.com/android/platform_system_core/tree/master/sh">https://github.com/android/platform_system_core/tree/master/sh</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Android+sh+source&amp;rft.atitle=&amp;rft_id=https%3A%2F%2Fgithub.com%2Fandroid%2Fplatform_system_core%2Ftree%2Fmaster%2Fsh&amp;rfr_id=info:sid/en.wikipedia.org:Command-line_interface"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://github.com/android/platform_system_core/tree/master/toolbox">"Android toolbox source"</a><span class="printonly">. <a rel="nofollow" class="external free" href="https://github.com/android/platform_system_core/tree/master/toolbox">https://github.com/android/platform_system_core/tree/master/toolbox</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Android+toolbox+source&amp;rft.atitle=&amp;rft_id=https%3A%2F%2Fgithub.com%2Fandroid%2Fplatform_system_core%2Ftree%2Fmaster%2Ftoolbox&amp;rfr_id=info:sid/en.wikipedia.org:Command-line_interface"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.cisco.com/en/US/docs/ios/12_0/configfun/configuration/guide/fcui.html#wp7687"><i>"The Cisco IOS command-line interface (CLI) is the primary user interface..."</i></a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.juniper.net/techpubs/software/junos/junos55/swconfig55-getting-started/html/cli-overview-getting-started.html"><i>"...the software that you use whenever you access the router..."</i></a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Compiler_flag#cite_ref-9">^</a></b></span> <span class="reference-text">Brian W. Kernighan and Rob Pike, "The UNIX Programming Environment", <i>Prentice-Hall</i> (1984).</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://books.google.com/books?id=OmnF5MGRNn8C&amp;dq=in+the+beginning+comand+line&amp;pg=PP1&amp;ots=XTN1PFZuJw&amp;sig=S-k5FfNtMXcbbqjqUiqSaMyII8Q&amp;hl=en">In the Beginning... Was the Command Line</a> — Short book about CLIs by Neal Stephenson.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.patersontech.com/Dos/Softalk/Softalk.html">The Roots of DOS</a> David Hunter, <i>Softalk for the IBM Personal Computer</i> March 1983. Archived at Patersontech.com since <a rel="nofollow" class="external text" href="http://web.archive.org/web/20001003150623/http://www.patersontech.com/Dos/Softalk/Softalk.html">2000</a>.</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Operating_system" title="Template:Operating system"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Operating_system" title="Template talk:Operating system"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Operating_system&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="Operating_system" title="Operating system">Operating system</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_operating_systems" title="History of operating systems">History</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">Timeline</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">Comparison</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">Usage share</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operating_system_advocacy" title="Operating system advocacy">Advocacy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hobbyist_operating_system_development" title="Hobbyist operating system development">Hobbyist development</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">Kernel</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Architectures</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Monolithic_kernel" title="Monolithic kernel">Monolithic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exokernel" title="Exokernel">Exokernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hybrid_kernel" title="Hybrid kernel">Hybrid</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Components</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/User_space" title="User space">User space</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">Loadable kernel module</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">Device driver</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Process_management_(computing)" title="Process management (computing)">Process management</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Concepts</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_control_block" title="Process control block">Process control block</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Context_switch" title="Context switch">Context switch</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">Scheduling algorithms</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">Computer multitasking</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preemption_(computing)" title="Preemption (computing)">Preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Round-robin_scheduling" title="Round-robin scheduling">Round-robin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">Fixed-priority preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">Multilevel feedback queue</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shortest_job_next" title="Shortest job next">Shortest job next</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a> and<br><a href="http://en.m.wikipedia.org/wiki/Resource_(computer_science)" title="Resource (computer science)">resource</a> protection</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ring_(computer_security)" title="Ring (computer security)">Security rings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_protection" title="Memory protection">Memory protection</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">Virtual memory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paging" title="Paging">Paging</a></li>
+<li><a href="Segmentation_fault" title="Segmentation fault">Segmentation fault / Bus error</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/General_protection_fault" title="General protection fault">General protection fault</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MorphOS" title="MorphOS">MorphOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li><a href="Unix" title="Unix">Unix</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Miscellaneous concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Booting" title="Booting">Boot loader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_CD" title="Live CD">Live CD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_USB" title="Live USB">Live USB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">PXE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_tape_library" title="Virtual tape library">Virtual tape library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">Computer network</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Operating_system_shell" title="Operating system shell">OS shell</a>
+<ul>
+<li><strong class="selflink">CLI</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Text-based_user_interface" title="Text-based user interface">TUI</a></li>
+<li><a href="Graphical_user_interface" title="Graphical user interface">GUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Voice_user_interface" title="Voice user interface">VUI</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware_abstraction" title="Hardware abstraction">HAL</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 34 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Bevellyn" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D9%88%D8%A7%D8%AC%D9%87%D8%A9_%D8%B3%D8%B7%D8%B1_%D8%A7%D9%84%D8%A3%D9%88%D8%A7%D9%85%D8%B1" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D1%81_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B5%D0%BD_%D1%80%D0%B5%D0%B4" lang="bg" hreflang="bg">български</a></li><li><a href="http://ca.m.wikipedia.org/wiki/L%C3%ADnia_d%27ordres" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/P%C5%99%C3%ADkazov%C3%BD_%C5%99%C3%A1dek" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Kommandolinjegr%C3%A6nseflade" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Kommandozeile" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/K%C3%A4surida" lang="et" hreflang="et">eesti</a></li><li><a href="http://es.m.wikipedia.org/wiki/L%C3%ADnea_de_comandos" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%88%D8%A7%D8%B3%D8%B7_%D8%AE%D8%B7_%D9%81%D8%B1%D9%85%D8%A7%D9%86" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Interface_en_ligne_de_commande" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Li%C3%B1a_de_comandos" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%AA%85%EB%A0%B9_%EC%A4%84_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Antarmuka_baris_perintah" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://is.m.wikipedia.org/wiki/Skipanal%C3%ADnuvi%C3%B0m%C3%B3t" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Interfaccia_a_riga_di_comando" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%9E%D7%A9%D7%A7_%D7%A9%D7%95%D7%A8%D7%AA_%D7%A4%D7%A7%D7%95%D7%93%D7%94" lang="he" hreflang="he">עברית</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D0%BB%D1%8B%D2%9B_%D0%B6%D0%BE%D0%BB" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Parancssoros_felhaszn%C3%A1l%C3%B3i_fel%C3%BClet" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Command-line-interface" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%A6%E3%83%BC%E3%82%B6%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Kommandolinje" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Wiersz_polece%C5%84" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ro.m.wikipedia.org/wiki/CLI" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%BE%D0%BA%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Pr%C3%ADkazov%C3%BD_riadok" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Vmesnik_z_ukazno_vrstico" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D1%98%D1%81_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%B5_%D0%BB%D0%B8%D0%BD%D0%B8%D1%98%D0%B5" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Komentoliittym%C3%A4" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Kommandotolk" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Komut_sat%C4%B1r%C4%B1" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%86%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BA%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE_%D1%80%D1%8F%D0%B4%D0%BA%D0%B0" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D8%B3%D8%B7%D8%B1_%D8%A7%D9%84%D8%A7%D9%85%D8%B1_%D8%B3%D8%B7%D8%AD_%D8%A7%D9%84%D8%A8%DB%8C%D9%86" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%95%8C%E9%9D%A2" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Compiler_flag&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Compiler_flag&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Command-line+interface&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

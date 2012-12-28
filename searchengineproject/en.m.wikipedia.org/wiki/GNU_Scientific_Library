@@ -1,0 +1,426 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>GNU Scientific Library - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"GNU Scientific Library","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/GNU_Scientific_Library" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=GNU+Scientific+Library"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">GNU Scientific Library</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style="">
+<span class="new" title="Mark Galassi (page does not exist)">Mark Galassi</span>, <span class="new" title="James Theiler (page does not exist)">James Theiler</span>, <span class="new" title="Brian Gough (page does not exist)">Brian Gough</span>, Gerard Jungman and many others</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU Project</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">May 1996</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">1.15 / May 6, 2011<span style="display:none"> (<span class="bday dtstart published updated">2011-05-06</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">Numerical library</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.gnu.org/software/gsl/">www.gnu.org/software/gsl/</a></span></td>
+</tr>
+</table>
+<p>The <b>GNU Scientific Library</b> (or <b>GSL</b>) is a <a href="http://en.m.wikipedia.org/wiki/Software_library" title="Software library" class="mw-redirect">software library</a> for numerical computations in <a href="http://en.m.wikipedia.org/wiki/Applied_mathematics" title="Applied mathematics">applied mathematics</a> and <a href="http://en.m.wikipedia.org/wiki/Science" title="Science">science</a>. The GSL is written in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>; wrappers are available for other programming languages. The GSL is part of the <a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU Project</a><sup id="cite_ref-0" class="reference"><a href="GNU_Scientific_Library#cite_note-0"><span>[</span>1<span>]</span></a></sup> and is distributed under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a>.</p>
+<h2> <span class="mw-headline" id="Project_history">Project history</span>
+</h2>
+<p>The GSL project was initiated in 1996 by physicists <span class="new" title="Mark Galassi (page does not exist)">Mark Galassi</span> and <span class="new" title="James Theiler (page does not exist)">James Theiler</span> of <a href="http://en.m.wikipedia.org/wiki/Los_Alamos_National_Laboratory" title="Los Alamos National Laboratory">Los Alamos National Laboratory</a>.<sup id="cite_ref-1" class="reference"><a href="GNU_Scientific_Library#cite_note-1"><span>[</span>2<span>]</span></a></sup> They aimed at writing a modern replacement for widely used but somewhat outdated Fortran libraries such as <a href="http://en.m.wikipedia.org/wiki/Netlib" title="Netlib">Netlib</a>.<sup id="cite_ref-2" class="reference"><a href="GNU_Scientific_Library#cite_note-2"><span>[</span>3<span>]</span></a></sup> They carried out the overall design and wrote early modules; with that ready they recruited other scientists to contribute.</p>
+<p>The "overall development of the library and the design and implementation of the major modules" was carried out by <span class="new" title="Brian Gough (page does not exist)">Brian Gough</span> and Gerard Jungman.<sup id="cite_ref-3" class="reference"><a href="GNU_Scientific_Library#cite_note-3"><span>[</span>4<span>]</span></a></sup> Other major contributors were <a href="http://en.m.wikipedia.org/wiki/Jim_Davies_(cognitive_scientist)" title="Jim Davies (cognitive scientist)">Jim Davies</a>, Reid Priedhorsky, M. Booth, and F. Rossi.<sup id="cite_ref-4" class="reference"><a href="GNU_Scientific_Library#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<p>Version 1.0 was released in 2001. In 2004 it was declared "feature complete";<sup id="cite_ref-5" class="reference"><a href="GNU_Scientific_Library#cite_note-5"><span>[</span>6<span>]</span></a></sup> the maintainers concentrated on bug fixes. New modules are accepted reluctantly if at all. B. Gough stepped down as maintainer in 2012;<sup id="cite_ref-6" class="reference"><a href="GNU_Scientific_Library#cite_note-6"><span>[</span>7<span>]</span></a></sup> currently the project seems to be orphaned.</p>
+<h2> <span class="mw-headline" id="Example">Example</span>
+</h2>
+<p>The following example program calculates the value of the <a href="http://en.m.wikipedia.org/wiki/Bessel_function" title="Bessel function">Bessel function</a> for 5:<sup id="cite_ref-7" class="reference"><a href="GNU_Scientific_Library#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;gsl/gsl_sf_bessel.h&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+  <span class="kw4">double</span> x <span class="sy0">=</span> <span class="nu16">5.0</span><span class="sy0">;</span>
+  <span class="kw4">double</span> y <span class="sy0">=</span> gsl_sf_bessel_J0<span class="br0">(</span>x<span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"J0(%g) = %.18e<span class="es1">\n</span>"</span><span class="sy0">,</span> x<span class="sy0">,</span> y<span class="br0">)</span><span class="sy0">;</span>
+  <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The example program has to be linked to the GSL library upon compilation:</p>
+<pre>
+gcc $(gsl-config --cflags) example.c $(gsl-config --libs)
+</pre>
+<p>The output is shown below, and should be correct to <a href="http://en.m.wikipedia.org/wiki/Double-precision" title="Double-precision" class="mw-redirect">double-precision</a> accuracy:</p>
+<pre>
+J0(5) = -1.775967713143382920e-01
+</pre>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<p>The software library provides facilities for:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Elementary_function" title="Elementary function">Basic mathematical functions</a></li>
+<li><a href="Complex_number" title="Complex number">Complex numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Polynomial" title="Polynomial">Polynomials</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Special_functions" title="Special functions">Special functions</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Vector_space" title="Vector space">Vectors</a> and <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrices</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Permutation" title="Permutation">Permutations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Combination" title="Combination">Combinations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multiset" title="Multiset">Multisets</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sorting" title="Sorting">Sorting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Basic_Linear_Algebra_Subprograms" title="Basic Linear Algebra Subprograms">BLAS</a></li>
+<li><a href="Linear_algebra" title="Linear algebra">Linear algebra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eigensystem" title="Eigensystem" class="mw-redirect">Eigensystems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fast_Fourier_transform" title="Fast Fourier transform">Fast Fourier transforms</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Numerical_integration" title="Numerical integration">Numerical integration</a> (based on <a href="http://en.m.wikipedia.org/wiki/QUADPACK" title="QUADPACK">QUADPACK</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Random_number_generator" title="Random number generator" class="mw-redirect">Random number generation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quasi-random_sequences" title="Quasi-random sequences" class="mw-redirect">Quasi-random sequences</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Probability_distribution" title="Probability distribution">Random number distributions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Statistics" title="Statistics">Statistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Histogram" title="Histogram">Histograms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/N-tuple" title="N-tuple" class="mw-redirect">N-tuples</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Monte_Carlo_integration" title="Monte Carlo integration">Monte Carlo integration</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simulated_annealing" title="Simulated annealing">Simulated annealing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ordinary_differential_equation" title="Ordinary differential equation">Ordinary differential equations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interpolation" title="Interpolation">Interpolation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Numerical_differentiation" title="Numerical differentiation">Numerical differentiation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chebyshev_approximation" title="Chebyshev approximation" class="mw-redirect">Chebyshev approximations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Series_acceleration" title="Series acceleration">Series acceleration</a></li>
+<li>Discrete <a href="http://en.m.wikipedia.org/wiki/Hankel_transform" title="Hankel transform">Hankel transform</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Root-finding_algorithm" title="Root-finding algorithm">Root-finding</a> in one and multiple dimensions</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Optimization_(mathematics)" title="Optimization (mathematics)" class="mw-redirect">Minimization</a> in one and multiple dimensions</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Least_squares" title="Least squares">Least-squares fitting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Levenberg-Marquardt_algorithm" title="Levenberg-Marquardt algorithm" class="mw-redirect">Nonlinear least-squares fitting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Physical_constants" title="Physical constants" class="mw-redirect">Physical constants</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IEEE_floating-point_arithmetic" title="IEEE floating-point arithmetic" class="mw-redirect">IEEE floating-point arithmetic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Discrete_wavelet_transform" title="Discrete wavelet transform">Discrete wavelet transform</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Programming_language_bindings">Programming language bindings</span>
+</h3>
+<p>Since the GSL is written in C, it is straightforward to provide wrappers for other programming languages. Such wrappers currently exist for</p>
+<ul>
+<li>
+<a href="AMPL" title="AMPL">AMPL</a><sup id="cite_ref-8" class="reference"><a href="GNU_Scientific_Library#cite_note-8"><span>[</span>9<span>]</span></a></sup>
+</li>
+<li>
+<a href="C++" title="C++">C++</a><sup id="cite_ref-gslmm_9-0" class="reference"><a href="GNU_Scientific_Library#cite_note-gslmm-9"><span>[</span>10<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ocaml" title="Ocaml" class="mw-redirect">Ocaml</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Octave_(programming_language)" title="Octave (programming language)" class="mw-redirect">Octave</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Perl_Data_Language" title="Perl Data Language">Perl Data Language</a></li>
+<li>
+<a href="Python_(programming_language)" title="Python (programming language)">Python</a><sup id="cite_ref-10" class="reference"><a href="GNU_Scientific_Library#cite_note-10"><span>[</span>11<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+</ul>
+<h3> <span class="mw-headline" id="C.2B.2B_support">C++ support</span>
+</h3>
+<p>The GSL can be used in <a href="C++" title="C++">C++</a> classes, but not using pointers to member functions, because the type of <i>pointer to member function</i> is different from <i>pointer to function</i>.<sup id="cite_ref-11" class="reference"><a href="GNU_Scientific_Library#cite_note-11"><span>[</span>12<span>]</span></a></sup> Instead, pointers to static functions have to be used. Another common work around is using a <a href="http://en.m.wikipedia.org/wiki/Function_object" title="Function object">functor</a>. C++ wrappers for GSL are available,<sup id="cite_ref-gslmm_9-1" class="reference"><a href="GNU_Scientific_Library#cite_note-gslmm-9"><span>[</span>10<span>]</span></a></sup> although many are not regularly maintained.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Netlib" title="Netlib">Netlib</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/Numerical_Recipes" title="Numerical Recipes">Numerical Recipes</a></i></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_analysis_software" title="List of numerical analysis software">List of numerical analysis software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_numerical_libraries" title="List of numerical libraries">List of numerical libraries</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://directory.fsf.org/GNU/">http://directory.fsf.org/GNU/</a></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-1">^</a></b></span> <span class="reference-text">GSL homepage as of oct 2012.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-2">^</a></b></span> <span class="reference-text">GSL design document <a rel="nofollow" class="external free" href="http://www.gnu.org/software/gsl/design/gsl-design.html#SEC1">http://www.gnu.org/software/gsl/design/gsl-design.html#SEC1</a> as of oct 2012.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-3">^</a></b></span> <span class="reference-text">GSL homepage as of oct 2012.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-4">^</a></b></span> <span class="reference-text">GSL homepage as of oct 2012.</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-5">^</a></b></span> <span class="reference-text">GSL design document as of oct 2012.</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-6">^</a></b></span> <span class="reference-text">Mail of Fri, 03 Feb 2012, archived in <a rel="nofollow" class="external free" href="http://sourceware.org/ml/gsl-discuss/2012-q1/msg00003.html">http://sourceware.org/ml/gsl-discuss/2012-q1/msg00003.html</a>.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.gnu.org/software/gsl/manual/html_node/Using-the-library.html">http://www.gnu.org/software/gsl/manual/html_node/Using-the-library.html</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://vitaut.github.com/ampl/solvers/amplgsl/doc/#amplgsl">AMPL bindings for the GNU Scientific Library</a></span>
+</li>
+<li id="cite_note-gslmm-9">
+<span class="mw-cite-backlink">^ <a href="GNU_Scientific_Library#cite_ref-gslmm_9-0"><sup><i><b>a</b></i></sup></a> <a href="GNU_Scientific_Library#cite_ref-gslmm_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://cholm.home.cern.ch/cholm/misc/#gslmm">C++ wrappers for GSL</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://pygsl.sourceforge.net/#pygsl">Python interface for GNU Scientific Library</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="GNU_Scientific_Library#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.parashift.com/c++-faq-lite/pointers-to-members.html#faq-33.1">pointer to member function</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://www.gnu.org/software/gsl/">Official website</a></span></li>
+<li>The <a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/gsl/index.html"><b>gsl</b> package</a> for <a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R (programming language)</a>, an R wrapper for the special functions and quasi random number generators.</li>
+</ul>
+<p><br></p>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:GNU" title="Template:GNU"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:GNU" title="Template talk:GNU"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:GNU&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/GNU_Project" title="GNU Project">GNU Project</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">History</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Manifesto" title="GNU Manifesto">GNU Manifesto</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation" title="Free Software Foundation">Free Software Foundation</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_Europe" title="Free Software Foundation Europe">Europe</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_of_India" title="Free Software Foundation of India">India</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_Software_Foundation_Latin_America" title="Free Software Foundation Latin America">Latin America</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_free_software" title="History of free software" class="mw-redirect">History of free software</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" style="width:0%;padding:0px 0px 0px 2px;" rowspan="9">
+<div><a href="http://en.m.wikipedia.org/w/index.php?title=File:Heckert_GNU_white.svg&amp;page=1" class="image" title="GNU's not UNIX"><img alt="GNU's not UNIX" src="http://upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/64px-Heckert_GNU_white.svg.png" width="64" height="63" srcset="//upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/96px-Heckert_GNU_white.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/2/22/Heckert_GNU_white.svg/128px-Heckert_GNU_white.svg.png 2x"></a></div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Licenses</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Lesser_General_Public_License" title="GNU Lesser General Public License">GNU Lesser General Public License</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Affero_General_Public_License" title="Affero General Public License">Affero General Public License</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">GNU Free Documentation License</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GPL_linking_exception" title="GPL linking exception">GPL linking exception</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Software</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a> (<a href="http://en.m.wikipedia.org/wiki/GNU_variants" title="GNU variants">variants</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Hurd" title="GNU Hurd">Hurd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNOME" title="GNOME">GNOME</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Emacs" title="Emacs">GNU Emacs</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Core_Utilities" title="GNU Core Utilities">Coreutils</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_build_system" title="GNU build system">Build system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNUnet" title="GNUnet">GNUnet</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Gnuzilla" title="Gnuzilla">Gnuzilla</a> (<a href="http://en.m.wikipedia.org/wiki/GNU_IceCat" title="GNU IceCat">IceCat</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gnash" title="Gnash">Gnash</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_GNU_packages" title="List of GNU packages"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Public speakers</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Alexandre_Oliva" title="Alexandre Oliva">Alexandre Oliva</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Benjamin_Mako_Hill" title="Benjamin Mako Hill">Benjamin Mako Hill</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bradley_M._Kuhn" title="Bradley M. Kuhn">Bradley M. Kuhn</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eben_Moglen" title="Eben Moglen">Eben Moglen</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Federico_Heinz" title="Federico Heinz">Federico Heinz</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Georg_C._F._Greve" title="Georg C. F. Greve">Georg C. F. Greve</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lo%C3%AFc_Dachary" title="Loïc Dachary">Loïc Dachary</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ricardo_Galli" title="Ricardo Galli">Ricardo Galli</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Robert_J._Chassell" title="Robert J. Chassell">Robert J. Chassell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/William_John_Sullivan" title="William John Sullivan">John Sullivan</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other topics</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU/Linux_naming_controversy" title="GNU/Linux naming controversy">GNU/Linux naming controversy</a></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/Revolution_OS" title="Revolution OS">Revolution OS</a></i></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BadVista" title="BadVista">BadVista</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Defective_by_Design" title="Defective by Design">Defective by Design</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 9 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/GNU_Scienca_Biblioteko" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fr.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="fr" hreflang="fr">français</a></li><li><a href="http://ja.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/GNU_Scientific_Library" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Th%C6%B0_vi%E1%BB%87n_ph%E1%BA%A7n_m%E1%BB%81m_khoa_h%E1%BB%8Dc_GNU" lang="vi" hreflang="vi">Tiếng Việt</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=GNU_Scientific_Library&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=GNU_Scientific_Library&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=GNU+Scientific+Library&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

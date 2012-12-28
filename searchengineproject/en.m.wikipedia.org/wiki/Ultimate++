@@ -1,0 +1,789 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Ultimate++ - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Ultimate++","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Ultimate%2B%2B" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Ultimate%2B%2B"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Ultimate++</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Notability" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">The topic of this article <b>may not meet Wikipedia's <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Notability_(organizations_and_companies)#Products_and_services" title="Wikipedia:Notability (organizations and companies)">notability guidelines for products and services</a></b>. <span class="hide-when-compact">Please help to establish notability by adding <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable, secondary sources</a> about the topic. If notability cannot be established, the article is likely to be <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Merge" title="Wikipedia:Merge" class="mw-redirect">merged</a>, <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Redirect" title="Wikipedia:Redirect">redirected</a>, or <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Deletion_policy" title="Wikipedia:Deletion policy">deleted</a>.</span> <small><i>(July 2012)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Question_book-new.svg&amp;page=1" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(July 2012)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Ultimate++</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Ultimate++ team <sup id="cite_ref-0" class="reference"><a href="Ultimate++#cite_note-0"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">2004</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">5431 / October 22, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-10-22</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="C++" title="C++">C++</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="Unix" title="Unix">Unix</a>/<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>/<a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a> (<a href="http://en.m.wikipedia.org/wiki/X_Window_System" title="X Window System">X11</a>), <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Widget_toolkit" title="Widget toolkit">Widget toolkit</a>/<a href="Integrated_development_environment" title="Integrated development environment">IDE</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://ultimatepp.org">ultimatepp.org</a></span></td>
+</tr>
+</table>
+<p><b>Ultimate++</b> <sup id="cite_ref-1" class="reference"><a href="Ultimate++#cite_note-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="Ultimate++#cite_note-2"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Ultimate++#cite_note-3"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="Ultimate++#cite_note-4"><span>[</span>5<span>]</span></a></sup> is a <a href="C++" title="C++">C++</a> cross-platform development framework which aims to reduce the code complexity of typical desktop applications by extensively exploiting <a href="C++" title="C++">C++</a> features.</p>
+<h2> <span class="mw-headline" id="Features">Features</span>
+</h2>
+<ul>
+<li>currently supports <a href="http://en.m.wikipedia.org/wiki/Windows" title="Windows" class="mw-redirect">Microsoft Windows</a>, <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>/<a href="http://en.m.wikipedia.org/wiki/X11" title="X11" class="mw-redirect">X11</a> and <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a>/<a href="http://en.m.wikipedia.org/wiki/X11" title="X11" class="mw-redirect">X11</a>.</li>
+<li>includes an <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> and a <a href="http://en.m.wikipedia.org/wiki/GUI" title="GUI" class="mw-redirect">GUI</a> designer.</li>
+<li>uses the free <a href="http://en.m.wikipedia.org/wiki/BSD_license" title="BSD license" class="mw-redirect">BSD license</a>.</li>
+<li>uses heavily <a href="http://en.m.wikipedia.org/wiki/RAII" title="RAII" class="mw-redirect">RAII</a> and <a href="http://en.m.wikipedia.org/wiki/Auto_pointer" title="Auto pointer" class="mw-redirect">auto pointers-like</a> mechanisms to avoid manual memory management and even to limit the use of pointers in the code <sup id="cite_ref-5" class="reference"><a href="Ultimate++#cite_note-5"><span>[</span>6<span>]</span></a></sup>
+</li>
+<li>can emulate<sup id="cite_ref-chameleon_6-0" class="reference"><a href="Ultimate++#cite_note-chameleon-6"><span>[</span>7<span>]</span></a></sup> native <a href="http://en.m.wikipedia.org/wiki/GUI_widget" title="GUI widget">widgets</a> <a href="http://en.m.wikipedia.org/wiki/Look_and_feel" title="Look and feel">look and feel</a>. On <a href="http://en.m.wikipedia.org/wiki/X11" title="X11" class="mw-redirect">X11</a> systems, Ultimate++ supports <a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a> widgets <a href="http://en.m.wikipedia.org/wiki/Look_and_feel" title="Look and feel">look and feel</a>.</li>
+<li>numerous reference examples are provided.</li>
+<li>standard distribution comes with ultimate++ sources included, even the <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> ones.</li>
+<li>uses <span class="new" title="Nonstandard Template Library (page does not exist)">NTL</span><sup id="cite_ref-7" class="reference"><a href="Ultimate++#cite_note-7"><span>[</span>8<span>]</span></a></sup> as template system instead of <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">STL</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Hello_World">Hello World</span>
+</h2>
+<p>The following example creates a U++ application with "Hello world!" button:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+<span class="co2">#include &lt;CtrlLib/CtrlLib.h&gt;</span>
+ 
+<span class="kw2">using</span> <span class="kw2">namespace</span> Upp<span class="sy4">;</span>
+ 
+<span class="kw2">class</span> MyApp <span class="sy4">:</span> <span class="kw2">public</span> TopWindow <span class="br0">{</span>
+        Button button<span class="sy4">;</span>
+ 
+        <span class="kw4">void</span> Click<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+                <span class="kw1">if</span><span class="br0">(</span>PromptYesNo<span class="br0">(</span><span class="st0">"Button was clicked. Do you want to quit?"</span><span class="br0">)</span><span class="br0">)</span>
+                        Break<span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="br0">}</span>
+ 
+        <span class="kw4">typedef</span> MyApp CLASSNAME<span class="sy4">;</span>
+ 
+<span class="kw2">public</span><span class="sy4">:</span>
+        MyApp<span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span>
+                Title<span class="br0">(</span><span class="st0">"Hello world"</span><span class="br0">)</span><span class="sy4">;</span>
+                button.<span class="me1">SetLabel</span><span class="br0">(</span><span class="st0">"Hello world!"</span><span class="br0">)</span><span class="sy4">;</span>
+                button <span class="sy1">&lt;&lt;=</span> THISBACK<span class="br0">(</span>Click<span class="br0">)</span><span class="sy4">;</span>
+                Add<span class="br0">(</span>button.<span class="me1">HSizePos</span><span class="br0">(</span><span class="nu0">100</span>, <span class="nu0">100</span><span class="br0">)</span>.<span class="me1">VSizePos</span><span class="br0">(</span><span class="nu0">100</span>, <span class="nu0">100</span><span class="br0">)</span><span class="br0">)</span><span class="sy4">;</span>
+        <span class="br0">}</span>
+<span class="br0">}</span><span class="sy4">;</span>
+ 
+GUI_APP_MAIN
+<span class="br0">{</span>
+        MyApp<span class="br0">(</span><span class="br0">)</span>.<span class="me1">Run</span><span class="br0">(</span><span class="br0">)</span><span class="sy4">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Criticism">Criticism</span>
+</h2>
+<ul>
+<li>it doesn't use the <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> (STL)</li>
+<li>NTL template system semantics are difficult to understand at first since assignment operator in reality gets overloaded to perform a move <sup id="cite_ref-8" class="reference"><a href="Ultimate++#cite_note-8"><span>[</span>9<span>]</span></a></sup> operation and not a copy. This is done for performance reasons and to overcome some STL limitations, but new <a href="http://en.m.wikipedia.org/wiki/C%2B%2B0x" title="C++0x" class="mw-redirect">C++0x</a> standard should enable even STL users to perform move operations with classes by introducing rvalue-references.</li>
+<li>since many C++ operators are overloaded to perform common tasks such as assigning callbacks, understanding the code can be a difficult at first</li>
+<li>there are no layouts handlers for widgets, although Ultimate++ has a system of logic coordinates to maintain relative coordinates of objects when resizing windows. Having three buttons properly aligned and resized on a row without layout managers still remains difficult, though.</li>
+<li>Ultimate++ <a href="Integrated_development_environment" title="Integrated development environment">IDE</a> support for languages other than <a href="C++" title="C++">C++</a> is very limited. It provides some syntax coloring for <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a> and little else.</li>
+</ul>
+<h2> <span class="mw-headline" id="Software_built_on_Ultimate.2B.2B">Software built on Ultimate++</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/AWS_Truewind" title="AWS Truewind">AWS Truewind</a> openWind - an open-source <a href="http://en.m.wikipedia.org/wiki/Wind_energy_software" title="Wind energy software">wind farm design software</a>
+</li>
+<li>Gastronomie Kontroll System, a <a href="http://en.m.wikipedia.org/wiki/Point_of_sale" title="Point of sale">point of sale</a> system for restaurants</li>
+<li>WebMap, <a href="http://en.m.wikipedia.org/wiki/GIS" title="GIS" class="mw-redirect">GIS</a> application</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Widget_toolkit" title="Widget toolkit">Widget toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_widget_toolkits" title="List of widget toolkits">List of widget toolkits</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Qt_(toolkit)" title="Qt (toolkit)" class="mw-redirect">Qt (toolkit)</a> - toolkit used by <a href="http://en.m.wikipedia.org/wiki/KDE" title="KDE">KDE</a> applications</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a> - The GIMP toolkit, a widget toolkit used by <a href="http://en.m.wikipedia.org/wiki/GNOME" title="GNOME">GNOME</a> applications</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/FLTK" title="FLTK">FLTK</a> - A light, cross platform, non-native widget toolkit</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/FOX_toolkit" title="FOX toolkit" class="mw-redirect">FOX toolkit</a> - A fast, open source, cross-platform widget toolkit</li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://ultimatepp.org/app%24ide%24About%24en-us.html">"Ultimate++ team"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://ultimatepp.org/app%24ide%24About%24en-us.html">http://ultimatepp.org/app$ide$About$en-us.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Ultimate%2B%2B+team&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fultimatepp.org%2Fapp%24ide%24About%24en-us.html&amp;rfr_id=info:sid/en.wikipedia.org:Ultimate%2B%2B"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.programmez.com/magazine_articles.php?id_article=981">http://www.programmez.com/magazine_articles.php?id_article=981</a> Programmez! issue 104</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.programmez.com/magazine_articles.php?id_article=1150">http://www.programmez.com/magazine_articles.php?id_article=1150</a> Programmez! issue 114</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation book">Gouvernelle, Vincent (2009). <i>C++: L'essentiel du code et des commandes</i>. Pearson Education France. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/2-7440-2281-0" title="Special:BookSources/2-7440-2281-0">2-7440-2281-0</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=C%2B%2B%3A+L%27essentiel+du+code+et+des+commandes&amp;rft.aulast=Gouvernelle&amp;rft.aufirst=Vincent&amp;rft.au=Gouvernelle%2C%26%2332%3BVincent&amp;rft.date=2009&amp;rft.pub=Pearson+Education+France&amp;rft.isbn=2-7440-2281-0&amp;rfr_id=info:sid/en.wikipedia.org:Ultimate%2B%2B"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.codeproject.com/KB/library/IntroUpp.aspx">Getting started with Ultimate++</a> CodeProject article</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ultimatepp.org/www%24uppweb%24overview%24en-us.html">U++ Overview</a></span>
+</li>
+<li id="cite_note-chameleon-6">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-chameleon_6-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ultimatepp.org/www%24uppweb%24chss%24en-us.html">Chameleon examples</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://ultimatepp.org/srcdoc%24Core%24Tutorial%24en-us.html">Guide to Ultimate++ containers</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Ultimate++#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ultimatepp.org/srcdoc%24Core%24pick_%24en-us.html">Pick transfer semantics</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://ultimatepp.org">Official website</a></span></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Widget_toolkits" title="Template:Widget toolkits"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Widget_toolkits" title="Template talk:Widget toolkits"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Widget_toolkits&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="http://en.m.wikipedia.org/wiki/List_of_widget_toolkits" title="List of widget toolkits">List</a> of <a href="http://en.m.wikipedia.org/wiki/Widget_toolkit" title="Widget toolkit">widget toolkits</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Low-level</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Macintosh_Toolbox" title="Macintosh Toolbox">Macintosh Toolbox</a>/<a href="http://en.m.wikipedia.org/wiki/Carbon_(API)" title="Carbon (API)">Carbon</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/X_Toolkit_Intrinsics" title="X Toolkit Intrinsics">Intrinsics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intuition_(Amiga)" title="Intuition (Amiga)">Intuition</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_API" title="Windows API">Windows API</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xlib" title="Xlib">Xlib</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">High-level</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">On <a href="http://en.m.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/BOOPSI" title="BOOPSI">BOOPSI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Magic_User_Interface" title="Magic User Interface">Magic User Interface</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ReAction_GUI" title="ReAction GUI">ReAction GUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zune_(widget_toolkit)" title="Zune (widget toolkit)">Zune</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">On <a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a><br>
+and <a href="http://en.m.wikipedia.org/wiki/OS_X" title="OS X">OS X</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cocoa_(API)" title="Cocoa (API)">Cocoa</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MacApp" title="MacApp">MacApp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MacZoop" title="MacZoop">MacZoop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PowerPlant" title="PowerPlant">PowerPlant</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">On <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Foundation_Class_Library" title="Microsoft Foundation Class Library">Microsoft Foundation Class Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object_Windows_Library" title="Object Windows Library">Object Windows Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Silverlight" title="Microsoft Silverlight">Silverlight</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SmartWin%2B%2B" title="SmartWin++">SmartWin++</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Component_Library" title="Visual Component Library">Visual Component Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Forms" title="Windows Forms">Windows Forms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Presentation_Foundation" title="Windows Presentation Foundation">Windows Presentation Foundation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Template_Library" title="Windows Template Library">Windows Template Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Windows_Runtime_XAML_Framework" title="Windows Runtime XAML Framework">WinRT XAML</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">On Unix,<br>
+under <a href="http://en.m.wikipedia.org/wiki/X11" title="X11" class="mw-redirect">X11</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Xaw" title="Xaw">Athena/Xaw</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/InterViews" title="InterViews">InterViews</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LessTif" title="LessTif">LessTif</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Motif_(widget_toolkit)" title="Motif (widget toolkit)">Motif</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">
+<a href="Cross-platform" title="Cross-platform">Cross-platform</a>,<br>
+by language</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Common_Language_Infrastructure" title="Common Language Infrastructure">CLI</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Gtk_Sharp" title="Gtk Sharp">Gtk#</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Moonlight_(runtime)" title="Moonlight (runtime)">Moonlight</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tao_Framework" title="Tao Framework">Tao</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> or <a href="C++" title="C++">C++</a>
+</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CEGUI" title="CEGUI">CEGUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Component_Library_for_Cross_Platform" title="Component Library for Cross Platform">Component Library for Cross Platform</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FLTK" title="FLTK">FLTK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FOX_toolkit" title="FOX toolkit" class="mw-redirect">FOX toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenGL_User_Interface_Library" title="OpenGL User Interface Library">OpenGL User Interface Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GTK%2B" title="GTK+">GTK+</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Juce" title="Juce">Juce</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Qt_(framework)" title="Qt (framework)">Qt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wt_(web_toolkit)" title="Wt (web toolkit)">Wt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tk_(framework)" title="Tk (framework)">Tk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TnFOX" title="TnFOX">TnFOX</a></li>
+<li><strong class="selflink">Ultimate++</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_Component_Framework" title="Visual Component Framework">Visual Component Framework</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxWidgets" title="WxWidgets">wxWidgets</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/YAAF" title="YAAF">YAAF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XForms_(toolkit)" title="XForms (toolkit)">XForms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XVT" title="XVT">XVT</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Objective-C" title="Objective-C">Objective-C</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/GNUstep" title="GNUstep">GNUstep</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Adobe_Flash" title="Adobe Flash">Flash</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Adobe_Flex" title="Adobe Flex" class="mw-redirect">Adobe Flex</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Java_(programming_language)" title="Java (programming language)">Java</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">desktop</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abstract_Window_Toolkit" title="Abstract Window Toolkit">Abstract Window Toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Swing_(Java)" title="Swing (Java)">Swing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Standard_Widget_Toolkit" title="Standard Widget Toolkit">Standard Widget Toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Qt_Jambi" title="Qt Jambi">Qt Jambi</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">web</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Web_Toolkit" title="Google Web Toolkit">Google Web Toolkit</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="JavaScript" title="JavaScript">JavaScript</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dojo_Toolkit" title="Dojo Toolkit">Dojo Toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Echo_(framework)" title="Echo (framework)">Echo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ExtJS" title="ExtJS" class="mw-redirect">ExtJS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Closure_Tools" title="Google Closure Tools">Google Closure</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JQuery_UI" title="JQuery UI">jQuery UI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Qooxdoo" title="Qooxdoo">Qooxdoo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/YUI_Library" title="YUI Library">YUI</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/LispWorks" title="LispWorks">CAPI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Allegro_Common_Lisp" title="Allegro Common Lisp">Common Graphics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Lisp_Interface_Manager" title="Common Lisp Interface Manager">CLIM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tcl/Tk" title="Tcl/Tk" class="mw-redirect">Ltk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Lisp_Interface_Manager" title="Common Lisp Interface Manager">McCLIM</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Component_Library_for_Cross_Platform" title="Component Library for Cross Platform">Component Library for Cross Platform</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/FpGUI" title="FpGUI">fpGUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IP_Pascal" title="IP Pascal">IP Pascal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lazarus_(software)" title="Lazarus (software)" class="mw-redirect">Lazarus</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Perl" title="Perl">Perl</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/WxPerl" title="WxPerl">WxPerl</a></li>
+<li>Perl/Tk</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="PHP" title="PHP">PHP</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/PHP-GTK" title="PHP-GTK">PHP-GTK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PHP-Qt" title="PHP-Qt">PHP-Qt</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Python_(programming_language)" title="Python (programming language)">Python</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Pyjamas_(software)" title="Pyjamas (software)">Pyjamas</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PyQt" title="PyQt">PyQt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PyGTK" title="PyGTK">PyGTK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PySide" title="PySide">PySide</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tkinter" title="Tkinter">Tkinter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/WxPython" title="WxPython">wxPython</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Shoes_(GUI_toolkit)" title="Shoes (GUI toolkit)">Shoes</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QtRuby" title="QtRuby">QtRuby</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/XML" title="XML">XML</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ample_SDK" title="Ample SDK">Ample SDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CougarXML" title="CougarXML">CougarXML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Glade_Interface_Designer" title="Glade Interface Designer">GladeXML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lively_Kernel" title="Lively Kernel">Lively Kernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pyjamas_(software)" title="Pyjamas (software)">Pyjamas</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rialto_Toolkit" title="Rialto Toolkit">Rialto Toolkit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extensible_Application_Markup_Language" title="Extensible Application Markup Language">XAML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XML_User_Interface" title="XML User Interface">XML User Interface</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XUL" title="XUL">XUL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wt_(web_toolkit)" title="Wt (web toolkit)">Wt</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><strong class="selflink">Ultimate++</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 5 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Ultimate%2B%2B" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Ultimate%2B%2B" lang="es" hreflang="es">español</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Ultimate%2B%2B" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Ultimate%2B%2B" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Ultimate%2B%2B" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Ultimate%2B%2B&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Ultimate%2B%2B&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Ultimate%2B%2B&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

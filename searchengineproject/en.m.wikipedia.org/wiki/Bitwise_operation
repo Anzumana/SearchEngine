@@ -1,0 +1,417 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Bitwise operation - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Bitwise operation","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Bitwise_operation" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Bitwise+operation"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Bitwise operation</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Bitwise_operation&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(August 2010)</i></small> </span></td>
+</tr></table>
+<p>A <b>bitwise operation</b> operates on one or more <a href="http://en.m.wikipedia.org/wiki/Bit_pattern" title="Bit pattern" class="mw-redirect">bit patterns</a> or <a href="http://en.m.wikipedia.org/wiki/Binary_numeral_system" title="Binary numeral system">binary numerals</a> at the level of their individual <a href="Bit" title="Bit">bits</a>. It is a fast, primitive action directly supported by the <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">processor</a>, and is used to manipulate values for comparisons and calculations. On simple low-cost processors, typically, bitwise operations are substantially faster than division, several times faster than multiplication, and sometimes significantly faster than addition. While modern processors usually perform addition and multiplication just as fast as bitwise operations due to their longer <a href="http://en.m.wikipedia.org/wiki/Instruction_pipeline" title="Instruction pipeline">instruction pipelines</a> and other <a href="Computer_architecture" title="Computer architecture">architectural</a> design choices, bitwise operations do commonly use less power/performance because of the reduced use of resources.</p>
+<h2> <span class="mw-headline" id="Bitwise_operators">Bitwise operators</span>
+</h2>
+<p>Note that in the explanations below, any indication of a bit's position is counted from the right (least significant) side, advancing left. For example, the binary value 0001 (decimal 1) has zeroes at every position but the first one.</p>
+<h3> <span class="mw-headline" id="NOT">NOT</span>
+</h3>
+<p>The <b>bitwise NOT</b>, or <b>complement</b>, is a <a href="http://en.m.wikipedia.org/wiki/Unary_operation" title="Unary operation">unary operation</a> that performs <a href="http://en.m.wikipedia.org/wiki/Negation" title="Negation">logical negation</a> on each bit, forming the <a href="http://en.m.wikipedia.org/wiki/Ones%27_complement" title="Ones' complement">ones' complement</a> of the given binary value. Bits that are 0 become 1, and those that are 1 become 0. For example:</p>
+<pre>
+NOT 0111  (decimal 7)
+  = 1000  (decimal 8)
+</pre>
+<p>The bitwise complement is equal to the <a href="http://en.m.wikipedia.org/wiki/Two%27s_complement" title="Two's complement">two's complement</a> of the value minus one. If two's complement arithmetic is used, then</p>
+<dl>
+<dd>NOT <i>x</i> = −<i>x</i> − 1.</dd>
+</dl>
+<p>For unsigned integers, the bitwise complement of a number is the "mirror reflection" of the number across the half-way point of the unsigned integer's range. For example, for 8-bit unsigned integers, <code>NOT x = 255 - x</code>, which can be visualized on a graph as a downward line that effectively "flips" an increasing range from 0 to 255, to a decreasing range from 255 to 0. A simple but illustrative example use is to invert a grayscale image where each pixel is stored as an unsigned integer.</p>
+<h3> <span class="mw-headline" id="AND">AND</span>
+</h3>
+<p>A <b>bitwise AND</b> takes two binary representations of equal length and performs the <a href="http://en.m.wikipedia.org/wiki/Logical_conjunction" title="Logical conjunction">logical AND</a> operation on each pair of corresponding bits. The result in each position is 1 if the first bit is 1 <i>and</i> the second bit is 1; otherwise, the result is 0. In this, we perform the multiplication of two bits; i.e., 1 × 0 = 0 and 1 × 1 = 1. For example:</p>
+<pre>
+    0101 (decimal 5)
+AND 0011 (decimal 3)
+  = 0001 (decimal 1)
+</pre>
+<p>This may be used to determine whether a particular bit is <i>set</i> (1) or <i>clear</i> (0). For example, given a bit pattern 0011 (decimal 3), to determine whether the second bit is set we use a bitwise AND with a bit pattern containing 1 only in the second bit:</p>
+<pre>
+    0011 (decimal 3)
+AND 0010 (decimal 2)
+  = 0010 (decimal 2)
+</pre>
+<p>Because the result 0010 is non-zero, we know the second bit in the original pattern was set. This is often called <i>bit masking</i>. (By analogy, the use of <a href="http://en.m.wikipedia.org/wiki/Masking_tape" title="Masking tape">masking tape</a> covers, or <i>masks</i>, portions that should not be altered or portions that are not of interest. In this case, the 0 values mask the bits that are not of interest.)</p>
+<p>If we store the result, this may be used to clear selected bits in a register. Given the example 0110 (decimal 6), the second bit may be cleared by using a bitwise AND with the pattern that has a zero only in the second bit:</p>
+<pre>
+    0110 (decimal 6)
+AND 1101 (decimal 13)
+  = 0100 (decimal 4)
+</pre>
+<h3> <span class="mw-headline" id="OR">OR</span>
+</h3>
+<p>A <b>bitwise OR</b> takes two bit patterns of equal length and performs the <a href="http://en.m.wikipedia.org/wiki/Logical_disjunction" title="Logical disjunction">logical inclusive OR</a> operation on each pair of corresponding bits. The result in each position is 1 if the first bit is 1 <i>or</i> the second bit is 1 <i>or</i> both bits are 1; otherwise, the result is 0. In this, we perform the addition of two bits, i.e. 0 + 1 = 1, however 1 + 1 = 1. For example:</p>
+<pre>
+   0101 (decimal 5)
+OR 0011 (decimal 3)
+ = 0111 (decimal 7)
+</pre>
+<p>The bitwise OR may be used to set selected bits, such as a specific bit (or <a href="http://en.m.wikipedia.org/wiki/Flag_(computing)" title="Flag (computing)">flag</a>) in a register where each bit represents an individual <a href="Boolean_datatype" title="Boolean datatype" class="mw-redirect">Boolean</a> state. For example 0010 (decimal 2) can be considered a set of four flags, where the first, third, and fourth flags are clear (0) and the second flag is set (1). The fourth flag may be set by performing a bitwise OR between this value and a bit pattern containing 1 only in the fourth bit:</p>
+<pre>
+   0010 (decimal 2)
+OR 1000 (decimal 8)
+ = 1010 (decimal 10)
+</pre>
+<p>This technique is an efficient way to store a number of Boolean values using the minimum of memory.</p>
+<h3> <span class="mw-headline" id="XOR">XOR</span>
+</h3>
+<p>A <b>bitwise XOR</b> takes two bit patterns of equal length and performs the <a href="http://en.m.wikipedia.org/wiki/Exclusive_disjunction" title="Exclusive disjunction" class="mw-redirect">logical exclusive OR</a> operation on each pair of corresponding bits. The result in each position is 1 if only the first bit is 1 <i>or</i> only the second bit is 1, but will be 0 if both are 0 or both are 1. In this we perform the comparison of two bits, being 1 if the two bits are different, and 0 if they are the same. For example:</p>
+<pre>
+    0101 (decimal 5)
+XOR 0011 (decimal 3)
+  = 0110 (decimal 6)
+</pre>
+<p>The bitwise XOR may be used to invert selected bits in a register (also called <a href="http://en.m.wikipedia.org/wiki/Toggle" title="Toggle">toggle</a> or flip). Given the bit pattern 0010 (decimal 2) the second and fourth bits may be toggled by a bitwise XOR with a bit pattern containing 1 in the second and fourth positions:</p>
+<pre>
+    0010 (decimal 2)
+XOR 1010 (decimal 10)
+  = 1000 (decimal 8)
+</pre>
+<p>This technique may be used to manipulate bit patterns representing sets of Boolean states.</p>
+<p><a href="Assembly_language" title="Assembly language">Assembly language</a> programmers sometimes use XOR as a short-cut to setting the value of a <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">register</a> to zero. Performing XOR on a value against itself always yields zero, and on many architectures this operation requires fewer clock cycles and/or memory than loading a zero value and saving it to the register.</p>
+<h4> <span class="mw-headline" id="See_also">See also</span>
+</h4>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/XOR_swap_algorithm" title="XOR swap algorithm">XOR swap algorithm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/XOR_linked_list" title="XOR linked list">XOR linked list</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Atomic_inputs">Atomic inputs</span>
+</h3>
+<p>For the examples above often 3 and 5 (binary 0011 and 0101) are used as inputs. They correspond to the unchanged <a href="http://en.m.wikipedia.org/wiki/Statement_(logic)" title="Statement (logic)">statements</a> among the <a href="http://en.m.wikipedia.org/wiki/Binary_operation" title="Binary operation">2-ary</a> <a href="http://en.m.wikipedia.org/wiki/Logical_connective" title="Logical connective">logical connectives</a>. For the <a href="http://en.m.wikipedia.org/wiki/Ternary_operation" title="Ternary operation">3-ary</a> case 15, 51 and 85 would be used. These numbers are found in the number triangle <span class="nowrap"><a href="http://en.m.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences" title="OEIS"><img alt="OEIS" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/11px-OEISicon_light.svg.png" width="11" height="15" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/17px-OEISicon_light.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d8/OEISicon_light.svg/22px-OEISicon_light.svg.png 2x"></a> <a href="http://oeis.org/A211344" class="extiw" title="oeis:A211344">A211344</a></span>:</p>
+<pre>
+           1                                  01
+        3     5                       0011          0101
+    15    51     85          00001111      00110011      01010101
+</pre>
+<h2> <span class="mw-headline" id="Bit_shifts">Bit shifts</span>
+</h2>
+<p>The <b>bit shifts</b> are sometimes considered bitwise operations, because they operate on the binary representation of an integer instead of its numerical value; however, the bit shifts do not operate on pairs of corresponding bits, and therefore cannot properly be called <i>bit-wise</i>. In these operations the digits are moved, or <i>shifted</i>, to the left or right. <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">Registers</a> in a computer processor have a fixed width, so some bits will be "shifted out" of the register at one end, while the same number of bits are "shifted in" from the other end; the differences between bit shift operators lie in how they determine the values of the shifted-in bits.</p>
+<h3> <span class="mw-headline" id="Arithmetic_shift">Arithmetic shift</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Arithmetic_shift" title="Arithmetic shift">Arithmetic shift</a>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_left_logically.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/150px-Rotate_left_logically.svg.png" width="150" height="100" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/225px-Rotate_left_logically.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/300px-Rotate_left_logically.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Left arithmetic shift</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_right_arithmetically.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right_arithmetically.svg/150px-Rotate_right_arithmetically.svg.png" width="150" height="120" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right_arithmetically.svg/225px-Rotate_right_arithmetically.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right_arithmetically.svg/300px-Rotate_right_arithmetically.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Right arithmetic shift</div>
+</div>
+</div>
+<p>In an <i>arithmetic shift</i>, the bits that are shifted out of either end are discarded. In a left arithmetic shift, zeros are shifted in on the right; in a right arithmetic shift, the <a href="http://en.m.wikipedia.org/wiki/Sign_bit" title="Sign bit">sign bit</a> is shifted in on the left, thus preserving the sign of the operand. Further on, while shifting right, the empty spaces will be filled up with a copy of the most significant bit (MSB). Meaning by shifting the second arithmetic shift register (ASR#2), with a MSB=1, you fill up with 1.</p>
+<p>This example uses an 8-bit register:</p>
+<pre>
+   00010111 (decimal +23) LEFT-SHIFT
+=  00101110 (decimal +46)
+</pre>
+<pre>
+   10010111 (decimal −105) RIGHT-SHIFT
+=  11001011 (decimal −53)
+</pre>
+<p>In the first case, the leftmost digit was shifted past the end of the register, and a new 0 was shifted into the rightmost position. In the second case, the rightmost 1 was shifted out (perhaps into the carry flag), and a new 1 was copied into the leftmost position, preserving the sign of the number. Multiple shifts are sometimes shortened to a single shift by some number of digits. For example:</p>
+<pre>
+   00010111 (decimal +23) LEFT-SHIFT-BY-TWO
+=  01011100 (decimal +92)
+</pre>
+<p>A left arithmetic shift by <i>n</i> is equivalent to multiplying by 2<sup><i>n</i></sup> (provided the value does not <a href="http://en.m.wikipedia.org/wiki/Arithmetic_overflow" title="Arithmetic overflow">overflow</a>), while a right arithmetic shift by <i>n</i> of a <a href="http://en.m.wikipedia.org/wiki/Two%27s_complement" title="Two's complement">two's complement</a> value is equivalent to dividing by 2<sup><i>n</i></sup> and rounding toward <a href="http://en.m.wikipedia.org/wiki/Negative_infinity" title="Negative infinity" class="mw-redirect">negative infinity</a>. If the binary number is treated as <a href="http://en.m.wikipedia.org/wiki/Ones%27_complement" title="Ones' complement">ones' complement</a>, then the same right-shift operation results in division by 2<sup><i>n</i></sup> and rounding toward zero.</p>
+<h3> <span class="mw-headline" id="Logical_shift">Logical shift</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Logical_shift" title="Logical shift">Logical shift</a>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" style="float: right;"><tr>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_left_logically.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/150px-Rotate_left_logically.svg.png" width="150" height="100" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/225px-Rotate_left_logically.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Rotate_left_logically.svg/300px-Rotate_left_logically.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Left logical shift</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_right_logically.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rotate_right_logically.svg/150px-Rotate_right_logically.svg.png" width="150" height="100" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rotate_right_logically.svg/225px-Rotate_right_logically.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/64/Rotate_right_logically.svg/300px-Rotate_right_logically.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Right logical shift</div>
+</div>
+</div>
+</td>
+</tr></table>
+<p>In a <i>logical shift</i>, zeros are shifted in to replace the discarded bits. Therefore the logical and arithmetic left-shifts are exactly the same.</p>
+<p>However as the logical right-shift inserts value 0 bits into the most significant bit, instead of copying the sign bit, it is ideal for unsigned binary numbers, while the arithmetic right-shift is ideal for signed <a href="http://en.m.wikipedia.org/wiki/Two%27s_complement" title="Two's complement">two's complement</a> binary numbers.<br style="clear: both;"></p>
+<h3> <span class="mw-headline" id="Rotate_no_carry">Rotate no carry</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Circular_shift" title="Circular shift">Circular shift</a>
+</div>
+<table border="0" cellpadding="0" cellspacing="0" style="float: right;"><tr>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_left.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rotate_left.svg/150px-Rotate_left.svg.png" width="150" height="120" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rotate_left.svg/225px-Rotate_left.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rotate_left.svg/300px-Rotate_left.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Left circular shift or rotate</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_right.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right.svg/150px-Rotate_right.svg.png" width="150" height="120" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right.svg/225px-Rotate_right.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/37/Rotate_right.svg/300px-Rotate_right.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Right circular shift or rotate</div>
+</div>
+</div>
+</td>
+</tr></table>
+<p>Another form of shift is the <i>circular shift</i> or <i>bit rotation</i>. In this operation, the bits are "rotated" as if the left and right ends of the register were joined. The value that is shifted in on the right during a left-shift is whatever value was shifted out on the left, and vice versa. This operation is useful if it is necessary to retain all the existing bits, and is frequently used in digital <a href="http://en.m.wikipedia.org/wiki/Cryptography" title="Cryptography">cryptography</a>.<br style="clear: both;"></p>
+<h3> <span class="mw-headline" id="Rotate_through_carry">Rotate through carry</span>
+</h3>
+<table border="0" cellpadding="0" cellspacing="0" style="float: right;"><tr>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_left_through_carry.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rotate_left_through_carry.svg/150px-Rotate_left_through_carry.svg.png" width="150" height="105" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rotate_left_through_carry.svg/225px-Rotate_left_through_carry.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/71/Rotate_left_through_carry.svg/300px-Rotate_left_through_carry.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Left rotate through carry</div>
+</div>
+</div>
+</td>
+<td>
+<div class="thumb tright">
+<div class="thumbinner" style="width:152px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Rotate_right_through_carry.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rotate_right_through_carry.svg/150px-Rotate_right_through_carry.svg.png" width="150" height="105" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rotate_right_through_carry.svg/225px-Rotate_right_through_carry.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/27/Rotate_right_through_carry.svg/300px-Rotate_right_through_carry.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Right rotate through carry</div>
+</div>
+</div>
+</td>
+</tr></table>
+<p><i>Rotate through carry</i> is similar to the <i>rotate no carry</i> operation, but the two ends of the register are separated by the <a href="http://en.m.wikipedia.org/wiki/Carry_flag" title="Carry flag">carry flag</a>. The bit that is shifted in (on either end) is the old value of the carry flag, and the bit that is shifted out (on the other end) becomes the new value of the carry flag.</p>
+<p>A single <i>rotate through carry</i> can simulate a logical or arithmetic shift of one position by setting up the carry flag beforehand. For example, if the carry flag contains 0, then <code>x RIGHT-ROTATE-THROUGH-CARRY-BY-ONE</code> is a logical right-shift, and if the carry flag contains a copy of the sign bit, then <code>x RIGHT-ROTATE-THROUGH-CARRY-BY-ONE</code> is an arithmetic right-shift. For this reason, some microcontrollers such as <a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PICs</a> just have <i>rotate</i> and <i>rotate through carry</i>, and don't bother with arithmetic or logical shift instructions.</p>
+<p>Rotate through carry is especially useful when performing shifts on numbers larger than the processor's native <a href="http://en.m.wikipedia.org/wiki/Word_size" title="Word size" class="mw-redirect">word size</a>, because if a large number is stored in two registers, the bit that is shifted off the end of the first register must come in at the other end of the second. With rotate-through-carry, that bit is "saved" in the carry flag during the first shift, ready to shift in during the second shift without any extra preparation.<br style="clear: both;"></p>
+<h3> <span class="mw-headline" id="Shifts_in_C.2C_C.2B.2B.2C_C.23">Shifts in C, C++, C#</span>
+</h3>
+<p>In C-inspired languages, the left and right shift operators are "<code>&lt;&lt;</code>" and "<code>&gt;&gt;</code>", respectively. The number of places to shift is given as the second argument to the shift operators. For example,</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+x <span class="sy0">=</span> y <span class="sy0">&lt;&lt;</span> <span class="nu0">2</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>assigns <i>x</i> the result of shifting <i>y</i> to the left by two bits.</p>
+<p>In C and C++, computations with the left operand as an unsigned integer use logical shifts. In C#, the right-shift is an arithmetic shift when the first operand is an int or long. If the first operand is of type uint or ulong, the right-shift is a logical shift.<sup id="cite_ref-1" class="reference"><a href="Bitwise_operation#cite_note-1"><span>[</span>1<span>]</span></a></sup> In C, the results with the left operand as a signed integer are:<sup id="cite_ref-2" class="reference"><a href="Bitwise_operation#cite_note-2"><span>[</span>2<span>]</span></a></sup> In general case:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ x <span class="sy0">=</span> a <span class="sy0">&lt;&lt;</span> b then x <span class="sy0">=</span> a<span class="sy0">*</span><span class="nu0">2</span><span class="sy0">^</span>b<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ x <span class="sy0">=</span> a <span class="sy0">&gt;&gt;</span> b then x <span class="sy0">=</span> a<span class="sy0">/</span><span class="nu0">2</span><span class="sy0">^</span>b<span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<ul>
+<li>for "<code>&lt;&lt;</code>": y×2<sup>right</sup> (undefined if an overflow occurs);</li>
+<li>for "<code>&gt;&gt;</code>": implementation-defined (most often the result of the arithmetic shift: y/2<sup>right</sup>).</li>
+</ul>
+<p>There are also compiler-specific intrinsics implementing <a href="http://en.m.wikipedia.org/wiki/Circular_shift" title="Circular shift">circular shifts</a>, like <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/t5e2f3sc(VS.80).aspx">_rotl8, _rotl16</a>, <a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/yy0728bz(VS.80).aspx">_rotr8, _rotr16</a> in Microsoft <a href="Visual_C++" title="Visual C++">Visual C++</a>.</p>
+<h3> <span class="mw-headline" id="Shifts_in_Java">Shifts in Java</span>
+</h3>
+<p>In <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, all integer types are signed, and the "<code>&lt;&lt;</code>" and "<code>&gt;&gt;</code>" operators perform arithmetic shifts. Java adds the operator "<code>&gt;&gt;&gt;</code>" to perform logical right shifts, but because the logical and arithmetic left-shift operations are identical, there is no "<code>&lt;&lt;&lt;</code>" operator in Java. These general rules are affected in several ways by the default <span class="new" title="Type promotion (page does not exist)">type promotions</span>; for example, because the eight-bit type <code>byte</code> is promoted to <code>int</code> in shift-expressions,<sup id="cite_ref-3" class="reference"><a href="Bitwise_operation#cite_note-3"><span>[</span>3<span>]</span></a></sup> the expression "<code>b &gt;&gt;&gt; 2</code>" effectively performs an arithmetic shift of the byte value <code>b</code> instead of a logical shift. Such effects can be mitigated by judicious use of <a href="Type_conversion" title="Type conversion">casts</a> or <a href="http://en.m.wikipedia.org/wiki/Bitmask" title="Bitmask" class="mw-redirect">bitmasks</a>; for example, "<code>(b &amp; 0xFF) &gt;&gt;&gt; 2</code>" effectively results in a logical shift.</p>
+<h3> <span class="mw-headline" id="Shifts_in_Pascal">Shifts in Pascal</span>
+</h3>
+<p>In Pascal, as well as in all its dialects (such as <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> and <a href="http://en.m.wikipedia.org/wiki/GNU_Pascal" title="GNU Pascal">Standard Pascal</a>), the left and right shift operators are "<code>shl</code>" and "<code>shr</code>", respectively. The number of places to shift is given as the second argument. For example, the following assigns <i>x</i> the result of shifting <i>y</i> to the left by two bits:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+x <span class="sy1">:</span><span class="sy3">=</span> y <span class="kw1">shl</span> <span class="nu0">2</span><span class="sy1">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Applications">Applications</span>
+</h2>
+<p>Bitwise operations are necessary particularly in lower-level programming such as writing device drivers, low-level graphics, communications protocol packet assembly, and decoding.</p>
+<p>Although machines often have efficient built-in instructions for performing arithmetic and logical operations, in fact, all these operations can be performed by combining the bitwise operators and zero-testing in various ways.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2012">citation needed</span></a></i>]</sup></p>
+<p>For example, here is a <a href="http://en.m.wikipedia.org/wiki/Pseudocode" title="Pseudocode">pseudocode</a> example showing how to multiply two arbitrary integers <code>a</code> and <code>b</code> (<code>a</code> greater than <code>b</code>) using only bitshifts and addition:</p>
+<pre>
+<code>c := 0
+<b>while</b> b ≠ 0
+    <b>if</b> (b <b>and</b> 1) ≠ 0
+        c := c + a
+    left shift a by 1
+    right shift b by 1
+ 
+<b>return</b> c
+</code>
+</pre>
+<p>This implementation of <a href="http://en.m.wikipedia.org/wiki/Ancient_Egyptian_multiplication" title="Ancient Egyptian multiplication">ancient Egyptian multiplication</a>, like most <a href="http://en.m.wikipedia.org/wiki/Multiplication_algorithm" title="Multiplication algorithm">multiplication algorithms</a>, involves bitshifts. In turn, even addition can be written using just bitshifts and zero-testing<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from May 2012">citation needed</span></a></i>]</sup>:</p>
+<pre>
+<code>c := b <b>and</b> a
+<b>while</b> a ≠ 0
+    c := b <b>and</b> a
+    b := b <b>xor</b> a
+    left shift c by 1
+    a := c
+
+<b>return</b> b
+</code>
+</pre>
+<h2> <span class="mw-headline" id="See_also_2">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bit_manipulation" title="Bit manipulation">Bit manipulation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bitwise_operations_in_C" title="Bitwise operations in C">Bitwise operations in C</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Find_first_set" title="Find first set">Find first set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bitboard" title="Bitboard">Bitboard</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Boolean_algebra_(logic)" title="Boolean algebra (logic)">Boolean algebra (logic)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Double_dabble" title="Double dabble">Double dabble</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logic_gate" title="Logic gate">Logic gate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logical_operator" title="Logical operator" class="mw-redirect">Logical operator</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Karnaugh_map" title="Karnaugh map">Karnaugh map</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Bitwise_operation#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://msdn.microsoft.com/en-us/library/xt18et0d%28v=VS.80%29.aspx">"</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Bitwise_operation#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://std.dkuug.dk/JTC1/SC22/WG14/www/docs/n843.htm">JTC1/SC22/WG14 N843 "C programming language"</a>, section 6.5.7#5</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Bitwise_operation#cite_ref-3">^</a></b></span> <span class="reference-text">"The Java Language Specification, Second Edition", sections <a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/second_edition/html/expressions.doc.html#5121">15.19</a> (shift operators) and <a rel="nofollow" class="external text" href="http://java.sun.com/docs/books/jls/second_edition/html/conversions.doc.html#170952">5.6.1</a> (unary numeric promotion)</span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.miniwebtool.com/bitwise-calculator/">Online Bitwise Calculator</a> supports Bitwise AND, OR and XOR</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.uiowa.edu/~jones/bcd/divide.html">Division using bitshifts</a></li>
+<li>"<a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/BitwiseOperationsModN/">Bitwise Operations Mod N</a>" by Enrique Zeleny, <a href="http://en.m.wikipedia.org/wiki/Wolfram_Demonstrations_Project" title="Wolfram Demonstrations Project">Wolfram Demonstrations Project</a>.</li>
+<li>"<a rel="nofollow" class="external text" href="http://demonstrations.wolfram.com/PlotsOfCompositionsOfBitwiseOperations/">Plots Of Compositions Of Bitwise Operations</a>" by Enrique Zeleny, The Wolfram Demonstrations Project.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 16 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Operaci%C3%B3_bit_a_bit" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Bitov%C3%BD_oper%C3%A1tor" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Bitweiser_Operator" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Operador_a_nivel_de_bits" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/La%C5%ADbita_logiko" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Op%C3%A9ration_bit_%C3%A0_bit" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B9%84%ED%8A%B8_%EC%97%B0%EC%82%B0" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Bitu_nob%C4%ABde" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%93%E3%83%83%E3%83%88%E6%BC%94%E7%AE%97" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Operator_bitowy" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/L%C3%B3gica_bin%C3%A1ria" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%91%D0%B8%D1%82%D0%BE%D0%B2%D1%8B%D0%B5_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Bitwise_operation" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%91%D1%96%D1%82%D0%BE%D0%B2%D0%B8%D0%B9_%D0%B7%D1%81%D1%83%D0%B2" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Ph%C3%A9p_to%C3%A1n_thao_t%C3%A1c_bit" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E4%BD%8D%E6%93%8D%E4%BD%9C" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Bitwise_operation&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Bitwise_operation&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Bitwise+operation&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

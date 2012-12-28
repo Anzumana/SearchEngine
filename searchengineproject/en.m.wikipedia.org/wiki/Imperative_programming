@@ -1,0 +1,287 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Imperative programming - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Imperative programming","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Imperative_programming" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Imperative+programming"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Imperative programming</h1>			<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Imperative_programming&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(October 2011)</i></small> </span></td>
+</tr></table><table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0"><tr><th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th>
+</tr><tr><td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <strong class="selflink">Imperative</strong>)
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul><li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul></li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li><strong class="selflink">Imperative</strong> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul><li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="Structured_programming" title="Structured programming">Structured</a>)
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li><a href="Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul><li><a href="Modular_programming" title="Modular programming">Modular</a> (contrast: Monolithic)</li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul><li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul></td>
+</tr><tr><td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul></div>
+</td>
+</tr></table><p>In <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>, <b>imperative programming</b> is a <a href="Programming_paradigm" title="Programming paradigm">programming paradigm</a> that describes computation in terms of <a href="http://en.m.wikipedia.org/wiki/Statement_(computer_science)" title="Statement (computer science)">statements</a> that change a program <a href="http://en.m.wikipedia.org/wiki/State_(computer_science)" title="State (computer science)">state</a>. In much the same way that <a href="http://en.m.wikipedia.org/wiki/Imperative_mood" title="Imperative mood">imperative mood</a> in <a href="http://en.m.wikipedia.org/wiki/Natural_language" title="Natural language">natural languages</a> expresses commands to take action, imperative programs define sequences of commands for the computer to perform.</p>
+<p>The term is used in opposition to <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">declarative programming</a>, which expresses <i>what</i> the program should accomplish without prescribing <i>how</i> to do it in terms of sequences of actions to be taken. <a href="Functional_programming" title="Functional programming">Functional</a> and <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic programming</a> are examples of a more declarative approach.</p>
+<h2> <span class="mw-headline" id="Imperative.2C_procedural.2C_and_declarative_programming">Imperative, procedural, and declarative programming</span></h2>
+<p><a href="Procedural_programming" title="Procedural programming">Procedural programming</a> is imperative programming in which the program is built from one or more procedures (also known as <a href="Subroutine" title="Subroutine">subroutines</a> or functions). The terms are often used as synonyms, but the use of procedures has a dramatic effect on how imperative programs appear and how they are constructed. Heavily procedural programming, in which <a href="http://en.m.wikipedia.org/wiki/State_(computer_science)" title="State (computer science)">state changes</a> are localized to procedures or restricted to explicit arguments and returns from procedures, is known as <a href="Structured_programming" title="Structured programming">structured programming</a>. From the 1960s onwards, structured programming and <a href="Modular_programming" title="Modular programming">modular programming</a> in general, have been promoted as techniques to improve the <a href="http://en.m.wikipedia.org/wiki/Maintainability" title="Maintainability">maintainability</a> and overall quality of imperative programs. <a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a> extends this approach.<sup id="cite_ref-0" class="reference"><a href="Imperative_programming#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<p>Procedural programming could be considered as a step towards declarative programming. A programmer can often tell, simply by looking at the names, arguments and return types of procedures (and related comments), what a particular procedure is supposed to do - without necessarily looking at the detail of how the procedure achieves its result. At the same time, a complete program is still imperative since it 'fixes' the statements to be executed and their order of execution to a large extent.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative programming</a> is a non-imperative style of programming in which programs describe the desired results of the program, without explicitly listing command or steps that need to be carried out to achieve the results. <a href="Functional_programming" title="Functional programming">Functional</a> and <a href="http://en.m.wikipedia.org/wiki/Logical_programming" title="Logical programming" class="mw-redirect">logical programming</a> languages are characterized by a declarative programming style.</p>
+<p>In a <a href="http://en.m.wikipedia.org/wiki/Pure_functional_language" title="Pure functional language" class="mw-redirect">pure functional language</a>, such as <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, all functions are <a href="http://en.m.wikipedia.org/wiki/Pure_function" title="Pure function">without side effects</a>, and state changes are only represented as functions that transform the state. Although pure functional languages are non-imperative, they often provide a facility for describing the effect of a function as a series of steps. Other functional languages, such as <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> and <a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>, support a mixture of procedural and functional programming.</p>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logical programming languages</a>, programs consist of logical statements, and the program executes by searching for proofs of the statements. As in functional programming languages, some logical programming languages such as <a href="http://en.m.wikipedia.org/wiki/Prolog" title="Prolog">Prolog</a>, and <a href="http://en.m.wikipedia.org/wiki/Database_query_language" title="Database query language" class="mw-redirect">database query languages</a> such as <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a>, while declarative in principle, also support a procedural style of programming.</p>
+<p>Many imperative programming languages (such as <a href="Fortran" title="Fortran">Fortran</a>, <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> and <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>) are <a href="http://en.m.wikipedia.org/wiki/Abstraction" title="Abstraction">abstractions</a> of <a href="Assembly_language" title="Assembly language">assembly language</a>.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span></h2>
+<p>The hardware implementation of almost all computers is imperative;<sup id="cite_ref-1" class="reference"><a href="Imperative_programming#cite_note-1"><span>[</span>note 1<span>]</span></a></sup> nearly all computer hardware is designed to execute <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a>, which is native to the computer, written in the imperative style. From this low-level perspective, the program state is defined by the contents of memory, and the statements are instructions in the native machine language of the computer. Higher-level imperative languages use <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variables</a> and more complex statements, but still follow the same paradigm. <a href="http://en.m.wikipedia.org/wiki/Recipe" title="Recipe">Recipes</a> and process <a href="http://en.m.wikipedia.org/wiki/Checklist" title="Checklist">checklists</a>, while not <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer programs</a>, are also familiar concepts that are similar in style to imperative programming; each step is an instruction, and the physical world holds the state. Since the basic ideas of imperative programming are both conceptually familiar and directly embodied in the hardware, most computer languages are in the imperative style.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Destructive_assignment" title="Destructive assignment" class="mw-redirect">Assignment statements</a>, in imperative paradigm, perform an operation on information located in memory and store the results in memory for later use. High-level imperative languages, in addition, permit the <a href="http://en.m.wikipedia.org/wiki/Evaluation_(disambiguation)" title="Evaluation (disambiguation)">evaluation</a> of complex <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expressions</a>, which may consist of a combination of <a href="Arithmetic#Arithmetic_operations" title="Arithmetic">arithmetic operations</a> and <a href="http://en.m.wikipedia.org/wiki/Function_(mathematics)" title="Function (mathematics)">function</a> evaluations, and the assignment of the resulting value to memory. Looping statements (such as in <a href="While_loop" title="While loop">while loops</a>, <a href="Do_while_loop" title="Do while loop">do while loops</a> and <a href="For_loop" title="For loop">for loops</a>) allow a sequence of statements to be executed multiple times. Loops can either execute the statements they contain a predefined number of times, or they can execute them repeatedly until some condition changes. <a href="Conditional_(programming)" title="Conditional (programming)">Conditional</a> <a href="http://en.m.wikipedia.org/wiki/Branch_(computer_science)" title="Branch (computer science)">branching</a> statements allow a sequence of statements to be executed only if some condition is met. Otherwise, the statements are skipped and the execution sequence continues from the statement following them. Unconditional branching statements allow the execution sequence to be transferred to some other part of the program. These include the jump (called "<a href="Goto" title="Goto">goto</a>" in many languages), <a href="Switch_statement" title="Switch statement">switch</a> and the subprogram, or <a href="Subroutine" title="Subroutine">procedure</a>, call (which usually returns to the next statement after the call).</p>
+<h2> <span class="mw-headline" id="Block_structure">Block structure</span></h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">block (programming)</a></div>
+<p>Early in the development of <a href="http://en.m.wikipedia.org/wiki/High_level_language" title="High level language" class="mw-redirect">high level languages</a>, the introduction of the block enabled the construction of programs in which a group of statements and declarations could be treated as if they were a single statement. This, alongside the introduction of <a href="Subroutine" title="Subroutine">subroutines</a>, enabled complex structures to be expressed by hierarchical decomposition into simpler procedural structures.</p>
+<h2> <span class="mw-headline" id="History">History</span></h2>
+<p>The earliest imperative languages were the machine languages of the original computers. In these languages, instructions were very simple, which made hardware implementation easier, but hindered the creation of complex programs. <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a>, developed by <a href="http://en.m.wikipedia.org/wiki/John_Backus" title="John Backus">John Backus</a> at <a href="http://en.m.wikipedia.org/wiki/International_Business_Machines" title="International Business Machines" class="mw-redirect">IBM</a> starting in 1954, was the first major programming language to remove the obstacles presented by machine code in the creation of complex programs. FORTRAN was a <a href="http://en.m.wikipedia.org/wiki/Compiled_language" title="Compiled language">compiled language</a> that allowed named variables, complex expressions, subprograms, and many other features now common in imperative languages. The next two decades saw the development of a number of other major high-level imperative programming languages. In the late 1950s and 1960s, <a href="ALGOL" title="ALGOL">ALGOL</a> was developed in order to allow mathematical algorithms to be more easily expressed, and even served as the <a href="Operating_system" title="Operating system">operating system</a>'s target language for some computers. <a href="http://en.m.wikipedia.org/wiki/MUMPS" title="MUMPS">MUMPS</a> (1966) carried the Imperative paradigm to a logical extreme, by not having any statements at all, relying purely on commands, even to the extent of having the IF and ELSE commands be independent of each other, and only connected by an intrinsic variable named $TEST. <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> (1960) and <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> (1964) were both attempts to make programming syntax look more like English. In the 1970s, <a href="http://en.m.wikipedia.org/wiki/Pascal_programming_language" title="Pascal programming language" class="mw-redirect">Pascal</a> was developed by <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a>, and <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> was created by <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a> while he was working at <a href="http://en.m.wikipedia.org/wiki/Bell_Laboratories" title="Bell Laboratories" class="mw-redirect">Bell Laboratories</a>. Wirth went on to design <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a>, and <a href="http://en.m.wikipedia.org/wiki/Oberon_programming_language" title="Oberon programming language" class="mw-redirect">Oberon</a>. For the needs of the <a href="http://en.m.wikipedia.org/wiki/United_States_Department_of_Defense" title="United States Department of Defense">United States Department of Defense</a>, <a href="http://en.m.wikipedia.org/wiki/Jean_Ichbiah" title="Jean Ichbiah">Jean Ichbiah</a> and a team at <a href="http://en.m.wikipedia.org/wiki/Honeywell" title="Honeywell">Honeywell</a> began designing <a href="http://en.m.wikipedia.org/wiki/Ada_programming_language" title="Ada programming language" class="mw-redirect">Ada</a> in 1978, after a 4-year project to define the requirements for the language. The specification was first published in 1983, with revisions in 1995 and 2005/6.</p>
+<p>The 1980s saw a rapid growth in interest in <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a>. These languages were imperative in style, but added features to support <a href="http://en.m.wikipedia.org/wiki/Object_(computing)" title="Object (computing)" class="mw-redirect">objects</a>. The last two decades of the 20th century saw the development of a considerable number of such programming languages. <a href="http://en.m.wikipedia.org/wiki/Smalltalk-80" title="Smalltalk-80" class="mw-redirect">Smalltalk-80</a>, originally conceived by <a href="http://en.m.wikipedia.org/wiki/Alan_Kay" title="Alan Kay">Alan Kay</a> in 1969, was released in 1980 by the <a href="http://en.m.wikipedia.org/wiki/Xerox_Palo_Alto_Research_Center" title="Xerox Palo Alto Research Center" class="mw-redirect">Xerox Palo Alto Research Center</a>. Drawing from concepts in another object-oriented language—<a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a> (which is considered to be the World's first <a href="http://en.m.wikipedia.org/wiki/Object-oriented_programming_language" title="Object-oriented programming language" class="mw-redirect">object-oriented programming language</a>, developed in the 1960s)—<a href="Bjarne_Stroustrup" title="Bjarne Stroustrup">Bjarne Stroustrup</a> designed <a href="C++" title="C++">C++</a>, an object-oriented language based on <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>. <a href="C++" title="C++">C++</a> was first implemented in 1985. In the late 1980s and 1990s, the notable imperative languages drawing on object-oriented concepts were <a href="Perl" title="Perl">Perl</a>, released by <a href="http://en.m.wikipedia.org/wiki/Larry_Wall" title="Larry Wall">Larry Wall</a> in 1987; <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, released by <a href="http://en.m.wikipedia.org/wiki/Guido_van_Rossum" title="Guido van Rossum">Guido van Rossum</a> in 1990; <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a> and <a href="Visual_C++" title="Visual C++">Visual C++</a> (which included <a href="http://en.m.wikipedia.org/wiki/MFC" title="MFC">MFC</a> 2.0), released by <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> in 1991 and 1993 respectively; <a href="PHP" title="PHP">PHP</a>, released by <a href="http://en.m.wikipedia.org/wiki/Rasmus_Lerdorf" title="Rasmus Lerdorf">Rasmus Lerdorf</a> in 1994; <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, first released by <a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> in 1994 and <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, released in 1995 by Yukihiro “matz” Matsumoto. <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a>'s <a href="http://en.m.wikipedia.org/wiki/.NET_platform" title=".NET platform" class="mw-redirect">.NET</a> (2002) is at its core imperative as are its primary target languages, <a href="http://en.m.wikipedia.org/wiki/VB.NET" title="VB.NET" class="mw-redirect">VB.NET</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Category:Procedural_programming_languages" title="Category:Procedural programming languages">Category:Procedural programming languages</a> lists additional imperative programming languages.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr><td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Internet_map_1024.jpg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Internet_map_1024.jpg/28px-Internet_map_1024.jpg" width="28" height="28"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Computer_Science" title="Portal:Computer Science" class="mw-redirect">Computer Science  portal</a></td>
+</tr></table></div>
+<ul><li><a href="Functional_programming" title="Functional programming">Functional programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_paradigms" title="Comparison of programming paradigms">Comparison of programming paradigms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative programming</a> (contrast)</li>
+<li><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a></li>
+</ul><h2> <span class="mw-headline" id="Notes">Notes</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Imperative_programming#cite_ref-1">^</a></b></span> <span class="reference-text"><a href="http://en.m.wikipedia.org/wiki/Reconfigurable_computing" title="Reconfigurable computing">Reconfigurable computing</a> is a notable exception</span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="Imperative_programming#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web">Michael Stevens (2011). <a rel="nofollow" class="external text" href="http://cs.anu.edu.au/student/comp3610/lectures/Paradigms.pdf">"Programming paradigms and an overview of C - COMP3610 - Principles of Programming Languages: Object-Oriented programming"</a>. Australian National University. p. 5. Archived from <a rel="nofollow" class="external text" href="http://cs.anu.edu.au/">the original</a> on 2011<span class="printonly">. <a rel="nofollow" class="external free" href="http://cs.anu.edu.au/student/comp3610/lectures/Paradigms.pdf">http://cs.anu.edu.au/student/comp3610/lectures/Paradigms.pdf</a></span><span class="reference-accessdate">. Retrieved 2012-05-22</span>. "Object oriented programming extends the concept of modularity by introducing objects"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Programming+paradigms+and+an+overview+of+C+-+COMP3610+-+Principles+of+Programming+Languages%3A+Object-Oriented+programming&amp;rft.atitle=&amp;rft.aulast=Michael+Stevens&amp;rft.au=Michael+Stevens&amp;rft.date=2011&amp;rft.pages=p.%26nbsp%3B5&amp;rft.pub=Australian+National+University&amp;rft_id=http%3A%2F%2Fcs.anu.edu.au%2Fstudent%2Fcomp3610%2Flectures%2FParadigms.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Imperative_programming"><span style="display: none;"> </span></span></span></li>
+</ol></div>
+<ul><li>Pratt, Terrence W. and Marvin V. Zelkowitz. <i>Programming Languages: Design and Implementation</i>, 3rd ed. Englewood Cliffs, N.J.: Prentice Hall, 1996.</li>
+<li>Sebesta, Robert W. <i>Concepts of Programming Languages</i>, 3rd ed. Reading, Mass.: Addison-Wesley Publishing Company, 1996.</li>
+</ul><p><i>Originally based on the article 'Imperative programming' by Stan Seibert, from <a href="http://en.m.wikipedia.org/wiki/Nupedia" title="Nupedia">Nupedia</a>, licensed under the <a href="http://en.m.wikipedia.org/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">GNU Free Documentation License</a>.</i></p>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Types_of_programming_languages" title="Template:Types of programming languages"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Types_of_programming_languages" title="Template talk:Types of programming languages"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Types_of_programming_languages&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="Programming_paradigm" title="Programming paradigm">Types of programming languages</a></div>
+</th>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Compiled_language" title="Compiled language">Compiled</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-structured_language" title="Data-structured language">Data-structured</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Esoteric_programming_language" title="Esoteric programming language">Esoteric</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extensible_programming" title="Extensible programming">Extensible</a></li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">High-level</a></li>
+<li><strong class="selflink">Imperative</strong></li>
+<li><a href="Interpreted_language" title="Interpreted language">Interpreted</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language">Low-level</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">Machine</a></li>
+<li><a href="Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">Multi-paradigm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object-based_language" title="Object-based language">Object-based</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Off-side_rule" title="Off-side rule">Off-side rule</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipeline</a></li>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rule-based_system" title="Rule-based system">Rule-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scripting_language" title="Scripting language">Scripting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Synchronous_programming_language" title="Synchronous programming language">Synchronous</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Very_high-level_programming_language" title="Very high-level programming language">Very high-level</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_programming_language" title="Visual programming language">Visual</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr></table>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 29 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%A3%D9%85%D8%B1%D9%8A%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://ast.m.wikipedia.org/wiki/Llinguaxe_de_programaci%C3%B3n_imperativu" lang="ast" hreflang="ast">asturianu</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/%D0%86%D0%BC%D0%BF%D1%8D%D1%80%D0%B0%D1%82%D1%8B%D1%9E%D0%BD%D0%B0%D0%B5_%D0%BF%D1%80%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%B0%D0%B2%D0%B0%D0%BD%D1%8C%D0%BD%D0%B5" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Imperativno_programiranje" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Imperativn%C3%AD_programov%C3%A1n%C3%AD" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Imperative_Programmierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Imperatiivne_programmeerimine" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CF%83%CF%84%CE%B1%CE%BA%CF%84%CE%B9%CE%BA%CF%8C%CF%82_%CF%80%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CE%BC%CF%8C%CF%82" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Programaci%C3%B3n_imperativa" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D8%AF%D8%B3%D8%AA%D9%88%D8%B1%DB%8C" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Programmation_imp%C3%A9rative" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Programaci%C3%B3n_imperativa" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%AA%85%EB%A0%B9%ED%98%95_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Pengaturcaraan_imperatif" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Imperatief_programmeren" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%91%BD%E4%BB%A4%E5%9E%8B%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Programowanie_imperatywne" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_imperativa" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Programare_imperativ%C4%83" lang="ro" hreflang="ro">română</a></li><li><a href="http://rue.m.wikipedia.org/wiki/%D0%86%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D1%96%D0%B2%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D2%91%D1%80%D0%B0%D0%BC%D0%BE%D0%B2%D0%B0%D0%BD%D1%8F" lang="rue" hreflang="rue">русиньскый</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%98%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Imperativno_programiranje" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Imperatiivinen_ohjelmointi" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Imperativ_programmering" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%8F%E0%AE%B5%E0%AE%B2%E0%AF%8D_%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%86%D0%BC%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Imperative_programming&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Imperative_programming&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Imperative+programming&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

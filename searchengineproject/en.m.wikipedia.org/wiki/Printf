@@ -1,0 +1,594 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>printf format string - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Printf format string","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Printf_format_string" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Printf+format+string"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">printf format string</h1>			<div class="thumb tright">
+<div class="thumbinner" style="width:352px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Printf.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Printf.svg/350px-Printf.svg.png" width="350" height="83" class="thumbimage"></a>
+<div class="thumbcaption">
+
+An example of the printf function.</div>
+</div>
+</div>
+<p><b>Printf format string</b> (of which "printf" stands for "<b>print f</b>ormatted") refers to a control parameter used by a class of <a href="http://en.m.wikipedia.org/wiki/Function_(computer_science)" title="Function (computer science)" class="mw-redirect">functions</a> typically associated with some types of <a href="http://en.m.wikipedia.org/wiki/Programming_languages" title="Programming languages" class="mw-redirect">programming languages</a>. The <b>format string</b> specifies a method for rendering an arbitrary number of varied data type parameter(s) into a string. This string is then by default printed on the <a href="Standard_output" title="Standard output" class="mw-redirect">standard output</a> stream, but variants exist that perform other tasks with the result. Characters in the format string are usually copied literally into the function's output, with the other parameters being rendered into the resulting text at points marked by <b>format specifiers</b>, which are typically introduced by a <a href="http://en.m.wikipedia.org/wiki/Percent_sign" title="Percent sign"><b>%</b> character</a>.</p>
+<h2> <span class="mw-headline" id="Timeline">Timeline</span></h2>
+<p>Many <a href="http://en.m.wikipedia.org/wiki/Programming_languages" title="Programming languages" class="mw-redirect">programming languages</a> implement a <b><code>printf</code></b> <a href="Subroutine" title="Subroutine">function</a> to output a formatted <a href="http://en.m.wikipedia.org/wiki/String_literal" title="String literal">string</a>. It originated from the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>, where it has a <a href="Function_prototype" title="Function prototype">prototype</a> similar to the following:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> <span class="kw3">printf</span><span class="br0">(</span><span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>format<span class="sy0">,</span> ...<span class="br0">)</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<p>The <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">string constant</a> <code>format</code> provides a description of the output, with <a href="http://en.m.wikipedia.org/wiki/Free_variables_and_bound_variables" title="Free variables and bound variables">placeholders</a> marked by "%" <a href="http://en.m.wikipedia.org/wiki/Escape_character" title="Escape character">escape characters</a>, to specify both the relative location and the type of output that the function should produce. The return value yields the number of printed characters.</p>
+<h3> <span class="mw-headline" id="FORTRAN_66.2C_COBOL">FORTRAN 66, COBOL</span></h3>
+<p>Fortran's <a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">variadic</a> <code>PRINT</code> statement referenced a non-executable <code>FORMAT</code> statement.</p>
+<pre>
+<code>     PRINT 601, 123456, 1000.0, 3.1415, 250
+ 601 FORMAT (8H RED NUM,I7,4H EXP,E8.1,5H REAL,F5.2,4H VAL,I4)
+</code>
+</pre>
+<p>will print the following (on a new line, because of the leading blank character)<sup id="cite_ref-0" class="reference"><a href="Printf#cite_note-0"><span>[</span>1<span>]</span></a></sup>:</p>
+<pre>
+<code>RED NUM 123456 EXP 1.0E 03 REAL 3.14 VAL 250
+</code>
+</pre>
+<p>COBOL provided formatting via hierarchical data structure specification:</p>
+<pre>
+<code>01 out-rec.
+  02 out-name   picture x(20).
+  02 out-amount picture  $9,999.99.</code>
+</pre>
+<p>...</p>
+<pre>
+<code>   move me to out-name.
+   move amount to out-amount.
+   write out-rec.</code>
+</pre>
+<p>Some early versions of FORTRAN also allowed to read the input characters into FORMAT <i>nn</i>H data field, replacing they current content for the future input.</p>
+<h3> <span class="mw-headline" id="1960s:_BCPL.2C_ALGOL_68.2C_Multics_PL.2FI">1960s: BCPL, ALGOL 68, Multics PL/I</span></h3>
+<p>C's <a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">variadic</a> <code>printf</code> has its origins in <a href="BCPL" title="BCPL">BCPL</a>'s <code>writef</code> function.</p>
+<p><a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a> Draft and Final report had the functions <code>inf</code> and <code>outf</code>, subsequently these were revised out of the original language and replaced with the now more familiar <code>readf/getf</code> and <code>printf/putf</code>.</p>
+<pre>
+printf(($"Color "g", number1 "6d,", number2 "4zd,", hex "16r2d,", float "-d.2d,", unsigned value"-3d"."l$,
+            "red", 123456, 89, BIN 255, 3.14, 250));
+</pre>
+<p><a href="Multics" title="Multics">Multics</a> has a standard function called <code>ioa_</code> with a wide variety of control codes. It was based on a machine-language facility from Multics's BOS (Bootstrap Operating System).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ call ioa_ <span class="br0">(</span><span class="st0">"Hello, ^a"</span><span class="sy0">,</span> <span class="st0">"World!"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<h3> <span class="mw-headline" id="1970s:_C.2C_Lisp">1970s: C, Lisp</span></h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Color %s, number1 %d, number2 %05d, hex %#x, float %5.2f, unsigned value %u.<span class="es1">\n</span>"</span><span class="sy0">,</span>
+        <span class="st0">"red"</span><span class="sy0">,</span> <span class="nu0">123456</span><span class="sy0">,</span> <span class="nu0">89</span><span class="sy0">,</span> <span class="nu0">255</span><span class="sy0">,</span> <span class="nu16">3.14159</span><span class="sy0">,</span> <span class="nu0">250</span><span class="br0">)</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<p>will print the following line (including new-line character, \n):</p>
+<pre>
+Color red, number1 123456, number2 00089, hex 0xff, float  3.14, unsigned value 250.
+</pre>
+<p>The <code>printf</code> function returns the number of characters printed, or a negative value if an output error occurs.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> has the extremely powerful <code><a href="http://en.m.wikipedia.org/wiki/Format_(Common_Lisp)" title="Format (Common Lisp)">format</a></code> function.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+ <span class="br0">(</span>format t <span class="st0">"~{~a~^, ~}!"</span> '<span class="br0">(</span>hello world<span class="br0">)</span><span class="br0">)</span>
+ <span class="co1">;; ⇒ "HELLO, WORLD!"</span>
+</pre></div>
+</div>
+<p>prints <code>"Hello, World!"</code> on the standard output stream. If the first argument is <code>nil</code>, format returns the string to its caller. The first argument can also be any output stream. <code>format</code> was introduced into <a href="http://en.m.wikipedia.org/wiki/ZetaLisp" title="ZetaLisp" class="mw-redirect">ZetaLisp</a> at <a href="http://en.m.wikipedia.org/wiki/Massachusetts_Institute_of_Technology" title="Massachusetts Institute of Technology">MIT</a> in 1978, based on the <a href="Multics" title="Multics">Multics</a> <code>ioa_</code>, and was later adopted into the <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> standard. <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> incorporated Common Lisp-style format in SRFi-28 and SRFi-54<sup id="cite_ref-srfis_1-0" class="reference"><a href="Printf#cite_note-srfis-1"><span>[</span>2<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="1980s:_Perl.2C_Shell">1980s: Perl, Shell</span></h3>
+<p><a href="Perl" title="Perl">Perl</a> also has a <code>printf</code> function. <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> has a <a href="http://en.m.wikipedia.org/wiki/Format_(Common_Lisp)" title="Format (Common Lisp)">format</a> function which acts according to the same principles as <code>printf</code>, but uses different characters for output conversion. The <a href="http://en.m.wikipedia.org/wiki/GLib" title="GLib">GLib</a> library contains <code>g_print</code>, an implementation of <code>printf</code>.</p>
+<p>Some <a href="Unix" title="Unix">Unix</a> systems have a <code>printf</code> program for use in <a href="http://en.m.wikipedia.org/wiki/Shell_script" title="Shell script">shell scripts</a>. This can be used instead of <a href="http://en.m.wikipedia.org/wiki/Echo_(command)" title="Echo (command)">echo</a> in situations where the latter is not portable. For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw3">echo</span> <span class="re5">-n</span> <span class="re5">-e</span> <span class="st0">"<span class="es2">$FOO</span><span class="es1">\t</span><span class="es2">$BAR</span>"</span>
+</pre></div>
+</div>
+<p>may be rewritten portably as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="kw3">printf</span> <span class="st0">"%s<span class="es1">\t</span>%s"</span> <span class="st0">"<span class="es2">$FOO</span>"</span> <span class="st0">"<span class="es2">$BAR</span>"</span>
+</pre></div>
+</div>
+<h3> <span class="mw-headline" id="1990s:_PHP.2C_Python">1990s: PHP, Python</span></h3>
+<p>1991: <a href="Python_(programming_language)" title="Python (programming language)">Python</a>'s <code>%</code> operator harkens to <code>printf</code>'s syntax when interpolating the contents of a tuple. This operator can, for example, be used with the <code>print</code> function:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">print</span><span class="br0">(</span><span class="st0">"%s<span class="es0">\t</span>%s"</span> % <span class="br0">(</span>foo<span class="sy0">,</span>bar<span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>Version 2.6 of Python included the <code>str.format()</code> method, which is preferred to the obsolete <code>%</code> which may go away in future versions of Python:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">print</span><span class="br0">(</span><span class="st0">"If you multiply five and six you get {0}."</span>.<span class="me1">format</span><span class="br0">(</span><span class="nu0">5</span>*<span class="nu0">6</span><span class="br0">)</span><span class="br0">)</span>
+</pre></div>
+</div>
+<p>1995: <a href="PHP" title="PHP">PHP</a> also has the <code>printf</code> function, with the same specifications and usage as that in C/C++. <a href="MATLAB" title="MATLAB">MATLAB</a> does not have <code>printf</code>, but does have its two extensions <code>sprintf</code> and <code>fprintf</code> which use the same formatting strings. <code>sprintf</code> returns a formatted string instead of producing a visual output.</p>
+<h3> <span class="mw-headline" id="2000s:_Java">2000s: Java</span></h3>
+<p>2004: <a href="Java_(programming_language)" title="Java (programming language)">Java</a> supported <code>printf</code> from version 1.5 onwards as a member of the <code>PrintStream</code><sup id="cite_ref-2" class="reference"><a href="Printf#cite_note-2"><span>[</span>3<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">class</a>, giving it the functionality of both the <code>printf</code> and fprintf functions. At the same time <code>sprintf</code>-like functionality was added to the <code>String</code> class by adding the <code>format(String, Object... args)</code> method.<sup id="cite_ref-3" class="reference"><a href="Printf#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java5 source-java5">
+<pre class="de1">
+<span class="co1">// Write "Hello, World!" to standard output (like printf)</span>
+<span class="kw21">System</span>.<span class="me1">out</span>.<span class="me1">printf</span><span class="br0">(</span><span class="st0">"%s, %s"</span>, <span class="st0">"Hello"</span>, <span class="st0">"World!"</span><span class="br0">)</span><span class="sy0">;</span> 
+<span class="co1">// create a String object with the value "Hello, World!" (like sprintf)</span>
+<span class="kw21">String</span> myString = <span class="kw21">String</span>.<span class="me1">format</span><span class="br0">(</span><span class="st0">"%s, %s"</span>, <span class="st0">"Hello"</span>, <span class="st0">"World!"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<p>Unlike most other implementations, Java's implementation of <code>printf</code> throws an <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a> on encountering a malformed format string.</p>
+<h2> <span class="mw-headline" id="Format_placeholders">Format placeholders</span></h2>
+<p>Formatting takes place via placeholders within the format string. For example, if a program wanted to print out a person's age, it could present the output by prefixing it with "Your age is ". To denote that we want the integer for the age to be shown immediately after that message, we may use the format string:</p>
+<dl><dd><code>"Your age is %d."</code></dd>
+</dl><p>The syntax for a format placeholder is</p>
+<dl><dd>%[<i>parameter</i>][<i>flags</i>][<i>width</i>][.<i>precision</i>][<i>length</i>]<i>type</i></dd>
+</dl><p><b>Parameter</b> can be omitted or can be:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Character</th>
+<th>Description</th>
+</tr><tr><td><code><i>n</i>$</code></td>
+<td><i>n</i> is the number of the parameter to display using this format specifier, allowing the parameters provided to be output multiple times, using varying format specifiers or in different orders. This is a <a href="POSIX" title="POSIX">POSIX</a> extension and not in <a href="C99" title="C99">C99</a>. Example: <code>printf("%2$d %2$#x; %1$d %1$#x",16,17)</code> produces
+<p>"<code>17 0x11; 16 0x10</code>"</p>
+</td>
+</tr></table></dd>
+</dl><p><b>Flags</b> can be zero or more (in any order) of:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Character</th>
+<th>Description</th>
+</tr><tr><td><code>+</code></td>
+<td>always denote the sign '<code>+</code>' or '<code>-</code>' of a number (the default is to omit the sign for positive numbers). Only applicable to numeric types.</td>
+</tr><tr><td><i>space</i></td>
+<td>prefixes non-negative signed numbers with a space</td>
+</tr><tr><td><code>-</code></td>
+<td>left-align the output of this placeholder (the default is to right-align the output).</td>
+</tr><tr><td><code>#</code></td>
+<td>Alternate form. For '<code>g</code>' and '<code>G</code>', trailing zeros are not removed. For '<code>f</code>', '<code>F</code>', '<code>e</code>', '<code>E</code>', '<code>g</code>', '<code>G</code>', the output always contains a decimal point. For '<code>o</code>', '<code>x</code>', and '<code>X</code>', a <code>0</code>, <code>0x</code>, and <code>0X</code>, respectively, is prepended to non-zero numbers.</td>
+</tr><tr><td><code>0</code></td>
+<td>use <code>0</code> instead of spaces to pad a field when the <i>width</i> option is specified. For example, <code>printf("%2d", 3)</code> results in "<code> 3</code>", while <code>printf("%02d", 3)</code> results in "<code>03</code>".</td>
+</tr></table></dd>
+</dl><p><b>Width</b> specifies a <i>minimum</i> number of characters to output, and is typically used to pad fixed-width fields in tabulated output, where the fields would otherwise be smaller, although it does not cause truncation of oversized fields. A leading zero in the width value is interpreted as the zero-padding flag mentioned above, and a negative value is treated as the positive value in conjunction with the left-alignment "<code>-</code>" flag also mentioned above.</p>
+<p><b>Precision</b> usually specifies a <i>maximum</i> limit on the output, depending on the particular formatting type. For floating point numeric types, it specifies the number of digits to the right of the decimal point that the output should be rounded. For the string type, it limits the number of characters that should be output, after which the string is truncated.</p>
+<p><b>Length</b> can be omitted or be any of:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Character</th>
+<th>Description</th>
+</tr><tr><td><code>hh</code></td>
+<td>For integer types, causes <code>printf</code> to expect an <code>int</code>-sized integer argument which was promoted from a <code>char</code>.</td>
+</tr><tr><td><code>h</code></td>
+<td>For integer types, causes <code>printf</code> to expect an <code>int</code>-sized integer argument which was promoted from a <code>short</code>.</td>
+</tr><tr><td><code>l</code></td>
+<td>For integer types, causes <code>printf</code> to expect a <code>long</code>-sized integer argument.</td>
+</tr><tr><td><code>ll</code></td>
+<td>For integer types, causes <code>printf</code> to expect a <code>long long</code>-sized integer argument.</td>
+</tr><tr><td><code>L</code></td>
+<td>For floating point types, causes <code>printf</code> to expect a <code>long double</code> argument.</td>
+</tr><tr><td><code>z</code></td>
+<td>For integer types, causes <code>printf</code> to expect a <code>size_t</code>-sized integer argument.</td>
+</tr><tr><td><code>j</code></td>
+<td>For integer types, causes <code>printf</code> to expect a <code>intmax_t</code>-sized integer argument.</td>
+</tr><tr><td><code>t</code></td>
+<td>For integer types, causes <code>printf</code> to expect a <code>ptrdiff_t</code>-sized integer argument.</td>
+</tr></table></dd>
+</dl><p>Additionally, several platform-specific length options came to exist prior to widespread use of the ISO C99 extensions:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Characters</th>
+<th>Description</th>
+</tr><tr><td><code>I</code></td>
+<td>For signed integer types, causes <code>printf</code> to expect <code>ptrdiff_t</code>-sized integer argument; for unsigned integer types, causes <code>printf</code> to expect <code>size_t</code>-sized integer argument. <i>Commonly found in Win32/Win64 platforms.</i></td>
+</tr><tr><td><code>I32</code></td>
+<td>For integer types, causes <code>printf</code> to expect a 32-bit (double word) integer argument. <i>Commonly found in Win32/Win64 platforms.</i></td>
+</tr><tr><td><code>I64</code></td>
+<td>For integer types, causes <code>printf</code> to expect a 64-bit (quad word) integer argument. <i>Commonly found in Win32/Win64 platforms.</i></td>
+</tr><tr><td><code>q</code></td>
+<td>For integer types, causes <code>printf</code> to expect a 64-bit (quad word) integer argument. <i>Commonly found in BSD platforms.</i></td>
+</tr></table></dd>
+</dl><p>ISO C99 includes the <code><a href="http://en.m.wikipedia.org/wiki/Inttypes.h" title="Inttypes.h" class="mw-redirect">inttypes.h</a></code> header file that includes a number of macros for use in platform-independent <code>printf</code> coding. Example macros include:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Macro</th>
+<th>Description</th>
+</tr><tr><td><code>PRId32</code></td>
+<td>Typically equivalent to <code>I32d</code> (<i>Win32/Win64</i>) or <code>d</code></td>
+</tr><tr><td><code>PRId64</code></td>
+<td>Typically equivalent to <code>I64d</code> (<i>Win32/Win64</i>), <code>lld</code> (<i>32-bit platforms</i>) or <code>ld</code> (<i>64-bit platforms</i>)</td>
+</tr><tr><td><code>PRIi32</code></td>
+<td>Typically equivalent to <code>I32i</code> (<i>Win32/Win64</i>) or <code>i</code></td>
+</tr><tr><td><code>PRIi64</code></td>
+<td>Typically equivalent to <code>I64i</code> (<i>Win32/Win64</i>), <code>lli</code> (<i>32-bit platforms</i>) or <code>li</code> (<i>64-bit platforms</i>)</td>
+</tr><tr><td><code>PRIu32</code></td>
+<td>Typically equivalent to <code>I32u</code> (<i>Win32/Win64</i>) or <code>u</code></td>
+</tr><tr><td><code>PRIu64</code></td>
+<td>Typically equivalent to <code>I64u</code> (<i>Win32/Win64</i>), <code>llu</code> (<i>32-bit platforms</i>) or <code>lu</code> (<i>64-bit platforms</i>)</td>
+</tr><tr><td><code>PRIx64</code></td>
+<td>Typically equivalent to <code>I64x</code> (<i>Win32/Win64</i>), <code>llx</code> (<i>32-bit platforms</i>) or <code>lx</code> (<i>64-bit platforms</i>)</td>
+</tr></table></dd>
+</dl><p><b>Type</b> can be any of:</p>
+<dl><dd>
+<table class="wikitable"><tr><th>Character</th>
+<th>Description</th>
+</tr><tr><td><code>d</code>, <code>i</code></td>
+<td><code>int</code> as a signed <a href="http://en.m.wikipedia.org/wiki/Decimal" title="Decimal">decimal</a> number. '<code>%d</code>' and '<code>%i</code>' are synonymous for output, but are different when used with <code><a href="http://en.m.wikipedia.org/wiki/Scanf" title="Scanf" class="mw-redirect">scanf</a>()</code> for input (using <code>%i</code> will interpret a number as hexadecimal if it's preceded by <code>0x</code>, and octal if it's preceded by 0.)</td>
+</tr><tr><td><code>u</code></td>
+<td>Print decimal <code>unsigned int</code>.</td>
+</tr><tr><td><code>f</code>, <code>F</code></td>
+<td><code>double</code> in normal (<a href="Fixed-point_arithmetic" title="Fixed-point arithmetic">fixed-point</a>) notation. '<code>f</code>' and '<code>F</code>' only differs in how the strings for an infinite number or NaN are printed ('<code>inf</code>', '<code>infinity</code>' and '<code>nan</code>' for '<code>f</code>', '<code>INF</code>', '<code>INFINITY</code>' and '<code>NAN</code>' for '<code>F</code>').</td>
+</tr><tr><td><code>e</code>, <code>E</code></td>
+<td><code>double</code> value in standard form ([<code>-</code>]d.ddd <code>e</code>[<code>+</code>/<code>-</code>]ddd). An <code>E</code> conversion uses the letter <code>E</code> (rather than <code>e</code>) to introduce the exponent. The exponent always contains at least two digits; if the value is zero, the exponent is <code>00</code>. In Windows, the exponent contains three digits by default, e.g. <code>1.5e002</code>, but this can be altered by Microsoft-specific <code>_set_output_format</code> function.</td>
+</tr><tr><td><code>g</code>, <code>G</code></td>
+<td><code>double</code> in either normal or exponential notation, whichever is more appropriate for its magnitude. '<code>g</code>' uses lower-case letters, '<code>G</code>' uses upper-case letters. This type differs slightly from fixed-point notation in that insignificant zeroes to the right of the decimal point are not included. Also, the decimal point is not included on whole numbers.</td>
+</tr><tr><td><code>x</code>, <code>X</code></td>
+<td><code>unsigned int</code> as a <a href="http://en.m.wikipedia.org/wiki/Hexadecimal" title="Hexadecimal">hexadecimal</a> number. '<code>x</code>' uses lower-case letters and '<code>X</code>' uses upper-case.</td>
+</tr><tr><td><code>o</code></td>
+<td><code>unsigned int</code> in octal.</td>
+</tr><tr><td><code>s</code></td>
+<td><a href="Null-terminated_string" title="Null-terminated string">null-terminated string</a>.</td>
+</tr><tr><td><code>c</code></td>
+<td><code>char</code> (character).</td>
+</tr><tr><td><code>p</code></td>
+<td><code>void *</code> (pointer to void) in an implementation-defined format.</td>
+</tr><tr><td><code>n</code></td>
+<td>Print nothing, but write number of characters successfully written so far into an integer pointer parameter.</td>
+</tr><tr><td><code>%</code></td>
+<td>a literal '<code>%</code>' character (this type doesn't accept any flags, width, precision or length).</td>
+</tr></table></dd>
+</dl><p>The width and precision formatting parameters may be omitted, or they can be a fixed number embedded in the format string, or passed as another function argument when indicated by an asterisk "<code>*</code>" in the format string. For example <code>printf("%*d", 5, 10)</code> will result in "<code>   10</code>" being printed, with a total width of 5 characters, and <code>printf("%.*s", 3, "abcdef")</code> will result in "<code>abc</code>" being printed.</p>
+<p>If the <a href="http://en.m.wikipedia.org/wiki/Syntax" title="Syntax">syntax</a> of a conversion specification is invalid, behavior is undefined, and can cause program termination. If there are too few <a href="http://en.m.wikipedia.org/wiki/Function_argument" title="Function argument" class="mw-redirect">function arguments</a> provided to supply values for all the conversion specifications in the template string, or if the arguments are not of the correct types, the results are also undefined. Excess arguments are ignored. In a number of cases, the undefined behavior has led to "<a href="http://en.m.wikipedia.org/wiki/Format_string_attack" title="Format string attack" class="mw-redirect">Format string attack</a>" security <a href="http://en.m.wikipedia.org/wiki/Exploit_(computer_science)" title="Exploit (computer science)" class="mw-redirect">vulnerabilities</a>.</p>
+<p>Some compilers, like <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">the GNU Compiler Collection</a>, will statically check the format strings of printf-like functions and warn about problems (when using the flags <code>-Wall</code> or <code>-Wformat</code>). GCC will also warn about user-defined printf-style functions if the non-standard "<code>format</code>" <code>__attribute__</code> is applied to the function.</p>
+<h2> <span class="mw-headline" id="Risks_of_using_field_width_versus_explicit_delimiters_in_tabular_output">Risks of using field width versus explicit delimiters in tabular output</span></h2>
+<p>Using only field widths to provide for tabulation, as with a format like "<code>%8d%8d%8d</code>" for three integers in three 8-character columns, will not guarantee that field separation will be retained if large numbers occur in the data. Loss of field separation can easily lead to corrupt output. In systems which encourage the use of programs as building blocks in scripts, such corrupt data can often be forwarded into and corrupt further processing, regardless of whether the original programmer expected the output would only be read by human eyes. Such problems can be eliminated by including explicit delimiters, even spaces, in all tabular output formats. Simply changing the dangerous example from before to "<code> %7d %7d %7d</code>" addresses this, formatting identically until numbers become larger, but then explicitly preventing them from becoming merged on output due to the explicitly included spaces. Similar strategies apply to string data.</p>
+<h2> <span class="mw-headline" id="Custom_format_placeholders">Custom format placeholders</span></h2>
+<p>There are a few implementations of <code>printf</code>-like functions that allow extensions to the <a href="http://en.m.wikipedia.org/wiki/Escape_character" title="Escape character">escape-character</a>-based <a href="http://en.m.wikipedia.org/wiki/Domain-specific_programming_language" title="Domain-specific programming language" class="mw-redirect">mini-language</a>, thus allowing the programmer to have a specific formatting function for non-builtin types. One of the most well-known is the (now deprecated) <a href="http://en.m.wikipedia.org/wiki/Glibc" title="Glibc" class="mw-redirect">glibc's</a> <code><a rel="nofollow" class="external text" href="http://www.gnu.org/software/libc/manual/html_node/Customizing-Printf.html">register_printf_function()</a></code>. However, it is rarely used due to the fact that it conflicts with static format string checking. Another is <a rel="nofollow" class="external text" href="http://www.and.org/vstr/#cust-fmt">Vstr custom formatters</a>, which allows adding multi-character format names, and can work with static format checkers.</p>
+<p>Some applications (like the <a href="http://en.m.wikipedia.org/wiki/Apache_HTTP_Server" title="Apache HTTP Server">Apache HTTP Server</a>) include their own <code>printf</code>-like function, and embed extensions into it. However these all tend to have the same problems that <code>register_printf_function()</code> has.</p>
+<p>Most non-C languages that have a <code>printf</code>-like function work around the lack of this feature by just using the "<code>%s</code>" format and converting the object to a string representation. <a href="C++" title="C++">C++</a> offers a notable exception, in that it has a <code>printf</code> function inherited from its C history, but also has a completely different mechanism that is preferred.</p>
+<h2> <span class="mw-headline" id="Programming_languages_with_printf">Programming languages with printf</span></h2>
+<ul><li><a href="AMPL" title="AMPL">AMPL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Awk" title="Awk" class="mw-redirect">awk</a> (via sprintf)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bourne_shell" title="Bourne shell">Bourne shell</a> (sh) and derivatives such as <a href="http://en.m.wikipedia.org/wiki/Korn_shell" title="Korn shell">Korn shell</a> (ksh), <a href="http://en.m.wikipedia.org/wiki/Bourne_again_shell" title="Bourne again shell" class="mw-redirect">Bourne again shell</a> (bash), or <a href="http://en.m.wikipedia.org/wiki/Z_shell" title="Z shell">Z shell</a> (zsh)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>
+<ul><li><a href="C++" title="C++">C++</a> (also provides <a href="http://en.m.wikipedia.org/wiki/Operator_overloading" title="Operator overloading">overloaded</a> shift operators and manipulators as an alternative for formatted output - see <a href="http://en.m.wikipedia.org/wiki/Iostream" title="Iostream" class="mw-redirect">iostream</a> and <a href="http://en.m.wikipedia.org/wiki/Iomanip" title="Iomanip" class="mw-redirect">iomanip</a>)</li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Linear_Programming_Kit" title="GNU Linear Programming Kit">GNU MathProg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU_Octave" title="GNU Octave">GNU Octave</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Haskell_programming_language" title="Haskell programming language" class="mw-redirect">Haskell</a></li>
+<li><a href="Java_(programming_language)" title="Java (programming language)">Java</a> (since version 1.5)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Maple_(software)" title="Maple (software)">Maple</a></li>
+<li><a href="Mathematica" title="Mathematica">Mathematica</a></li>
+<li><a href="MATLAB" title="MATLAB">MATLAB</a></li>
+<li><span class="new" title="Mythryl (page does not exist)">Mythryl</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a></li>
+<li><a href="PHP" title="PHP">PHP</a></li>
+<li><a href="Perl" title="Perl">Perl</a></li>
+<li><a href="Python_(programming_language)" title="Python (programming language)">Python</a> (using the % operator)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/R_(programming_language)" title="R (programming language)">R</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a> (via <code>print()</code> and <code>FileStream.printf()</code>)</li>
+</ul><h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Format_(Common_Lisp)" title="Format (Common Lisp)">Format (Common Lisp)</a></li>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Format_string_attack" title="Format string attack" class="mw-redirect">Format string attack</a></li>
+<li><tt><a href="http://en.m.wikipedia.org/wiki/Iostream" title="Iostream" class="mw-redirect">iostream</a></tt></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML (programming language)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Printf_debugging" title="Printf debugging" class="mw-redirect">printf debugging</a></li>
+<li><tt><a href="http://en.m.wikipedia.org/wiki/Printk" title="Printk" class="mw-redirect">printk</a></tt> (print kernel messages)</li>
+<li><tt><a href="http://en.m.wikipedia.org/wiki/Scanf" title="Scanf" class="mw-redirect">scanf</a></tt></li>
+</ul><h2> <span class="mw-headline" id="Notes">Notes</span></h2>
+<ol class="references"><li id="cite_note-0"><span class="mw-cite-backlink"><b><a href="Printf#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.felgall.com/asa.htm">"ASA Print Control Characters"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.felgall.com/asa.htm">http://www.felgall.com/asa.htm</a></span><span class="reference-accessdate">. Retrieved 12 February 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ASA+Print+Control+Characters&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.felgall.com%2Fasa.htm&amp;rfr_id=info:sid/en.wikipedia.org:Printf_format_string"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-srfis-1"><span class="mw-cite-backlink"><b><a href="Printf#cite_ref-srfis_1-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://srfi.schemers.org/final-srfis.html">Final SRFis</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Printf#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5.0/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)">"PrintStream (Java 2 Platform SE 5.0)"</a>. Sun Microsystems Inc.. 1994<span class="printonly">. <a rel="nofollow" class="external free" href="http://java.sun.com/j2se/1.5.0/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)">http://java.sun.com/j2se/1.5.0/docs/api/java/io/PrintStream.html#printf(java.lang.String,%20java.lang.Object...)</a></span><span class="reference-accessdate">. Retrieved 18 November 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=PrintStream+%28Java+2+Platform+SE+5.0%29&amp;rft.atitle=&amp;rft.date=1994&amp;rft.pub=Sun+Microsystems+Inc.&amp;rft_id=http%3A%2F%2Fjava.sun.com%2Fj2se%2F1.5.0%2Fdocs%2Fapi%2Fjava%2Fio%2FPrintStream.html%23printf%28java.lang.String%2C%2520java.lang.Object...%29&amp;rfr_id=info:sid/en.wikipedia.org:Printf_format_string"><span style="display: none;"> </span></span></span></li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="Printf#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#format(java.lang.String,%20java.lang.Object...)">"String (Java 2 Platform SE 5.0)"</a>. Sun Microsystems Inc.. 1994<span class="printonly">. <a rel="nofollow" class="external free" href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#format(java.lang.String,%20java.lang.Object...)">http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#format(java.lang.String,%20java.lang.Object...)</a></span><span class="reference-accessdate">. Retrieved 18 November 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=String+%28Java+2+Platform+SE+5.0%29&amp;rft.atitle=&amp;rft.date=1994&amp;rft.pub=Sun+Microsystems+Inc.&amp;rft_id=http%3A%2F%2Fjava.sun.com%2Fj2se%2F1.5.0%2Fdocs%2Fapi%2Fjava%2Flang%2FString.html%23format%28java.lang.String%2C%2520java.lang.Object...%29&amp;rfr_id=info:sid/en.wikipedia.org:Printf_format_string"><span style="display: none;"> </span></span></span></li>
+</ol><h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://en.cppreference.com/w/cpp/io/c/fprintf">C++ reference for <code>std::fprintf</code></a></li>
+<li><a rel="nofollow" class="external text" href="http://www.pixelbeat.org/programming/gcc/format_specs.html">gcc printf format specifications quick reference</a></li>
+<li><span class="plainlinksneverexpand"><code><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/9699919799/functions/printf.html">printf</a></code></span>: print formatted output – System Interfaces Reference, <a href="http://en.m.wikipedia.org/wiki/Single_Unix_Specification" title="Single Unix Specification" class="mw-redirect">The Single UNIX® Specification</a>, Issue 7 from <a href="http://en.m.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a></li>
+<li>The <a rel="nofollow" class="external text" href="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Formatter.html#syntax"><code>Formatter</code> specification</a> in Java 1.5</li>
+<li><a rel="nofollow" class="external text" href="http://wiki.bash-hackers.org/commands/builtin/printf">GNU Bash <code>printf(1)</code> builtin</a></li>
+</ul><table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Unix_commands" title="Template:Unix commands"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Unix_commands" title="Template talk:Unix commands"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Unix_commands&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="Unix" title="Unix">Unix</a> <a href="http://en.m.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">command-line interface</a> programs and <a href="http://en.m.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">shell builtins</a></div>
+</th>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">File system</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Cat_(Unix)" title="Cat (Unix)">cat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cd_(command)" title="Cd (command)">cd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chmod" title="Chmod">chmod</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chown" title="Chown">chown</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chgrp" title="Chgrp">chgrp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cksum" title="Cksum">cksum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cmp_(Unix)" title="Cmp (Unix)">cmp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cp_(Unix)" title="Cp (Unix)">cp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dd_(Unix)" title="Dd (Unix)">dd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Du_(Unix)" title="Du (Unix)">du</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Df_(Unix)" title="Df (Unix)">df</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/File_(command)" title="File (command)">file</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fsck" title="Fsck">fsck</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fuser_(Unix)" title="Fuser (Unix)">fuser</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ln_(Unix)" title="Ln (Unix)">ln</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ls" title="Ls">ls</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lsattr" title="Lsattr">lsattr</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lsof" title="Lsof">lsof</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mkdir" title="Mkdir">mkdir</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mount_(Unix)" title="Mount (Unix)">mount</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mv" title="Mv">mv</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pax_(Unix)" title="Pax (Unix)">pax</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pwd" title="Pwd">pwd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rmdir" title="Rmdir">rmdir</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Size_(Unix)" title="Size (Unix)">size</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Split_(Unix)" title="Split (Unix)">split</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tee_(command)" title="Tee (command)">tee</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Touch_(Unix)" title="Touch (Unix)">touch</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_(Unix)" title="Type (Unix)">type</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Umask" title="Umask">umask</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Processes</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/At_(Unix)" title="At (Unix)">at</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bg_(Unix)" title="Bg (Unix)">bg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Chroot" title="Chroot">chroot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cron" title="Cron">cron</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fg_(Unix)" title="Fg (Unix)">fg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Kill_(Unix)" title="Kill (Unix)" class="mw-redirect">kill</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Killall" title="Killall">killall</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nice_(Unix)" title="Nice (Unix)">nice</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pgrep" title="Pgrep">pgrep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pidof" title="Pidof">pidof</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pkill" title="Pkill">pkill</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ps_(Unix)" title="Ps (Unix)">ps</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pstree" title="Pstree">pstree</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time_(Unix)" title="Time (Unix)">time</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Top_(software)" title="Top (software)">top</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">User environment</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Clear_(Unix)" title="Clear (Unix)">clear</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Env" title="Env">env</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exit_(command)" title="Exit (command)">exit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Finger_protocol" title="Finger protocol">finger</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_(Unix)" title="History (Unix)">history</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Id_(Unix)" title="Id (Unix)">id</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logname" title="Logname">logname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mesg" title="Mesg">mesg</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Passwd_(command)" title="Passwd (command)">passwd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Su_(Unix)" title="Su (Unix)">su</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sudo" title="Sudo">sudo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uptime#Linux" title="Uptime">uptime</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Talk_(software)" title="Talk (software)">talk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tput" title="Tput">tput</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uname" title="Uname">uname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/W_(Unix)" title="W (Unix)">w</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wall_(Unix)" title="Wall (Unix)">wall</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Who_(Unix)" title="Who (Unix)">who</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whoami" title="Whoami">whoami</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Write_(Unix)" title="Write (Unix)">write</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Text processing</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="AWK" title="AWK">awk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Banner_(Unix)" title="Banner (Unix)">banner</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Basename" title="Basename">basename</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comm" title="Comm">comm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Csplit" title="Csplit">csplit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cut_(Unix)" title="Cut (Unix)">cut</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dirname" title="Dirname">dirname</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ed_(text_editor)" title="Ed (text editor)">ed</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ex_(text_editor)" title="Ex (text editor)">ex</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fmt_(Unix)" title="Fmt (Unix)" class="mw-redirect">fmt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Head_(Unix)" title="Head (Unix)">head</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Iconv" title="Iconv">iconv</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Join_(Unix)" title="Join (Unix)">join</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Less_(Unix)" title="Less (Unix)">less</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/More_(command)" title="More (command)">more</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paste_(Unix)" title="Paste (Unix)">paste</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sed" title="Sed">sed</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sort_(Unix)" title="Sort (Unix)">sort</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Spell_(Unix)" title="Spell (Unix)">spell</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strings_(Unix)" title="Strings (Unix)">strings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tail_(Unix)" title="Tail (Unix)">tail</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tr_(Unix)" title="Tr (Unix)">tr</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Uniq" title="Uniq">uniq</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vi" title="Vi">vi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wc_(Unix)" title="Wc (Unix)">wc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xargs" title="Xargs">xargs</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">Shell builtins</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Alias_(command)" title="Alias (command)">alias</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Echo_(command)" title="Echo (command)">echo</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expr" title="Expr">expr</a></li>
+<li><a href="Printf" title="Printf" class="mw-redirect">printf</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sleep_(Unix)" title="Sleep (Unix)">sleep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Test_(Unix)" title="Test (Unix)">test</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/True_and_false_(commands)" title="True and false (commands)">true and false</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unset" title="Unset">unset</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wait_(command)" title="Wait (command)">wait</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Yes_(Unix)" title="Yes (Unix)">yes</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Network_utilities" title="Network utilities">Networking</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Domain_Information_Groper" title="Domain Information Groper" class="mw-redirect">dig</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Host_(Unix)" title="Host (Unix)">host</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ifconfig" title="Ifconfig">ifconfig</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inetd" title="Inetd">inetd</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Netcat" title="Netcat">netcat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Netstat" title="Netstat">netstat</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nslookup" title="Nslookup">nslookup</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ping_(networking_utility)" title="Ping (networking utility)">ping</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rdate" title="Rdate">rdate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rlogin" title="Rlogin">rlogin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSSH" title="OpenSSH">ssh</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Traceroute" title="Traceroute">traceroute</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Searching</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Find" title="Find">find</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Grep" title="Grep">grep</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Locate_(Unix)" title="Locate (Unix)">locate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whatis" title="Whatis">whatis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Whereis" title="Whereis">whereis</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Documentation</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Apropos_(Unix)" title="Apropos (Unix)">apropos</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Help_(command)" title="Help (command)">help</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Man_page" title="Man page">man</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Miscellaneous</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Bc_programming_language" title="Bc programming language">bc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dc_(Unix)" title="Dc (Unix)" class="mw-redirect">dc</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cal_(Unix)" title="Cal (Unix)">cal</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Date_(Unix)" title="Date (Unix)">date</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lp_(Unix)" title="Lp (Unix)">lp</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lpr" title="Lpr">lpr</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><td class="navbox-abovebelow" style=";" colspan="2">
+<div><i><a href="http://en.m.wikipedia.org/wiki/List_of_Unix_utilities" title="List of Unix utilities">List of Unix utilities</a></i></div>
+</td>
+</tr></table></td>
+</tr></table><p><span id="interwiki-ru-ga"></span></p>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 9 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://es.m.wikipedia.org/wiki/Printf" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Printf" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Printf" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Printf" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Printf" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Printf" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Printf" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Printf" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Printf" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Printf&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Printf&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Printf+format+string&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

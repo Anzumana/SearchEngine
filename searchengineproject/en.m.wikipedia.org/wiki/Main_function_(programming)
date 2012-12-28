@@ -1,0 +1,461 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Main function - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Main function","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Main_function" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Main+function"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Main function</h1>			
+<p>In many <a href="Programming_language" title="Programming language">programming languages</a>, the <b>main function</b> is <a href="http://en.m.wikipedia.org/wiki/Entry_point" title="Entry point">where a program starts execution</a>. It is responsible for the high-level organization of the program's functionality, and typically has access to the <a href="http://en.m.wikipedia.org/wiki/Command-line_argument" title="Command-line argument" class="mw-redirect">command arguments</a> given to the program when it was executed. Thus main is very important to run your code.</p>
+<p>The main function is generally the first programmer-written <a href="Subroutine" title="Subroutine">function</a> run when a program starts, and is invoked directly from the system-specific initialization contained in <a href="http://en.m.wikipedia.org/wiki/Crt0" title="Crt0">crt0</a> or equivalent. However, some languages can execute user-written functions before main runs, such as the constructors of <a href="C++" title="C++">C++</a> global objects.</p>
+<h2> <span class="mw-headline" id="Variants">Variants</span>
+</h2>
+<h3> <span class="mw-headline" id="C_and_C.2B.2B">C and C++</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>, the <a href="Function_prototype" title="Function prototype">function prototype</a> of the main function looks like one of the following:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>argv<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">*</span>argv<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">parameters</a> <code>argc</code>, <i>argument count</i>, and <code>argv</code>, <i>argument vector</i>,<sup id="cite_ref-0" class="reference"><a href="Main_function_(programming)#cite_note-0"><span>[</span>1<span>]</span></a></sup> respectively give the number and values of the program's <a href="http://en.m.wikipedia.org/wiki/Command-line_argument" title="Command-line argument" class="mw-redirect">command-line arguments</a>. The names of <code>argc</code> and <code>argv</code> may be any valid identifier in C, but it is common convention to use these names. In C++, the names are to be taken literally, and the "void" in the parameter list is to be omitted, if strict conformance is desired.<sup id="cite_ref-1" class="reference"><a href="Main_function_(programming)#cite_note-1"><span>[</span>2<span>]</span></a></sup> Other platform-dependent formats are also allowed by the C and C++ standards, except that in C++ the return type must always be <code>int</code>;<sup id="cite_ref-2" class="reference"><a href="Main_function_(programming)#cite_note-2"><span>[</span>3<span>]</span></a></sup> for example, <a href="Unix" title="Unix">Unix</a> (though not <a href="http://en.m.wikipedia.org/wiki/POSIX.1" title="POSIX.1" class="mw-redirect">POSIX.1</a>) and <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> have a third argument giving the program's <a href="http://en.m.wikipedia.org/wiki/Environment_variable" title="Environment variable">environment</a>, otherwise accessible through <code>getenv</code> in <code><a href="http://en.m.wikipedia.org/wiki/Stdlib.h" title="Stdlib.h" class="mw-redirect">stdlib.h</a></code>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>argv<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>envp<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> and <a href="http://en.m.wikipedia.org/wiki/Darwin_(operating_system)" title="Darwin (operating system)">Darwin</a> have a fourth parameter containing arbitrary OS-supplied information, such as the path to the executing binary:<sup id="cite_ref-3" class="reference"><a href="Main_function_(programming)#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>argv<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>envp<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>apple<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The value returned from the main function becomes the <a href="http://en.m.wikipedia.org/wiki/Exit_status" title="Exit status">exit status</a> of the process, though the C standard only ascribes specific meaning to two values: <code>EXIT_SUCCESS</code> (traditionally 0) and <code>EXIT_FAILURE</code>. The meaning of other possible return values is implementation-defined. In case a return value is not defined by the programmer, an implicit <code>return 0;</code> at the end of the <code>main()</code> function is inserted by the compiler; this behavior is required by the C++ standard.</p>
+<p>It is guaranteed that <code>argc</code> is non-negative and that <code>argv[argc]</code> is a <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointer</a>. By convention, the command-line arguments specified by <code>argc</code> and <code>argv</code> include the name of the program as the first element if <code>argc</code> is greater than 0; if a user types a command of "<code>rm file</code>", the <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shell</a> will initialise the <code><a href="http://en.m.wikipedia.org/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a></code> process with <code>argc = 2</code> and <code>argv = ["rm", "file", NULL]</code>. As <code>argv[0]</code> is the name that processes appear under in <code><a href="http://en.m.wikipedia.org/wiki/Ps_(Unix)" title="Ps (Unix)">ps</a></code>, <code><a href="http://en.m.wikipedia.org/wiki/Top_(Unix)" title="Top (Unix)" class="mw-redirect">top</a></code> etc., some programs, such as <a href="http://en.m.wikipedia.org/wiki/Daemon_(computer_software)" title="Daemon (computer software)" class="mw-redirect">daemons</a> or those running within an <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> or <a href="http://en.m.wikipedia.org/wiki/Virtual_machine" title="Virtual machine">virtual machine</a> (where <code>argv[0]</code> would be the name of the host executable), may choose to alter their argv to give a more descriptive <code>argv[0]</code>, usually by means of the <code><a href="http://en.m.wikipedia.org/wiki/Exec_(operating_system)" title="Exec (operating system)">exec</a></code> system call.</p>
+<p>The <code>main()</code> function is special; normally every C and C++ program must define it exactly once.</p>
+<p>If declared, <code>main()</code> must be declared as if it has external linkage; it cannot be declared <code>static</code> or <code>inline</code>.</p>
+<p>In C++, <code>main()</code> must be in the global <a href="Namespace" title="Namespace">namespace</a> (i.e. <code>::main</code>), cannot be overloaded, and cannot be a <a href="http://en.m.wikipedia.org/wiki/Member_function" title="Member function" class="mw-redirect">member function</a>, although the name is not otherwise reserved, and may be used for member functions, classes, enumerations, or non-member functions in other namespaces. In C++ (unlike C) <code>main()</code> cannot be called <a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursively</a> and cannot have its address taken.</p>
+<h3> <span class="mw-headline" id="Clean">Clean</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Clean_(programming_language)" title="Clean (programming language)">Clean</a> is a functional programming language based on graph rewriting. The initial node is called <code>Start</code> and is of type <code>*World -&gt; *World</code> if it <i>changes</i> the world or some fixed type if the program only prints the result after <a href="http://en.m.wikipedia.org/wiki/Graph_rewriting" title="Graph rewriting">reducing</a> <code>Start</code>.</p>
+<pre>
+ Start :: *World -&gt; *World
+ Start world = startIO ...
+</pre>
+<p>Or even simpler</p>
+<pre>
+ Start :: String
+ Start = "Hello, world!"
+</pre>
+<p>One tells the compiler which option to use to generate the executable file.</p>
+<h3> <span class="mw-headline" id="C.23">C#</span>
+</h3>
+<p>When executing a program written in <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, the <a href="http://en.m.wikipedia.org/wiki/Common_Language_Runtime" title="Common Language Runtime">CLR</a> searches for a static method marked with the <code>.entrypoint</code> IL directive, which takes either no arguments, or a single argument of type <code>string[]</code>, and has a return type of <code>void</code> or <code>int</code>, and executes it.<sup id="cite_ref-4" class="reference"><a href="Main_function_(programming)#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+<span class="kw1">static</span> <span class="kw4">void</span> Main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">static</span> <span class="kw4">void</span> Main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">static</span> <span class="kw4">int</span> Main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw1">static</span> <span class="kw4">int</span> Main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Command-line arguments are passed in <code>args</code>, similar to how it is done in Java. For versions of <code>Main()</code> returning an integer, similar to both C and C++, it is passed back to the environment as the exit status of the process.</p>
+<h3> <span class="mw-headline" id="D">D</span>
+</h3>
+<p>In <a href="D_(programming_language)" title="D (programming language)">D</a>, the <a href="Function_prototype" title="Function prototype">function prototype</a> of the main function looks like one of the following:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="d source-d">
+<pre class="de1">
+<span class="kw4">void</span> main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw4">void</span> main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span><span class="sy0">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Command-line arguments are passed in <code>args</code>, similar to how it is done in C# or Java. For versions of <code>main()</code> returning an integer, similar to both C and C++, it is passed back to the environment as the exit status of the process.</p>
+<h3> <span class="mw-headline" id="Common_Lisp">Common Lisp</span>
+</h3>
+<p>ANSI Common Lisp does not define a main function. However, the following code will emulate a main function in CMUCL. It is easily adjusted to work in ECL, SBCL, and Clojure (CLISP not at all).</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="lisp source-lisp">
+<pre class="de1">
+#<span class="sy0">!</span>/usr/bin/env lisp -quiet -load
+ 
+<span class="br0">(</span><span class="kw1">defun</span> hello-main <span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">(</span>format t <span class="st0">"Hello World!~%"</span><span class="br0">)</span>
+  <span class="br0">(</span>quit<span class="br0">)</span><span class="br0">)</span>
+ 
+<span class="br0">(</span><span class="kw1">if</span> <span class="br0">(</span><span class="kw1">member</span> <span class="br0">(</span>pathname-<span class="kw1">name</span> *load-truename*<span class="br0">)</span>
+            extensions<span class="sy0">:</span>*command-line-strings*
+            <span class="sy0">:</span><span class="me1">test</span> #'<span class="br0">(</span><span class="kw1">lambda</span> <span class="br0">(</span>x y<span class="br0">)</span> <span class="br0">(</span>search x y <span class="sy0">:</span><span class="me1">test</span> #'equalp<span class="br0">)</span><span class="br0">)</span><span class="br0">)</span>
+    <span class="br0">(</span>hello-main<span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="FORTRAN">FORTRAN</span>
+</h3>
+<p><a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a> does not have a main subroutine or function. Instead a <code>PROGRAM</code> statement as the first line can be used to specify that a program unit is a main program, as shown below. The <code>PROGRAM</code> statement cannot be used for recursive calls.<sup id="cite_ref-5" class="reference"><a href="Main_function_(programming)#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+      <span class="kw1">PROGRAM</span> HELLO
+      PRINT <span class="sy0">*</span>, <span class="st0">"Hello World!"</span>
+      <span class="kw1">END</span> <span class="kw1">PROGRAM</span> HELLO
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="GNAT">GNAT</span>
+</h3>
+<p>Using <a href="http://en.m.wikipedia.org/wiki/GNAT" title="GNAT">GNAT</a>, the programmer is not required to write a function called <code>main</code>; a source file containing a single subprogram can be compiled to an executable. The binder will however create a package <code>ada_main</code>, which will contain and export a C-style main function.</p>
+<h3> <span class="mw-headline" id="Go">Go</span>
+</h3>
+<p>In <a href="Go_(programming_language)" title="Go (programming language)">Go</a> programming language, program execution starts with the <code>main</code> function of the <code>package main</code></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="go source-go">
+<pre class="de1">
+<span class="kw1">package</span> main
+ 
+<span class="kw1">import</span> <span class="st0">"fmt"</span>
+ 
+<span class="kw4">func</span> main<span class="sy1">()</span> <span class="sy1">{</span>
+        fmt<span class="sy3">.</span>Println<span class="sy1">(</span><span class="st0">"Hello, World!"</span><span class="sy1">)</span>
+<span class="sy1">}</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Haskell">Haskell</span>
+</h3>
+<p>A <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> program must contain a name called <code>main</code> bound to a value of type <code>IO t</code>, for some type <code>t</code>;<sup id="cite_ref-6" class="reference"><a href="Main_function_(programming)#cite_note-6"><span>[</span>7<span>]</span></a></sup> which is usually <code>IO ()</code>. <code>IO</code> is a <a href="http://en.m.wikipedia.org/wiki/Monads_in_functional_programming" title="Monads in functional programming" class="mw-redirect">monad</a>, which organizes <a href="http://en.m.wikipedia.org/wiki/Side_effect_(computer_science)" title="Side effect (computer science)">side-effects</a> in terms of <a href="http://en.m.wikipedia.org/wiki/Purely_functional" title="Purely functional">purely functional</a> code.<sup id="cite_ref-7" class="reference"><a href="Main_function_(programming)#cite_note-7"><span>[</span>8<span>]</span></a></sup> The <code>main</code> value represents the side-effects-ful computation done by the program. The result of the computation represented by <code>main</code> is discarded; that is why <code>main</code> usually has type <code>IO ()</code>, which indicates that the type of the result of the computation is <code>()</code>, the <a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">unit type</a>, which contains no information.</p>
+<p>Command line arguments are not given to <code>main</code>; they must be fetched using another IO action, such as <a rel="nofollow" class="external text" href="http://haskell.org/ghc/docs/latest/html/libraries/base/System-Environment.html#v%3AgetArgs"><code>System.Environment.getArgs</code></a>.</p>
+<h3> <span class="mw-headline" id="Java">Java</span>
+</h3>
+<p><a href="Java_(programming_language)" title="Java (programming language)">Java</a> programs start executing at the main <a href="http://en.m.wikipedia.org/wiki/Method_(computer_science)" title="Method (computer science)" class="mw-redirect">method</a>, which has the following <a href="http://en.m.wikipedia.org/wiki/Method_heading" title="Method heading" class="mw-redirect">method heading</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java5 source-java5">
+<pre class="de1">
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw3">void</span> main<span class="br0">(</span><span class="kw21">String</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw3">void</span> main<span class="br0">(</span><span class="kw21">String</span>... <span class="me1">args</span><span class="br0">)</span>
+<span class="kw2">public</span> <span class="kw2">static</span> <span class="kw3">void</span> main<span class="br0">(</span><span class="kw21">String</span> args<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>Command-line arguments are passed in <code>args</code>. As in C and C++, the name "<code>main()</code>" is special. Java's main methods do not return a value directly, but one can be passed by using the <code>System.exit()</code> method.</p>
+<p>Unlike C, the name of the program is not included in <code>args</code>, because the name of the program is exactly the name of the class that contains the main method called, so it is already known. Also unlike C, the number of arguments need not be included, since the array class in Java has an attribute that keeps track of how many elements there are.</p>
+<h3> <span class="mw-headline" id="OCaml">OCaml</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> has no <code>main</code> function. Programs are evaluated from top to bottom.</p>
+<p>Command-line arguments are available in an array named <code>Sys.argv</code> and the exit status is 0 by default.</p>
+<p>Example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ocaml source-ocaml">
+<pre class="de1">
+<span class="kw1">let</span> hello_world <span class="br0">(</span><span class="br0">)</span> <span class="sy0">=</span>
+  <span class="kw3">print_endline</span> <span class="st0">"hello, world"</span>
+<span class="sy0">;;</span>
+ 
+<span class="kw1">let</span> <span class="br0">(</span><span class="br0">)</span> <span class="sy0">=</span> hello_world <span class="br0">(</span><span class="br0">)</span> <span class="sy0">;;</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Pascal">Pascal</span>
+</h3>
+<p>In <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, the main procedure is the only unnamed procedure in the program. Because Pascal programs have the procedures and functions in a more rigorous top-down order than C, C++ or Java programs, the main procedure is usually the last procedure in the program. Pascal does not have a special meaning for the name "<code>main</code>" or any similar name.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">program</span> Hello<span class="br0">(</span>Output<span class="br0">)</span><span class="sy1">;</span>
+ 
+  <span class="kw1">procedure</span> HelloWorld<span class="sy1">;</span>
+  <span class="kw1">begin</span>
+    <span class="kw3">writeln</span><span class="br0">(</span><span class="st0">'Hello, world!'</span><span class="br0">)</span><span class="sy1">;</span>
+  <span class="kw1">end</span><span class="sy1">;</span>
+ 
+<span class="kw1">begin</span>
+  HelloWorld<span class="sy1">;</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<p>Command-line arguments are counted in <code>ParamCount</code> and accessible as strings by <code>ParamStr(n)</code>, with n between 0 and <code>ParamCount</code>.</p>
+<p>Note that "unit" or "module" based versions of Pascal start the main module with the PROGRAM keyword, while other separately compiled modules start with UNIT (UCSD/Borland) or MODULE (ISO). The unnamed function in modules is often module initialization, and run before the main program starts.</p>
+<h3> <span class="mw-headline" id="Perl">Perl</span>
+</h3>
+<p>In <a href="Perl" title="Perl">Perl</a>, there is no main function. Statements are executed from top to bottom.</p>
+<p>Command-line arguments are available in the special array <code>@ARGV</code>. Unlike C, <code>@ARGV</code> does not contain the name of the program, which is <code>$0</code>.</p>
+<h3> <span class="mw-headline" id="Pike">Pike</span>
+</h3>
+<p>In <a href="Pike_(programming_language)" title="Pike (programming language)">Pike</a> syntax is similar to that of C and C++. The execution begins at <code>main</code>. The "<code>argc</code>" variable keeps the number of <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">arguments</a> passed to the program. The "<code>argv</code>" variable holds the value associated with the arguments passed to the program.</p>
+<p>Example:</p>
+<pre>
+int main(int argc, array(string) argv)
+</pre>
+<h3> <span class="mw-headline" id="Python">Python</span>
+</h3>
+<p>In <a href="Python_(programming_language)" title="Python (programming language)">Python</a> a function called <code>main</code> doesn't have any special significance. However, it is common practice to organize a program's main functionality in a function called <code>main</code> and call it with code similar to the following:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">def</span> main<span class="br0">(</span><span class="br0">)</span>:
+    <span class="co1"># the main code goes here</span>
+ 
+<span class="kw1">if</span> __name__ <span class="sy0">==</span> <span class="st0">"__main__"</span>:
+    main<span class="br0">(</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>When a Python program is executed directly (as opposed to being imported from another program), the special global variable <code>__name__</code> has the value "<code>__main__</code>".<sup id="cite_ref-8" class="reference"><a href="Main_function_(programming)#cite_note-8"><span>[</span>9<span>]</span></a></sup></p>
+<p>Some programmers use the following, giving a better look to exits:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="python source-python">
+<pre class="de1">
+<span class="kw1">import</span> <span class="kw3">sys</span>
+ 
+<span class="kw1">def</span> main<span class="br0">(</span>args<span class="br0">)</span>:
+    <span class="kw1">try</span>:
+        <span class="co1"># program's main code here</span>
+    <span class="kw1">except</span>:
+        <span class="co1"># error handling code here</span>
+        <span class="kw1">return</span> <span class="nu0">1</span>  <span class="co1"># exit on error</span>
+    <span class="kw1">else</span>:
+        <span class="kw1">return</span> <span class="nu0">0</span>  <span class="co1"># exit errorlessly</span>
+ 
+<span class="kw1">if</span> __name__ <span class="sy0">==</span> <span class="st0">'__main__'</span>:
+    <span class="kw3">sys</span>.<span class="me1">exit</span><span class="br0">(</span>main<span class="br0">(</span><span class="kw3">sys</span>.<span class="me1">argv</span><span class="br0">)</span><span class="br0">)</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="REALbasic">REALbasic</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/REALbasic" title="REALbasic" class="mw-redirect">REALbasic</a>, there are two different project types, each with a different main entry point. Desktop (GUI) applications start with the <code>App.Open</code> event of the project's <code>Application</code> object. Console applications start with the <code>App.Run</code> event of the project's <code>ConsoleApplication</code> object. In both instances, the main function is automatically generated, and cannot be removed from the project.</p>
+<h3> <span class="mw-headline" id="Ruby">Ruby</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, there is no distinct main function. The code written without additional "<code>class .. end</code>", "<code>module .. end</code>" enclosures is executed directly, step by step, in context of special "<code>main</code>" object. This object can be referenced using:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw2">self</span>                <span class="co1"># =&gt; main</span>
+</pre>
+</div>
+</div>
+<p>and contain the following properties:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw2">self</span>.<span class="kw1">class</span>           <span class="co1"># =&gt; Object</span>
+<span class="kw2">self</span>.<span class="kw1">class</span>.<span class="me1">ancestors</span> <span class="co1"># =&gt; [Object, Kernel]</span>
+</pre>
+</div>
+</div>
+<p>Methods defined without additional classes/modules are defined as private methods of the "<code>main</code>" object, and, consequentally, as private methods of almost any other object in Ruby:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">def</span> foo
+  <span class="nu0">42</span>
+<span class="kw1">end</span>
+ 
+foo                  <span class="co1"># =&gt; 42</span>
+<span class="br0">[</span><span class="br0">]</span>.<span class="me1">foo</span>               <span class="co1"># =&gt; private method `foo' called for []:Array (NoMethodError)</span>
+<span class="kw2">false</span>.<span class="me1">foo</span>            <span class="co1"># =&gt; private method `foo' called for false:FalseClass (NoMethodError)</span>
+</pre>
+</div>
+</div>
+<p>Number and values of command-line arguments can be determined using the single <code>ARGV</code> constant array:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+ARGV                 <span class="co1"># =&gt; ["foo", "bar"]</span>
+ARGV.<span class="me1">size</span>            <span class="co1"># =&gt; 2</span>
+</pre>
+</div>
+</div>
+<p>Note that first element of <code>ARGV</code>, <code>ARGV[0]</code>, contains the first command-line argument, not the name of program executed, as in C. The name of program is available using <code>$0</code> or <code>$PROGRAM_NAME</code>.<sup id="cite_ref-9" class="reference"><a href="Main_function_(programming)#cite_note-9"><span>[</span>10<span>]</span></a></sup></p>
+<p>Similar to Python, one could use:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ruby source-ruby">
+<pre class="de1">
+<span class="kw1">if</span> <span class="kw2">__FILE__</span> == <span class="re0">$PROGRAM_NAME</span>
+  <span class="co1"># Put "main" code here</span>
+<span class="kw1">end</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Visual_Basic">Visual Basic</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>, when a project contains no forms, the startup object may be the <code>Main()</code> procedure.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vb source-vb">
+<pre class="de1">
+<span class="kw2">Sub</span> Main()
+    Debug.<span class="kw4">Print</span> <span class="st0">"Hello World!"</span>
+<span class="kw3">End</span> <span class="kw2">Sub</span>
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="LOGO">LOGO</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Logo_(programming_language)" title="Logo (programming language)">FMSLogo</a>, the procedures when loaded do not execute. To make them execute, it is necessary to use this code:</p>
+<pre>
+to procname
+ ...                 ; Startup commands (such as print [Welcome])
+end
+</pre>
+<pre>
+make "startup [procname]
+</pre>
+<p>Note that the variable <code>startup</code> is used for the startup list of actions, but the convention is that this calls another procedure that runs the actions. That procedure may be of any name.</p>
+<h3> <span class="mw-headline" id="AHLSL">AHLSL</span>
+</h3>
+<p>In <span class="new" title="AIGE (Seite nicht vorhanden)">AIGE</span>'s <span class="new" title="AHLSL (Seite nicht vorhanden)">AHLSL</span>, the main function, by default, is defined as:</p>
+<pre>
+[main]
+</pre>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-0">^</a></b></span> <span class="reference-text">argv: the vector term in this variable's name is used in traditional sense to refer to strings.</span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://groups.google.com/group/comp.std.c++/browse_thread/thread/a1e5504b499bc58f">[1]</a> - Parameter types and names of main.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-2">^</a></b></span> <span class="reference-text">Section 3.6.1.2, Standard C++ 2011 edition.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://unixjunkie.blogspot.com/2006/02/char-apple-argument-vector.html">The <code>char *apple</code> Argument Vector</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://msdn.microsoft.com/msdnmag/issues/04/02/NETConsoleApps/">http://msdn.microsoft.com/msdnmag/issues/04/02/NETConsoleApps/</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-5">^</a></b></span> <span class="reference-text">XL FORTRAN for <a href="http://en.m.wikipedia.org/wiki/AIX" title="AIX" class="mw-redirect">AIX</a>. Language Reference. Third Edition, 1994. <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.haskell.org/onlinereport/modules.html">http://www.haskell.org/onlinereport/modules.html</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://geekrant.wordpress.com/2008/06/23/misconceptions/">Some Haskell Misconceptions: Idiomatic Code, Purity, Laziness, and IO</a> — on Haskell's monadic IO&gt;</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.artima.com/weblogs/viewpost.jsp?thread=4829">Python <code>main()</code> functions</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Main_function_(programming)#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.ruby-doc.org/docs/ProgrammingRuby/html/rubyworld.html#UB">Programming Ruby: The Pragmatic Programmer's Guide, Ruby and Its World</a> — on Ruby <code>ARGV</code></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<p>No external links available</p>
+
+
+
+
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://it.m.wikipedia.org/wiki/Funzione_main" lang="it" hreflang="it">italiano</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Podprogram_g%C5%82%C3%B3wny" lang="pl" hreflang="pl">polski</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E4%B8%BB%E5%87%BD%E5%BC%8F" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Main_function_(programming)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Main_function_(programming)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Main+function&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

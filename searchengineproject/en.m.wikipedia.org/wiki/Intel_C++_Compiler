@@ -1,0 +1,390 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Intel C++ Compiler - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Intel C++ Compiler","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Intel+C%2B%2B+Compiler"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Intel C++ Compiler</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Intel C++ Compiler</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">13.0 / September 5, 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-09-05</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> and <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Compiler" title="Compiler">Compiler</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">Commercial, Academic, Eval and, for Linux, for non-commercial uses<sup id="cite_ref-0" class="reference"><a href="Intel_C++_Compiler#cite_note-0"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external free" href="http://software.intel.com/en-us/intel-compilers/">http://software.intel.com/en-us/intel-compilers/</a></td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p><b>Intel C++ Compiler</b>, also known as <b>icc</b> or <b>icl</b>, is a group of <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a> <a href="Compiler" title="Compiler">compilers</a> from <a href="http://en.m.wikipedia.org/wiki/Intel_Corporation" title="Intel Corporation" class="mw-redirect">Intel Corporation</a> available for <a href="http://en.m.wikipedia.org/wiki/GNU/Linux" title="GNU/Linux" class="mw-redirect">GNU/Linux</a>, <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> and <a href="http://en.m.wikipedia.org/wiki/Apple_OS_X" title="Apple OS X" class="mw-redirect">Apple OS X</a>. The compilers generate code for <a href="http://en.m.wikipedia.org/wiki/IA-32" title="IA-32">IA-32</a> and <a href="http://en.m.wikipedia.org/wiki/Intel_64" title="Intel 64" class="mw-redirect">Intel 64</a> architectures and certain non-Intel but compatible processors, such as certain <a href="http://en.m.wikipedia.org/wiki/AMD" title="AMD" class="mw-redirect">AMD</a> processors. A specific release of the compiler (11.1) is available for development of Linux-based applications for IA-64 (<a href="http://en.m.wikipedia.org/wiki/Itanium" title="Itanium">Itanium</a> 2) processors.</p>
+<p>The 13.0 release adds support for the <a href="http://en.m.wikipedia.org/wiki/Intel_MIC" title="Intel MIC">Intel Xeon Phi coprocessor</a>. It continues support for automatic vectorization, which can generate <a href="http://en.m.wikipedia.org/wiki/SSE" title="SSE">SSE</a>, <a href="http://en.m.wikipedia.org/wiki/SSE2" title="SSE2">SSE2</a>, <a href="http://en.m.wikipedia.org/wiki/SSE3" title="SSE3">SSE3</a>, <a href="http://en.m.wikipedia.org/wiki/SSSE3" title="SSSE3">SSSE3</a>, <a href="http://en.m.wikipedia.org/wiki/SSE4" title="SSE4">SSE4</a>, <a href="http://en.m.wikipedia.org/wiki/Advanced_Vector_Extensions" title="Advanced Vector Extensions">AVX</a> and <a href="http://en.m.wikipedia.org/wiki/Advanced_Vector_Extensions" title="Advanced Vector Extensions">AVX2</a> <a href="http://en.m.wikipedia.org/wiki/SIMD" title="SIMD">SIMD</a> instructions, and the <a href="http://en.m.wikipedia.org/wiki/Embedded" title="Embedded">embedded</a> variant for <a href="http://en.m.wikipedia.org/wiki/MMX_(instruction_set)" title="MMX (instruction set)">Intel MMX and MMX 2</a>.<sup id="cite_ref-1" class="reference"><a href="Intel_C++_Compiler#cite_note-1"><span>[</span>2<span>]</span></a></sup> Use of such instruction through the compiler can lead to improved application performance in some applications as run on IA-32 and Intel 64 architectures, compared to applications built with compilers that do not support these instructions.</p>
+<p>Intel compilers continue support for <a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a>, which is a capability for writing vectorized and parallel code that can be used on IA-32 and Intel 64 processors or which can be offloaded to Xeon Phi coprocessors. They also continue support for <a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a> 3.1, <a href="http://en.m.wikipedia.org/wiki/Symmetric_multiprocessing" title="Symmetric multiprocessing">symmetric multiprocessing</a>, <a href="http://en.m.wikipedia.org/wiki/Automatic_parallelization" title="Automatic parallelization">automatic parallelization</a>, and Guided Auto-Parallization (GAP). With the add-on Cluster OpenMP capability, the compilers can also automatically generate <a href="http://en.m.wikipedia.org/wiki/Message_Passing_Interface" title="Message Passing Interface">Message Passing Interface</a> calls for <a href="http://en.m.wikipedia.org/wiki/Distributed_memory_multiprocessing" title="Distributed memory multiprocessing" class="mw-redirect">distributed memory multiprocessing</a> from OpenMP directives.</p>
+<p>Intel C++ is compatible with Microsoft Visual C++ on Windows and integrates into <a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Microsoft Visual Studio</a>. On Linux and OS X, it is compatible with <a href="http://en.m.wikipedia.org/wiki/Gcc" title="Gcc" class="mw-redirect">gcc</a> and the <a href="http://en.m.wikipedia.org/wiki/GNU_toolchain" title="GNU toolchain">GNU toolchain</a>. Intel compilers are known for the application performance they can enable as measured by benchmarks, such as the <a href="http://en.m.wikipedia.org/wiki/Standard_Performance_Evaluation_Corporation" title="Standard Performance Evaluation Corporation">SPEC CPU</a> benchmarks.</p>
+<p><br></p>
+<h2> <span class="mw-headline" id="Optimizations">Optimizations</span>
+</h2>
+<p>Intel compilers are optimized to computer systems using processors that support Intel architectures. They are designed to minimize stalls and to produce code that executes in the fewest possible number of cycles. The Intel C++ Compiler supports three separate high-level techniques for optimizing the compiled program: <a href="http://en.m.wikipedia.org/wiki/Interprocedural_optimization" title="Interprocedural optimization">interprocedural optimization</a> (IPO), <a href="http://en.m.wikipedia.org/wiki/Profile-guided_optimization" title="Profile-guided optimization">profile-guided optimization</a> (PGO), and high-level optimizations (HLO). It also supports tools, techniques and language extensions, such as <a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a>, for adding and maintaining application parallelism on IA-32 and Intel 64 processors, and enabling application offloading to Intel coprocessors, such as the Intel Xeon Phi coprocessor.</p>
+<p>Intel Cilk Plus adds language extensions to C++ to express data and task-parallelism. Cilk_spawn and Cilk_sync are keywords to enable task parallelism and the Cilk_for keyword enables parallelization of for loops. It also provides vector notation with array notations and elemental function capabilities.</p>
+<p>Profile-guided optimization refers to a mode of optimization where the compiler is able to access data from a sample run of the program across a representative input set. The data would indicate which areas of the program are executed more frequently, and which areas are executed less frequently. All optimizations benefit from profile-guided feedback because they are less reliant on heuristics when making compilation decisions.</p>
+<p>High-level optimizations are optimizations performed on a version of the program that more closely represents the source code. This includes <a href="http://en.m.wikipedia.org/wiki/Loop_interchange" title="Loop interchange">loop interchange</a>, <a href="http://en.m.wikipedia.org/wiki/Loop_fusion" title="Loop fusion">loop fusion</a>, <a href="http://en.m.wikipedia.org/wiki/Loop_unrolling" title="Loop unrolling" class="mw-redirect">loop unrolling</a>, <a href="http://en.m.wikipedia.org/wiki/Loop_distribution" title="Loop distribution" class="mw-redirect">loop distribution</a>, data prefetch, and more.<sup id="cite_ref-2" class="reference"><a href="Intel_C++_Compiler#cite_note-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>Interprocedural optimization applies typical compiler optimizations (such as constant propagation) but using a broader scope that may include multiple procedures, multiple files, or the entire program.<sup id="cite_ref-3" class="reference"><a href="Intel_C++_Compiler#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<p>With the September 5, 2012 launch (the 13.0 launch), the Windows-based releases of Intel Parallel Studio XE and Intel C++ Studio XE, each of which include Intel C++, also include a performance guide. This is a GUI-based compiler tool that provides step-by-stem advice concerning changes to code that could result in improved application performance.</p>
+<p>Intel's compiler has been criticized for applying, by default, floating-point optimizations not allowed by the C standard and that require special flags with other compilers such as <a href="http://en.m.wikipedia.org/wiki/Gcc" title="Gcc" class="mw-redirect">gcc</a>.<sup id="cite_ref-4" class="reference"><a href="Intel_C++_Compiler#cite_note-4"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Architectures">Architectures</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/IA-32" title="IA-32">IA-32</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a> (<a href="http://en.m.wikipedia.org/wiki/Intel_64" title="Intel 64" class="mw-redirect">Intel 64</a> and <a href="http://en.m.wikipedia.org/wiki/AMD64" title="AMD64" class="mw-redirect">AMD64</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_MIC" title="Intel MIC">Intel Xeon Phi coprocessor</a></li>
+<li>IA-64 (<a href="http://en.m.wikipedia.org/wiki/Itanium" title="Itanium">Itanium</a> 2)</li>
+</ul>
+<p><br></p>
+<h2> <span class="mw-headline" id="Description_of_Packaging">Description of Packaging</span>
+</h2>
+<p>Intel C++ 13.0 compilers are not available as stand-alone compilers. They are available in packages, some of which include other build-tools, such as libraries, and other which include performance and threading analysis tools. Intel C++ is part of Intel Parallel Studio XE and Intel C++ Studio XE, which are available for Windows and Linux and which include performance analysis and thread-diagnostic tools. Intel C++ Composer XE (available for Windows, Linux and Apple OS X) and Intel Composer XE, which also includes Intel Fortran (available for Windows and Linux) do not include the analysis and thread-diagnostic tools. Intel compilers are also included in Intel Cluster Studio (no analysis tools) and Intel Cluster Studio XE (analysis tools included). The cluster tools are available for Windows and Linux. Packages that include Intel C++ also include the Intel Math Kernel Library (Intel MKL), Intel Integrated Performance Primitives (Intel IPP) and Intel Threading Building Blocks (Intel TBB). Fortran-only packages only include Intel MKL.<sup id="cite_ref-5" class="reference"><a href="Intel_C++_Compiler#cite_note-5"><span>[</span>6<span>]</span></a></sup></p>
+<p><br></p>
+<h2> <span class="mw-headline" id="Ten_Year_Version_History">Ten Year Version History</span>
+</h2>
+<table class="wikitable">
+<tr>
+<th>Compiler version</th>
+<th>Release date</th>
+<th>Major New Features</th>
+</tr>
+<tr>
+<td>Intel C++ Composer XE 2013 (compiler 13.0)</td>
+<td>September 5, 2012</td>
+<td>Linux-based support for Intel Xeon Phi coprocessors, support for Microsoft Visual Studio 12 (Desktop), support for gcc 4.7, support for Intel AVX 2 instructions, updates to existing functionality focused on improved application performance.<sup id="cite_ref-6" class="reference"><a href="Intel_C++_Compiler#cite_note-6"><span>[</span>7<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>Intel C++ Composer XE 2011 Update 6 and above (compiler 12.1)</td>
+<td>September 8, 2011</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a> language extensions updated to support specification version 1.1 and available on Mac OS X in addition to Windows and Linux, <a href="http://en.m.wikipedia.org/wiki/Intel_Threading_Building_Blocks" title="Intel Threading Building Blocks">Intel Threading Building Blocks</a> updated to support version 4.0, Apple blocks supported on Mac OS X, improved <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a> support including support for Variadic templates, <a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a> 3.1 support.</td>
+</tr>
+<tr>
+<td>Intel C++ Composer XE 2011 up to Update 5 (compiler 12.0)</td>
+<td>Nov 7, 2010</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a> language extensions, Guided Auto-Parallelism, Improved <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a> support.<sup id="cite_ref-7" class="reference"><a href="Intel_C++_Compiler#cite_note-7"><span>[</span>8<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 11.1</td>
+<td>June 23, 2009</td>
+<td>Support for latest Intel SSE <a href="http://en.m.wikipedia.org/wiki/SSE4.2" title="SSE4.2" class="mw-redirect">SSE4.2</a>, <a href="http://en.m.wikipedia.org/wiki/Advanced_Vector_Extensions" title="Advanced Vector Extensions">AVX</a> and <a href="http://en.m.wikipedia.org/wiki/AES_instruction_set" title="AES instruction set">AES</a> instructions. Parallel Debugger Extension. Improved integration into Microsoft Visual Studio, Eclipse CDT 5.0 and Mac Xcode IDE.</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 11.0</td>
+<td>November 2008</td>
+<td>Initial <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a> support. VS2008 IDE integration on Windows. OpenMP 3.0. Source Checker for static memory/parallel diagnostics.</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 10.1</td>
+<td>November 7, 2007</td>
+<td>New OpenMP* compatibility runtime library: if you use the new OpenMP RTL, you can mix and match with libraries and objects built by Visual C++. To use the new libraries, you need to use the new option "-Qopenmp /Qopenmp-lib:compat" on Windows, and "-openmp -openmp-lib:compat" on Linux. This version of the Intel compiler supports more intrinsics from <a href="http://en.m.wikipedia.org/wiki/Visual_Studio" title="Visual Studio" class="mw-redirect">Visual Studio</a> 2005.
+<p>VS2008 support - command line only in this release. The IDE integration was not supported yet.</p>
+</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 10.0</td>
+<td>June 5, 2007</td>
+<td>Improved parallelizer and vectorizer, Streaming SIMD Extensions 4 (<a href="http://en.m.wikipedia.org/wiki/SSE4" title="SSE4">SSE4</a>), new and enhanced optimization reports for advanced loop transformations, new optimized exception handling implementation.</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 9.0</td>
+<td>June 14, 2005</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/AMD64" title="AMD64" class="mw-redirect">AMD64</a> architecture (for Windows), software-based speculative pre-computation (SSP) optimization, improved loop optimization reports.</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 8.1</td>
+<td>September, 2004</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/AMD64" title="AMD64" class="mw-redirect">AMD64</a> architecture (for Linux).</td>
+</tr>
+<tr>
+<td>Intel C++ Compiler 8.0</td>
+<td>December 15, 2003</td>
+<td>Precompiled headers, code-coverage tools.</td>
+</tr>
+</table>
+<p><br></p>
+<h2> <span class="mw-headline" id="Flags_and_manuals">Flags and manuals</span>
+</h2>
+<p>Documentation can be found at the <a rel="nofollow" class="external text" href="http://software.intel.com/en-us/articles/intel-software-technical-documentation/">Intel Software Technical Documentation site</a>.</p>
+<table class="wikitable">
+<tr>
+<th>Windows</th>
+<th>Linux &amp; MacOSX</th>
+<th>Comment</th>
+</tr>
+<tr>
+<td><tt>/Od</tt></td>
+<td><tt>-O0</tt></td>
+<td>No optimization</td>
+</tr>
+<tr>
+<td><tt>/O1</tt></td>
+<td><tt>-O1</tt></td>
+<td>Optimize for size</td>
+</tr>
+<tr>
+<td><tt>/O2</tt></td>
+<td><tt>-O2</tt></td>
+<td>Optimize for speed and enable some optimization</td>
+</tr>
+<tr>
+<td><tt>/O3</tt></td>
+<td><tt>-O3</tt></td>
+<td>Enable all optimizations as O2, and intensive loop optimizations</td>
+</tr>
+<tr>
+<td><tt>/QxO</tt></td>
+<td><tt>-xO</tt></td>
+<td>Enables SSE3, SSE2 and SSE instruction sets optimizations for non-Intel CPUs <sup id="cite_ref-8" class="reference"><a href="Intel_C++_Compiler#cite_note-8"><span>[</span>9<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><tt>/fast</tt></td>
+<td><tt>-fast</tt></td>
+<td>Shorthand. On <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> this equates to "<tt>/O3 /Qipo /QxHost /no-prec-div</tt>" ; on <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a> "<tt>-O3 -ipo -static -xHOST -no-prec-div</tt>". Note that the processor specific optimization flag (<tt>-xHOST</tt>) will optimize for the processor compiled on—it is the only flag of <tt>-fast</tt>, which may be overridden.</td>
+</tr>
+<tr>
+<td><tt>/Qprof-gen</tt></td>
+<td><tt>-prof_gen</tt></td>
+<td>Compile the program and instrument it for a profile generating run.</td>
+</tr>
+<tr>
+<td><tt>/Qprof-use</tt></td>
+<td><tt>-prof_use</tt></td>
+<td>May only be used after running a program that was previously compiled using <tt>prof_gen</tt>. Uses profile information during each step of the compilation process.</td>
+</tr>
+</table>
+<p><br></p>
+<h2> <span class="mw-headline" id="Debugging">Debugging</span>
+</h2>
+<p>The Intel compiler provides debugging information that is standard for the common debuggers (<a href="http://en.m.wikipedia.org/wiki/DWARF" title="DWARF">DWARF 2</a> on Linux, similar to <a href="http://en.m.wikipedia.org/wiki/Gdb" title="Gdb" class="mw-redirect">gdb</a>, and <a href="http://en.m.wikipedia.org/wiki/COFF" title="COFF">COFF</a> for Windows). The flags to compile with debugging information are <tt>/Zi</tt> on Windows and <tt>-g</tt> on Linux. Debugging is done on Windows using the Visual Studio debugger and, on Linux, using gdb.</p>
+<p>While the Intel compiler can generate a gprof compatible <a href="http://en.m.wikipedia.org/wiki/Profiler_(computer_science)" title="Profiler (computer science)" class="mw-redirect">profiling</a> output, Intel also provides a kernel level, system-wide statistical profiler as a separate product called <a href="http://en.m.wikipedia.org/wiki/VTune" title="VTune">VTune</a>. VTune features an easy-to-use GUI (integrated into <a href="http://en.m.wikipedia.org/wiki/Visual_Studio" title="Visual Studio" class="mw-redirect">Visual Studio</a> for Windows, <a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a> for Linux) as well as a command line interface.</p>
+<p>Intel also offers a tool for memory and threading error detection called Intel Inspector XE. Regarding memory errors, it helps detect memory leaks, memory corruption, allocation/de-allocation of API mismatches and inconsistent memory API usage. Regarding threading errors, it helps detect data races (both heap and stack), deadlocks and thread and synch API errors.</p>
+<p><br></p>
+<h2> <span class="mw-headline" id="Criticism">Criticism</span>
+</h2>
+<p>Intel and third parties have published benchmark results to substantiate performance leadership claims over other commercial, open source and AMD compilers and libraries on Intel and non-Intel processors. Intel and AMD have documented flags to use on the Intel compilers to get optimal performance on Intel and AMD processors.<sup id="cite_ref-Intel_flags_9-0" class="reference"><a href="Intel_C++_Compiler#cite_note-Intel_flags-9"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-AMD_flags_10-0" class="reference"><a href="Intel_C++_Compiler#cite_note-AMD_flags-10"><span>[</span>11<span>]</span></a></sup> Nevertheless, the Intel compilers have been accused of producing sub-optimal code with malicious intent. For example, Steve Westfield wrote in a 2005 article at the AMD website:<sup id="cite_ref-11" class="reference"><a href="Intel_C++_Compiler#cite_note-11"><span>[</span>12<span>]</span></a></sup></p>
+<table class="cquote" style="margin:auto; border-collapse: collapse; border: none; background-color: transparent; width: auto;"><tr>
+<td style="vertical-align: top; width: 20px; border:none; color:#B2B7F2;font-size:35px;font-family: 'Times New Roman', serif; font-weight: bold; text-align: left; padding: 10px 10px;">“</td>
+<td style="vertical-align: top; border: none; padding: 4px 10px;">Intel 8.1 C/C++ compiler uses the flag -xN (for Linux) or -QxN (for Windows) to take advantage of the SSE2 extensions. For SSE3, the compiler switch is -xP (for Linux) and -QxP (for Windows). [...] With the -xN/-QxN and -xP/-QxP flags set, it checks the processor vendor string—and if it's not "GenuineIntel," it stops execution without even checking the feature flags. Ouch!</td>
+<td style="vertical-align: bottom; width: 20px; border: none; color: #B2B7F2; font-size: 35px; font-family: 'Times New Roman', serif; font-weight: bold; text-align: right; padding: 10px 10px;">”</td>
+</tr></table>
+<p>The Danish developer and scholar Agner Fog wrote in 2009:<sup id="cite_ref-agner-blog_12-0" class="reference"><a href="Intel_C++_Compiler#cite_note-agner-blog-12"><span>[</span>13<span>]</span></a></sup></p>
+<table class="cquote" style="margin:auto; border-collapse: collapse; border: none; background-color: transparent; width: auto;"><tr>
+<td style="vertical-align: top; width: 20px; border:none; color:#B2B7F2;font-size:35px;font-family: 'Times New Roman', serif; font-weight: bold; text-align: left; padding: 10px 10px;">“</td>
+<td style="vertical-align: top; border: none; padding: 4px 10px;">The Intel compiler and several different Intel function libraries have suboptimal performance on <a href="http://en.m.wikipedia.org/wiki/AMD" title="AMD" class="mw-redirect">AMD</a> and <a href="http://en.m.wikipedia.org/wiki/VIA_Technologies" title="VIA Technologies">VIA</a> processors. The reason is that the compiler or library can make multiple versions of a piece of code, each optimized for a certain processor and <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instruction set</a>, for example <a href="http://en.m.wikipedia.org/wiki/SSE2" title="SSE2">SSE2</a>, <a href="http://en.m.wikipedia.org/wiki/SSE3" title="SSE3">SSE3</a>, etc. The system includes a function that detects which type of CPU it is running on and chooses the optimal code path for that CPU. This is called a CPU dispatcher. However, the Intel CPU dispatcher does not only check which instruction set is supported by the CPU, it also checks the vendor ID string. If the vendor string is "GenuineIntel" then it uses the optimal code path. If the CPU is not from Intel then, in most cases, it will run the slowest possible version of the code, even if the CPU is fully compatible with a better version.</td>
+<td style="vertical-align: bottom; width: 20px; border: none; color: #B2B7F2; font-size: 35px; font-family: 'Times New Roman', serif; font-weight: bold; text-align: right; padding: 10px 10px;">”</td>
+</tr></table>
+<p>This vendor-specific CPU dispatching decreases the performance on non-Intel processors of software built with an Intel compiler or an Intel function library - possibly without the knowledge of the programmer. This has allegedly led to misleading <a href="http://en.m.wikipedia.org/wiki/Benchmark_(computing)" title="Benchmark (computing)">benchmarks</a>.<sup id="cite_ref-agner-blog_12-1" class="reference"><a href="Intel_C++_Compiler#cite_note-agner-blog-12"><span>[</span>13<span>]</span></a></sup> A legal battle between AMD and Intel over this and other issues has been settled in November 2009.<sup id="cite_ref-13" class="reference"><a href="Intel_C++_Compiler#cite_note-13"><span>[</span>14<span>]</span></a></sup> In late 2010, AMD settled an <a href="http://en.m.wikipedia.org/wiki/Federal_Trade_Commission" title="Federal Trade Commission">US Federal Trade Commission</a> <a href="http://en.m.wikipedia.org/wiki/Competition_law" title="Competition law">antitrust investigation</a> against Intel.<sup id="cite_ref-14" class="reference"><a href="Intel_C++_Compiler#cite_note-14"><span>[</span>15<span>]</span></a></sup></p>
+<p>The FTC settlement included a disclosure provision where Intel must:<sup id="cite_ref-Daily_Tech_15-0" class="reference"><a href="Intel_C++_Compiler#cite_note-Daily_Tech-15"><span>[</span>16<span>]</span></a></sup></p>
+<table class="cquote" style="margin:auto; border-collapse: collapse; border: none; background-color: transparent; width: auto;"><tr>
+<td style="vertical-align: top; width: 20px; border:none; color:#B2B7F2;font-size:35px;font-family: 'Times New Roman', serif; font-weight: bold; text-align: left; padding: 10px 10px;">“</td>
+<td style="vertical-align: top; border: none; padding: 4px 10px;">...publish clearly that its compiler discriminates against non-Intel processors (such as AMD's designs), not fully utilizing their features and producing inferior code.</td>
+<td style="vertical-align: bottom; width: 20px; border: none; color: #B2B7F2; font-size: 35px; font-family: 'Times New Roman', serif; font-weight: bold; text-align: right; padding: 10px 10px;">”</td>
+</tr></table>
+<p>In compliance with this rule, Intel added an "optimization notice" to its compiler descriptions stating that they "do not optimize equally for non-Intel microprocessors" and that "certain compiler options for Intel compilers, including some that are not specific to Intel micro-architecture, are reserved for Intel microprocessors". It says that:</p>
+<table class="cquote" style="margin:auto; border-collapse: collapse; border: none; background-color: transparent; width: auto;"><tr>
+<td style="vertical-align: top; width: 20px; border:none; color:#B2B7F2;font-size:35px;font-family: 'Times New Roman', serif; font-weight: bold; text-align: left; padding: 10px 10px;">“</td>
+<td style="vertical-align: top; border: none; padding: 4px 10px;">Intel® compilers, associated libraries and associated development tools may or may not optimize to the same degree for non-Intel microprocessors for optimizations that are not unique to Intel microprocessors. These optimizations include Intel® Streaming SIMD Extensions 2 (Intel® SSE2), Intel® Streaming SIMD Extensions 3 (Intel® SSE3), and Supplemental Streaming SIMD Extensions 3 (Intel® SSSE3) instruction sets and other optimizations.</td>
+<td style="vertical-align: bottom; width: 20px; border: none; color: #B2B7F2; font-size: 35px; font-family: 'Times New Roman', serif; font-weight: bold; text-align: right; padding: 10px 10px;">”</td>
+</tr></table>
+<p><br></p>
+<h2> <span class="mw-headline" id="See_Also">See Also</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Intel_Software_Network" title="Intel Software Network">Intel Software Network</a> (support and discussion)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_Cilk_Plus" title="Intel Cilk Plus">Intel Cilk Plus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_Threading_Building_Blocks" title="Intel Threading Building Blocks">Intel Threading Building Blocks Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Integrated_Performance_Primitives" title="Integrated Performance Primitives">Intel Integrated Performance Primitives Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Math_Kernel_Library" title="Math Kernel Library">Intel Math Kernel Library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Vtune" title="Vtune" class="mw-redirect">Intel VTune Amplifier XE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_Fortran_Compiler" title="Intel Fortran Compiler">Intel Fortran Compiler</a></li>
+</ul>
+<p><br></p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://software.intel.com/en-us/non-commercial-software-development">"Non-Commercial Software Development"</a>. <i>Developer Zone</i>. <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://software.intel.com/en-us/non-commercial-software-development">http://software.intel.com/en-us/non-commercial-software-development</a></span><span class="reference-accessdate">. Retrieved 11 October 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Non-Commercial+Software+Development&amp;rft.atitle=Developer+Zone&amp;rft.pub=%5B%5BIntel%5D%5D&amp;rft_id=http%3A%2F%2Fsoftware.intel.com%2Fen-us%2Fnon-commercial-software-development&amp;rfr_id=info:sid/en.wikipedia.org:Intel_C%2B%2B_Compiler"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-1">^</a></b></span> <span class="reference-text">A. J. C. Bik, <i>The Software Vectorization Handbook</i> (Intel Press, Hillsboro, OR, 2004), <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0974364924" class="internal mw-magiclink-isbn">ISBN 0-9743649-2-4</a>.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-2">^</a></b></span> <span class="reference-text">The Software Optimization Cookbook, High-Performance Recipes for IA-32 Platforms, Richard Gerber, Aart J.C. Bik, Kevin B. Smith, and Xinmin Tian, Intel Press, 2006</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-3">^</a></b></span> <span class="reference-text">Intel C++ Compiler XE 13.0 User and Reference Guides</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-4">^</a></b></span> <span class="reference-text"><i><a rel="nofollow" class="external text" href="http://hal.archives-ouvertes.fr/hal-00128124/en/">The pitfalls of verifying floating-point computations</a></i>, by David Monniaux, also printed in ACM Transactions on programming languages and systems (TOPLAS), May 2008; section 4.3.2 discusses nonstandard optimizations.</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.intel.com/software/products">Intel Software Products</a> site provides more information</span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-6">^</a></b></span> <span class="reference-text">Intel C++ Composer XW 2013 Release Notes<i><a rel="nofollow" class="external autonumber" href="http://software.intel.com/en-us/articles/intel-c-composer-xe-2013-release-notes/">[1]</a></i> <a rel="nofollow" class="external free" href="http://software.intel.com/en-us/articles/intel-c-composer-xe-2013-release-notes/">http://software.intel.com/en-us/articles/intel-c-composer-xe-2013-release-notes/</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-7">^</a></b></span> <span class="reference-text">This note is attached to the release in which Cilk Plus was introduced. This ULR points to current documentation: <i><a rel="nofollow" class="external free" href="http://software.intel.com/en-us/intel-composer-xe/">http://software.intel.com/en-us/intel-composer-xe/</a></i></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.intel.com/software/products/compilers/docs/cwin/release_notes.htm">"Intel® Compilers | Intel® Developer Zone"</a>. Intel.com. 1999-02-22<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.intel.com/software/products/compilers/docs/cwin/release_notes.htm">http://www.intel.com/software/products/compilers/docs/cwin/release_notes.htm</a></span><span class="reference-accessdate">. Retrieved 2012-10-13</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Intel%C2%AE+Compilers+%26%23124%3B+Intel%C2%AE+Developer+Zone&amp;rft.atitle=&amp;rft.date=1999-02-22&amp;rft.pub=Intel.com&amp;rft_id=http%3A%2F%2Fwww.intel.com%2Fsoftware%2Fproducts%2Fcompilers%2Fdocs%2Fcwin%2Frelease_notes.htm&amp;rfr_id=info:sid/en.wikipedia.org:Intel_C%2B%2B_Compiler"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Intel_flags-9">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-Intel_flags_9-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external autonumber" href="http://software.intel.com/sites/products/documentation/hpc/compilerpro/en-us/cpp/win/compiler_c/index.htm">[2]</a><sup class="noprint Inline-Template"><span title=" since October 2012" style="white-space: nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></span>
+</li>
+<li id="cite_note-AMD_flags-10">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-AMD_flags_10-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://developer.amd.com/Assets/CompilerOptQuickRef-61004100.pdf">http://developer.amd.com/Assets/CompilerOptQuickRef-61004100.pdf</a></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://developer.amd.com/documentation/articles/pages/4292005119.aspx">Your Processor, Your Compiler, and You: The Case of the Secret CPUID String</a></span>
+</li>
+<li id="cite_note-agner-blog-12">
+<span class="mw-cite-backlink">^ <a href="Intel_C++_Compiler#cite_ref-agner-blog_12-0"><sup><i><b>a</b></i></sup></a> <a href="Intel_C++_Compiler#cite_ref-agner-blog_12-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.agner.org/optimize/blog/read.php?i=49">Intel's "cripple AMD" function</a></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://download.intel.com/pressroom/legal/AMD_settlement_agreement.pdf">http://download.intel.com/pressroom/legal/AMD_settlement_agreement.pdf</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://newsroom.intel.com/community/intel_newsroom/blog/2010/08/04/intel-and-us-federal-trade-commission-reach-tentative-settlement">"Intel and U.S. Federal Trade Commission Reach Tentative Settlement"</a>. Newsroom.intel.com. 2010-08-04<span class="printonly">. <a rel="nofollow" class="external free" href="http://newsroom.intel.com/community/intel_newsroom/blog/2010/08/04/intel-and-us-federal-trade-commission-reach-tentative-settlement">http://newsroom.intel.com/community/intel_newsroom/blog/2010/08/04/intel-and-us-federal-trade-commission-reach-tentative-settlement</a></span><span class="reference-accessdate">. Retrieved 2012-10-13</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Intel+and+U.S.+Federal+Trade+Commission+Reach+Tentative+Settlement&amp;rft.atitle=&amp;rft.date=2010-08-04&amp;rft.pub=Newsroom.intel.com&amp;rft_id=http%3A%2F%2Fnewsroom.intel.com%2Fcommunity%2Fintel_newsroom%2Fblog%2F2010%2F08%2F04%2Fintel-and-us-federal-trade-commission-reach-tentative-settlement&amp;rfr_id=info:sid/en.wikipedia.org:Intel_C%2B%2B_Compiler"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Daily_Tech-15">
+<span class="mw-cite-backlink"><b><a href="Intel_C++_Compiler#cite_ref-Daily_Tech_15-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.dailytech.com/FTC+Intel+Reach+Settlement+Intel+Banned+From+Anticompetitive+Practices/article19265.htm">FTC, Intel Reach Settlement; Intel Banned From Anticompetitive Practices</a></span>
+</li>
+</ol>
+</div>
+<p><br></p>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.intel.com/cd/software/products/asmo-na/eng/compilers/284132.htm">Intel Compilers</a></li>
+<li><a rel="nofollow" class="external text" href="http://software.intel.com/en-us/articles/non-commercial-software-download/">Free download of Intel compilers for non-commercial use</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 9 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bg.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="bg" hreflang="bg">български</a></li><li><a href="http://cs.m.wikipedia.org/wiki/P%C5%99eklada%C4%8D_Intel_C%2B%2B" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%9D%B8%ED%85%94_C%2B%2B_%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Intel_C%2B%2B_Compiler" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Intel_C%2B%2B_compiler" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Intel_C%2B%2B_Compiler&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Intel_C%2B%2B_Compiler&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Intel+C%2B%2B+Compiler&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

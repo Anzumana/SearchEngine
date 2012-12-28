@@ -1,0 +1,300 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Brian Kernighan - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Brian Kernighan","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Brian_Kernighan" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Brian+Kernighan"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Brian Kernighan</h1>			
+<table class="infobox vcard" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<tr>
+<th colspan="2" class="fn" style="text-align:center; font-size:125%; font-weight:bold; background:transparent; text-align:center;">Brian Wilson Kernighan</th>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;">Born</th>
+<td class="" style="line-height:1.3em; vertical-align:middle;">January 1st 1942 (age 70–71)<sup id="cite_ref-NYT_2002_1-0" class="reference"><a href="Brian_Kernighan#cite_note-NYT_2002-1"><span>[</span>1<span>]</span></a></sup><br><a href="http://en.m.wikipedia.org/wiki/Toronto" title="Toronto">Toronto</a>, <a href="http://en.m.wikipedia.org/wiki/Canada" title="Canada">Canada</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;">Citizenship</th>
+<td class="" style="line-height:1.3em; vertical-align:middle;"><a href="http://en.m.wikipedia.org/wiki/Canada" title="Canada">Canadian</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;">Fields</th>
+<td class="category" style="line-height:1.3em; vertical-align:middle;"><a href="http://en.m.wikipedia.org/wiki/Computer_Science" title="Computer Science" class="mw-redirect">Computer Science</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;">Institutions</th>
+<td class="" style="line-height:1.3em; vertical-align:middle;"><a href="http://en.m.wikipedia.org/wiki/Princeton_University" title="Princeton University">Princeton University</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;"><a href="http://en.m.wikipedia.org/wiki/Alma_mater" title="Alma mater">Alma mater</a></th>
+<td class="" style="line-height:1.3em; vertical-align:middle;">
+<a href="http://en.m.wikipedia.org/wiki/University_of_Toronto" title="University of Toronto">University of Toronto</a><br><a href="http://en.m.wikipedia.org/wiki/Princeton_University" title="Princeton University">Princeton University</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; background:transparent; line-height:1.1em;">Known for</th>
+<td class="" style="line-height:1.3em; vertical-align:middle;">
+<a href="Unix" title="Unix">Unix</a>, <a href="AWK" title="AWK">AWK</a>, <a href="AMPL" title="AMPL">AMPL</a><br><a href="The_C_Programming_Language_(book)" title="The C Programming Language (book)" class="mw-redirect">The C Programming Language (book)</a>
+</td>
+</tr>
+</table>
+<p><b>Brian Wilson Kernighan</b> (<span class="nowrap"><span title="pronunciation:"><img alt="play" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'k' in 'kind'" style="border-bottom:1px dotted">k</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɜr/ 'ir' in 'bird'" style="border-bottom:1px dotted">ɜr</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'n' in 'nigh'" style="border-bottom:1px dotted">n</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ɨ/ 'e' in 'roses'" style="border-bottom:1px dotted">ɨ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'h' in 'hi'" style="border-bottom:1px dotted">h</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/æ/ short 'a' in 'bad'" style="border-bottom:1px dotted">æ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'n' in 'nigh'" style="border-bottom:1px dotted">n</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span></span>; born 1942)<sup id="cite_ref-NYT_2002_1-1" class="reference"><a href="Brian_Kernighan#cite_note-NYT_2002-1"><span>[</span>1<span>]</span></a></sup> is a Canadian <a href="http://en.m.wikipedia.org/wiki/Computer_scientist" title="Computer scientist">computer scientist</a> who worked at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a> alongside <a href="Unix" title="Unix">Unix</a> creators <a href="http://en.m.wikipedia.org/wiki/Ken_Thompson_(programmer)" title="Ken Thompson (programmer)" class="mw-redirect">Ken Thompson</a> and <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a> and contributed to the development of <a href="Unix" title="Unix">Unix</a>. He is also coauthor of the <a href="http://en.m.wikipedia.org/wiki/AWK_(programming_language)" title="AWK (programming language)" class="mw-redirect">AWK</a> and <a href="AMPL" title="AMPL">AMPL</a> <a href="Programming_language" title="Programming language">programming languages</a>. The 'K' of <a href="The_C_Programming_Language_(book)" title="The C Programming Language (book)" class="mw-redirect">K&amp;R C</a> and the 'K' in <a href="http://en.m.wikipedia.org/wiki/AWK_(programming_language)" title="AWK (programming language)" class="mw-redirect">AWK</a> both stand for 'Kernighan'. Brian Kernighan is currently a Professor at the Computer Science Department of <a href="http://en.m.wikipedia.org/wiki/Princeton_University" title="Princeton University">Princeton University</a>, where he is also the Undergraduate Department Representative.</p>
+<p>Kernighan's name became widely known through co-authorship of the first book on the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> with <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>. Kernighan has said that he had no part in the design of the C language ("it's entirely Dennis Ritchie's work").<sup id="cite_ref-LJ_2003_2-0" class="reference"><a href="Brian_Kernighan#cite_note-LJ_2003-2"><span>[</span>2<span>]</span></a></sup> He authored many <a href="Unix" title="Unix">Unix</a> programs, including <a href="http://en.m.wikipedia.org/wiki/Ditroff" title="Ditroff" class="mw-redirect">ditroff</a>, and <a href="http://en.m.wikipedia.org/wiki/Cron" title="Cron">cron</a> for <a href="http://en.m.wikipedia.org/wiki/Version_7_Unix" title="Version 7 Unix">Version 7 Unix</a>.</p>
+<p>In collaboration with Shen Lin he devised well-known <a href="http://en.m.wikipedia.org/wiki/Heuristics" title="Heuristics" class="mw-redirect">heuristics</a> for two <a href="http://en.m.wikipedia.org/wiki/NP-complete" title="NP-complete">NP-complete</a> optimization problems: <a href="http://en.m.wikipedia.org/wiki/Graph_partitioning" title="Graph partitioning" class="mw-redirect">graph partitioning</a> and the <a href="http://en.m.wikipedia.org/wiki/Travelling_salesman_problem" title="Travelling salesman problem">travelling salesman problem</a>. (In a display of authorial equity, the former is usually called the <i><a href="http://en.m.wikipedia.org/wiki/Kernighan%E2%80%93Lin" title="Kernighan–Lin" class="mw-redirect">Kernighan–Lin</a></i> algorithm, while the latter is styled <i><a href="http://en.m.wikipedia.org/wiki/Lin%E2%80%93Kernighan" title="Lin–Kernighan" class="mw-redirect">Lin–Kernighan</a></i>.)</p>
+<p>Kernighan was the software editor for <a href="Prentice_Hall" title="Prentice Hall">Prentice Hall International</a>. His "Software Tools" series spread the essence of 'C/Unix thinking' with makeovers for <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a>, <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a>, and <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> - and most notably his '<a href="http://en.m.wikipedia.org/wiki/Ratfor" title="Ratfor">Ratfor</a>' (rational FORTRAN) was put in the public domain.</p>
+<p>He has said that if stranded on an island with only one programming language it would have to be <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>.<sup id="cite_ref-3" class="reference"><a href="Brian_Kernighan#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Kernighan coined the term <a href="Unix" title="Unix">Unix</a> in the 1970s. The original term he coined was Unics (for Uniplexed Information and Computing Service, a play on <a href="Multics" title="Multics">Multics</a>), which was later changed to Unix.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2011">citation needed</span></a></i>]</sup> Kernighan is also known as a coiner of the expression "<b>What You See Is All You Get (WYSIAYG)</b>", which is a sarcastic variant of the original "What You See Is What You Get" (<a href="http://en.m.wikipedia.org/wiki/WYSIWYG" title="WYSIWYG">WYSIWYG</a>).<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2011">citation needed</span></a></i>]</sup> Kernighan's term is used to indicate that WYSIWYG systems might throw away information in a document that could be useful in other contexts.</p>
+<h2> <span class="mw-headline" id="Early_life_and_education">Early life and education</span>
+</h2>
+<p>Born in <a href="http://en.m.wikipedia.org/wiki/Toronto" title="Toronto">Toronto</a>, Kernighan attended the <a href="http://en.m.wikipedia.org/wiki/University_of_Toronto" title="University of Toronto">University of Toronto</a> between 1960 and 1964, earning his <a href="http://en.m.wikipedia.org/wiki/Bachelor%27s_degree" title="Bachelor's degree">Bachelor's degree</a> in <a href="http://en.m.wikipedia.org/wiki/Engineering_Physics" title="Engineering Physics" class="mw-redirect">Engineering Physics</a>.<sup id="cite_ref-LJ_2003_2-1" class="reference"><a href="Brian_Kernighan#cite_note-LJ_2003-2"><span>[</span>2<span>]</span></a></sup> He received his PhD in <a href="http://en.m.wikipedia.org/wiki/Electrical_engineering" title="Electrical engineering">electrical engineering</a> from <a href="http://en.m.wikipedia.org/wiki/Princeton_University" title="Princeton University">Princeton University</a>, where he has held a professorship in the department of computer science since 2000. Each fall he teaches a course called "Computers in Our World", which introduces the fundamentals of computing to non-majors.</p>
+<h2> <span class="mw-headline" id="Summary_of_achievements">Summary of achievements</span>
+</h2>
+<ul>
+<li>The first documented <i><a href="Hello,_world" title="Hello, world" class="mw-redirect">Hello, world</a></i> program, in Kernighan's <a rel="nofollow" class="external text" href="http://cm.bell-labs.com/cm/cs/who/dmr/btut.html">"A Tutorial Introduction to the Language B"</a> (1972).</li>
+<li>The <a href="http://en.m.wikipedia.org/wiki/AWK_(programming_language)" title="AWK (programming language)" class="mw-redirect">AWK</a> programming language, along with <a href="http://en.m.wikipedia.org/wiki/Al_Aho" title="Al Aho" class="mw-redirect">Al Aho</a> and <a href="http://en.m.wikipedia.org/wiki/Peter_J._Weinberger" title="Peter J. Weinberger">Peter J. Weinberger</a>, and its book <i><span class="new" title="The AWK Programming Language (book) (page does not exist)">The AWK Programming Language</span></i>
+</li>
+<li>The <a href="AMPL" title="AMPL">AMPL</a> programming language</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Elements_of_Programming_Style" title="The Elements of Programming Style">The Elements of Programming Style</a></i>, with <a href="http://en.m.wikipedia.org/wiki/P._J._Plauger" title="P. J. Plauger">P. J. Plauger</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ratfor" title="Ratfor">Ratfor</a></li>
+<li>
+<i><span class="new" title="Software Tools (page does not exist)">Software Tools</span></i>, a book and set of tools for <a href="http://en.m.wikipedia.org/wiki/Ratfor" title="Ratfor">Ratfor</a>, cocreated in part with P. J. Plauger</li>
+<li>
+<i><span class="new" title="Software Tools in Pascal (page does not exist)">Software Tools in Pascal</span></i>, a book and set of tools for <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, with P. J. Plauger</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Unix_Programming_Environment" title="The Unix Programming Environment">The Unix Programming Environment</a></i>, a tutorial book along with <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>
+</li>
+<li>
+<i><a href="The_C_Programming_Language_(book)" title="The C Programming Language (book)" class="mw-redirect">The C Programming Language</a></i> along with C creator <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>, the first book on C</li>
+<li>The <a href="http://en.m.wikipedia.org/wiki/Pic_language" title="Pic language">pic</a> typesetting language for <a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a>
+</li>
+<li>The <a href="http://en.m.wikipedia.org/wiki/Eqn" title="Eqn">eqn</a> typesetting language for <a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a>, along with <a href="http://en.m.wikipedia.org/wiki/Lorinda_Cherry" title="Lorinda Cherry">Lorinda Cherry</a>
+</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Practice_of_Programming" title="The Practice of Programming">The Practice of Programming</a></i>, with <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/bwk-on-pascal.html">"Why Pascal is Not My Favorite Programming Language"</a>, a popular criticism of <a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a>'s <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>. Some parts of the criticism are obsolete due to ISO 7185 (Programming Languages - Pascal), the criticism was written before ISO 7185 was created. (AT&amp;T Computing Science Technical Report #100)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Ditroff" title="Ditroff" class="mw-redirect">ditroff</a>, or "device independent <a href="http://en.m.wikipedia.org/wiki/Troff" title="Troff">troff</a>", which allowed troff to be used with any device</li>
+<li>The <a href="http://en.m.wikipedia.org/wiki/M4_(computer_language)" title="M4 (computer language)">m4</a> macro processing language, with <a href="Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Writings">Writings</span>
+</h2>
+<ul>
+<li>
+<i>Software Tools</i> (1976 with <a href="http://en.m.wikipedia.org/wiki/PJ_Plauger" title="PJ Plauger" class="mw-redirect">PJ Plauger</a>)</li>
+<li>
+<i>Software Tools in Pascal</i> (1981 with <a href="http://en.m.wikipedia.org/wiki/PJ_Plauger" title="PJ Plauger" class="mw-redirect">PJ Plauger</a>)</li>
+<li>
+<i><a href="The_C_Programming_Language_(book)" title="The C Programming Language (book)" class="mw-redirect">The C Programming Language</a></i> ('K&amp;R') (1978, 1988 with <a href="Dennis_M._Ritchie" title="Dennis M. Ritchie" class="mw-redirect">Dennis M. Ritchie</a>)</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Elements_of_Programming_Style_(book)" title="The Elements of Programming Style (book)" class="mw-redirect">The Elements of Programming Style</a></i> (1974, 1978 with <a href="http://en.m.wikipedia.org/wiki/PJ_Plauger" title="PJ Plauger" class="mw-redirect">PJ Plauger</a>)</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Unix_Programming_Environment" title="The Unix Programming Environment">The Unix Programming Environment</a></i> (1984 with <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>)</li>
+<li>
+<i>The AWK Programming Language</i> (1988 with <a href="http://en.m.wikipedia.org/wiki/Al_Aho" title="Al Aho" class="mw-redirect">Al Aho</a> and <a href="http://en.m.wikipedia.org/wiki/Peter_J._Weinberger" title="Peter J. Weinberger">Peter J. Weinberger</a>)</li>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/The_Practice_of_Programming" title="The Practice of Programming">The Practice of Programming</a></i> (1999 with <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>)</li>
+<li>
+<i>AMPL: A Modeling Language for Mathematical Programming, 2nd Ed.</i> (2003 with <a href="http://en.m.wikipedia.org/wiki/Robert_Fourer" title="Robert Fourer">Robert Fourer</a> and David Gay)</li>
+<li>
+<i>D is for Digital: What a well-informed person should know about computers and communications</i> (2011)</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-NYT_2002-1">
+<span class="mw-cite-backlink">^ <a href="Brian_Kernighan#cite_ref-NYT_2002_1-0"><sup><i><b>a</b></i></sup></a> <a href="Brian_Kernighan#cite_ref-NYT_2002_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation news">Lohr, Steve (31 October 2002). <a rel="nofollow" class="external text" href="http://www.nytimes.com/2002/10/31/technology/to-the-liberal-arts-he-adds-computer-science.html?pagewanted=all">"To the Liberal Arts, He Adds Computer Science"</a>. <i><a href="http://en.m.wikipedia.org/wiki/The_New_York_Times" title="The New York Times">The New York Times</a></i><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.nytimes.com/2002/10/31/technology/to-the-liberal-arts-he-adds-computer-science.html?pagewanted=all">http://www.nytimes.com/2002/10/31/technology/to-the-liberal-arts-he-adds-computer-science.html?pagewanted=all</a></span>. "Mr. Kernighan, 60, is a renowned computer scientist"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=To+the+Liberal+Arts%2C+He+Adds+Computer+Science&amp;rft.jtitle=%5B%5BThe+New+York+Times%5D%5D&amp;rft.aulast=Lohr&amp;rft.aufirst=Steve&amp;rft.au=Lohr%2C%26%2332%3BSteve&amp;rft.date=31+October+2002&amp;rft_id=http%3A%2F%2Fwww.nytimes.com%2F2002%2F10%2F31%2Ftechnology%2Fto-the-liberal-arts-he-adds-computer-science.html%3Fpagewanted%3Dall&amp;rfr_id=info:sid/en.wikipedia.org:Brian_Kernighan"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-LJ_2003-2">
+<span class="mw-cite-backlink">^ <a href="Brian_Kernighan#cite_ref-LJ_2003_2-0"><sup><i><b>a</b></i></sup></a> <a href="Brian_Kernighan#cite_ref-LJ_2003_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Dolya, Aleksey (29 July 2003). <a rel="nofollow" class="external text" href="http://www.linuxjournal.com/article/7035">"Interview with Brian Kernighan"</a>. <a href="http://en.m.wikipedia.org/wiki/Linux_Journal" title="Linux Journal">Linux Journal</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.linuxjournal.com/article/7035">http://www.linuxjournal.com/article/7035</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Interview+with+Brian+Kernighan&amp;rft.atitle=&amp;rft.aulast=Dolya&amp;rft.aufirst=Aleksey&amp;rft.au=Dolya%2C%26%2332%3BAleksey&amp;rft.date=29+July+2003&amp;rft.pub=%5B%5BLinux+Journal%5D%5D&amp;rft_id=http%3A%2F%2Fwww.linuxjournal.com%2Farticle%2F7035&amp;rfr_id=info:sid/en.wikipedia.org:Brian_Kernighan"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Brian_Kernighan#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web">Budiu, Mihai (July, 2000). <a rel="nofollow" class="external text" href="http://www-2.cs.cmu.edu/~mihaib/kernighan-interview/index.html">"An Interview with Brian Kernighan"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www-2.cs.cmu.edu/~mihaib/kernighan-interview/index.html">http://www-2.cs.cmu.edu/~mihaib/kernighan-interview/index.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=An+Interview+with+Brian+Kernighan&amp;rft.atitle=&amp;rft.aulast=Budiu&amp;rft.aufirst=Mihai&amp;rft.au=Budiu%2C%26%2332%3BMihai&amp;rft.date=July%2C+2000&amp;rft_id=http%3A%2F%2Fwww-2.cs.cmu.edu%2F%7Emihaib%2Fkernighan-interview%2Findex.html&amp;rfr_id=info:sid/en.wikipedia.org:Brian_Kernighan"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Wikiquote-logo-en.svg/40px-Wikiquote-logo-en.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Wikiquote-logo-en.svg/60px-Wikiquote-logo-en.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Wikiquote-logo-en.svg/80px-Wikiquote-logo-en.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikiquote has a collection of quotations related to: <i><b><a href="http://en.wikiquote.org/wiki/Special:Search/Brian_Kernighan" class="extiw" title="q:Special:Search/Brian Kernighan">Brian Kernighan</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/~bwk/">Brian Kernighan's home page at Princeton U.</a></li>
+<li><a rel="nofollow" class="external text" href="http://cm.bell-labs.com/who/bwk/">Brian Kernighan's home page at Bell Labs</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.lysator.liu.se/c/bwk-on-pascal.html">"Why Pascal is Not My Favorite Programming Language"</a> – By Brian Kernighan, AT&amp;T Bell Labs, 2 April 1981</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.harmonyatwork.in/blog/2009/10/leap-in-and-try-things/">"Leap In and Try Things" - Interview with Brian Kernighan</a> – on "Harmony at Work Blog", October 2009.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www-2.cs.cmu.edu/~mihaib/kernighan-interview/index.html">An Interview with Brian Kernighan</a> – By Mihai Budiu, for <i>PC Report Romania</i>, August 2000</li>
+<li>
+<a rel="nofollow" class="external text" href="http://web.archive.org/web/20090428163341/http://www.princeton.edu/~mike/unixhistory">Transcript of an interview with Brian Kernighan</a> – Interview by <a rel="nofollow" class="external text" href="http://web.archive.org/web/20090528015718/http://www.princeton.edu/~mike/">Michael S. Mahoney</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://technetcast.ddj.com/tnc_play_stream.html?stream_id=25">Video</a> - TechNetCast At Bell Labs: Dennis Ritchie and Brian Kernighan (1999-05-14)</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.princeton.edu/WebMedia/special/">Video (Princeton University, September 7, 2003)</a> - "Assembly for the Class of 2007: 'D is for Digital and Why It Matters'"</li>
+<li>
+<a rel="nofollow" class="external text" href="http://doc.cat-v.org/inferno/4th_edition/limbo_language/descent">A Descent into Limbo</a> by Brian Kernighan</li>
+<li><a rel="nofollow" class="external text" href="http://www.adeptis.ru/vinci/m_part6.html">Photos of Brian Kernighan</a></li>
+<li>
+<a href="http://openlibrary.org/authors/OL946967A" class="extiw" title="openlibrary:authors/OL946967A">Works by Brian Kernighan</a> on <a href="http://en.m.wikipedia.org/wiki/Open_Library" title="Open Library">Open Library</a> at the <a href="http://en.m.wikipedia.org/wiki/Internet_Archive" title="Internet Archive">Internet Archive</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://princetonstartuptv.com/post/19830941910/guest-brian-kernighan-www-kernighan-com">Video interview with Brian Kernighan for Princeton Startup TV</a> (03.20.2012)</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Authority_control" title="Authority control">Authority control</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><span class="uid"><a rel="nofollow" class="external text" href="http://www.worldcat.org/identities/lccn-n50-44563">WorldCat</a></span></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Virtual_International_Authority_File" title="Virtual International Authority File">VIAF</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://viaf.org/viaf/108136058">108136058</a></span>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Library_of_Congress_Control_Number" title="Library of Congress Control Number">LCCN</a>: <span class="uid"><a rel="nofollow" class="external text" href="http://id.loc.gov/authorities/names/n50044563">n50044563</a></span>
+</li>
+</ul>
+</div>
+</td>
+</tr></table>
+</td>
+</tr></table>
+<table id="persondata" class="persondata" style="border:1px solid #aaa; display:none; speak:none;">
+<tr>
+<th colspan="2"><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Persondata" title="Wikipedia:Persondata">Persondata</a></th>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Name</td>
+<td>Kernighan, Brian</td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Alternative names</td>
+<td></td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Short description</td>
+<td></td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Date of birth</td>
+<td>1942</td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Place of birth</td>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/Toronto" title="Toronto">Toronto</a>, <a href="http://en.m.wikipedia.org/wiki/Canada" title="Canada">Canada</a>
+</td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Date of death</td>
+<td></td>
+</tr>
+<tr>
+<td class="persondata-label" style="color:#aaa;">Place of death</td>
+<td></td>
+</tr>
+</table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 24 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ca.m.wikipedia.org/wiki/Brian_Kernighan" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Brian_Kernighan" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Brian_W._Kernighan" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Brian_Kernighan" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Brian_Kernighan" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Brian_Kernighan" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B8%8C%EB%9D%BC%EC%9D%B4%EC%96%B8_%EC%BB%A4%EB%8B%88%ED%95%B8" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Brian_Kernighan" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Brian_Kernighan" lang="it" hreflang="it">italiano</a></li><li><a href="http://ku.m.wikipedia.org/wiki/Brian_Kernighan" lang="ku" hreflang="ku">Kurdî</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%98%D0%B0%D0%BD_%D0%9A%D0%B5%D1%80%D0%BD%D0%B8%D1%85%D0%B0%D0%BD" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AC%E0%B5%8D%E0%B4%B0%E0%B4%AF%E0%B4%BE%E0%B5%BB_%E0%B4%95%E0%B5%86%E0%B5%BC%E0%B4%A3%E0%B4%BF%E0%B4%B9%E0%B4%BE%E0%B5%BB" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://mr.m.wikipedia.org/wiki/%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%A8_%E0%A4%95%E0%A5%87%E0%A4%B0%E0%A5%8D%E0%A4%A8%E0%A4%BF%E0%A4%98%E0%A4%A8" lang="mr" hreflang="mr">मराठी</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Brian_Kernighan" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%96%E3%83%A9%E3%82%A4%E3%82%A2%E3%83%B3%E3%83%BB%E3%82%AB%E3%83%BC%E3%83%8B%E3%83%8F%E3%83%B3" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Brian_Kernighan" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Brian_Kernighan" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9A%D0%B5%D1%80%D0%BD%D0%B8%D0%B3%D0%B0%D0%BD,_%D0%91%D1%80%D0%B0%D0%B9%D0%B0%D0%BD" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Brian_Kernighan" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Brian_Kernighan" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Brian_Kernighan" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Brian_Kernighan" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%91%D1%80%D0%B0%D1%8F%D0%BD_%D0%9A%D0%B5%D1%80%D0%BD%D1%96%D0%B3%D0%B0%D0%BD" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Brian_Kernighan&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Brian_Kernighan&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Brian+Kernighan&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

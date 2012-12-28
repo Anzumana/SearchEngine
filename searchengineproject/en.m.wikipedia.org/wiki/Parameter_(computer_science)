@@ -1,0 +1,305 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Parameter (computer programming) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Parameter (computer programming)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Parameter_(computer_programming)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Parameter+%28computer+programming%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Parameter (computer programming)</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, a <b>parameter</b> is a special kind of <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable</a>, used in a <a href="Subroutine" title="Subroutine">subroutine</a> to refer to one of the pieces of data provided as input to the subroutine.<sup id="cite_ref-0" class="reference"><a href="Parameter_(computer_science)#cite_note-0"><span>[</span>1<span>]</span></a></sup> These pieces of data are called <b>arguments</b>. An ordered list of parameters is usually included in the definition of a subroutine, so that, each time the subroutine is called, its arguments for that call can be assigned to the corresponding parameters.</p>
+<p>Just as in standard mathematical usage, the <i>argument</i> is thus the actual value passed to a function, procedure, or routine (such as <i>37</i> in <i>log(37)</i>), whereas the <i>parameter</i> is a reference to that value inside the implementation of the function (<i>log</i> in this case). See the <a href="Parameter_(computer_science)#Parameters_and_arguments">Parameters and arguments</a> section for more information.</p>
+<p>In the most common case, <a href="Call-by-value" title="Call-by-value" class="mw-redirect">call-by-value</a>, a parameter acts within the subroutine as a <a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">local</a> (isolated) copy of the argument, but in other cases, e.g. <a href="http://en.m.wikipedia.org/wiki/Call-by-reference" title="Call-by-reference" class="mw-redirect">call-by-reference</a>, the argument supplied by the caller can be affected by actions within the called subroutine (as discussed in <a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">evaluation strategy</a>).</p>
+<p>The semantics for how parameters can be declared and how the arguments get passed to the parameters of subroutines are defined by the language, but the details of how this is represented in any particular computer system depend on the <a href="http://en.m.wikipedia.org/wiki/Calling_convention" title="Calling convention">calling conventions</a> of that system.</p>
+<h2> <span class="mw-headline" id="Example">Example</span>
+</h2>
+<p>The following program in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> programming language defines a function that is named "sales_tax" and has one parameter named "price". The type of price is "double" (i.e. a <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">double-precision floating point</a> number). The function's return type is also a double.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">double</span> sales_tax<span class="br0">(</span><span class="kw4">double</span> price<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> <span class="nu16">0.05</span> <span class="sy0">*</span> price<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>After the function has been defined, it can be invoked as follows:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+sales_tax<span class="br0">(</span><span class="nu16">10.00</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>In this example, the function has been invoked with the number 10.00. When this happens, 10.00 will be assigned to price, and the function begins calculating its result. The steps for producing the result are specified below enclosed in {} "0.05 * price" indicates that the first thing to do is multiply 0.05 by the value of price, which gives 0.50. "return" means the function will produce the result of "0.05 * price". Therefore, the final result is 0.50.</p>
+<h2> <span class="mw-headline" id="Parameters_and_arguments">Parameters and arguments</span>
+</h2>
+<p>These two terms are sometimes loosely used interchangeably; in particular, "argument" is sometimes used in place of "parameter". Nevertheless, there is a difference. Parameters appear in procedure definitions; arguments appear in procedure calls. Loosely, a parameter is a type, and an argument is an instance.</p>
+<p>A parameter is an intrinsic property of the procedure, included in its definition. For example, in many languages, a procedure to add two supplied integers together and calculate the sum would need two parameters, one for each integer. In general, a procedure may be defined with any number of parameters, or no parameters at all. If a procedure has parameters, the part of its definition that specifies the parameters is called its <i>parameter list</i>.</p>
+<p>By contrast, the arguments are the values supplied to the procedure when it is called. Unlike the parameters, which form an unchanging part of the procedure's definition, the arguments may vary from call to call. Each time a procedure is called, the part of the procedure call that specifies the arguments is called the <i>argument list</i>.</p>
+<p>Although parameters are also commonly referred to as arguments, arguments are more properly thought of as the actual values or references assigned to the parameter variables when the subroutine is called at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run-time</a>. When discussing code that is calling into a subroutine, any values or references passed into the subroutine are the arguments, and the place in the code where these values or references are given is the <i>parameter list</i>. When discussing the code inside the subroutine definition, the variables in the subroutine's parameter list are the parameters, while the values of the parameters at runtime are the arguments. For example in C, when dealing with threads it's common to pass in an argument of type void* and cast it to an expected type:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">void</span> ThreadFunction<span class="br0">(</span> <span class="kw4">void</span><span class="sy0">*</span> pThreadArgument <span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="co1">// Naming the first parameter 'pThreadArgument' is correct, rather than</span>
+    <span class="co1">// 'pThreadParameter'. At run time the value we use is an argument. As mentioned</span>
+    <span class="co1">// above, reserve the term parameter for when discussing subroutine definitions.</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Many programmers use <i>parameter</i> and <i>argument</i> interchangeably, depending on context to distinguish the meaning. The term <i>formal parameter</i> refers to the variable as found in the function definition (<i>parameter</i>), while <i>actual parameter</i> refers to the actual value passed (<i>argument</i>).</p>
+<p>To better understand the difference, consider the following function written in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> sum<span class="br0">(</span><span class="kw4">int</span> addend1<span class="sy0">,</span> <span class="kw4">int</span> addend2<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">return</span> addend1 <span class="sy0">+</span> addend2<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The function <i>sum</i> has two parameters, named <i>addend1</i> and <i>addend2</i>. It adds the values passed into the parameters, and returns the result to the subroutine's caller (using a technique automatically supplied by the C compiler).</p>
+<p>The code which calls the <i>sum</i> function might look like this:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> sumValue<span class="sy0">;</span>
+<span class="kw4">int</span> value1 <span class="sy0">=</span> <span class="nu0">40</span><span class="sy0">;</span>
+<span class="kw4">int</span> value2 <span class="sy0">=</span> <span class="nu0">2</span><span class="sy0">;</span>
+ 
+sumValue <span class="sy0">=</span> sum<span class="br0">(</span>value1<span class="sy0">,</span> value2<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>The variables <i>value1</i> and <i>value2</i> are initialized with values. <i>value1</i> and <i>value2</i> are both arguments to the <i>sum</i> function in this context.</p>
+<p>At runtime, the values assigned to these variables are passed to the function <i>sum</i> as arguments. In the <i>sum</i> function, the parameters <i>addend1</i> and <i>addend2</i> are evaluated, yielding the arguments 40 and 2, respectively. The values of the arguments are added, and the result is returned to the caller, where it is assigned to the variable <i>sumValue</i>.</p>
+<p>Because of the difference between parameters and arguments, it is possible to supply inappropriate arguments to a procedure. The call may supply too many or too few arguments; one or more of the arguments may be a wrong type; or arguments may be supplied in the wrong order. Any of these situations causes a mismatch between the parameter and argument lists, and the procedure will often return an unintended answer or generate a <a href="http://en.m.wikipedia.org/wiki/Runtime_error" title="Runtime error" class="mw-redirect">runtime error</a>.</p>
+<h3> <span class="mw-headline" id="Alternative_convention_in_Eiffel">Alternative convention in Eiffel</span>
+</h3>
+<p>Within the <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> software development method and language, the terms <i>argument</i> and <i>parameter</i> have distinct uses established by convention. The term <i>argument</i> is used exclusively in reference to a routine's inputs,<sup id="cite_ref-1" class="reference"><a href="Parameter_(computer_science)#cite_note-1"><span>[</span>2<span>]</span></a></sup> and the term <i>parameter</i> is used exclusively in type parameterization for <a href="Generic_programming" title="Generic programming">generic classes</a>.<sup id="cite_ref-2" class="reference"><a href="Parameter_(computer_science)#cite_note-2"><span>[</span>3<span>]</span></a></sup></p>
+<p>Consider the following routine definition:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    sum <span class="br0">(</span>addend1<span class="sy0">:</span> <span class="kw4">INTEGER</span>; addend2<span class="sy0">:</span> <span class="kw4">INTEGER</span><span class="br0">)</span><span class="sy0">:</span> <span class="kw4">INTEGER</span>
+        <span class="kw2">do</span>
+            <span class="kw3">Result</span> <span class="sy0">:=</span> addend1 <span class="sy0">+</span> addend2
+        <span class="kw2">end</span>
+</pre>
+</div>
+</div>
+<p>The routine <code>sum</code> takes two arguments <code>addend1</code> and <code>addend2</code>, which are called the routine's <b>formal arguments</b>. A call to <code>sum</code> specifies <b>actual arguments</b>, as shown below with <code>value1</code> and <code>value2</code>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    sum_value<span class="sy0">:</span> <span class="kw4">INTEGER</span>
+    value1<span class="sy0">:</span> <span class="kw4">INTEGER</span> <span class="sy0">=</span> <span class="nu0">40</span>
+    value2<span class="sy0">:</span> <span class="kw4">INTEGER</span> <span class="sy0">=</span> <span class="nu0">2</span>
+                …
+            sum_value <span class="sy0">:=</span> sum <span class="br0">(</span>value1, value2<span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>Parameters are also thought of as either <b>formal</b> or <b>actual</b>. <b>Formal generic parameters</b> are used in the definition of generic classes. In the example below, the class <code>HASH_TABLE</code> is declared as a generic class which has two formal generic parameters, <code>G</code> representing data of interest and <code>K</code> representing the hash key for the data:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+<span class="kw1">class</span> <span class="kw4">HASH_TABLE</span> <span class="br0">[</span>G, K <span class="sy0">-&gt;</span> <span class="kw4">HASHABLE</span><span class="br0">]</span> 
+            …
+</pre>
+</div>
+</div>
+<p>When a class becomes a client to <code>HASH_TABLE</code>, the formal generic parameters are substituted with <b>actual generic parameters</b> in a <b>generic derivation</b>. In the following attribute declaration, <code>my_dictionary</code> is to be used as a character string based <a href="http://en.m.wikipedia.org/wiki/Associative_array" title="Associative array">dictionary</a>. As such, both data and key formal generic parameters are substituted with actual generic parameters of type <code>STRING</code>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="eiffel source-eiffel">
+<pre class="de1">
+    my_dictionary<span class="sy0">:</span> <span class="kw4">HASH_TABLE</span> <span class="br0">[</span><span class="kw4">STRING</span>, <span class="kw4">STRING</span><span class="br0">]</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Datatypes">Datatypes</span>
+</h2>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Strongly_typed_programming_language" title="Strongly typed programming language" class="mw-redirect">strongly typed programming languages</a>, each parameter's <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">type</a> must be specified in the procedure's declaration. Languages using <a href="http://en.m.wikipedia.org/wiki/Type_inference" title="Type inference">type inference</a> attempt to discover the types automatically from the function's body and usage. Dynamically typed programming languages defer type resolution until run-time. Weakly typed languages perform little to no type resolution, relying instead on the programmer for correctness.</p>
+<p>Some languages use a special keyword (e.g. <i>void</i>) to indicate that the subroutine has no parameters; in formal <a href="http://en.m.wikipedia.org/wiki/Type_theory" title="Type theory">type theory</a>, such functions take an empty parameter list (whose type is not <i>void</i>, but rather <i><a href="http://en.m.wikipedia.org/wiki/Unit_type" title="Unit type">unit</a></i>).</p>
+<h2> <span class="mw-headline" id="Argument_passing">Argument passing</span>
+</h2>
+<p>The exact mechanism for assigning arguments to parameters, called <i>argument passing</i>, depends upon the <a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">evaluation strategy</a> used for that parameter (typically call-by-value), which may be specified using keywords.</p>
+<h3> <span class="mw-headline" id="Default_arguments">Default arguments</span>
+</h3>
+<p>Some programming languages such as <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="C++" title="C++">C++</a>, <a href="http://en.m.wikipedia.org/wiki/Clojure" title="Clojure">Clojure</a>, <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, <a href="http://en.m.wikipedia.org/wiki/Fortran_90" title="Fortran 90" class="mw-redirect">Fortran 90</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, and <a href="http://en.m.wikipedia.org/wiki/Windows_PowerShell" title="Windows PowerShell">Windows PowerShell</a> allow for a <a href="http://en.m.wikipedia.org/wiki/Default_argument" title="Default argument">default argument</a> to be explicitly or implicitly given in a subroutine's declaration. This allows the caller to omit that argument when calling the subroutine. If the default argument is explicitly given, then that value is used if it is not provided by the caller. If the default argument is implicit (sometimes by using a keyword such as <i>Optional</i>) then the language provides a well-known value (such as <i><a href="Null_pointer" title="Null pointer" class="mw-redirect">null</a></i>, <i>Empty</i>, zero, an empty string, etc.) if a value is not provided by the caller.</p>
+<p>PowerShell example:</p>
+<pre>
+function doc($g = 1.21) {
+  "$g gigawatts? $g gigawatts? Great Scott!"
+}
+</pre>
+<pre>
+PS&gt; doc
+1.21 gigawatts? 1.21 gigawatts? Great Scott!
+</pre>
+<pre>
+PS&gt; doc 88
+88 gigawatts? 88 gigawatts? Great Scott!
+</pre>
+<p>Default arguments can be seen as a special case of the variable-length argument list.</p>
+<h3> <span class="mw-headline" id="Variable-length_parameter_lists">Variable-length parameter lists</span>
+</h3>
+<p>Some languages allow subroutines to be defined to accept a <a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">variable number of arguments</a>. For such languages, the subroutines must iterate through the list of arguments.</p>
+<p>PowerShell example:</p>
+<pre>
+function marty {
+  $args | foreach { "back to the year $_" }
+}
+</pre>
+<pre>
+PS&gt; marty 1985
+back to the year 1985
+</pre>
+<pre>
+PS&gt; marty 2015 1985 1955
+back to the year 2015
+back to the year 1985
+back to the year 1955
+</pre>
+<h3> <span class="mw-headline" id="Named_parameters">Named parameters</span>
+</h3>
+<p>Some programming languages allow subroutines to have <a href="http://en.m.wikipedia.org/wiki/Named_parameter" title="Named parameter">named parameters</a>. This allows the calling code to be more <a href="http://en.m.wikipedia.org/wiki/Self-documenting" title="Self-documenting">self-documenting</a>. It also provides more flexibility to the caller, often allowing the order of the arguments to be changed, or for arguments to be omitted as needed.</p>
+<p>PowerShell example:</p>
+<pre>
+function jennifer($young, $old) {
+  "Young Jennifer: I'm $young!"
+  "Old Jennifer: I'm $old!"
+}
+</pre>
+<pre>
+PS&gt; jennifer 'old' 'young'
+Young Jennifer: I'm old!
+Old Jennifer: I'm young!
+</pre>
+<pre>
+PS&gt; jennifer -old 'young' -young 'old'
+Young Jennifer: I'm old!
+Old Jennifer: I'm young!
+</pre>
+<h3> <span class="mw-headline" id="Multiple_parameters_in_functional_languages">Multiple parameters in functional languages</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a>, each function has exactly one parameter. What is thought of as functions with multiple parameters is usually represented in lambda calculus as a function which takes the first argument, and returns a function which takes the rest of the arguments; this is a transformation known as <a href="http://en.m.wikipedia.org/wiki/Currying" title="Currying">currying</a>. Some programming languages, like <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> and <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, follow this scheme. In these languages, every function has exactly one parameter, and what may look like the definition of a function of multiple parameters, is actually <a href="Syntactic_sugar" title="Syntactic sugar">syntactic sugar</a> for the definition of a function that returns a function, etc. Function application is <a href="http://en.m.wikipedia.org/wiki/Operator_associativity" title="Operator associativity">left-associative</a> in these languages as well as in lambda calculus, so what looks like an application of a function to multiple arguments is correctly evaluated as the function applied to the first argument, then the resulting function applied to the second argument, etc.</p>
+<p><br></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Command-line_argument" title="Command-line argument" class="mw-redirect">Command-line argument</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Evaluation_strategy" title="Evaluation strategy">Evaluation strategy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operator_overloading" title="Operator overloading">Operator overloading</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Free_variables_and_bound_variables" title="Free variables and bound variables">Free variables and bound variables</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Parameter_(computer_science)#cite_ref-0">^</a></b></span> <span class="reference-text">In this article, the term "subroutine" refers to any subroutine-like construct, which have different names and slightly different meanings depending on the <a href="Programming_language" title="Programming language">programming language</a> being discussed.</span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Parameter_(computer_science)#cite_ref-1">^</a></b></span> <span class="reference-text">Meyer, Bertrand. <i><a href="http://en.m.wikipedia.org/wiki/Object-Oriented_Software_Construction" title="Object-Oriented Software Construction">Object-Oriented Software Construction</a>, 2nd Edition,</i> Prentice Hall, 1997, p 444.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Parameter_(computer_science)#cite_ref-2">^</a></b></span> <span class="reference-text">Meyer, p. 96.</span>
+</li>
+</ol>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 16 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%88%D8%B3%D9%8A%D8%B7_(%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%AD%D8%A7%D8%B3%D9%88%D8%A8)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Parametr_funkce" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Parameter_(Informatik)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A0%CE%B1%CF%81%CE%AC%CE%BC%CE%B5%CF%84%CF%81%CE%BF%CF%82_(%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AD%CF%82)" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Argumento_(inform%C3%A1tica)" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Param%C3%A8tre#Informatique" lang="fr" hreflang="fr">français</a></li><li><a href="http://is.m.wikipedia.org/wiki/F%C3%A6ribreyta" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Parametro_(programmazione)" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E5%BC%95%E6%95%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://mhr.m.wikipedia.org/wiki/%D0%90%D1%80%D0%B3%D1%83%D0%BC%D0%B5%D0%BD%D1%82" lang="mhr" hreflang="mhr">олык марий</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Parametr_(informatyka)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Par%C3%A2metro_(ci%C3%AAncia_da_computa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Parameter_(ra%C4%8Dunalni%C5%A1tvo)" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Parametri_(tietotekniikka)" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BC%D0%B5%D1%82%D1%80_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Parameter_(computer_science)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Parameter_(computer_science)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Parameter+%28computer+programming%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

@@ -1,0 +1,208 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Increment and decrement operators - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Increment and decrement operators","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Increment_and_decrement_operators" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Increment+and+decrement+operators"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Increment and decrement operators</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Unreferenced" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Question_book-new.svg&amp;page=1" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>does not <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references or sources</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Increment_and_decrement_operators&amp;action=edit">improve this article</a> by <a href="http://en.m.wikipedia.org/wiki/Help:Introduction_to_referencing/1" title="Help:Introduction to referencing/1">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(March 2012)</i></small> </span></td>
+</tr></table>
+<p><b>Increment</b> and <b>decrement operators</b> are <a href="http://en.m.wikipedia.org/wiki/Unary_operator" title="Unary operator" class="mw-redirect">unary</a> <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operators</a> that <i>add</i> or <i>subtract</i> one from their <a href="http://en.m.wikipedia.org/wiki/Operand" title="Operand">operand</a>, respectively. They are commonly implemented in <a href="Imperative_programming" title="Imperative programming">imperative</a> <a href="Programming_language" title="Programming language">programming languages</a>. <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>-like languages became notorious for featuring two versions (pre- and post-) of each operator with slightly different semantics.</p>
+<p>In C-like languages, the increment operator is written as <code>++</code> and the decrement operator is written as <code>--</code>.</p>
+<p>The increment operator increases the value of its operand by 1. The operand must have an arithmetic or <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointer</a> <a href="Data_type" title="Data type">data type</a>, and must refer to a modifiable <a href="http://en.m.wikipedia.org/wiki/Data_object" title="Data object" class="mw-redirect">data object</a>. Similarly, the decrement operator decreases the value of its modifiable arithmetic operand by 1. Pointers values are increased (or decreased) by an amount that makes them point to the next (or previous) element adjacent in memory.</p>
+<p>In languages that support both versions of the operators, the <i>pre</i>-increment and <i>pre</i>-decrement operators increment (or decrement) their operand by 1, and the value of the expression is the resulting incremented (or decremented) value. In contrast, the <i>post</i>-increment and <i>post</i>-decrement operators increase (or decrease) the value of their operand by 1, but the value of the expression is the operand's original value <i>prior</i> to the increment (or decrement) operation. In languages where increment/decrement is not an expression (e.g. Go), only one version is needed (in the case of Go, post operators only).</p>
+<p>Since the increment/decrement operator modifies its operand, use of such an operand more than once within the same expression can produce undefined results. For example, in expressions such as <code>x</code> <code>−</code> <code>++x</code>, it is not clear in what sequence the subtraction and increment operators should be performed. Situations like this are made even worse when optimizations are applied by the compiler, which could result in the order of execution of the operations to be different than what the programmer intended.</p>
+<h2> <span class="mw-headline" id="Examples">Examples</span>
+</h2>
+<p>The following C code fragment illustrates the difference between the <i>pre</i> and <i>post</i> increment and decrement operators:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span>  x<span class="sy0">;</span>
+<span class="kw4">int</span>  y<span class="sy0">;</span>
+ 
+<span class="co1">// Increment operators</span>
+x <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+y <span class="sy0">=</span> <span class="sy0">++</span>x<span class="sy0">;</span>    <span class="co1">// x is now 2, y is also 2</span>
+y <span class="sy0">=</span> x<span class="sy0">++;</span>    <span class="co1">// x is now 3, y is 2</span>
+ 
+<span class="co1">// Decrement operators</span>
+x <span class="sy0">=</span> <span class="nu0">3</span><span class="sy0">;</span>
+y <span class="sy0">=</span> x<span class="sy0">--;</span>    <span class="co1">// x is now 2, y is 3</span>
+y <span class="sy0">=</span> <span class="sy0">--</span>x<span class="sy0">;</span>    <span class="co1">// x is now 1, y is also 1</span>
+</pre>
+</div>
+</div>
+<p>The post-increment operator is commonly used with <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array</a> subscripts. For example:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">// Sum the elements of an array</span>
+<span class="kw4">float</span> sum_elements<span class="br0">(</span><span class="kw4">float</span> arr<span class="br0">[</span><span class="br0">]</span><span class="sy0">,</span> <span class="kw4">int</span> n<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw4">float</span>  sum <span class="sy0">=</span> <span class="nu16">0.0</span><span class="sy0">;</span>
+    <span class="kw4">int</span>    i <span class="sy0">=</span>   <span class="nu0">0</span><span class="sy0">;</span>
+ 
+    <span class="kw1">while</span> <span class="br0">(</span>i <span class="sy0">&lt;</span> n<span class="br0">)</span>
+        sum <span class="sy0">+=</span> arr<span class="br0">[</span>i<span class="sy0">++</span><span class="br0">]</span><span class="sy0">;</span>    <span class="co1">// Post-increment of i, which steps</span>
+                            <span class="co1">//  through n elements of the array</span>
+    <span class="kw1">return</span> sum<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Likewise, the post-increment operator is commonly used with <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">// Copy one array to another using pointers</span>
+<span class="kw4">void</span> copy_array<span class="br0">(</span><span class="kw4">float</span> <span class="sy0">*</span>src<span class="sy0">,</span> <span class="kw4">float</span> <span class="sy0">*</span>dst<span class="sy0">,</span> <span class="kw4">int</span> n<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">while</span> <span class="br0">(</span>n<span class="sy0">--</span> <span class="sy0">&gt;</span> <span class="nu0">0</span><span class="br0">)</span>        <span class="co1">// Loop that counts down from n to zero</span>
+        <span class="sy0">*</span>dst<span class="sy0">++</span> <span class="sy0">=</span> <span class="sy0">*</span>src<span class="sy0">++;</span>   <span class="co1">// Copies element *(src) to *(dst),</span>
+                           <span class="co1">//  then increments both pointers</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Note that these examples also work in other C-like languages, such as <a href="C++" title="C++">C++</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, and <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>.</p>
+<h2> <span class="mw-headline" id="Supporting_languages">Supporting languages</span>
+</h2>
+<p>The following list, though not complete or all-inclusive, lists some of the major programming languages that support increment/decrement operators.</p>
+<table class="multicol" style="border-collapse: collapse; padding: 0px; border: 0px; background:transparent; width:100%;"><tr>
+<td style="text-align: left; vertical-align: top; width: 25%;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+</ul>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<ul>
+<li><a href="Java_(programming_language)" title="Java (programming language)">Java</a></li>
+<li><a href="JavaScript" title="JavaScript">JavaScript</a></li>
+<li><a href="Perl" title="Perl">Perl</a></li>
+<li><a href="PHP" title="PHP">PHP</a></li>
+<li><a href="AWK" title="AWK">AWK</a></li>
+</ul>
+</td>
+</tr></table>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li>
+<a href="Augmented_assignment" title="Augmented assignment">Augmented assignment</a>, for <code>+=</code> and <code>-=</code> operators</li>
+</ul>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:Software_spanner.png" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/40px-Software_spanner.png" width="40" height="31" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/60px-Software_spanner.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/82/Software_spanner.png/80px-Software_spanner.png 2x"></a></td>
+<td>
+<i>This <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Increment_and_decrement_operators&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Compu-prog-stub" title="Template:Compu-prog-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Compu-prog-stub" title="Template talk:Compu-prog-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Compu-prog-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://da.m.wikipedia.org/wiki/Inkrementel" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Inkrement_und_Dekrement" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Incr%C3%A9mentation" lang="fr" hreflang="fr">français</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Increment" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%82%AF%E3%83%AA%E3%83%A1%E3%83%B3%E3%83%88" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Inkrement_og_dekrement" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Inkrementacja" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%98%D0%BD%D0%BA%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%82" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%98%D0%BD%D0%BA%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D1%82" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sv.m.wikipedia.org/wiki/%2B%2B" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%A2%9E%E5%80%BC%E5%92%8C%E5%87%8F%E5%80%BC%E6%93%8D%E4%BD%9C%E7%AC%A6" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Increment_and_decrement_operators&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Increment_and_decrement_operators&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Increment+and+decrement+operators&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

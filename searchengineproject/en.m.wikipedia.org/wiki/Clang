@@ -1,0 +1,383 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Clang - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Clang","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Clang" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Clang"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Clang</h1>			
+<div class="dablink">This article is about the C, Objective-C, and C++ compiler.  For the phenomenon of rhyming word association, see <a href="http://en.m.wikipedia.org/wiki/Clanging" title="Clanging">Clanging</a>.</div>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Clang</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:LLVM_Logo.svg" class="image" title="LLVM"><img alt="LLVM" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4c/LLVM_Logo.svg/136px-LLVM_Logo.svg.png" width="136" height="136" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4c/LLVM_Logo.svg/204px-LLVM_Logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4c/LLVM_Logo.svg/272px-LLVM_Logo.svg.png 2x"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Chris_Lattner" title="Chris Lattner">Chris Lattner</a> and others</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Apple_Inc." title="Apple Inc.">Apple Inc.</a> and others</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">3.1 / 22 May 2012<span style="display:none"> (<span class="bday dtstart published updated">2012-05-22</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Development status</th>
+<td class="" style="">Active</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Written in</th>
+<td class="" style=""><a href="C++" title="C++">C++</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="Unix-like" title="Unix-like">Unix-like</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">Platform</a></th>
+<td class="" style=""><a href="Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="Compiler" title="Compiler">Compiler</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/University_of_Illinois/NCSA_Open_Source_License" title="University of Illinois/NCSA Open Source License">University of Illinois/NCSA Open Source License</a><sup id="cite_ref-1" class="reference"><a href="Clang#cite_note-1"><span>[</span>1<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://clang.llvm.org">clang.llvm.org</a></span></td>
+</tr>
+</table>
+<p><b>Clang</b> (<span class="nowrap"><span title="pronunciation:"><img alt="play" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x"></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ˈ/ primary stress follows" style="border-bottom:1px dotted">ˈ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'k' in 'kind'" style="border-bottom:1px dotted">k</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="'l' in 'lie'" style="border-bottom:1px dotted">l</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/æ/ short 'a' in 'bad'" style="border-bottom:1px dotted">æ</span></a></span><span class="IPA"><a href="Help:IPA_for_English#Key" title="Help:IPA for English"><span title="/ŋ/ 'ng' in 'sing'" style="border-bottom:1px dotted">ŋ</span></a></span><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="Help:IPA_for_English" title="Help:IPA for English">/</a></span></span>)<sup id="cite_ref-2" class="reference"><a href="Clang#cite_note-2"><span>[</span>2<span>]</span></a></sup> is a <a href="Compiler" title="Compiler">compiler</a> <a href="http://en.m.wikipedia.org/wiki/Front-end_and_back-end" title="Front-end and back-end" class="mw-redirect">front end</a> for the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="C++" title="C++">C++</a>, <a href="Objective-C" title="Objective-C">Objective-C</a>, and <a href="http://en.m.wikipedia.org/wiki/Objective-C%2B%2B" title="Objective-C++" class="mw-redirect">Objective-C++</a> programming languages. It uses <a href="http://en.m.wikipedia.org/wiki/LLVM" title="LLVM">LLVM</a> as its <a href="http://en.m.wikipedia.org/wiki/Front-end_and_back-end" title="Front-end and back-end" class="mw-redirect">back end</a> and has been part of its releases since LLVM 2.6.</p>
+<p>Its goal is to offer a replacement to the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> (GCC). Development is completely open-source,<sup id="cite_ref-3" class="reference"><a href="Clang#cite_note-3"><span>[</span>3<span>]</span></a></sup> with several major software development companies (e.g. <a href="http://en.m.wikipedia.org/wiki/Google_Inc." title="Google Inc." class="mw-redirect">Google</a>, <a href="http://en.m.wikipedia.org/wiki/Apple_Inc." title="Apple Inc.">Apple</a>) involved. Clang is available under the <a href="http://en.m.wikipedia.org/wiki/University_of_Illinois/NCSA_Open_Source_License" title="University of Illinois/NCSA Open Source License">University of Illinois/NCSA License</a>.</p>
+<p>The Clang project includes the Clang <a href="http://en.m.wikipedia.org/wiki/Front_and_back_ends" title="Front and back ends">front end</a> and the Clang <a href="http://en.m.wikipedia.org/wiki/Static_program_analysis" title="Static program analysis">static analyzer</a> among others.<sup id="cite_ref-4" class="reference"><a href="Clang#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Background">Background</span>
+</h2>
+<p>Starting in 2005, Apple has made extensive use of LLVM in a number of commercial systems,<sup id="cite_ref-5" class="reference"><a href="Clang#cite_note-5"><span>[</span>5<span>]</span></a></sup> including the <a href="http://en.m.wikipedia.org/wiki/IPhone_SDK" title="IPhone SDK" class="mw-redirect">iPhone development kit</a> and <a href="Xcode" title="Xcode">Xcode</a> 3.1.</p>
+<p>One of the first uses of LLVM was an <a href="http://en.m.wikipedia.org/wiki/OpenGL" title="OpenGL">OpenGL</a> code compiler for <a href="http://en.m.wikipedia.org/wiki/Mac_OS_X" title="Mac OS X" class="mw-redirect">Mac OS X</a> that converts OpenGL calls into more fundamental calls for <a href="http://en.m.wikipedia.org/wiki/Graphics_processing_unit" title="Graphics processing unit">graphics processing units</a> (GPU) that do not support certain features. This allowed Apple to support the entire OpenGL <a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">application programming interface</a> (API) on computers using <a href="http://en.m.wikipedia.org/wiki/Intel_GMA" title="Intel GMA">Intel Graphics Media Accelerator</a> (GMA) chipsets, increasing performance on those machines.<sup id="cite_ref-6" class="reference"><a href="Clang#cite_note-6"><span>[</span>6<span>]</span></a></sup> For sufficiently capable GPUs, the code is compiled to take full advantage of the underlying hardware, but on GMA machines, LLVM compiles the same OpenGL code into subroutines to ensure it continues to work properly.</p>
+<p>LLVM was originally intended to use GCC's front end, but GCC turned out to cause some problems for both the LLVM developers and Apple. GCC is a large and somewhat cumbersome system to develop; as one long-time GCC developer put it, "Trying to make the hippo dance is not really a lot of fun"<sup id="cite_ref-7" class="reference"><a href="Clang#cite_note-7"><span>[</span>7<span>]</span></a></sup> and a <a href="http://en.m.wikipedia.org/wiki/Google_Summer_of_Code" title="Google Summer of Code">Google Summer of Code</a> intern commented, "Reading GCC codebase has been a hard exercise for me. In fact it's the only project I know of that becomes more and more difficult as time passes."<sup id="cite_ref-8" class="reference"><a href="Clang#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p>Apple software makes heavy use of <a href="Objective-C" title="Objective-C">Objective-C</a>, but the Objective-C front-end in GCC is a low priority for the current GCC developers. Also, GCC does not fit smoothly into Apple's IDE.<sup id="cite_ref-SN0705_9-0" class="reference"><a href="Clang#cite_note-SN0705-9"><span>[</span>9<span>]</span></a></sup> Finally, GCC is <a href="http://en.m.wikipedia.org/wiki/GPL#Version_3" title="GPL" class="mw-redirect">GPL version 3</a> licensed, which requires developers who distribute extensions for (or modified versions of) GCC to make their <a href="Source_code" title="Source code">source code</a> available, whereas LLVM has a <a href="http://en.m.wikipedia.org/wiki/BSD_licenses" title="BSD licenses">BSD-like license</a> <sup id="cite_ref-clang_10-0" class="reference"><a href="Clang#cite_note-clang-10"><span>[</span>10<span>]</span></a></sup> which permits including the source into proprietary software.</p>
+<p>Apple chose to develop a new compiler front end from scratch, supporting only <a href="C99" title="C99">C99</a>, Objective-C and <a href="C++" title="C++">C++</a>.<sup id="cite_ref-SN0705_9-1" class="reference"><a href="Clang#cite_note-SN0705-9"><span>[</span>9<span>]</span></a></sup> This "clang" project was open-sourced in July 2007.<sup id="cite_ref-11" class="reference"><a href="Clang#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>Clang is a new C-targeted compiler intended specifically to work on top of LLVM.<sup id="cite_ref-clang_10-1" class="reference"><a href="Clang#cite_note-clang-10"><span>[</span>10<span>]</span></a></sup> The combination of Clang and LLVM provides the majority of a toolchain, allowing the replacement of the whole GCC stack. Because it is built with a library-based design, like the rest of LLVM, Clang is easy to embed into other applications. This is one reason why a majority of the <a href="http://en.m.wikipedia.org/wiki/OpenCL" title="OpenCL">OpenCL</a> implementations are built with Clang and LLVM.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup></p>
+<p>One of Clang's primary goals is to better support <a href="http://en.m.wikipedia.org/wiki/Incremental_compiler" title="Incremental compiler">incremental compilation</a> to allow the compiler to be more tightly tied to the <a href="Integrated_development_environment" title="Integrated development environment">IDE GUI</a>. GCC is designed to work in a "classic" compile-link-debug cycle, and although it provides useful ways to support incremental and interrupted compiling on-the-fly, integrating them with other tools is not always easy. For instance, GCC uses a step called "fold" that is key to the overall compile process, which has the side effect of translating the code tree into a form that does not look very much like the original source code. If an error is found during or after the fold step, it can be difficult to translate that back into a single location in the original source. Additionally, vendors using the GCC stack within IDEs used separate tools to index the code to provide features like <a href="http://en.m.wikipedia.org/wiki/Syntax_highlighting" title="Syntax highlighting">syntax highlighting</a> and <a href="http://en.m.wikipedia.org/wiki/Autocomplete" title="Autocomplete">autocomplete</a>.</p>
+<p>Clang is designed to retain more information during the compilation process than GCC, and preserve the overall form of the original code. The objective of this is to make it easier to map errors back into the original source. The error reports offered by Clang are also aimed to be more detailed and specific, as well as machine-readable, so IDEs can index the output of the compiler during compilation. Modular design of the compiler can offer <a href="Source_code" title="Source code">source code</a> <a href="http://en.m.wikipedia.org/wiki/Index_(search_engine)" title="Index (search engine)" class="mw-redirect">indexing</a>, syntax checking, and other features normally associated with <a href="http://en.m.wikipedia.org/wiki/Rapid_application_development" title="Rapid application development">rapid application development</a> systems. The <a href="http://en.m.wikipedia.org/wiki/Parse_tree" title="Parse tree">parse tree</a> is also more suitable for supporting automated <a href="http://en.m.wikipedia.org/wiki/Code_refactoring" title="Code refactoring">code refactoring</a>, as it remains in a parsable text form at all times. Changes to the program can be checked by <a href="http://en.m.wikipedia.org/wiki/Diff" title="Diff">diffing</a> the intermediate form (IF).</p>
+<p>Clang is modularized, based almost entirely on replaceable link-time libraries — as opposed to source-code modules that are combined at compile time — and well-documented. In some cases the libraries are provided in several versions that can be swapped out at runtime; for instance the <a href="http://en.m.wikipedia.org/wiki/Parser" title="Parser" class="mw-redirect">parser</a> comes with a version that offers performance measurement of the compile process.</p>
+<p>Clang, as the name implies, is a compiler only for C and C-like languages. It does not offer compiler front-ends for languages other than C, C++, Objective-C, and Objective-C++. For other languages, including <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="Fortran" title="Fortran">Fortran</a>, and <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, LLVM remains dependent on GCC. In many cases, Clang can be used or swapped out for GCC as needed, with no other effects on the toolchain as a whole.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2008">citation needed</span></a></i>]</sup> It supports most of the commonly used GCC options.</p>
+<h2> <span class="mw-headline" id="Performance_and_GCC_compatibility">Performance and GCC compatibility</span>
+</h2>
+<p>Clang's developers claim that it provides reduced memory footprint and increased compilation speed compared to competing compilers, such as GCC. To support their claim, they present that, as of October 2007, Clang compiled the <a href="http://en.m.wikipedia.org/wiki/Carbon_(API)" title="Carbon (API)">Carbon</a> libraries well over twice as fast as GCC, while using about one-sixth GCC's memory and disk space.<sup id="cite_ref-12" class="reference"><a href="Clang#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>Clang's overall compatibility with GCC is very good, and its compilation speed typically better than GCC's.<sup id="cite_ref-Simonis_13-0" class="reference"><a href="Clang#cite_note-Simonis-13"><span>[</span>13<span>]</span></a></sup> The runtime performance of Clang/LLVM output used to be sometimes worse than GCC's,<sup id="cite_ref-Simonis_13-1" class="reference"><a href="Clang#cite_note-Simonis-13"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="Clang#cite_note-14"><span>[</span>14<span>]</span></a></sup> but as of the middle of 2012, runtime performance has improved to the point where GCC wins some benchmarks and Clang others.<sup id="cite_ref-15" class="reference"><a href="Clang#cite_note-15"><span>[</span>15<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Status_history">Status history</span>
+</h2>
+<p>This table presents only significant steps and releases in Clang history.</p>
+<table class="wikitable">
+<tr>
+<th style="width: 20%;">Date</th>
+<th style="width: 80%;">Highlights</th>
+</tr>
+<tr>
+<td>11 July 2007</td>
+<td>Clang frontend released under an open-source license</td>
+</tr>
+<tr>
+<td>25 February 2009</td>
+<td>Clang/LLVM able to compile a working <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> <a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">kernel</a>.<sup id="cite_ref-16" class="reference"><a href="Clang#cite_note-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-17" class="reference"><a href="Clang#cite_note-17"><span>[</span>17<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>16 March 2009</td>
+<td>Clang/LLVM able to compile a working <a href="http://en.m.wikipedia.org/wiki/DragonFly_BSD" title="DragonFly BSD">DragonFly BSD</a> kernel.<sup id="cite_ref-18" class="reference"><a href="Clang#cite_note-18"><span>[</span>18<span>]</span></a></sup><sup id="cite_ref-19" class="reference"><a href="Clang#cite_note-19"><span>[</span>19<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>23 October 2009</td>
+<td>Clang 1.0 released along with LLVM 2.6 for the first time.</td>
+</tr>
+<tr>
+<td>December 2009</td>
+<td>Code generation for C and Objective-C reach production quality (support for C++ and Objective-C++ still incomplete). Clang C++ able to parse GCC 4.2 <a href="http://en.m.wikipedia.org/wiki/Libstdc%2B%2B" title="Libstdc++" class="mw-redirect">libstdc++</a> and generate working code for non-trivial programs<sup id="cite_ref-clang_10-2" class="reference"><a href="Clang#cite_note-clang-10"><span>[</span>10<span>]</span></a></sup> and was able to compile itself<sup id="cite_ref-20" class="reference"><a href="Clang#cite_note-20"><span>[</span>20<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>2 February 2010</td>
+<td>Clang <a href="http://en.m.wikipedia.org/wiki/Self-hosting" title="Self-hosting">self-hosting</a>.<sup id="cite_ref-21" class="reference"><a href="Clang#cite_note-21"><span>[</span>21<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>20 February 2010</td>
+<td>The source code of <a href="http://en.m.wikipedia.org/wiki/HelenOS" title="HelenOS">HelenOS</a> was modified to successfully compile with Clang, and passed all kernel and user space regression tests on <a href="http://en.m.wikipedia.org/wiki/IA-32" title="IA-32">IA-32</a>.<sup id="cite_ref-22" class="reference"><a href="Clang#cite_note-22"><span>[</span>22<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>20 May 2010</td>
+<td>The latest version of Clang successfully built the <a href="http://en.m.wikipedia.org/wiki/Boost_C%2B%2B_libraries" title="Boost C++ libraries" class="mw-redirect">Boost C++ libraries</a>, and passed nearly all tests.<sup id="cite_ref-23" class="reference"><a href="Clang#cite_note-23"><span>[</span>23<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>10 June 2010</td>
+<td>Clang/LLVM became an integral part of <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> (The default compiler is still GCC)<sup id="cite_ref-24" class="reference"><a href="Clang#cite_note-24"><span>[</span>24<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>25 October 2010</td>
+<td>Clang/LLVM able to compile a working modified <a href="http://en.m.wikipedia.org/wiki/Linux_Kernel" title="Linux Kernel" class="mw-redirect">Linux Kernel</a>.<sup id="cite_ref-25" class="reference"><a href="Clang#cite_note-25"><span>[</span>25<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>January 2011</td>
+<td>Preliminary work completed to support the draft <a href="http://en.m.wikipedia.org/wiki/C%2B%2B0x" title="C++0x" class="mw-redirect">C++0x</a> standard, with a few of the draft's new features supported in the development version of clang.<sup id="cite_ref-26" class="reference"><a href="Clang#cite_note-26"><span>[</span>26<span>]</span></a></sup><sup id="cite_ref-27" class="reference"><a href="Clang#cite_note-27"><span>[</span>27<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>10 February 2011</td>
+<td>Clang able to compile a working <a href="http://en.m.wikipedia.org/wiki/HotSpot" title="HotSpot">HotSpot</a> <a href="http://en.m.wikipedia.org/wiki/Java_Virtual_Machine" title="Java Virtual Machine" class="mw-redirect">Java Virtual Machine</a><sup id="cite_ref-Simonis_13-2" class="reference"><a href="Clang#cite_note-Simonis-13"><span>[</span>13<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>28 February 2012</td>
+<td>Clang 3.0 able to rebuild more than 91% of the <a href="http://en.m.wikipedia.org/wiki/Debian" title="Debian">Debian</a> archive <sup id="cite_ref-28" class="reference"><a href="Clang#cite_note-28"><span>[</span>28<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>12 May 2012</td>
+<td>Clang/LLVM is announced to replace GCC in <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> <sup id="cite_ref-29" class="reference"><a href="Clang#cite_note-29"><span>[</span>29<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>5 November 2012</td>
+<td>Clang now the default compiler in <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a> <sup id="cite_ref-30" class="reference"><a href="Clang#cite_note-30"><span>[</span>30<span>]</span></a></sup>
+</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C Programming Language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/LLDB_(debugger)" title="LLDB (debugger)">LLDB</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">Portable C Compiler</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://llvm.org/releases/2.1/LICENSE.TXT"><i>LLVM License</i></a><span class="printonly">, <a rel="nofollow" class="external free" href="http://llvm.org/releases/2.1/LICENSE.TXT">http://llvm.org/releases/2.1/LICENSE.TXT</a></span><span class="reference-accessdate">, retrieved 2012-09-18</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LLVM+License&amp;rft_id=http%3A%2F%2Fllvm.org%2Freleases%2F2.1%2FLICENSE.TXT&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">Christopher, Eric (3 July 2008). <a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/llvmdev/2008-July/015624.html">"simply wonder pronunciation of Clang"</a>. <i>LLVMdev mailing list</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.cs.uiuc.edu/pipermail/llvmdev/2008-July/015624.html">http://lists.cs.uiuc.edu/pipermail/llvmdev/2008-July/015624.html</a></span><span class="reference-accessdate">. Retrieved 9 July 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=simply+wonder+pronunciation+of+Clang&amp;rft.atitle=LLVMdev+mailing+list&amp;rft.aulast=Christopher&amp;rft.aufirst=Eric&amp;rft.au=Christopher%2C%26%2332%3BEric&amp;rft.date=3+July+2008&amp;rft_id=http%3A%2F%2Flists.cs.uiuc.edu%2Fpipermail%2Fllvmdev%2F2008-July%2F015624.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://clang.llvm.org/get_involved.html"><i>Clang "Getting started" instructions</i></a>, Clang.llvm.org<span class="printonly">, <a rel="nofollow" class="external free" href="http://clang.llvm.org/get_involved.html">http://clang.llvm.org/get_involved.html</a></span><span class="reference-accessdate">, retrieved 2012-09-18</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Clang+%22Getting+started%22+instructions&amp;rft.pub=Clang.llvm.org&amp;rft_id=http%3A%2F%2Fclang.llvm.org%2Fget_involved.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://clang-analyzer.llvm.org/">"Clang Static Analyzer"</a>. LLVM<span class="printonly">. <a rel="nofollow" class="external free" href="http://clang-analyzer.llvm.org/">http://clang-analyzer.llvm.org/</a></span><span class="reference-accessdate">. Retrieved 3 September 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clang+Static+Analyzer&amp;rft.atitle=&amp;rft.pub=LLVM&amp;rft_id=http%3A%2F%2Fclang-analyzer.llvm.org%2F&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web">Treat, Adam (19 February 2005). <a rel="nofollow" class="external text" href="http://lists.trolltech.com/qt4-preview-feedback/2005-02/msg00691.html">"mkspecs and patches for LLVM compile of Qt4"</a>. <i>Qt4-preview-feedback mailing list</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.trolltech.com/qt4-preview-feedback/2005-02/msg00691.html">http://lists.trolltech.com/qt4-preview-feedback/2005-02/msg00691.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=mkspecs+and+patches+for+LLVM+compile+of+Qt4&amp;rft.atitle=Qt4-preview-feedback+mailing+list&amp;rft.aulast=Treat&amp;rft.aufirst=Adam&amp;rft.au=Treat%2C%26%2332%3BAdam&amp;rft.date=19+February+2005&amp;rft_id=http%3A%2F%2Flists.trolltech.com%2Fqt4-preview-feedback%2F2005-02%2Fmsg00691.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation book">Lattner, Chris (25 May 2007). <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2007-05/10-Lattner-OpenGL.pdf">"LLVM for OpenGL and other stuff"</a> (Slides). <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2007-05/">LLVM Developers' Meeting</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://llvm.org/devmtg/2007-05/10-Lattner-OpenGL.pdf">http://llvm.org/devmtg/2007-05/10-Lattner-OpenGL.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=LLVM+for+OpenGL+and+other+stuff&amp;rft.atitle=&amp;rft.aulast=Lattner&amp;rft.aufirst=Chris&amp;rft.au=Lattner%2C%26%2332%3BChris&amp;rft.date=25+May+2007&amp;rft_id=http%3A%2F%2Fllvm.org%2Fdevmtg%2F2007-05%2F10-Lattner-OpenGL.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web">Zadeck, Kenneth (19 November 2005). <a rel="nofollow" class="external text" href="http://gcc.gnu.org/ml/gcc/2005-11/msg00918.html">"Re: LLVM/GCC Integration Proposal"</a>. <i>GCC development mailing list</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/ml/gcc/2005-11/msg00918.html">http://gcc.gnu.org/ml/gcc/2005-11/msg00918.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Re%3A+LLVM%2FGCC+Integration+Proposal&amp;rft.atitle=GCC+development+mailing+list&amp;rft.aulast=Zadeck&amp;rft.aufirst=Kenneth&amp;rft.au=Zadeck%2C%26%2332%3BKenneth&amp;rft.date=19+November+2005&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fml%2Fgcc%2F2005-11%2Fmsg00918.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web">Apostolou, Dimitrios (5 July 2011). <a rel="nofollow" class="external text" href="http://gcc.gnu.org/ml/gcc/2011-07/msg00041.html">"GSOC - Student Roundup"</a>. <i>GCC development mailing list</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/ml/gcc/2011-07/msg00041.html">http://gcc.gnu.org/ml/gcc/2011-07/msg00041.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=GSOC+-+Student+Roundup&amp;rft.atitle=GCC+development+mailing+list&amp;rft.aulast=Apostolou&amp;rft.aufirst=Dimitrios&amp;rft.au=Apostolou%2C%26%2332%3BDimitrios&amp;rft.date=5+July+2011&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fml%2Fgcc%2F2011-07%2Fmsg00041.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-SN0705-9">
+<span class="mw-cite-backlink">^ <a href="Clang#cite_ref-SN0705_9-0"><sup><i><b>a</b></i></sup></a> <a href="Clang#cite_ref-SN0705_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation book">Naroff, Steve (25 May 2007). <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2007-05/09-Naroff-CFE.pdf">"New LLVM C Front-end"</a> (Slides). <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2007-05/">LLVM Developers' Meeting</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://llvm.org/devmtg/2007-05/09-Naroff-CFE.pdf">http://llvm.org/devmtg/2007-05/09-Naroff-CFE.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=New+LLVM+C+Front-end&amp;rft.atitle=&amp;rft.aulast=Naroff&amp;rft.aufirst=Steve&amp;rft.au=Naroff%2C%26%2332%3BSteve&amp;rft.date=25+May+2007&amp;rft_id=http%3A%2F%2Fllvm.org%2Fdevmtg%2F2007-05%2F09-Naroff-CFE.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-clang-10">
+<span class="mw-cite-backlink">^ <a href="Clang#cite_ref-clang_10-0"><sup><i><b>a</b></i></sup></a> <a href="Clang#cite_ref-clang_10-1"><sup><i><b>b</b></i></sup></a> <a href="Clang#cite_ref-clang_10-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text">Clang team, <i><a rel="nofollow" class="external text" href="http://clang.llvm.org/">clang: a C language family frontend for LLVM</a></i></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web">Lattner, Chris (11 July 2007). <a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2007-July/000000.html">"New LLVM C front-end: "clang""</a>. <i>cfe-dev mailing list</i><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2007-July/000000.html">http://lists.cs.uiuc.edu/pipermail/cfe-dev/2007-July/000000.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=New+LLVM+C+front-end%3A+%22clang%22&amp;rft.atitle=cfe-dev+mailing+list&amp;rft.aulast=Lattner&amp;rft.aufirst=Chris&amp;rft.au=Lattner%2C%26%2332%3BChris&amp;rft.date=11+July+2007&amp;rft_id=http%3A%2F%2Flists.cs.uiuc.edu%2Fpipermail%2Fcfe-dev%2F2007-July%2F000000.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://clang.llvm.org/features.html"><i>Clang - Features and Goals: Fast compiles and Low Memory Use</i></a>, October 2007<span class="printonly">, <a rel="nofollow" class="external free" href="http://clang.llvm.org/features.html">http://clang.llvm.org/features.html</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Clang+-+Features+and+Goals%3A+Fast+compiles+and+Low+Memory+Use&amp;rft.date=October+2007&amp;rft_id=http%3A%2F%2Fclang.llvm.org%2Ffeatures.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Simonis-13">
+<span class="mw-cite-backlink">^ <a href="Clang#cite_ref-Simonis_13-0"><sup><i><b>a</b></i></sup></a> <a href="Clang#cite_ref-Simonis_13-1"><sup><i><b>b</b></i></sup></a> <a href="Clang#cite_ref-Simonis_13-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Simonis, Volker (10 February 2011). <a rel="nofollow" class="external text" href="http://weblogs.java.net/blog/simonis/archive/2011/02/10/compiling-hotspot-vm-clang">"Compiling the HotSpot VM with Clang"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://weblogs.java.net/blog/simonis/archive/2011/02/10/compiling-hotspot-vm-clang">http://weblogs.java.net/blog/simonis/archive/2011/02/10/compiling-hotspot-vm-clang</a></span><span class="reference-accessdate">. Retrieved 13 February 2011</span>. "<i>While the overall GCC compatibility is excellent and the compile times are impressive, the performance of the generated code is still lacking behind a recent GCC version.</i> "</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Compiling+the+HotSpot+VM+with+Clang&amp;rft.atitle=&amp;rft.aulast=Simonis&amp;rft.aufirst=Volker&amp;rft.au=Simonis%2C%26%2332%3BVolker&amp;rft.date=10+February+2011&amp;rft_id=http%3A%2F%2Fweblogs.java.net%2Fblog%2Fsimonis%2Farchive%2F2011%2F02%2F10%2Fcompiling-hotspot-vm-clang&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.phoronix.com/scan.php?page=article&amp;item=gcc_llvm_clang&amp;num=6">"Benchmarking LLVM &amp; Clang Against GCC 4.5"</a>. <a href="http://en.m.wikipedia.org/wiki/Phoronix" title="Phoronix">Phoronix</a>. 21 April 2010<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.phoronix.com/scan.php?page=article&amp;item=gcc_llvm_clang&amp;num=6">http://www.phoronix.com/scan.php?page=article&amp;item=gcc_llvm_clang&amp;num=6</a></span><span class="reference-accessdate">. Retrieved 13 February 2011</span>. "<i>Binaries from LLVM-GCC and Clang both struggled to compete with GCC 4.5.0 in the timed HMMer benchmark of a Pfam database search. LLVM-GCC and Clang were about 23% slower(...)Though LLVM / Clang isn't the performance champion at this point, both components continue to be under very active development and there will hopefully be more news to report in the coming months</i>"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Benchmarking+LLVM+%26+Clang+Against+GCC+4.5&amp;rft.atitle=&amp;rft.date=21+April+2010&amp;rft.pub=%5B%5BPhoronix%5D%5D&amp;rft_id=http%3A%2F%2Fwww.phoronix.com%2Fscan.php%3Fpage%3Darticle%26item%3Dgcc_llvm_clang%26num%3D6&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://openbenchmarking.org/result/1204215-SU-LLVMCLANG23">"LLVM CLANG 3.1 GCC 4.7 INTEL CORE I7 BENCHMARKS"</a>. OpenBenchmarking.org. 2 July 2012<span class="printonly">. <a rel="nofollow" class="external free" href="http://openbenchmarking.org/result/1204215-SU-LLVMCLANG23">http://openbenchmarking.org/result/1204215-SU-LLVMCLANG23</a></span><span class="reference-accessdate">. Retrieved 2 July 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=LLVM+CLANG+3.1+GCC+4.7+INTEL+CORE+I7+BENCHMARKS&amp;rft.atitle=&amp;rft.date=2+July+2012&amp;rft.pub=OpenBenchmarking.org&amp;rft_id=http%3A%2F%2Fopenbenchmarking.org%2Fresult%2F1204215-SU-LLVMCLANG23&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-16">^</a></b></span> <span class="reference-text"><span class="citation web">Divacky, Roman. <a rel="nofollow" class="external text" href="http://lists.freebsd.org/pipermail/freebsd-current/2009-February/003743.html">"[ANNOUNCE] clang/llvm can compile booting FreeBSD kernel on i386/amd64"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.freebsd.org/pipermail/freebsd-current/2009-February/003743.html">http://lists.freebsd.org/pipermail/freebsd-current/2009-February/003743.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=%26%2391%3BANNOUNCE%26%2393%3B+clang%2Fllvm+can+compile+booting+FreeBSD+kernel+on+i386%2Famd64&amp;rft.atitle=&amp;rft.aulast=Divacky&amp;rft.aufirst=Roman&amp;rft.au=Divacky%2C%26%2332%3BRoman&amp;rft_id=http%3A%2F%2Flists.freebsd.org%2Fpipermail%2Ffreebsd-current%2F2009-February%2F003743.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-17">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://wiki.freebsd.org/BuildingFreeBSDWithClang"><i>Building FreeBSD with Clang</i></a>, Wiki.freebsd.org, 2012-08-24<span class="printonly">, <a rel="nofollow" class="external free" href="http://wiki.freebsd.org/BuildingFreeBSDWithClang">http://wiki.freebsd.org/BuildingFreeBSDWithClang</a></span><span class="reference-accessdate">, retrieved 2012-09-18</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Building+FreeBSD+with+Clang&amp;rft.date=2012-08-24&amp;rft.pub=Wiki.freebsd.org&amp;rft_id=http%3A%2F%2Fwiki.freebsd.org%2FBuildingFreeBSDWithClang&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-18">^</a></b></span> <span class="reference-text"><span class="citation web">Hornung, Alex. <a rel="nofollow" class="external text" href="http://leaf.dragonflybsd.org/mailarchive/kernel/2009-03/msg00067.html">"llvm/clang once more"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://leaf.dragonflybsd.org/mailarchive/kernel/2009-03/msg00067.html">http://leaf.dragonflybsd.org/mailarchive/kernel/2009-03/msg00067.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=llvm%2Fclang+once+more&amp;rft.atitle=&amp;rft.aulast=Hornung&amp;rft.aufirst=Alex&amp;rft.au=Hornung%2C%26%2332%3BAlex&amp;rft_id=http%3A%2F%2Fleaf.dragonflybsd.org%2Fmailarchive%2Fkernel%2F2009-03%2Fmsg00067.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://www.dragonflybsd.org/docs/developer/clang/"><i>Clang</i></a>, DragonFlyBSD<span class="printonly">, <a rel="nofollow" class="external free" href="http://www.dragonflybsd.org/docs/developer/clang/">http://www.dragonflybsd.org/docs/developer/clang/</a></span><span class="reference-accessdate">, retrieved 2012-09-18</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Clang&amp;rft.pub=DragonFlyBSD&amp;rft_id=http%3A%2F%2Fwww.dragonflybsd.org%2Fdocs%2Fdeveloper%2Fclang%2F&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blog.llvm.org/2009/12/clang-builds-llvm.html">"Clang can compile LLVM and Clang"</a>. LLVM Project Blog<span class="printonly">. <a rel="nofollow" class="external free" href="http://blog.llvm.org/2009/12/clang-builds-llvm.html">http://blog.llvm.org/2009/12/clang-builds-llvm.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clang+can+compile+LLVM+and+Clang&amp;rft.atitle=&amp;rft.pub=LLVM+Project+Blog&amp;rft_id=http%3A%2F%2Fblog.llvm.org%2F2009%2F12%2Fclang-builds-llvm.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-21">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blog.llvm.org/2010/02/clang-successfully-self-hosts.html">"Clang Successfully Self-Hosts"</a>. LLVM Project Blog<span class="printonly">. <a rel="nofollow" class="external free" href="http://blog.llvm.org/2010/02/clang-successfully-self-hosts.html">http://blog.llvm.org/2010/02/clang-successfully-self-hosts.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clang+Successfully+Self-Hosts&amp;rft.atitle=&amp;rft.pub=LLVM+Project+Blog&amp;rft_id=http%3A%2F%2Fblog.llvm.org%2F2010%2F02%2Fclang-successfully-self-hosts.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-22">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://trac.helenos.org/trac.fcgi/changeset/mainline%2C294">"HelenOS mainline changeset head,294"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://trac.helenos.org/trac.fcgi/changeset/mainline%2C294">http://trac.helenos.org/trac.fcgi/changeset/mainline%2C294</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=HelenOS+mainline+changeset+head%2C294&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Ftrac.helenos.org%2Ftrac.fcgi%2Fchangeset%2Fmainline%252C294&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-23">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-23">^</a></b></span> <span class="reference-text"><span class="citation web">Gregor, Doug. <a rel="nofollow" class="external text" href="http://blog.llvm.org/2010/05/clang-builds-boost.html">"Clang++ Builds Boost!"</a>. LLVM Project Blog<span class="printonly">. <a rel="nofollow" class="external free" href="http://blog.llvm.org/2010/05/clang-builds-boost.html">http://blog.llvm.org/2010/05/clang-builds-boost.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clang%2B%2B+Builds+Boost%21&amp;rft.atitle=&amp;rft.aulast=Gregor&amp;rft.aufirst=Doug&amp;rft.au=Gregor%2C%26%2332%3BDoug&amp;rft.pub=LLVM+Project+Blog&amp;rft_id=http%3A%2F%2Fblog.llvm.org%2F2010%2F05%2Fclang-builds-boost.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-24">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-24">^</a></b></span> <span class="reference-text"><span class="citation web">Davis, Brad. <a rel="nofollow" class="external text" href="http://www.freebsd.org/news/status/report-2010-04-2010-06.html#Clang-Replacing-GCC-in-the-Base-System">"FreeBSD Status Reports April - June, 2010"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.freebsd.org/news/status/report-2010-04-2010-06.html#Clang-Replacing-GCC-in-the-Base-System">http://www.freebsd.org/news/status/report-2010-04-2010-06.html#Clang-Replacing-GCC-in-the-Base-System</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=FreeBSD+Status+Reports+April+-+June%2C+2010&amp;rft.atitle=&amp;rft.aulast=Davis&amp;rft.aufirst=Brad&amp;rft.au=Davis%2C%26%2332%3BBrad&amp;rft_id=http%3A%2F%2Fwww.freebsd.org%2Fnews%2Fstatus%2Freport-2010-04-2010-06.html%23Clang-Replacing-GCC-in-the-Base-System&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-25">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-25">^</a></b></span> <span class="reference-text"><span class="citation"><a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2010-October/011711.html"><i>Clang builds a working Linux Kernel (Boots to RL5 with SMP, networking and X, self hosts)</i></a>, Lists.cs.uiuc.edu<span class="printonly">, <a rel="nofollow" class="external free" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2010-October/011711.html">http://lists.cs.uiuc.edu/pipermail/cfe-dev/2010-October/011711.html</a></span><span class="reference-accessdate">, retrieved 2012-09-18</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Clang+builds+a+working+Linux+Kernel+%28Boots+to+RL5+with+SMP%2C+networking+and+X%2C+self+hosts%29&amp;rft.pub=Lists.cs.uiuc.edu&amp;rft_id=http%3A%2F%2Flists.cs.uiuc.edu%2Fpipermail%2Fcfe-dev%2F2010-October%2F011711.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-26">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-26">^</a></b></span> <span class="reference-text"><span class="citation web">Gregor, Douglas (26 January 2011). <a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2011-January/013013.html">"New C++0x feature support in Clang"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.cs.uiuc.edu/pipermail/cfe-dev/2011-January/013013.html">http://lists.cs.uiuc.edu/pipermail/cfe-dev/2011-January/013013.html</a></span><span class="reference-accessdate">. Retrieved 29 January 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=New+C%2B%2B0x+feature+support+in+Clang&amp;rft.atitle=&amp;rft.aulast=Gregor&amp;rft.aufirst=Douglas&amp;rft.au=Gregor%2C%26%2332%3BDouglas&amp;rft.date=26+January+2011&amp;rft_id=http%3A%2F%2Flists.cs.uiuc.edu%2Fpipermail%2Fcfe-dev%2F2011-January%2F013013.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-27">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-27">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://clang.llvm.org/cxx_status.html">"C++ and C++'0x Support in Clang"</a>. LLVM<span class="printonly">. <a rel="nofollow" class="external free" href="http://clang.llvm.org/cxx_status.html">http://clang.llvm.org/cxx_status.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C%2B%2B+and+C%2B%2B%270x+Support+in+Clang&amp;rft.atitle=&amp;rft.pub=LLVM&amp;rft_id=http%3A%2F%2Fclang.llvm.org%2Fcxx_status.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-28">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-28">^</a></b></span> <span class="reference-text"><span class="citation web">Ledru, Sylvestre. <a rel="nofollow" class="external text" href="http://clang.debian.net/">"Rebuild of the Debian archive with clang"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://clang.debian.net/">http://clang.debian.net/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Rebuild+of+the+Debian+archive+with+clang&amp;rft.atitle=&amp;rft.aulast=Ledru&amp;rft.aufirst=Sylvestre&amp;rft.au=Ledru%2C%26%2332%3BSylvestre&amp;rft_id=http%3A%2F%2Fclang.debian.net%2F&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-29">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-29">^</a></b></span> <span class="reference-text"><span class="citation web">Gerzo, Daniel (12 May 2012). <a rel="nofollow" class="external text" href="http://lists.freebsd.org/pipermail/freebsd-stable/2012-May/067486.html">"FreeBSD Quarterly Status Report January-March, 2012"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.freebsd.org/pipermail/freebsd-stable/2012-May/067486.html">http://lists.freebsd.org/pipermail/freebsd-stable/2012-May/067486.html</a></span><span class="reference-accessdate">. Retrieved 14 May 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=FreeBSD+Quarterly+Status+Report+January-March%2C+2012&amp;rft.atitle=&amp;rft.aulast=Gerzo&amp;rft.aufirst=Daniel&amp;rft.au=Gerzo%2C%26%2332%3BDaniel&amp;rft.date=12+May+2012&amp;rft_id=http%3A%2F%2Flists.freebsd.org%2Fpipermail%2Ffreebsd-stable%2F2012-May%2F067486.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-30">
+<span class="mw-cite-backlink"><b><a href="Clang#cite_ref-30">^</a></b></span> <span class="reference-text"><span class="citation web">Davis, Brooks (5 November 2012). <a rel="nofollow" class="external text" href="http://lists.freebsd.org/pipermail/freebsd-current/2012-November/037610.html">"HEADS UP: Clang now the default on x86"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://lists.freebsd.org/pipermail/freebsd-current/2012-November/037610.html">http://lists.freebsd.org/pipermail/freebsd-current/2012-November/037610.html</a></span><span class="reference-accessdate">. Retrieved 7 November 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=HEADS+UP%3A+Clang+now+the+default+on+x86&amp;rft.atitle=&amp;rft.aulast=Davis&amp;rft.aufirst=Brooks&amp;rft.au=Davis%2C%26%2332%3BBrooks&amp;rft.date=5+November+2012&amp;rft_id=http%3A%2F%2Flists.freebsd.org%2Fpipermail%2Ffreebsd-current%2F2012-November%2F037610.html&amp;rfr_id=info:sid/en.wikipedia.org:Clang"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://clang.llvm.org">Official website</a></span></li>
+<li>
+<a rel="nofollow" class="external text" href="http://lists.cs.uiuc.edu/pipermail/llvmdev/2007-July/009817.html">LLVMdev: New LLVM C front-end: "clang"</a>, announcement (11 July 2007)</li>
+<li>
+<a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2008-08/Kremenek_StaticAnalyzer_Hi.m4v">Presentation: Ted Kremenek - Finding Bugs with the Clang Static Analyzer</a>, <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2008-08/Kremenek_StaticAnalyzer.pdf">Slides</a>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://llvm.org/viewvc/llvm-project/cfe/trunk/lib/StaticAnalyzer/Checkers/Checkers.td?view=co">Clang Static Analyzer list of checkers</a></li>
+</ul>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2008-08/Naroff_Clang_Hi.m4v">Presentation: Steve Naroff - Clang Internals</a>, <a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2008-08/Naroff_Clang.pdf">Slides</a>
+</li>
+<li><a rel="nofollow" class="external text" href="http://llvm.org/devmtg/2009-10/StateOfClang.pdf">2009 DevMtg Clang presentation</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Clang" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Clang" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Clang" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Clang" lang="fr" hreflang="fr">français</a></li><li><a href="http://it.m.wikipedia.org/wiki/Clang" lang="it" hreflang="it">italiano</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Clang" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Clang" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Clang" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Clang" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Clang" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Clang" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Clang&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Clang&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Clang&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

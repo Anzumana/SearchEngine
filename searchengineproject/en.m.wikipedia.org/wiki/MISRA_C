@@ -1,0 +1,220 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>MISRA C - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"MISRA C","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/MISRA_C" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=MISRA+C"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">MISRA C</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(January 2011)</i></small> </span></td>
+</tr></table>
+<p><b>MISRA C</b> is a software development standard for the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> <a href="Programming_language" title="Programming language">programming language</a> developed by <a href="http://en.m.wikipedia.org/wiki/MISRA" title="MISRA" class="mw-redirect">MISRA</a> (Motor Industry Software Reliability Association). Its aims are to facilitate code <a href="http://en.m.wikipedia.org/wiki/Safety" title="Safety">safety</a>, <a href="http://en.m.wikipedia.org/wiki/Portability" title="Portability">portability</a> and reliability in the context of <a href="Embedded_systems" title="Embedded systems" class="mw-redirect">embedded systems</a>, specifically those systems programmed in <a href="http://en.m.wikipedia.org/wiki/ISO_C" title="ISO C" class="mw-redirect">ISO C</a>. There is also a set of guidelines for <span class="new" title="MISRA C++ (page does not exist)">MISRA C++</span>.</p>
+<p>However, there are now more MISRA users outside of the automotive industry than in it: "MISRA has evolved as a widely accepted model for best practices by leading developers in sectors including aerospace, telecom, medical devices, defense, railway, and others." <sup id="cite_ref-1" class="reference"><a href="MISRA_C#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="MISRA_C#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="MISRA_C#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The first edition of the MISRA C standard, "Guidelines for the use of the C language in vehicle based software", was produced in 1998, and is officially known as <i>MISRA-C:1998</i>.<sup id="cite_ref-4" class="reference"><a href="MISRA_C#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>In 2004, a second edition "Guidelines for the use of the C language in critical systems", or <i>MISRA-C:2004</i> was produced, with many substantial changes to the guidelines, including a complete renumbering of the rules.</p>
+<p>As of May 2012, work is nearing completion on the next revision of the guidelines (<i>MISRA-C:2012</i>), which are intended to address use of <a href="C99" title="C99">C99</a>.</p>
+<p>As with many standards (for example, <a href="http://en.m.wikipedia.org/wiki/ISO" title="ISO" class="mw-redirect">ISO</a>, <a href="http://en.m.wikipedia.org/wiki/BSI_Group" title="BSI Group">BSI Group</a>, <a href="http://en.m.wikipedia.org/wiki/RTCA,_Incorporated" title="RTCA, Incorporated" class="mw-redirect">RTCA, Incorporated</a>), the MISRA C guideline documents are not free to users or implementers.<sup id="cite_ref-5" class="reference"><a href="MISRA_C#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Rules">Rules</span>
+</h2>
+<p>MISRAC stands for "Motor Industry Software Reliability Association" C standards</p>
+<p><i>MISRA-C:1998</i> had 127 rules, of which 93 were required and 34 were advisory; the rules were numbered in sequence from 1 to 127.</p>
+<p>The <i>MISRA-C:2004</i> document contains 141 rules, of which 121 are "required" and 20 are "advisory"; they are divided into 21 topical categories, from "Environment" to "Run-time failures".</p>
+<p>The rules can be divided logically into a number of categories:</p>
+<ul>
+<li>Avoiding possible compiler differences, e.g. the size of a C integer may vary but an INT16 is always 16 bits.</li>
+<li>Avoiding using functions and constructs that are prone to failure, e.g. malloc() may fail.</li>
+<li>Produce Maintainable and Debuggable Code, e.g. naming conventions and commenting.</li>
+<li>Best Practice Rules.</li>
+<li>Complexity limits.</li>
+</ul>
+<h2> <span class="mw-headline" id="Tools">Tools</span>
+</h2>
+<p>While there exist many software tools that claim to check code for "MISRA conformance", there is no MISRA certification process.<sup id="cite_ref-6" class="reference"><a href="MISRA_C#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>An exemplar suite for MISRA-C:2004 is available from the <a rel="nofollow" class="external text" href="http://misra.org.uk/forum/">MISRA Forum</a>, which allows tool users to evaluate and compare the checking support provided by the various MISRA tools. Additionally, it gives tool implementors some guidance as to the intent of the Rules within MISRA-C:2004.</p>
+<p>Most of the guidelines can be checked using tools that perform <a href="http://en.m.wikipedia.org/wiki/Static_code_analysis" title="Static code analysis" class="mw-redirect">static code analysis</a>. The remaining guidelines require the use of <a href="http://en.m.wikipedia.org/wiki/Dynamic_code_analysis" title="Dynamic code analysis" class="mw-redirect">dynamic code analysis</a>.</p>
+<dl>
+<dt>Tools that check code for MISRA conformance are</dt>
+</dl>
+<ul>
+<li><span class="new" title="Checkmarx (page does not exist)">Checkmarx</span></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Coverity" title="Coverity">Coverity</a> Static Analysis</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/GrammaTech" title="GrammaTech">GrammaTech</a> CodeSonar</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Klocwork" title="Klocwork">Klocwork</a> Insight &amp; Inspect</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Liverpool_Data_Research_Associates" title="Liverpool Data Research Associates">LDRA</a> Testbed</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parasoft" title="Parasoft">Parasoft</a> Tools</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PC-Lint" title="PC-Lint">PC-Lint</a> by Gimpel Software</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Polyspace" title="Polyspace">Polyspace</a> by <a href="http://en.m.wikipedia.org/wiki/MathWorks" title="MathWorks">MathWorks</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/QA-C" title="QA-C">QA-C</a> by Programming Research</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Understand_(software)" title="Understand (software)">Understand</a> by SciTools</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Sonar_(software_quality)" title="Sonar (software quality)">Sonar (software quality)</a> by SonarSource (<a href="http://en.m.wikipedia.org/wiki/Open_Source" title="Open Source" class="mw-redirect">Open Source</a> with some commercial plug-in components).</li>
+</ul>
+<dl>
+<dt>C compilers that support MISRA conformance are</dt>
+</dl>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Green_Hills_Software" title="Green Hills Software">Green Hills Software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IAR_Systems" title="IAR Systems">IAR Systems</a></li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_style" title="Programming style">Programming style</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.programmingresearch.com/QAMISRA.html">http://www.programmingresearch.com/QAMISRA.html</a><sup class="noprint Inline-Template"><span title=" since March 2012" style="white-space: nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Link_rot" title="Wikipedia:Link rot">dead link</a></i>]</span></sup></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.cosmicsoftware.com/misra.php">http://www.cosmicsoftware.com/misra.php</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.ldra.com/misrac.asp">http://www.ldra.com/misrac.asp</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.misra-c.com/Activities/MISRAC/tabid/160/Default.aspx">A brief history of MISRA C</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-5">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.misra.org.uk/Buyonline/tabid/58/Default.aspx">"Buying MISRA C"</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="MISRA_C#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.misra-c.com/MISRACFAQ/tabid/168/Default.aspx">"MISRA C FAQ list."</a> <i>MISRA Consortium</i></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-style ambox-citation_style" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>has an unclear citation style</b>. <span class="hide-when-compact">The references used may be made clearer with a different or consistent style of <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citation</a>, <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Footnotes" title="Wikipedia:Footnotes" class="mw-redirect">footnoting</a>, or <a href="http://en.m.wikipedia.org/wiki/Wikipedia:External_links" title="Wikipedia:External links">external linking</a>.</span> <small><i>(September 2009)</i></small> </span></td>
+</tr></table>
+<ul>
+<li><span class="official website"><a rel="nofollow" class="external text" href="http://www.misra.org.uk">Official website</a></span></li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://www.embedded.com/electronics-blogs/beginner-s-corner/4023981/Introduction-to-MISRA-C">"Introduction to MISRA C"</a>. embedded.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.embedded.com/electronics-blogs/beginner-s-corner/4023981/Introduction-to-MISRA-C">http://www.embedded.com/electronics-blogs/beginner-s-corner/4023981/Introduction-to-MISRA-C</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Introduction+to+MISRA+C&amp;rft.atitle=&amp;rft.pub=embedded.com&amp;rft_id=http%3A%2F%2Fwww.embedded.com%2Felectronics-blogs%2Fbeginner-s-corner%2F4023981%2FIntroduction-to-MISRA-C&amp;rfr_id=info:sid/en.wikipedia.org:MISRA_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://electronicdesign.com/Articles/Index.cfm?AD=1&amp;ArticleID=2824">"MISRA C: Safer Is Better"</a>. electronicdesign.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://electronicdesign.com/Articles/Index.cfm?AD=1&amp;ArticleID=2824">http://electronicdesign.com/Articles/Index.cfm?AD=1&amp;ArticleID=2824</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MISRA+C%3A+Safer+Is+Better&amp;rft.atitle=&amp;rft.pub=electronicdesign.com&amp;rft_id=http%3A%2F%2Felectronicdesign.com%2FArticles%2FIndex.cfm%3FAD%3D1%26ArticleID%3D2824&amp;rfr_id=info:sid/en.wikipedia.org:MISRA_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://www.iar.com/website1/1.0.1.0/474/1/index.php">"MISRA C — Some key rules to make embedded systems safer"</a>. iar.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.iar.com/website1/1.0.1.0/474/1/index.php">http://www.iar.com/website1/1.0.1.0/474/1/index.php</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=MISRA+C+%E2%80%94+Some+key+rules+to+make+embedded+systems+safer&amp;rft.atitle=&amp;rft.pub=iar.com&amp;rft_id=http%3A%2F%2Fwww.iar.com%2Fwebsite1%2F1.0.1.0%2F474%2F1%2Findex.php&amp;rfr_id=info:sid/en.wikipedia.org:MISRA_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://www.knosof.co.uk/misracom.html">"Commentary on the first edition of the MISRA C guidelines"</a>. knosof.co.uk<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.knosof.co.uk/misracom.html">http://www.knosof.co.uk/misracom.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Commentary+on+the+first+edition+of+the+MISRA+C+guidelines&amp;rft.atitle=&amp;rft.pub=knosof.co.uk&amp;rft_id=http%3A%2F%2Fwww.knosof.co.uk%2Fmisracom.html&amp;rfr_id=info:sid/en.wikipedia.org:MISRA_C"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web"><a rel="nofollow" class="external text" href="http://johndayautomotivelectronics.com/?p=505">"Automating Compliance to MISRA C/C++ Standards"</a>. johndayautomotivelectronics.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://johndayautomotivelectronics.com/?p=505">http://johndayautomotivelectronics.com/?p=505</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Automating+Compliance+to+MISRA+C%2FC%2B%2B+Standards&amp;rft.atitle=&amp;rft.pub=johndayautomotivelectronics.com&amp;rft_id=http%3A%2F%2Fjohndayautomotivelectronics.com%2F%3Fp%3D505&amp;rfr_id=info:sid/en.wikipedia.org:MISRA_C"><span style="display: none;"> </span></span>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D9%8A%D8%B3%D8%B1%D8%A7_%D8%B3%D9%8A" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://cs.m.wikipedia.org/wiki/MISRA_C" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/MISRA-C" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://fr.m.wikipedia.org/wiki/MISRA_C" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/Misra_c" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://ja.m.wikipedia.org/wiki/MISRA-C" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/MISRA_C" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/MISRA_C" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/MISRA_C" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sk.m.wikipedia.org/wiki/MISRA_C" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://zh.m.wikipedia.org/wiki/MISRA_C" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=MISRA_C&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=MISRA_C&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=MISRA+C&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

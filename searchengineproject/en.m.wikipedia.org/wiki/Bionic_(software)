@@ -1,0 +1,541 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Bionic (software) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Bionic (software)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Bionic_(software)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Bionic+%28software%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Bionic (software)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">bionic</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">The <a href="http://en.m.wikipedia.org/wiki/Android_Open_Source_Project" title="Android Open Source Project" class="mw-redirect">Android Open Source Project</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="C_standard_library" title="C standard library">C standard library</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">3-clause <a href="http://en.m.wikipedia.org/wiki/BSD_licence" title="BSD licence" class="mw-redirect">BSD licence</a>
+</td>
+</tr>
+</table>
+<p>The <b>Bionic libc</b> is a derivation of the <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a> <a href="C_standard_library" title="C standard library">standard C library</a> code that was originally developed by <a href="http://en.m.wikipedia.org/wiki/Google" title="Google">Google</a> for the <a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android</a> <a href="http://en.m.wikipedia.org/wiki/Embedded" title="Embedded">embedded system</a> operating system. Bionic has several major Linux-specific features and development continues independent of other code bases. The publicly-stated goals for Bionic are:<sup id="cite_ref-Brady_1-0" class="reference"><a href="Bionic_(software)#cite_note-Brady-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-Turner_2-0" class="reference"><a href="Bionic_(software)#cite_note-Turner-2"><span>[</span>2<span>]</span></a></sup></p>
+<ol>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/BSD_license" title="BSD license" class="mw-redirect">BSD license</a>: Android uses a Linux kernel which is under the <a href="http://en.m.wikipedia.org/wiki/GNU_General_Public_License" title="GNU General Public License">GNU General Public License</a> (GPL), but Google wished to isolate Android applications from the effects of the GPL.</li>
+<li>Small size: Bionic is much smaller than <a href="http://en.m.wikipedia.org/wiki/GNU_libc" title="GNU libc" class="mw-redirect">GNU libc</a> (glibc) and somewhat smaller than <a href="UClibc" title="UClibc">uClibc</a>.</li>
+<li>Speed: Bionic is designed for CPUs at relatively low clock frequencies.</li>
+</ol>
+<p>Bionic lacks many features found in full libc implementations, such as <a href="http://en.m.wikipedia.org/wiki/Wide_character" title="Wide character">wide character</a> and <a href="C++" title="C++">C++</a> <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception handling</a> support.<sup id="cite_ref-Brady_1-1" class="reference"><a href="Bionic_(software)#cite_note-Brady-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-BlackLion_3-0" class="reference"><a href="Bionic_(software)#cite_note-BlackLion-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-Gentry_4-0" class="reference"><a href="Bionic_(software)#cite_note-Gentry-4"><span>[</span>4<span>]</span></a></sup> Also some functions defined in the Bionic header are still unimplemented, which may trigger unexpected behavior in some cases.<sup id="cite_ref-Brady_1-2" class="reference"><a href="Bionic_(software)#cite_note-Brady-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-Gentry_4-1" class="reference"><a href="Bionic_(software)#cite_note-Gentry-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="Bionic_(software)#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="Bionic_(software)#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>As of Android Jelly Bean (4.1), bionic does not include support for Glibc's FORTIFY_SOURCE. FORTIFY_SOURCE is a feature where unsafe string and memory functions (such as <i>strcpy</i>, <i>strcat</i>, and <i>memcpy</i>) are replaced with safer variants (similar to BSD's <i>lstrcpy</i> and <i>lstrcat</i>) when buffer sizes can be determined at compile time. Future releases of the library plan to support <tt>-DFORTIFY_SOURCE=1</tt>.<sup id="cite_ref-7" class="reference"><a href="Bionic_(software)#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>The recommended way of directly using and extending Bionic is with the <a href="http://en.m.wikipedia.org/wiki/Android_Native_Development_Kit" title="Android Native Development Kit" class="mw-redirect">Android Native Development Kit</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Computer-aj_aj_ashton_01.svg" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/BusyBox" title="BusyBox">BusyBox</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Klibc" title="Klibc">klibc</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-count references-column-count-2" style="-moz-column-count: 2; -webkit-column-count: 2; column-count: 2; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-Brady-1">
+<span class="mw-cite-backlink">^ <a href="Bionic_(software)#cite_ref-Brady_1-0"><sup><i><b>a</b></i></sup></a> <a href="Bionic_(software)#cite_ref-Brady_1-1"><sup><i><b>b</b></i></sup></a> <a href="Bionic_(software)#cite_ref-Brady_1-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Burnette, Ed (June 4, 2008). <a rel="nofollow" class="external text" href="http://www.zdnet.com/blog/burnette/patrick-brady-dissects-android/584">"Patrick Brady dissects Android"</a>. <a href="http://en.m.wikipedia.org/wiki/ZDNet" title="ZDNet">ZDNet</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.zdnet.com/blog/burnette/patrick-brady-dissects-android/584">http://www.zdnet.com/blog/burnette/patrick-brady-dissects-android/584</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Patrick+Brady+dissects+Android&amp;rft.atitle=&amp;rft.aulast=Burnette&amp;rft.aufirst=Ed&amp;rft.au=Burnette%2C%26%2332%3BEd&amp;rft.date=June+4%2C+2008&amp;rft.pub=%5B%5BZDNet%5D%5D&amp;rft_id=http%3A%2F%2Fwww.zdnet.com%2Fblog%2Fburnette%2Fpatrick-brady-dissects-android%2F584&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Turner-2">
+<span class="mw-cite-backlink"><b><a href="Bionic_(software)#cite_ref-Turner_2-0">^</a></b></span> <span class="reference-text"><span class="citation web">Turner, David (2009-02-07). <a rel="nofollow" class="external text" href="http://groups.google.com/group/android-platform/browse_thread/thread/bb85ef641ed093ea/a43090bfd365cd75">"Questions about Bionic"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.google.com/group/android-platform/browse_thread/thread/bb85ef641ed093ea/a43090bfd365cd75">http://groups.google.com/group/android-platform/browse_thread/thread/bb85ef641ed093ea/a43090bfd365cd75</a></span>. "<i>The name "Bionic" comes from the fact that it is part-BSD and part-Linux: its source code consists in a mix of BSD C library pieces with custom Linux-specific bits used to deal with threads, processes, signals and a few others things.</i>"</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Questions+about+Bionic&amp;rft.atitle=&amp;rft.aulast=Turner&amp;rft.aufirst=David&amp;rft.au=Turner%2C%26%2332%3BDavid&amp;rft.date=2009-02-07&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fandroid-platform%2Fbrowse_thread%2Fthread%2Fbb85ef641ed093ea%2Fa43090bfd365cd75&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-BlackLion-3">
+<span class="mw-cite-backlink"><b><a href="Bionic_(software)#cite_ref-BlackLion_3-0">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://blogs.hackoids.com/2012/04/25/bionic/">"Dive into Android’s libraries – Bionic"</a>. <span class="new" title="Hackoids (page does not exist)">Hackoids</span>. June 4, 2008<span class="printonly">. <a rel="nofollow" class="external free" href="http://blogs.hackoids.com/2012/04/25/bionic/">http://blogs.hackoids.com/2012/04/25/bionic/</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Dive+into+Android%E2%80%99s+libraries+%E2%80%93+Bionic&amp;rft.atitle=&amp;rft.date=June+4%2C+2008&amp;rft.pub=%5B%5BHackoids%5D%5D&amp;rft_id=http%3A%2F%2Fblogs.hackoids.com%2F2012%2F04%2F25%2Fbionic%2F&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Gentry-4">
+<span class="mw-cite-backlink">^ <a href="Bionic_(software)#cite_ref-Gentry_4-0"><sup><i><b>a</b></i></sup></a> <a href="Bionic_(software)#cite_ref-Gentry_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><span class="citation web">Gentry, Denton (2008-11-28). <a rel="nofollow" class="external text" href="http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html">"The Six Million Dollar LibC"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html">http://codingrelic.geekhold.com/2008/11/six-million-dollar-libc.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Six+Million+Dollar+LibC&amp;rft.atitle=&amp;rft.aulast=Gentry&amp;rft.aufirst=Denton&amp;rft.au=Gentry%2C%26%2332%3BDenton&amp;rft.date=2008-11-28&amp;rft_id=http%3A%2F%2Fcodingrelic.geekhold.com%2F2008%2F11%2Fsix-million-dollar-libc.html&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Bionic_(software)#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://code.google.com/p/php-for-android/issues/detail?id=7">"Not working on Xoom/Android 3.0 Honeycomb"</a>. 2011-04-15<span class="printonly">. <a rel="nofollow" class="external free" href="http://code.google.com/p/php-for-android/issues/detail?id=7">http://code.google.com/p/php-for-android/issues/detail?id=7</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Not+working+on+Xoom%2FAndroid+3.0+Honeycomb&amp;rft.atitle=&amp;rft.date=2011-04-15&amp;rft_id=http%3A%2F%2Fcode.google.com%2Fp%2Fphp-for-android%2Fissues%2Fdetail%3Fid%3D7&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Bionic_(software)#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://groups.google.com/group/android-porting/browse_thread/thread/5f68cc06b834a19a">"getmntent() is not implemented in bionic/libc/bionic/stubs.c"</a>. 2011-02-25<span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.google.com/group/android-porting/browse_thread/thread/5f68cc06b834a19a">http://groups.google.com/group/android-porting/browse_thread/thread/5f68cc06b834a19a</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=getmntent%28%29+is+not+implemented+in+bionic%2Flibc%2Fbionic%2Fstubs.c&amp;rft.atitle=&amp;rft.date=2011-02-25&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fandroid-porting%2Fbrowse_thread%2Fthread%2F5f68cc06b834a19a&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Bionic_(software)#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation newsgroup">Antonio Francesco Sardella and Nick Kralevich (July 7, 2012). "ProPolice and Android". <a rel="nofollow" class="external text" href="news:Android">Security Discussions Android Security Discussions</a>. <a rel="nofollow" class="external text" href="http://groups.google.com/group/android-security-discuss/browse_thread/thread/d585aa8062964673/075895bebbd2b17a">Web link</a><span class="reference-accessdate">. Retrieved July 8, 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=ProPolice+and+Android&amp;rft.atitle=&amp;rft.aulast=Antonio+Francesco+Sardella+and+Nick+Kralevich&amp;rft.au=Antonio+Francesco+Sardella+and+Nick+Kralevich&amp;rft.date=July+7%2C+2012&amp;rft.pub=%5Bnews%3AAndroid+Security+Discussions+Android+Security+Discussions%5D&amp;rfr_id=info:sid/en.wikipedia.org:Bionic_(software)"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://developer.android.com/">Developer home page for Android</a></li>
+<li><a rel="nofollow" class="external text" href="http://developer.android.com/sdk/ndk/">Android Native Development Kit (NDK) home page</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/android/platform_bionic">Bionic sources (Github mirror of the official repository)</a></li>
+<li><a rel="nofollow" class="external text" href="http://elinux.org/Android_Notes#C_Library_.28bionic.29_info">Bionic notes on eLinux.org</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="3">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Android" title="Template:Android"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Android" title="Template talk:Android"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Android&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android (operating system)</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:Android_development_software" title="Category:Android development software">Development</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_software_development" title="Android software development">Android software development</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_SDK" title="Android SDK" class="mw-redirect">SDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_NDK" title="Android NDK" class="mw-redirect">NDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_Open_Accessory_Development_Kit" title="Android Open Accessory Development Kit" class="mw-redirect">Android Open Accessory Development Kit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/APK_(file_format)" title="APK (file format)">APK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Apache_Ant" title="Apache Ant">Apache Ant</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dalvik_(software)" title="Dalvik (software)">Dalvik</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_Developer_Challenge" title="Android Developer Challenge">Developer Challenge</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_Developer_Lab" title="Android Developer Lab">Developer Lab</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Code" title="Google Code">Google Code</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_App_Inventor" title="Google App Inventor" class="mw-redirect">Google App Inventor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_I/O" title="Google I/O">Google I/O</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Renderscript" title="Renderscript">Renderscript</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_Debug_Bridge" title="Android Debug Bridge">Android Debug Bridge</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fastboot" title="Fastboot">Fastboot</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microbridge" title="Microbridge">Microbridge</a></li>
+</ul>
+</div>
+</td>
+<td class="navbox-image" style="width:0%;padding:0px 0px 0px 2px;" rowspan="15">
+<div>
+<div class="floatright"><a href="http://en.m.wikipedia.org/wiki/File:Android_robot.svg" class="image"><img alt="Android logo" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/60px-Android_robot.svg.png" width="60" height="70" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/90px-Android_robot.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/120px-Android_robot.svg.png 2x"></a></div>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Google_Nexus" title="Google Nexus">Google Nexus</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_One" title="Nexus One">Nexus One</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_S" title="Nexus S">Nexus S</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Galaxy_Nexus" title="Galaxy Nexus">Galaxy Nexus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_7" title="Nexus 7">Nexus 7</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_Q" title="Nexus Q">Nexus Q</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_4" title="Nexus 4">Nexus 4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nexus_10" title="Nexus 10">Nexus 10</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Alternative interfaces</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/HTC_Sense" title="HTC Sense">HTC Sense</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Motoblur" title="Motoblur">Motorola Motoblur</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/TouchWiz" title="TouchWiz">Samsung TouchWiz</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Barnes_%26_Noble_Nook" title="Barnes &amp; Noble Nook">Barnes &amp; Noble Nook</a></li>
+<li><span class="new" title="Feel UX (page does not exist)">Feel UX</span></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Category:Android_software" title="Category:Android software">Apps</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Earth" title="Google Earth">Earth</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Goggles" title="Google Goggles">Goggles</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gmail" title="Gmail">Gmail</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Maps#Google_Maps_for_Mobile" title="Google Maps">Maps</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Sky" title="Google Sky">Sky Map</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Talk" title="Google Talk">Talk</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Translate" title="Google Translate">Translate</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Voice" title="Google Voice">Voice</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/YouTube" title="YouTube">YouTube</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Services</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Play" title="Google Play">Google Play</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Google_Search" title="Google Search">Google Search</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Google_Cloud_Messaging" title="Google Cloud Messaging">Google Cloud Messaging</a> (<i>formerly <a href="http://en.m.wikipedia.org/wiki/Android_Cloud_to_Device_Messaging_Service" title="Android Cloud to Device Messaging Service">Android C2DM</a></i>)</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Lists</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Index_of_Android_OS-related_articles" title="Index of Android OS-related articles" class="mw-redirect">Android-related topics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_version_history" title="Android version history">Android version history</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Android_devices" title="Comparison of Android devices">Android devices</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Android_e-book_reader_software" title="Comparison of Android e-book reader software">e-book reader software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_open_source_Android_applications" title="List of open source Android applications">Open source Android applications</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_Android_Launchers" title="List of Android Launchers">Android Launchers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Derivatives</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aliyun_OS" title="Aliyun OS">Aliyun OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Baidu_Yi" title="Baidu Yi">Baidu Yi</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CyanogenMod" title="CyanogenMod">CyanogenMod</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Replicant_(operating_system)" title="Replicant (operating system)">Replicant</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OMFGB" title="OMFGB">OMFGB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIUI" title="MIUI">MIUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OPhone" title="OPhone">OPhone</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_rooting" title="Android rooting">Rooting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_Java_and_Android_API" title="Comparison of Java and Android API">Comparison of Java and Android API</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Androidland" title="Androidland">Androidland</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Android_lawn_statues" title="Android lawn statues">Android lawn statues</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/RootzWiki" title="RootzWiki">RootzWiki</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Xda-developers" title="Xda-developers">xda-developers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ubuntu_for_Android" title="Ubuntu for Android">Ubuntu for Android</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><a href="C99" title="C99">C99</a></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><strong class="selflink">Bionic</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<p><br></p>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:System-installer.svg" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/db/System-installer.svg/30px-System-installer.svg.png" width="30" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/db/System-installer.svg/45px-System-installer.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/db/System-installer.svg/60px-System-installer.svg.png 2x"></a></td>
+<td>
+<i>This <a href="http://en.m.wikipedia.org/wiki/Software" title="Software">software</a> article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Bionic_(software)&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Software-stub" title="Template:Software-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Software-stub" title="Template talk:Software-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Software-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/wiki/File:NewTux.svg" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/25px-NewTux.svg.png" width="25" height="30" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/37px-NewTux.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/b/b0/NewTux.svg/50px-NewTux.svg.png 2x"></a></td>
+<td>
+<i>This <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Bionic_(software)&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Linux-stub" title="Template:Linux-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Linux-stub" title="Template talk:Linux-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Linux-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 2 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ru.m.wikipedia.org/wiki/Bionic_(%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B0)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Bionic_(%E8%BB%9F%E9%AB%94)" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Bionic_(software)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Bionic_(software)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Bionic+%28software%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

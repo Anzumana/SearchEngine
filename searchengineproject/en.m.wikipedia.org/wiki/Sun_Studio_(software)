@@ -1,0 +1,536 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Oracle Solaris Studio - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Oracle Solaris Studio","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Oracle_Solaris_Studio" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Oracle+Solaris+Studio"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Oracle Solaris Studio</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-multiple_issues compact-ambox" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style="">
+<span class="mbox-text-span"><b>This article has multiple issues</b>. Please help <b><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Oracle_Solaris_Studio&amp;action=edit">improve it</a></b> or discuss these issues on the <b><a href="http://en.m.wikipedia.org/wiki/Talk:Oracle_Solaris_Studio" title="Talk:Oracle Solaris Studio">talk page</a></b>.</span>
+<table class="metadata plainlinks ambox ambox-content ambox-one_source" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies largely or entirely upon a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">single source</a></b>. <span class="hide-when-compact">Relevant discussion may be found on the <a href="http://en.m.wikipedia.org/wiki/Talk:Oracle_Solaris_Studio#.23" title="Talk:Oracle Solaris Studio">talk page</a>. Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Oracle_Solaris_Studio&amp;action=edit">improve this article</a> by introducing <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> to additional sources.</span> <small><i>(April 2011)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(April 2011)</i></small> </span></td>
+</tr></table>
+</td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Oracle Solaris Studio</caption>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">12.3<sup id="cite_ref-1" class="reference"><a href="Sun_Studio_(software)#cite_note-1"><span>[</span>1<span>]</span></a></sup> / December 14, 2011<span style="display:none"> (<span class="bday dtstart published updated">2011-12-14</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a>, <a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a>, <a href="http://en.m.wikipedia.org/wiki/Red_Hat_Enterprise_Linux" title="Red Hat Enterprise Linux">RHEL</a>, <a href="http://en.m.wikipedia.org/wiki/Oracle_Linux" title="Oracle Linux">Oracle Linux</a><sup id="cite_ref-2" class="reference"><a href="Sun_Studio_(software)#cite_note-2"><span>[</span>2<span>]</span></a></sup>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Available in</th>
+<td class="" style="">English, Japanese<br>
+Simplified Chinese</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style="">
+<a href="Compiler" title="Compiler">Compiler</a>, <a href="http://en.m.wikipedia.org/wiki/Debugger" title="Debugger">debugger</a>, <a href="http://en.m.wikipedia.org/wiki/Software_build" title="Software build">software build</a>, <a href="Integrated_development_environment" title="Integrated development environment">integrated development environment</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style="">Free for download and use as described in the Sun Studio product license.</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/server-storage/solarisstudio/overview/">developers.sun.com/sunstudio</a></td>
+</tr>
+</table>
+<p>The <b>Oracle Solaris Studio</b>, formerly named <b>Sun Studio</b>, <b>Sun WorkShop</b>, <b>Forte Developer</b>, and <b>SunPro Compilers</b>, is a <a href="Compiler" title="Compiler">compiler</a> suite which is <a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a>'s flagship software development product for the <a href="Operating_system" title="Operating system">operating systems</a> <a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a> and <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a>. The Oracle Solaris Studio software delivers optimizing compilers for C, C++, and Fortran, libraries, and performance analysis, and debugging tools for Solaris on SPARC, and both Solaris and Linux on x86/x64 platforms, including multi-core systems.</p>
+<p>The <i>Solaris Studio</i> software suite is downloadable at no charge from a website.<sup id="cite_ref-3" class="reference"><a href="Sun_Studio_(software)#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Languages">Languages</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></li>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="Fortran" title="Fortran">Fortran</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Supported_architectures">Supported architectures</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a></li>
+<li>i86pc (<a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> and <a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Components">Components</span>
+</h2>
+<p>The Solaris Studio is a suite of software products that includes:</p>
+<ul>
+<li>C, C++, and Fortran compilers and support libraries</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dbx_(debugger)" title="Dbx (debugger)">dbx</a> and frontends</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lint_(software)" title="Lint (software)">lint</a></li>
+<li>IDE based on <a href="NetBeans" title="NetBeans">NetBeans</a>
+</li>
+<li>Performance analyzer<sup id="cite_ref-4" class="reference"><a href="Sun_Studio_(software)#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+</li>
+<li>Thread analyzer</li>
+<li>Sun performance library</li>
+<li>Distributed make<sup id="cite_ref-5" class="reference"><a href="Sun_Studio_(software)#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Compiler_optimizations">Compiler optimizations</span>
+</h2>
+<p>A common <a href="http://en.m.wikipedia.org/wiki/Compiler_optimization" title="Compiler optimization" class="mw-redirect">optimizing</a> backend is used for code generation.</p>
+<p>A high-level intermediate representation called <i><span class="new" title="Sun IR (page does not exist)">Sun IR</span></i> is used, and high-level optimizations done in the <i>iropt</i> (intermediate representation optimizer) component are operated at the Sun IR level. Major optimizations include:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Copy_propagation" title="Copy propagation">Copy propagation</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Constant_folding" title="Constant folding">Constant folding</a> and constant propagation</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dead_code_elimination" title="Dead code elimination">Dead code elimination</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Interprocedural_optimization" title="Interprocedural optimization">Interprocedural optimization</a> analysis</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Loop_optimization" title="Loop optimization">Loop optimizations</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_parallelization" title="Automatic parallelization">Automatic parallelization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Profile-guided_optimization" title="Profile-guided optimization">Profile-guided optimization</a></li>
+<li><span class="new" title="Scalar replacement (page does not exist)">Scalar replacement</span></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Strength_reduction" title="Strength reduction">Strength reduction</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Vectorization_(parallel_computing)" title="Vectorization (parallel computing)">Vectorization</a>, with <code>-xvector=simd</code>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="OpenMP">OpenMP</span>
+</h2>
+<p>The <a href="http://en.m.wikipedia.org/wiki/OpenMP" title="OpenMP">OpenMP</a> shared memory parallelization API is native to all three Solaris Studio compilers.</p>
+<h2> <span class="mw-headline" id="Code_coverage">Code coverage</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Tcov" title="Tcov">Tcov</a>
+</div>
+<p><a href="http://en.m.wikipedia.org/wiki/Tcov" title="Tcov">Tcov</a>, a source <a href="http://en.m.wikipedia.org/wiki/Code_coverage" title="Code coverage">code coverage</a> analysis and statement-by-statement profiling tool, comes as a standard utility with Sun Studio suite. Tcov generates exact counts of the number of times each statement in a program is executed and annotates <a href="Source_code" title="Source code">source code</a> to add instrumentation.</p>
+<p>The tcov utility gives information on how often a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> executes segments of code. It produces a copy of the source file, annotated with execution frequencies. The code can be annotated at the <a href="http://en.m.wikipedia.org/wiki/Basic_block" title="Basic block">basic block</a> level or the source line level. As the statements in a basic block are executed the same number of times, a count of basic block executions equals the number of times each statement in the block is executed.<sup id="cite_ref-6" class="reference"><a href="Sun_Studio_(software)#cite_note-6"><span>[</span>6<span>]</span></a></sup> The tcov utility does not produce any time-based data.</p>
+<h2> <span class="mw-headline" id="GCCFSS">GCCFSS</span>
+</h2>
+<p>The GCC for SPARC Systems (GCCFSS) compiler uses <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a>'s (GCC) front end with the Sun Studio compiler's code-generating back end. Thus, GCCFSS is able to handle GCC-specific compiler directives, while it is also able to take advantage of the compiler optimizations in the Sun Studio compiler's back end. This greatly facilitates the porting of GCC-based applications to SPARC systems.</p>
+<p>GCCFSS 4.2 adds a new functionality as a <a href="http://en.m.wikipedia.org/wiki/Cross_compiler" title="Cross compiler">cross compiler</a>; SPARC binaries can be generated on an x86 (or x64) machine running Solaris.<sup id="cite_ref-7" class="reference"><a href="Sun_Studio_(software)#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Research_platform">Research platform</span>
+</h2>
+<p>Before its cancellation, the <a href="http://en.m.wikipedia.org/wiki/Rock_(processor)" title="Rock (processor)">Rock</a> would have been the first general-purpose processor to support <i>hardware <a href="http://en.m.wikipedia.org/wiki/Transactional_memory" title="Transactional memory">transactional memory</a></i> (HTM). The Sun Studio compiler is used by a number of research projects, including <i>Hybrid Transactional Memory</i> (HyTM)<sup id="cite_ref-8" class="reference"><a href="Sun_Studio_(software)#cite_note-8"><span>[</span>8<span>]</span></a></sup> and <i>Phased Transactional Memory</i> (PhTM),<sup id="cite_ref-9" class="reference"><a href="Sun_Studio_(software)#cite_note-9"><span>[</span>9<span>]</span></a></sup> to investigate support and possible HTM optimizations.</p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/server-storage/solarisstudio/overview/">Solaris Studio</a></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.theregister.co.uk/2011/12/19/oracle_studio_compilers_tuxedo/">Oracle gooses Studio compilers for Solaris, Linux</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/server-storage/solarisstudio/downloads/">Oracle Solaris Studio downloads</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://docs.oracle.com/cd/E19205-01/819-5264">"Oracle Solaris Studio 12.2: Performance Analyzer"</a>. Oracle Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.oracle.com/cd/E19205-01/819-5264">http://docs.oracle.com/cd/E19205-01/819-5264</a></span><span class="reference-accessdate">. Retrieved 2010-09-11</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Oracle+Solaris+Studio+12.2%3A+Performance+Analyzer&amp;rft.atitle=&amp;rft.pub=Oracle+Corporation&amp;rft_id=http%3A%2F%2Fdocs.oracle.com%2Fcd%2FE19205-01%2F819-5264&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://docs.sun.com/app/docs/doc/819-5273">"Sun Studio 12: Distributed Make (dmake)"</a>. Oracle Corporation<span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.sun.com/app/docs/doc/819-5273">http://docs.sun.com/app/docs/doc/819-5273</a></span><span class="reference-accessdate">. Retrieved 2010-09-11</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Sun+Studio+12%3A+Distributed+Make+%28dmake%29&amp;rft.atitle=&amp;rft.pub=Oracle+Corporation&amp;rft_id=http%3A%2F%2Fdocs.sun.com%2Fapp%2Fdocs%2Fdoc%2F819-5273&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a class="external text" href="http://en.wikipedia.org/wiki/Basic_block#Definition">"Definition of basic block of code states that basic block has only one entry and only one exit point, essentially implying the statement."</a><span class="printonly">. <a class="external free" href="http://en.wikipedia.org/wiki/Basic_block#Definition">http://en.wikipedia.org/wiki/Basic_block#Definition</a></span><span class="reference-accessdate">. Retrieved 6Feb2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Definition+of+basic+block+of+code+states+that+basic+block+has+only+one+entry+and+only+one+exit+point%2C+essentially+implying+the+statement.&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBasic_block%23Definition&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://cooltools.sunsource.net/gcc/4.2.0/crosscompile.html">"Cool Tools - GCC for Sun Systems 4.2.0 as a Cross Compiler"</a>. Sun Microsystems<span class="printonly">. <a rel="nofollow" class="external free" href="http://cooltools.sunsource.net/gcc/4.2.0/crosscompile.html">http://cooltools.sunsource.net/gcc/4.2.0/crosscompile.html</a></span><span class="reference-accessdate">. Retrieved 2008-07-31</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Cool+Tools+-+GCC+for+Sun+Systems+4.2.0+as+a+Cross+Compiler&amp;rft.atitle=&amp;rft.pub=Sun+Microsystems&amp;rft_id=http%3A%2F%2Fcooltools.sunsource.net%2Fgcc%2F4.2.0%2Fcrosscompile.html&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://research.sun.com/scalable/pubs/ASPLOS2006.pdf">"Hybrid Transactional Memory"</a>. Sun Microsystems<span class="printonly">. <a rel="nofollow" class="external free" href="http://research.sun.com/scalable/pubs/ASPLOS2006.pdf">http://research.sun.com/scalable/pubs/ASPLOS2006.pdf</a></span><span class="reference-accessdate">. Retrieved 2007-11-10</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Hybrid+Transactional+Memory&amp;rft.atitle=&amp;rft.pub=Sun+Microsystems&amp;rft_id=http%3A%2F%2Fresearch.sun.com%2Fscalable%2Fpubs%2FASPLOS2006.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Sun_Studio_(software)#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://research.sun.com/scalable/pubs/TRANSACT2007-PhTM.pdf">"PhTM: Phased Transactional Memory"</a>. Sun Microsystems<span class="printonly">. <a rel="nofollow" class="external free" href="http://research.sun.com/scalable/pubs/TRANSACT2007-PhTM.pdf">http://research.sun.com/scalable/pubs/TRANSACT2007-PhTM.pdf</a></span><span class="reference-accessdate">. Retrieved 2007-11-10</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=PhTM%3A+Phased+Transactional+Memory&amp;rft.atitle=&amp;rft.pub=Sun+Microsystems&amp;rft_id=http%3A%2F%2Fresearch.sun.com%2Fscalable%2Fpubs%2FTRANSACT2007-PhTM.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Oracle_Solaris_Studio"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://developers.sun.com/sunstudio/">Sun Studio home page on Sun Developer Network</a></li>
+<li><a rel="nofollow" class="external text" href="http://cooltools.sunsource.net/gcc/">Cool Tools - GCC for SPARC Systems</a></li>
+<li><a rel="nofollow" class="external text" href="http://forum.java.sun.com/category.jspa?categoryID=113">Sun Studio Forums</a></li>
+<li><a rel="nofollow" class="external text" href="http://wikis.sun.com/display/AppPerfTuning/">Application Performance Tuning on Sun Platform</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sun.com/service/developer/index.jsp">Developer Support Services from Sun Microsystems</a></li>
+<li><a rel="nofollow" class="external text" href="http://wikis.sun.com/display/SunStudio/Home">Sun Studio Wiki Pages</a></li>
+<li><a rel="nofollow" class="external text" href="http://developers.sun.com/sunstudio/support/matrix/index.jsp">Sun Studio Release History</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/server-storage/solarisstudio">downloads/index-jsp-141149.html Download Sun Studio</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Documentation">Documentation</span>
+</h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://developers.sun.com/sunstudio/documentation/index.jsp">Current product documentation</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.sun.com/documentation/studio/index.jsp">Documentation by topic</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.sun.com/source/820-3845/stdinfoctr.html">Sun Studio Information Center</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:Integrated_development_environments_for_C_and_C++" title="Template:Integrated development environments for C and C++"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:Integrated_development_environments_for_C_and_C++" title="Template talk:Integrated development environments for C and C++"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Integrated_development_environments_for_C_and_C%2B%2B&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Integrated_development_environment" title="Integrated development environment">Integrated development environments</a> for <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="C++" title="C++">C++</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Open-source_software" title="Open-source software">Open source</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Anjuta" title="Anjuta">Anjuta</a></li>
+<li><a href="Code::Blocks" title="Code::Blocks">Code::Blocks</a></li>
+<li><a href="CodeLite" title="CodeLite">CodeLite</a></li>
+<li><a href="Dev-C++" title="Dev-C++">Dev-C++</a></li>
+<li><a href="Eclipse_(software)" title="Eclipse (software)">Eclipse</a></li>
+<li><a href="Geany" title="Geany">Geany</a></li>
+<li><a href="GNAT_Programming_Studio" title="GNAT Programming Studio">GNAT Programming Studio</a></li>
+<li><a href="KDevelop" title="KDevelop">KDevelop</a></li>
+<li><a href="Kuzya" title="Kuzya">Kuzya</a></li>
+<li><a href="MonoDevelop" title="MonoDevelop">MonoDevelop</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="QDevelop" title="QDevelop">QDevelop</a></li>
+<li><a href="Qt_Creator" title="Qt Creator">Qt Creator</a></li>
+<li><a href="WxDev-C++" title="WxDev-C++">wxDev-C++</a></li>
+<li><a href="Ultimate++" title="Ultimate++">Ultimate++</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Freeware" title="Freeware">Freeware</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Microsoft_Visual_Studio_Express" title="Microsoft Visual Studio Express">Visual Studio Express</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="Xcode" title="Xcode">Xcode</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Retail_software" title="Retail software">Retail</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++Builder" title="C++Builder">C++Builder</a></li>
+<li><a href="CodeWarrior" title="CodeWarrior">CodeWarrior</a></li>
+<li><a href="IBM_VisualAge" title="IBM VisualAge">IBM VisualAge</a></li>
+<li><a href="Microsoft_Visual_Studio" title="Microsoft Visual Studio">Visual Studio</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow hlist" style=";" colspan="2">
+<div>
+<ul>
+<li><b><a href="Category:Integrated_development_environments" title="Category:Integrated development environments">Category</a></b></li>
+<li><b><a href="Comparison_of_integrated_development_environments" title="Comparison of integrated development environments">Comparison</a></b></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Sun_Microsystems" title="Template:Sun Microsystems"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Sun_Microsystems" title="Template talk:Sun Microsystems"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Sun_Microsystems&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems" title="Sun Microsystems">Sun Microsystems</a> <span style="font-size:85%;">(acquired by <a href="http://en.m.wikipedia.org/wiki/Oracle_Corporation" title="Oracle Corporation">Oracle Corporation</a>, 2010)</span>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Hardware</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-1" title="Sun-1">Sun-1</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-2" title="Sun-2">Sun-2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-3" title="Sun-3">Sun-3</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun386i" title="Sun386i">Sun386i</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun-4" title="Sun-4">Sun-4</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARCstation" title="SPARCstation">SPARCstation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Netra" title="Sun Netra">Netra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Ultra_series" title="Sun Ultra series">Ultra</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Enterprise" title="Sun Enterprise">Enterprise</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Blade" title="Sun Blade">Sun Blade</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Fire" title="Sun Fire">Sun Fire</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARC_Enterprise" title="SPARC Enterprise">SPARC Enterprise</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SPARC" title="SPARC">SPARC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/JavaStation" title="JavaStation">JavaStation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Ray" title="Sun Ray">Sun Ray</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Modular_Datacenter" title="Sun Modular Datacenter">Sun Modular Datacenter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Sun_Microsystems_hardware" title="Category:Sun Microsystems hardware"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Software</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SunOS" title="SunOS">SunOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Network_Information_Service" title="Network Information Service">NIS</a> (<a href="http://en.m.wikipedia.org/wiki/NIS%2B" title="NIS+">+</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Network_File_System_(protocol)" title="Network File System (protocol)" class="mw-redirect">NFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZFS" title="ZFS">ZFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SunView" title="SunView">SunView</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/NeWS" title="NeWS">NeWS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenWindows" title="OpenWindows">OpenWindows</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_Desktop_System" title="Java Desktop System" class="mw-redirect">Java Desktop System</a></li>
+<li><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_(Sun)" title="Java (Sun)" class="mw-redirect">Java</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/StarOffice" title="StarOffice">StarOffice</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/IPlanet" title="IPlanet">iPlanet</a>/<a href="http://en.m.wikipedia.org/wiki/Sun_ONE" title="Sun ONE">Sun ONE</a>/<a href="http://en.m.wikipedia.org/wiki/Java_Enterprise_System" title="Java Enterprise System" class="mw-redirect">Java Enterprise System</a>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Secure_Global_Desktop" title="Sun Secure Global Desktop">Sun Secure Global Desktop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MySQL" title="MySQL">MySQL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_xVM" title="Sun xVM">Sun xVM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GlassFish" title="GlassFish">GlassFish</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Sun_Microsystems_software" title="Category:Sun Microsystems software"><i>more...</i></a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Storage</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/StorageTek" title="StorageTek" class="mw-redirect">StorageTek</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Open_Storage" title="Sun Open Storage">Sun Open Storage</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/QFS" title="QFS">QFS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZFS" title="ZFS">ZFS</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">High-performance computing</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Cloud" title="Sun Cloud">Sun Cloud</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Constellation_System" title="Sun Constellation System">Sun Constellation System</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Visualization_System" title="Sun Visualization System">Sun Visualization System</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Oracle_Grid_Engine" title="Oracle Grid Engine">Sun Grid Engine</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Research</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Microsystems_Laboratories" title="Sun Microsystems Laboratories">Sun Labs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PicoJava" title="PicoJava">picoJava</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fortress_(programming_language)" title="Fortress (programming language)">Fortress</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Project_Looking_Glass" title="Project Looking Glass">Project Looking Glass</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Education and recognition</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Sun_Certified_Professional" title="Sun Certified Professional">SCPs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_notable_Sun_Microsystems_employees" title="List of notable Sun Microsystems employees" class="mw-redirect">List of notable employees</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BlueJ" title="BlueJ">BlueJ</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Community</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/CDDL" title="CDDL" class="mw-redirect">CDDL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Java_Community_Process" title="Java Community Process">Java Community Process</a></li>
+<li><a href="NetBeans" title="NetBeans">NetBeans</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenOffice" title="OpenOffice">OpenOffice.org</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSolaris" title="OpenSolaris">OpenSolaris</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenSPARC" title="OpenSPARC">OpenSPARC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OpenJDK" title="OpenJDK">OpenJDK</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Source_University_Meetup" title="Open Source University Meetup">OSUM</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 7 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%B5%D9%86_%D8%A5%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88_(%D8%A8%D8%B1%D9%85%D8%AC%D9%8A%D8%A7%D8%AA)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/Sun_Studio" lang="bg" hreflang="bg">български</a></li><li><a href="http://cv.m.wikipedia.org/wiki/Sun_Studio" lang="cv" hreflang="cv">Чӑвашла</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Sun_Studio" lang="fr" hreflang="fr">français</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Oracle_Solaris_Studio" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/Oracle_Solaris_Studio" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Sun_Studio" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Sun_Studio_(software)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Sun_Studio_(software)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Oracle+Solaris+Studio&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

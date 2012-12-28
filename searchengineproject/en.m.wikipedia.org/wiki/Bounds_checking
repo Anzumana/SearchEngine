@@ -1,0 +1,130 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Bounds checking - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Bounds checking","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Bounds_checking" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Bounds+checking"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Bounds checking</h1>			<table class="metadata plainlinks ambox ambox-style ambox-No_footnotes" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article includes a <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, related reading or <a href="http://en.m.wikipedia.org/wiki/Wikipedia:External_links" title="Wikipedia:External links">external links</a>, but <b>its sources remain unclear because it lacks <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">inline citations</a></b>. <span class="hide-when-compact">Please <a href="http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by introducing more precise citations.</span> <small><i>(March 2012)</i></small> </span></td>
+</tr></table><div style="clear: right; margin-bottom: .5em; float: right; padding: .5em 0 .8em 1.4em; background: none; width: auto;">
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, <b>bounds checking</b> is any method of detecting whether a <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable</a> is within some <a href="http://en.m.wikipedia.org/wiki/Upper_and_lower_bounds" title="Upper and lower bounds">bounds</a> before its use. It is particularly relevant to a variable used as an index into an array to ensure its value lies within the bounds of the <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array</a>. For example: a value of 32768 about to be assigned to a sixteen-bit signed integer variable (whose bounds are −32768 to +32767), or accessing element 25 on an array with index range 0 through 9 only. The first is also known as range checking, the second as index checking.</p>
+<p>A failed bounds check usually results in the generation of some sort of <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a> signal.</p>
+<p>Because performing bounds checking during every usage is time-consuming it is not always done. <a href="http://en.m.wikipedia.org/wiki/Bounds-checking_elimination" title="Bounds-checking elimination">Bounds-checking elimination</a> are compiler technologies that eliminate unneeded bounds checking in many common cases.</p>
+<p>Many <a href="Programming_language" title="Programming language">programming languages</a>, such as <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, never perform automatic bounds checking, to raise speed. However, this leaves uncaught many <a href="http://en.m.wikipedia.org/wiki/Off-by-one_error" title="Off-by-one error">off-by-one errors</a> and <a href="Buffer_overflow" title="Buffer overflow">buffer overflows</a>. Many programmers believe these languages sacrifice too much for rapid execution. In his 1980 <a href="http://en.m.wikipedia.org/wiki/Turing_Award" title="Turing Award">Turing Award</a> lecture, <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a> described his experience in the design of <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a>, a language that included bounds checking, saying:</p>
+<blockquote>
+<p>A consequence of this principle is that every occurrence of every subscript of every subscripted variable was on every occasion checked at run time against both the upper and the lower declared bounds of the array. Many years later we asked our customers whether they wished us to provide an option to switch off these checks in the interest of efficiency on production runs. Unanimously, they urged us not to—they already knew how frequently subscript errors occur on production runs where failure to detect them could be disastrous. I note with fear and horror that even in 1980, language designers and users have not learned this lesson. In any respectable branch of engineering, failure to observe such elementary precautions would have long been against the law.</p>
+</blockquote>
+<p>Mainstream languages that enforce run time checking include <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="JavaScript" title="JavaScript">JavaScript</a>, <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, <a href="PHP" title="PHP">PHP</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, and <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>. The <a href="D_(programming_language)" title="D (programming language)">D</a> and <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a> languages have run time bounds checking that is enabled or disabled with a compiler switch. C# also supports <i>unsafe regions</i>: sections of code that (among other things) temporarily suspend bounds checking to raise efficiency. These are useful for speeding up small time-critical bottlenecks without sacrificing the safety of a whole program.</p>
+<h2> <span class="mw-headline" id="Range_checking">Range checking</span></h2>
+<p>A range check is a check to make sure a number is within a certain range, for instance that a value about to be assigned to say a sixteen-bit integer is within the capacity of a sixteen-bit integer. This is not quite the same as <a href="Type_checking#Type_checking" title="Type checking" class="mw-redirect">type checking</a>. Other range checks may be more restrictive, for example a variable to hold the number of a calendar month may be declared to accept only the range 1 to 12. This is often used with <a href="Array_data_type" title="Array data type">arrays</a>, as using a number outside of the upper range in an array may cause the program to crash, or may introduce security vulnerabilities (see <a href="Buffer_overflow" title="Buffer overflow">buffer overflow</a>). In <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, the interpreter automatically does a range-check when items in an array are accessed, and throws an <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a> if the item is out of range.</p>
+<h2> <span class="mw-headline" id="Index_checking">Index checking</span></h2>
+<p>Index checking means that, in all <a href="Expression_(programming)" title="Expression (programming)" class="mw-redirect">expressions</a> indexing an <a href="http://en.m.wikipedia.org/wiki/Array_data_structure" title="Array data structure">array</a>, first check the index value against the <a href="http://en.m.wikipedia.org/wiki/Upper_and_lower_bounds" title="Upper and lower bounds">bounds</a> of the array which were established when the array was defined, and should an index be out of bounds, further execution is suspended via some sort of <a href="http://en.m.wikipedia.org/wiki/Error" title="Error">error</a>.</p>
+<p>Pascal, Fortran, Java have index checking ability. The <a href="http://en.m.wikipedia.org/wiki/VAX" title="VAX">VAX</a> computer has an INDEX assembly instruction for array index checking which takes six operands, all of which can use any VAX addressing mode. The B6500 and similar Burroughs computers performed bound checking via hardware, irrespective of which computer language had been compiled to produce the machine code.</p>
+<h2> <span class="mw-headline" id="Data_validation">Data validation</span></h2>
+<p>In the context of data collection and data quality, bounds checking refers to checking that the data is not trivially invalid. For example, a percentage measurement must be in the range 0 to 100; the height of an adult person must be in the range 0 to 3 meters.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Dynamic_code_analysis" title="Dynamic code analysis" class="mw-redirect">Dynamic code analysis</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<ul><li>“<a rel="nofollow" class="external text" href="http://www.cs.dartmouth.edu/~efeustel/Advantages.pdf">On The Advantages Of Tagged Architecture</a>”, IEEE Transactions On Computers, Volume C-22, Number 7, July, 1973.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://thor.cs.ucsb.edu/~ravenben/papers/coreos/Hoa81.pdf">The Emperor’s Old Clothes</a>”, The 1980 ACM Turing Award Lecture, CACM volume 24 number 2, February 1981, pp 75–83.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://www.doc.ic.ac.uk/~phjk/BoundsChecking.html">Bounds Checking for C</a>”, Richard Jones and Paul Kelly, Imperial College, July 1995.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://public.support.unisys.com/aseries/docs/clearpath-mcp-11.0/pdf/38347639-000.pdf">ClearPath Enterprise Servers MCP Security Overview</a>”, Unisys, April 2006.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://llvm.org/pubs/2007-SOSP-SVA.pdf">Secure Virtual Architecture: A Safe Execution Environment for Commodity Operating Systems</a>”, John Criswell, Andrew Lenharth, Dinakar Dhurjati, Vikram Adve, SOSP'07 21st ACM Symposium on Operating Systems Principles, 2007.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://staff.aist.go.jp/y.oiwa/FailSafeC/index-en.html">Fail-Safe C</a>”, Yutaka Oiwa. Implementation of the Memory-safe Full ANSI-C Compiler. ACM SIGPLAN Conference on Programing Language Design and Implementations (PLDI2009), June 2009.</li>
+</ul><ul><li>“<a rel="nofollow" class="external text" href="http://code.google.com/p/address-sanitizer/">address-sanitizer</a>”, Timur Iskhodzhanov, Alexander Potapenko, Alexey Samsonov, Kostya Serebryany, Evgeniy Stepanov, Dmitriy Vyukov, LLVM Dev Meeting, November 18, 2011.</li>
+</ul>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://it.m.wikipedia.org/wiki/Controllo_dei_limiti" lang="it" hreflang="it">italiano</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Sprawdzanie_zakresu" lang="pl" hreflang="pl">polski</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E8%BE%B9%E7%95%8C%E6%A3%80%E6%9F%A5" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Bounds_checking&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Bounds_checking&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Bounds+checking&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

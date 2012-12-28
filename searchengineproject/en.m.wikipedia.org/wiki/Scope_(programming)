@@ -1,0 +1,271 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Scope (computer science) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Scope (computer science)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Scope_(computer_science)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Scope+%28computer+science%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Scope (computer science)</h1>			
+<div class="dablink">For other uses, see <a href="http://en.m.wikipedia.org/wiki/Scope_(disambiguation)" title="Scope (disambiguation)">Scope (disambiguation)</a>.</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, a <b>scope</b> is the context within a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a> in which a <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable name</a> or other identifier is valid and can be used, or within which a <a href="Declaration_(computer_programming)" title="Declaration (computer programming)">declaration</a> has effect. Outside of the scope of a variable name, the variable's value may still be stored, and may even be accessible in some way, but the name does not refer to it; that is, the name is not <i><a href="http://en.m.wikipedia.org/wiki/Name_binding" title="Name binding">bound</a></i> to the variable's storage.</p>
+<p>Various <a href="Programming_language" title="Programming language">programming languages</a> have various different scoping rules for different kinds of declarations and identifiers. Such scoping rules have a large effect on <a href="http://en.m.wikipedia.org/wiki/Formal_semantics_of_programming_languages" title="Formal semantics of programming languages" class="mw-redirect">language semantics</a> and, consequently, on the behavior and correctness of programs. In languages like <a href="C++" title="C++">C++</a>, accessing an unbound variable does not have well-defined semantics and may result in <a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">undefined behavior</a>; and declarations or identifiers used outside their scope will generate <a href="http://en.m.wikipedia.org/wiki/Syntax_error" title="Syntax error">syntax errors</a>.</p>
+<p>Scopes are frequently tied to other language constructs, but many languages also offer constructs specifically for controlling scope.</p>
+<h2> <span class="mw-headline" id="Scope_within_a_function">Scope within a function</span>
+</h2>
+<h3> <span class="mw-headline" id="Function_scope">Function scope</span>
+</h3>
+<div style="float:right;margin-left:1em" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="javascript source-javascript">
+<pre class="de1">
+<span class="kw1">function</span> square<span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">return</span> n <span class="sy0">*</span> n<span class="sy0">;</span>
+<span class="br0">}</span>
+<span class="kw1">function</span> sum_of_squares<span class="br0">(</span>n<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw1">var</span> ret <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>  <span class="co1">// the value to return</span>
+  <span class="kw1">var</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>    <span class="co1">// a counter to go from 1 to n</span>
+  while<span class="br0">(</span>i <span class="sy0">&lt;=</span> n<span class="br0">)</span> <span class="br0">{</span>
+    ret <span class="sy0">=</span> ret <span class="sy0">+</span> square<span class="br0">(</span>i<span class="br0">)</span><span class="sy0">;</span>
+    i <span class="sy0">=</span> i <span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+  <span class="kw1">return</span> ret<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Most of the commonly used programming languages offer a way to create a <i>local variable</i> in a <a href="Subroutine" title="Subroutine">function</a>: a variable that, in some sense, disappears when the function returns.</p>
+<p>For example, in the snippet of <a href="JavaScript" title="JavaScript">JavaScript</a> code on the right, two functions are defined: <tt>square</tt> and <tt>sum_of_squares</tt>. <tt>square</tt> computes the square of a number; <tt>sum_of_squares</tt> computes the sum of all squares up to a number. (For example, <tt>square(4)</tt> is 4<sup>2</sup> = <tt>16</tt>, and <tt>sum_of_squares(4)</tt> is 1<sup>2</sup> + 2<sup>2</sup> + 3<sup>2</sup> + 4<sup>2</sup> = <tt>30</tt>.)</p>
+<p>Each of these functions has a variable named <tt>n</tt> that represents the argument to the function. These two <tt>n</tt> variables are completely separate and unrelated, despite having the same name, because they are local variables, with <i>function scope</i>: each one's scope is its own function, so they don't overlap. Therefore, <tt>sum_of_squares</tt> can call <tt>square</tt> without its own <tt>n</tt> being altered. Similarly, <tt>sum_of_squares</tt> has variables named <tt>ret</tt> and <tt>i</tt>; these variables, because of their limited scope, will not interfere with any variables named <tt>ret</tt> or <tt>i</tt> that might belong to any other function. In other words, there is no risk of a <i>name collision</i> between these identifiers and any unrelated identifiers, even if they are identical.<br style="clear:both;"></p>
+<h3> <span class="mw-headline" id="Block_scope_within_a_function">Block scope within a function</span>
+</h3>
+<div style="float:right;margin-left:1em" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> sum_of_squares<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span> <span class="br0">{</span>
+  <span class="kw4">int</span> ret <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+  <span class="kw4">int</span> i <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+  <span class="kw1">while</span><span class="br0">(</span>i <span class="sy0">&lt;=</span> n<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw4">int</span> n <span class="sy0">=</span> i <span class="sy0">*</span> i<span class="sy0">;</span>
+    ret <span class="sy0">=</span> ret <span class="sy0">+</span> n<span class="sy0">;</span>
+    i <span class="sy0">=</span> i <span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+  <span class="kw1">return</span> ret<span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Many languages take function scope slightly further, allowing variables to be made local to just <i>part</i> of a function; rather than having the entire function as its scope, a variable might have <i>block scope</i>, meaning that it's scoped to just a single block of statements. This is demonstrated in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> code at right, which has two distinct local variables named <tt>n</tt>: one whose scope is the entire function, and one that exists only inside the <tt>while</tt>-loop. In fact, each iteration of the <tt>while</tt>-loop creates a new instance of <tt>n</tt>. This inner <tt>n</tt> completely "hides" or "<a href="http://en.m.wikipedia.org/wiki/Variable_shadowing" title="Variable shadowing">shadows</a>" the outer <tt>n</tt>, such that the outer <tt>n</tt> is invisible inside the <tt>while</tt>-loop — but can still be used in the loop header, <tt>while(i &lt;= n)</tt>, which always refers to the outer <tt>n</tt>.</p>
+<p>This is a rather contrived example; real-world C programmers do not usually name two local variables in such a way that one hides the other. Furthermore, some descendants of C, such as Java and C#, despite having support for block scope (in that a local variable can be made to go out of scope before the end of a function), do not allow one local variable to hide another. In such languages, the attempted declaration of the second <tt>n</tt> would result in a syntax error, and one of the <tt>n</tt> variables would have to be renamed.</p>
+<p>Since the main use of blocks within a function is in control structures such as <tt>if</tt>-statements and <tt>while</tt>-loops, block scope tends to link the scope of variables to the structure of a function's flow of execution. However, languages with block scope typically also allow the use of "naked" blocks, which frequently serve no other purpose than to allow fine-grained control of variable scope.</p>
+<h3> <span class="mw-headline" id="Let-expressions">Let-expressions</span>
+</h3>
+<p>Many languages, especially <a href="Functional_programming" title="Functional programming">functional</a> languages, offer a feature called <i>let-expressions</i>, which allow a declaration's scope to be a single expression. This is convenient if, for example, an intermediate value is needed for a computation. For example, in <a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a>, if <tt>f()</tt> returns <tt>12</tt>, then <tt><b>let val</b> x = f() <b>in</b> x * x <b>end</b></tt> is an expression that evaluates to <tt>144</tt>, using a temporary variable named <tt>x</tt> to avoid calling <tt>f()</tt> twice. Some languages with block scope approximate this functionality by offering syntax for a block to be embedded into an expression; for example, the aforementioned Standard ML expression could be written in <a href="Perl" title="Perl">Perl</a> as <span class="mw-geshi perl source-perl"><span class="kw1">do</span> <span class="br0">{</span> <span class="kw1">my</span> <span class="re0">$x</span> <span class="sy0">=</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> <span class="re0">$x</span> <span class="sy0">*</span> <span class="re0">$x</span> <span class="br0">}</span></span>, or in <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU C</a> as <span class="mw-geshi c source-c"><span class="br0">(</span><span class="br0">{</span> <span class="kw4">int</span> x <span class="sy0">=</span> f<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span> x <span class="sy0">*</span> x<span class="sy0">;</span> <span class="br0">}</span><span class="br0">)</span></span>.<br style="clear:both;"></p>
+<h2> <span class="mw-headline" id="Scope_outside_a_function">Scope outside a function</span>
+</h2>
+<p>A declaration has <i>global scope</i> if it has effect throughout an entire program, or (in some languages) if it has effect from the point of its occurrence until the end of the source-file it occurs in. The latter is also called <i>file scope</i>. Variable names with global scope — called <i><a href="http://en.m.wikipedia.org/wiki/Global_variables" title="Global variables" class="mw-redirect">global variables</a></i> — are frequently considered bad practice, at least in some languages; but global scope is typically used (depending on the language) for various other sorts of identifiers, such as names of functions, and names of <a href="http://en.m.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">classes</a> and other <a href="Data_type" title="Data type">data types</a>. In the JavaScript snippet we saw above, the function-names <tt>square</tt> and <tt>sum_of_squares</tt> have truly global scope, while in the C snippet, the function-name <tt>sum_of_squares</tt> has file scope.</p>
+<div style="float:right;margin-left:1em" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="perl source-perl">
+<pre class="de1">
+<span class="br0">{</span> <span class="kw1">my</span> <span class="re0">$counter</span> <span class="sy0">=</span> <span class="nu0">0</span><span class="sy0">;</span>
+  <span class="kw2">sub</span> increment_counter<span class="br0">(</span><span class="br0">)</span>
+  <span class="br0">{</span> <span class="re0">$counter</span> <span class="sy0">=</span> <span class="re0">$counter</span> <span class="sy0">+</span> <span class="nu0">1</span><span class="sy0">;</span>
+    <span class="kw3">return</span> <span class="re0">$counter</span><span class="sy0">;</span>
+  <span class="br0">}</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Some languages allow the concept of block scope to be applied, to varying extents, outside of a function. For example, in the Perl snippet at right, <tt>$counter</tt> is a variable name with block scope (due to the use of the <tt>my</tt> keyword), while <tt>increment_counter</tt> is a function name with global scope. Each call to <tt>increment_counter</tt> will increase the value of <tt>$counter</tt> by one, and return the new value. Code outside of this block can call <tt>increment_counter</tt>, but cannot otherwise obtain or alter the value of <tt>$counter</tt>.</p>
+<p>As we saw above, function scope and block scope are very useful for avoiding name collisions, but even at global scope, many languages have mechanisms such as <a href="http://en.m.wikipedia.org/wiki/Namespace_(computer_science)" title="Namespace (computer science)">namespaces</a> to help mitigate this problem.<br style="clear:both;"></p>
+<h2> <span class="mw-headline" id="Lexical_scoping_and_dynamic_scoping">Lexical scoping and dynamic scoping</span>
+</h2>
+<p>As we have seen, the use of local variables — of variable names with limited scope, that only exist within a specific function — helps avoid the risk of a name collision between two identically named variables. However, we have sidestepped an important question: what does it mean to be "within" a function? There are two very different approaches to scoping that answer this question in different ways.</p>
+<p>In <i>lexical scoping</i> (or <i>lexical scope</i>; also called <i>static scoping</i> or <i>static scope</i>), if a variable name's scope is a certain function, then its scope is the program text of the function definition: within that text, the variable name exists, and is bound to its variable, but outside that text, the variable name does not exist. By contrast, in <i>dynamic scoping</i> (or <i>dynamic scope</i>), if a variable name's scope is a certain function, then its scope is the time-period during which the function is executing: while the function is running, the variable name exists, and is bound to its variable, but after the function returns, the variable name does not exist. This means that if function <tt>f</tt> invokes a separately defined function <tt>g</tt>, then under lexical scoping, function <tt>g</tt> does <i>not</i> have access to <tt>f</tt>'s local variables (since the text of <tt>g</tt> is not inside the text of <tt>f</tt>), while under dynamic scoping, function <tt>g</tt> <i>does</i> have access to <tt>f</tt>'s local variables (since the invocation of <tt>g</tt> is inside the invocation of <tt>f</tt>).</p>
+<div style="float:right;margin-left:1em" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="bash source-bash">
+<pre class="de1">
+<span class="re2">x</span>=<span class="nu0">1</span>
+<span class="kw1">function</span> g <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw3">echo</span> <span class="re1">$x</span> ; <span class="re2">x</span>=<span class="nu0">2</span> ; <span class="br0">}</span>
+<span class="kw1">function</span> f <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw3">local</span> <span class="re2">x</span>=<span class="nu0">3</span> ; g ; <span class="br0">}</span>
+f <span class="co0"># does this print 1, or 3?</span>
+<span class="kw3">echo</span> <span class="re1">$x</span> <span class="co0"># does this print 1, or 2?</span>
+</pre>
+</div>
+</div>
+<p>Consider, for example, the program at right. The first line, <span class="mw-geshi bash source-bash"><span class="re2">x</span>=<span class="nu0">1</span></span>, creates a global variable <tt>x</tt> and initializes it to <tt>1</tt>. The second line, <span class="mw-geshi bash source-bash"><span class="kw1">function</span> g <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw3">echo</span> <span class="re1">$x</span> ; <span class="re2">x</span>=<span class="nu0">2</span> ; <span class="br0">}</span></span>, defines a function <tt>g</tt> that prints out ("echoes") the current value of <tt>x</tt>, and then sets <tt>x</tt> to <tt>2</tt> (overwriting the previous value). The third line, <span class="mw-geshi bash source-bash"><span class="kw1">function</span> f <span class="br0">(</span><span class="br0">)</span> <span class="br0">{</span> <span class="kw3">local</span> <span class="re2">x</span>=<span class="nu0">3</span> ; g ; <span class="br0">}</span></span> defines a function <tt>f</tt> that creates a local variable <tt>x</tt> (hiding the identically named global variable) and initializes it to <tt>3</tt>, and then calls <tt>g</tt>. The fourth line, <span class="mw-geshi bash source-bash">f</span>, calls <tt>f</tt>. The fifth line, <span class="mw-geshi bash source-bash"><span class="kw3">echo</span> <span class="re1">$x</span></span>, prints out the current value of <tt>x</tt>.</p>
+<p>So, what exactly does this program print? It depends on the scoping rules. If the language of this program is one that uses lexical scoping, then <tt>g</tt> prints and modifies the global variable <tt>x</tt> (because <tt>g</tt> is defined outside <tt>f</tt>), so the program prints <tt>1</tt> and then <tt>2</tt>. By contrast, if this language uses dynamic scoping, then <tt>g</tt> prints and modifies <tt>f</tt>'s local variable <tt>x</tt> (because <tt>g</tt> is called from within <tt>f</tt>), so the program prints <tt>3</tt> and then <tt>1</tt>. (As it happens, the language of the program is <a href="http://en.m.wikipedia.org/wiki/Bash_(Unix_shell)" title="Bash (Unix shell)">Bash</a>, which uses dynamic scoping; so the program prints <tt>3</tt> and then <tt>1</tt>.)<br style="clear:both;"></p>
+<h3> <span class="mw-headline" id="Lexical_scoping">Lexical scoping</span>
+</h3>
+<p>With <b>lexical scope</b>, a name always refers to its (more or less) local lexical environment. This is a property of the program text and is made independent of the runtime <a href="Call_stack" title="Call stack">call stack</a> by the language implementation. Because this matching only requires analysis of the static program text, this type of scoping is also called <b>static scoping</b>. Lexical scoping is standard in all <a href="ALGOL" title="ALGOL">ALGOL</a>-based languages such as <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Modula2" title="Modula2" class="mw-redirect">Modula2</a> and <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> as well as in modern functional languages such as <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a> and <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>. It is also used in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> and its syntactic and semantic relatives, although with different kinds of limitations. Static scoping allows the programmer to reason about object references such as parameters, variables, constants, types, functions, etc. as simple name substitutions. This makes it much easier to make modular code and reason about it, since the local naming structure can be understood in isolation. In contrast, dynamic scope forces the programmer to anticipate all possible dynamic contexts in which the module's code may be invoked.</p>
+<div style="float:right;margin-left:1em" dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="pascal source-pascal">
+<pre class="de1">
+<span class="kw1">program</span> A<span class="sy1">;</span>
+<span class="kw1">var</span> I<span class="sy1">:</span><span class="kw4">integer</span><span class="sy1">;</span>
+    K<span class="sy1">:</span><span class="kw4">char</span><span class="sy1">;</span>
+ 
+    <span class="kw1">procedure</span> B<span class="sy1">;</span>
+    <span class="kw1">var</span> K<span class="sy1">:</span><span class="kw4">real</span><span class="sy1">;</span>
+        L<span class="sy1">:</span><span class="kw4">integer</span><span class="sy1">;</span>
+ 
+        <span class="kw1">procedure</span> C<span class="sy1">;</span>
+        <span class="kw1">var</span> M<span class="sy1">:</span><span class="kw4">real</span><span class="sy1">;</span>
+        <span class="kw1">begin</span>
+         <span class="coMULTI">(*scope A+B+C*)</span>
+        <span class="kw1">end</span><span class="sy1">;</span>
+ 
+     <span class="coMULTI">(*scope A+B*)</span>
+    <span class="kw1">end</span><span class="sy1">;</span>
+ 
+ <span class="coMULTI">(*scope A*)</span>
+<span class="kw1">end</span><span class="sy1">.</span>
+</pre>
+</div>
+</div>
+<p>For example, consider the Pascal program fragment at right. The variable <code>I</code> is visible at all points, because it is never hidden by another variable of the same name. The <code>char</code> variable <code>K</code> is visible only in the main program because it is hidden by the <code>real</code> variable <code>K</code> visible in procedure <code>B</code> and <code>C</code> only. Variable <code>L</code> is also visible only in procedure <code>B</code> and <code>C</code> but it does not hide any other variable. Variable <code>M</code> is only visible in procedure <code>C</code> and therefore not accessible either from procedure <code>B</code> or the main program. Also, procedure <code>C</code> is visible only in procedure <code>B</code> and can therefore not be called from the main program.</p>
+<p>There could have been another procedure <code>C</code> declared in the program outside of procedure <code>B</code>. The place in the program where "<code>C</code>" is mentioned then determines which of the two procedures named <code>C</code> it represents, thus precisely analogous with the scope of variables.</p>
+<p>Correct implementation of static scope in languages with <a href="http://en.m.wikipedia.org/wiki/First-class_function" title="First-class function">first-class</a> <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">nested functions</a> is not trivial, as it requires each function value to carry with it a record of the values of the variables that it depends on (the pair of the function and this environment is called a <a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">closure</a>). Depending on implementation and <a href="Computer_architecture" title="Computer architecture">computer architecture</a>, variable <a href="http://en.m.wikipedia.org/wiki/Lookup" title="Lookup" class="mw-redirect">lookup</a> <i>may</i> become slightly inefficient<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2012">citation needed</span></a></i>]</sup> when very deeply lexically <a href="http://en.m.wikipedia.org/wiki/Nesting_(computing)" title="Nesting (computing)">nested</a> functions are used, although there are well-known techniques to mitigate this<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2012">citation needed</span></a></i>]</sup>. Also, for nested functions that only refer to their own arguments and (immediately) local variables, all relative locations can be known at <a href="http://en.m.wikipedia.org/wiki/Compile_time" title="Compile time">compile time</a>. No overhead at all is therefore incurred when using that type of nested function. The same applies to particular parts of a program where nested functions are not used, and, naturally, to programs written in a language where nested functions are not available (such as in the C language).</p>
+<h4> <span class="mw-headline" id="History">History</span>
+</h4>
+<p>Lexical scoping was used for <a href="ALGOL" title="ALGOL">ALGOL</a> and has been picked up in most other languages since then. <i>Deep binding</i>, which approximates static (lexical) scoping, was introduced in LISP 1.5 (via the <a href="http://en.m.wikipedia.org/wiki/Funarg" title="Funarg" class="mw-redirect">Funarg</a> device developed by <a href="http://en.m.wikipedia.org/wiki/Steve_Russell" title="Steve Russell">Steve Russell</a>, working under <a href="http://en.m.wikipedia.org/wiki/John_McCarthy_(computer_scientist)" title="John McCarthy (computer scientist)">John McCarthy</a>). The original Lisp interpreter (1960) and most early <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisps</a> used dynamic scoping, but descendants of dynamically scoped languages often adopt static scoping; <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a> has both dynamic and static scoping while <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a> uses static scoping exclusively. <a href="Perl" title="Perl">Perl</a> is another language with dynamic scoping that added static scoping afterwards. Languages like <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a> and <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> have always had lexical scoping, since they are both influenced by the ideas that went into <a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> (although C did not include lexically <a href="http://en.m.wikipedia.org/wiki/Nested_function" title="Nested function">nested functions</a>).<br style="clear:both;"></p>
+<h3> <span class="mw-headline" id="Dynamic_scoping">Dynamic scoping</span>
+</h3>
+<p>With <b>dynamic scope</b>, each identifier has a global <a href="http://en.m.wikipedia.org/wiki/Stack_(data_structure)" title="Stack (data structure)" class="mw-redirect">stack</a> of bindings. Introducing a local variable with name <code>x</code> pushes a binding onto the global <code>x</code> stack (which may have been empty), which is popped off when the <a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">control flow</a> leaves the scope. Evaluating <code>x</code> in any context always yields the top binding. In other words, a global identifier refers to the identifier associated with the most recent environment. Note that this cannot be done at compile-time because the binding stack only exists at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run-time</a>, which is why this type of scoping is called <i>dynamic</i> scoping.</p>
+<p>Generally, certain <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">blocks</a> are defined to create bindings whose lifetime is the execution time of the block; this adds some features of static scoping to the dynamic scoping process. However, since a section of code can be called from many different locations and situations, it can be difficult to determine at the outset what bindings will apply when a variable is used (or if one exists at all). This can be beneficial; application of the <a href="http://en.m.wikipedia.org/wiki/Principle_of_least_knowledge" title="Principle of least knowledge" class="mw-redirect">principle of least knowledge</a> suggests that code avoid depending on the <i>reasons</i> for (or circumstances of) a variable's value, but simply use the value according to the variable's definition. This narrow interpretation of shared data can provide a very flexible system for adapting the behavior of a function to the current state (or policy) of the system. However, this benefit relies on careful documentation of all variables used this way as well as on careful avoidance of assumptions about a variable's behavior, and does not provide any mechanism to detect interference between different parts of a program. Dynamic scoping also voids all the benefits of <a href="http://en.m.wikipedia.org/wiki/Referential_transparency_(computer_science)" title="Referential transparency (computer science)">referential transparency</a>. As such, dynamic scoping can be dangerous and few modern languages use it. Some languages, like <a href="Perl" title="Perl">Perl</a> and <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, allow the programmer to choose static or dynamic scoping when defining or redefining a variable. <a href="http://en.m.wikipedia.org/wiki/Logo_(programming_language)" title="Logo (programming language)">Logo</a> and <a href="http://en.m.wikipedia.org/wiki/Emacs_lisp" title="Emacs lisp" class="mw-redirect">Emacs lisp</a> are examples of languages that use dynamic scoping.</p>
+<p>Dynamic scoping is fairly easy to implement. To find an identifier's value, the program could traverse the runtime stack, checking each activation record (each function's stack frame) for a value for the identifier. In practice, this is made more efficient via the use of an <a href="http://en.m.wikipedia.org/wiki/Association_list" title="Association list">association list</a>, which is a stack of name/value pairs. Pairs are pushed onto this stack whenever declarations are made, and popped whenever variables go out of scope.<sup id="cite_ref-1" class="reference"><a href="Scope_(programming)#cite_note-1"><span>[</span>1<span>]</span></a></sup><i>Shallow binding</i> is an alternative strategy that is considerably faster, making use of a <i>central reference table</i>, which associates each name with its own stack of meanings. This avoids a linear search during run-time to find a particular name, but care should be taken to properly maintain this table.<sup id="cite_ref-2" class="reference"><a href="Scope_(programming)#cite_note-2"><span>[</span>2<span>]</span></a></sup> Note that both of these strategies assume a last-in-first-out (<a href="http://en.m.wikipedia.org/wiki/LIFO_(computing)" title="LIFO (computing)">LIFO</a>) ordering to bindings for any one variable; in practice all bindings are so ordered.</p>
+<p>An even simpler implementation is the representation of dynamic variables with simple global variables. The local binding is performed by saving the original value in an anonymous location on the stack that is invisible to the program. When that binding scope terminates, the original value is restored from this location. In fact, dynamic scope originated in this manner. Early implementations of Lisp used this obvious strategy for implementing local variables, and the practice survives in some dialects which are still in use, such as GNU Emacs Lisp. Lexical scope was introduced into Lisp later. This is equivalent to the above shallow binding scheme, except that the central reference table is simply the global variable binding environment, in which the current meaning of the variable is its global value. Maintaining global variables isn't complex. For instance, a symbol object can have a dedicated slot for its global value.</p>
+<p>Dynamic scoping provides an excellent abstraction for <a href="http://en.m.wikipedia.org/wiki/Thread_local_storage" title="Thread local storage" class="mw-redirect">thread local storage</a>, but if it is used that way it cannot be based on saving and restoring a global variable. A possible implementation strategy is for each variable to have a thread-local key. When the variable is accessed, the thread-local key is used to access the thread-local memory location (by code generated by the compiler, which knows which variables are dynamic and which are lexical). If the thread-local key does not exist for the calling thread, then the global location is used. When a variable is locally bound, the prior value is stored in a hidden location on the stack. The thread-local storage is created under the variable's key, and the new value is stored there. Further nested overrides of the variable within that thread simply save and restore this thread-local location. When the initial, outer-most override's scope terminates, the thread-local key is deleted, exposing the global version of the variable once again to that thread.</p>
+<h2> <span class="mw-headline" id="Qualified_identifiers">Qualified identifiers</span>
+</h2>
+<p>As we have seen, one of the key reasons for scope is that it helps prevent name collisions, by allowing identical identifiers to refer to distinct things, with the restriction that the identifiers must have separate scopes. Sometimes this restriction is inconvenient; when many different things need to be accessible throughout a program, they generally all need identifiers with global scope, so different techniques are required to avoid name collisions.</p>
+<p>To address this, many languages offer mechanisms for organizing global identifiers. The details of these mechanisms, and the terms used, depend on the language; but the general idea is that a group of identifiers can itself be given a name — a prefix — and, when necessary, an entity can be referred to by a <i>qualified identifier</i> consisting of the identifier plus the prefix. Normally such identifiers will have, in a sense, two sets of scopes: a scope (usually the global scope) in which the qualified identifier is visible, and one or more narrower scopes in which the <i>unqualified identifier</i> (without the prefix) is visible as well. And normally these groups can themselves be organized into groups; that is, they can be <i>nested</i>.</p>
+<p>Although many languages support this concept, the details vary greatly. Some languages have mechanisms, such as <i>namespaces</i> in <a href="C++" title="C++">C++</a> and <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, that serve almost exclusively to enable global identifiers to be organized into groups. Other languages have mechanisms, such as <i>packages</i> in <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> and <i>structures</i> in <a href="http://en.m.wikipedia.org/wiki/Standard_ML" title="Standard ML">Standard ML</a>, that combine this with the additional purpose of allowing some identifiers to be visible only to other members of their group. And object-oriented languages often allow classes or singleton objects to fulfill this purpose (whether or not they <i>also</i> have a mechanism for which this is the primary purpose). Furthermore, languages often meld these approaches; for example, <a href="Perl" title="Perl">Perl</a>'s packages are largely similar to C++'s namespaces, but optionally double as classes for object-oriented programming; and <a href="Java_(programming_language)" title="Java (programming language)">Java</a> organizes its variables and functions into classes, but then organizes those classes into Ada-like packages.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Closure_(computer_science)" title="Closure (computer science)">Closure (computer science)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Global_variable" title="Global variable">Global variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Local_variable" title="Local variable">Local variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-local_variable" title="Non-local variable">Non-local variable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Name_binding" title="Name binding">Name binding</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Name_resolution" title="Name resolution">Name resolution</a></li>
+<li><a href="Variable_(programming)#Scope_and_extent" title="Variable (programming)" class="mw-redirect">Variables (scope and extent)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_hiding" title="Information hiding">Information hiding</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Scope_(computer_science)&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(December 2008)</i></small> </span></td>
+</tr></table>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Scope_(programming)#cite_ref-1">^</a></b></span> <span class="reference-text">Scott 2006, p. 135</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Scope_(programming)#cite_ref-2">^</a></b></span> <span class="reference-text">Scott 2006, p. 135</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Harold_Abelson" title="Harold Abelson" class="mw-redirect">Harold Abelson</a> and <a href="http://en.m.wikipedia.org/wiki/Gerald_Jay_Sussman" title="Gerald Jay Sussman">Gerald Jay Sussman</a>. <a rel="nofollow" class="external text" href="http://mitpress.mit.edu/sicp/full-text/book/book-Z-H-35.html#%_sec_5.5.6">"Lexical addressing"</a>. <i><a href="http://en.m.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs" title="Structure and Interpretation of Computer Programs">Structure and Interpretation of Computer Programs</a></i>.</li>
+<li>Scott, M. (2006). <i>Programming Language Pragmatics</i>, 2nd edition. Morgan Kauffman Publishers, San Francisco, CA.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Variable_(Programmierung)#G.C3.BCltigkeitsbereich_von_Variablen_.28Scope.29" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/%C3%81mbito_(programaci%C3%B3n)" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Port%C3%A9e_(informatique)" lang="fr" hreflang="fr">français</a></li><li><a href="http://is.m.wikipedia.org/wiki/Gildissvi%C3%B0" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Visibilit%C3%A0" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Variabelenbereik" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%97" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Zasi%C4%99g_(programowanie)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Escopo_(computa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9E%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C_%D0%B2%D0%B8%D0%B4%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E4%BD%9C%E7%94%A8%E5%9F%9F" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Scope_(programming)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Scope_(programming)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Scope+%28computer+science%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

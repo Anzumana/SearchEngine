@@ -1,0 +1,473 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Watcom C/C++ compiler - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/Watcom_C/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Watcom C\/C++ compiler","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Watcom_C/C%2B%2B_compiler" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="../Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="../Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Watcom+C%2FC%2B%2B+compiler"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="../Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Watcom C/C++ compiler</h1>			
+<table class="metadata plainlinks ambox ambox-style ambox-lead_rewrite" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/40px-Edit-clear.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/60px-Edit-clear.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/f/f2/Edit-clear.svg/80px-Edit-clear.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">To comply with Wikipedia's <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Lead_section_guidelines" title="Wikipedia:Lead section guidelines" class="mw-redirect">lead section guidelines</a>, the <b>introduction of this article may need to be rewritten.</b> <span class="hide-when-compact">Please discuss this issue on the <a href="http://en.m.wikipedia.org/wiki/Talk:Watcom_C/C%2B%2B_compiler" title="Talk:Watcom C/C++ compiler">talk page</a> and read the <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Layout_guide" title="Wikipedia:Layout guide" class="mw-redirect">layout guide</a> to make sure the section will be inclusive of all essential details.</span> <small><i>(December 2010)</i></small> </span></td>
+</tr></table>
+<table class="metadata plainlinks ambox ambox-content ambox-Primary_sources" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><a href="../File:Question_book-new.svg" class="image"><img alt="Question book-new.svg" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></a></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>relies on <a href="../Wikipedia:Verifiability" title="Wikipedia:Verifiability">references</a> to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:No_original_research#Primary.2C_secondary_and_tertiary_sources" title="Wikipedia:No original research">primary sources</a> or sources affiliated with the subject</b>. <span class="hide-when-compact">Please add <a href="../Wikipedia:Citing_sources" title="Wikipedia:Citing sources">citations</a> from <a href="../Wikipedia:Verifiability#Reliable_sources" title="Wikipedia:Verifiability">reliable and independent sources</a>.</span> <small><i>(May 2011)</i></small> </span></td>
+</tr></table>
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Open Watcom</caption>
+<tr class="">
+<td colspan="2" class="" style="text-align:center;"><a href="http://en.m.wikipedia.org/wiki/File:Watcom_logo.png" class="image"><img alt="Watcom logo.png" src="http://upload.wikimedia.org/wikipedia/commons/0/0b/Watcom_logo.png" width="88" height="122"></a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Original author(s)</a></th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Watcom" title="Watcom">Watcom</a><br><a href="http://en.m.wikipedia.org/wiki/Sybase" title="Sybase">Sybase</a><br><a href="http://en.m.wikipedia.org/wiki/SciTech_Software" title="SciTech Software">SciTech Software</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="../Software_developer" title="Software developer">Developer(s)</a></th>
+<td class="" style="">Open community</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Initial release</th>
+<td class="" style="">January 8, 2003<span style="display:none"> (<span class="bday dtstart published updated">2003-01-08</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="../Software_release_life_cycle" title="Software release life cycle">Stable release</a></th>
+<td class="" style="">1.9 / June 2, 2010<span style="display:none"> (<span class="bday dtstart published updated">2010-06-02</span>)</span>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Development status</th>
+<td class="" style="">Active</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="../Operating_system" title="Operating system">Operating system</a></th>
+<td class="" style=""><a href="../Cross-platform" title="Cross-platform">Cross-platform</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/File_size" title="File size">Size</a></th>
+<td class="" style="">73.8 Mb</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/List_of_software_categories" title="List of software categories">Type</a></th>
+<td class="" style=""><a href="../Integrated_development_environment" title="Integrated development environment">Integrated development environment</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.openwatcom.org/index.php/Open_Watcom_Public_License">Sybase Open Watcom Public License version 1.0</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left; white-space: nowrap;">Website</th>
+<td class="" style=""><a rel="nofollow" class="external text" href="http://www.openwatcom.org/">www.openwatcom.org</a></td>
+</tr>
+</table>
+<p>The <b><a href="http://en.m.wikipedia.org/wiki/Watcom" title="Watcom">Watcom</a> C/C++ compiler</b> is a <a href="../Compiler" title="Compiler">compiler</a> for the <a href="http://en.m.wikipedia.org/wiki/Computer" title="Computer">computer</a> <a href="../Programming_language" title="Programming language">programming languages</a> <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="../C++" title="C++">C++</a> that produces <a href="http://en.m.wikipedia.org/wiki/Executable_program" title="Executable program" class="mw-redirect">executable programs</a> for several <a href="http://en.m.wikipedia.org/wiki/Computing_platform" title="Computing platform">platforms</a> and <a href="../Operating_system" title="Operating system">operating systems</a>. The code it produces for <a href="http://en.m.wikipedia.org/wiki/MS-DOS" title="MS-DOS">MS-DOS</a> executes very fast<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from November 2011">citation needed</span></a></i>]</sup>. It was one of the first compilers to support the <a href="http://en.m.wikipedia.org/wiki/Intel_80386" title="Intel 80386">Intel 80386</a> "protected mode"<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from December 2008">citation needed</span></a></i>]</sup>. In the mid-1990s some of the most technically ambitious DOS games such as <i><a href="http://en.m.wikipedia.org/wiki/Doom_(video_game)" title="Doom (video game)">Doom</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Descent_(video_game)" title="Descent (video game)">Descent</a></i> and <i><a href="http://en.m.wikipedia.org/wiki/Duke_Nukem_3D" title="Duke Nukem 3D">Duke Nukem 3D</a></i> were built using Watcom C.<sup id="cite_ref-hist_1-0" class="reference"><a href="C++_compiler#cite_note-hist-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Though no longer sold commercially by <a href="http://en.m.wikipedia.org/wiki/Sybase" title="Sybase">Sybase</a>, the Watcom C/C++ compiler and the Watcom <a href="../Fortran" title="Fortran">Fortran</a> compiler have been made available as the free and <a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">open source</a><sup id="cite_ref-2" class="reference"><a href="C++_compiler#cite_note-2"><span>[</span>2<span>]</span></a></sup><i>Open Watcom</i> package with the assistance of <a href="http://en.m.wikipedia.org/wiki/SciTech_Software" title="SciTech Software">SciTech Software</a>. The code is portable and, like many other open source compiler projects such as <a href="../GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a> or <a href="../LCC_(compiler)" title="LCC (compiler)">LCC</a> the compiler backend (code generator) is retargetable. The compiler can be operated from, and generate executable code for, the DOS, <a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a>, Linux and <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a> <a href="http://en.m.wikipedia.org/wiki/Operating_systems" title="Operating systems" class="mw-redirect">operating systems</a>. It also supports <a href="http://en.m.wikipedia.org/wiki/NetWare_Loadable_Module" title="NetWare Loadable Module">NLM</a> targets for <a href="http://en.m.wikipedia.org/wiki/Novell_NetWare" title="Novell NetWare" class="mw-redirect">Novell NetWare</a>. There is ongoing work to extend the targeting to <a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a><sup id="cite_ref-3" class="reference"><a href="C++_compiler#cite_note-3"><span>[</span>3<span>]</span></a></sup> and modern <a href="http://en.m.wikipedia.org/wiki/BSD" title="BSD" class="mw-redirect">BSD</a> (e.g., <a href="http://en.m.wikipedia.org/wiki/FreeBSD" title="FreeBSD">FreeBSD</a>) operating systems, running on <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a>, <a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> and other processors. The Open Watcom C/C++ version 1.4 release on December 2005 introduced Linux x86 as an experimental target, supported from NT or OS/2 host platforms. There is code for an abandoned <a href="http://en.m.wikipedia.org/wiki/QNX" title="QNX">QNX</a> version, but libraries necessary for it to be compiled could not be released as open source.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2007">citation needed</span></a></i>]</sup> Stable version 1.9 was released in June 2010.<sup id="cite_ref-4" class="reference"><a href="C++_compiler#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Release_history">Release history</span>
+</h2>
+<p>The <i>Open Watcom Wiki</i> has a comprehensive history.<sup id="cite_ref-hist_1-1" class="reference"><a href="C++_compiler#cite_note-hist-1"><span>[</span>1<span>]</span></a></sup></p>
+<table class="wikitable">
+<tr>
+<th>Date</th>
+<th>Product</th>
+<th>Notes</th>
+</tr>
+<tr>
+<td>1984</td>
+<td>Waterloo C for S/370</td>
+<td></td>
+</tr>
+<tr>
+<td>1985</td>
+<td></td>
+<td>Work on current code generator codebase started</td>
+</tr>
+<tr>
+<td>1988</td>
+<td>Watcom C 6.0</td>
+<td>
+<ul>
+<li>DOS host and target only</li>
+<li>Included a debugger and full set of <a href="http://en.m.wikipedia.org/wiki/Runtime_library" title="Runtime library">runtime libraries</a>
+</li>
+<li>Generated better code than other compilers at the time</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1989</td>
+<td>Watcom C 7.0</td>
+<td></td>
+</tr>
+<tr>
+<td>1989</td>
+<td>Watcom C 7.0/386</td>
+<td>
+<ul>
+<li>First 32-bit version, DOS host and target only</li>
+<li>Supported <a href="http://en.m.wikipedia.org/wiki/Phar_Lap_(company)" title="Phar Lap (company)">Phar Lap</a> <a href="http://en.m.wikipedia.org/wiki/DOS_extender" title="DOS extender">DOS extender</a>
+</li>
+<li>Did not come with a <a href="../Linker_(computing)" title="Linker (computing)">linker</a> or debugger</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1990</td>
+<td>Watcom C 8.0</td>
+<td></td>
+</tr>
+<tr>
+<td>1990</td>
+<td>Watcom C 8.0/386</td>
+<td>
+<ul>
+<li>Added <a href="../Linker_(computing)" title="Linker (computing)">linker</a>, librarian, <a href="http://en.m.wikipedia.org/wiki/Debugger" title="Debugger">debugger</a>, and <a href="http://en.m.wikipedia.org/wiki/Performance_analysis" title="Performance analysis" class="mw-redirect">profiler</a>
+</li>
+<li>Added graphics library</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1991</td>
+<td>Watcom C 8.5</td>
+<td></td>
+</tr>
+<tr>
+<td>1991</td>
+<td>Watcom C 8.5/386</td>
+<td>
+<ul>
+<li>Shipped with <a href="http://en.m.wikipedia.org/wiki/DOS/4GW" title="DOS/4GW" class="mw-redirect">DOS/4GW</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_3.0" title="Windows 3.0">Windows 3.0</a> supported (Win386 extender)</li>
+<li>
+<a href="../Unicode" title="Unicode">Unicode</a> support</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a> hosted executables added</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1992</td>
+<td>Watcom C 9.0</td>
+<td></td>
+</tr>
+<tr>
+<td>1992</td>
+<td>Watcom C 9.0/386</td>
+<td>
+<ul>
+<li>OS/2 2.0 host and target support</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Intel_80486" title="Intel 80486">486</a> optimizations</li>
+<li>Based pointer support</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td></td>
+<td>Watcom C 9.01/386</td>
+<td>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_3.1" title="Windows 3.1" class="mw-redirect">Windows 3.1</a> support</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1993</td>
+<td>Watcom C/C++ 9.5</td>
+<td></td>
+</tr>
+<tr>
+<td>1993</td>
+<td>Watcom C/C++ 9.5/386</td>
+<td>
+<ul>
+<li>C++ compiler added</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Intel_P5_(microarchitecture)" title="Intel P5 (microarchitecture)" class="mw-redirect">Pentium</a> optimizations</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_NT" title="Windows NT">Windows NT</a> host and target support</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>Watcom C/C++ 10.0</td>
+<td>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Microsoft_Foundation_Class_Library" title="Microsoft Foundation Class Library">MFC</a> included</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Precompiled_header" title="Precompiled header">Precompiled header</a> support</li>
+<li>16-bit and 32-bit tools merged into single package</li>
+<li>Redesigned debugger</li>
+<li>C++ <a href="http://en.m.wikipedia.org/wiki/Class_browser" title="Class browser">class browser</a> added</li>
+<li>Windows <a href="http://en.m.wikipedia.org/wiki/Resource_editor" title="Resource editor" class="mw-redirect">resource editors</a> added</li>
+<li>Graphical <a href="../Integrated_development_environment" title="Integrated development environment">IDE</a> for Windows and OS/2</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1995</td>
+<td>Watcom C/C++ 10.5</td>
+<td>
+<ul>
+<li>Native C++ exception handling on OS/2 and <a href="http://en.m.wikipedia.org/wiki/Win32" title="Win32" class="mw-redirect">Win32</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Windows_95" title="Windows 95">Windows 95</a> and <a href="http://en.m.wikipedia.org/wiki/Windows_NT_3.5" title="Windows NT 3.5">NT 3.5</a> support</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/TCP/IP" title="TCP/IP" class="mw-redirect">TCP/IP</a> remote debugging</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1996</td>
+<td>Watcom C/C++ 10.6</td>
+<td>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Structured_exception_handling" title="Structured exception handling" class="mw-redirect">Structured exception handling</a> in C</li>
+<li>Improved compatibility with <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> compilers</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1997</td>
+<td>Watcom C/C++ 11.0</td>
+<td>
+<ul>
+<li>
+<i><a href="http://en.m.wikipedia.org/wiki/Namespace_(computer_science)" title="Namespace (computer science)">Namespace</a></i>, <a href="http://en.m.wikipedia.org/wiki/RTTI" title="RTTI" class="mw-redirect">RTTI</a>, and new style <a href="../Type_conversion" title="Type conversion">cast</a> support in C++ compiler</li>
+<li>64-bit integer support</li>
+<li>Multi-byte character support in libraries</li>
+<li>Incremental linking support</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/COFF" title="COFF">COFF</a> and <a href="http://en.m.wikipedia.org/wiki/Executable_and_Linkable_Format" title="Executable and Linkable Format">ELF</a> <a href="http://en.m.wikipedia.org/wiki/Object_file" title="Object file">object file</a> support in linker and librarian</li>
+<li>Microsoft clone tools added</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dynamic-link_library" title="Dynamic-link library">DLL</a> based tools for better IDE integration</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>1998</td>
+<td>Watcom C/C++ 11.0B</td>
+<td></td>
+</tr>
+<tr>
+<td>1999</td>
+<td></td>
+<td>Sybase issues <a href="http://en.m.wikipedia.org/wiki/End-of-life_(product)" title="End-of-life (product)">end-of-life</a> notice for Watcom C/C++ 11.0</td>
+</tr>
+<tr>
+<td>2000</td>
+<td></td>
+<td>Sybase announces open sourcing of Watcom tools</td>
+</tr>
+<tr>
+<td>2001-09-27</td>
+<td>Watcom C/C++ 11.0c Beta</td>
+<td></td>
+</tr>
+<tr>
+<td>2002-12-21</td>
+<td>Watcom C/C++ 11.0c</td>
+<td></td>
+</tr>
+<tr>
+<td>2003-01-28</td>
+<td>Open Watcom 1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>2003-08-12</td>
+<td>Open Watcom 1.1</td>
+<td></td>
+</tr>
+<tr>
+<td>2004-01-07</td>
+<td>Open Watcom 1.2</td>
+<td></td>
+</tr>
+<tr>
+<td>2004-08-03</td>
+<td>Open Watcom 1.3</td>
+<td></td>
+</tr>
+<tr>
+<td>2005-12-14</td>
+<td>Open Watcom 1.4</td>
+<td></td>
+</tr>
+<tr>
+<td>2006-04-26</td>
+<td>Open Watcom 1.5</td>
+<td></td>
+</tr>
+<tr>
+<td>2006-12-15</td>
+<td>Open Watcom 1.6</td>
+<td></td>
+</tr>
+<tr>
+<td>2007-08-18</td>
+<td>Open Watcom 1.7</td>
+<td></td>
+</tr>
+<tr>
+<td>2007-10-23</td>
+<td>Open Watcom 1.7a</td>
+<td></td>
+</tr>
+<tr>
+<td>2009-02-21</td>
+<td>Open Watcom 1.8</td>
+<td></td>
+</tr>
+<tr>
+<td>2010-06-02</td>
+<td>Open Watcom 1.9</td>
+<td></td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="Compatibility_with_other_compilers">Compatibility with other compilers</span>
+</h2>
+<p>Open Watcom's syntax supports many conventions introduced by other compilers, such as <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a>'s and <a href="http://en.m.wikipedia.org/wiki/Borland_Software_Corporation" title="Borland Software Corporation" class="mw-redirect">Borland</a>'s, including differing conventions regarding (for instance) the number of leading underscores on the "asm" tag. Code written specifically for another compiler rather than standard-compliant C or C++ will often compile with the Watcom compiler.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Open_Watcom_Assembler" title="Open Watcom Assembler">Open Watcom Assembler</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-hist-1">
+<span class="mw-cite-backlink">^ <a href="C++_compiler#cite_ref-hist_1-0"><sup><i><b>a</b></i></sup></a> <a href="C++_compiler#cite_ref-hist_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://openwatcom.com/index.php/History">History - Open Watcom</a>. OpenWatcom.com wiki.</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="C++_compiler#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="ftp://ftp.openwatcom.org/source/">Source code</a>. OpenWatcom.org FTP server.</span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="C++_compiler#cite_ref-3">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.openwatcom.org/index.php/Installing_Open_Watcom_on_Linux">Installing Open Watcom on Linux - Open Watcom</a>. OpenWatcom.org wiki.</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="C++_compiler#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openwatcom.org/index.php/Main_Page#Latest_Release_.28June_2010.29">"Latest Release (June 2010) - Open Watcom"</a>. OpenWatcom.org wiki<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openwatcom.org/index.php/Main_Page#Latest_Release_.28June_2010.29">http://www.openwatcom.org/index.php/Main_Page#Latest_Release_.28June_2010.29</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Latest+Release+%28June+2010%29+-+Open+Watcom&amp;rft.atitle=&amp;rft.pub=OpenWatcom.org+wiki&amp;rft_id=http%3A%2F%2Fwww.openwatcom.org%2Findex.php%2FMain_Page%23Latest_Release_.28June_2010.29&amp;rfr_id=info:sid/en.wikipedia.org:Watcom_C/C%2B%2B_compiler"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.openwatcom.org/">Open Watcom website</a></li>
+<li>
+<span class="citation web">Paul Hsieh. (Revision 4.12, 2008-05-08). <a rel="nofollow" class="external text" href="http://www.azillionmonkeys.com/qed/watfaq.shtml">"The WATCOM C/C++ Programmer’s FAQ"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.azillionmonkeys.com/qed/watfaq.shtml">http://www.azillionmonkeys.com/qed/watfaq.shtml</a></span><span class="reference-accessdate">. Retrieved 2008-10-07</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+WATCOM+C%2FC%2B%2B+Programmer%E2%80%99s+FAQ&amp;rft.atitle=&amp;rft.aulast=Paul+Hsieh.&amp;rft.au=Paul+Hsieh.&amp;rft.date=Revision+4.12%2C+2008-05-08&amp;rft_id=http%3A%2F%2Fwww.azillionmonkeys.com%2Fqed%2Fwatfaq.shtml&amp;rfr_id=info:sid/en.wikipedia.org:Watcom_C/C%2B%2B_compiler"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation Journal">Rick Grehan (October 1994). <a rel="nofollow" class="external text" href="http://replay.web.archive.org/19970712221411/http://www.byte.com/art/9410/sec12/art5.htm">"Watcom C/C++ Gets a New Face"</a>. <i>BYTE</i> <b>19</b> (10): 111. Archived from <a rel="nofollow" class="external text" href="http://byte.com/art/9410/sec12/art5.htm">the original</a> on 1997-07-12<span class="printonly">. <a rel="nofollow" class="external free" href="http://replay.web.archive.org/19970712221411/http://www.byte.com/art/9410/sec12/art5.htm">http://replay.web.archive.org/19970712221411/http://www.byte.com/art/9410/sec12/art5.htm</a></span><span class="reference-accessdate">. Retrieved 2011-05-14</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Watcom+C%2FC%2B%2B+Gets+a+New+Face&amp;rft.jtitle=BYTE&amp;rft.aulast=Rick+Grehan&amp;rft.au=Rick+Grehan&amp;rft.date=October+1994&amp;rft.volume=19&amp;rft.issue=10&amp;rft.pages=111&amp;rft_id=http%3A%2F%2Freplay.web.archive.org%2F19970712221411%2Fhttp%3A%2F%2Fwww.byte.com%2Fart%2F9410%2Fsec12%2Fart5.htm&amp;rfr_id=info:sid/en.wikipedia.org:Watcom_C/C%2B%2B_compiler"><span style="display: none;"> </span></span>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 3 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://pt.m.wikipedia.org/wiki/Watcom_C/C%2B%2B_compiler" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Open_Watcom" lang="ru" hreflang="ru">русский</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Watcom_c" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Watcom_C/C%2B%2B_compiler&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Watcom_C/C%2B%2B_compiler&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="../Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Watcom+C%2FC%2B%2B+compiler&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="../Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="../Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

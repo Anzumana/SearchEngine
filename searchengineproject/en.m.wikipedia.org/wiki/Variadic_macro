@@ -1,0 +1,253 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Variadic macro - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Variadic macro","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Variadic_macro" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Variadic+macro"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Variadic macro</h1>			
+<p>A <b>variadic macro</b> is a feature of some computer <a href="Programming_language" title="Programming language">programming languages</a>, especially the <a href="C_preprocessor" title="C preprocessor">C preprocessor</a>, whereby a <a href="Macro_(computer_science)" title="Macro (computer science)">macro</a> may be declared to accept a varying number of <a href="http://en.m.wikipedia.org/wiki/Parameter_(computer_programming)" title="Parameter (computer programming)">arguments</a>.</p>
+<p>Variable-argument macros were introduced in 1999 in the <i>ISO/IEC 9899:1999</i> (<a href="C99" title="C99">C99</a>) revision of the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> language standard, and in 2011 in <i>ISO/IEC 14882:2011</i> (<a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a>) revision of the <a href="C++" title="C++">C++</a> language standard.<sup id="cite_ref-0" class="reference"><a href="Variadic_macro#cite_note-0"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Declaration_syntax">Declaration syntax</span>
+</h2>
+<p>The declaration syntax is similar to that of <a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">variadic functions</a>: an <i>ellipsis</i> "<tt>...</tt>" is used to indicate that one or more arguments must be passed. Common compilers also permit passing zero arguments to such a macro, however.<sup id="cite_ref-gcc_1-0" class="reference"><a href="Variadic_macro#cite_note-gcc-1"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-msvc_2-0" class="reference"><a href="Variadic_macro#cite_note-msvc-2"><span>[</span>3<span>]</span></a></sup> During macro expansion each occurrence of the special identifier <tt>__VA_ARGS__</tt> in the macro replacement list is replaced by the passed arguments.</p>
+<p>No means is provided to access individual arguments in the variable argument list, nor to find out how many were passed. However, macros can be written to count the number of arguments that have been passed.<sup id="cite_ref-3" class="reference"><a href="Variadic_macro#cite_note-3"><span>[</span>4<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Support">Support</span>
+</h2>
+<p>Several <a href="Compiler" title="Compiler">compilers</a> support variable-argument macros when compiling C and C++ code: the <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GNU Compiler Collection</a> 3.0,<sup id="cite_ref-gcc_1-1" class="reference"><a href="Variadic_macro#cite_note-gcc-1"><span>[</span>2<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Visual_Studio_2005" title="Visual Studio 2005" class="mw-redirect">Visual Studio 2005</a>,<sup id="cite_ref-msvc_2-1" class="reference"><a href="Variadic_macro#cite_note-msvc-2"><span>[</span>3<span>]</span></a></sup><a href="C++Builder" title="C++Builder">C++Builder</a> 2006, and <a href="http://en.m.wikipedia.org/wiki/Oracle_Solaris_Studio" title="Oracle Solaris Studio">Oracle Solaris Studio</a> (formerly Sun Studio) Forte Developer 6 update 2 (C++ version 5.3).<sup id="cite_ref-4" class="reference"><a href="Variadic_macro#cite_note-4"><span>[</span>5<span>]</span></a></sup> GCC also supports such macros when compiling <a href="Objective-C" title="Objective-C">Objective-C</a>.</p>
+<h2> <span class="mw-headline" id="Example">Example</span>
+</h2>
+<p>If a <tt><a href="Printf" title="Printf" class="mw-redirect">printf</a></tt>-like <a href="Subroutine" title="Subroutine">function</a> <tt>dbgprintf()</tt> were desired, which would take the file and line number from which it was called as arguments, the following macro might be used:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">// Our implemented function</span>
+<span class="kw4">void</span> realdbgprintf <span class="br0">(</span><span class="kw4">const</span><span class="sy0">*</span> <span class="kw4">char</span> SourceFilename<span class="sy0">,</span> <span class="kw4">int</span> SourceLineno<span class="sy0">,</span> <span class="kw4">const</span> <span class="kw4">char</span> <span class="sy0">*</span>CFormatString<span class="sy0">,</span> ...<span class="br0">)</span><span class="sy0">;</span>
+ 
+<span class="co1">// Due to a design bug of the variadic macro in C++, the following is more readable, but should be avoided.</span>
+<span class="co1">// Reason is, that dbgprintf("Hallo") will be expanded to realdbgprintf (__FILE__, __LINE__, "Hallo", )</span>
+<span class="co1">// The comma before the closing brace will result in a syntax error ...</span>
+<span class="co1">//#define dbgprintf(cformat, ...) realdbgprintf (__FILE__, __LINE__, cformat, __VA_ARGS__)</span>
+ 
+<span class="co1">// GNU C++ supports the non portable extention:</span>
+<span class="co1">//#define dbgprintf(cformat, ...) realdbgprintf (__FILE__, __LINE__, cformat, ##__VA_ARGS__)</span>
+ 
+<span class="co1">// By using the cformat string as part of the variadic arguments we can avoid this.</span>
+<span class="co1">// This is tricky, but portable solution.</span>
+<span class="co2">#define dbgprintf(...) realdbgprintf (__FILE__, __LINE__, __VA_ARGS__)</span>
+</pre>
+</div>
+</div>
+<p><tt>dbgprintf()</tt> could then be called as:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+dbgprintf <span class="br0">(</span><span class="st0">"Hello, world"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which expands to:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+realdbgprintf <span class="br0">(</span>__FILE__<span class="sy0">,</span> __LINE__<span class="sy0">,</span> <span class="st0">"Hello, world"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>or:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+dbgprintf<span class="br0">(</span><span class="st0">"%d + %d = %d"</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">5</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which expands to:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+realdbgprintf<span class="br0">(</span>__FILE__<span class="sy0">,</span> __LINE__<span class="sy0">,</span> <span class="st0">"%d + %d = %d"</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">2</span><span class="sy0">,</span> <span class="nu0">5</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>Without variadic macros, writing wrappers to <tt>printf</tt> is not directly possible. The standard workaround is to use the <a href="http://en.m.wikipedia.org/wiki/Stdarg.h" title="Stdarg.h">stdargs</a> functionality of C/C++, and have the function call <tt><a href="Printf#vprintf.2C_vfprintf.2C_vsprintf.2C_vsnprintf.2C_and_vasprintf" title="Printf" class="mw-redirect">vprintf</a></tt> instead.</p>
+<h2> <span class="mw-headline" id="The_impossible_example">The impossible example</span>
+</h2>
+<p>Unfortunately it is (still) not possible to write a carefree and secure macro in portable C++:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+MYLOG<span class="br0">(</span>FormatLiteral<span class="sy0">,</span> ...<span class="br0">)</span>  <span class="kw3">fprintf</span> <span class="br0">(</span>stderr<span class="sy0">,</span> <span class="st0">"%s(%d): "</span> FormatLiteral <span class="st0">"<span class="es1">\n</span>"</span><span class="sy0">,</span> __FILE__<span class="sy0">,</span> __LINE__<span class="sy0">,</span> __VA_ARGS__<span class="br0">)</span>
+</pre>
+</div>
+</div>
+<p>The following application works</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+MYLOG<span class="br0">(</span><span class="st0">"Too many balloons %u"</span><span class="sy0">,</span> <span class="nu0">42</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which expands to</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw3">fprintf</span> <span class="br0">(</span>stderr<span class="sy0">,</span> <span class="st0">"%s(%u): "</span> <span class="st0">"Too many balloons %d"</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy0">,</span> <span class="nu0">42</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which is equivalent to</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw3">fprintf</span> <span class="br0">(</span>stderr<span class="sy0">,</span> <span class="st0">"%s(%u): Too many balloons %d<span class="es1">\n</span>"</span><span class="sy0">,</span> <span class="nu0">42</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>But look at this application:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+MYLOG<span class="br0">(</span><span class="st0">"Attention!"</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which expands to</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw3">fprintf</span> <span class="br0">(</span>stderr<span class="sy0">,</span> <span class="st0">"%s(%u): "</span> <span class="st0">"Attention!"</span> <span class="st0">"<span class="es1">\n</span>"</span><span class="sy0">,</span> <span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>which generates a syntax error. There's no way to fix this behaviour!</p>
+<p>GCC supports the following (non-portable) extention:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+MYLOG<span class="br0">(</span>FormatLiteral<span class="sy0">,</span> ...<span class="br0">)</span>  <span class="kw3">fprintf</span> <span class="br0">(</span>stderr<span class="sy0">,</span> <span class="st0">"%s(%u): "</span> FormatLiteral <span class="st0">"<span class="es1">\n</span>"</span><span class="sy0">,</span> __FILE__<span class="sy0">,</span> __LINE__<span class="sy0">,</span> <span class="co2">##__VA_ARGS__)</span>
+</pre>
+</div>
+</div>
+<p>which removes the trailing comma when __VA_ARGS__ is empty.</p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Variadic_macro#cite_ref-0">^</a></b></span> <span class="reference-text">Working draft changes for C99 preprocessor synchronization - <a rel="nofollow" class="external free" href="http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm">http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2004/n1653.htm</a></span>
+</li>
+<li id="cite_note-gcc-1">
+<span class="mw-cite-backlink">^ <a href="Variadic_macro#cite_ref-gcc_1-0"><sup><i><b>a</b></i></sup></a> <a href="Variadic_macro#cite_ref-gcc_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://gcc.gnu.org/onlinedocs/gcc/Variadic-Macros.html">http://gcc.gnu.org/onlinedocs/gcc/Variadic-Macros.html</a></span>
+</li>
+<li id="cite_note-msvc-2">
+<span class="mw-cite-backlink">^ <a href="Variadic_macro#cite_ref-msvc_2-0"><sup><i><b>a</b></i></sup></a> <a href="Variadic_macro#cite_ref-msvc_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/ms177415(v=vs.80).aspx">http://msdn.microsoft.com/en-us/library/ms177415(v=vs.80).aspx</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Variadic_macro#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation newsgroup">Laurent Deniau (2006-01-16). "<a rel="nofollow" class="external text" href="news:dqgm2f%24ije%241@sunnews.cern.ch">__VA_NARG__</a>". <a rel="nofollow" class="external text" href="news:comp.std.c">comp.std.c</a>. <a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.std.c/browse_thread/thread/77ee8c8f92e4a3fb/346fc464319b1ee5">Web link</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=%5Bnews%3Adqgm2f%24ije%241%40sunnews.cern.ch+__VA_NARG__%5D&amp;rft.atitle=&amp;rft.aulast=Laurent+Deniau&amp;rft.au=Laurent+Deniau&amp;rft.date=2006-01-16&amp;rft.pub=%5Bnews%3Acomp.std.c+comp.std.c%5D&amp;rfr_id=info:sid/en.wikipedia.org:Variadic_macro"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Variadic_macro#cite_ref-4">^</a></b></span> <span class="reference-text">Sun Studio feature comparison - <a rel="nofollow" class="external free" href="http://developers.sun.com/sunstudio/support/CCcompare.html">http://developers.sun.com/sunstudio/support/CCcompare.html</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="Computing" title="Computing">Computing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Variadic_function" title="Variadic function">Variadic function</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 1 language</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ru.m.wikipedia.org/wiki/%D0%92%D0%B0%D1%80%D0%B8%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B9_%D0%BC%D0%B0%D0%BA%D1%80%D0%BE%D1%81" lang="ru" hreflang="ru">русский</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Variadic_macro&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Variadic_macro&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Variadic+macro&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

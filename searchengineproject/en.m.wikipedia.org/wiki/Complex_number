@@ -1,0 +1,890 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Complex number - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Complex number","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Complex_number" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Complex+number"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Complex number</h1>			
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Complex_number_illustration.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Complex_number_illustration.svg/220px-Complex_number_illustration.svg.png" width="220" height="237" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Complex_number_illustration.svg/330px-Complex_number_illustration.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/af/Complex_number_illustration.svg/440px-Complex_number_illustration.svg.png 2x"></a>
+<div class="thumbcaption">
+
+A complex number can be visually represented as a pair of numbers <span class="texhtml">(<i>a</i>,<i>b</i>)</span> forming a vector on a diagram called an <a href="http://en.m.wikipedia.org/wiki/Argand_diagram" title="Argand diagram" class="mw-redirect">Argand diagram</a>, representing the <a href="http://en.m.wikipedia.org/wiki/Complex_plane" title="Complex plane">complex plane</a>. <i>Re</i> is the real axis, <i>Im</i> is the imaginary axis, and <span class="texhtml"><i>i</i></span> is the <a href="http://en.m.wikipedia.org/wiki/Imaginary_unit" title="Imaginary unit">imaginary unit</a>, satisfying <span class="texhtml"><i>i</i><sup>2</sup> = −1</span>.</div>
+</div>
+</div>
+<p>A <b>complex number</b> is a <a href="http://en.m.wikipedia.org/wiki/Number" title="Number">number</a> that can be put in the form <span class="texhtml"><i>a</i> + <i>bi</i></span>, where <span class="texhtml"><i>a</i></span> and <span class="texhtml"><i>b</i></span> are <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> and <span class="texhtml"><i>i</i></span> is called the <a href="http://en.m.wikipedia.org/wiki/Imaginary_unit" title="Imaginary unit">imaginary unit</a>, where <span class="texhtml"><i>i</i><sup>2</sup> = −1</span>.<sup id="cite_ref-0" class="reference"><a href="Complex_number#cite_note-0"><span>[</span>1<span>]</span></a></sup> In this expression, <span class="texhtml"><i>a</i></span> is called the real part and <span class="texhtml"><i>b</i></span> the imaginary part of the complex number. Complex numbers extend the idea of the one-dimensional <a href="http://en.m.wikipedia.org/wiki/Number_line" title="Number line">number line</a> to the two-dimensional <a href="http://en.m.wikipedia.org/wiki/Complex_plane" title="Complex plane">complex plane</a> by using the horizontal axis for the real part and the vertical axis for the imaginary part. The complex number <span class="texhtml"><i>a</i> + <i>bi</i></span> can be identified with the point <span class="texhtml">(<i>a</i>, <i>b</i>)</span>. A complex number whose real part is zero is said to be purely imaginary, whereas a complex number whose imaginary part is zero is a real number. In this way the complex numbers <a href="http://en.m.wikipedia.org/wiki/Subfield" title="Subfield" class="mw-redirect">contain</a> the ordinary real numbers while extending them in order to solve problems that cannot be solved with only real numbers.</p>
+<p>Complex numbers are <a href="Complex_number#Applications">used</a> in many <a href="http://en.m.wikipedia.org/wiki/Scientific_fields" title="Scientific fields" class="mw-redirect">scientific fields</a>, including <a href="http://en.m.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a>, <a href="http://en.m.wikipedia.org/wiki/Electromagnetism" title="Electromagnetism">electromagnetism</a>, <a href="http://en.m.wikipedia.org/wiki/Quantum_physics" title="Quantum physics" class="mw-redirect">quantum physics</a>, and <a href="http://en.m.wikipedia.org/wiki/Applied_mathematics" title="Applied mathematics">applied mathematics</a>, such as <a href="http://en.m.wikipedia.org/wiki/Chaos_theory" title="Chaos theory">chaos theory</a>. Italian mathematician <a href="http://en.m.wikipedia.org/wiki/Gerolamo_Cardano" title="Gerolamo Cardano">Gerolamo Cardano</a> is the first known to have introduced complex numbers. He called them "fictitious", during his attempts to find solutions to <a href="http://en.m.wikipedia.org/wiki/Cubic_equations" title="Cubic equations" class="mw-redirect">cubic equations</a> in the 16th century.<sup id="cite_ref-1" class="reference"><a href="Complex_number#cite_note-1"><span>[</span>2<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>Complex numbers allow for solutions to certain equations that have no real solution: the equation</p>
+<dl>
+<dd><img class="tex" alt="(x+1)^2 = -9 \," src="http://upload.wikimedia.org/math/4/0/0/40087b9e6605c08d6348bb758d7faf14.png"></dd>
+</dl>
+<p>has no real solution, since the square of a <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real number</a> is either 0 or positive. Complex numbers provide a solution to this problem. The idea is to <a href="http://en.m.wikipedia.org/wiki/Field_extension" title="Field extension">extend</a> the real numbers with the <a href="http://en.m.wikipedia.org/wiki/Imaginary_unit" title="Imaginary unit">imaginary unit</a> <span class="texhtml"><var>i</var></span> where <img class="tex" alt="i^2=-1" src="http://upload.wikimedia.org/math/6/8/5/685245741281622a3f11315dfd81cd98.png">, so that solutions to equations like the preceding one can be found. In this case the solutions are <span class="texhtml">−1 ± 3<i>i</i></span>. In fact not only <a href="http://en.m.wikipedia.org/wiki/Quadratic_equation" title="Quadratic equation">quadratic equations</a>, but all <a href="http://en.m.wikipedia.org/wiki/Polynomial_equation" title="Polynomial equation" class="mw-redirect">polynomial equations</a> in a single variable can be solved using complex numbers.</p>
+<h3> <span class="mw-headline" id="Definition">Definition</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:172px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Complex_conjugate_picture.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/170px-Complex_conjugate_picture.svg.png" width="170" height="239" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/255px-Complex_conjugate_picture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/340px-Complex_conjugate_picture.svg.png 2x"></a>
+<div class="thumbcaption">
+
+An illustration of the <a href="http://en.m.wikipedia.org/wiki/Complex_plane" title="Complex plane">complex plane</a>. The real part of a complex number <span class="texhtml"><i>z</i> = <i>x</i> + <i>iy</i></span> is <i>x</i>, and its imaginary part is <i>y</i>.</div>
+</div>
+</div>
+<p>A complex number is a number that can be expressed in the form</p>
+<dl>
+<dd><img class="tex" alt="a+bi, \ " src="http://upload.wikimedia.org/math/f/8/9/f8927b3b6c75623436ef34aca055e0bf.png"></dd>
+</dl>
+<p>where <i>a</i> and <i>b</i> are real numbers and <i>i</i> is the <i><a href="http://en.m.wikipedia.org/wiki/Imaginary_unit" title="Imaginary unit">imaginary unit</a></i>, satisfying <i>i<sup>2</sup></i> = −1. For example, −3.5 + 2<i>i</i> is a complex number. It is common to write <i>a</i> for <i>a</i> + 0<i>i</i> and <i>bi</i> for <span class="texhtml">0 + <i>bi</i></span>. Moreover, when the imaginary part is negative, it is common to write <i>a − bi</i> with <i>b</i> &gt; 0 instead of <i>a</i> + (−<i>b</i>)<i>i</i>, for example 3 − 4<i>i</i> instead of 3 + (−4)<i>i</i>.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Set_(mathematics)" title="Set (mathematics)">set</a> of all complex numbers is denoted by <span class="texhtml texhtml-big" style="font-size:165%;"><b>ℂ</b></span>, <img class="tex" alt="\mathbf{C}" src="http://upload.wikimedia.org/math/3/9/6/39652eaf6bb68bf9769f17cb8088fece.png"> or <img class="tex" alt="\mathbb{C}" src="http://upload.wikimedia.org/math/f/0/b/f0b01fe0a1eec87c634584ac0694fb71.png">.</p>
+<p>The real number <i>a</i> of the complex number <i>z</i> = <i>a</i> + <i>bi</i> is called the <i>real part</i> of <i>z</i>, and the real number <i>b</i> is often called the <i>imaginary part</i>. By this convention the <i>imaginary part</i> is a real number – not including the imaginary unit: hence <i>b</i>, not <i>bi</i>, is the imaginary part.<sup id="cite_ref-2" class="reference"><a href="Complex_number#cite_note-2"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="Complex_number#cite_note-3"><span>[</span>4<span>]</span></a></sup> The real part is denoted by Re(<i>z</i>) or ℜ(<i>z</i>), and the imaginary part <i>b</i> is denoted by Im(<i>z</i>) or ℑ(<i>z</i>). For example,</p>
+<dl>
+<dd><img class="tex" alt="\begin{align}
+  \operatorname{Re}(-3.5 + 2i) &amp;= -3.5 \\
+  \operatorname{Im}(-3.5 + 2i) &amp;= 2
+\end{align}" src="http://upload.wikimedia.org/math/4/d/9/4d964091b9b81bd37239bbbbd2fb711f.png"></dd>
+</dl>
+<p>Some authors write <i>a</i>+<i>ib</i> instead of <i>a</i>+<i>bi</i> (scalar multiplication between <i>b</i> and <i>i</i> is <a href="http://en.m.wikipedia.org/wiki/Commutative_property" title="Commutative property">commutative</a>). In some disciplines, in particular <a href="http://en.m.wikipedia.org/wiki/Electromagnetism" title="Electromagnetism">electromagnetism</a> and <a href="http://en.m.wikipedia.org/wiki/Electrical_engineering" title="Electrical engineering">electrical engineering</a>, <i>j</i> is used instead of <i>i</i>, since <i>i</i> is frequently used for <a href="http://en.m.wikipedia.org/wiki/Electric_current" title="Electric current">electric current</a>. In these cases complex numbers are written as <i>a</i> + <i>bj</i> or <i>a</i> + <i>jb</i>.</p>
+<p>A real number <i>a</i> can usually be regarded as a complex number with an imaginary part of zero, that is to say, <i>a</i> + 0<i>i</i>. However the sets are defined differently and have slightly different operations defined, for instance comparison operations are not defined for complex numbers. A pure <a href="http://en.m.wikipedia.org/wiki/Imaginary_number" title="Imaginary number">imaginary number</a> is a complex number whose real part is zero, that is to say, of the form 0 + <i>bi</i>.</p>
+<h3> <span class="mw-headline" id="Complex_plane">Complex plane</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Complex_plane" title="Complex plane">Complex plane</a>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:182px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Complex_number_illustration.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/a/aa/Complex_number_illustration.png" width="180" height="132" class="thumbimage"></a>
+<div class="thumbcaption">
+
+Figure 1: A complex number plotted as a point (red) and position vector (blue) on an <a href="http://en.m.wikipedia.org/wiki/Argand_diagram" title="Argand diagram" class="mw-redirect">Argand diagram</a>; <img class="tex" alt="a+bi" src="http://upload.wikimedia.org/math/3/d/e/3de90564c61daf602b582735803fed9c.png"> is the <i>rectangular</i> expression of the point.</div>
+</div>
+</div>
+<p>A complex number can be viewed as a point or <a href="http://en.m.wikipedia.org/wiki/Vector_(geometric)" title="Vector (geometric)" class="mw-redirect">position vector</a> in a two-dimensional <a href="http://en.m.wikipedia.org/wiki/Cartesian_coordinate_system" title="Cartesian coordinate system">Cartesian coordinate system</a> called the <a href="http://en.m.wikipedia.org/wiki/Complex_plane" title="Complex plane">complex plane</a> or Argand diagram (see <a href="Complex_number#CITEREFPedoe1988">Pedoe 1988</a> and <a href="Complex_number#CITEREFSolomentsev2001">Solomentsev 2001</a>), named after <a href="http://en.m.wikipedia.org/wiki/Jean-Robert_Argand" title="Jean-Robert Argand">Jean-Robert Argand</a>. The numbers are conventionally plotted using the real part as the horizontal component, and imaginary part as vertical (see Figure 1). These two values used to identify a given complex number are therefore called its <i>Cartesian</i>, <i>rectangular</i>, or <i>algebraic form</i>.</p>
+<p>The defining characteristic of a position vector is that it has magnitude and direction. These are emphasised in a complex number's <i><a href="Complex_number#Polar_form">polar form</a></i> and it turns out notably that the operations of addition and multiplication take on a very natural geometric character when complex numbers are viewed as position vectors: addition corresponds to vector addition while multiplication corresponds to multiplying their magnitudes and adding their arguments (i.e. the angles they make with the <i>x</i> axis). Viewed in this way the multiplication of a complex number by <i>i</i> corresponds to rotating a complex number counterclockwise through 90° about the origin: <img class="tex" alt="(a+bi)i = ai+bi^2 = -b+ai " src="http://upload.wikimedia.org/math/d/6/3/d638c9ca74fe4f335af9677c3e1c971a.png">.</p>
+<h3> <span class="mw-headline" id="History_in_brief">History in brief</span>
+</h3>
+<dl>
+<dd><i>Main section: <a href="Complex_number#History" title="Complex number">History</a></i></dd>
+</dl>
+<p>The solution in radicals (without trigonometric functions) of a general cubic equation contains the square roots of negative numbers when all three roots are real numbers, a situation that cannot be rectified by factoring aided by the <a href="http://en.m.wikipedia.org/wiki/Rational_root_test" title="Rational root test" class="mw-redirect">rational root test</a> if the cubic is irreducible (the so-called <a href="http://en.m.wikipedia.org/wiki/Casus_irreducibilis" title="Casus irreducibilis">casus irreducibilis</a>). This conundrum led Italian mathematician <a href="http://en.m.wikipedia.org/wiki/Gerolamo_Cardano" title="Gerolamo Cardano">Gerolamo Cardano</a> to conceive of complex numbers in around 1545, though his understanding was rudimentary.</p>
+<p>Work on the problem of general polynomials ultimately led to the <a href="http://en.m.wikipedia.org/wiki/Fundamental_theorem_of_algebra" title="Fundamental theorem of algebra">fundamental theorem of algebra</a>, which shows that with complex numbers, a solution exists to every <a href="http://en.m.wikipedia.org/wiki/Polynomial" title="Polynomial">polynomial</a> equation of degree one or higher. Complex numbers thus form an <a href="http://en.m.wikipedia.org/wiki/Algebraically_closed_field" title="Algebraically closed field">algebraically closed</a> <a href="http://en.m.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)">field</a>, where any <a href="http://en.m.wikipedia.org/wiki/Polynomial" title="Polynomial">polynomial</a> equation has a <a href="http://en.m.wikipedia.org/wiki/Root_of_a_function" title="Root of a function" class="mw-redirect">root</a>.</p>
+<p>Many mathematicians contributed to the full development of complex numbers. The rules for addition, subtraction, multiplication, and division of complex numbers were developed by the Italian mathematician <a href="http://en.m.wikipedia.org/wiki/Rafael_Bombelli" title="Rafael Bombelli">Rafael Bombelli</a>.<sup id="cite_ref-4" class="reference"><a href="Complex_number#cite_note-4"><span>[</span>5<span>]</span></a></sup> A more abstract formalism for the complex numbers was further developed by the Irish mathematician <a href="http://en.m.wikipedia.org/wiki/William_Rowan_Hamilton" title="William Rowan Hamilton">William Rowan Hamilton</a>, who extended this abstraction to the theory of <a href="http://en.m.wikipedia.org/wiki/Quaternions" title="Quaternions" class="mw-redirect">quaternions</a>.</p>
+<h2> <span class="mw-headline" id="Elementary_operations">Elementary operations</span>
+</h2>
+<h3> <span class="mw-headline" id="Conjugation">Conjugation</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Complex_conjugate_picture.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/220px-Complex_conjugate_picture.svg.png" width="220" height="309" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/330px-Complex_conjugate_picture.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/6/69/Complex_conjugate_picture.svg/440px-Complex_conjugate_picture.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Geometric representation of <img class="tex" alt="z" src="http://upload.wikimedia.org/math/f/b/a/fbade9e36a3f36d3d676c1b808451dd7.png"> and its conjugate <img class="tex" alt="\bar{z}" src="http://upload.wikimedia.org/math/a/e/b/aeb40cbdb272a100ccde4a4581e6a7e4.png"> in the complex plane</div>
+</div>
+</div>
+<p>The <i><a href="http://en.m.wikipedia.org/wiki/Complex_conjugate" title="Complex conjugate">complex conjugate</a></i> of the complex number <span class="texhtml"><i>z</i> = <i>x</i> + <i>yi</i></span> is defined to be <i>x</i> − <i>yi</i>. It is denoted <img class="tex" alt="\bar{z}" src="http://upload.wikimedia.org/math/a/e/b/aeb40cbdb272a100ccde4a4581e6a7e4.png"> or <img class="tex" alt="z^*\," src="http://upload.wikimedia.org/math/3/5/6/356d1d52d8864ae620f39d2e01a53edd.png">. Geometrically, <img class="tex" alt="\bar{z}" src="http://upload.wikimedia.org/math/a/e/b/aeb40cbdb272a100ccde4a4581e6a7e4.png"> is the "reflection" of <i>z</i> about the real axis. In particular, conjugating twice gives the original complex number: <img class="tex" alt="\bar{\bar{z}}=z" src="http://upload.wikimedia.org/math/0/6/d/06de6996b2d7e58d507ae703e23864e3.png">.</p>
+<p>The real and imaginary parts of a complex number can be extracted using the conjugate:</p>
+<dl>
+<dd><img class="tex" alt="\operatorname{Re}\,(z) = \tfrac{1}{2}(z+\bar{z}), \," src="http://upload.wikimedia.org/math/e/b/1/eb1cdb515725fa247653cd7e4f1eec52.png"></dd>
+<dd><img class="tex" alt="\operatorname{Im}\,(z) = \tfrac{1}{2i}(z-\bar{z}). \," src="http://upload.wikimedia.org/math/9/8/f/98fd95d11d41dbfe14a109ec5464ac99.png"></dd>
+</dl>
+<p>Moreover, a complex number is real if and only if it equals its conjugate.</p>
+<p>Conjugation distributes over the standard arithmetic operations:</p>
+<dl>
+<dd><img class="tex" alt="\overline{z+w} = \bar{z} + \bar{w}, \," src="http://upload.wikimedia.org/math/e/f/9/ef9f03b08eae5c5f7945607114590a2d.png"></dd>
+<dd><img class="tex" alt="\overline{z w} = \bar{z} \bar{w}, \," src="http://upload.wikimedia.org/math/e/9/7/e97bc979545dbc4b3c8e89bd05f3e986.png"></dd>
+<dd><img class="tex" alt="\overline{(z/w)} = \bar{z}/\bar{w}. \," src="http://upload.wikimedia.org/math/6/f/c/6fc9431c67046061ab29c2b0581fb8e8.png"></dd>
+</dl>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Multiplicative_inverse" title="Multiplicative inverse">reciprocal</a> of a nonzero complex number <span class="texhtml"><i>z</i> = <i>x</i> + <i>yi</i></span> is given by</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{z}=\frac{\bar{z}}{z \bar{z}}=\frac{\bar{z}}{x^2+y^2}." src="http://upload.wikimedia.org/math/d/3/e/d3ece7ec05c68515356fdbdb3762ead1.png"></dd>
+</dl>
+<p>This formula can be used to compute the multiplicative inverse of a complex number if it is given in rectangular coordinates. <a href="http://en.m.wikipedia.org/wiki/Inversive_geometry" title="Inversive geometry">Inversive geometry</a>, a branch of geometry studying more general reflections than ones about a line, can also be expressed in terms of complex numbers.</p>
+<h3> <span class="mw-headline" id="Addition_and_subtraction">Addition and subtraction</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:202px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Vector_Addition.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Vector_Addition.svg/200px-Vector_Addition.svg.png" width="200" height="200" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Vector_Addition.svg/300px-Vector_Addition.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Vector_Addition.svg/400px-Vector_Addition.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Addition of two complex numbers can be done geometrically by constructing a parallelogram.</div>
+</div>
+</div>
+<p>Complex numbers are <a href="Addition" title="Addition">added</a> by adding the real and imaginary parts of the summands. That is to say:</p>
+<dl>
+<dd><img class="tex" alt="(a+bi) + (c+di) = (a+c) + (b+d)i.\ " src="http://upload.wikimedia.org/math/3/6/9/3696f51402036e6dad4fb519f5b648a0.png"></dd>
+</dl>
+<p>Similarly, <a href="Subtraction" title="Subtraction">subtraction</a> is defined by</p>
+<dl>
+<dd><img class="tex" alt="(a+bi) - (c+di) = (a-c) + (b-d)i.\ " src="http://upload.wikimedia.org/math/e/1/6/e16170b127cab176a063f2870d6f0b0b.png"></dd>
+</dl>
+<p>Using the visualization of complex numbers in the complex plane, the addition has the following geometric interpretation: the sum of two complex numbers <i>A</i> and <i>B</i>, interpreted as points of the complex plane, is the point <i>X</i> obtained by building a <a href="http://en.m.wikipedia.org/wiki/Parallelogram" title="Parallelogram">parallelogram</a> three of whose vertices are <i>O</i>, <i>A</i> and <i>B</i>. Equivalently, <i>X</i> is the point such that the <a href="http://en.m.wikipedia.org/wiki/Triangle" title="Triangle">triangles</a> with vertices <i>O</i>, <i>A</i>, <i>B</i>, and <i>X</i>, <i>B</i>, <i>A</i>, are <a href="http://en.m.wikipedia.org/wiki/Congruence_(geometry)" title="Congruence (geometry)">congruent</a>.</p>
+<h3> <span class="mw-headline" id="Multiplication_and_division">Multiplication and division</span>
+</h3>
+<p>The multiplication of two complex numbers is defined by the following formula:</p>
+<dl>
+<dd><img class="tex" alt="(a+bi) (c+di) = (ac-bd) + (bc+ad)i.\ " src="http://upload.wikimedia.org/math/e/1/1/e11bfb0c9735cfe5b7a6bdba27602297.png"></dd>
+</dl>
+<p>In particular, the square of the imaginary unit is −1:</p>
+<dl>
+<dd><img class="tex" alt="i^2 = i \times i = -1.\ " src="http://upload.wikimedia.org/math/a/f/c/afce17f672cce198d846b07c840fa98b.png"></dd>
+</dl>
+<p>The preceding definition of multiplication of general complex numbers follows naturally from this fundamental property of the imaginary unit. Indeed, if <i>i</i> is treated as a number so that <i>di</i> means <i>d</i> times <i>i</i>, the above multiplication rule is identical to the usual rule for multiplying two sums of two terms.</p>
+<dl>
+<dd>
+<img class="tex" alt="(a+bi) (c+di) = ac + bci + adi + bidi \ " src="http://upload.wikimedia.org/math/a/d/5/ad504c14988c7d9edb4133a66988be4c.png"> (<a href="http://en.m.wikipedia.org/wiki/Distributive_law" title="Distributive law" class="mw-redirect">distributive law</a>)
+<dl>
+<dd>
+<dl>
+<dd>
+<img class="tex" alt=" = ac + bidi + bci + adi \ " src="http://upload.wikimedia.org/math/b/4/4/b44bcac68e57fb1d8f7a509eed7971f8.png"> (<a href="http://en.m.wikipedia.org/wiki/Commutative_law" title="Commutative law" class="mw-redirect">commutative law</a> of addition—the order of the summands can be changed)</dd>
+<dd>
+<img class="tex" alt=" = ac + bdi^2 + (bc+ad)i \ " src="http://upload.wikimedia.org/math/4/4/b/44bd46c78836856ebbf2ed991f442151.png"> (commutative law of multiplication—the order of the multiplicands can be changed)</dd>
+<dd>
+<img class="tex" alt=" = (ac-bd) + (bc + ad)i \ " src="http://upload.wikimedia.org/math/9/f/1/9f15c1b0722db16143a31a36516e3705.png"> (fundamental property of the imaginary unit).</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>The division of two complex numbers is defined in terms of complex multiplication, which is described above, and real division. Where at least one of <img class="tex" alt="c" src="http://upload.wikimedia.org/math/4/a/8/4a8a08f09d37b73795649038408b5f33.png"> and <img class="tex" alt="d" src="http://upload.wikimedia.org/math/8/2/7/8277e0910d750195b448797616e091ad.png"> is non-zero:</p>
+<dl>
+<dd><img class="tex" alt="\,\frac{a + bi}{c + di} = \left({ac + bd \over c^2 + d^2}\right) + \left( {bc - ad \over c^2 + d^2} \right)i. " src="http://upload.wikimedia.org/math/c/4/8/c4822340ecad680d1556485a55e91f66.png"></dd>
+</dl>
+<p>Division can be defined in this way because of the following observation:</p>
+<dl>
+<dd><img class="tex" alt="\,\frac{a + bi}{c + di} = \frac{\left(a + bi\right) \cdot \left(c - di\right)}{\left (c + di\right) \cdot \left (c - di\right)} = \left({ac + bd \over c^2 + d^2}\right) + \left( {bc - ad \over c^2 + d^2} \right)i. " src="http://upload.wikimedia.org/math/4/e/7/4e7f7f4252952bfa20559a0d388a5bfa.png"></dd>
+</dl>
+<p>As shown earlier, <img class="tex" alt="c-di" src="http://upload.wikimedia.org/math/2/5/8/258aa1be02263f3081722a7ac5cb2e95.png"> is the complex conjugate of the denominator <img class="tex" alt="c+di" src="http://upload.wikimedia.org/math/2/d/b/2dbc458a002575bdbb493715b0a2e7d0.png">. The real part <i>c</i> and the imaginary part <i>d</i> of the <a href="http://en.m.wikipedia.org/wiki/Denominator" title="Denominator" class="mw-redirect">denominator</a> must not both be zero for division to be defined.</p>
+<h3> <span class="mw-headline" id="Square_root">Square root</span>
+</h3>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/Square_root#Square_roots_of_negative_and_complex_numbers" title="Square root">Square roots of negative and complex numbers</a>
+</div>
+<p>The square roots of <i>a</i> + <i>bi</i> (with <i>b</i> ≠ 0) are <img class="tex" alt=" \pm (\gamma + \delta i)" src="http://upload.wikimedia.org/math/0/7/d/07dde8f8301835ebc9fc04db3b3d4004.png">, where</p>
+<dl>
+<dd><img class="tex" alt="\gamma = \sqrt{\frac{a + \sqrt{a^2 + b^2}}{2}}" src="http://upload.wikimedia.org/math/c/e/e/ceebeef3ab2f3432becd76d3e5f06c30.png"></dd>
+</dl>
+<p>and</p>
+<dl>
+<dd><img class="tex" alt="\delta = \sgn (b) \sqrt{\frac{-a + \sqrt{a^2 + b^2}}{2}}," src="http://upload.wikimedia.org/math/3/a/a/3aa84d5cea25103153277e9d1902845a.png"></dd>
+</dl>
+<p>where sgn is the <a href="http://en.m.wikipedia.org/wiki/Sign_function" title="Sign function">signum</a> function. This can be seen by squaring <img class="tex" alt=" \pm (\gamma + \delta i)" src="http://upload.wikimedia.org/math/0/7/d/07dde8f8301835ebc9fc04db3b3d4004.png"> to obtain <i>a</i> + <i>bi</i>.<sup id="cite_ref-5" class="reference"><a href="Complex_number#cite_note-5"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="Complex_number#cite_note-6"><span>[</span>7<span>]</span></a></sup> Here <img class="tex" alt="\sqrt{a^2 + b^2}" src="http://upload.wikimedia.org/math/0/2/4/024f4462a4e41e4fa529e87b5c71612c.png"> is called the <a href="http://en.m.wikipedia.org/wiki/Absolute_value" title="Absolute value">modulus</a> of <i>a + bi</i>, and the square root with non-negative real part is called the <b>principal square root</b>.</p>
+<h2> <span class="mw-headline" id="Polar_form">Polar form</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Polar_coordinate_system" title="Polar coordinate system">Polar coordinate system</a>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/w/index.php?title=File:Complex_number_illustration_modarg.svg&amp;page=1" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Complex_number_illustration_modarg.svg/220px-Complex_number_illustration_modarg.svg.png" width="220" height="237" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Complex_number_illustration_modarg.svg/330px-Complex_number_illustration_modarg.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Complex_number_illustration_modarg.svg/440px-Complex_number_illustration_modarg.svg.png 2x"></a>
+<div class="thumbcaption">
+
+Figure 2: The argument <i>φ</i> and modulus <i>r</i> locate a point on an Argand diagram; <img class="tex" alt="r(\cos \varphi + i \sin \varphi)" src="http://upload.wikimedia.org/math/f/f/b/ffb61aefa500c76924e2ee937cc80daa.png"> or <img class="tex" alt="r e^{i\varphi}" src="http://upload.wikimedia.org/math/5/7/a/57a086f36edc56f3b1c794029edb4726.png"> are <i>polar</i> expressions of the point.</div>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Absolute_value_and_argument">Absolute value and argument</span>
+</h3>
+<p>An alternative way of defining points in the complex plane, other than using the <i>x</i>- and <i>y</i>-coordinates, is to use the distance of a point <i>P</i> from <i>O</i>, the point whose coordinates are (0, 0) (the <a href="http://en.m.wikipedia.org/wiki/Origin_(mathematics)" title="Origin (mathematics)">origin</a>), together with the angle between the line through <i>P</i> and <i>O</i> and the (horizontal) line which is the positive part of the real axis. This idea leads to the polar form of complex numbers.</p>
+<p>The <i><a href="http://en.m.wikipedia.org/wiki/Absolute_value" title="Absolute value">absolute value</a></i> (or <i>modulus</i> or <i>magnitude</i>) of a complex number <span class="nowrap"><i>z</i> = <i>x</i> + <i>yi</i></span> is</p>
+<dl>
+<dd><img class="tex" alt="\textstyle r=|z|=\sqrt{x^2+y^2}.\," src="http://upload.wikimedia.org/math/c/2/1/c215f001346eac5d18386ecdd83d9af0.png"></dd>
+</dl>
+<p>If <i>z</i> is a real number (i.e., <i>y</i> = 0), then <i>r</i> = |<i>x</i>|. In general, by <a href="http://en.m.wikipedia.org/wiki/Pythagoras%27_theorem" title="Pythagoras' theorem" class="mw-redirect">Pythagoras' theorem</a>, <i>r</i> is the distance of the point <i>P</i> representing the complex number <i>z</i> to the origin.</p>
+<p>The <i><a href="http://en.m.wikipedia.org/wiki/Arg_(mathematics)" title="Arg (mathematics)" class="mw-redirect">argument</a></i> or <i>phase</i> of <i>z</i> is the angle of the <a href="http://en.m.wikipedia.org/wiki/Radius" title="Radius">radius</a> <i>OP</i> with the positive real axis, and is written as <img class="tex" alt="\arg(z)" src="http://upload.wikimedia.org/math/d/1/d/d1db714a2a8245907f87452a1a42b344.png">. As with the modulus, the argument can be found from the rectangular form <img class="tex" alt="x+iy" src="http://upload.wikimedia.org/math/2/f/1/2f12ba7cefcda3fc8b7350b087e20cf9.png">:<sup id="cite_ref-7" class="reference"><a href="Complex_number#cite_note-7"><span>[</span>8<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="\varphi = \arg(z) =
+\begin{cases}
+\arctan(\frac{y}{x}) &amp; \mbox{if } x &gt; 0 \\
+\arctan(\frac{y}{x}) + \pi &amp; \mbox{if } x &lt; 0  \mbox{ and } y \ge 0\\
+\arctan(\frac{y}{x}) - \pi &amp; \mbox{if } x &lt; 0 \mbox{ and } y &lt; 0\\
+\frac{\pi}{2} &amp; \mbox{if } x = 0 \mbox{ and } y &gt; 0\\
+-\frac{\pi}{2} &amp; \mbox{if } x = 0 \mbox{ and } y &lt; 0\\
+\mbox{indeterminate } &amp; \mbox{if } x = 0 \mbox{ and } y = 0.
+\end{cases}" src="http://upload.wikimedia.org/math/1/b/8/1b8e9d65e4cc53308e4abc5e2b4429c1.png"></dd>
+</dl>
+<p>The value of <i>φ</i> must always be expressed in <a href="http://en.m.wikipedia.org/wiki/Radian" title="Radian">radians</a>. It can change by any multiple of 2<i>π</i> and still give the same angle. Hence, the arg function is sometimes considered as <a href="http://en.m.wikipedia.org/wiki/Multivalued_function" title="Multivalued function">multivalued</a>. Normally, as given above, the <a href="http://en.m.wikipedia.org/wiki/Principal_value" title="Principal value">principal value</a> in the interval <img class="tex" alt="(-\pi,\pi]" src="http://upload.wikimedia.org/math/f/c/f/fcfe3f8f790d9246dce2f4e70705730f.png"> is chosen. Values in the range <img class="tex" alt="[0,2\pi)" src="http://upload.wikimedia.org/math/5/3/3/5335621939ceb6ee063e434604a316b6.png"> are obtained by adding <img class="tex" alt="2\pi" src="http://upload.wikimedia.org/math/4/6/a/46a6c4d715584adb3e6681ee351d1df6.png"> if the value is negative. The polar angle for the complex number 0 is undefined, but arbitrary choice of the angle 0 is common.</p>
+<p>The value of <i>φ</i> equals the result of <a href="http://en.m.wikipedia.org/wiki/Atan2" title="Atan2">atan2</a>: <img class="tex" alt="\varphi = \mbox{atan2}(\mbox{imaginary}, \mbox{real})" src="http://upload.wikimedia.org/math/7/0/0/700e9d588a0c2e2fbd8a2fc97a5f36c5.png">.</p>
+<p>Together, <i>r</i> and <i>φ</i> give another way of representing complex numbers, the <i>polar form</i>, as the combination of modulus and argument fully specify the position of a point on the plane. Recovering the original rectangular co-ordinates from the polar form is done by the formula called <i>trigonometric form</i></p>
+<dl>
+<dd><img class="tex" alt=" z = r(\cos \varphi + i\sin \varphi ).\," src="http://upload.wikimedia.org/math/1/c/9/1c9d3a9efeef04e9b61dc223869d0de1.png"></dd>
+</dl>
+<p>Using <a href="http://en.m.wikipedia.org/wiki/Euler%27s_formula" title="Euler's formula">Euler's formula</a> this can be written as</p>
+<dl>
+<dd><img class="tex" alt="z = r e^{i \varphi}.\," src="http://upload.wikimedia.org/math/6/c/b/6cbafaba888a1abf10e75e0d3579b009.png"></dd>
+</dl>
+<p>Using the <a href="http://en.m.wikipedia.org/wiki/Cis_(mathematics)" title="Cis (mathematics)" class="mw-redirect">cis</a> function, this is sometimes abbreviated to</p>
+<dl>
+<dd><img class="tex" alt=" z = r \ \operatorname{cis} \ \varphi. \," src="http://upload.wikimedia.org/math/1/6/e/16e52ec2bd9d2f1a80b4d944833f0728.png"></dd>
+</dl>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Angle_notation" title="Angle notation">angle notation</a>, often used in <a href="http://en.m.wikipedia.org/wiki/Electronics" title="Electronics">electronics</a> to represent a <a href="http://en.m.wikipedia.org/wiki/Phasor_(sine_waves)" title="Phasor (sine waves)" class="mw-redirect">phasor</a> with amplitude <i>r</i> and phase <i>φ</i>, it is written as<sup id="cite_ref-8" class="reference"><a href="Complex_number#cite_note-8"><span>[</span>9<span>]</span></a></sup></p>
+<dl>
+<dd><img class="tex" alt="z = r \ang \varphi . \," src="http://upload.wikimedia.org/math/9/2/c/92c4781cd6413540b7fa666deaaa6d7b.png"></dd>
+</dl>
+<h3> <span class="mw-headline" id="Multiplication.2C_division_and_exponentiation_in_polar_form">Multiplication, division and exponentiation in polar form</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:ComplexMultiplication.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/05/ComplexMultiplication.png/220px-ComplexMultiplication.png" width="220" height="202" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/05/ComplexMultiplication.png/330px-ComplexMultiplication.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/05/ComplexMultiplication.png/440px-ComplexMultiplication.png 2x"></a>
+<div class="thumbcaption">
+
+Multiplication of 2+<i>i</i> (blue triangle) and 3+<i>i</i> (red triangle). The red triangle is rotated to match the vertex of the blue one and stretched by √<span style="text-decoration:overline;">5</span>, the length of the <a href="http://en.m.wikipedia.org/wiki/Hypotenuse" title="Hypotenuse">hypotenuse</a> of the blue triangle.</div>
+</div>
+</div>
+<p>Formulas for multiplication, division and exponentiation are simpler in polar form than the corresponding formulas in Cartesian coordinates. Given two complex numbers <span class="texhtml"><i>z</i><sub>1</sub> = <i>r</i><sub>1</sub>(cos φ<sub>1</sub> + <i>i</i>sin φ<sub>1</sub>)</span> and <span class="texhtml"><i>z</i><sub>2</sub> =<i>r</i><sub>2</sub>(cos φ<sub>2</sub> + <i>i</i>sin φ<sub>2</sub>)</span> the formula for multiplication is</p>
+<dl>
+<dd><img class="tex" alt="z_1 z_2 = r_1 r_2 (\cos(\varphi_1 + \varphi_2) + i \sin(\varphi_1 + \varphi_2)).\," src="http://upload.wikimedia.org/math/a/8/1/a81df2728b11f29e505064ecca1839be.png"></dd>
+</dl>
+<p>In other words, the absolute values are multiplied and the arguments are added to yield the polar form of the product. For example, multiplying by <i>i</i> corresponds to a quarter-rotation counter-clockwise, which gives back <i>i</i><sup> 2</sup> = −1. The picture at the right illustrates the multiplication of</p>
+<dl>
+<dd><img class="tex" alt="(2+i)(3+i)=5+5i. \," src="http://upload.wikimedia.org/math/8/2/0/820949f18dfca14938f0fb9c73e0c601.png"></dd>
+</dl>
+<p>Since the real and imaginary part of 5+5<i>i</i> are equal, the argument of that number is 45 degrees, or π/4 (in <a href="http://en.m.wikipedia.org/wiki/Radian" title="Radian">radian</a>). On the other hand, it is also the sum of the angles at the origin of the red and blue triangle are <a href="http://en.m.wikipedia.org/wiki/Arctan" title="Arctan" class="mw-redirect">arctan</a>(1/3) and arctan(1/2), respectively. Thus, the formula</p>
+<dl>
+<dd><img class="tex" alt="\frac{\pi}{4} = \arctan\frac{1}{2} + \arctan\frac{1}{3} " src="http://upload.wikimedia.org/math/7/a/7/7a74ef6f42add58f8fe50dbfc0220c92.png"></dd>
+</dl>
+<p>holds. As the <a href="http://en.m.wikipedia.org/wiki/Arctan" title="Arctan" class="mw-redirect">arctan</a> function can be approximated highly efficiently, formulas like this—known as <a href="http://en.m.wikipedia.org/wiki/Machin-like_formulas" title="Machin-like formulas" class="mw-redirect">Machin-like formulas</a>—are used for high-precision approximations of π.</p>
+<p>Similarly, division is given by</p>
+<dl>
+<dd><img class="tex" alt="\frac{z_1}{ z_2} = \frac{r_1}{ r_2} \left(\cos(\varphi_1 - \varphi_2) + i \sin(\varphi_1 - \varphi_2)\right)." src="http://upload.wikimedia.org/math/7/0/e/70eaa48cb7dd7f8f8b1dbc702fce0465.png"></dd>
+</dl>
+<p>This also implies <a href="http://en.m.wikipedia.org/wiki/De_Moivre%27s_formula" title="De Moivre's formula">de Moivre's formula</a> for exponentiation of complex numbers with integer exponents:</p>
+<dl>
+<dd><img class="tex" alt=" z^n = r^n\,(\cos n\varphi + i \sin n \varphi)." src="http://upload.wikimedia.org/math/c/2/a/c2ad43f98caed8891efa50764c65135b.png"></dd>
+</dl>
+<p>The <i>n</i>-th <a href="http://en.m.wikipedia.org/wiki/Nth_root" title="Nth root">roots</a> of <i>z</i> are given by</p>
+<dl>
+<dd><img class="tex" alt="\sqrt[n]{z}  = \sqrt[n]r \left( \cos \left(\frac{\varphi+2k\pi}{n}\right) + i \sin \left(\frac{\varphi+2k\pi}{n}\right)\right)" src="http://upload.wikimedia.org/math/2/d/5/2d5dffb3ae03a3754ade07b826b09eb1.png"></dd>
+</dl>
+<p>for any integer <span class="texhtml"><i>k</i></span> satisfying <span class="texhtml">0 ≤ <i>k</i> ≤ n − 1</span>. Here <img class="tex" alt="\sqrt[n]{r}" src="http://upload.wikimedia.org/math/0/c/1/0c1dda2d990c60ca5ef80cd446e594db.png"> is the usual (positive) <i>n</i>th root of the positive real number <i>r</i>. While the <i>n</i>th root of a positive real number <i>r</i> is chosen to be the <i>positive</i> real number <i>c</i> satisfying <i>c</i><sup><i>n</i></sup> = <i>x</i> there is no natural way of distinguishing one particular complex <i>n</i>th root of a complex number. Therefore, the <i>n</i>th root of <i>z</i> is considered as a <a href="http://en.m.wikipedia.org/wiki/Multivalued_function" title="Multivalued function">multivalued function</a> (in <i>z</i>), as opposed to a usual function <i>f</i>, for which <i>f</i>(<i>z</i>) is a uniquely defined number. Formulas such as</p>
+<dl>
+<dd><img class="tex" alt="\sqrt[n]{z^n} = z" src="http://upload.wikimedia.org/math/f/7/3/f737db4a1e6de78b87bd15fff1d48c9b.png"></dd>
+</dl>
+<p>(which holds for positive real numbers), do in general not hold for complex numbers.</p>
+<h2> <span class="mw-headline" id="Properties">Properties</span>
+</h2>
+<h3> <span class="mw-headline" id="Field_structure">Field structure</span>
+</h3>
+<p>The set <b>C</b> of complex numbers is a <a href="http://en.m.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)">field</a>. Briefly, this means that the following facts hold: first, any two complex numbers can be added and multiplied to yield another complex number. Second, for any complex number <i>z</i>, its negative −<i>z</i> is also a complex number; and third, every nonzero complex number has a <a href="http://en.m.wikipedia.org/wiki/Multiplicative_inverse" title="Multiplicative inverse">reciprocal</a> complex number. Moreover, these operations satisfy a number of laws, for example the law of <a href="http://en.m.wikipedia.org/wiki/Commutativity" title="Commutativity" class="mw-redirect">commutativity</a> of addition and multiplication for any two complex numbers <i>z</i><sub>1</sub> and <i>z</i><sub>2</sub>:</p>
+<dl>
+<dd><img class="tex" alt="z_1+ z_2 = z_2 + z_1, \," src="http://upload.wikimedia.org/math/8/9/0/89056ab4c62809498ce497662b9ddc90.png"></dd>
+<dd><img class="tex" alt="z_1 z_2 = z_2 z_1. \," src="http://upload.wikimedia.org/math/e/8/e/e8eb42d75424b0ac859d8eb2e09da7f1.png"></dd>
+</dl>
+<p>These two laws and the other requirements on a field can be proven by the formulas given above, using the fact that the real numbers themselves form a field.</p>
+<p>Unlike the reals, <b>C</b> is not an <a href="http://en.m.wikipedia.org/wiki/Ordered_field" title="Ordered field">ordered field</a>, that is to say, it is not possible to define a relation <i>z</i><sub>1</sub> &lt; <i>z</i><sub>2</sub> that is compatible with the addition and multiplication. In fact, in any ordered field, the square of any element is necessarily positive, so <i>i</i><sup>2</sup> = −1 precludes the existence of an <a href="http://en.m.wikipedia.org/wiki/Total_order" title="Total order">ordering</a> on <b>C</b>.</p>
+<p>When the underlying field for a mathematical topic or construct is the field of complex numbers, the thing's name is usually modified to reflect that fact. For example: <a href="http://en.m.wikipedia.org/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>, complex <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a>, complex <a href="http://en.m.wikipedia.org/wiki/Polynomial" title="Polynomial">polynomial</a>, and complex <a href="http://en.m.wikipedia.org/wiki/Lie_algebra" title="Lie algebra">Lie algebra</a>.</p>
+<h3> <span class="mw-headline" id="Solutions_of_polynomial_equations">Solutions of polynomial equations</span>
+</h3>
+<p>Given any complex numbers (called <a href="http://en.m.wikipedia.org/wiki/Coefficient" title="Coefficient">coefficients</a>) <i>a</i><sub>0</sub>, ..., <i>a</i><sub><i>n</i></sub>, the equation</p>
+<dl>
+<dd><img class="tex" alt="a_n z^n + \dots + a_1 z + a_0 = 0 \," src="http://upload.wikimedia.org/math/4/7/1/4716da7341bf140bddaf3460bdde25e5.png"></dd>
+</dl>
+<p>has at least one complex solution <i>z</i>, provided that at least one of the higher coefficients, <i>a</i><sub>1</sub>, ..., <i>a</i><sub><i>n</i></sub>, is nonzero. This is the statement of the <i><a href="http://en.m.wikipedia.org/wiki/Fundamental_theorem_of_algebra" title="Fundamental theorem of algebra">fundamental theorem of algebra</a></i>. Because of this fact, <b>C</b> is called an <a href="http://en.m.wikipedia.org/wiki/Algebraically_closed_field" title="Algebraically closed field">algebraically closed field</a>. This property does not hold for the <a href="http://en.m.wikipedia.org/wiki/Rational_numbers" title="Rational numbers" class="mw-redirect">field of rational numbers</a> <b>Q</b> (the polynomial <span class="texhtml"><i>x</i><sup>2</sup> − 2</span> does not have a rational root, since √<span style="text-decoration:overline;">2</span> is not a rational number) nor the <a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> <b>R</b> (the polynomial <span class="texhtml"><i>x</i><sup>2</sup> + <i>a</i></span> does not have a real root for <span class="texhtml"><i>a</i> &gt; 0</span>, since the square of <i>x</i> is positive for any real number <i>x</i>).</p>
+<p>There are various proofs of this theorem, either by analytic methods such as <a href="http://en.m.wikipedia.org/wiki/Liouville%27s_theorem_(complex_analysis)" title="Liouville's theorem (complex analysis)">Liouville's theorem</a>, or <a href="http://en.m.wikipedia.org/wiki/Topology" title="Topology">topological</a> ones such as the <a href="http://en.m.wikipedia.org/wiki/Winding_number" title="Winding number">winding number</a>, or a proof combining <a href="http://en.m.wikipedia.org/wiki/Galois_theory" title="Galois theory">Galois theory</a> and the fact that any real polynomial of <i>odd</i> degree has at least one root.</p>
+<p>Because of this fact, theorems that hold "<i>for any algebraically closed field</i>", apply to <b>C</b>. For example, any complex <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrix</a> has at least one (complex) <a href="http://en.m.wikipedia.org/wiki/Eigenvalue" title="Eigenvalue" class="mw-redirect">eigenvalue</a>.</p>
+<h3> <span class="mw-headline" id="Algebraic_characterization">Algebraic characterization</span>
+</h3>
+<p>The field <b>C</b> has the following three properties: first, it has <a href="http://en.m.wikipedia.org/wiki/Characteristic_(algebra)" title="Characteristic (algebra)">characteristic</a> 0. This means that 1 + 1 + ... + 1 ≠ 0 for any number of summands (all of which equal one). Second, its <a href="http://en.m.wikipedia.org/wiki/Transcendence_degree" title="Transcendence degree">transcendence degree</a> over <b>Q</b>, the <a href="http://en.m.wikipedia.org/wiki/Prime_field" title="Prime field" class="mw-redirect">prime field</a> of <b>C</b>, is the <a href="http://en.m.wikipedia.org/wiki/Cardinality_of_the_continuum" title="Cardinality of the continuum">cardinality of the continuum</a>. Third, it is <a href="http://en.m.wikipedia.org/wiki/Algebraically_closed" title="Algebraically closed" class="mw-redirect">algebraically closed</a> (see above). It can be shown that any field having these properties is <a href="http://en.m.wikipedia.org/wiki/Isomorphic" title="Isomorphic" class="mw-redirect">isomorphic</a> (as a field) to <b>C</b>. For example, the algebraic closure of <b>Q</b><sub>p</sub> also satisfies these three properties, so these two fields are isomorphic. Also, <b>C</b> is isomorphic to the field of complex <a href="http://en.m.wikipedia.org/wiki/Puiseux_series" title="Puiseux series">Puiseux series</a>. However, specifying an isomorphism requires the <a href="http://en.m.wikipedia.org/wiki/Axiom_of_choice" title="Axiom of choice">axiom of choice</a>. Another consequence of this algebraic characterization is that <b>C</b> contains many proper subfields that are isomorphic to <b>C</b>.</p>
+<h3> <span class="mw-headline" id="Characterization_as_a_topological_field">Characterization as a topological field</span>
+</h3>
+<p>The preceding characterization of <b>C</b> describes the algebraic aspects of <b>C</b>, only. That is to say, the properties of <a href="http://en.m.wikipedia.org/wiki/Neighborhood_(topology)" title="Neighborhood (topology)" class="mw-redirect">nearness</a> and <a href="http://en.m.wikipedia.org/wiki/Continuity_(topology)" title="Continuity (topology)" class="mw-redirect">continuity</a>, which matter in areas such as <a href="http://en.m.wikipedia.org/wiki/Mathematical_analysis" title="Mathematical analysis">analysis</a> and <a href="http://en.m.wikipedia.org/wiki/Topology" title="Topology">topology</a>, are not dealt with. The following description of <b>C</b> as a <a href="http://en.m.wikipedia.org/wiki/Topological_ring" title="Topological ring">topological field</a> (that is, a field that is equipped with a <a href="http://en.m.wikipedia.org/wiki/Topological_space" title="Topological space">topology</a>, which allows the notion of convergence) does take into account the topological properties. <b>C</b> contains a subset <i>P</i> (namely the set of positive real numbers) of nonzero elements satisfying the following three conditions:</p>
+<ul>
+<li>
+<i>P</i> is closed under addition, multiplication and taking inverses.</li>
+<li>If <i>x</i> and <i>y</i> are distinct elements of <i>P</i>, then either <i>x</i> − <i>y</i> or <i>y</i> − <i>x</i> is in <i>P</i>.</li>
+<li>If <i>S</i> is any nonempty subset of <i>P</i>, then <i>S</i> + <i>P</i> = <i>x</i> + <i>P</i> for some <i>x</i> in <b>C</b>.</li>
+</ul>
+<p>Moreover, <b>C</b> has a nontrivial <a href="http://en.m.wikipedia.org/wiki/Involution_(mathematics)" title="Involution (mathematics)">involutive</a> <a href="http://en.m.wikipedia.org/wiki/Automorphism" title="Automorphism">automorphism</a> <img class="tex" alt="x \mapsto x^*" src="http://upload.wikimedia.org/math/7/9/3/793183d380003a742760415edc1c4207.png"> (namely the complex conjugation), such that <i>xx</i><sup>∗</sup> is in <b>P</b> for any nonzero <i>x</i> in <b>C</b>.</p>
+<p>Any field <i>F</i> with these properties can be endowed with a topology by taking the sets <span class="texhtml"><i>B</i>(<i>x</i>, <i>p</i>) = { <i>y</i> | <i>p</i> − (<i>y</i> − <i>x</i>)(<i>y</i> − <i>x</i>)<sup>∗</sup> ∈ <i>P</i>}</span> as a <a href="http://en.m.wikipedia.org/wiki/Base_(topology)" title="Base (topology)">base</a>, where <i>x</i> ranges over the field and <i>p</i> ranges over <i>P</i>. With this topology <i>F</i> is isomorphic as a <i>topological</i> field to <b>C</b>.</p>
+<p>The only <a href="http://en.m.wikipedia.org/wiki/Connected_space" title="Connected space">connected</a> <a href="http://en.m.wikipedia.org/wiki/Locally_compact" title="Locally compact" class="mw-redirect">locally compact</a> <a href="http://en.m.wikipedia.org/wiki/Topological_ring" title="Topological ring">topological fields</a> are <b>R</b> and <b>C</b>. This gives another characterization of <b>C</b> as a topological field, since <b>C</b> can be distinguished from <b>R</b> because the nonzero complex numbers are <a href="http://en.m.wikipedia.org/wiki/Connected_space" title="Connected space">connected</a>, while the nonzero real numbers are not.</p>
+<h2> <span class="mw-headline" id="Formal_construction">Formal construction</span>
+</h2>
+<h3> <span class="mw-headline" id="Formal_development">Formal development</span>
+</h3>
+<p>Above, complex numbers have been defined by introducing <i>i</i>, the imaginary unit, as a symbol. More rigorously, the set <b>C</b> of complex numbers can be defined as the set <b>R</b><sup>2</sup> of <a href="http://en.m.wikipedia.org/wiki/Ordered_pairs" title="Ordered pairs" class="mw-redirect">ordered pairs</a> (<i>a</i>, <i>b</i>) of real numbers. In this notation, the above formulas for addition and multiplication read</p>
+<dl>
+<dd><img class="tex" alt="(a, b) + (c, d) = (a + c, b + d)\," src="http://upload.wikimedia.org/math/3/3/b/33b8b6fb038db17167e1bcd8dfad4b39.png"></dd>
+<dd><img class="tex" alt=" (a, b) \cdot (c, d) = (ac - bd, bc + ad).\," src="http://upload.wikimedia.org/math/e/5/1/e51882772d1135aaf94a96a751684d6a.png"></dd>
+</dl>
+<p>It is then just a matter of notation to express (<i>a</i>, <i>b</i>) as <i>a</i> + <i>bi</i>.</p>
+<p>Though this low-level construction does accurately describe the structure of the complex numbers, the following equivalent definition reveals the algebraic nature of <b>C</b> more immediately. This characterization relies on the notion of fields and polynomials. A field is a set endowed with an addition, subtraction, multiplication and division operations that behave as is familiar from, say, rational numbers. For example, the <a href="http://en.m.wikipedia.org/wiki/Distributive_law" title="Distributive law" class="mw-redirect">distributive law</a></p>
+<dl>
+<dd><img class="tex" alt="(x+y) z = xz + yz \ " src="http://upload.wikimedia.org/math/f/d/8/fd8a445dde077fcbe3701ea0c449e48d.png"></dd>
+</dl>
+<p>must hold for any three elements <i>x</i>, <i>y</i> and <i>z</i> of a field. The set <b>R</b> of real numbers does form a field. A polynomial p(<i>X</i>) with real <a href="http://en.m.wikipedia.org/wiki/Coefficient" title="Coefficient">coefficients</a> is an expression of the form</p>
+<dl>
+<dd><img class="tex" alt="a_nX^n+...+a_1X+a_0,\ " src="http://upload.wikimedia.org/math/b/9/a/b9ad9ae156238df64c9f2326d2d32df0.png"></dd>
+</dl>
+<p>where the <i>a</i><sub>0</sub>, ..., <i>a</i><sub><i>n</i></sub> are real numbers. The usual addition and multiplication of polynomials endows the set <b>R</b>[<i>X</i>] of all such polynomials with a <a href="http://en.m.wikipedia.org/wiki/Ring_(mathematics)" title="Ring (mathematics)">ring</a> structure. This ring is called <a href="http://en.m.wikipedia.org/wiki/Polynomial_ring" title="Polynomial ring">polynomial ring</a>. The <a href="http://en.m.wikipedia.org/wiki/Quotient_ring" title="Quotient ring">quotient ring</a> <b>R</b>[<i>X</i>]/(<i>X</i><sup>2</sup>+1) can be shown to be a field. This extension field contains two square roots of −1, namely (the <a href="http://en.m.wikipedia.org/wiki/Coset" title="Coset">cosets</a> of) <i>X</i> and −<i>X</i>, respectively. (The cosets of) 1 and <i>X</i> form a basis of <b>R</b>[<i>X</i>]/(<i>X</i><sup>2</sup>+1) as a real <a href="http://en.m.wikipedia.org/wiki/Vector_space" title="Vector space">vector space</a>, which means that each element of the extension field can be uniquely written as a <a href="http://en.m.wikipedia.org/wiki/Linear_combination" title="Linear combination">linear combination</a> in these two elements. Equivalently, elements of the extension field can be written as ordered pairs (<i>a</i>,<i>b</i>) of real numbers. Moreover, the above formulas for addition etc. correspond to the ones yielded by this <a href="http://en.m.wikipedia.org/wiki/Abstract_algebra" title="Abstract algebra">abstract algebraic</a> approach – the two definitions of the field <b>C</b> are said to be <a href="http://en.m.wikipedia.org/wiki/Isomorphism" title="Isomorphism">isomorphic</a> (as fields). Together with the above-mentioned fact that <b>C</b> is algebraically closed, this also shows that <b>C</b> is an <a href="http://en.m.wikipedia.org/wiki/Algebraic_closure" title="Algebraic closure">algebraic closure</a> of <b>R</b>.</p>
+<h3> <span class="mw-headline" id="Matrix_representation_of_complex_numbers">Matrix representation of complex numbers</span>
+</h3>
+<p>Complex numbers <i>a+ib</i> can also be represented by 2×2 <a href="http://en.m.wikipedia.org/wiki/Matrix_(mathematics)" title="Matrix (mathematics)">matrices</a> that have the following form:</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{pmatrix}
+  a &amp;   -b  \\
+  b &amp; \;\; a
+\end{pmatrix}.
+" src="http://upload.wikimedia.org/math/2/1/a/21a89cb088f13d3ca8ae7d5aafb10a08.png"></dd>
+</dl>
+<p>Here the entries <i>a</i> and <i>b</i> are real numbers. The sum and product of two such matrices is again of this form, and the sum and product of complex numbers corresponds to the sum and <a href="http://en.m.wikipedia.org/wiki/Matrix_multiplication" title="Matrix multiplication">product</a> of such matrices. The geometric description of the multiplication of complex numbers can also be phrased in terms of <a href="http://en.m.wikipedia.org/wiki/Rotation_matrix" title="Rotation matrix">rotation matrices</a> by using this correspondence between complex numbers and such matrices. Moreover, the square of the absolute value of a complex number expressed as a matrix is equal to the <a href="http://en.m.wikipedia.org/wiki/Determinant" title="Determinant">determinant</a> of that matrix:</p>
+<dl>
+<dd><img class="tex" alt=" |z|^2 =
+\begin{vmatrix}
+  a &amp; -b  \\
+  b &amp;  a
+\end{vmatrix}
+= (a^2) - ((-b)(b)) = a^2 + b^2.
+" src="http://upload.wikimedia.org/math/8/1/3/8134cd0f604e1046a7690aa2863e6056.png"></dd>
+</dl>
+<p>The conjugate <img class="tex" alt="\overline z" src="http://upload.wikimedia.org/math/3/a/6/3a6ae2b9adf1335ee568038e658b6963.png"> corresponds to the <a href="http://en.m.wikipedia.org/wiki/Transpose" title="Transpose">transpose</a> of the matrix.</p>
+<p>Though this representation of complex numbers with matrices is the most common, many other representations arise from matrices <i>other than</i> <img class="tex" alt="\begin{pmatrix}0 &amp; -1 \\1 &amp; 0 \end{pmatrix}" src="http://upload.wikimedia.org/math/e/5/3/e5384355686bc64256b23751cf6b6440.png"> that square to the negative of the <a href="http://en.m.wikipedia.org/wiki/Identity_matrix" title="Identity matrix">identity matrix</a>. See the article on <a href="http://en.m.wikipedia.org/wiki/2_%C3%97_2_real_matrices" title="2 × 2 real matrices">2 × 2 real matrices</a> for other representations of complex numbers.</p>
+<h2> <span class="mw-headline" id="Complex_analysis">Complex analysis</span>
+</h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:272px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Sin1perz.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sin1perz.png/270px-Sin1perz.png" width="270" height="270" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/a/a5/Sin1perz.png 1.5x, //upload.wikimedia.org/wikipedia/commons/a/a5/Sin1perz.png 2x"></a>
+<div class="thumbcaption">
+
+<a href="http://en.m.wikipedia.org/wiki/Color_wheel_graphs_of_complex_functions" title="Color wheel graphs of complex functions">Color wheel graph</a> of sin(1/<i>z</i>). Black parts inside refer to numbers having large absolute values.</div>
+</div>
+</div>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Complex_analysis" title="Complex analysis">Complex analysis</a>
+</div>
+<p>The study of functions of a complex variable is known as <a href="http://en.m.wikipedia.org/wiki/Complex_analysis" title="Complex analysis">complex analysis</a> and has enormous practical use in <a href="http://en.m.wikipedia.org/wiki/Applied_mathematics" title="Applied mathematics">applied mathematics</a> as well as in other branches of mathematics. Often, the most natural proofs for statements in <a href="http://en.m.wikipedia.org/wiki/Real_analysis" title="Real analysis">real analysis</a> or even <a href="http://en.m.wikipedia.org/wiki/Number_theory" title="Number theory">number theory</a> employ techniques from complex analysis (see <a href="http://en.m.wikipedia.org/wiki/Prime_number_theorem" title="Prime number theorem">prime number theorem</a> for an example). Unlike real functions, which are commonly represented as two-dimensional graphs, <a href="http://en.m.wikipedia.org/wiki/Complex_function" title="Complex function" class="mw-redirect">complex functions</a> have four-dimensional graphs and may usefully be illustrated by color coding a <a href="http://en.m.wikipedia.org/wiki/Three-dimensional_graph" title="Three-dimensional graph">three-dimensional graph</a> to suggest four dimensions, or by animating the complex function's dynamic transformation of the complex plane.</p>
+<h3> <span class="mw-headline" id="Complex_exponential_and_related_functions">Complex exponential and related functions</span>
+</h3>
+<p>The notions of <a href="http://en.m.wikipedia.org/wiki/Convergent_series" title="Convergent series">convergent series</a> and <a href="http://en.m.wikipedia.org/wiki/Continuous_function" title="Continuous function">continuous functions</a> in (real) analysis have natural analogs in complex analysis. A sequence of complex numbers is said to <a href="http://en.m.wikipedia.org/wiki/Convergent_sequence" title="Convergent sequence" class="mw-redirect">converge</a> if and only if its real and imaginary parts do. This is equivalent to the <a href="http://en.m.wikipedia.org/wiki/(%CE%B5,_%CE%B4)-definition_of_limit" title="(ε, δ)-definition of limit">(ε, δ)-definition of limits</a>, where the absolute value of real numbers is replaced by the one of complex numbers. From a more abstract point of view, <b>C</b>, endowed with the <a href="http://en.m.wikipedia.org/wiki/Metric_(mathematics)" title="Metric (mathematics)">metric</a></p>
+<dl>
+<dd><img class="tex" alt="\operatorname{d}(z_1, z_2) = |z_1 - z_2| \," src="http://upload.wikimedia.org/math/5/5/a/55a802bebad31c4177ba768b03cec84e.png"></dd>
+</dl>
+<p>is a complete <a href="http://en.m.wikipedia.org/wiki/Metric_space" title="Metric space">metric space</a>, which notably includes the <a href="http://en.m.wikipedia.org/wiki/Triangle_inequality" title="Triangle inequality">triangle inequality</a></p>
+<dl>
+<dd><img class="tex" alt="|z_1 + z_2| \le |z_1| + |z_2|" src="http://upload.wikimedia.org/math/c/5/d/c5d4f55718601bcf09fe67d4afa48674.png"></dd>
+</dl>
+<p>for any two complex numbers <i>z</i><sub>1</sub> and <i>z</i><sub>2</sub>.</p>
+<p>Like in real analysis, this notion of convergence is used to construct a number of <a href="http://en.m.wikipedia.org/wiki/Elementary_functions" title="Elementary functions" class="mw-redirect">elementary functions</a>: the <i><a href="http://en.m.wikipedia.org/wiki/Exponential_function" title="Exponential function">exponential function</a></i> exp(<i>z</i>), also written <i>e</i><sup><i>z</i></sup>, is defined as the <a href="http://en.m.wikipedia.org/wiki/Infinite_series" title="Infinite series" class="mw-redirect">infinite series</a></p>
+<dl>
+<dd><img class="tex" alt="\exp(z):= 1+z+\frac{z^2}{2\cdot 1}+\frac{z^3}{3\cdot 2\cdot 1}+\cdots = \sum_{n=0}^{\infty} \frac{z^n}{n!}. \," src="http://upload.wikimedia.org/math/c/1/3/c13295fafc43511f2e8f43ee79116ca7.png"></dd>
+</dl>
+<p>and the series defining the real trigonometric functions <a href="http://en.m.wikipedia.org/wiki/Sine" title="Sine">sine</a> and <a href="http://en.m.wikipedia.org/wiki/Cosine" title="Cosine" class="mw-redirect">cosine</a>, as well as <a href="http://en.m.wikipedia.org/wiki/Hyperbolic_functions" title="Hyperbolic functions" class="mw-redirect">hyperbolic functions</a> such as <a href="http://en.m.wikipedia.org/wiki/Sinh" title="Sinh" class="mw-redirect">sinh</a> also carry over to complex arguments without change. <i><a href="http://en.m.wikipedia.org/wiki/Euler%27s_identity" title="Euler's identity">Euler's identity</a></i> states:</p>
+<dl>
+<dd><img class="tex" alt="\exp(i\varphi) = \cos(\varphi) + i\sin(\varphi) \," src="http://upload.wikimedia.org/math/5/2/b/52b03d0fcb165459f417b82bc0138e57.png"></dd>
+</dl>
+<p>for any real number <i>φ</i>, in particular</p>
+<dl>
+<dd><img class="tex" alt="\exp(i \pi) = -1 \," src="http://upload.wikimedia.org/math/d/3/0/d3046b68bf948bed6f3d172af02f064e.png"></dd>
+</dl>
+<p>Unlike in the situation of real numbers, there is an <a href="http://en.m.wikipedia.org/wiki/Infinite_set" title="Infinite set">infinitude</a> of complex solutions <i>z</i> of the equation</p>
+<dl>
+<dd><img class="tex" alt="\exp(z) = w \," src="http://upload.wikimedia.org/math/c/e/4/ce4a7bfb152b6c29d182c60ad772a02f.png"></dd>
+</dl>
+<p>for any complex number <span class="texhtml"><i>w</i> ≠ 0</span>. It can be shown that any such solution <i>z</i>—called <a href="http://en.m.wikipedia.org/wiki/Complex_logarithm" title="Complex logarithm">complex logarithm</a> of <i>a</i>—satisfies</p>
+<dl>
+<dd><img class="tex" alt="\log(x+iy)=\ln|w| + i\arg(w), \," src="http://upload.wikimedia.org/math/a/a/b/aab1622d09dfb45c00e31b4b9c115bad.png"></dd>
+</dl>
+<p>where arg is the <a href="http://en.m.wikipedia.org/wiki/Arg_(mathematics)" title="Arg (mathematics)" class="mw-redirect">argument</a> defined <a href="Complex_number#Polar_form">above</a>, and ln the (real) <a href="http://en.m.wikipedia.org/wiki/Natural_logarithm" title="Natural logarithm">natural logarithm</a>. As arg is a <a href="http://en.m.wikipedia.org/wiki/Multivalued_function" title="Multivalued function">multivalued function</a>, unique only up to a multiple of 2<i>π</i>, log is also multivalued. The <a href="http://en.m.wikipedia.org/wiki/Principal_value" title="Principal value">principal value</a> of log is often taken by restricting the imaginary part to the <a href="http://en.m.wikipedia.org/wiki/Interval_(mathematics)" title="Interval (mathematics)">interval</a> (−π,π].</p>
+<p>Complex <a href="http://en.m.wikipedia.org/wiki/Exponentiation" title="Exponentiation">exponentiation</a> <i>z</i><sup><i>ω</i></sup> is defined as</p>
+<dl>
+<dd><img class="tex" alt="z^\omega = \exp(\omega \log z). \, " src="http://upload.wikimedia.org/math/1/c/3/1c3cada65e5377aa4aa564a25fe006c0.png"></dd>
+</dl>
+<p>Consequently, they are in general multi-valued. For <i>ω</i> = 1 / <i>n</i>, for some natural number <i>n</i>, this recovers the non-unicity of <i>n</i>-th roots mentioned above.</p>
+<p>Complex numbers, unlike real numbers, do not in general satisfy the unmodified power and logarithm identities, particularly when naïvely treated as single-valued functions; see <a href="http://en.m.wikipedia.org/wiki/Exponentiation#Failure_of_power_and_logarithm_identities" title="Exponentiation">failure of power and logarithm identities</a>. For example they do not satisfy</p>
+<dl>
+<dd><img class="tex" alt="\,a^{bc} = (a^b)^c." src="http://upload.wikimedia.org/math/b/1/5/b1504b64783a62f940472044b64b838f.png"></dd>
+</dl>
+<p>Both sides of the equation are multivalued by the definition of complex exponentiation given here, and the values on the left are a subset of those on the right.</p>
+<h3> <span class="mw-headline" id="Holomorphic_functions">Holomorphic functions</span>
+</h3>
+<p>A function <i>f</i> : <b>C</b> → <b>C</b> is called <a href="http://en.m.wikipedia.org/wiki/Holomorphic" title="Holomorphic" class="mw-redirect">holomorphic</a> if it satisfies the <a href="http://en.m.wikipedia.org/wiki/Cauchy-Riemann_equations" title="Cauchy-Riemann equations" class="mw-redirect">Cauchy-Riemann equations</a>. For example, any <a href="http://en.m.wikipedia.org/wiki/Linear_transformation#Definition_and_first_consequences" title="Linear transformation" class="mw-redirect"><b>R</b>-linear</a> map <b>C</b> → <b>C</b> can be written in the form</p>
+<dl>
+<dd><img class="tex" alt="f(z)=az+b\overline{z}" src="http://upload.wikimedia.org/math/b/1/1/b11999cc9e9195ec7d2712e8296e69ec.png"></dd>
+</dl>
+<p>with complex coefficients <i>a</i> and <i>b</i>. This map is holomorphic <a href="http://en.m.wikipedia.org/wiki/If_and_only_if" title="If and only if">if and only if</a> <i>b</i> = 0. The second summand <img class="tex" alt="b \overline z" src="http://upload.wikimedia.org/math/8/e/9/8e9cf76fdb9b05d9f0d8e284b12431c4.png"> is real-differentiable, but does not satisfy the <a href="http://en.m.wikipedia.org/wiki/Cauchy-Riemann_equations" title="Cauchy-Riemann equations" class="mw-redirect">Cauchy-Riemann equations</a>.</p>
+<p>Complex analysis shows some features not apparent in real analysis. For example, any two holomorphic functions <i>f</i> and <i>g</i> that agree on an arbitrarily small <a href="http://en.m.wikipedia.org/wiki/Open_subset" title="Open subset" class="mw-redirect">open subset</a> of <b>C</b> necessarily agree everywhere. <a href="http://en.m.wikipedia.org/wiki/Meromorphic_function" title="Meromorphic function">Meromorphic functions</a>, functions that can locally be written as <i>f</i>(<i>z</i>)/(<i>z</i> − <i>z</i><sub>0</sub>)<sup><i>n</i></sup> with a holomorphic function <i>f</i>(<i>z</i>), still share some of the features of holomorphic functions. Other functions have <a href="http://en.m.wikipedia.org/wiki/Essential_singularity" title="Essential singularity">essential singularities</a>, such as sin(1/<i>z</i>) at <i>z</i> = 0.</p>
+<h2> <span class="mw-headline" id="Applications">Applications</span>
+</h2>
+<p>Some applications of complex numbers are:</p>
+<h3> <span class="mw-headline" id="Control_theory">Control theory</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Control_theory" title="Control theory">control theory</a>, systems are often transformed from the <a href="http://en.m.wikipedia.org/wiki/Time_domain" title="Time domain">time domain</a> to the <a href="http://en.m.wikipedia.org/wiki/Frequency_domain" title="Frequency domain">frequency domain</a> using the <a href="http://en.m.wikipedia.org/wiki/Laplace_transform" title="Laplace transform">Laplace transform</a>. The system's <a href="http://en.m.wikipedia.org/wiki/Pole_(complex_analysis)" title="Pole (complex analysis)">poles</a> and <a href="http://en.m.wikipedia.org/wiki/Zero_(complex_analysis)" title="Zero (complex analysis)">zeros</a> are then analyzed in the <i>complex plane</i>. The <a href="http://en.m.wikipedia.org/wiki/Root_locus" title="Root locus">root locus</a>, <a href="http://en.m.wikipedia.org/wiki/Nyquist_plot" title="Nyquist plot">Nyquist plot</a>, and <a href="http://en.m.wikipedia.org/wiki/Nichols_plot" title="Nichols plot">Nichols plot</a> techniques all make use of the complex plane.</p>
+<p>In the root locus method, it is especially important whether the <a href="http://en.m.wikipedia.org/wiki/Pole_(complex_analysis)" title="Pole (complex analysis)">poles</a> and <a href="http://en.m.wikipedia.org/wiki/Zero_(complex_analysis)" title="Zero (complex analysis)">zeros</a> are in the left or right half planes, i.e. have real part greater than or less than zero. If a system has poles that are</p>
+<ul>
+<li>in the right half plane, it will be <a href="http://en.m.wikipedia.org/wiki/Unstable" title="Unstable" class="mw-redirect">unstable</a>,</li>
+<li>all in the left half plane, it will be <a href="http://en.m.wikipedia.org/wiki/BIBO_stability" title="BIBO stability">stable</a>,</li>
+<li>on the imaginary axis, it will have <a href="http://en.m.wikipedia.org/wiki/Marginal_stability" title="Marginal stability">marginal stability</a>.</li>
+</ul>
+<p>If a system has zeros in the right half plane, it is a <a href="http://en.m.wikipedia.org/wiki/Nonminimum_phase" title="Nonminimum phase" class="mw-redirect">nonminimum phase</a> system.</p>
+<h3> <span class="mw-headline" id="Improper_integrals">Improper integrals</span>
+</h3>
+<p>In applied fields, complex numbers are often used to compute certain real-valued <a href="http://en.m.wikipedia.org/wiki/Improper_integral" title="Improper integral">improper integrals</a>, by means of complex-valued functions. Several methods exist to do this; see <a href="http://en.m.wikipedia.org/wiki/Methods_of_contour_integration" title="Methods of contour integration">methods of contour integration</a>.</p>
+<h3> <span class="mw-headline" id="Fluid_dynamics">Fluid dynamics</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Fluid_dynamics" title="Fluid dynamics">fluid dynamics</a>, complex functions are used to describe <a href="http://en.m.wikipedia.org/wiki/Potential_flow_in_two_dimensions" title="Potential flow in two dimensions" class="mw-redirect">potential flow in two dimensions</a>.</p>
+<h3> <span class="mw-headline" id="Dynamic_equations">Dynamic equations</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Differential_equations" title="Differential equations" class="mw-redirect">differential equations</a>, it is common to first find all complex roots <i>r</i> of the <a href="http://en.m.wikipedia.org/wiki/Linear_differential_equation#Homogeneous_equations_with_constant_coefficients" title="Linear differential equation">characteristic equation</a> of a <a href="http://en.m.wikipedia.org/wiki/Linear_differential_equation" title="Linear differential equation">linear differential equation</a> or equation system and then attempt to solve the system in terms of base functions of the form <i>f</i>(<i>t</i>) = <i>e</i><sup><i>rt</i></sup>. Likewise, in <a href="http://en.m.wikipedia.org/wiki/Difference_equations" title="Difference equations" class="mw-redirect">difference equations</a>, the complex roots <i>r</i> of the characteristic equation of the difference equation system are used, to attempt to solve the system in terms of base functions of the form <i>f</i>(<i>t</i>) = <i>r</i> <sup><i>t</i></sup>.</p>
+<h3> <span class="mw-headline" id="Electromagnetism_and_electrical_engineering">Electromagnetism and electrical engineering</span>
+</h3>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Alternating_current" title="Alternating current">Alternating current</a>
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Electrical_engineering" title="Electrical engineering">electrical engineering</a>, the <a href="http://en.m.wikipedia.org/wiki/Fourier_transform" title="Fourier transform">Fourier transform</a> is used to analyze varying <a href="http://en.m.wikipedia.org/wiki/Voltage" title="Voltage">voltages</a> and <a href="http://en.m.wikipedia.org/wiki/Electric_current" title="Electric current">currents</a>. The treatment of <a href="http://en.m.wikipedia.org/wiki/Resistor" title="Resistor">resistors</a>, <a href="http://en.m.wikipedia.org/wiki/Capacitor" title="Capacitor">capacitors</a>, and <a href="http://en.m.wikipedia.org/wiki/Inductor" title="Inductor">inductors</a> can then be unified by introducing imaginary, frequency-dependent resistances for the latter two and combining all three in a single complex number called the <a href="http://en.m.wikipedia.org/wiki/Electrical_impedance" title="Electrical impedance">impedance</a>. This approach is called <a href="http://en.m.wikipedia.org/wiki/Phasor" title="Phasor">phasor</a> calculus.</p>
+<p>In electrical engineering, the imaginary unit is denoted by <i>j</i>, to avoid confusion with <i>I</i> which is generally in use to denote <a href="http://en.m.wikipedia.org/wiki/Electric_current" title="Electric current">electric current</a>.</p>
+<p>Since the voltage in an AC <a href="http://en.m.wikipedia.org/wiki/Electrical_circuit" title="Electrical circuit" class="mw-redirect">circuit</a> is oscillating, it can be represented as</p>
+<dl>
+<dd><img class="tex" alt=" V = V_0 e^{j \omega t} = V_0 \left (\cos \omega t + j \sin\omega t \right )," src="http://upload.wikimedia.org/math/7/2/6/72637b1707715dc8b9fce2dc7ee88099.png"></dd>
+</dl>
+<p>To obtain the measurable quantity, the real part is taken:</p>
+<dl>
+<dd><img class="tex" alt=" \mathrm{Re}(V) = \mathrm{Re}\left [ V_0 e^{j \omega t} \right ] = V_0 \cos \omega t." src="http://upload.wikimedia.org/math/3/a/3/3a35d92126d50a83849567cf692b4be5.png"></dd>
+</dl>
+<p>See for example.<sup id="cite_ref-9" class="reference"><a href="Complex_number#cite_note-9"><span>[</span>10<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Signal_analysis">Signal analysis</span>
+</h3>
+<p>Complex numbers are used in <a href="http://en.m.wikipedia.org/wiki/Signal_analysis" title="Signal analysis" class="mw-redirect">signal analysis</a> and other fields for a convenient description for periodically varying signals. For given real functions representing actual physical quantities, often in terms of sines and cosines, corresponding complex functions are considered of which the real parts are the original quantities. For a <a href="http://en.m.wikipedia.org/wiki/Sine_wave" title="Sine wave">sine wave</a> of a given <a href="http://en.m.wikipedia.org/wiki/Frequency" title="Frequency">frequency</a>, the absolute value |<i>z</i>| of the corresponding <i>z</i> is the <a href="http://en.m.wikipedia.org/wiki/Amplitude" title="Amplitude">amplitude</a> and the <a href="http://en.m.wikipedia.org/wiki/Argument_(complex_analysis)" title="Argument (complex analysis)">argument</a> arg(<i>z</i>) the <a href="http://en.m.wikipedia.org/wiki/Phase_(waves)" title="Phase (waves)">phase</a>.</p>
+<p>If <a href="http://en.m.wikipedia.org/wiki/Fourier_analysis" title="Fourier analysis">Fourier analysis</a> is employed to write a given real-valued signal as a sum of periodic functions, these periodic functions are often written as complex valued functions of the form</p>
+<dl>
+<dd><img class="tex" alt=" f ( t ) = z e^{i\omega t} \," src="http://upload.wikimedia.org/math/f/4/6/f463b3a6ed7ba9edefcb7287b8d9e0d2.png"></dd>
+</dl>
+<p>where ω represents the <a href="http://en.m.wikipedia.org/wiki/Angular_frequency" title="Angular frequency">angular frequency</a> and the complex number <i>z</i> encodes the phase and amplitude as explained above.</p>
+<p>This use is also extended into <a href="http://en.m.wikipedia.org/wiki/Digital_signal_processing" title="Digital signal processing">digital signal processing</a> and <a href="http://en.m.wikipedia.org/wiki/Digital_image_processing" title="Digital image processing">digital image processing</a>, which utilize digital versions of Fourier analysis (and <a href="http://en.m.wikipedia.org/wiki/Wavelet" title="Wavelet">wavelet</a> analysis) to transmit, <a href="http://en.m.wikipedia.org/wiki/Data_compression" title="Data compression">compress</a>, restore, and otherwise process <a href="http://en.m.wikipedia.org/wiki/Digital" title="Digital">digital</a> <a href="http://en.m.wikipedia.org/wiki/Sound" title="Sound">audio</a> signals, still images, and <a href="http://en.m.wikipedia.org/wiki/Video" title="Video">video</a> signals.</p>
+<p>Another example, relevant to the two side bands of <a href="http://en.m.wikipedia.org/wiki/Amplitude_modulation" title="Amplitude modulation">amplitude modulation</a> of AM radio, is:</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{align}
+\cos((\omega+\alpha)t)+\cos\left((\omega-\alpha)t\right) &amp; = \operatorname{Re}\left(e^{i(\omega+\alpha)t} + e^{i(\omega-\alpha)t}\right) \\
+&amp; = \operatorname{Re}\left((e^{i\alpha t} + e^{-i\alpha t})\cdot e^{i\omega t}\right) \\
+&amp; = \operatorname{Re}\left(2\cos(\alpha t) \cdot e^{i\omega t}\right) \\
+&amp; = 2 \cos(\alpha t) \cdot \operatorname{Re}\left(e^{i\omega t}\right) \\
+&amp; = 2 \cos(\alpha t)\cdot \cos\left(\omega t\right)\,.
+\end{align}
+" src="http://upload.wikimedia.org/math/c/6/e/c6e3ab884e82669ac3c0957f942cdfdc.png"></dd>
+</dl>
+<h3> <span class="mw-headline" id="Quantum_mechanics">Quantum mechanics</span>
+</h3>
+<p>The complex number field is intrinsic to the <a href="http://en.m.wikipedia.org/wiki/Mathematical_formulations_of_quantum_mechanics" title="Mathematical formulations of quantum mechanics" class="mw-redirect">mathematical formulations of quantum mechanics</a>, where complex <a href="http://en.m.wikipedia.org/wiki/Hilbert_space" title="Hilbert space">Hilbert spaces</a> provide the context for one such formulation that is convenient and perhaps most standard. The original foundation formulas of quantum mechanics – the <a href="http://en.m.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger" title="Erwin Schrödinger">Schrödinger</a> <a href="http://en.m.wikipedia.org/wiki/Schr%C3%B6dinger_equation" title="Schrödinger equation">equation</a> and <a href="http://en.m.wikipedia.org/wiki/Werner_Heisenberg" title="Werner Heisenberg">Heisenberg</a>'s <a href="http://en.m.wikipedia.org/wiki/Matrix_mechanics" title="Matrix mechanics">matrix mechanics</a> – make use of complex numbers.</p>
+<h3> <span class="mw-headline" id="Relativity">Relativity</span>
+</h3>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Special_relativity" title="Special relativity">special</a> and <a href="http://en.m.wikipedia.org/wiki/General_relativity" title="General relativity">general relativity</a>, some formulas for the metric on <a href="http://en.m.wikipedia.org/wiki/Spacetime" title="Spacetime">spacetime</a> become simpler if one takes the time variable to be imaginary. (This is no longer standard in classical relativity, but is <a href="http://en.m.wikipedia.org/wiki/Wick_rotation" title="Wick rotation">used in an essential way</a> in <a href="http://en.m.wikipedia.org/wiki/Quantum_field_theory" title="Quantum field theory">quantum field theory</a>.) Complex numbers are essential to <a href="http://en.m.wikipedia.org/wiki/Spinor" title="Spinor">spinors</a>, which are a generalization of the <a href="http://en.m.wikipedia.org/wiki/Tensor" title="Tensor">tensors</a> used in relativity.</p>
+<h3> <span class="mw-headline" id="Geometry">Geometry</span>
+</h3>
+<h4> <span class="mw-headline" id="Fractals">Fractals</span>
+</h4>
+<p>Certain <a href="http://en.m.wikipedia.org/wiki/Fractal" title="Fractal">fractals</a> are plotted in the complex plane, e.g. the <a href="http://en.m.wikipedia.org/wiki/Mandelbrot_set" title="Mandelbrot set">Mandelbrot set</a> and <a href="http://en.m.wikipedia.org/wiki/Julia_set" title="Julia set">Julia sets</a>.</p>
+<h4> <span class="mw-headline" id="Triangles">Triangles</span>
+</h4>
+<p>Every triangle has a unique <a href="http://en.m.wikipedia.org/wiki/Steiner_inellipse" title="Steiner inellipse">Steiner inellipse</a>—an <a href="http://en.m.wikipedia.org/wiki/Ellipse" title="Ellipse">ellipse</a> inside the triangle and tangent to the midpoints of the three sides of the triangle. The <a href="http://en.m.wikipedia.org/wiki/Focus_(geometry)" title="Focus (geometry)">foci</a> of a triangle's Steiner inellipse can be found as follows, according to <a href="http://en.m.wikipedia.org/wiki/Marden%27s_theorem" title="Marden's theorem">Marden's theorem</a>:<sup id="cite_ref-10" class="reference"><a href="Complex_number#cite_note-10"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-11" class="reference"><a href="Complex_number#cite_note-11"><span>[</span>12<span>]</span></a></sup> Denote the triangle's vertices in the complex plane as <i>a</i>=<i>x</i><sub><i>A</i></sub>+<i>y</i><sub><i>A</i></sub><i>i</i>, <i>b</i>=<i>x</i><sub><i>B</i></sub>+<i>y</i><sub><i>B</i></sub><i>i</i>, and <i>c</i>=<i>x</i><sub><i>C</i></sub>+<i>y</i><sub><i>C</i></sub><i>i</i>. Write the <a href="http://en.m.wikipedia.org/wiki/Cubic_equation" title="Cubic equation" class="mw-redirect">cubic equation</a> <img class="tex" alt="(x-a)(x-b)(x-c)=0" src="http://upload.wikimedia.org/math/8/f/4/8f4c4a2ee169a304c08f63b716861fd8.png">, take its derivative, and equate the (quadratic) derivative to zero. <a href="http://en.m.wikipedia.org/wiki/Marden%27s_Theorem" title="Marden's Theorem" class="mw-redirect">Marden's Theorem</a> says that the solutions of this equation are the complex numbers denoting the locations of the two foci of the Steiner inellipse.</p>
+<h3> <span class="mw-headline" id="Algebraic_number_theory">Algebraic number theory</span>
+</h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:182px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Pentagon_construct.gif" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/7/76/Pentagon_construct.gif" width="180" height="180" class="thumbimage"></a>
+<div class="thumbcaption">
+
+Construction of a regular polygon <a href="http://en.m.wikipedia.org/wiki/Compass_and_straightedge_constructions" title="Compass and straightedge constructions">using straightedge and compass</a>.</div>
+</div>
+</div>
+<p>As mentioned above, any nonconstant polynomial equation (in complex coefficients) has a solution in <b>C</b>. A fortiori, the same is true if the equation has rational coefficients. The roots of such equations are called <a href="http://en.m.wikipedia.org/wiki/Algebraic_numbers" title="Algebraic numbers" class="mw-redirect">algebraic numbers</a> – they are a principal object of study in <a href="http://en.m.wikipedia.org/wiki/Algebraic_number_theory" title="Algebraic number theory">algebraic number theory</a>. Compared to <span style="text-decoration:overline;"><b>Q</b></span>, the algebraic closure of <b>Q</b>, which also contains all algebraic numbers, <b>C</b> has the advantage of being easily understandable in geometric terms. In this way, algebraic methods can be used to study geometric questions and vice versa. With algebraic methods, more specifically applying the machinery of <a href="http://en.m.wikipedia.org/wiki/Field_theory_(mathematics)" title="Field theory (mathematics)">field theory</a> to the <a href="http://en.m.wikipedia.org/wiki/Number_field" title="Number field" class="mw-redirect">number field</a> containing <a href="http://en.m.wikipedia.org/wiki/Root_of_unity" title="Root of unity">roots of unity</a>, it can be shown that it is not possible to construct a regular <a href="http://en.m.wikipedia.org/wiki/Nonagon" title="Nonagon">nonagon</a> <a href="http://en.m.wikipedia.org/wiki/Compass_and_straightedge_constructions" title="Compass and straightedge constructions">using only compass and straightedge</a> – a purely geometric problem.</p>
+<p>Another example are Pythagorean triples (<i>a</i>, <i>b</i>, <i>c</i>), that is to say integers satisfying</p>
+<dl>
+<dd><img class="tex" alt="a^2 + b^2 = c^2 \," src="http://upload.wikimedia.org/math/3/a/e/3ae71ab3eb71d3d182a3b9e437fba6ee.png"></dd>
+</dl>
+<p>(which implies that the triangle having sidelengths <i>a</i>, <i>b</i>, and <i>c</i> is a <a href="http://en.m.wikipedia.org/wiki/Right_triangle" title="Right triangle">right triangle</a>). They can be studied by considering <a href="http://en.m.wikipedia.org/wiki/Gaussian_integer" title="Gaussian integer">Gaussian integers</a>, that is, numbers of the form <i>x</i> + <i>iy</i>, where <i>x</i> and <i>y</i> are integers.<br style="clear:both;"></p>
+<h3> <span class="mw-headline" id="Analytic_number_theory">Analytic number theory</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/Analytic_number_theory" title="Analytic number theory">Analytic number theory</a> studies numbers, often integers or rationals, by taking advantage of the fact that they can be regarded as complex numbers, in which analytic methods can be used. This is done by encoding number-theoretic information in complex-valued functions. For example, the <a href="http://en.m.wikipedia.org/wiki/Riemann_zeta-function" title="Riemann zeta-function" class="mw-redirect">Riemann zeta-function</a> ζ(<i>s</i>) is related to the distribution of <a href="http://en.m.wikipedia.org/wiki/Prime_number" title="Prime number">prime numbers</a>.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The earliest fleeting reference to <a href="http://en.m.wikipedia.org/wiki/Square_root" title="Square root">square roots</a> of <a href="http://en.m.wikipedia.org/wiki/Negative_numbers" title="Negative numbers" class="mw-redirect">negative numbers</a> can perhaps be said to occur in the work of the <a href="http://en.m.wikipedia.org/wiki/Hellenistic_mathematics" title="Hellenistic mathematics" class="mw-redirect">Greek mathematician</a> <a href="http://en.m.wikipedia.org/wiki/Hero_of_Alexandria" title="Hero of Alexandria">Heron of Alexandria</a> in the 1st century <a href="http://en.m.wikipedia.org/wiki/AD" title="AD" class="mw-redirect">AD</a>, where in his <i><a href="http://en.m.wikipedia.org/wiki/Hero_of_Alexandria#Bibliography" title="Hero of Alexandria">Stereometrica</a></i> he considers, apparently in error, the volume of an impossible <a href="http://en.m.wikipedia.org/wiki/Frustum" title="Frustum">frustum</a> of a <a href="http://en.m.wikipedia.org/wiki/Pyramid" title="Pyramid">pyramid</a> to arrive at the term <img class="tex" alt="\sqrt{81 - 144}" src="http://upload.wikimedia.org/math/8/f/b/8fb0fa4053143a3dfbecab8b131ca393.png"> in his calculations, although negative quantities were not conceived of in <a href="http://en.m.wikipedia.org/wiki/Greek_Mathematics" title="Greek Mathematics" class="mw-redirect">Hellenistic mathematics</a> and Heron merely replaced it by its positive.<sup id="cite_ref-12" class="reference"><a href="Complex_number#cite_note-12"><span>[</span>13<span>]</span></a></sup></p>
+<p>The impetus to study complex numbers proper first arose in the 16th century when <a href="http://en.m.wikipedia.org/wiki/Algebraic_solution" title="Algebraic solution">algebraic solutions</a> for the roots of <a href="http://en.m.wikipedia.org/wiki/Cubic_equation" title="Cubic equation" class="mw-redirect">cubic</a> and <a href="http://en.m.wikipedia.org/wiki/Quartic_equation" title="Quartic equation" class="mw-redirect">quartic</a> <a href="http://en.m.wikipedia.org/wiki/Polynomial" title="Polynomial">polynomials</a> were discovered by Italian mathematicians (see <a href="http://en.m.wikipedia.org/wiki/Niccolo_Fontana_Tartaglia" title="Niccolo Fontana Tartaglia" class="mw-redirect">Niccolo Fontana Tartaglia</a>, <a href="http://en.m.wikipedia.org/wiki/Gerolamo_Cardano" title="Gerolamo Cardano">Gerolamo Cardano</a>). It was soon realized that these formulas, even if one was only interested in real solutions, sometimes required the manipulation of square roots of negative numbers. As an example, Tartaglia's formula for a cubic equation of the form <img class="tex" alt="x^3 = px + q" src="http://upload.wikimedia.org/math/c/c/0/cc045756beb82fd8aad701643e65ce04.png"><sup id="cite_ref-13" class="reference"><a href="Complex_number#cite_note-13"><span>[</span>14<span>]</span></a></sup> gives the solution to the equation <i>x</i><sup>3</sup> = <i>x</i> as</p>
+<dl>
+<dd><img class="tex" alt="\frac{1}{\sqrt{3}}\left((\sqrt{-1})^{1/3}+\frac{1}{(\sqrt{-1})^{1/3}}\right)." src="http://upload.wikimedia.org/math/d/5/9/d59f249519c1612f985bc5dd130e84ab.png"></dd>
+</dl>
+<p>At first glance this looks like nonsense. However formal calculations with complex numbers show that the equation <i>z</i><sup>3</sup> = <i>i</i> has solutions <i>–i</i>, <img class="tex" alt="{\scriptstyle\frac{\sqrt{3}}{2}}+{\scriptstyle\frac{1}{2}}i" src="http://upload.wikimedia.org/math/2/7/0/2702ddf8eb845054bb3ed5fd23f6c8b0.png"> and <img class="tex" alt="{\scriptstyle\frac{-\sqrt{3}}{2}}+{\scriptstyle\frac{1}{2}}i" src="http://upload.wikimedia.org/math/0/0/1/001fd4ac64b40eb2f503389515b6572e.png">. Substituting these in turn for <img class="tex" alt="{\scriptstyle\sqrt{-1}^{1/3}}" src="http://upload.wikimedia.org/math/7/4/8/7485ce4aa0beb4899f3d6fc235730126.png"> in Tartaglia's cubic formula and simplifying, one gets 0, 1 and −1 as the solutions of <i>x</i><sup>3</sup> – <i>x</i> = 0. Of course this particular equation can be solved at sight but it does illustrate that when general formulas are used to solve cubic equations with real roots then, as later mathematicians showed rigorously, the use of complex numbers <a href="http://en.m.wikipedia.org/wiki/Casus_irreducibilis" title="Casus irreducibilis">is unavoidable</a>. <a href="http://en.m.wikipedia.org/wiki/Rafael_Bombelli" title="Rafael Bombelli">Rafael Bombelli</a> was the first to explicitly address these seemingly paradoxical solutions of cubic equations and developed the rules for complex arithmetic trying to resolve these issues.</p>
+<p>The term "imaginary" for these quantities was coined by <a href="http://en.m.wikipedia.org/wiki/Ren%C3%A9_Descartes" title="René Descartes">René Descartes</a> in 1637, although he was at pains to stress their imaginary nature<sup id="cite_ref-14" class="reference"><a href="Complex_number#cite_note-14"><span>[</span>15<span>]</span></a></sup></p>
+<blockquote class="templatequote">
+<div class="Bug6200">[...] quelquefois seulement imaginaires c’est-à-dire que l’on peut toujours en imaginer autant que j'ai dit en chaque équation, mais qu’il n’y a quelquefois aucune quantité qui corresponde à celle qu’on imagine. <i><br>
+([...] sometimes only imaginary, that is one can imagine as many as I said in each equation, but sometimes there exists no quantity that matches that which we imagine.)</i>
+</div>
+</blockquote>
+<p>A further source of confusion was that the equation <img class="tex" alt="\sqrt{-1}^2=\sqrt{-1}\sqrt{-1}=-1" src="http://upload.wikimedia.org/math/5/8/7/58705736cee793e7ac3fdcecbfb31104.png"> seemed to be capriciously inconsistent with the algebraic identity <img class="tex" alt="\sqrt{a}\sqrt{b}=\sqrt{ab}" src="http://upload.wikimedia.org/math/1/c/4/1c4ccb2d45cb73ccd08624caaa074041.png">, which is valid for non-negative real numbers <i>a</i> and <i>b</i>, and which was also used in complex number calculations with one of <i>a</i>, <i>b</i> positive and the other negative. The incorrect use of this identity (and the related identity <img class="tex" alt="\scriptstyle 1/\sqrt{a}=\sqrt{1/a}" src="http://upload.wikimedia.org/math/6/1/7/6177f025b7b4eb2cbdc2c97f3ed4e24e.png">) in the case when both <i>a</i> and <i>b</i> are negative even bedeviled <a href="http://en.m.wikipedia.org/wiki/Euler" title="Euler" class="mw-redirect">Euler</a>. This difficulty eventually led to the convention of using the special symbol <i>i</i> in place of <img class="tex" alt="\sqrt{-1}" src="http://upload.wikimedia.org/math/1/d/1/1d1553468ab9a8e79faaa5e937bf7d05.png"> to guard against this mistake<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from April 2011">citation needed</span></a></i>]</sup>. Even so Euler considered it natural to introduce students to complex numbers much earlier than we do today. In his elementary algebra text book, <i><a rel="nofollow" class="external text" href="http://web.mat.bham.ac.uk/C.J.Sangwin/euler/">Elements of Algebra</a></i>, he introduces these numbers almost at once and then uses them in a natural way throughout.</p>
+<p>In the 18th century complex numbers gained wider use, as it was noticed that formal manipulation of complex expressions could be used to simplify calculations involving trigonometric functions. For instance, in 1730 <a href="http://en.m.wikipedia.org/wiki/Abraham_de_Moivre" title="Abraham de Moivre">Abraham de Moivre</a> noted that the complicated identities relating trigonometric functions of an integer multiple of an angle to powers of trigonometric functions of that angle could be simply re-expressed by the following well-known formula which bears his name, <a href="http://en.m.wikipedia.org/wiki/De_Moivre%27s_formula" title="De Moivre's formula">de Moivre's formula</a>:</p>
+<dl>
+<dd><img class="tex" alt="(\cos \theta + i\sin \theta)^{n} = \cos n \theta + i\sin n \theta. \," src="http://upload.wikimedia.org/math/5/2/4/524405f8d9eda993a9745471db958f10.png"></dd>
+</dl>
+<p>In 1748 <a href="http://en.m.wikipedia.org/wiki/Leonhard_Euler" title="Leonhard Euler">Leonhard Euler</a> went further and obtained <a href="http://en.m.wikipedia.org/wiki/Euler%27s_formula" title="Euler's formula">Euler's formula</a> of <a href="http://en.m.wikipedia.org/wiki/Complex_analysis" title="Complex analysis">complex analysis</a>:</p>
+<dl>
+<dd><img class="tex" alt="\cos \theta + i\sin \theta = e ^{i\theta } \," src="http://upload.wikimedia.org/math/d/8/1/d81d897f0889492ec83ad45d5adb5473.png"></dd>
+</dl>
+<p>by formally manipulating complex <a href="http://en.m.wikipedia.org/wiki/Power_series" title="Power series">power series</a> and observed that this formula could be used to reduce any trigonometric identity to much simpler exponential identities.</p>
+<p>The idea of a complex number as a point in the complex plane (<a href="Complex_number#Complex_plane">above</a>) was first described by <a href="http://en.m.wikipedia.org/wiki/Caspar_Wessel" title="Caspar Wessel">Caspar Wessel</a> in 1799, although it had been anticipated as early as 1685 in <a href="http://en.m.wikipedia.org/wiki/John_Wallis" title="John Wallis">Wallis's</a> <i>De Algebra tractatus</i>.</p>
+<p>Wessel's memoir appeared in the Proceedings of the <a href="http://en.m.wikipedia.org/wiki/Copenhagen_Academy" title="Copenhagen Academy" class="mw-redirect">Copenhagen Academy</a> but went largely unnoticed. In 1806 <a href="http://en.m.wikipedia.org/wiki/Jean-Robert_Argand" title="Jean-Robert Argand">Jean-Robert Argand</a> independently issued a pamphlet on complex numbers and provided a rigorous proof of the <a href="http://en.m.wikipedia.org/wiki/Fundamental_theorem_of_algebra#History" title="Fundamental theorem of algebra">fundamental theorem of algebra</a>. Gauss had earlier published an essentially <a href="http://en.m.wikipedia.org/wiki/Topology" title="Topology">topological</a> proof of the theorem in 1797 but expressed his doubts at the time about "the true metaphysics of the square root of −1". It was not until 1831 that he overcame these doubts and published his treatise on complex numbers as points in the plane, largely establishing modern notation and terminology. The English mathematician <a href="http://en.m.wikipedia.org/wiki/G._H._Hardy" title="G. H. Hardy">G. H. Hardy</a> remarked that Gauss was the first mathematician to use complex numbers in 'a really confident and scientific way' although mathematicians such as <a href="http://en.m.wikipedia.org/wiki/Niels_Henrik_Abel" title="Niels Henrik Abel">Niels Henrik Abel</a> and <a href="http://en.m.wikipedia.org/wiki/Carl_Gustav_Jacob_Jacobi" title="Carl Gustav Jacob Jacobi">Carl Gustav Jacob Jacobi</a> were necessarily using them routinely before Gauss published his 1831 treatise.<sup id="cite_ref-15" class="reference"><a href="Complex_number#cite_note-15"><span>[</span>16<span>]</span></a></sup><a href="http://en.m.wikipedia.org/wiki/Augustin_Louis_Cauchy" title="Augustin Louis Cauchy" class="mw-redirect">Augustin Louis Cauchy</a> and <a href="http://en.m.wikipedia.org/wiki/Bernhard_Riemann" title="Bernhard Riemann">Bernhard Riemann</a> together brought the fundamental ideas of <a href="Complex_number#Complex_analysis">complex analysis</a> to a high state of completion, commencing around 1825 in Cauchy's case.</p>
+<p>The common terms used in the theory are chiefly due to the founders. Argand called <img class="tex" alt="\cos \phi + i\sin \phi" src="http://upload.wikimedia.org/math/4/f/1/4f129675dd6722fdb8d8ce2456dfd3e4.png"> the <i>direction factor</i>, and <img class="tex" alt="r = \sqrt{a^2+b^2}" src="http://upload.wikimedia.org/math/7/c/0/7c08f0a3353f69d7c74865eac1d72cf1.png"> the <i>modulus</i>; Cauchy (1828) called <img class="tex" alt="\cos \phi + i\sin \phi" src="http://upload.wikimedia.org/math/4/f/1/4f129675dd6722fdb8d8ce2456dfd3e4.png"> the <i>reduced form</i> (l'expression réduite) and apparently introduced the term <i>argument</i>; Gauss used <i>i</i> for <img class="tex" alt="\sqrt{-1}" src="http://upload.wikimedia.org/math/1/d/1/1d1553468ab9a8e79faaa5e937bf7d05.png">, introduced the term <i>complex number</i> for <i>a</i> + <i>bi</i>, and called <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup> the <i>norm</i>. The expression <i>direction coefficient</i>, often used for <img class="tex" alt="\cos \phi + i\sin \phi" src="http://upload.wikimedia.org/math/4/f/1/4f129675dd6722fdb8d8ce2456dfd3e4.png">, is due to Hankel (1867), and <i>absolute value,</i> for <i>modulus,</i> is due to Weierstrass.</p>
+<p>Later classical writers on the general theory include <a href="http://en.m.wikipedia.org/wiki/Richard_Dedekind" title="Richard Dedekind">Richard Dedekind</a>, <a href="http://en.m.wikipedia.org/wiki/Otto_H%C3%B6lder" title="Otto Hölder">Otto Hölder</a>, <a href="http://en.m.wikipedia.org/wiki/Felix_Klein" title="Felix Klein">Felix Klein</a>, <a href="http://en.m.wikipedia.org/wiki/Henri_Poincar%C3%A9" title="Henri Poincaré">Henri Poincaré</a>, <a href="http://en.m.wikipedia.org/wiki/Hermann_Schwarz" title="Hermann Schwarz">Hermann Schwarz</a>, <a href="http://en.m.wikipedia.org/wiki/Karl_Weierstrass" title="Karl Weierstrass">Karl Weierstrass</a> and many others.</p>
+<h2> <span class="mw-headline" id="Generalizations_and_related_notions">Generalizations and related notions</span>
+</h2>
+<p>The process of extending the field <b>R</b> of reals to <b>C</b> is known as <a href="http://en.m.wikipedia.org/wiki/Cayley-Dickson_construction" title="Cayley-Dickson construction" class="mw-redirect">Cayley-Dickson construction</a>. It can be carried further to higher dimensions, yielding the <a href="http://en.m.wikipedia.org/wiki/Quaternion" title="Quaternion">quaternions</a> <b>H</b> and <a href="http://en.m.wikipedia.org/wiki/Octonion" title="Octonion">octonions</a> <b>O</b> which (as a real vector space) are of dimension 4 and 8, respectively. However, with increasing dimension, the algebraic properties familiar from real and complex numbers vanish: the <a href="http://en.m.wikipedia.org/wiki/Quaternions" title="Quaternions" class="mw-redirect">quaternions</a> are only a <a href="http://en.m.wikipedia.org/wiki/Skew_field" title="Skew field" class="mw-redirect">skew field</a>, i.e. <i>x·y</i> ≠ <i>y·x</i> for two quaternions, the multiplication of <a href="http://en.m.wikipedia.org/wiki/Octonions" title="Octonions" class="mw-redirect">octonions</a> fails (in addition to not being commutative) to be associative: (<i>x·y</i>)·<i>z</i> ≠ <i>x</i>·(<i>y·z</i>). However, all of these are <a href="http://en.m.wikipedia.org/wiki/Normed_division_algebra" title="Normed division algebra">normed division algebras</a> over <b>R</b>. By <a href="http://en.m.wikipedia.org/wiki/Hurwitz%27s_theorem_(normed_division_algebras)" title="Hurwitz's theorem (normed division algebras)" class="mw-redirect">Hurwitz's theorem</a> they are the only ones. The next step in the Cayley-Dickson construction, the <a href="http://en.m.wikipedia.org/wiki/Sedenion" title="Sedenion">sedenions</a> fail to have this structure.</p>
+<p>The Cayley-Dickson construction is closely related to the <a href="http://en.m.wikipedia.org/wiki/Regular_representation" title="Regular representation">regular representation</a> of <b>C</b>, thought of as an <b>R</b>-<a href="http://en.m.wikipedia.org/wiki/Algebra_(ring_theory)" title="Algebra (ring theory)">algebra</a> (an <b>R</b>-vector space with a multiplication), with respect to the basis 1, <i>i</i>. This means the following: the <b>R</b>-linear map</p>
+<dl>
+<dd><img class="tex" alt="\mathbb{C} \rightarrow \mathbb{C}, z \mapsto wz" src="http://upload.wikimedia.org/math/2/0/d/20d5c2857c0ae8263be75d11ad66f2e2.png"></dd>
+</dl>
+<p>for some fixed complex number <i>w</i> can be represented by a 2×2 matrix (once a basis has been chosen). With respect to the basis 1, <i>i</i>, this matrix is</p>
+<dl>
+<dd><img class="tex" alt="
+\begin{pmatrix}
+  \operatorname{Re}(w) &amp;   -\operatorname{Im}(w)  \\
+  \operatorname{Im}(w) &amp; \;\; \operatorname{Re}(w)
+\end{pmatrix}
+" src="http://upload.wikimedia.org/math/d/b/a/dba9f2483dc25523e1601189fd3a44ee.png"></dd>
+</dl>
+<p>i.e., the one mentioned in the section on matrix representation of complex numbers above. While this is a <a href="http://en.m.wikipedia.org/wiki/Linear_representation" title="Linear representation" class="mw-redirect">linear representation</a> of <b>C</b> in the <a href="http://en.m.wikipedia.org/wiki/2_%C3%97_2_real_matrices" title="2 × 2 real matrices">2 × 2 real matrices</a>, it is not the only one. Any matrix</p>
+<dl>
+<dd><img class="tex" alt="J = \begin{pmatrix}p &amp; q \\ r &amp; -p \end{pmatrix}, \quad p^2 + qr + 1 = 0" src="http://upload.wikimedia.org/math/0/a/1/0a1f6ae4dacb5caad6a1049af4957788.png"></dd>
+</dl>
+<p>has the property that its square is the negative of the identity matrix: <i>J</i><sup>2</sup> = −<i>I</i>. Then</p>
+<dl>
+<dd><img class="tex" alt="\{ z = a I + b J : a,b \in R \}" src="http://upload.wikimedia.org/math/a/0/d/a0d30dc63606ff347f1ca2a970d072b1.png"></dd>
+</dl>
+<p>is also isomorphic to the field <b>C</b>, and gives an alternative complex structure on <b>R</b><sup>2</sup>. This is generalized by the notion of a <a href="http://en.m.wikipedia.org/wiki/Linear_complex_structure" title="Linear complex structure">linear complex structure</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Hypercomplex_number" title="Hypercomplex number">Hypercomplex numbers</a> also generalize <b>R</b>, <b>C</b>, <b>H</b>, and <b>O</b>. For example this notion contains the <a href="http://en.m.wikipedia.org/wiki/Split-complex_number" title="Split-complex number">split-complex numbers</a>, which are elements of the ring <b>R</b>[<i>x</i>]/(<i>x</i><sup>2</sup> − 1) (as opposed to <b>R</b>[<i>x</i>]/(<i>x</i><sup>2</sup> + 1)). In this ring, the equation <i>a</i><sup>2</sup> = 1 has four solutions.</p>
+<p>The field <b>R</b> is the completion of <b>Q</b>, the field of <a href="http://en.m.wikipedia.org/wiki/Rational_number" title="Rational number">rational numbers</a>, with respect to the usual <a href="http://en.m.wikipedia.org/wiki/Absolute_value" title="Absolute value">absolute value</a> <a href="http://en.m.wikipedia.org/wiki/Metric_(mathematics)" title="Metric (mathematics)">metric</a>. Other choices of <a href="http://en.m.wikipedia.org/wiki/Metric_(mathematics)" title="Metric (mathematics)">metrics</a> on <b>Q</b> lead to the fields <b>Q</b><sub>p</sub> of <a href="http://en.m.wikipedia.org/wiki/P-adic_number" title="P-adic number"><i>p</i>-adic numbers</a> (for any <a href="http://en.m.wikipedia.org/wiki/Prime_number" title="Prime number">prime number</a> <i>p</i>), which are thereby analogous to <b>R</b>. There are no other nontrivial ways of completing <b>Q</b> than <b>R</b> and <b>Q</b><sub>p</sub>, by <a href="http://en.m.wikipedia.org/wiki/Ostrowski%27s_theorem" title="Ostrowski's theorem">Ostrowski's theorem</a>. The algebraic closure <img class="tex" alt="\overline {\mathbf{Q}_p}" src="http://upload.wikimedia.org/math/a/8/4/a843628316e6548cd23fda47f2ceaa3e.png"> of <b>Q</b><sub>p</sub> still carry a norm, but (unlike <b>C</b>) are not complete with respect to it. The completion <img class="tex" alt="\mathbf{C}_p" src="http://upload.wikimedia.org/math/a/f/4/af4a55996b3e20ea7274cbaf1b23a451.png"> of <img class="tex" alt="\overline {\mathbf{Q}_p}" src="http://upload.wikimedia.org/math/a/8/4/a843628316e6548cd23fda47f2ceaa3e.png"> turns out to be algebraically closed. This field is called <i>p</i>-adic complex numbers by analogy.</p>
+<p>The fields <b>R</b> and <b>Q</b><sub>p</sub> and their finite field extensions, including <b>C</b>, are <a href="http://en.m.wikipedia.org/wiki/Local_field" title="Local field">local fields</a>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/40px-Wikiversity-logo.svg.png" width="40" height="32" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/60px-Wikiversity-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/80px-Wikiversity-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikiversity has learning materials about <i><b><a href="http://en.wikiversity.org/wiki/Complex_Numbers" class="extiw" title="v:Complex Numbers">Complex Numbers</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Complex_numbers" class="extiw" title="commons:Category:Complex numbers">Complex numbers</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Circular_motion#Using_complex_numbers" title="Circular motion">Circular motion using complex numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_base_systems" title="Complex base systems">Complex base systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_geometry" title="Complex geometry">Complex geometry</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_square_root" title="Complex square root" class="mw-redirect">Complex square root</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain_coloring" title="Domain coloring">Domain coloring</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Eisenstein_integer" title="Eisenstein integer">Eisenstein integer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Euler%27s_identity" title="Euler's identity">Euler's identity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Gaussian_integer" title="Gaussian integer">Gaussian integer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mandelbrot_set" title="Mandelbrot set">Mandelbrot set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quaternion" title="Quaternion">Quaternion</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Riemann_sphere" title="Riemann sphere">Riemann sphere</a> (extended complex plane)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Root_of_unity" title="Root of unity">Root of unity</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-0">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-0">^</a></b></span> <span class="reference-text"><span class="citation book">Charles P. McKeague (2011). <a rel="nofollow" class="external text" href="http://books.google.de/books?id=etTbP0rItQ4C&amp;printsec=frontcover&amp;dq=editions:q0hGn6PkOxsC&amp;hl=de&amp;sa=X&amp;ei=PcYBT8XmDImq8APA9OC5Bg&amp;redir_esc=y#v=onepage&amp;q&amp;f=false"><i>Elementary Algebra</i></a>. Brooks/Cole. p. 524. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-8400-6421-9" title="Special:BookSources/978-0-8400-6421-9">978-0-8400-6421-9</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://books.google.de/books?id=etTbP0rItQ4C&amp;printsec=frontcover&amp;dq=editions:q0hGn6PkOxsC&amp;hl=de&amp;sa=X&amp;ei=PcYBT8XmDImq8APA9OC5Bg&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">http://books.google.de/books?id=etTbP0rItQ4C&amp;printsec=frontcover&amp;dq=editions:q0hGn6PkOxsC&amp;hl=de&amp;sa=X&amp;ei=PcYBT8XmDImq8APA9OC5Bg&amp;redir_esc=y#v=onepage&amp;q&amp;f=false</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Elementary+Algebra&amp;rft.aulast=Charles+P.+McKeague&amp;rft.au=Charles+P.+McKeague&amp;rft.date=2011&amp;rft.pages=p.%26nbsp%3B524&amp;rft.pub=Brooks%2FCole&amp;rft.isbn=978-0-8400-6421-9&amp;rft_id=http%3A%2F%2Fbooks.google.de%2Fbooks%3Fid%3DetTbP0rItQ4C%26printsec%3Dfrontcover%26dq%3Deditions%3Aq0hGn6PkOxsC%26hl%3Dde%26sa%3DX%26ei%3DPcYBT8XmDImq8APA9OC5Bg%26redir_esc%3Dy%23v%3Donepage%26q%26f%3Dfalse&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-1">^</a></b></span> <span class="reference-text"><a href="Complex_number#CITEREFBurton1995">Burton (1995</a>, p. 294)</span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-2">^</a></b></span> <span class="reference-text">Complex Variables (2nd Edition), M.R. Spiegel, S. Lipschutz, J.J. Schiller, D. Spellman, Schaum's Outline Series, Mc Graw Hill (USA), <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9780071615693" class="internal mw-magiclink-isbn">ISBN 978-0-07-161569-3</a></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFAufmannBarkerNation2007">Aufmann, Richard N.; Barker, Vernon C.; Nation, Richard D. (2007), <a rel="nofollow" class="external text" href="http://books.google.com/?id=g5j-cT-vg_wC"><i>College Algebra and Trigonometry</i></a> (6 ed.), Cengage Learning, p. 66, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-618-82515-0" title="Special:BookSources/0-618-82515-0">0-618-82515-0</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://books.google.com/?id=g5j-cT-vg_wC">http://books.google.com/?id=g5j-cT-vg_wC</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=College+Algebra+and+Trigonometry&amp;rft.aulast=Aufmann&amp;rft.aufirst=Richard+N.&amp;rft.au=Aufmann%2C%26%2332%3BRichard+N.&amp;rft.au=Barker%2C%26%2332%3BVernon+C.&amp;rft.au=Nation%2C%26%2332%3BRichard+D.&amp;rft.date=2007&amp;rft.pages=p.%26nbsp%3B66&amp;rft.edition=6&amp;rft.pub=Cengage+Learning&amp;rft.isbn=0-618-82515-0&amp;rft_id=http%3A%2F%2Fbooks.google.com%2F%3Fid%3Dg5j-cT-vg_wC&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=g5j-cT-vg_wC&amp;pg=PA66">Chapter P, p. 66</a></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-4">^</a></b></span> <span class="reference-text"><a href="Complex_number#CITEREFKatz2004">Katz (2004</a>, §9.1.4)</span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFAbramowitzStegun1964">Abramowitz, Milton; Stegun, Irene A. (1964), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=MtU8uP7XMvoC"><i>Handbook of mathematical functions with formulas, graphs, and mathematical tables</i></a>, Courier Dover Publications, p. 17, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-486-61272-4" title="Special:BookSources/0-486-61272-4">0-486-61272-4</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://books.google.com/books?id=MtU8uP7XMvoC">http://books.google.com/books?id=MtU8uP7XMvoC</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Handbook+of+mathematical+functions+with+formulas%2C+graphs%2C+and+mathematical+tables&amp;rft.aulast=Abramowitz&amp;rft.aufirst=Milton&amp;rft.au=Abramowitz%2C%26%2332%3BMilton&amp;rft.au=Stegun%2C%26%2332%3BIrene+A.&amp;rft.date=1964&amp;rft.pages=p.%26nbsp%3B17&amp;rft.pub=Courier+Dover+Publications&amp;rft.isbn=0-486-61272-4&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DMtU8uP7XMvoC&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>, <a rel="nofollow" class="external text" href="http://www.math.sfu.ca/~cbm/aands/page_17.htm">Section 3.7.26, p. 17</a></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFCooke2008">Cooke, Roger (2008), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=lUcTsYopfhkC"><i>Classical algebra: its nature, origins, and uses</i></a>, John Wiley and Sons, p. 59, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-470-25952-3" title="Special:BookSources/0-470-25952-3">0-470-25952-3</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://books.google.com/books?id=lUcTsYopfhkC">http://books.google.com/books?id=lUcTsYopfhkC</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Classical+algebra%3A+its+nature%2C+origins%2C+and+uses&amp;rft.aulast=Cooke&amp;rft.aufirst=Roger&amp;rft.au=Cooke%2C%26%2332%3BRoger&amp;rft.date=2008&amp;rft.pages=p.%26nbsp%3B59&amp;rft.pub=John+Wiley+and+Sons&amp;rft.isbn=0-470-25952-3&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DlUcTsYopfhkC&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=lUcTsYopfhkC&amp;pg=PA59">Extract: page 59</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFKasana2005">Kasana, H.S. (2005), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=rFhiJqkrALIC"><i>Complex Variables: Theory And Applications</i></a> (2nd ed.), PHI Learning Pvt. Ltd, p. 14, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/81-203-2641-5" title="Special:BookSources/81-203-2641-5">81-203-2641-5</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://books.google.com/books?id=rFhiJqkrALIC">http://books.google.com/books?id=rFhiJqkrALIC</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+Variables%3A+Theory+And+Applications&amp;rft.aulast=Kasana&amp;rft.aufirst=H.S.&amp;rft.au=Kasana%2C%26%2332%3BH.S.&amp;rft.date=2005&amp;rft.pages=p.%26nbsp%3B14&amp;rft.edition=2nd&amp;rft.pub=PHI+Learning+Pvt.+Ltd&amp;rft.isbn=81-203-2641-5&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DrFhiJqkrALIC&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=rFhiJqkrALIC&amp;pg=PA14">Extract of chapter 1, page 14</a></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFNilssonRiedel2008">Nilsson, James William; Riedel, Susan A. (2008), <a rel="nofollow" class="external text" href="http://books.google.com/books?id=sxmM8RFL99wC"><i>Electric circuits</i></a> (8th ed.), Prentice Hall, p. 338, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-13-198925-1" title="Special:BookSources/0-13-198925-1">0-13-198925-1</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://books.google.com/books?id=sxmM8RFL99wC">http://books.google.com/books?id=sxmM8RFL99wC</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Electric+circuits&amp;rft.aulast=Nilsson&amp;rft.aufirst=James+William&amp;rft.au=Nilsson%2C%26%2332%3BJames+William&amp;rft.au=Riedel%2C%26%2332%3BSusan+A.&amp;rft.date=2008&amp;rft.pages=p.%26nbsp%3B338&amp;rft.edition=8th&amp;rft.pub=Prentice+Hall&amp;rft.isbn=0-13-198925-1&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DsxmM8RFL99wC&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>, <a rel="nofollow" class="external text" href="http://books.google.com/books?id=sxmM8RFL99wC&amp;pg=PA338">Chapter 9, page 338</a></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-9">^</a></b></span> <span class="reference-text">Electromagnetism (2nd edition), I.S. Grant, W.R. Phillips, Manchester Physics Series, 2008 <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0471927120" class="internal mw-magiclink-isbn">ISBN 0-471-92712-0</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFKalman2008a">Kalman, Dan (2008a), <a rel="nofollow" class="external text" href="http://mathdl.maa.org/mathDL/22/?pa=content&amp;sa=viewDocument&amp;nodeId=3338&amp;pf=1">"An Elementary Proof of Marden's Theorem"</a>, <i><a href="http://en.m.wikipedia.org/wiki/American_Mathematical_Monthly" title="American Mathematical Monthly">The American Mathematical Monthly</a></i> <b>115</b>: 330–338, <a href="http://en.m.wikipedia.org/wiki/International_Standard_Serial_Number" title="International Standard Serial Number">ISSN</a> <a rel="nofollow" class="external text" href="http://www.worldcat.org/issn/0002-9890">0002-9890</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://mathdl.maa.org/mathDL/22/?pa=content&amp;sa=viewDocument&amp;nodeId=3338&amp;pf=1">http://mathdl.maa.org/mathDL/22/?pa=content&amp;sa=viewDocument&amp;nodeId=3338&amp;pf=1</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=An+Elementary+Proof+of+Marden%27s+Theorem&amp;rft.jtitle=%5B%5BAmerican+Mathematical+Monthly%7CThe+American+Mathematical+Monthly%5D%5D&amp;rft.aulast=Kalman&amp;rft.aufirst=Dan&amp;rft.au=Kalman%2C%26%2332%3BDan&amp;rft.date=2008a&amp;rft.volume=115&amp;rft.pages=330%E2%80%93338&amp;rft.issn=0002-9890&amp;rft_id=http%3A%2F%2Fmathdl.maa.org%2FmathDL%2F22%2F%3Fpa%3Dcontent%26sa%3DviewDocument%26nodeId%3D3338%26pf%3D1&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFKalman2008b">Kalman, Dan (2008b), <a rel="nofollow" class="external text" href="http://mathdl.maa.org/mathDL/4/?pa=content&amp;sa=viewDocument&amp;nodeId=1663">"The Most Marvelous Theorem in Mathematics"</a>, <i><a rel="nofollow" class="external text" href="http://mathdl.maa.org/mathDL/4/">Journal of Online Mathematics and its Applications</a></i><span class="printonly">, <a rel="nofollow" class="external free" href="http://mathdl.maa.org/mathDL/4/?pa=content&amp;sa=viewDocument&amp;nodeId=1663">http://mathdl.maa.org/mathDL/4/?pa=content&amp;sa=viewDocument&amp;nodeId=1663</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The+Most+Marvelous+Theorem+in+Mathematics&amp;rft.jtitle=%5Bhttp%3A%2F%2Fmathdl.maa.org%2FmathDL%2F4%2F+Journal+of+Online+Mathematics+and+its+Applications%5D&amp;rft.aulast=Kalman&amp;rft.aufirst=Dan&amp;rft.au=Kalman%2C%26%2332%3BDan&amp;rft.date=2008b&amp;rft_id=http%3A%2F%2Fmathdl.maa.org%2FmathDL%2F4%2F%3Fpa%3Dcontent%26sa%3DviewDocument%26nodeId%3D1663&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation book">Nahin, Paul J. (2007). <a rel="nofollow" class="external text" href="http://mathforum.org/kb/thread.jspa?forumID=149&amp;threadID=383188&amp;messageID=1181284"><i>An Imaginary Tale: The Story of <img class="tex" alt="\scriptstyle \sqrt {-1}" src="http://upload.wikimedia.org/math/f/a/f/faf66ca0b01ef05284f75eb5b6445977.png"></i></a>. <a href="http://en.m.wikipedia.org/wiki/Princeton_University_Press" title="Princeton University Press">Princeton University Press</a>. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-691-12798-9" title="Special:BookSources/978-0-691-12798-9">978-0-691-12798-9</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://mathforum.org/kb/thread.jspa?forumID=149&amp;threadID=383188&amp;messageID=1181284">http://mathforum.org/kb/thread.jspa?forumID=149&amp;threadID=383188&amp;messageID=1181284</a></span><span class="reference-accessdate">. Retrieved 20 April 2011</span>.</span><span class="tex"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-13">^</a></b></span> <span class="reference-text">In modern notation, Tartaglia's solution is based on expanding the cube of the sum of two cube roots: <img class="tex" alt="\left(\sqrt[3]{u} + \sqrt[3]{v}\right)^3 = 3 \sqrt[3]{uv} \left(\sqrt[3]{u} + \sqrt[3]{v}\right) + u + v" src="http://upload.wikimedia.org/math/5/a/2/5a232bf5fa1ce1247bc14b4a3a17e598.png"> With <img class="tex" alt="x = \sqrt[3]{u} + \sqrt[3]{v}" src="http://upload.wikimedia.org/math/f/a/a/faa100ad3eb7a2cc8fb7d885605e231b.png">, <img class="tex" alt="p = 3 \sqrt[3]{uv}" src="http://upload.wikimedia.org/math/9/4/3/943c7042e6e8d1fc3abf0dfe9df9df5b.png">, <img class="tex" alt="q = u + v" src="http://upload.wikimedia.org/math/b/6/7/b677fa5a3fa0321eb44a554a81637ba5.png">, <i>u</i> and <i>v</i> can be expressed in terms of <i>p</i> and <i>q</i> as <img class="tex" alt="u = q/2 + \sqrt{(q/2)^2-(p/3)^3}" src="http://upload.wikimedia.org/math/9/c/b/9cbe88c6bc19084ef45d86ce277435b0.png"> and <img class="tex" alt="v = q/2 - \sqrt{(q/2)^2-(p/3)^3}" src="http://upload.wikimedia.org/math/3/e/8/3e8ab586dca861da06bd9f735da59d24.png">, respectively. Therefore, <img class="tex" alt="x = \sqrt[3]{q/2 + \sqrt{(q/2)^2-(p/3)^3}} + \sqrt[3]{q/2 - \sqrt{(q/2)^2-(p/3)^3}}" src="http://upload.wikimedia.org/math/a/8/0/a80c9a322a0793c97824edd09480c1da.png">. When <img class="tex" alt="(q/2)^2-(p/3)^3" src="http://upload.wikimedia.org/math/d/a/5/da541a175658d766eebd19eaf0002371.png"> is negative (casus irreducibilis), the second cube root should be regarded as the complex conjugate of the first one.</span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-14">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFDescartes1954"><a href="http://en.m.wikipedia.org/wiki/Ren%C3%A9_Descartes" title="René Descartes">Descartes, René</a> (1954) [1637], <a rel="nofollow" class="external text" href="http://www.gutenberg.org/ebooks/26400"><i>La Géométrie | The Geometry of Rene Descartes with a facsimile of the first edition</i></a>, <a href="http://en.m.wikipedia.org/wiki/Dover_Publications" title="Dover Publications">Dover Publications</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-486-60068-8" title="Special:BookSources/0-486-60068-8">0-486-60068-8</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.gutenberg.org/ebooks/26400">http://www.gutenberg.org/ebooks/26400</a></span><span class="reference-accessdate">, retrieved 20 April 2011</span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=La+G%C3%A9om%C3%A9trie+%26%23124%3B+The+Geometry+of+Rene+Descartes+with+a+facsimile+of+the+first+edition&amp;rft.aulast=Descartes&amp;rft.aufirst=Ren%C3%A9&amp;rft.au=Descartes%2C%26%2332%3BRen%C3%A9&amp;rft.date=1954&amp;rft.pub=%5B%5BDover+Publications%5D%5D&amp;rft.isbn=0-486-60068-8&amp;rft_id=http%3A%2F%2Fwww.gutenberg.org%2Febooks%2F26400&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="Complex_number#cite_ref-15">^</a></b></span> <span class="reference-text"><span class="citation" id="CITEREFHardyWright2000">Hardy, G. H.; Wright, E. M. (2000) [1938], <i>An Introduction to the Theory of Numbers</i>, <a href="http://en.m.wikipedia.org/wiki/Oxford_University_Press" title="Oxford University Press">OUP Oxford</a>, p. 189 (fourth edition), <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-19-921986-9" title="Special:BookSources/0-19-921986-9">0-19-921986-9</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=An+Introduction+to+the+Theory+of+Numbers&amp;rft.aulast=Hardy&amp;rft.aufirst=G.+H.&amp;rft.au=Hardy%2C%26%2332%3BG.+H.&amp;rft.au=Wright%2C%26%2332%3BE.+M.&amp;rft.date=2000&amp;rft.pages=p.%26nbsp%3B189+%28fourth+edition%29&amp;rft.pub=%5B%5BOxford+University+Press%7COUP+Oxford%5D%5D&amp;rft.isbn=0-19-921986-9&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<h3> <span class="mw-headline" id="Mathematical_references">Mathematical references</span>
+</h3>
+<ul>
+<li>
+<span class="citation" id="CITEREFAhlfors1979"><a href="http://en.m.wikipedia.org/wiki/Lars_Ahlfors" title="Lars Ahlfors">Ahlfors, Lars</a> (1979), <i>Complex analysis</i> (3rd ed.), McGraw-Hill, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-07-000657-7" title="Special:BookSources/978-0-07-000657-7">978-0-07-000657-7</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Complex+analysis&amp;rft.aulast=Ahlfors&amp;rft.aufirst=Lars&amp;rft.au=Ahlfors%2C%26%2332%3BLars&amp;rft.date=1979&amp;rft.edition=3rd&amp;rft.pub=McGraw-Hill&amp;rft.isbn=978-0-07-000657-7&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFConway1986">Conway, John B. (1986), <i>Functions of One Complex Variable I</i>, Springer, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-387-90328-3" title="Special:BookSources/0-387-90328-3">0-387-90328-3</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Functions+of+One+Complex+Variable+I&amp;rft.aulast=Conway&amp;rft.aufirst=John+B.&amp;rft.au=Conway%2C%26%2332%3BJohn+B.&amp;rft.date=1986&amp;rft.pub=Springer&amp;rft.isbn=0-387-90328-3&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFJoshi1989">Joshi, Kapil D. (1989), <i>Foundations of Discrete Mathematics</i>, New York: <a href="http://en.m.wikipedia.org/wiki/John_Wiley_%26_Sons" title="John Wiley &amp; Sons">John Wiley &amp; Sons</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-470-21152-6" title="Special:BookSources/978-0-470-21152-6">978-0-470-21152-6</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Foundations+of+Discrete+Mathematics&amp;rft.aulast=Joshi&amp;rft.aufirst=Kapil+D.&amp;rft.au=Joshi%2C%26%2332%3BKapil+D.&amp;rft.date=1989&amp;rft.place=New+York&amp;rft.pub=%5B%5BJohn+Wiley+%26+Sons%5D%5D&amp;rft.isbn=978-0-470-21152-6&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFPedoe1988"><a href="http://en.m.wikipedia.org/wiki/Dan_Pedoe" title="Dan Pedoe" class="mw-redirect">Pedoe, Dan</a> (1988), <i>Geometry: A comprehensive course</i>, Dover, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-486-65812-0" title="Special:BookSources/0-486-65812-0">0-486-65812-0</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Geometry%3A+A+comprehensive+course&amp;rft.aulast=Pedoe&amp;rft.aufirst=Dan&amp;rft.au=Pedoe%2C%26%2332%3BDan&amp;rft.date=1988&amp;rft.pub=Dover&amp;rft.isbn=0-486-65812-0&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFPressTeukolskyVetterlingFlannery2007">Press, WH; Teukolsky, SA; Vetterling, WT; Flannery, BP (2007), <a rel="nofollow" class="external text" href="http://apps.nrbook.com/empanel/index.html?pg=225">"Section 5.5 Complex Arithmetic"</a>, <i>Numerical Recipes: The Art of Scientific Computing</i> (3rd ed.), New York: Cambridge University Press, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-521-88068-8" title="Special:BookSources/978-0-521-88068-8">978-0-521-88068-8</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://apps.nrbook.com/empanel/index.html?pg=225">http://apps.nrbook.com/empanel/index.html?pg=225</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Section+5.5+Complex+Arithmetic&amp;rft.atitle=Numerical+Recipes%3A+The+Art+of+Scientific+Computing&amp;rft.aulast=Press&amp;rft.aufirst=WH&amp;rft.au=Press%2C%26%2332%3BWH&amp;rft.au=Teukolsky%2C%26%2332%3BSA&amp;rft.au=Vetterling%2C%26%2332%3BWT&amp;rft.au=Flannery%2C%26%2332%3BBP&amp;rft.date=2007&amp;rft.edition=3rd&amp;rft.place=New+York&amp;rft.pub=Cambridge+University+Press&amp;rft.isbn=978-0-521-88068-8&amp;rft_id=&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFSolomentsev2001">Solomentsev, E.D. (2001), <a rel="nofollow" class="external text" href="http://www.encyclopediaofmath.org/index.php?title=c/c024140">"Complex number"</a>, in Hazewinkel, Michiel, <i><a href="http://en.m.wikipedia.org/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, <a href="http://en.m.wikipedia.org/wiki/Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4">978-1-55608-010-4</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.encyclopediaofmath.org/index.php?title=c/c024140">http://www.encyclopediaofmath.org/index.php?title=c/c024140</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Complex+number&amp;rft.atitle=%5B%5BEncyclopedia+of+Mathematics%5D%5D&amp;rft.aulast=Solomentsev&amp;rft.aufirst=E.D.&amp;rft.au=Solomentsev%2C%26%2332%3BE.D.&amp;rft.date=2001&amp;rft.pub=%5B%5BSpringer+Science%2BBusiness+Media%7CSpringer%5D%5D&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h3> <span class="mw-headline" id="Historical_references">Historical references</span>
+</h3>
+<ul>
+<li>
+<span class="citation" id="CITEREFBurton1995">Burton, David M. (1995), <i>The History of Mathematics</i> (3rd ed.), New York: <a href="http://en.m.wikipedia.org/wiki/McGraw-Hill" title="McGraw-Hill">McGraw-Hill</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-07-009465-9" title="Special:BookSources/978-0-07-009465-9">978-0-07-009465-9</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+History+of+Mathematics&amp;rft.aulast=Burton&amp;rft.aufirst=David+M.&amp;rft.au=Burton%2C%26%2332%3BDavid+M.&amp;rft.date=1995&amp;rft.edition=3rd&amp;rft.place=New+York&amp;rft.pub=%5B%5BMcGraw-Hill%5D%5D&amp;rft.isbn=978-0-07-009465-9&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFKatz2004">Katz, Victor J. (2004), <i>A History of Mathematics, Brief Version</i>, <a href="http://en.m.wikipedia.org/wiki/Addison-Wesley" title="Addison-Wesley">Addison-Wesley</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-321-16193-2" title="Special:BookSources/978-0-321-16193-2">978-0-321-16193-2</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+History+of+Mathematics%2C+Brief+Version&amp;rft.aulast=Katz&amp;rft.aufirst=Victor+J.&amp;rft.au=Katz%2C%26%2332%3BVictor+J.&amp;rft.date=2004&amp;rft.pub=%5B%5BAddison-Wesley%5D%5D&amp;rft.isbn=978-0-321-16193-2&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation" id="CITEREFNahin1998">Nahin, Paul J. (1998), <i>An Imaginary Tale: The Story of <img class="tex" alt="\scriptstyle\sqrt{-1}" src="http://upload.wikimedia.org/math/f/a/f/faf66ca0b01ef05284f75eb5b6445977.png"></i> (hardcover ed.), Princeton University Press, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-691-02795-1" title="Special:BookSources/0-691-02795-1">0-691-02795-1</a></span><span class="tex"><span style="display: none;"> </span></span>
+<dl>
+<dd>A gentle introduction to the history of complex numbers and the beginnings of complex analysis.</dd>
+</dl>
+</li>
+<li>
+<span class="citation" id="CITEREFH.-D._Ebbinghaus_...1991">H.-D. Ebbinghaus ... (1991), <i>Numbers</i> (hardcover ed.), Springer, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-387-97497-0" title="Special:BookSources/0-387-97497-0">0-387-97497-0</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Numbers&amp;rft.aulast=H.-D.+Ebbinghaus+...&amp;rft.au=H.-D.+Ebbinghaus+...&amp;rft.au=H.-D.+Ebbinghaus%2C+H.+Hermes%2C+F.+Hirzebruch%2C+M.+Koecher%2C+K.+Mainzer%2C+J.+Neukirch%2C+A.+Prestel%2C+R.+Remmert&amp;rft.date=1991&amp;rft.edition=hardcover&amp;rft.pub=Springer&amp;rft.isbn=0-387-97497-0&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+<dl>
+<dd>An advanced perspective on the historical development of the concept of number.</dd>
+</dl>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<i>The Road to Reality: A Complete Guide to the Laws of the Universe</i>, by <a href="http://en.m.wikipedia.org/wiki/Roger_Penrose" title="Roger Penrose">Roger Penrose</a>; Alfred A. Knopf, 2005; <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0679454438" class="internal mw-magiclink-isbn">ISBN 0-679-45443-8</a>. Chapters 4-7 in particular deal extensively (and enthusiastically) with complex numbers.</li>
+<li>
+<i>Unknown Quantity: A Real and Imaginary History of Algebra</i>, by John Derbyshire; Joseph Henry Press; <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/030909657X" class="internal mw-magiclink-isbn">ISBN 0-309-09657-X</a> (hardcover 2006). A very readable history with emphasis on solving polynomial equations and the structures of modern algebra.</li>
+<li>
+<i>Visual Complex Analysis</i>, by <a href="http://en.m.wikipedia.org/wiki/Tristan_Needham" title="Tristan Needham">Tristan Needham</a>; Clarendon Press; <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0198534477" class="internal mw-magiclink-isbn">ISBN 0-19-853447-7</a> (hardcover, 1997). History of complex numbers and complex analysis with compelling and useful visual interpretations.</li>
+<li>Conway, John B., <i>Functions of One Complex Variable I</i> (Graduate Texts in Mathematics), Springer; 2 edition (September 12, 2005). <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0387903283" class="internal mw-magiclink-isbn">ISBN 0-387-90328-3</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Calculus/Complex_numbers" class="extiw" title="wikibooks:Calculus/Complex numbers">Calculus/Complex numbers</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<span class="citation" id="CITEREFHazewinkel2001">Hazewinkel, Michiel, ed. (2001), <a rel="nofollow" class="external text" href="http://www.encyclopediaofmath.org/index.php?title=p/c024140">"Complex number"</a>, <i><a href="http://en.m.wikipedia.org/wiki/Encyclopedia_of_Mathematics" title="Encyclopedia of Mathematics">Encyclopedia of Mathematics</a></i>, <a href="http://en.m.wikipedia.org/wiki/Springer_Science%2BBusiness_Media" title="Springer Science+Business Media">Springer</a>, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-1-55608-010-4" title="Special:BookSources/978-1-55608-010-4">978-1-55608-010-4</a><span class="printonly">, <a rel="nofollow" class="external free" href="http://www.encyclopediaofmath.org/index.php?title=p/c024140">http://www.encyclopediaofmath.org/index.php?title=p/c024140</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Complex+number&amp;rft.atitle=%5B%5BEncyclopedia+of+Mathematics%5D%5D&amp;rft.date=2001&amp;rft.pub=%5B%5BSpringer+Science%2BBusiness+Media%7CSpringer%5D%5D&amp;rft.isbn=978-1-55608-010-4&amp;rft_id=&amp;rfr_id=info:sid/en.wikipedia.org:Complex_number"><span style="display: none;"> </span></span>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.khanacademy.org/math/algebra/complex-numbers">Introduction to Complex Numbers from Khan Academy</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.bbc.co.uk/programmes/b00tt6b2">Imaginary Numbers</a> on <a href="http://en.m.wikipedia.org/wiki/In_Our_Time_(BBC_Radio_4)" title="In Our Time (BBC Radio 4)"><i>In Our Time</i></a> at the <a href="http://en.m.wikipedia.org/wiki/BBC" title="BBC">BBC</a>.</li>
+</ul>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://mathdl.maa.org/convergence/1/?pa=content&amp;sa=viewDocument&amp;nodeId=640&amp;bodyId=1038">Euler's work on Complex Roots of Polynomials</a> at Convergence. MAA Mathematical Sciences Digital Library.</li>
+<li><a rel="nofollow" class="external text" href="http://mathforum.org/johnandbetty/">John and Betty's Journey Through Complex Numbers</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.dimensions-math.org/Dim_regarder_E.htm">Dimensions: a math film.</a> Chapter 5 presents an introduction to complex arithmetic and <a href="http://en.m.wikipedia.org/wiki/Stereographic_projection" title="Stereographic projection">stereographic projection</a>. Chapter 6 discusses transformations of the complex plane, <a href="http://en.m.wikipedia.org/wiki/Julia_set" title="Julia set">Julia sets</a>, and the <a href="http://en.m.wikipedia.org/wiki/Mandelbrot_set" title="Mandelbrot set">Mandelbrot set</a>.</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Number_systems" title="Template:Number systems"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Number_systems" title="Template talk:Number systems"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Number_systems&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Number_system" title="Number system" class="mw-redirect">Number systems</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";line-height:1.2em;;"><a href="http://en.m.wikipedia.org/wiki/Countable_set" title="Countable set">Countable sets</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Natural_number" title="Natural number">Natural numbers</a> (<img class="tex" alt="\scriptstyle\mathbb{N}" src="http://upload.wikimedia.org/math/6/f/8/6f8608a3b5fde50a63beda7633a8ce73.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">Integers</a> (<img class="tex" alt="\scriptstyle\mathbb{Z}" src="http://upload.wikimedia.org/math/5/6/2/562cdc624b2d81af78bfc9e4866a44eb.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Rational_number" title="Rational number">Rational numbers</a> (<img class="tex" alt="\scriptstyle\mathbb{Q}" src="http://upload.wikimedia.org/math/9/e/3/9e380593b0c0b8c670a83ac53f995138.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Algebraic_number" title="Algebraic number">Algebraic numbers</a> (<img class="tex" alt="\scriptstyle\overline{\mathbb{Q}}" src="http://upload.wikimedia.org/math/f/b/a/fba2a69138fd11c79f8d5aab0ef16999.png">)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ring_of_periods" title="Ring of periods">Periods</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computable_number" title="Computable number">Computable numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Arithmetical_number" title="Arithmetical number" class="mw-redirect">Arithmetical numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";line-height:1.2em;;">Real numbers and<br>
+their extensions</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Real_number" title="Real number">Real numbers</a> (<img class="tex" alt="\scriptstyle\mathbb{R}" src="http://upload.wikimedia.org/math/8/3/9/8391582a36371405fd2e90d50127651c.png">)</li>
+<li>
+<strong class="selflink">Complex numbers</strong> (<img class="tex" alt="\scriptstyle\mathbb{C}" src="http://upload.wikimedia.org/math/e/7/8/e7887a11d173ff6b8e91b77275c4a62e.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Quaternion" title="Quaternion">Quaternions</a> (<img class="tex" alt="\scriptstyle\mathbb{H}" src="http://upload.wikimedia.org/math/a/9/4/a94a998049071ef0d7e42a64e96768f4.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Octonion" title="Octonion">Octonions</a> (<img class="tex" alt="\scriptstyle\mathbb{O}" src="http://upload.wikimedia.org/math/9/4/d/94d78ea63383ccea41b99b4e93b53ec3.png">)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Sedenion" title="Sedenion">Sedenions</a> (<img class="tex" alt="\scriptstyle\mathbb{S}" src="http://upload.wikimedia.org/math/f/4/4/f44bcdf3323c687ab2c36b5a72926f5e.png">)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cayley%E2%80%93Dickson_construction" title="Cayley–Dickson construction">Cayley–Dickson construction</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dual_number" title="Dual number">Dual numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hypercomplex_number" title="Hypercomplex number">Hypercomplex numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Superreal_number" title="Superreal number">Superreal numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Irrational_number" title="Irrational number">Irrational numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transcendental_number" title="Transcendental number">Transcendental numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hyperreal_number" title="Hyperreal number">Hyperreal numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Surreal_number" title="Surreal number">Surreal numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";line-height:1.2em;;">Other number systems</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Cardinal_number" title="Cardinal number">Cardinal numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ordinal_number" title="Ordinal number">Ordinal numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/P-adic_number" title="P-adic number"><i>p</i>-adic numbers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Supernatural_numbers" title="Supernatural numbers">Supernatural numbers</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 95 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Komplekse_getal" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://am.m.wikipedia.org/wiki/%E1%8B%A8%E1%8A%A0%E1%89%85%E1%8C%A3%E1%8C%AB_%E1%89%81%E1%8C%A5%E1%88%AD" lang="am" hreflang="am">አማርኛ</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D8%B9%D8%AF%D8%AF_%D9%85%D8%B1%D9%83%D8%A8" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://an.m.wikipedia.org/wiki/Numero_complexo" lang="an" hreflang="an">aragonés</a></li><li><a href="http://as.m.wikipedia.org/wiki/%E0%A6%9C%E0%A6%9F%E0%A6%BF%E0%A6%B2_%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE" lang="as" hreflang="as">অসমীয়া</a></li><li><a href="http://az.m.wikipedia.org/wiki/Kompleks_%C9%99d%C9%99dl%C9%99r" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bn.m.wikipedia.org/wiki/%E0%A6%9C%E0%A6%9F%E0%A6%BF%E0%A6%B2_%E0%A6%B8%E0%A6%82%E0%A6%96%E0%A7%8D%E0%A6%AF%E0%A6%BE" lang="bn" hreflang="bn">বাংলা</a></li><li><a href="http://zh-min-nan.m.wikipedia.org/wiki/Ho%CC%8Dk-cha%CC%8Dp-s%C3%B2%CD%98" lang="zh-min-nan" hreflang="zh-min-nan">Bân-lâm-gú</a></li><li><a href="http://be.m.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D1%8B_%D0%BB%D1%96%D0%BA" lang="be" hreflang="be">беларуская</a></li><li><a href="http://be-x-old.m.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D1%8B_%D0%BB%D1%96%D0%BA" lang="be-x-old" hreflang="be-x-old">беларуская (тарашкевіца)‎</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D0%BE_%D1%87%D0%B8%D1%81%D0%BB%D0%BE" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Kompleksan_broj" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Nombre_complex" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Komplexn%C3%AD_%C4%8D%C3%ADslo" lang="cs" hreflang="cs">česky</a></li><li><a href="http://cy.m.wikipedia.org/wiki/Rhif_cymhlyg" lang="cy" hreflang="cy">Cymraeg</a></li><li><a href="http://da.m.wikipedia.org/wiki/Komplekse_tal" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Komplexe_Zahl" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Kompleksarv" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%9C%CE%B9%CE%B3%CE%B1%CE%B4%CE%B9%CE%BA%CF%8C%CF%82_%CE%B1%CF%81%CE%B9%CE%B8%CE%BC%CF%8C%CF%82" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://eml.m.wikipedia.org/wiki/N%C3%B3mmer_cumpl%C3%AAs" lang="eml" hreflang="eml">emiliàn e rumagnòl</a></li><li><a href="http://es.m.wikipedia.org/wiki/N%C3%BAmero_complejo" lang="es" hreflang="es">español</a></li><li><a href="http://eo.m.wikipedia.org/wiki/Kompleksa_nombro" lang="eo" hreflang="eo">Esperanto</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Zenbaki_konplexu" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%B9%D8%AF%D8%AF_%D9%85%D8%AE%D8%AA%D9%84%D8%B7" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fo.m.wikipedia.org/wiki/Fl%C3%B8kjutal" lang="fo" hreflang="fo">føroyskt</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Nombre_complexe" lang="fr" hreflang="fr">français</a></li><li><a href="http://fy.m.wikipedia.org/wiki/Kompleks_getal" lang="fy" hreflang="fy">Frysk</a></li><li><a href="http://ga.m.wikipedia.org/wiki/Uimhir_choimpl%C3%A9ascach" lang="ga" hreflang="ga">Gaeilge</a></li><li><a href="http://gl.m.wikipedia.org/wiki/N%C3%BAmero_complexo" lang="gl" hreflang="gl">galego</a></li><li><a href="http://gan.m.wikipedia.org/wiki/%E8%A4%87%E6%95%B8" lang="gan" hreflang="gan">贛語</a></li><li><a href="http://xal.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D0%BD_%D1%82%D0%BE%D0%B9%D0%B3" lang="xal" hreflang="xal">хальмг</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%B3%B5%EC%86%8C%EC%88%98" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%B8%E0%A4%AE%E0%A4%BF%E0%A4%B6%E0%A5%8D%E0%A4%B0_%E0%A4%B8%E0%A4%82%E0%A4%96%E0%A5%8D%E0%A4%AF%E0%A4%BE" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Kompleksni_broj" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://id.m.wikipedia.org/wiki/Bilangan_kompleks" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://os.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BE%D0%BD_%D0%BD%D1%8B%D0%BC%C3%A6%D1%86" lang="os" hreflang="os">Ирон</a></li><li><a href="http://is.m.wikipedia.org/wiki/Tvinnt%C3%B6lur" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Numero_complesso" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%A1%D7%A4%D7%A8_%D7%9E%D7%A8%D7%95%D7%9B%D7%91" lang="he" hreflang="he">עברית</a></li><li><a href="http://ka.m.wikipedia.org/wiki/%E1%83%99%E1%83%9D%E1%83%9B%E1%83%9E%E1%83%9A%E1%83%94%E1%83%A5%E1%83%A1%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%A0%E1%83%98%E1%83%AA%E1%83%AE%E1%83%95%E1%83%98" lang="ka" hreflang="ka">ქართული</a></li><li><a href="http://kk.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D1%81%D0%B0%D0%BD" lang="kk" hreflang="kk">қазақша</a></li><li><a href="http://lo.m.wikipedia.org/wiki/%E0%BA%88%E0%BA%B3%E0%BA%99%E0%BA%A7%E0%BA%99%E0%BA%AA%E0%BA%BB%E0%BA%99" lang="lo" hreflang="lo">ລາວ</a></li><li><a href="http://la.m.wikipedia.org/wiki/Numerus_complexus" lang="la" hreflang="la">Latina</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Komplekss_skaitlis" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Kompleksinis_skai%C4%8Dius" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://jbo.m.wikipedia.org/wiki/relcimdyna%27u" lang="jbo" hreflang="jbo">Lojban</a></li><li><a href="http://lmo.m.wikipedia.org/wiki/N%C3%BCmar_cumpless" lang="lmo" hreflang="lmo">lumbaart</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Komplex_sz%C3%A1mok" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%BD_%D0%B1%D1%80%D0%BE%D1%98" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://mg.m.wikipedia.org/wiki/Isa_haro" lang="mg" hreflang="mg">Malagasy</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AE%E0%B4%BF%E0%B4%B6%E0%B5%8D%E0%B4%B0%E0%B4%B8%E0%B4%82%E0%B4%96%E0%B5%8D%E0%B4%AF" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Nombor_kompleks" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://my.m.wikipedia.org/wiki/%E1%80%80%E1%80%BD%E1%80%94%E1%80%BA%E1%80%95%E1%80%9C%E1%80%80%E1%80%BA%E1%80%85%E1%80%BA%E1%80%80%E1%80%AD%E1%80%94%E1%80%BA%E1%80%B8" lang="my" hreflang="my">မြန်မာဘာသာ</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Complex_getal" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E8%A4%87%E7%B4%A0%E6%95%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Komplekst_tall" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Komplekse_tal" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://oc.m.wikipedia.org/wiki/Nombre_compl%C3%A8xe" lang="oc" hreflang="oc">occitan</a></li><li><a href="http://pnb.m.wikipedia.org/wiki/%DA%A9%D9%85%D9%BE%D9%84%DB%8C%DA%A9%D8%B3_%D9%86%D9%85%D8%A8%D8%B1" lang="pnb" hreflang="pnb">پنجابی</a></li><li><a href="http://km.m.wikipedia.org/wiki/%E1%9E%85%E1%9F%86%E1%9E%93%E1%9E%BD%E1%9E%93%E1%9E%80%E1%9E%BB%E1%9F%86%E1%9E%95%E1%9F%92%E1%9E%9B%E1%9E%B7%E1%9E%85" lang="km" hreflang="km">ភាសាខ្មែរ</a></li><li><a href="http://pms.m.wikipedia.org/wiki/N%C3%B9mer_compless" lang="pms" hreflang="pms">Piemontèis</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Liczby_zespolone" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/N%C3%BAmero_complexo" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Num%C4%83r_complex" lang="ro" hreflang="ro">română</a></li><li><a href="http://rue.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D0%B5_%D1%87%D1%96%D1%81%D0%BB%D0%BE" lang="rue" hreflang="rue">русиньскый</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sah.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D0%B0%D1%85%D1%81%D0%B0%D0%B0%D0%BD" lang="sah" hreflang="sah">саха тыла</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Numrat_kompleks%C3%AB" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://scn.m.wikipedia.org/wiki/N%C3%B9mmuru_cumplessu" lang="scn" hreflang="scn">sicilianu</a></li><li><a href="http://si.m.wikipedia.org/wiki/%E0%B7%83%E0%B6%82%E0%B6%9A%E0%B7%93%E0%B6%BB%E0%B7%8A%E0%B6%AB_%E0%B7%83%E0%B6%82%E0%B6%9B%E0%B7%8A%E2%80%8D%E0%B6%BA%E0%B7%8F" lang="si" hreflang="si">සිංහල</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Complex_number" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Komplexn%C3%A9_%C4%8D%C3%ADslo" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Kompleksno_%C5%A1tevilo" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD_%D0%B1%D1%80%D0%BE%D1%98" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Kompleksan_broj" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Kompleksiluku" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Komplexa_tal" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tl.m.wikipedia.org/wiki/Masalimuot_na_bilang" lang="tl" hreflang="tl">Tagalog</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%9A%E0%AE%BF%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%B2%E0%AF%86%E0%AE%A3%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://tt.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81_%D1%81%D0%B0%D0%BD" lang="tt" hreflang="tt">татарча/tatarça</a></li><li><a href="http://te.m.wikipedia.org/wiki/%E0%B0%B8%E0%B0%82%E0%B0%95%E0%B1%80%E0%B0%B0%E0%B1%8D%E0%B0%A3_%E0%B0%B8%E0%B0%82%E0%B0%96%E0%B1%8D%E0%B0%AF%E0%B0%B2%E0%B1%81" lang="te" hreflang="te">తెలుగు</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%8B%E0%B9%89%E0%B8%AD%E0%B8%99" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Karma%C5%9F%C4%B1k_say%C4%B1" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BA%D1%81%D0%BD%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D9%85%D8%AE%D8%AA%D9%84%D8%B7_%D8%B9%D8%AF%D8%AF" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/S%E1%BB%91_ph%E1%BB%A9c" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://fiu-vro.m.wikipedia.org/wiki/Kompleksarv" lang="fiu-vro" hreflang="fiu-vro">Võro</a></li><li><a href="http://zh-classical.m.wikipedia.org/wiki/%E8%A4%87%E6%95%B8" lang="zh-classical" hreflang="zh-classical">文言</a></li><li><a href="http://vls.m.wikipedia.org/wiki/Complexe_getalln" lang="vls" hreflang="vls">West-Vlams</a></li><li><a href="http://war.m.wikipedia.org/wiki/Complex_number" lang="war" hreflang="war">Winaray</a></li><li><a href="http://yi.m.wikipedia.org/wiki/%D7%A7%D7%90%D7%9E%D7%A4%D7%9C%D7%A2%D7%A7%D7%A1%D7%A2_%D7%A6%D7%90%D7%9C" lang="yi" hreflang="yi">ייִדיש</a></li><li><a href="http://yo.m.wikipedia.org/wiki/N%E1%BB%8D%CC%81mb%C3%A0_t%C3%B3%E1%B9%A3%C3%B2ro" lang="yo" hreflang="yo">Yorùbá</a></li><li><a href="http://zh-yue.m.wikipedia.org/wiki/%E8%A4%87%E6%95%B8" lang="zh-yue" hreflang="zh-yue">粵語</a></li><li><a href="http://bat-smg.m.wikipedia.org/wiki/Kuompleks%C4%97nis_skaitlios" lang="bat-smg" hreflang="bat-smg">žemaitėška</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%A4%8D%E6%95%B0_(%E6%95%B0%E5%AD%A6)" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Complex_number&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Complex_number&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Complex+number&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

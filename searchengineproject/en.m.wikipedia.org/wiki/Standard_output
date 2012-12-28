@@ -1,0 +1,296 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Standard streams - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Standard streams","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Standard_streams" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Standard+streams"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Standard streams</h1>			<div class="dablink">This article is about standard I/O file descriptors.  For System V streams, see <a href="http://en.m.wikipedia.org/wiki/STREAMS" title="STREAMS">STREAMS</a>.</div>
+<table class="metadata plainlinks ambox ambox-style ambox-More_footnotes" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article includes a <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear because it has insufficient <a href="http://en.m.wikipedia.org/wiki/Wikipedia:INCITE" title="Wikipedia:INCITE" class="mw-redirect">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="http://en.m.wikipedia.org/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(March 2010)</i></small> </span></td>
+</tr></table><div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.m.wikipedia.org/wiki/File:Stdstreams-notitle.svg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Stdstreams-notitle.svg/220px-Stdstreams-notitle.svg.png" width="220" height="135" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/7/70/Stdstreams-notitle.svg/330px-Stdstreams-notitle.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/7/70/Stdstreams-notitle.svg/440px-Stdstreams-notitle.svg.png 2x"></a>
+<div class="thumbcaption">
+
+The standard streams for input, output, and error</div>
+</div>
+</div>
+<p>In <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, <b>standard streams</b> are preconnected input and output channels between a computer program and its environment (typically a <a href="http://en.m.wikipedia.org/wiki/Text_terminal" title="Text terminal" class="mw-redirect">text terminal</a>) when it begins execution. The three <a href="Input/output" title="Input/output">I/O</a> connections are called <b>standard input</b> (<b>stdin</b>), <b>standard output</b> (<b>stdout</b>) and <b>standard error</b> (<b>stderr</b>).</p>
+<h2> <span class="mw-headline" id="Background">Background</span></h2>
+<p>In most operating systems predating <a href="Unix" title="Unix">Unix</a>, programs had to explicitly connect to the appropriate input and output devices. OS-specific intricacies caused this to be an intimidating programming challenge. On many systems it was necessary to obtain control environment settings, access a local file table, determine the intended data set, and handle hardware correctly in the case of <a href="http://en.m.wikipedia.org/wiki/Card_reader" title="Card reader">card reader</a>, <a href="http://en.m.wikipedia.org/wiki/Magnetic_tape_drive" title="Magnetic tape drive" class="mw-redirect">magnetic tape drive</a>, <a href="http://en.m.wikipedia.org/wiki/Disk_drive" title="Disk drive" class="mw-redirect">disk drive</a>, <a href="http://en.m.wikipedia.org/wiki/Line_printer" title="Line printer">line printer</a>, card punch, or interactive terminal.</p>
+<p>One of Unix's several groundbreaking advances was <i>abstract devices</i>, which removed the need for a program to know or care what kind of devices it was communicating with. Older operating systems forced upon the programmer a record structure and frequently <a href="http://en.m.wikipedia.org/wiki/Orthogonal#Computer_science" title="Orthogonal" class="mw-redirect">non-orthogonal</a> data semantics and device control. Unix eliminated this complexity with the concept of a data stream: an ordered sequence of data bytes which can be read until the <a href="http://en.m.wikipedia.org/wiki/End-of-file" title="End-of-file">end of file</a>. A program may also write bytes as desired and need not (and can't easily) declare how many there will be, or how they will be grouped.</p>
+<p>Another Unix breakthrough was to automatically associate input and output by default — the program (and programmer) did absolutely nothing to establish input and output for a typical input-process-output program (unless it chose a different paradigm). In contrast, previous operating systems usually required some—often complex—<a href="http://en.m.wikipedia.org/wiki/Job_Control_Language" title="Job Control Language">job control language</a> to establish connections, or the equivalent burden had to be orchestrated by the program.</p>
+<p>Since Unix provided standard streams, the Unix <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> runtime environment was obligated to support it as well. As a result, most C runtime environments (and <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)#Related_languages" title="C (programming language)">C's descendants</a>), regardless of the operating system, provide equivalent functionality.</p>
+<h2> <span class="mw-headline" id="Standard_input_.28stdin.29">Standard input (stdin)</span></h2>
+<p>Standard input is data (often text) going into a program. The program requests data transfers by use of the <i>read</i> operation. Not all programs require input. For example, the <i><a href="http://en.m.wikipedia.org/wiki/Dir_(command)" title="Dir (command)">dir</a></i> or <i><a href="http://en.m.wikipedia.org/wiki/Ls" title="Ls">ls</a></i> program (which displays file names contained in a directory) performs its operation without any stream data input.</p>
+<p>Unless <a href="http://en.m.wikipedia.org/wiki/Redirection_(computing)" title="Redirection (computing)">redirected</a>, input is expected from the <a href="http://en.m.wikipedia.org/wiki/Keyboard_(computing)" title="Keyboard (computing)" class="mw-redirect">keyboard</a> which started the program.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/File_descriptor" title="File descriptor">file descriptor</a> for standard input is 0 (zero); the <a href="POSIX" title="POSIX">POSIX</a> <i>&lt;unistd.h&gt;</i> definition is <tt>STDIN_FILENO</tt>; the corresponding <i>&lt;stdio.h&gt;</i> variable is <tt>FILE* stdin</tt>; similarly, the <i>&lt;iostream&gt;</i> variable is <tt>std::cin</tt>.</p>
+<h2> <span class="mw-headline" id="Standard_output_.28stdout.29">Standard output (stdout)</span></h2>
+<p>Standard output is the stream where a program writes its output data. The program requests data transfer with the <i>write</i> operation. Not all programs generate output. For example the <i><a href="http://en.m.wikipedia.org/wiki/Rename_(computing)" title="Rename (computing)">file rename</a></i> command (variously called <i><a href="http://en.m.wikipedia.org/wiki/Mv" title="Mv">mv</a></i>, <i><a href="http://en.m.wikipedia.org/wiki/Move_(command)" title="Move (command)">move</a></i>, or <i>ren</i>) is silent on success.</p>
+<p>Unless <a href="http://en.m.wikipedia.org/wiki/Redirection_(Unix)" title="Redirection (Unix)" class="mw-redirect">redirected</a>, standard output is the <a href="http://en.m.wikipedia.org/wiki/Text_terminal" title="Text terminal" class="mw-redirect">text terminal</a> which initiated the program.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/File_descriptor" title="File descriptor">file descriptor</a> for standard output is 1 (one); the <a href="POSIX" title="POSIX">POSIX</a> <i>&lt;unistd.h&gt;</i> definition is <tt>STDOUT_FILENO</tt>; the corresponding <i>&lt;stdio.h&gt;</i> variable is <tt>FILE* stdout</tt>; similarly, the <i>&lt;iostream&gt;</i> variable is <tt>std::cout</tt>.</p>
+<h2> <span class="mw-headline" id="Standard_error_.28stderr.29">Standard error (stderr)</span></h2>
+<p>Standard error is another output stream typically used by programs to output <a href="http://en.m.wikipedia.org/wiki/Error_message" title="Error message">error messages</a> or diagnostics. It is a stream independent of standard output and can be redirected separately. The usual destination is the <a href="http://en.m.wikipedia.org/wiki/Text_terminal" title="Text terminal" class="mw-redirect">text terminal</a> which started the program to provide the best chance of being seen even if <i>standard output</i> is redirected (so not readily observed). For example, output of a program in a <a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">pipeline</a> is redirected to input of the next program, but errors from each program still go directly to the text terminal.</p>
+<p>It is acceptable—and normal—for <i>standard output</i> and <i>standard error</i> to be directed to the same destination, such as the text terminal. Messages appear in the same order as the program writes them, unless buffering is involved. (For example, a common situation is when the standard error stream is unbuffered but the standard output stream is line-buffered; in this case, text written to standard error later may appear on the terminal earlier, if the standard output stream's buffer is not yet full.)</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/File_descriptor" title="File descriptor">file descriptor</a> for standard error is 2; the <a href="POSIX" title="POSIX">POSIX</a> <i>&lt;unistd.h&gt;</i> definition is <tt>STDERR_FILENO</tt>; the corresponding <i>&lt;stdio.h&gt;</i> variable is <tt>FILE* stderr</tt>. The C++ <i>&lt;iostream&gt;</i> standard header provides two variables associated with this stream: <tt>std::cerr</tt> and <tt>std::clog</tt>, the former being unbuffered and the latter using the same buffering mechanism as all other C++ streams.</p>
+<p>Most <a href="http://en.m.wikipedia.org/wiki/Shell_(computing)" title="Shell (computing)">shells</a> allow both <i>standard output</i> and <i>standard error</i> to be redirected to the same file using</p>
+<pre>
+ &amp;&gt; filename
+</pre>
+<p>Bourne-style shells allow <i>standard error</i> to be redirected to the same destination that standard output is directed to using</p>
+<pre>
+ 2&gt;&amp;1
+</pre>
+<p>csh-style shells allow <i>standard error</i> to be redirected to the same destination that standard output is directed to using</p>
+<pre>
+ &gt;&amp;
+</pre>
+<h2> <span class="mw-headline" id="Timeline">Timeline</span></h2>
+<h3> <span class="mw-headline" id="1950s:_Fortran">1950s: Fortran</span></h3>
+<p>Fortran has the equivalent of Unix file descriptors: <code>UNIT=5</code> for stdin, <code>UNIT=6</code> for stdout and <code>UNIT=0</code> for stderr<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Disputed_statement" title="Wikipedia:Disputed statement"><span title="The material in the vicinity of this tag may not be factual or accurate from February 2012">dubious</span></a> <span class="metadata">– <a href="http://en.m.wikipedia.org/wiki/Talk:Standard_streams#Dubious" title="Talk:Standard streams">discuss</a></span></i>]</sup><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="fortran source-fortran">
+<pre class="de1">
+<span class="co1">! FORTRAN 77 example</span>
+      <span class="kw1">PROGRAM</span> MAIN
+      READ<span class="br0">(</span><span class="kw1">UNIT</span><span class="sy0">=</span><span class="nu0">5</span>,<span class="sy0">*</span><span class="br0">)</span><span class="kw1">NUMBER</span>
+      WRITE<span class="br0">(</span><span class="kw1">UNIT</span><span class="sy0">=</span><span class="nu0">6</span>,<span class="st0">'(F5.3)'</span><span class="br0">)</span><span class="st0">' NUMBER IS: '</span>,<span class="kw1">NUMBER</span>
+      <span class="kw1">END</span>
+</pre></div>
+</div>
+<h3> <span class="mw-headline" id="1960:_ALGOL_60">1960: ALGOL 60</span></h3>
+<p><a href="http://en.m.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> was criticized for having no standard file access.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup></p>
+<h3> <span class="mw-headline" id="1968:_ALGOL_68">1968: ALGOL 68</span></h3>
+<p><a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>'s input and output facilities were collectively referred to as the transput.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup><a href="http://en.m.wikipedia.org/wiki/Cornelis_H._A._Koster" title="Cornelis H. A. Koster">Koster</a> coordinated the definition of the <i>transput</i> standard. The model included three standard channels: <code>stand in</code>, <code>stand out</code>, and <code>stand back</code>.</p>
+<p>Example:</p>
+<pre>
+# ALGOL 68 example #
+main:(
+  REAL number;
+  getf(stand in,($g$,number));
+  printf(($"Number is: "g(6,4)"OR "$,number)); # OR #
+  putf(stand out,($" Number is: "g(6,4)"!"$,number));
+  newline(stand out)
+)
+</pre>
+<table><tr><th style="text-align: left;">Input:</th>
+<th style="text-align: left;">Output:</th>
+</tr><tr><td>
+<pre>
+3.14159
+</pre></td>
+<td>
+<pre>
+Number is: +3.142 OR Number is: +3.142!
+</pre></td>
+</tr></table><h3> <span class="mw-headline" id="1970s:_C_and_Unix">1970s: C and Unix</span></h3>
+<p>In the <b><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></b> the standard input, output, and error streams are attached to the existing Unix file descriptors 0, 1 and 2 respectively.<sup id="cite_ref-1" class="reference"><a href="Standard_output#cite_note-1"><span>[</span>1<span>]</span></a></sup> In a <a href="POSIX" title="POSIX">POSIX</a> environment the <i>&lt;<a href="http://en.m.wikipedia.org/wiki/Unistd.h" title="Unistd.h">unistd.h</a>&gt;</i> definitions <i>STDIN_FILENO</i>, <i>STDOUT_FILENO</i> or <i>STDERR_FILENO</i> should be used instead rather than <a href="http://en.m.wikipedia.org/wiki/Magic_number_(programming)" title="Magic number (programming)">magic numbers</a>. File pointers <i>stdin</i>, <i>stdout</i>, and <i>stderr</i> are also provided.</p>
+<h3> <span class="mw-headline" id="1995:_Java">1995: Java</span></h3>
+<p>In <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, the standard streams are referred to by <code><a rel="nofollow" class="external text" href="http://download.oracle.com/javase/7/docs/api/java/lang/System.html#in">System.in</a></code> (for stdin), <code><a rel="nofollow" class="external text" href="http://download.oracle.com/javase/7/docs/api/java/lang/System.html#out">System.out</a></code> (for stdout), and <code><a rel="nofollow" class="external text" href="http://download.oracle.com/javase/7/docs/api/java/lang/System.html#err">System.err</a></code> (for stderr).<sup id="cite_ref-2" class="reference"><a href="Standard_output#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+<span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">void</span> main<span class="br0">(</span><span class="kw3">String</span> args<span class="br0">[</span><span class="br0">]</span><span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw1">try</span> <span class="br0">{</span>
+        <span class="kw3">BufferedReader</span> br <span class="sy0">=</span> 
+          <span class="kw1">new</span> <span class="kw3">BufferedReader</span><span class="br0">(</span><span class="kw1">new</span> <span class="kw3">InputStreamReader</span><span class="br0">(</span><span class="kw3">System</span>.<span class="me1">in</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw3">String</span> s <span class="sy0">=</span> br.<span class="me1">readLine</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw4">double</span> number <span class="sy0">=</span> <span class="kw3">Double</span>.<span class="me1">parseDouble</span><span class="br0">(</span>s<span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">(</span><span class="st0">"Number is:"</span> <span class="sy0">+</span> number<span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw3">Exception</span> e<span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw3">System</span>.<span class="me1">err</span>.<span class="me1">println</span><span class="br0">(</span><span class="st0">"Error:"</span> <span class="sy0">+</span> e.<span class="me1">getMessage</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Or you can use the <code><a rel="nofollow" class="external text" href="http://download.oracle.com/javase/7/docs/api/java/util/Scanner.html">Scanner</a></code> class of package java.util.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="java source-java">
+<pre class="de1">
+    <span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">void</span> main<span class="br0">(</span><span class="kw3">String</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span> <span class="br0">{</span>
+        Scanner sc <span class="sy0">=</span> <span class="kw1">new</span> Scanner<span class="br0">(</span><span class="kw3">System</span>.<span class="me1">in</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">while</span><span class="br0">(</span>sc.<span class="me1">hasNextLine</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+            <span class="kw3">String</span> line <span class="sy0">=</span> sc.<span class="me1">nextLine</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+            <span class="kw4">double</span> number <span class="sy0">=</span> <span class="kw3">Double</span>.<span class="me1">parseDouble</span><span class="br0">(</span>line<span class="br0">)</span><span class="sy0">;</span>
+            <span class="kw3">System</span>.<span class="me1">out</span>.<span class="me1">println</span><span class="br0">(</span><span class="st0">"Number is: "</span> <span class="sy0">+</span> number<span class="br0">)</span><span class="sy0">;</span>
+        <span class="br0">}</span>
+    <span class="br0">}</span>
+</pre></div>
+</div>
+<h3> <span class="mw-headline" id="2000s:_.NET">2000s: .NET</span></h3>
+<p>In <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and other <a href="http://en.m.wikipedia.org/wiki/.NET_Framework" title=".NET Framework">.NET</a> languages, the standard streams are referred to by <code>System.Console.In</code> (for stdin), <code>System.Console.Out</code> (for stdout) and <code>System.Console.Error</code> (for stderr).<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup> Basic read and write capabilities for the stdin and stdout streams are also accessible directly through the class <code>System.Console</code> (e.g. <code>System.Console.WriteLine()</code> can be used instead of <code>System.Console.Out.WriteLine()</code>).</p>
+<p><code>System.Console.In</code>, <code>System.Console.Out</code> and <code>System.Console.Error</code> are <code>System.IO.TextReader</code> (stdin) and <code>System.IO.TextWriter</code> (stdout, stderr) objects, which only allow access to the underlying standard streams on a text basis. Full binary access to the standard streams must be performed through the <code>System.IO.Stream</code> objects returned by <code>System.Console.OpenStandardInput()</code>, <code>System.Console.OpenStandardOutput()</code> and <code>System.Console.OpenStandardError()</code> respectively.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="csharp source-csharp">
+<pre class="de1">
+<span class="co1">// C# example</span>
+<span class="kw1">public</span> <span class="kw1">static</span> <span class="kw4">int</span> Main<span class="br0">(</span><span class="kw4">string</span><span class="br0">[</span><span class="br0">]</span> args<span class="br0">)</span>
+<span class="br0">{</span>
+    <span class="kw1">try</span> <span class="br0">{</span>
+        <span class="kw4">string</span> s <span class="sy0">=</span> <span class="kw5">System</span><span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="kw1">In</span><span class="sy0">.</span><span class="me1">ReadLine</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw4">double</span> number <span class="sy0">=</span> <span class="kw4">double</span><span class="sy0">.</span><span class="me1">Parse</span><span class="br0">(</span>s<span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw5">System</span><span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="kw1">Out</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"Number is: {0:F3}"</span>, number<span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+ 
+    <span class="co1">// If Parse() threw an exception</span>
+    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw5">System</span><span class="sy0">.</span><span class="me1">ArgumentNullException</span><span class="br0">)</span> <span class="br0">{</span> 
+        <span class="kw5">System</span><span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="me1">Error</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"No number was entered!"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw5">System</span><span class="sy0">.</span><span class="me1">FormatException</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw5">System</span><span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="me1">Error</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"The specified value is not a valid number!"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span> <span class="kw1">catch</span> <span class="br0">(</span><span class="kw5">System</span><span class="sy0">.</span><span class="me1">OverflowException</span><span class="br0">)</span> <span class="br0">{</span>
+        <span class="kw5">System</span><span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="me1">Error</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"The specified number is too big!"</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="br0">}</span>
+ 
+    <span class="kw1">return</span> <span class="sy0">-</span><span class="nu0">1</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="vbnet source-vbnet">
+<pre class="de1">
+<span class="co1">' Visual Basic .NET example</span>
+ 
+<span class="kw1">Public</span> <span class="kw1">Function</span> Main<span class="br0">(</span><span class="br0">)</span> <span class="kw1">As</span> <span class="kw2">Integer</span>
+    <span class="kw1">Try</span>
+        <span class="kw1">Dim</span> s <span class="kw1">As</span> <span class="kw2">String</span> <span class="sy0">=</span> System<span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="br0">[</span><span class="kw1">In</span><span class="br0">]</span><span class="sy0">.</span><span class="me1">ReadLine</span><span class="br0">(</span><span class="br0">)</span>
+        <span class="kw1">Dim</span> number <span class="kw1">As</span> <span class="kw2">Double</span> <span class="sy0">=</span> <span class="kw2">Double</span><span class="sy0">.</span><span class="me1">Parse</span><span class="br0">(</span>s<span class="br0">)</span>
+        System<span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="kw1">Out</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"Number is: {0:F3}"</span>, number<span class="br0">)</span>
+        <span class="kw1">Return</span> <span class="nu0">0</span>
+ 
+    <span class="co1">' If Parse() threw an exception</span>
+    <span class="kw1">Catch</span> ex <span class="kw1">As</span> System<span class="sy0">.</span><span class="me1">ArgumentNullException</span>
+        System<span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="br0">[</span><span class="kw1">Error</span><span class="br0">]</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"No number was entered!"</span><span class="br0">)</span>
+    <span class="kw1">Catch</span> ex2 <span class="kw1">As</span> System<span class="sy0">.</span><span class="me1">FormatException</span>
+        System<span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="br0">[</span><span class="kw1">Error</span><span class="br0">]</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"The specified value is not a valid number!"</span><span class="br0">)</span>
+    <span class="kw1">Catch</span> ex3 <span class="kw1">As</span> System<span class="sy0">.</span><span class="me1">OverflowException</span>
+        System<span class="sy0">.</span><span class="me1">Console</span><span class="sy0">.</span><span class="br0">[</span><span class="kw1">Error</span><span class="br0">]</span><span class="sy0">.</span><span class="me1">WriteLine</span><span class="br0">(</span><span class="st0">"The specified number is too big!"</span><span class="br0">)</span>
+    <span class="kw1">End</span> <span class="kw1">Try</span>
+ 
+    <span class="kw1">Return</span> <span class="sy0">-</span><span class="nu0">1</span>
+<span class="kw1">End</span> <span class="kw1">Function</span>
+</pre></div>
+</div>
+<p>When applying the <code>System.Diagnostics.Process</code> <a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">class</a> one can use the instance <a href="http://en.m.wikipedia.org/wiki/Property_(programming)" title="Property (programming)">properties</a> <code>StandardInput</code>, <code>StandardOutput</code>, and <code>StandardError</code> of that class to access the standard streams of the process.</p>
+<h3> <span class="mw-headline" id="GUIs">GUIs</span></h3>
+<p><a href="Graphical_user_interface" title="Graphical user interface">Graphical user interfaces</a> (GUIs) rarely make use of the standard streams.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup> Consequently, redirecting GUI programs or constructing a GUI pipeline is neither practical nor useful. The nearest analogy is probably <i>cutting</i> (or <i>copying</i>) from one application and <i>pasting</i> into another. Since manual user operations are required, moving large numbers of <i>pastes</i> is not especially efficient. One notable exception is the <a href="http://en.m.wikipedia.org/wiki/Dwm" title="Dwm">dwm</a> <a href="http://en.m.wikipedia.org/wiki/Tiling_window_manager" title="Tiling window manager">tiling window manager</a>, which displays data directed through stdin on a status bar.</p>
+<p>Some GUI programs, primarily on Unix, still write debug information to standard error. Others may take files to operate from standard in (for example many Unix media players do so). Popular Windows programs that open a separate console window in addition to their GUI windows are the emulators <span class="new" title="PSX (emulator) (page does not exist)">pSX</span> and <a href="http://en.m.wikipedia.org/wiki/DOSBox" title="DOSBox">DOSBox</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/GTK-server" title="GTK-server">GTK-server</a> can use stdin as communication interface with an interpreted program to realize a GUI.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/CLIM" title="CLIM" class="mw-redirect">Common Lisp Interface Manager</a> paradigm "presents" GUI elements sent to an extended output stream.</p>
+<h2> <span class="mw-headline" id="iostream_naming_convention">iostream naming convention</span></h2>
+<p>iostream library uses <b>c</b> prefix instead of <b>std</b> for naming standard streams. In addition to cin, cout and cerr, it offers the <b>clog</b> standard stream, similar to <b>cerr</b>, but buffered. iostream is typically used in the <a href="C++" title="C++">C++</a> language and the streams are under the <a href="http://en.m.wikipedia.org/wiki/C%2B%2B_Standard_Library" title="C++ Standard Library">std</a> <a href="http://en.m.wikipedia.org/wiki/Namespace_(computer_science)" title="Namespace (computer science)">namespace</a>, thus <i>std::cout &lt;&lt; "hello world";</i>.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Redirection_(computing)" title="Redirection (computing)">Redirection (computing)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_(Unix)" title="Pipeline (Unix)">Pipeline (Unix)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream (computing)</a></li>
+<li><a href="Input/output" title="Input/output">Input/output</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_file_input/output" title="C file input/output">C file input/output</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SYSIN" title="SYSIN" class="mw-redirect">SYSIN</a> and <a href="http://en.m.wikipedia.org/wiki/SYSOUT" title="SYSOUT" class="mw-redirect">SYSOUT</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<ul><li><i>KRONOS 2.1 Reference Manual</i>, Control Data Corporation, Part Number 60407000, 1974</li>
+<li><i>NOS Version 1 Applications Programmer's Instant</i>, Control Data Corporation, Part Number 60436000, 1978</li>
+<li><a rel="nofollow" class="external text" href="http://www.bitsavers.org/pdf/honeywell/multics/AG90-03_PgmgIntro_Dec81.pdf">Level 68 Introduction to Programming on MULTICS</a>, Honeywell Corporation, 1981</li>
+<li><a rel="nofollow" class="external text" href="http://www.research.ibm.com/journal/rd/255/auslander.pdf">Evolution of the MVS Operating System</a>, IBM Corporation, 1981</li>
+<li><i>Lions' Commentary on UNIX Sixth Edition</i>, John Lions, <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/1573980137" class="internal mw-magiclink-isbn">ISBN 1-57398-013-7</a>, 1977</li>
+<li><a rel="nofollow" class="external text" href="http://msdn2.microsoft.com/en-us/library/system.console.aspx">Console Class, .NET Framework Class Library</a>, Microsoft Corporation, 2008</li>
+</ul><div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Standard_output#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.linuxmanpages.com/man3/stdin.3.php">http://www.linuxmanpages.com/man3/stdin.3.php</a></span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Standard_output#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/7/docs/api/java/lang/System.html">"System (Java Platform SE 7)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.oracle.com/javase/7/docs/api/java/lang/System.html">http://docs.oracle.com/javase/7/docs/api/java/lang/System.html</a></span><span class="reference-accessdate">. Retrieved 20 July 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=System+%28Java+Platform+SE+7%29&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fdocs.oracle.com%2Fjavase%2F7%2Fdocs%2Fapi%2Fjava%2Flang%2FSystem.html&amp;rfr_id=info:sid/en.wikipedia.org:Standard_streams"><span style="display: none;"> </span></span></span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.linfo.org/standard_input.html">Standard Input Definition</a> - by The Linux Information Project</li>
+<li><a rel="nofollow" class="external text" href="http://www.linfo.org/standard_output.html">Standard Output Definition</a> - by The Linux Information Project</li>
+<li><a rel="nofollow" class="external text" href="http://www.linfo.org/standard_error.html">Standard Error Definition</a> - by The Linux Information Project</li>
+</ul>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 14 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://cs.m.wikipedia.org/wiki/Standardn%C3%AD_proudy" lang="cs" hreflang="cs">česky</a></li><li><a href="http://de.m.wikipedia.org/wiki/Standard-Datenstr%C3%B6me" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Entrada_est%C3%A1ndar" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Flux_standard" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Entrada_est%C3%A1ndar" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%ED%91%9C%EC%A4%80_%EC%8A%A4%ED%8A%B8%EB%A6%BC" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Canali_standard" lang="it" hreflang="it">italiano</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Standaard_stromen" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E3%82%B9%E3%83%88%E3%83%AA%E3%83%BC%E3%83%A0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Standardowe_strumienie" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Fluxos_padr%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%96_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8" lang="uk" hreflang="uk">українська</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E6%A8%99%E6%BA%96%E4%B8%B2%E6%B5%81" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Standard_output&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Standard_output&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Standard+streams&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

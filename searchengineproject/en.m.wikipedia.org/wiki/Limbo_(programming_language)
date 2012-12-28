@@ -1,0 +1,349 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Limbo (programming language) - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Limbo (programming language)","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Limbo_(programming_language)" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Limbo+%28programming+language%29"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Limbo (programming language)</h1>			
+<table class="infobox vevent" cellspacing="3" style="border-spacing: 3px; width:22em;">
+<caption class="summary" style="">Limbo</caption>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_paradigm" title="Programming paradigm">Paradigm(s)</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Appeared in</th>
+<td class="" style="">1995</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Designed by</th>
+<td class="organiser" style="">
+<span class="new" title="Sean Dorward (page does not exist)">Sean Dorward</span>, <span class="new" title="Phil Winterbottom (page does not exist)">Phil Winterbottom</span>, <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Software_developer" title="Software developer">Developer</a></th>
+<td class="" style="">
+<a href="Bell_Labs" title="Bell Labs">Bell Labs</a> / <a href="http://en.m.wikipedia.org/wiki/Vita_Nuova_Holdings" title="Vita Nuova Holdings">Vita Nuova Holdings</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Type_system" title="Type system">Typing discipline</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Strongly-typed_programming_language" title="Strongly-typed programming language" class="mw-redirect">Strong</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Programming_language_implementation" title="Programming language implementation">Major implementations</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Dis_virtual_machine" title="Dis virtual machine">Dis virtual machine</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced by</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="http://en.m.wikipedia.org/wiki/Communicating_sequential_processes" title="Communicating sequential processes">CSP</a>, <a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a>, <a href="http://en.m.wikipedia.org/wiki/Newsqueak" title="Newsqueak">Newsqueak</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Influenced</th>
+<td class="" style="">
+<a href="http://en.m.wikipedia.org/wiki/Stackless_Python" title="Stackless Python">Stackless Python</a>, <a href="Go_(programming_language)" title="Go (programming language)">Go</a>, <a href="http://en.m.wikipedia.org/wiki/Rust_(programming_language)" title="Rust (programming language)">Rust</a>
+</td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="Operating_system" title="Operating system">OS</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;"><a href="http://en.m.wikipedia.org/wiki/Software_license" title="Software license">License</a></th>
+<td class="" style=""><a href="http://en.m.wikipedia.org/wiki/Open_source" title="Open source">Open source</a></td>
+</tr>
+<tr class="">
+<th scope="row" style="text-align:left;">Website</th>
+<td class="" style=""><span class="url"><a rel="nofollow" class="external text" href="http://www.vitanuova.com/inferno/limbo.html">www.vitanuova.com/inferno/limbo.html</a></span></td>
+</tr>
+</table>
+<p><b>Limbo</b> is a <a href="Programming_language" title="Programming language">programming language</a> for writing distributed systems and is the language used to write <a href="http://en.m.wikipedia.org/wiki/Application_software" title="Application software">applications</a> for the <a href="http://en.m.wikipedia.org/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno operating system</a>. It was designed at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a> by <span class="new" title="Sean Dorward (page does not exist)">Sean Dorward</span>, <span class="new" title="Phil Winterbottom (page does not exist)">Phil Winterbottom</span>, and <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a>.</p>
+<p>The Limbo <a href="Compiler" title="Compiler">compiler</a> generates <a href="Computer_architecture" title="Computer architecture">architecture</a>-independent <a href="Object_code" title="Object code">object code</a> which is then interpreted by the <a href="http://en.m.wikipedia.org/wiki/Dis_virtual_machine" title="Dis virtual machine">Dis virtual machine</a> or compiled just before runtime to improve performance. Therefore all Limbo applications are completely portable across all Inferno platforms.</p>
+<p>Limbo's approach to concurrency was inspired by <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">Hoare</a>'s <a href="http://en.m.wikipedia.org/wiki/Communicating_sequential_processes" title="Communicating sequential processes">Communicating Sequential Processes</a> (CSP).</p>
+<h2> <span class="mw-headline" id="Language_features">Language features</span>
+</h2>
+<p>Limbo supports the following features:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Modularity_(programming)" title="Modularity (programming)" class="mw-redirect">modular programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_programming" title="Concurrent programming" class="mw-redirect">concurrent programming</a></li>
+<li>strong <a href="Type_checking" title="Type checking" class="mw-redirect">type checking</a> at compile- and run-time</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Interprocess_communication" title="Interprocess communication" class="mw-redirect">interprocess communication</a> over typed <a href="http://en.m.wikipedia.org/wiki/Channel_(programming)" title="Channel (programming)">channels</a>
+</li>
+<li>automatic <a href="Garbage_collection_(computer_science)" title="Garbage collection (computer science)">garbage collection</a>
+</li>
+<li>simple <a href="http://en.m.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">abstract data types</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="Examples">Examples</span>
+</h2>
+<p>Limbo uses <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>-style definitions as in:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ name := <span class="kw3">type</span> value;
+ name0,name1 : <span class="kw3">type</span> = value;
+ name2,name3 : <span class="kw3">type</span>;
+ name2 = value;
+</pre>
+</div>
+</div>
+<h3> <span class="mw-headline" id="Hello_world">Hello world</span>
+</h3>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="ada source-ada">
+<pre class="de1">
+ implement Command;
+ 
+ include <span class="st0">"sys.m"</span>;
+     sys: Sys;
+ 
+ include <span class="st0">"draw.m"</span>;
+ 
+ include <span class="st0">"sh.m"</span>;
+ 
+ init<span class="br0">(</span>nil: ref Draw-&gt;Context, nil: list <span class="kw3">of</span> string<span class="br0">)</span>
+ <span class="br0">{</span>
+     sys = load Sys Sys-&gt;PATH;
+     sys-&gt;print<span class="br0">(</span><span class="st0">"Hello World!<span class="es0">\n</span>"</span><span class="br0">)</span>;
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Books">Books</span>
+</h2>
+<p>The 3rd edition of the Inferno operating system and Limbo programming language are described in the textbook <i>Inferno Programming with Limbo</i> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0470843527" class="internal mw-magiclink-isbn">ISBN 0-470-84352-7</a> (Chichester: John Wiley &amp; Sons, 2003), by <span class="new" title="Phillip Stanley-Marbell (page does not exist)">Phillip Stanley-Marbell</span>. Another textbook "The Inferno Programming Book: An Introduction to Programming for the Inferno Distributed System", by Martin Atkins, Charles Forsyth, <a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a> and Howard Trickey, was started, but never released.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/w/index.php?title=File:Computer-aj_aj_ashton_01.svg&amp;page=1" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/28px-Computer-aj_aj_ashton_01.svg.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/42px-Computer-aj_aj_ashton_01.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Computer-aj_aj_ashton_01.svg/56px-Computer-aj_aj_ashton_01.svg.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Free_software" title="Portal:Free software">Free software  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li>The <a href="http://en.m.wikipedia.org/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno</a> operating system.</li>
+<li>
+<a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a> - The predecessor of Limbo.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a>.</li>
+<li>
+<a href="Go_(programming_language)" title="Go (programming language)">Go (programming language)</a> - Similar language from Google.</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.vitanuova.com/inferno/limbo.html">Vita Nuova page on Limbo</a></li>
+<li>
+<a rel="nofollow" class="external text" href="http://doc.cat-v.org/inferno/4th_edition/limbo_language/descent">A Descent into Limbo</a> by <a href="Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://doc.cat-v.org/inferno/4th_edition/limbo_language/limbo">The Limbo Programming Language</a> by <a href="Dennis_M._Ritchie" title="Dennis M. Ritchie" class="mw-redirect">Dennis M. Ritchie</a> and <a rel="nofollow" class="external text" href="http://doc.cat-v.org/inferno/4th_edition/limbo_language/addendum">Addendum</a> by Vita Nuova.</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.gemusehaken.org/ipwl/">Inferno Programming with Limbo</a> by <span class="new" title="Phillip Stanley-Marbell (page does not exist)">Phillip Stanley-Marbell</span>
+</li>
+<li><a rel="nofollow" class="external text" href="http://swtch.com/~rsc/thread/">Threaded programming in the Bell Labs CSP style</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Rob_Pike_navbox" title="Template:Rob Pike navbox"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Rob Pike navbox (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Rob_Pike_navbox&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Rob_Pike" title="Rob Pike">Rob Pike</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Operating systems</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9 from Bell Labs</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inferno_(operating_system)" title="Inferno (operating system)">Inferno</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Programming languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Newsqueak" title="Newsqueak">Newsqueak</a></li>
+<li><strong class="selflink">Limbo</strong></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sawzall_(programming_language)" title="Sawzall (programming language)">Sawzall</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Software</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Acme_(text_editor)" title="Acme (text editor)">acme</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Blit_(computer_terminal)" title="Blit (computer terminal)">Blit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Sam_(text_editor)" title="Sam (text editor)">sam</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rio_(windowing_system)" title="Rio (windowing system)">rio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/8%C2%BD_(Plan_9)" title="8½ (Plan 9)">8½</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Publications</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><i><a href="http://en.m.wikipedia.org/wiki/The_Practice_of_Programming" title="The Practice of Programming">The Practice of Programming</a></i></li>
+<li><i><a href="http://en.m.wikipedia.org/wiki/The_Unix_Programming_Environment" title="The Unix Programming Environment">The Unix Programming Environment</a></i></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Other</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ren%C3%A9e_French" title="Renée French">Renée French</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mark_V_Shaney" title="Mark V Shaney">Mark V Shaney</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UTF-8" title="UTF-8">UTF-8</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table class="metadata plainlinks stub" style="background: transparent;"><tr>
+<td><a href="http://en.m.wikipedia.org/w/index.php?title=File:HelloWorld.svg&amp;page=1" class="image"><img alt="Stub icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/50px-HelloWorld.svg.png" width="50" height="25" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/75px-HelloWorld.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/28/HelloWorld.svg/100px-HelloWorld.svg.png 2x"></a></td>
+<td>
+<i>This <a href="Programming_language" title="Programming language">programming language</a>-related article is a <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Stub" title="Wikipedia:Stub">stub</a>. You can help Wikipedia by <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Limbo_(programming_language)&amp;action=edit">expanding it</a>.</i>
+<div class="noprint plainlinks hlist navbar mini" style="position: absolute; right: 15px; display: none;">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Prog-lang-stub" title="Template:Prog-lang-stub"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Prog-lang-stub" title="Template talk:Prog-lang-stub"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Prog-lang-stub&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 11 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%84%D9%8A%D9%85%D8%A8%D9%88_(%D9%84%D8%BA%D8%A9_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://de.m.wikipedia.org/wiki/Limbo_(Programmiersprache)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Limbo_(lenguaje_de_programaci%C3%B3n)" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Limbo_(langage)" lang="fr" hreflang="fr">français</a></li><li><a href="http://ja.m.wikipedia.org/wiki/Limbo" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Limbo_(programmeringsspr%C3%A5k)" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Limbo_(j%C4%99zyk_programowania)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Limbo_(linguagem_de_programa%C3%A7%C3%A3o)" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/Limbo" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Limbo_(programspr%C3%A5k)" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://zh.m.wikipedia.org/wiki/Limbo" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Limbo_(programming_language)&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Limbo_(programming_language)&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Limbo+%28programming+language%29&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

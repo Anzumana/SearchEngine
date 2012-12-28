@@ -1,0 +1,891 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Microcontroller - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Microcontroller","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Microcontroller" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Microcontroller"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Microcontroller</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Microcontroller&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(November 2009)</i></small> </span></td>
+</tr></table>
+<div class="thumb tright">
+<div class="thumbinner" style="width:232px;">
+<a href="http://en.m.wikipedia.org/wiki/File:153056995_5ef8b01016_o.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/153056995_5ef8b01016_o.jpg/230px-153056995_5ef8b01016_o.jpg" width="230" height="178" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c7/153056995_5ef8b01016_o.jpg/345px-153056995_5ef8b01016_o.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/c/c7/153056995_5ef8b01016_o.jpg/460px-153056995_5ef8b01016_o.jpg 2x"></a>
+<div class="thumbcaption">
+
+The <a href="http://en.m.wikipedia.org/wiki/Die_(integrated_circuit)" title="Die (integrated circuit)">die</a> from an <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> 8742, an 8-bit microcontroller that includes a <a href="http://en.m.wikipedia.org/wiki/CPU" title="CPU" class="mw-redirect">CPU</a> running at 12 MHz, 128 bytes of <a href="http://en.m.wikipedia.org/wiki/RAM" title="RAM" class="mw-redirect">RAM</a>, 2048 bytes of <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a>, and <a href="Input/output" title="Input/output">I/O</a> in the same chip.</div>
+</div>
+</div>
+<p>A <b>microcontroller</b> (sometimes abbreviated <b>µC</b>, <b>uC</b> or <b>MCU</b>) is a small computer on a single <a href="http://en.m.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">integrated circuit</a> containing a processor core, memory, and programmable <a href="Input/output" title="Input/output">input/output</a> peripherals. Program memory in the form of <a href="http://en.m.wikipedia.org/wiki/Flash_memory#NOR_flash" title="Flash memory">NOR flash</a> or <a href="http://en.m.wikipedia.org/wiki/Programmable_read-only_memory" title="Programmable read-only memory">OTP ROM</a> is also often included on chip, as well as a typically small amount of <a href="http://en.m.wikipedia.org/wiki/Random-access_memory" title="Random-access memory">RAM</a>. Microcontrollers are designed for embedded applications, in contrast to the <a href="http://en.m.wikipedia.org/wiki/Microprocessor" title="Microprocessor">microprocessors</a> used in <a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">personal computers</a> or other general purpose applications.</p>
+<p>Microcontrollers are used in automatically controlled products and devices, such as automobile engine control systems, implantable medical devices, remote controls, office machines, appliances, power tools, toys and other <a href="Embedded_system" title="Embedded system">embedded systems</a>. By reducing the size and cost compared to a design that uses a separate microprocessor, memory, and input/output devices, microcontrollers make it economical to digitally control even more devices and processes. <a href="http://en.m.wikipedia.org/wiki/Mixed-signal_integrated_circuit" title="Mixed-signal integrated circuit">Mixed signal</a> microcontrollers are common, integrating analog components needed to control non-digital electronic systems.</p>
+<p>Some microcontrollers may use four-bit <a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">words</a> and operate at <a href="http://en.m.wikipedia.org/wiki/Clock_rate" title="Clock rate">clock rate</a> frequencies as low as 4 kHz, for low power consumption (milliwatts or microwatts). They will generally have the ability to retain functionality while waiting for an event such as a button press or other interrupt; power consumption while sleeping (CPU clock and most peripherals off) may be just nanowatts, making many of them well suited for long lasting battery applications. Other microcontrollers may serve performance-critical roles, where they may need to act more like a <a href="http://en.m.wikipedia.org/wiki/Digital_signal_processor" title="Digital signal processor">digital signal processor</a> (DSP), with higher clock speeds and power consumption.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<table class="metadata plainlinks ambox mbox-small-left ambox-content" style=""><tr>
+<td class="mbox-image"><a href="http://en.m.wikipedia.org/wiki/File:Wiki_letter_w_cropped.svg" class="image"><img alt="[icon]" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png" width="20" height="14" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/30px-Wiki_letter_w_cropped.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/40px-Wiki_letter_w_cropped.svg.png 2x"></a></td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This section requires <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Microcontroller&amp;action=edit">expansion</a>. <small><i>(June 2008)</i></small></span></td>
+</tr></table>
+<p>The first single-chip microprocessor was the 4-bit <a href="http://en.m.wikipedia.org/wiki/Intel_4004" title="Intel 4004">Intel 4004</a> released in 1971, with the <a href="http://en.m.wikipedia.org/wiki/Intel_8008" title="Intel 8008">Intel 8008</a> and other more capable microprocessors becoming available over the next several years. However, both processors required external chips to implement a working system, raising total system cost, and making it impossible to economically computerize appliances.</p>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Smithsonian_Institution" title="Smithsonian Institution">Smithsonian Institution</a> says <a href="http://en.m.wikipedia.org/wiki/Texas_Instruments" title="Texas Instruments">TI</a> engineers Gary Boone and Michael Cochran succeeded in creating the first microcontroller in 1971. The result of their work was the <a href="http://en.m.wikipedia.org/wiki/TMS_1000" title="TMS 1000" class="mw-redirect">TMS 1000</a>, which went commercial in 1974. It combined read-only memory, read/write memory, processor and clock on one chip and was targeted at embedded systems.<sup id="cite_ref-1" class="reference"><a href="Microcontroller#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Partly in response to the existence of the single-chip TMS 1000,<sup id="cite_ref-CMoral2008_2-0" class="reference"><a href="Microcontroller#cite_note-CMoral2008-2"><span>[</span>2<span>]</span></a></sup> Intel developed a computer system on a chip optimized for control applications, the <a href="http://en.m.wikipedia.org/wiki/Intel_8048" title="Intel 8048" class="mw-redirect">Intel 8048</a>, with commercial parts first shipping in 1977.<sup id="cite_ref-CMoral2008_2-1" class="reference"><a href="Microcontroller#cite_note-CMoral2008-2"><span>[</span>2<span>]</span></a></sup> It combined <a href="http://en.m.wikipedia.org/wiki/Random_access_memory" title="Random access memory" class="mw-redirect">RAM</a> and <a href="http://en.m.wikipedia.org/wiki/Read_only_memory" title="Read only memory" class="mw-redirect">ROM</a> on the same chip. This chip would find its way into over one billion PC keyboards, and other numerous applications. At that time Intel's President, Luke J. Valenter, stated that the microcontroller was one of the most successful in the company's history, and expanded the division's budget over 25%.</p>
+<p>Most microcontrollers at this time had two variants. One had an erasable <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a> program memory, which was significantly more expensive than the <a href="http://en.m.wikipedia.org/wiki/Programmable_read-only_memory" title="Programmable read-only memory">PROM</a> variant which was only programmable once. Erasing the EPROM required exposure to <a href="http://en.m.wikipedia.org/wiki/Ultraviolet" title="Ultraviolet">ultraviolet</a> light through a transparent quartz lid. One-time parts could be made in lower-cost opaque plastic packages.</p>
+<p>In 1993, the introduction of <a href="http://en.m.wikipedia.org/wiki/EEPROM" title="EEPROM">EEPROM</a> memory allowed microcontrollers (beginning with the Microchip <a href="http://en.m.wikipedia.org/wiki/PIC16x84" title="PIC16x84">PIC16x84</a>) <a rel="nofollow" class="external autonumber" href="http://microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2018&amp;mcparam=en013082">[1]</a><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2008">citation needed</span></a></i>]</sup> to be electrically erased quickly without an expensive package as required for <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a>, allowing both rapid prototyping, and <a href="http://en.m.wikipedia.org/wiki/In-System_Programming" title="In-System Programming" class="mw-redirect">In System Programming</a>. The same year, Atmel introduced the first microcontroller using <a href="http://en.m.wikipedia.org/wiki/Flash_memory" title="Flash memory">Flash memory</a>.<sup id="cite_ref-flash_3-0" class="reference"><a href="Microcontroller#cite_note-flash-3"><span>[</span>3<span>]</span></a></sup> Other companies rapidly followed suit, with both memory types.</p>
+<p>Cost has plummeted over time, with the cheapest 8-bit microcontrollers being available for under $0.25 in quantity (thousands) in 2009,<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from June 2010">citation needed</span></a></i>]</sup> and some 32-bit microcontrollers around $1 for similar quantities.</p>
+<p>Nowadays microcontrollers are cheap and readily available for hobbyists, with large online communities around certain processors.</p>
+<p>In the future, <a href="http://en.m.wikipedia.org/wiki/MRAM" title="MRAM" class="mw-redirect">MRAM</a> could potentially be used in microcontrollers as it has infinite endurance and its incremental semiconductor wafer process cost is relatively low.</p>
+<h3> <span class="mw-headline" id="Volumes">Volumes</span>
+</h3>
+<p>About 55% of all <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPUs</a> sold in the world are <a href="http://en.m.wikipedia.org/wiki/8-bit" title="8-bit">8-bit</a> microcontrollers and microprocessors. According to Semico, over four billion 8-bit microcontrollers were sold in 2006.<sup id="cite_ref-4" class="reference"><a href="Microcontroller#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>A typical home in a developed country is likely to have only four general-purpose microprocessors but around three dozen microcontrollers. A typical mid-range automobile has as many as 30 or more microcontrollers. They can also be found in many electrical devices such as washing machines, microwave ovens, and telephones.</p>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;">
+<a href="http://en.m.wikipedia.org/wiki/File:PIC18F8720.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/PIC18F8720.jpg/220px-PIC18F8720.jpg" width="220" height="220" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/1/18/PIC18F8720.jpg/330px-PIC18F8720.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/1/18/PIC18F8720.jpg 2x"></a>
+<div class="thumbcaption">
+
+A <a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC</a> 18F8720 <b>microcontroller</b> in an 80-pin <a href="http://en.m.wikipedia.org/wiki/TQFP" title="TQFP" class="mw-redirect">TQFP</a> package.</div>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Embedded_design">Embedded design</span>
+</h2>
+<p>A microcontroller can be considered a self-contained system with a processor, memory and peripherals and can be used as an <a href="Embedded_system" title="Embedded system">embedded system</a>.<sup id="cite_ref-5" class="reference"><a href="Microcontroller#cite_note-5"><span>[</span>5<span>]</span></a></sup> The majority of microcontrollers in use today are embedded in other machinery, such as automobiles, telephones, appliances, and peripherals for computer systems. While some embedded systems are very sophisticated, many have minimal requirements for memory and program length, with no operating system, and low software complexity. Typical input and output devices include switches, <a href="http://en.m.wikipedia.org/wiki/Relay" title="Relay">relays</a>, <a href="http://en.m.wikipedia.org/wiki/Solenoid" title="Solenoid">solenoids</a>, <a href="http://en.m.wikipedia.org/wiki/LED" title="LED" class="mw-redirect">LEDs</a>, small or custom <a href="http://en.m.wikipedia.org/wiki/LCD" title="LCD" class="mw-redirect">LCD</a> displays, radio frequency devices, and sensors for data such as temperature, humidity, light level etc. Embedded systems usually have no keyboard, screen, disks, printers, or other recognizable I/O devices of a <a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">personal computer</a>, and may lack human interaction devices of any kind.</p>
+<h3> <span class="mw-headline" id="Interrupts">Interrupts</span>
+</h3>
+<p>Microcontrollers must provide <a href="http://en.m.wikipedia.org/wiki/Real-time_computing" title="Real-time computing">real time</a> (predictable, though not necessarily fast) response to events in the embedded system they are controlling. When certain events occur, an <a href="http://en.m.wikipedia.org/wiki/Interrupt" title="Interrupt">interrupt</a> system can signal the processor to suspend processing the current instruction sequence and to begin an <a href="http://en.m.wikipedia.org/wiki/Interrupt_service_routine" title="Interrupt service routine" class="mw-redirect">interrupt service routine</a> (ISR, or "interrupt handler"). The ISR will perform any processing required based on the source of the interrupt before returning to the original instruction sequence. Possible interrupt sources are device dependent, and often include events such as an internal timer overflow, completing an analog to digital conversion, a logic level change on an input such as from a button being pressed, and data received on a communication link. Where power consumption is important as in battery operated devices, interrupts may also wake a microcontroller from a low power sleep state where the processor is halted until required to do something by a peripheral event.</p>
+<h3> <span class="mw-headline" id="Programs">Programs</span>
+</h3>
+<p>Typically microcontroller programs must fit in the available on-chip program memory, since it would be costly to provide a system with external, expandable, memory. Compilers and assemblers are used to convert high-level language and assembler language codes into a compact <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a> for storage in the microcontroller's memory. Depending on the device, the program memory may be permanent, read-only memory that can only be programmed at the factory, or program memory may be field-alterable flash or erasable read-only memory.</p>
+<p>Manufacturers have often produced special versions of their microcontrollers in order to help the hardware and <a href="http://en.m.wikipedia.org/wiki/Software_development" title="Software development">software development</a> of the target system. Originally these included <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a> versions that have a "window" on the top of the device through which program memory can be erased by <a href="http://en.m.wikipedia.org/wiki/Ultraviolet" title="Ultraviolet">ultraviolet</a> light, ready for reprogramming after a programming ("burn") and test cycle. Since 1998, EPROM versions are rare and have been replaced by <a href="http://en.m.wikipedia.org/wiki/EEPROM" title="EEPROM">EEPROM</a> and <a href="http://en.m.wikipedia.org/wiki/Flash_memory" title="Flash memory">flash</a>, which are easier to use (can be erased electronically) and cheaper to manufacture.</p>
+<p>Other versions may be available where the <a href="http://en.m.wikipedia.org/wiki/Read-only_memory" title="Read-only memory">ROM</a> is accessed as an external device rather than as internal memory, however these are becoming increasingly rare due to the widespread availability of cheap microcontroller programmers.</p>
+<p>The use of field-programmable devices on a microcontroller may allow field update of the <a href="http://en.m.wikipedia.org/wiki/Firmware" title="Firmware">firmware</a> or permit late factory revisions to products that have been assembled but not yet shipped. Programmable memory also reduces the lead time required for deployment of a new product.</p>
+<p>Where hundreds of thousands of identical devices are required, using parts programmed at the time of manufacture can be an economical option. These "<a href="http://en.m.wikipedia.org/wiki/Mask_ROM" title="Mask ROM">mask programmed</a>" parts have the program laid down in the same way as the logic of the chip, at the same time.</p>
+<p>A customizable microcontroller incorporates a block of digital logic that can be personalized in order to provide additional processing capability, <a href="http://en.m.wikipedia.org/wiki/Peripherals" title="Peripherals" class="mw-redirect">peripherals</a> and <a href="http://en.m.wikipedia.org/wiki/Interface_(computer_science)" title="Interface (computer science)" class="mw-redirect">interfaces</a> that are adapted to the requirements of the application. For example, the <a href="http://en.m.wikipedia.org/wiki/AT91CAP" title="AT91CAP">AT91CAP</a> from <a href="http://en.m.wikipedia.org/wiki/Atmel" title="Atmel">Atmel</a> has a block of logic that can be customized during manufacturer according to user requirements.</p>
+<h3> <span class="mw-headline" id="Other_microcontroller_features">Other microcontroller features</span>
+</h3>
+<p>Microcontrollers usually contain from several to dozens of general purpose input/output pins (GPIO). GPIO pins are software configurable to either an input or an output state. When GPIO pins are configured to an input state, they are often used to read sensors or external signals. Configured to the output state, GPIO pins can drive external devices such as LEDs or motors.</p>
+<p>Many embedded systems need to read sensors that produce analog signals. This is the purpose of the <a href="http://en.m.wikipedia.org/wiki/Analog-to-digital_converter" title="Analog-to-digital converter">analog-to-digital converter</a> (ADC). Since processors are built to interpret and process digital data, i.e. 1s and 0s, they are not able to do anything with the analog signals that may be sent to it by a device. So the analog to digital converter is used to convert the incoming data into a form that the processor can recognize. A less common feature on some microcontrollers is a <a href="http://en.m.wikipedia.org/wiki/Digital-to-analog_converter" title="Digital-to-analog converter">digital-to-analog converter</a> (DAC) that allows the processor to output analog signals or voltage levels.</p>
+<p>In addition to the converters, many embedded microprocessors include a variety of timers as well. One of the most common types of timers is the <a href="http://en.m.wikipedia.org/wiki/Programmable_Interval_Timer" title="Programmable Interval Timer" class="mw-redirect">Programmable Interval Timer</a> (PIT). A PIT may either count down from some value to zero, or up to the capacity of the count register, overflowing to zero. Once it reaches zero, it sends an interrupt to the processor indicating that it has finished counting. This is useful for devices such as thermostats, which periodically test the temperature around them to see if they need to turn the air conditioner on, the heater on, etc.</p>
+<p>A dedicated <a href="http://en.m.wikipedia.org/wiki/Pulse-width_modulation" title="Pulse-width modulation">Pulse Width Modulation</a> (PWM) block makes it possible for the CPU to control <a href="http://en.m.wikipedia.org/wiki/Switched-mode_power_supply" title="Switched-mode power supply">power converters</a>, <a href="http://en.m.wikipedia.org/wiki/Electrical_resistance" title="Electrical resistance" class="mw-redirect">resistive</a> loads, <a href="http://en.m.wikipedia.org/wiki/Electric_motor" title="Electric motor">motors</a>, etc., without using lots of CPU resources in tight timer <a href="http://en.m.wikipedia.org/wiki/Control_flow#Loops" title="Control flow">loops</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter" title="Universal asynchronous receiver/transmitter">Universal Asynchronous Receiver/Transmitter</a> (UART) block makes it possible to receive and transmit data over a serial line with very little load on the CPU. Dedicated on-chip hardware also often includes capabilities to communicate with other devices (chips) in digital formats such as <a href="http://en.m.wikipedia.org/wiki/I%C2%B2C" title="I²C">I²C</a> and <a href="http://en.m.wikipedia.org/wiki/Serial_Peripheral_Interface" title="Serial Peripheral Interface" class="mw-redirect">Serial Peripheral Interface</a> (SPI).</p>
+<h2> <span class="mw-headline" id="Higher_integration">Higher integration</span>
+</h2>
+<p>Micro-controllers may not implement an external address or data bus as they integrate RAM and non-volatile memory on the same chip as the CPU. Using fewer pins, the chip can be placed in a much smaller, cheaper package.</p>
+<p>Integrating the memory and other peripherals on a single chip and testing them as a unit increases the cost of that chip, but often results in decreased net cost of the embedded system as a whole. Even if the cost of a CPU that has integrated peripherals is slightly more than the cost of a CPU and external peripherals, having fewer chips typically allows a smaller and cheaper circuit board, and reduces the labor required to assemble and test the circuit board.</p>
+<p>A micro-controller is a single <a href="http://en.m.wikipedia.org/wiki/Integrated_circuit" title="Integrated circuit">integrated circuit</a>, commonly with the following features:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">central processing unit</a> - ranging from small and simple 4-<a href="Bit" title="Bit">bit</a> processors to complex 32- or 64-bit processors</li>
+<li>volatile memory (<a href="http://en.m.wikipedia.org/wiki/RAM" title="RAM" class="mw-redirect">RAM</a>) for data storage</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Read-only_memory" title="Read-only memory">ROM</a>, <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a>, <a href="http://en.m.wikipedia.org/wiki/EEPROM" title="EEPROM">EEPROM</a> or <a href="http://en.m.wikipedia.org/wiki/Flash_memory" title="Flash memory">Flash memory</a> for <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> and operating parameter storage</li>
+<li>discrete input and output bits, allowing control or detection of the logic state of an individual package pin</li>
+<li>serial <a href="Input/output" title="Input/output">input/output</a> such as <a href="http://en.m.wikipedia.org/wiki/Serial_port" title="Serial port">serial ports</a> (<a href="http://en.m.wikipedia.org/wiki/UART" title="UART" class="mw-redirect">UARTs</a>)</li>
+<li>other <a href="http://en.m.wikipedia.org/wiki/Serial_communications" title="Serial communications" class="mw-redirect">serial communications</a> <a href="http://en.m.wikipedia.org/wiki/Network_interface" title="Network interface">interfaces</a> like <a href="http://en.m.wikipedia.org/wiki/I%C2%B2C" title="I²C">I²C</a>, <a href="http://en.m.wikipedia.org/wiki/Serial_Peripheral_Interface" title="Serial Peripheral Interface" class="mw-redirect">Serial Peripheral Interface</a> and <a href="http://en.m.wikipedia.org/wiki/Controller_Area_Network" title="Controller Area Network" class="mw-redirect">Controller Area Network</a> for system interconnect</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Peripheral" title="Peripheral">peripherals</a> such as <a href="http://en.m.wikipedia.org/wiki/Timer" title="Timer">timers</a>, event counters, <a href="http://en.m.wikipedia.org/wiki/Pulse-width_modulation" title="Pulse-width modulation">PWM generators</a>, and <a href="http://en.m.wikipedia.org/wiki/Watchdog_timer" title="Watchdog timer">watchdog</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Clock_generator" title="Clock generator">clock generator</a> - often an oscillator for a quartz timing crystal, resonator or <a href="http://en.m.wikipedia.org/wiki/RC_circuit" title="RC circuit">RC circuit</a>
+</li>
+<li>many include analog-to-digital converters, some include digital-to-analog converters</li>
+<li>in-circuit programming and debugging support</li>
+</ul>
+<p>This integration drastically reduces the number of chips and the amount of wiring and <a href="http://en.m.wikipedia.org/wiki/Printed_circuit_board" title="Printed circuit board">circuit board</a> space that would be needed to produce equivalent systems using separate chips. Furthermore, on low pin count devices in particular, each pin may interface to several internal peripherals, with the pin function selected by software. This allows a part to be used in a wider variety of applications than if pins had dedicated functions. Micro-controllers have proved to be highly popular in <a href="Embedded_system" title="Embedded system">embedded systems</a> since their introduction in the 1970s.</p>
+<p>Some microcontrollers use a <a href="http://en.m.wikipedia.org/wiki/Harvard_architecture" title="Harvard architecture">Harvard architecture</a>: separate memory buses for instructions and data, allowing accesses to take place concurrently. Where a Harvard architecture is used, instruction words for the processor may be a different bit size than the length of internal memory and registers; for example: 12-bit instructions used with 8-bit data registers.</p>
+<p>The decision of which peripheral to integrate is often difficult. The microcontroller vendors often trade operating frequencies and system design flexibility against time-to-market requirements from their customers and overall lower system cost. Manufacturers have to balance the need to minimize the chip size against additional functionality.</p>
+<p>Microcontroller architectures vary widely. Some designs include general-purpose microprocessor cores, with one or more ROM, RAM, or I/O functions integrated onto the package. Other designs are purpose built for control applications. A micro-controller instruction set usually has many instructions intended for bit-wise operations to make control programs more compact.<sup id="cite_ref-6" class="reference"><a href="Microcontroller#cite_note-6"><span>[</span>6<span>]</span></a></sup> For example, a general purpose processor might require several instructions to test a bit in a register and branch if the bit is set, where a micro-controller could have a single instruction to provide that commonly required function.</p>
+<p>Microcontrollers typically do not have a <a href="http://en.m.wikipedia.org/wiki/Math_coprocessor" title="Math coprocessor" class="mw-redirect">math coprocessor</a>, so <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a> arithmetic is performed by software.</p>
+<h2> <span class="mw-headline" id="Programming_environments">Programming environments</span>
+</h2>
+<p>Microcontrollers were originally programmed only in <a href="Assembly_language" title="Assembly language">assembly language</a>, but various <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">high-level programming languages</a> are now also in common use to target microcontrollers. These languages are either designed specially for the purpose, or versions of general purpose languages such as the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a>. <a href="Compiler" title="Compiler">Compilers</a> for general purpose languages will typically have some restrictions as well as enhancements to better support the unique characteristics of microcontrollers. Some microcontrollers have environments to aid developing certain types of applications. Microcontroller vendors often make tools freely available to make it easier to adopt their hardware.</p>
+<p>Many microcontrollers are so quirky that they effectively require their own non-standard dialects of C, such as <a href="http://en.m.wikipedia.org/wiki/Small_Device_C_Compiler" title="Small Device C Compiler">SDCC for the 8051</a>, which prevent using standard tools (such as code libraries or static analysis tools) even for code unrelated to hardware features. <a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">Interpreters</a> are often used to hide such low level quirks.</p>
+<p>Interpreter firmware is also available for some microcontrollers. For example, <a href="http://en.m.wikipedia.org/wiki/BASIC_programming_language" title="BASIC programming language" class="mw-redirect">BASIC</a> on the early microcontrollers <a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> <a href="http://en.m.wikipedia.org/wiki/8052" title="8052" class="mw-redirect">8052</a>;<sup id="cite_ref-7" class="reference"><a href="Microcontroller#cite_note-7"><span>[</span>7<span>]</span></a></sup> BASIC and <a href="http://en.m.wikipedia.org/wiki/Forth_(programming_language)" title="Forth (programming language)">FORTH</a> on the <a href="http://en.m.wikipedia.org/wiki/Zilog_Z8" title="Zilog Z8">Zilog Z8</a><sup id="cite_ref-8" class="reference"><a href="Microcontroller#cite_note-8"><span>[</span>8<span>]</span></a></sup> as well as some modern devices. Typically these interpreters support <a href="http://en.m.wikipedia.org/wiki/Interactive_programming" title="Interactive programming">interactive programming</a>.</p>
+<p><a href="http://en.m.wikipedia.org/wiki/Logic_simulation" title="Logic simulation">Simulators</a> are available for some microcontrollers. These allow a developer to analyze what the behavior of the microcontroller and their program should be if they were using the actual part. A <a href="http://en.m.wikipedia.org/wiki/Simulator" title="Simulator" class="mw-redirect">simulator</a> will show the internal processor state and also that of the outputs, as well as allowing input signals to be generated. While on the one hand most simulators will be limited from being unable to simulate much other hardware in a system, they can exercise conditions that may otherwise be hard to reproduce at will in the physical implementation, and can be the quickest way to debug and analyze problems.</p>
+<p>Recent microcontrollers are often integrated with on-chip <a href="http://en.m.wikipedia.org/wiki/Debug" title="Debug" class="mw-redirect">debug</a> circuitry that when accessed by an <a href="http://en.m.wikipedia.org/wiki/In-circuit_emulator" title="In-circuit emulator">in-circuit emulator</a> via <a href="http://en.m.wikipedia.org/wiki/JTAG" title="JTAG" class="mw-redirect">JTAG</a>, allow debugging of the firmware with a <a href="http://en.m.wikipedia.org/wiki/Debugger" title="Debugger">debugger</a>.</p>
+<h2> <span class="mw-headline" id="Types_of_microcontrollers">Types of microcontrollers</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_common_microcontrollers" title="List of common microcontrollers">List of common microcontrollers</a>
+</div>
+<p>As of 2008 there are several dozen microcontroller architectures and vendors including:</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARM</a> core processors (many vendors)
+<ul>
+<li>includes <a href="http://en.m.wikipedia.org/wiki/ARM9" title="ARM9">ARM9</a>, <a href="http://en.m.wikipedia.org/wiki/ARM_Cortex-A8" title="ARM Cortex-A8">ARM Cortex-A8</a>, <a href="http://en.m.wikipedia.org/wiki/Sitara_ARM_Microprocessor" title="Sitara ARM Microprocessor" class="mw-redirect">Sitara ARM Microprocessor</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Atmel" title="Atmel">Atmel</a> <a href="http://en.m.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR</a> (8-bit), <a href="http://en.m.wikipedia.org/wiki/AVR32" title="AVR32">AVR32</a> (32-bit), and <a href="http://en.m.wikipedia.org/wiki/AT91SAM" title="AT91SAM">AT91SAM</a> (32-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Cypress_Semiconductor" title="Cypress Semiconductor">Cypress Semiconductor</a>'s M8C Core used in their <a href="http://en.m.wikipedia.org/wiki/PSoC" title="PSoC">PSoC (Programmable System-on-Chip)</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Freescale" title="Freescale" class="mw-redirect">Freescale</a> <a href="http://en.m.wikipedia.org/wiki/Freescale_ColdFire" title="Freescale ColdFire">ColdFire</a> (32-bit) and <a href="http://en.m.wikipedia.org/wiki/Freescale_S08" title="Freescale S08">S08</a> (8-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Freescale" title="Freescale" class="mw-redirect">Freescale</a> <a href="http://en.m.wikipedia.org/wiki/Freescale_68HC11" title="Freescale 68HC11">68HC11</a> (8-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Intel" title="Intel">Intel</a> <a href="http://en.m.wikipedia.org/wiki/Intel_8051" title="Intel 8051" class="mw-redirect">8051</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/List_of_common_microcontrollers#Infineon" title="List of common microcontrollers">Infineon</a>: 8, 16, 32 Bit microcontrollers<sup id="cite_ref-9" class="reference"><a href="Microcontroller#cite_note-9"><span>[</span>9<span>]</span></a></sup>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/MIPS_architecture" title="MIPS architecture">MIPS</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Microchip_Technology" title="Microchip Technology">Microchip Technology</a> <a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC</a>, (8-bit PIC16, PIC18, 16-bit dsPIC33 / PIC24), (32-bit PIC32)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/NXP_Semiconductors" title="NXP Semiconductors">NXP Semiconductors</a> LPC1000, LPC2000, LPC3000, LPC4000 (32-bit), LPC900, LPC700 (8-bit)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Parallax_Propeller" title="Parallax Propeller">Parallax Propeller</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/PowerPC" title="PowerPC">PowerPC</a> ISE</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Rabbit_2000" title="Rabbit 2000">Rabbit 2000</a> (8-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Renesas" title="Renesas" class="mw-redirect">Renesas</a> RX, <a href="http://en.m.wikipedia.org/wiki/V850" title="V850">V850</a>, <a href="http://en.m.wikipedia.org/wiki/Hitachi_H8" title="Hitachi H8" class="mw-redirect">Hitachi H8</a>, <a href="http://en.m.wikipedia.org/wiki/SuperH" title="SuperH">Hitachi SuperH</a> (32-bit), M16C (16-bit), RL78, R8C, 78K0/78K0R (8-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Silicon_Laboratories" title="Silicon Laboratories">Silicon Laboratories</a> Pipelined 8-bit 8051 Microcontrollers and mixed-signal ARM-based 32-bit microcontrollers</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/STMicroelectronics" title="STMicroelectronics">STMicroelectronics</a> <span class="new" title="STM8 (page does not exist)">STM8</span> (8-bit), <a href="http://en.m.wikipedia.org/wiki/ST10" title="ST10" class="mw-redirect">ST10</a> (16-bit) and <a href="http://en.m.wikipedia.org/wiki/STM32" title="STM32">STM32</a> (32-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Texas_Instruments#Microcontrollers" title="Texas Instruments">Texas Instruments</a> <a href="http://en.m.wikipedia.org/wiki/MSP430" title="MSP430" class="mw-redirect">TI MSP430</a> (16-bit)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Toshiba_TLCS" title="Toshiba TLCS">Toshiba TLCS-870</a> (8-bit/16-bit).</li>
+</ul>
+<p>Many others exist, some of which are used in very narrow range of applications or are more like applications processors than microcontrollers. The microcontroller market is extremely fragmented, with numerous vendors, technologies, and markets. Note that many vendors sell or have sold multiple architectures.</p>
+<h2> <span class="mw-headline" id="Interrupt_latency">Interrupt latency</span>
+</h2>
+<p>In contrast to general-purpose computers, microcontrollers used in embedded systems often seek to optimize <a href="http://en.m.wikipedia.org/wiki/Interrupt_latency" title="Interrupt latency">interrupt latency</a> over instruction throughput. Issues include both reducing the latency, and making it be more predictable (to support real-time control).</p>
+<p>When an electronic device causes an interrupt, the intermediate results (registers) have to be saved before the software responsible for handling the interrupt can run. They must also be restored after that software is finished. If there are more registers, this saving and restoring process takes more time, increasing the latency. Ways to reduce such context/restore latency include having relatively few registers in their central processing units (undesirable because it slows down most non-interrupt processing substantially), or at least having the hardware not save them all (this fails if the software then needs to compensate by saving the rest "manually"). Another technique involves spending silicon gates on "shadow registers": One or more duplicate registers used only by the interrupt software, perhaps supporting a dedicated stack.</p>
+<p>Other factors affecting interrupt latency include:</p>
+<ul>
+<li>Cycles needed to complete current CPU activities. To minimize those costs, microcontrollers tend to have short pipelines (often three instructions or less), small write buffers, and ensure that longer instructions are continuable or restartable. <a href="http://en.m.wikipedia.org/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">RISC</a> design principles ensure that most instructions take the same number of cycles, helping avoid the need for most such continuation/restart logic.</li>
+<li>The length of any <a href="http://en.m.wikipedia.org/wiki/Critical_section" title="Critical section">critical section</a> that needs to be interrupted. Entry to a critical section restricts concurrent data structure access. When a data structure must be accessed by an interrupt handler, the critical section must block that interrupt. Accordingly, interrupt latency is increased by however long that interrupt is blocked. When there are hard external constraints on system latency, developers often need tools to measure interrupt latencies and track down which critical sections cause slowdowns.
+<ul>
+<li>One common technique just blocks all interrupts for the duration of the critical section. This is easy to implement, but sometimes critical sections get uncomfortably long.</li>
+<li>A more complex technique just blocks the interrupts that may trigger access to that data structure. This is often based on interrupt priorities, which tend to not correspond well to the relevant system data structures. Accordingly, this technique is used mostly in very constrained environments.</li>
+<li>Processors may have hardware support for some critical sections. Examples include supporting atomic access to bits or bytes within a word, or other atomic access primitives like the <a href="http://en.m.wikipedia.org/wiki/Load-link/store-conditional" title="Load-link/store-conditional">LDREX/STREX</a> exclusive access primitives introduced in the <a href="http://en.m.wikipedia.org/wiki/ARM_architecture" title="ARM architecture">ARMv6</a> architecture.</li>
+</ul>
+</li>
+<li>Interrupt nesting. Some microcontrollers allow higher priority interrupts to interrupt lower priority ones. This allows software to manage latency by giving time-critical interrupts higher priority (and thus lower and more predictable latency) than less-critical ones.</li>
+<li>Trigger rate. When interrupts occur back-to-back, microcontrollers may avoid an extra context save/restore cycle by a form of <a href="http://en.m.wikipedia.org/wiki/Tail_call" title="Tail call">tail call</a> optimization.</li>
+</ul>
+<p>Lower end microcontrollers tend to support fewer interrupt latency controls than higher end ones.</p>
+<h2> <span class="mw-headline" id="Microcontroller_embedded_memory_technology">Microcontroller embedded memory technology</span>
+</h2>
+<p>Since the emergence of microcontrollers, many different memory technologies have been used. Almost all microcontrollers have at least two different kinds of memory, a non-volatile memory for storing firmware and a read-write memory for temporary data.</p>
+<h3> <span class="mw-headline" id="Data">Data</span>
+</h3>
+<p>From the earliest microcontrollers to today, six-transistor SRAM is almost always used as the read/write working memory, with a few more transistors per bit used in the <a href="http://en.m.wikipedia.org/wiki/Register_file" title="Register file">register file</a>. <a href="http://en.m.wikipedia.org/wiki/MRAM" title="MRAM" class="mw-redirect">MRAM</a> could potentially replace it as it is 4 to 10 times denser which would make it more cost effective.</p>
+<p>In addition to the SRAM, some microcontrollers also have internal EEPROM for data storage; and even ones that do not have any (or not enough) are often connected to external serial EEPROM chip (such as the <a href="http://en.m.wikipedia.org/wiki/BASIC_Stamp" title="BASIC Stamp">BASIC Stamp</a>) or external serial flash memory chip.</p>
+<p>A few recent microcontrollers beginning in 2003 have "self-programmable" flash memory.<sup id="cite_ref-flash_3-1" class="reference"><a href="Microcontroller#cite_note-flash-3"><span>[</span>3<span>]</span></a></sup></p>
+<h3> <span class="mw-headline" id="Firmware">Firmware</span>
+</h3>
+<p>The earliest microcontrollers used mask ROM to store firmware. Later microcontrollers (such as the early versions of the <a href="http://en.m.wikipedia.org/wiki/Freescale_68HC11" title="Freescale 68HC11">Freescale 68HC11</a> and early <a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC microcontrollers</a>) had quartz windows that allowed ultraviolet light in to erase the <a href="http://en.m.wikipedia.org/wiki/EPROM" title="EPROM">EPROM</a>.</p>
+<p>The Microchip <a href="http://en.m.wikipedia.org/wiki/PIC16x84" title="PIC16x84">PIC16C84</a>, introduced in 1993,<sup id="cite_ref-10" class="reference"><a href="Microcontroller#cite_note-10"><span>[</span>10<span>]</span></a></sup> was the first microcontroller to use <a href="http://en.m.wikipedia.org/wiki/EEPROM" title="EEPROM">EEPROM</a> to store firmware. In the same year, Atmel introduced the first microcontroller using <a href="http://en.m.wikipedia.org/wiki/Flash_memory" title="Flash memory">NOR Flash memory</a> to store firmware.<sup id="cite_ref-flash_3-2" class="reference"><a href="Microcontroller#cite_note-flash-3"><span>[</span>3<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<div class="noprint tright portal" style="border:solid #aaa 1px; margin:0.5em 0 0.5em 1em;">
+<table style="background:#f9f9f9; font-size:85%; line-height:110%; max-width:175px;"><tr>
+<td style="text-align: center;"><a href="http://en.m.wikipedia.org/wiki/File:Nuvola_apps_ksim.png" class="image"><img alt="Portal icon" src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/28px-Nuvola_apps_ksim.png" width="28" height="28" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/42px-Nuvola_apps_ksim.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Nuvola_apps_ksim.png/56px-Nuvola_apps_ksim.png 2x"></a></td>
+<td style="padding: 0 0.2em; vertical-align: middle; font-style: italic; font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/Portal:Electronics" title="Portal:Electronics">Electronics  portal</a></td>
+</tr></table>
+</div>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_common_microcontrollers" title="List of common microcontrollers">List of common microcontrollers</a></li>
+</ul>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Microbotics" title="Microbotics">Microbotics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programmable_logic_controller" title="Programmable logic controller">Programmable logic controller</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Single-board_microcontroller" title="Single-board microcontroller">Single-board microcontroller</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC microcontroller</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Notes">Notes</span>
+</h2>
+<table class="metadata plainlinks ambox ambox-style ambox-More_footnotes" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/40px-Text_document_with_red_question_mark.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/60px-Text_document_with_red_question_mark.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Text_document_with_red_question_mark.svg/80px-Text_document_with_red_question_mark.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article includes a <a href="Wikipedia:Citing_sources" title="Wikipedia:Citing sources">list of references</a>, but <b>its sources remain unclear because it has insufficient <a href="http://en.m.wikipedia.org/wiki/Wikipedia:INCITE" title="Wikipedia:INCITE" class="mw-redirect">inline citations</a></b>. <span class="hide-when-compact">Please help to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check" title="Wikipedia:WikiProject Fact and Reference Check">improve</a> this article by <a href="http://en.m.wikipedia.org/wiki/Wikipedia:When_to_cite" title="Wikipedia:When to cite">introducing</a> more precise citations.</span> <small><i>(July 2008)</i></small> </span></td>
+</tr></table>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation book">Augarten, Stan (1983). <a rel="nofollow" class="external text" href="http://smithsonianchips.si.edu/augarten/p38.htm"><i>The Most Widely Used Computer on a Chip: The TMS 1000</i></a>. New Haven and New York: Ticknor &amp; Fields. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0-89919-195-9" title="Special:BookSources/0-89919-195-9">0-89919-195-9</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://smithsonianchips.si.edu/augarten/p38.htm">http://smithsonianchips.si.edu/augarten/p38.htm</a></span><span class="reference-accessdate">. Retrieved 2009-12-23</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+Most+Widely+Used+Computer+on+a+Chip%3A+The+TMS+1000&amp;rft.aulast=Augarten&amp;rft.aufirst=Stan&amp;rft.au=Augarten%2C%26%2332%3BStan&amp;rft.date=1983&amp;rft.place=New+Haven+and+New+York&amp;rft.pub=Ticknor+%26+Fields&amp;rft.isbn=0-89919-195-9&amp;rft_id=http%3A%2F%2Fsmithsonianchips.si.edu%2Faugarten%2Fp38.htm&amp;rfr_id=info:sid/en.wikipedia.org:Microcontroller"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-CMoral2008-2">
+<span class="mw-cite-backlink">^ <a href="Microcontroller#cite_ref-CMoral2008_2-0"><sup><i><b>a</b></i></sup></a> <a href="Microcontroller#cite_ref-CMoral2008_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://archive.computerhistory.org/resources/access/text/Oral_History/102658328.05.01.acc.pdf">http://archive.computerhistory.org/resources/access/text/Oral_History/102658328.05.01.acc.pdf</a> <i>Oral History Panel on the Development and Promotion of the Intel 8048 Microcontroller</i>, Computer History Museum oral history,2008, retrieved 2011 June 28 page 4</span>
+</li>
+<li id="cite_note-flash-3">
+<span class="mw-cite-backlink">^ <a href="Microcontroller#cite_ref-flash_3-0"><sup><i><b>a</b></i></sup></a> <a href="Microcontroller#cite_ref-flash_3-1"><sup><i><b>b</b></i></sup></a> <a href="Microcontroller#cite_ref-flash_3-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.atmel.com/dyn/resources/prod_documents/doc2464.pdf">"Atmel’s Self-Programming Flash Microcontrollers"</a> by Odd Jostein Svendsli 2003</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-4">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.semico.com">http://www.semico.com</a></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation book">Heath, Steve (2003). <a rel="nofollow" class="external text" href="http://books.google.com/books?id=BjNZXwH7HlkC&amp;pg=PA11"><i>Embedded systems design</i></a>. EDN series for design engineers (2 ed.). Newnes. pp. 11–12. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/9780750655460" title="Special:BookSources/9780750655460">9780750655460</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://books.google.com/books?id=BjNZXwH7HlkC&amp;pg=PA11">http://books.google.com/books?id=BjNZXwH7HlkC&amp;pg=PA11</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Embedded+systems+design&amp;rft.aulast=Heath&amp;rft.aufirst=Steve&amp;rft.au=Heath%2C%26%2332%3BSteve&amp;rft.date=2003&amp;rft.series=EDN+series+for+design+engineers&amp;rft.pages=pp.%26nbsp%3B11%E2%80%9312&amp;rft.edition=2&amp;rft.pub=Newnes&amp;rft.isbn=9780750655460&amp;rft_id=http%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3DBjNZXwH7HlkC%26pg%3DPA11&amp;rfr_id=info:sid/en.wikipedia.org:Microcontroller"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-6">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.popsci.com/diy/article/2009-01/dot-dot-programming">Easy Way to build a microcontroller project</a></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.lvr.com/microc.htm">"8052-Basic Microcontrollers"</a> by Jan Axelson 1994</span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web">Robert Edwards (1987). <a rel="nofollow" class="external text" href="http://www.ornl.gov/info/reports/1987/3445602791343.pdf">"Optimizing the Zilog Z8 Forth Microcontroller for Rapid Prototyping"</a>. p. 3<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ornl.gov/info/reports/1987/3445602791343.pdf">http://www.ornl.gov/info/reports/1987/3445602791343.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Optimizing+the+Zilog+Z8+Forth+Microcontroller+for+Rapid+Prototyping&amp;rft.atitle=&amp;rft.aulast=Robert+Edwards&amp;rft.au=Robert+Edwards&amp;rft.date=1987&amp;rft.pages=p.%26nbsp%3B3&amp;rft_id=http%3A%2F%2Fwww.ornl.gov%2Finfo%2Freports%2F1987%2F3445602791343.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Microcontroller"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.infineon.com/mcu">www.infineon.com/mcu</a></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Microcontroller#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.microchip.com/stellent/idcplg?IdcService=SS_GET_PAGE&amp;nodeId=2018&amp;mcparam=en013082">Microchip unveils PIC16C84, a reprogrammable EEPROM-based 8-bit microcontroller</a> 1993</span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikibooks has a book on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Embedded_Systems" class="extiw" title="wikibooks:Embedded Systems">Embedded Systems</a></b></i>
+</td>
+</tr></table>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" width="30" height="40" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">Wikimedia Commons has media related to: <i><b><a href="http://commons.wikimedia.org/wiki/Category:Microcontrollers" class="extiw" title="commons:Category:Microcontrollers">Microcontrollers</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://www.dmoz.org/Business/Electronics_and_Electrical/Control_Systems/Microcontroller/">Microcontroller</a> at the <a href="http://en.m.wikipedia.org/wiki/Open_Directory_Project" title="Open Directory Project">Open Directory Project</a>
+</li>
+<li>
+<a rel="nofollow" class="external text" href="http://www.embedded.com/mag.htm">Embedded Systems Design</a> magazine</li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:CPU_technologies" title="Template:CPU technologies"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:CPU_technologies" title="Template talk:CPU technologies"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CPU_technologies&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU technologies</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="Computer_architecture" title="Computer architecture">Architecture</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Harvard_architecture" title="Harvard architecture">Harvard</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Modified_Harvard_architecture" title="Modified Harvard architecture">Modified Harvard</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Von_Neumann_architecture" title="Von Neumann architecture">von Neumann</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dataflow_architecture" title="Dataflow architecture">Dataflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_CPU_architectures" title="Comparison of CPU architectures">Comparison</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">Instruction set</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Complex_instruction_set_computing" title="Complex instruction set computing">CISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Explicit_Data_Graph_Execution" title="Explicit Data Graph Execution">EDGE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Explicitly_parallel_instruction_computing" title="Explicitly parallel instruction computing">EPIC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minimal_instruction_set_computer" title="Minimal instruction set computer">MISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/One_instruction_set_computer" title="One instruction set computer">OISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reduced_instruction_set_computing" title="Reduced instruction set computing">RISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Very_long_instruction_word" title="Very long instruction word">VLIW</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/No_instruction_set_computing" title="No instruction set computing">NISC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zero_instruction_set_computer" title="Zero instruction set computer">ZISC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word size</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/1-bit_architecture" title="1-bit architecture">1-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/4-bit" title="4-bit">4-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/8-bit" title="8-bit">8-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">9-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ferranti_Mercury" title="Ferranti Mercury">10-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/12-bit" title="12-bit">12-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Apollo_Guidance_Computer" title="Apollo Guidance Computer">15-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/16-bit" title="16-bit">16-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/18-bit" title="18-bit">18-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Z3_(computer)" title="Z3 (computer)">22-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/24-bit" title="24-bit">24-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/UNIVAC_III" title="UNIVAC III">25-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Saturn_Launch_Vehicle_Digital_Computer" title="Saturn Launch Vehicle Digital Computer">26-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/D-17B" title="D-17B">27-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/31-bit" title="31-bit">31-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/32-bit" title="32-bit">32-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ZEBRA_(computer)" title="ZEBRA (computer)">33-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fast_Universal_Digital_Computer_M-2" title="Fast Universal Digital Computer M-2">34-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/36-bit" title="36-bit">36-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)#Table_of_word_sizes" title="Word (computer architecture)">39-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IAS_machine" title="IAS machine">40-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/48-bit" title="48-bit" class="mw-redirect">48-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Atanasoff%E2%80%93Berry_Computer" title="Atanasoff–Berry Computer">50-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/60-bit" title="60-bit">60-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/64-bit_computing" title="64-bit computing">64-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/128-bit" title="128-bit">128-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/256-bit" title="256-bit">256-bit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">variable</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Pipeline_(computing)" title="Pipeline (computing)">Pipeline</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Instruction_pipeline" title="Instruction pipeline">Instruction pipelining</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Out-of-order_execution" title="Out-of-order execution">In-order &amp; out-of-order execution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Branch_predictor" title="Branch predictor">Branch predictor</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Register_renaming" title="Register renaming">Register renaming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Speculative_execution" title="Speculative execution">Speculative execution</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hazard_(computer_architecture)" title="Hazard (computer architecture)">Hazards</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bubble_(computing)" title="Bubble (computing)">Bubble</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel level</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Bit-level_parallelism" title="Bit-level parallelism">Bit</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Instruction-level_parallelism" title="Instruction-level parallelism">Instruction</a> (<a href="http://en.m.wikipedia.org/wiki/Scalar_processor" title="Scalar processor">Scalar</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Superscalar" title="Superscalar">Superscalar</a>)</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Data_parallelism" title="Data parallelism">Data</a> (<a href="http://en.m.wikipedia.org/wiki/Vector_processor" title="Vector processor">Vector</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Task_parallelism" title="Task parallelism">Task</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Threads</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Multithreading_(computer_architecture)" title="Multithreading (computer architecture)">Multithreading</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Simultaneous_multithreading" title="Simultaneous multithreading">Simultaneous multithreading</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hyper-threading" title="Hyper-threading">Hyper-threading</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Super-threading" title="Super-threading">Super-threading</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Flynn%27s_taxonomy" title="Flynn's taxonomy">Flynn's taxonomy</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/SISD" title="SISD">SISD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SIMD" title="SIMD">SIMD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MISD" title="MISD">MISD</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/MIMD" title="MIMD">MIMD</a> (<a href="http://en.m.wikipedia.org/wiki/SPMD" title="SPMD">SPMD</a>)</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Types</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Digital_signal_processor" title="Digital signal processor">Digital signal processor</a></li>
+<li><strong class="selflink">Microcontroller</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/System_on_a_chip" title="System on a chip">System on a chip</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cellular_architecture" title="Cellular architecture">Cellular</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Components</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Arithmetic_logic_unit" title="Arithmetic logic unit">Arithmetic logic unit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Barrel_shifter" title="Barrel shifter">Barrel shifter</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Floating-point_unit" title="Floating-point unit">Floating-point unit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Back-side_bus" title="Back-side bus">Back-side bus</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multiplexer" title="Multiplexer">Multiplexer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Demultiplexer" title="Demultiplexer" class="mw-redirect">Demultiplexer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">Registers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_management_unit" title="Memory management unit">Memory management unit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Translation_lookaside_buffer" title="Translation lookaside buffer">Translation lookaside buffer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/CPU_cache" title="CPU cache">Cache</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Register_file" title="Register file">Register file</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microcode" title="Microcode">Microcode</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Control_unit" title="Control unit">Control unit</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Clock_rate" title="Clock rate">Clock rate</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Power_management" title="Power management">Power management</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Advanced_power_management" title="Advanced power management">APM</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface" title="Advanced Configuration and Power Interface">ACPI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_frequency_scaling" title="Dynamic frequency scaling">Dynamic frequency scaling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_voltage_scaling" title="Dynamic voltage scaling">Dynamic voltage scaling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Clock_gating" title="Clock gating">Clock gating</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:8bitMCUs" title="Template:8bitMCUs"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:8bitMCUs (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:8bitMCUs&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">8-bit <strong class="selflink">microcontroller</strong> families</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Atmel_AVR" title="Atmel AVR">AVR</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PIC_microcontroller" title="PIC microcontroller">PIC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/COP8" title="COP8">COP8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_MCS-48" title="Intel MCS-48">MCS-48</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intel_MCS-51" title="Intel MCS-51">MCS-51</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zilog_Z8" title="Zilog Z8">Z8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Zilog_eZ80" title="Zilog eZ80">eZ80</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Freescale_68HC08" title="Freescale 68HC08">HC08</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Freescale_68HC11" title="Freescale 68HC11">HC11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/H8_Family" title="H8 Family">H8</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/PSoC" title="PSoC">PSoC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Computer_sizes" title="Template:Computer sizes"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Computer_sizes" title="Template talk:Computer sizes"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_sizes&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/List_of_computer_size_categories" title="List of computer size categories">Computer sizes</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div><a href="http://en.m.wikipedia.org/wiki/Classes_of_computers" title="Classes of computers">Classes of computers</a></div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Larger</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Supercomputer" title="Supercomputer">Super</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minisupercomputer" title="Minisupercomputer">Minisuper</a></li>
+<li><a href="Mainframe_computer" title="Mainframe computer">Mainframe</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Minicomputer" title="Minicomputer">Mini</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Midrange_computer" title="Midrange computer">Midrange</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Superminicomputer" title="Superminicomputer">Supermini</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Server_(computing)" title="Server (computing)">Server</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="Microcomputer" title="Microcomputer">Micro</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Personal_computer" title="Personal computer">Personal</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Workstation" title="Workstation">Workstation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Desktop_computer" title="Desktop computer">Desktop</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Home_computer" title="Home computer">Home</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Small_form_factor" title="Small form factor">SFF</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Nettop" title="Nettop">Nettop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Plug_computer" title="Plug computer">Plug</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Portable_computer" title="Portable computer">Portable</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Video_game_arcade_cabinet" title="Video game arcade cabinet">Video game arcade cabinet</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Arcade_system_board" title="Arcade system board">Arcade system board</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Video_game_console" title="Video game console">Video game console</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Mobile_computing" title="Mobile computing">Mobile</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";font-weight:normal;;"><a href="http://en.m.wikipedia.org/wiki/Laptop" title="Laptop">Laptop</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Desktop_replacement_computer" title="Desktop replacement computer">Desktop replacement computer</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Subnotebook" title="Subnotebook">Subnotebook</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Netbook" title="Netbook">Netbook</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Smartbook" title="Smartbook">Smartbook</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ultrabook" title="Ultrabook">Ultrabook</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";font-weight:normal;;"><a href="http://en.m.wikipedia.org/wiki/Tablet_computer" title="Tablet computer">Tablet computer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Ultra-mobile_PC" title="Ultra-mobile PC">Ultra-mobile PC</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mobile_Internet_device" title="Mobile Internet device">Mobile Internet device</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Internet_tablet" title="Internet tablet">Internet tablet</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";font-weight:normal;;"><a href="http://en.m.wikipedia.org/wiki/Information_appliance" title="Information appliance">Information appliance</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Handheld_PC" title="Handheld PC">Handheld PC</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Palm-size_PC" title="Palm-size PC">Palm-size PC</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pocket_computer" title="Pocket computer">Pocket computer</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Personal_digital_assistant" title="Personal digital assistant">PDA</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Electronic_organizer" title="Electronic organizer">Electronic organizer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Enterprise_digital_assistant" title="Enterprise digital assistant">EDA</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Mobile_phone" title="Mobile phone">Mobile phone</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_phone" title="Feature phone">Feature phone</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Smartphone" title="Smartphone">Smartphone</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Portable_media_player" title="Portable media player">PMP</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Digital_audio_player" title="Digital audio player" class="mw-redirect">DAP</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/E-book_reader" title="E-book reader">E-book reader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Handheld_game_console" title="Handheld game console">Handheld game console</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Portable_data_terminal" title="Portable data terminal">Portable</a>/<a href="http://en.m.wikipedia.org/wiki/Mobile_data_terminal" title="Mobile data terminal">Mobile data terminal</a>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";font-weight:normal;;"><a href="http://en.m.wikipedia.org/wiki/Calculator" title="Calculator">Calculators</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Scientific_calculator" title="Scientific calculator">Scientific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programmable_calculator" title="Programmable calculator">Programmable</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Graphing_calculator" title="Graphing calculator">Graphing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";font-weight:normal;;"><a href="http://en.m.wikipedia.org/wiki/Wearable_computer" title="Wearable computer">Wearable computer</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Calculator_watch" title="Calculator watch">Calculator watch</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wristwatch_computer" title="Wristwatch computer" class="mw-redirect">Wrist-top</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_retinal_display" title="Virtual retinal display">Virtual retinal display</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Head-mounted_display" title="Head-mounted display">Head-mounted display</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Head-up_display" title="Head-up display">Head-up display</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Others</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><strong class="selflink">Microcontroller</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nanocomputer" title="Nanocomputer">Nanocomputer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pizza_box_form_factor" title="Pizza box form factor">Pizza Box Case</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Single-board_computer" title="Single-board computer">Single-board computer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Smartdust" title="Smartdust">Smartdust</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wireless_sensor_network" title="Wireless sensor network">Wireless sensor network</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 49 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://af.m.wikipedia.org/wiki/Mikrobeheerder" lang="af" hreflang="af">Afrikaans</a></li><li><a href="http://ar.m.wikipedia.org/wiki/%D9%85%D8%AA%D8%AD%D9%83%D9%85_%D8%AF%D9%82%D9%8A%D9%82" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Mikrokontroler" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5%D1%80" lang="bg" hreflang="bg">български</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Microcontrolador" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Jedno%C4%8Dipov%C3%BD_po%C4%8D%C3%ADta%C4%8D" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Mikrocontroller" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Mikrocontroller" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Mikrokontroller" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%9C%CE%B9%CE%BA%CF%81%CE%BF%CE%B5%CE%BB%CE%B5%CE%B3%CE%BA%CF%84%CE%AE%CF%82" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Microcontrolador" lang="es" hreflang="es">español</a></li><li><a href="http://eu.m.wikipedia.org/wiki/Mikrokontrolagailu" lang="eu" hreflang="eu">euskara</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%B1%DB%8C%D8%B2%DA%A9%D9%86%D8%AA%D8%B1%D9%84%E2%80%8C%DA%AF%D8%B1" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Microcontr%C3%B4leur" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Microcontrolador" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%A7%88%EC%9D%B4%ED%81%AC%EB%A1%9C%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hi.m.wikipedia.org/wiki/%E0%A4%AE%E0%A4%BE%E0%A4%87%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%95%E0%A4%82%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%B2%E0%A4%B0" lang="hi" hreflang="hi">हिन्दी</a></li><li><a href="http://id.m.wikipedia.org/wiki/Pengendali_mikro" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://is.m.wikipedia.org/wiki/%C3%96rt%C3%B6lva_(%C3%ADhlutur)" lang="is" hreflang="is">íslenska</a></li><li><a href="http://it.m.wikipedia.org/wiki/Microcontrollore" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%99%D7%A7%D7%A8%D7%95-%D7%91%D7%A7%D7%A8" lang="he" hreflang="he">עברית</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Mikrokontroller" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D1%83%D0%B2%D0%B0%D1%87" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ml.m.wikipedia.org/wiki/%E0%B4%AE%E0%B5%88%E0%B4%95%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%95%E0%B5%BA%E0%B4%9F%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%B3%E0%B5%BC" lang="ml" hreflang="ml">മലയാളം</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Mikropengawal" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Microcontroller" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AD%E3%83%BC%E3%83%A9" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Mikrokontroller" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://nn.m.wikipedia.org/wiki/Mikrokontroller" lang="nn" hreflang="nn">norsk (nynorsk)‎</a></li><li><a href="http://pa.m.wikipedia.org/wiki/%E0%A8%AE%E0%A8%BE%E0%A8%88%E0%A8%95%E0%A8%B0%E0%A9%8B_%E0%A8%95%E0%A9%B0%E0%A8%9F%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B2%E0%A8%B0" lang="pa" hreflang="pa">ਪੰਜਾਬੀ</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Mikrokontroler" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Microcontrolador" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Microcontroler" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%BB%D0%B5%D1%80" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Mikrokontrolluesi" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://si.m.wikipedia.org/wiki/%E0%B6%9A%E0%B7%8A%E2%80%8D%E0%B7%82%E0%B7%94%E0%B6%AF%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B6%B4%E0%B7%8F%E0%B6%BD%E0%B6%9A%E0%B6%BA" lang="si" hreflang="si">සිංහල</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Microcontroller" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sk.m.wikipedia.org/wiki/Mikrokontrol%C3%A9r" lang="sk" hreflang="sk">slovenčina</a></li><li><a href="http://sl.m.wikipedia.org/wiki/Mikrokrmilnik" lang="sl" hreflang="sl">slovenščina</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5%D1%80" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Mikrokontroler" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Mikrokontrolleri" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Mikrokontroller" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%AE%E0%AF%88%E0%AE%95%E0%AF%8D%E0%AE%B0%E0%AF%8B%E0%AE%95%E0%AE%A3%E0%AF%8D%E0%AE%9F%E0%AF%8D%E0%AE%B0%E0%AF%8B%E0%AE%B2%E0%AE%B0%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%84%E0%B8%AD%E0%B8%99%E0%B9%82%E0%B8%97%E0%B8%A3%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%AD%E0%B8%A3%E0%B9%8C" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Mikrodenetleyici" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9C%D1%96%D0%BA%D1%80%D0%BE%D0%BA%D0%BE%D0%BD%D1%82%D1%80%D0%BE%D0%BB%D0%B5%D1%80" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/Vi_%C4%91i%E1%BB%81u_khi%E1%BB%83n" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E5%8D%95%E7%89%87%E6%9C%BA" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Microcontroller&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Microcontroller&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Microcontroller&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

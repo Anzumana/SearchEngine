@@ -1,0 +1,408 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Structured programming - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Structured programming","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Structured_programming" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Structured+programming"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Structured programming</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Structured_programming&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(January 2012)</i></small> </span></td>
+</tr></table>
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul>
+<li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul>
+</li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li>
+<a href="Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <strong class="selflink">Structured</strong>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li>
+<strong class="selflink">Structured</strong> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul>
+<li>
+<a href="Modular_programming" title="Modular programming">Modular</a> (contrast: Monolithic)</li>
+<li>
+<a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Structured programming</b> is a <a href="Programming_paradigm" title="Programming paradigm">programming paradigm</a> aimed on improving the clarity, quality, and development time of a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">computer program</a> by making extensive use of <a href="Subroutines" title="Subroutines" class="mw-redirect">subroutines</a>, <a href="http://en.m.wikipedia.org/wiki/Block_(programming)" title="Block (programming)">block structures</a> and <a href="For_loop" title="For loop">for</a> and <a href="While_loop" title="While loop">while loops</a> – in contrast to using simple tests and jumps such as the <i><a href="Goto" title="Goto">goto</a></i> statement which could lead to "<a href="http://en.m.wikipedia.org/wiki/Spaghetti_code" title="Spaghetti code">spaghetti code</a>" which is both difficult to follow and to maintain.</p>
+<p>It emerged in the 1960s, particularly from work by Böhm and Jacopini,<sup id="cite_ref-1" class="reference"><a href="Structured_programming#cite_note-1"><span>[</span>1<span>]</span></a></sup> and a famous letter, <i><a href="http://en.m.wikipedia.org/wiki/Go_To_Statement_Considered_Harmful" title="Go To Statement Considered Harmful" class="mw-redirect">Go To Statement Considered Harmful</a></i>, from <a href="http://en.m.wikipedia.org/wiki/Edsger_Dijkstra" title="Edsger Dijkstra" class="mw-redirect">Edsger Dijkstra</a> in 1968<sup id="cite_ref-dijkstra1968_2-0" class="reference"><a href="Structured_programming#cite_note-dijkstra1968-2"><span>[</span>2<span>]</span></a></sup>—and was bolstered theoretically by the <a href="http://en.m.wikipedia.org/wiki/Structured_program_theorem" title="Structured program theorem">structured program theorem</a>, and practically by the emergence of languages such as <a href="ALGOL" title="ALGOL">ALGOL</a> with suitably rich <a href="http://en.m.wikipedia.org/wiki/Control_structures" title="Control structures" class="mw-redirect">control structures</a>.</p>
+<h2> <span class="mw-headline" id="Low-level_structure_programming">Low-level structure programming</span>
+</h2>
+<p>At a low level, structured programs are often composed of simple, hierarchical program flow structures. These are sequence, selection, and repetition:</p>
+<ul>
+<li>"Sequence" refers to an ordered execution of statements.</li>
+</ul>
+<ul>
+<li>In "selection" one of a number of statements is executed depending on the state of the program. This is usually expressed with <a href="http://en.m.wikipedia.org/wiki/Keyword_(computer_programming)" title="Keyword (computer programming)">keywords</a> such as <a href="Conditional_(programming)" title="Conditional (programming)"><code>if..then..else..endif</code></a>, <a href="Switch_statement" title="Switch statement"><code>switch</code></a>, or <a href="Switch_statement" title="Switch statement"><code>case</code></a>. In some languages keywords cannot be written verbatim, but must be <a href="http://en.m.wikipedia.org/wiki/Stropping_(syntax)" title="Stropping (syntax)">stropped</a>.</li>
+</ul>
+<ul>
+<li>In "repetition" a statement is executed until the program reaches a certain state, or operations have been applied to every element of a collection. This is usually expressed with keywords such as <a href="While_loop" title="While loop"><code>while</code></a>, <a href="Do_while_loop" title="Do while loop"><code>repeat</code></a>, <a href="For_loop" title="For loop"><code>for</code></a> or <a href="Do_while_loop" title="Do while loop"><code>do..until</code></a>. Often it is recommended that each loop should only have one entry point (and in the original structural programming, also only one exit point, and a few languages enforce this).</li>
+</ul>
+<div class="center">
+<div class="thumb tnone">
+<div class="thumbinner" style="width:702px;">
+<a href="http://en.m.wikipedia.org/wiki/File:Structured_program_patterns.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/e/ec/Structured_program_patterns.png" width="700" height="125" class="thumbimage"></a>
+<div class="thumbcaption">
+
+Graphical representations of the three basic patters. The box diagrams (blue) were invented right for the new theory, and you can see here their equivalents in the mostly used control flow charts.</div>
+</div>
+</div>
+</div>
+<p>A language is described as <b>block-structured</b> when it has a syntax for enclosing structures between bracketed keywords, such as an if-statement bracketed by <code>if..fi</code> as in <a href="ALGOL_68" title="ALGOL 68">ALGOL 68</a>, or a code section bracketed by <code>BEGIN..END</code>, as in <a href="PL/I" title="PL/I">PL/I</a> - or the curly braces <code>{...}</code> of <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> and <a href="http://en.m.wikipedia.org/wiki/Curly_brace_family#Curly-bracket_languages" title="Curly brace family" class="mw-redirect">many later</a> languages.</p>
+<h2> <span class="mw-headline" id="Structured_programming_languages">Structured programming languages</span>
+</h2>
+<p>It is possible to do structured programming in any programming language, though it is preferable to use something like a <a href="http://en.m.wikipedia.org/wiki/Procedural_programming_language" title="Procedural programming language" class="mw-redirect">procedural programming language</a>. Some of the languages initially used for structured programming languages include: <a href="ALGOL" title="ALGOL">ALGOL</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="PL/I" title="PL/I">PL/I</a> and <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a> – but most new procedural programming languages since that time have included features to encourage structured programming, and sometimes deliberately left out features<sup id="cite_ref-3" class="reference"><a href="Structured_programming#cite_note-3"><span>[</span>3<span>]</span></a></sup> in an effort to make <a href="http://en.m.wikipedia.org/wiki/Unstructured_programming" title="Unstructured programming" class="mw-redirect">unstructured programming</a> more difficult.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<h3> <span class="mw-headline" id="Theoretical_foundation">Theoretical foundation</span>
+</h3>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Structured_program_theorem" title="Structured program theorem">structured program theorem</a> provides the theoretical basis of structured programming. It states that three ways of combining programs—sequencing, selection, and iteration—are sufficient to express any <a href="http://en.m.wikipedia.org/wiki/Computable_function" title="Computable function">computable function</a>. This observation did not originate with the structured programming movement; these structures are sufficient to describe the <a href="http://en.m.wikipedia.org/wiki/Instruction_cycle" title="Instruction cycle">instruction cycle</a> of a <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">central processing unit</a>, as well as the operation of a <a href="http://en.m.wikipedia.org/wiki/Turing_machine" title="Turing machine">Turing machine</a>. Therefore a processor is always executing a "structured program" in this sense, even if the instructions it reads from memory are not part of a structured program. However, authors usually credit the result to a 1966 paper by Böhm and Jacopini, possibly because <a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra</a> cited this paper himself. The structured program theorem does not address how to write and analyze a usefully structured program. These issues were addressed during the late 1960s and early 1970s, with major contributions by <a href="http://en.m.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra</a>, <a href="http://en.m.wikipedia.org/wiki/Robert_W._Floyd" title="Robert W. Floyd">Robert W. Floyd</a>, <a href="http://en.m.wikipedia.org/wiki/Tony_Hoare" title="Tony Hoare">Tony Hoare</a>, and <a href="http://en.m.wikipedia.org/wiki/David_Gries" title="David Gries">David Gries</a>.</p>
+<h3> <span class="mw-headline" id="Debate">Debate</span>
+</h3>
+<p><a href="http://en.m.wikipedia.org/wiki/P._J._Plauger" title="P. J. Plauger">P. J. Plauger</a>, an <a href="http://en.m.wikipedia.org/wiki/Early_adopter" title="Early adopter">early adopter</a> of structured programming, described his reaction to the structured program theorem:</p>
+<dl>
+<dd>Us converts waved this interesting bit of news under the noses of the unreconstructed assembly-language programmers who kept trotting forth twisty bits of logic and saying, 'I betcha can't structure this.' Neither the proof by Böhm and Jacopini nor our repeated successes at writing structured code brought them around one day sooner than they were ready to convince themselves.<sup id="cite_ref-4" class="reference"><a href="Structured_programming#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+</dd>
+</dl>
+<p><a href="http://en.m.wikipedia.org/wiki/Donald_Knuth" title="Donald Knuth">Donald Knuth</a> accepted the principle that programs must be written with provability in mind, but he disagreed (and still disagrees<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from January 2008">citation needed</span></a></i>]</sup>) with abolishing the GOTO statement. In his 1974 paper, "Structured Programming with Goto Statements", he gave examples where he believed that a direct jump leads to clearer and more efficient code without sacrificing provability. Knuth proposed a looser structural constraint: It should be possible to draw a program's <a href="http://en.m.wikipedia.org/wiki/Flow_chart" title="Flow chart" class="mw-redirect">flow chart</a> with all forward branches on the left, all backward branches on the right, and no branches crossing each other. Many of those knowledgeable in <a href="Compiler" title="Compiler">compilers</a> and <a href="http://en.m.wikipedia.org/wiki/Graph_theory" title="Graph theory">graph theory</a> have advocated allowing only <span class="new" title="Reducible flow graphs (page does not exist)">reducible flow graphs</span><sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Manual_of_Style" title="Wikipedia:Manual of Style"><span title="You can help -- from April 2012">when defined as?</span></a></i>]</sup>.<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Avoid_weasel_words" title="Wikipedia:Avoid weasel words" class="mw-redirect"><span title="The material in the vicinity of this tag may use weasel words or too-vague attribution. from May 2011">who?</span></a></i>]</sup></p>
+<p>Structured programming theorists gained a major ally in the 1970s after <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a> researcher <a href="http://en.m.wikipedia.org/wiki/Harlan_Mills" title="Harlan Mills">Harlan Mills</a> applied his interpretation of structured programming theory to the development of an indexing system for the <i><a href="http://en.m.wikipedia.org/wiki/New_York_Times" title="New York Times" class="mw-redirect">New York Times</a></i> research file. The project was a great engineering success, and managers at other companies cited it in support of adopting structured programming, although Dijkstra criticized the ways that Mills's interpretation differed from the published work.</p>
+<p>As late as 1987 it was still possible to raise the question of structured programming in a computer science journal. Frank Rubin did so in that year with a letter, "'GOTO considered harmful' considered harmful." Numerous objections followed, including a response from Dijkstra that sharply criticized both Rubin and the concessions other writers made when responding to him.</p>
+<h3> <span class="mw-headline" id="Outcome">Outcome</span>
+</h3>
+<p>By the end of the 20th century nearly all computer scientists were convinced that it is useful to learn and apply the concepts of structured programming. High-level programming languages that originally lacked programming structures, such as <a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a>, <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, and <a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a>, now have them.</p>
+<h2> <span class="mw-headline" id="Common_deviations">Common deviations</span>
+</h2>
+<h3> <span class="mw-headline" id="Exception_handling">Exception handling</span>
+</h3>
+<p>Although there is almost never a reason to have multiple points of entry to a subprogram, multiple exits are often used to reflect that a subprogram may have no more work to do, or may have encountered circumstances that prevent it from continuing.</p>
+<p>A typical example of a simple procedure would be reading data from a file and processing it:</p>
+<pre>
+open file;
+while (reading not finished) {
+  read some data;
+  if (error) {
+    stop the subprogram and inform rest of the program about the error;
+  }
+  process read data;
+}
+finish the subprogram;
+</pre>
+<p>The "stop and inform" may be achieved by throwing an exception, second return from the procedure, labelled loop break, or even a goto. Many languages have instructions that allow unstructured exiting from loops and procedures. <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> allows multiple paths to a structure's exit (such as "continue", "break", and "return"), newer languages have also "labelled breaks" (similar to the former, but allowing breaking out of more than just the innermost loop) and exceptions.</p>
+<p>The procedure above breaks the rules of Dijkstra's structured programming because the while loop can terminate in a way that is not specified in the while condition (the "reading not finished"), and because it has two exit points (the end of the procedure and the "stop" on error). Re-coding this to use a structured while loop and a single point of exit is trivial:</p>
+<pre>
+open file;
+while (no error) and (reading not finished) {
+  read some data;
+  if (no error) {
+    process read data;
+  }
+}
+if (error) {
+  inform rest of the program about the error;
+  }
+else {
+  finish the subprogram;
+}
+</pre>
+<p>This removes the unstructured termination of the while loop and gives the procedure a single exit point without any change to the overall function.</p>
+<h3> <span class="mw-headline" id="State_machines">State machines</span>
+</h3>
+<p>Some programs, particularly <a href="http://en.m.wikipedia.org/wiki/Parsers" title="Parsers" class="mw-redirect">parsers</a> and <a href="http://en.m.wikipedia.org/wiki/Communications_protocol" title="Communications protocol">communications protocols</a>, have a number of <a href="http://en.m.wikipedia.org/wiki/State_(computer_science)" title="State (computer science)">states</a> that follow each other in a way that is not easily reduced to the basic structures. It is possible to structure these systems by making each state-change a separate subprogram and using a variable to indicate the active state (see <a href="http://en.m.wikipedia.org/wiki/Trampoline_(computers)" title="Trampoline (computers)" class="mw-redirect">trampoline</a>). However, some programmers (including Knuth<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from December 2007">citation needed</span></a></i>]</sup>) prefer to implement the state-changes with a jump to the new state.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Control_flow" title="Control flow">Control flow</a> (more detail of high-level control structures)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Minimal_evaluation" title="Minimal evaluation" class="mw-redirect">Minimal evaluation</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nassi%E2%80%93Shneiderman_diagram" title="Nassi–Shneiderman diagram">Nassi–Shneiderman diagram</a></li>
+<li><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Structured_exception_handling" title="Structured exception handling" class="mw-redirect">Structured exception handling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Structure_chart" title="Structure chart">Structure chart</a></li>
+<li>
+<a href="Switch_statement" title="Switch statement">Switch statement</a>, a case of multiple GOTOs</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Edsger_Dijkstra" title="Edsger Dijkstra" class="mw-redirect">Edsger Dijkstra</a>, <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/ewd02xx/EWD249.PDF"><i>Notes on Structured Programming</i></a>, pg. 6</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Corrado_B%C3%B6hm" title="Corrado Böhm">Böhm, C</a>. and Jacopini, G.: <i>Flow diagrams, Turing machines and languages with only two formation rules</i>, CACM 9(5), 1966.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Michael_A._Jackson" title="Michael A. Jackson">Michael A. Jackson</a>, <i>Principles of Program Design</i>, Academic Press, London, 1975.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Ole-Johan_Dahl" title="Ole-Johan Dahl">O.-J. Dahl</a>, <a href="http://en.m.wikipedia.org/wiki/E._W._Dijkstra" title="E. W. Dijkstra" class="mw-redirect">E. W. Dijkstra</a>, <a href="http://en.m.wikipedia.org/wiki/C._A._R._Hoare" title="C. A. R. Hoare" class="mw-redirect">C. A. R. Hoare</a> <i>Structured Programming</i>, Academic Press, London, 1972 <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/0122005503" class="internal mw-magiclink-isbn">ISBN 0-12-200550-3</a>
+<ul>
+<li>this volume includes an expanded version of the <i>Notes on Structured Programming</i>, above, including an extended example of using the structured approach to develop a backtracking algorithm to solve the <a href="http://en.m.wikipedia.org/wiki/Eight_queens_puzzle" title="Eight queens puzzle">8 Queens problem</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://portal.acm.org/citation.cfm?id=1243380&amp;jmp=cit&amp;coll=portal&amp;dl=GUIDE&amp;CFID=://www.acm.org/publications/&amp;CFTOKEN=www.acm.org/publications/#CIT">a pdf version is in the ACM Classic Books Series</a></li>
+<li>Note that the third chapter of this book, by Dahl, describes an approach which is easily recognized as Object Oriented Programming. It can be seen as another way to "usefully structure" a program to aid in showing that it is correct.</li>
+</ul>
+</li>
+</ol>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Structured_programming#cite_ref-1">^</a></b></span> <span class="reference-text">Böhm, Jacopini. "Flow diagrams, turing machines and languages with only two formation rules" <a href="http://en.m.wikipedia.org/wiki/Comm._ACM" title="Comm. ACM" class="mw-redirect">Comm. ACM</a>, 9(5):366-371, May 1966</span>
+</li>
+<li id="cite_note-dijkstra1968-2">
+<span class="mw-cite-backlink"><b><a href="Structured_programming#cite_ref-dijkstra1968_2-0">^</a></b></span> <span class="reference-text"><span class="citation Journal"><a href="http://en.m.wikipedia.org/wiki/Edsger_Dijkstra" title="Edsger Dijkstra" class="mw-redirect">Edsger Dijkstra</a> (March 1968). "Go To Statement Considered Harmful" (PDF). <i>Communications of the ACM</i> <b>11</b> (3): 147–148. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F362929.362947">10.1145/362929.362947</a>. "The unbridled use of the go to statement has as an immediate consequence that it becomes terribly hard to find a meaningful set of coordinates in which to describe the process progress. ... The go to statement as it stands is just too primitive, it is too much an invitation to make a mess of one's program."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Go+To+Statement+Considered+Harmful&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=%5B%5BEdsger+Dijkstra%5D%5D&amp;rft.au=%5B%5BEdsger+Dijkstra%5D%5D&amp;rft.date=March+1968&amp;rft.volume=11&amp;rft.issue=3&amp;rft.pages=147%E2%80%93148&amp;rft_id=info:doi/10.1145%2F362929.362947&amp;rfr_id=info:sid/en.wikipedia.org:Structured_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Structured_programming#cite_ref-3">^</a></b></span> <span class="reference-text">GOTO for example</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Structured_programming#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation book"><a href="http://en.m.wikipedia.org/wiki/P._J._Plauger" title="P. J. Plauger">Plauger, P. J.</a> (February 12, 1993). <i>Programming on Purpose, Essays on Software Design</i> (1 ed.). Prentice-Hall. p. 25. <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="http://en.m.wikipedia.org/wiki/Special:BookSources/978-0-13-721374-0" title="Special:BookSources/978-0-13-721374-0">978-0-13-721374-0</a>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programming+on+Purpose%2C+Essays+on+Software+Design&amp;rft.aulast=Plauger&amp;rft.aufirst=P.+J.&amp;rft.au=Plauger%2C%26%2332%3BP.+J.&amp;rft.date=February+12%2C+1993&amp;rft.pages=p.%26nbsp%3B25&amp;rft.edition=1&amp;rft.pub=Prentice-Hall&amp;rft.isbn=978-0-13-721374-0&amp;rfr_id=info:sid/en.wikipedia.org:Structured_programming"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="metadata mbox-small plainlinks" style="border:1px solid #aaa; background-color:#f9f9f9;"><tr>
+<td class="mbox-image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/40px-Wikibooks-logo-en-noslogan.svg.png" width="40" height="40" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/60px-Wikibooks-logo-en-noslogan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikibooks-logo-en-noslogan.svg/80px-Wikibooks-logo-en-noslogan.svg.png 2x"></td>
+<td class="mbox-text plainlist" style="">The Wikibook <i><a href="http://en.wikibooks.org/wiki/Computer_Programming" class="extiw" title="wikibooks:Computer Programming">Computer Programming</a></i> has a page on the topic of: <i><b><a href="http://en.wikibooks.org/wiki/Computer_Programming/Control" class="extiw" title="wikibooks:Computer Programming/Control">Control</a></b></i>
+</td>
+</tr></table>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://code.google.com/p/bpstruct/">BPStruct</a> - A tool to structure concurrent systems (programs, process models)</li>
+<li><a rel="nofollow" class="external text" href="http://algobuild.com/">Algobuild: Free editor for structured flow charts and pseudo code (EN - IT)</a></li>
+<li>
+<span class="citation" id="CITEREFJ._Darlinton.2C_M._Ghanem.2C_H._W._To1993">J. Darlinton, M. Ghanem, H. W. To (1993), <a rel="nofollow" class="external text" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.37.4610">"Structured Parallel Programming"</a>, <i>In Programming Models for Massively Parallel Computers. IEEE Computer Society Press. 1993</i><span class="printonly">, <a rel="nofollow" class="external free" href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.37.4610">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.37.4610</a></span></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Structured+Parallel+Programming&amp;rft.jtitle=In+Programming+Models+for+Massively+Parallel+Computers.+IEEE+Computer+Society+Press.+1993&amp;rft.aulast=J.+Darlinton%2C+M.+Ghanem%2C++H.+W.+To&amp;rft.au=J.+Darlinton%2C+M.+Ghanem%2C++H.+W.+To&amp;rft.date=1993&amp;rft_id=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fsummary%3Fdoi%3D10.1.1.37.4610&amp;rfr_id=info:sid/en.wikipedia.org:Structured_programming"><span style="display: none;"> </span></span>
+</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 30 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D9%85%D9%87%D9%8A%D9%83%D9%84%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Strukturirano_programiranje" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Programaci%C3%B3_estructurada" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Strukturovan%C3%A9_programov%C3%A1n%C3%AD" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Struktureret_programmering" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Strukturierte_Programmierung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Struktureeritud_programmeerimine" lang="et" hreflang="et">eesti</a></li><li><a href="http://es.m.wikipedia.org/wiki/Programaci%C3%B3n_estructurada" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Programmation_structur%C3%A9e" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Programaci%C3%B3n_estruturada" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EA%B5%AC%EC%A1%B0%EC%A0%81_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://hr.m.wikipedia.org/wiki/Strukturirano_programiranje" lang="hr" hreflang="hr">hrvatski</a></li><li><a href="http://it.m.wikipedia.org/wiki/Programmazione_strutturata" lang="it" hreflang="it">italiano</a></li><li><a href="http://lt.m.wikipedia.org/wiki/Strukt%C5%ABrinis_programavimas" lang="lt" hreflang="lt">lietuvių</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Struktur%C3%A1lt_programoz%C3%A1s" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Pengaturcaraan_berstruktur" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Gestructureerd_programmeren" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%A7%8B%E9%80%A0%E5%8C%96%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Programowanie_strukturalne" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_estruturada" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Programare_structurat%C4%83" lang="ro" hreflang="ro">română</a></li><li><a href="http://rue.m.wikipedia.org/wiki/%D0%A8%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D2%91%D1%80%D0%B0%D0%BC%D0%BE%D0%B2%D0%B0%D0%BD%D1%8F" lang="rue" hreflang="rue">русиньскый</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/Strukturirano_programiranje" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Strukturerad_programmering" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Yap%C4%B1sal_programlama" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%BD%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://vi.m.wikipedia.org/wiki/L%E1%BA%ADp_tr%C3%ACnh_c%E1%BA%A5u_tr%C3%BAc" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E7%BB%93%E6%9E%84%E5%8C%96%E7%BC%96%E7%A8%8B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Structured_programming&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Structured_programming&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Structured+programming&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

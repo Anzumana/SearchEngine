@@ -1,0 +1,313 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Modular programming - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Modular programming","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Modular_programming" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Modular+programming"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Modular programming</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-disputed" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/f/f4/Ambox_content.png" width="40" height="40"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article's <b>factual accuracy is <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Accuracy_dispute" title="Wikipedia:Accuracy dispute">disputed</a></b>. <span class="hide-when-compact">Please help to ensure that disputed statements are <a href="http://en.m.wikipedia.org/wiki/Wikipedia:RS" title="Wikipedia:RS" class="mw-redirect">reliably sourced</a>. See the relevant discussion on the <a href="http://en.m.wikipedia.org/wiki/Talk:Modular_programming#Disputed" title="Talk:Modular programming">talk page</a>.</span> <small><i>(October 2010)</i></small> </span></td>
+</tr></table>
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><a href="Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul>
+<li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul>
+</li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li>
+<a href="Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="Structured_programming" title="Structured programming">Structured</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li>
+<a href="Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul>
+<li>
+<strong class="selflink">Modular</strong> (contrast: Monolithic)</li>
+<li>
+<a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p><b>Modular programming</b> (also called "top-down design" and "stepwise refinement") is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable <b>modules</b>, such that each contains everything necessary to execute only one aspect of the desired functionality.<sup id="cite_ref-1" class="reference"><a href="Modular_programming#cite_note-1"><span>[</span>1<span>]</span></a></sup> Conceptually, modules represent a <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>, and improve <a href="http://en.m.wikipedia.org/wiki/Maintainability" title="Maintainability">maintainability</a> by enforcing logical boundaries between components. Modules are typically incorporated into the program through <a href="http://en.m.wikipedia.org/wiki/Interface_(computer_science)" title="Interface (computer science)" class="mw-redirect">interfaces</a>.<sup id="cite_ref-2" class="reference"><a href="Modular_programming#cite_note-2"><span>[</span>2<span>]</span></a></sup> A module interface expresses the elements that are provided and required by the module. The elements defined in the interface are detectable by other modules. The <a href="http://en.m.wikipedia.org/wiki/Implementation" title="Implementation">implementation</a> contains the working code that corresponds to the elements declared in the interface.</p>
+<h2> <span class="mw-headline" id="Language_support">Language support</span>
+</h2>
+<p>Languages that formally support the module concept include <a href="http://en.m.wikipedia.org/wiki/Ada_(programming_language)" title="Ada (programming language)">Ada</a>, <a href="ALGOL" title="ALGOL">Algol</a>, <a href="http://en.m.wikipedia.org/wiki/BlitzMax" title="BlitzMax" class="mw-redirect">BlitzMax</a>, <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, <a href="http://en.m.wikipedia.org/wiki/Component_Pascal" title="Component Pascal">Component Pascal</a>, <a href="D_(programming_language)" title="D (programming language)">D</a>, <a href="http://en.m.wikipedia.org/wiki/Erlang_(programming_language)" title="Erlang (programming language)">Erlang</a>, <a href="http://en.m.wikipedia.org/wiki/F_(programming_language)" title="F (programming language)">F</a>, <a href="Fortran" title="Fortran">Fortran</a>, <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a>, <a href="http://en.m.wikipedia.org/wiki/IBM/360" title="IBM/360" class="mw-redirect">IBM/360</a> <a href="http://en.m.wikipedia.org/wiki/Assembler_for_an_assembly_language" title="Assembler for an assembly language" class="mw-redirect">Assembler</a>, <a href="http://en.m.wikipedia.org/wiki/IBM_RPG" title="IBM RPG">IBM RPG</a>, <a href="Java_(programming_language)" title="Java (programming language)">Java</a> (packages are considered modules in the JLS), <a href="MATLAB" title="MATLAB">MATLAB</a>, <a href="http://en.m.wikipedia.org/wiki/ML_(programming_language)" title="ML (programming language)">ML</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-2" title="Modula-2">Modula-2</a>, <a href="http://en.m.wikipedia.org/wiki/Modula-3" title="Modula-3">Modula-3</a>, Morpho, <a href="http://en.m.wikipedia.org/wiki/Oberon_(programming_language)" title="Oberon (programming language)">Oberon</a>, <a href="http://en.m.wikipedia.org/wiki/NEWP" title="NEWP">NEWP</a>, <a href="http://en.m.wikipedia.org/wiki/OCaml" title="OCaml">OCaml</a>, <a href="Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, <a href="Perl" title="Perl">Perl</a>, <a href="PL/I" title="PL/I">PL/I</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, and <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from February 2012">citation needed</span></a></i>]</sup> The <a href="http://en.m.wikipedia.org/wiki/IBM_System_i" title="IBM System i">IBM System i</a> also uses Modules in <a href="http://en.m.wikipedia.org/wiki/AS/400_Control_Language" title="AS/400 Control Language">CL</a>, <a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a>, and <a href="http://en.m.wikipedia.org/wiki/IBM_RPG" title="IBM RPG">RPG</a> when programming in the Integrated Language Environment (ILE). Modular programming can be performed even where the programming language lacks explicit syntactic features to support named modules.</p>
+<p>Software tools can create modular code units from groups of components. <a href="http://en.m.wikipedia.org/wiki/Library_(computing)" title="Library (computing)">Libraries</a> of components built from separately compiled modules can be combined into a whole by using a <a href="Linker_(computing)" title="Linker (computing)">linker</a>.</p>
+<h2> <span class="mw-headline" id="Key_aspects">Key aspects</span>
+</h2>
+<p>With modular programming, <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">concerns are separated</a> such that modules perform logically discrete functions. No (or few) modules interact with other modules of the system; except in the sense that one module may use another module, to achieve its purpose. The desired module goal is to have no interaction between modules [other than that already stated].</p>
+<p>Each module (which can contain a number of separate processes) works independently to another module. Something that is best understood at the lowest module hierarchy, when no other module is used. At the highest module hierarchy confusingly, there may be several layers of used modules, before the module achieves its purpose.</p>
+<p>When creating a modular system, instead of creating a monolithic application (where the smallest component is the whole), several smaller modules are built (and usually compiled) separately so that, when composed together, they construct the executable application program. A <a href="http://en.m.wikipedia.org/wiki/Just-in-time_compilation" title="Just-in-time compilation">just in time compiler</a> may perform some of this construction "on-the-fly" at <a href="Run_time_(program_lifecycle_phase)" title="Run time (program lifecycle phase)">run time</a>.</p>
+<p>This makes modular designed systems, if built correctly, far more reusable than a traditional monolithic design, since all (or many) of these modules may then be reused (without change) in other projects. This also facilitates the "breaking down" of projects (through "<a href="http://en.m.wikipedia.org/wiki/Divide_and_conquer" title="Divide and conquer">divide and conquer</a>") into several smaller projects. Theoretically, a modularized software project will be more easily assembled by large teams, since no team members are creating the whole system, or even need to know about the system as a whole. They can focus just on the assigned smaller task (this, it is claimed, counters the key assumption of <a href="http://en.m.wikipedia.org/wiki/The_Mythical_Man_Month" title="The Mythical Man Month" class="mw-redirect">The Mythical Man Month</a> – making it actually possible to add more developers to a late software project – without making it later still).</p>
+<h2> <span class="mw-headline" id="Implementation">Implementation</span>
+</h2>
+<p><a href="http://en.m.wikipedia.org/wiki/Message_passing" title="Message passing">Message passing</a> has, more recently, gained ground over the earlier, more conventional, "<code>Call</code>" interfaces, becoming the more dominant linkage between separate modules as an attempt to solve the "versioning problem" (sometimes experienced when using interfaces for communication between the modules).</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>Traditional programming languages have been used to support modular programming - since at least the 1960s. Modular programming is a loosely defined concept with no official definition. It is, in essence, simply a programming technique<sup class="noprint Inline-Template" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Disputed_statement" title="Wikipedia:Disputed statement"><span title="The material in the vicinity of this tag may not be factual or accurate from October 2010">dubious</span></a> <span class="metadata">– <a href="http://en.m.wikipedia.org/wiki/Talk:Modular_programming#Dubious" title="Talk:Modular programming">discuss</a></span></i>]</sup>. Exactly where modularized programming ends, and <a href="http://en.m.wikipedia.org/wiki/Dynamic-link_library" title="Dynamic-link library">Dynamically Linked Libraries</a> or <a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a> starts in this context is subjective. It might be defined as the natural predecessor of <a href="Object-oriented_programming" title="Object-oriented programming">OOP</a>, or an evolutionary step beyond it - depending upon viewpoint.</p>
+<h2> <span class="mw-headline" id="Advantages">Advantages</span>
+</h2>
+<p>Several programmers can work on individual programs at the same time, thus, making development of program faster. The code base is easier to debug, update and modify. It leads to a structured approach as a complex problem can be broken into simpler tasks. This strategy of developing a program is, therefore, very advantageous.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Architecture_description_language" title="Architecture description language">Architecture description language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cohesion_(computer_science)" title="Cohesion (computer science)">Cohesion</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Constructionist_design_methodology" title="Constructionist design methodology">Constructionist design methodology</a>, a methodology for creating modular, broad Artificial Intelligence systems</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based software engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Coupling_(computer_science)" title="Coupling (computer science)" class="mw-redirect">Coupling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/David_Parnas" title="David Parnas">David Parnas</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Information_hiding" title="Information hiding">Information hiding</a> (encapsulation)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Library_(computing)" title="Library (computing)">Library (computing)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_system_quality_attributes" title="List of system quality attributes" class="mw-redirect">List of system quality attributes</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Snippet_(programming)" title="Snippet (programming)">Snippet (programming)</a></li>
+<li><a href="Structured_programming" title="Structured programming">Structured programming</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Modular_programming#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web">Jürgen Haas. "Modular programming". <a rel="nofollow" class="external free" href="http://www.about.com/">http://www.about.com/</a>: About.com. "Modular programming is a programming style that breaks down program functions into modules, each of which accomplishes one function and contains all the source code and variables needed to accomplish that function. Modular programming is a solution to the problem of very large programs that are difficult to debug and maintain. By segmenting the program into modules that perform clearly defined functions, you can determine the source of program errors more easily. Object-orientated programming languages, such as SmallTalk and HyperTalk, incorporate modular programming principles."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Modular+programming&amp;rft.atitle=&amp;rft.aulast=J%C3%BCrgen+Haas&amp;rft.au=J%C3%BCrgen+Haas&amp;rft.place=http%3A%2F%2Fwww.about.com%2F&amp;rft.pub=About.com&amp;rfr_id=info:sid/en.wikipedia.org:Modular_programming"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Modular_programming#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web">Seif Haridi; Nils Franzén. "7. Modules and Interfaces". <a rel="nofollow" class="external free" href="http://www.mozart-oz.org/documentation/index.html">http://www.mozart-oz.org/documentation/index.html</a>: Mozart Documentation. "Modules, also known as packages, are collection of procedures and other values1 that are constructed together to provide certain related functionality. A module typically has a number of private procedures that are not visible outside the module and a number of interface procedures that provide the external services of the module."</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=7.+Modules+and+Interfaces&amp;rft.atitle=&amp;rft.aulast=Seif+Haridi&amp;rft.au=Seif+Haridi&amp;rft.place=http%3A%2F%2Fwww.mozart-oz.org%2Fdocumentation%2Findex.html&amp;rft.pub=Mozart+Documentation&amp;rfr_id=info:sid/en.wikipedia.org:Modular_programming"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://legosoftwareprocess.org/">O2 Software Process</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 13 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%A7%D9%84%D8%A8%D8%B1%D9%85%D8%AC%D8%A9_%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A8%D9%8A%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB_(%D1%81%D0%BE%D1%84%D1%82%D1%83%D0%B5%D1%80)" lang="bg" hreflang="bg">български</a></li><li><a href="http://de.m.wikipedia.org/wiki/Modul_(Software)" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Programaci%C3%B3n_modular" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%BE%D9%88%D8%AF%D9%85%D8%A7%D9%86%DB%8C" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Module_(programmation)" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EB%AA%A8%EB%93%88%EC%84%B1_(%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%9E%D7%95%D7%93%D7%95%D7%9C_(%D7%AA%D7%95%D7%9B%D7%A0%D7%94)" lang="he" hreflang="he">עברית</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Programa%C3%A7%C3%A3o_modular" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9C%D0%BE%D0%B4%D1%83%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" lang="ru" hreflang="ru">русский</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Mod%C3%BCler_programlama" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E8%BB%9F%E9%AB%94%E6%A8%A1%E5%A1%8A" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Modular_programming&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Modular_programming&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Modular+programming&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

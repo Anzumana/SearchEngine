@@ -1,0 +1,171 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Function prototype - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Function prototype","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Function_prototype" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Function+prototype"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Function prototype</h1>			
+<div class="dablink">For other uses, see <a href="http://en.m.wikipedia.org/wiki/Prototype_(computer_science)" title="Prototype (computer science)" class="mw-redirect">Prototype (computer science)</a>.</div>
+<p>A <b>function <a href="http://en.m.wikipedia.org/wiki/Prototype" title="Prototype">prototype</a></b> in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a>, <a href="Perl" title="Perl">Perl</a> or <a href="C++" title="C++">C++</a> is a declaration of a <a href="Subroutine" title="Subroutine">function</a> that omits the function body but does specify the function's <a href="http://en.m.wikipedia.org/wiki/Return_type" title="Return type">return type</a>, name, <a href="Arity" title="Arity">arity</a> and argument <a href="http://en.m.wikipedia.org/wiki/Datatype" title="Datatype" class="mw-redirect">types</a>. While a function definition specifies what a function does, a function prototype can be thought of as specifying its interface.</p>
+<p>In a prototype, argument names are optional, however, the type is necessary along with all modifiers (e.g. if it is a pointer or a const <a href="Parameter_(computer_science)" title="Parameter (computer science)" class="mw-redirect">argument</a>).</p>
+<h2> <span class="mw-headline" id="Example">Example</span>
+</h2>
+<p>Consider the following function prototype:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> fac<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<p>This prototype specifies that in this program, there is a function named "fac" which takes a single <a href="http://en.m.wikipedia.org/wiki/Integer" title="Integer">integer</a> argument "n" and returns an integer. Elsewhere in the program a function definition must be provided if one wishes to use this function. It's important to be aware that a declaration of a function does not need to include a prototype. The following is a prototype-less function declaration, which just declares the function name and its return type, but doesn't tell what parameter types the definition expects.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="kw4">int</span> fac<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Uses">Uses</span>
+</h2>
+<p>In C, if a function is not previously declared and its name occurs in an expression followed by a left parenthesis, it is implicitly declared as a function that returns an <code>int</code> and nothing is assumed about its arguments. In this case the compiler will not be able to perform compile-time checking of argument types and <a href="Arity" title="Arity">arity</a> when the function is applied to some arguments. This can cause problems. The following code illustrates a situation in which the behavior of an implicitly declared function is <a href="http://en.m.wikipedia.org/wiki/Undefined_behavior" title="Undefined behavior">undefined</a>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="co2">#include &lt;stdio.h&gt;//prepreseseur</span>
+ 
+ <span class="coMULTI">/* 
+  * If this prototype is provided, the compiler will catch the error 
+  * in main(). If it is omitted, then the error may go unnoticed.
+  */</span>
+ <span class="kw4">int</span> fac<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span><span class="br0">(</span><span class="br0">)</span><span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span><span class="br0">{</span>operator <span class="sy0">&lt;</span><span class="br0">}</span>              <span class="coMULTI">/* Prototype */</span>
+ 
+ <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span> <span class="br0">{</span>             <span class="coMULTI">/* Calling function */</span>
+     <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"%d<span class="es1">\n</span>"</span><span class="sy0">,</span> fac<span class="br0">(</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>   <span class="coMULTI">/* Error: forgot argument to fac */</span>
+     <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+ 
+ <span class="kw4">int</span> fac<span class="br0">(</span><span class="kw4">int</span> n<span class="br0">)</span> <span class="br0">{</span>             <span class="coMULTI">/* Called function  Function definition */</span>
+ 
+     <span class="kw1">if</span> <span class="br0">(</span>n <span class="sy0">==</span> <span class="nu0">0</span><span class="br0">)</span> 
+         <span class="kw1">return</span> <span class="nu0">1</span><span class="sy0">;</span>
+     <span class="kw1">else</span> 
+         <span class="kw1">return</span> n <span class="sy0">*</span> fac<span class="br0">(</span>n <span class="sy0">-</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>The function "fac" expects an integer argument to be on the <a href="Call_stack" title="Call stack">stack</a> or in a <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">register</a> when it is called. If the prototype is omitted, the compiler will have no way of enforcing this and "fac" will end up operating on some other datum on the stack (possibly a <a href="http://en.m.wikipedia.org/wiki/Return_address" title="Return address">return address</a> or the value of a variable that is currently not in <a href="Scope_(programming)" title="Scope (programming)" class="mw-redirect">scope</a>). By including the function prototype, you inform the compiler that the function "fac" takes one integer argument and you enable the compiler to catch these kinds of errors and make the compilation process run smoothly.</p>
+<h3> <span class="mw-headline" id="Creating_library_interfaces">Creating library interfaces</span>
+</h3>
+<p>By placing function prototypes in a <a href="Header_file" title="Header file">header file</a>, one can specify an <a href="http://en.m.wikipedia.org/wiki/Interface_(computer_science)" title="Interface (computer science)" class="mw-redirect">interface</a> for a <a href="Library_(computer_science)" title="Library (computer science)" class="mw-redirect">library</a>.</p>
+<h3> <span class="mw-headline" id="Class_declarations">Class declarations</span>
+</h3>
+<p>In C++, function prototypes are also used in <a href="http://en.m.wikipedia.org/wiki/Class_(computer_science)" title="Class (computer science)" class="mw-redirect">class</a> definitions.</p>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ul>
+<li>
+<span class="citation" id="CITEREFKernighanRitchie1988">Kernighan, Brian W.; Ritchie, Dennis M. (1988), <i>The C Programming Language</i> (2nd ed.), Upper Saddle River, NJ: Prentice Hall PTR, <a href="International_Standard_Book_Number" title="International Standard Book Number">ISBN</a> <a href="Special:BookSources/0-13-110362-8" title="Special:BookSources/0-13-110362-8">0-13-110362-8</a></span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+C+Programming+Language&amp;rft.aulast=Kernighan&amp;rft.aufirst=Brian+W.&amp;rft.au=Kernighan%2C%26%2332%3BBrian+W.&amp;rft.au=Ritchie%2C%26%2332%3BDennis+M.&amp;rft.date=1988&amp;rft.edition=2nd&amp;rft.place=Upper+Saddle+River%2C+NJ&amp;rft.pub=Prentice+Hall+PTR&amp;rft.isbn=0-13-110362-8&amp;rfr_id=info:sid/en.wikipedia.org:Function_prototype"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_signature" title="Type signature">Type signature</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Forward_declaration" title="Forward declaration">Forward declaration</a></li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Funktionsprototyp" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E9%96%A2%E6%95%B0%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Prototyp_(oprogramowanie)" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Prot%C3%B3tipo_de_fun%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D1%82%D0%BE%D1%82%D0%B8%D0%BF_%D1%84%D1%83%D0%BD%D0%BA%D1%86%D1%96%D1%97" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Function_prototype&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Function_prototype&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Function+prototype&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

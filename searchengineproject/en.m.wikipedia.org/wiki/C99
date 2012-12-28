@@ -1,0 +1,646 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>C99 - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"C99","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/C99" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=C99"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">C99</h1>			
+<div class="dablink">This article is about the programming language dialect.  For other uses, see <a href="http://en.m.wikipedia.org/wiki/C99_(disambiguation)" title="C99 (disambiguation)">C99 (disambiguation)</a>.</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:182px;">
+<a href="http://en.m.wikipedia.org/wiki/File:ISO-IEC-9899-1999-cover.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/b/b6/ISO-IEC-9899-1999-cover.png/180px-ISO-IEC-9899-1999-cover.png" width="180" height="255" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/b6/ISO-IEC-9899-1999-cover.png/270px-ISO-IEC-9899-1999-cover.png 1.5x, //upload.wikimedia.org/wikipedia/en/b/b6/ISO-IEC-9899-1999-cover.png 2x"></a>
+<div class="thumbcaption">
+
+Cover of the C99 standards document</div>
+</div>
+</div>
+<p><b>C99</b> is an informal name for <i><b>ISO/IEC 9899:1999</b></i>, a past version of the <a href="http://en.m.wikipedia.org/wiki/C_programming_language" title="C programming language" class="mw-redirect">C programming language</a> standard. It extends the previous version (<a href="ANSI_C#C90" title="ANSI C">C90</a>) with new linguistic and library features, and helps implementations make better use of available computer hardware, such as <a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE 754</a> arithmetic, and compiler technology.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>After <a href="http://en.m.wikipedia.org/wiki/ANSI" title="ANSI" class="mw-redirect">ANSI</a> produced the official standard for the C programming language in 1989, which became an international standard in 1990, the C language specification remained relatively static for some time, while <a href="C++" title="C++">C++</a> continued to evolve, largely during its own standardization effort. Normative Amendment 1 created a new standard for C in 1995, but only to correct some details of the 1989 standard and to add more extensive support for international character sets. The standard underwent further revision in the late 1990s, leading to the publication of ISO/IEC 9899:1999 in 1999, which was adopted as an ANSI standard in May 2000. The language defined by that version of the standard is commonly referred to as "C99". The international C standard is maintained by the <a href="Working_group" title="Working group">working group</a> <a href="http://en.m.wikipedia.org/wiki/SC22" title="SC22" class="mw-redirect">ISO/IEC JTC1/SC22</a>/WG14.</p>
+<h2> <span class="mw-headline" id="Design">Design</span>
+</h2>
+<p>C99 is, for the most part, backward compatible with C89 but is stricter in some ways.</p>
+<p>In particular, a declaration that lacks a type specifier no longer has <code>int</code> implicitly assumed. The C standards committee decided that it was of more value for compilers to diagnose inadvertent omission of the type specifier than to silently process legacy code that relied on implicit <code>int</code>. In practice, compilers are likely to display a warning, then assume <code>int</code> and continue translating the program.</p>
+<p>C99 introduced several new features, many of which had already been implemented as extensions in several compilers:</p>
+<ul>
+<li><a href="Inline_function" title="Inline function">inline functions</a></li>
+<li>intermingled declarations and code: <a href="Variable_(programming)" title="Variable (programming)" class="mw-redirect">variable</a> declaration is no longer restricted to file scope or the start of a compound statement (block), similar to <a href="C++" title="C++">C++</a>
+</li>
+<li>several new <a href="Data_type" title="Data type">data types</a>, including <code>long long int</code>, optional extended integer types, an explicit <a href="Boolean_datatype" title="Boolean datatype" class="mw-redirect">boolean data type</a>, and a <code>complex</code> type to represent <a href="Complex_number" title="Complex number">complex numbers</a>
+</li>
+<li><a href="Variable-length_array" title="Variable-length array">variable-length arrays</a></li>
+<li>support for one-line <a href="http://en.m.wikipedia.org/wiki/Comment_(programming)" title="Comment (programming)" class="mw-redirect">comments</a> beginning with <code>//</code>, as in <a href="BCPL" title="BCPL">BCPL</a> or <a href="C++" title="C++">C++</a>
+</li>
+<li>new library functions, such as <code>snprintf</code>
+</li>
+<li>new <a href="Header_file" title="Header file">header files</a>, such as <code><a href="http://en.m.wikipedia.org/wiki/Stdbool.h" title="Stdbool.h" class="mw-redirect">stdbool.h</a></code>, <code><a href="http://en.m.wikipedia.org/wiki/Complex.h" title="Complex.h" class="mw-redirect">complex.h</a></code>, <code><a href="http://en.m.wikipedia.org/wiki/Tgmath.h" title="Tgmath.h" class="mw-redirect">tgmath.h</a></code>, and <code><a href="http://en.m.wikipedia.org/wiki/Inttypes.h" title="Inttypes.h" class="mw-redirect">inttypes.h</a></code>
+</li>
+<li>type-generic math functions</li>
+<li>improved support for <a href="http://en.m.wikipedia.org/wiki/IEEE_floating_point" title="IEEE floating point">IEEE floating point</a>
+</li>
+<li>designated initializers</li>
+<li>compound literals</li>
+<li>support for <a href="Variadic_macro" title="Variadic macro">variadic macros</a> (macros with a variable number of arguments)</li>
+<li>
+<code><a href="http://en.m.wikipedia.org/wiki/Restrict" title="Restrict">restrict</a></code> qualification allows more aggressive code <a href="http://en.m.wikipedia.org/wiki/Optimization_(computer_science)" title="Optimization (computer science)" class="mw-redirect">optimization</a>
+</li>
+<li>universal character names, which allows user variables to contain other characters than the standard character set</li>
+</ul>
+<p>Parts of the C99 standard are included in the current version of the C++ standard, <a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a>, including integer types, header files, and library functions. Variable-length arrays are not among these included parts because C++'s <a href="http://en.m.wikipedia.org/wiki/Standard_Template_Library" title="Standard Template Library">Standard Template Library</a> already includes similar functionality.</p>
+<h2> <span class="mw-headline" id="IEEE.C2.A0754_floating_point_support">IEEE 754 floating point support</span>
+</h2>
+<p>A major feature of C99 is its numerics support, and in particular its support for access to the features of IEEE 754 (also known as IEC 60559) <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a> hardware present in the vast majority of modern processors (defined in "Annex F IEC 60559 floating-point arithmetic").</p>
+<p>On hardware with IEEE 754 floating point:</p>
+<ul>
+<li>float is defined as IEEE 754 <a href="http://en.m.wikipedia.org/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">single precision</a>, double is defined as <a href="http://en.m.wikipedia.org/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">double precision</a>, and long double is defined as IEEE 754 <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">extended precision</a> or <a href="http://en.m.wikipedia.org/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">quad precision</a> where available (e.g., Intel 80 bit <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">double extended</a> precision on <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> or <a href="http://en.m.wikipedia.org/wiki/X86-64" title="X86-64">x86-64</a> platforms).</li>
+<li>arithmetic operations and functions are correctly rounded as defined by IEEE 754.</li>
+<li>expression evaluation is defined to be performed in one of three well-defined methods, indicating whether floating point variables are first promoted to a more precise format in expressions: FLT_EVAL_METHOD == 2 indicates that all internal intermediate computations are performed by default at high precision (long double) where available (e.g., <a href="http://en.m.wikipedia.org/wiki/Extended_precision" title="Extended precision">80 bit double extended</a>); FLT_EVAL_METHOD == 1 performs all internal intermediate expressions in double precision (unless an operand is long double); FLT_EVAL_METHOD == 0 specifies each operation is evaluated only at the precision of the widest operand of each operator. The intermediate result type for operands of a given precision are summarized in the following table:</li>
+</ul>
+<table class="wikitable">
+<tr>
+<th>FLT_EVAL_METHOD</th>
+<th>float</th>
+<th>double</th>
+<th>long double</th>
+</tr>
+<tr>
+<td>0</td>
+<td>float</td>
+<td>double</td>
+<td>long double</td>
+</tr>
+<tr>
+<td>1</td>
+<td>double</td>
+<td>double</td>
+<td>long double</td>
+</tr>
+<tr>
+<td>2</td>
+<td>long double</td>
+<td>long double</td>
+<td>long double</td>
+</tr>
+</table>
+<p>FLT_EVAL_METHOD == 2 is the safest default as it limits the risk of <a href="http://en.m.wikipedia.org/wiki/Round-off_error" title="Round-off error">rounding errors</a> affecting numerically unstable expressions (see <a href="http://en.m.wikipedia.org/wiki/Floating_point#IEEE_754_design_rationale" title="Floating point">IEEE 754 design rationale</a>) and is the designed default method for <a href="http://en.m.wikipedia.org/wiki/X87" title="X87">x87</a> hardware; FLT_EVAL_METHOD == 1 was the default evaluation method originally used in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)#K.26R_C" title="C (programming language)">K&amp;R C</a>, which promoted all floats to double in expressions; and FLT_EVAL_METHOD == 0 is also commonly used and specifies a strict "evaluate to type" of the operands. (For <a href="GNU_Compiler_Collection" title="GNU Compiler Collection">gcc</a>, FLT_EVAL_METHOD == 2 is the default on 32 bit x86, and FLT_EVAL_METHOD == 0 is the default on 64 bit x86-64, but FLT_EVAL_METHOD == 2 can be specified on x86-64 with option -mfpmath=387). Note that prior to the precision of intermediate values being precisely specified in C99, C compilers could round intermediate results inconsistently, especially when using <a href="http://en.m.wikipedia.org/wiki/X87" title="X87">x87</a> floating point hardware, leading to compiler-specific behaviour;<sup id="cite_ref-stackinterview_1-0" class="reference"><a href="C99#cite_note-stackinterview-1"><span>[</span>1<span>]</span></a></sup> such inconsistencies are not permitted in compilers conforming to C99 (annex F).</p>
+<p>The following annotated example C99 code for computing a continued fraction function demonstrates the main features:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co1">// compile with: gcc -std=c99 -mfpmath=387 -o test_c99_fp -lm test_c99_fp.c</span>
+<span class="co2">#include &lt;stdio.h&gt;</span>
+<span class="co2">#include &lt;math.h&gt;</span>
+<span class="co2">#include &lt;float.h&gt;</span>
+<span class="co2">#include &lt;fenv.h&gt;</span>
+<span class="co2">#include &lt;tgmath.h&gt;</span>
+<span class="co2">#include &lt;stdbool.h&gt;</span>
+ 
+<span class="kw4">double</span> compute_fn<span class="br0">(</span><span class="kw4">double</span> z<span class="br0">)</span>
+<span class="br0">{</span>
+        <span class="co2">#pragma STDC FENV_ACCESS ON  // [1]</span>
+ 
+        <span class="kw3">assert</span><span class="br0">(</span> FLT_EVAL_METHOD <span class="sy0">==</span> <span class="nu0">2</span> <span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [2]</span>
+ 
+        <span class="kw1">if</span> <span class="br0">(</span>isnan<span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"z is not a number<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [3]</span>
+        <span class="kw1">if</span> <span class="br0">(</span>isinf<span class="br0">(</span>z<span class="br0">)</span><span class="br0">)</span> <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"z is infinite<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+        <span class="kw4">long</span> <span class="kw4">double</span> r<span class="sy0">;</span>  <span class="co1">// [4]</span>
+ 
+        r <span class="sy0">=</span> <span class="nu16">7.0</span> <span class="sy0">-</span> <span class="nu16">3.0</span><span class="sy0">/</span><span class="br0">(</span>z <span class="sy0">-</span> <span class="nu16">2.0</span> <span class="sy0">-</span> <span class="nu16">1.0</span><span class="sy0">/</span><span class="br0">(</span>z <span class="sy0">-</span> <span class="nu16">7.0</span> <span class="sy0">+</span> <span class="nu16">10.0</span><span class="sy0">/</span><span class="br0">(</span>z <span class="sy0">-</span> <span class="nu16">2.0</span> <span class="sy0">-</span> <span class="nu16">2.0</span><span class="sy0">/</span><span class="br0">(</span>z <span class="sy0">-</span> <span class="nu16">3.0</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [5]</span>
+ 
+        feclearexcept<span class="br0">(</span>FE_DIVBYZERO<span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [6]</span>
+ 
+        bool raised <span class="sy0">=</span> fetestexcept<span class="br0">(</span>FE_OVERFLOW<span class="br0">)</span><span class="sy0">;</span> <span class="co1">// [7]</span>
+        <span class="kw1">if</span> <span class="br0">(</span>raised<span class="br0">)</span> <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Unanticipated overflow.<span class="es1">\n</span>"</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+        <span class="kw1">return</span> r<span class="sy0">;</span>
+<span class="br0">}</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+<span class="br0">{</span>
+<span class="co2">#ifndef __STDC_IEC_559__</span>
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"Warning: __STDC_IEC_559__ not defined. IEEE 754 floating point not fully supported.<span class="es1">\n</span>"</span><span class="br0">)</span> <span class="co1">// [8]</span>
+<span class="co2">#endif</span>
+ 
+       <span class="co2">#pragma STDC FENV_ACCESS ON </span>
+ 
+        <span class="co2">#ifdef TEST_NUMERIC_STABILITY_UP</span>
+        fesetround<span class="br0">(</span>FE_UPWARD<span class="br0">)</span><span class="sy0">;</span>                   <span class="co1">// [9]</span>
+        <span class="co2">#elif TEST_NUMERIC_STABILITY_DOWN</span>
+        fesetround<span class="br0">(</span>FE_DOWNWARD<span class="br0">)</span><span class="sy0">;</span> 
+        <span class="co2">#endif</span>
+ 
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"%.7g<span class="es1">\n</span>"</span><span class="sy0">,</span> compute_fn<span class="br0">(</span><span class="nu16">3.0</span><span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+        <span class="kw3">printf</span><span class="br0">(</span><span class="st0">"%.7g<span class="es1">\n</span>"</span><span class="sy0">,</span> compute_fn<span class="br0">(</span>NAN<span class="br0">)</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+        <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre>
+</div>
+</div>
+<p>Footnotes:</p>
+<ol>
+<li>As the IEEE 754 status flags are manipulated in this function, this #pragma is needed to avoid the compiler incorrectly rearranging such tests when optimising.</li>
+<li>C99 defines a limited number of expression evaluation methods: the current compilation mode can be checked to ensure it meets the assumptions the code was written under.</li>
+<li>The special values such as <a href="http://en.m.wikipedia.org/wiki/NaN" title="NaN">NaN</a> and positive or negative infinity can be tested and set.</li>
+<li>
+<code>long double</code> is defined as IEEE 754 double extended or quad precision if available. Using higher precision than required for intermediate computations can minimize <a href="http://en.m.wikipedia.org/wiki/Round-off_error" title="Round-off error">round-off error</a><sup id="cite_ref-Baleful_2-0" class="reference"><a href="C99#cite_note-Baleful-2"><span>[</span>2<span>]</span></a></sup> (the typedef double_t can be used for code that is portable under all FLT_EVAL_METHODs).</li>
+<li>The main function to be evaluated. Although it appears that some arguments to this continued fraction, e.g., 3.0, would lead to a divide-by-zero error, in fact the function is well-defined at 3.0 and division by 0 will simply return a +infinity that will then correctly lead to a finite result: IEEE 754 is defined not to trap on such exceptions by default and is designed so that they can very often be ignored, as in this case. (Note that if FLOAT_EVAL_METHOD is defined as 2 then all internal computations including constants will be performed in long double precision; if FLT_EVAL_METHOD is defined as 0 then additional care is need to ensure this, including possibly additional casts and explicit specification of constants as long double).</li>
+<li>As the raised divide-by-zero flag is not an error in this case, it can simply be dismissed to clear the flag for use by later code.</li>
+<li>In some cases other, exceptions may be an error, such as overflow (although it can in fact be shown that this cannot occur in this case).</li>
+<li>__STDC_IEC_559__ is defined if "Annex F IEC 60559 floating-point arithmetic" is fully implemented by the compiler.</li>
+<li>The default rounding mode is round to even for IEEE 754, but explicitly setting the rounding mode toward + and - infinity (by defining TEST_NUMERIC_STABILITY_UP etc. in this example, when debugging) can be used to diagnose numerical instability.<sup id="cite_ref-name_3-0" class="reference"><a href="C99#cite_note-name-3"><span>[</span>3<span>]</span></a></sup> Note that this method can be used even if compute_fn() is part of a separately compiled binary library.</li>
+</ol>
+<h2> <span class="mw-headline" id="Version_detection">Version detection</span>
+</h2>
+<p>A standard macro <code>__STDC_VERSION__</code> is defined with value <code>199901L</code> to indicate that C99 support is available. As with the <code>__STDC__</code> macro for C90, <code>__STDC_VERSION__</code> can be used to write code that will compile differently for C90 and C99 compilers, as in this example that ensures that <code>inline</code> is available in either case (by replacing it with <code>static</code> in C90 to avoid linker errors.)</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#if __STDC_VERSION__ &gt;= 199901L</span>
+  <span class="coMULTI">/* "inline" is a keyword */</span>
+<span class="co2">#else</span>
+<span class="co2"># define inline static</span>
+<span class="co2">#endif</span>
+</pre>
+</div>
+</div>
+<h2> <span class="mw-headline" id="Implementations">Implementations</span>
+</h2>
+<p>Most C compilers now have support for at least some of the features new to C99. However, there has been less support from vendors such as <a href="http://en.m.wikipedia.org/wiki/Microsoft" title="Microsoft">Microsoft</a> that have mainly focused on C++.</p>
+<table class="wikitable sortable">
+<tr>
+<th>Implementation</th>
+<th>Level of support</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>AMD x86 <a href="http://en.m.wikipedia.org/wiki/Open64" title="Open64">Open64 Compiler Suite</a>
+</td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td>Has C99 support equal to that of GCC.<sup id="cite_ref-4" class="reference"><a href="C99#cite_note-4"><span>[</span>4<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Cc65" title="Cc65">cc65</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Full <a href="http://en.m.wikipedia.org/wiki/C89_(C_version)" title="C89 (C version)" class="mw-redirect">C89</a> and C99 support is not implemented, partly due to platform limitations (<a href="http://en.m.wikipedia.org/wiki/MOS_Technology_6502" title="MOS Technology 6502">MOS Technology 6502</a>). There is no support planned for some C99 types like _Complex and 64-bit integers (long long).<sup id="cite_ref-5" class="reference"><a href="C99#cite_note-5"><span>[</span>5<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="Ch_(computer_programming)" title="Ch (computer programming)">Ch</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Supports major C99 features.<sup id="cite_ref-6" class="reference"><a href="C99#cite_note-6"><span>[</span>6<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="Clang" title="Clang">Clang</a></td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td>C99 floating-point pragmas are the only unsupported feature.<sup id="cite_ref-7" class="reference"><a href="C99#cite_note-7"><span>[</span>7<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>cparser</td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td>Supports most C99 features.<sup id="cite_ref-8" class="reference"><a href="C99#cite_note-8"><span>[</span>8<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/C%2B%2B_Builder" title="C++ Builder" class="mw-redirect">C++ Builder</a></td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly<br><sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from September 2011">citation needed</span></a></i>]</sup>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Digital_Mars" title="Digital Mars">Digital Mars C/C++ Compiler</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Lacks support for some features, such as <a href="http://en.m.wikipedia.org/wiki/Tgmath.h" title="Tgmath.h" class="mw-redirect">tgmath.h</a> and _Pragma.<sup id="cite_ref-9" class="reference"><a href="C99#cite_note-9"><span>[</span>9<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td>As of July 2011<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=C99&amp;action=edit">[update]</a></sup> in mainline GCC, 43 features have been completely implemented (12 suffer library issues), 1 feature is broken and 6 are missing.<sup id="cite_ref-10" class="reference"><a href="C99#cite_note-10"><span>[</span>10<span>]</span></a></sup> GCC's 4.6 and 4.7 releases also provides the same level of compliance.<sup id="cite_ref-11" class="reference"><a href="C99#cite_note-11"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-12" class="reference"><a href="C99#cite_note-12"><span>[</span>12<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>IBM C for AIX, V6 <sup id="cite_ref-13" class="reference"><a href="C99#cite_note-13"><span>[</span>13<span>]</span></a></sup> and <a href="http://en.m.wikipedia.org/wiki/IBM_XL_C%2B%2B" title="IBM XL C++">XL C/C++</a> V11.1 for AIX <sup id="cite_ref-14" class="reference"><a href="C99#cite_note-14"><span>[</span>14<span>]</span></a></sup>
+</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Full</td>
+<td></td>
+</tr>
+<tr>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/IBM_Rational" title="IBM Rational" class="mw-redirect">IBM Rational</a> logiscope</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Full</td>
+<td>Until Logiscope 6.3, only basic constructs of C99 were supported. C99 is officially supported in Logiscope 6.4 and later versions.<sup id="cite_ref-15" class="reference"><a href="C99#cite_note-15"><span>[</span>15<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.m.wikipedia.org/wiki/The_Portland_Group" title="The Portland Group">The Portland Group</a> PGI C/C++</td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Full</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Intel_C%2B%2B_compiler" title="Intel C++ compiler" class="mw-redirect">Intel C++ compiler</a></td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B" title="Microsoft Visual C++" class="mw-redirect">Microsoft Visual C++</a></td>
+<td style="background:#ff9090; color:black; vertical-align: middle; text-align: center;" class="table-no">No</td>
+<td>As of Visual C++ 2010, there are no plans to support C99.<sup id="cite_ref-16" class="reference"><a href="C99#cite_note-16"><span>[</span>16<span>]</span></a></sup><sup id="cite_ref-17" class="reference"><a href="C99#cite_note-17"><span>[</span>17<span>]</span></a></sup> The forthcoming Visual C++ 2011 will also lack C99 support.<sup id="cite_ref-18" class="reference"><a href="C99#cite_note-18"><span>[</span>18<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Open_Watcom" title="Open Watcom" class="mw-redirect">Open Watcom</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Implements the most-used parts of the standard. However, they are enabled only through an undocumented command-line switch.<sup id="cite_ref-19" class="reference"><a href="C99#cite_note-19"><span>[</span>19<span>]</span></a></sup>
+</td>
+</tr>
+<tr>
+<td><a href="Pelles_C" title="Pelles C">Pelles C</a></td>
+<td style="background: #FFD; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Mostly</td>
+<td>Supports most C99 features.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from April 2012">citation needed</span></a></i>]</sup>
+</td>
+</tr>
+<tr>
+<td><a href="http://en.m.wikipedia.org/wiki/Portable_C_compiler" title="Portable C compiler" class="mw-redirect">Portable C compiler</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Working towards becoming C99-compliant.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from April 2012">citation needed</span></a></i>]</sup>
+</td>
+</tr>
+<tr>
+<td><a href="Sun_Studio_(software)" title="Sun Studio (software)" class="mw-redirect">Sun Studio</a></td>
+<td style="background: #90ff90; color: black; vertical-align: middle; text-align: center;" class="table-yes">Full<sup id="cite_ref-20" class="reference"><a href="C99#cite_note-20"><span>[</span>20<span>]</span></a></sup>
+</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="Tiny_C_Compiler" title="Tiny C Compiler">Tiny C Compiler</a></td>
+<td style="background: #FFB; color: black; vertical-align: middle; text-align: center;" class="partial table-partial">Partial</td>
+<td>Does not support complex numbers, variable length arrays<sup id="cite_ref-21" class="reference"><a href="C99#cite_note-21"><span>[</span>21<span>]</span></a></sup> and for loop initial declarations. The developers state that "TCC is heading toward full ISOC99 compliance".<sup id="cite_ref-22" class="reference"><a href="C99#cite_note-22"><span>[</span>22<span>]</span></a></sup>
+</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="Future_work">Future work</span>
+</h2>
+<p>Since ratification of the 1999 C standard, the standards working group prepared technical reports specifying improved support for embedded processing, additional character data types (<a href="Unicode" title="Unicode">Unicode</a> support), and library functions with improved <a href="Bounds_checking" title="Bounds checking">bounds checking</a>. Work continues on technical reports addressing decimal <a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a>, additional mathematical <a href="http://en.m.wikipedia.org/wiki/Special_functions" title="Special functions">special functions</a>, and additional <a href="Dynamic_memory_allocation" title="Dynamic memory allocation" class="mw-redirect">dynamic memory allocation</a> functions. The C and C++ standards committees have been collaborating on specifications for <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_programming)" title="Thread (computer programming)" class="mw-redirect">threaded</a> programming.</p>
+<p>The next revision of the C standard, <a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a>, was ratified in 2011. The C standards committee adopted guidelines that limited the adoption of new features that have not been tested by existing implementations. Much effort went into developing a <a href="http://en.m.wikipedia.org/wiki/Memory_model_(programming)" title="Memory model (programming)">memory model</a>, in order to clarify <a href="Sequence_point" title="Sequence point">sequence points</a> and to support <a href="http://en.m.wikipedia.org/wiki/Thread_(computer_programming)" title="Thread (computer programming)" class="mw-redirect">threaded</a> programming.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C%2B%2B11" title="C++11">C++11</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C%2B%2B_Technical_Report_1" title="C++ Technical Report 1">C++ Technical Report 1</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Floating_point" title="Floating point">floating point</a> for further discussion of usage of IEEE 754 hardware</li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-stackinterview-1">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-stackinterview_1-0">^</a></b></span> <span class="reference-text"><span class="citation web">Jack Woehr (1 November 1997). <a rel="nofollow" class="external text" href="http://drdobbs.com/architecture-and-design/184410314">"A conversation with William Kahan."</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://drdobbs.com/architecture-and-design/184410314">http://drdobbs.com/architecture-and-design/184410314</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=A+conversation+with+William+Kahan.&amp;rft.atitle=&amp;rft.aulast=Jack+Woehr&amp;rft.au=Jack+Woehr&amp;rft.date=1+November+1997&amp;rft_id=http%3A%2F%2Fdrdobbs.com%2Farchitecture-and-design%2F184410314&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-Baleful-2">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-Baleful_2-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (11 June 1996). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf">"The Baleful Effect of Computer Benchmarks upon Applied Mathematics, Physics and Chemistry"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf">http://www.cs.berkeley.edu/~wkahan/ieee754status/baleful.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=The+Baleful+Effect+of+Computer+Benchmarks+upon+Applied+Mathematics%2C+Physics+and+Chemistry&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=11+June+1996&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2Fieee754status%2Fbaleful.pdf&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-name-3">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-name_3-0">^</a></b></span> <span class="reference-text"><span class="citation web">William Kahan (11 January 2006). <a rel="nofollow" class="external text" href="http://www.cs.berkeley.edu/~wkahan/Mindless.pdf">"How Futile are Mindless Assessments of Roundoff in Floating-Point Computation ?"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cs.berkeley.edu/~wkahan/Mindless.pdf">http://www.cs.berkeley.edu/~wkahan/Mindless.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=How+Futile+are+Mindless+Assessments+of+Roundoff+in+Floating-Point+Computation+%3F&amp;rft.atitle=&amp;rft.aulast=William+Kahan&amp;rft.au=William+Kahan&amp;rft.date=11+January+2006&amp;rft_id=http%3A%2F%2Fwww.cs.berkeley.edu%2F%7Ewkahan%2FMindless.pdf&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://developer.amd.com/cpu/open64/onlinehelp/pages/x86_open64_help.htm#Standards">"x86 Open64"</a>. Developer.amd.com. 1 April 1989<span class="printonly">. <a rel="nofollow" class="external free" href="http://developer.amd.com/cpu/open64/onlinehelp/pages/x86_open64_help.htm#Standards">http://developer.amd.com/cpu/open64/onlinehelp/pages/x86_open64_help.htm#Standards</a></span><span class="reference-accessdate">. Retrieved 8 June 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=x86+Open64&amp;rft.atitle=&amp;rft.date=1+April+1989&amp;rft.pub=Developer.amd.com&amp;rft_id=http%3A%2F%2Fdeveloper.amd.com%2Fcpu%2Fopen64%2Fonlinehelp%2Fpages%2Fx86_open64_help.htm%23Standards&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.cc65.org/#Features">"cc65 - a freeware C compiler for 6502 based systems"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.cc65.org/#Features">http://www.cc65.org/#Features</a></span><span class="reference-accessdate">. Retrieved 14 September 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=cc65+-+a+freeware+C+compiler+for+6502+based+systems&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.cc65.org%2F%23Features&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-6">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.softintegration.com/demos/chstandard/c99.html">"C/C++ interpreter Ch C99 features"</a>. SoftIntegration, Inc.. 15 February 2008<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.softintegration.com/demos/chstandard/c99.html">http://www.softintegration.com/demos/chstandard/c99.html</a></span><span class="reference-accessdate">. Retrieved 15 February 2008</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C%2FC%2B%2B+interpreter+Ch+C99+features&amp;rft.atitle=&amp;rft.date=15+February+2008&amp;rft.pub=SoftIntegration%2C+Inc.&amp;rft_id=http%3A%2F%2Fwww.softintegration.com%2Fdemos%2Fchstandard%2Fc99.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://clang.llvm.org/docs/UsersManual.html#c">"Clang Compiler User's Manual"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://clang.llvm.org/docs/UsersManual.html#c">http://clang.llvm.org/docs/UsersManual.html#c</a></span><span class="reference-accessdate">. Retrieved 11 January 2010</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Clang+Compiler+User%27s+Manual&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fclang.llvm.org%2Fdocs%2FUsersManual.html%23c&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://sourceforge.net/projects/cparser/">"cparser project site"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://sourceforge.net/projects/cparser/">http://sourceforge.net/projects/cparser/</a></span><span class="reference-accessdate">. Retrieved 25 October 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=cparser+project+site&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fcparser%2F&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-9">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.digitalmars.com/ctg/C-Language-Implementation.html">"C Language Implementation - Digital Mars"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.digitalmars.com/ctg/C-Language-Implementation.html">http://www.digitalmars.com/ctg/C-Language-Implementation.html</a></span><span class="reference-accessdate">. Retrieved 14 September 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C+Language+Implementation+-+Digital+Mars&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.digitalmars.com%2Fctg%2FC-Language-Implementation.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-10">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/c99status.html">"Status of C99 features in GCC"</a>. Free Software Foundation, Inc.. 25 April 2011<span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/c99status.html">http://gcc.gnu.org/c99status.html</a></span><span class="reference-accessdate">. Retrieved 11 July 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Status+of+C99+features+in+GCC&amp;rft.atitle=&amp;rft.date=25+April+2011&amp;rft.pub=Free+Software+Foundation%2C+Inc.&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fc99status.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-11">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-11">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/gcc-4.6/c99status.html">"Status of C99 features in GCC 4.6"</a>. Free Software Foundation, Inc.. 25 April 2011<span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/gcc-4.6/c99status.html">http://gcc.gnu.org/gcc-4.6/c99status.html</a></span><span class="reference-accessdate">. Retrieved 11 July 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Status+of+C99+features+in+GCC+4.6&amp;rft.atitle=&amp;rft.date=25+April+2011&amp;rft.pub=Free+Software+Foundation%2C+Inc.&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fgcc-4.6%2Fc99status.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-12">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-12">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://gcc.gnu.org/gcc-4.7/c99status.html">"Status of C99 features in GCC 4.7"</a>. Free Software Foundation, Inc.. 2012-03-13<span class="printonly">. <a rel="nofollow" class="external free" href="http://gcc.gnu.org/gcc-4.7/c99status.html">http://gcc.gnu.org/gcc-4.7/c99status.html</a></span><span class="reference-accessdate">. Retrieved 2012-06-15</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Status+of+C99+features+in+GCC+4.7&amp;rft.atitle=&amp;rft.date=2012-03-13&amp;rft.pub=Free+Software+Foundation%2C+Inc.&amp;rft_id=http%3A%2F%2Fgcc.gnu.org%2Fgcc-4.7%2Fc99status.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-13">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?infotype=an&amp;subtype=ca&amp;supplier=897&amp;appname=IBMLinkRedirect&amp;letternum=ENUS202-161">http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?infotype=an&amp;subtype=ca&amp;supplier=897&amp;appname=IBMLinkRedirect&amp;letternum=ENUS202-161</a></span>
+</li>
+<li id="cite_note-14">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www-01.ibm.com/software/awdtools/xlcpp/aix/features/">http://www-01.ibm.com/software/awdtools/xlcpp/aix/features/</a></span>
+</li>
+<li id="cite_note-15">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www-01.ibm.com/support/docview.wss?uid=swg21408170">http://www-01.ibm.com/support/docview.wss?uid=swg21408170</a></span>
+</li>
+<li id="cite_note-16">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://connect.microsoft.com/VisualStudio/feedback/details/485416/support-c99">http://connect.microsoft.com/VisualStudio/feedback/details/485416/support-c99</a></span>
+</li>
+<li id="cite_note-17">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://msdn.microsoft.com/en-us/library/zb1574zs%28v=VS.100%29.aspx">http://msdn.microsoft.com/en-us/library/zb1574zs%28v=VS.100%29.aspx</a></span>
+</li>
+<li id="cite_note-18">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-18">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.infoq.com/news/2012/05/vs_c99_support">http://www.infoq.com/news/2012/05/vs_c99_support</a></span>
+</li>
+<li id="cite_note-19">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-19">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.openwatcom.org/index.php/C99_Compliance">"C99 compliance in Open Watcom"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.openwatcom.org/index.php/C99_Compliance">http://www.openwatcom.org/index.php/C99_Compliance</a></span><span class="reference-accessdate">. Retrieved 11 March 2009</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=C99+compliance+in+Open+Watcom&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fwww.openwatcom.org%2Findex.php%2FC99_Compliance&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-20">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-20">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://docs.oracle.com/cd/E19205-01/820-4155/c.html#about">"Sun Studio 12: C Compiler 5.9 Readme"</a>. Sun Microsystems, Inc.. 31 May 2007<span class="printonly">. <a rel="nofollow" class="external free" href="http://docs.oracle.com/cd/E19205-01/820-4155/c.html#about">http://docs.oracle.com/cd/E19205-01/820-4155/c.html#about</a></span><span class="reference-accessdate">. Retrieved 23 September 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Sun+Studio+12%3A+C+Compiler+5.9+Readme&amp;rft.atitle=&amp;rft.date=31+May+2007&amp;rft.pub=Sun+Microsystems%2C+Inc.&amp;rft_id=http%3A%2F%2Fdocs.oracle.com%2Fcd%2FE19205-01%2F820-4155%2Fc.html%23about&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-21">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://bellard.org/tcc/tcc-doc.html#SEC7">http://bellard.org/tcc/tcc-doc.html#SEC7</a></span>
+</li>
+<li id="cite_note-22">
+<span class="mw-cite-backlink"><b><a href="C99#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://bellard.org/tcc/">http://bellard.org/tcc/</a></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="Further_reading">Further reading</span>
+</h2>
+<ul>
+<li>
+<span class="citation Journal">Cheng, Harry (1 March 2002). <a rel="nofollow" class="external text" href="http://drdobbs.com/cpp/184404993">"C99 &amp; Numeric computing"</a>. <i><a href="http://en.m.wikipedia.org/wiki/Dr._Dobb%27s_Journal" title="Dr. Dobb's Journal">Dr. Dobb's Journal</a></i><span class="printonly">. <a rel="nofollow" class="external free" href="http://drdobbs.com/cpp/184404993">http://drdobbs.com/cpp/184404993</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=C99+%26+Numeric+computing&amp;rft.jtitle=%5B%5BDr.+Dobb%27s+Journal%5D%5D&amp;rft.aulast=Cheng&amp;rft.aufirst=Harry&amp;rft.au=Cheng%2C%26%2332%3BHarry&amp;rft.date=1+March+2002&amp;rft_id=http%3A%2F%2Fdrdobbs.com%2Fcpp%2F184404993&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span>
+</li>
+<li>
+<span class="citation web">Seebach, Peter (24 March 2004). <a rel="nofollow" class="external text" href="http://www.ibm.com/developerworks/library/l-c99.html">"Open source development using C99"</a>. <i>developerWorks</i>. <a href="http://en.m.wikipedia.org/wiki/IBM" title="IBM">IBM</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ibm.com/developerworks/library/l-c99.html">http://www.ibm.com/developerworks/library/l-c99.html</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Open+source+development+using+C99&amp;rft.atitle=developerWorks&amp;rft.aulast=Seebach&amp;rft.aufirst=Peter&amp;rft.au=Seebach%2C%26%2332%3BPeter&amp;rft.date=24+March+2004&amp;rft.pub=%5B%5BIBM%5D%5D&amp;rft_id=http%3A%2F%2Fwww.ibm.com%2Fdeveloperworks%2Flibrary%2Fl-c99.html&amp;rfr_id=info:sid/en.wikipedia.org:C99"><span style="display: none;"> </span></span>
+</li>
+</ul>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<span class="PDFlink"><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf">Final version of the C99 standard with corrigenda TC1, TC2, and TC3 included, formatted as a draft</a></span><span style="font-size:smaller;"> PDF (3.61 MB)</span>
+</li>
+<li><a rel="nofollow" class="external text" href="http://www.open-std.org/jtc1/sc22/wg14/www/newinc9x.htm">New in C9X</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kuro5hin.org/story/2001/2/23/194544/139">Kuro5hin: Are you Ready For C99?</a></li>
+</ul>
+<table class="wikitable succession-box" style="margin:0.5em auto; font-size:95%;clear:both;"><tr style="text-align:center;">
+<td rowspan="1" style="text-align: center; width: 30%;">Preceded by<br><span style="font-weight: bold"><a href="http://en.m.wikipedia.org/wiki/C89_(C_version)" title="C89 (C version)" class="mw-redirect">C89 / C90 / "ANSI C"</a></span>
+</td>
+<td style="width: 40%; text-align: center;" rowspan="1"><b><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C language</a> standards</b></td>
+<td rowspan="1" style="text-align: center; width: 30%;">Succeeded by<br><span style="font-weight: bold"><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></span>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";background:#B0C4DE;" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="Template:CProLang" title="Template:CProLang"><span title="View this template" style=";background:#B0C4DE;;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="Template_talk:CProLang" title="Template talk:CProLang"><span title="Discuss this template" style=";background:#B0C4DE;;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:CProLang&amp;action=edit"><span title="Edit this template" style=";background:#B0C4DE;;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<a href="ANSI_C" title="ANSI C">ANSI C</a>
+<ul>
+<li><a href="ANSI_C#C89_and_C90" title="ANSI C">C89 and C90</a></li>
+</ul>
+</li>
+<li><strong class="selflink">C99</strong></li>
+<li><a href="C11_(C_standard_revision)" title="C11 (C standard revision)">C11</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_compilers" title="Category:C compilers">Compilers</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Borland_Turbo_C" title="Borland Turbo C">Borland Turbo C</a></li>
+<li><a href="Clang" title="Clang">Clang</a></li>
+<li><a href="GNU_Compiler_Collection" title="GNU Compiler Collection">GCC</a></li>
+<li><a href="LCC_(compiler)" title="LCC (compiler)">LCC</a></li>
+<li><a href="Pelles_C" title="Pelles C">Pelles C</a></li>
+<li><a href="Portable_C_Compiler" title="Portable C Compiler">PCC</a></li>
+<li><a href="Tiny_C_Compiler" title="Tiny C Compiler">TCC</a></li>
+<li>
+<a href="Visual_C++" title="Visual C++">Visual C++</a>
+<ul>
+<li><a href="C++/CLI" title="C++/CLI">C++/CLI</a></li>
+<li><a href="C++/CX" title="C++/CX">C++/CX</a></li>
+</ul>
+</li>
+<li><a href="Watcom_C/C++_compiler" title="Watcom C/C++ compiler">Watcom C/C++ compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;"><a href="Category:C_libraries" title="Category:C libraries">Libraries</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C_standard_library" title="C standard library">C standard library</a></li>
+<li><a href="GNU_C_Library" title="GNU C Library">glibc</a></li>
+<li><a href="Dietlibc" title="Dietlibc">dietlibc</a></li>
+<li><a href="UClibc" title="UClibc">uClibc</a></li>
+<li><a href="Newlib" title="Newlib">Newlib</a></li>
+<li><a href="Embedded_GLIBC" title="Embedded GLIBC">EGLIBC</a></li>
+<li><a href="Bionic_(software)" title="Bionic (software)">Bionic</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Features</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Null-terminated_string" title="Null-terminated string">String</a></li>
+<li><a href="C_syntax" title="C syntax">Syntax</a></li>
+<li><a href="C_preprocessor" title="C preprocessor">Preprocessor</a></li>
+<li><a href="C_data_types" title="C data types">Variable types and declarations</a></li>
+<li><a href="C_standard_library" title="C standard library">Functions</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">Select descendants</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="C++" title="C++">C++</a></li>
+<li><a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a></li>
+<li><a href="D_(programming_language)" title="D (programming language)">D</a></li>
+<li><a href="Objective-C" title="Objective-C">Objective-C</a></li>
+<li><a href="Alef_(programming_language)" title="Alef (programming language)">Alef</a></li>
+<li><a href="Limbo_(programming_language)" title="Limbo (programming language)">Limbo</a></li>
+<li><a href="Go_(programming_language)" title="Go (programming language)">Go</a></li>
+<li><a href="Vala_(programming_language)" title="Vala (programming language)">Vala</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";background:#EEE;;">C and other languages</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li>C and C++
+<ul>
+<li><a href="Compatibility_of_C_and_C++" title="Compatibility of C and C++">Compatibility</a></li>
+<li><a href="Operators_in_C_and_C++" title="Operators in C and C++">Operators</a></li>
+</ul>
+</li>
+<li><a href="Comparison_of_Pascal_and_C" title="Comparison of Pascal and C">Comparison of Pascal and C</a></li>
+<li><a href="Java_virtual_machine#C_to_bytecode_compilers" title="Java virtual machine">C to Java byte-code compiler</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";background:#EEE;" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><b><a href="Category:C_programming_language" title="Category:C programming language">Category:C programming language</a></b>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 6 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://bg.m.wikipedia.org/wiki/C_(%D0%B5%D0%B7%D0%B8%D0%BA_%D0%B7%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5)#C99" lang="bg" hreflang="bg">български</a></li><li><a href="http://ko.m.wikipedia.org/wiki/C99" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://ja.m.wikipedia.org/wiki/C99" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/C99" lang="pl" hreflang="pl">polski</a></li><li><a href="http://ru.m.wikipedia.org/wiki/C99" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sv.m.wikipedia.org/wiki/C99" lang="sv" hreflang="sv">svenska</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=C99&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=C99&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=C99&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

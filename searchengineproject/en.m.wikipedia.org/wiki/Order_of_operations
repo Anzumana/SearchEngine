@@ -1,0 +1,385 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Order of operations - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Order of operations","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Order_of_operations" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Order+of+operations"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Order of operations</h1>			
+<p>In <a href="http://en.m.wikipedia.org/wiki/Mathematics" title="Mathematics">mathematics</a> and <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>, the <b>order of operations</b> (sometimes called <b>operator precedence</b>) is a rule used to clarify which procedures should be performed first in a given <a href="http://en.m.wikipedia.org/wiki/Expression_(mathematics)" title="Expression (mathematics)">mathematical expression</a>.</p>
+<p>For example, in mathematics and most computer languages multiplication is done before addition; in the expression 2 + 3 × 4, the answer is 14. Brackets, "( and ), { and }, or [ and ]", which have their own rules, may be used to avoid confusion, thus the preceding expression may also be rendered 2 + (3 × 4), but the brackets are unnecessary as multiplication still has precedence without them.</p>
+<p>Since the introduction of modern algebraic notation, multiplication has taken precedence over addition.<sup id="cite_ref-1" class="reference"><a href="Order_of_operations#cite_note-1"><span>[</span>1<span>]</span></a></sup> Thus 3 + 4 × 5 = 4 × 5 + 3 = 23. When exponents were first introduced in the 16th and 17th centuries, exponents took precedence over both addition and multiplication and could be placed only as a superscript to the right of their base. Thus 3 + 5<sup>2</sup> = 28 and 3 × 5<sup>2</sup> = 75. To change the order of operations, originally a <a href="http://en.m.wikipedia.org/wiki/Vinculum_(symbol)" title="Vinculum (symbol)">vinculum</a> (an overline or underline) was used. Today, <a href="http://en.m.wikipedia.org/wiki/Bracket_(mathematics)" title="Bracket (mathematics)">parentheses or brackets</a> are used to explicitly denote precedence by grouping parts of an expression that should be evaluated first. Thus, to force addition to precede multiplication, we write (2 + 3) × 4 = 20, and to force addition to precede exponentiation, we write (3 + 5)<sup>2</sup> = 64.</p>
+<h2> <span class="mw-headline" id="The_standard_order_of_operations">The standard order of operations</span>
+</h2>
+<p>The order of operations, or precedence, used throughout mathematics, science, technology and many computer <a href="Programming_language" title="Programming language">programming languages</a> is expressed here:<sup id="cite_ref-2" class="reference"><a href="Order_of_operations#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<dl>
+<dd>
+<dl>
+<dd>
+<dl>
+<dd>terms inside <b><a href="http://en.m.wikipedia.org/wiki/Parentheses" title="Parentheses" class="mw-redirect">parentheses</a></b> or <b>brackets</b>
+</dd>
+<dd>
+<b><a href="http://en.m.wikipedia.org/wiki/Exponentiation" title="Exponentiation">exponents</a></b> and <b><a href="http://en.m.wikipedia.org/wiki/Nth_root" title="Nth root">roots</a></b>
+</dd>
+<dd>
+<b><a href="Multiplication" title="Multiplication">multiplication</a></b> and <b><a href="Division_(mathematics)" title="Division (mathematics)">division</a></b>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dd>
+<dl>
+<dd>
+<dl>
+<dd>
+<b><a href="Addition" title="Addition">addition</a></b> and <b><a href="Subtraction" title="Subtraction">subtraction</a></b>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>This means that if a mathematical expression is preceded by one operator and followed by another, the operator higher on the list should be applied first. The commutative and associative laws of addition and multiplication allow terms to be added in any order and factors to be multiplied in any order, but mixed operations must obey the standard order of operations.</p>
+<p>It is helpful to treat division as multiplication by the reciprocal (multiplicative inverse) and subtraction as addition of the opposite (additive inverse). Thus 3/4 = 3 ÷ 4 = 3 • ¼; in other words the quotient of 3 and 4 equals the product of 3 and  ¼. Also 3 − 4 = 3 + (−4); in other words the difference of 3 and 4 equals the sum of positive three and negative four. With this understanding, we can think of 1 − 3 + 7 as the sum of 1, negative 3, and 7, and add in any order: (1 − 3) + 7 = −2 + 7 = 5 and in reverse order (7 − 3) + 1 = 4 + 1 = 5. The important thing is to keep the negative sign with the 3.</p>
+<p>The root symbol, √, requires a symbol of grouping around the radicand. The usual symbol of grouping is a bar (called <a href="http://en.m.wikipedia.org/wiki/Vinculum_(symbol)" title="Vinculum (symbol)">vinculum</a>) over the radicand. Other functions use parentheses around the input to avoid ambiguity. The parentheses are sometimes omitted if the input is a <a href="http://en.m.wikipedia.org/wiki/Monomial" title="Monomial">monomial</a>. Thus, sin x = sin(x), but sin x + y = sin(x) + y, because x + y is not a monomial. Calculators usually require parentheses around all function inputs.</p>
+<p>Stacked exponents are applied from the top down.</p>
+<p>Symbols of grouping can be used to override the usual order of operations. Grouped symbols can be treated as a single expression. Symbols of grouping can be removed using the associative and distributive laws.</p>
+<h3> <span class="mw-headline" id="Examples">Examples</span>
+</h3>
+<dl>
+<dd><img class="tex" alt="\sqrt{1+3}+5=\sqrt4+5=2+5=7.\," src="http://upload.wikimedia.org/math/1/6/8/1685ae2abc4cec5ebf943c1431feeaeb.png"></dd>
+</dl>
+<p>A horizontal fractional line also acts as a symbol of grouping:</p>
+<dl>
+<dd><img class="tex" alt="\frac{1+2}{3+4}+5=\frac37+5." src="http://upload.wikimedia.org/math/3/e/8/3e87470664ebb99de411fef89e033dff.png"></dd>
+</dl>
+<p>For ease in reading, other grouping symbols such as braces, sometimes called curly braces { }, or brackets, sometimes called square brackets [ ], are often used along with parentheses ( ). For example,</p>
+<dl>
+<dd><img class="tex" alt="[(1+2)-3]-(4-5) = [3-3]-(-1) = 1. \, " src="http://upload.wikimedia.org/math/0/4/d/04d456388d3c56d431e7ac68fa016a77.png"></dd>
+</dl>
+<h3> <span class="mw-headline" id="Exceptions_to_the_standard">Exceptions to the standard</span>
+</h3>
+<p>There exist differing conventions concerning the unary operator − (usually read "minus"). In written or printed mathematics, the expression −3<sup>2</sup> is interpreted to mean −(3<sup>2</sup>) = −9,<sup id="cite_ref-3" class="reference"><a href="Order_of_operations#cite_note-3"><span>[</span>3<span>]</span></a></sup> but in some applications and programming languages, notably the application <a href="http://en.m.wikipedia.org/wiki/Microsoft_Office_Excel" title="Microsoft Office Excel" class="mw-redirect">Microsoft Office Excel</a> and <a href="http://en.m.wikipedia.org/wiki/Bc_programming_language" title="Bc programming language">the programming language bc</a>, unary operators have a higher priority than binary operators, that is, the unary minus (negation) has higher precedence than exponentiation, so in those languages −3<sup>2</sup> will be interpreted as (−3)<sup>2</sup> = 9.<sup id="cite_ref-4" class="reference"><a href="Order_of_operations#cite_note-4"><span>[</span>4<span>]</span></a></sup> In cases where there is the possibility that the notation might be misinterpreted, parentheses are usually used to clarify the intended meaning.</p>
+<p>Similarly, there can be ambiguity in the use of the <a href="http://en.m.wikipedia.org/wiki/Slash_(punctuation)#Arithmetic" title="Slash (punctuation)">slash</a> ('/') symbol in expressions such as 1/2<i>x</i>. If one rewrites this expression as 1 ÷ 2 × <i>x</i> and then interprets the division symbol as indicating multiplication by the reciprocal, this becomes</p>
+<dl>
+<dd><img class="tex" alt="1 \div 2 \times x = 1 \times \tfrac{1}{2} \times x = \tfrac{1}{2}x." src="http://upload.wikimedia.org/math/6/f/b/6fb62ac7b8e025e57b6349d019026102.png"></dd>
+</dl>
+<p>Hence, with this interpretation we have that 1/2<i>x</i> is equal to (1/2)<i>x</i>, and not 1/(2<i>x</i>). However, there are examples, including in published literature, where implied multiplication is interpreted as having higher precedence than division, so that 1/2<i>x</i> equals 1/(2<i>x</i>), not (1/2)<i>x</i>. For example, the manuscript submission instructions for the <i><a href="http://en.m.wikipedia.org/wiki/Physical_Review" title="Physical Review">Physical Review</a></i> journals state that multiplication is of higher precedence than division with a slash,<sup id="cite_ref-5" class="reference"><a href="Order_of_operations#cite_note-5"><span>[</span>5<span>]</span></a></sup> and this is also the convention observed in prominent physics textbooks such as the <i><a href="http://en.m.wikipedia.org/wiki/Course_of_Theoretical_Physics" title="Course of Theoretical Physics">Course of Theoretical Physics</a></i> by <a href="http://en.m.wikipedia.org/wiki/Lev_Landau" title="Lev Landau">Landau</a> and <a href="http://en.m.wikipedia.org/wiki/Evgeny_Lifshitz" title="Evgeny Lifshitz">Lifshitz</a> and the <i><a href="http://en.m.wikipedia.org/wiki/Feynman_Lectures_on_Physics" title="Feynman Lectures on Physics" class="mw-redirect">Feynman Lectures on Physics</a></i>.<sup id="cite_ref-6" class="reference"><a href="Order_of_operations#cite_note-6"><span>[</span>6<span>]</span></a></sup> Additionally, <a href="http://en.m.wikipedia.org/wiki/Wolfram_Alpha" title="Wolfram Alpha">Wolfram Alpha</a> considers that implied multiplication without parentheses precedes division, unlike explicit multiplication or implied multiplication with parentheses. 2*<i>x</i>/2*<i>x</i> and 2(x)/2(x) both yield x<sup>2</sup>, but 2<i>x</i>/2<i>x</i> yields 1.<sup id="cite_ref-7" class="reference"><a href="Order_of_operations#cite_note-7"><span>[</span>7<span>]</span></a></sup> The TI 89 calculator yields <i>x</i><sup>2</sup> in all three cases.</p>
+<p>Textbooks, tutorials and teachers generally highly recommend taking care to avoid writing potentially ambiguous expressions, using a horizontal fraction line format in handwritten documents or if mathematical typesetting is available, or by inserting additional parentheses.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from October 2012">citation needed</span></a></i>]</sup></p>
+<h2> <span class="mw-headline" id="Mnemonics">Mnemonics</span>
+</h2>
+<p><a href="http://en.m.wikipedia.org/wiki/Mnemonics" title="Mnemonics" class="mw-redirect">Mnemonics</a> are often used to help students remember the rules, but the rules taught by the use of acronyms can be misleading. In the United States the acronym <i><b>PEMDAS</b></i> is common. It stands for <i>P</i>arentheses, <i>E</i>xponents, <i>M</i>ultiplication, <i>D</i>ivision, <i>A</i>ddition, <i>S</i>ubtraction. PEMDAS is often expanded to "Please Excuse My Dear Aunt Sally" with the first letter of each word creating the acronym PEMDAS. Canada uses <i><b>BEDMAS</b></i> and the UK uses <i><b>BIDMAS</b></i> or <i><b>BODMAS</b></i>. In Canada and other English speaking countries, <i>P</i>arentheses may be called <i>B</i>rackets, or symbols of inclusion and <i>E</i>xponentiation may be called either <i>I</i>ndices, <i>P</i>owers or <i>O</i>rders, which have the same precedence as <i>R</i>oots or <i>R</i>adicals. Since multiplication and division are of equal precedence, <i>M</i> and <i>D</i> are often interchanged, leading to such acronyms as <i><b>BOMDAS</b></i>.</p>
+<p>These mnemonics may be misleading when written this way, especially if the user is not aware that multiplication and division are of equal precedence, as are addition and subtraction. Using any of the above rules in the order "addition first, subtraction afterward" would also give the wrong answer.</p>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="10 - 3 + 2 \," src="http://upload.wikimedia.org/math/c/b/a/cba60323a992d6c58f79d17c56ba9f9c.png"></dd>
+</dl>
+</dd>
+</dl>
+<p>The correct answer is 9 (and not 5, which we get when we add 3 and 2 first to get 5,and then subtract it from 10 to get the final answer of 5), which is best understood by thinking of the problem as the sum of positive ten, negative three, and positive two.</p>
+<dl>
+<dd>
+<dl>
+<dd><img class="tex" alt="10 + (-3) + 2 \," src="http://upload.wikimedia.org/math/7/6/b/76b70ec18a37a643dc15001d4b18144e.png"></dd>
+</dl>
+</dd>
+</dl>
+<p>An alternative way to write the mnemonic is:</p>
+<p>P</p>
+<p>E</p>
+<p>MD</p>
+<p>AS</p>
+<p>Or, simply as PEMA, where it is taught that multiplication and division inherently share the same precedence; and that addition and subtraction inherently share the same precedence. PEMA is one of the mnemonics taught in New Zealand.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2012">citation needed</span></a></i>]</sup> This makes the equivalence of multiplication and division and of addition and subtraction clear.</p>
+<p>Another potentially misleading aspect of this mnemonic is the inclusion of P for parentheses. First of all, parentheses are grouping symbols, not operation symbols. Also, within the grouping symbols, there may be expressions involving several operations, which would need to be evaluated according to the correct order or operations which appear AFTER the P in the mnemonic. It is probably better to teach that grouping symbols are not operations themselves, but rather are used to change the precedence of operations from the default.<sup class="Template-Fact" style="white-space:nowrap;">[<i><a href="http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources from August 2012">citation needed</span></a></i>]</sup></p>
+<p>Once logs are introduced they should be given the same precedence as exponents.</p>
+<h2> <span class="mw-headline" id="Special_cases">Special cases</span>
+</h2>
+<p>An exclamation mark indicates that one should compute the <a href="http://en.m.wikipedia.org/wiki/Factorial" title="Factorial">factorial</a> of the term immediately to its left, before computing any of the lower-precedence operations, unless grouping symbols dictate otherwise. But 2<sup>3</sup>! means (2<sup>3</sup>)! = 8! = 40320 while 2<sup>3!</sup> = 2<sup>6</sup> = 64; a factorial in an exponent applies to the exponent, while a factorial not in the exponent applies to the entire power.</p>
+<p>If exponentiation is indicated by stacked symbols, the rule is to work from the top down, thus:</p>
+<dl>
+<dd><img class="tex" alt=" a^{b^c} = a^{(b^c)} \ne (a^b)^c. \, " src="http://upload.wikimedia.org/math/2/7/e/27e16a8dad2ce4eafda9bed008046c0d.png"></dd>
+</dl>
+<p>Sometimes a heavy dot is used as a multiplication sign which indicates that the entire expression before the heavy dot is multiplied by the entire expression after the heavy dot, but this notation may be misunderstood. Thus x + y • a + b may be used for (x + y)(a + b), but the latter notation is more common.</p>
+<h2> <span class="mw-headline" id="Calculators">Calculators</span>
+</h2>
+<div class="rellink relarticle mainarticle">Main article: <a href="http://en.m.wikipedia.org/wiki/Calculator_input_methods" title="Calculator input methods">Calculator input methods</a>
+</div>
+<p>Different calculators follow different orders of operations. Most non-scientific calculators without a stack work left to right without any priority given to different operators, for example giving</p>
+<dl>
+<dd><img class="tex" alt="1 + 2 \times 3 = 9, \;" src="http://upload.wikimedia.org/math/2/8/8/288a944537610925c9cbc7b6259b7b4a.png"></dd>
+</dl>
+<p>while more sophisticated calculators will use a more standard priority, for example giving</p>
+<dl>
+<dd><img class="tex" alt="1 + 2 \times 3 = 7. \;" src="http://upload.wikimedia.org/math/a/2/c/a2cf0cdb23153630a12a390c8be99db0.png"></dd>
+</dl>
+<p>The Microsoft <i><a href="http://en.m.wikipedia.org/wiki/Microsoft_Calculator" title="Microsoft Calculator" class="mw-redirect">Calculator</a></i> program uses the former in its standard view and the latter in its scientific view.</p>
+<p>The non-scientific calculator expects two operands and an operator. When the next operator is pressed, the expression is immediately evaluated and the answer becomes the left hand of the next operator. Advanced calculators allow entry of the whole expression, grouped as necessary, and evaluates only when the user uses the equals sign.</p>
+<p>Calculators may associate exponents to the left or to the right depending on the model. For example, the expression a ^ b ^ c on the TI-92 and TI-30XII (both Texas Instruments calculators) associates two different ways:</p>
+<p>The TI-92 associates to the right, that is</p>
+<dl>
+<dd>
+<dl>
+<dd>a ^ b ^ c = a ^ (b ^ c) = <img class="tex" alt=" a^{(b^c)} = a^{b^c}" src="http://upload.wikimedia.org/math/2/b/b/2bbe0a5b6673bf4851a01dcdcf72caf8.png">
+</dd>
+</dl>
+</dd>
+</dl>
+<p>whereas, the TI-30XII associates to the left, that is</p>
+<dl>
+<dd>
+<dl>
+<dd>a ^ b ^ c = (a ^ b) ^ c = <img class="tex" alt=" (a^b)^c." src="http://upload.wikimedia.org/math/6/4/4/644f8b5f55a92613050c2afb0158a0d9.png">
+</dd>
+</dl>
+</dd>
+</dl>
+<p>An expression like 1/2<i>x</i> is interpreted as 1/(2<i>x</i>) by TI-82, but as (1/2)<i>x</i> by TI-83.<sup id="cite_ref-8" class="reference"><a href="Order_of_operations#cite_note-8"><span>[</span>8<span>]</span></a></sup> While the first interpretation may be expected by some users, only the latter is in agreement with the standard rule that multiplication and division are of equal precedence, so 1/2<i>x</i> is read one divided by two and the answer multiplied by <i>x</i>.</p>
+<p>When the user is unsure how a calculator will interpret an expression, it is a good idea to use parentheses so there is no ambiguity.</p>
+<h2> <span class="mw-headline" id="Programming_languages">Programming languages</span>
+</h2>
+<p>Many <a href="http://en.m.wikipedia.org/wiki/Programming_languages" title="Programming languages" class="mw-redirect">programming languages</a> use precedence levels that conform to the order commonly used in mathematics, though some, such as <a href="http://en.m.wikipedia.org/wiki/APL_(programming_language)" title="APL (programming language)">APL</a> and <a href="Smalltalk" title="Smalltalk">Smalltalk</a>, have no <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operator</a> precedence rules (in APL evaluation is strictly right to left, in <a href="Smalltalk" title="Smalltalk">Smalltalk</a> it's strictly left to right).</p>
+<p>The logical bitwise operators in <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> (and all programming languages that borrowed precedence rules from C, for example, <a href="C++" title="C++">C++</a>, <a href="Perl" title="Perl">Perl</a> and <a href="PHP" title="PHP">PHP</a>) have a precedence level that the creator of the C language considers to be unsatisfactory.<sup id="cite_ref-9" class="reference"><a href="Order_of_operations#cite_note-9"><span>[</span>9<span>]</span></a></sup> However, many programmers have become accustomed to this order. The relative precedence levels of <a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">operators</a> found in many C-style languages are as follows:</p>
+<table class="wikitable">
+<tr>
+<td>1</td>
+<td>()   []   -&gt;   .   ::</td>
+<td>Grouping, scope, array/member access</td>
+</tr>
+<tr>
+<td>2</td>
+<td> !   ~   -   +   *   &amp;   sizeof   <i>type cast</i> ++x   --x  </td>
+<td>(most) unary operations, sizeof and type casts</td>
+</tr>
+<tr>
+<td>3</td>
+<td>*   /   %</td>
+<td>Multiplication, division, <a href="http://en.m.wikipedia.org/wiki/Modular_arithmetic" title="Modular arithmetic">modulo</a>
+</td>
+</tr>
+<tr>
+<td>4</td>
+<td>+   -</td>
+<td>Addition and subtraction</td>
+</tr>
+<tr>
+<td>5</td>
+<td>&lt;&lt;   &gt;&gt;</td>
+<td>Bitwise shift left and right</td>
+</tr>
+<tr>
+<td>6</td>
+<td>&lt;   &lt;=   &gt;   &gt;=</td>
+<td>Comparisons: less-than, ...</td>
+</tr>
+<tr>
+<td>7</td>
+<td>==   !=</td>
+<td>Comparisons: equal and not equal</td>
+</tr>
+<tr>
+<td>8</td>
+<td>&amp;</td>
+<td>Bitwise AND</td>
+</tr>
+<tr>
+<td>9</td>
+<td>^</td>
+<td>Bitwise exclusive OR</td>
+</tr>
+<tr>
+<td>10</td>
+<td>|</td>
+<td>Bitwise inclusive (normal) OR</td>
+</tr>
+<tr>
+<td>11</td>
+<td>&amp;&amp;</td>
+<td>Logical AND</td>
+</tr>
+<tr>
+<td>12</td>
+<td>||</td>
+<td>Logical OR</td>
+</tr>
+<tr>
+<td>13</td>
+<td> ?:   =   +=   -=   *=   /=   %=   &amp;=   |=   ^=   &lt;&lt;=   &gt;&gt;=</td>
+<td>Conditional expression (ternary) and assignment operators</td>
+</tr>
+<tr>
+<td>14</td>
+<td>,</td>
+<td><a href="Comma_operator" title="Comma operator">Comma operator</a></td>
+</tr>
+</table>
+<p>Examples:</p>
+<ul>
+<li>
+<code>!A + !B</code> ≡ <code>(!A) + (!B)</code>
+</li>
+<li>
+<code>++A + !B</code> ≡ <code>(++A) + (!B)</code>
+</li>
+<li>
+<code>A + B * C</code> ≡ <code>A + (B * C)</code>
+</li>
+<li>
+<code>A || B &amp;&amp; C</code> ≡ <code>A || (B &amp;&amp; C)</code>
+</li>
+<li>
+<code>(A &amp;&amp; B == C)</code> ≡ <code>(A &amp;&amp; (B == C) )</code>
+</li>
+</ul>
+<p>The accuracy of software developer knowledge about binary operator precedence has been found to closely follow their frequency of occurrence in source code.<sup id="cite_ref-10" class="reference"><a href="Order_of_operations#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Common_operator_notation" title="Common operator notation">Common operator notation</a> (for a more formal description)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operator_associativity" title="Operator associativity">Operator associativity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Associativity" title="Associativity" class="mw-redirect">Associativity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Commutativity" title="Commutativity" class="mw-redirect">Commutativity</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Distributivity" title="Distributivity" class="mw-redirect">Distributivity</a></li>
+<li><a href="Operator_(programming)" title="Operator (programming)" class="mw-redirect">Operator (programming)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operator_overloading" title="Operator overloading">Operator overloading</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/C_operator_precedence" title="C operator precedence" class="mw-redirect">Operator precedence in C and C++</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reverse_Polish_Notation" title="Reverse Polish Notation" class="mw-redirect">Reverse Polish Notation</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-1">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://mathforum.org/library/drmath/view/52582.html">"Ask Dr. Math"</a>. Math Forum. 22 November 2000<span class="printonly">. <a rel="nofollow" class="external free" href="http://mathforum.org/library/drmath/view/52582.html">http://mathforum.org/library/drmath/view/52582.html</a></span><span class="reference-accessdate">. Retrieved 5 March 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Ask+Dr.+Math&amp;rft.atitle=&amp;rft.date=22+November+2000&amp;rft.pub=Math+Forum&amp;rft_id=http%3A%2F%2Fmathforum.org%2Flibrary%2Fdrmath%2Fview%2F52582.html&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-2">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-2">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://www.algebrahelp.com/lessons/simplifying/oops/">"Order of Operations Lessons"</a>. Algebra.Help<span class="printonly">. <a rel="nofollow" class="external free" href="http://www.algebrahelp.com/lessons/simplifying/oops/">http://www.algebrahelp.com/lessons/simplifying/oops/</a></span><span class="reference-accessdate">. Retrieved 5 March 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Order+of+Operations+Lessons&amp;rft.atitle=&amp;rft.pub=Algebra.Help&amp;rft_id=http%3A%2F%2Fwww.algebrahelp.com%2Flessons%2Fsimplifying%2Foops%2F&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-3">^</a></b></span> <span class="reference-text">[Allen R. Angel, Elementary Algebra for College Students 8/E; Chapter 1, Section 9, Objective 3]</span>
+</li>
+<li id="cite_note-4">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-4">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://support.microsoft.com/kb/q132686/">"Formula Returns Unexpected Positive Value"</a>. Support.microsoft.com. 15 August 2005<span class="printonly">. <a rel="nofollow" class="external free" href="http://support.microsoft.com/kb/q132686/">http://support.microsoft.com/kb/q132686/</a></span><span class="reference-accessdate">. Retrieved 5 March 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Formula+Returns+Unexpected+Positive+Value&amp;rft.atitle=&amp;rft.date=15+August+2005&amp;rft.pub=Support.microsoft.com&amp;rft_id=http%3A%2F%2Fsupport.microsoft.com%2Fkb%2Fq132686%2F&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-5">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-5">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="https://authors.aps.org/STYLE">"Physical Review Style and Notation Guide"</a>. <a href="http://en.m.wikipedia.org/wiki/American_Physical_Society" title="American Physical Society">American Physical Society</a>. Section IV–E–2<span class="printonly">. <a rel="nofollow" class="external free" href="https://authors.aps.org/STYLE">https://authors.aps.org/STYLE</a></span><span class="reference-accessdate">. Retrieved 5 August 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Physical+Review+Style+and+Notation+Guide&amp;rft.atitle=&amp;rft.pages=Section+IV%26ndash%3BE%26ndash%3B2&amp;rft.pub=%5B%5BAmerican+Physical+Society%5D%5D&amp;rft_id=https%3A%2F%2Fauthors.aps.org%2FSTYLE&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-6">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-6">^</a></b></span> <span class="reference-text">For example, the third edition of <i>Mechanics</i> by Landau and Lifshitz contains expressions such as <i>hP<sub>z</sub></i>/2π (p. 22), and the first volume of the <i>Feynman Lectures</i> contains expressions such as 1/2<span class="nowrap">√<span style="border-top:1px solid; padding:0 0.1em;"><i>N</i></span></span> (p. 6–8). In both books these expressions are written with the convention that the solidus is evaluated last.</span>
+</li>
+<li id="cite_note-7">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-7">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://wolframalpha.com/input/?i=2x%C3%B72x">"2x÷2x - Wolfram|Alpha"</a>. Wolframalpha.com<span class="printonly">. <a rel="nofollow" class="external free" href="http://wolframalpha.com/input/?i=2x%C3%B72x">http://wolframalpha.com/input/?i=2x%C3%B72x</a></span><span class="reference-accessdate">. Retrieved 5 March 2012</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=2x%C3%B72x+-+Wolfram%26%23124%3BAlpha&amp;rft.atitle=&amp;rft.pub=Wolframalpha.com&amp;rft_id=http%3A%2F%2Fwolframalpha.com%2Finput%2F%3Fi%3D2x%25C3%25B72x&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-8">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-8">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://epsstore.ti.com/OA_HTML/csksxvm.jsp?nSetId=103110">"Implied Multiplication Versus Explicit Multiplication on TI Graphing Calculators"</a>. Texas Instruments Incorporated. 16 January 2011<span class="printonly">. <a rel="nofollow" class="external free" href="http://epsstore.ti.com/OA_HTML/csksxvm.jsp?nSetId=103110">http://epsstore.ti.com/OA_HTML/csksxvm.jsp?nSetId=103110</a></span><span class="reference-accessdate">. Retrieved 29 April 2011</span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Implied+Multiplication+Versus+Explicit+Multiplication+on+TI+Graphing+Calculators&amp;rft.atitle=&amp;rft.date=16+January+2011&amp;rft.pub=Texas+Instruments+Incorporated&amp;rft_id=http%3A%2F%2Fepsstore.ti.com%2FOA_HTML%2Fcsksxvm.jsp%3FnSetId%3D103110&amp;rfr_id=info:sid/en.wikipedia.org:Order_of_operations"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-9">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-9">^</a></b></span> <span class="reference-text"><a href="Dennis_M._Ritchie" title="Dennis M. Ritchie" class="mw-redirect">Dennis M. Ritchie</a>: <a rel="nofollow" class="external text" href="http://webcache.googleusercontent.com/search?q=cache:cm.bell-labs.com/who/dmr/chist.html">The Development of the C Language</a>. In History of Programming Languages, 2nd ed., ACM Press 1996.</span>
+</li>
+<li id="cite_note-10">
+<span class="mw-cite-backlink"><b><a href="Order_of_operations#cite_ref-10">^</a></b></span> <span class="reference-text">"<a rel="nofollow" class="external text" href="http://www.knosof.co.uk/cbook/accu06.html">Developer beliefs about binary operator precedence</a>" Derek M. Jones, CVu 18(4):14–21</span>
+</li>
+</ol>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<ul>
+<li>
+<a rel="nofollow" class="external text" href="http://planetmath.org/?op=getobj&amp;from=objects&amp;id=3951">Order of operations</a>, <a href="http://en.m.wikipedia.org/wiki/PlanetMath" title="PlanetMath">PlanetMath.org</a>.</li>
+</ul>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 21 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D8%AA%D8%B1%D8%AA%D9%8A%D8%A8_%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA_%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D9%8A%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Priorita_po%C4%8Detn%C3%ADch_operac%C3%AD" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Operatorprioritet" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Operatorrangfolge" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CF%84%CE%B5%CF%81%CE%B1%CE%B9%CF%8C%CF%84%CE%B7%CF%84%CE%B1_%CF%80%CF%81%CE%AC%CE%BE%CE%B5%CF%89%CE%BD" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Orden_de_evaluaci%C3%B3n" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Ordre_des_op%C3%A9rations" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%97%B0%EC%82%B0%EC%9D%98_%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Ordine_delle_operazioni" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A7%D7%93%D7%99%D7%9E%D7%95%D7%AA_%D7%90%D7%95%D7%A4%D7%A8%D7%98%D7%95%D7%A8%D7%99%D7%9D" lang="he" hreflang="he">עברית</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Bewerkingsvolgorde" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E6%BC%94%E7%AE%97%E5%AD%90%E3%81%AE%E5%84%AA%E5%85%88%E9%A0%86%E4%BD%8D" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Kolejno%C5%9B%C4%87_wykonywania_dzia%C5%82a%C5%84" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Ordem_de_opera%C3%A7%C3%B5es" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D0%B8%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Order_of_operations" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Laskuj%C3%A4rjestys" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Operatorprioritet" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B8%A5%E0%B8%B3%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%94%E0%B8%B3%E0%B9%80%E0%B8%99%E0%B8%B4%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/%C4%B0%C5%9Flem_s%C4%B1ras%C4%B1" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%A7%D0%B5%D1%80%D0%B3%D0%BE%D0%B2%D1%96%D1%81%D1%82%D1%8C_%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D1%96%D0%B9" lang="uk" hreflang="uk">українська</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Order_of_operations&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Order_of_operations&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Order+of+operations&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

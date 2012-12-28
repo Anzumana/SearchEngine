@@ -1,0 +1,414 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Segmentation fault - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Segmentation fault","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Segmentation_fault" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Segmentation+fault"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Segmentation fault</h1>			<div class="dablink">"Segfault" redirects here. For the website, see <a href="http://en.m.wikipedia.org/wiki/Segfault_(website)" title="Segfault (website)">Segfault (website)</a>.</div>
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr><td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Segmentation_fault&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(November 2011)</i></small> </span></td>
+</tr></table><p>A <b>segmentation fault</b> (often shortened to <b>segfault</b>), <b>bus error</b> or <b>access violation</b> is generally an attempt to access <a href="http://en.m.wikipedia.org/wiki/Computer_data_storage" title="Computer data storage">memory</a> that the <a href="http://en.m.wikipedia.org/wiki/Central_processing_unit" title="Central processing unit">CPU</a> cannot physically address. It occurs when the hardware notifies an <a href="Operating_system" title="Operating system">operating system</a> about a memory access violation. The OS <a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">kernel</a> then sends a <a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">signal</a> to the <a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">process</a> which caused the exception. By default, the process receiving the signal <a href="http://en.m.wikipedia.org/wiki/Core_dump" title="Core dump">dumps core</a> and terminates. The default signal handler can also be overridden to customize how the signal is handled.<sup id="cite_ref-Peter_Van_der_Linden_1-0" class="reference"><a href="Segmentation_fault#cite_note-Peter_Van_der_Linden-1"><span>[</span>1<span>]</span></a></sup></p>
+<h2> <span class="mw-headline" id="Bus_error">Bus error</span></h2>
+<p>Bus errors are usually signaled with the <a href="http://en.m.wikipedia.org/wiki/SIGBUS" title="SIGBUS" class="mw-redirect">SIGBUS</a> signal, but SIGBUS can also be caused by any general device fault that the computer detects. A bus error rarely means that the <a href="http://en.m.wikipedia.org/wiki/Computer_hardware" title="Computer hardware">computer hardware</a> is physically broken—it is normally caused by a <a href="http://en.m.wikipedia.org/wiki/Software_bug" title="Software bug">bug</a> in a <a href="http://en.m.wikipedia.org/wiki/Computer_program" title="Computer program">program's</a> <a href="Source_code" title="Source code">source code</a>.</p>
+<p>There are two main causes of bus errors:</p>
+<dl><dt>non-existent address </dt>
+<dd>The CPU is instructed by software to read or write a specific physical <a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">memory address</a>. Accordingly, the CPU sets this physical address on its <a href="http://en.m.wikipedia.org/wiki/Address_bus" title="Address bus">address bus</a> and requests all other hardware connected to the CPU to respond with the results, if they answer for this specific address. If no other hardware responds, the CPU raises an <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a>, stating that the requested physical address is unrecognized by the whole computer system. Note that this only covers <i>physical</i> memory addresses. Trying to access an undefined <i>virtual</i> memory address is generally considered to be a segmentation fault rather than a bus error, though if the <a href="http://en.m.wikipedia.org/wiki/Memory_management_unit" title="Memory management unit">MMU</a> is separate, the processor can't tell the difference.</dd>
+</dl><dl><dt>unaligned access </dt>
+<dd>Most CPUs are <i>byte-addressable</i>, where each unique memory address refers to an 8-bit <a href="Byte" title="Byte">byte</a>. Most CPUs can access individual bytes from each memory address, but they generally cannot access larger units (16 bits, 32 bits, 64 bits and so on) without these units being "<a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">aligned</a>" to a specific boundary. For example, if multi-byte accesses must be 16 bit-aligned, addresses (given in bytes) at 0, 2, 4, and so on would be considered aligned and therefore accessible, while addresses 1, 3, 5, and so on would be considered unaligned. Similarly, if multi-byte accesses must be 32-bit aligned, addresses 0, 4, 8, 12, and so on would be considered aligned and therefore accessible, and all addresses in between would be considered unaligned. Attempting to access a unit larger than a byte at an unaligned address can cause a bus error.</dd>
+</dl><p>CPUs generally access data at the full width of their <a href="http://en.m.wikipedia.org/wiki/Data_bus" title="Data bus" class="mw-redirect">data bus</a> at all times. To address bytes, they access memory at the full width of their data bus, then mask and shift to address the individual byte. This is inefficient, but tolerated as it is an essential feature for most software, especially <a href="String_(computer_science)" title="String (computer science)">string</a> processing. Unlike bytes, larger units can span two aligned addresses and would thus require more than one fetch on the data bus. It is possible for CPUs to support this, but this functionality is rarely required directly at the <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a> level, thus CPU designers normally avoid implementing it and instead issue bus errors for unaligned memory access.</p>
+<h2> <span class="mw-headline" id="Segmentation.2C_page_fault.2C_and_access_violation">Segmentation, page fault, and access violation</span></h2>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.m.wikipedia.org/wiki/File:FreeBSD_kernel_panic.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/220px-FreeBSD_kernel_panic.png" width="220" height="122" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/330px-FreeBSD_kernel_panic.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d4/FreeBSD_kernel_panic.png/440px-FreeBSD_kernel_panic.png 2x"></a>
+<div class="thumbcaption">
+
+Example of human generated signal</div>
+</div>
+</div>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.m.wikipedia.org/wiki/File:Windows_null_ptr_dereference.png" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/220px-Windows_null_ptr_dereference.png" width="220" height="91" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/330px-Windows_null_ptr_dereference.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/49/Windows_null_ptr_dereference.png/440px-Windows_null_ptr_dereference.png 2x"></a>
+<div class="thumbcaption">
+
+A <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointer</a> <a href="http://en.m.wikipedia.org/wiki/Dereference_operator" title="Dereference operator">dereference</a> on <a href="http://en.m.wikipedia.org/wiki/Windows_8" title="Windows 8">Windows 8</a></div>
+</div>
+</div>
+<p>A segmentation fault occurs when a program attempts to access a <a href="Computer_memory" title="Computer memory">memory</a> location that it is not allowed to access, or attempts to access a memory location in a way that is not allowed (for example, attempting to write to a <a href="http://en.m.wikipedia.org/wiki/Read-only_memory" title="Read-only memory">read-only</a> location, or to overwrite part of the <a href="Operating_system" title="Operating system">operating system</a>).</p>
+<p>Segmentation is a historic term for the approach to <a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">memory management</a> nowadays known as <a href="http://en.m.wikipedia.org/wiki/Paging" title="Paging">paging</a> (see e.g. <a href="http://en.m.wikipedia.org/wiki/Lions%27_Commentary_on_UNIX_6th_Edition,_with_Source_Code" title="Lions' Commentary on UNIX 6th Edition, with Source Code">Lions' Commentary on UNIX 6th Edition, with Source Code</a>), but the term is still used in the context of "segmentation fault".</p>
+<p>On <a href="Unix-like" title="Unix-like">Unix-like</a> operating systems, a <a href="http://en.m.wikipedia.org/wiki/Signal_(computing)" title="Signal (computing)" class="mw-redirect">signal</a> called <a href="http://en.m.wikipedia.org/wiki/SIGSEGV" title="SIGSEGV" class="mw-redirect">SIGSEGV</a> is sent to a process that accesses an invalid memory address. On <a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, a process that accesses invalid memory receives the STATUS_ACCESS_VIOLATION <a href="http://en.m.wikipedia.org/wiki/Exception_handling" title="Exception handling">exception</a>.</p>
+<h3> <span class="mw-headline" id="Common_causes">Common causes</span></h3>
+<dl><dt>Segmentation fault</dt>
+</dl><p>A few causes of a <b>segmentation fault</b> can be summarized as follows:</p>
+<ul><li>attempting to execute a program that does not compile correctly. Note that while most compilers will not output a <a href="http://en.m.wikipedia.org/wiki/Binary_file" title="Binary file">binary</a> given a compile-time error some do;</li>
+<li>dereferencing NULL pointers,</li>
+<li>attempting to access memory the program does not have rights to (such as kernel structures in process context)</li>
+<li>attempting to access a nonexistent memory address (outside process's address space)</li>
+<li>attempting to write read-only memory (such as code segment),</li>
+<li>a <a href="Buffer_overflow" title="Buffer overflow">buffer overflow</a>,</li>
+<li>using uninitialized <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>.</li>
+</ul><p>Generally, segmentation faults occur because a pointer is NULL, or because it points to random memory (probably never initialized to anything), or because it points to memory that has been freed/deallocated/"deleted".</p>
+<p>e.g.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="cpp source-cpp">
+<pre class="de1">
+    <span class="kw4">char</span> <span class="sy2">*</span>p1 <span class="sy1">=</span> <span class="kw2">NULL</span><span class="sy4">;</span>           <span class="co1">// Initialized to null, which is OK,</span>
+                               <span class="co1">// (but cannot be dereferenced on many systems).</span>
+    <span class="kw4">char</span> <span class="sy2">*</span>p2<span class="sy4">;</span>                  <span class="co1">// Not initialized at all.</span>
+    <span class="kw4">char</span> <span class="sy2">*</span>p3  <span class="sy1">=</span> <span class="kw3">new</span> <span class="kw4">char</span><span class="br0">[</span><span class="nu0">20</span><span class="br0">]</span><span class="sy4">;</span>  <span class="co1">// Great! It's allocated,</span>
+    <span class="kw3">delete</span> <span class="br0">[</span><span class="br0">]</span> p3<span class="sy4">;</span>              <span class="co1">// but now it isn't anymore.</span>
+</pre></div>
+</div>
+<p>Now, dereferencing any of these variables could cause a segmentation fault.</p>
+<h2> <span class="mw-headline" id="Examples">Examples</span></h2>
+<h3> <span class="mw-headline" id="Bus_error_example">Bus error example</span></h3>
+<p>This is an example of un-aligned memory access, written in the <a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C programming language</a> with <a href="http://en.m.wikipedia.org/wiki/AT%26T_syntax" title="AT&amp;T syntax" class="mw-redirect">AT&amp;T assembly syntax</a>.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+<span class="co2">#include &lt;stdlib.h&gt;</span>
+ 
+<span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">int</span> argc<span class="sy0">,</span> <span class="kw4">char</span> <span class="sy0">**</span>argv<span class="br0">)</span> <span class="br0">{</span>
+    <span class="kw4">int</span> <span class="sy0">*</span>iptr<span class="sy0">;</span>
+    <span class="kw4">char</span> <span class="sy0">*</span>cptr<span class="sy0">;</span>
+ 
+<span class="co2">#if defined(__GNUC__)</span>
+<span class="co2"># if defined(__i386__)</span>
+    <span class="coMULTI">/* Enable Alignment Checking on x86 */</span>
+    __asm__<span class="br0">(</span><span class="st0">"pushf<span class="es1">\n</span>orl $0x40000,(%esp)<span class="es1">\n</span>popf"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co2"># elif defined(__x86_64__) </span>
+     <span class="coMULTI">/* Enable Alignment Checking on x86_64 */</span>
+    __asm__<span class="br0">(</span><span class="st0">"pushf<span class="es1">\n</span>orl $0x40000,(%rsp)<span class="es1">\n</span>popf"</span><span class="br0">)</span><span class="sy0">;</span>
+<span class="co2"># endif</span>
+<span class="co2">#endif</span>
+ 
+    <span class="coMULTI">/* malloc() always provides aligned memory */</span>
+    cptr <span class="sy0">=</span> <span class="kw3">malloc</span><span class="br0">(</span><span class="kw4">sizeof</span><span class="br0">(</span><span class="kw4">int</span><span class="br0">)</span> <span class="sy0">+</span> <span class="nu0">1</span><span class="br0">)</span><span class="sy0">;</span>
+ 
+    <span class="coMULTI">/* Increment the pointer by one, making it misaligned */</span>
+    iptr <span class="sy0">=</span> <span class="br0">(</span><span class="kw4">int</span> <span class="sy0">*</span><span class="br0">)</span> <span class="sy0">++</span>cptr<span class="sy0">;</span>
+ 
+    <span class="coMULTI">/* Dereference it as an int pointer, causing an unaligned access */</span>
+    <span class="sy0">*</span>iptr <span class="sy0">=</span> <span class="nu0">42</span><span class="sy0">;</span>
+ 
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+<span class="br0">}</span>
+</pre></div>
+</div>
+<p>Compiling and running the example on a <a href="POSIX" title="POSIX">POSIX</a> compliant OS on <a href="http://en.m.wikipedia.org/wiki/X86" title="X86">x86</a> demonstrates the error:</p>
+<pre>
+<code>$ gcc -ansi sigbus.c -o sigbus
+$ ./sigbus 
+Bus error
+$ gdb ./sigbus
+(gdb) r
+Program received signal <a href="http://en.m.wikipedia.org/wiki/SIGBUS" title="SIGBUS" class="mw-redirect">SIGBUS</a>, Bus error.
+0x080483ba in main ()
+(gdb) x/i $pc
+0x80483ba &lt;main+54&gt;:    mov    DWORD PTR [eax],0x2a
+(gdb) p/x $eax
+$1 = 0x804a009
+(gdb) p/t $eax &amp; (sizeof(int) - 1)
+$2 = 1
+</code>
+</pre>
+<p>The <a href="http://en.m.wikipedia.org/wiki/GDB" title="GDB" class="mw-redirect">GDB</a> <a href="http://en.m.wikipedia.org/wiki/Debugger" title="Debugger">debugger</a> shows that the <a href="http://en.m.wikipedia.org/wiki/Constant_(programming)" title="Constant (programming)">immediate value</a> 0x2a is being stored at the location stored in the <a href="http://en.m.wikipedia.org/wiki/IA-32" title="IA-32">EAX</a> <a href="http://en.m.wikipedia.org/wiki/Processor_register" title="Processor register">register</a>, using <a href="http://en.m.wikipedia.org/wiki/X86_assembly_language" title="X86 assembly language">X86 assembly language</a>. This is an example of <a href="http://en.m.wikipedia.org/wiki/Addressing_mode#Register_indirect" title="Addressing mode">register indirect</a> addressing.</p>
+<p>Printing the <a href="http://en.m.wikipedia.org/wiki/Least_significant_bit" title="Least significant bit">low order bits</a> of the address shows that it is not <a href="http://en.m.wikipedia.org/wiki/Data_structure_alignment" title="Data structure alignment">aligned to a word boundary</a> ("dword" using x86 terminology).</p>
+<h3> <span class="mw-headline" id="Segmentation_fault_example">Segmentation fault example</span></h3>
+<div class="thumb tright">
+<div class="thumbinner" style="width:222px;"><a href="http://en.m.wikipedia.org/wiki/File:Card_reader_segfault.jpg" class="image"><img alt="" src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/220px-Card_reader_segfault.jpg" width="220" height="293" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/330px-Card_reader_segfault.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/26/Card_reader_segfault.jpg/440px-Card_reader_segfault.jpg 2x"></a>
+<div class="thumbcaption">
+
+Segmentation fault on a <a href="http://en.m.wikipedia.org/wiki/Chip_and_pin" title="Chip and pin" class="mw-redirect">chip and pin</a> keypad</div>
+</div>
+</div>
+<p>Here is an example of <a href="ANSI_C" title="ANSI C">ANSI C</a> code that should create a segmentation fault on platforms with memory protection:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+ <span class="br0">{</span>
+     <span class="kw4">char</span> <span class="sy0">*</span>s <span class="sy0">=</span> <span class="st0">"hello world"</span><span class="sy0">;</span>
+     <span class="sy0">*</span>s <span class="sy0">=</span> <span class="st0">'H'</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre></div>
+</div>
+<p>When the program containing this code is <a href="Compiler" title="Compiler">compiled</a>, the <a href="http://en.m.wikipedia.org/wiki/String_literal" title="String literal">string</a> "hello world" is placed in the section of the program <a href="http://en.m.wikipedia.org/wiki/Executable_file" title="Executable file" class="mw-redirect">executable file</a> marked as read-only; when loaded, the operating system places it with other strings and <a href="http://en.m.wikipedia.org/wiki/Constant_(programming)" title="Constant (programming)">constant</a> data in a read-only segment of memory. When executed, a variable, <i>s</i>, is set to point to the string's location, and an attempt is made to write an <i>H</i> character through the variable into the memory, causing a segmentation fault. Compiling such a program with a compiler that does not check for the assignment of read-only locations at compile time, and running it on a Unix-like operating system produces the following <a href="http://en.m.wikipedia.org/wiki/Runtime_error" title="Runtime error" class="mw-redirect">runtime error</a>:</p>
+<pre>
+<code>$ gcc segfault.c -g -o segfault
+$ ./segfault
+Segmentation fault
+</code>
+</pre>
+<p><a href="http://en.m.wikipedia.org/wiki/Backtrace" title="Backtrace" class="mw-redirect">Backtrace</a> of the core file from <a href="http://en.m.wikipedia.org/wiki/Gdb" title="Gdb" class="mw-redirect">gdb</a>:</p>
+<pre>
+<code>Program received signal SIGSEGV, Segmentation fault.
+0x1c0005c2 in main () at segfault.c:6
+6               *s = 'H';
+</code>
+</pre>
+<p>The conditions under which segmentation violations occur and how they manifest themselves are specific to an operating system.</p>
+<p>Because a very common program error is a <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointer</a> dereference (a read or write through a null pointer, used in C to mean "pointer to no object" and as an error indicator), most operating systems map the null pointer's address such that accessing it causes a segmentation fault.</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> <span class="sy0">*</span>ptr <span class="sy0">=</span> NULL<span class="sy0">;</span>
+ <span class="sy0">*</span>ptr <span class="sy0">=</span> <span class="nu0">1</span><span class="sy0">;</span>
+</pre></div>
+</div>
+<p>This sample code creates a <a href="Null_pointer" title="Null pointer" class="mw-redirect">null pointer</a>, and tries to assign a value to its non-existent target. Doing so causes a segmentation fault at runtime on many operating systems.</p>
+<p>Another example is <a href="Recursion" title="Recursion">recursion</a> without a base case:</p>
+<div dir="ltr" class="mw-geshi mw-code mw-content-ltr">
+<div class="c source-c">
+<pre class="de1">
+ <span class="kw4">int</span> main<span class="br0">(</span><span class="kw4">void</span><span class="br0">)</span>
+ <span class="br0">{</span>
+    main<span class="br0">(</span><span class="br0">)</span><span class="sy0">;</span>
+    <span class="kw1">return</span> <span class="nu0">0</span><span class="sy0">;</span>
+ <span class="br0">}</span>
+</pre></div>
+</div>
+<p>which causes the <a href="http://en.m.wikipedia.org/wiki/Stack_overflow" title="Stack overflow">stack to overflow</a> which results in a segmentation fault.<sup id="cite_ref-2" class="reference"><a href="Segmentation_fault#cite_note-2"><span>[</span>2<span>]</span></a></sup> Note that infinite recursion may not necessarily result in a stack overflow depending on the language, optimizations performed by the compiler and the exact structure of a code. In this case, the behavior of unreachable code (the return statement) is undefined, so the compiler can eliminate it and use a <a href="http://en.m.wikipedia.org/wiki/Tail_call" title="Tail call">tail call</a> optimization that might result in no stack usage. Other optimizations could include translating the recursion into iteration, which given the structure of the example function would result in the program running forever, while probably not overflowing its stack.</p>
+<h2> <span class="mw-headline" id="See_also">See also</span></h2>
+<ul><li><a href="Buffer_overflow" title="Buffer overflow">Buffer overflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Core_dump" title="Core dump">Core dump</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/General_protection_fault" title="General protection fault">General protection fault</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Segfault_(website)" title="Segfault (website)">Segfault (website)</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Page_fault" title="Page fault">Page fault</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Storage_violation" title="Storage violation">Storage violation</a></li>
+</ul><h2> <span class="mw-headline" id="References">References</span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references"><li id="cite_note-Peter_Van_der_Linden-1"><span class="mw-cite-backlink"><b><a href="Segmentation_fault#cite_ref-Peter_Van_der_Linden_1-0">^</a></b></span> <span class="reference-text"><i>Expert C programming: deep C secrets</i> By Peter Van der Linden, page 188</span></li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Segmentation_fault#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/2685413/what-is-the-difference-between-a-segmentation-fault-and-a-stack-overflow/2685434#2685434">What is the difference between a segmentation fault and a stack overflow?</a> at <a href="http://en.m.wikipedia.org/wiki/Stack_Overflow" title="Stack Overflow">Stack Overflow</a></span></li>
+</ol></div>
+<h2> <span class="mw-headline" id="External_links">External links</span></h2>
+<ul><li><a rel="nofollow" class="external text" href="http://www.faqs.org/qa/qa-673.html">A FAQ: User contributed answers regarding the definition of a segmentation fault</a></li>
+<li><a rel="nofollow" class="external text" href="http://c-faq.com/null/null1.html">A "null pointer" explained</a></li>
+<li><a rel="nofollow" class="external text" href="http://c-faq.com/null/varieties.html">Answer to: NULL is guaranteed to be 0, but the null pointer is not?</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.rt-embedded.com/blog/archives/resolving-crashes-and-segmentation-faults/">Resolving crashes and segmentation faults</a>, an article from the Real-Time embedded blog.</li>
+</ul><table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr><td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;"><tr><th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul><li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Operating_system" title="Template:Operating system"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Operating_system" title="Template talk:Operating system"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Operating_system&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul></div>
+<div class="" style="font-size:110%;"><a href="Operating_system" title="Operating system">Operating system</a></div>
+</th>
+</tr><tr style="height:2px;"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">General</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/History_of_operating_systems" title="History of operating systems">History</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_operating_systems" title="Timeline of operating systems">Timeline</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_operating_systems" title="Comparison of operating systems">Comparison</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Usage_share_of_operating_systems" title="Usage share of operating systems">Usage share</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operating_system_advocacy" title="Operating system advocacy">Advocacy</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hobbyist_operating_system_development" title="Hobbyist operating system development">Hobbyist development</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Kernel_(computing)" title="Kernel (computing)">Kernel</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;"><tr><th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Architectures</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Monolithic_kernel" title="Monolithic kernel">Monolithic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Exokernel" title="Exokernel">Exokernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hybrid_kernel" title="Hybrid kernel">Hybrid</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Components</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/User_space" title="User space">User space</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microkernel" title="Microkernel">Microkernel</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Loadable_kernel_module" title="Loadable kernel module">Loadable kernel module</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Device_driver" title="Device driver">Device driver</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Process_management_(computing)" title="Process management (computing)">Process management</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;"><tr><th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Concepts</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">Process</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Process_control_block" title="Process control block">Process control block</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interrupt" title="Interrupt">Interrupt</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Thread_(computing)" title="Thread (computing)">Thread</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Context_switch" title="Context switch">Context switch</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;"><a href="http://en.m.wikipedia.org/wiki/Scheduling_(computing)" title="Scheduling (computing)">Scheduling algorithms</a></div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">Computer multitasking</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preemption_(computing)" title="Preemption (computing)">Preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Round-robin_scheduling" title="Round-robin scheduling">Round-robin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fixed-priority_pre-emptive_scheduling" title="Fixed-priority pre-emptive scheduling">Fixed-priority preemptive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multilevel_feedback_queue" title="Multilevel feedback queue">Multilevel feedback queue</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Shortest_job_next" title="Shortest job next">Shortest job next</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Memory_management" title="Memory management">Memory management</a> and<br><a href="http://en.m.wikipedia.org/wiki/Resource_(computer_science)" title="Resource (computer science)">resource</a> protection</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Ring_(computer_security)" title="Ring (computer security)">Security rings</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Memory_protection" title="Memory protection">Memory protection</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_memory" title="Virtual memory">Virtual memory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paging" title="Paging">Paging</a></li>
+<li><strong class="selflink">Segmentation fault / Bus error</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/General_protection_fault" title="General protection fault">General protection fault</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/List_of_operating_systems" title="List of operating systems">List</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/AmigaOS" title="AmigaOS">AmigaOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/BeOS" title="BeOS">BeOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Berkeley_Software_Distribution" title="Berkeley Software Distribution">BSD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/DOS" title="DOS">DOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/GNU" title="GNU">GNU</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Linux" title="Linux">Linux</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mac_OS" title="Mac OS">Mac OS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/MorphOS" title="MorphOS">MorphOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/OS/2" title="OS/2">OS/2</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Solaris_(operating_system)" title="Solaris (operating system)">Solaris</a></li>
+<li><a href="Unix" title="Unix">Unix</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Windows</a></li>
+</ul></div>
+</td>
+</tr><tr style="height:2px"><td></td>
+</tr><tr><th scope="row" class="navbox-group" style=";;">Miscellaneous concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Booting" title="Booting">Boot loader</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_CD" title="Live CD">Live CD</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Live_USB" title="Live USB">Live USB</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Preboot_Execution_Environment" title="Preboot Execution Environment">PXE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface">API</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_tape_library" title="Virtual tape library">Virtual tape library</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_network" title="Computer network">Computer network</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Operating_system_shell" title="Operating system shell">OS shell</a>
+<ul><li><a href="http://en.m.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">CLI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Text-based_user_interface" title="Text-based user interface">TUI</a></li>
+<li><a href="Graphical_user_interface" title="Graphical user interface">GUI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Voice_user_interface" title="Voice user interface">VUI</a></li>
+</ul></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware_abstraction" title="Hardware abstraction">HAL</a></li>
+</ul></div>
+</td>
+</tr></table></td>
+</tr></table>						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 15 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://de.m.wikipedia.org/wiki/Schutzverletzung" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://es.m.wikipedia.org/wiki/Violaci%C3%B3n_de_acceso" lang="es" hreflang="es">español</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Erreur_de_segmentation" lang="fr" hreflang="fr">français</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%EC%84%B8%EA%B7%B8%EB%A9%98%ED%85%8C%EC%9D%B4%EC%85%98_%EC%98%A4%EB%A5%98" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://it.m.wikipedia.org/wiki/Errore_di_segmentazione" lang="it" hreflang="it">italiano</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Kerosakan_pensegmenan" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Protectiefout" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%82%BB%E3%82%B0%E3%83%A1%E3%83%B3%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E9%81%95%E5%8F%8D" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Naruszenie_ochrony_pami%C4%99ci" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Falha_de_segmenta%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9E%D1%88%D0%B8%D0%B1%D0%BA%D0%B0_%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D0%B8" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sr.m.wikipedia.org/wiki/%D0%93%D1%80%D0%B5%D1%88%D0%BA%D0%B0_%D1%81%D0%B5%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%98%D0%B5" lang="sr" hreflang="sr">српски / srpski</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Muistialueen_ylitys" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Segmenteringsfel" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E8%A8%98%E6%86%B6%E9%AB%94%E5%8D%80%E6%AE%B5%E9%8C%AF%E8%AA%A4" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Segmentation_fault&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Segmentation_fault&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Segmentation+fault&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>

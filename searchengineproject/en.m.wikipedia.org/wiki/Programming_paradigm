@@ -1,0 +1,1235 @@
+<!doctype html>
+	<html lang="en" dir="ltr" class="">
+	<head>
+		<title>Programming paradigm - Wikipedia, the free encyclopedia</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="noindex,nofollow"/>		<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile%7Cmobile.production-only%2Cproduction-jquery%7Cmobile.device.default&amp;only=styles&amp;skin=mobile&amp;version=1352163471&amp;*" />
+<link rel="stylesheet" href="http://bits.wikimedia.org/en.wikipedia.org/load.php?debug=false&amp;lang=en&amp;modules=mobile.site&amp;only=styles&amp;skin=mobile&amp;*" />		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<link rel="apple-touch-icon" href="http://en.wikipedia.org/apple-touch-icon.png" />		<script type="text/javascript">
+			var _mwStart = +new Date;
+			window._evq = window._evq || [];
+			if ( typeof console === 'undefined' ) {
+				console = { log: function() {} };
+			}
+			if( typeof mw === 'undefined' ) {
+				mw = {};
+			}
+			var mwMobileFrontendConfig = {"messages":{"mobile-frontend-watchlist-add":"Added $1 to your watchlist","mobile-frontend-watchlist-removed":"Removed $1 from your watchlist","mobile-frontend-watchlist-view":"View your watchlist","mobile-frontend-ajax-random-heading":"Locating knowledge...","mobile-frontend-ajax-random-quote":"Intellectual growth should commence at birth and cease only at death","mobile-frontend-ajax-random-quote-author":"Albert Einstein","mobile-frontend-ajax-random-question":"Read this article?","mobile-frontend-ajax-random-yes":"Yes","mobile-frontend-ajax-random-retry":"Try again","mobile-frontend-ajax-page-loading":"Loading $1","mobile-frontend-page-saving":"Saving $1","mobile-frontend-ajax-page-error":"Whoops! Something went wrong there. Please try refreshing your browser window.","mobile-frontend-meta-data-issues":"This article has some issues","mobile-frontend-meta-data-issues-header":"Issues","expand-section":"Show","collapse-section":"Hide","remove-results":"Back...","mobile-frontend-search-noresults":"No article titles match your search. Change your search, or press the keyboard search button to search inside articles.","mobile-frontend-search-help":"Type search term above and matching article titles will appear here.","contents-heading":"Contents","language-heading":"Read this article in","mobile-frontend-close-section":"Close this section","mobile-frontend-language-footer":"<a href="http://en.m.wikipedia.org/wiki/\&quot;\/wiki\/Special:MobileOptions\/Language\&quot;">Note: This article may not be written in your preferred language. You can see which languages Wikipedia supports by clicking here.<\/a>","mobile-frontend-language-site-choose":"Search language","mobile-frontend-language-site-nomatches":"No matching languages"},"settings":{"action":"","authenticated":false,"scriptPath":"\/w","shim":"\/\/bits.wikimedia.org\/static-1.21wmf3\/extensions\/MobileFrontend\/stylesheets\/common\/images\/blank.gif","pageUrl":"\/wiki\/$1","beta":null,"title":"Programming paradigm","useFormatCookieName":"mf_mobileFormat","useFormatCookieDuration":-1,"useFormatCookieDomain":"en.wikipedia.org","useFormatCookiePath":"\/","stopMobileRedirectCookieName":"stopMobileRedirect","stopMobileRedirectCookieDuration":15552000,"stopMobileRedirectCookieDomain":".wikipedia.org","hookOptions":""}};
+			function _mwLogEvent( data, additionalInformation ) {
+				var timestamp = + new Date;
+				var ev = { event_id: 'mobile', delta: timestamp - _mwStart, data: data, beta: mwMobileFrontendConfig.settings.beta,
+					session: _mwStart, page: mwMobileFrontendConfig.settings.title, info: additionalInformation || '' };
+				_evq.push( ev );
+				console.log( typeof JSON === 'undefined' ? ev : JSON.stringify( ev ) );
+			}
+		</script>
+				<link rel="canonical" href="http://en.wikipedia.org/wiki/Programming_paradigm" >
+	</head>
+	<body class="mobile live">
+				<div id="mw-mf-viewport">
+		<div id="mw-mf-page-left">
+		<div id='mw-mf-content-left'>
+		<ul id="mw-mf-menu-main">
+			<li class='icon'><a href="Main_Page"
+				title="Home">
+				Home</a></li>
+			<li class='icon2'><a href="Special:Random#mw-mf-page-left" id="randomButton"
+				title="Random"
+				class="button">Random</a></li>
+						<li class='icon5'>
+				<a href="http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&amp;returnto=Programming+paradigm"
+					title="Settings">
+				Settings				</a>
+			</li>
+					</ul>
+		</div>
+		</div>
+		<div id='mw-mf-page-center'>
+									<div id="mw-mf-header">
+		<a title="Open main menu" href="Special:MobileMenu#mw-mf-page-left" id="mw-mf-main-menu-button">				<img alt="menu"
+				src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif">
+		</a>			<form id="mw-mf-searchForm" action="http://en.m.wikipedia.org/w/index.php" class="search_bar" method="get">
+			<input type="hidden" value="Special:Search" name="title" />
+			<div id="mw-mf-sq" class="divclearable">
+				<input type="search" name="search" id="mw-mf-search" size="22" value="" autocomplete="off" maxlength="1024" class="search"
+					placeholder="Search Wikipedia"
+					/>
+				<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/blank.gif" alt="Clear" class="clearlink" id="mw-mf-clearsearch" title="Clear"/>
+				<input class='searchSubmit' type="submit" value="Go">
+			</div>
+		</form>
+	</div>
+	<div id="results"></div>
+		<div class='show ' id='content_wrapper'>
+						<h1 id="firstHeading">Programming paradigm</h1>			
+<table class="metadata plainlinks ambox ambox-content ambox-Refimprove" style=""><tr>
+<td class="mbox-image">
+<div style="width: 52px;"><img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x"></div>
+</td>
+<td class="mbox-text" style=""><span class="mbox-text-span">This article <b>needs additional <a href="Wikipedia:Citing_sources#Inline_citations" title="Wikipedia:Citing sources">citations</a> for <a href="Wikipedia:Verifiability" title="Wikipedia:Verifiability">verification</a></b>. <span class="hide-when-compact">Please help <a class="external text" href="http://en.wikipedia.org/w/index.php?title=Programming_paradigm&amp;action=edit">improve this article</a> by adding citations to <a href="http://en.m.wikipedia.org/wiki/Wikipedia:Identifying_reliable_sources" title="Wikipedia:Identifying reliable sources">reliable sources</a>. Unsourced material may be <a href="http://en.m.wikipedia.org/wiki/Template:Citation_needed" title="Template:Citation needed">challenged</a> and <a href="Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span> <small><i>(February 2011)</i></small> </span></td>
+</tr></table>
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%;" cellpadding="0">
+<tr>
+<th class="" style="padding: 0.2em 0.4em 0.2em; font-size: 145%; line-height: 1.2em;"><strong class="selflink">Programming paradigms</strong></th>
+</tr>
+<tr>
+<td class="" style="padding-top: 0.2em; padding-bottom: 0.2em; text-align: left;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul>
+<li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul>
+</li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li>
+<a href="Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="Structured_programming" title="Structured programming">Structured</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li>
+<a href="Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul>
+<li>
+<a href="Modular_programming" title="Modular programming">Modular</a> (contrast: Monolithic)</li>
+<li>
+<a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><span title="Discuss this template" style="">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<p>A <b>programming <a href="http://en.m.wikipedia.org/wiki/Paradigm" title="Paradigm">paradigm</a></b> is a fundamental style of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer programming</a>. There are four main paradigms : <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, <a href="Imperative_programming" title="Imperative programming">imperative</a>, <a href="Functional_programming" title="Functional programming">functional</a> and <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic programming</a>.<sup id="cite_ref-1" class="reference"><a href="Programming_paradigm#cite_note-1"><span>[</span>1<span>]</span></a></sup> Their foundations are distinct <a href="http://en.m.wikipedia.org/wiki/Model_of_computation" title="Model of computation">models of computation</a> : <a href="http://en.m.wikipedia.org/wiki/Turing_machine" title="Turing machine">Turing machine</a> for object-oriented and imperative programming, <a href="http://en.m.wikipedia.org/wiki/Lambda_calculus" title="Lambda calculus">lambda calculus</a> for functional programming, and <a href="http://en.m.wikipedia.org/wiki/First_order_logic" title="First order logic" class="mw-redirect">first order logic</a> for logic programming.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span>
+</h2>
+<p>A <i>programming model</i> is an abstraction of a computer system. For example, the "<a href="http://en.m.wikipedia.org/wiki/Von_Neumann_model" title="Von Neumann model" class="mw-redirect">von Neumann model</a>" is a model used in traditional sequential computers. For <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel computing</a>, there are many possible models typically reflecting different ways processors can be interconnected. The most common are based on shared memory, distributed memory with message passing, or a hybrid of the two.</p>
+<p>A <a href="Programming_language" title="Programming language">programming language</a> can support <a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">multiple paradigms</a>. For example, programs written in <a href="C++" title="C++">C++</a> or <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> can be purely <a href="Procedural_programming" title="Procedural programming">procedural</a>, or purely <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a>, or contain elements of both paradigms. Software designers and programmers decide how to use those paradigm elements.</p>
+<p>In object-oriented programming, programmers can think of a program as a collection of interacting objects, while in <a href="Functional_programming" title="Functional programming">functional programming</a> a program can be thought of as a sequence of stateless function evaluations. When programming computers or systems with many processors, <a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">process-oriented programming</a> allows programmers to think about applications as sets of concurrent processes acting upon logically shared <a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">data structures</a>.</p>
+<p>Just as different groups in <a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">software engineering</a> advocate different <i>methodologies</i>, different <a href="Programming_language" title="Programming language">programming languages</a> advocate different <i>programming paradigms</i>. Some languages are designed to support one particular paradigm (<a href="Smalltalk" title="Smalltalk">Smalltalk</a> supports object-oriented programming, <a href="http://en.m.wikipedia.org/wiki/Haskell_(programming_language)" title="Haskell (programming language)">Haskell</a> supports functional programming), while other programming languages support multiple paradigms (such as <a href="http://en.m.wikipedia.org/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a>, C++, <a href="Java_(programming_language)" title="Java (programming language)">Java</a>, <a href="C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>, <a href="http://en.m.wikipedia.org/wiki/Visual_Basic" title="Visual Basic">Visual Basic</a>, <a href="http://en.m.wikipedia.org/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, <a href="http://en.m.wikipedia.org/wiki/Scheme_(programming_language)" title="Scheme (programming language)">Scheme</a>, <a href="Perl" title="Perl">Perl</a>, <a href="Python_(programming_language)" title="Python (programming language)">Python</a>, <a href="http://en.m.wikipedia.org/wiki/Ruby_(programming_language)" title="Ruby (programming language)">Ruby</a>, <a href="http://en.m.wikipedia.org/wiki/Oz_(programming_language)" title="Oz (programming language)">Oz</a> and <a href="http://en.m.wikipedia.org/wiki/F_Sharp_(programming_language)" title="F Sharp (programming language)">F#</a>).</p>
+<p>Many programming paradigms are as well known for what techniques they <i>forbid</i> as for what they enable. For instance, pure functional programming disallows the use of <a href="http://en.m.wikipedia.org/wiki/Side-effect_(computer_science)" title="Side-effect (computer science)" class="mw-redirect">side-effects</a>, while <a href="Structured_programming" title="Structured programming">structured programming</a> disallows the use of the <a href="Goto" title="Goto">goto</a> statement. Partly for this reason, new paradigms are often regarded as doctrinaire or overly rigid by those accustomed to earlier styles.<sup id="cite_ref-rubin87goto_2-0" class="reference"><a href="Programming_paradigm#cite_note-rubin87goto-2"><span>[</span>2<span>]</span></a></sup> Avoiding certain techniques can make it easier to prove theorems about a program's correctness—or simply to understand its behavior.</p>
+<h2> <span class="mw-headline" id="Multi-paradigm_programming_language">Multi-paradigm programming language</span>
+</h2>
+<div class="rellink boilerplate seealso">See also: <a href="http://en.m.wikipedia.org/wiki/List_of_multi-paradigm_programming_languages" title="List of multi-paradigm programming languages">List of multi-paradigm programming languages</a>
+</div>
+<p>A <i>multi-paradigm programming language</i> is a <a href="Programming_language" title="Programming language">programming language</a> that supports more than one programming paradigm. As <a href="http://en.m.wikipedia.org/wiki/Leda_(programming_language)" title="Leda (programming language)">Leda</a> designer <a href="http://en.m.wikipedia.org/wiki/Timothy_Budd" title="Timothy Budd">Timothy Budd</a> puts it: "The idea of a multiparadigm language is to provide a framework in which programmers can work in a variety of styles, freely intermixing constructs from different paradigms." The design goal of such languages is to allow programmers to use the best tool for a job, admitting that no one paradigm solves all problems in the easiest or most efficient way.</p>
+<p>One example is <a href="http://en.m.wikipedia.org/wiki/C_sharp_(programming_language)" title="C sharp (programming language)" class="mw-redirect">C#</a>, which includes <a href="Imperative_programming" title="Imperative programming">imperative</a> and <a href="Object-oriented_programming" title="Object-oriented programming">object-oriented</a> paradigms as well as some support for <a href="Functional_programming" title="Functional programming">functional programming</a> through <a href="http://en.m.wikipedia.org/wiki/Type_inference" title="Type inference">type inference</a>, <a href="http://en.m.wikipedia.org/wiki/Anonymous_function" title="Anonymous function">anonymous functions</a> and <a href="http://en.m.wikipedia.org/wiki/Language_Integrated_Query" title="Language Integrated Query">Language Integrated Query</a>. Some other ones are <a href="http://en.m.wikipedia.org/wiki/F_sharp_(programming_language)" title="F sharp (programming language)" class="mw-redirect">F#</a> and <a href="http://en.m.wikipedia.org/wiki/Scala_(programming_language)" title="Scala (programming language)">Scala</a>, which provides similar functionality to C# but also includes full support for <a href="Functional_programming" title="Functional programming">functional programming</a> (including <a href="http://en.m.wikipedia.org/wiki/Currying" title="Currying">currying</a>, <a href="http://en.m.wikipedia.org/wiki/Pattern_matching" title="Pattern matching">pattern matching</a>, <a href="http://en.m.wikipedia.org/wiki/Algebraic_data_types" title="Algebraic data types" class="mw-redirect">algebraic data types</a>, <a href="http://en.m.wikipedia.org/wiki/Lazy_evaluation" title="Lazy evaluation">lazy evaluation</a>, <a href="http://en.m.wikipedia.org/wiki/Tail_recursion" title="Tail recursion" class="mw-redirect">tail recursion</a>, <a href="http://en.m.wikipedia.org/wiki/Immutable_object" title="Immutable object">immutability</a>, etc.). Perhaps the most extreme example is <a href="http://en.m.wikipedia.org/wiki/Oz_(programming_language)" title="Oz (programming language)">Oz</a>, which has subsets that are <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic</a> (Oz descends from logic programming), a <a href="Functional_programming" title="Functional programming">functional</a>, an <a href="http://en.m.wikipedia.org/wiki/Object-oriented_programming_language" title="Object-oriented programming language" class="mw-redirect">object-oriented</a>, a <a href="http://en.m.wikipedia.org/wiki/Dataflow#Concurrency" title="Dataflow">dataflow concurrent</a>, and other language paradigms. Oz was designed over a ten-year period to combine in a harmonious way concepts that are traditionally associated with different programming paradigms. <a href="http://en.m.wikipedia.org/wiki/Lisp_(programming_language)" title="Lisp (programming language)">Lisp</a>, while often taught as a functional language, is known for its malleability and thus its ability to engulf many paradigms A programming paradigm provides for the programmer the means and structure for the execution of a program.</p>
+<h2> <span class="mw-headline" id="History">History</span>
+</h2>
+<p>The <a href="http://en.m.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language">lowest level</a> programming paradigms are <a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">machine code</a>, which directly represents the <a href="http://en.m.wikipedia.org/wiki/Instruction_set" title="Instruction set">instructions</a> (the contents of program memory) as a sequence of numbers, and <a href="Assembly_language" title="Assembly language">assembly language</a> where the machine instructions are represented by mnemonics and <a href="http://en.m.wikipedia.org/wiki/Memory_address" title="Memory address">memory addresses</a> can be given symbolic labels. These are sometimes called first- and second- generation languages. In the 1960s assembler languages were developed to support library COPY and quite sophisticated conditional macro generation and pre-processing capabilities, CALL to (<a href="Subroutine" title="Subroutine">subroutines</a>), external variables and common sections (globals), enabling significant code re-use and isolation from hardware specifics via use of logical operators such as READ/WRITE/GET/PUT. Assembly was, and still is, used for time critical systems and frequently in <a href="Embedded_system" title="Embedded system">embedded systems</a> as it gives the most direct control of what the machine actually does.</p>
+<p>The next advance was the development of <i><a href="http://en.m.wikipedia.org/wiki/Procedural_language" title="Procedural language" class="mw-redirect">procedural languages</a></i>. These <a href="http://en.m.wikipedia.org/wiki/Third_generation_language" title="Third generation language" class="mw-redirect">third-generation</a> languages (the first described as <a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">high-level languages</a>) use vocabulary related to the problem being solved. For example,</p>
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a> - developed c. 1970 at <a href="Bell_Labs" title="Bell Labs">Bell Labs</a>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/COBOL" title="COBOL">COBOL</a> (Common Business Oriented Language) - uses terms like <a href="http://en.m.wikipedia.org/wiki/Computer_file" title="Computer file">file</a>, <a href="http://en.m.wikipedia.org/wiki/Move_(command)" title="Move (command)">move</a> and <a href="http://en.m.wikipedia.org/wiki/Copy_(command)" title="Copy (command)">copy</a>.</li>
+<li>
+<a href="FORTRAN" title="FORTRAN" class="mw-redirect">FORTRAN</a> (FORmula TRANslation) - using <a href="http://en.m.wikipedia.org/wiki/Mathematical" title="Mathematical" class="mw-redirect">mathematical</a> language terminology, it was developed mainly for scientific and engineering problems.</li>
+<li>
+<a href="ALGOL" title="ALGOL">ALGOL</a> (ALGOrithmic Language) - focused on being an appropriate language to define <a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithms</a>, while using mathematical language terminology and targeting scientific and engineering problems just like FORTRAN.</li>
+<li>
+<a href="PL/I" title="PL/I">PL/I</a> (Programming Language One) - a hybrid commercial/scientific general purpose language supporting <a href="Pointer_(computer_programming)" title="Pointer (computer programming)">pointers</a>.</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/BASIC" title="BASIC">BASIC</a> (Beginners All purpose Symbolic Instruction Code) - was developed to enable more people to write programs.</li>
+</ul>
+<p>All these languages follow the procedural paradigm. That is, they describe, step by step, exactly the procedure that should, according to the particular programmer at least, be followed to solve a specific problem. The <a href="http://en.m.wikipedia.org/wiki/Efficacy" title="Efficacy">efficacy</a> and <a href="http://en.m.wikipedia.org/wiki/Algorithmic_efficiency" title="Algorithmic efficiency">efficiency</a> of any such solution are both therefore entirely subjective and highly dependent on that programmer's experience, inventiveness and ability.</p>
+<p>Later, <i><a href="http://en.m.wikipedia.org/wiki/Object-oriented_language" title="Object-oriented language" class="mw-redirect">object-oriented languages</a></i> (like <a href="http://en.m.wikipedia.org/wiki/Simula" title="Simula">Simula</a>, <a href="Smalltalk" title="Smalltalk">Smalltalk</a>, <a href="C++" title="C++">C++</a>, <a href="http://en.m.wikipedia.org/wiki/Eiffel_(programming_language)" title="Eiffel (programming language)">Eiffel</a> and <a href="Java_(programming_language)" title="Java (programming language)">Java</a>) were created. In these languages, <a href="http://en.m.wikipedia.org/wiki/Data" title="Data">data</a>, and methods of manipulating the data, are kept as a single unit called an <a href="http://en.m.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">object</a>. The only way that a user can access the data is via the object's 'methods' (subroutines). Because of this, the internal workings of an object may be changed without affecting any code that uses the object. There is still some <a href="Object-oriented_programming#Criticism" title="Object-oriented programming">controversy</a> by notable programmers such as <a href="http://en.m.wikipedia.org/wiki/Alexander_Stepanov" title="Alexander Stepanov">Alexander Stepanov</a>, <a href="http://en.m.wikipedia.org/wiki/Richard_Stallman" title="Richard Stallman">Richard Stallman</a><sup id="cite_ref-3" class="reference"><a href="Programming_paradigm#cite_note-3"><span>[</span>3<span>]</span></a></sup> and others, concerning the efficacy of the <a href="Object-oriented_programming" title="Object-oriented programming">OOP</a> paradigm versus the procedural paradigm. The necessity of every object to have associative methods leads some skeptics to associate OOP with <a href="http://en.m.wikipedia.org/wiki/Software_bloat" title="Software bloat">software bloat</a>. <a href="http://en.m.wikipedia.org/wiki/Polymorphism_in_object-oriented_programming" title="Polymorphism in object-oriented programming">Polymorphism</a> was developed as one attempt to resolve this dilemma.</p>
+<p>Since object-oriented programming is considered a paradigm, not a language, it is possible to create even an object-oriented assembler language. <a href="http://en.m.wikipedia.org/wiki/High_Level_Assembly" title="High Level Assembly">High Level Assembly</a> (HLA) is an example of this that fully supports advanced data types and object-oriented assembly language programming - despite its early origins. Thus, differing programming paradigms can be thought of as more like 'motivational <a href="http://en.m.wikipedia.org/wiki/Meme" title="Meme">memes</a>' of their advocates - rather than necessarily representing progress from one level to the next. Precise comparisons of the efficacy of competing paradigms are frequently made more difficult because of new and differing terminology applied to similar (but not identical) entities and processes together with numerous implementation distinctions across languages.</p>
+<p>Within <a href="Imperative_programming" title="Imperative programming">imperative</a> programming, which is based on procedural languages, an alternative to the computer-centered hierarchy of structured programming is <a href="http://en.m.wikipedia.org/wiki/Literate_programming" title="Literate programming">literate programming</a>, which structures programs instead as a human-centered web, as in a <a href="http://en.m.wikipedia.org/wiki/Hypertext" title="Hypertext">hypertext</a> essay – documentation is integral to the program, and the program is structured following the logic of prose exposition, rather than compiler convenience.</p>
+<p>Independent of the imperative branch, <i><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">declarative programming</a></i> paradigms were developed. In these languages the computer is told what the problem is, not how to solve the problem - the program is structured as a collection of properties to find in the expected result, not as a procedure to follow. Given a database or a set of rules, the computer tries to find a solution matching all the desired properties. The archetypical example of a declarative language is the <a href="http://en.m.wikipedia.org/wiki/Fourth_generation_language" title="Fourth generation language" class="mw-redirect">fourth generation language</a> <a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a>, as well as the family of <a href="http://en.m.wikipedia.org/wiki/Functional_languages" title="Functional languages" class="mw-redirect">functional languages</a> and <a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic programming</a>.</p>
+<p><i><a href="Functional_programming" title="Functional programming">Functional programming</a></i> is a subset of declarative programming. Programs written using this paradigm use <a href="Subroutine" title="Subroutine">functions</a>, blocks of code intended to behave like <a href="http://en.m.wikipedia.org/wiki/Function_(mathematics)" title="Function (mathematics)">mathematical functions</a>. Functional languages discourage changes in the value of variables through <a href="Assignment_(computer_science)" title="Assignment (computer science)">assignment</a>, making a great deal of use of <a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">recursion</a> instead.</p>
+<p>The <i><a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">logic programming</a></i> paradigm views computation as <a href="http://en.m.wikipedia.org/wiki/Automated_reasoning" title="Automated reasoning">automated reasoning</a> over a corpus of knowledge. Facts about the <a href="http://en.m.wikipedia.org/wiki/Problem_domain" title="Problem domain">problem domain</a> are expressed as logic formulae, and programs are executed by applying <a href="http://en.m.wikipedia.org/wiki/Inference_rule" title="Inference rule" class="mw-redirect">inference rules</a> over them until an answer to the problem is found, or the collection of formulae is proved inconsistent.</p>
+<h2> <span class="mw-headline" id="Programming_paradigms">Programming paradigms</span>
+</h2>
+<p>This is a list of programming paradigms organized by relationship:</p>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Component-based_software_engineering" title="Component-based software engineering">Component-based</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipelined</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_programming" title="Constraint programming">Constraint</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul>
+<li>Cell-oriented (<a href="http://en.m.wikipedia.org/wiki/Spreadsheet" title="Spreadsheet">spreadsheets</a>)</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reactive_programming" title="Reactive programming">Reactive</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category:Intensional_programming_languages" title="Category:Intensional programming languages">Intensional</a></li>
+</ul>
+</li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/End-user_development" title="End-user development">End-user programming</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Time-driven_programming" title="Time-driven programming">Time-driven</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expression-oriented_programming_language" title="Expression-oriented programming language">Expression-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Feature_Oriented_Programming" title="Feature Oriented Programming" class="mw-redirect">Feature-oriented</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)</li>
+<li><a href="Generic_programming" title="Generic programming">Generic</a></li>
+<li>
+<a href="Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_modeling#Discipline-specific_modeling" title="Service-oriented modeling">Discipline-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Grammar-oriented_programming" title="Grammar-oriented programming">Grammar-oriented</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Dialecting" title="Dialecting">Dialecting</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automatic_programming" title="Automatic programming">Automatic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Policy-based_design" title="Policy-based design">Policy-based</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="Structured_programming" title="Structured programming">Structured</a>)
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_in_the_large_and_programming_in_the_small" title="Programming in the large and programming in the small">Programming in the large and small</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Semantic-oriented_programming" title="Semantic-oriented programming">Semantic</a></li>
+<li>
+<a href="Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul>
+<li>
+<a href="Modular_programming" title="Modular programming">Modular</a> (contrast: Monolithic)</li>
+<li>
+<a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul>
+<li>By <a href="http://en.m.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+</ul>
+</li>
+<li><a href="http://en.m.wikipedia.org/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li>
+</ul>
+</li>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="http://en.m.wikipedia.org/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="See_also">See also</span>
+</h2>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Comparison_of_programming_paradigms" title="Comparison of programming paradigms">Comparison of programming paradigms</a></li>
+<li><a href="Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Architecture_description_language" title="Architecture description language">Architecture description language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Mindset" title="Mindset">Mindset</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Modeling_language" title="Modeling language">Modeling language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Paradigm" title="Paradigm">Paradigm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Programming_domain" title="Programming domain">Programming domain</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Turing_completeness" title="Turing completeness">Turing completeness</a></li>
+</ul>
+<h2> <span class="mw-headline" id="References">References</span>
+</h2>
+<div class="reflist" style="list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1">
+<span class="mw-cite-backlink"><b><a href="Programming_paradigm#cite_ref-1">^</a></b></span> <span class="reference-text">Nørmark , Kurt. <i><a rel="nofollow" class="external text" href="http://people.cs.aau.dk/~normark/prog3-03/html/notes/paradigms_themes-paradigm-overview-section.html">Overview of the four main programming paradigms</a></i>. Aalborg University, 9 May 2011. Retrieved 22 September 2012.</span>
+</li>
+<li id="cite_note-rubin87goto-2">
+<span class="mw-cite-backlink"><b><a href="Programming_paradigm#cite_ref-rubin87goto_2-0">^</a></b></span> <span class="reference-text">Frank Rubin published a criticism of Dijkstra's letter in the March 1987 CACM where it appeared under the title <i>'GOTO Considered Harmful' Considered Harmful</i>. <span class="citation Journal">Frank Rubin (March 1987). <a rel="nofollow" class="external text" href="http://www.ecn.purdue.edu/ParaMount/papers/rubin87goto.pdf">"'GOTO Considered Harmful' Considered Harmful"</a> (PDF). <i>Communications of the ACM</i> <b>30</b> (3): 195–196. <a href="Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="http://dx.doi.org/10.1145%2F214748.315722">10.1145/214748.315722</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://www.ecn.purdue.edu/ParaMount/papers/rubin87goto.pdf">http://www.ecn.purdue.edu/ParaMount/papers/rubin87goto.pdf</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=%27GOTO+Considered+Harmful%27+Considered+Harmful&amp;rft.jtitle=Communications+of+the+ACM&amp;rft.aulast=Frank+Rubin&amp;rft.au=Frank+Rubin&amp;rft.date=March+1987&amp;rft.volume=30&amp;rft.issue=3&amp;rft.pages=195%E2%80%93196&amp;rft_id=info:doi/10.1145%2F214748.315722&amp;rft_id=http%3A%2F%2Fwww.ecn.purdue.edu%2FParaMount%2Fpapers%2Frubin87goto.pdf&amp;rfr_id=info:sid/en.wikipedia.org:Programming_paradigm"><span style="display: none;"> </span></span></span>
+</li>
+<li id="cite_note-3">
+<span class="mw-cite-backlink"><b><a href="Programming_paradigm#cite_ref-3">^</a></b></span> <span class="reference-text"><span class="citation web"><a rel="nofollow" class="external text" href="http://groups.google.com/group/comp.emacs.xemacs/browse_thread/thread/d0af257a2837640c/37f251537fafbb03?lnk=st&amp;q=%22Richard+Stallman%22+oop&amp;rnum=5&amp;hl=en#37f251537fafbb03">"Mode inheritance, cloning, hooks &amp; OOP (Google Groups Discussion)"</a><span class="printonly">. <a rel="nofollow" class="external free" href="http://groups.google.com/group/comp.emacs.xemacs/browse_thread/thread/d0af257a2837640c/37f251537fafbb03?lnk=st&amp;q=%22Richard+Stallman%22+oop&amp;rnum=5&amp;hl=en#37f251537fafbb03">http://groups.google.com/group/comp.emacs.xemacs/browse_thread/thread/d0af257a2837640c/37f251537fafbb03?lnk=st&amp;q=%22Richard+Stallman%22+oop&amp;rnum=5&amp;hl=en#37f251537fafbb03</a></span>.</span><span class="Z3988" title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.btitle=Mode+inheritance%2C+cloning%2C+hooks+%26+OOP+%28Google+Groups+Discussion%29&amp;rft.atitle=&amp;rft_id=http%3A%2F%2Fgroups.google.com%2Fgroup%2Fcomp.emacs.xemacs%2Fbrowse_thread%2Fthread%2Fd0af257a2837640c%2F37f251537fafbb03%3Flnk%3Dst%26q%3D%2522Richard%2BStallman%2522%2Boop%26rnum%3D5%26hl%3Den%2337f251537fafbb03&amp;rfr_id=info:sid/en.wikipedia.org:Programming_paradigm"><span style="display: none;"> </span></span></span>
+</li>
+</ol>
+</div>
+<h2> <span class="mw-headline" id="External_links">External links</span>
+</h2>
+<table class="vertical-navbox nowraplinks" cellspacing="5" style="float: right; clear: right; background-color: #f9f9f9; border: 1px solid #aaa; width:22em; margin: 0 0 1em 1em; padding: 0.2em; border-spacing: 0.4em 0; text-align: center; line-height: 1.4em; font-size: 88%; background:#f9f9f9; width:auto" cellpadding="0">
+<tr>
+<th class="" style="padding-top: 0.2em; background:#ccccff; font-size:110%;">
+<a href="Programming_language" title="Programming language">Programming language</a><br>
+lists</th>
+</tr>
+<tr>
+<td class="" style="padding-bottom: 0.2em; text-align: left; font-size: 110% Subculture;">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_programming_languages_by_category" title="List of programming languages by category" class="mw-redirect">Categorical</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Chronological</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational</a></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="text-align: right; font-size: 115%;">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_language_lists" title="Template:Programming language lists"><span title="View this template" style="">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Programming language lists (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_language_lists&amp;action=edit"><span title="Edit this template" style="">e</span></a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.info.ucl.ac.be/~pvr/paradigms.html">Classification of the principal programming paradigms</a></li>
+</ul>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;">Links to related articles</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;padding:0px; font-size:113%;;;" class="navbox-list navbox-odd">
+<div style="padding:0px;">
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;">software engineering</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;padding:0px; font-size:113%;;;" class="navbox-list navbox-odd">
+<div style="padding:0px;">
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Computer_language" title="Template:Computer language"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Computer_language" title="Template talk:Computer language"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_language&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Types of <a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">computer languages</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Architecture_description_language" title="Architecture description language">Architecture description</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Hardware_description_language" title="Hardware description language">Hardware description</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Markup_language" title="Markup language">Markup</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Modeling_language" title="Modeling language">Modeling</a></li>
+<li><a href="Programming_language" title="Programming language">Programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Query_language" title="Query language">Query</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Specification_language" title="Specification language">Specification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Style_sheet_language" title="Style sheet language">Stylesheet</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Template_processor" title="Template processor">Template processing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transformation_language" title="Transformation language">Transformation</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks hlist collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Software_engineering" title="Template:Software engineering"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Software_engineering" title="Template talk:Software engineering"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Software_engineering&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">Software engineering</a></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Fields</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Requirements_analysis" title="Requirements analysis">Requirements analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_analysis" title="Systems analysis">Systems analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_testing" title="Software testing">Software testing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_deployment" title="Software deployment">Software deployment</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_maintenance" title="Software maintenance">Software maintenance</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Concepts</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_modeling" title="Data modeling">Data modeling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Enterprise_architecture" title="Enterprise architecture">Enterprise architecture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Functional_specification" title="Functional specification">Functional specification</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Modeling_language" title="Modeling language">Modeling language</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Orthogonality_(programming)" title="Orthogonality (programming)">Orthogonality</a></li>
+<li><strong class="selflink">Programming paradigm</strong></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software" title="Software">Software</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_architecture" title="Software architecture">Software architecture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_development_methodology" title="Software development methodology">Software development methodology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_development_process" title="Software development process">Software development process</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_quality" title="Software quality">Software quality</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_quality_assurance" title="Software quality assurance">Software quality assurance</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_archaeology" title="Software archaeology">Software archaeology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Structured_analysis" title="Structured analysis">Structured analysis</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Orientations</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_software_development" title="Aspect-oriented software development">Aspect-oriented</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object orientation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ontology_(information_science)" title="Ontology (information science)">Ontology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Service-oriented_architecture" title="Service-oriented architecture">Service orientation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_development_life-cycle" title="Systems development life-cycle">SDLC</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Models</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em"></div>
+<table cellspacing="0" class="nowraplinks navbox-subgroup" style="border-spacing:0;;;;">
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Development models</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Agile_software_development" title="Agile software development">Agile</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Iterative_and_incremental_development" title="Iterative and incremental development">Iterative model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/IBM_Rational_Unified_Process" title="IBM Rational Unified Process">RUP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Enterprise_Unified_Process" title="Enterprise Unified Process">EUP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scrum_(development)" title="Scrum (development)">Scrum</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Spiral_model" title="Spiral model">Spiral model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Waterfall_model" title="Waterfall model">Waterfall model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extreme_Programming" title="Extreme Programming" class="mw-redirect">XP</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/V-Model_(software_development)" title="V-Model (software development)">V-Model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Incremental_build_model" title="Incremental build model">Incremental model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_prototyping" title="Software prototyping">Prototype model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Other models</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/ISO/IEC_15504" title="ISO/IEC 15504">Automotive SPICE</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Capability_Maturity_Model_Integration" title="Capability Maturity Model Integration">CMMI</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_model" title="Data model">Data model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Function_model" title="Function model">Function model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_model" title="Information model">Information model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metamodeling" title="Metamodeling">Metamodeling</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object_model" title="Object model">Object model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_modeling" title="Systems modeling">Systems model</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/View_model" title="View model">View model</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";padding-left:0em;padding-right:0em;;">
+<div style="padding:0em 0.75em;">Modeling languages</div>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/IDEF" title="IDEF">IDEF</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Unified_Modeling_Language" title="Unified Modeling Language">UML</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_Modeling_Language" title="Systems Modeling Language">SysML</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Software<br>
+engineers</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Kent_Beck" title="Kent Beck">Kent Beck</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Grady_Booch" title="Grady Booch">Grady Booch</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fred_Brooks" title="Fred Brooks">Fred Brooks</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Barry_Boehm" title="Barry Boehm">Barry Boehm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Peter_Chen" title="Peter Chen">Peter Chen</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ward_Cunningham" title="Ward Cunningham">Ward Cunningham</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ole-Johan_Dahl" title="Ole-Johan Dahl">Ole-Johan Dahl</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tom_DeMarco" title="Tom DeMarco">Tom DeMarco</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Martin_Fowler" title="Martin Fowler">Martin Fowler</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Tony_Hoare" title="Tony Hoare">C. A. R. Hoare</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Watts_Humphrey" title="Watts Humphrey">Watts Humphrey</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Michael_A._Jackson" title="Michael A. Jackson">Michael A. Jackson</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ivar_Jacobson" title="Ivar Jacobson">Ivar Jacobson</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/James_Martin_(author)" title="James Martin (author)">James Martin</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bertrand_Meyer" title="Bertrand Meyer">Bertrand Meyer</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/David_Parnas" title="David Parnas">David Parnas</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Winston_W._Royce" title="Winston W. Royce">Winston W. Royce</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/James_Rumbaugh" title="James Rumbaugh">James Rumbaugh</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Edward_Yourdon" title="Edward Yourdon">Edward Yourdon</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Victor_Basili" title="Victor Basili">Victor Basili</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">Related fields</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">Computer science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_engineering" title="Computer engineering">Computer engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Enterprise_engineering" title="Enterprise engineering">Enterprise engineering</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/History_of_software_engineering" title="History of software engineering">History</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Management" title="Management">Management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Project_management" title="Project management">Project management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quality_management" title="Quality management">Quality management</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ergonomics" title="Ergonomics" class="mw-redirect">Software ergonomics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Systems_engineering" title="Systems engineering">Systems engineering</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>
+<ul>
+<li>
+<img alt="Category" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" width="16" height="14" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x"><a href="http://en.m.wikipedia.org/wiki/Category:Software_engineering" title="Category:Software engineering"><b>Category</b></a>
+</li>
+<li>
+<img alt="" src="http://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/12px-Commons-logo.svg.png" width="12" height="16" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/18px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/24px-Commons-logo.svg.png 2x"> <a href="http://commons.wikimedia.org/wiki/Software_engineering" class="extiw" title="commons:Software engineering"><b>Commons</b></a>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Computer_science" title="Template:Computer science"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Computer_science" title="Template talk:Computer science"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Computer_science&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Major fields of <a href="http://en.m.wikipedia.org/wiki/Computer_science" title="Computer science">computer science</a>
+</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Mathematics" title="Mathematics">Mathematical foundations</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Mathematical_logic" title="Mathematical logic">Mathematical logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Set_theory" title="Set theory">Set theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Number_theory" title="Number theory">Number theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Graph_theory" title="Graph theory">Graph theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Type_theory" title="Type theory">Type theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Category_theory" title="Category theory">Category theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">Numerical analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Information_theory" title="Information theory">Information theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Combinatorics" title="Combinatorics">Combinatorics</a></li>
+<li><a href="Boolean_algebra" title="Boolean algebra">Boolean algebra</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Theory_of_computation" title="Theory of computation">Theory of computation</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automata_theory" title="Automata theory">Automata theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computability_theory" title="Computability theory">Computability theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_complexity_theory" title="Computational complexity theory">Computational complexity theory</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Quantum_computer" title="Quantum computer">Quantum computing theory</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Algorithm" title="Algorithm">Algorithms</a>, <a href="http://en.m.wikipedia.org/wiki/Data_structure" title="Data structure">data structures</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Analysis_of_algorithms" title="Analysis of algorithms">Analysis of algorithms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Algorithm_design" title="Algorithm design">Algorithm design</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_geometry" title="Computational geometry">Computational geometry</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="Programming_language" title="Programming language">Programming languages</a>, <a href="Compiler" title="Compiler">compilers</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Parsing" title="Parsing">Parsers</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Interpreter_(computing)" title="Interpreter (computing)">Interpreters</a></li>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural programming</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a></li>
+<li><a href="Functional_programming" title="Functional programming">Functional programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic programming</a></li>
+<li><strong class="selflink">Programming paradigms</strong></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">Concurrent</a>, <a href="http://en.m.wikipedia.org/wiki/Parallel_computing" title="Parallel computing">parallel</a>, <a href="http://en.m.wikipedia.org/wiki/Distributed_computing" title="Distributed computing">distributed</a> systems</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Multiprocessing" title="Multiprocessing">Multiprocessing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Grid_computing" title="Grid computing">Grid computing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrency_control" title="Concurrency control">Concurrency control</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Software_engineering" title="Software engineering">Software engineering</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Requirements_analysis" title="Requirements analysis">Requirements analysis</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_design" title="Software design">Software design</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_programming" title="Computer programming">Computer programming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_testing" title="Software testing">Software testing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Software_development_process" title="Software development process">Software development process</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Systems_architecture" title="Systems architecture">System architecture</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Computer_architecture" title="Computer architecture">Computer architecture</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Microarchitecture" title="Microarchitecture">Computer organization</a></li>
+<li><a href="Operating_system" title="Operating system">Operating systems</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;">
+<a href="http://en.m.wikipedia.org/wiki/Telecommunication" title="Telecommunication">Telecommunication</a>, <a href="http://en.m.wikipedia.org/wiki/Computer_networking" title="Computer networking" class="mw-redirect">networking</a>
+</th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_music" title="Computer music">Computer audio</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Routing" title="Routing">Routing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Network_topology" title="Network topology">Network topology</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cryptography" title="Cryptography">Cryptography</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Database" title="Database">Databases</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Database_management_system" title="Database management system">Database management systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Relational_database" title="Relational database">Relational databases</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/SQL" title="SQL">SQL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Transaction_processing" title="Transaction processing">Transactions</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Index_(database)" title="Index (database)" class="mw-redirect">Database indexes</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data_mining" title="Data mining">Data mining</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Artificial_intelligence" title="Artificial intelligence">Artificial intelligence</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Automated_reasoning" title="Automated reasoning">Automated reasoning</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_linguistics" title="Computational linguistics">Computational linguistics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_vision" title="Computer vision">Computer vision</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Evolutionary_computation" title="Evolutionary computation">Evolutionary computation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Expert_system" title="Expert system">Expert systems</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Machine_learning" title="Machine learning">Machine learning</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Natural_language_processing" title="Natural language processing">Natural language processing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Robotics" title="Robotics">Robotics</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Computer_graphics" title="Computer graphics">Computer graphics</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Visualization_(computer_graphics)" title="Visualization (computer graphics)">Visualization</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_animation" title="Computer animation">Computer animation</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Image_processing" title="Image processing">Image processing</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Human%E2%80%93computer_interaction" title="Human–computer interaction">Human–computer interaction</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-even hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Computer_accessibility" title="Computer accessibility">Computer accessibility</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/User_interface" title="User interface">User interfaces</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Wearable_computer" title="Wearable computer">Wearable computing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Ubiquitous_computing" title="Ubiquitous computing">Ubiquitous computing</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Virtual_reality" title="Virtual reality">Virtual reality</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px">
+<td></td>
+</tr>
+<tr>
+<th scope="row" class="navbox-group" style=";;"><a href="http://en.m.wikipedia.org/wiki/Computational_science" title="Computational science">Scientific computing</a></th>
+<td style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Artificial_life" title="Artificial life">Artificial life</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Bioinformatics" title="Bioinformatics">Bioinformatics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Cognitive_science" title="Cognitive science">Cognitive science</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_chemistry" title="Computational chemistry">Computational chemistry</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_neuroscience" title="Computational neuroscience">Computational neuroscience</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Computational_physics" title="Computational physics">Computational physics</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Numerical_analysis" title="Numerical analysis">Numerical algorithms</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Symbolic_computation" title="Symbolic computation">Symbolic mathematics</a></li>
+</ul>
+</div>
+</td>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td class="navbox-abovebelow" style=";" colspan="2">
+<div>Note: Computer science can also be divided into different topics or fields according to the <a href="http://en.m.wikipedia.org/wiki/ACM_Computing_Classification_System" title="ACM Computing Classification System">ACM Computing Classification System</a>.</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible collapsed navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<span style="float:left;width:6em;"> </span>
+<div class="" style="font-size:110%;">programming</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;padding:0px; font-size:113%;;;" class="navbox-list navbox-odd">
+<div style="padding:0px;">
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_language_generations" title="Template:Programming language generations"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><span class="new" title="Template talk:Programming language generations (page does not exist)">t</span></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_language_generations&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">
+<a href="Programming_language" title="Programming language">Programming language</a> generations</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li>
+<a href="http://en.m.wikipedia.org/wiki/Programming_language_generations" title="Programming language generations">Generations Overview</a>
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/First-generation_programming_language" title="First-generation programming language">1GL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Second-generation_programming_language" title="Second-generation programming language">2GL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Third-generation_programming_language" title="Third-generation programming language">3GL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">4GL</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Fifth-generation_programming_language" title="Fifth-generation programming language">5GL</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Programming_languages" title="Template:Programming languages"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Programming_languages" title="Template talk:Programming languages"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Programming_languages&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;">Programming languages</div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="Comparison_of_programming_languages" title="Comparison of programming languages">Comparison</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Timeline_of_programming_languages" title="Timeline of programming languages">Timeline</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Categorical_list_of_programming_languages" title="Categorical list of programming languages" class="mw-redirect">Categorical list</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Generational_list_of_programming_languages" title="Generational list of programming languages">Generational list</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/List_of_programming_languages" title="List of programming languages">Alphabetical list</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+<table cellspacing="0" class="navbox" style="border-spacing:0;;"><tr>
+<td style="padding:2px;">
+<table cellspacing="0" class="nowraplinks collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit;;">
+<tr>
+<th scope="col" style=";" class="navbox-title" colspan="2">
+<div class="noprint plainlinks hlist navbar mini" style="">
+<ul>
+<li class="nv-view"><a href="http://en.m.wikipedia.org/wiki/Template:Types_of_programming_languages" title="Template:Types of programming languages"><span title="View this template" style=";;background:none transparent;border:none;">v</span></a></li>
+<li class="nv-talk"><a href="http://en.m.wikipedia.org/wiki/Template_talk:Types_of_programming_languages" title="Template talk:Types of programming languages"><span title="Discuss this template" style=";;background:none transparent;border:none;">t</span></a></li>
+<li class="nv-edit"><a class="external text" href="http://en.wikipedia.org/w/index.php?title=Template:Types_of_programming_languages&amp;action=edit"><span title="Edit this template" style=";;background:none transparent;border:none;">e</span></a></li>
+</ul>
+</div>
+<div class="" style="font-size:110%;"><strong class="selflink">Types of programming languages</strong></div>
+</th>
+</tr>
+<tr style="height:2px;">
+<td></td>
+</tr>
+<tr>
+<td colspan="2" style="width:100%;padding:0px;;;" class="navbox-list navbox-odd hlist">
+<div style="padding:0em 0.25em">
+<ul>
+<li><a href="http://en.m.wikipedia.org/wiki/Array_programming" title="Array programming">Array</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Compiled_language" title="Compiled language">Compiled</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Data-structured_language" title="Data-structured language">Data-structured</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Declarative_programming" title="Declarative programming">Declarative</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Esoteric_programming_language" title="Esoteric programming language">Esoteric</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Extensible_programming" title="Extensible programming">Extensible</a></li>
+<li><a href="Functional_programming" title="Functional programming">Functional</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/High-level_programming_language" title="High-level programming language">High-level</a></li>
+<li><a href="Imperative_programming" title="Imperative programming">Imperative</a></li>
+<li><a href="Interpreted_language" title="Interpreted language">Interpreted</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Logic_programming" title="Logic programming">Logic</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Low-level_programming_language" title="Low-level programming language">Low-level</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Machine_code" title="Machine code">Machine</a></li>
+<li><a href="Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Multi-paradigm_programming_language" title="Multi-paradigm programming language" class="mw-redirect">Multi-paradigm</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Object-based_language" title="Object-based language">Object-based</a></li>
+<li><a href="Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Off-side_rule" title="Off-side rule">Off-side rule</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Pipeline_programming" title="Pipeline programming">Pipeline</a></li>
+<li><a href="Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Reflection_(computer_programming)" title="Reflection (computer programming)">Reflective</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Rule-based_system" title="Rule-based system">Rule-based</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Scripting_language" title="Scripting language">Scripting</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Synchronous_programming_language" title="Synchronous programming language">Synchronous</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Very_high-level_programming_language" title="Very high-level programming language">Very high-level</a></li>
+<li><a href="http://en.m.wikipedia.org/wiki/Visual_programming_language" title="Visual programming language">Visual</a></li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr></table>
+
+						<div class="section" id="mw-mf-language-section">
+				<h2 id="section_language" class="section_heading">Read in another language</h2>
+				<div id="content_language" class="content_block">
+					<p>This article is available in 41 languages</p>
+					<ul id="mw-mf-language-selection"><li><a href="http://ar.m.wikipedia.org/wiki/%D9%86%D9%85%D8%B7_%D8%A8%D8%B1%D9%85%D8%AC%D8%A9" lang="ar" hreflang="ar">العربية</a></li><li><a href="http://az.m.wikipedia.org/wiki/Kateqoriya:Proqramla%C5%9Fd%C4%B1rma_paradiqmalar%C4%B1" lang="az" hreflang="az">azərbaycanca</a></li><li><a href="http://bg.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D0%B0_%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B5" lang="bg" hreflang="bg">български</a></li><li><a href="http://bs.m.wikipedia.org/wiki/Programska_paradigma" lang="bs" hreflang="bs">bosanski</a></li><li><a href="http://ca.m.wikipedia.org/wiki/Paradigma_de_programaci%C3%B3" lang="ca" hreflang="ca">català</a></li><li><a href="http://cs.m.wikipedia.org/wiki/Programovac%C3%AD_paradigma" lang="cs" hreflang="cs">česky</a></li><li><a href="http://da.m.wikipedia.org/wiki/Programmeringsparadigme" lang="da" hreflang="da">dansk</a></li><li><a href="http://de.m.wikipedia.org/wiki/Programmierparadigma" lang="de" hreflang="de">Deutsch</a></li><li><a href="http://et.m.wikipedia.org/wiki/Programmeerimise_paradigma" lang="et" hreflang="et">eesti</a></li><li><a href="http://el.m.wikipedia.org/wiki/%CE%A0%CF%81%CE%BF%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CF%83%CF%84%CE%B9%CE%BA%CF%8C_%CF%80%CE%B1%CF%81%CE%AC%CE%B4%CE%B5%CE%B9%CE%B3%CE%BC%CE%B1" lang="el" hreflang="el">Ελληνικά</a></li><li><a href="http://es.m.wikipedia.org/wiki/Paradigma_de_programaci%C3%B3n" lang="es" hreflang="es">español</a></li><li><a href="http://fa.m.wikipedia.org/wiki/%D9%BE%D8%A7%D8%B1%D8%A7%D8%AF%D8%A7%DB%8C%D9%85_%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C" lang="fa" hreflang="fa">فارسی</a></li><li><a href="http://fr.m.wikipedia.org/wiki/Paradigme_(programmation)" lang="fr" hreflang="fr">français</a></li><li><a href="http://gl.m.wikipedia.org/wiki/Paradigma_de_programaci%C3%B3n" lang="gl" hreflang="gl">galego</a></li><li><a href="http://ko.m.wikipedia.org/wiki/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84" lang="ko" hreflang="ko">한국어</a></li><li><a href="http://id.m.wikipedia.org/wiki/Paradigma_pemrograman" lang="id" hreflang="id">Bahasa Indonesia</a></li><li><a href="http://it.m.wikipedia.org/wiki/Paradigma_di_programmazione" lang="it" hreflang="it">italiano</a></li><li><a href="http://he.m.wikipedia.org/wiki/%D7%A4%D7%A8%D7%93%D7%99%D7%92%D7%9E%D7%AA_%D7%AA%D7%9B%D7%A0%D7%95%D7%AA" lang="he" hreflang="he">עברית</a></li><li><a href="http://lv.m.wikipedia.org/wiki/Programm%C4%93%C5%A1anas_paradigma" lang="lv" hreflang="lv">latviešu</a></li><li><a href="http://hu.m.wikipedia.org/wiki/Programoz%C3%A1si_paradigma" lang="hu" hreflang="hu">magyar</a></li><li><a href="http://mk.m.wikipedia.org/wiki/%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B5%D1%80%D1%81%D0%BA%D0%B0_%D0%BF%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D0%B0" lang="mk" hreflang="mk">македонски</a></li><li><a href="http://ms.m.wikipedia.org/wiki/Paradigma_pengaturcaraan" lang="ms" hreflang="ms">Bahasa Melayu</a></li><li><a href="http://nl.m.wikipedia.org/wiki/Programmeerparadigma" lang="nl" hreflang="nl">Nederlands</a></li><li><a href="http://ja.m.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%91%E3%83%A9%E3%83%80%E3%82%A4%E3%83%A0" lang="ja" hreflang="ja">日本語</a></li><li><a href="http://no.m.wikipedia.org/wiki/Programmeringsparadigme" lang="no" hreflang="no">norsk (bokmål)‎</a></li><li><a href="http://pl.m.wikipedia.org/wiki/Paradygmat_programowania" lang="pl" hreflang="pl">polski</a></li><li><a href="http://pt.m.wikipedia.org/wiki/Paradigma_de_programa%C3%A7%C3%A3o" lang="pt" hreflang="pt">português</a></li><li><a href="http://ro.m.wikipedia.org/wiki/Paradigm%C4%83_de_programare" lang="ro" hreflang="ro">română</a></li><li><a href="http://ru.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F" lang="ru" hreflang="ru">русский</a></li><li><a href="http://sq.m.wikipedia.org/wiki/Paradigma_programore" lang="sq" hreflang="sq">shqip</a></li><li><a href="http://simple.m.wikipedia.org/wiki/Programming_paradigm" lang="simple" hreflang="simple">Simple English</a></li><li><a href="http://sh.m.wikipedia.org/wiki/Programska_paradigma" lang="sh" hreflang="sh">srpskohrvatski / српскохрватски</a></li><li><a href="http://fi.m.wikipedia.org/wiki/Ohjelmointiparadigma" lang="fi" hreflang="fi">suomi</a></li><li><a href="http://sv.m.wikipedia.org/wiki/Programmeringsparadigm" lang="sv" hreflang="sv">svenska</a></li><li><a href="http://ta.m.wikipedia.org/wiki/%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95_%E0%AE%95%E0%AE%B0%E0%AF%81%E0%AE%A4%E0%AF%8D%E0%AE%A4%E0%AF%8B%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AE%AE%E0%AF%8D" lang="ta" hreflang="ta">தமிழ்</a></li><li><a href="http://th.m.wikipedia.org/wiki/%E0%B9%82%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B8%A5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%81%E0%B8%81%E0%B8%A3%E0%B8%A1" lang="th" hreflang="th">ไทย</a></li><li><a href="http://tr.m.wikipedia.org/wiki/Programlama_paradigmas%C4%B1" lang="tr" hreflang="tr">Türkçe</a></li><li><a href="http://uk.m.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%B4%D0%B8%D0%B3%D0%BC%D0%B0_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F" lang="uk" hreflang="uk">українська</a></li><li><a href="http://ur.m.wikipedia.org/wiki/%D8%A7%D8%B7%D8%A7%D8%B1_%D8%A8%D8%B1%D9%85%D8%AC%DB%81" lang="ur" hreflang="ur">اردو</a></li><li><a href="http://vi.m.wikipedia.org/wiki/M%E1%BA%ABu_h%C3%ACnh_l%E1%BA%ADp_tr%C3%ACnh" lang="vi" hreflang="vi">Tiếng Việt</a></li><li><a href="http://zh.m.wikipedia.org/wiki/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%9E%8B" lang="zh" hreflang="zh">中文</a></li></ul>
+				</div>
+			</div>			</div><!-- close #content_wrapper -->
+			<div id="footer">
+			<h2 class="section_heading" id="section_footer">
+		<img src="http://bits.wikimedia.org/static-1.21wmf3/extensions/MobileFrontend/stylesheets/common/images/logo-copyright-en.png" class="license" alt="Wikipedia ®" />	</h2>
+	<div class="content_block" id="content_footer">
+		<ul class="settings">
+			<li>
+				<span class="left separator"><a id="mw-mf-display-toggle" href="http://en.wikipedia.org/w/index.php?title=Programming_paradigm&amp;mobileaction=toggle_view_desktop">Desktop</a></span><span class="right">Mobile</span>
+			</li>
+			<li class="notice">
+				Article by <a href="http://en.m.wikipedia.org/w/index.php?title=Programming_paradigm&amp;action=history">contributors</a> like you<br>
+				Content available under <a href="Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License?useformat=mobile">CC BY-SA 3.0</a>				<span>| <a href="http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile">Terms of Use</a></span>
+			</li>
+		</ul>
+		<ul class="links">
+						<li>
+			<a href='http://en.m.wikipedia.org/w/index.php?title=Special:MobileFeedback&amp;returnto=Programming+paradigm&amp;feedbacksource=MobileFrontend'>
+				Contact Wikipedia			</a>
+			</li><li>
+						<a href="http://wikimediafoundation.org/wiki/Privacy_policy" title="wikimedia:Privacy policy">Privacy</a></li><li>
+			<a href="Wikipedia:About" title="Wikipedia:About">About</a></li><li>
+			<a href="Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		</ul>
+	</div><!-- close footer.div / #content_footer -->
+	</div><!-- close #footer -->
+					</div><!-- close #mw-mf-page-center -->
+		</div><!-- close #mw-mf-viewport -->
+		
+					</body>
+	</html>
