@@ -223,10 +223,15 @@ struct Page *loadPage(const char* fileName)
 	struct Page *page = calloc(1, sizeof(struct Page));
 	char *tmp = strdup(fileName);
 	page->url = tmp;
+	#if Debug
 	printf("%s is url given to function\n",page->url);
+	#endif
+	path[0] = '\0';
 	strcpy(path,BASE_PATH);
 	strcat(path,tmp);
+	#if Debug
 	printf("%s is our path\n",path);
+	#endif
 	FILE * file;
   	file = fopen (path,"r");
 	

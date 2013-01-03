@@ -78,7 +78,14 @@ int main(int argc, char *argv[])
 	// †B 08 Aufgabe 2  c)
 	int i = 1; // so that we don't get argv[0] which would be the programm name 
 	FILE * pFile;
-	pFile = fopen ("/Users/Anzumana/Dropbox/Hacking/C/SearchEngine/query.txt","w");
+	//BASE_PATH + query.txt
+	path[0] ='\0';
+	strcpy(path,BASE_PATH);
+	strcat(path,"query.txt");
+	#if Debug
+	printf("%s\n\n",path);
+	#endif
+	pFile = fopen (path,"w");
 	if (pFile!=NULL)
 	{
 		while(i<argc){
@@ -91,8 +98,12 @@ int main(int argc, char *argv[])
 		}
 		fclose (pFile);
 	}
-	  return 0;
-
 	
-	return 0;
+	struct Page *page = calloc(1, sizeof(struct Page));
+	page =loadPage("query.txt");
+#if Debug
+	printTermsOfPage(page);
+#endif
+
+	  return 0;
 }
