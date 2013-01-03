@@ -76,6 +76,23 @@ int main(int argc, char *argv[])
 	printf("Number of Terms Total in our Index are: %d\n",y);
 	computeWeights(InvIndex);
 	// †B 08 Aufgabe 2  c)
+	int i = 1; // so that we don't get argv[0] which would be the programm name 
+	FILE * pFile;
+	pFile = fopen ("/Users/Anzumana/Dropbox/Hacking/C/SearchEngine/query.txt","w");
+	if (pFile!=NULL)
+	{
+		while(i<argc){
+		#if Debug
+			printf("%s\n",argv[i]);
+		#endif
+			fputs (argv[i],pFile);
+			fputs("\n",pFile);
+			i++;
+		}
+		fclose (pFile);
+	}
+	  return 0;
 
+	
 	return 0;
 }
